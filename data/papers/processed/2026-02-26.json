@@ -1,0 +1,127 @@
+[
+  {
+    "id": "2602.22069v1",
+    "title": "Pools as Portfolios: Observed arbitrage efficiency & LVR analysis of dynamic weight AMMs",
+    "abstract": "Dynamic-weight AMMs (aka Temporal Function Market Makers, TFMMs) implement algorithmic asset allocation, analogous to index or smart beta funds, by continuously updating pools' weights. A strategy updates target weights over time, and arbitrageurs trade the pool back toward those weights. This creates a sequence of small, predictable mispricings that grow until taken, effectively executing rebalances as a series of Dutch reverse auctions. Prior theoretical and simulation work (Willetts & Harrington, 2024) predicted that this mechanism could outperform CEX-style rebalancing. We test that claim on two live pools on the QuantAMM protocol, one on Ethereum mainnet and one on Base, across two short rebalancing windows six months apart (July 2025 and January 2026). We perform block-level arbitrage analysis, and then measure long term outcomes using Loss-vs-Rebalancing (LVR) and Rebalancing-vs-Rebalancing (RVR) benchmarks. On mainnet, rebalancing becomes markedly more efficient over time (more frequent arbitrage trades with lower value extracted per trade), reaching performance comparable to or better than CEX-based models. On Base, rebalancing persists even when per-trade extraction is near (or below) zero, consistent with routing-driven execution, and achieves efficiencies that meet or exceed standard \"perfect rebalancing\" LVR baselines. These results demonstrate dynamic-weight AMMs as a competitive execution layer for tokenised funds, with superior performance on L2s where routing and lower data costs compress arbitrage spreads.",
+    "authors": [
+      "Matthew Willetts",
+      "Christian Harrington"
+    ],
+    "published": "2026-02-25",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.22069v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.22069v1",
+    "fetched_at": "2026-02-26T08:41:04.348088",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-26T08:43:49.465256"
+  },
+  {
+    "id": "2602.21869v1",
+    "title": "A Bayesian approach to out-of-sample network reconstruction",
+    "abstract": "Networks underpin systems that range from finance to biology, yet their structure is often only partially observed. Current reconstruction methods typically fit the parameters of a model anew to each snapshot, thus offering no guidance to predict future configurations. Here, we develop a Bayesian approach that uses the information about past network snapshots to inform a prior and predict the subsequent ones, while quantifying uncertainty. Instantiated with a single-parameter fitness model, our method infers link probabilities from node strengths and carries information forward in time. When applied to the Electronic Market for Interbank Deposit across the years 1999-2012, our method accurately recovers the number of connections per bank at subsequent times, outperforming probabilistic benchmarks designed for analogous, link prediction tasks. Notably, each predicted snapshot serves as a reliable prior for the next one, thus enabling self-sustained, out-of-sample reconstruction of evolving networks with a minimal amount of additional data.",
+    "authors": [
+      "Mattia Marzi",
+      "Tiziano Squartini"
+    ],
+    "published": "2026-02-25",
+    "categories": [
+      "physics.soc-ph",
+      "physics.app-ph",
+      "physics.data-an",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.21869v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.21869v1",
+    "fetched_at": "2026-02-26T08:41:04.348125",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-26T08:43:49.465275"
+  },
+  {
+    "id": "2602.21928v1",
+    "title": "Learning Unknown Interdependencies for Decentralized Root Cause Analysis in Nonlinear Dynamical Systems",
+    "abstract": "Root cause analysis (RCA) in networked industrial systems, such as supply chains and power networks, is notoriously difficult due to unknown and dynamically evolving interdependencies among geographically distributed clients. These clients represent heterogeneous physical processes and industrial assets equipped with sensors that generate large volumes of nonlinear, high-dimensional, and heterogeneous IoT data. Classical RCA methods require partial or full knowledge of the system's dependency graph, which is rarely available in these complex networks. While federated learning (FL) offers a natural framework for decentralized settings, most existing FL methods assume homogeneous feature spaces and retrainable client models. These assumptions are not compatible with our problem setting. Different clients have different data features and often run fixed, proprietary models that cannot be modified. This paper presents a federated cross-client interdependency learning methodology for feature-partitioned, nonlinear time-series data, without requiring access to raw sensor streams or modifying proprietary client models. Each proprietary local client model is augmented with a Machine Learning (ML) model that encodes cross-client interdependencies. These ML models are coordinated via a global server that enforces representation consistency while preserving privacy through calibrated differential privacy noise. RCA is performed using model residuals and anomaly flags. We establish theoretical convergence guarantees and validate our approach on extensive simulations and a real-world industrial cybersecurity dataset.",
+    "authors": [
+      "Ayush Mohanty",
+      "Paritosh Ramanan",
+      "Nagi Gebraeel"
+    ],
+    "published": "2026-02-25",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.21928v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.21928v1",
+    "fetched_at": "2026-02-26T08:41:17.459873",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-26T08:43:49.465289"
+  },
+  {
+    "id": "2602.21766v1",
+    "title": "RAMSeS: Robust and Adaptive Model Selection for Time-Series Anomaly Detection Algorithms",
+    "abstract": "Time-series data vary widely across domains, making a universal anomaly detector impractical. Methods that perform well on one dataset often fail to transfer because what counts as an anomaly is context dependent. The key challenge is to design a method that performs well in specific contexts while remaining adaptable across domains with varying data complexities. We present the Robust and Adaptive Model Selection for Time-Series Anomaly Detection RAMSeS framework. RAMSeS comprises two branches: (i) a stacking ensemble optimized with a genetic algorithm to leverage complementary detectors. (ii) An adaptive model-selection branch identifies the best single detector using techniques including Thompson sampling, robustness testing with generative adversarial networks, and Monte Carlo simulations. This dual strategy exploits the collective strength of multiple models and adapts to dataset-specific characteristics. We evaluate RAMSeS and show that it outperforms prior methods on F1.",
+    "authors": [
+      "Mohamed Abdelmaksoud",
+      "Sheng Ding",
+      "Andrey Morozov",
+      "Ziawasch Abedjan"
+    ],
+    "published": "2026-02-25",
+    "categories": [
+      "cs.DB",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.21766v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.21766v1",
+    "fetched_at": "2026-02-26T08:41:17.459904",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-26T08:43:49.465302"
+  },
+  {
+    "id": "2602.21252v1",
+    "title": "INTACT: Intent-Aware Representation Learning for Cryptographic Traffic Violation Detection",
+    "abstract": "Security monitoring systems typically treat anomaly detection as identifying statistical deviations from observed data distributions. In cryptographic traffic analysis, however, violations are defined not by rarity but by explicit policy constraints, including key reuse prohibition, downgrade prevention, and bounded key lifetimes. This fundamental mismatch limits the interpretability and adaptability of conventional anomaly detection methods. We introduce INTACT (INTent-Aware Cryptographic Traffic), a policy-conditioned framework that reformulates violation detection as conditional constraint learning. Instead of learning a static decision boundary over behavioral features, INTACT models the probability of violation conditioned on both observed behavior and declared security intent. The architecture factorizes representation learning into behavioral and intent encoders whose fused embeddings produce a violation score, yielding a policy-parameterized family of decision boundaries. We evaluate the framework on a real-world network flow dataset and a 210,000-trace synthetic multi-intent cryptographic dataset. INTACT matches or exceeds strong unsupervised and supervised baselines, achieving near-perfect discrimination (AUROC up to 1.0000) in the real dataset and consistent superiority in detecting relational and composite violations in the synthetic setting. These results demonstrate that explicit intent conditioning improves discrimination, interpretability, and robustness in cryptographic monitoring.",
+    "authors": [
+      "Rahul D Ray"
+    ],
+    "published": "2026-02-22",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.21252v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.21252v1",
+    "fetched_at": "2026-02-26T08:41:17.460229",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-26T08:43:49.465315"
+  }
+]
