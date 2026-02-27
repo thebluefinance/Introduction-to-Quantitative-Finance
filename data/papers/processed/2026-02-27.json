@@ -1,0 +1,184 @@
+[
+  {
+    "id": "2602.23330v1",
+    "title": "Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks",
+    "abstract": "The advancement of large language models (LLMs) has accelerated the development of autonomous financial trading systems. While mainstream approaches deploy multi-agent systems mimicking analyst and manager roles, they often rely on abstract instructions that overlook the intricacies of real-world workflows, which can lead to degraded inference performance and less transparent decision-making. Therefore, we propose a multi-agent LLM trading framework that explicitly decomposes investment analysis into fine-grained tasks, rather than providing coarse-grained instructions. We evaluate the proposed framework using Japanese stock data, including prices, financial statements, news, and macro information, under a leakage-controlled backtesting setting. Experimental results show that fine-grained task decomposition significantly improves risk-adjusted returns compared to conventional coarse-grained designs. Crucially, further analysis of intermediate agent outputs suggests that alignment between analytical outputs and downstream decision preferences is a critical driver of system performance. Moreover, we conduct standard portfolio optimization, exploiting low correlation with the stock index and the variance of each system's output. This approach achieves superior performance. These findings contribute to the design of agent structure and task configuration when applying LLM agents to trading systems in practical settings.",
+    "authors": [
+      "Kunihiro Miyazaki",
+      "Takanobu Kawahara",
+      "Stephen Roberts",
+      "Stefan Zohren"
+    ],
+    "published": "2026-02-26",
+    "categories": [
+      "cs.AI",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.23330v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.23330v1",
+    "fetched_at": "2026-02-27T08:36:06.294660",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-27T08:38:51.130023"
+  },
+  {
+    "id": "2602.20552v2",
+    "title": "Stochastic Control Problems with Infinite Horizon and Regime Switching Arising in Optimal Liquidation with Semimartingale Strategies",
+    "abstract": "We study an optimal control problem on infinite time horizon with semimartingale strategies, random coefficients and regime switching. The value function and the optimal strategy can be characterized in terms of three systems of backward stochastic differential equations (BSDEs) with infinite horizon. One of them is a system of linear BSDEs with unbounded coefficients and infinite horizon, which seems to be new in literature. We establish the existence of the solutions to these BSDEs by BMO analysis and comparison theorem for multi-dimensional BSDEs. Next, we establish that the optimal control problem is well posed, in the sense that the value function is finite and the optimal strategy-when it exists-is unique. This is achieved by reformulating the cost functional as the sum of a quadratic functional and the candidate value function. The reformulation crucially relies on the well-established well-posedness results for systems of BSDEs. Finally, under additional assumptions, we obtain the unique optimal strategy.",
+    "authors": [
+      "Xinman Cheng",
+      "Guanxing Fu",
+      "Xiaonyu Xia"
+    ],
+    "published": "2026-02-24",
+    "categories": [
+      "math.OC",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.20552v2",
+    "arxiv_url": "https://arxiv.org/abs/2602.20552v2",
+    "fetched_at": "2026-02-27T08:36:06.294832",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-27T08:38:51.130043"
+  },
+  {
+    "id": "2602.22962v1",
+    "title": "Scaling Laws of Global Weather Models",
+    "abstract": "Data-driven models are revolutionizing weather forecasting. To optimize training efficiency and model performance, this paper analyzes empirical scaling laws within this domain. We investigate the relationship between model performance (validation loss) and three key factors: model size ($N$), dataset size ($D$), and compute budget ($C$). Across a range of models, we find that Aurora exhibits the strongest data-scaling behavior: increasing the training dataset by 10x reduces validation loss by up to 3.2x. GraphCast demonstrates the highest parameter efficiency, yet suffers from limited hardware utilization. Our compute-optimal analysis indicates that, under fixed compute budgets, allocating resources to longer training durations yields greater performance gains than increasing model size. Furthermore, we analyze model shape and uncover scaling behaviors that differ fundamentally from those observed in language models: weather forecasting models consistently favor increased width over depth. These findings suggest that future weather models should prioritize wider architectures and larger effective training datasets to maximize predictive performance.",
+    "authors": [
+      "Yuejiang Yu",
+      "Langwen Huang",
+      "Alexandru Calotoiu",
+      "Torsten Hoefler"
+    ],
+    "published": "2026-02-26",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.22962v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.22962v1",
+    "fetched_at": "2026-02-27T08:36:12.839305",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-27T08:38:51.130056"
+  },
+  {
+    "id": "2602.22387v1",
+    "title": "Disentangling Shared and Target-Enriched Topics via Background-Contrastive Non-negative Matrix Factorization",
+    "abstract": "Biological signals of interest in high-dimensional data are often masked by dominant variation shared across conditions. This variation, arising from baseline biological structure or technical effects, can prevent standard dimensionality reduction methods from resolving condition-specific structure. The challenge is that these confounding topics are often unknown and mixed with biological signals. Existing background correction methods are either unscalable to high dimensions or not interpretable. We introduce background contrastive Non-negative Matrix Factorization (\\model), which extracts target-enriched latent topics by jointly factorizing a target dataset and a matched background using shared non-negative bases under a contrastive objective that suppresses background-expressed structure. This approach yields non-negative components that are directly interpretable at the feature level, and explicitly isolates target-specific variation. \\model is learned by an efficient multiplicative update algorithm via matrix multiplication such that it is highly efficient on GPU hardware and scalable to big data via minibatch training akin to deep learning approach. Across simulations and diverse biological datasets, \\model reveals signals obscured by conventional methods, including disease-associated programs in postmortem depressive brain single-cell RNA-seq, genotype-linked protein expression patterns in mice, treatment-specific transcriptional changes in leukemia, and TP53-dependent drug responses in cancer cell lines.",
+    "authors": [
+      "Yixuan Li",
+      "Archer Y. Yang",
+      "Yue Li"
+    ],
+    "published": "2026-02-25",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.22387v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.22387v1",
+    "fetched_at": "2026-02-27T08:36:12.839336",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-27T08:38:51.130071"
+  },
+  {
+    "id": "2602.23013v1",
+    "title": "SubspaceAD: Training-Free Few-Shot Anomaly Detection via Subspace Modeling",
+    "abstract": "Detecting visual anomalies in industrial inspection often requires training with only a few normal images per category. Recent few-shot methods achieve strong results employing foundation-model features, but typically rely on memory banks, auxiliary datasets, or multi-modal tuning of vision-language models. We therefore question whether such complexity is necessary given the feature representations of vision foundation models. To answer this question, we introduce SubspaceAD, a training-free method, that operates in two simple stages. First, patch-level features are extracted from a small set of normal images by a frozen DINOv2 backbone. Second, a Principal Component Analysis (PCA) model is fit to these features to estimate the low-dimensional subspace of normal variations. At inference, anomalies are detected via the reconstruction residual with respect to this subspace, producing interpretable and statistically grounded anomaly scores. Despite its simplicity, SubspaceAD achieves state-of-the-art performance across one-shot and few-shot settings without training, prompt tuning, or memory banks. In the one-shot anomaly detection setting, SubspaceAD achieves image-level and pixel-level AUROC of 98.0% and 97.6% on the MVTec-AD dataset, and 93.3% and 98.3% on the VisA dataset, respectively, surpassing prior state-of-the-art results. Code and demo are available at https://github.com/CLendering/SubspaceAD.",
+    "authors": [
+      "Camile Lendering",
+      "Erkut Akdag",
+      "Egor Bondarev"
+    ],
+    "published": "2026-02-26",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.23013v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.23013v1",
+    "fetched_at": "2026-02-27T08:36:19.253452",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-27T08:38:51.130082"
+  },
+  {
+    "id": "2602.22297v1",
+    "title": "Learning Rewards, Not Labels: Adversarial Inverse Reinforcement Learning for Machinery Fault Detection",
+    "abstract": "Reinforcement learning (RL) offers significant promise for machinery fault detection (MFD). However, most existing RL-based MFD approaches do not fully exploit RL's sequential decision-making strengths, often treating MFD as a simple guessing game (Contextual Bandits). To bridge this gap, we formulate MFD as an offline inverse reinforcement learning problem, where the agent learns the reward dynamics directly from healthy operational sequences, thereby bypassing the need for manual reward engineering and fault labels. Our framework employs Adversarial Inverse Reinforcement Learning to train a discriminator that distinguishes between normal (expert) and policy-generated transitions. The discriminator's learned reward serves as an anomaly score, indicating deviations from normal operating behaviour. When evaluated on three run-to-failure benchmark datasets (HUMS2023, IMS, and XJTU-SY), the model consistently assigns low anomaly scores to normal samples and high scores to faulty ones, enabling early and robust fault detection. By aligning RL's sequential reasoning with MFD's temporal structure, this work opens a path toward RL-based diagnostics in data-driven industrial settings.",
+    "authors": [
+      "Dhiraj Neupane",
+      "Richard Dazeley",
+      "Mohamed Reda Bouadjenek",
+      "Sunil Aryal"
+    ],
+    "published": "2026-02-25",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.22297v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.22297v1",
+    "fetched_at": "2026-02-27T08:36:19.253486",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-27T08:38:51.130093"
+  },
+  {
+    "id": "2602.22412v1",
+    "title": "A Learning-Based Hybrid Decision Framework for Matching Systems with User Departure Detection",
+    "abstract": "In matching markets such as kidney exchanges and freight exchanges, delayed matching has been shown to improve overall market efficiency. The benefits of delay are highly sensitive to participants' sojourn times and departure behavior, and delaying matches can impose significant costs, including longer waiting times and increased market congestion. These competing effects make fixed matching policies inherently inflexible in dynamic environments. We propose a learning-based Hybrid framework that adaptively combines immediate and delayed matching. The framework continuously collects data on user departures over time, estimates the underlying departure distribution via regression, and determines whether to delay matching in the subsequent period based on a decision threshold that governs the system's tolerance for matching efficiency loss. The proposed framework can substantially reduce waiting times and congestion while sacrificing only a limited amount of matching efficiency. By dynamically adjusting its matching strategy, the Hybrid framework enables system performance to flexibly interpolate between purely greedy and purely patient policies, offering a robust and adaptive alternative to static matching mechanisms.",
+    "authors": [
+      "Ruiqi Zhou",
+      "Donghao Zhu",
+      "Houcai Shen"
+    ],
+    "published": "2026-02-25",
+    "categories": [
+      "cs.LG",
+      "cs.HC",
+      "cs.IT",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2602.22412v1",
+    "arxiv_url": "https://arxiv.org/abs/2602.22412v1",
+    "fetched_at": "2026-02-27T08:36:29.112575",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-02-27T08:38:51.130104"
+  }
+]
