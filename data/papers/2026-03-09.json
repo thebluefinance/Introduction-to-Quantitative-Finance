@@ -1,0 +1,449 @@
+[
+  {
+    "id": "2603.06563v1",
+    "title": "Convergence of Neural Network Policies for Risk--Reward Optimization",
+    "abstract": "We develop a neural-network framework for multi-period risk--reward stochastic control problems with constrained two-step feedback policies that may be discontinuous in the state. We allow a broad class of objectives built on a finite-dimensional performance vector, including terminal and path-dependent statistics, with risk functionals admitting auxiliary-variable optimization representations (e.g.\\ Conditional Value-at-Risk and buffered probability of exceedance) and optional moment dependence. Our approach parametrizes the two-step policy using two coupled feedforward networks with constraint-enforcing output layers, reducing the constrained control problem to unconstrained training over network parameters. Under mild regularity conditions, we prove that the empirical optimum of the NN-parametrized objective converges in probability to the true optimal value as network capacity and training sample size increase. The proof is modular, separating policy approximation, propagation through the controlled recursion, and preservation under the scalarized risk--reward objective. Numerical experiments confirm the predicted convergence-in-probability behavior, show close agreement between learned and reference control heat maps, and demonstrate out-of-sample robustness on a large independent scenario set.",
+    "authors": [
+      "Chang Chen",
+      "Duy-Minh Dang"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06563v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06563v1",
+    "fetched_at": "2026-03-09T08:38:46.750219"
+  },
+  {
+    "id": "2603.06238v1",
+    "title": "General Bounds on Functionals of the Lifetime under Life Table Constraints",
+    "abstract": "In life insurance, life tables are used to estimate the survival distribution of individuals from a given population. However, these tables only provide survival probabilities at integer ages but no information about the distribution of deaths between two consecutive integer values. Many actuarial quantities, such as variable annuities, are functionals of the lifetime and computing them requires full information about mortality rates. One frequent solution is to postulate fractional age assumptions or mortality rate models, but it turns out that the results of the computations strongly depend on these assumptions, which makes it difficult to generalize them. We hence derive upper and lower bounds of functionals of the lifetime with respect to mortality rates, which are compatible with the observed life table at integer ages. We derive two sets of results under distinct assumptions. In the first, we assume that each mortality trajectory is almost surely consistent with all the given one-year survival probabilities from the table. In the second, we consider a relaxed formulation that allows for deviations of the mortality rates while still being consistent in expectation with the given one-year reference survival probabilities. These distinct yet complementary approaches provide a new robust framework for managing mortality risk in life insurance. They characterize the worst- and best-case contract values over all mortality processes that remain compatible with the observed life-table information, thereby enabling insurers to quantify the impact on prices of deviations of the observed mortality rates from their mortality assumptions/models.",
+    "authors": [
+      "Jean-Loup Dupret",
+      "Edouard Motte"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "q-fin.RM",
+      "math.OC",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06238v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06238v1",
+    "fetched_at": "2026-03-09T08:38:46.750257"
+  },
+  {
+    "id": "2603.05917v1",
+    "title": "Stock Market Prediction Using Node Transformer Architecture Integrated with BERT Sentiment Analysis",
+    "abstract": "Stock market prediction presents considerable challenges for investors, financial institutions, and policymakers operating in complex market environments characterized by noise, non-stationarity, and behavioral dynamics. Traditional forecasting methods often fail to capture the intricate patterns and cross-sectional dependencies inherent in financial markets. This paper presents an integrated framework combining a node transformer architecture with BERT-based sentiment analysis for stock price forecasting. The proposed model represents the stock market as a graph structure where individual stocks form nodes and edges capture relationships including sectoral affiliations, correlated price movements, and supply chain connections. A fine-tuned BERT model extracts sentiment from social media posts and combines it with quantitative market features through attention-based fusion. The node transformer processes historical market data while capturing both temporal evolution and cross-sectional dependencies among stocks. Experiments on 20 S&P 500 stocks spanning January 1982 to March 2025 demonstrate that the integrated model achieves a mean absolute percentage error (MAPE) of 0.80% for one-day-ahead predictions, compared to 1.20% for ARIMA and 1.00% for LSTM. Sentiment analysis reduces prediction error by 10% overall and 25% during earnings announcements, while graph-based modeling contributes an additional 15% improvement by capturing inter-stock dependencies. Directional accuracy reaches 65% for one-day forecasts. Statistical validation through paired t-tests confirms these improvements (p < 0.05 for all comparisons). The model maintains MAPE below 1.5% during high-volatility periods where baseline models exceed 2%.",
+    "authors": [
+      "Mohammad Al Ridhawi",
+      "Mahtab Haj Ali",
+      "Hussein Al Osman"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05917v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05917v1",
+    "fetched_at": "2026-03-09T08:38:46.750286"
+  },
+  {
+    "id": "2603.05862v1",
+    "title": "Impact of arbitrage between leveraged ETF and futures on market liquidity during market crash",
+    "abstract": "Leveraged ETFs (L-ETFs) are exchange-traded funds that achieve price movements several times greater than an index by holding index-linked futures such as Nikkei Stock Average Index futures. It is known that when the price of an L-ETF falls, the L-ETF uses the liquidity of futures to limit the decline through arbitrage trading. Conversely, when the price of a futures contract falls, the futures contract uses the liquidity of the L-ETF to limit its decline. However, the impact of arbitrage trading on the liquidity of these markets has been little studied. Therefore, the present study used artificial market simulations to investigate how the liquidity (Volume, SellDepth, BuyDepth, Tightness) of both markets changes when prices plummet in either (i.e., the L-ETF or futures market), depending on the presence or absence of arbitrage trading. As a result, it was found that when erroneous orders occur in the L-ETF market, the existence of arbitrage trading causes liquidity to be supplied from the futures market to the L-ETF market in terms of SellDepth and Tightness. When erroneous orders occur in the futures market, the existence of arbitrage trading causes liquidity to be supplied from the L-ETF market to the futures market in terms of SellDepth and Tightness, and liquidity to be supplied from the futures market to the L-ETF market in terms of Volume. We also analyzed the internal market mechanisms that led to these results.",
+    "authors": [
+      "Ryuki Hayase",
+      "Takanobu Mizuta",
+      "Isao Yagi"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "q-fin.CP",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05862v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05862v1",
+    "fetched_at": "2026-03-09T08:38:46.750311"
+  },
+  {
+    "id": "2603.05624v1",
+    "title": "Mean-field games with unbounded controls: a weak formulation approach to global solutions",
+    "abstract": "We establish an existence of equilibrium result for a class of non-Markovian mean-field games with unbounded control space in weak formulation. Our result is based on new existence and stability results for quadratic-growth generalized McKean-Vlasov BSDEs. Unlike earlier approaches, our approach does not require boundedness assumptions on the model parameters or time horizons and allows for running costs that are quadratic in the control variable.",
+    "authors": [
+      "Ulrich Horst",
+      "Takashi Sato"
+    ],
+    "published": "2026-03-05",
+    "categories": [
+      "math.OC",
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05624v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05624v1",
+    "fetched_at": "2026-03-09T08:38:46.750376"
+  },
+  {
+    "id": "2603.06131v1",
+    "title": "DQE: A Semantic-Aware Evaluation Metric for Time Series Anomaly Detection",
+    "abstract": "Time series anomaly detection has achieved remarkable progress in recent years. However, evaluation practices have received comparatively less attention, despite their critical importance. Existing metrics exhibit several limitations: (1) bias toward point-level coverage, (2) insensitivity or inconsistency in near-miss detections, (3) inadequate penalization of false alarms, and (4) inconsistency caused by threshold or threshold-interval selection. These limitations can produce unreliable or counterintuitive results, hindering objective progress. In this work, we revisit the evaluation of time series anomaly detection from the perspective of detection semantics and propose a novel metric for more comprehensive assessment. We first introduce a partitioning strategy grounded in detection semantics, which decomposes the local temporal region of each anomaly into three functionally distinct subregions. Using this partitioning, we evaluate overall detection behavior across events and design finer-grained scoring mechanisms for each subregion, enabling more reliable and interpretable assessment. Through a systematic study of existing metrics, we identify an evaluation bias associated with threshold-interval selection and adopt an approach that aggregates detection qualities across the full threshold spectrum, thereby eliminating evaluation inconsistency. Extensive experiments on synthetic and real-world data demonstrate that our metric provides stable, discriminative, and interpretable evaluation, while achieving robust assessment compared with ten widely used metrics.",
+    "authors": [
+      "Yuewei Li",
+      "Dalin Zhang",
+      "Huan Li",
+      "Xinyi Gong",
+      "Hongjun Chu",
+      "Zhaohui Song"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06131v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06131v1",
+    "fetched_at": "2026-03-09T08:38:59.885780"
+  },
+  {
+    "id": "2603.05625v1",
+    "title": "Identifying Adversary Characteristics from an Observed Attack",
+    "abstract": "When used in automated decision-making systems, machine learning (ML) models are vulnerable to data-manipulation attacks. Some defense mechanisms (e.g., adversarial regularization) directly affect the ML models while others (e.g., anomaly detection) act within the broader system. In this paper we consider a different task for defending the adversary, focusing on the attacker, rather than the attack. We present and demonstrate a framework for identifying characteristics about the attacker from an observed attack.   We prove that, without additional knowledge, the attacker is non-identifiable (multiple potential attackers would perform the same observed attack). To address this challenge, we propose a domain-agnostic framework to identify the most probable attacker. This framework aids the defender in two ways. First, knowledge about the attacker can be leveraged for exogenous mitigation (i.e., addressing the vulnerability by altering the decision-making system outside the learning algorithm and/or limiting the attacker's capability). Second, when implementing defense methods that directly affect the learning process (e.g., adversarial regularization), knowledge of the specific attacker improves performance. We present the details of our framework and illustrate its applicability through specific instantiations on a variety of learners.",
+    "authors": [
+      "Soyon Choi",
+      "Scott Alfeld",
+      "Meiyi Ma"
+    ],
+    "published": "2026-03-05",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05625v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05625v1",
+    "fetched_at": "2026-03-09T08:38:59.885815"
+  },
+  {
+    "id": "2603.06403v1",
+    "title": "Adapter-Augmented Bandits for Online Multi-Constrained Multi-Modal Inference Scheduling",
+    "abstract": "Multi-modal large language model (MLLM) inference scheduling enables strong response quality under practical and heterogeneous budgets, beyond what a homogeneous single-backend setting can offer. Yet online MLLM task scheduling is nontrivial, as requests vary sharply in modality composition and latent reasoning difficulty, while execution backends incur distinct, time-varying costs due to system jitter and network variation. These coupled uncertainties pose two core challenges: deriving semantically faithful yet scheduling-relevant multi-modal task representations, and making low-overhead online decisions over irreversible multi-dimensional budgets. Accordingly, we propose \\emph{M-CMAB} (\\underline{M}ulti-modal \\underline{M}ulti-constraint \\underline{C}ontextual \\underline{M}ulti-\\underline{A}rmed \\underline{B}andit), a multi-adapter-enhanced MLLM inference scheduling framework with three components: (i) a CLS-attentive, frozen-backbone \\emph{Predictor} that extracts compact task representations and updates only lightweight adapters for action-specific estimation; (ii) a primal-dual \\emph{Constrainer} that maintains online Lagrange multipliers to enforce long-horizon constraints via per-round objectives; and (iii) a two-phase \\emph{Scheduler} that balances exploration and exploitation under irreversible budgets. We establish a regret guarantee under multi-dimensional knapsack constraints. On a composite multimodal benchmark with heterogeneous backends, \\emph{M-CMAB} consistently outperforms state-of-the-art baselines across budget regimes, achieving up to 14.18% higher reward and closely tracking an oracle-aided upper bound. Codes are available at https://anonymous.4open.science/r/M2CMAB/.",
+    "authors": [
+      "Xianzhi Zhang",
+      "Yue Xu",
+      "Yinlin Zhu",
+      "Di Wu",
+      "Yipeng Zhou",
+      "Miao Hu",
+      "Guocong Quan"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06403v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06403v1",
+    "fetched_at": "2026-03-09T08:39:29.868409"
+  },
+  {
+    "id": "2603.06394v1",
+    "title": "Talk Freely, Execute Strictly: Schema-Gated Agentic AI for Flexible and Reproducible Scientific Workflows",
+    "abstract": "Large language models (LLMs) can now translate a researcher's plain-language goal into executable computation, yet scientific workflows demand determinism, provenance, and governance that are difficult to guarantee when an LLM decides what runs. Semi-structured interviews with 18 experts across 10 industrial R&D stakeholders surface 2 competing requirements--deterministic, constrained execution and conversational flexibility without workflow rigidity--together with boundary properties (human-in-the-loop control and transparency) that any resolution must satisfy. We propose schema-gated orchestration as the resolving principle: the schema becomes a mandatory execution boundary at the composed-workflow level, so that nothing runs unless the complete action--including cross-step dependencies--validates against a machine-checkable specification.   We operationalize the 2 requirements as execution determinism (ED) and conversational flexibility (CF), and use these axes to review 20 systems spanning 5 architectural groups along a validation-scope spectrum. Scores are assigned via a multi-model protocol--15 independent sessions across 3 LLM families--yielding substantial-to-near-perfect inter-model agreement (Krippendorff a=0.80 for ED and a=0.98 for CF), demonstrating that multi-model LLM scoring can serve as a reusable alternative to human expert panels for architectural assessment.   The resulting landscape reveals an empirical Pareto front--no reviewed system achieves both high flexibility and high determinism--but a convergence zone emerges between the generative and workflow-centric extremes. We argue that a schema-gated architecture, separating conversational from execution authority, is positioned to decouple this trade-off, and distill 3 operational principles--clarification-before-execution, constrained plan-act orchestration, and tool-to-workflow-level gating--to guide adoption.",
+    "authors": [
+      "Joel Strickland",
+      "Arjun Vijeta",
+      "Chris Moores",
+      "Oliwia Bodek",
+      "Bogdan Nenchev",
+      "Thomas Whitehead",
+      "Charles Phillips",
+      "Karl Tassenberg",
+      "Gareth Conduit",
+      "Ben Pellegrini"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06394v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06394v1",
+    "fetched_at": "2026-03-09T08:39:29.868457"
+  },
+  {
+    "id": "2603.06365v1",
+    "title": "ESAA-Security: An Event-Sourced, Verifiable Architecture for Agent-Assisted Security Audits of AI-Generated Code",
+    "abstract": "AI-assisted software generation has increased development speed, but it has also amplified a persistent engineering problem: systems that are functionally correct may still be structurally insecure. In practice, prompt-based security review with large language models often suffers from uneven coverage, weak reproducibility, unsupported findings, and the absence of an immutable audit trail. The ESAA architecture addresses a related governance problem in agentic software engineering by separating heuristic agent cognition from deterministic state mutation through append-only events, constrained outputs, and replay-based verification. This paper presents ESAA-Security, a domain-specific specialization of ESAA for agent-assisted security auditing of software repositories, with particular emphasis on AI-generated or AI-modified code. ESAA-Security structures auditing as a governed execution pipeline with four phases reconnaissance, domain audit execution, risk classification, and final reporting and operationalizes the workflow into 26 tasks, 16 security domains, and 95 executable checks. The framework produces structured check results, vulnerability inventories, severity classifications, risk matrices, remediation guidance, executive summaries, and a final markdown/JSON audit report. The central idea is that security review should not be modeled as a free-form conversation with an LLM, but as an evidence-oriented audit process governed by contracts and events. In ESAA-Security, agents emit structured intentions under constrained protocols; the orchestrator validates them, persists accepted outputs to an append-only log, reprojects derived views, and verifies consistency through replay and hashing. The result is a traceable, reproducible, and risk-oriented audit architecture whose final report is auditable by construction.",
+    "authors": [
+      "Elzo Brito dos Santos Filho"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06365v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06365v1",
+    "fetched_at": "2026-03-09T08:39:29.868477"
+  },
+  {
+    "id": "2603.06140v1",
+    "title": "Place-it-R1: Unlocking Environment-aware Reasoning Potential of MLLM for Video Object Insertion",
+    "abstract": "Modern video editing techniques have achieved high visual fidelity when inserting video objects. However, they focus on optimizing visual fidelity rather than physical causality, leading to edits that are physically inconsistent with their environment. In this work, we present Place-it-R$1$, an end-to-end framework for video object insertion that unlocks the environment-aware reasoning potential of Multimodal Large Language Models (MLLMs). Our framework leverages the Chain-of-Thought (CoT) reasoning of MLLMs to orchestrate video diffusion, following a Think-then-Place paradigm. To bridge cognitive reasoning and generative execution, we introduce three key innovations: First, MLLM performs physical scene understanding and interaction reasoning, generating environment-aware chain-of-thought tokens and inferring valid insertion regions to explicitly guide the diffusion toward physically plausible insertion. Then, we introduce MLLM-guided Spatial Direct Preference Optimization (DPO), where diffusion outputs are fed back to the MLLM for scoring, enabling visual naturalness. During inference, the MLLM iteratively triggers refinement cycles and elicits adaptive adjustments from the diffusion model, forming a closed-loop that progressively enhances editing quality. Furthermore, we provide two user-selectable modes: a plausibility-oriented flexible mode that permits environment modifications (\\eg, generating support structures) to enhance physical plausibility, and a fidelity-oriented standard mode that preserves scene integrity for maximum fidelity, offering users explicit control over the plausibility-fidelity trade-off. Extensive experiments demonstrate Place-it-R1 achieves physically-coherent video object insertion compared with state-of-the-art solutions and commercial models.",
+    "authors": [
+      "Bohai Gu",
+      "Taiyi Wu",
+      "Dazhao Du",
+      "Jian Liu",
+      "Shuai Yang",
+      "Xiaotong Zhao",
+      "Alan Zhao",
+      "Song Guo"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06140v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06140v1",
+    "fetched_at": "2026-03-09T08:39:29.868508"
+  },
+  {
+    "id": "2603.06007v1",
+    "title": "MASFactory: A Graph-centric Framework for Orchestrating LLM-Based Multi-Agent Systems with Vibe Graphing",
+    "abstract": "Large language model-based (LLM-based) multi-agent systems (MAS) are increasingly used to extend agentic problem solving via role specialization and collaboration. MAS workflows can be naturally modeled as directed computation graphs, where nodes execute agents/sub-workflows and edges encode dependencies and message passing. However, implementing complex graph workflows in current frameworks still requires substantial manual effort, offers limited reuse, and makes it difficult to integrate heterogeneous external context sources. To overcome these limitations, we present MASFactory, a graph-centric framework for orchestrating LLM-based MAS. It introduces Vibe Graphing, a human-in-the-loop approach that compiles natural-language intent into an editable workflow specification and then into an executable graph. In addition, the framework provides reusable components and pluggable context integration, as well as a visualizer for topology preview, runtime tracing, and human-in-the-loop interaction. We evaluate MASFactory on seven public benchmarks, validating both reproduction consistency for representative MAS methods and the effectiveness of Vibe Graphing. Our code (https://github.com/BUPT-GAMMA/MASFactory) and video (https://youtu.be/ANynzVfY32k) are publicly available.",
+    "authors": [
+      "Yang Liu",
+      "Jinxuan Cai",
+      "Yishen Li",
+      "Qi Meng",
+      "Zedi Liu",
+      "Xin Li",
+      "Chen Qian",
+      "Chuan Shi",
+      "Cheng Yang"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06007v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06007v1",
+    "fetched_at": "2026-03-09T08:39:29.868540"
+  },
+  {
+    "id": "2603.06001v1",
+    "title": "Restoring Linguistic Grounding in VLA Models via Train-Free Attention Recalibration",
+    "abstract": "Vision-Language-Action (VLA) models enable robots to perform manipulation tasks directly from natural language instructions and are increasingly viewed as a foundation for generalist robotic policies. However, their reliability under Out-of-Distribution (OOD) instructions remains underexplored. In this paper, we reveal a critical failure mode in which VLA policies continue executing visually plausible actions even when the language instruction contradicts the scene. We refer to this phenomenon as linguistic blindness, where VLA policies prioritize visual priors over instruction semantics during action generation. To systematically analyze this issue, we introduce ICBench, a diagnostic benchmark constructed from the LIBERO dataset that probes language-action coupling by injecting controlled OOD instruction contradictions while keeping the visual environment unchanged. Evaluations on three representative VLA architectures, including Pi0, Pi0.5 and OpenVLA OFT, show that these models frequently succeed at tasks despite logically impossible instructions, revealing a strong visual bias in action generation. To mitigate this issue, we propose Instruction-Guided Attention Recalibration (IGAR), a train-free inference-time mechanism that rebalances attention distributions to restore the influence of language instructions. IGAR operates without retraining or architectural modification and can be directly applied to existing VLA models. Experiments across 30 LIBERO tasks demonstrate that IGAR substantially reduces erroneous execution under OOD contradictory instructions while preserving baseline task performance. We additionally validate the approach on a real Franka robotic arm, where IGAR effectively prevents manipulation triggered by inconsistent instructions.",
+    "authors": [
+      "Ninghao Zhang",
+      "Bin Zhu",
+      "Shijie Zhou",
+      "Jingjing Chen"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06001v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06001v1",
+    "fetched_at": "2026-03-09T08:39:29.868563"
+  },
+  {
+    "id": "2603.05996v1",
+    "title": "Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL",
+    "abstract": "Generative language models have shown significant potential in single-turn Text-to-SQL. However, their performance does not extend equivalently to multi-turn Text-to-SQL. This is primarily due to generative language models' inadequacy in handling the complexities of context information and dynamic schema linking in multi-turn interactions. In this paper, we propose a framework named Track-SQL, which enhances generative language models with dual-extractive modules designed to track schema and contextual changes in multi-turn Text-to-SQL. Specifically, Track-SQL incorporates a \\emph{Semantic-enhanced Schema Extractor} and a \\emph{Schema-aware Context Extractor}. Experimental results demonstrate that Track-SQL achieves state-of-the-art performance on the SparC and CoSQL datasets. Furthermore, detailed ablation studies reveal that Track-SQL significantly improves execution accuracy in multi-turn interactions by 7.1\\% and 9.55\\% on these datasets, respectively. Our implementation will be open-sourced at https://github.com/DMIRLAB-Group/Track-SQL.",
+    "authors": [
+      "Bingfeng Chen",
+      "Shaobin Shi",
+      "Yongqi Luo",
+      "Boyan Xu",
+      "Ruichu Cai",
+      "Zhifeng Hao"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05996v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05996v1",
+    "fetched_at": "2026-03-09T08:39:29.868589"
+  },
+  {
+    "id": "2603.05941v1",
+    "title": "XAI for Coding Agent Failures: Transforming Raw Execution Traces into Actionable Insights",
+    "abstract": "Large Language Model (LLM)-based coding agents show promise in automating software development tasks, yet they frequently fail in ways that are difficult for developers to understand and debug. While general-purpose LLMs like GPT can provide ad-hoc explanations of failures, raw execution traces remain challenging to interpret even for experienced developers. We present a systematic explainable AI (XAI) approach that transforms raw agent execution traces into structured, human-interpretable explanations. Our method consists of three key components: (1) a domain-specific failure taxonomy derived from analyzing real agent failures, (2) an automatic annotation system that classifies failures using defined annotation schema, (3) a hybrid explanation generator that produces visual execution flows, natural language explanations, and actionable recommendations. Through a user study with 20 participants (10 technical, 10 non-technical), we demonstrate that our approach enables users to identify failure root causes 2.8 times faster and propose correct fixes with 73% higher accuracy compared to raw execution traces. Importantly, our structured approach outperforms ad-hoc state of the art models explanations by providing consistent, domain-specific insights with integrated visualizations. Our work establishes a framework for systematic agent failure analysis, addressing the critical need for interpretable AI systems in software development workflows",
+    "authors": [
+      "Arun Joshi"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05941v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05941v1",
+    "fetched_at": "2026-03-09T08:39:29.868607"
+  },
+  {
+    "id": "2603.05919v1",
+    "title": "Design Experiments to Compare Multi-armed Bandit Algorithms",
+    "abstract": "Online platforms routinely compare multi-armed bandit algorithms, such as UCB and Thompson Sampling, to select the best-performing policy. Unlike standard A/B tests for static treatments, each run of a bandit algorithm over $T$ users produces only one dependent trajectory, because the algorithm's decisions depend on all past interactions. Reliable inference therefore demands many independent restarts of the algorithm, making experimentation costly and delaying deployment decisions. We propose Artificial Replay (AR) as a new experimental design for this problem. AR first runs one policy and records its trajectory. When the second policy is executed, it reuses a recorded reward whenever it selects an action the first policy already took, and queries the real environment only otherwise. We develop a new analytical framework for this design and prove three key properties of the resulting estimator: it is unbiased; it requires only $T + o(T)$ user interactions instead of $2T$ for a run of the treatment and control policies, nearly halving the experimental cost when both policies have sub-linear regret; and its variance grows sub-linearly in $T$, whereas the estimator from a naïve design has a linearly-growing variance. Numerical experiments with UCB, Thompson Sampling, and $ε$-greedy policies confirm these theoretical gains.",
+    "authors": [
+      "Huiling Meng",
+      "Ningyuan Chen",
+      "Xuefeng Gao"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.LG",
+      "math.ST",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05919v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05919v1",
+    "fetched_at": "2026-03-09T08:39:29.868629"
+  },
+  {
+    "id": "2603.05863v1",
+    "title": "ReflexiCoder: Teaching Large Language Models to Self-Reflect on Generated Code and Self-Correct It via Reinforcement Learning",
+    "abstract": "While Large Language Models (LLMs) have revolutionized code generation, standard \"System 1\" approaches, generating solutions in a single forward pass, often hit a performance ceiling when faced with complex algorithmic tasks. Existing iterative refinement strategies attempt to bridge this gap at inference time, yet they predominantly rely on external oracles, execution feedback, or computationally expensive prompt-response cycles. In this work, we propose ReflexiCoder, a novel reinforcement learning (RL) framework that internalizes the structured reasoning trajectory, encompassing initial generation, bug and optimization aware reflection, and self-correction, directly into the model's weights. Unlike prior methods, ReflexiCoder shifts the paradigm from external-dependent refinement to an intrinsic, fully autonomous self-reflection and self-correction capabilities at inference time. We utilize an RL-zero training paradigm with granular reward functions to optimize the entire reflection-correction trajectory, teaching the model how to debug without reliance on ground-truth feedback or execution engines at inference time. Extensive experiments across seven benchmarks demonstrate that our ReflexiCoder-8B establishes a new state-of-the-art (SOTA) among leading open-source models in the 1.5B-14B range, achieving 94.51% (87.20%) on HumanEval (Plus), 81.80% (78.57%) on MBPP (Plus), 35.00% on BigCodeBench, 52.21% on LiveCodeBench, and 37.34% on CodeForces in a single-attempt setting, rivaling or surpassing proprietary models like GPT-5.1. Notably, our framework is significantly more token-efficient than base models, reducing inference-time compute overhead by approximately 40% through disciplined, high-speed reasoning and reflection patterns. Source code is available at https://github.com/juyongjiang/ReflexiCoder.",
+    "authors": [
+      "Juyong Jiang",
+      "Jiasi Shen",
+      "Sunghun Kim",
+      "Kang Min Yoo",
+      "Jeonghoon Kim",
+      "Sungju Kim"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CL",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05863v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05863v1",
+    "fetched_at": "2026-03-09T08:39:29.868655"
+  },
+  {
+    "id": "2603.05860v1",
+    "title": "Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery",
+    "abstract": "Clinical image interpretation is inherently multi-step and tool-centric: clinicians iteratively combine visual evidence with patient context, quantify findings, and refine their decisions through a sequence of specialized procedures. While LLM-based agents promise to orchestrate such heterogeneous medical tools, existing systems treat tool sets and invocation strategies as static after deployment. This design is brittle under real-world domain shifts, across tasks, and evolving diagnostic requirements, where predefined tool chains frequently degrade and demand costly manual re-design. We propose MACRO, a self-evolving, experience-augmented medical agent that shifts from static tool composition to experience-driven tool discovery. From verified execution trajectories, the agent autonomously identifies recurring effective multi-step tool sequences, synthesizes them into reusable composite tools, and registers these as new high-level primitives that continuously expand its behavioral repertoire. A lightweight image-feature memory grounds tool selection in a visual-clinical context, while a GRPO-like training loop reinforces reliable invocation of discovered composites, enabling closed-loop self-improvement with minimal supervision. Extensive experiments across diverse medical imaging datasets and tasks demonstrate that autonomous composite tool discovery consistently improves multi-step orchestration accuracy and cross-domain generalization over strong baselines and recent state-of-the-art agentic methods, bridging the gap between brittle static tool use and adaptive, context-aware clinical AI assistance. Code will be available upon acceptance.",
+    "authors": [
+      "Lin Fan",
+      "Pengyu Dai",
+      "Zhipeng Deng",
+      "Haolin Wang",
+      "Xun Gong",
+      "Yefeng Zheng",
+      "Yafei Ou"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05860v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05860v1",
+    "fetched_at": "2026-03-09T08:39:29.868683"
+  },
+  {
+    "id": "2603.05786v1",
+    "title": "Proof-of-Guardrail in AI Agents and What (Not) to Trust from It",
+    "abstract": "As AI agents become widely deployed as online services, users often rely on an agent developer's claim about how safety is enforced, which introduces a threat where safety measures are falsely advertised. To address the threat, we propose proof-of-guardrail, a system that enables developers to provide cryptographic proof that a response is generated after a specific open-source guardrail. To generate proof, the developer runs the agent and guardrail inside a Trusted Execution Environment (TEE), which produces a TEE-signed attestation of guardrail code execution verifiable by any user offline. We implement proof-of-guardrail for OpenClaw agents and evaluate latency overhead and deployment cost. Proof-of-guardrail ensures integrity of guardrail execution while keeping the developer's agent private, but we also highlight a risk of deception about safety, for example, when malicious developers actively jailbreak the guardrail. Code and demo video: https://github.com/SaharaLabsAI/Verifiable-ClawGuard",
+    "authors": [
+      "Xisen Jin",
+      "Michael Duan",
+      "Qin Lin",
+      "Aaron Chan",
+      "Zhenglun Chen",
+      "Junyi Du",
+      "Xiang Ren"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05786v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05786v1",
+    "fetched_at": "2026-03-09T08:39:29.868711"
+  },
+  {
+    "id": "2603.05773v1",
+    "title": "Knowing without Acting: The Disentangled Geometry of Safety Mechanisms in Large Language Models",
+    "abstract": "Safety alignment is often conceptualized as a monolithic process wherein harmfulness detection automatically triggers refusal. However, the persistence of jailbreak attacks suggests a fundamental mechanistic decoupling. We propose the \\textbf{\\underline{D}}isentangled \\textbf{\\underline{S}}afety \\textbf{\\underline{H}}ypothesis \\textbf{(DSH)}, positing that safety computation operates on two distinct subspaces: a \\textit{Recognition Axis} ($\\mathbf{v}_H$, ``Knowing'') and an \\textit{Execution Axis} ($\\mathbf{v}_R$, ``Acting''). Our geometric analysis reveals a universal ``Reflex-to-Dissociation'' evolution, where these signals transition from antagonistic entanglement in early layers to structural independence in deep layers. To validate this, we introduce \\textit{Double-Difference Extraction} and \\textit{Adaptive Causal Steering}. Using our curated \\textsc{AmbiguityBench}, we demonstrate a causal double dissociation, effectively creating a state of ``Knowing without Acting.'' Crucially, we leverage this disentanglement to propose the \\textbf{Refusal Erasure Attack (REA)}, which achieves State-of-the-Art attack success rates by surgically lobotomizing the refusal mechanism. Furthermore, we uncover a critical architectural divergence, contrasting the \\textit{Explicit Semantic Control} of Llama3.1 with the \\textit{Latent Distributed Control} of Qwen2.5. The code and dataset are available at https://anonymous.4open.science/r/DSH.",
+    "authors": [
+      "Jinman Wu",
+      "Yi Xie",
+      "Shen Lin",
+      "Shiqian Zhao",
+      "Xiaofeng Chen"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05773v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05773v1",
+    "fetched_at": "2026-03-09T08:39:29.868735"
+  },
+  {
+    "id": "2603.05744v1",
+    "title": "CodeScout: Contextual Problem Statement Enhancement for Software Agents",
+    "abstract": "Current AI-powered code assistance tools often struggle with poorly-defined problem statements that lack sufficient task context and requirements specification. Recent analysis of software engineering agents reveals that failures on such underspecified requests are highly correlated with longer trajectories involving either over-exploration or repeated attempts at applying the same fix without proper evolution or testing, leading to suboptimal outcomes across software development tasks. We introduce CodeScout, a contextual query refinement approach that systematically converts underspecified user requests into comprehensive, actionable problem statements through lightweight pre-exploration of the target codebase. Our key innovation is demonstrating that structured analysis before task execution can supplement existing agentic capabilities without requiring any modifications to their underlying scaffolds. CodeScout performs targeted context scoping, conducts multi-perspective analysis examining potential fixes and exploration opportunities, then synthesizes these insights into enhanced problem statements with reproduction steps, expected behaviors, and targeted exploration hints. This pre-exploration directly addresses the identified failure patterns by reducing non-converging agent trajectories while clarifying user intent in natural language space. We evaluate CodeScout using state-of-the-art agentic scaffolds and language models on SWEBench-Verified, demonstrating a 20\\% improvement in resolution rates with up to 27 additional issues resolved compared to the default baseline method. Our results suggest that systematic query refinement through contextual analysis represents a promising direction for enhancing AI code assistance capabilities.",
+    "authors": [
+      "Manan Suri",
+      "Xiangci Li",
+      "Mehdi Shojaie",
+      "Songyang Han",
+      "Chao-Chun Hsu",
+      "Shweta Garg",
+      "Aniket Anand Deshmukh",
+      "Varun Kumar"
+    ],
+    "published": "2026-03-05",
+    "categories": [
+      "cs.CL",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05744v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05744v1",
+    "fetched_at": "2026-03-09T08:39:29.868764"
+  },
+  {
+    "id": "2603.05622v1",
+    "title": "Adversarial Batch Representation Augmentation for Batch Correction in High-Content Cellular Screening",
+    "abstract": "High-Content Screening routinely generates massive volumes of cell painting images for phenotypic profiling. However, technical variations across experimental executions inevitably induce biological batch (bio-batch) effects. These cause covariate shifts and degrade the generalization of deep learning models on unseen data. Existing batch correction methods typically rely on additional prior knowledge (e.g., treatment or cell culture information) or struggle to generalize to unseen bio-batches. In this work, we frame bio-batch mitigation as a Domain Generalization (DG) problem and propose Adversarial Batch Representation Augmentation (ABRA). ABRA explicitly models batch-wise statistical fluctuations by parameterizing feature statistics as structured uncertainties. Through a min-max optimization framework, it actively synthesizes worst-case bio-batch perturbations in the representation space, guided by a strict angular geometric margin to preserve fine-grained class discriminability. To prevent representation collapse during this adversarial exploration, we introduce a synergistic distribution alignment objective. Extensive evaluations on the large-scale RxRx1 and RxRx1-WILDS benchmarks demonstrate that ABRA establishes a new state-of-the-art for siRNA perturbation classification.",
+    "authors": [
+      "Lei Tong",
+      "Xujing Yao",
+      "Adam Corrigan",
+      "Long Chen",
+      "Navin Rathna Kumar",
+      "Kerry Hallbrook",
+      "Jonathan Orme",
+      "Yinhai Wang",
+      "Huiyu Zhou"
+    ],
+    "published": "2026-03-05",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.05622v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.05622v1",
+    "fetched_at": "2026-03-09T08:39:29.868796"
+  }
+]
