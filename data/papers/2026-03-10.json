@@ -1,0 +1,781 @@
+[
+  {
+    "id": "2603.08553v1",
+    "title": "Generative Adversarial Regression (GAR): Learning Conditional Risk Scenarios",
+    "abstract": "We propose Generative Adversarial Regression (GAR), a framework for learning conditional risk scenarios through generators aligned with downstream risk objectives. GAR builds on a regression characterization of conditional risk for elicitable functionals, including quantiles, expectiles, and jointly elicitable pairs. We extend this principle from point prediction to generative modeling by training generators whose policy-induced risk matches that of real data under the same context. To ensure robustness across all policies, GAR adopts a minimax formulation in which an adversarial policy identifies worst-case discrepancies in risk evaluation while the generator adapts to eliminate them. This structure preserves alignment with the risk functional across a broad class of policies rather than a fixed, pre-specified set. We illustrate GAR through a tail-risk instantiation based on jointly elicitable $(\\mathrm{VaR}, \\mathrm{ES})$ objectives. Experiments on S\\&P 500 data show that GAR produces scenarios that better preserve downstream risk than unconditional, econometric, and direct predictive baselines while remaining stable under adversarially selected policies.",
+    "authors": [
+      "Saeed Asadi",
+      "Jonathan Yu-Meng Li"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "math.OC",
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08553v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08553v1",
+    "fetched_at": "2026-03-10T08:35:41.307456"
+  },
+  {
+    "id": "2603.08552v1",
+    "title": "Nonconcave Portfolio Choice under Smooth Ambiguity",
+    "abstract": "We study continuous-time portfolio choice with nonlinear payoffs under smooth ambiguity and Bayesian learning. We develop a general framework for dynamic, non-concave asset allocation that accommodates nonlinear payoffs, broad utility classes, and flexible ambiguity attitudes. Dynamic consistency is obtained by a robust representation that recasts the ambiguity-averse problem as ambiguity-neutral with distorted priors. This structure delivers explicit trading rules by combining nonlinear filtering with the martingale approach and nests standard concave and linear-payoff benchmarks. As a leading application, delegated management with convex incentives illustrates that ambiguity aversion shifts beliefs toward adverse states, limits the range of states that would otherwise trigger more aggressive risk taking, and reduces volatility through lower risky exposure.",
+    "authors": [
+      "Emanuele Borgonovo",
+      "An Chen",
+      "Massimo Marinacci",
+      "Shihao Zhu"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08552v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08552v1",
+    "fetched_at": "2026-03-10T08:35:41.307497"
+  },
+  {
+    "id": "2603.07881v1",
+    "title": "A Distributed Method for Cooperative Transaction Cost Mitigation",
+    "abstract": "Funds at large portfolio management firms may consist of many portfolio managers (PMs), each managing a portion of the fund and optimizing a distinct objective. Although the PMs determine their trades independently, the trade lists may be netted and executed by the firm. These net trades may be sufficiently large to impact the market prices, so the PMs may realize prices on their trades that are different from the observed midpoint price of the assets before execution. These transaction costs generally reduce the returns of a portfolio over time. We propose a simple protocol, based on methods from distributed convex optimization, by which a firm can communicate estimated transaction costs to its PMs, and the PMs can potentially revise their trades to realize reduced transaction costs. This protocol does not require the PMs to disclose their method of determining trades to the firm or to each other, nor does it require the PMs to communicate their trade lists with each other. As the number of adjustment rounds grows, the trades converge to the ones that are optimal for the firm. As a practical matter we observe that even just a few rounds of adjustment lead to substantial savings for the firm and the PMs.",
+    "authors": [
+      "Nikhil Devanathan",
+      "Logan Bell",
+      "Dylan Rueter",
+      "Stephen Boyd"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "math.OC",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07881v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07881v1",
+    "fetched_at": "2026-03-10T08:35:41.307526"
+  },
+  {
+    "id": "2603.07863v1",
+    "title": "Choice of Collateral Currency in Differential Swaps",
+    "abstract": "The role of collateral in derivative pricing has evolved beyond credit risk mitigation, particularly following the global financial crisis, when funding costs and basis spreads became central to valuation practices. This development coincided with the transition from the London Interbank Offered Rate (LIBOR) to risk-free rates (RFRs) and the increasing standardization of collateralised trading. We study the valuation and hedging of a class of differential swaps referencing backward-looking averages of overnight rates, with SOFR swaps appearing as a particular instance. The focus is on the impact of the collateral currency. Extending earlier results Ding et al. [Math. Finance 36 (2026), pp.~180--202], we allow the collateral account to be denominated in a currency different from that of the contractual cash flows and derive explicit pricing and hedging strategies using a futures-based replication approach.   We show that the choice of collateral currency can have a non-trivial effect on both valuation and risk management. In particular, foreign-currency collateral can introduce additional risk exposures even when contractual cash flows are entirely denominated in the domestic currency. Numerical study demonstrates that collateral effects can lead to significant valuation adjustments and therefore need to be properly incorporated in modern multi-currency modelling frameworks.",
+    "authors": [
+      "Yining Ding",
+      "Ruyi Liu",
+      "Marek Rutkowski"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07863v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07863v1",
+    "fetched_at": "2026-03-10T08:35:41.307550"
+  },
+  {
+    "id": "2603.07752v1",
+    "title": "Dynamic slippage control and rejection feedback in spot FX market making",
+    "abstract": "We study an OTC FX market-making problem, built on the Avellaneda-Stoikov tradition, in which a dealer streams size-dependent quotes on a discrete ladder and manages inventory risk over a finite horizon under Poisson arrivals of trade requests. Adverse selection is modelled through latency-driven price moves over a delay window, represented by Gaussian marks whose conditional means can depend on the quoted spread, capturing selective client reaction to stale quotes. The dealer can address latency risk through trade rejection when slippage breaches a tolerance threshold. We treat slippage tolerance as an explicit control jointly optimized with quotes: upon receiving a trade request, the dealer chooses an acceptance/rejection rule, which makes the trade economically akin to an embedded option written on the latency price move. We further introduce rejection feedback through an EMA-based rejection score used as a reputation proxy, so that client intensity is endogenously modulated by past rejections via a multiplicative factor. Using dynamic programming, we derive a Markov control problem with state variables (inventory, rejection-score) and show how rejection decision enters the HJB equation through Hamiltonians that include an expectation over the latency mark and a maximization over both quote and rejection rule parameters. For practical control evaluation, we develop an adiabatic-quadratic approximation: fixing reputation on the inventory-control time scale, expanding Hamiltonians to the second order, and adopting quadratic ansatz in inventory, yielding tractable Riccati-type ODE and closed-form expressions for approximate quotes and slippage thresholds. This approximation provides a fast surrogate for policy design and enables self-consistent calibration of rejection behaviour.",
+    "authors": [
+      "Alexander Barzykin"
+    ],
+    "published": "2026-03-08",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07752v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07752v1",
+    "fetched_at": "2026-03-10T08:35:41.307568"
+  },
+  {
+    "id": "2603.07692v1",
+    "title": "Understanding the Long-Only Minimum Variance Portfolio",
+    "abstract": "For a covariance matrix coming from a factor model of returns, we investigate the relationship between the long-only global minimum variance portfolio and the asset exposures to the factors. In the case of a 1-factor model, we provide a rigorous and explicit description of the long-only solution in terms of the parameters of the covariance matrix. For $q>1$ factors, we provide a description of the long-only portfolio in geometric terms. The results are illustrated with empirical daily returns of US stocks.",
+    "authors": [
+      "Nick L. Gunther",
+      "Alec N. Kercheval",
+      "Ololade Sowunmi"
+    ],
+    "published": "2026-03-08",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07692v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07692v1",
+    "fetched_at": "2026-03-10T08:35:41.307591"
+  },
+  {
+    "id": "2603.07616v1",
+    "title": "SABR Type Libor (Forward) Market Model (SABR/LMM) with time-dependent skew and smile",
+    "abstract": "Volatility Skew and Smile of Interest Rate products (Swaption and Caplet) are represented by SABR (Stochastic Alpha Beta Rho model). So, the Interest Rate derivatives model for pricing the callable exotic swaps should be comparable to the SABR volatility surface. In the interest rate derivatives models, Libor Market Model (LMM) (in a post-Libor world, Forward Market Model (FMM)) is one of the most popular models used in the market. So, there are many attempts to develop LMMs that are comparable to the SABR surface. It is called SABR/LMM. There are many references for SABR/LMM, but most of them only treat SABR/LMM, which is not flexible enough to be used practically in global banks. The purpose of this paper is to provide a comprehensive definition of SABR/LMM and a complete description of how it is to be implemented.",
+    "authors": [
+      "Osamu Tsuchiya"
+    ],
+    "published": "2026-03-08",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07616v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07616v1",
+    "fetched_at": "2026-03-10T08:35:41.307609"
+  },
+  {
+    "id": "2603.07600v1",
+    "title": "Differential Machine Learning for 0DTE Options with Stochastic Volatility and Jumps",
+    "abstract": "We present a differential machine learning method for zero-days-to-expiry (0DTE) options under a stochastic-volatility jump-diffusion model that computes prices and Greeks in a single network evaluation. To handle the ultra-short-maturity regime, we represent the price in Black--Scholes form with a maturity-gated variance correction, and combine supervision on prices and Greeks with a PIDE-residual penalty. To make the jump contribution identifiable, we introduce a separate jump-operator network and train it with a three-stage procedure. In Bates-model simulations, the method improves jump-term approximation relative to one-stage baselines, keeps price errors close to one-stage alternatives while improving Greeks accuracy, produces stable one-day delta hedges, and is substantially faster than a Fourier-based pricing benchmark.",
+    "authors": [
+      "Takayuki Sakuma"
+    ],
+    "published": "2026-03-08",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07600v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07600v1",
+    "fetched_at": "2026-03-10T08:35:41.307631"
+  },
+  {
+    "id": "2603.07213v1",
+    "title": "From debt crises to financial crashes (and back): a stock-flow consistent model for stock price bubbles",
+    "abstract": "We develop a stochastic macro-financial model in continuous time by integrating two specifications of the Keen economic framework with a financial market driven by a jump-diffusion process. The economic block of the model combines monetary debt-deflation mechanisms with Ponzi-type financial destabilization and is influenced by the financial market through a stochastic interest rate that depends on asset price returns. The financial market block of the model consists of an asset with jump--diffusion price process with endogenous, state-dependent jump intensities driven by speculative credit flows. The model formalizes a feedback loop linking credit expansion, crash risk, perceived return dynamics, and bank lending spreads. Under suitable parameter restrictions, we establish global existence and non-explosion of the coupled system. Numerical experiments illustrate how variations in credit sensitivity and jump parameters generate regimes ranging from stable growth to recurrent boom--bust cycles. The framework provides a tractable setting for analyzing endogenous financial fragility within a mathematically well-posed macro--financial system.",
+    "authors": [
+      "Matheus R. Grasselli",
+      "Adrien Nguyen-Huu"
+    ],
+    "published": "2026-03-07",
+    "categories": [
+      "q-fin.GN",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07213v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07213v1",
+    "fetched_at": "2026-03-10T08:35:41.307651"
+  },
+  {
+    "id": "2603.06875v1",
+    "title": "Stochastic Attention via Langevin Dynamics on the Modern Hopfield Energy",
+    "abstract": "Attention heads retrieve: given a query, they return a softmax-weighted average of stored values. We show that this computation is one step of gradient descent on a classical energy function, and that Langevin sampling from the corresponding distribution yields \\emph{stochastic attention}: a training-free sampler controlled by a single temperature. Lowering the temperature gives exact retrieval; raising it gives open-ended generation. Because the energy gradient equals the attention map, no score network, training loop, or learned model is required. We validate on four domains (64 to 4,096 dimensions). At generation temperature, stochastic attention is 2.6 times more novel and 2.0 times more diverse than the best learned baseline (a variational autoencoder trained on the same patterns), while matching a Metropolis-corrected gold standard. A simple signal-to-noise rule selects the operating temperature for any dimension. The approach requires no architectural changes and extends naturally to retrieval-augmented generation and in-context learning.",
+    "authors": [
+      "Abdulrahman Alswaidan",
+      "Jeffrey D. Varner"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06875v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06875v1",
+    "fetched_at": "2026-03-10T08:35:41.307670"
+  },
+  {
+    "id": "2603.06733v1",
+    "title": "Calibrated Credit Intelligence: Shift-Robust and Fair Risk Scoring with Bayesian Uncertainty and Gradient Boosting",
+    "abstract": "Credit risk scoring must support high-stakes lending decisions where data distributions change over time, probability estimates must be reliable, and group-level fairness is required. While modern machine learning models improve default prediction accuracy, they often produce poorly calibrated scores under distribution shift and may create unfair outcomes when trained without explicit constraints. This paper proposes Calibrated Credit Intelligence (CCI), a deployment-oriented framework that combines (i) a Bayesian neural risk scorer to capture epistemic uncertainty and reduce overconfident errors, (ii) a fairnessconstrained gradient boosting model to control group disparities while preserving strong tabular performance, and (iii) a shiftaware fusion strategy followed by post-hoc probability calibration to stabilize decision thresholds in later time periods. We evaluate CCI on the Home Credit Credit Risk Model Stability benchmark using a time-consistent split to reflect real-world drift. Compared with strong baselines (LightGBM, XGBoost, CatBoost, TabNet, and a standalone Bayesian neural model), CCI achieves the best overall trade-off between discrimination, calibration, stability, and fairness. In particular, CCI reaches an AUC-ROC of 0.912 and an AUC-PR of 0.438, improves operational performance with Recall@1%FPR = 0.509, and reduces calibration error (Brier score 0.087, ECE 0.015). Under temporal shift, CCI shows a smaller AUC-PR drop from early to late periods (0.017), and it lowers group disparities (demographic parity gap 0.046, equal opportunity gap 0.037) compared to unconstrained boosting. These results indicate that CCI produces risk scores that are accurate, reliable, and more equitable under realistic deployment conditions.",
+    "authors": [
+      "Srikumar Nayak"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "q-fin.RM",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06733v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06733v1",
+    "fetched_at": "2026-03-10T08:35:41.307750"
+  },
+  {
+    "id": "2603.08455v1",
+    "title": "The Boiling Frog Threshold: Criticality and Blindness in World Model-Based Anomaly Detection Under Gradual Drift",
+    "abstract": "When an RL agent's observations are gradually corrupted, at what drift rate does it \"wake up\" -- and what determines this boundary? We study world model-based self-monitoring under continuous observation drift across four MuJoCo environments, three detector families (z-score, variance, percentile), and three model capacities. We find that (1) a sharp detection threshold $\\varepsilon^*$ exists universally: below it, drift is absorbed as normal variation; above it, detection occurs rapidly. The threshold's existence and sigmoid shape are invariant across all detector families and model capacities, though its position depends on the interaction between detector sensitivity, noise floor structure, and environment dynamics. (2) Sinusoidal drift is completely undetectable by all detector families -- including variance and percentile detectors with no temporal smoothing -- establishing this as a world model property rather than a detector artifact. (3) Within each environment, $\\varepsilon^*$ follows a power law in detector parameters ($R^2 = 0.89$-$0.97$), but cross-environment prediction fails ($R^2 = 0.45$), revealing that the missing variable is environment-specific dynamics structure $\\partial \\mathrm{PE}/\\partial\\varepsilon$. (4) In fragile environments, agents collapse before any detector can fire (\"collapse before awareness\"), creating a fundamentally unmonitorable failure mode. Our results reframe $\\varepsilon^*$ from an emergent world model property to a three-way interaction between noise floor, detector, and environment dynamics, providing a more defensible and empirically grounded account of self-monitoring boundaries in RL agents.",
+    "authors": [
+      "Zhe Hong"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08455v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08455v1",
+    "fetched_at": "2026-03-10T08:35:54.471249"
+  },
+  {
+    "id": "2603.08265v1",
+    "title": "Airborne Magnetic Anomaly Navigation with Neural-Network-Augmented Online Calibration",
+    "abstract": "Airborne Magnetic Anomaly Navigation (MagNav) provides a jamming-resistant and robust alternative to satellite navigation but requires the real-time compensation of the aircraft platform's large and dynamic magnetic interference. State-of-the-art solutions often rely on extensive offline calibration flights or pre-training, creating a logistical barrier to operational deployment. We present a fully adaptive MagNav architecture featuring a \"cold-start\" capability that identifies and compensates for the aircraft's magnetic signature entirely in-flight. The proposed method utilizes an extended Kalman filter with an augmented state vector that simultaneously estimates the aircraft's kinematic states as well as the coefficients of the physics-based Tolles-Lawson calibration model and the parameters of a Neural Network to model aircraft interferences. The Kalman filter update is mathematically equivalent to an online Natural Gradient descent, integrating superior convergence and data efficiency of state-of-the-art second-order optimization directly into the navigation filter. To enhance operational robustness, the neural network is constrained to a residual learning role, modeling only the nonlinearities uncorrected by the explainable physics-based calibration baseline. Validated on the MagNav Challenge dataset, our framework effectively bounds inertial drift using a magnetometer-only feature set. The results demonstrate navigation accuracy comparable to state-of-the-art models trained offline, without requiring prior calibration flights or dedicated maneuvers.",
+    "authors": [
+      "Antonia Hager",
+      "Sven Nebendahl",
+      "Alexej Klushyn",
+      "Jasper Krauser",
+      "Torleiv H. Bryne",
+      "Tor Arne Johansen"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08265v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08265v1",
+    "fetched_at": "2026-03-10T08:35:54.471287"
+  },
+  {
+    "id": "2603.08137v1",
+    "title": "Mitigating Homophily Disparity in Graph Anomaly Detection: A Scalable and Adaptive Approach",
+    "abstract": "Graph anomaly detection (GAD) aims to identify nodes that deviate from normal patterns in structure or features. While recent GNN-based approaches have advanced this task, they struggle with two major challenges: 1) homophily disparity, where nodes exhibit varying homophily at both class and node levels; and 2) limited scalability, as many methods rely on costly whole-graph operations. To address them, we propose SAGAD, a Scalable and Adaptive framework for GAD. SAGAD precomputes multi-hop embeddings and applies reparameterized Chebyshev filters to extract low- and high-frequency information, enabling efficient training and capturing both homophilic and heterophilic patterns. To mitigate node-level homophily disparity, we introduce an Anomaly Context-Aware Adaptive Fusion, which adaptively fuses low- and high-pass embeddings using fusion coefficients conditioned on Rayleigh Quotient-guided anomalous subgraph structures for each node. To alleviate class-level disparity, we design a Frequency Preference Guidance Loss, which encourages anomalies to preserve more high-frequency information than normal nodes. SAGAD supports mini-batch training, achieves linear time and space complexity, and drastically reduces memory usage on large-scale graphs. Theoretically, SAGAD ensures asymptotic linear separability between normal and abnormal nodes under mild conditions. Extensive experiments on 10 benchmarks confirm SAGAD's superior accuracy and scalability over state-of-the-art methods.",
+    "authors": [
+      "Yunhui Liu",
+      "Qizhuo Xie",
+      "Yinfeng Chen",
+      "Xudong Jin",
+      "Tao Zheng",
+      "Bin Chong",
+      "Tieke He"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08137v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08137v1",
+    "fetched_at": "2026-03-10T08:35:54.471317"
+  },
+  {
+    "id": "2603.08130v1",
+    "title": "Explainable Condition Monitoring via Probabilistic Anomaly Detection Applied to Helicopter Transmissions",
+    "abstract": "We present a novel Explainable methodology for Condition Monitoring, relying on healthy data only. Since faults are rare events, we propose to focus on learning the probability distribution of healthy observations only, and detect Anomalies at runtime. This objective is achieved via the definition of probabilistic measures of deviation from nominality, which allow to detect and anticipate faults. The Bayesian perspective underpinning our approach allows us to perform Uncertainty Quantification to inform decisions. At the same time, we provide descriptive tools to enhance the interpretability of the results, supporting the deployment of the proposed strategy also in safety-critical applications. The methodology is validated experimentally on two use cases: a publicly available benchmark for Predictive Maintenance, and a real-world Helicopter Transmission dataset collected over multiple years. In both applications, the method achieves competitive detection performance with respect to state-of-the-art anomaly detection methods.",
+    "authors": [
+      "Aurelio Raffa Ugolini",
+      "Jessica Leoni",
+      "Valentina Breschi",
+      "Damiano Paniccia",
+      "Francesco Aldo Tucci",
+      "Luigi Capone",
+      "Mara Tanelli"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08130v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08130v1",
+    "fetched_at": "2026-03-10T08:35:54.471346"
+  },
+  {
+    "id": "2603.08048v1",
+    "title": "S2S-FDD: Bridging Industrial Time Series and Natural Language for Explainable Zero-shot Fault Diagnosis",
+    "abstract": "Fault diagnosis is critical for the safe operation of industrial systems. Conventional diagnosis models typically produce abstract outputs such as anomaly scores or fault categories, failing to answer critical operational questions like \"Why\" or \"How to repair\". While large language models (LLMs) offer strong generalization and reasoning abilities, their training on discrete textual corpora creates a semantic gap when processing high-dimensional, temporal industrial signals. To address this challenge, we propose a Signals-to-Semantics fault diagnosis (S2S-FDD) framework that bridges high-dimensional sensor signals with natural language semantics through two key innovations: We first design a Signal-to-Semantic operator to convert abstract time-series signals into natural language summaries, capturing trends, periodicity, and deviations. Based on the descriptions, we design a multi-turn tree-structured diagnosis method to perform fault diagnosis by referencing historical maintenance documents and dynamically querying additional signals. The framework further supports human-in-the-loop feedback for continuous refinement. Experiments on the multiphase flow process show the feasibility and effectiveness of the proposed method for explainable zero-shot fault diagnosis.",
+    "authors": [
+      "Baoxue Li",
+      "Chunhui Zhao"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08048v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08048v1",
+    "fetched_at": "2026-03-10T08:35:54.471365"
+  },
+  {
+    "id": "2603.07888v1",
+    "title": "VLM-SubtleBench: How Far Are VLMs from Human-Level Subtle Comparative Reasoning?",
+    "abstract": "The ability to distinguish subtle differences between visually similar images is essential for diverse domains such as industrial anomaly detection, medical imaging, and aerial surveillance. While comparative reasoning benchmarks for vision-language models (VLMs) have recently emerged, they primarily focus on images with large, salient differences and fail to capture the nuanced reasoning required for real-world applications. In this work, we introduce VLM-SubtleBench, a benchmark designed to evaluate VLMs on subtle comparative reasoning. Our benchmark covers ten difference types - Attribute, State, Emotion, Temporal, Spatial, Existence, Quantity, Quality, Viewpoint, and Action - and curate paired question-image sets reflecting these fine-grained variations. Unlike prior benchmarks restricted to natural image datasets, our benchmark spans diverse domains, including industrial, aerial, and medical imagery. Through extensive evaluation of both proprietary and open-source VLMs, we reveal systematic gaps between model and human performance across difference types and domains, and provide controlled analyses highlighting where VLMs' reasoning sharply deteriorates. Together, our benchmark and findings establish a foundation for advancing VLMs toward human-level comparative reasoning.",
+    "authors": [
+      "Minkyu Kim",
+      "Sangheon Lee",
+      "Dongmin Park"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07888v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07888v1",
+    "fetched_at": "2026-03-10T08:35:54.471403"
+  },
+  {
+    "id": "2603.07864v1",
+    "title": "An Interpretable Generative Framework for Anomaly Detection in High-Dimensional Financial Time Series",
+    "abstract": "Detecting structural instability and anomalies in high-dimensional financial time series is challenging due to complex temporal dependence and evolving cross-sectional structure. We propose ReGEN-TAD, an interpretable generative framework that integrates modern machine learning with econometric diagnostics for anomaly detection. The model combines joint forecasting and reconstruction within a refined convolutional--transformer architecture and aggregates complementary signals capturing predictive inconsistency, reconstruction degradation, latent distortion, and volatility shifts. Robust calibration yields a unified anomaly score without labeled data. Experiments on synthetic and financial panels demonstrate improved robustness to structured deviations while enabling economically coherent factor-level attribution.",
+    "authors": [
+      "Waldyn G Martinez"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07864v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07864v1",
+    "fetched_at": "2026-03-10T08:35:54.471422"
+  },
+  {
+    "id": "2603.07577v1",
+    "title": "Integration of deep generative Anomaly Detection algorithm in high-speed industrial line",
+    "abstract": "Industrial visual inspection in pharmaceutical production requires high accuracy under strict constraints on cycle time, hardware footprint, and operational cost. Manual inline inspection is still common, but it is affected by operator variability and limited throughput. Classical rule-based computer vision pipelines are often rigid and difficult to scale to highly variable production scenarios. To address these limitations, we present a semi-supervised anomaly detection framework based on a generative adversarial architecture with a residual autoencoder and a dense bottleneck, specifically designed for online deployment on a high-speed Blow-Fill-Seal (BFS) line. The model is trained only on nominal samples and detects anomalies through reconstruction residuals, providing both classification and spatial localization via heatmaps. The training set contains 2,815,200 grayscale patches. Experiments on a real industrial test kit show high detection performance while satisfying timing constraints compatible with a 500 ms acquisition slot.",
+    "authors": [
+      "Niccolò Ferrari",
+      "Nicola Zanarini",
+      "Michele Fraccaroli",
+      "Alice Bizzarri",
+      "Evelina Lamma"
+    ],
+    "published": "2026-03-08",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07577v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07577v1",
+    "fetched_at": "2026-03-10T08:35:54.471494"
+  },
+  {
+    "id": "2603.07566v1",
+    "title": "GRD-Net: Generative-Reconstructive-Discriminative Anomaly Detection with Region of Interest Attention Module",
+    "abstract": "Anomaly detection is nowadays increasingly used in industrial applications and processes. One of the main fields of the appliance is the visual inspection for surface anomaly detection, which aims to spot regions that deviate from regularity and consequently identify abnormal products.   Defect localization is a key task, that usually is achieved using a basic comparison between generated image and the original one, implementing some blob-analysis or image-editing algorithms, in the post-processing step, which is very biased towards the source dataset, and they are unable to generalize. Furthermore, in industrial applications, the totality of the image is not always interesting but could be one or some regions of interest (ROIs), where only in those areas there are relevant anomalies to be spotted.   For these reasons, we propose a new architecture composed by two blocks.   The first block is a Generative Adversarial Network (GAN), based on a residual autoencoder (ResAE), to perform reconstruction and denoising processes, while the second block produces image segmentation, spotting defects. This method learns from a dataset composed of good products and generated synthetic defects.   The discriminative network is trained using a ROI for each image contained in the training dataset. The network will learn in which area anomalies are relevant. This approach guarantees the reduction of using pre-processing algorithms, formerly developed with blob-analysis and image-editing procedures.   To test our model we used challenging MVTec anomaly detection datasets and an industrial large dataset of pharmaceutical BFS strips of vials. This set constitutes a more realistic use case of the aforementioned network.",
+    "authors": [
+      "Niccolò Ferrari",
+      "Michele Fraccaroli",
+      "Evelina Lamma"
+    ],
+    "published": "2026-03-08",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07566v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07566v1",
+    "fetched_at": "2026-03-10T08:35:54.471518"
+  },
+  {
+    "id": "2603.07507v1",
+    "title": "Online Continual Learning for Anomaly Detection in IoT under Data Distribution Shifts",
+    "abstract": "In this work, we present OCLADS, a novel communication framework with continual learning (CL) for Internet of Things (IoT) anomaly detection (AD) when operating in non-stationary environments. As the statistical properties of the observed data change with time, the on-device inference model becomes obsolete, which necessitates strategic model updating. OCLADS keeps track of data distribution shifts to timely update the on-device IoT AD model. To do so, OCLADS introduces two mechanisms during the interaction between the resource-constrained IoT device and an edge server (ES): i) an intelligent sample selection mechanism at the device for data transmission, and ii) a distribution-shift detection mechanism at the ES for model updating. Experimental results with TinyML demonstrate that our proposed framework achieves high inference accuracy while realizing a significantly smaller number of model updates compared to the baseline schemes.",
+    "authors": [
+      "Matea Marinova",
+      "Shashi Raj Pandey",
+      "Junya Shiraishi",
+      "Martin Voigt Vejling",
+      "Valentin Rakovic",
+      "Petar Popovski"
+    ],
+    "published": "2026-03-08",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07507v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07507v1",
+    "fetched_at": "2026-03-10T08:35:54.471546"
+  },
+  {
+    "id": "2603.07073v1",
+    "title": "Interpretable Maximum Margin Deep Anomaly Detection",
+    "abstract": "Anomaly detection is a crucial machine-learning task with wide-ranging applications. Deep Support Vector Data Description (Deep SVDD) is a prominent deep one-class method, but it is vulnerable to hypersphere collapse, often relies on heuristic choices for hypersphere parameters, and provides limited interpretability. To address these issues, we propose Interpretable Maximum Margin Deep Anomaly Detection (IMD-AD), which leverages a small set of labeled anomalies and a maximum margin objective to stabilize training and improve discrimination. It is inherently resilient to hypersphere collapse. Furthermore, we prove an equivalence between hypersphere parameters and the network's final-layer weights, which allows the center and radius to be learned end-to-end as part of the model and yields intrinsic interpretability and visualizable outputs. We further develop an efficient training algorithm that jointly optimizes representation, margin, and final-layer parameters. Extensive experiments and ablation studies on image and tabular benchmarks demonstrate that IMD-AD empirically improves detection performance over several state-of-the-art baselines while providing interpretable decision diagnostics.",
+    "authors": [
+      "Zhiji Yang",
+      "Mei Huang",
+      "Xinyu Li",
+      "Xianli Pan",
+      "Qi Wang",
+      "Jianhua Zhao"
+    ],
+    "published": "2026-03-07",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.07073v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.07073v1",
+    "fetched_at": "2026-03-10T08:35:54.471573"
+  },
+  {
+    "id": "2603.06987v1",
+    "title": "Foundational World Models Accurately Detect Bimanual Manipulator Failures",
+    "abstract": "Deploying visuomotor robots at scale is challenging due to the potential for anomalous failures to degrade performance, cause damage, or endanger human life. Bimanual manipulators are no exception; these robots have vast state spaces comprised of high-dimensional images and proprioceptive signals. Explicitly defining failure modes within such state spaces is infeasible. In this work, we overcome these challenges by training a probabilistic, history informed, world model within the compressed latent space of a pretrained vision foundation model (NVIDIA's Cosmos Tokenizer). The model outputs uncertainty estimates alongside its predictions that serve as non-conformity scores within a conformal prediction framework. We use these scores to develop a runtime monitor, correlating periods of high uncertainty with anomalous failures. To test these methods, we use the simulated Push-T environment and the Bimanual Cable Manipulation dataset, the latter of which we introduce in this work. This new dataset features trajectories with multiple synchronized camera views, proprioceptive signals, and annotated failures from a challenging data center maintenance task. We benchmark our methods against baselines from the anomaly detection and out-of-distribution detection literature, and show that our approach considerably outperforms statistical techniques. Furthermore, we show that our approach requires approximately one twentieth of the trainable parameters as the next-best learning-based approach, yet outperforms it by 3.8% in terms of failure detection rate, paving the way toward safely deploying manipulator robots in real-world environments where reliability is non-negotiable.",
+    "authors": [
+      "Isaac R. Ward",
+      "Michelle Ho",
+      "Houjun Liu",
+      "Aaron Feldman",
+      "Joseph Vincent",
+      "Liam Kruse",
+      "Sean Cheong",
+      "Duncan Eddy",
+      "Mykel J. Kochenderfer",
+      "Mac Schwager"
+    ],
+    "published": "2026-03-07",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06987v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06987v1",
+    "fetched_at": "2026-03-10T08:35:54.471607"
+  },
+  {
+    "id": "2603.06723v1",
+    "title": "UWPD: A General Paradigm for Invisible Watermark Detection Agnostic to Embedding Algorithms",
+    "abstract": "Invisible watermarks, as an essential technology for image copyright protection, have been widely deployed with the rapid development of social media and AIGC. However, existing invisible watermark detection heavily relies on prior knowledge of specific algorithms, leading to limited detection capabilities for \"unknown watermarks\" in open environments. To this end, we propose a novel task named Universal Watermark Presence Detection (UWPD), which aims to identify whether an image carries a copyright mark without requiring decoding information. We construct the UniFreq-100K dataset, comprising large-scale samples across various invisible watermark embedding algorithms. Furthermore, we propose the Frequency Shield Network (FSNet). This model deploys an Adaptive Spectral Perception Module (ASPM) in the shallow layers, utilizing learnable frequency gating to dynamically amplify high-frequency watermark signals while suppressing low-frequency semantics. In the deep layers, the network introduces Dynamic Multi-Spectral Attention (DMSA) combined with tri-stream extremum pooling to deeply mine watermark energy anomalies, forcing the model to precisely focus on sensitive frequency bands. Extensive experiments demonstrate that FSNet exhibits superior zero-shot detection capabilities on the UWPD task, outperforming existing baseline models. Code and datasets will be released upon acceptance.",
+    "authors": [
+      "Xiang Ao",
+      "Yiling Du",
+      "Zidan Wang",
+      "Mengru Chen"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06723v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.06723v1",
+    "fetched_at": "2026-03-10T08:35:54.471668"
+  },
+  {
+    "id": "2603.08687v1",
+    "title": "Split Federated Learning Architectures for High-Accuracy and Low-Delay Model Training",
+    "abstract": "Can we find a network architecture for ML model training so as to optimize training loss (and thus, accuracy) in Split Federated Learning (SFL)? And can this architecture also reduce training delay and communication overhead? While accuracy is not influenced by how we split the model in ordinary, state-of-the-art SFL, in this work we answer the questions above in the affirmative. Recent Hierarchical SFL (HSFL) architectures adopt a three-tier training structure consisting of clients, (local) aggregators, and a central server. In this architecture, the model is partitioned at two partitioning layers into three sub-models, which are executed across the three tiers. Despite their merits, HSFL architectures overlook the impact of the partitioning layers and client-to-aggregator assignments on accuracy, delay, and overhead. This work explicitly captures the impact of the partitioning layers and client-to-aggregator assignments on accuracy, delay and overhead by formulating a joint optimization problem. We prove that the problem is NP-hard and propose the first accuracy-aware heuristic algorithm that explicitly accounts for model accuracy, while remaining delay-efficient. Simulation results on public datasets show that our approach can improve accuracy by 3%, while reducing delay by 20% and overhead by 50%, compared to state-of-the-art SFL and HSFL schemes.",
+    "authors": [
+      "Yiannis Papageorgiou",
+      "Yannis Thomas",
+      "Ramin Khalili",
+      "Iordanis Koutsopoulos"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08687v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08687v1",
+    "fetched_at": "2026-03-10T08:36:24.243334"
+  },
+  {
+    "id": "2603.08652v1",
+    "title": "CoCo: Code as CoT for Text-to-Image Preview and Rare Concept Generation",
+    "abstract": "Recent advancements in Unified Multimodal Models (UMMs) have significantly advanced text-to-image (T2I) generation, particularly through the integration of Chain-of-Thought (CoT) reasoning. However, existing CoT-based T2I methods largely rely on abstract natural-language planning, which lacks the precision required for complex spatial layouts, structured visual elements, and dense textual content. In this work, we propose CoCo (Code-as-CoT), a code-driven reasoning framework that represents the reasoning process as executable code, enabling explicit and verifiable intermediate planning for image generation. Given a text prompt, CoCo first generates executable code that specifies the structural layout of the scene, which is then executed in a sandboxed environment to render a deterministic draft image. The model subsequently refines this draft through fine-grained image editing to produce the final high-fidelity result. To support this training paradigm, we construct CoCo-10K, a curated dataset containing structured draft-final image pairs designed to teach both structured draft construction and corrective visual refinement. Empirical evaluations on StructT2IBench, OneIG-Bench, and LongText-Bench show that CoCo achieves improvements of +68.83%, +54.8%, and +41.23% over direct generation, while also outperforming other generation methods empowered by CoT. These results demonstrate that executable code is an effective and reliable reasoning paradigm for precise, controllable, and structured text-to-image generation. The code is available at: https://github.com/micky-li-hd/CoCo",
+    "authors": [
+      "Haodong Li",
+      "Chunmei Qing",
+      "Huanyu Zhang",
+      "Dongzhi Jiang",
+      "Yihang Zou",
+      "Hongbo Peng",
+      "Dingming Li",
+      "Yuhong Dai",
+      "ZePeng Lin",
+      "Juanxi Tian",
+      "Yi Zhou",
+      "Siqi Dai",
+      "Jingwei Wu"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08652v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08652v1",
+    "fetched_at": "2026-03-10T08:36:24.243401"
+  },
+  {
+    "id": "2603.08572v1",
+    "title": "MetaWorld-X: Hierarchical World Modeling via VLM-Orchestrated Experts for Humanoid Loco-Manipulation",
+    "abstract": "Learning natural, stable, and compositionally generalizable whole-body control policies for humanoid robots performing simultaneous locomotion and manipulation (loco-manipulation) remains a fundamental challenge in robotics. Existing reinforcement learning approaches typically rely on a single monolithic policy to acquire multiple skills, which often leads to cross-skill gradient interference and motion pattern conflicts in high-degree-of-freedom systems. As a result, generated behaviors frequently exhibit unnatural movements, limited stability, and poor generalization to complex task compositions. To address these limitations, we propose MetaWorld-X, a hierarchical world model framework for humanoid control. Guided by a divide-and-conquer principle, our method decomposes complex control problems into a set of specialized expert policies (Specialized Expert Policies, SEP). Each expert is trained under human motion priors through imitation-constrained reinforcement learning, introducing biomechanically consistent inductive biases that ensure natural and physically plausible motion generation. Building upon this foundation, we further develop an Intelligent Routing Mechanism (IRM) supervised by a Vision-Language Model (VLM), enabling semantic-driven expert composition. The VLM-guided router dynamically integrates expert policies according to high-level task semantics, facilitating compositional generalization and adaptive execution in multi-stage loco-manipulation tasks.",
+    "authors": [
+      "Yutong Shen",
+      "Hangxu Liu",
+      "Penghui Liu",
+      "Jiashuo Luo",
+      "Yongkang Zhang",
+      "Rex Morvley",
+      "Chen Jiang",
+      "Jianwei Zhang",
+      "Lei Zhang"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08572v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08572v1",
+    "fetched_at": "2026-03-10T08:36:24.243436"
+  },
+  {
+    "id": "2603.08475v1",
+    "title": "R2F: Repurposing Ray Frontiers for LLM-free Object Navigation",
+    "abstract": "Zero-shot open-vocabulary object navigation has progressed rapidly with the emergence of large Vision-Language Models (VLMs) and Large Language Models (LLMs), now widely used as high-level decision-makers instead of end-to-end policies. Although effective, such systems often rely on iterative large-model queries at inference time, introducing latency and computational overhead that limit real-time deployment. To address this problem, we repurpose ray frontiers (R2F), a recently proposed frontier-based exploration paradigm, to develop an LLM-free framework for indoor open-vocabulary object navigation. While ray frontiers were originally used to bias exploration using semantic cues carried along rays, we reinterpret frontier regions as explicit, direction-conditioned semantic hypotheses that serve as navigation goals. Language-aligned features accumulated along out-of-range rays are stored sparsely at frontiers, where each region maintains multiple directional embeddings encoding plausible unseen content. In this way, navigation then reduces to embedding-based frontier scoring and goal tracking within a classical mapping and planning pipeline, eliminating iterative large-model reasoning. We further introduce R2F-VLN, a lightweight extension for free-form language instructions using syntactic parsing and relational verification without additional VLM or LLM components. Experiments in Habitat-sim and on a real robotic platform demonstrate competitive state-of-the-art zero-shot performance with real-time execution, achieving up to 6 times faster runtime than VLM-based alternatives.",
+    "authors": [
+      "Francesco Argenziano",
+      "John Mark Alexis Marcelo",
+      "Michele Brienza",
+      "Abdel Hakim Drid",
+      "Emanuele Musumeci",
+      "Daniele Nardi",
+      "Domenico D. Bloisi",
+      "Vincenzo Suriani"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08475v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08475v1",
+    "fetched_at": "2026-03-10T08:36:24.243467"
+  },
+  {
+    "id": "2603.08425v1",
+    "title": "IronEngine: Towards General AI Assistant",
+    "abstract": "This paper presents IronEngine, a general AI assistant platform organized around a unified orchestration core that connects a desktop user interface, REST and WebSocket APIs, Python clients, local and cloud model backends, persistent memory, task scheduling, reusable skills, 24-category tool execution, MCP-compatible extensibility, and hardware-facing integration. IronEngine introduces a three-phase pipeline -- Discussion (Planner--Reviewer collaboration), Model Switch (VRAM-aware transition), and Execution (tool-augmented action loop) -- that separates planning quality from execution capability. The system features a hierarchical memory architecture with multi-level consolidation, a vectorized skill repository backed by ChromaDB, an adaptive model management layer supporting 92 model profiles with VRAM-aware context budgeting, and an intelligent tool routing system with 130+ alias normalization and automatic error correction. We present experimental results on file operation benchmarks achieving 100\\% task completion with a mean total time of 1541 seconds across four heterogeneous tasks, and provide detailed comparisons with representative AI assistant systems including ChatGPT, Claude Desktop, Cursor, Windsurf, and open-source agent frameworks. Without disclosing proprietary prompts or core algorithms, this paper analyzes the platform's architectural decomposition, subsystem design, experimental performance, safety boundaries, and comparative engineering advantages. The resulting study positions IronEngine as a system-oriented foundation for general-purpose personal assistants, automation frameworks, and future human-centered agent platforms.",
+    "authors": [
+      "Xi Mo"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.AI",
+      "cs.HC",
+      "cs.LG",
+      "cs.MA",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08425v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08425v1",
+    "fetched_at": "2026-03-10T08:36:24.243486"
+  },
+  {
+    "id": "2603.08388v1",
+    "title": "A Hierarchical Error-Corrective Graph Framework for Autonomous Agents with LLM-Based Action Generation",
+    "abstract": "We propose a Hierarchical Error-Corrective Graph FrameworkforAutonomousAgentswithLLM-BasedActionGeneration(HECG),whichincorporates three core innovations: (1) Multi-Dimensional Transferable Strategy (MDTS): by integrating task quality metrics (Q), confidence/cost metrics (C), reward metrics (R), and LLM-based semantic reasoning scores (LLM-Score), MDTS achieves multi-dimensional alignment between quantitative performance and semantic context, enabling more precise selection of high-quality candidate strate gies and effectively reducing the risk of negative transfer. (2) Error Matrix Classification (EMC): unlike simple confusion matrices or overall performance metrics, EMC provides structured attribution of task failures by categorizing errors into ten types, such as Strategy Errors (Strategy Whe) and Script Parsing Errors (Script-Parsing-Error), and decomposing them according to severity, typical actions, error descriptions, and recoverability. This allows precise analysis of the root causes of task failures, offering clear guidance for subsequent error correction and strategy optimization rather than relying solely on overall success rates or single performance metrics. (3) Causal-Context Graph Retrieval (CCGR): to enhance agent retrieval capabilities in dynamic task environments, we construct graphs from historical states, actions, and event sequences, where nodes store executed actions, next-step actions, execution states, transferable strategies, and other relevant information, and edges represent causal dependencies such as preconditions for transitions between nodes. CCGR identifies subgraphs most relevant to the current task context, effectively capturing structural relationships beyond vector similarity, allowing agents to fully leverage contextual information, accelerate strategy adaptation, and improve execution reliability in complex, multi-step tasks.",
+    "authors": [
+      "Cong Cao",
+      "Jingyao Zhang",
+      "Kun Tong"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08388v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08388v1",
+    "fetched_at": "2026-03-10T08:36:24.243508"
+  },
+  {
+    "id": "2603.08316v1",
+    "title": "SlowBA: An efficiency backdoor attack towards VLM-based GUI agents",
+    "abstract": "Modern vision-language-model (VLM) based graphical user interface (GUI) agents are expected not only to execute actions accurately but also to respond to user instructions with low latency. While existing research on GUI-agent security mainly focuses on manipulating action correctness, the security risks related to response efficiency remain largely unexplored. In this paper, we introduce SlowBA, a novel backdoor attack that targets the responsiveness of VLM-based GUI agents. The key idea is to manipulate response latency by inducing excessively long reasoning chains under specific trigger patterns. To achieve this, we propose a two-stage reward-level backdoor injection (RBI) strategy that first aligns the long-response format and then learns trigger-aware activation through reinforcement learning. In addition, we design realistic pop-up windows as triggers that naturally appear in GUI environments, improving the stealthiness of the attack. Extensive experiments across multiple datasets and baselines demonstrate that SlowBA can significantly increase response length and latency while largely preserving task accuracy. The attack remains effective even with a small poisoning ratio and under several defense settings. These findings reveal a previously overlooked security vulnerability in GUI agents and highlight the need for defenses that consider both action correctness and response efficiency. Code can be found in https://github.com/tu-tuing/SlowBA.",
+    "authors": [
+      "Junxian Li",
+      "Tu Lan",
+      "Haozhen Tan",
+      "Yan Meng",
+      "Haojin Zhu"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.CR",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08316v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08316v1",
+    "fetched_at": "2026-03-10T08:36:24.243533"
+  },
+  {
+    "id": "2603.08291v1",
+    "title": "Deconstructing Multimodal Mathematical Reasoning: Towards a Unified Perception-Alignment-Reasoning Paradigm",
+    "abstract": "Multimodal Mathematical Reasoning (MMR) has recently attracted increasing attention for its capability to solve mathematical problems that involve both textual and visual modalities. However, current models still face significant challenges in real-world visual math tasks. They often misinterpret diagrams, fail to align mathematical symbols with visual evidence, and produce inconsistent reasoning steps. Moreover, existing evaluations mainly focus on checking final answers rather than verifying the correctness or executability of each intermediate step. To address these limitations, a growing body of recent research addresses these issues by integrating structured perception, explicit alignment, and verifiable reasoning within unified frameworks. To establish a clear roadmap for understanding and comparing different MMR approaches, we systematically study them around four fundamental questions: (1) What to extract from multimodal inputs, (2) How to represent and align textual and visual information, (3) How to perform the reasoning, and (4) How to evaluate the correctness of the overall reasoning process. Finally, we discuss open challenges and offer perspectives on promising directions for future research.",
+    "authors": [
+      "Tianyu Yang",
+      "Sihong Wu",
+      "Yilun Zhao",
+      "Zhenwen Liang",
+      "Lisen Dai",
+      "Chen Zhao",
+      "Minhao Cheng",
+      "Arman Cohan",
+      "Xiangliang Zhang"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08291v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08291v1",
+    "fetched_at": "2026-03-10T08:36:24.243564"
+  },
+  {
+    "id": "2603.08262v1",
+    "title": "FinToolBench: Evaluating LLM Agents for Real-World Financial Tool Use",
+    "abstract": "The integration of Large Language Models (LLMs) into the financial domain is driving a paradigm shift from passive information retrieval to dynamic, agentic interaction. While general-purpose tool learning has witnessed a surge in benchmarks, the financial sector, characterized by high stakes, strict compliance, and rapid data volatility, remains critically underserved. Existing financial evaluations predominantly focus on static textual analysis or document-based QA, ignoring the complex reality of tool execution. Conversely, general tool benchmarks lack the domain-specific rigor required for finance, often relying on toy environments or a negligible number of financial APIs. To bridge this gap, we introduce FinToolBench, the first real-world, runnable benchmark dedicated to evaluating financial tool learning agents. Unlike prior works limited to a handful of mock tools, FinToolBench establishes a realistic ecosystem coupling 760 executable financial tools with 295 rigorous, tool-required queries. We propose a novel evaluation framework that goes beyond binary execution success, assessing agents on finance-critical dimensions: timeliness, intent type, and regulatory domain alignment. Furthermore, we present FATR, a finance-aware tool retrieval and reasoning baseline that enhances stability and compliance. By providing the first testbed for auditable, agentic financial execution, FinToolBench sets a new standard for trustworthy AI in finance. The tool manifest, execution environment, and evaluation code will be open-sourced to facilitate future research.",
+    "authors": [
+      "Jiaxuan Lu",
+      "Kong Wang",
+      "Yemin Wang",
+      "Qingmei Tang",
+      "Hongwei Zeng",
+      "Xiang Chen",
+      "Jiahao Pi",
+      "Shujian Deng",
+      "Lingzhi Chen",
+      "Yi Fu",
+      "Kehua Yang",
+      "Xiao Sun"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08262v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08262v1",
+    "fetched_at": "2026-03-10T08:36:24.243600"
+  },
+  {
+    "id": "2603.08255v1",
+    "title": "FlowTouch: View-Invariant Visuo-Tactile Prediction",
+    "abstract": "Tactile sensation is essential for contact-rich manipulation tasks. It provides direct feedback on object geometry, surface properties, and interaction forces, enhancing perception and enabling fine-grained control. An inherent limitation of tactile sensors is that readings are available only when an object is touched. This precludes their use during planning and the initial execution phase of a task. Predicting tactile information from visual information can bridge this gap. A common approach is to learn a direct mapping from camera images to the output of vision-based tactile sensors. However, the resulting model will depend strongly on the specific setup and on how well the camera can capture the area where an object is touched. In this work, we introduce FlowTouch, a novel model for view-invariant visuo-tactile prediction. Our key idea is to use an object's local 3D mesh to encode rich information for predicting tactile patterns while abstracting away from scene-dependent details. FlowTouch integrates scene reconstruction and Flow Matching-based models for image generation. Our results show that FlowTouch is able to bridge the sim-to-real gap and generalize to new sensor instances. We further show that the resulting tactile images can be used for downstream grasp stability prediction. Our code, datasets and videos are available at https://flowtouch.github.io/",
+    "authors": [
+      "Seongjin Bien",
+      "Carlo Kneissl",
+      "Tobias Jülg",
+      "Frank Fundel",
+      "Thomas Ressler-Antal",
+      "Florian Walter",
+      "Björn Ommer",
+      "Gitta Kutyniok",
+      "Wolfram Burgard"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08255v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08255v1",
+    "fetched_at": "2026-03-10T08:36:24.243632"
+  },
+  {
+    "id": "2603.08195v1",
+    "title": "Supporting Workflow Reproducibility by Linking Bioinformatics Tools across Papers and Executable Code",
+    "abstract": "Motivation: The rapid growth of biological data has intensified the need for transparent, reproducible, and well-documented computational workflows. The ability to clearly connect the steps of a workflow in the code with their description in a paper would improve workflow understanding, support reproducibility, and facilitate reuse. This task requires the linking of Bioinformatics tools in workflow code with their mentions in a published workflow description. Results: We present CoPaLink, an automated approach that integrates three components: Named Entity Recognition (NER) for identifying tool mentions in scientific text, NER for tool mentions in workflow code, and entity linking grounded on Bioinformatics knowledge bases. We propose approaches for all three steps achieving a high individual F1-measure (84 - 89) and a joint accuracy of 66 when evaluated on Nextflow workflows using Bioconda and Bioweb Knowledge bases. CoPaLink leverages corpora of scientific articles and workflow executable code with curated tool annotations to bridge the gap between narrative descriptions and workflow implementations. Availability: The code is available at https://gitlab.liris.cnrs.fr/sharefair/copalink-experiments and https://gitlab.liris.cnrs.fr/sharefair/copalink. The corpora are also available at https://doi.org/10.5281/zenodo.18526700, https://doi.org/10.5281/zenodo.18526760 and https://doi.org/10.5281/zenodo.18543814.",
+    "authors": [
+      "Clémence Sebe",
+      "Olivier Ferret",
+      "Aurélie Névéol",
+      "Mahdi Esmailoghli",
+      "Ulf Leser",
+      "Sarah Cohen-Boulakia"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08195v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08195v1",
+    "fetched_at": "2026-03-10T08:36:24.243658"
+  },
+  {
+    "id": "2603.08148v1",
+    "title": "Gradually Excavating External Knowledge for Implicit Complex Question Answering",
+    "abstract": "Recently, large language models (LLMs) have gained much attention for the emergence of human-comparable capabilities and huge potential. However, for open-domain implicit question-answering problems, LLMs may not be the ultimate solution due to the reasons of: 1) uncovered or out-of-date domain knowledge, 2) one-shot generation and hence restricted comprehensiveness. To this end, this work proposes a gradual knowledge excavation framework for open-domain complex question answering, where LLMs iteratively and actively acquire external information, and then reason based on acquired historical knowledge. Specifically, during each step of the solving process, the model selects an action to execute, such as querying external knowledge or performing a single logical reasoning step, to gradually progress toward a final answer. Our method can effectively leverage plug-and-play external knowledge and dynamically adjust the strategy for solving complex questions. Evaluated on the StrategyQA dataset, our method achieves 78.17% accuracy with less than 6% parameters of its competitors, setting new SOTA for ~10B-scale LLMs.",
+    "authors": [
+      "Chang Liu",
+      "Xiaoguang Li",
+      "Lifeng Shang",
+      "Xin Jiang",
+      "Qun Liu",
+      "Edmund Y. Lam",
+      "Ngai Wong"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08148v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08148v1",
+    "fetched_at": "2026-03-10T08:36:24.243686"
+  },
+  {
+    "id": "2603.08128v1",
+    "title": "TRIAGE: Type-Routed Interventions via Aleatoric-Epistemic Gated Estimation in Robotic Manipulation and Adaptive Perception -- Don't Treat All Uncertainty the Same",
+    "abstract": "Most uncertainty-aware robotic systems collapse prediction uncertainty into a single scalar score and use it to trigger uniform corrective responses. This aggregation obscures whether uncertainty arises from corrupted observations or from mismatch between the learned model and the true system dynamics. As a result, corrective actions may be applied to the wrong component of the closed loop, degrading performance relative to leaving the policy unchanged. We introduce a lightweight post hoc framework that decomposes uncertainty into aleatoric and epistemic components and uses these signals to regulate system responses at inference time. Aleatoric uncertainty is estimated from deviations in the observation distribution using a Mahalanobis density model, while epistemic uncertainty is detected using a noise robust forward dynamics ensemble that isolates model mismatch from measurement corruption. The two signals remain empirically near orthogonal during closed loop execution and enable type specific responses. High aleatoric uncertainty triggers observation recovery, while high epistemic uncertainty moderates control actions. The same signals also regulate adaptive perception by guiding model capacity selection during tracking inference. Experiments demonstrate consistent improvements across both control and perception tasks. In robotic manipulation, the decomposed controller improves task success from 59.4% to 80.4% under compound perturbations and outperforms a combined uncertainty baseline by up to 21.0%. In adaptive tracking inference on MOT17, uncertainty-guided model selection reduces average compute by 58.2% relative to a fixed high capacity detector while preserving detection quality within 0.4%. Code and demo videos are available at https://divake.github.io/uncertainty-decomposition/.",
+    "authors": [
+      "Divake Kumar",
+      "Sina Tayebati",
+      "Devashri Naik",
+      "Patrick Poggi",
+      "Amanda Sofie Rios",
+      "Nilesh Ahuja",
+      "Amit Ranjan Trivedi"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08128v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08128v1",
+    "fetched_at": "2026-03-10T08:36:24.243714"
+  },
+  {
+    "id": "2603.08127v1",
+    "title": "EvoScientist: Towards Multi-Agent Evolving AI Scientists for End-to-End Scientific Discovery",
+    "abstract": "The increasing adoption of Large Language Models (LLMs) has enabled AI scientists to perform complex end-to-end scientific discovery tasks requiring coordination of specialized roles, including idea generation and experimental execution. However, most state-of-the-art AI scientist systems rely on static, hand-designed pipelines and fail to adapt based on accumulated interaction histories. As a result, these systems overlook promising research directions, repeat failed experiments, and pursue infeasible ideas. To address this, we introduce EvoScientist, an evolving multi-agent AI scientist framework that continuously improves research strategies through persistent memory and self-evolution. EvoScientist comprises three specialized agents: a Researcher Agent (RA) for scientific idea generation, an Engineer Agent (EA) for experiment implementation and execution, and an Evolution Manager Agent (EMA) that distills insights from prior interactions into reusable knowledge. EvoScientist contains two persistent memory modules: (i) an ideation memory, which summarizes feasible research directions from top-ranked ideas while recording previously unsuccessful directions; and (ii) an experimentation memory, which captures effective data processing and model training strategies derived from code search trajectories and best-performing implementations. These modules enable the RA and EA to retrieve relevant prior strategies, improving idea quality and code execution success rates over time. Experiments show that EvoScientist outperforms 7 open-source and commercial state-of-the-art systems in scientific idea generation, achieving higher novelty, feasibility, relevance, and clarity via automatic and human evaluation. EvoScientist also substantially improves code execution success rates through multi-agent evolution, demonstrating persistent memory's effectiveness for end-to-end scientific discovery.",
+    "authors": [
+      "Yougang Lyu",
+      "Xi Zhang",
+      "Xinhao Yi",
+      "Yuyue Zhao",
+      "Shuyu Guo",
+      "Wenxiang Hu",
+      "Jan Piotrowski",
+      "Jakub Kaliski",
+      "Jacopo Urbani",
+      "Zaiqiao Meng",
+      "Lun Zhou",
+      "Xiaohui Yan"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08127v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08127v1",
+    "fetched_at": "2026-03-10T08:36:24.243749"
+  },
+  {
+    "id": "2603.08124v1",
+    "title": "SaiVLA-0: Cerebrum--Pons--Cerebellum Tripartite Architecture for Compute-Aware Vision-Language-Action",
+    "abstract": "We revisit Vision-Language-Action through a neuroscience-inspired triad. Biologically, the Cerebrum provides stable high-level multimodal priors and remains frozen; the Pons Adapter integrates these cortical features with real-time proprioceptive inputs and compiles intent into execution-ready tokens; and the Cerebellum (ParaCAT) performs fast, parallel categorical decoding for online control, with hysteresis/EMA/temperature/entropy for stability. A fixed-ratio schedule and two-stage feature caching make the system compute-aware and reproducible. Inspired by active, foveated vision, our wrist ROIs are geometrically tied to the end-effector via calibrated projection, providing a movement-stabilized, high-resolution view that is sensitive to fine-grained pose changes and complements the global context of the main view.   The design is modular: upgrading the Cerebrum only retrains the Pons; changing robots only trains the Cerebellum; cerebellum-only RL can further refine control without touching high-level semantics. As a concept-and-protocol paper with preliminary evidence, we outline a timing protocol under matched conditions (GPU, resolution, batch) to verify anticipated efficiency gains. We also report preliminary LIBERO evidence showing that split feature caching reduces training time (7.5h to 4.5h) and improves average success (86.5% to 92.5%) under official N1.5 head-only training, and that SaiVLA0 reaches 99.0% mean success.",
+    "authors": [
+      "Xiang Shi",
+      "Wenlong Huang",
+      "Menglin Zou",
+      "Xinhai Sun"
+    ],
+    "published": "2026-03-09",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.08124v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.08124v1",
+    "fetched_at": "2026-03-10T08:36:24.243774"
+  }
+]
