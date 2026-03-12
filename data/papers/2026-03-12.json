@@ -1,0 +1,505 @@
+[
+  {
+    "id": "2603.11046v1",
+    "title": "On Utility Maximization under Multivariate Fake Stationary Affine Volterra Models",
+    "abstract": "This paper is concerned with Merton's portfolio optimization problem in a Volterra stochastic environment described by a multivariate fake stationary Volterra--Heston model. Due to the non-Markovianity and non-semimartingality of the underlying processes, the classical stochastic control approach cannot be directly applied in this setting. Instead, the problem is tackled using a stochastic factor solution to a Riccati backward stochastic differential equation (BSDE). Our approach is inspired by the martingale optimality principle combined with a suitable verification argument. The resulting optimal strategies for Merton's problems are derived in semi-closed form depending on the solutions to time-dependent multivariate Riccati-Volterra equations. Numerical results on a two dimensional fake stationary rough Heston model illustrate the impact of stationary rough volatilities on the optimal Merton strategies.",
+    "authors": [
+      "Emmanuel Gnabeyeu"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "math.OC",
+      "math.PR",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.11046v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.11046v1",
+    "fetched_at": "2026-03-12T08:36:56.840208"
+  },
+  {
+    "id": "2603.10857v1",
+    "title": "SPX-VIX Risk Computations Via Perturbed Optimal Transport",
+    "abstract": "We propose a model independent framework for generating SPX and VIX risk scenarios based on a joint optimal transport calibration of their market smiles. Starting from the entropic martingale optimal transport formulation of Guyon, we introduce a perturbation methodology that computes sensitivities of the calibrated coupling using a Fisher information linearization. This allows risk to be generated without performing a full recalibration after market shocks. We further introduce a dimension reduction method based on perturbed optimal transport that produces fast and stable risk estimates while preserving the structural properties of the calibrated model. The approach is combined with Skew Stickiness Ratio(SSR) dynamics to translate SPX shocks into perturbations of forward variance and VIX distributions. Numerical experiments show that the proposed method produces accurate risk estimates relative to full recalibration while being computationally much faster. A backtesting study also demonstrates improved hedging performance compared with stochastic local volatility models.",
+    "authors": [
+      "Charlie Che",
+      "Hanxuan Lin",
+      "Yudong Yang",
+      "Guofan Hu",
+      "Lei Fang"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10857v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10857v1",
+    "fetched_at": "2026-03-12T08:36:56.840250"
+  },
+  {
+    "id": "2603.10807v1",
+    "title": "Risk-Adjusted Harm Scoring for Automated Red Teaming for LLMs in Financial Services",
+    "abstract": "The rapid adoption of large language models (LLMs) in financial services introduces new operational, regulatory, and security risks. Yet most red-teaming benchmarks remain domain-agnostic and fail to capture failure modes specific to regulated BFSI settings, where harmful behavior can be elicited through legally or professionally plausible framing. We propose a risk-aware evaluation framework for LLM security failures in Banking, Financial Services, and Insurance (BFSI), combining a domain-specific taxonomy of financial harms, an automated multi-round red-teaming pipeline, and an ensemble-based judging protocol. We introduce the Risk-Adjusted Harm Score (RAHS), a risk-sensitive metric that goes beyond success rates by quantifying the operational severity of disclosures, accounting for mitigation signals, and leveraging inter-judge agreement. Across diverse models, we find that higher decoding stochasticity and sustained adaptive interaction not only increase jailbreak success, but also drive systematic escalation toward more severe and operationally actionable financial disclosures. These results expose limitations of single-turn, domain-agnostic security evaluation and motivate risk-sensitive assessment under prolonged adversarial pressure for real-world BFSI deployment.",
+    "authors": [
+      "Fabrizio Dimino",
+      "Bhaskarjit Sarmah",
+      "Stefano Pasquali"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "q-fin.CP",
+      "cs.AI",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10807v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10807v1",
+    "fetched_at": "2026-03-12T08:36:56.840277"
+  },
+  {
+    "id": "2603.10690v1",
+    "title": "When David becomes Goliath: Repo dealer-driven bond mispricing",
+    "abstract": "This paper studies the impact of funding market frictions on bond prices and market-wide liquidity. Using proprietary transaction-level data on all gilt-backed repo and reverse-repo trades, we demonstrate how the market power of individual dealers and their linkages generate frictions. Specifically, we show that frictions related to market power account for between 0.5 and 1.3 percentage points of bond yield deviation, while the transmission of heterogeneously persistent shocks between dealers accounts for between 2 and 4 percentage points of yield deviation.",
+    "authors": [
+      "Carlos Canon",
+      "Eddie Gerba",
+      "Jozef Barunik"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10690v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10690v1",
+    "fetched_at": "2026-03-12T08:36:56.840300"
+  },
+  {
+    "id": "2603.10569v1",
+    "title": "Win-score promotion gates in aggregator-routed RFQ markets: A two-tier stochastic control model",
+    "abstract": "We study market making in aggregator-routed RFQ markets where platform routing depends on slowly varying dealer performance scores. We propose a two-tier stochastic control model that separates RFQ-level price competition from a macro routing layer: tier A represents aggregator flow whose opportunity intensity is multiplied by a promotion gate driven by the dealer's win score, while tier B captures background flow that is not gated and does not update the score. RFQs arrive in multiple sizes and the dealer chooses a size-ladder of bid/ask offsets; conditional on winning, trades earn spread minus an adverse selection correction and contribute to inventory risk. The resulting Hamilton-Jacobi-Bellman equation admits a reduced Bergault-Guéant operator form with explicit win/lose branches for the score on tier A. Using the envelope-theorem argument, we express optimal controls through derivatives of the one-dimensional reduced Hamiltonians, yielding an interpretable mapping from optimal win probabilities to optimal offsets. In the long-memory regime, we derive an adiabatic approximation that separates fast inventory dynamics from slow score dynamics. A quadratic inventory ansatz and quadratic Hamiltonian expansion lead to a quasi-stationarity inventory-curvature scaling and a one-dimensional score drift field. For steep (logistic) promotion gates, the score dynamics can exhibit fold bifurcations, bistability, and hysteresis, producing an endogenous \"campaign vs. harvest\" pattern in optimal quoting. Numerical experiments confirm this behaviour and highlight the stabilizing role of background flow in maintaining inventory-mixing capacity even when the dealer is weakly promoted.",
+    "authors": [
+      "Alexander Barzykin"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10569v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10569v1",
+    "fetched_at": "2026-03-12T08:36:56.840319"
+  },
+  {
+    "id": "2603.10559v1",
+    "title": "A Bipartite Graph Approach to U.S.-China Cross-Market Return Forecasting",
+    "abstract": "This paper studies cross-market return predictability through a machine learning framework that preserves economic structure. Exploiting the non-overlapping trading hours of the U.S. and Chinese equity markets, we construct a directed bipartite graph that captures time-ordered predictive linkages between stocks across markets. Edges are selected via rolling-window hypothesis testing, and the resulting graph serves as a sparse, economically interpretable feature-selection layer for downstream machine learning models. We apply a range of regularized and ensemble methods to forecast open-to-close returns using lagged foreign-market information. Our results reveal a pronounced directional asymmetry: U.S. previous-close-to-close returns contain substantial predictive information for Chinese intraday returns, whereas the reverse effect is limited. This informational asymmetry translates into economically meaningful performance differences and highlights how structured machine learning frameworks can uncover cross-market dependencies while maintaining interpretability.",
+    "authors": [
+      "Jing Liu",
+      "Maria Grith",
+      "Xiaowen Dong",
+      "Mihai Cucuringu"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10559v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10559v1",
+    "fetched_at": "2026-03-12T08:36:56.840344"
+  },
+  {
+    "id": "2603.10327v1",
+    "title": "Weighted Generalized Risk Measure and Risk Quandrangle: Characterization, Optimization and Application",
+    "abstract": "Various financial market scenarios may cause heterogeneous risk assessments among analysts, which motivates the usage of the Generalized Risk Measure in Fadina et al. (2024, Finance and Stochastics). Effectively synthesizing these diverse assessments avoids over-relying on a single, potentially flawed or conservative forecast and promotes more robust decision-making. Motivated by this, we establish analytical characterizations of the Weighted Generalized Risk Measure (WGRM) under both discrete and continuous settings. Building upon the WGRM, we incorporate the Fundamental Risk Quadrangle (FRQ) in Rockafellar and Uryasev (2013, Surveys in Operations Research and Management Science) into the Weighted Risk Quadrangle (WRQ) and show that the intrinsic relationships among risk, deviation, regret, error, and statistics in FRQ are preserved under weighted aggregation across scenarios. Moreover, we demonstrate that certain complex risk optimization problems under the WGRM can be reformulated as tractable linear programs through the WRQ structure, thus ensuring computational feasibility. Finally, the WGRM and WRQ framework is applied to empirical analyses using constituents of the NASDAQ 100 and S&P 500 indices across recession and expansion regimes, which validates that WGRM-based portfolios exhibit superior risk-adjusted performance and enhanced downside resilience and effectively mitigate losses arising from erroneous single-scenario judgments.",
+    "authors": [
+      "Yang Liu",
+      "Yunran Wei",
+      "Xintao Ye"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10327v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10327v1",
+    "fetched_at": "2026-03-12T08:36:56.840367"
+  },
+  {
+    "id": "2603.10272v1",
+    "title": "An operator-level ARCH Model",
+    "abstract": "AutoRegressive Conditional Heteroscedasticity (ARCH) models are standard for modeling time series exhibiting volatility, with a rich literature in univariate and multivariate settings. In recent years, these models have been extended to function spaces. However, functional ARCH and generalized ARCH (GARCH) processes established in the literature have thus far been restricted to model ``pointwise'' variances. In this paper, we propose a new ARCH framework for data residing in general separable Hilbert spaces that accounts for the full evolution of the conditional covariance operator. We define a general operator-level ARCH model. For a simplified Constant Conditional Correlation version of the model, we establish conditions under which such models admit strictly and weakly stationary solutions, finite moments, and weak serial dependence. Additionally, we derive consistent Yule--Walker-type estimators of the infinite-dimensional model parameters. The practical relevance of the model is illustrated through simulations and a data application to high-frequency cumulative intraday returns.",
+    "authors": [
+      "Alexander Aue",
+      "Sebastian Kühnert",
+      "Gregory Rice",
+      "Jeremy VanderDoes"
+    ],
+    "published": "2026-03-10",
+    "categories": [
+      "stat.ME",
+      "econ.EM",
+      "math.ST",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10272v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10272v1",
+    "fetched_at": "2026-03-12T08:36:56.840392"
+  },
+  {
+    "id": "2603.10202v1",
+    "title": "Hybrid Hidden Markov Model for Modeling Equity Excess Growth Rate Dynamics: A Discrete-State Approach with Jump-Diffusion",
+    "abstract": "Generating synthetic financial time series that preserve statistical properties of real market data is essential for stress testing, risk model validation, and scenario design. Existing approaches, from parametric models to deep generative networks, struggle to simultaneously reproduce heavy-tailed distributions, negligible linear autocorrelation, and persistent volatility clustering. We propose a hybrid hidden Markov framework that discretizes continuous excess growth rates into Laplace quantile-defined market states and augments regime switching with a Poisson-driven jump-duration mechanism to enforce realistic tail-state dwell times. Parameters are estimated by direct transition counting, bypassing the Baum-Welch EM algorithm. Synthetic data quality is evaluated using Kolmogorov-Smirnov and Anderson-Darling pass rates for distributional fidelity, and ACF mean absolute error for temporal structure. Applied to ten years of SPY data across 1,000 simulated paths, the framework achieves KS and AD pass rates exceeding 97% and 91% in-sample and 94% out-of-sample (calendar year 2025), partially reproducing the ARCH effect that standard regime-switching models miss. No single model dominates all quality dimensions: GARCH(1,1) reproduces volatility clustering more accurately but fails distributional tests (5.5% KS pass rate), while the standard HMM without jumps achieves higher distributional fidelity but cannot generate persistent high-volatility regimes. The proposed framework offers the best joint quality profile across distributional, temporal, and tail-coverage metrics. A Single-Index Model extension propagates the SPY factor path to a 424-asset universe, enabling scalable correlated synthetic path generation while preserving cross-sectional correlation structure.",
+    "authors": [
+      "Abdulrahman Alswaidan",
+      "Jeffrey D. Varner"
+    ],
+    "published": "2026-03-10",
+    "categories": [
+      "q-fin.ST",
+      "cs.LG",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10202v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10202v1",
+    "fetched_at": "2026-03-12T08:36:56.840412"
+  },
+  {
+    "id": "2603.10137v1",
+    "title": "Uncertainty-Aware Deep Hedging",
+    "abstract": "Deep hedging trains neural networks to manage derivative risk under market frictions, but produces hedge ratios with no measure of model confidence -- a significant barrier to deployment. We introduce uncertainty quantification to the deep hedging framework by training a deep ensemble of five independent LSTM networks under Heston stochastic volatility with proportional transaction costs. The ensemble's disagreement at each time step provides a per-time-step confidence measure that is strongly predictive of hedging performance: the learned strategy outperforms the Black-Scholes delta on approximately 80% of paths when model agreement is high, but on fewer than 20% when disagreement is elevated. We propose a CVaR-optimised blending strategy that combines the ensemble's hedge with the classical Black-Scholes delta, weighted by the level of model uncertainty. The blend improves on the Black-Scholes delta by 35-80 basis points in CVaR across several Heston calibrations, and on the theoretically optimal Whalley-Wilmott strategy by 100-250 basis points, with all improvements statistically significant under paired bootstrap tests. The analysis reveals that ensemble uncertainty is driven primarily by option moneyness rather than volatility, and that the uncertainty-performance relationship inverts under weak leverage -- findings with practical implications for the deployment of machine learning in hedging systems.",
+    "authors": [
+      "Manan Poddar"
+    ],
+    "published": "2026-03-10",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10137v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10137v1",
+    "fetched_at": "2026-03-12T08:36:56.840434"
+  },
+  {
+    "id": "2603.06875v2",
+    "title": "Stochastic Attention via Langevin Dynamics on the Modern Hopfield Energy",
+    "abstract": "Attention heads retrieve: given a query, they return a softmax-weighted average of stored values. We show that this computation is one step of gradient descent on a classical energy function, and that Langevin sampling from the corresponding distribution yields stochastic attention: a training-free sampler controlled by a single temperature. Lowering the temperature gives exact retrieval; raising it gives open-ended generation. Because the energy gradient equals the attention map, no score network, training loop, or learned model is required. We derive a closed-form entropy inflection condition that identifies the retrieval-to-generation transition temperature for any memory geometry, with a scaling law $β^*\\!\\sim\\!\\sqrt{d}$ for random patterns. We validate on five domains (64 to 4,096 dimensions). On MNIST digit images, stochastic attention is $2.6{\\times}$ more novel and $2.0{\\times}$ more diverse than the best learned baseline (a VAE trained on the same patterns), while matching a Metropolis-corrected gold standard. On protein sequences from the Pfam RRM family, the generation regime achieves $6.9{\\times}$ lower amino acid composition divergence than the VAE (KL $= 0.060$ vs.\\ $0.416$) at matched novelty, demonstrating that the training-free score function preserves family-level fidelity that learned models lose. A denoising diffusion baseline (DDPM) fails across all memory sizes tested ($K = 100$ to $3{,}500$), producing samples indistinguishable from isotropic noise. The approach requires no architectural changes to the underlying attention mechanism.",
+    "authors": [
+      "Abdulrahman Alswaidan",
+      "Jeffrey D. Varner"
+    ],
+    "published": "2026-03-06",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.06875v2",
+    "arxiv_url": "https://arxiv.org/abs/2603.06875v2",
+    "fetched_at": "2026-03-12T08:36:56.840825"
+  },
+  {
+    "id": "2603.10926v1",
+    "title": "ECoLAD: Deployment-Oriented Evaluation for Automotive Time-Series Anomaly Detection",
+    "abstract": "Time-series anomaly detectors are commonly compared on workstation-class hardware under unconstrained execution. In-vehicle monitoring, however, requires predictable latency and stable behavior under limited CPU parallelism. Accuracy-only leaderboards can therefore misrepresent which methods remain feasible under deployment-relevant constraints.   We present ECoLAD (Efficiency Compute Ladder for Anomaly Detection), a deployment-oriented evaluation protocol instantiated as an empirical study on proprietary automotive telemetry (anomaly rate ${\\approx}$0.022) and complementary public benchmarks. ECoLAD applies a monotone compute-reduction ladder across heterogeneous detector families using mechanically determined, integer-only scaling rules and explicit CPU thread caps, while logging every applied configuration change. Throughput-constrained behavior is characterized by sweeping target scoring rates and reporting (i) coverage (the fraction of entities meeting the target) and (ii) the best AUC-PR achievable among measured ladder configurations satisfying the target. On constrained automotive telemetry, lightweight classical detectors sustain both coverage and detection lift above the random baseline across the full throughput sweep. Several deep methods lose feasibility before they lose accuracy.",
+    "authors": [
+      "Kadir-Kaan Özer",
+      "René Ebeling",
+      "Markus Enzweiler"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10926v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10926v1",
+    "fetched_at": "2026-03-12T08:37:10.520606"
+  },
+  {
+    "id": "2603.10676v1",
+    "title": "Spatio-Temporal Attention Graph Neural Network: Explaining Causalities With Attention",
+    "abstract": "Industrial Control Systems (ICS) underpin critical infrastructure and face growing cyber-physical threats due to the convergence of operational technology and networked environments. While machine learning-based anomaly detection approaches in ICS shows strong theoretical performance, deployment is often limited by poor explainability, high false-positive rates, and sensitivity to evolving system behavior, i.e., baseline drifting. We propose a Spatio-Temporal Attention Graph Neural Network (STA-GNN) for unsupervised and explainable anomaly detection in ICS that models both temporal dynamics and relational structure of the system. Sensors, controllers, and network entities are represented as nodes in a dynamically learned graph, enabling the model to capture inter-dependencies across physical processes and communication patterns. Attention mechanisms provide influential relationships, supporting inspection of correlations and potential causal pathways behind detected events. The approach supports multiple data modalities, including SCADA point measurements, network flow features, and payload features, and thus enables unified cyber-physical analysis. To address operational requirements, we incorporate a conformal prediction strategy to control false alarm rates and monitor performance degradation under drifting of the environment. Our findings highlight the possibilities and limitations of model evaluation and common pitfalls in anomaly detection in ICS. Our findings emphasise the importance of explainable, drift-aware evaluation for reliable deployment of learning-based security monitoring systems.",
+    "authors": [
+      "Kosti Koistinen",
+      "Kirsi Hellsten",
+      "Joni Herttuainen",
+      "Kimmo K. Kaski"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.LG",
+      "cs.CE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10676v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10676v1",
+    "fetched_at": "2026-03-12T08:37:10.520638"
+  },
+  {
+    "id": "2603.10457v1",
+    "title": "Beam-Plasma Collective Oscillations in Intense Charged-Particle Beams: Dielectric Response Theory, Langmuir Wave Dispersion, and Unsupervised Detection via Prometheus",
+    "abstract": "We develop a theoretical and computational framework for beam-plasma collective oscillations in intense charged-particle beams at intermediate energies (10-100 MeV). In Part I, we formulate a kinetic field theory governed by the Vlasov-Poisson system, deriving the Lindhard dielectric function and random phase approximation (RPA) polarization tensor for three beam distribution functions. We prove via the dielectric function epsilon(omega,q)=0 the existence of undamped Langmuir wave modes above a critical beam density n_c, obtain explicit beam-plasma dispersion relations, and show that Landau damping vanishes above the particle-hole continuum. The plasma frequency Omega_p^2 = ne^2/(m*epsilon_0) is fixed by the f-sum rule independently of distribution shape; higher dispersion coefficients depend on velocity moments. Space charge effects drive anomalous beam broadening with sqrt(n-n_c) onset and Friedel oscillations at q=2k_F. The beam-plasma transition belongs to the 3D Ising universality class via renormalization group analysis. In Part II, we validate these predictions using Prometheus, a beta-VAE trained on static structure factor data S(q) from particle-in-cell (PIC) beam simulations. Prometheus detects collective plasma oscillation onset in Gaussian and uniform distributions, confirms their absence in the degenerate Fermi gas (n_c -> 0), and resolves the Kohn anomaly at q=2k_F. Dispersion analysis of S(q,omega) from PIC simulations verifies the distribution-independent Omega_p predicted by the f-sum rule. All six validation checks pass. Predicted signatures -- density-tunable plasma resonances at omega_p proportional to sqrt(n), anomalous beam broadening with sqrt(n-n_c) onset, and Friedel oscillations -- are accessible at existing intermediate-energy beam facilities.",
+    "authors": [
+      "Brandon Yee",
+      "Wilson Collins",
+      "Michael Iofin",
+      "Jiayi Fu"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "physics.plasm-ph",
+      "cond-mat.stat-mech",
+      "cs.LG",
+      "physics.acc-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10457v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10457v1",
+    "fetched_at": "2026-03-12T08:37:10.520665"
+  },
+  {
+    "id": "2603.11039v1",
+    "title": "Instruction set for the representation of graphs",
+    "abstract": "We present IsalGraph, a method for representing the structure of any finite, simple graph as a compact string over a nine-character instruction alphabet. The encoding is executed by a small virtual machine comprising a sparse graph, a circular doubly-linked list (CDLL) of graph-node references, and two traversal pointers. Instructions either move a pointer through the CDLL or insert a node or edge into the graph. A key design property is that every string over the alphabet decodes to a valid graph, with no invalid states reachable. A greedy \\emph{GraphToString} algorithm encodes any connected graph into a string in time polynomial in the number of nodes; an exhaustive-backtracking variant produces a canonical string by selecting the lexicographically smallest shortest string across all starting nodes and all valid traversal orders. We evaluate the representation on five real-world graph benchmark datasets (IAM Letter LOW/MED/HIGH, LINUX, and AIDS) and show that the Levenshtein distance between IsalGraph strings correlates strongly with graph edit distance (GED). Together, these properties make IsalGraph strings a compact, isomorphism-invariant, and language-model-compatible sequential encoding of graph structure, with direct applications in graph similarity search, graph generation, and graph-conditioned language modelling",
+    "authors": [
+      "Ezequiel Lopez-Rubio",
+      "Mario Pascual-Gonzalez"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.DS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.11039v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.11039v1",
+    "fetched_at": "2026-03-12T08:37:41.653430"
+  },
+  {
+    "id": "2603.10992v1",
+    "title": "Bayesian Optimization with Gaussian Processes to Accelerate Stationary Point Searches",
+    "abstract": "Accelerating the explorations of stationary points on potential energy surfaces building local surrogates spans decades of effort. Done correctly, surrogates reduce required evaluations by an order of magnitude while preserving the accuracy of the underlying theory. We present a unified Bayesian Optimization view of minimization, single point saddle searches, and double ended saddle searches through a unified six-step surrogate loop, differing only in the inner optimization target and acquisition criterion. The framework uses Gaussian process regression with derivative observations, inverse-distance kernels, and active learning. The Optimal Transport GP extensions of farthest point sampling with Earth mover's distance, MAP regularization via variance barrier and oscillation detection, and adaptive trust radius form concrete extensions of the same basic methodology, improving accuracy and efficiency. We also demonstrate random Fourier features decouple hyperparameter training from predictions enabling favorable scaling for high-dimensional systems. Accompanying pedagogical Rust code demonstrates that all applications use the exact same Bayesian optimization loop, bridging the gap between theoretical formulation and practical execution.",
+    "authors": [
+      "Rohit Goswami"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10992v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10992v1",
+    "fetched_at": "2026-03-12T08:37:41.653463"
+  },
+  {
+    "id": "2603.10858v1",
+    "title": "GRACE: A Unified 2D Multi-Robot Path Planning Simulator & Benchmark for Grid, Roadmap, And Continuous Environments",
+    "abstract": "Advancing Multi-Agent Pathfinding (MAPF) and Multi-Robot Motion Planning (MRMP) requires platforms that enable transparent, reproducible comparisons across modeling choices. Existing tools either scale under simplifying assumptions (grids, homogeneous agents) or offer higher fidelity with less comparable instrumentation. We present GRACE, a unified 2D simulator+benchmark that instantiates the same task at multiple abstraction levels (grid, roadmap, continuous) via explicit, reproducible operators and a common evaluation protocol. Our empirical results on public maps and representative planners enable commensurate comparisons on a shared instance set. Furthermore, we quantify the expected representation-fidelity trade-offs (MRMP solves instances at higher fidelity but lower speed, while grid/roadmap planners scale farther). By consolidating representation, execution, and evaluation, GRACE thereby aims to make cross-representation studies more comparable and provides a means to advance multi-robot planning research and its translation to practice.",
+    "authors": [
+      "Chuanlong Zang",
+      "Anna Mannucci",
+      "Isabelle Barz",
+      "Philipp Schillinger",
+      "Florian Lier",
+      "Wolfgang Hönig"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10858v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10858v1",
+    "fetched_at": "2026-03-12T08:37:41.653521"
+  },
+  {
+    "id": "2603.10784v1",
+    "title": "Interpretable Chinese Metaphor Identification via LLM-Assisted MIPVU Rule Script Generation: A Comparative Protocol Study",
+    "abstract": "Metaphor identification is a foundational task in figurative language processing, yet most computational approaches operate as opaque classifiers offering no insight into why an expression is judged metaphorical. This interpretability gap is especially acute for Chinese, where rich figurative traditions, absent morphological cues, and limited annotated resources compound the challenge. We present an LLM-assisted pipeline that operationalises four metaphor identification protocols--MIP/MIPVU lexical analysis, CMDAG conceptual-mapping annotation, emotion-based detection, and simile-oriented identification--as executable, human-auditable rule scripts. Each protocol is a modular chain of deterministic steps interleaved with controlled LLM calls, producing structured rationales alongside every classification decision. We evaluate on seven Chinese metaphor datasets spanning token-, sentence-, and span-level annotation, establishing the first cross-protocol comparison for Chinese metaphor identification. Within-protocol evaluation shows Protocol A (MIP) achieves an F1 of 0.472 on token-level identification, while cross-protocol analysis reveals striking divergence: pairwise Cohen's kappa between Protocols A and D is merely 0.001, whereas Protocols B and C exhibit near-perfect agreement (kappa = 0.986). An interpretability audit shows all protocols achieve 100% deterministic reproducibility, with rationale correctness from 0.40 to 0.87 and editability from 0.80 to 1.00. Error analysis identifies conceptual-domain mismatch and register sensitivity as dominant failure modes. Our results demonstrate that protocol choice is the single largest source of variation in metaphor identification, exceeding model-level variation, and that rule-script architectures achieve competitive performance while maintaining full transparency.",
+    "authors": [
+      "Weihang Huang",
+      "Mengna Liu"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10784v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10784v1",
+    "fetched_at": "2026-03-12T08:37:41.653543"
+  },
+  {
+    "id": "2603.10753v1",
+    "title": "A PUF-Based Approach for Copy Protection of Intellectual Property in Neural Network Models",
+    "abstract": "More and more companies' Intellectual Property (IP) is being integrated into Neural Network (NN) models. This IP has considerable value for companies and, therefore, requires adequate protection. For example, an attacker might replicate a production machines' hardware and subsequently simply copy associated software and NN models onto the cloned hardware. To make copying NN models onto cloned hardware infeasible, we present an approach to bind NN models - and thus also the IP contained within them - to their underlying hardware. For this purpose, we link an NN model's weights, which are crucial for its operation, to unique and unclonable hardware properties by leveraging Physically Unclonable Functions (PUFs). By doing so, sufficient accuracy can only be achieved using the target hardware to restore the original weights, rendering proper execution of the NN model on cloned hardware impossible. We demonstrate that our approach accomplishes the desired degradation of accuracy on various NN models and outline possible future improvements.",
+    "authors": [
+      "Daniel Dorfmeister",
+      "Flavio Ferrarotti",
+      "Bernhard Fischer",
+      "Martin Schwandtner",
+      "Hannes Sochor"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10753v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10753v1",
+    "fetched_at": "2026-03-12T08:37:41.653572"
+  },
+  {
+    "id": "2603.10651v1",
+    "title": "Interleaving Scheduling and Motion Planning with Incremental Learning of Symbolic Space-Time Motion Abstractions",
+    "abstract": "Task and Motion Planning combines high-level task sequencing (what to do) with low-level motion planning (how to do it) to generate feasible, collision-free execution plans. However, in many real-world domains, such as automated warehouses, tasks are predefined, shifting the challenge to if, when, and how to execute them safely and efficiently under resource, time and motion constraints. In this paper, we formalize this as the Scheduling and Motion Planning problem for multi-object navigation in shared workspaces. We propose a novel solution framework that interleaves off-the-shelf schedulers and motion planners in an incremental learning loop. The scheduler generates candidate plans, while the motion planner checks feasibility and returns symbolic feedback, i.e., spatial conflicts and timing adjustments, to guide the scheduler towards motion-feasible solutions. We validate our proposal on logistics and job-shop scheduling benchmarks augmented with motion tasks, using state-of-the-art schedulers and sampling-based motion planners. Our results show the effectiveness of our framework in generating valid plans under complex temporal and spatial constraints, where synchronized motion is critical.",
+    "authors": [
+      "Elisa Tosello",
+      "Arthur Bit-Monnot",
+      "Davide Lusuardi",
+      "Alessandro Valentini",
+      "Andrea Micheli"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10651v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10651v1",
+    "fetched_at": "2026-03-12T08:37:41.653602"
+  },
+  {
+    "id": "2603.10600v1",
+    "title": "Trajectory-Informed Memory Generation for Self-Improving Agent Systems",
+    "abstract": "LLM-powered agents face a persistent challenge: learning from their execution experiences to improve future performance. While agents can successfully complete many tasks, they often repeat inefficient patterns, fail to recover from similar errors, and miss opportunities to apply successful strategies from past executions. We present a novel framework for automatically extracting actionable learnings from agent execution trajectories and utilizing them to improve future performance through contextual memory retrieval. Our approach comprises four components: (1) a Trajectory Intelligence Extractor that performs semantic analysis of agent reasoning patterns, (2) a Decision Attribution Analyzer that identifies which decisions and reasoning steps led to failures, recoveries, or inefficiencies, (3) a Contextual Learning Generator that produces three types of guidance -- strategy tips from successful patterns, recovery tips from failure handling, and optimization tips from inefficient but successful executions, and (4) an Adaptive Memory Retrieval System that injects relevant learnings into agent prompts based on multi-dimensional similarity. Unlike existing memory systems that store generic conversational facts, our framework understands execution patterns, extracts structured learnings with provenance, and retrieves guidance tailored to specific task contexts. Evaluation on the AppWorld benchmark demonstrates consistent improvements, with up to 14.3 percentage point gains in scenario goal completion on held-out tasks and particularly strong benefits on complex tasks (28.5~pp scenario goal improvement, a 149\\% relative increase).",
+    "authors": [
+      "Gaodan Fang",
+      "Vatche Isahagian",
+      "K. R. Jayaram",
+      "Ritesh Kumar",
+      "Vinod Muthusamy",
+      "Punleuk Oum",
+      "Gegi Thomas"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.AI",
+      "cs.DB",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10600v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10600v1",
+    "fetched_at": "2026-03-12T08:37:41.653637"
+  },
+  {
+    "id": "2603.10577v1",
+    "title": "CUAAudit: Meta-Evaluation of Vision-Language Models as Auditors of Autonomous Computer-Use Agents",
+    "abstract": "Computer-Use Agents (CUAs) are emerging as a new paradigm in human-computer interaction, enabling autonomous execution of tasks in desktop environment by perceiving high-level natural-language instructions. As such agents become increasingly capable and are deployed across diverse desktop environments, evaluating their behavior in a scalable and reliable manner becomes a critical challenge. Existing evaluation pipelines rely on static benchmarks, rule-based success checks, or manual inspection, which are brittle, costly, and poorly aligned with real-world usage. In this work, we study Vision-Language Models (VLMs) as autonomous auditors for assessing CUA task completion directly from observable interactions and conduct a large-scale meta-evaluation of five VLMs that judge task success given a natural-language instruction and the final environment state. Our evaluation spans three widely used CUA benchmarks across macOS, Windows, and Linux environments and analyzes auditor behavior along three complementary dimensions: accuracy, calibration of confidence estimates, and inter-model agreement. We find that while state-of-the-art VLMs achieve strong accuracy and calibration, all auditors exhibit notable performance degradation in more complex or heterogeneous environments, and even high-performing models show significant disagreement in their judgments. These results expose fundamental limitations of current model-based auditing approaches and highlight the need to explicitly account for evaluator reliability, uncertainty, and variance when deploying autonomous CUAs in real-world settings.",
+    "authors": [
+      "Marta Sumyk",
+      "Oleksandr Kosovan"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10577v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10577v1",
+    "fetched_at": "2026-03-12T08:37:41.653659"
+  },
+  {
+    "id": "2603.10505v1",
+    "title": "Safe and Scalable Web Agent Learning via Recreated Websites",
+    "abstract": "Training autonomous web agents is fundamentally limited by the environments they learn from: real-world websites are unsafe to explore, hard to reset, and rarely provide verifiable feedback. We propose VeriEnv, a framework that treats language models as environment creators, automatically cloning real-world websites into fully executable, verifiable synthetic environments. By exposing controlled internal access via a Python SDK, VeriEnv enables agents to self-generate tasks with deterministic, programmatically verifiable rewards, eliminating reliance on heuristic or LLM-based judges. This design decouples agent learning from unsafe real-world interaction while enabling scalable self-evolution through environment expansion. Through experiments on web agent benchmarks, we show that agents trained with VeriEnv generalize to unseen websites, achieve site-specific mastery through self-evolving training, and benefit from scaling the number of training environments. Code and resources will be released at https://github.com/kyle8581/VeriEnv upon acceptance.",
+    "authors": [
+      "Hyungjoo Chae",
+      "Jungsoo Park",
+      "Alan Ritter"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10505v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10505v1",
+    "fetched_at": "2026-03-12T08:37:41.653682"
+  },
+  {
+    "id": "2603.10294v1",
+    "title": "Simulation-in-the-Reasoning (SiR): A Conceptual Framework for Empirically Grounded AI in Autonomous Transportation",
+    "abstract": "Large Language Models (LLMs) have advanced reasoning through techniques like Chain-of-Thought (CoT). However, their reasoning largely re-mains textual and hypothetical, lacking empirical grounding in complex, dynamic domains like transportation. This paper introduces Simulation-in-the-Reasoning (SiR), a novel conceptual framework that embeds domain-specific simulators directly into the LLM reasoning loop. By treating intermediate reasoning steps as executable simulation experiments, SiR transforms LLM reasoning from narrative plausibility into a falsifiable, hypothesis-simulate-analyze workflow. We discuss applications, where LLM can formulate Intelligent Transport System (ITS) strategy hypotheses, invoke a traffic simulator via the Model Context Protocol (MCP), evaluate results under different demand patterns, and refine strategies through verification and aggregation. While implementing the framework is part of our ongoing work, this paper primarily establishes the conceptual foundation, discusses design considerations like API granularity, and outlines the vision of SiR as a cornerstone for interactive transportation digital twins. We argue that SiR represents a critical step towards trustworthy, empirically-validated AI for autonomous transportation systems.",
+    "authors": [
+      "Wuping Xin"
+    ],
+    "published": "2026-03-11",
+    "categories": [
+      "eess.SY",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10294v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10294v1",
+    "fetched_at": "2026-03-12T08:37:41.653700"
+  },
+  {
+    "id": "2603.10249v1",
+    "title": "DUCTILE: Agentic LLM Orchestration of Engineering Analysis in Product Development Practice",
+    "abstract": "Engineering analysis automation in product development relies on rigid interfaces between tools, data formats and documented processes. When these interfaces change, as they routinely do as the product evolves in the engineering ecosystem, the automation support breaks. This paper presents a DUCTILE (Delegated, User-supervised Coordination of Tool- and document-Integrated LLM-Enabled) agentic orchestration, an approach for developing, executing and evaluating LLM-based agentic automation support of engineering analysis tasks. The approach separates adaptive orchestration, performed by the LLM agent, from deterministic execution, performed by verified engineering tools. The agent interprets documented design practices, inspects input data and adapts the processing path, while the engineer supervises and exercises final judgment. DUCTILE is demonstrated on an industrial structural analysis task at an aerospace manufacturer, where the agent handled input deviations in format, units, naming conventions and methodology that would break traditional scripted pipelines. Evaluation against expert-defined acceptance criteria and deployment with practicing engineers confirm that the approach produces correct, methodologically compliant results across repeated independent runs. The paper discusses practical consequences of adopting agentic automation, including unintended effects on the nature of engineering work and the tension between removing mundane tasks and creating an exhausting supervisory role.",
+    "authors": [
+      "Alejandro Pradas-Gomez",
+      "Arindam Brahma",
+      "Ola Isaksson"
+    ],
+    "published": "2026-03-10",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10249v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10249v1",
+    "fetched_at": "2026-03-12T08:37:41.653721"
+  },
+  {
+    "id": "2603.10178v1",
+    "title": "Video-Based Reward Modeling for Computer-Use Agents",
+    "abstract": "Computer-using agents (CUAs) are becoming increasingly capable; however, it remains difficult to scale evaluation of whether a trajectory truly fulfills a user instruction. In this work, we study reward modeling from execution video: a sequence of keyframes from an agent trajectory that is independent of the agent's internal reasoning or actions. Although video-execution modeling is method-agnostic, it presents key challenges, including highly redundant layouts and subtle, localized cues that determine success. We introduce Execution Video Reward 53k (ExeVR-53k), a dataset of 53k high-quality video--task--reward triplets. We further propose adversarial instruction translation to synthesize negative samples with step-level annotations. To enable learning from long, high-resolution execution videos, we design spatiotemporal token pruning, which removes homogeneous regions and persistent tokens while preserving decisive UI changes. Building on these components, we fine-tune an Execution Video Reward Model (ExeVRM) that takes only a user instruction and a video-execution sequence to predict task success. Our ExeVRM 8B achieves 84.7% accuracy and 87.7% recall on video-execution assessment, outperforming strong proprietary models such as GPT-5.2 and Gemini-3 Pro across Ubuntu, macOS, Windows, and Android, while providing more precise temporal attribution. These results show that video-execution reward modeling can serve as a scalable, model-agnostic evaluator for CUAs.",
+    "authors": [
+      "Linxin Song",
+      "Jieyu Zhang",
+      "Huanxin Sheng",
+      "Taiwei Shi",
+      "Gupta Rahul",
+      "Yang Liu",
+      "Ranjay Krishna",
+      "Jian Kang",
+      "Jieyu Zhao"
+    ],
+    "published": "2026-03-10",
+    "categories": [
+      "cs.CV",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10178v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10178v1",
+    "fetched_at": "2026-03-12T08:37:41.653753"
+  },
+  {
+    "id": "2603.10165v1",
+    "title": "OpenClaw-RL: Train Any Agent Simply by Talking",
+    "abstract": "Every agent interaction generates a next-state signal, namely the user reply, tool output, terminal or GUI state change that follows each action, yet no existing agentic RL system recovers it as a live, online learning source. We present OpenClaw-RL, a framework built on a simple observation: next-state signals are universal, and policy can learn from all of them simultaneously. Personal conversations, terminal executions, GUI interactions, SWE tasks, and tool-call traces are not separate training problems. They are all interactions that can be used to train the same policy in the same loop. Next-state signals encode two forms of information: evaluative signals, which indicate how well the action performed and are extracted as scalar rewards via a PRM judge; and directive signals, which indicate how the action should have been different and are recovered through Hindsight-Guided On-Policy Distillation (OPD). We extract textual hints from the next state, construct an enhanced teacher context, and provide token-level directional advantage supervision that is richer than any scalar reward. Due to the asynchronous design, the model serves live requests, the PRM judges ongoing interactions, and the trainer updates the policy at the same time, with zero coordination overhead between them. Applied to personal agents, OpenClaw-RL enables an agent to improve simply by being used, recovering conversational signals from user re-queries, corrections, and explicit feedback. Applied to general agents, the same infrastructure supports scalable RL across terminal, GUI, SWE, and tool-call settings, where we additionally demonstrate the utility of process rewards. Code: https://github.com/Gen-Verse/OpenClaw-RL",
+    "authors": [
+      "Yinjie Wang",
+      "Xuyang Chen",
+      "Xiaolong Jin",
+      "Mengdi Wang",
+      "Ling Yang"
+    ],
+    "published": "2026-03-10",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.10165v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.10165v1",
+    "fetched_at": "2026-03-12T08:37:41.653777"
+  }
+]
