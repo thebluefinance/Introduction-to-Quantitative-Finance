@@ -1,0 +1,546 @@
+[
+  {
+    "id": "2603.13170v1",
+    "title": "Microstructural Foundation of Rough Log-Normal Volatility Models",
+    "abstract": "We establish a microstructural foundation of the rough Bergomi model. Specifically, we consider a sequence of order driven financial market models where orders to buy or sell an asset arrive according to a Poisson process and have a long lasting impact on volatility. Using a recently established C-tightness result for càdlàg processes we establish the weak convergence of the price-volatility process to a log-normal rough volatility model. Our weak convergence result is accompanied by weak error rates that employ a recently established Clark-Ocone formula for Poisson processes and turn our microstructure model into viable alternative to classical simulation schemes. The weak error rates strongly hinge on Poisson arrival dynamics and are novel to the rough microstructure literature.",
+    "authors": [
+      "Paul P. Hager",
+      "Ulrich Horst",
+      "Thomas Wagenhofer",
+      "Wei Xu"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13170v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13170v1",
+    "fetched_at": "2026-03-16T08:51:18.373018"
+  },
+  {
+    "id": "2603.12767v1",
+    "title": "A property of log-concave and weakly-symmetric distributions for two step approximations of random variables",
+    "abstract": "In this paper we introduce a generalization of classical risk measures in which the risk is represented by a step function taking two values, corresponding to two endogenously determined market regimes. This extends the traditional framework where risk measures map random variables to single real numbers. For the quadratic loss function, we study the optimization problem of determining the optimal regime threshold and corresponding values. In the case of log-concave distributions we give conditions for the uniqueness of the regime changing. We treat the case of one dimension and also of multi-dimensions for elliptic distributions.   We demonstrate the necessity of convexity through counterexamples.",
+    "authors": [
+      "Mihaela-Adriana Nistor",
+      "Ionel Popescu"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "math.PR",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12767v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12767v1",
+    "fetched_at": "2026-03-16T08:51:18.373096"
+  },
+  {
+    "id": "2603.12602v1",
+    "title": "Pricing Derivatives under Self-Exciting Dynamics: A Finite-Difference and Transform Approach",
+    "abstract": "We consider the pricing of derivatives written on accumulated marks, such as weather derivatives or aggregate loss claims, using a self-exciting marked point process. The jump intensity mean-reverts between events and increases at jump times by an amount proportional to the mark. The resulting state process, where the variable $U_t$ accumulates jump magnitudes, is a piecewise deterministic Markov process (PDMP). We derive the discounted pricing equation as a backward partial integro-differential equation (PIDE) in two spatial dimensions. To overcome the dimensionality, we propose an exponential (Laplace/Fourier) transform in the accumulated mark variable, which diagonalizes the translation operator and reduces the pricing problem to a family of one-dimensional PIDEs in the intensity variable along a Bromwich contour. For Gamma-mixture mark laws (under actuarial or Esscher-tilted measures), the nonlocal jump term is efficiently approximated by generalized Gauss--Laguerre quadrature. We solve the reduced PIDEs backward in time using a monotone IMEX finite difference scheme (implicit upwind drift and discounting, explicit jump operator) and recover option prices via numerical inversion. We provide a rigorous, term-by-term global error bound covering time and space discretization, quadrature, interpolation, and boundary effects, supported by numerical experiments and Monte Carlo benchmarks.",
+    "authors": [
+      "Aqib Ahmed",
+      "Heiðar Eyjólfsson"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12602v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12602v1",
+    "fetched_at": "2026-03-16T08:51:18.373122"
+  },
+  {
+    "id": "2603.12422v1",
+    "title": "Mortgage Burnout and Selection Effects in Heterogeneous Cox Hazard Models",
+    "abstract": "We study the aggregate hazard rate of a heterogeneous population whose individual event intensities are modeled as Cox (doubly stochastic) processes. In the deterministic hazard setting, the observed pool hazard is the survival weighted mean of the individual hazards, and its time derivative equals the mean individual hazard drift minus a variance term. This yields a transparent structural explanation of burnout in mortgage pools. We extend this perspective to stochastic intensity models. The observed pool hazard remains a survival-weighted mean, but now evolves as an Ito process whose drift contains the mean drift of the individual hazards and a negative selection term driven by cross-sectional dispersion, together with a diffusion term inherited from the common factor. We formulate the general identity and discuss special cases relevant to mortgage prepayment modeling.",
+    "authors": [
+      "Andrew Lesniewski"
+    ],
+    "published": "2026-03-12",
+    "categories": [
+      "q-fin.MF",
+      "econ.GN",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12422v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12422v1",
+    "fetched_at": "2026-03-16T08:51:18.373143"
+  },
+  {
+    "id": "2603.12375v1",
+    "title": "Feynman-Kac Derivatives Pricing on the Full Forward Curve",
+    "abstract": "This paper introduces a no-arbitrage, Monte Carlo-free approach to pricing path-dependent interest rate derivatives. The Heath-Jarrow-Morton model gives arbitrage-free contingent claims prices but is infinite-dimensional, making traditional numerical methods computationally prohibitive. To make the problem computationally tractable, I cast the stochastic pricing problem as a deterministic partial differential equation (PDE). Finance-Informed Neural Networks (FINNs) solve this PDE directly by minimizing violations of the differential equation and boundary condition, with automatic differentiation efficiently computing the exact derivatives needed to evaluate PDE terms. FINNs achieve pricing accuracy within 0.04 to 0.07 cents per dollar of contract value compared to Monte Carlo benchmarks. Once trained, FINNs price caplets in a few microseconds regardless of dimension, delivering speedups ranging from 300,000 to 4.5 million times faster than Monte Carlo simulation as the state space discretization of the forward curve grows from 10 to 150 nodes. The major Greeks-theta and curve deltas-come for free, computed automatically during PDE evaluation at zero marginal cost, whereas Monte Carlo requires complete re-simulation for each sensitivity. The framework generalizes naturally beyond caplets to other path-dependent derivatives-caps, swaptions, callable bonds-requiring only boundary condition modifications while retaining the same core PDE structure.",
+    "authors": [
+      "Kevin Mott"
+    ],
+    "published": "2026-03-12",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12375v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12375v1",
+    "fetched_at": "2026-03-16T08:51:18.373164"
+  },
+  {
+    "id": "2603.13068v1",
+    "title": "GeoChemAD: Benchmarking Unsupervised Geochemical Anomaly Detection for Mineral Exploration",
+    "abstract": "Geochemical anomaly detection plays a critical role in mineral exploration as deviations from regional geochemical baselines may indicate mineralization. Existing studies suffer from two key limitations: (1) single region scenarios which limit model generalizability; (2) proprietary datasets, which makes result reproduction unattainable. In this work, we introduce \\textbf{GeoChemAD}, an open-source benchmark dataset compiled from government-led geological surveys, covering multiple regions, sampling sources, and target elements. The dataset comprises eight subsets representing diverse spatial scales and sampling conditions. To establish strong baselines, we reproduce and benchmark a range of unsupervised anomaly detection methods, including statistical models, generative and transformer-based approaches. Furthermore, we propose \\textbf{GeoChemFormer}, a transformer-based framework that leverages self-supervised pretraining to learn target-element-aware geochemical representations for spatial samples. Extensive experiments demonstrate that GeoChemFormer consistently achieves superior and robust performance across all eight subsets, outperforming existing unsupervised methods in both anomaly detection accuracy and generalization capability. The proposed dataset and framework provide a foundation for reproducible research and future development in this direction.",
+    "authors": [
+      "Yihao Ding",
+      "Yiran Zhang",
+      "Chris Gonzalez",
+      "Eun-Jung Holden",
+      "Wei Liu"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13068v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13068v1",
+    "fetched_at": "2026-03-16T08:51:32.098755"
+  },
+  {
+    "id": "2603.12976v1",
+    "title": "SCOPE: Semantic Coreset with Orthogonal Projection Embeddings for Federated learning",
+    "abstract": "Scientific discovery increasingly requires learning on federated datasets, fed by streams from high-resolution instruments, that have extreme class imbalance. Current ML approaches either require impractical data aggregation or fail due to class imbalance. Existing coreset selection methods rely on local heuristics, making them unaware of the global data landscape and prone to sub-optimal and non-representative pruning. To overcome these challenges, we introduce SCOPE (Semantic Coreset using Orthogonal Projection Embeddings for Federated learning), a coreset framework for federated data that filters anomalies and adaptively prunes redundant data to mitigate long-tail skew. By analyzing the latent space distribution, we score each data point using a representation score that measures the reliability of core class features, a diversity score that quantifies the novelty of orthogonal residuals, and a boundary proximity score that indicates similarity to competing classes. Unlike prior methods, SCOPE shares only scalar metrics with a federated server to construct a global consensus, ensuring communication efficiency. Guided by the global consensus, SCOPE dynamically filters local noise and discards redundant samples to counteract global feature skews. Extensive experiments demonstrate that SCOPE yields competitive global accuracy and robust convergence, all while achieving exceptional efficiency with a 128x to 512x reduction in uplink bandwidth, a 7.72x wall-clock acceleration and reduced FLOP and VRAM footprints for local coreset selection.",
+    "authors": [
+      "Md Anwar Hossen",
+      "Nathan R. Tallent",
+      "Luanzheng Guo",
+      "Ali Jannesary"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12976v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12976v1",
+    "fetched_at": "2026-03-16T08:51:32.098789"
+  },
+  {
+    "id": "2603.12916v1",
+    "title": "Surprised by Attention: Predictable Query Dynamics for Time Series Anomaly Detection",
+    "abstract": "Multivariate time series anomalies often manifest as shifts in cross-channel dependencies rather than simple amplitude excursions. In autonomous driving, for instance, a steering command might be internally consistent but decouple from the resulting lateral acceleration. Residual-based detectors can miss such anomalies when flexible sequence models still reconstruct signals plausibly despite altered coordination. We introduce AxonAD, an unsupervised detector that treats multi-head attention query evolution as a short horizon predictable process. A gradient-updated reconstruction pathway is coupled with a history-only predictor that forecasts future query vectors from past context. This is trained via a masked predictor-target objective against an exponential moving average (EMA) target encoder. At inference, reconstruction error is combined with a tail-aggregated query mismatch score, which measures cosine deviation between predicted and target queries on recent timesteps. This dual approach provides sensitivity to structural dependency shifts while retaining amplitude-level detection. On proprietary in-vehicle telemetry with interval annotations and on the TSB-AD multi-variate suite (17 datasets, 180 series) with threshold-free and range-aware metrics, AxonAD improves ranking quality and temporal localization over strong baselines. Ablations confirm that query prediction and combined scoring are the primary drivers of the observed gains. Code is available at the URL https://github.com/iis-esslingen/AxonAD.",
+    "authors": [
+      "Kadir-Kaan Özer",
+      "René Ebeling",
+      "Markus Enzweiler"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12916v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12916v1",
+    "fetched_at": "2026-03-16T08:51:32.098811"
+  },
+  {
+    "id": "2603.12847v1",
+    "title": "Hierarchical Reference Sets for Robust Unsupervised Detection of Scattered and Clustered Outliers",
+    "abstract": "Most real-world IoT data analysis tasks, such as clustering and anomaly event detection, are unsupervised and highly susceptible to the presence of outliers. In addition to sporadic scattered outliers caused by factors such as faulty sensor readings, IoT systems often exhibit clustered outliers. These occur when multiple devices or nodes produce similar anomalous measurements, for instance, owing to localized interference, emerging security threats, or regional false alarms, forming micro-clusters. These clustered outliers can be easily mistaken for normal behavior because of their relatively high local density, thereby obscuring the detection of both scattered and contextual anomalies. To address this, we propose a novel outlier detection paradigm that leverages the natural neighboring relationships using graph structures. This facilitates multi-perspective anomaly evaluation by incorporating reference sets at both local and global scales derived from the graph. Our approach enables the effective recognition of scattered outliers without interference from clustered anomalies, whereas the graph structure simultaneously helps reflect and isolate clustered outlier groups. Extensive experiments, including comparative performance analysis, ablation studies, validation on downstream clustering tasks, and evaluation of hyperparameter sensitivity, demonstrate the efficacy of the proposed method. The source code is available at https://github.com/gordonlok/DROD.",
+    "authors": [
+      "Yiqun Zhang",
+      "Zexi Tan",
+      "Xiaopeng Luo",
+      "Yunlin Liu"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12847v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12847v1",
+    "fetched_at": "2026-03-16T08:51:32.098835"
+  },
+  {
+    "id": "2603.12733v1",
+    "title": "On Using Machine Learning to Early Detect Catastrophic Failures in Marine Diesel Engines",
+    "abstract": "Catastrophic failures of marine engines imply severe loss of functionality and destroy or damage the systems irreversibly. Being sudden and often unpredictable events, they pose a severe threat to navigation, crew, and passengers. The abrupt nature makes early detection the only effective countermeasure. However, research has concentrated on modeling the gradual degradation of components, with limited attention to sudden and anomalous phenomena. This work proposes a new method for early detection of catastrophic failures. Based on real data from a failed engine, the approach evaluates the derivatives of the deviation between actual sensor readings and expected values of engine variables. Predictions are obtained by a Random Forest, which is the most suitable Machine Learning algorithm among the tested ones. Traditional methods focus on deviations of monitored signals, whereas the proposed approach employs the derivatives of the deviations to provide earlier indications of abnormal dynamics, and to alert that a rapid and dangerous event is breaking out within the system. The method allows the detection of anomalies before measurements reach critical thresholds and alarms are triggered, which is the common method in industry. Consequently, operators can be warned in advance and shut down the engine, then prevent damage and unexpected power loss. Moreover, they have the time to safely change the ship route and avoid potential obstacles. Simulation results conf irm the effectiveness of the proposed approach in anticipating occurrence of catastrophic failures. Validation on real-world data further reinforces the robustness and practical applicability of the method. It is worth noting that data acquisition to train the predictive algorithm is not a problem, since a Deep Learning-based data augmentation procedure is used.",
+    "authors": [
+      "Francesco Maione",
+      "Paolo Lino",
+      "Giuseppe Giannino",
+      "Guido Maione"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12733v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12733v1",
+    "fetched_at": "2026-03-16T08:51:32.098858"
+  },
+  {
+    "id": "2603.12688v1",
+    "title": "STRAP-ViT: Segregated Tokens with Randomized -- Transformations for Defense against Adversarial Patches in ViTs",
+    "abstract": "Adversarial patches are physically realizable localized noise, which are able to hijack Vision Transformers (ViT) self-attention, pulling focus toward a small, high-contrast region and corrupting the class token to force confident misclassifications. In this paper, we claim that the tokens which correspond to the areas of the image that contain the adversarial noise, have different statistical properties when compared to the tokens which do not overlap with the adversarial perturbations. We use this insight to propose a mechanism, called STRAP-ViT, which uses Jensen-Shannon Divergence as a metric for segregating tokens that behave as anomalies in the Detection Phase, and then apply randomized composite transformations on them during the Mitigation Phase to make the adversarial noise ineffective. The minimum number of tokens to transform is a hyper-parameter for the defense mechanism and is chosen such that at least 50% of the patch is covered by the transformed tokens. STRAP-ViT fits as a non-trainable plug-and-play block within the ViT architectures, for inference purposes only, with a minimal computational cost and does not require any additional training cost/effort. STRAP-ViT has been tested on multiple pre-trained vision transformer architectures (ViT-base-16 and DinoV2) and datasets (ImageNet and CalTech-101), across multiple adversarial attacks (Adversarial Patch, LAVAN, GDPA and RP2), and found to provide excellent robust accuracies lying within a 2-3% range of the clean baselines, and outperform the state-of-the-art.",
+    "authors": [
+      "Nandish Chattopadhyay",
+      "Anadi Goyal",
+      "Chandan Karfa",
+      "Anupam Chattopadhyay"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12688v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12688v1",
+    "fetched_at": "2026-03-16T08:51:32.098881"
+  },
+  {
+    "id": "2603.12449v1",
+    "title": "FloeNet: A mass-conserving global sea ice emulator that generalizes across climates",
+    "abstract": "We introduce FloeNet, a machine-learning emulator trained on the Geophysical Fluid Dynamics Laboratory global sea ice model, SIS2. FloeNet is a mass-conserving model, emulating 6-hour mass and area budget tendencies related to sea ice and snow-on-sea-ice growth, melt, and advection. We train FloeNet using simulated data from a reanalysis-forced ice-ocean simulation and test its ability to generalize to pre-industrial control and 1% CO2 climates. FloeNet outperforms a non-conservative model at reproducing sea ice and snow-on-sea-ice mean state, trends, and inter-annual variability, with volume anomaly correlations above 0.96 in the Antarctic and 0.76 in the Arctic, across all forcings. FloeNet also produces the correct thermodynamic vs dynamic response to forcing, enabling physical interpretability of emulator output. Finally, we show that FloeNet outputs high-fidelity coupling-related variables, including ice-surface skin temperature, ice-to-ocean salt flux, and melting energy fluxes. We hypothesize that FloeNet will improve polar climate processes within existing atmosphere and ocean emulators.",
+    "authors": [
+      "William Gregory",
+      "Mitchell Bushuk",
+      "James Duncan",
+      "Elynn Wu",
+      "Adam Subel",
+      "Spencer K. Clark",
+      "Bill Hurlin",
+      "Oliver Watt-Meyer",
+      "Alistair Adcroft",
+      "Chris Bretherton",
+      "Laure Zanna"
+    ],
+    "published": "2026-03-12",
+    "categories": [
+      "physics.ao-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12449v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12449v1",
+    "fetched_at": "2026-03-16T08:51:32.098916"
+  },
+  {
+    "id": "2603.13228v1",
+    "title": "PhysMoDPO: Physically-Plausible Humanoid Motion with Preference Optimization",
+    "abstract": "Recent progress in text-conditioned human motion generation has been largely driven by diffusion models trained on large-scale human motion data. Building on this progress, recent methods attempt to transfer such models for character animation and real robot control by applying a Whole-Body Controller (WBC) that converts diffusion-generated motions into executable trajectories. While WBC trajectories become compliant with physics, they may expose substantial deviations from original motion. To address this issue, we here propose PhysMoDPO, a Direct Preference Optimization framework. Unlike prior work that relies on hand-crafted physics-aware heuristics such as foot-sliding penalties, we integrate WBC into our training pipeline and optimize diffusion model such that the output of WBC becomes compliant both with physics and original text instructions. To train PhysMoDPO we deploy physics-based and task-specific rewards and use them to assign preference to synthesized trajectories. Our extensive experiments on text-to-motion and spatial control tasks demonstrate consistent improvements of PhysMoDPO in both physical realism and task-related metrics on simulated robots. Moreover, we demonstrate that PhysMoDPO results in significant improvements when applied to zero-shot motion transfer in simulation and for real-world deployment on a G1 humanoid robot.",
+    "authors": [
+      "Yangsong Zhang",
+      "Anujith Muraleedharan",
+      "Rikhat Akizhanov",
+      "Abdul Ahad Butt",
+      "Gül Varol",
+      "Pascal Fua",
+      "Fabio Pizzati",
+      "Ivan Laptev"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CV",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13228v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13228v1",
+    "fetched_at": "2026-03-16T08:52:02.396742"
+  },
+  {
+    "id": "2603.13224v1",
+    "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
+    "abstract": "Vision-to-code tasks require models to reconstruct structured visual inputs, such as charts, tables, and SVGs, into executable or structured representations with high visual fidelity. While recent Large Vision Language Models (LVLMs) achieve strong results via supervised fine-tuning, reinforcement learning remains challenging due to misaligned reward signals. Existing rewards either rely on textual rules or coarse visual embedding similarity, both of which fail to capture fine-grained visual discrepancies and are vulnerable to reward hacking. We propose Visual Equivalence Reward Model (Visual-ERM), a multimodal generative reward model that provides fine-grained, interpretable, and task-agnostic feedback to evaluate vision-to-code quality directly in the rendered visual space. Integrated into RL, Visual-ERM improves Qwen3-VL-8B-Instruct by +8.4 on chart-to-code and yields consistent gains on table and SVG parsing (+2.7, +4.1 on average), and further strengthens test-time scaling via reflection and revision. We also introduce VisualCritic-RewardBench (VC-RewardBench), a benchmark for judging fine-grained image-to-image discrepancies on structured visual data, where Visual-ERM at 8B decisively outperforms Qwen3-VL-235B-Instruct and approaches leading closed-source models. Our results suggest that fine-grained visual reward supervision is both necessary and sufficient for vision-to-code RL, regardless of task specificity.",
+    "authors": [
+      "Ziyu Liu",
+      "Shengyuan Ding",
+      "Xinyu Fang",
+      "Xuanlang Dai",
+      "Penghui Yang",
+      "Jianze Liang",
+      "Jiaqi Wang",
+      "Kai Chen",
+      "Dahua Lin",
+      "Yuhang Zang"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13224v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13224v1",
+    "fetched_at": "2026-03-16T08:52:02.396786"
+  },
+  {
+    "id": "2603.13191v1",
+    "title": "From Experiments to Expertise: Scientific Knowledge Consolidation for AI-Driven Computational Research",
+    "abstract": "While large language models (LLMs) have transformed AI agents into proficient executors of computational materials science, performing a hundred simulations does not make a researcher. What distinguishes research from routine execution is the progressive accumulation of knowledge -- learning which approaches fail, recognizing patterns across systems, and applying understanding to new problems. However, the prevailing paradigm in AI-driven computational science treats each execution in isolation, largely discarding hard-won insights between runs. Here we present QMatSuite, an open-source platform closing this gap. Agents record findings with full provenance, retrieve knowledge before new calculations, and in dedicated reflection sessions correct erroneous findings and synthesize observations into cross-compound patterns. In benchmarks on a six-step quantum-mechanical simulation workflow, accumulated knowledge reduces reasoning overhead by 67% and improves accuracy from 47% to 3% deviation from literature -- and when transferred to an unfamiliar material, achieves 1% deviation with zero pipeline failures.",
+    "authors": [
+      "Haonan Huang"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13191v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13191v1",
+    "fetched_at": "2026-03-16T08:52:02.396805"
+  },
+  {
+    "id": "2603.13131v1",
+    "title": "Steve-Evolving: Open-World Embodied Self-Evolution via Fine-Grained Diagnosis and Dual-Track Knowledge Distillation",
+    "abstract": "Open-world embodied agents must solve long-horizon tasks where the main bottleneck is not single-step planning quality but how interaction experience is organized and evolved. To this end, we present Steve-Evolving, a non-parametric self-evolving framework that tightly couples fine-grained execution diagnosis with dual-track knowledge distillation in a closed loop. The method follows three phases: Experience Anchoring, Experience Distillation, and Knowledge-Driven Closed-Loop Control. In detail, Experience Anchoring solidifies each subgoal attempt into a structured experience tuple with a fixed schema (pre-state, action, diagnosis-result, and post-state) and organizes it in a three-tier experience space with multi-dimensional indices (e.g., condition signatures, spatial hashing, and semantic tags) plus rolling summarization for efficient and auditable recall. To ensure sufficient information density for attribution, the execution layer provides compositional diagnosis signals beyond binary outcomes, including state-difference summaries, enumerated failure causes, continuous indicators, and stagnation/loop detection. Moreover, successful trajectories of Experience Distillation are generalized into reusable skills with explicit preconditions and verification criteria, while failures are distilled into executable guardrails that capture root causes and forbid risky operations at both subgoal and task granularities. Besides, Knowledge-Driven Closed-Loop Control retrieved skills and guardrails are injected into an LLM planner, and diagnosis-triggered local replanning updates the active constraints online, forming a continual evolution process without any model parameter updates. Experiments on the long-horizon suite of Minecraft MCU demonstrate consistent improvements over static-retrieval baselines.",
+    "authors": [
+      "Zhengwei Xie",
+      "Zhisheng Chen",
+      "Ziyan Weng",
+      "Tingyu Wu",
+      "Chenglong Li",
+      "Vireo Zhang",
+      "Kun Wang"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13131v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13131v1",
+    "fetched_at": "2026-03-16T08:52:02.396835"
+  },
+  {
+    "id": "2603.13033v1",
+    "title": "ESPIRE: A Diagnostic Benchmark for Embodied Spatial Reasoning of Vision-Language Models",
+    "abstract": "A recent trend in vision-language models (VLMs) has been to enhance their spatial cognition for embodied domains. Despite progress, existing evaluations have been limited both in paradigm and in coverage, hindering rapid, iterative model development. To address these limitations, we propose ESPIRE, a diagnostic benchmark for embodied spatial reasoning. ESPIRE offers a simulated world that physically grounds VLMs and evaluates them on spatial-reasoning-centric robotic tasks, thus narrowing the gap between evaluation and real-world deployment. To adapt VLMs to robotic tasks, we decompose each task into localization and execution, and frame both as generative problems, in stark contrast to predominant discriminative evaluations (e.g., via visual-question answering) that rely on distractors and discard execution. This decomposition further enables a fine-grained analysis beyond passive spatial reasoning toward reasoning to act. We systematically design ESPIRE both at the instruction level and at the environment level, ensuring broad coverage of spatial reasoning scenarios. We use ESPIRE to diagnose a range of frontier VLMs and provide in-depth analysis of their spatial reasoning behaviors.",
+    "authors": [
+      "Yanpeng Zhao",
+      "Wentao Ding",
+      "Hongtao Li",
+      "Baoxiong Jia",
+      "Zilong Zheng"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13033v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13033v1",
+    "fetched_at": "2026-03-16T08:52:02.396861"
+  },
+  {
+    "id": "2603.13023v1",
+    "title": "daVinci-Env: Open SWE Environment Synthesis at Scale",
+    "abstract": "Training capable software engineering (SWE) agents demands large-scale, executable, and verifiable environments that provide dynamic feedback loops for iterative code editing, test execution, and solution refinement. However, existing open-source datasets remain limited in scale and repository diversity, while industrial solutions are opaque with unreleased infrastructure, creating a prohibitive barrier for most academic research groups. We present OpenSWE, the largest fully transparent framework for SWE agent training in Python, comprising 45,320 executable Docker environments spanning over 12.8k repositories, with all Dockerfiles, evaluation scripts, and infrastructure fully open-sourced for reproducibility. OpenSWE is built through a multi-agent synthesis pipeline deployed across a 64-node distributed cluster, automating repository exploration, Dockerfile construction, evaluation script generation, and iterative test analysis. Beyond scale, we propose a quality-centric filtering pipeline that characterizes the inherent difficulty of each environment, filtering out instances that are either unsolvable or insufficiently challenging and retaining only those that maximize learning efficiency. With $891K spent on environment construction and an additional $576K on trajectory sampling and difficulty-aware curation, the entire project represents a total investment of approximately $1.47 million, yielding about 13,000 curated trajectories from roughly 9,000 quality guaranteed environments. Extensive experiments validate OpenSWE's effectiveness: OpenSWE-32B and OpenSWE-72B achieve 62.4% and 66.0% on SWE-bench Verified, establishing SOTA among Qwen2.5 series. Moreover, SWE-focused training yields substantial out-of-domain improvements, including up to 12 points on mathematical reasoning and 5 points on science benchmarks, without degrading factual recall.",
+    "authors": [
+      "Dayuan Fu",
+      "Shenyu Wu",
+      "Yunze Wu",
+      "Zerui Peng",
+      "Yaxing Huang",
+      "Jie Sun",
+      "Ji Zeng",
+      "Mohan Jiang",
+      "Lin Zhang",
+      "Yukun Li",
+      "Jiarui Hu",
+      "Liming Liu",
+      "Jinlong Hou",
+      "Pengfei Liu"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13023v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13023v1",
+    "fetched_at": "2026-03-16T08:52:02.396902"
+  },
+  {
+    "id": "2603.13019v1",
+    "title": "ARL-Tangram: Unleash the Resource Efficiency in Agentic Reinforcement Learning",
+    "abstract": "Agentic reinforcement learning (RL) has emerged as a transformative workload in cloud clusters, enabling large language models (LLMs) to solve complex problems through interactions with real world. However, unlike traditional RL, agentic RL demands substantial external cloud resources, e.g., CPUs for code execution and GPUs for reward models, that exist outside the primary training cluster. Existing agentic RL framework typically rely on static over-provisioning, i.e., resources are often tied to long-lived trajectories or isolated by tasks, which leads to severe resource inefficiency.   We propose the action-level orchestration, and incorporate it into ARL-Tangram, a unified resource management system that enables fine-grained external resource sharing and elasticity. ARL-Tangram utilizes a unified action-level formulation and an elastic scheduling algorithm to minimize action completion time (ACT) while satisfying heterogeneous resource constraints. Further, heterogeneous resource managers are tailored to efficiently support the action-level execution on resources with heterogeneous characteristics and topologies. Evaluation on real-world agentic RL tasks demonstrates that ARL-Tangram improves average ACT by up to 4.3$\\times$, speeds up the step duration of RL training by up to 1.5$\\times$, and saves the external resources by up to 71.2$\\%$. This system has been deployed to support the training of the MiMo series models.",
+    "authors": [
+      "Bangjun Xiao",
+      "Yihao Zhao",
+      "Xiangwei Deng",
+      "Shihua Yu",
+      "Yuxing Xiang",
+      "Huaqiu Liu",
+      "Qiying Wang",
+      "Liang Zhao",
+      "Hailin Zhang",
+      "Xuanzhe Liu",
+      "Xin Jin",
+      "Fuli Luo"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.13019v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.13019v1",
+    "fetched_at": "2026-03-16T08:52:02.396942"
+  },
+  {
+    "id": "2603.12740v1",
+    "title": "ToolTree: Efficient LLM Agent Tool Planning via Dual-Feedback Monte Carlo Tree Search and Bidirectional Pruning",
+    "abstract": "Large Language Model (LLM) agents are increasingly applied to complex, multi-step tasks that require interaction with diverse external tools across various domains. However, current LLM agent tool planning methods typically rely on greedy, reactive tool selection strategies that lack foresight and fail to account for inter-tool dependencies. In this paper, we present ToolTree, a novel Monte Carlo tree search-inspired planning paradigm for tool planning. ToolTree explores possible tool usage trajectories using a dual-stage LLM evaluation and bidirectional pruning mechanism that enables the agent to make informed, adaptive decisions over extended tool-use sequences while pruning less promising branches before and after the tool execution. Empirical evaluations across both open-set and closed-set tool planning tasks on 4 benchmarks demonstrate that ToolTree consistently improves performance while keeping the highest efficiency, achieving an average gain of around 10\\% compared to the state-of-the-art planning paradigm.",
+    "authors": [
+      "Shuo Yang",
+      "Soyeon Caren Han",
+      "Yihao Ding",
+      "Shuhe Wang",
+      "Eduard Hoy"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12740v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12740v1",
+    "fetched_at": "2026-03-16T08:52:02.396967"
+  },
+  {
+    "id": "2603.12707v1",
+    "title": "Cost-Efficient Multimodal LLM Inference via Cross-Tier GPU Heterogeneity",
+    "abstract": "Multimodal large language model (MLLM) inference splits into two phases with opposing hardware demands: vision encoding is compute-bound, while language generation is memory-bandwidth-bound. We show that under standard transformer KV caching, the modality boundary (between vision encoder and language model) minimizes cross-device transfer among all partition points that preserve standard stage-based execution. Partitioning here reduces transfer complexity from $O(L * s_ctx)$ bytes (GB-scale KV caches under stage-level disaggregation) to $O(N_v * d)$ bytes (MB-scale embeddings), an O(L) reduction where L is the transformer depth. The result holds across attention mechanisms (MHA/GQA), dynamic vision resolutions, and model scales, and the advantage grows as models deepen. A direct implication is that existing stage-level disaggregation systems are constrained to high-bandwidth interconnects (e.g., NVLink), whereas modality-level disaggregation enables cross-tier heterogeneous serving over commodity PCIe. A closed-form cost model shows that heterogeneous deployment is cost-optimal under phase-separable workloads (predicts 31.4% savings; observed 40.6%). We build HeteroServe, a phase-aware runtime with modality-level partitioning and cross-tier scheduling, and evaluate it on LLaVA-1.5-7B and Qwen2.5-VL against vLLM v0.3.0. On identical 4xA100 hardware, engine optimizations raise throughput by up to 54%. Under a fixed budget, a heterogeneous cluster (\\$38k) improves Tokens/\\$ by 37% over a homogeneous baseline (\\$64k) without degrading latency.",
+    "authors": [
+      "Donglin Yu"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12707v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12707v1",
+    "fetched_at": "2026-03-16T08:52:02.396985"
+  },
+  {
+    "id": "2603.12698v1",
+    "title": "EvolveCoder: Evolving Test Cases via Adversarial Verification for Code Reinforcement Learning",
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) is a promising approach for improving code generation in large language models, but its effectiveness is limited by weak and static verification signals in existing coding RL datasets. In this paper, we propose a solution-conditioned and adversarial verification framework that iteratively refines test cases based on the execution behaviors of candidate solutions, with the goal of increasing difficulty, improving discriminative power, and reducing redundancy. Based on this framework, we introduce EvolveCoder-22k, a large-scale coding reinforcement learning dataset constructed through multiple rounds of adversarial test case evolution. Empirical analysis shows that iterative refinement substantially strengthens verification, with pass@1 decreasing from 43.80 to 31.22. Reinforcement learning on EvolveCoder-22k yields stable optimization and consistent performance gains, improving Qwen3-4B by an average of 4.2 points across four downstream benchmarks and outperforming strong 4B-scale baselines. Our results highlight the importance of adversarial, solution-conditioned verification for effective and scalable reinforcement learning in code generation.",
+    "authors": [
+      "Chi Ruan",
+      "Dongfu Jiang",
+      "Huaye Zeng",
+      "Ping Nie",
+      "Wenhu Chen"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12698v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12698v1",
+    "fetched_at": "2026-03-16T08:52:02.397009"
+  },
+  {
+    "id": "2603.12677v1",
+    "title": "MetaKE: Meta-learning Aligned Knowledge Editing via Bi-level Optimization",
+    "abstract": "Knowledge editing (KE) aims to precisely rectify specific knowledge in Large Language Models (LLMs) without disrupting general capabilities. State-of-the-art methods suffer from an open-loop control mismatch. We identify a critical \"Semantic-Execution Disconnect\": the semantic target is derived independently without feedback from the downstream's feasible region. This misalignment often causes valid semantic targets to fall within the prohibited space, resulting in gradient truncation and editing failure. To bridge this gap, we propose MetaKE (Meta-learning Aligned Knowledge Editing), a new framework that reframes KE as a bi-level optimization problem. Departing from static calculation, MetaKE treats the edit target as a learnable meta-parameter: the upper-level optimizer seeks a feasible target to maximize post-edit performance, while the lower-level solver executes the editing. To address the challenge of differentiating through complex solvers, we derive a Structural Gradient Proxy, which explicitly backpropagates editability constraints to the target learning phase. Theoretical analysis demonstrates that MetaKE automatically aligns the edit direction with the model's feasible manifold. Extensive experiments confirm that MetaKE significantly outperforms strong baselines, offering a new perspective on knowledge editing.",
+    "authors": [
+      "Shuxin Liu",
+      "Ou Wu"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12677v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12677v1",
+    "fetched_at": "2026-03-16T08:52:02.397028"
+  },
+  {
+    "id": "2603.12634v1",
+    "title": "Spend Less, Reason Better: Budget-Aware Value Tree Search for LLM Agents",
+    "abstract": "Test-time scaling has become a dominant paradigm for improving LLM agent reliability, yet current approaches treat compute as an abundant resource, allowing agents to exhaust token and tool budgets on redundant steps or dead-end trajectories. Existing budget-aware methods either require expensive fine-tuning or rely on coarse, trajectory-level heuristics that cannot intervene mid-execution. We propose the Budget-Aware Value Tree (BAVT), a training-free inference-time framework that models multi-hop reasoning as a dynamic search tree guided by step-level value estimation within a single LLM backbone. Another key innovation is a budget-conditioned node selection mechanism that uses the remaining resource ratio as a natural scaling exponent over node values, providing a principled, parameter-free transition from broad exploration to greedy exploitation as the budget depletes. To combat the well-known overconfidence of LLM self-evaluation, BAVT employs a residual value predictor that scores relative progress rather than absolute state quality, enabling reliable pruning of uninformative or redundant tool calls. We further provide a theoretical convergence guarantee, proving that BAVT reaches a terminal answer with probability at least $1-ε$ under an explicit finite budget bound. Extensive evaluations on four multi-hop QA benchmarks across two model families demonstrate that BAVT consistently outperforms parallel sampling baselines. Most notably, BAVT under strict low-budget constraints surpasses baseline performance at $4\\times$ the resource allocation, establishing that intelligent budget management fundamentally outperforms brute-force compute scaling.",
+    "authors": [
+      "Yushu Li",
+      "Wenlong Deng",
+      "Jiajin Li",
+      "Xiaoxiao Li"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12634v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12634v1",
+    "fetched_at": "2026-03-16T08:52:02.397067"
+  },
+  {
+    "id": "2603.12543v1",
+    "title": "CALF: Communication-Aware Learning Framework for Distributed Reinforcement Learning",
+    "abstract": "Distributed reinforcement learning policies face network delays, jitter, and packet loss when deployed across edge devices and cloud servers. Standard RL training assumes zero-latency interaction, causing severe performance degradation under realistic network conditions. We introduce CALF (Communication-Aware Learning Framework), which trains policies under realistic network models during simulation. Systematic experiments demonstrate that network-aware training substantially reduces deployment performance gaps compared to network-agnostic baselines. Distributed policy deployments across heterogeneous hardware validate that explicitly modelling communication constraints during training enables robust real-world execution. These findings establish network conditions as a major axis of sim-to-real transfer for Wi-Fi-like distributed deployments, complementing physics and visual domain randomisation.",
+    "authors": [
+      "Carlos Purves",
+      "Pietro Lio'"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12543v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12543v1",
+    "fetched_at": "2026-03-16T08:52:02.397087"
+  },
+  {
+    "id": "2603.12465v1",
+    "title": "TaxBreak: Unmasking the Hidden Costs of LLM Inference Through Overhead Decomposition",
+    "abstract": "Large Language Model (LLM) inference is widely used in interactive assistants and agentic systems. In latency-sensitive deployments, inference time can become dominated by host-side overheads. Existing approaches typically expose this cost only as an aggregate residual or a launch/queue metric, which is often insufficient to identify which execution layer should be optimized. This work presents TaxBreak, a trace-driven methodology for decomposing host-visible orchestration overhead into three components: framework translation time, CUDA library translation time, and kernel launch-path time. We validate TaxBreak on NVIDIA H100 and H200 systems and use it to derive our proposed Host-Device Balance Index (HDBI), a boundedness summary index that relates device-active execution to host-visible orchestration. Across representative dense and mixture-of-experts workloads in both prefill and decode, we show that aggregate latency, GPU inactivity, or boundedness ratios alone can obscure the dominant optimization target. TaxBreak instead distinguishes cases where optimization should reduce software-stack overhead from cases where the primary win comes from reducing device-side work. We further show that MoE models dispatch 8-11x more kernels per output token than dense models, and that for such host-bound workloads, CPU single-thread performance is a first-order parameter: a faster host CPU reduces orchestration overhead by 10-29% and improves end-to-end latency by up to 14%, even when paired with a slower-clocked GPU. These results position TaxBreak as a diagnostic tool for assessing whether optimization effort should target the software stack or the device-side workload execution.",
+    "authors": [
+      "Prabhu Vellaisamy",
+      "Shreesh Tripathi",
+      "Vignesh Natarajan",
+      "Surya Santhan Thenarasu",
+      "Shawn Blanton",
+      "John P. Shen"
+    ],
+    "published": "2026-03-12",
+    "categories": [
+      "cs.DC",
+      "cs.LG",
+      "cs.PF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12465v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12465v1",
+    "fetched_at": "2026-03-16T08:52:02.397114"
+  },
+  {
+    "id": "2603.12354v1",
+    "title": "Alternating Gradient Flow Utility: A Unified Metric for Structural Pruning and Dynamic Routing in Deep Networks",
+    "abstract": "Efficient deep learning traditionally relies on static heuristics like weight magnitude or activation awareness (e.g., Wanda, RIA). While successful in unstructured settings, we observe a critical limitation when applying these metrics to the structural pruning of deep vision networks. These contemporary metrics suffer from a magnitude bias, failing to preserve critical functional pathways. To overcome this, we propose a decoupled kinetic paradigm inspired by Alternating Gradient Flow (AGF), utilizing an absolute feature-space Taylor expansion to accurately capture the network's structural \"kinetic utility\". First, we uncover a topological phase transition at extreme sparsity, where AGF successfully preserves baseline functionality and exhibits topological implicit regularization, avoiding the collapse seen in models trained from scratch. Second, transitioning to architectures without strict structural priors, we reveal a phenomenon of Sparsity Bottleneck in Vision Transformers (ViTs). Through a gradient-magnitude decoupling analysis, we discover that dynamic signals suffer from signal compression in converged models, rendering them suboptimal for real-time routing. Finally, driven by these empirical constraints, we design a hybrid routing framework that decouples AGF-guided offline structural search from online execution via zero-cost physical priors. We validate our paradigm on large-scale benchmarks: under a 75% compression stress test on ImageNet-1K, AGF effectively avoids the structural collapse where traditional metrics aggressively fall below random sampling. Furthermore, when systematically deployed for dynamic inference on ImageNet-100, our hybrid approach achieves Pareto-optimal efficiency. It reduces the usage of the heavy expert by approximately 50% (achieving an estimated overall cost of 0.92$\\times$) without sacrificing the full-model accuracy.",
+    "authors": [
+      "Tianhao Qian",
+      "Zhuoxuan Li",
+      "Jinde Cao",
+      "Xinli Shi",
+      "Hanjie Liu",
+      "Leszek Rutkowski"
+    ],
+    "published": "2026-03-12",
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.NE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.12354v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.12354v1",
+    "fetched_at": "2026-03-16T08:52:02.397140"
+  }
+]
