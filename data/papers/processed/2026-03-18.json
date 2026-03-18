@@ -1,0 +1,776 @@
+[
+  {
+    "id": "2603.16720v1",
+    "title": "Discrimination-insensitive pricing",
+    "abstract": "Rendering fair prices for financial, credit, and insurance products is of ethical and regulatory interest. In many jurisdictions, discriminatory covariates, such as gender and ethnicity, are prohibited from use in pricing such instruments. In this work, we propose a discrimination-insensitive pricing framework, where we require the pricing principle to be insensitive to the (exogenously determined) protected covariates, that is the sensitivity of the pricing principle to the protected covariate is zero. We formulate and solve the optimisation problem that finds the nearest (in Kullback-Leibler (KL) divergence) \"pricing\" measure to the real world probability, such that under this pricing measure the principle is discrimination-insensitive. We call the solution the discrimination-insensitive measure and provide conditions for its existence and uniqueness. In situations when there are more than one protected covariates, the discrimination-insensitive pricing measure might not exist, and we propose a two-step procedure. First, for each protected covariate separately, we find the measure under which the pricing principle becomes insensitivity to that covariate. Second we reconcile these measures through a constrained barycentre model. We provide a close-form solution to this problem and give conditions for existence and uniqueness of the constrained barycentre pricing measure. As an intermediary result, we prove the representation, existence, and uniqueness of the KL barycentre of general probability measures, which may be of independent interest. Finally, in a numerical illustration, we compare our discrimination-insensitive premia and the constrained barycentre pricing measure with recently proposed fair premia from the actuarial literature.",
+    "authors": [
+      "Kathleen Miao",
+      "Silvana Pesenti"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16720v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16720v1",
+    "fetched_at": "2026-03-18T08:42:10.368320",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777677"
+  },
+  {
+    "id": "2603.16434v1",
+    "title": "From Natural Language to Executable Option Strategies via Large Language Models",
+    "abstract": "Large Language Models (LLMs) excel at general code generation, yet translating natural-language trading intents into correct option strategies remains challenging. Real-world option design requires reasoning over massive, multi-dimensional option chain data with strict constraints, which often overwhelms direct generation methods. We introduce the Option Query Language (OQL), a domain-specific intermediate representation that abstracts option markets into high-level primitives under grammatical rules, enabling LLMs to function as reliable semantic parsers rather than free-form programmers. OQL queries are then validated and executed deterministically by an engine to instantiate executable strategies. We also present a new dataset for this task and demonstrate that our neuro-symbolic pipeline significantly improves execution accuracy and logical consistency over direct baselines.",
+    "authors": [
+      "Haochen Luo",
+      "Zhengzhao Lai",
+      "Junjie Xu",
+      "Yifan Li",
+      "Tang Pok Hin",
+      "Yuan Zhang",
+      "Chen Liu"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16434v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16434v1",
+    "fetched_at": "2026-03-18T08:42:10.368368",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777704"
+  },
+  {
+    "id": "2603.16333v1",
+    "title": "Open vs. Sealed: Auction Format Choice for Maximal Extractable Value",
+    "abstract": "We study optimal auction design for Maximum Extractable Value (MEV) auction markets on Ethereum. Using a dataset of 2.2 million transactions across three major orderflow providers, we establish three empirical regularities: extracted values follow a log-normal distribution with extreme right-tail concentration, competition intensity varies substantially across MEV types, and the standard Revenue Equivalence Theorem breaks down due to affiliation among searchers' valuations. We model this affiliation through a Gaussian common factor, deriving equilibrium bidding strategies and expected revenues for five auction formats, first-price sealed-bid, second-price sealed-bid, English, Dutch, and all-pay, across a fine grid of bidder counts $n$ and affiliation parameters $ρ$. Our simulations confirm the Milgrom-Weber linkage principle: English and second-price sealed-bid auctions strictly dominate Dutch and first-price sealed-bid formats for any $ρ> 0$, with a linkage gap of 14-28\\% at moderate affiliation ($ρ=0.5$) and up to 30\\% for small bidder counts. Applied to observed bribe totals, this gap corresponds to \\$10-18 million in foregone revenue over the sample period. We also document a novel non-monotonicity: at large $n$ and high $ρ$, revenue peaks in the interior of the affiliation parameter space and declines thereafter, as near-perfect correlation collapses the order-statistic spread that drives competitive payments.",
+    "authors": [
+      "Aleksei Adadurov",
+      "Sergey Barseghyan",
+      "Anton Chtepine",
+      "Antero Eloranta",
+      "Andrei Sebyakin",
+      "Arsenii Valitov"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16333v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16333v1",
+    "fetched_at": "2026-03-18T08:42:10.368433",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777728"
+  },
+  {
+    "id": "2603.16108v1",
+    "title": "Short-horizon Duesenberry Equilibrium",
+    "abstract": "We develop a continuous-time general equilibrium framework for economies with a heterogeneous population -- modeled as a continuum -- that repeatedly optimizes over short horizons under relative-income (Duesenberry-type) criteria. The cross-section evolves through a Brownian flow on a type space, transporting an effective impatience field that captures time variation in preferences induced by demographic changes, aging, and broader social shifts.   We establish three main results. First, we prove an optimal consumption--investment theorem for infinite heterogeneous populations in this Brownian-flow setting. Second, we define a \\emph{short-horizon Duesenberry equilibrium} -- a sequential-trading (Radner-type) equilibrium in which agents repeatedly solve vanishing-horizon problems under a relative-income criterion -- and provide a complete characterization and existence proof under mild regularity conditions; notably, market completeness and absence of (state-tame) arbitrage emerge endogenously from the market clearing, rather than being imposed as hypotheses. Third, we derive sharp asset-pricing implications: in equilibrium, the market price of risk is pinned down by the volatility of aggregate \\emph{total wealth} (financial plus human capital), implying that the equity premium is governed by the magnitudes and correlations of wealth and equity volatilities rather than by consumption volatility alone. This shifts the equity premium puzzle from an implausibly low consumption volatility to a question about the volatility of aggregate total wealth. The framework delivers explicit decompositions of the risk-free rate that are consistent with macro-finance stylized facts. All equilibrium quantities are expressed in terms of market primitives.",
+    "authors": [
+      "Jaime Alberto Londoño"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "q-fin.MF",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16108v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16108v1",
+    "fetched_at": "2026-03-18T08:42:10.368467",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777740"
+  },
+  {
+    "id": "2603.16006v1",
+    "title": "Heterogeneous Returns and Wealth Tax Neutrality: A Fokker--Planck Framework",
+    "abstract": "We extend the Fokker--Planck framework of Frøseth (2026, arXiv:2603.05283) to populations of investors with heterogeneous, persistent return-generating ability. When the drift coefficient in the Langevin equation for log-wealth varies across investors, the proportional wealth tax remains a uniform drift shift but ceases to be neutral in the economic sense: its real incidence differs across ability types, and the stationary wealth distribution changes shape. We derive the extended Fokker--Planck equation on the joint space of log-wealth and ability, characterise the conditions under which the drift-shift symmetry breaks, and identify the consequences for asset prices and portfolio allocations. The analysis connects the neutrality results of Frøseth (2026, arXiv:2603.05264) and the Fokker--Planck dynamics of Frøseth (2026, arXiv:2603.05283) to the heterogeneous-returns literature, notably the \"use-it-or-lose-it\" mechanism of Guvenen, Kambourov, Kuruscu, Ocampo-Diaz and Chen (2023).",
+    "authors": [
+      "Anders G Frøseth"
+    ],
+    "published": "2026-03-16",
+    "categories": [
+      "physics.soc-ph",
+      "econ.GN",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16006v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16006v1",
+    "fetched_at": "2026-03-18T08:42:10.368487",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777761"
+  },
+  {
+    "id": "2603.15974v1",
+    "title": "Flow Taxes, Stock Taxes, and Portfolio Choice: A Generalised Neutrality Result",
+    "abstract": "A proportional wealth tax -- a levy on the stock of wealth -- preserves portfolio neutrality by acting as a uniform drift shift in the Fokker-Planck equation for wealth dynamics. We extend this result to the full system of ownership taxes (eierkostnader) that a shareholder faces: a corporate tax on gross profits, a capital income tax on the risk-free return, a dividend and capital gains tax on the excess return, and a wealth tax on net assets. Each tax modifies the drift of the wealth process in a distinct way -- multiplicative rescaling, constant shift, or regime-dependent compression -- while leaving the diffusion coefficient unchanged. We show that the combined system preserves portfolio neutrality under three conditions: (i) the capital income tax rate equals the corporate tax rate, (ii) the shielding rate equals the risk-free rate, and (iii) the wealth tax assessment is uniform across assets. When these conditions hold, the after-tax excess return is a uniform rescaling of the pre-tax excess return by the factor (1-tau_c)(1-tau_d), and the drift-shift symmetry of the wealth-tax-only case generalises to a drift-shift-and-rescale symmetry. We classify the distortions that arise when each condition fails and show that flow-tax distortions and stock-tax distortions are additively separable: they do not interact. The shielding deduction -- a feature of several real-world tax systems, including the Norwegian aksjonaermodellen -- emerges as the mechanism that restores the symmetry between equity and debt taxation within this framework. Calibrated to the Norwegian dual income tax, conditions (i) and (ii) hold by institutional design; the only binding distortion is non-uniform wealth tax assessment, which generates portfolio tilts roughly 300 times larger than any residual flow-tax channel.",
+    "authors": [
+      "Anders G Frøseth"
+    ],
+    "published": "2026-03-16",
+    "categories": [
+      "physics.soc-ph",
+      "econ.GN",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.15974v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.15974v1",
+    "fetched_at": "2026-03-18T08:42:10.368510",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777774"
+  },
+  {
+    "id": "2603.15963v1",
+    "title": "Risk-Based Auto-Deleveraging",
+    "abstract": "Auto-deleveraging (ADL) mechanisms are a critical yet understudied component of risk management on cryptocurrency futures exchanges. When available margin and other loss-absorbing resources are insufficient to cover losses following large price moves, exchanges reduce positions and socialize losses among solvent participants via rule-based ADL protocols.   We formulate ADL as an optimization problem that minimizes the exchange's risk of loss arising from future equity shortfalls. In a single-asset, isolated-margin setting, we show that under a risk-neutral expected loss objective the unique optimal policy minimizes the maximum leverage among participants. The resulting design has a transparent structure: positions are reduced first for the most highly levered accounts, and leverage is progressively equalized via a water-filling (or ``leverage-draining'') rule. This policy is distribution-free, wash-trade resistant, Sybil resistant, and path-independent. It provides a canonical and implementable benchmark for ADL design and clarifies the economic logic underlying queue-based mechanisms used in practice.   We further study the multi-asset, cross-margin setting, where the ADL problem becomes genuinely multi-dimensional: the exchange must allocate a vector of required reductions across accounts with portfolios exposed to correlated price moves. We show that under an expected-loss objective the problem remains separable across accounts after introducing asset-level shadow prices, yielding a scalable numerical method. We observe that naive gross leverage can be misleading in this context as it ignores hedging within portfolios. When asset prices are driven by a single dominant risk factor, the optimal policy again takes a water-filling form, but now in a factor-adjusted notion of leverage, so that more effectively hedged portfolios are deleveraged less aggressively.",
+    "authors": [
+      "Steven Campbell",
+      "Natascha Hey",
+      "Ciamac C. Moallemi",
+      "Marcel Nutz"
+    ],
+    "published": "2026-03-16",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.MF",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.15963v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.15963v1",
+    "fetched_at": "2026-03-18T08:42:10.368535",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777786"
+  },
+  {
+    "id": "2603.15947v1",
+    "title": "Hyper-Adaptive Momentum Dynamics for Native Cubic Portfolio Optimization: Avoiding Quadratization Distortion in Higher-Order Cardinality-Constrained Search",
+    "abstract": "We study cubic cardinality-constrained portfolio optimization, a higher-order extension of the standard Markowitz formulation where three-way sector co-movement terms augment the quadratic risk-return objective. Classical heuristics like simulated annealing (SA) and tabu search require Rosenberg quadratization of these cubic interactions. This inflates the variable count from n to 5n and introduces penalty terms that substantially distort the augmented search landscape. In contrast, Hyper-Adaptive Momentum Dynamics (HAMD) operates directly on the native higher-order objective using a hybrid pipeline combining continuous Hamiltonian search, exact cardinality-preserving projection, and iterated local search (ILS). On a cubic portfolio benchmark under matched 60-second CPU budgets, HAMD achieves substantially lower decoded native cubic objective values than SA and tabu search, yielding single-seed relative improvements of 87.9%, 71.2%, 59.5%, and 46.9% at n = 200, 300, 500, and 1000. In a detailed three-seed study at n = 200, HAMD attains a median native objective of 195.65 (zero variance), while SA and tabu yield 1208.07. Decoded-feasibility analysis shows SA satisfies all exact cardinality and Rosenberg auxiliary constraints, yet decodes to a native objective 80-88% worse than HAMD, demonstrating a surrogate-distortion effect rather than simple infeasibility. Exact calibration on small instances (n = 20, 25, 30) confirms HAMD finds the provably global optimum in 9/9 trials. These results demonstrate that native higher-order search offers a substantial advantage over quadratized surrogate optimization for constrained cubic portfolio problems.",
+    "authors": [
+      "Greg Serbarinov"
+    ],
+    "published": "2026-03-16",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF",
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.15947v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.15947v1",
+    "fetched_at": "2026-03-18T08:42:10.368554",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777807"
+  },
+  {
+    "id": "2603.15839v1",
+    "title": "A Portfolio-Anchored Frequency-Severity Risk Index for Trip and Driver Assessment Using Telematics Signals",
+    "abstract": "In this paper, we propose a novel frequency-severity joint trip-level risk index that combines the frequency of abnormal driving patterns with a severity component reflecting how extreme such behavior is relative to a portfolio-level baseline. Severity is quantified through an inverse-probability penalty that increases with the rarity of observed tail extremes, rather than being interpreted as a claim size. Based on high-frequency telematics data, we construct a multi-scale representation of longitudinal acceleration using the maximal overlap discrete wavelet transform (MODWT), which preserves localized driving patterns across multiple time scales. To capture severity as tail rarity, we model the portfolio distribution using a Gaussian-Uniform mixture with a layered tail structure, where Gaussian components describe typical driving behavior and the tail is partitioned into ordered severity layers that reflect increasing extremeness. We develop a likelihood-based estimation procedure that makes inference feasible for this mixture model. The resulting severity layers are then used to construct multi-layer tail counts (MLTC) at the trip level, which are modeled within a Poisson-Gamma framework to yield a closed-form posterior risk index that jointly reflects frequency and severity. This conjugate structure naturally supports sequential updating, enabling the construction of dynamically evolving driver-level risk profiles. Using the UAH-DriveSet controlled dataset, we demonstrate that the proposed index enables reliable discrimination across behavioral driving states, identification of high-risk trips, and coherent ranking of drivers, yielding a purely behavior-driven risk measure suitable for actuarial ratemaking and potentially mitigating fairness concerns associated with traditional covariates.",
+    "authors": [
+      "Jongtaek Lee",
+      "Andrei Badescu",
+      "X. Sheldon Lin"
+    ],
+    "published": "2026-03-16",
+    "categories": [
+      "stat.AP",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.15839v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.15839v1",
+    "fetched_at": "2026-03-18T08:42:10.368576",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777820"
+  },
+  {
+    "id": "2603.14546v2",
+    "title": "Robust Optimal Strategies for Early Liquidation in Financial Systems",
+    "abstract": "We study the problem of asset liquidation in financial systems. During financial crises, asset liquidation is often inevitable but can lead to substantial losses if a significant amount of illiquid assets are sold simultaneously at depressed prices -- a phenomenon known as price impact. To tackle this challenge, we consider a two-period liquidation model that allows for early liquidation prior to clearing, thereby mitigating price impact at clearing, and we develop a worst-case approach to solve the decision-making problem on the optimal size of early liquidation. Specifically, we propose a robust optimal strategy -- a tractable liquidation approach that maximizes the worst-case value of liquid assets at clearing, taking into account the uncertainty of other banks' early liquidation decisions. We derive a (semi-)closed-form representation of this strategy in a practical scenario involving permanent price impact and analyze its sensitivity to that impact's magnitude. We further identify its closed-form expression in another practical scenario featuring interbank exposures. Our findings, although built upon a stylized model, offer valuable guidelines for developing robust liquidation strategies that mitigate losses resulting from asset liquidation.",
+    "authors": [
+      "Dohyun Ahn",
+      "Hongyi Jiang"
+    ],
+    "published": "2026-03-15",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.14546v2",
+    "arxiv_url": "https://arxiv.org/abs/2603.14546v2",
+    "fetched_at": "2026-03-18T08:42:10.368677",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777831"
+  },
+  {
+    "id": "2603.11408v2",
+    "title": "Beyond Polarity: Multi-Dimensional LLM Sentiment Signals for WTI Crude Oil Futures Return Prediction",
+    "abstract": "Forecasting crude oil prices remains challenging because market-relevant information is embedded in large volumes of unstructured news and is not fully captured by traditional polarity-based sentiment measures. This paper examines whether multi-dimensional sentiment signals extracted by large language models improve the prediction of weekly WTI crude oil futures returns. Using energy-sector news articles from 2020 to 2025, we construct five sentiment dimensions covering relevance, polarity, intensity, uncertainty, and forwardness based on GPT-4o, Llama 3.2-3b, and two benchmark models, FinBERT and AlphaVantage. We aggregate article-level signals to the weekly level and evaluate their predictive performance in a classification framework. The best results are achieved by combining GPT-4o and FinBERT, suggesting that LLM-based and conventional financial sentiment models provide complementary predictive information. SHAP analysis further shows that intensity- and uncertainty-related features are among the most important predictors, indicating that the predictive value of news sentiment extends beyond simple polarity. Overall, the results suggest that multi-dimensional LLM-based sentiment measures can improve commodity return forecasting and support energy-market risk monitoring.",
+    "authors": [
+      "Dehao Dai",
+      "Ding Ma",
+      "Dou Liu",
+      "Kerui Geng",
+      "Yiqing Wang"
+    ],
+    "published": "2026-03-12",
+    "categories": [
+      "q-fin.ST",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.11408v2",
+    "arxiv_url": "https://arxiv.org/abs/2603.11408v2",
+    "fetched_at": "2026-03-18T08:42:10.369118",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Sentiment Analysis"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777841"
+  },
+  {
+    "id": "2603.15670v1",
+    "title": "I Know What I Don't Know: Latent Posterior Factor Models for Multi-Evidence Probabilistic Reasoning",
+    "abstract": "Real-world decision-making, from tax compliance assessment to medical diagnosis, requires aggregating multiple noisy and potentially contradictory evidence sources. Existing approaches either lack explicit uncertainty quantification (neural aggregation methods) or rely on manually engineered discrete predicates (probabilistic logic frameworks), limiting scalability to unstructured data.   We introduce Latent Posterior Factors (LPF), a framework that transforms Variational Autoencoder (VAE) latent posteriors into soft likelihood factors for Sum-Product Network (SPN) inference, enabling tractable probabilistic reasoning over unstructured evidence while preserving calibrated uncertainty estimates. We instantiate LPF as LPF-SPN (structured factor-based inference) and LPF-Learned (end-to-end learned aggregation), enabling a principled comparison between explicit probabilistic reasoning and learned aggregation under a shared uncertainty representation.   Across eight domains (seven synthetic and the FEVER benchmark), LPF-SPN achieves high accuracy (up to 97.8%), low calibration error (ECE 1.4%), and strong probabilistic fit, substantially outperforming evidential deep learning, LLMs and graph-based baselines over 15 random seeds.   Contributions: (1) A framework bridging latent uncertainty representations with structured probabilistic reasoning. (2) Dual architectures enabling controlled comparison of reasoning paradigms. (3) Reproducible training methodology with seed selection. (4) Evaluation against EDL, BERT, R-GCN, and large language model baselines. (5) Cross-domain validation. (6) Formal guarantees in a companion paper.",
+    "authors": [
+      "Aliyu Agboola Alege"
+    ],
+    "published": "2026-03-13",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.15670v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.15670v1",
+    "fetched_at": "2026-03-18T08:42:17.049454",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777852"
+  },
+  {
+    "id": "2603.16697v1",
+    "title": "Cost Trade-offs in Matrix Inversion Updates for Streaming Outlier Detection",
+    "abstract": "Outlier detection identifies data points that deviate significantly from expected patterns, revealing anomalies that may require special attention. Incorporating online learning further improves accuracy by continuously updating the model to reflect the most recent data. When employing the Christoffel function as an outlier score, online learning requires updating the inverse of a matrix following a rank-k update, given the initial inverse. Surprisingly, there is no consensus on the optimal method for this task. This technical note aims to compare three different updating methods: Direct Inversion (DI), Iterative Sherman-Morrison (ISM), and Woodbury Matrix Identity (WMI), to identify the most suitable approach for different scenarios. We first derive the theoretical computational costs of each method and then validate these findings through comprehensive Python simulations run on a CPU. These results allow us to propose a simple, quantitative, and easy-to-remember rule that can be stated qualitatively as follows: ISM is optimal for rank-1 updates, WMI excels for small updates relative to matrix size, and DI is preferable otherwise. This technical note produces a general result for any problem involving a matrix inversion update. In particular, it contributes to the ongoing development of efficient online outlier detection techniques.",
+    "authors": [
+      "Florian Grivet",
+      "Louise Travé-Massuyès"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16697v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16697v1",
+    "fetched_at": "2026-03-18T08:42:23.536679",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777863"
+  },
+  {
+    "id": "2603.15848v1",
+    "title": "Algorithmic Trading Strategy Development and Optimisation",
+    "abstract": "The report presents with the development and optimisation of an enhanced algorithmic trading strategy through the use of historical S&P 500 market data and earnings call sentiment analysis. The proposed strategy integrates various technical indicators such as moving averages, momentum, volatility, and FinBERT-based sentiment analysis to improve overall trades being taken. The results show that the enhanced strategy significantly outperforms the baseline model in terms of total return, Sharpe ratio, and drawdown amongst other factors. The findings helped demonstrate the relevance and effectiveness of combining technical indicators, sentiment analysis, and computational optimisation in algorithmic trading systems.",
+    "authors": [
+      "Owen Nyo Wei Yuan",
+      "Victor Tan Jia Xuan",
+      "Ong Jun Yao Fabian",
+      "Ryan Tan Jun Wei"
+    ],
+    "published": "2026-03-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.15848v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.15848v1",
+    "fetched_at": "2026-03-18T08:42:43.315049",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Sentiment Analysis"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777871"
+  },
+  {
+    "id": "2603.16870v1",
+    "title": "Demystifing Video Reasoning",
+    "abstract": "Recent advances in video generation have revealed an unexpected phenomenon: diffusion-based video models exhibit non-trivial reasoning capabilities. Prior work attributes this to a Chain-of-Frames (CoF) mechanism, where reasoning is assumed to unfold sequentially across video frames. In this work, we challenge this assumption and uncover a fundamentally different mechanism. We show that reasoning in video models instead primarily emerges along the diffusion denoising steps. Through qualitative analysis and targeted probing experiments, we find that models explore multiple candidate solutions in early denoising steps and progressively converge to a final answer, a process we term Chain-of-Steps (CoS). Beyond this core mechanism, we identify several emergent reasoning behaviors critical to model performance: (1) working memory, enabling persistent reference; (2) self-correction and enhancement, allowing recovery from incorrect intermediate solutions; and (3) perception before action, where early steps establish semantic grounding and later steps perform structured manipulation. During a diffusion step, we further uncover self-evolved functional specialization within Diffusion Transformers, where early layers encode dense perceptual structure, middle layers execute reasoning, and later layers consolidate latent representations. Motivated by these insights, we present a simple training-free strategy as a proof-of-concept, demonstrating how reasoning can be improved by ensembling latent trajectories from identical models with different random seeds. Overall, our work provides a systematic understanding of how reasoning emerges in video generation models, offering a foundation to guide future research in better exploiting the inherent reasoning dynamics of video models as a new substrate for intelligence.",
+    "authors": [
+      "Ruisi Wang",
+      "Zhongang Cai",
+      "Fanyi Pu",
+      "Junxiang Xu",
+      "Wanqi Yin",
+      "Maijunxian Wang",
+      "Ran Ji",
+      "Chenyang Gu",
+      "Bo Li",
+      "Ziqi Huang",
+      "Hokin Deng",
+      "Dahua Lin",
+      "Ziwei Liu",
+      "Lei Yang"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16870v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16870v1",
+    "fetched_at": "2026-03-18T08:42:53.223685",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777881"
+  },
+  {
+    "id": "2603.16812v1",
+    "title": "ODIN-Based CPU-GPU Architecture with Replay-Driven Simulation and Emulation",
+    "abstract": "Integration of CPU and GPU technologies is a key enabler for modern AI and graphics workloads, combining control-oriented processing with massive parallel compute capability. As systems evolve toward chiplet-based architectures, pre-silicon validation of tightly coupled CPU-GPU subsystems becomes increasingly challenging due to complex validation framework setup, large design scale, high concurrency, non-deterministic execution, and intricate protocol interactions at chiplet boundaries, often resulting in long integration cycles. This paper presents a replay-driven validation methodology developed during the integration of a CPU subsystem, multiple Xe GPU cores, and a configurable Network-on-Chip (NoC) within a foundational SoC building block targeting the ODIN integrated chiplet architecture. By leveraging deterministic waveform capture and replay across both simulation and emulation using a single design database, complex GPU workloads and protocol sequences can be reproduced reliably at the system level. This approach significantly accelerates debug, improves integration confidence, and enables end-to-end system boot and workload execution within a single quarter, demonstrating the effectiveness of replay-based validation as a scalable methodology for chiplet-based systems.",
+    "authors": [
+      "Nij Dorairaj",
+      "Debabrata Chatterjee",
+      "Hong Wang",
+      "Hong Jiang",
+      "Alankar Saxena",
+      "Altug Koker",
+      "Thiam Ern Lim",
+      "Cathrane Teoh",
+      "Chuan Yin Loo",
+      "Bishara Shomar",
+      "Anthony Lester"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.AR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16812v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16812v1",
+    "fetched_at": "2026-03-18T08:42:53.223730",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777891"
+  },
+  {
+    "id": "2603.16790v1",
+    "title": "InCoder-32B: Code Foundation Model for Industrial Scenarios",
+    "abstract": "Recent code large language models have achieved remarkable progress on general programming tasks. Nevertheless, their performance degrades significantly in industrial scenarios that require reasoning about hardware semantics, specialized language constructs, and strict resource constraints. To address these challenges, we introduce InCoder-32B (Industrial-Coder-32B), the first 32B-parameter code foundation model unifying code intelligence across chip design, GPU kernel optimization, embedded systems, compiler optimization, and 3D modeling. By adopting an efficient architecture, we train InCoder-32B from scratch with general code pre-training, curated industrial code annealing, mid-training that progressively extends context from 8K to 128K tokens with synthetic industrial reasoning data, and post-training with execution-grounded verification. We conduct extensive evaluation on 14 mainstream general code benchmarks and 9 industrial benchmarks spanning 4 specialized domains. Results show InCoder-32B achieves highly competitive performance on general tasks while establishing strong open-source baselines across industrial domains.",
+    "authors": [
+      "Jian Yang",
+      "Wei Zhang",
+      "Jiajun Wu",
+      "Junhang Cheng",
+      "Shawn Guo",
+      "Haowen Wang",
+      "Weicheng Gu",
+      "Yaxin Du",
+      "Joseph Li",
+      "Fanglin Xu",
+      "Yizhi Li",
+      "Lin Jing",
+      "Yuanbo Wang",
+      "Yuhan Gao",
+      "Ruihao Gong",
+      "Chuan Hao",
+      "Ran Tao",
+      "Aishan Liu",
+      "Tuney Zheng",
+      "Ganqu Cui",
+      "Zhoujun Li",
+      "Mingjie Tang",
+      "Chenghua Lin",
+      "Wayne Xin Zhao",
+      "Xianglong Liu",
+      "Ming Zhou",
+      "Bryan Dai",
+      "Weifeng Lv"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16790v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16790v1",
+    "fetched_at": "2026-03-18T08:42:53.223801",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777900"
+  },
+  {
+    "id": "2603.16777v1",
+    "title": "Anticipatory Planning for Multimodal AI Agents",
+    "abstract": "Recent advances in multimodal agents have improved computer-use interaction and tool-usage, yet most existing systems remain reactive, optimizing actions in isolation without reasoning about future states or long-term goals. This limits planning coherence and prevents agents from reliably solving high-level, multi-step tasks. We introduce TraceR1, a two-stage reinforcement learning framework that explicitly trains anticipatory reasoning by forecasting short-horizon trajectories before execution. The first stage performs trajectory-level reinforcement learning with rewards that enforce global consistency across predicted action sequences. The second stage applies grounded reinforcement fine-tuning, using execution feedback from frozen tool agents to refine step-level accuracy and executability. TraceR1 is evaluated across seven benchmarks, covering online computer-use, offline computer-use benchmarks, and multimodal tool-use reasoning tasks, where it achieves substantial improvements in planning stability, execution robustness, and generalization over reactive and single-stage baselines. These results show that anticipatory trajectory reasoning is a key principle for building multimodal agents that can reason, plan, and act effectively in complex real-world environments.",
+    "authors": [
+      "Yongyuan Liang",
+      "Shijie Zhou",
+      "Yu Gu",
+      "Hao Tan",
+      "Gang Wu",
+      "Franck Dernoncourt",
+      "Jihyung Kil",
+      "Ryan A. Rossi",
+      "Ruiyi Zhang"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16777v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16777v1",
+    "fetched_at": "2026-03-18T08:42:53.223834",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777910"
+  },
+  {
+    "id": "2603.16673v1",
+    "title": "When Should a Robot Think? Resource-Aware Reasoning via Reinforcement Learning for Embodied Robotic Decision-Making",
+    "abstract": "Embodied robotic systems increasingly rely on large language model (LLM)-based agents to support high-level reasoning, planning, and decision-making during interactions with the environment. However, invoking LLM reasoning introduces substantial computational latency and resource overhead, which can interrupt action execution and reduce system reliability. Excessive reasoning may delay actions, while insufficient reasoning often leads to incorrect decisions and task failures. This raises a fundamental question for embodied agents: when should the agent reason, and when should it act? In this work, we propose RARRL (Resource-Aware Reasoning via Reinforcement Learning), a hierarchical framework for resource-aware orchestration of embodied agents. Rather than learning low-level control policies, RARRL learns a high-level orchestration policy that operates at the agent's decision-making layer. This policy enables the agent to adaptively determine whether to invoke reasoning, which reasoning role to employ, and how much computational budget to allocate based on current observations, execution history, and remaining resources. Extensive experiments, including evaluations with empirical latency profiles derived from the ALFRED benchmark, show that RARRL consistently improves task success rates while reducing execution latency and enhancing robustness compared with fixed or heuristic reasoning strategies. These results demonstrate that adaptive reasoning control is essential for building reliable and efficient embodied robotic agents.",
+    "authors": [
+      "Jun Liu",
+      "Pu Zhao",
+      "Zhenglun Kong",
+      "Xuan Shen",
+      "Peiyan Dong",
+      "Fan Yang",
+      "Lin Cui",
+      "Hao Tang",
+      "Geng Yuan",
+      "Wei Niu",
+      "Wenbin Zhang",
+      "Xue Lin",
+      "Gaowen Liu",
+      "Yanzhi Wang",
+      "Dong Huang"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16673v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16673v1",
+    "fetched_at": "2026-03-18T08:42:53.223875",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777921"
+  },
+  {
+    "id": "2603.16666v1",
+    "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+    "abstract": "World Action Models (WAMs) have emerged as a promising alternative to Vision-Language-Action (VLA) models for embodied control because they explicitly model how visual observations may evolve under action. Most existing WAMs follow an imagine-then-execute paradigm, incurring substantial test-time latency from iterative video denoising, yet it remains unclear whether explicit future imagination is actually necessary for strong action performance. In this paper, we ask whether WAMs need explicit future imagination at test time, or whether their benefit comes primarily from video modeling during training. We disentangle the role of video modeling during training from explicit future generation during inference by proposing \\textbf{Fast-WAM}, a WAM architecture that retains video co-training during training but skips future prediction at test time. We further instantiate several Fast-WAM variants to enable a controlled comparison of these two factors. Across these variants, we find that Fast-WAM remains competitive with imagine-then-execute variants, while removing video co-training causes a much larger performance drop. Empirically, Fast-WAM achieves competitive results with state-of-the-art methods both on simulation benchmarks (LIBERO and RoboTwin) and real-world tasks, without embodied pretraining. It runs in real time with 190ms latency, over 4$\\times$ faster than existing imagine-then-execute WAMs. These results suggest that the main value of video prediction in WAMs may lie in improving world representations during training rather than generating future observations at test time. Project page: https://yuantianyuan01.github.io/FastWAM/",
+    "authors": [
+      "Tianyuan Yuan",
+      "Zibin Dong",
+      "Yicheng Liu",
+      "Hang Zhao"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16666v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16666v1",
+    "fetched_at": "2026-03-18T08:42:53.223898",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777932"
+  },
+  {
+    "id": "2603.16586v1",
+    "title": "Runtime Governance for AI Agents: Policies on Paths",
+    "abstract": "AI agents -- systems that plan, reason, and act using large language models -- produce non-deterministic, path-dependent behavior that cannot be fully governed at design time, where with governed we mean striking the right balance between as high as possible successful task completion rate and the legal, data-breach, reputational and other costs associated with running agents. We argue that the execution path is the central object for effective runtime governance and formalize compliance policies as deterministic functions mapping agent identity, partial path, proposed next action, and organizational state to a policy violation probability. We show that prompt-level instructions (and \"system prompts\"), and static access control are special cases of this framework: the former shape the distribution over paths without actually evaluating them; the latter evaluates deterministic policies that ignore the path (i.e., these can only account for a specific subset of all possible paths). In our view, runtime evaluation is the general case, and it is necessary for any path-dependent policy. We develop the formal framework for analyzing AI agent governance, present concrete policy examples (inspired by the AI act), discuss a reference implementation, and identify open problems including risk calibration and the limits of enforced compliance.",
+    "authors": [
+      "Maurits Kaptein",
+      "Vassilis-Javed Khan",
+      "Andriy Podstavnychy"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16586v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16586v1",
+    "fetched_at": "2026-03-18T08:42:53.223919",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777941"
+  },
+  {
+    "id": "2603.16526v1",
+    "title": "Exploring different approaches to customize language models for domain-specific text-to-code generation",
+    "abstract": "Large language models (LLMs) have demonstrated strong capabilities in generating executable code from natural language descriptions. However, general-purpose models often struggle in specialized programming contexts where domain-specific libraries, APIs, or conventions must be used. Customizing smaller open-source models offers a cost-effective alternative to relying on large proprietary systems. In this work, we investigate how smaller language models can be adapted for domain-specific code generation using synthetic datasets. We construct datasets of programming exercises across three domains within the Python ecosystem: general Python programming, Scikit-learn machine learning workflows, and OpenCV-based computer vision tasks. Using these datasets, we evaluate three customization strategies: few-shot prompting, retrieval-augmented generation (RAG), and parameter-efficient fine-tuning using Low-Rank Adaptation (LoRA). Performance is evaluated using both benchmark-based metrics and similarity-based metrics that measure alignment with domain-specific code. Our results show that prompting-based approaches such as few-shot learning and RAG can improve domain relevance in a cost-effective manner, although their impact on benchmark accuracy is limited. In contrast, LoRA-based fine-tuning consistently achieves higher accuracy and stronger domain alignment across most tasks. These findings highlight practical trade-offs between flexibility, computational cost, and performance when adapting smaller language models for specialized programming tasks.",
+    "authors": [
+      "Luís Freire",
+      "Fernanda A. Andaló",
+      "Nicki Skafte Detlefsen"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16526v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16526v1",
+    "fetched_at": "2026-03-18T08:42:53.223939",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777951"
+  },
+  {
+    "id": "2603.16453v1",
+    "title": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments",
+    "abstract": "Large Language Model (LLM)-based agents have achieved notable success on short-horizon and highly structured tasks. However, their ability to maintain coherent decision-making over long horizons in realistic and dynamic environments remains an open challenge.   We introduce RetailBench, a high-fidelity benchmark designed to evaluate long-horizon autonomous decision-making in realistic commercial scenarios, where agents must operate under stochastic demand and evolving external conditions.   We further propose the Evolving Strategy & Execution framework, which separates high-level strategic reasoning from low-level action execution. This design enables adaptive and interpretable strategy evolution over time. It is particularly important for long-horizon tasks, where non-stationary environments and error accumulation require strategies to be revised at a different temporal scale than action execution.   Experiments on eight state-of-the-art LLMs across progressively challenging environments show that our framework improves operational stability and efficiency compared to other baselines. However, performance degrades substantially as task complexity increases, revealing fundamental limitations in current LLMs for long-horizon, multi-factor decision-making.",
+    "authors": [
+      "Linghua Zhang",
+      "Jun Wang",
+      "Jingtong Wu",
+      "Zhisong Zhang"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16453v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16453v1",
+    "fetched_at": "2026-03-18T08:42:53.223964",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777961"
+  },
+  {
+    "id": "2603.16448v1",
+    "title": "TRUST-SQL: Tool-Integrated Multi-Turn Reinforcement Learning for Text-to-SQL over Unknown Schemas",
+    "abstract": "Text-to-SQL parsing has achieved remarkable progress under the Full Schema Assumption. However, this premise fails in real-world enterprise environments where databases contain hundreds of tables with massive noisy metadata. Rather than injecting the full schema upfront, an agent must actively identify and verify only the relevant subset, giving rise to the Unknown Schema scenario we study in this work. To address this, we propose TRUST-SQL (Truthful Reasoning with Unknown Schema via Tools). We formulate the task as a Partially Observable Markov Decision Process where our autonomous agent employs a structured four-phase protocol to ground reasoning in verified metadata. Crucially, this protocol provides a structural boundary for our novel Dual-Track GRPO strategy. By applying token-level masked advantages, this strategy isolates exploration rewards from execution outcomes to resolve credit assignment, yielding a 9.9% relative improvement over standard GRPO. Extensive experiments across five benchmarks demonstrate that TRUST-SQL achieves an average absolute improvement of 30.6% and 16.6% for the 4B and 8B variants respectively over their base models. Remarkably, despite operating entirely without pre-loaded metadata, our framework consistently matches or surpasses strong baselines that rely on schema prefilling.",
+    "authors": [
+      "Ai Jian",
+      "Xiaoyun Zhang",
+      "Wanrou Du",
+      "Jingqing Ruan",
+      "Jiangbo Pei",
+      "Weipeng Zhang",
+      "Ke Zeng",
+      "Xunliang Cai"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16448v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16448v1",
+    "fetched_at": "2026-03-18T08:42:53.223993",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777970"
+  },
+  {
+    "id": "2603.16367v1",
+    "title": "DynamicGate MLP Conditional Computation via Learned Structural Dropout and Input Dependent Gating for Functional Plasticity",
+    "abstract": "Dropout is a representative regularization technique that stochastically deactivates hidden units during training to mitigate overfitting. In contrast, standard inference executes the full network with dense computation, so its goal and mechanism differ from conditional computation, where the executed operations depend on the input. This paper organizes DynamicGate-MLP into a single framework that simultaneously satisfies both the regularization view and the conditional-computation view. Instead of a random mask, the proposed model learns gates that decide whether to use each unit (or block), suppressing unnecessary computation while implementing sample-dependent execution that concentrates computation on the parts needed for each input. To this end, we define continuous gate probabilities and, at inference time, generate a discrete execution mask from them to select an execution path. Training controls the compute budget via a penalty on expected gate usage and uses a Straight-Through Estimator (STE) to optimize the discrete mask. We evaluate DynamicGate-MLP on MNIST, CIFAR-10, Tiny-ImageNet, Speech Commands, and PBMC3k, and compare it with various MLP baselines and MoE-style variants. Compute efficiency is compared under a consistent criterion using gate activation ratios and a layerweighted relative MAC metric, rather than wall-clock latency that depends on hardware and backend kernels.",
+    "authors": [
+      "Yong Il Choi"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16367v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16367v1",
+    "fetched_at": "2026-03-18T08:42:53.224039",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777981"
+  },
+  {
+    "id": "2603.16365v1",
+    "title": "FactorEngine: A Program-level Knowledge-Infused Factor Mining Framework for Quantitative Investment",
+    "abstract": "We study alpha factor mining, the automated discovery of predictive signals from noisy, non-stationary market data-under a practical requirement that mined factors be directly executable and auditable, and that the discovery process remain computationally tractable at scale. Existing symbolic approaches are limited by bounded expressiveness, while neural forecasters often trade interpretability for performance and remain vulnerable to regime shifts and overfitting. We introduce FactorEngine (FE), a program-level factor discovery framework that casts factors as Turing-complete code and improves both effectiveness and efficiency via three separations: (i) logic revision vs. parameter optimization, (ii) LLM-guided directional search vs. Bayesian hyperparameter search, and (iii) LLM usage vs. local computation. FE further incorporates a knowledge-infused bootstrapping module that transforms unstructured financial reports into executable factor programs through a closed-loop multi-agent extraction-verification-code-generation pipeline, and an experience knowledge base that supports trajectory-aware refinement (including learning from failures). Across extensive backtests on real-world OHLCV data, FE produces factors with substantially stronger predictive stability and portfolio impact-for example, higher IC/ICIR (and Rank IC/ICIR) and improved AR/Sharpe, than baseline methods, achieving state-of-the-art predictive and portfolio performance.",
+    "authors": [
+      "Qinhong Lin",
+      "Ruitao Feng",
+      "Yinglun Feng",
+      "Zhenxin Huang",
+      "Yukun Chen",
+      "Zhongliang Yang",
+      "Linna Zhou",
+      "Binjie Fei",
+      "Jiaqi Liu",
+      "Yu Li"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16365v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16365v1",
+    "fetched_at": "2026-03-18T08:42:53.224071",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.777990"
+  },
+  {
+    "id": "2603.16335v1",
+    "title": "Behavioral Steering in a 35B MoE Language Model via SAE-Decoded Probe Vectors: One Agency Axis, Not Five Traits",
+    "abstract": "We train nine sparse autoencoders (SAEs) on the residual stream of Qwen 3.5-35B-A3B, a 35-billion-parameter Mixture-of-Experts model with a hybrid GatedDeltaNet/attention architecture, and use them to identify and steer five agentic behavioral traits. Our method trains linear probes on SAE latent activations, then projects the probe weights back through the SAE decoder to obtain continuous steering vectors in the model's native activation space. This bypasses the SAE's top-k discretization, enabling fine-grained behavioral intervention at inference time with no retraining. Across 1,800 agent rollouts (50 scenarios times 36 conditions), we find that autonomy steering at multiplier 2 achieves Cohen's d = 1.01 (p < 0.0001), shifting the model from asking the user for help 78% of the time to proactively executing code and searching the web. Cross-trait analysis, however, reveals that all five steering vectors primarily modulate a single dominant agency axis (the disposition to act independently versus defer to the user), with trait specific effects appearing only as secondary modulations in tool-type composition and dose-response shape. The tool-use vector steers behavior (d = 0.39); the risk-calibration vector produces only suppression. We additionally show that steering only during autoregressive decoding has zero effect (p > 0.35), providing causal evidence that behavioral commitments are computed during prefill in GatedDeltaNet architectures.",
+    "authors": [
+      "Jia Qing Yap"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16335v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16335v1",
+    "fetched_at": "2026-03-18T08:42:53.224090",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.778001"
+  },
+  {
+    "id": "2603.16299v1",
+    "title": "PyPhonPlan: Simulating phonetic planning with dynamic neural fields and task dynamics",
+    "abstract": "We introduce PyPhonPlan, a Python toolkit for implementing dynamical models of phonetic planning using coupled dynamic neural fields and task dynamic simulations. The toolkit provides modular components for defining planning, perception and memory fields, as well as between-field coupling, gestural inputs, and using field activation profiles to solve tract variable trajectories. We illustrate the toolkit's capabilities through an example application:~simulating production/perception loops with a coupled memory field, which demonstrates the framework's ability to model interactive speech dynamics using representations that are temporally-principled, neurally-grounded, and phonetically-rich. PyPhonPlan is released as open-source software and contains executable examples to promote reproducibility, extensibility, and cumulative computational development for speech communication research.",
+    "authors": [
+      "Sam Kirkham"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16299v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16299v1",
+    "fetched_at": "2026-03-18T08:42:53.224107",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-18T08:45:03.778009"
+  }
+]
