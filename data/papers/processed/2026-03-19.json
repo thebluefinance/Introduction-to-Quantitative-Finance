@@ -1,0 +1,505 @@
+[
+  {
+    "id": "2603.14558v2",
+    "title": "JobMatchAI An Intelligent Job Matching Platform Using Knowledge Graphs, Semantic Search and Explainable AI",
+    "abstract": "Recruiters and job seekers rely on search systems to navigate labor markets, making candidate matching engines critical for hiring outcomes. Most systems act as keyword filters, failing to handle skill synonyms and nonlinear careers, resulting in missed candidates and opaque match scores. We introduce JobMatchAI, a production-ready system integrating Transformer embeddings, skill knowledge graphs, and interpretable reranking. Our system optimizes utility across skill fit, experience, location, salary, and company preferences, providing factor-wise explanations through resume-driven search workflows. We release JobSearch-XS benchmark and a hybrid retrieval stack combining BM25, knowledge graph and semantic components to evaluate skill generalization. We assess system performance on JobSearch-XS across retrieval tasks, provide a demo video, a hosted website and installable package.",
+    "authors": [
+      "Mayank Vyas",
+      "Abhijit Chakraborty",
+      "Vivek Gupta"
+    ],
+    "published": "2026-03-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.14558v2",
+    "arxiv_url": "https://arxiv.org/abs/2603.14558v2",
+    "fetched_at": "2026-03-19T08:40:32.175776",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202378"
+  },
+  {
+    "id": "2603.18000v1",
+    "title": "AgentFactory: A Self-Evolving Framework Through Executable Subagent Accumulation and Reuse",
+    "abstract": "Building LLM-based agents has become increasingly important. Recent works on LLM-based agent self-evolution primarily record successful experiences as textual prompts or reflections, which cannot reliably guarantee efficient task re-execution in complex scenarios. We propose AgentFactory, a new self-evolution paradigm that preserves successful task solutions as executable subagent code rather than textual experience. Crucially, these subagents are continuously refined based on execution feedback, becoming increasingly robust and efficient as more tasks are encountered. Saved subagents are pure Python code with standardized documentation, enabling portability across any Python-capable system. We demonstrate that AgentFactory enables continuous capability accumulation: its library of executable subagents grows and improves over time, progressively reducing the effort required for similar tasks without manual intervention. Our implementation is open-sourced at https://github.com/zzatpku/AgentFactory, and our demonstration video is available at https://youtu.be/iKSsuAXJHW0.",
+    "authors": [
+      "Zhang Zhang",
+      "Shuqi Lu",
+      "Hongjin Qian",
+      "Di He",
+      "Zheng Liu"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.18000v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.18000v1",
+    "fetched_at": "2026-03-19T08:40:39.020340",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202398"
+  },
+  {
+    "id": "2603.17974v1",
+    "title": "Toward Scalable Automated Repository-Level Datasets for Software Vulnerability Detection",
+    "abstract": "Software vulnerabilities continue to grow in volume and remain difficult to detect in practice. Although learning-based vulnerability detection has progressed, existing benchmarks are largely function-centric and fail to capture realistic, executable, interprocedural settings. Recent repo-level security benchmarks demonstrate the importance of realistic environments, but their manual curation limits scale. This doctoral research proposes an automated benchmark generator that injects realistic vulnerabilities into real-world repositories and synthesizes reproducible proof-of-vulnerability (PoV) exploits, enabling precisely labeled datasets for training and evaluating repo-level vulnerability detection agents. We further investigate an adversarial co-evolution loop between injection and detection agents to improve robustness under realistic constraints.",
+    "authors": [
+      "Amine Lbath"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17974v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17974v1",
+    "fetched_at": "2026-03-19T08:40:39.020368",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202410"
+  },
+  {
+    "id": "2603.17969v1",
+    "title": "Specification-Aware Distribution Shaping for Robotics Foundation Models",
+    "abstract": "Robotics foundation models have demonstrated strong capabilities in executing natural language instructions across diverse tasks and environments. However, they remain largely data-driven and lack formal guarantees on safety and satisfaction of time-dependent specifications during deployment. In practice, robots often need to comply with operational constraints involving rich spatio-temporal requirements such as time-bounded goal visits, sequential objectives, and persistent safety conditions. In this work, we propose a specification-aware action distribution optimization framework that enforces a broad class of Signal Temporal Logic (STL) constraints during execution of a pretrained robotics foundation model without modifying its parameters. At each decision step, the method computes a minimally modified action distribution that satisfies a hard STL feasibility constraint by reasoning over the remaining horizon using forward dynamics propagation. We validate the proposed framework in simulation using a state-of-the-art robotics foundation model across multiple environments and complex specifications.",
+    "authors": [
+      "Sadık Bera Yüksel",
+      "Derya Aksaray"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17969v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17969v1",
+    "fetched_at": "2026-03-19T08:40:39.020388",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202421"
+  },
+  {
+    "id": "2603.17893v1",
+    "title": "scicode-lint: Detecting Methodology Bugs in Scientific Python Code with LLM-Generated Patterns",
+    "abstract": "Methodology bugs in scientific Python code produce plausible but incorrect results that traditional linters and static analysis tools cannot detect. Several research groups have built ML-specific linters, demonstrating that detection is feasible. Yet these tools share a sustainability problem: dependency on specific pylint or Python versions, limited packaging, and reliance on manual engineering for every new pattern. As AI-generated code increases the volume of scientific software, the need for automated methodology checking (such as detecting data leakage, incorrect cross-validation, and missing random seeds) grows. We present scicode-lint, whose two-tier architecture separates pattern design (frontier models at build time) from execution (small local model at runtime). Patterns are generated, not hand-coded; adapting to new library versions costs tokens, not engineering hours. On Kaggle notebooks with human-labeled ground truth, preprocessing leakage detection reaches 65% precision at 100% recall; on 38 published scientific papers applying AI/ML, precision is 62% (LLM-judged) with substantial variation across pattern categories; on a held-out paper set, precision is 54%. On controlled tests, scicode-lint achieves 97.7% accuracy across 66 patterns.",
+    "authors": [
+      "Sergey V. Samsonau"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17893v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17893v1",
+    "fetched_at": "2026-03-19T08:40:39.020406",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202436"
+  },
+  {
+    "id": "2603.17808v1",
+    "title": "EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards",
+    "abstract": "Video generative models are increasingly used as world models for robotics, where a model generates a future visual rollout conditioned on the current observation and task instruction, and an inverse dynamics model (IDM) converts the generated frames into executable robot actions. However, current video world models lack explicit executability constraints. As a result, visually coherent rollouts may still violate rigid-body and kinematic consistency, producing unstable or infeasible control commands when decoded by an IDM. We refer to this mismatch between visual generation and physically executable control as the executability gap. While this gap can be mitigated at inference time using techniques such as rejection sampling, such approaches are inefficient due to the high cost of video generation. In this paper, we leverage the executability gap as a training signal and introduce Executable Video Alignment (EVA), a reinforcement-learning post-training framework for aligning video world models. EVA trains an inverse dynamics model on real robot trajectories and repurposes it as a reward model that evaluates generated videos through the action sequences they induce, encouraging smooth motions measured by velocity, acceleration, and jerk while penalizing actions that violate embodiment constraints. Importantly, the reward remains informative even when generated videos contain severe visual artifacts, since such artifacts typically translate into unstable or out-of-bound actions. Experiments on the RoboTwin benchmark and a real bimanual robot show that EVA reduces embodiment-specific artifacts in generated rollouts and improves downstream task execution success.",
+    "authors": [
+      "Ruixiang Wang",
+      "Qingming Liu",
+      "Yueci Deng",
+      "Guiliang Liu",
+      "Zhen Liu",
+      "Kui Jia"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17808v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17808v1",
+    "fetched_at": "2026-03-19T08:40:39.020475",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202450"
+  },
+  {
+    "id": "2603.17787v1",
+    "title": "Governed Memory: A Production Architecture for Multi-Agent Workflows",
+    "abstract": "Enterprise AI deploys dozens of autonomous agent nodes across workflows, each acting on the same entities with no shared memory and no common governance. We identify five structural challenges arising from this memory governance gap: memory silos across agent workflows; governance fragmentation across teams and tools; unstructured memories unusable by downstream systems; redundant context delivery in autonomous multi-step executions; and silent quality degradation without feedback loops. We present Governed Memory, a shared memory and governance layer addressing this gap through four mechanisms: a dual memory model combining open-set atomic facts with schema-enforced typed properties; tiered governance routing with progressive context delivery; reflection-bounded retrieval with entity-scoped isolation; and a closed-loop schema lifecycle with AI-assisted authoring and automated per-property refinement. We validate each mechanism through controlled experiments (N=250, five content types): 99.6% fact recall with complementary dual-modality coverage; 92% governance routing precision; 50% token reduction from progressive delivery; zero cross-entity leakage across 500 adversarial queries; 100% adversarial governance compliance; and output quality saturation at approximately seven governed memories per entity. On the LoCoMo benchmark, the architecture achieves 74.8% overall accuracy, confirming that governance and schema enforcement impose no retrieval quality penalty. The system is in production at Personize.ai.",
+    "authors": [
+      "Hamed Taheri"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17787v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17787v1",
+    "fetched_at": "2026-03-19T08:40:39.020493",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202462"
+  },
+  {
+    "id": "2603.17613v1",
+    "title": "VeriAgent: A Tool-Integrated Multi-Agent System with Evolving Memory for PPA-Aware RTL Code Generation",
+    "abstract": "LLMs have recently demonstrated strong capabilities in automatic RTL code generation, achieving high syntactic and functional correctness. However, most methods focus on functional correctness while overlooking critical physical design objectives, including Power, Performance, and Area. In this work, we propose a PPA-aware, tool-integrated multi-agent framework for high-quality verilog code generation. Our framework explicitly incorporates EDA tools into a closed-loop workflow composed of a \\textit{Programmer Agent}, a \\textit{Correctness Agent}, and a \\textit{PPA Agent}, enabling joint optimization of functional correctness and physical metrics. To support continuous improvement without model retraining, we introduce an \\textit{Evolved Memory Mechanism} that externalizes optimization experience into structured memory nodes. A dedicated memory manager dynamically maintains the memory pool and allows the system to refine strategies based on historical execution trajectories. Extensive experiments demonstrate that our approach achieves strong functional correctness while delivering significant improvements in PPA metrics. By integrating tool-driven feedback with structured and evolvable memory, our framework transforms RTL generation from one-shot reasoning into a continual, feedback-driven optimization process, providing a scalable pathway for deploying LLMs in real-world hardware design flows.",
+    "authors": [
+      "Yaoxiang Wang",
+      "Qi Shi",
+      "ShangZhan Li",
+      "Qingguo Hu",
+      "Xinyu Yin",
+      "Bo Guo",
+      "Xu Han",
+      "Maosong Sun",
+      "Jinsong Su"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.CL",
+      "cs.PL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17613v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17613v1",
+    "fetched_at": "2026-03-19T08:40:39.020524",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202481"
+  },
+  {
+    "id": "2603.17524v1",
+    "title": "KineVLA: Towards Kinematics-Aware Vision-Language-Action Models with Bi-Level Action Decomposition",
+    "abstract": "In this paper, we introduce a novel kinematics-rich vision-language-action (VLA) task, in which language commands densely encode diverse kinematic attributes (such as direction, trajectory, orientation, and relative displacement) from initiation through completion, at key moments, unlike existing action instructions that capture kinematics only coarsely or partially, thereby supporting fine-grained and personalized manipulation. In this setting, where task goals remain invariant while execution trajectories must adapt to instruction-level kinematic specifications. To address this challenge, we propose KineVLA, a vision-language-action framework that explicitly decouples goal-level invariance from kinematics-level variability through a bi-level action representation and bi-level reasoning tokens to serve as explicit, supervised intermediate variables that align language and action. To support this task, we construct the kinematics-aware VLA datasets spanning both simulation and real-world robotic platforms, featuring instruction-level kinematic variations and bi-level annotations. Extensive experiments on LIBERO and a Realman-75 robot demonstrate that KineVLA consistently outperforms strong VLA baselines on kinematics-sensitive benchmarks, achieving more precise, controllable, and generalizable manipulation behaviors.",
+    "authors": [
+      "Gaoge Han",
+      "Zhengqing Gao",
+      "Ziwen Li",
+      "Jiaxin Huang",
+      "Shaoli Huang",
+      "Fakhri Karray",
+      "Mingming Gong",
+      "Tongliang Liu"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17524v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17524v1",
+    "fetched_at": "2026-03-19T08:40:39.020553",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202492"
+  },
+  {
+    "id": "2603.17445v1",
+    "title": "When Only the Final Text Survives: Implicit Execution Tracing for Multi-Agent Attribution",
+    "abstract": "When a multi-agent system produces an incorrect or harmful answer, who is accountable if execution logs and agent identifiers are unavailable? Multi-agent language systems increasingly rely on structured interactions such as delegation and iterative refinement, yet the final output often obscures the underlying interaction topology and agent contributions. We introduce IET (Implicit Execution Tracing), a metadata-independent framework that enables token-level attribution directly from generated text and a simple mechanism for interaction topology reconstruction. During generation, agent-specific keyed signals are embedded into the token distribution, transforming the text into a self-describing execution trace detectable only with a secret key. At detection time, a transition-aware scoring method identifies agent handover points and reconstructs the interaction graph. Experiments show that IET recovers agent segments and coordination structure with high accuracy while preserving generation quality, enabling privacy-preserving auditing for multi-agent language systems.",
+    "authors": [
+      "Yi Nian",
+      "Haosen Cao",
+      "Shenzhe Zhu",
+      "Henry Peng Zou",
+      "Qingqing Luan",
+      "Yue Zhao"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17445v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17445v1",
+    "fetched_at": "2026-03-19T08:40:39.020578",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202503"
+  },
+  {
+    "id": "2603.17419v1",
+    "title": "Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare",
+    "abstract": "Autonomous AI agents powered by large language models are being deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication. Recent red teaming research demonstrates that these agents exhibit critical vulnerabilities in realistic settings: unauthorized compliance with non-owner instructions, sensitive information disclosure, identity spoofing, cross-agent propagation of unsafe practices, and indirect prompt injection through external resources [7]. In healthcare environments processing Protected Health Information, every such vulnerability becomes a potential HIPAA violation. This paper presents a security architecture deployed for nine autonomous AI agents in production at a healthcare technology company. We develop a six-domain threat model for agentic AI in healthcare covering credential exposure, execution capability abuse, network egress exfiltration, prompt integrity failures, database access risks, and fleet configuration drift. We implement four-layer defense in depth: (1) kernel level workload isolation using gVisor on Kubernetes, (2) credential proxy sidecars preventing agent containers from accessing raw secrets, (3) network egress policies restricting each agent to allowlisted destinations, and (4) a prompt integrity framework with structured metadata envelopes and untrusted content labeling. We report results from 90 days of deployment including four HIGH severity findings discovered and remediated by an automated security audit agent, progressive fleet hardening across three VM image generations, and defense coverage mapped to all eleven attack patterns from recent literature. All configurations, audit tooling, and the prompt integrity framework are released as open source.",
+    "authors": [
+      "Saikat Maiti"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17419v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17419v1",
+    "fetched_at": "2026-03-19T08:40:39.020595",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202515"
+  },
+  {
+    "id": "2603.17312v1",
+    "title": "Recurrent Reasoning with Vision-Language Models for Estimating Long-Horizon Embodied Task Progress",
+    "abstract": "Accurately estimating task progress is critical for embodied agents to plan and execute long-horizon, multi-step tasks. Despite promising advances, existing Vision-Language Models (VLMs) based methods primarily leverage their video understanding capabilities, while neglecting their complex reasoning potential. Furthermore, processing long video trajectories with VLMs is computationally prohibitive for real-world deployment. To address these challenges, we propose the Recurrent Reasoning Vision-Language Model ($\\text{R}^2$VLM). Our model features a recurrent reasoning framework that processes local video snippets iteratively, maintaining a global context through an evolving Chain of Thought (CoT). This CoT explicitly records task decomposition, key steps, and their completion status, enabling the model to reason about complex temporal dependencies. This design avoids the high cost of processing long videos while preserving essential reasoning capabilities. We train $\\text{R}^2$VLM on large-scale, automatically generated datasets from ALFRED and Ego4D. Extensive experiments on progress estimation and downstream applications, including progress-enhanced policy learning, reward modeling for reinforcement learning, and proactive assistance, demonstrate that $\\text{R}^2$VLM achieves strong performance and generalization, achieving a new state-of-the-art in long-horizon task progress estimation. The models and benchmarks are publicly available at \\href{https://huggingface.co/collections/zhangyuelin/r2vlm}{huggingface}.",
+    "authors": [
+      "Yuelin Zhang",
+      "Sijie Cheng",
+      "Chen Li",
+      "Zongzhao Li",
+      "Yuxin Huang",
+      "Yang Liu",
+      "Wenbing Huang"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17312v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17312v1",
+    "fetched_at": "2026-03-19T08:40:39.020623",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202525"
+  },
+  {
+    "id": "2603.17233v1",
+    "title": "Draft-and-Prune: Improving the Reliability of Auto-formalization for Logical Reasoning",
+    "abstract": "Auto-formalization (AF) translates natural-language reasoning problems into solver-executable programs, enabling symbolic solvers to perform sound logical deduction. In practice, however, AF pipelines are currently brittle: programs may fail to execute, or execute but encode incorrect semantics. While prior work largely mitigates syntactic failures via repairs based on solver feedback, reducing semantics failures remains a major bottleneck. We propose Draft-and-Prune (D&P), an inference-time framework that improves AF-based logical reasoning via diversity and verification. D&P first drafts multiple natural-language plans and conditions program generation on them. It further prunes executable but contradictory or ambiguous formalizations, and aggregates predictions from surviving paths via majority voting. Across four representative benchmarks (AR-LSAT, ProofWriter, PrOntoQA, LogicalDeduction), D&P substantially strengthens AF-based reasoning without extra supervision. On AR-LSAT, in the AF-only setting, D&P achieves 78.43% accuracy with GPT-4 and 78.00% accuracy with GPT-4o, significantly outperforming the strongest AF baselines MAD-LOGIC and CLOVER. D&P then attains near-ceiling performance on the other benchmarks, including 100% on PrOntoQA and LogicalDeduction.",
+    "authors": [
+      "Zhiyu Ni",
+      "Zheng Liang",
+      "Liangcheng Song",
+      "Chenrui Cao",
+      "Xian Zhang",
+      "Alberto Sangiovanni-Vincentelli",
+      "Pierluigi Nuzzo"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17233v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17233v1",
+    "fetched_at": "2026-03-19T08:40:39.020667",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202534"
+  },
+  {
+    "id": "2603.17217v1",
+    "title": "Anonymous-by-Construction: An LLM-Driven Framework for Privacy-Preserving Text",
+    "abstract": "Responsible use of AI demands that we protect sensitive information without undermining the usefulness of data, an imperative that has become acute in the age of large language models. We address this challenge with an on-premise, LLM-driven substitution pipeline that anonymizes text by replacing personally identifiable information (PII) with realistic, type-consistent surrogates. Executed entirely within organizational boundaries using local LLMs, the approach prevents data egress while preserving fluency and task-relevant semantics.   We conduct a systematic, multi-metric, cross-technique evaluation on the Action-Based Conversation Dataset, benchmarking against industry standards (Microsoft Presidio and Google DLP) and a state-of-the-art approach (ZSTS, in redaction-only and redaction-plus-substitution variants). Our protocol jointly measures privacy, semantic utility, and trainability under privacy via a lifecycle-ready criterion obtained by fine-tuning a compact encoder (BERT+LoRA) on sanitized text. In addition, we assess agentic Q&A performance by inserting an on-premise anonymization layer before the answering LLM and evaluating the quality of its responses. This intermediate, type-preserving substitution stage ensures that no sensitive content is exposed to third-party APIs, enabling responsible deployment of Q\\&A agents without compromising confidentiality.   Our method attains state-of-the-art privacy, minimal topical drift, strong factual utility, and low trainability loss, outperforming rule-based approaches and named-entity recognition (NER) baselines and ZSTS variants on the combined privacy--utility--trainability frontier. These results show that local LLM substitution yields anonymized corpora that are both responsible to use and operationally valuable: safe for agentic pipelines and suitable for downstream fine-tuning with limited degradation.",
+    "authors": [
+      "Federico Albanese",
+      "Pablo Ronco",
+      "Nicolás D'Ippolito"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17217v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17217v1",
+    "fetched_at": "2026-03-19T08:40:39.020690",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202546"
+  },
+  {
+    "id": "2603.17170v1",
+    "title": "PAuth - Precise Task-Scoped Authorization For Agents",
+    "abstract": "The emerging agentic web envisions AI agents that reliably fulfill users' natural-language (NL)-based tasks by interacting with existing web services. However, existing authorization models are misaligned with this vision. In particular, today's operator-scoped authorization, exemplified by OAuth, grants broad permissions tied to operators (e.g., the transfer operator) rather than to the specific operations (e.g., transfer $100 to Bob) implied by a user's task. This will inevitably result in overprivileged agents.   We introduce Precise Task-Scoped Implicit Authorization (PAuth), a fundamentally different model in which submitting an NL task implicitly authorizes only the concrete operations required for its faithful execution. To make this enforceable at servers, we propose NL slices: symbolic specifications of the calls each service expects, derived from the task and upstream results. Complementing this, we also propose envelopes: special data structure to bind each operand's concrete value to its symbolic provenance, enabling servers to verify that all operands arise from legitimate computations.   PAuth is prototyped in the agent-security evaluation framework AgentDojo. We evaluate it in both benign settings and attack scenarios where a spurious operation is injected into an otherwise normal task. In all benign tests, PAuth executes the tasks successfully without requiring any additional permissions. In all attack tests, PAuth correctly raises warnings about missing permissions. These results demonstrate that PAuth's reasoning about permissions is indeed precise. We further analyze the characteristics of these tasks and measure the associated token costs.",
+    "authors": [
+      "Reshabh K Sharma",
+      "Linxi Jiang",
+      "Zhiqiang Lin",
+      "Shuo Chen"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.PL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17170v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17170v1",
+    "fetched_at": "2026-03-19T08:40:39.020714",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202556"
+  },
+  {
+    "id": "2603.17112v1",
+    "title": "Cascade-Aware Multi-Agent Routing: Spatio-Temporal Sidecars and Geometry-Switching",
+    "abstract": "A common architectural pattern in advanced AI reasoning systems is the symbolic graph network: specialized agents or modules connected by delegation edges, routing tasks through a dynamic execution graph. Current schedulers optimize load and fitness but are geometry-blind: they do not model how failures propagate differently in tree-like versus cyclic regimes. In tree-like delegation, a single failure can cascade exponentially; in dense cyclic graphs, failures tend to self-limit. We identify this observability gap, quantify its system-level cost, and propose a lightweight mitigation.   We formulate online geometry control for route-risk estimation on time-indexed execution graphs with route-local failure history. Our approach combines (i) a Euclidean spatio-temporal propagation baseline, (ii) a hyperbolic route-risk model with temporal decay (and optional burst excitation), and (iii) a learned geometry selector over structural features. The selector is a compact MLP (9->12->1) using six topology statistics plus three geometry-aware signals: BFS shell-growth slope, cycle-rank norm, and fitted Poincare curvature. On the Genesis 3 benchmark distribution, adaptive switching improves win rate in the hardest non_tree regime from 64-72% (fixed hyperbolic variants) to 92%, and achieves 87.2% overall win rate.   To measure total system value, we compare against Genesis 3 routing without any spatio-temporal sidecar, using only native bandit/LinUCB signals (team fitness and mean node load). This baseline achieves 50.4% win rate overall and 20% in tree-like regimes; the full sidecar recovers 87.2% overall (+36.8 pp), with +48 to +68 pp gains in tree-like settings, consistent with a cascade-sensitivity analysis. Overall, a 133-parameter sidecar substantially mitigates geometry-blind failure propagation in one high-capability execution-graph system.",
+    "authors": [
+      "Davide Di Gioia"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17112v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17112v1",
+    "fetched_at": "2026-03-19T08:40:39.020732",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202567"
+  },
+  {
+    "id": "2603.16985v1",
+    "title": "Integrating Inductive Biases in Transformers via Distillation for Financial Time Series Forecasting",
+    "abstract": "Transformer-based models have been widely adopted for time-series forecasting due to their high representational capacity and architectural flexibility. However, many Transformer variants implicitly assume stationarity and stable temporal dynamics -- assumptions routinely violated in financial markets characterized by regime shifts and non-stationarity. Empirically, state-of-the-art time-series Transformers often underperform even vanilla Transformers on financial tasks, while simpler architectures with distinct inductive biases, such as CNNs and RNNs, can achieve stronger performance with substantially lower complexity. At the same time, no single inductive bias dominates across markets or regimes, suggesting that robust financial forecasting requires integrating complementary temporal priors. We propose TIPS (Transformer with Inductive Prior Synthesis), a knowledge distillation framework that synthesizes diverse inductive biases -- causality, locality, and periodicity -- within a unified Transformer. TIPS trains bias-specialized Transformer teachers via attention masking, then distills their knowledge into a single student model with regime-dependent alignment across inductive biases. Across four major equity markets, TIPS achieves state-of-the-art performance, outperforming strong ensemble baselines by 55%, 9%, and 16% in annual return, Sharpe ratio, and Calmar ratio, while requiring only 38% of the inference-time computation. Further analyses show that TIPS generates statistically significant excess returns beyond both vanilla Transformers and its teacher ensembles, and exhibits regime-dependent behavioral alignment with classical architectures during their profitable periods. These results highlight the importance of regime-dependent inductive bias utilization for robust generalization in non-stationary financial time series.",
+    "authors": [
+      "Yu-Chen Den",
+      "Kuan-Yu Chen",
+      "Kendro Vincent",
+      "Darby Tien-Hao Chang"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.16985v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.16985v1",
+    "fetched_at": "2026-03-19T08:42:33.440068",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Transformer"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202577"
+  },
+  {
+    "id": "2603.17692v1",
+    "title": "Can Blindfolded LLMs Still Trade? An Anonymization-First Framework for Portfolio Optimization",
+    "abstract": "For LLM trading agents to be genuinely trustworthy, they must demonstrate understanding of market dynamics rather than exploitation of memorized ticker associations. Building responsible multi-agent systems demands rigorous signal validation: proving that predictions reflect legitimate patterns, not pre-trained recall. We address two sources of spurious performance: memorization bias from ticker-specific pre-training, and survivorship bias from flawed backtesting. Our approach is to blindfold the agents--anonymizing all identifiers--and verify whether meaningful signals persist. BlindTrade anonymizes tickers and company names, and four LLM agents output scores along with reasoning. We construct a GNN graph from reasoning embeddings and trade using PPO-DSR policy. On 2025 YTD (through 2025-08-01), we achieved Sharpe 1.40 +/- 0.22 across 20 seeds and validated signal legitimacy through negative control experiments. To assess robustness beyond a single OOS window, we additionally evaluate an extended period (2024--2025), revealing market-regime dependency: the policy excels in volatile conditions but shows reduced alpha in trending bull markets.",
+    "authors": [
+      "Joohyoung Jeon",
+      "Hongchul Lee"
+    ],
+    "published": "2026-03-18",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-fin.CP",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17692v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17692v1",
+    "fetched_at": "2026-03-19T08:42:36.778122",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202588"
+  },
+  {
+    "id": "2603.17151v1",
+    "title": "Shallow Representation of Option Implied Information",
+    "abstract": "Option prices encode the market's collective outlook through implied density and implied volatility. An explicit link between implied density and implied volatility translates the risk-neutrality of the former into conditions on the latter to rule out static arbitrage. Despite earlier recognition of their parity, the two had been studied in isolation for decades until the recent demand in implied volatility modeling rejuvenated such parity. This paper provides a systematic approach to build neural representations of option implied information. As a preliminary, we first revisit the explicit link between implied density and implied volatility through an alternative and minimalist lens, where implied volatility is viewed not as volatility but as a pointwise corrector mapping the Black-Scholes quasi-density into the implied risk-neutral density. Building on this perspective, we propose the neural representation that incorporates arbitrage constraints through the differentiable corrector. With an additive logistic model as the synthetic benchmark, extensive experiments reveal that deeper or wider network structures do not necessarily improve the model performance due to the nonlinearity of both arbitrage constraints and neural derivatives. By contrast, a shallow feedforward network with a single hidden layer and a specific activation effectively approximates implied density and implied volatility.",
+    "authors": [
+      "Jimin Lin"
+    ],
+    "published": "2026-03-17",
+    "categories": [
+      "q-fin.CP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.17151v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.17151v1",
+    "fetched_at": "2026-03-19T08:42:40.107419",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-19T08:42:53.202597"
+  }
+]
