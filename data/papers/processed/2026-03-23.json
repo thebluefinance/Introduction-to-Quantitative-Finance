@@ -1,0 +1,645 @@
+[
+  {
+    "id": "2603.19984v1",
+    "title": "If Not Now, Then When? Model Risk in the Optimal Exercise of American Options",
+    "abstract": "Model risk arises from the misspecification of probabilistic models used for pricing and hedging derivatives. While model risk for European-style claims has been widely studied, much less attention has been given to American-style derivatives and the associated optimal stopping problems. This paper analyzes model risk in the optimal exercise of an American put option using the benchmark methodology of Hull and Suo [2002]. The true data-generating process is assumed to follow a Heston stochastic volatility model. We compare the optimal exercise strategy of an investor who correctly uses the Heston model with those of investors who instead use misspecified Black--Scholes or Dupire local volatility models. Optimal exercise boundaries are computed numerically via finite difference methods. Stochastic volatility dynamics and return--volatility correlation are found to have a substantial impact on optimal exercise behavior across models, creating a source of model risk. As this behavior is not transmitted to exercise strategies determined by misspecified models, even if such models are fully calibrated to European option prices, calibration fails to mitigate model risk in this context. This issue persists under frequent recalibration of a misspecified model.",
+    "authors": [
+      "Luna Rigby",
+      "Rüdiger Frey",
+      "Erik Schlögl"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19984v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19984v1",
+    "fetched_at": "2026-03-23T08:50:07.959397",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910847"
+  },
+  {
+    "id": "2603.19944v1",
+    "title": "Large Language Models and Stock Investing: Is the Human Factor Required?",
+    "abstract": "This paper investigates whether large language models (LLMs) can generate reliable stock market predictions. We evaluate four state-of-the-art models - ChatGPT, Gemini, DeepSeek, and Perplexity - across three prompting strategies: a naive query, a structured approach, and chain-of-thought reasoning. Our results show that LLM-generated recommendations are hindered by recurring reasoning failures, including financial misconceptions, carryover errors, and reliance on outdated or hallucinated information. When appropriately guided and supervised, LLMs demonstrate the capacity to outperform the market, but realizing LLMs' full potential requires substantial human oversight. We also find that grounding stock recommendations in official regulatory filings increases their forecasting accuracy. Overall, our findings underscore the need for robust safeguards and validation when deploying LLMs in financial markets.",
+    "authors": [
+      "Ricardo Crisostomo",
+      "Diana Mykhalyuk"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19944v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19944v1",
+    "fetched_at": "2026-03-23T08:50:07.959435",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "LLM",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910865"
+  },
+  {
+    "id": "2603.19716v1",
+    "title": "Optimal Hedge Ratio for Delta-Neutral Liquidity Provision under Liquidation Constraints",
+    "abstract": "We study the problem of optimally hedging the price exposure of liquidity positions in constant-product automated market makers (AMMs) when the hedge is funded by collateralized borrowing. A liquidity provider (LP) who borrows tokens to construct a delta-neutral position faces a trade-off: higher hedge ratios reduce price exposure but increase liquidation risk through tighter collateral utilization. We model token prices as correlated geometric Brownian motions and derive the hedge ratio h that maximizes risk-adjusted return subject to a liquidation-probability constraint expressed via a first-passage-time bound. The unconstrained optimum h* admits a closed-form expression, but at h* the liquidation probability is prohibitively high. The practical optimum h** = min(h*, h_bar(alpha)) is determined by the binding liquidation constraint h_bar(alpha), which we evaluate analytically via the first-passage-time formula and confirm with Monte Carlo simulation. Simulations calibrated to on-chain data validate the analytical results, demonstrate robustness across realistic parameter ranges, and show that the optimal hedge ratio lies between 50% and 70% for typical DeFi lending conditions. Practical guidelines for rebalancing frequency and position sizing are also provided.",
+    "authors": [
+      "Atsushi Hane"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19716v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19716v1",
+    "fetched_at": "2026-03-23T08:50:07.959456",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910880"
+  },
+  {
+    "id": "2603.19414v1",
+    "title": "Dynamic Pareto Optima in Multi-Period Pure-Exchange Economies",
+    "abstract": "We study a problem of optimal allocation in a discrete-time multi-period pure-exchange economy, where agents have preferences over stochastic endowment processes that are represented by strongly time-consistent dynamic risk measures. We introduce the notion of dynamic Pareto-optimal allocation processes and show that such processes can be constructed recursively starting with the allocation at the terminal time. We further derive a comonotone improvement theorem for allocation processes, and we provide a recursive approach to constructing comonotone dynamic Pareto optima when the agents' preferences are coherent and satisfy a property that we call equidistribution-preserving. In the special case where each agent's dynamic risk measure is of the distortion type, we provide a closed-form characterization of comonotone dynamic Pareto optima. We illustrate our results in a two-period setting.",
+    "authors": [
+      "Brandon Tam",
+      "Mario Ghossoub",
+      "Silvana M. Pesenti"
+    ],
+    "published": "2026-03-19",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19414v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19414v1",
+    "fetched_at": "2026-03-23T08:50:07.959480",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910892"
+  },
+  {
+    "id": "2603.19380v1",
+    "title": "Survivorship Bias in Emerging Market Small-Cap Indices: Evidence from India's NIFTY Smallcap 250",
+    "abstract": "This study quantifies survivorship bias in India's NIFTY Smallcap 250 index using a dataset of 1,437 stocks over nine years (2016-2025). By reconstructing historical index composition through market capitalization ranking and comparing equal-weight portfolios of current constituents versus all historical members, I show that survivor-only backtesting overstates annual returns by 4.94 percentage points (23.3%) and Sharpe ratios by 0.097 (9.1%). The analysis reveals an 82.5% turnover rate, including delisted (16.1%), graduated (33.1%), and demoted stocks (33.2%), with all categories contributing to bias. Using bhavcopy data that includes delisted securities, the reconstruction achieves 100% accuracy for current constituents and an estimated 85-90% accuracy historically. These findings highlight that survivorship bias is materially larger in emerging market small-caps and that using only current index members can significantly overstate strategy performance. Briefly, the methodology reconstructs historical index membership using a price-volume-based ranking approach to enable survivor-free backtesting.",
+    "authors": [
+      "Harjot Singh Ranse"
+    ],
+    "published": "2026-03-19",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19380v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19380v1",
+    "fetched_at": "2026-03-23T08:50:07.959498",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910902"
+  },
+  {
+    "id": "2603.19608v1",
+    "title": "FB-CLIP: Fine-Grained Zero-Shot Anomaly Detection with Foreground-Background Disentanglement",
+    "abstract": "Fine-grained anomaly detection is crucial in industrial and medical applications, but labeled anomalies are often scarce, making zero-shot detection challenging. While vision-language models like CLIP offer promising solutions, they struggle with foreground-background feature entanglement and coarse textual semantics. We propose FB-CLIP, a framework that enhances anomaly localization via multi-strategy textual representations and foreground-background separation. In the textual modality, it combines End-of-Text features, global-pooled representations, and attention-weighted token features for richer semantic cues. In the visual modality, multi-view soft separation along identity, semantic, and spatial dimensions, together with background suppression, reduces interference and improves discriminability. Semantic Consistency Regularization (SCR) aligns image features with normal and abnormal textual prototypes, suppressing uncertain matches and enlarging semantic gaps. Experiments show that FB-CLIP effectively distinguishes anomalies from complex backgrounds, achieving accurate fine-grained anomaly detection and localization under zero-shot settings.",
+    "authors": [
+      "Ming Hu",
+      "Yongsheng Huo",
+      "Mingyu Dou",
+      "Jianfu Yin",
+      "Peng Zhao",
+      "Yao Wang",
+      "Cong Hu",
+      "Bingliang Hu",
+      "Quan Wang"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19608v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19608v1",
+    "fetched_at": "2026-03-23T08:50:21.645577",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910913"
+  },
+  {
+    "id": "2603.19562v1",
+    "title": "Neural Uncertainty Principle: A Unified View of Adversarial Fragility and LLM Hallucination",
+    "abstract": "Adversarial vulnerability in vision and hallucination in large language models are conventionally viewed as separate problems, each addressed with modality-specific patches. This study first reveals that they share a common geometric origin: the input and its loss gradient are conjugate observables subject to an irreducible uncertainty bound. Formalizing a Neural Uncertainty Principle (NUP) under a loss-induced state, we find that in near-bound regimes, further compression must be accompanied by increased sensitivity dispersion (adversarial fragility), while weak prompt-gradient coupling leaves generation under-constrained (hallucination). Crucially, this bound is modulated by an input-gradient correlation channel, captured by a specifically designed single-backward probe. In vision, masking highly coupled components improves robustness without costly adversarial training; in language, the same prefill-stage probe detects hallucination risk before generating any answer tokens. NUP thus turns two seemingly separate failure taxonomies into a shared uncertainty-budget view and provides a principled lens for reliability analysis. Guided by this NUP theory, we propose ConjMask (masking high-contribution input components) and LogitReg (logit-side regularization) to improve robustness without adversarial training, and use the probe as a decoding-free risk signal for LLMs, enabling hallucination detection and prompt selection. NUP thus provides a unified, practical framework for diagnosing and mitigating boundary anomalies across perception and generation tasks.",
+    "authors": [
+      "Dong-Xiao Zhang",
+      "Hu Lou",
+      "Jun-Jie Zhang",
+      "Jun Zhu",
+      "Deyu Meng"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.LG",
+      "cs.IT",
+      "physics.comp-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19562v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19562v1",
+    "fetched_at": "2026-03-23T08:50:21.645611",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910924"
+  },
+  {
+    "id": "2603.19497v1",
+    "title": "ICLAD: In-Context Learning for Unified Tabular Anomaly Detection Across Supervision Regimes",
+    "abstract": "Anomaly detection on tabular data is commonly studied under three supervision regimes, including one-class settings that assume access to anomaly-free training samples, fully unsupervised settings with unlabeled and potentially contaminated training data, and semi-supervised settings with limited anomaly labels. Existing deep learning approaches typically train dataset-specific models under the assumption of a single supervision regime, which limits their ability to leverage shared structures across anomaly detection tasks and to adapt to different supervision levels. We propose ICLAD, an in-context learning foundation model for tabular anomaly detection that generalizes across both datasets and supervision regimes. ICLAD is trained via meta-learning on synthetic tabular anomaly detection tasks, and at inference time, the model assigns anomaly scores by conditioning on the training set without updating model weights. Comprehensive experiments on 57 tabular datasets from ADBench show that our method achieves state-of-the-art performance across three supervision regimes, establishing a unified framework for tabular anomaly detection.",
+    "authors": [
+      "Jack Yi Wei",
+      "Narges Armanfard"
+    ],
+    "published": "2026-03-19",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19497v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19497v1",
+    "fetched_at": "2026-03-23T08:50:21.645631",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910942"
+  },
+  {
+    "id": "2603.20179v1",
+    "title": "AI Agents Can Already Autonomously Perform Experimental High Energy Physics",
+    "abstract": "Large language model-based AI agents are now able to autonomously execute substantial portions of a high energy physics (HEP) analysis pipeline with minimal expert-curated input. Given access to a HEP dataset, an execution framework, and a corpus of prior experimental literature, we find that Claude Code succeeds in automating all stages of a typical analysis: event selection, background estimation, uncertainty quantification, statistical inference, and paper drafting. We argue that the experimental HEP community is underestimating the current capabilities of these systems, and that most proposed agentic workflows are too narrowly scoped or scaffolded to specific analysis structures. We present a proof-of-concept framework, Just Furnish Context (JFC), that integrates autonomous analysis agents with literature-based knowledge retrieval and multi-agent review, and show that this is sufficient to plan, execute, and document a credible high energy physics analysis. We demonstrate this by conducting analyses on open data from ALEPH, DELPHI, and CMS to perform electroweak, QCD, and Higgs boson measurements. Rather than replacing physicists, these tools promise to offload the repetitive technical burden of analysis code development, freeing researchers to focus on physics insight, truly novel method development, and rigorous validation. Given these developments, we advocate for new strategies for how the community trains students, organizes analysis efforts, and allocates human expertise.",
+    "authors": [
+      "Eric A. Moreno",
+      "Samuel Bright-Thonney",
+      "Andrzej Novak",
+      "Dolores Garcia",
+      "Philip Harris"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "hep-ex",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.20179v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.20179v1",
+    "fetched_at": "2026-03-23T08:50:53.166603",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910955"
+  },
+  {
+    "id": "2603.20151v1",
+    "title": "Design-OS: A Specification-Driven Framework for Engineering System Design with a Control-Systems Design Case",
+    "abstract": "Engineering system design -- whether mechatronic, control, or embedded -- often proceeds in an ad hoc manner, with requirements left implicit and traceability from intent to parameters largely absent. Existing specification-driven and systematic design methods mostly target software, and AI-assisted tools tend to enter the workflow at solution generation rather than at problem framing. Human--AI collaboration in the design of physical systems remains underexplored. This paper presents Design-OS, a lightweight, specification-driven workflow for engineering system design organized in five stages: concept definition, literature survey, conceptual design, requirements definition, and design definition. Specifications serve as the shared contract between human designers and AI agents; each stage produces structured artifacts that maintain traceability and support agent-augmented execution. We position Design-OS relative to requirements-driven design, systematic design frameworks, and AI-assisted design pipelines, and demonstrate it on a control systems design case using two rotary inverted pendulum platforms -- an open-source SimpleFOC reaction wheel and a commercial Quanser Furuta pendulum -- showing how the same specification-driven workflow accommodates fundamentally different implementations. A blank template and the full design-case artifacts are shared in a public repository to support reproducibility and reuse. The workflow makes the design process visible and auditable, and extends specification-driven orchestration of AI from software to physical engineering system design.",
+    "authors": [
+      "H. Sinan Bank",
+      "Daniel R. Herber",
+      "Thomas H. Bradley"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.CE",
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.20151v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.20151v1",
+    "fetched_at": "2026-03-23T08:50:53.166635",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910966"
+  },
+  {
+    "id": "2603.20105v1",
+    "title": "The $\\mathbf{Y}$-Combinator for LLMs: Solving Long-Context Rot with $λ$-Calculus",
+    "abstract": "LLMs are increasingly used as general-purpose reasoners, but long inputs remain bottlenecked by a fixed context window. Recursive Language Models (RLMs) address this by externalising the prompt and recursively solving subproblems. Yet existing RLMs depend on an open-ended read-eval-print loop (REPL) in which the model generates arbitrary control code, making execution difficult to verify, predict, and analyse.   We introduce $λ$-RLM, a framework for long-context reasoning that replaces free-form recursive code generation with a typed functional runtime grounded in $λ$-calculus. It executes a compact library of pre-verified combinators and uses neural inference only on bounded leaf subproblems, turning recursive reasoning into a structured functional program with explicit control flow. We show that $λ$-RLM admits formal guarantees absent from standard RLMs, including termination, closed-form cost bounds, controlled accuracy scaling with recursion depth, and an optimal partition rule under a simple cost model. Empirically, across four long-context reasoning tasks and nine base models, $λ$-RLM outperforms standard RLM in 29 of 36 model-task comparisons, improves average accuracy by up to +21.9 points across model tiers, and reduces latency by up to 4.1x. These results show that typed symbolic control yields a more reliable and efficient foundation for long-context reasoning than open-ended recursive code generation. The complete implementation of $λ$-RLM, is open-sourced for the community at: https://github.com/lambda-calculus-LLM/lambda-RLM.",
+    "authors": [
+      "Amartya Roy",
+      "Rasul Tutunov",
+      "Xiaotong Ji",
+      "Matthieu Zimmer",
+      "Haitham Bou-Ammar"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.20105v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.20105v1",
+    "fetched_at": "2026-03-23T08:50:53.166664",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.910989"
+  },
+  {
+    "id": "2603.20028v1",
+    "title": "Orchestrating Human-AI Software Delivery: A Retrospective Longitudinal Field Study of Three Software Modernization Programs",
+    "abstract": "Evidence on AI in software engineering still leans heavily toward individual task completion, while evidence on team-level delivery remains scarce. We report a retrospective longitudinal field study of Chiron, an industrial platform that coordinates humans and AI agents across four delivery stages: analysis, planning, implementation, and validation. The study covers three real software modernization programs -- a COBOL banking migration (~30k LOC), a large accounting modernization (~400k LOC), and a .NET/Angular mortgage modernization (~30k LOC) -- observed across five delivery configurations: a traditional baseline and four successive platform versions (V1--V4). The benchmark separates observed outcomes (stage durations, task volumes, validation-stage issues, first-release coverage) from modeled outcomes (person-days and senior-equivalent effort under explicit staffing scenarios). Under baseline staffing assumptions, portfolio totals move from 36.0 to 9.3 summed project-weeks; modeled raw effort falls from 1080.0 to 232.5 person-days; modeled senior-equivalent effort falls from 1080.0 to 139.5 SEE-days; validation-stage issue load falls from 8.03 to 2.09 issues per 100 tasks; and first-release coverage rises from 77.0% to 90.5%. V3 and V4 add acceptance-criteria validation, repository-native review, and hybrid human-agent execution, simultaneously improving speed, coverage, and issue load. The evidence supports a central thesis: the largest gains appear when AI is embedded in an orchestrated workflow rather than deployed as an isolated coding assistant.",
+    "authors": [
+      "Maximiliano Armesto",
+      "Christophe Kolb"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.20028v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.20028v1",
+    "fetched_at": "2026-03-23T08:50:53.166685",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911000"
+  },
+  {
+    "id": "2603.20004v1",
+    "title": "ReViSQL: Achieving Human-Level Text-to-SQL",
+    "abstract": "Translating natural language to SQL (Text-to-SQL) is a critical challenge in both database research and data analytics applications. Recent efforts have focused on enhancing SQL reasoning by developing large language models and AI agents that decompose Text-to-SQL tasks into manually designed, step-by-step pipelines. However, despite these extensive architectural engineering efforts, a significant gap remains: even state-of-the-art (SOTA) AI agents have not yet achieved the human-level accuracy on the BIRD benchmark. In this paper, we show that closing this gap does not require further architectural complexity, but rather clean training data to improve SQL reasoning of the underlying models.   We introduce ReViSQL, a streamlined framework that achieves human-level accuracy on BIRD for the first time. Instead of complex AI agents, ReViSQL leverages reinforcement learning with verifiable rewards (RLVR) on BIRD-Verified, a dataset we curated comprising 2.5k verified Text-to-SQL instances based on the BIRD Train set. To construct BIRD-Verified, we design a data correction and verification workflow involving SQL experts. We identified and corrected data errors in 61.1% of a subset of BIRD Train. By training on BIRD-Verified, we show that improving data quality alone boosts the single-generation accuracy by 8.2-13.9% under the same RLVR algorithm. To further enhance performance, ReViSQL performs inference-time scaling via execution-based reconciliation and majority voting. Empirically, we demonstrate the superiority of our framework with two model scales: ReViSQL-235B-A22B and ReViSQL-30B-A3B. On an expert-verified BIRD Mini-Dev set, ReViSQL-235B-A22B achieves 93.2% execution accuracy, exceeding the proxy human-level accuracy (92.96%) and outperforming the prior open-source SOTA method by 9.8%. Our lightweight ReViSQL-30B-A3B matches the prior SOTA at a 7.5$\\times$ lower per-query cost.",
+    "authors": [
+      "Yuxuan Zhu",
+      "Tengjun Jin",
+      "Yoojin Choi",
+      "Daniel Kang"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.DB",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.20004v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.20004v1",
+    "fetched_at": "2026-03-23T08:50:53.166721",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911027"
+  },
+  {
+    "id": "2603.19974v1",
+    "title": "Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance",
+    "abstract": "Autonomous coding agents are increasingly integrated into software development workflows, offering capabilities that extend beyond code suggestion to active system interaction and environment management. OpenClaw, a representative platform in this emerging paradigm, introduces an extensible skill ecosystem that allows third-party developers to inject behavioral guidance through lifecycle hooks during agent initialization. While this design enhances automation and customization, it also opens a novel and unexplored attack surface. In this paper, we identify and systematically characterize guidance injection, a stealthy attack vector that embeds adversarial operational narratives into bootstrap guidance files. Unlike traditional prompt injection, which relies on explicit malicious instructions, guidance injection manipulates the agent's reasoning context by framing harmful actions as routine best practices. These narratives are automatically incorporated into the agent's interpretive framework and influence future task execution without raising suspicion.We construct 26 malicious skills spanning 13 attack categories including credential exfiltration, workspace destruction, privilege escalation, and persistent backdoor installation. We evaluate them using ORE-Bench, a realistic developer workspace benchmark we developed. Across 52 natural user prompts and six state-of-the-art LLM backends, our attacks achieve success rates from 16.0% to 64.2%, with the majority of malicious actions executed autonomously without user confirmation. Furthermore, 94% of our malicious skills evade detection by existing static and LLM-based scanners. Our findings reveal fundamental tensions in the design of autonomous agent ecosystems and underscore the urgent need for defenses based on capability isolation, runtime policy enforcement, and transparent guidance provenance.",
+    "authors": [
+      "Fazhong Liu",
+      "Zhuoyan Chen",
+      "Tu Lan",
+      "Haozhen Tan",
+      "Zhenyu Xu",
+      "Xiang Li",
+      "Guoxing Chen",
+      "Yan Meng",
+      "Haojin Zhu"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19974v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19974v1",
+    "fetched_at": "2026-03-23T08:50:53.166754",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911038"
+  },
+  {
+    "id": "2603.19896v1",
+    "title": "Utility-Guided Agent Orchestration for Efficient LLM Tool Use",
+    "abstract": "Tool-using large language model (LLM) agents often face a fundamental tension between answer quality and execution cost. Fixed workflows are stable but inflexible, while free-form multi-step reasoning methods such as ReAct may improve task performance at the expense of excessive tool calls, longer trajectories, higher token consumption, and increased latency. In this paper, we study agent orchestration as an explicit decision problem rather than leaving it entirely to prompt-level behavior. We propose a utility-guided orchestration policy that selects among actions such as respond, retrieve, tool call, verify, and stop by balancing estimated gain, step cost, uncertainty, and redundancy. Our goal is not to claim universally best task performance, but to provide a controllable and analyzable policy framework for studying quality-cost trade-offs in tool-using LLM agents. Experiments across direct answering, threshold control, fixed workflows, ReAct, and several policy variants show that explicit orchestration signals substantially affect agent behavior. Additional analyses on cost definitions, workflow fairness, and redundancy control further demonstrate that lightweight utility design can provide a defensible and practical mechanism for agent control.",
+    "authors": [
+      "Boyan Liu",
+      "Gongming Zhao",
+      "Hongli Xu"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19896v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19896v1",
+    "fetched_at": "2026-03-23T08:50:53.166775",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911047"
+  },
+  {
+    "id": "2603.19879v1",
+    "title": "Discovery of Decision Synchronization Patterns from Event Logs",
+    "abstract": "Synchronizing decisions between running cases in business processes facilitates fair and efficient use of resources, helps prioritize the most valuable cases, and prevents unnecessary waiting. Consequently, decision synchronization patterns are regularly built into processes, in the form of mechanisms that temporarily delay one case to favor another. These decision mechanisms therefore consider properties of multiple cases at once, rather than just the properties of a single case; an aspect that is rarely addressed by current process discovery techniques. To address this gap, this paper proposes an approach for discovering decision synchronization patterns inspired by supply chain processes. These decision synchronization patterns take the form of specific process constructs combined with a constraint that determines which particular case to execute. We describe, formalize and demonstrate how the constraint for four such patterns can be discovered. We evaluate our approach in two artificial scenarios. First, with four separate process models each containing a single decision synchronization pattern, i.e., we demonstrate that our approach can discover every type of pattern when only this one type is present. Second, we consider a process model containing all four decision synchronization patterns to show generalizability of the approach to more complex problems. For both scenarios, we could reliably retrieve the expected patterns.",
+    "authors": [
+      "Tijmen Kuijpers",
+      "Karolin Winter",
+      "Remco Dijkman"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19879v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19879v1",
+    "fetched_at": "2026-03-23T08:50:53.166796",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911057"
+  },
+  {
+    "id": "2603.19805v1",
+    "title": "Quantifying Gate Contribution in Quantum Feature Maps for Scalable Circuit Optimization",
+    "abstract": "Quantum machine learning offers promising advantages for classification tasks, but noise, decoherence, and connectivity constraints in current devices continue to limit the efficient execution of feature map-based circuits. Gate Assessment and Threshold Evaluation (GATE) is presented as a circuit optimization methodology that reduces quantum feature maps using a novel gate significance index. This index quantifies the relevance of each gate by combining fidelity, entanglement, and sensitivity. It is formulated for both simulator/emulator environments, where quantum states are accessible, and for real hardware, where these quantities are estimated from measurement results and auxiliary circuits. The approach iteratively scans a threshold range, eliminates low-contribution gates, generates optimized quantum machine learning models, and ranks them based on accuracy, runtime, and a balanced performance criterion before final testing. The methodology is evaluated on real-world classification datasets using two representative quantum machine learning models, PegasosQSVM and Quantum Neural Network, in three execution scenarios: noise-free simulation, noisy emulation derived from an IBM backend, and real IBM quantum hardware. The structural impact of gate removal in feature maps is examined, compatibility with noise-mitigation techniques is studied, and the scalability of index computation is evaluated using approaches based on density matrices, matrix product states, tensor networks, and real-world devices. The results show consistent reductions in circuit size and runtime and, in many cases, preserved or improved predictive accuracy, with the best trade-offs typically occurring at intermediate thresholds rather than in the baseline circuits or in those compressed more aggressively.",
+    "authors": [
+      "F. Rodríguez-Díaz",
+      "D. Gutiérrez-Avilés",
+      "A. Troncoso",
+      "F. Martínez-Álvarez"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19805v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19805v1",
+    "fetched_at": "2026-03-23T08:50:53.166818",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911067"
+  },
+  {
+    "id": "2603.19782v1",
+    "title": "Embodied Science: Closing the Discovery Loop with Agentic Embodied AI",
+    "abstract": "Artificial intelligence has demonstrated remarkable capability in predicting scientific properties, yet scientific discovery remains an inherently physical, long-horizon pursuit governed by experimental cycles. Most current computational approaches are misaligned with this reality, framing discovery as isolated, task-specific predictions rather than continuous interaction with the physical world. Here, we argue for embodied science, a paradigm that reframes scientific discovery as a closed loop tightly coupling agentic reasoning with physical execution. We propose a unified Perception-Language-Action-Discovery (PLAD) framework, wherein embodied agents perceive experimental environments, reason over scientific knowledge, execute physical interventions, and internalize outcomes to drive subsequent exploration. By grounding computational reasoning in robust physical feedback, this approach bridges the gap between digital prediction and empirical validation, offering a roadmap for autonomous discovery systems in the life and chemical sciences.",
+    "authors": [
+      "Xiang Zhuang",
+      "Chenyi Zhou",
+      "Kehua Feng",
+      "Zhihui Zhu",
+      "Yunfan Gao",
+      "Yijie Zhong",
+      "Yichi Zhang",
+      "Junjie Huang",
+      "Keyan Ding",
+      "Lei Bai",
+      "Haofen Wang",
+      "Qiang Zhang",
+      "Huajun Chen"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19782v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19782v1",
+    "fetched_at": "2026-03-23T08:50:53.166857",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911075"
+  },
+  {
+    "id": "2603.19711v1",
+    "title": "EvoTaxo: Building and Evolving Taxonomy from Social Media Streams",
+    "abstract": "Constructing taxonomies from social media corpora is challenging because posts are short, noisy, semantically entangled, and temporally dynamic. Existing taxonomy induction methods are largely designed for static corpora and often struggle to balance robustness, scalability, and sensitivity to evolving discourse. We propose EvoTaxo, a LLM-based framework for building and evolving taxonomies from temporally ordered social media streams. Rather than clustering raw posts directly, EvoTaxo converts each post into a structured draft action over the current taxonomy, accumulates structural evidence over time windows, and consolidates candidate edits through dual-view clustering that combines semantic similarity with temporal locality. A refinement-and-arbitration procedure then selects reliable edits before execution, while each node maintains a concept memory bank to preserve semantic boundaries over time. Experiments on two Reddit corpora show that EvoTaxo produces more balanced taxonomies than baselines, with clearer post-to-leaf assignment, better corpus coverage at comparable taxonomy size, and stronger structural quality. A case study on the Reddit community /r/ICE_Raids further shows that EvoTaxo captures meaningful temporal shifts in discourse. Our codebase is available here.",
+    "authors": [
+      "Yiyang Li",
+      "Tianyi Ma",
+      "Yanfang Ye"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19711v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19711v1",
+    "fetched_at": "2026-03-23T08:50:53.166877",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911084"
+  },
+  {
+    "id": "2603.19685v1",
+    "title": "A Subgoal-driven Framework for Improving Long-Horizon LLM Agents",
+    "abstract": "Large language model (LLM)-based agents have emerged as powerful autonomous controllers for digital environments, including mobile interfaces, operating systems, and web browsers. Web navigation, for example, requires handling dynamic content and long sequences of actions, making it particularly challenging. Existing LLM-based agents struggle with long-horizon planning in two main ways. During online execution, they often lose track as new information arrives, lacking a clear and adaptive path toward the final goal. This issue is further exacerbated during reinforcement learning (RL) fine-tuning, where sparse and delayed rewards make it difficult for agents to identify which actions lead to success, preventing them from maintaining coherent reasoning over extended tasks. To address these challenges, we propose two contributions. First, we introduce an agent framework that leverages proprietary models for online planning through subgoal decomposition. Second, we present MiRA (Milestoning your Reinforcement Learning Enhanced Agent), an RL training framework that uses dense, milestone-based reward signals. The real-time planning mechanism improves proprietary models such as Gemini by approximately a 10% absolute increase in success rate (SR) on the WebArena-Lite benchmark. Meanwhile, applying MiRA to the open Gemma3-12B model increases its success rate from 6.4% to 43.0%. This performance surpasses proprietary systems such as GPT-4-Turbo (17.6%) and GPT-4o (13.9%), as well as the previous open-model state of the art, WebRL (38.4%). Overall, our findings demonstrate that combining explicit inference-time planning with milestone-based rewards significantly improves an agent's long-horizon capabilities, paving the way for more robust and general-purpose autonomous systems.",
+    "authors": [
+      "Taiyi Wang",
+      "Sian Gooding",
+      "Florian Hartmann",
+      "Oriana Riva",
+      "Edward Grefenstette"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19685v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19685v1",
+    "fetched_at": "2026-03-23T08:50:53.166902",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911095"
+  },
+  {
+    "id": "2603.19639v1",
+    "title": "HyEvo: Self-Evolving Hybrid Agentic Workflows for Efficient Reasoning",
+    "abstract": "Although agentic workflows have demonstrated strong potential for solving complex tasks, existing automated generation methods remain inefficient and underperform, as they rely on predefined operator libraries and homogeneous LLM-only workflows in which all task-level computation is performed through probabilistic inference. To address these limitations, we propose HyEvo, an automated workflow-generation framework that leverages heterogeneous atomic synthesis. HyEvo integrates probabilistic LLM nodes for semantic reasoning with deterministic code nodes for rule-based execution, offloading predictable operations from LLM inference and reducing inference cost and execution latency. To efficiently navigate the hybrid search space, HyEvo employs an LLM-driven multi-island evolutionary strategy with a reflect-then-generate mechanism, iteratively refining both workflow topology and node logic via execution feedback. Comprehensive experiments show that HyEvo consistently outperforms existing methods across diverse reasoning and coding benchmarks, while reducing inference cost and execution latency by up to 19$\\times$ and 16$\\times$, respectively, compared to the state-of-the-art open-source baseline.",
+    "authors": [
+      "Beibei Xu",
+      "Yutong Ye",
+      "Chuyun Shen",
+      "Yingbo Zhou",
+      "Cheng Chen",
+      "Mingsong Chen"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19639v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19639v1",
+    "fetched_at": "2026-03-23T08:50:53.166927",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911104"
+  },
+  {
+    "id": "2603.19595v1",
+    "title": "All-Mem: Agentic Lifelong Memory via Dynamic Topology Evolution",
+    "abstract": "Lifelong interactive agents are expected to assist users over months or years, which requires continually writing long term memories while retrieving the right evidence for each new query under fixed context and latency budgets. Existing memory systems often degrade as histories grow, yielding redundant, outdated, or noisy retrieved contexts. We present All-Mem, an online/offline lifelong memory framework that maintains a topology structured memory bank via explicit, non destructive consolidation, avoiding the irreversible information loss typical of summarization based compression. In online operation, it anchors retrieval on a bounded visible surface to keep coarse search cost bounded. Periodically offline, an LLM diagnoser proposes confidence scored topology edits executed with gating using three operators: SPLIT, MERGE, and UPDATE, while preserving immutable evidence for traceability. At query time, typed links enable hop bounded, budgeted expansion from active anchors to archived evidence when needed. Experiments on LOCOMO and LONGMEMEVAL show improved retrieval and QA over representative baselines.",
+    "authors": [
+      "Can Lv",
+      "Heng Chang",
+      "Yuchen Guo",
+      "Shengyu Tao",
+      "Shiji Zhou"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.IR",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19595v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19595v1",
+    "fetched_at": "2026-03-23T08:50:53.166951",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911113"
+  },
+  {
+    "id": "2603.19584v1",
+    "title": "PowerLens: Taming LLM Agents for Safe and Personalized Mobile Power Management",
+    "abstract": "Battery life remains a critical challenge for mobile devices, yet existing power management mechanisms rely on static rules or coarse-grained heuristics that ignore user activities and personal preferences. We present PowerLens, a system that tames the reasoning power of Large Language Models (LLMs) for safe and personalized mobile power management on Android devices. The key idea is that LLMs' commonsense reasoning can bridge the semantic gap between user activities and system parameters, enabling zero-shot, context-aware policy generation that adapts to individual preferences through implicit feedback. PowerLens employs a multi-agent architecture that recognizes user context from UI semantics and generates holistic power policies across 18 device parameters. A PDL-based constraint framework verifies every action before execution, while a two-tier memory system learns individualized preferences from implicit user overrides through confidence-based distillation, requiring no explicit configuration and converging within 3--5 days. Extensive experiments on a rooted Android device show that PowerLens achieves 81.7% action accuracy and 38.8% energy saving over stock Android, outperforming rule-based and LLM-based baselines, with high user satisfaction, fast preference convergence, and strong safety guarantees, with the system itself consuming only 0.5% of daily battery capacity.",
+    "authors": [
+      "Xingyu Feng",
+      "Chang Sun",
+      "Yuzhu Wang",
+      "Zhangbing Zhou",
+      "Chengwen Luo",
+      "Zhuangzhuang Chen",
+      "Xiaomin Ouyang",
+      "Huanqi Yang"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.19584v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.19584v1",
+    "fetched_at": "2026-03-23T08:50:53.166981",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911122"
+  },
+  {
+    "id": "2603.20063v1",
+    "title": "Fine-tuning Timeseries Predictors Using Reinforcement Learning",
+    "abstract": "This chapter presents three major reinforcement learning algorithms used for fine-tuning financial forecasters. We propose a clear implementation plan for backpropagating the loss of a reinforcement learning task to a model trained using supervised learning, and compare the performance before and after the fine-tuning. We find an increase in performance after fine-tuning, and transfer learning properties to the models, indicating the benefits of fine-tuning. We also highlight the tuning process and empirical results for future implementation by practitioners.",
+    "authors": [
+      "Hugo Cazaux",
+      "Ralph Rudd",
+      "Hlynur Stefánsson",
+      "Sverrir Ólafsson",
+      "Eyjólfur Ingi Ásgeirsson"
+    ],
+    "published": "2026-03-20",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.20063v1",
+    "arxiv_url": "https://arxiv.org/abs/2603.20063v1",
+    "fetched_at": "2026-03-23T08:52:48.245518",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-03-23T08:53:07.911130"
+  }
+]
