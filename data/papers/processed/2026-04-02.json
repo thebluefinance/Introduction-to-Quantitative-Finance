@@ -1,0 +1,818 @@
+[
+  {
+    "id": "2604.00556v1",
+    "title": "HabitatAgent: An End-to-End Multi-Agent System for Housing Consultation",
+    "abstract": "Housing selection is a high-stakes and largely irreversible decision problem. We study housing consultation as a decision-support interface for housing selection. Existing housing platforms and many LLM-based assistants often reduce this process to ranking or recommendation, resulting in opaque reasoning, brittle multi-constraint handling, and limited guarantees on factuality.   We present HabitatAgent, the first LLM-powered multi-agent architecture for end-to-end housing consultation. HabitatAgent comprises four specialized agent roles: Memory, Retrieval, Generation, and Validation. The Memory Agent maintains multi-layer user memory through internal stages for constraint extraction, memory fusion, and verification-gated updates; the Retrieval Agent performs hybrid vector--graph retrieval (GraphRAG); the Generation Agent produces evidence-referenced recommendations and explanations; and the Validation Agent applies multi-tier verification and targeted remediation. Together, these agents provide an auditable and reliable workflow for end-to-end housing consultation.   We evaluate HabitatAgent on 100 real user consultation scenarios (300 multi-turn question--answer pairs) under an end-to-end correctness protocol. A strong single-stage baseline (Dense+Rerank) achieves 75% accuracy, while HabitatAgent reaches 95%.",
+    "authors": [
+      "Hongyang Yang",
+      "Yanxin Zhang",
+      "Yang She",
+      "Yue Xiao",
+      "Hao Wu",
+      "Yiyang Zhang",
+      "Jiapeng Hou",
+      "Rongshan Zhang"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.ET",
+      "q-fin.CP",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00556v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00556v1",
+    "fetched_at": "2026-04-02T08:51:39.417882",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455219"
+  },
+  {
+    "id": "2604.00472v1",
+    "title": "Valuation of variable annuities under the Volterra mortality and rough Heston models",
+    "abstract": "This paper investigates the valuation of variable annuity contracts with an early surrender option under non-Markovian models. Moreover, policyholders are provided with guaranteed minimum maturity and death benefits to protect against the downside risk. Unlike the existing literature, our variable annuity account value is linked to two non-Markovian processes: an equity index modeled by a rough Heston model and a force of mortality following a Volterra-type stochastic model. In this case, the early surrender feature introduces an optimal stopping problem where continuation values depend on the entire path history, rendering traditional numerical methods infeasible. We develop a deep signature Least Squares Monte Carlo approach to learn optimal surrender strategies on a discretized time grid. To mitigate the curse of dimensionality arising from the path-dependent model, we use truncated rough-path signatures to encode the historical paths and approximate the continuation values using a neural network. Numerically, we find that the fair fee increases with the Hurst parameters of both the stock volatility and the force of mortality. Finally, a convergence proof is provided to further support the stability of our method.",
+    "authors": [
+      "Wenyuan Li",
+      "Haoqi Lyu"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00472v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00472v1",
+    "fetched_at": "2026-04-02T08:51:39.417934",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455240"
+  },
+  {
+    "id": "2604.00415v1",
+    "title": "Dynamic Weight Optimization for Double Linear Policy: A Stochastic Model Predictive Control Approach",
+    "abstract": "The Double Linear Policy (DLP) framework guarantees a Robust Positive Expectation (RPE) under optimized constant-weight designs or admissible prespecified time-varying policies. However, the sequential optimization of these time-varying weights remains an open challenge. To address this gap, we propose a Stochastic Model Predictive Control (SMPC) framework. We formulate weight selection as a receding-horizon optimal control problem that explicitly maximizes risk-adjusted returns while enforcing survivability and predicted positive expectation constraints. Notably, an analytical gradient is derived for the non-convex objective function, enabling efficient optimization via the L-BFGS-B algorithm. Empirical results demonstrate that this dynamic, closed-loop approach improves risk-adjusted performance and drawdown control relative to constant-weight and prescribed time-varying DLP baselines.",
+    "authors": [
+      "Tan Chin Hong",
+      "Chung-Han Hsieh"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "eess.SY",
+      "math.OC",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00415v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00415v1",
+    "fetched_at": "2026-04-02T08:51:39.417971",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455252"
+  },
+  {
+    "id": "2604.00389v1",
+    "title": "Pricing Lookback Options on a Quantum Computer",
+    "abstract": "We develop a quantum algorithm to price discretely monitored lookback options in the Black-Scholes framework using imaginary time evolution. By rewriting the pricing PDE as a Schrodinger-type equation, the problem becomes the imaginary time evolution of a quantum state under a non-Hermitian Hamiltonian. This evolution is approximated with the Variational Quantum imaginary time evolution (VarQITE) method, which replaces the exact non-unitary dynamics with a parameterized, hardware-efficient quantum circuit. A central challenge arises from jump conditions caused by the discrete updating of the running maximum. This feature is not present in standard quantum treatments of European or Asian options. To address this, we propose two quantum-compatible formulations: (i) a sequential approach that models jumps via dedicated jump Hamiltonians applied at monitoring dates, and (ii) a simultaneous multi-function evolution that removes explicit jumps at the expense of an increased number of dimensions. We compare both approaches in terms of qubit resources, circuit complexity and numerical accuracy, and benchmark them against Monte Carlo simulations. Our results show that discretely monitored, path-dependent options with jump conditions can be handled within a variational quantum framework, paving the way toward the quantum pricing of more complex derivatives with non-smooth dynamics.",
+    "authors": [
+      "Florence Paquette",
+      "Tania Belabbas",
+      "Emmanuel Hamel",
+      "Anne MacKay"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00389v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00389v1",
+    "fetched_at": "2026-04-02T08:51:39.418012",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455261"
+  },
+  {
+    "id": "2604.00346v1",
+    "title": "Forecasting duration in high-frequency financial data using a self-exciting flexible residual point process",
+    "abstract": "This paper presents a method for forecasting limit order book durations using a self-exciting flexible residual point process. High-frequency events in modern exchanges exhibit heavy-tailed interarrival times, posing a significant challenge for accurate prediction. The proposed approach incorporates the empirical distributional features of interarrival times while preserving the self-exciting and decay structure. This work also examines the stochastic stability of the process, which can be interpreted as a general state-space Markov chain. Under suitable conditions, the process is irreducible, aperiodic, positive Harris recurrent, and has a stationary distribution. An empirical study demonstrates that the model achieves strong predictive performance compared with several alternative approaches when forecasting durations in ultra-high-frequency trading data.",
+    "authors": [
+      "Kyungsub Lee"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "q-fin.ST",
+      "q-fin.TR",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00346v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00346v1",
+    "fetched_at": "2026-04-02T08:51:39.418052",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455277"
+  },
+  {
+    "id": "2604.00178v1",
+    "title": "Stratified adaptive sampling for derivative-free stochastic trust-region optimization",
+    "abstract": "There is emerging evidence that trust-region (TR) algorithms are very effective at solving derivative-free nonconvex stochastic optimization problems in which the objective function is a Monte Carlo (MC) estimate. A recent strand of methodologies adaptively adjusts the sample size of the MC estimates by keeping the estimation error below a measure of stationarity induced from the TR radius. In this work we explore stratified adaptive sampling strategies to equip the TR framework with accurate estimates of the objective function, thus optimizing the required number of MC samples to reach a given ε-accuracy of the solution. We prove a reduced sample complexity, confirm a superior efficiency via numerical tests and applications, and explore inexpensive implementations in high dimension.",
+    "authors": [
+      "Giovanni Amici",
+      "Sara Shashaani",
+      "Pranav Jain"
+    ],
+    "published": "2026-03-31",
+    "categories": [
+      "math.OC",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00178v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00178v1",
+    "fetched_at": "2026-04-02T08:51:39.418088",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455293"
+  },
+  {
+    "id": "2604.00064v1",
+    "title": "Forecast collapse of transformer-based models under squared loss in financial time series",
+    "abstract": "We study trajectory forecasting under squared loss for time series with weak conditional structure, using highly expressive prediction models. Building on the classical characterization of squared-loss risk minimization, we emphasize regimes in which the conditional expectation of future trajectories is effectively degenerate, leading to trivial Bayes-optimal predictors (flat for prices and zero for returns in standard financial settings).  In this regime, increased model expressivity does not improve predictive accuracy but instead introduces spurious trajectory fluctuations around the optimal predictor. These fluctuations arise from the reuse of noise and result in increased prediction variance without any reduction in bias.  This provides a process-level explanation for the degradation of Transformerbased forecasts on financial time series.  We complement these theoretical results with numerical experiments on high-frequency EUR/USD exchange rate data, analyzing the distribution of trajectory-level forecasting errors. The results show that Transformer-based models yield larger errors than a simple linear benchmark on a large majority of forecasting windows, consistent with the variance-driven mechanism identified by the theory.",
+    "authors": [
+      "Pierre Andreoletti"
+    ],
+    "published": "2026-03-31",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "math.PR",
+      "math.ST",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00064v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00064v1",
+    "fetched_at": "2026-04-02T08:51:39.418243",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Transformer"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455305"
+  },
+  {
+    "id": "2604.01081v1",
+    "title": "ProOOD: Prototype-Guided Out-of-Distribution 3D Occupancy Prediction",
+    "abstract": "3D semantic occupancy prediction is central to autonomous driving, yet current methods are vulnerable to long-tailed class bias and out-of-distribution (OOD) inputs, often overconfidently assigning anomalies to rare classes. We present ProOOD, a lightweight, plug-and-play method that couples prototype-guided refinement with training-free OOD scoring. ProOOD comprises (i) prototype-guided semantic imputation that fills occluded regions with class-consistent features, (ii) prototype-guided tail mining that strengthens rare-class representations to curb OOD absorption, and (iii) EchoOOD, which fuses local logit coherence with local and global prototype matching to produce reliable voxel-level OOD scores. Extensive experiments on five datasets demonstrate that ProOOD achieves state-of-the-art performance on both in-distribution 3D occupancy prediction and OOD detection. On SemanticKITTI, it surpasses baselines by +3.57% mIoU overall and +24.80% tail-class mIoU; on VAA-KITTI, it improves AuPRCr by +19.34 points, with consistent gains across benchmarks. These improvements yield more calibrated occupancy estimates and more reliable OOD detection in safety-critical urban driving. The source code is publicly available at https://github.com/7uHeng/ProOOD.",
+    "authors": [
+      "Yuheng Zhang",
+      "Mengfei Duan",
+      "Kunyu Peng",
+      "Yuhang Wang",
+      "Di Wen",
+      "Danda Pani Paudel",
+      "Luc Van Gool",
+      "Kailun Yang"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO",
+      "eess.IV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.01081v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.01081v1",
+    "fetched_at": "2026-04-02T08:52:09.315242",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455323"
+  },
+  {
+    "id": "2604.00716v1",
+    "title": "CircuitProbe: Predicting Reasoning Circuits in Transformers via Stability Zone Detection",
+    "abstract": "Transformer language models contain localized reasoning circuits, contiguous layer blocks that improve reasoning when duplicated at inference time. Finding these circuits currently requires brute-force sweeps costing 25 GPU hours per model. We propose CircuitProbe, which predicts circuit locations from activation statistics in under 5 minutes on CPU, providing a speedup of three to four orders of magnitude. We find that reasoning circuits come in two types: stability circuits in early layers, detected through the derivative of representation change, and magnitude circuits in late layers, detected through anomaly scoring. We validate across 9 models spanning 6 architectures, including 2025 models, confirming that CircuitProbe top predictions match or are within 2 layers of the optimal circuit in all validated cases. A scaling experiment across the Qwen 2.5 family reveals that layer duplication consistently benefits models under 3B parameters but degrades performance in 7B+ models, making this a practical scaling technique for small language models. CircuitProbe requires as few as 10 calibration examples and its predictions are stable across English, Hindi, Chinese, and French.",
+    "authors": [
+      "Rajkiran Panuganti"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00716v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00716v1",
+    "fetched_at": "2026-04-02T08:52:09.315269",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Transformer"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455334"
+  },
+  {
+    "id": "2604.00537v1",
+    "title": "MATHENA: Mamba-based Architectural Tooth Hierarchical Estimator and Holistic Evaluation Network for Anatomy",
+    "abstract": "Dental diagnosis from Orthopantomograms (OPGs) requires coordination of tooth detection, caries segmentation (CarSeg), anomaly detection (AD), and dental developmental staging (DDS). We propose Mamba-based Architectural Tooth Hierarchical Estimator and Holistic Evaluation Network for Anatomy (MATHENA), a unified framework leveraging Mamba's linear-complexity State Space Models (SSM) to address all four tasks. MATHENA integrates MATHE, a multi-resolution SSM-driven detector with four-directional Vision State Space (VSS) blocks for O(N) global context modeling, generating per-tooth crops. These crops are processed by HENA, a lightweight Mamba-UNet with a triple-head architecture and Global Context State Token (GCST). In the triple-head architecture, CarSeg is first trained as an upstream task to establish shared representations, which are then frozen and reused for downstream AD fine-tuning and DDS classification via linear probing, enabling stable, efficient learning. We also curate PARTHENON, a benchmark comprising 15,062 annotated instances from ten datasets. MATHENA achieves 93.78% mAP@50 in tooth detection, 90.11% Dice for CarSeg, 88.35% for AD, and 72.40% ACC for DDS.",
+    "authors": [
+      "Kyeonghun Kim",
+      "Jaehyung Park",
+      "Youngung Han",
+      "Anna Jung",
+      "Seongbin Park",
+      "Sumin Lee",
+      "Jiwon Yang",
+      "Jiyoon Han",
+      "Subeen Lee",
+      "Junsu Lim",
+      "Hyunsu Go",
+      "Eunseob Choi",
+      "Hyeonseok Jung",
+      "Soo Yong Kim",
+      "Woo Kyoung Jeong",
+      "Won Jae Lee",
+      "Pa Hong",
+      "Hyuk-Jae Lee",
+      "Ken Ying-Kai Liao",
+      "Nam-Joon Kim"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00537v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00537v1",
+    "fetched_at": "2026-04-02T08:52:09.315316",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455345"
+  },
+  {
+    "id": "2604.00422v1",
+    "title": "Shapley-Guided Neural Repair Approach via Derivative-Free Optimization",
+    "abstract": "DNNs are susceptible to defects like backdoors, adversarial attacks, and unfairness, undermining their reliability. Existing approaches mainly involve retraining, optimization, constraint-solving, or search algorithms. However, most methods rely on gradient calculations, restricting applicability to specific activation functions (e.g., ReLU), or use search algorithms with uninterpretable localization and repair. Furthermore, they often lack generalizability across multiple properties. We propose SHARPEN, integrating interpretable fault localization with a derivative-free optimization strategy. First, SHARPEN introduces a Deep SHAP-based localization strategy quantifying each layer's and neuron's marginal contribution to erroneous outputs. Specifically, a hierarchical coarse-to-fine approach reranks layers by aggregated impact, then locates faulty neurons/filters by analyzing activation divergences between property-violating and benign states. Subsequently, SHARPEN incorporates CMA-ES to repair identified neurons. CMA-ES leverages a covariance matrix to capture variable dependencies, enabling gradient-free search and coordinated adjustments across coupled neurons. By combining interpretable localization with evolutionary optimization, SHARPEN enables derivative-free repair across architectures, being less sensitive to gradient anomalies and hyperparameters. We demonstrate SHARPEN's effectiveness on three repair tasks. Balancing property repair and accuracy preservation, it outperforms baselines in backdoor removal (+10.56%), adversarial mitigation (+5.78%), and unfairness repair (+11.82%). Notably, SHARPEN handles diverse tasks, and its modular design is plug-and-play with different derivative-free optimizers, highlighting its flexibility.",
+    "authors": [
+      "Xinyu Sun",
+      "Wanwei Liu",
+      "Haoang Chi",
+      "Tingyu Chen",
+      "Xiaoguang Mao",
+      "Shangwen Wang",
+      "Lei Bu",
+      "Jingyi Wang",
+      "Yang Tan",
+      "Zhenyi Qi"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00422v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00422v1",
+    "fetched_at": "2026-04-02T08:52:09.315347",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455356"
+  },
+  {
+    "id": "2604.00394v1",
+    "title": "Deep Networks Favor Simple Data",
+    "abstract": "Estimated density is often interpreted as indicating how typical a sample is under a model. Yet deep models trained on one dataset can assign \\emph{higher} density to simpler out-of-distribution (OOD) data than to in-distribution test data. We refer to this behavior as the OOD anomaly. Prior work typically studies this phenomenon within a single architecture, detector, or benchmark, implicitly assuming certain canonical densities. We instead separate the trained network from the density estimator built from its representations or outputs. We introduce two estimators: Jacobian-based estimators and autoregressive self-estimators, making density analysis applicable to a wide range of models.   Applying this perspective to a range of models, including iGPT, PixelCNN++, Glow, score-based diffusion models, DINOv2, and I-JEPA, we find the same striking regularity that goes beyond the OOD anomaly: \\textbf{lower-complexity samples receive higher estimated density, while higher-complexity samples receive lower estimated density}. This ordering appears within a test set and across OOD pairs such as CIFAR-10 and SVHN, and remains highly consistent across independently trained models. To quantify these orderings, we introduce Spearman rank correlation and find striking agreement both across models and with external complexity metrics. Even when trained only on the lowest-density (most complex) samples or \\textbf{even a single such sample} the resulting models still rank simpler images as higher density.   These observations lead us beyond the original OOD anomaly to a more general conclusion: deep networks consistently favor simple data. Our goal is not to close this question, but to define and visualize it more clearly. We broaden its empirical scope and show that it appears across architectures, objectives, and density estimators.",
+    "authors": [
+      "Weyl Lu",
+      "Chenjie Hao",
+      "Yubei Chen"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00394v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00394v1",
+    "fetched_at": "2026-04-02T08:52:09.315369",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455366"
+  },
+  {
+    "id": "2603.27982v2",
+    "title": "CDH-Bench: A Commonsense-Driven Hallucination Benchmark for Evaluating Visual Fidelity in Vision-Language Models",
+    "abstract": "Vision-language models (VLMs) achieve strong performance on many benchmarks, yet a basic reliability question remains underexplored: when visual evidence conflicts with commonsense, do models follow what is shown or what commonsense suggests? A characteristic failure in this setting is that the model overrides visual evidence and outputs the commonsense alternative. We term this phenomenon \\textbf{commonsense-driven hallucination} (CDH). To evaluate it, we introduce \\textbf{CDH-Bench}, a benchmark designed to create explicit \\textbf{visual evidence--commonsense conflicts}. CDH-Bench covers three dimensions: \\textit{counting anomalies}, \\textit{relational anomalies}, and \\textit{attribute anomalies}. We evaluate frontier VLMs under \\textit{binary Question Answering (QA)} and \\textit{multiple-choice QA}, and report metrics including \\textit{Counterfactual Accuracy} (CF-Acc), \\textit{Commonsense Accuracy} (CS-Acc), \\textit{Counterfactual Accuracy Drop} (CFAD), \\textit{Commonsense Collapse Rate} (CCR), and \\textit{Relative Prior Dependency} (RPD). Results show that even strong models remain vulnerable to prior-driven normalization under visual evidence--commonsense conflict. CDH-Bench provides a controlled diagnostic of visual fidelity under visual evidence--commonsense conflict.",
+    "authors": [
+      "Kesheng Chen",
+      "Yamin Hu",
+      "Qi Zhou",
+      "Zhenqian Zhu",
+      "Wenjian Luo"
+    ],
+    "published": "2026-03-30",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2603.27982v2",
+    "arxiv_url": "https://arxiv.org/abs/2603.27982v2",
+    "fetched_at": "2026-04-02T08:52:09.315599",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455377"
+  },
+  {
+    "id": "2604.01212v1",
+    "title": "$\\texttt{YC-Bench}$: Benchmarking AI Agents for Long-Term Planning and Consistent Execution",
+    "abstract": "As LLM agents tackle increasingly complex tasks, a critical question is whether they can maintain strategic coherence over long horizons: planning under uncertainty, learning from delayed feedback, and adapting when early mistakes compound. We introduce $\\texttt{YC-Bench}$, a benchmark that evaluates these capabilities by tasking an agent with running a simulated startup over a one-year horizon spanning hundreds of turns. The agent must manage employees, select task contracts, and maintain profitability in a partially observable environment where adversarial clients and growing payroll create compounding consequences for poor decisions. We evaluate 12 models, both proprietary and open source, across 3 seeds each. Only three models consistently surpass the starting capital of \\$200K, with Claude Opus 4.6 achieving the highest average final funds at \\$1.27 M, followed by GLM-5 at \\$1.21 M at 11$\\times$ lower inference cost. Scratchpad usage, the sole mechanism for persisting information across context truncation, is the strongest predictor of success, and adversarial client detection is the primary failure mode, accounting for $47\\%$ of bankruptcies. Our analysis reveals that frontier models still fail through distinct failure modes such as over-parallelization, demonstrating the capability gaps for long-horizon performance. $\\texttt{YC-Bench}$ is open-source, reproducible, and configurable.",
+    "authors": [
+      "Muyu He",
+      "Adit Jain",
+      "Anand Kumar",
+      "Vincent Tu",
+      "Soumyadeep Bakshi",
+      "Sachin Patro",
+      "Nazneen Rajani"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.01212v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.01212v1",
+    "fetched_at": "2026-04-02T08:53:35.660716",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455387"
+  },
+  {
+    "id": "2604.01179v1",
+    "title": "A ROS 2 Wrapper for Florence-2: Multi-Mode Local Vision-Language Inference for Robotic Systems",
+    "abstract": "Foundation vision-language models are becoming increasingly relevant to robotics because they can provide richer semantic perception than narrow task-specific pipelines. However, their practical adoption in robot software stacks still depends on reproducible middleware integrations rather than on model quality alone. Florence-2 is especially attractive in this regard because it unifies captioning, optical character recognition, open-vocabulary detection, grounding and related vision-language tasks within a comparatively manageable model size. This article presents a ROS 2 wrapper for Florence-2 that exposes the model through three complementary interaction modes: continuous topic-driven processing, synchronous service calls and asynchronous actions. The wrapper is designed for local execution and supports both native installation and Docker container deployment. It also combines generic JSON outputs with standard ROS 2 message bindings for detection-oriented tasks. A functional validation is reported together with a throughput study on several GPUs, showing that local deployment is feasible with consumer grade hardware. The repository is publicly available here: https://github.com/JEDominguezVidal/florence2_ros2_wrapper",
+    "authors": [
+      "J. E. Domínguez-Vidal"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.01179v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.01179v1",
+    "fetched_at": "2026-04-02T08:53:35.660756",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455397"
+  },
+  {
+    "id": "2604.01168v1",
+    "title": "S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models",
+    "abstract": "Using roughly 48 execution-verified HumanEval training solutions, tuning a single initial state matrix per recurrent layer, with zero inference overhead, outperforms LoRA by +10.8 pp (p < 0.001) on HumanEval. The method, which we call S0 tuning, optimizes one state matrix per recurrent layer while freezing all model weights. On Qwen3.5-4B (GatedDeltaNet hybrid), S0 tuning improves greedy pass@1 by +23.6 +/- 1.7 pp (10 seeds). On FalconH1-7B (Mamba-2 hybrid), S0 reaches 71.8% +/- 1.3 and LoRA reaches 71.4% +/- 2.4 (3 seeds), statistically indistinguishable at this sample size while requiring no weight merging. Cross-domain transfer is significant on MATH-500 (+4.8 pp, p = 0.00002, 8 seeds) and GSM8K (+2.8 pp, p = 0.0003, 10 seeds); a text-to-SQL benchmark (Spider) shows no transfer, consistent with the trajectory-steering mechanism. A prefix-tuning control on a pure Transformer (Qwen2.5-3B) degrades performance by -13.9 pp under all nine configurations tested. On Qwen3.5, a per-step state-offset variant reaches +27.1 pp, above both S0 and LoRA but with per-step inference cost. Taken together, the results show that recurrent state initialization is a strong zero-inference-overhead PEFT surface for hybrid language models when verified supervision is scarce. The tuned state is a ~48 MB file; task switching requires no weight merging or model reload. Code and library: https://github.com/jackyoung27/s0-tuning.",
+    "authors": [
+      "Jack Young"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.01168v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.01168v1",
+    "fetched_at": "2026-04-02T08:53:35.660775",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455407"
+  },
+  {
+    "id": "2604.01020v1",
+    "title": "OrgAgent: Organize Your Multi-Agent System like a Company",
+    "abstract": "While large language model-based multi-agent systems have shown strong potential for complex reasoning, how to effectively organize multiple agents remains an open question. In this paper, we introduce OrgAgent, a company-style hierarchical multi-agent framework that separates collaboration into governance, execution, and compliance layers. OrgAgent decomposes multi-agent reasoning into three layers: a governance layer for planning and resource allocation, an execution layer for task solving and review, and a compliance layer for final answer control. By evaluating the framework across reasoning tasks, LLMs, execution modes, and execution policies, we find that multi-agent systems organized in a company-style hierarchy generally outperform other organizational structures. Besides, hierarchical coordination also reduces token consumption relative to flat collaboration in most settings. For example, for GPT-OSS-120B, the hierarchical setting improves performance over flat multi-agent system by 102.73% while reducing token usage by 74.52% on SQuAD 2.0. Further analysis shows that hierarchy helps most when tasks benefit from stable skill assignment, controlled information flow, and layered verification. Overall, our findings highlight organizational structure as an important factor in multi-agent reasoning, shaping not only effectiveness and cost, but also coordination behavior.",
+    "authors": [
+      "Yiru Wang",
+      "Xinyue Shen",
+      "Yaohui Han",
+      "Michael Backes",
+      "Pin-Yu Chen",
+      "Tsung-Yi Ho"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.01020v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.01020v1",
+    "fetched_at": "2026-04-02T08:53:35.660803",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455416"
+  },
+  {
+    "id": "2604.01007v1",
+    "title": "OmniMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
+    "abstract": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck. Building effective lifelong memory requires navigating a vast design space spanning architecture, retrieval strategies, prompt engineering, and data pipelines; this space is too large and interconnected for manual exploration or traditional AutoML to explore effectively. We deploy an autonomous research pipeline to discover OmniMem, a unified multimodal memory framework for lifelong AI agents. Starting from a naïve baseline (F1=0.117 on LoCoMo), the pipeline autonomously executes ${\\sim}50$ experiments across two benchmarks, diagnosing failure modes, proposing architectural modifications, and repairing data pipeline bugs, all without human intervention in the inner loop. The resulting system achieves state-of-the-art on both benchmarks, improving F1 by +411% on LoCoMo (0.117$\\to$0.598) and +214% on Mem-Gallery (0.254$\\to$0.797) relative to the initial configurations. Critically, the most impactful discoveries are not hyperparameter adjustments: bug fixes (+175%), architectural changes (+44%), and prompt engineering (+188\\% on specific categories) each individually exceed the cumulative contribution of all hyperparameter tuning, demonstrating capabilities fundamentally beyond the reach of traditional AutoML. We provide a taxonomy of six discovery types and identify four properties that make multimodal memory particularly suited for autoresearch, offering guidance for applying autonomous research pipelines to other AI system domains. Code is available at this https://github.com/aiming-lab/OmniMem.",
+    "authors": [
+      "Jiaqi Liu",
+      "Zipeng Ling",
+      "Shi Qiu",
+      "Yanqing Liu",
+      "Siwei Han",
+      "Peng Xia",
+      "Haoqin Tu",
+      "Zeyu Zheng",
+      "Cihang Xie",
+      "Charles Fleming",
+      "Mingyu Ding",
+      "Huaxiu Yao"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.01007v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.01007v1",
+    "fetched_at": "2026-04-02T08:53:35.660839",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455435"
+  },
+  {
+    "id": "2604.00986v1",
+    "title": "Do Phone-Use Agents Respect Your Privacy?",
+    "abstract": "We study whether phone-use agents respect privacy while completing benign mobile tasks. This question has remained hard to answer because privacy-compliant behavior is not operationalized for phone-use agents, and ordinary apps do not reveal exactly what data agents type into which form entries during execution. To make this question measurable, we introduce MyPhoneBench, a verifiable evaluation framework for privacy behavior in mobile agents. We operationalize privacy-respecting phone use as permissioned access, minimal disclosure, and user-controlled memory through a minimal privacy contract, iMy, and pair it with instrumented mock apps plus rule-based auditing that make unnecessary permission requests, deceptive re-disclosure, and unnecessary form filling observable and reproducible. Across five frontier models on 10 mobile apps and 300 tasks, we find that task success, privacy-compliant task completion, and later-session use of saved preferences are distinct capabilities, and no single model dominates all three. Evaluating success and privacy jointly reshuffles the model ordering relative to either metric alone. The most persistent failure mode across models is simple data minimization: agents still fill optional personal entries that the task does not require. These results show that privacy failures arise from over-helpful execution of benign tasks, and that success-only evaluation overestimates the deployment readiness of current phone-use agents. All code, mock apps, and agent trajectories are publicly available at~ https://github.com/tangzhy/MyPhoneBench.",
+    "authors": [
+      "Zhengyang Tang",
+      "Ke Ji",
+      "Xidong Wang",
+      "Zihan Ye",
+      "Xinyuan Wang",
+      "Yiduo Guo",
+      "Ziniu Li",
+      "Chenxin Li",
+      "Jingyuan Hu",
+      "Shunian Chen",
+      "Tongxu Luo",
+      "Jiaxi Bi",
+      "Zeyu Qin",
+      "Shaobo Wang",
+      "Xin Lai",
+      "Pengyuan Lyu",
+      "Junyi Li",
+      "Can Xu",
+      "Chengquan Zhang",
+      "Han Hu",
+      "Ming Yan",
+      "Benyou Wang"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00986v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00986v1",
+    "fetched_at": "2026-04-02T08:53:35.660892",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455446"
+  },
+  {
+    "id": "2604.00892v1",
+    "title": "When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation",
+    "abstract": "As LLM agents transition from short, static problem solving to executing complex, long-horizon tasks in dynamic environments, the ability to handle user interruptions, such as adding requirement or revising goals, during mid-task execution is becoming a core requirement for realistic deployment. However, existing benchmarks largely assume uninterrupted agent behavior or study interruptions only in short, unconstrained language tasks. In this paper, we present the first systematic study of interruptible agents in long-horizon, environmentally grounded web navigation tasks, where actions induce persistent state changes. We formalize three realistic interruption types, including addition, revision, and retraction, and introduce InterruptBench, a benchmark derived from WebArena-Lite that synthesizes high-quality interruption scenarios under strict semantic constraints. Using a unified interruption simulation framework, we evaluate six strong LLM backbones across single- and multi-turn interruption settings, analyzing both their effectiveness in adapting to updated intents and their efficiency in recovering from mid-task changes. Our results show that handling user interruptions effectively and efficiently during long-horizon agentic tasks remains challenging for powerful large-scale LLMs. Code and dataset are available at https://github.com/HenryPengZou/InterruptBench.",
+    "authors": [
+      "Henry Peng Zou",
+      "Chunyu Miao",
+      "Wei-Chieh Huang",
+      "Yankai Chen",
+      "Yue Zhou",
+      "Hanrong Zhang",
+      "Yaozu Wu",
+      "Liancheng Fang",
+      "Zhengyao Gu",
+      "Zhen Zhang",
+      "Kening Zheng",
+      "Fangxin Wang",
+      "Yi Nian",
+      "Shanghao Li",
+      "Wenzhe Fan",
+      "Langzhou He",
+      "Weizhi Zhang",
+      "Xue Liu",
+      "Philip S. Yu"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00892v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00892v1",
+    "fetched_at": "2026-04-02T08:53:35.660937",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455456"
+  },
+  {
+    "id": "2604.00890v1",
+    "title": "Beyond Symbolic Solving: Multi Chain-of-Thought Voting for Geometric Reasoning in Large Language Models",
+    "abstract": "Geometric Problem Solving (GPS) remains at the heart of enhancing mathematical reasoning in large language models because it requires the combination of diagrammatic understanding, symbolic manipulation and logical inference. In existing literature, researchers have chiefly focused on synchronising the diagram descriptions with text literals and solving the problem. In this vein, they have either taken a neural, symbolic or neuro-symbolic approach. But this solves only the first two of the requirements, namely diagrammatic understanding and symbolic manipulation, while leaving logical inference underdeveloped. The logical inference is often limited to one chain-of-thought (CoT). To address this weakness in hitherto existing models, this paper proposes MARS-GPS, that generates multiple parallel reasoning rollouts augmented with Python code execution for numerical verification, ranks them using token-level entropy as a confidence signal, and aggregates answers through a multi-stage voting and self-verification pipeline. Empirical results show that MARS-GPS with 8 parallel rollouts achieves 88.8% on Geometry3K, a nearly +11% improvement over the prior state-of-the-art, with accuracy scaling consistently as the number of rollouts increases from 1 to 16 (+6.0% on ablation subset). We provide our code and data in an anonymous repository: https://anonymous.4open.science/r/MARS-GPS-DE55.",
+    "authors": [
+      "Md. Abu Bakor Siddique",
+      "Shahrin Hossain",
+      "Sadman Ahmed Siam",
+      "Syed Rifat Raiyan",
+      "Hasan Mahmud",
+      "Md Kamrul Hasan"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00890v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00890v1",
+    "fetched_at": "2026-04-02T08:53:35.660961",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455466"
+  },
+  {
+    "id": "2604.00842v1",
+    "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+    "abstract": "Proactive agents that anticipate user needs and autonomously execute tasks hold great promise as digital assistants, yet the lack of realistic user simulation frameworks hinders their development. Existing approaches model apps as flat tool-calling APIs, failing to capture the stateful and sequential nature of user interaction in digital environments and making realistic user simulation infeasible. We introduce Proactive Agent Research Environment (Pare), a framework for building and evaluating proactive agents in digital environments. Pare models applications as finite state machines with stateful navigation and state-dependent action space for the user simulator, enabling active user simulation. Building on this foundation, we present Pare-Bench, a benchmark of 143 diverse tasks spanning communication, productivity, scheduling, and lifestyle apps, designed to test context observation, goal inference, intervention timing, and multi-app orchestration.",
+    "authors": [
+      "Deepak Nathani",
+      "Cheng Zhang",
+      "Chang Huan",
+      "Jiaming Shan",
+      "Yinfei Yang",
+      "Alkesh Patel",
+      "Zhe Gan",
+      "William Yang Wang",
+      "Michael Saxon",
+      "Xin Eric Wang"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00842v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00842v1",
+    "fetched_at": "2026-04-02T08:53:35.660992",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455476"
+  },
+  {
+    "id": "2604.00830v1",
+    "title": "Learning to Learn-at-Test-Time: Language Agents with Learnable Adaptation Policies",
+    "abstract": "Test-Time Learning (TTL) enables language agents to iteratively refine their performance through repeated interactions with the environment at inference time. At the core of TTL is an adaptation policy that updates the actor policy based on experience from previous episodes, thereby improving future behavior. Existing methods rely on fixed, hand-crafted adaptation policies rather than optimizing them for downstream improvement. We argue that optimal adaptation policies should be learned from task environments, not hand-engineered based on human intuition. To achieve this, we introduce Meta-TTL, a framework that formulates the discovery of effective adaptation policies as a bi-level optimization problem. Within this framework, the inner loop executes the standard TTL process, measuring how effectively a candidate adaptation policy helps an agent correct errors across sequential episodes. Guided by the agent's performance, the outer loop employs evolutionary search over a diverse distribution of training tasks to iteratively refine the adaptation policy. We evaluate Meta-TTL on Jericho and WebArena-Lite across both in-distribution (ID) and out-of-distribution (OOD) settings, using multiple meta-agent backbones. Results on both benchmarks show that Meta-TTL consistently outperforms hand-crafted baselines, suggesting that the optimized adaptation policy encodes transferable strategies that generalize beyond the training task distribution.",
+    "authors": [
+      "Zhanzhi Lou",
+      "Hui Chen",
+      "Yibo Li",
+      "Qian Wang",
+      "Bryan Hooi"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00830v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00830v1",
+    "fetched_at": "2026-04-02T08:53:35.661014",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455485"
+  },
+  {
+    "id": "2604.00790v1",
+    "title": "RefineRL: Advancing Competitive Programming with Self-Refinement Reinforcement Learning",
+    "abstract": "While large language models (LLMs) have demonstrated strong performance on complex reasoning tasks such as competitive programming (CP), existing methods predominantly focus on single-attempt settings, overlooking their capacity for iterative refinement. In this paper, we present RefineRL, a novel approach designed to unleash the self-refinement capabilities of LLMs for CP problem solving. RefineRL introduces two key innovations: (1) Skeptical-Agent, an iterative self-refinement agent equipped with local execution tools to validate generated solutions against public test cases of CP problems. This agent always maintains a skeptical attitude towards its own outputs and thereby enforces rigorous self-refinement even when validation suggests correctness. (2) A reinforcement learning (RL) solution to incentivize LLMs to self-refine with only standard RLVR data (i.e., problems paired with their verifiable answers). Extensive experiments on Qwen3-4B and Qwen3-4B-2507 demonstrate that our method yields substantial gains: after our RL training, these compact 4B models integrated with the Skeptical-Agent not only outperform much larger 32B models but also approach the single-attempt performance of 235B models. These findings suggest that self-refinement holds considerable promise for scaling LLM reasoning, with significant potential for further advancement.",
+    "authors": [
+      "Shaopeng Fu",
+      "Xingxing Zhang",
+      "Li Dong",
+      "Di Wang",
+      "Furu Wei"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00790v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00790v1",
+    "fetched_at": "2026-04-02T08:53:35.661036",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455495"
+  },
+  {
+    "id": "2604.00726v1",
+    "title": "Exploring Silent Data Corruption as a Reliability Challenge in LLM Training",
+    "abstract": "As Large Language Models (LLMs) scale in size and complexity, the consequences of failures during training become increasingly severe. A major challenge arises from Silent Data Corruption (SDC): hardware-induced faults that bypass system-level detection mechanisms. SDC may behave like benign numerical noise, but can also cause harmful gradient corruption that leads to loss spikes, divergence, or stalled progress.   This work provides a controlled study of how intermittent SDC affects LLM pretraining. Using targeted fault injection at the level of GPU matrix-multiply instructions, we characterize the sensitivity of different bit positions, kernel functions, and execution stages. Our analysis shows that locally originating faults can produce impactful corruption, including NaN propagation, short-lived spikes in loss, gradient norm, and attention logits, as well as persistent parameter divergence. Building on the observed corruption signatures, we propose a lightweight detection method that identifies potentially harmful parameter updates. Experiments on LLaMA models with 60M, 350M, and 1.3B parameters demonstrate that recomputing the most recent training step upon detection can effectively mitigate the impact of these events.",
+    "authors": [
+      "Anton Altenbernd",
+      "Philipp Wiesner",
+      "Odej Kao"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00726v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00726v1",
+    "fetched_at": "2026-04-02T08:53:35.661056",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455504"
+  },
+  {
+    "id": "2604.00717v1",
+    "title": "GRASP: Gradient Realignment via Active Shared Perception for Multi-Agent Collaborative Optimization",
+    "abstract": "Non-stationarity arises from concurrent policy updates and leads to persistent environmental fluctuations. Existing approaches like Centralized Training with Decentralized Execution (CTDE) and sequential update schemes mitigate this issue. However, since the perception of the policies of other agents remains dependent on sampling environmental interaction data, the agent essentially operates in a passive perception state. This inevitably triggers equilibrium oscillations and significantly slows the convergence speed of the system. To address this issue, we propose Gradient Realignment via Active Shared Perception (GRASP), a novel framework that defines generalized Bellman equilibrium as a stable objective for policy evolution. The core mechanism of GRASP involves utilizing the independent gradients of agents to derive a defined consensus gradient, enabling agents to actively perceive policy updates and optimize team collaboration. Theoretically, we leverage the Kakutani Fixed-Point Theorem to prove that the consensus direction $u^*$ guarantees the existence and attainability of this equilibrium. Extensive experiments on StarCraft II Multi-Agent Challenge (SMAC) and Google Research Football (GRF) demonstrate the scalability and promising performance of the framework.",
+    "authors": [
+      "Sihan Zhou",
+      "Tiantian He",
+      "Yifan Lu",
+      "Yaqing Hou",
+      "Yew-Soon Ong"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00717v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00717v1",
+    "fetched_at": "2026-04-02T08:53:35.661078",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455514"
+  },
+  {
+    "id": "2604.00694v1",
+    "title": "Internal APIs Are All You Need: Shadow APIs, Shared Discovery, and the Case Against Browser-First Agent Architectures",
+    "abstract": "Autonomous agents increasingly interact with the web, yet most websites remain designed for human browsers -- a fundamental mismatch that the emerging ``Agentic Web'' must resolve. Agents must repeatedly browse pages, inspect DOMs, and reverse-engineer callable routes -- a process that is slow, brittle, and redundantly repeated across agents. We observe that every modern website already exposes internal APIs (sometimes called \\emph{shadow APIs}) behind its user interface -- first-party endpoints that power the site's own functionality. We present Unbrowse, a shared route graph that transforms browser-based route discovery into a collectively maintained index of these callable first-party interfaces. The system passively learns routes from real browsing traffic and serves cached routes via direct API calls. In a single-host live-web benchmark of equivalent information-retrieval tasks across 94 domains, fully warmed cached execution averaged 950\\,ms versus 3{,}404\\,ms for Playwright browser automation (3.6$\\times$ mean speedup, 5.4$\\times$ median), with well-cached routes completing in under 100\\,ms. A three-path execution model -- local cache, shared graph, or browser fallback -- ensures the system is voluntary and self-correcting. A three-tier micropayment model via the x402 protocol charges per-query search fees for graph lookups (Tier~3), a one-time install fee for discovery documentation (Tier~1), and optional per-execution fees for site owners who opt in (Tier~2). All tiers are grounded in a necessary condition for rational adoption: an agent uses the shared graph only when the total fee is lower than the expected cost of browser rediscovery.",
+    "authors": [
+      "Lewis Tham",
+      "Nicholas Mac Gregor Garcia",
+      "Jungpil Hahn"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.ET",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00694v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00694v1",
+    "fetched_at": "2026-04-02T08:53:35.661097",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455524"
+  },
+  {
+    "id": "2604.00660v1",
+    "title": "Streaming Model Cascades for Semantic SQL",
+    "abstract": "Modern data warehouses extend SQL with semantic operators that invoke large language models on each qualifying row, but the per-row inference cost is prohibitive at scale. Model cascades reduce this cost by routing most rows through a fast proxy model and delegating uncertain cases to an expensive oracle. Existing frameworks, however, require global dataset access and optimize a single quality metric, limiting their applicability in distributed systems where data is partitioned across independent workers. We present two adaptive cascade algorithms designed for streaming, per-partition execution in which each worker processes its partition independently without inter-worker communication. SUPG-IT extends the SUPG statistical framework to streaming execution with iterative threshold refinement and joint precision-recall guarantees. GAMCAL replaces user-specified quality targets with a learned calibration model: a Generalized Additive Model maps proxy scores to calibrated probabilities with uncertainty quantification, enabling direct optimization of a cost-quality tradeoff through a single parameter. Experiments on six datasets in a production semantic SQL engine show that both algorithms achieve F1 > 0.95 on every dataset. GAMCAL achieves higher F1 per oracle call at cost-sensitive operating points, while SUPG-IT reaches a higher quality ceiling with formal guarantees on precision and recall.",
+    "authors": [
+      "Paweł Liskowski",
+      "Kyle Schmaus"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.DB",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.00660v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00660v1",
+    "fetched_at": "2026-04-02T08:53:35.661115",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-02T09:05:52.455533"
+  }
+]
