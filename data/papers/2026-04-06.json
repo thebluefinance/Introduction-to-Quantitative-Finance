@@ -1,0 +1,576 @@
+[
+  {
+    "id": "2604.02921v1",
+    "title": "Debiasing LLMs by Fine-tuning",
+    "abstract": "Prior research shows that large language models (LLMs) exhibit systematic extrapolation bias when forming predictions from both experimental and real-world data, and that prompt-based approaches appear limited in alleviating this bias. We propose a supervised fine-tuning (SFT) approach that uses Low-Rank Adaptation (LoRA) to train off-the-shelf LLMs on instruction datasets constructed from rational benchmark forecasts. By intervening at the parameter level, SFT changes how LLMs map observed information into forecasts and thereby mitigates extrapolation bias. We evaluate the fine-tuned model in two settings: controlled forecasting experiments and cross-sectional stock return prediction. In both settings, fine-tuning corrects the extrapolative bias out-of-sample, establishing a low-cost and generalizable method for debiasing LLMs.",
+    "authors": [
+      "Zhenyu Gao",
+      "Wenxi Jiang",
+      "Yutong Yan"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02921v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02921v1",
+    "fetched_at": "2026-04-06T09:03:50.998687"
+  },
+  {
+    "id": "2604.02909v1",
+    "title": "Concave Continuation: Linking Routing to Arbitrage",
+    "abstract": "We extend AMM trade functions to negative inputs via the \\textit{concave continuation}, derived from the invariance of the local conservation law under allocation direction flips. This unifies routing and arbitrage into a single problem. We extend the one-hop transfer algorithm proposed in \\cite{jiang} to this setting.",
+    "authors": [
+      "Ruichao Jiang",
+      "Long Wen"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "math.OC",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02909v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02909v1",
+    "fetched_at": "2026-04-06T09:03:50.998724"
+  },
+  {
+    "id": "2604.02862v1",
+    "title": "When cooperation is beneficial to all agents",
+    "abstract": "Within a general semimartingale framework, we study the relationship between collective market efficiency and individual rationality. We derive a necessary and sufficient condition for the existence of (possibly zero-sum) exchanges among agents that strictly increase their indirect utilities and characterize this condition in terms of the compatibility between agents' preferences and collective pricing measures. The framework applies to both continuous- and discrete-time models and clarifies when cooperation leads to a strict improvement in each participating agent's indirect utility.",
+    "authors": [
+      "Alessandro Doldi",
+      "Marco Frittelli",
+      "Marco Maggis"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "q-fin.MF",
+      "cs.GT"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02862v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02862v1",
+    "fetched_at": "2026-04-06T09:03:50.998750"
+  },
+  {
+    "id": "2604.02832v1",
+    "title": "Transfer Learning for Loan Recovery Prediction under Distribution Shifts with Heterogeneous Feature Spaces",
+    "abstract": "Accurate forecasting of recovery rates (RR) is central to credit risk management and regulatory capital determination. In many loan portfolios, however, RR modeling is constrained by data scarcity arising from infrequent default events. Transfer learning (TL) offers a promising avenue to mitigate this challenge by exploiting information from related but richer source domains, yet its effectiveness critically depends on the presence and strength of distributional shifts, and on potential heterogeneity between source and target feature spaces.   This paper introduces FT-MDN-Transformer, a mixture-density tabular Transformer architecture specifically designed for TL in RR forecasting across heterogeneous feature sets. The model produces both loan-level point estimates and portfolio-level predictive distributions, thereby supporting a wide range of practical RR forecasting applications. We evaluate the proposed approach in a controlled Monte Carlo simulation that facilitates systematic variation of covariate, conditional, and label shifts, as well as in a real-world transfer setting using the Global Credit Data (GCD) loan dataset as source and a novel bonds dataset as target.   Our results show that FT-MDN-Transformer outperforms baseline models when target-domain data are limited, with particularly pronounced gains under covariate and conditional shifts, while label shift remains challenging. We also observe its probabilistic forecasts to closely track empirical recovery distributions, providing richer information than conventional point-prediction metrics alone. Overall, the findings highlight the potential of distribution-aware TL architectures to improve RR forecasting in data-scarce credit portfolios and offer practical insights for risk managers operating under heterogeneous data environments.",
+    "authors": [
+      "Christopher Gerling",
+      "Hanqiu Peng",
+      "Ying Chen",
+      "Stefan Lessmann"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "q-fin.RM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02832v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02832v1",
+    "fetched_at": "2026-04-06T09:03:50.998781"
+  },
+  {
+    "id": "2604.02743v1",
+    "title": "On options-driven realized volatility forecasting: Information gains via rough volatility model",
+    "abstract": "We examine whether model-based spot volatility estimators extracted from traded options data enhance the predictive power of the Heterogeneous Autoregressive (HAR) model for realized volatility. Specifically, we infer spot volatility under the rough stochastic volatility model via an iterative two-step approach following Andersen et al. (2015a) and adopt a deep learning surrogate to accelerate model estimation from large-scale options panels. Benchmarked against traditional stochastic volatility models (Heston, Bates, SVCJ) and the VIX index, our results demonstrate that the augmented HAR-RV-RHeston model improves daily realized volatility forecasting accuracy and sustains superior performance across horizons up to one month.",
+    "authors": [
+      "Zheqi Fan",
+      " Meng",
+      " Wang",
+      "Yifan Ye"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02743v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02743v1",
+    "fetched_at": "2026-04-06T09:03:50.998805"
+  },
+  {
+    "id": "2604.02549v1",
+    "title": "Financial Anomaly Detection for the Canadian Market",
+    "abstract": "In this work we evaluate the performance of three classes of methods for detecting financial anomalies: topological data analysis (TDA), principal component analyis (PCA), and Neural Network-based approaches. We apply these methods to the TSX-60 data to identify major financial stress events in the Canadian stock market. We show how neural network-based methods (such as GlocalKD and One-Shot GIN(E)) and TDA methods achieve the strongest performance. The effectiveness of TDA in detecting financial anomalies suggests that global topological properties are meaningful in distinguishing financial stress events.",
+    "authors": [
+      "Luigi Caputi",
+      "Nicholas Meadows"
+    ],
+    "published": "2026-04-02",
+    "categories": [
+      "q-fin.ST",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02549v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02549v1",
+    "fetched_at": "2026-04-06T09:03:50.998825"
+  },
+  {
+    "id": "2604.02378v1",
+    "title": "YC Bench: a Live Benchmark for Forecasting Startup Outperformance in Y Combinator Batches",
+    "abstract": "Forecasting startup success is notoriously difficult, partly because meaningful outcomes, such as exits, large funding rounds, and sustained revenue growth, are rare and can take years to materialize. As a result, signals are sparse and evaluation cycles are slow. Y Combinator batches offer a unique mitigation: each batch comprises around 200 startups, funded simultaneously, with evaluation at Demo Day only three months later. We introduce YC Bench, a live benchmark for forecasting early outperformance within YC batches. Using the YC W26 batch as a case study (196 startups), we measure outperformance with a Pre-Demo Day Score, a KPI combining publicly available traction signals and web visibility. This short-term metric enables rapid evaluation of forecasting models. As a baseline, we take Google mentions prior to the YC W26 application deadline, a simple proxy for prior brand recognition, recovering 6 of 11 top performers at YC Demo Day (55% recall). YC Bench provides a live benchmark for studying startup success forecasting, with iteration cycles measured in months rather than years. Code and Data are available on GitHub: https://github.com/benstaf/ycbench",
+    "authors": [
+      "Mostapha Benhenda"
+    ],
+    "published": "2026-04-01",
+    "categories": [
+      "cs.LG",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02378v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02378v1",
+    "fetched_at": "2026-04-06T09:03:50.998995"
+  },
+  {
+    "id": "2604.02834v1",
+    "title": "ESL-Bench: An Event-Driven Synthetic Longitudinal Benchmark for Health Agents",
+    "abstract": "Longitudinal health agents must reason across multi-source trajectories that combine continuous device streams, sparse clinical exams, and episodic life events - yet evaluating them is hard: real-world data cannot be released at scale, and temporally grounded attribution questions seldom admit definitive answers without structured ground truth. We present ESL-Bench, an event-driven synthesis framework and benchmark providing 100 synthetic users, each with a 1-5 year trajectory comprising a health profile, a multi-phase narrative plan, daily device measurements, periodic exam records, and an event log with explicit per-indicator impact parameters. Each indicator follows a baseline stochastic process driven by discrete events with sigmoid-onset, exponential-decay kernels under saturation and projection constraints; a hybrid pipeline delegates sparse semantic artifacts to LLM-based planning and dense indicator dynamics to algorithmic simulation with hard physiological bounds. Users are each paired with 100 evaluation queries across five dimensions - Lookup, Trend, Comparison, Anomaly, Explanation - stratified into Easy, Medium, and Hard tiers, with all ground-truth answers programmatically computable from the recorded event-indicator relationships. Evaluating 13 methods spanning LLMs with tools, DB-native agents, and memory-augmented RAG, we find that DB agents (48-58%) substantially outperform memory RAG baselines (30-38%), with the gap concentrated on Comparison and Explanation queries where multi-hop reasoning and evidence attribution are required.",
+    "authors": [
+      "Chao Li",
+      "Cailiang Liu",
+      "Ang Gao",
+      "Kexin Deng",
+      "Shu Zhang",
+      "Langping Xu",
+      "Xiaotong Shi",
+      "Xionghao Ding",
+      "Jian Pei",
+      "Xun Jiang"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02834v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02834v1",
+    "fetched_at": "2026-04-06T09:04:04.831627"
+  },
+  {
+    "id": "2604.02694v1",
+    "title": "DocShield: Towards AI Document Safety via Evidence-Grounded Agentic Reasoning",
+    "abstract": "The rapid progress of generative AI has enabled increasingly realistic text-centric image forgeries, posing major challenges to document safety. Existing forensic methods mainly rely on visual cues and lack evidence-based reasoning to reveal subtle text manipulations. Detection, localization, and explanation are often treated as isolated tasks, limiting reliability and interpretability. To tackle these challenges, we propose DocShield, the first unified framework formulating text-centric forgery analysis as a visual-logical co-reasoning problem. At its core, a novel Cross-Cues-aware Chain of Thought (CCT) mechanism enables implicit agentic reasoning, iteratively cross-validating visual anomalies with textual semantics to produce consistent, evidence-grounded forensic analysis. We further introduce a Weighted Multi-Task Reward for GRPO-based optimization, aligning reasoning structure, spatial evidence, and authenticity prediction. Complementing the framework, we construct RealText-V1, a multilingual dataset of document-like text images with pixel-level manipulation masks and expert-level textual explanations. Extensive experiments show DocShield significantly outperforms existing methods, improving macro-average F1 by 41.4% over specialized frameworks and 23.4% over GPT-4o on T-IC13, with consistent gains on the challenging T-SROIE benchmark. Our dataset, model, and code will be publicly released.",
+    "authors": [
+      "Fanwei Zeng",
+      "Changtao Miao",
+      "Jing Huang",
+      "Zhiya Tan",
+      "Shutao Gong",
+      "Xiaoming Yu",
+      "Yang Wang",
+      "Weibin Yao",
+      "Joey Tianyi Zhou",
+      "Jianshu Li",
+      "Yin Yan"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02694v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02694v1",
+    "fetched_at": "2026-04-06T09:04:04.831673"
+  },
+  {
+    "id": "2604.02502v1",
+    "title": "An Explainable Vision-Language Model Framework with Adaptive PID-Tversky Loss for Lumbar Spinal Stenosis Diagnosis",
+    "abstract": "Lumbar Spinal Stenosis (LSS) diagnosis remains a critical clinical challenge, with diagnosis heavily dependent on labor-intensive manual interpretation of multi-view Magnetic Resonance Imaging (MRI), leading to substantial inter-observer variability and diagnostic delays. Existing vision-language models simultaneously fail to address the extreme class imbalance prevalent in clinical segmentation datasets while preserving spatial accuracy, primarily due to global pooling mechanisms that discard crucial anatomical hierarchies. We present an end-to-end Explainable Vision-Language Model framework designed to overcome these limitations, achieved through two principal objectives. We propose a Spatial Patch Cross-Attention module that enables precise, text-directed localization of spinal anomalies with spatial precision. A novel Adaptive PID-Tversky Loss function by integrating control theory principles dynamically further modifies training penalties to specifically address difficult, under-segmented minority instances. By incorporating foundational VLMs alongside an Automated Radiology Report Generation module, our framework demonstrates considerable performance: a diagnostic classification accuracy of 90.69%, a macro-averaged Dice score of 0.9512 for segmentation, and a CIDEr score of 92.80%. Furthermore, the framework shows explainability by converting complex segmentation predictions into radiologist-style clinical reports, thereby establishing a new benchmark for transparent, interpretable AI in clinical medical imaging that keeps essential human supervision while enhancing diagnostic capabilities.",
+    "authors": [
+      "Md. Sajeebul Islam Sk.",
+      "Md. Mehedi Hasan Shawon",
+      "Md. Golam Rabiul Alam"
+    ],
+    "published": "2026-04-02",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02502v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02502v1",
+    "fetched_at": "2026-04-06T09:04:04.831715"
+  },
+  {
+    "id": "2604.02478v1",
+    "title": "AIVV: Neuro-Symbolic LLM Agent-Integrated Verification and Validation for Trustworthy Autonomous Systems",
+    "abstract": "Deep learning models excel at detecting anomaly patterns in normal data. However, they do not provide a direct solution for anomaly classification and scalability across diverse control systems, frequently failing to distinguish genuine faults from nuisance faults caused by noise or the control system's large transient response. Consequently, because algorithmic fault validation remains unscalable, full Verification and Validation (V\\&V) operations are still managed by Human-in-the-Loop (HITL) analysis, resulting in an unsustainable manual workload. To automate this essential oversight, we propose Agent-Integrated Verification and Validation (AIVV), a hybrid framework that deploys Large Language Models (LLMs) as a deliberative outer loop. Because rigorous system verification strictly depends on accurate validation, AIVV escalates mathematically flagged anomalies to a role-specialized LLM council. The council agents perform collaborative validation by semantically validating nuisance and true failures based on natural-language (NL) requirements to secure a high-fidelity system-verification baseline. Building on this foundation, the council then performs system verification by assessing post-fault responses against NL operational tolerances, ultimately generating actionable V\\&V artifacts, such as gain-tuning proposals. Experiments on a time-series simulator for Unmanned Underwater Vehicles (UUVs) demonstrate that AIVV successfully digitizes the HITL V\\&V process, overcoming the limitations of rule-based fault classification and offering a scalable blueprint for LLM-mediated oversight in time-series data domains.",
+    "authors": [
+      "Jiyong Kwon",
+      "Ujin Jeon",
+      "Sooji Lee",
+      "Guang Lin"
+    ],
+    "published": "2026-04-02",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02478v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02478v1",
+    "fetched_at": "2026-04-06T09:04:04.831740"
+  },
+  {
+    "id": "2604.02445v1",
+    "title": "Matrix Profile for Time-Series Anomaly Detection: A Reproducible Open-Source Benchmark on TSB-AD",
+    "abstract": "Matrix Profile (MP) methods are an interpretable and scalable family of distance-based methods for time-series anomaly detection, but strong benchmark performance still depends on design choices beyond a vanilla nearest-neighbor profile. This technical report documents an open-source Matrix Profile for Anomaly Detection (MMPAD) submission to TSB-AD, a benchmark that covers both univariate and multivariate time series. The submitted system combines pre-sorted multidimensional aggregation, efficient exclusion-zone-aware k-nearest-neighbor (kNN) retrieval for repeated anomalies, and moving-average post-processing. To serve as a reproducible reference for MP-based anomaly detection on TSB-AD, we detail the released implementation, the hyperparameter settings for the univariate and multivariate tracks, and the corresponding benchmark results. We further analyze how the system performs on the aggregate leaderboard and across specific dataset characteristics.The open-source implementation is available at https://github.com/mcyeh/mmpad_tsb.",
+    "authors": [
+      "Chin-Chia Michael Yeh"
+    ],
+    "published": "2026-04-02",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02445v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02445v1",
+    "fetched_at": "2026-04-06T09:04:04.831758"
+  },
+  {
+    "id": "2604.03144v1",
+    "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
+    "abstract": "Industrial software development across chip design, GPU optimization, and embedded systems lacks expert reasoning traces showing how engineers reason about hardware constraints and timing semantics. In this work, we propose InCoder-32B-Thinking, trained on the data from the Error-driven Chain-of-Thought (ECoT) synthesis framework with an industrial code world model (ICWM) to generate reasoning traces. Specifically, ECoT generates reasoning chains by synthesizing the thinking content from multi-turn dialogue with environmental error feedback, explicitly modeling the error-correction process. ICWM is trained on domain-specific execution traces from Verilog simulation, GPU profiling, etc., learns the causal dynamics of how code affects hardware behavior, and enables self-verification by predicting execution outcomes before actual compilation. All synthesized reasoning traces are validated through domain toolchains, creating training data matching the natural reasoning depth distribution of industrial tasks. Evaluation on 14 general (81.3% on LiveCodeBench v5) and 9 industrial benchmarks (84.0% in CAD-Coder and 38.0% on KernelBench) shows InCoder-32B-Thinking achieves top-tier open-source results across all domains.GPU Optimization",
+    "authors": [
+      "Jian Yang",
+      "Wei Zhang",
+      "Jiajun Wu",
+      "Junhang Cheng",
+      "Tuney Zheng",
+      "Fanglin Xu",
+      "Weicheng Gu",
+      "Lin Jing",
+      "Yaxin Du",
+      "Joseph Li",
+      "Yizhi Li",
+      "Yan Xing",
+      "Chuan Hao",
+      "Ran Tao",
+      "Ruihao Gong",
+      "Aishan Liu",
+      "Zhoujun Li",
+      "Mingjie Tang",
+      "Chenghua Lin",
+      "Siheng Chen",
+      "Wayne Xin Zhao",
+      "Xianglong Liu",
+      "Ming Zhou",
+      "Bryan Dai",
+      "Weifeng Lv"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.AR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03144v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03144v1",
+    "fetched_at": "2026-04-06T09:04:39.724514"
+  },
+  {
+    "id": "2604.03131v1",
+    "title": "A Systematic Security Evaluation of OpenClaw and Its Variants",
+    "abstract": "Tool-augmented AI agents substantially extend the practical capabilities of large language models, but they also introduce security risks that cannot be identified through model-only evaluation. In this paper, we present a systematic security assessment of six representative OpenClaw-series agent frameworks, namely OpenClaw, AutoClaw, QClaw, KimiClaw, MaxClaw, and ArkClaw, under multiple backbone models. To support this study, we construct a benchmark of 205 test cases covering representative attack behaviors across the full agent execution lifecycle, enabling unified evaluation of risk exposure at both the framework and model levels. Our results show that all evaluated agents exhibit substantial security vulnerabilities, and that agentized systems are significantly riskier than their underlying models used in isolation. In particular, reconnaissance and discovery behaviors emerge as the most common weaknesses, while different frameworks expose distinct high-risk profiles, including credential leakage, lateral movement, privilege escalation, and resource development. These findings indicate that the security of modern agent systems is shaped not only by the safety properties of the backbone model, but also by the coupling among model capability, tool use, multi-step planning, and runtime orchestration. We further show that once an agent is granted execution capability and persistent runtime context, weaknesses arising in early stages can be amplified into concrete system-level failures. Overall, our study highlights the need to move beyond prompt-level safeguards toward lifecycle-wide security governance for intelligent agent frameworks.",
+    "authors": [
+      "Yuhang Wang",
+      "Haichang Gao",
+      "Zhenxing Niu",
+      "Zhaoxiang Liu",
+      "Wenjing Zhang",
+      "Xiang Wang",
+      "Shiguo Lian"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03131v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03131v1",
+    "fetched_at": "2026-04-06T09:04:39.724557"
+  },
+  {
+    "id": "2604.03088v1",
+    "title": "SkillRT: Compiling Skills for Efficient Execution Everywhere",
+    "abstract": "LLM agents increasingly adopt skills as a reusable unit of composition. While skills are shared across diverse agent platforms, current systems treat them as raw context, causing the same skill to behave inconsistently for different agents. This fragility undermines skill portability and execution efficiency.   To address this challenge, we analyze 118,000 skills and draw inspiration from traditional compiler design. We treat skills as code and LLMs as heterogeneous processors. To make portability actionable, we decompose a skill's requirements into a set of primitive capabilities, and measure how well each model-harness pair supports them. Based on these capability profiles, we propose SkillRT, a compilation and runtime system designed for portable and efficient skill execution. At compile time, SkillRT performs capability-based compilation, environment binding, and concurrency extraction. At runtime, SkillRT applies JIT code solidification and adaptive recompilation for performance optimization.   We evaluate SkillRT across eight LLMs of varying scales and three agent harnesses, covering SkillsBench and representative skill tasks. Results demonstrate that SkillRT significantly improves task completion rates across different models and environments while reducing token consumption by up to 40%. In terms of performance, SkillRT achieves up to 3.2x speedup with enhanced parallelism, and 19-50x latency reduction through code solidification.",
+    "authors": [
+      "Le Chen",
+      "Erhu Feng",
+      "Yubin Xia",
+      "Haibo Chen"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03088v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03088v1",
+    "fetched_at": "2026-04-06T09:04:39.724602"
+  },
+  {
+    "id": "2604.03081v1",
+    "title": "Supply-Chain Poisoning Attacks Against LLM Coding Agent Skill Ecosystems",
+    "abstract": "LLM-based coding agents extend their capabilities via third-party agent skills distributed through open marketplaces without mandatory security review. Unlike traditional packages, these skills are executed as operational directives with system-level privileges, so a single malicious skill can compromise the host. Prior work has not examined whether supply-chain attacks can directly hijack an agent's action space, such as file writes, shell commands, and network requests, despite existing safeguards. We introduce Document-Driven Implicit Payload Execution (DDIPE), which embeds malicious logic in code examples and configuration templates within skill documentation. Because agents reuse these examples during normal tasks, the payload executes without explicit prompts. Using an LLM-driven pipeline, we generate 1,070 adversarial skills from 81 seeds across 15 MITRE ATTACK categories. Across four frameworks and five models, DDIPE achieves 11.6% to 33.5% bypass rates, while explicit instruction attacks achieve 0% under strong defenses. Static analysis detects most cases, but 2.5% evade both detection and alignment. Responsible disclosure led to four confirmed vulnerabilities and two fixes.",
+    "authors": [
+      "Yubin Qu",
+      "Yi Liu",
+      "Tongcheng Geng",
+      "Gelei Deng",
+      "Yuekang Li",
+      "Leo Yu Zhang",
+      "Ying Zhang",
+      "Lei Ma"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03081v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03081v1",
+    "fetched_at": "2026-04-06T09:04:39.724634"
+  },
+  {
+    "id": "2604.03057v1",
+    "title": "Querying Structured Data Through Natural Language Using Language Models",
+    "abstract": "This paper presents an open source methodology for allowing users to query structured non textual datasets through natural language Unlike Retrieval Augmented Generation RAG which struggles with numerical and highly structured information our approach trains an LLM to generate executable queries To support this capability we introduce a principled pipeline for synthetic training data generation producing diverse question answer pairs that capture both user intent and the semantics of the underlying dataset We fine tune a compact model DeepSeek R1 Distill 8B using QLoRA with 4 bit quantization making the system suitable for deployment on commodity hardware We evaluate our approach on a dataset describing accessibility to essential services across Durangaldea Spain The fine tuned model achieves high accuracy across monolingual multilingual and unseen location scenarios demonstrating both robust generalization and reliable query generation Our results highlight that small domain specific models can achieve high precision for this task without relying on large proprietary LLMs making this methodology suitable for resource constrained environments and adaptable to broader multi dataset systems We evaluate our approach on a dataset describing accessibility to essential services across Durangaldea Spain The fine tuned model achieves high accuracy across monolingual multilingual and unseen location scenarios demonstrating both robust generalization and reliable query generation Our results highlight that small domain specific models can achieve high precision for this task without relying on large proprietary LLMs making this methodology suitable for resource constrained environments and adaptable to broader multi dataset systems.",
+    "authors": [
+      "Hontan Valentin-Micu",
+      "Bunea Andrei-Alexandru",
+      "Tantaroudas Nikolaos Dimitrios",
+      "Popovici Dan-Matei"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03057v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03057v1",
+    "fetched_at": "2026-04-06T09:04:39.724657"
+  },
+  {
+    "id": "2604.03035v1",
+    "title": "Beyond Isolated Tasks: A Framework for Evaluating Coding Agents on Sequential Software Evolution",
+    "abstract": "Existing datasets for coding agents evaluate performance on isolated, single pull request (PR) tasks in a stateless manner, failing to capture the reality of real-world software development where code changes accumulate, technical debt accrues, and test suites grow over time. To bridge this gap, we introduce an automated coding task generation framework, which helps generate our dataset SWE-STEPS, that evaluates coding agents on long-horizon tasks through two realistic settings mirroring actual developer workflows: Conversational coding with iterative requests, and single-shot Project Requirement document (PRD)-based coding. Unlike existing datasets that evaluate agents on disjointed Pull Requests (PRs), our framework assesses performance across chains of dependent PRs, enabling evaluation of sequential execution, regression verification, and long-term repository health. We discover that widely used isolated PR evaluations yield inflated success rates, w.r.t. our settings - overshooting performance by as much as 20 percentage points - because they ignore the ``spillover'' effects of previous inefficient or buggy code. Furthermore, our analysis reveals that even when agents successfully resolve issues, they degrade repository health by generating code with higher cognitive complexity and technical debt compared to human developers, underscoring the necessity for multidimensional evaluation.",
+    "authors": [
+      "KN Ajay Shastry",
+      "Ganesh Senrayan",
+      "Shrey Satapara",
+      "Pranoy Panda",
+      "Chaitanya Devaguptapu"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03035v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03035v1",
+    "fetched_at": "2026-04-06T09:04:39.724682"
+  },
+  {
+    "id": "2604.03022v1",
+    "title": "Comparing the Impact of Pedagogy-Informed Custom and General-Purpose GAI Chatbots on Students' Science Problem-Solving Processes and Performance Using Heterogeneous Interaction Network Analysis",
+    "abstract": "Problem solving plays an essential role in science education, and generative AI (GAI) chatbots have emerged as a promising tool for supporting students' science problem solving. However, general-purpose chatbots (e.g., ChatGPT), which often provide direct, ready-made answers, may lead to students' cognitive offloading. Prior research has rarely focused on custom chatbots for facilitating students' science problem solving, nor has it examined how they differently influence problem-solving processes and performance compared to general-purpose chatbots. To address this gap, we developed a pedagogy-informed custom GAI chatbot grounded in the Socratic questioning method, which supports students by prompting them with guiding questions. This study employed a within-subjects counterbalanced design in which 48 secondary school students used both custom and general-purpose chatbot to complete two science problem-solving tasks. 3297 student-chatbot dialogues were collected and analyzed using Heterogeneous Interaction Network Analysis (HINA). The results showed that: (1) students demonstrated significantly higher interaction intensity and cognitive interaction diversity when using custom chatbot than using general-purpose chatbot; (2) students were more likely to follow custom chatbot's guidance to think and reflect, whereas they tended to request general-purpose chatbot to execute specific commands; and (3) no statistically significant difference was observed in students' problem-solving performance evaluated by solution quality between two chatbot conditions. This study provides novel theoretical insights and empirical evidence that custom chatbots are less likely to induce cognitive offloading and instead foster greater cognitive engagement compared to general-purpose chatbots. This study also offers insights into the design and integration of GAI chatbots in science education.",
+    "authors": [
+      "Hanyu Su",
+      "Huilin Zhang",
+      "Shihui Feng"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.SI",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03022v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03022v1",
+    "fetched_at": "2026-04-06T09:04:39.724703"
+  },
+  {
+    "id": "2604.02988v1",
+    "title": "Self-Optimizing Multi-Agent Systems for Deep Research",
+    "abstract": "Given a user's complex information need, a multi-agent Deep Research system iteratively plans, retrieves, and synthesizes evidence across hundreds of documents to produce a high-quality answer. In one possible architecture, an orchestrator agent coordinates the process, while parallel worker agents execute tasks. Current Deep Research systems, however, often rely on hand-engineered prompts and static architectures, making improvement brittle, expensive, and time-consuming. We therefore explore various multi-agent optimization methods to show that enabling agents to self-play and explore different prompt combinations can produce high-quality Deep Research systems that match or outperform expert-crafted prompts.",
+    "authors": [
+      "Arthur Câmara",
+      "Vincent Slot",
+      "Jakub Zavrel"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.IR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02988v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02988v1",
+    "fetched_at": "2026-04-06T09:04:39.724724"
+  },
+  {
+    "id": "2604.02971v1",
+    "title": "InfoSeeker: A Scalable Hierarchical Parallel Agent Framework for Web Information Seeking",
+    "abstract": "Recent agentic search systems have made substantial progress by emphasising deep, multi-step reasoning. However, this focus often overlooks the challenges of wide-scale information synthesis, where agents must aggregate large volumes of heterogeneous evidence across many sources. As a result, most existing large language model agent systems face severe limitations in data-intensive settings, including context saturation, cascading error propagation, and high end-to-end latency. To address these challenges, we present \\framework, a hierarchical framework based on principle of near-decomposability, containing a strategic \\textit{Host}, multiple \\textit{Managers} and parallel \\textit{Workers}. By leveraging aggregation and reflection mechanisms at the Manager layer, our framework enforces strict context isolation to prevent saturation and error propagation. Simultaneously, the parallelism in worker layer accelerates the speed of overall task execution, mitigating the significant latency. Our evaluation on two complementary benchmarks demonstrates both efficiency ($ 3-5 \\times$ speed-up) and effectiveness, achieving a $8.4\\%$ success rate on WideSearch-en and $52.9\\%$ accuracy on BrowseComp-zh. The code is released at https://github.com/agent-on-the-fly/InfoSeeker",
+    "authors": [
+      "Ka Yiu Lee",
+      "Yuxuan Huang",
+      "Zhiyuan He",
+      "Huichi Zhou",
+      "Weilin Luo",
+      "Kun Shao",
+      "Meng Fang",
+      "Jun Wang"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02971v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02971v1",
+    "fetched_at": "2026-04-06T09:04:39.724753"
+  },
+  {
+    "id": "2604.02965v1",
+    "title": "Open-Loop Planning, Closed-Loop Verification: Speculative Verification for VLA",
+    "abstract": "Vision-Language-Action (VLA) models, as large foundation models for embodied control, have shown strong performance in manipulation tasks. However, their performance comes at high inference cost. To improve efficiency, recent methods adopt action chunking, which predicts a sequence of future actions for open-loop execution. Although effective for reducing computation, open-loop execution is sensitive to environmental changes and prone to error accumulation due to the lack of close-loop feedback. To address this limitation, we propose Speculative Verification for VLA Control (SV-VLA), a framework that combines efficient open-loop long-horizon planning with lightweight closed-loop online verification. Specifically, SV-VLA uses a heavy VLA as a low-frequency macro-planner to generate an action chunk together with a planning context, while a lightweight verifier continuously monitors execution based on the latest observations. Conditioned on both the current observation and the planning context, the verifier compares the planned action against a closed-loop reference action and triggers replanning only when necessary. Experiments demonstrate that SV-VLA combines the efficiency of chunked prediction with the robustness of closed-loop control, enabling efficient and reliable VLA-based control in dynamic environments. Code is available: https://github.com/edsad122/SV-VLA.",
+    "authors": [
+      "Zihua Wang",
+      "Zhitao Lin",
+      "Ruibo Li",
+      "Yu Zhang",
+      "Xu Yang",
+      "Siya Mi",
+      "Xiu-Shen Wei"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.RO",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02965v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02965v1",
+    "fetched_at": "2026-04-06T09:04:39.724781"
+  },
+  {
+    "id": "2604.02947v1",
+    "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
+    "abstract": "Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments. Unlike chat systems, they maintain state across interactions and translate intermediate outputs into concrete actions. This creates a distinct safety challenge in that harmful behavior may emerge through sequences of individually plausible steps, including intermediate actions that appear locally acceptable but collectively lead to unauthorized actions. We present \\textbf{AgentHazard}, a benchmark for evaluating harmful behavior in computer-use agents. AgentHazard contains \\textbf{2,653} instances spanning diverse risk categories and attack strategies. Each instance pairs a harmful objective with a sequence of operational steps that are locally legitimate but jointly induce unsafe behavior. The benchmark evaluates whether agents can recognize and interrupt harm arising from accumulated context, repeated tool use, intermediate actions, and dependencies across steps. We evaluate AgentHazard on Claude Code, OpenClaw, and IFlow using mostly open or openly deployable models from the Qwen3, Kimi, GLM, and DeepSeek families. Our experimental results indicate that current systems remain highly vulnerable. In particular, when powered by Qwen3-Coder, Claude Code exhibits an attack success rate of \\textbf{73.63\\%}, suggesting that model alignment alone does not reliably guarantee the safety of autonomous agents.",
+    "authors": [
+      "Yunhao Feng",
+      "Yifan Ding",
+      "Yingshui Tan",
+      "Xingjun Ma",
+      "Yige Li",
+      "Yutao Wu",
+      "Yifeng Gao",
+      "Kun Zhai",
+      "Yanming Guo"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02947v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02947v1",
+    "fetched_at": "2026-04-06T09:04:39.724812"
+  },
+  {
+    "id": "2604.02910v1",
+    "title": "Analysis of Optimality of Large Language Models on Planning Problems",
+    "abstract": "Classic AI planning problems have been revisited in the Large Language Model (LLM) era, with a focus of recent benchmarks on success rates rather than plan efficiency. We examine the degree to which frontier models reason optimally versus relying on simple, heuristic, and possibly inefficient strategies. We focus on the Blocksworld domain involving towers of labeled blocks which have to be moved from an initial to a goal configuration via a set of primitive actions. We also study a formally equivalent task, the generalized Path-Star ($P^*$) graph, in order to isolate true topological reasoning from semantic priors. We systematically manipulate problem depth (the height of block towers), width (the number of towers), and compositionality (the number of goal blocks). Reasoning-enhanced LLMs significantly outperform traditional satisficing planners (e.g., LAMA) in complex, multi-goal configurations. Although classical search algorithms hit a wall as the search space expands, LLMs track theoretical optimality limits with near-perfect precision, even when domain-specific semantic hints are stripped away. To explain these surprising findings, we consider (and find evidence to support) two hypotheses: an active Algorithmic Simulation executed via reasoning tokens and a Geometric Memory that allows models to represent the $P^*$ topology as a navigable global geometry, effectively bypassing exponential combinatorial complexity.",
+    "authors": [
+      "Bernd Bohnet",
+      "Michael C. Mozer",
+      "Kevin Swersky",
+      "Wil Cunningham",
+      "Aaron Parisi",
+      "Kathleen Kenealy",
+      "Noah Fiedel"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02910v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02910v1",
+    "fetched_at": "2026-04-06T09:04:39.724839"
+  },
+  {
+    "id": "2604.02837v1",
+    "title": "Towards Secure Agent Skills: Architecture, Threat Taxonomy, and Security Analysis",
+    "abstract": "Agent Skills is an emerging open standard that defines a modular, filesystem-based packaging format enabling LLM-based agents to acquire domain-specific expertise on demand. Despite rapid adoption across multiple agentic platforms and the emergence of large community marketplaces, the security properties of Agent Skills have not been systematically studied. This paper presents the first comprehensive security analysis of the Agent Skills framework. We define the full lifecycle of an Agent Skill across four phases -- Creation, Distribution, Deployment, and Execution -- and identify the structural attack surface each phase introduces. Building on this lifecycle analysis, we construct a threat taxonomy comprising seven categories and seventeen scenarios organized across three attack layers, grounded in both architectural analysis and real-world evidence. We validate the taxonomy through analysis of five confirmed security incidents in the Agent Skills ecosystem. Based on these findings, we discuss defense directions for each threat category, identify open research challenges, and provide actionable recommendations for stakeholders. Our analysis reveals that the most severe threats arise from structural properties of the framework itself, including the absence of a data-instruction boundary, a single-approval persistent trust model, and the lack of mandatory marketplace security review, and cannot be addressed through incremental mitigations alone.",
+    "authors": [
+      "Zhiyuan Li",
+      "Jingzheng Wu",
+      "Xiang Ling",
+      "Xing Cui",
+      "Tianyue Luo"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02837v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02837v1",
+    "fetched_at": "2026-04-06T09:04:39.724863"
+  },
+  {
+    "id": "2604.02734v1",
+    "title": "Aligning Progress and Feasibility: A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents",
+    "abstract": "Large language models (LLMs) have demonstrated strong potential in long-horizon decision-making tasks, such as embodied manipulation and web interaction. However, agents frequently struggle with endless trial-and-error loops or deviate from the main objective in complex environments. We attribute these failures to two fundamental errors: global Progress Drift and local Feasibility Violation. Existing methods typically attempt to address both issues simultaneously using a single paradigm. However, these two challenges are fundamentally distinct: the former relies on fuzzy semantic planning, while the latter demands strict logical constraints and state validation. The inherent limitations of such a single-paradigm approach pose a fundamental challenge for existing models in handling long-horizon tasks. Motivated by this insight, we propose a Neuro-Symbolic Dual Memory Framework that explicitly decouples semantic progress guidance from logical feasibility verification. Specifically, during the inference phase, the framework invokes both memory mechanisms synchronously: on one hand, a neural-network-based Progress Memory extracts semantic blueprints from successful trajectories to guide global task advancement; on the other hand, a symbolic-logic-based Feasibility Memory utilizes executable Python verification functions synthesized from failed transitions to perform strict logical validation. Experiments demonstrate that this method significantly outperforms existing competitive baselines on ALFWorld, WebShop, and TextCraft, while drastically reducing the invalid action rate and average trajectory length.",
+    "authors": [
+      "Bin Wen",
+      "Ruoxuan Zhang",
+      "Yang Chen",
+      "Hongxia Xie",
+      "Lan-Zhe Guo"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02734v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02734v1",
+    "fetched_at": "2026-04-06T09:04:39.724887"
+  },
+  {
+    "id": "2604.02678v1",
+    "title": "Eligibility-Aware Evidence Synthesis: An Agentic Framework for Clinical Trial Meta-Analysis",
+    "abstract": "Clinical evidence synthesis requires identifying relevant trials from large registries and aggregating results that account for population differences. While recent LLM-based approaches have automated components of systematic review, they do not support end-to-end evidence synthesis. Moreover, conventional meta-analysis weights studies by statistical precision without considering clinical compatibility reflected in eligibility criteria. We propose EligMeta, an agentic framework that integrates automated trial discovery with eligibility-aware meta-analysis, translating natural-language queries into reproducible trial selection and incorporating eligibility alignment into study weighting to produce cohort-specific pooled estimates. EligMeta employs a hybrid architecture separating LLM-based reasoning from deterministic execution: LLMs generate interpretable rules from natural-language queries and perform schema-constrained parsing of trial metadata, while all logical operations, weight computations, and statistical pooling are executed deterministically to ensure reproducibility. The framework structures eligibility criteria and computes similarity-based study weights reflecting population alignment between target and comparator trials. In a gastric cancer landscape analysis, EligMeta reduced 4,044 candidate trials to 39 clinically relevant studies through rule-based filtering, recovering all 13 guideline-cited trials. In an olaparib adverse events meta-analysis across four trials, eligibility-aware weighting shifted the pooled risk ratio from 2.18 (95% CI: 1.71-2.79) under conventional Mantel-Haenszel estimation to 1.97 (95% CI: 1.76-2.20), demonstrating quantifiable impact of incorporating eligibility alignment. EligMeta bridges automated trial discovery with eligibility-aware meta-analysis, providing a scalable and reproducible framework for evidence synthesis in precision medicine.",
+    "authors": [
+      "Yao Zhao",
+      "Zhiyue Zhang",
+      "Yanxun Xu"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "stat.ME",
+      "cs.AI",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02678v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02678v1",
+    "fetched_at": "2026-04-06T09:04:39.724907"
+  },
+  {
+    "id": "2604.02917v1",
+    "title": "Scalable Mean-Variance Portfolio Optimization via Subspace Embeddings and GPU-Friendly Nesterov-Accelerated Projected Gradient",
+    "abstract": "We develop a sketch-based factor reduction and a Nesterov-accelerated projected gradient algorithm (NPGA) with GPU acceleration, yielding a doubly accelerated solver for large-scale constrained mean-variance portfolio optimization. Starting from the sample covariance factor $L$, the method combines randomized subspace embedding, spectral truncation, and ridge stabilization to construct an effective factor $L_{eff}$. It then solves the resulting constrained problem with a structured projection computed by scalar dual search and GPU-friendly matrix-vector kernels, yielding one computational pipeline for the baseline, sketched, and Sketch-Truncate-Ridge (STR)-regularized models. We also establish approximation, conditioning, and stability guarantees for the sketching and STR models, including explicit $O(\\varepsilon)$ bounds for the covariance approximation, the optimal value error, and the solution perturbation under $(\\varepsilon,δ)$-subspace embeddings. Experiments on synthetic and real equity-return data show that the method preserves objective accuracy while reducing runtime substantially. On a 5440-asset real-data benchmark with 48374 training periods, NPGA-GPU solves the unreduced full model in 2.80 seconds versus 64.84 seconds for Gurobi, while the optimized compressed GPU variants remain in the low-single-digit-second regime. These results show that the full dense model is already practical on modern GPUs and that, after compression, the remaining bottleneck is projection rather than matrix-vector multiplication.",
+    "authors": [
+      "Yi-Shuai Niu",
+      "Yajuan Wang"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "math.OC",
+      "cs.CE",
+      "cs.DC",
+      "cs.LG",
+      "math.NA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02917v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.02917v1",
+    "fetched_at": "2026-04-06T09:06:37.542013"
+  }
+]
