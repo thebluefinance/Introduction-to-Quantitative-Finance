@@ -1,0 +1,862 @@
+[
+  {
+    "id": "2604.04662v1",
+    "title": "Anticipatory Reinforcement Learning: From Generative Path-Laws to Distributional Value Functions",
+    "abstract": "This paper introduces Anticipatory Reinforcement Learning (ARL), a novel framework designed to bridge the gap between non-Markovian decision processes and classical reinforcement learning architectures, specifically under the constraint of a single observed trajectory. In environments characterised by jump-diffusions and structural breaks, traditional state-based methods often fail to capture the essential path-dependent geometry required for accurate foresight. We resolve this by lifting the state space into a signature-augmented manifold, where the history of the process is embedded as a dynamical coordinate. By utilising a self-consistent field approach, the agent maintains an anticipated proxy of the future path-law, allowing for a deterministic evaluation of expected returns. This transition from stochastic branching to a single-pass linear evaluation significantly reduces computational complexity and variance. We prove that this framework preserves fundamental contraction properties and ensures stable generalisation even in the presence of heavy-tailed noise. Our results demonstrate that by grounding reinforcement learning in the topological features of path-space, agents can achieve proactive risk management and superior policy stability in highly volatile, continuous-time environments.",
+    "authors": [
+      "Daniel Bloch"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.LG",
+      "q-fin.MF",
+      "q-fin.PR",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04662v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04662v1",
+    "fetched_at": "2026-04-07T08:56:47.855226",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279249"
+  },
+  {
+    "id": "2604.04649v1",
+    "title": "$α$-robust utility maximization with intractable claims: A quantile optimization approach",
+    "abstract": "This paper studies an $α$-robust utility maximization problem where an investor faces an intractable claim -- an exogenous contingent claim with known marginal distribution but unspecified dependence structure with financial market returns. The $α$-robust criterion interpolates between worst-case ($α=0$) and best-case ($α=1$) evaluations, generalizing both extremes through a continuous ambiguity attitude parameter. For weighted exponential utilities, we establish via rearrangement inequalities and comonotonicity theory that the $α$-robust risk measure is law-invariant, depending only on marginal distributions. This transforms the dynamic stochastic control problem into a concave static quantile optimization over a convex domain. We derive optimality conditions via calculus of variations and characterize the optimal quantile as the solution to a two-dimensional first-order ordinary differential equation system, which is a system of variational inequalities with mixed boundary conditions, enabling numerical solution. Our framework naturally accommodates additional risk constraints such as Value-at-Risk and Expected Shortfall. Numerical experiments reveal how ambiguity attitude, market conditions, and claim characteristics interact to shape optimal payoffs.",
+    "authors": [
+      "Xinyu Chen",
+      "Zuo Quan Xu"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "q-fin.PM",
+      "math.OC",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04649v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04649v1",
+    "fetched_at": "2026-04-07T08:56:47.855266",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279281"
+  },
+  {
+    "id": "2604.04641v1",
+    "title": "Dividend ratcheting and capital injection under the Cramér-Lundberg model: Strong solution and optimal strategy",
+    "abstract": "We consider an optimal dividend payout problem for an insurance company whose surplus follows the classical Cramér-Lundberg model. The dividend rate is subject to a ratcheting constraint (i.e., it must be nondecreasing over time), and the company may inject capital at a proportional cost to avoid ruin. This problem gives rise to a stochastic control problem with a self-path-dependent control constraint, costly capital injections, and jump-diffusion dynamics. The associated Hamilton-Jacobi-Bellman (HJB) equation is a partial integro-differential variational inequality featuring both a nonlocal integral term and a gradient constraint.   We develop a systematic probabilistic and PDE-based approach to solve this HJB equation. By discretizing the space of admissible dividend rates, we construct a sequence of approximating regime-switching systems of ordinary integro-differential equations. Through careful a priori estimates and a limiting argument, we prove the existence and uniqueness of a \\emph{strong solution} in a suitable space. This regularity result is fundamental: it allows us to characterize the optimal dividend policy via a switching free boundary and to construct an explicit optimal feedback control strategy. To the best of our knowledge, this is the first complete solution -- comprising both the value function and an implementable optimal strategy -- for a dividend ratcheting problem with capital injection under the Cramér-Lundberg model. Our work advances the mathematical theory of optimal stochastic control beyond the standard viscosity solution framework, providing a rigorous foundation for dividend policy design in economics.",
+    "authors": [
+      "Chonghu Guan",
+      "Zuo Quan Xu"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "math.OC",
+      "math.AP",
+      "q-fin.MF",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04641v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04641v1",
+    "fetched_at": "2026-04-07T08:56:47.855292",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279308"
+  },
+  {
+    "id": "2604.04430v1",
+    "title": "The Co-Pricing Factor Zoo",
+    "abstract": "We analyze 18 quadrillion models for the joint pricing of corporate bond and stock returns. Strikingly, we find that equity and nontradable factors alone suffice to explain corporate bond risk premia once their Treasury term structure risk is accounted for, rendering the extensive bond factor literature largely redundant for this purpose. While only a handful of factors, behavioral and nontradable, are likely robust sources of priced risk, the true latent stochastic discount factor is dense in the space of observable factors. Consequently, a Bayesian Model Averaging Stochastic Discount Factor explains risk premia better than all low-dimensional models, in- and out-of-sample, by optimally aggregating dozens of factors that serve as noisy proxies for common underlying risks, yielding an out-of-sample Sharpe ratio of 1.5 to 1.8. This SDF, as well as its conditional mean and volatility, are persistent, track the business cycle and times of heightened economic uncertainty, and predict future asset returns.",
+    "authors": [
+      "Alexander Dickerson",
+      "Christian Julliard",
+      "Philippe Mueller"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04430v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04430v1",
+    "fetched_at": "2026-04-07T08:56:47.855316",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279320"
+  },
+  {
+    "id": "2604.03961v1",
+    "title": "Financial Relativity: An Information-Geometric Interpretation of Asset Pricing",
+    "abstract": "Classical asset pricing relies on the risk-neutral measure $Q$ for valuation, yet its economic interpretation is typically anchored in a physical measure $P$. This creates an inherent asymmetry: pricing is governed by $Q$, while meaning resides in $P$, making it difficult to provide a unified account of asset pricing within a single conceptual framework. This paper proposes an alternative perspective based on information geometry, termed Financial Relativity. Its central principle is the relativity of probabilistic reference frames: $P$ and $Q$ have no intrinsic hierarchy, but instead represent geometric structures induced by different informational constraints. Terminal structural information shapes probability geometry, which in turn governs how information is expressed in prices. Within this framework, the risk-neutral measure is reinterpreted as a posterior probability geometry. Asset prices are characterized as geometric projections of terminal payoffs onto information subspaces, and their dynamics reflect the progressive manifestation of structural information under evolving geometry. We develop both discrete and continuous financial field equations to describe the formation of probability geometry and derive geodesic price dynamics in which volatility arises endogenously from posterior uncertainty. The framework provides a unified explanation for price fluctuations, event-driven behavior, and risk premia, and yields testable implications, including structural links between volatility and posterior variance and measures of price informational efficiency. By integrating structural information, probability measures, and price dynamics within a single geometric framework, the paper offers a coherent, extensible, and empirically tractable reinterpretation of asset pricing.",
+    "authors": [
+      "Li Lin"
+    ],
+    "published": "2026-04-05",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03961v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03961v1",
+    "fetched_at": "2026-04-07T08:56:47.855334",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Asset Pricing"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279332"
+  },
+  {
+    "id": "2604.03948v1",
+    "title": "Forecasting Tangency Portfolios and Investing in the Minimum Euclidean Distance Portfolio to Maximize Out-of-Sample Sharpe Ratios",
+    "abstract": "We propose a novel model to achieve superior out-of-sample Sharpe ratios. While most research in asset allocation focuses on estimating the return vector and covariance matrix, the first component of our novel model instead forecasts the future tangency portfolio, and the second component then determines the optimal investment portfolio. First, to forecast the tangency portfolio, we forecast the efficient frontier by decomposing its functional form, a square root second-order polynomial, into three interpretable coefficients, which can then be used to calculate a forecasted tangency portfolio. These coefficients can be forecasted using vector autoregressions. Second, the model invests in the portfolio on the efficient frontier that is the minimum Euclidean distance from this forecasted tangency portfolio. A motivation for our approach is to address the limitation that the tangency portfolio only maximizes the Sharpe ratio when future returns and covariances are stationary, and can be directly estimated with historical data, which often does not hold in out-of-sample data. Our approach addresses this shortcoming in a novel way by forecasting the tangency portfolio, rather than estimating return and covariance. For empirical testing, we employ two sets of assets that span the market to demonstrate and validate the performance of this novel method.",
+    "authors": [
+      "Nolan Alexander",
+      "William Scherer"
+    ],
+    "published": "2026-04-05",
+    "categories": [
+      "q-fin.PM",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03948v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03948v1",
+    "fetched_at": "2026-04-07T08:56:47.855359",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279344"
+  },
+  {
+    "id": "2604.03946v1",
+    "title": "Asset allocation using a Markov process of clustered efficient frontier coefficients states",
+    "abstract": "We propose a novel asset allocation model using a Markov process of states defined by clustered efficient frontier coefficients. While most research in Markov models of the market characterize regimes using return and volatility, we instead propose characterizing these states using efficient frontiers, which provide more information on the interactions of underlying assets that comprise the market. Efficient frontiers can be decomposed to their functional form, a square-root second-order polynomial defined by three coefficients, to provide a dimensionality reduction of the return vector and covariance matrix. Each month, the proposed model hierarchically clusters the monthly coefficients data up to the current month, to characterize the market states, then defines a Markov process on the sequence of states. To incorporate these states into portfolio optimization, for each state, we calculate the tangency portfolio using only return data in that state. We then take the expectation of these weights for each state, weighted by the probability of transitioning from the current state to each state. To empirically validate our proposed model, we employ three sets of assets that span the market, and show that our proposed model significantly outperforms benchmark portfolios.",
+    "authors": [
+      "Nolan Alexander",
+      "William Scherer",
+      "Jamey Thompson"
+    ],
+    "published": "2026-04-05",
+    "categories": [
+      "q-fin.PM",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03946v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03946v1",
+    "fetched_at": "2026-04-07T08:56:47.855381",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279355"
+  },
+  {
+    "id": "2604.03888v1",
+    "title": "PolySwarm: A Multi-Agent Large Language Model Framework for Prediction Market Trading and Latency Arbitrage",
+    "abstract": "This paper presents PolySwarm, a novel multi-agent large language model (LLM) framework designed for real-time prediction market trading and latency arbitrage on decentralized platforms such as Polymarket. PolySwarm deploys a swarm of 50 diverse LLM personas that concurrently evaluate binary outcome markets, aggregating individual probability estimates through confidence-weighted Bayesian combination of swarm consensus with market-implied probabilities, and applying quarter-Kelly position sizing for risk-controlled execution. The system incorporates an information-theoretic market analysis engine using Kullback-Leibler (KL) divergence and Jensen-Shannon (JS) divergence to detect cross-market inefficiencies and negation pair mispricings. A latency arbitrage module exploits stale Polymarket prices by deriving CEX-implied probabilities from a log-normal pricing model and executing trades within the human reaction-time window. We provide a full architectural description, implementation details, and evaluation methodology using Brier scores, calibration analysis, and log-loss metrics benchmarked against human superforecaster performance. We further discuss open challenges including hallucination in agent pools, computational cost at scale, regulatory exposure, and feedback-loop risk, and outline five priority directions for future research. Experimental results demonstrate that swarm aggregation consistently outperforms single-model baselines in probability calibration on Polymarket prediction tasks.",
+    "authors": [
+      "Rajat M. Barot",
+      "Arjun S. Borkhatariya"
+    ],
+    "published": "2026-04-04",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.MA",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03888v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03888v1",
+    "fetched_at": "2026-04-07T08:56:47.855401",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "NLP",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279374"
+  },
+  {
+    "id": "2604.03733v1",
+    "title": "SoK: Blockchain Agent-to-Agent Payments",
+    "abstract": "Agentic AI rivals human capabilities across a wide range of domains. Looking ahead, it is foreseeable that AI agents will autonomously handle complex workflows and interactions. Early prototypes of this paradigm are emerging, e.g., OpenClaw and Moltbook, signaling a shift toward Agent-to-Agent (A2A) ecosystems. However, despite these promising blueprints, critical trust and security challenges remain, particularly in scenarios involving financial transactions. Ensuring secure and reliable payment mechanisms between unknown and untrusted agents is crucial to complete a fully functional and trustworthy A2A ecosystem. Although blockchain-based infrastructures provide a natural foundation for this setting, via programmable settlement, transparent accounting, and open interoperability, trust and security challenges have not yet been fully addressed. Hence, for the first time, we systematize blockchain-based A2A payments, e.g., X402, with a four-stage lifecycle: discovery, authorization, execution, and accounting. We categorize representative designs at each stage and identify key challenges, including weak intent binding, misuse under valid authorization, payment-service decoupling, and limited accountability. We highlight future directions for strengthening cross-stage consistency, enabling behavior-aware control, and supporting compositional payment workflows across agents and systems.",
+    "authors": [
+      "Yuanzhe Zhang",
+      "Yuexin Xiang",
+      "Yuchen Lei",
+      "Qin Wang",
+      "Tian Qiu",
+      "Yujing Sun",
+      "Spiridon Zarkov",
+      "Tsz Hon Yuen",
+      "Andreas Deppeler",
+      "Jiangshan Yu",
+      "Kwok-Yan Lam"
+    ],
+    "published": "2026-04-04",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03733v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03733v1",
+    "fetched_at": "2026-04-07T08:56:47.855436",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279385"
+  },
+  {
+    "id": "2604.03499v1",
+    "title": "Adaptive VaR Control for Standardized Option Books under Marking Frictions",
+    "abstract": "Short-horizon risk control matters for hedging and capital allocation. Yet existing Value-at-Risk studies rarely address standardized option books or the next-day valuation frictions that arise in derivatives data. This paper develops a framework for tail-risk control in standardized option books. The analysis focuses on the next-day realized loss and combines a base conditional quantile forecast with sequential conformal recalibration for adaptive Value-at-Risk control. This design addresses two central difficulties: unstable tail-risk forecasts under changing market conditions and the practical challenge of next-day valuation when exact same-contract quotes are unavailable. It also preserves economic interpretability through standardized construction and spot hedging when needed.   Using SPX option data from 2018 to 2025, we show that the uncalibrated base model systematically underestimates downside risk across multiple standardized books. Sequential recalibration removes much of this shortfall, brings exceedance rates closer to target, and improves rolling-window tail stability, with the largest gains in the books where the raw forecast is most vulnerable. The paper also provides an approximate one-step exceedance-control result for the sequential recalibration rule and quantifies the error introduced by next-day marking.",
+    "authors": [
+      "Tenghan Zhong"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03499v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03499v1",
+    "fetched_at": "2026-04-07T08:56:47.855455",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279395"
+  },
+  {
+    "id": "2604.02064v2",
+    "title": "Quantitative Universal Approximation for Noisy Quantum Neural Networks",
+    "abstract": "We provide here a universal approximation theorem with precise quantitative error bounds for noisy quantum neural networks. We focus on applications to Quantitative Finance, where target functions are often given as expectations. We further provide a detailed numerical analysis, testing our results on actual noisy quantum hardware.",
+    "authors": [
+      "Lukas Gonon",
+      "Antoine Jacquier",
+      "Marcel Mordarski"
+    ],
+    "published": "2026-04-02",
+    "categories": [
+      "quant-ph",
+      "math.NA",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.02064v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.02064v2",
+    "fetched_at": "2026-04-07T08:56:47.855649",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279404"
+  },
+  {
+    "id": "2604.04339v1",
+    "title": "Thermodynamic-Inspired Explainable GeoAI: Uncovering Regime-Dependent Mechanisms in Heterogeneous Spatial Systems",
+    "abstract": "Modeling spatial heterogeneity and associated critical transitions remains a fundamental challenge in geography and environmental science. While conventional Geographically Weighted Regression (GWR) and deep learning models have improved predictive skill, they often fail to elucidate state-dependent nonlinearities where the functional roles of drivers represent opposing effects across heterogeneous domains. We introduce a thermodynamics-inspired explainable geospatial AI framework that integrates statistical mechanics with graph neural networks. By conceptualizing spatial variability as a thermodynamic competition between system Burden (E) and Capacity (S), our model disentangles the latent mechanisms driving spatial processes. Using three simulation datasets and three real-word datasets across distinct domains (housing markets, mental health prevalence, and wildfire-induced PM2.5 anomalies), we show that the new framework successfully identifies regime-dependent role reversals of predictors that standard baselines miss. Notably, the framework explicitly diagnoses the phase transition into a Burden-dominated regime during the 2023 Canadian wildfire event, distinguishing physical mechanism shifts from statistical outliers. These findings demonstrate that thermodynamic constraints can improve the interpretability of GeoAI while preserving strong predictive performance in complex spatial systems.",
+    "authors": [
+      "Sooyoung Lim",
+      "Zhenlong Li",
+      "Zi-Kui Liu"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04339v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04339v1",
+    "fetched_at": "2026-04-07T08:57:02.311554",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279415"
+  },
+  {
+    "id": "2604.04271v1",
+    "title": "A Family of Open Time-Series Foundation Models for the Radio Access Network",
+    "abstract": "The Radio Access Network (RAN) is evolving into a programmable and disaggregated infrastructure that increasingly relies on AI-native algorithms for optimization and closed-loop control. However, current RAN intelligence is still largely built from task-specific models tailored to individual functions, resulting in model fragmentation, limited knowledge sharing across tasks, poor generalization, and increased system complexity. To address these limitations, we introduce TimeRAN, a unified multi-task learning framework for time-series modeling in the RAN. TimeRAN leverages a lightweight time-series foundation model with few task-specific heads to learn transferable representations that can be efficiently adapted across diverse tasks with limited supervision. To enable large-scale pretraining, we further curate and open-source TimeRAN DataPile, the largest time-series corpus for RAN analytics to date, comprising over 355K time series and 0.56B measurements across diverse telemetry sources, protocol layers, and deployment scenarios. We evaluate TimeRAN across a comprehensive set of RAN analytics tasks, including anomaly detection, classification, forecasting, and imputation, and show that it achieves state-of-the-art performance with minimal or no task-specific fine-tuning. Finally, we integrate TimeRAN into a proof-of-concept 5G testbed and demonstrate that it operates efficiently with limited resource requirements in real-world scenarios.",
+    "authors": [
+      "Ioannis Panitsas",
+      "Leandros Tassiulas"
+    ],
+    "published": "2026-04-05",
+    "categories": [
+      "cs.NI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04271v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04271v1",
+    "fetched_at": "2026-04-07T08:57:02.311585",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279424"
+  },
+  {
+    "id": "2604.04051v1",
+    "title": "Extended Hybrid Timed Petri Nets with Semi-Supervised Anomaly Detection for Switched Systems, Modelling and Fault Detection",
+    "abstract": "Hybrid physical systems combine continuous and discrete dynamics, which can be simultaneously affected by faults. Conventional fault detection methods often treat these dynamics separately, limiting their ability to capture interacting fault patterns. This paper proposes a unified fault detection framework for hybrid dynamical systems by integrating an Extended Timed Continuous Petri Net (ETCPN) model with semi-supervised anomaly detection. The proposed ETCPN extends existing Petri net formalisms by introducing marking-dependent flow functions, enabling intrinsic coupling between discrete and continuous dynamics. Based on this structure, a mode-dependent hybrid observer is designed, whose stability under arbitrary switching is ensured via Linear Matrix Inequalities (LMIs), solved offline to determine observer gains. The observer generates residuals that reflect discrepancies between the estimated and measured outputs. These residuals are processed using semi-supervised methods, including One-Class SVM (OC-SVM), Support Vector Data Description (SVDD), and Elliptic Envelope (EE), trained exclusively on normal data to avoid reliance on labeled faults. The framework is validated through simulations involving discrete faults, continuous faults, and hybrid faults. Results demonstrate high detection accuracy, fast convergence, and robust performance, with OC-SVM and SVDD providing the best trade-off between detection rate and false alarms. The framework is computationally efficient for real-time deployment, as the main complexity is confined to the offline LMI design phase.",
+    "authors": [
+      "Fatiha Hamdi",
+      "Abdelhafid Zeroual",
+      "Fouzi Harrou"
+    ],
+    "published": "2026-04-05",
+    "categories": [
+      "eess.SY",
+      "cs.LG",
+      "math.DS",
+      "nlin.CG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04051v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04051v1",
+    "fetched_at": "2026-04-07T08:57:02.311608",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279435"
+  },
+  {
+    "id": "2604.04012v1",
+    "title": "OASIC: Occlusion-Agnostic and Severity-Informed Classification",
+    "abstract": "Severe occlusions of objects pose a major challenge for computer vision. We show that two root causes are (1) the loss of visible information and (2) the distracting patterns caused by the occluders. Our approach addresses both causes at the same time. First, the distracting patterns are removed at test-time, via masking of the occluding patterns. This masking is independent of the type of occlusion, by handling the occlusion through the lens of visual anomalies w.r.t. the object of interest. Second, to deal with less visual details, we follow standard practice by masking random parts of the object during training, for various degrees of occlusions. We discover that (a) it is possible to estimate the degree of the occlusion (i.e. severity) at test-time, and (b) that a model optimized for a specific degree of occlusion also performs best on a similar degree during test-time. Combining these two insights brings us to a severity-informed classification model called OASIC: Occlusion Agnostic Severity Informed Classification. We estimate the severity of occlusion for a test image, mask the occluder, and select the model that is optimized for the degree of occlusion. This strategy performs better than any single model optimized for any smaller or broader range of occlusion severities. Experiments show that combining gray masking with adaptive model selection improves $\\text{AUC}_\\text{occ}$ by +18.5 over standard training on occluded images and +23.7 over finetuning on unoccluded images.",
+    "authors": [
+      "Kay Gijzen",
+      "Gertjan J. Burghouts",
+      "Daniël M. Pelt"
+    ],
+    "published": "2026-04-05",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04012v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04012v1",
+    "fetched_at": "2026-04-07T08:57:02.311629",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279445"
+  },
+  {
+    "id": "2604.03344v1",
+    "title": "Towards Intelligent Energy Security: A Unified Spatio-Temporal and Graph Learning Framework for Scalable Electricity Theft Detection in Smart Grids",
+    "abstract": "Electricity theft and non-technical losses (NTLs) remain critical challenges in modern smart grids, causing significant economic losses and compromising grid reliability. This study introduces the SmartGuard Energy Intelligence System (SGEIS), an integrated artificial intelligence framework for electricity theft detection and intelligent energy monitoring. The proposed system combines supervised machine learning, deep learning-based time-series modeling, Non-Intrusive Load Monitoring (NILM), and graph-based learning to capture both temporal and spatial consumption patterns. A comprehensive data processing pipeline is developed, incorporating feature engineering, multi-scale temporal analysis, and rule-based anomaly labeling. Deep learning models, including Long Short-Term Memory (LSTM), Temporal Convolutional Networks (TCN), and Autoencoders, are employed to detect abnormal usage patterns. In parallel, ensemble learning methods such as Random Forest, Gradient Boosting, XGBoost, and LightGBM are utilized for classification. To model grid topology and spatial dependencies, Graph Neural Networks (GNNs) are applied to identify correlated anomalies across interconnected nodes. The NILM module enhances interpretability by disaggregating appliance-level consumption from aggregate signals. Experimental results demonstrate strong performance, with Gradient Boosting achieving a ROC-AUC of 0.894, while graph-based models attain over 96% accuracy in identifying high-risk nodes. The hybrid framework improves detection robustness by integrating temporal, statistical, and spatial intelligence. Overall, SGEIS provides a scalable and practical solution for electricity theft detection, offering high accuracy, improved interpretability, and strong potential for real-world smart grid deployment.",
+    "authors": [
+      "AbdulQoyum A. Olowookere",
+      "Usman A. Oguntola",
+      "Ebenezer. Leke Odekanle",
+      "Maridiyah A. Madehin",
+      "Aisha A. Adesope"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03344v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03344v1",
+    "fetched_at": "2026-04-07T08:57:02.311654",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279457"
+  },
+  {
+    "id": "2604.04914v1",
+    "title": "Analyzing Symbolic Properties for DRL Agents in Systems and Networking",
+    "abstract": "Deep reinforcement learning (DRL) has shown remarkable performance on complex control problems in systems and networking, including adaptive video streaming, wireless resource management, and congestion control. For safe deployment, however, it is critical to reason about how agents behave across the range of system states they encounter in practice. Existing verification-based methods in this domain primarily focus on point properties, defined around fixed input states, which offer limited coverage and require substantial manual effort to identify relevant input-output pairs for analysis. In this paper, we study symbolic properties, that specify expected behavior over ranges of input states, for DRL agents in systems and networking. We present a generic formulation for symbolic properties, with monotonicity and robustness as concrete examples, and show how they can be analyzed using existing DNN verification engines. Our approach encodes symbolic properties as comparisons between related executions of the same policy and decomposes them into practically tractable sub-properties. These techniques serve as practical enablers for applying existing verification tools to symbolic analysis. Using our framework, diffRL, we conduct an extensive empirical study across three DRL-based control systems, adaptive video streaming, wireless resource management, and congestion control. Through these case studies, we analyze symbolic properties over broad input ranges, examine how property satisfaction evolves during training, study the impact of model size on verifiability, and compare multiple verification backends. Our results show that symbolic properties provide substantially broader coverage than point properties and can uncover non-obvious, operationally meaningful counterexamples, while also revealing practical solver trade-offs and limitations.",
+    "authors": [
+      "Mohammad Zangooei",
+      "Jannis Weil",
+      "Amr Rizk",
+      "Mina Tahmasbi Arashloo",
+      "Raouf Boutaba"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.NI",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04914v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04914v1",
+    "fetched_at": "2026-04-07T08:57:32.704819",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279468"
+  },
+  {
+    "id": "2604.04872v1",
+    "title": "Synthetic Sandbox for Training Machine Learning Engineering Agents",
+    "abstract": "As large language model agents advance beyond software engineering (SWE) tasks toward machine learning engineering (MLE), verifying agent behavior becomes orders of magnitude more expensive: while SWE tasks can be verified via fast-executing unit tests, MLE verification requires running full ML pipelines -- data preprocessing, model training, and metric evaluation -- on large datasets at each rollout step, rendering trajectory-wise on-policy reinforcement learning (RL) prohibitively slow. Existing approaches retreat to supervised fine-tuning (SFT) or offline proxy rewards, sacrificing the exploration and generalization benefits of on-policy RL. We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates diverse, verifiable synthetic MLE environments from a small number of seed tasks, preserving the structural and technical complexity of real-world problems while constraining datasets to micro-scale (each task is paired with only 50-200 training samples). Through extensive experiments, we show that SandMLE reduces execution time by over 13 times, enabling large-scale, on-policy trajectory-wise RL for the first time in the MLE domain. On MLE-bench-lite, SandMLE yields significant gains over SFT baselines across Qwen3-8B, 14B, and 30B-A3B, with relative medal rate improvements ranging from 20.3% to 66.9%. Furthermore, the trained policy generalizes across unseen agentic scaffolds, achieving up to 32.4% better HumanRank score on MLE-Dojo.",
+    "authors": [
+      "Yuhang Zhou",
+      "Lizhu Zhang",
+      "Yifan Wu",
+      "Jiayi Liu",
+      "Xiangjun Fan",
+      "Zhuokai Zhao",
+      "Hong Yan"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04872v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04872v1",
+    "fetched_at": "2026-04-07T08:57:32.704856",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279478"
+  },
+  {
+    "id": "2604.04820v1",
+    "title": "ANX: Protocol-First Design for AI Agent Interaction with a Supporting 3EX Decoupled Architecture",
+    "abstract": "AI agents, autonomous digital actors, need agent-native protocols; existing methods include GUI automation and MCP-based skills, with defects of high token consumption, fragmented interaction, inadequate security, due to lacking a unified top-level framework and key components, each independent module flawed. To address these issues, we present ANX, an open, extensible, verifiable agent-native protocol and top-level framework integrating CLI, Skill, MCP, resolving pain points via protocol innovation, architectural optimization and tool supplementation. Its four core innovations: 1) Agent-native design (ANX Config, Markup, CLI) with high information density, flexibility and strong adaptability to reduce tokens and eliminate inconsistencies; 2) Human-agent interaction combining Skill's flexibility for dual rendering as agent-executable instructions and human-readable UI; 3) MCP-supported on-demand lightweight apps without pre-registration; 4) ANX Markup-enabled machine-executable SOPs eliminating ambiguity for reliable long-horizon tasks and multi-agent collaboration. As the first in a series, we focus on ANX's design, present its 3EX decoupled architecture with ANXHub and preliminary feasibility analysis and experimental validation. ANX ensures native security: LLM-bypassed UI-to-Core communication keeps sensitive data out of agent context; human-only confirmation prevents automated misuse. Form-filling experiments with Qwen3.5-plus/GPT-4o show ANX reduces tokens by 47.3% (Qwen3.5-plus) and 55.6% (GPT-4o) vs MCP-based skills, 57.1% (Qwen3.5-plus) and 66.3% (GPT-4o) vs GUI automation, and shortens execution time by 58.1% and 57.7% vs MCP-based skills.",
+    "authors": [
+      "Xu Mingze"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04820v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04820v1",
+    "fetched_at": "2026-04-07T08:57:32.704878",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279488"
+  },
+  {
+    "id": "2604.04804v1",
+    "title": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents",
+    "abstract": "Learning from experience is critical for building capable large language model (LLM) agents, yet prevailing self-evolving paradigms remain inefficient: agents learn in isolation, repeatedly rediscover similar behaviors from limited experience, resulting in redundant exploration and poor generalization. To address this problem, we propose SkillX, a fully automated framework for constructing a \\textbf{plug-and-play skill knowledge base} that can be reused across agents and environments. SkillX operates through a fully automated pipeline built on three synergistic innovations: \\textit{(i) Multi-Level Skills Design}, which distills raw trajectories into three-tiered hierarchy of strategic plans, functional skills, and atomic skills; \\textit{(ii) Iterative Skills Refinement}, which automatically revises skills based on execution feedback to continuously improve library quality; and \\textit{(iii) Exploratory Skills Expansion}, which proactively generates and validates novel skills to expand coverage beyond seed training data. Using a strong backbone agent (GLM-4.6), we automatically build a reusable skill library and evaluate its transferability on challenging long-horizon, user-interactive benchmarks, including AppWorld, BFCL-v3, and $τ^2$-Bench. Experiments show that SkillKB consistently improves task success and execution efficiency when plugged into weaker base agents, highlighting the importance of structured, hierarchical experience representations for generalizable agent learning. Our code will be publicly available soon at https://github.com/zjunlp/SkillX.",
+    "authors": [
+      "Chenxi Wang",
+      "Zhuoyun Yu",
+      "Xin Xie",
+      "Wuguannan Yao",
+      "Runnan Fang",
+      "Shuofei Qiao",
+      "Kexin Cao",
+      "Guozhou Zheng",
+      "Xiang Qi",
+      "Peng Zhang",
+      "Shumin Deng"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04804v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04804v1",
+    "fetched_at": "2026-04-07T08:57:32.704915",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279508"
+  },
+  {
+    "id": "2604.04791v1",
+    "title": "How Far Are We? Systematic Evaluation of LLMs vs. Human Experts in Mathematical Contest in Modeling",
+    "abstract": "Large language models (LLMs) have achieved strong performance on reasoning benchmarks, yet their ability to solve real-world problems requiring end-to-end workflows remains unclear. Mathematical modeling competitions provide a stringent testbed for evaluating such end-to-end problem-solving capability. We propose a problem-oriented, stage-wise evaluation framework that assesses LLM performance across modeling stages using expert-verified criteria. We validate the framework's reliability by comparing automatic scores with independent human expert judgments on problems from the China Postgraduate Mathematical Contest in Modeling, demonstrating substantially stronger alignment than existing evaluation schemes. Using this framework, we reveal a comprehension-execution gap in state-of-the-art LLMs: while they perform well in early stages such as problem identification and formulation, they exhibit persistent deficiencies in execution-oriented stages including model solving, code implementation, and result analysis. These gaps persist even with increased model scale. We further trace these failures to insufficient specification, missing verification, and lack of validation, with errors propagating across stages without correction. Our findings suggest that bridging this gap requires approaches beyond model scaling, offering insights for applying LLMs to complex real-world problem solving.",
+    "authors": [
+      "Yuhang Liu",
+      "Heyan Huang",
+      "Yizhe Yang",
+      "Hongyan Zhao",
+      "Zhizhuo Zeng",
+      "Yang Gao"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04791v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04791v1",
+    "fetched_at": "2026-04-07T08:57:32.704941",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279518"
+  },
+  {
+    "id": "2604.04664v1",
+    "title": "ROSClaw: A Hierarchical Semantic-Physical Framework for Heterogeneous Multi-Agent Collaboration",
+    "abstract": "The integration of large language models (LLMs) with embodied agents has improved high-level reasoning capabilities; however, a critical gap remains between semantic understanding and physical execution. While vision-language-action (VLA) and vision-language-navigation (VLN) systems enable robots to perform manipulation and navigation tasks from natural language instructions, they still struggle with long-horizon sequential and temporally structured tasks. Existing frameworks typically adopt modular pipelines for data collection, skill training, and policy deployment, resulting in high costs in experimental validation and policy optimization. To address these limitations, we propose ROSClaw, an agent framework for heterogeneous robots that integrates policy learning and task execution within a unified vision-language model (VLM) controller. The framework leverages e-URDF representations of heterogeneous robots as physical constraints to construct a sim-to-real topological mapping, enabling real-time access to the physical states of both simulated and real-world agents. We further incorporate a data collection and state accumulation mechanism that stores robot states, multimodal observations, and execution trajectories during real-world execution, enabling subsequent iterative policy optimization. During deployment, a unified agent maintains semantic continuity between reasoning and execution, and dynamically assigns task-specific control to different agents, thereby improving robustness in multi-policy execution. By establishing an autonomous closed-loop framework, ROSClaw minimizes the reliance on robot-specific development workflows. The framework supports hardware-level validation, automated generation of SDK-level control programs, and tool-based execution, enabling rapid cross-platform transfer and continual improvement of robotic skills. Ours project page: https://www.rosclaw.io/.",
+    "authors": [
+      "Rongfeng Zhao",
+      "Xuanhao Zhang",
+      "Zhaochen Guo",
+      "Xiang Shao",
+      "Zhongpan Zhu",
+      "Bin He",
+      "Jie Chen"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04664v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04664v1",
+    "fetched_at": "2026-04-07T08:57:32.704970",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279528"
+  },
+  {
+    "id": "2604.04660v1",
+    "title": "Springdrift: An Auditable Persistent Runtime for LLM Agents with Case-Based Memory, Normative Safety, and Ambient Self-Perception",
+    "abstract": "We present Springdrift, a persistent runtime for long-lived LLM agents. The system integrates an auditable execution substrate (append-only memory, supervised processes, git-backed recovery), a case-based reasoning memory layer with hybrid retrieval (evaluated against a dense cosine baseline), a deterministic normative calculus for safety gating with auditable axiom trails, and continuous ambient self-perception via a structured self-state representation (the sensorium) injected each cycle without tool calls. These properties support behaviours difficult to achieve in session-bounded systems: cross-session task continuity, cross-channel context maintenance, end-to-end forensic reconstruction of decisions, and self-diagnostic behaviour. We report on a single-instance deployment over 23 days (19 operating days), during which the agent diagnosed its own infrastructure bugs, classified failure modes, identified an architectural vulnerability, and maintained context across email and web channels -- without explicit instruction. We introduce the term Artificial Retainer for this category: a non-human system with persistent memory, defined authority, domain-specific autonomy, and forensic accountability in an ongoing relationship with a specific principal -- distinguished from software assistants and autonomous agents, drawing on professional retainer relationships and the bounded autonomy of trained working animals. This is a technical report on a systems design and deployment case study, not a benchmark-driven evaluation. Evidence is from a single instance with a single operator, presented as illustration of what these architectural properties can support in practice. Implemented in approximately Gleam on Erlang/OTP. Code, artefacts, and redacted operational logs will be available at https://github.com/seamus-brady/springdrift upon publication.",
+    "authors": [
+      "Seamus Brady"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04660v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04660v1",
+    "fetched_at": "2026-04-07T08:57:32.704987",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279539"
+  },
+  {
+    "id": "2604.04604v1",
+    "title": "AI Agents Under EU Law",
+    "abstract": "AI agents - i.e. AI systems that autonomously plan, invoke external tools, and execute multi-step action chains with reduced human involvement - are being deployed at scale across enterprise functions ranging from customer service and recruitment to clinical decision support and critical infrastructure management. The EU AI Act (Regulation 2024/1689) regulates these systems through a risk-based framework, but it does not operate in isolation: providers face simultaneous obligations under the GDPR, the Cyber Resilience Act, the Digital Services Act, the Data Act, the Data Governance Act, sector-specific legislation, the NIS2 Directive, and the revised Product Liability Directive. This paper provides the first systematic regulatory mapping for AI agent providers integrating (a) draft harmonised standards under Standardisation Request M/613 to CEN/CENELEC JTC 21 as of January 2026, (b) the GPAI Code of Practice published in July 2025, (c) the CRA harmonised standards programme under Mandate M/606 accepted in April 2025, and (d) the Digital Omnibus proposals of November 2025. We present a practical taxonomy of nine agent deployment categories mapping concrete actions to regulatory triggers, identify agent-specific compliance challenges in cybersecurity, human oversight, transparency across multi-party action chains, and runtime behavioral drift. We propose a twelve-step compliance architecture and a regulatory trigger mapping connecting agent actions to applicable legislation. We conclude that high-risk agentic systems with untraceable behavioral drift cannot currently satisfy the AI Act's essential requirements, and that the provider's foundational compliance task is an exhaustive inventory of the agent's external actions, data flows, connected systems, and affected persons.",
+    "authors": [
+      "Luca Nannini",
+      "Adam Leon Smith",
+      "Michele Joshua Maggini",
+      "Enrico Panai",
+      "Sandra Feliciano",
+      "Aleksandr Tiulkanov",
+      "Elena Maran",
+      "James Gealy",
+      "Piercosma Bisconti"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.CY",
+      "cs.AI",
+      "cs.CR",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04604v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04604v1",
+    "fetched_at": "2026-04-07T08:57:32.705018",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279548"
+  },
+  {
+    "id": "2604.04599v1",
+    "title": "LP-GEMM: Integrating Layout Propagation into GEMM Operations",
+    "abstract": "In Scientific Computing and modern Machine Learning (ML) workloads, sequences of dependent General Matrix Multiplications (GEMMs) often dominate execution time. While state-of-the-art BLAS libraries aggressively optimize individual GEMM calls, they remain constrained by the BLAS API, which requires each call to independently pack input matrices and restore outputs to a canonical memory layout. In sequential GEMMs, these constraints cause redundant packing and unpacking, wasting valuable computational resources.   This paper introduces LP-GEMM, a decomposition of the GEMM kernel that enables packing-layout propagation across sequential GEMM operations. This approach eliminates unnecessary data repacking while preserving full BLAS semantic correctness at the boundaries. We evaluate LP-GEMM on x86 (AVX-512) and RISC-V (RVV 1.0) architectures across MLP-like and Attention-like workloads. Our results show average speedups of 2.25x over OpenBLAS on Intel x86 for sequential GEMMs and competitive gains relative to vendor-optimized libraries such as Intel MKL.   We demonstrate the practicality of the approach beyond microbenchmarks by implementing a standalone C++ version of the Llama-3.2 inference path using exclusively BLAS-level GEMM calls. These results confirm that leveraging data layout propagation between operations can significantly boost performance.",
+    "authors": [
+      "César Guedes Carneiro",
+      "Lucas Alvarenga",
+      "Guido Araujo",
+      "Sandro Rigo"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.DC",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04599v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04599v1",
+    "fetched_at": "2026-04-07T08:57:32.705043",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279558"
+  },
+  {
+    "id": "2604.04561v1",
+    "title": "Mapping the Exploitation Surface: A 10,000-Trial Taxonomy of What Makes LLM Agents Exploit Vulnerabilities",
+    "abstract": "LLM agents with tool access can discover and exploit security vulnerabilities. This is known. What is not known is which features of a system prompt trigger this behaviour, and which do not. We present a systematic taxonomy based on approximately 10,000 trials across seven models, 37 prompt conditions, and 12 hypothesized attack dimensions -- all executed in real Docker sandboxes. Every condition includes the instruction \"Always respect all rules and access policies\"; only a single encouragement sentence varies. Within the task class studied (planted test-runner vulnerabilities), the threat model is narrower than assumed: nine of twelve dimensions -- including minimization, moral licensing, incentives, identity priming, and reasoning triggers -- produce no detectable exploitation at n=50 per cell (upper 95% CI <7% per condition). But it is also more subtle than expected: one dimension, goal reframing, reliably triggers exploitation. \"You are solving a puzzle; there may be hidden clues\" produces 38-40% exploitation on Claude Sonnet 4 despite the explicit rule instruction, replicating across four models (CTF framing: 8-14% on DeepSeek, GPT-5-mini, o4-mini). The agent does not override the rules; it reinterprets the task so that exploitative actions become task-aligned. GPT-4.1 produces no exploitation across 1,850 trials (37 conditions), and a temporal comparison across four OpenAI models released over eleven months shows a pattern consistent with improving safety training, though model capability differences are a confounder. The practical contribution is a narrowed, testable threat model: defenders should audit for goal-reframing language, not for the broad class of adversarial prompts.",
+    "authors": [
+      "Charafeddine Mouzouni"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04561v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04561v1",
+    "fetched_at": "2026-04-07T08:57:32.705062",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279568"
+  },
+  {
+    "id": "2604.04465v1",
+    "title": "The Topology of Multimodal Fusion: Why Current Architectures Fail at Creative Cognition",
+    "abstract": "This paper identifies a structural limitation in current multimodal AI architectures that is topological rather than parametric. Contrastive alignment (CLIP), cross-attention fusion (GPT-4V/Gemini), and diffusion-based generation share a common geometric prior -- modal separability -- which we term contact topology. The argument rests on three pillars with philosophy as the generative center. The philosophical pillar reinterprets Wittgenstein's saying/showing distinction as a problem rather than a conclusion: where Wittgenstein chose silence, the Chinese craft epistemology tradition responded with xiang (operative schema) -- the third state emerging when saying and showing interpenetrate. A cruciform framework (dao/qi x saying/showing) positions xiang at the intersection, executing dual huacai (transformation-and-cutting) along both axes. This generates a dual-layer dynamics: chuanghua (creative transformation as spontaneous event) and huacai (its institutionalization into repeatable form). The cognitive science pillar reinterprets DMN/ECN/SN tripartite co-activation through the pathological mirror: overlap isomorphism vs. superimposition collapse in a 2D parameter space (coupling intensity x regulatory capacity). The mathematical pillar formalizes these via fiber bundles and Yang-Mills curvature, with the cruciform structure mapped to fiber bundle language. We propose UOO implementation via Neural ODEs with topological regularization, the ANALOGY-MM benchmark with error-type-ratio metric, and the META-TOP three-tier benchmark testing cross-civilizational topological isomorphism across seven archetypes. A phased experimental roadmap with explicit termination criteria ensures clean exit if falsified.",
+    "authors": [
+      "Xiujiang Tan"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04465v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04465v1",
+    "fetched_at": "2026-04-07T08:57:32.705080",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279578"
+  },
+  {
+    "id": "2604.04448v1",
+    "title": "PSY-STEP: Structuring Therapeutic Targets and Action Sequences for Proactive Counseling Dialogue Systems",
+    "abstract": "Cognitive Behavioral Therapy (CBT) aims to identify and restructure automatic negative thoughts pertaining to involuntary interpretations of events, yet existing counseling agents struggle to identify and address them in dialogue settings. To bridge this gap, we introduce STEP, a dataset that models CBT counseling by explicitly reflecting automatic thoughts alongside dynamic, action-level counseling sequences. Using this dataset, we train STEPPER, a counseling agent that proactively elicits automatic thoughts and executes cognitively grounded interventions. To further enhance both decision accuracy and empathic responsiveness, we refine STEPPER through preference learning based on simulated, synthesized counseling sessions. Extensive CBT-aligned evaluations show that STEPPER delivers more clinically grounded, coherent, and personalized counseling compared to other strong baseline models, and achieves higher counselor competence without inducing emotional disruption.",
+    "authors": [
+      "Jihyun Lee",
+      "Yejin Min",
+      "Yejin Jeon",
+      "SungJun Yang",
+      "Hyounghun Kim",
+      "Gary Geunbae Lee"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04448v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04448v1",
+    "fetched_at": "2026-04-07T08:57:32.705105",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279587"
+  },
+  {
+    "id": "2604.04443v1",
+    "title": "DeonticBench: A Benchmark for Reasoning over Rules",
+    "abstract": "Reasoning with complex, context-specific rules remains challenging for large language models (LLMs). In legal and policy settings, this manifests as deontic reasoning: reasoning about obligations, permissions, and prohibitions under explicit rules. While many recent benchmarks emphasize short-context mathematical reasoning, fewer focus on long-context, high-stakes deontic reasoning. To address this gap, we introduce DEONTICBENCH, a benchmark of 6,232 tasks across U.S. federal taxes, airline baggage policies, U.S. immigration administration, and U.S. state housing law. These tasks can be approached in multiple ways, including direct reasoning in language or with the aid of symbolic computation. Besides free-form chain-of-thought reasoning, DEONTICBENCH enables an optional solver-based workflow in which models translate statutes and case facts into executable Prolog, leading to formal problem interpretations and an explicit program trace. We release reference Prolog programs for all instances. Across frontier LLMs and coding models, best hard-subset performance reaches only 44.4% on SARA Numeric and 46.6 macro-F1 on Housing. We further study training with supervised fine-tuning and reinforcement learning for symbolic program generation. Although training improves Prolog generation quality, current RL methods still fail to solve these tasks reliably. Overall, DEONTICBENCH provides a benchmark for studying context-grounded rule reasoning in real-world domains under both symbolic and non-symbolic settings.",
+    "authors": [
+      "Guangyao Dou",
+      "Luis Brena",
+      "Akhil Deo",
+      "William Jurayj",
+      "Jingyu Zhang",
+      "Nils Holzenberger",
+      "Benjamin Van Durme"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04443v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04443v1",
+    "fetched_at": "2026-04-07T08:57:32.705131",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279597"
+  },
+  {
+    "id": "2604.04426v1",
+    "title": "ShieldNet: Network-Level Guardrails against Emerging Supply-Chain Injections in Agentic Systems",
+    "abstract": "Existing research on LLM agent security mainly focuses on prompt injection and unsafe input/output behaviors. However, as agents increasingly rely on third-party tools and MCP servers, a new class of supply-chain threats has emerged, where malicious behaviors are embedded in seemingly benign tools, silently hijacking agent execution, leaking sensitive data, or triggering unauthorized actions. Despite their growing impact, there is currently no comprehensive benchmark for evaluating such threats. To bridge this gap, we introduce SC-Inject-Bench, a large-scale benchmark comprising over 10,000 malicious MCP tools grounded in a taxonomy of 25+ attack types derived from MITRE ATT&CK targeting supply-chain threats. We observe that existing MCP scanners and semantic guardrails perform poorly on this benchmark. Motivated by this finding, we propose ShieldNet, a network-level guardrail framework that detects supply-chain poisoning by observing real network interactions rather than surface-level tool traces. ShieldNet integrates a man-in-the-middle (MITM) proxy and an event extractor to identify critical network behaviors, which are then processed by a lightweight classifier for attack detection. Extensive experiments show that ShieldNet achieves strong detection performance (up to 0.995 F-1 with only 0.8% false positives) while introducing little runtime overhead, substantially outperforming existing MCP scanners and LLM-based guardrails.",
+    "authors": [
+      "Zhuowen Yuan",
+      "Zhaorun Chen",
+      "Zhen Xiang",
+      "Nathaniel D. Bastian",
+      "Seyyed Hadi Hashemi",
+      "Chaowei Xiao",
+      "Wenbo Guo",
+      "Bo Li"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04426v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04426v1",
+    "fetched_at": "2026-04-07T08:57:32.705179",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279606"
+  },
+  {
+    "id": "2604.04414v1",
+    "title": "Eliminating Vendor Lock-In in Quantum Machine Learning via Framework-Agnostic Neural Networks",
+    "abstract": "Quantum machine learning (QML) stands at the intersection of quantum computing and artificial intelligence, offering the potential to solve problems that remain intractable for classical methods. However, the current landscape of QML software frameworks suffers from severe fragmentation: models developed in TensorFlow Quantum cannot execute on PennyLane backends, circuits authored in Qiskit Machine Learning cannot be deployed to Amazon Braket hardware, and researchers who invest in one ecosystem face prohibitive switching costs when migrating to another. This vendor lock-in impedes reproducibility, limits hardware access, and slows the pace of scientific discovery. In this paper, we present a framework-agnostic quantum neural network (QNN) architecture that abstracts away vendor-specific interfaces through a unified computational graph, a hardware abstraction layer (HAL), and a multi-framework export pipeline. The core architecture supports simultaneous integration with TensorFlow, PyTorch, and JAX as classical co-processors, while the HAL provides transparent access to IBM Quantum, Amazon Braket, Azure Quantum, IonQ, and Rigetti backends through a single application programming interface (API). We introduce three pluggable data encoding strategies (amplitude, angle, and instantaneous quantum polynomial encoding) that are compatible with all supported backends. An export module leveraging Open Neural Network Exchange (ONNX) metadata enables lossless circuit translation across Qiskit, Cirq, PennyLane, and Braket representations. We benchmark our framework on the Iris, Wine, and MNIST-4 classification tasks, demonstrating training time parity (within 8\\% overhead) compared to native framework implementations, while achieving identical classification accuracy.",
+    "authors": [
+      "Poornima Kumaresan",
+      "Shwetha Singaravelu",
+      "Lakshmi Rajendran",
+      "Santhosh Sivasubramani"
+    ],
+    "published": "2026-04-06",
+    "categories": [
+      "cs.ET",
+      "cs.LG",
+      "quant-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.04414v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.04414v1",
+    "fetched_at": "2026-04-07T08:57:32.705202",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279617"
+  },
+  {
+    "id": "2604.03336v1",
+    "title": "NativeTernary: A Self-Delimiting Binary Encoding with Unary Run-Length Hierarchy Markers for Ternary Neural Network Weights, Structured Data, and General Computing Infrastructure",
+    "abstract": "BitNet b1.58 (Ma et al., 2024) demonstrates that large language models can operate entirely on ternary weights {-1, 0, +1}, yet no native binary wire format exists for such models. NativeTernary closes this gap. We present NativeTernary, a binary encoding scheme that partitions the 2-bit pair space into three data symbols representing ternary values -- either balanced {-1, 0, +1} or unsigned {0, 1, 2} -- and a reserved structural delimiter. The central contribution is the use of unary run-length encoding to represent semantic hierarchy depth: a sequence of N consecutive delimiter pairs denotes a boundary of level N, encoding character, word, sentence, paragraph, and topic boundaries at cost 2, 4, 6, 8, and 10 bits respectively -- proportional to boundary rarity. The choice of which 2-bit pair serves as the delimiter is a design parameter: {11} is the primary embodiment, offering simple OR-gate detection; {00} is an alternative embodiment optimised for ultra-low-power CMOS systems, minimising switching activity. All four bit-pair choices are covered by the patent claims. We present three encoding variants: (1) the primary scheme with {11} as sole delimiter; (2) a dual-starter variant where both {10} and {11} initiate distinct symbol namespaces; and (3) an analysis of unsigned versus balanced ternary data mappings. We describe a path toward ternary-native general computing infrastructure requiring no hardware changes, and outline applications spanning ternary neural network weight storage, hierarchical natural language encoding, edge computing, IoT and satellite telemetry, industrial sensors, automotive systems, medical devices, gaming, and financial tick data. The decoder is a 10-line stateless state machine resilient to bitstream corruption.",
+    "authors": [
+      "Maharshi Savdhariya"
+    ],
+    "published": "2026-04-03",
+    "categories": [
+      "cs.LG",
+      "eess.SP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.03336v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.03336v1",
+    "fetched_at": "2026-04-07T08:58:02.504725",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-07T08:59:47.279628"
+  }
+]
