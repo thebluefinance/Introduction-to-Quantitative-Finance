@@ -1,0 +1,713 @@
+[
+  {
+    "id": "2604.12927v1",
+    "title": "Forecasting Oil Prices Across the Distribution: A Quantile VAR Approach",
+    "abstract": "We develop a Quantile Bayesian Vector Autoregression (QBVAR) to forecast real oil prices across different quantiles of the conditional distribution. The model allows predictor effects to vary across quantiles, capturing asymmetries that standard mean-focused approaches miss. Using monthly data from 1975 to 2025, we document three findings. First, the QBVAR improves median forecasts by 2-5\\% relative to Bayesian VARs, demonstrating that quantile-specific dynamics matter even for point prediction. Second, uncertainty and financial condition variables strongly predict downside risk, with left-tail forecast improvements of 10-25\\% that intensify during crisis episodes. Third, right-tail forecasting remains difficult; stochastic volatility models dominate for upside risk, though forecast combinations that include the QBVAR recover these losses. The results show that modeling the conditional distribution yields substantial gains for tail risk assessment, particularly during major oil market disruptions.",
+    "authors": [
+      "Hilde C. Bjornland",
+      "Nicolas Hardy",
+      "Dimitris Korobilis"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "econ.EM",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12927v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12927v1",
+    "fetched_at": "2026-04-15T09:13:59.730625",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583875"
+  },
+  {
+    "id": "2604.12197v1",
+    "title": "Emergence of Statistical Financial Factors by a Diffusion Process",
+    "abstract": "Factor models characterize the joint behavior of large sets of financial assets through a smaller number of underlying drivers. We develop a network-based framework in which factors emerge naturally from the structure of interactions among assets rather than being imposed statistically. The market is modeled as a system of coupled iterated maps, where assets' return depends on its own past returns and those of related assets. Effectively modeling the influence of irrational traders whose decisions are based on the past movements of a collection of stocks. The interaction structure between stock returns is defined by a coupling matrix derived from an orthogonal transformation of a Laplacian matrix that gradually links initially isolated clusters into a fully connected network. Within this structure, stable patterns of co-movement arise and can be interpreted as financial factors. The relationship between the initial clustering and the number of observed factors is consistent with a center manifold reduction. We identify an optimal regime in which assets' variance is effectively explained by the set of factors produced by the network. Our framework offers a structural perspective based on interaction-based factor formation and dimension reduction in financial markets.",
+    "authors": [
+      "Jose Negrete",
+      "Jaime Joel Ramos"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "q-fin.CP",
+      "nlin.CD"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12197v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12197v1",
+    "fetched_at": "2026-04-15T09:13:59.730685",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583901"
+  },
+  {
+    "id": "2604.12114v1",
+    "title": "A Decomposition Method for LQ Conditional McKean-Vlasov Control Problems with Random Coefficients",
+    "abstract": "We propose a decomposition method for solving a general class of linear-quadratic (LQ) McKean-Vlasov control problems involving conditional expectations and random coefficients, where the system dynamics are driven by two independent Wiener processes. Unlike existing approaches in the literature for these problems, such as the extended stochastic maximum principle and the extended dynamic programming methods, which often involve additional technical complexities and sometimes impose restrictive conditions on control inputs, our approach decomposes the original McKean-Vlasov control problem into two decoupled stochastic optimal control problems, one of which has a constrained admissible control set. These auxiliary problems can be solved using classical methods. We establish an equivalence between the well-posedness and solvability of the auxiliary problems and those of the original problem, and show that the sum of the optimal controls of the auxiliary problems yields the optimal control of the original problem. Moreover, by applying a variational method, we characterize the optimal solution to the McKean-Vlasov control problem via two decoupled sets of (non-McKean-Vlasov) linear forward-backward stochastic differential equations, each corresponding to one of the auxiliary problems. Finally, we show that standard dynamic programming can also be applied to solve the resulting auxiliary problems.",
+    "authors": [
+      "Onésime Hounkpe",
+      "Dena Firoozi",
+      "Shuang Gao"
+    ],
+    "published": "2026-04-13",
+    "categories": [
+      "math.OC",
+      "eess.SY",
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12114v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12114v1",
+    "fetched_at": "2026-04-15T09:13:59.730712",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583915"
+  },
+  {
+    "id": "2604.12082v1",
+    "title": "When Forecast Accuracy Fails: Rank Correlation and Decision Quality in Multi-Market Battery Storage Optimization",
+    "abstract": "Battery energy storage systems (BESS) participating in multi-market electricity trading require price forecasts to optimize dispatch decisions. A widely held assumption is that forecast accuracy, measured by standard metrics such as mean absolute error (MAE), drives trading performance. We challenge this assumption using a hierarchical three-layer optimization system trading simultaneously on frequency containment reserve (FCR), automatic frequency restoration reserve (aFRR), day-ahead, and continuous intraday (XBID) markets in Germany and Switzerland over 2020-2025, with real market data from Regelleistung.net and Swissgrid. We find that rank correlation (Kendall tau), rather than MAE, is the primary predictor of intraday dispatch value: forecasts above an empirical threshold of tau approximately 0.85-0.95 capture up to 97-100% of perfect-foresight revenue, while persistence forecasts with near-zero tau capture only 33%. This threshold is stable across market regimes and volatility levels, and reflects the ordinal structure of the dispatch problem. Furthermore, under reserve market constraints, FCR capacity revenue exceeds XBID by 6.5x per MW, making capacity allocation -- not forecast accuracy -- the primary driver of total revenue. In the Swiss market, hydrological surplus anomalies are significantly associated with balancing market revenue (p = 0.0005), a mechanism absent from existing German-focused literature. These findings reframe forecast evaluation for BESS operators: the relevant question is not what the MAE is, but whether the forecast achieves tau-sufficiency.",
+    "authors": [
+      "Alessandro Falezza"
+    ],
+    "published": "2026-04-13",
+    "categories": [
+      "q-fin.TR",
+      "cs.CE",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12082v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12082v1",
+    "fetched_at": "2026-04-15T09:13:59.730732",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583929"
+  },
+  {
+    "id": "2604.10758v2",
+    "title": "Investing Is Compression",
+    "abstract": "In 1956 John Kelly wrote a paper at Bell Labs describing the relationship between gambling and Information Theory. What became known as the Kelly criterion is an objective or utility function and a closed form solution in simple cases. The economist Paul Samuelson argued that it was an arbitrary utility function, and he successfully kept it out of mainstream economics. But he was wrong. We now know, largely through the work of Tom Cover at Stanford, that Kelly's proposal is objectively optimal: it maximizes long-term wealth, it minimizes the risk of ruin, and in a game-theoretic sense, it is competitively optimal, even over the short term.   One of Cover's most surprising contributions to portfolio theory was the universal portfolio, related to universal compression in information theory, which performs asymptotically as well as the best constant-rebalanced portfolio in hindsight. Although the algorithm itself is very abstract, one of the key steps Cover used -- rewriting the multi-period investing problem as a sum of products rather than a product of sums -- reveals the information structure of the investing problem, making it accessible to the techniques of information theory.   That same technique is applied here to show that even in the most general form, Kelly's objective factors the investing problem into three terms: a money term, an entropy term, and a divergence term. Because the first two terms are independent of the allocation, the only way to maximize the compounding growth rate is to minimize the friction from the divergence term, which measures, in bits, the difference between the chosen distribution and the unknown true distribution. This means that investing is, fundamentally, a compression problem.",
+    "authors": [
+      "Oscar Stiffelman"
+    ],
+    "published": "2026-04-12",
+    "categories": [
+      "cs.CE",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.10758v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.10758v2",
+    "fetched_at": "2026-04-15T09:13:59.730878",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583943"
+  },
+  {
+    "id": "2604.13024v1",
+    "title": "CLAD: Efficient Log Anomaly Detection Directly on Compressed Representations",
+    "abstract": "The explosive growth of system logs makes streaming compression essential, yet existing log anomaly detection (LAD) methods incur severe pre-processing overhead by requiring full decompression and parsing. We introduce CLAD, the first deep learning framework to perform LAD directly on compressed byte streams. CLAD bypasses these bottlenecks by exploiting a key insight: normal logs compress into regular byte patterns, while anomalies systematically disrupt them. To extract these multi-scale deviations from opaque bytes, we propose a purpose-built architecture integrating a dilated convolutional byte encoder, a hybrid Transformer--mLSTM, and four-way aggregation pooling. This is coupled with a two-stage training strategy of masked pre-training and focal-contrastive fine-tuning to effectively handle severe class imbalance. Evaluated across five datasets, CLAD achieves a state-of-the-art average F1-score of 0.9909 and outperforms the best baseline by 2.72 percentage points. It delivers superior accuracy while completely eliminating decompression and parsing overheads, offering a robust solution that generalizes to structured streaming compressors.",
+    "authors": [
+      "Benzhao Tang",
+      "Shiyu Yang"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.LG",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13024v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13024v1",
+    "fetched_at": "2026-04-15T09:14:12.841406",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583957"
+  },
+  {
+    "id": "2604.12440v1",
+    "title": "IAD-Unify: A Region-Grounded Unified Model for Industrial Anomaly Segmentation, Understanding, and Generation",
+    "abstract": "Real-world industrial inspection requires not only localizing defects, but also explaining them in natural language and generating controlled defect edits. However, existing approaches fail to jointly support all three capabilities within a unified framework and evaluation protocol. We propose IAD-Unify, a dual-encoder unified framework in which a frozen DINOv2-based region expert supplies precise anomaly evidence to a shared Qwen3.5-4B vision-language backbone via lightweight token injection, jointly enabling anomaly segmentation, region-grounded understanding, and mask-guided generation. To enable unified evaluation, we further construct Anomaly-56K, a comprehensive unified multi-task IAD evaluation platform, spanning 59,916 images across 24 categories and 104 defect variants. Controlled ablations yield four findings: (i) region grounding is the decisive mechanism for understanding, removing it degrades location accuracy by >76 pp; (ii) predicted-region performance closely matches oracle, confirming deployment viability; (iii) region-grounded generation achieves the best full-image fidelity and masked-region perceptual quality; and (iv) pre-initialized joint training improves understanding at negligible generation cost (-0.16 dB). IAD-Unify further achieves strong performance on the MMAD benchmark, including categories unseen during training, demonstrating robust cross-category generalization.",
+    "authors": [
+      "Haoyu Zheng",
+      "Tianwei Lin",
+      "Wei Wang",
+      "Zhuonan Wang",
+      "Wenqiao Zhang",
+      "Jiaqi Zhu",
+      "Feifei Shao"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12440v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12440v1",
+    "fetched_at": "2026-04-15T09:14:12.841448",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583969"
+  },
+  {
+    "id": "2604.12408v1",
+    "title": "Security and Resilience in Autonomous Vehicles: A Proactive Design Approach",
+    "abstract": "Autonomous vehicles (AVs) promise efficient, clean and cost-effective transportation systems, but their reliance on sensors, wireless communications, and decision-making systems makes them vulnerable to cyberattacks and physical threats. This chapter presents novel design techniques to strengthen the security and resilience of AVs. We first provide a taxonomy of potential attacks across different architectural layers, from perception and control manipulation to Vehicle-to-Any (V2X) communication exploits and software supply chain compromises. Building on this analysis, we present an AV Resilient architecture that integrates redundancy, diversity, and adaptive reconfiguration strategies, supported by anomaly- and hash-based intrusion detection techniques. Experimental validation on the Quanser QCar platform demonstrates the effectiveness of these methods in detecting depth camera blinding attacks and software tampering of perception modules. The results highlight how fast anomaly detection combined with fallback and backup mechanisms ensures operational continuity, even under adversarial conditions. By linking layered threat modeling with practical defense implementations, this work advances AV resilience strategies for safer and more trustworthy autonomous vehicles.",
+    "authors": [
+      "Chieh Tsai",
+      "Murad Mehrab Abrar",
+      "Salim Hariri"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12408v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12408v1",
+    "fetched_at": "2026-04-15T09:14:12.841470",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.583987"
+  },
+  {
+    "id": "2604.12218v1",
+    "title": "LLM-Enhanced Log Anomaly Detection: A Comprehensive Benchmark of Large Language Models for Automated System Diagnostics",
+    "abstract": "System log anomaly detection is critical for maintaining the reliability of large-scale software systems, yet traditional methods struggle with the heterogeneous and evolving nature of modern log data. Recent advances in Large Language Models (LLMs) offer promising new approaches to log understanding, but a systematic comparison of LLM-based methods against established techniques remains lacking. In this paper, we present a comprehensive benchmark study evaluating both LLM-based and traditional approaches for log anomaly detection across four widely-used public datasets: HDFS, BGL, Thunderbird, and Spirit. We evaluate three categories of methods: (1) classical log parsers (Drain, Spell, AEL) combined with machine learning classifiers, (2) fine-tuned transformer models (BERT, RoBERTa), and (3) prompt-based LLM approaches (GPT-3.5, GPT-4, LLaMA-3) in zero-shot and few-shot settings. Our experiments reveal that while fine-tuned transformers achieve the highest F1-scores (0.96-0.99), prompt-based LLMs demonstrate remarkablezero-shot capabilities (F1: 0.82-0.91) without requiring any labeled training data -- a significant advantage for real-world deployment where labeled anomalies are scarce. We further analyze the cost-accuracy trade-offs, latency characteristics, and failure modes of each approach. Our findings provide actionable guidelines for practitioners choosing log anomaly detection methods based on their specific constraints regarding accuracy, latency, cost, and label availability. All code and experimental configurations are publicly available to facilitate reproducibility.",
+    "authors": [
+      "Disha Patel"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12218v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12218v1",
+    "fetched_at": "2026-04-15T09:14:12.841488",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584000"
+  },
+  {
+    "id": "2604.11909v1",
+    "title": "Thermodynamic Liquid Manifold Networks: Physics-Bounded Deep Learning for Solar Forecasting in Autonomous Off-Grid Microgrids",
+    "abstract": "The stable operation of autonomous off-grid photovoltaic systems requires solar forecasting algorithms that respect atmospheric thermodynamics. Contemporary deep learning models consistently exhibit critical anomalies, primarily severe temporal phase lags during cloud transients and physically impossible nocturnal power generation. To resolve this divergence between data-driven modeling and deterministic celestial mechanics, this research introduces the Thermodynamic Liquid Manifold Network. The methodology projects 22 meteorological and geometric variables into a Koopman-linearized Riemannian manifold to systematically map complex climatic dynamics. The architecture integrates a Spectral Calibration unit and a multiplicative Thermodynamic Alpha-Gate. This system synthesizes real-time atmospheric opacity with theoretical clear-sky boundary models, structurally enforcing strict celestial geometry compliance. This completely neutralizes phantom nocturnal generation while maintaining zero-lag synchronization during rapid weather shifts. Validated against a rigorous five-year testing horizon in a severe semi-arid climate, the framework achieves an RMSE of 18.31 Wh/m2 and a Pearson correlation of 0.988. The model strictly maintains a zero-magnitude nocturnal error across all 1826 testing days and exhibits a sub-30-minute phase response during high-frequency optical transients. Comprising exactly 63,458 trainable parameters, this ultra-lightweight design establishes a robust, thermodynamically consistent standard for edge-deployable microgrid controllers.",
+    "authors": [
+      "Mohammed Ezzaldin Babiker Abdullah"
+    ],
+    "published": "2026-04-13",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.11909v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.11909v1",
+    "fetched_at": "2026-04-15T09:14:12.841505",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584012"
+  },
+  {
+    "id": "2604.09166v2",
+    "title": "Automated Batch Distillation Process Simulation for a Large Hybrid Dataset for Deep Anomaly Detection",
+    "abstract": "Anomaly detection (AD) in chemical processes based on deep learning offers significant opportunities but requires large, diverse, and well-annotated training datasets that are rarely available from industrial operations. In a recent work, we introduced a large, fully annotated experimental dataset for batch distillation under normal and anomalous operating conditions. In the present study, we augment this dataset with a corresponding simulation dataset, creating a novel hybrid dataset. The simulation data is generated in an automated workflow with a novel Python-based process simulator that employs a tailored index-reduction strategy for the underlying differential-algebraic equations. Leveraging the rich metadata and structured anomaly annotations of the experimental database, experimental records are automatically translated into simulation scenarios. After calibration to a single reference experiment, the dynamics of the other experiments are well predicted. This enabled the fully automated, consistent generation of time-series data for a large number of experimental runs, covering both normal operation and a wide range of actuator- and control-related anomalies. The resulting hybrid dataset is released openly. From a process simulation perspective, this work demonstrates the automated, consistent simulation of large-scale experimental campaigns, using batch distillation as an example. From a data-driven AD perspective, the hybrid dataset provides a unique basis for simulation-to-experiment style transfer, the generation of pseudo-experimental data, and future research on deep AD methods in chemical process monitoring.",
+    "authors": [
+      "Jennifer Werner",
+      "Justus Arweiler",
+      "Indra Jungjohann",
+      "Jochen Schmid",
+      "Fabian Jirasek",
+      "Hans Hasse",
+      "Michael Bortz"
+    ],
+    "published": "2026-04-10",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.09166v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.09166v2",
+    "fetched_at": "2026-04-15T09:14:12.841685",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584024"
+  },
+  {
+    "id": "2604.12988v1",
+    "title": "ROSE: An Intent-Centered Evaluation Metric for NL2SQL",
+    "abstract": "Execution Accuracy (EX), the widely used metric for evaluating the effectiveness of Natural Language to SQL (NL2SQL) solutions, is becoming increasingly unreliable. It is sensitive to syntactic variation, ignores that questions may admit multiple interpretations, and is easily misled by erroneous ground-truth SQL. To address this, we introduce ROSE, an intent-centered metric that focuses on whether the predicted SQL answers the question, rather than consistency with the ground-truth SQL under the reference-dependent paradigm. ROSE employs an adversarial Prover-Refuter cascade: SQL Prover assesses the semantic correctness of a predicted SQL against the user's intent independently, while Adversarial Refuter uses the ground-truth SQL as evidence to challenge and refine this judgment. On our expert-aligned validation set ROSE-VEC, ROSE achieves the best agreement with human experts, outperforming the next-best metric by nearly 24% in Cohen's Kappa. We also conduct a largescale re-evaluation of 19 NL2SQL methods, revealing four valuable insights. We release ROSE and ROSE-VEC to facilitate more reliable NL2SQL research.",
+    "authors": [
+      "Wenqi Pei",
+      "Shizheng Hou",
+      "Boyan Li",
+      "Han Chen",
+      "Zhichao Shi",
+      "Yuyu Luo"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.DB",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12988v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12988v1",
+    "fetched_at": "2026-04-15T09:14:43.785528",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584033"
+  },
+  {
+    "id": "2604.12986v1",
+    "title": "Parallax: Why AI Agents That Think Must Never Act",
+    "abstract": "Autonomous AI agents are rapidly transitioning from experimental tools to operational infrastructure, with projections that 80% of enterprise applications will embed AI copilots by the end of 2026. As agents gain the ability to execute real-world actions (reading files, running commands, making network requests, modifying databases), a fundamental security gap has emerged. The dominant approach to agent safety relies on prompt-level guardrails: natural language instructions that operate at the same abstraction level as the threats they attempt to mitigate. This paper argues that prompt-based safety is architecturally insufficient for agents with execution capability and introduces Parallax, a paradigm for safe autonomous AI execution grounded in four principles: Cognitive-Executive Separation, which structurally prevents the reasoning system from executing actions; Adversarial Validation with Graduated Determinism, which interposes an independent, multi-tiered validator between reasoning and execution; Information Flow Control, which propagates data sensitivity labels through agent workflows to detect context-dependent threats; and Reversible Execution, which captures pre-destructive state to enable rollback when validation fails. We present OpenParallax, an open-source reference implementation in Go, and evaluate it using Assume-Compromise Evaluation, a methodology that bypasses the reasoning system entirely to test the architectural boundary under full agent compromise. Across 280 adversarial test cases in nine attack categories, Parallax blocks 98.9% of attacks with zero false positives under its default configuration, and 100% of attacks under its maximum-security configuration. When the reasoning system is compromised, prompt-level guardrails provide zero protection because they exist only within the compromised system; Parallax's architectural boundary holds regardless.",
+    "authors": [
+      "Joel Fokou"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12986v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12986v1",
+    "fetched_at": "2026-04-15T09:14:43.785559",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584044"
+  },
+  {
+    "id": "2604.12955v1",
+    "title": "Modeling Co-Pilots for Text-to-Model Translation",
+    "abstract": "There is growing interest in leveraging large language models (LLMs) for text-to-model translation and optimization tasks. This paper aims to advance this line of research by introducing \\textsc{Text2Model} and \\textsc{Text2Zinc}. \\textsc{Text2Model} is a suite of co-pilots based on several LLM strategies with varying complexity, along with an online leaderboard. \\textsc{Text2Zinc} is a cross-domain dataset for capturing optimization and satisfaction problems specified in natural language, along with an interactive editor with built-in AI assistant. While there is an emerging literature on using LLMs for translating combinatorial problems into formal models, our work is the first attempt to integrate \\textit{both} satisfaction and optimization problems within a \\textit{unified architecture} and \\textit{dataset}. Moreover, our approach is \\textit{solver-agnostic} unlike existing work that focuses on translation to a solver-specific model. To achieve this, we leverage \\textsc{MiniZinc}'s solver-and-paradigm-agnostic modeling capabilities to formulate combinatorial problems. We conduct comprehensive experiments to compare execution and solution accuracy across several single- and multi-call strategies, including; zero-shot prompting, chain-of-thought reasoning, intermediate representations via knowledge-graphs, grammar-based syntax encoding, and agentic approaches that decompose the model into sequential sub-tasks. Our co-pilot strategies are competitive, and in parts improve, recent research in this domain. Our findings indicate that while LLMs are promising they are not yet a push-button technology for combinatorial modeling. We contribute \\textsc{Text2Model} co-pilots and leaderboard, and \\textsc{Text2Zinc} and interactive editor to open-source to support closing this performance gap.",
+    "authors": [
+      "Serdar Kadioglu",
+      "Karthik Uppuluri",
+      "Akash Singirikonda"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12955v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12955v1",
+    "fetched_at": "2026-04-15T09:14:43.785581",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584053"
+  },
+  {
+    "id": "2604.12913v1",
+    "title": "CoDe-R: Refining Decompiler Output with LLMs via Rationale Guidance and Adaptive Inference",
+    "abstract": "Binary decompilation is a critical reverse engineering task aimed at reconstructing high-level source code from stripped executables. Although Large Language Models (LLMs) have recently shown promise, they often suffer from \"logical hallucinations\" and \"semantic misalignment\" due to the irreversible semantic loss during compilation, resulting in generated code that fails to re-execute. In this study, we propose Cognitive Decompiler Refinement with Robustness (CoDe-R), a lightweight two-stage code refinement framework. The first stage introduces Semantic Cognitive Enhancement (SCE), a Rationale-Guided Semantic Injection strategy that trains the model to recover high-level algorithmic intent alongside code. The second stage introduces a Dynamic Dual-Path Fallback (DDPF) mechanism during inference, which adaptively balances semantic recovery and syntactic stability via a hybrid verification strategy. Evaluation on the HumanEval-Decompile benchmark demonstrates that CoDe-R (using a 1.3B backbone) establishes a new State-of-the-Art (SOTA) in the lightweight regime. Notably, it is the first 1.3B model to exceed an Average Re-executability Rate of 50.00%, significantly outperforming the baseline and effectively bridging the gap between efficient models and expert-level performance. Our code is available at https://github.com/Theaoi/CoDe-R.",
+    "authors": [
+      "Qiang Zhang",
+      "Zhongnian Li"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12913v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12913v1",
+    "fetched_at": "2026-04-15T09:14:43.785601",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584063"
+  },
+  {
+    "id": "2604.12879v1",
+    "title": "FastGrasp: Learning-based Whole-body Control method for Fast Dexterous Grasping with Mobile Manipulators",
+    "abstract": "Fast grasping is critical for mobile robots in logistics, manufacturing, and service applications. Existing methods face fundamental challenges in impact stabilization under high-speed motion, real-time whole-body coordination, and generalization across diverse objects and scenarios, limited by fixed bases, simple grippers, or slow tactile response capabilities. We propose \\textbf{FastGrasp}, a learning-based framework that integrates grasp guidance, whole-body control, and tactile feedback for mobile fast grasping. Our two-stage reinforcement learning strategy first generates diverse grasp candidates via conditional variational autoencoder conditioned on object point clouds, then executes coordinated movements of mobile base, arm, and hand guided by optimal grasp selection. Tactile sensing enables real-time grasp adjustments to handle impact effects and object variations. Extensive experiments demonstrate superior grasping performance in both simulation and real-world scenarios, achieving robust manipulation across diverse object geometries through effective sim-to-real transfer.",
+    "authors": [
+      "Heng Tao",
+      "Yiming Zhong",
+      "Zemin Yang",
+      "Yuexin Ma"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12879v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12879v1",
+    "fetched_at": "2026-04-15T09:14:43.785624",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584073"
+  },
+  {
+    "id": "2604.12874v1",
+    "title": "LIFE -- an energy efficient advanced continual learning agentic AI framework for frontier systems",
+    "abstract": "The rapid advancement of AI has changed the character of HPC usage such as dimensioning, provisioning, and execution. Not only has energy demand been amplified, but existing rudimentary continual learning capabilities limit ability of AI to effectively manage HPCs. This paper reviews emerging directions beyond monolithic transformers, emphasizing agentic AI and brain inspired architectures as complementary paths toward sustainable, adaptive systems. We propose LIFE, a reasoning and Learning framework that is Incremental, Flexible, and Energy efficient that is implemented as an agent centric system rather than a single monolithic model. LIFE uniquely combines four components to realize self evolving network management and operations in HPCs. The components are an orchestrator, Agentic Context Engineering, a novel memory system, and information lattice learning. LIFE can also generalize to enable a variety of orthogonal use cases. We ground LIFE in a specific closed loop HPC operations example for detecting and mitigating latency spikes experienced by critical micro services running on a Kubernetes like cluster.",
+    "authors": [
+      "Anne Lee",
+      "Gurudutt Hosangadi"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12874v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12874v1",
+    "fetched_at": "2026-04-15T09:14:43.785644",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584082"
+  },
+  {
+    "id": "2604.12812v1",
+    "title": "DocSeeker: Structured Visual Reasoning with Evidence Grounding for Long Document Understanding",
+    "abstract": "Existing Multimodal Large Language Models (MLLMs) suffer from significant performance degradation on the long document understanding task as document length increases. This stems from two fundamental challenges: 1) a low Signal-to-Noise Ratio (SNR), with crucial evidence buried in irrelevant pages; and 2) supervision scarcity, as datasets offering only final short answers provide a weak learning signal. In this paper, we address these challenges by proposing a paradigm that requires the model to execute a structured ``\\textbf{Analysis}, \\textbf{Localization} and \\textbf{Reasoning}'' workflow. To instill this capability, we design a two-stage training framework: we first perform Supervised Fine-Tuning on high-quality data generated via an efficient knowledge distillation strategy. Subsequently, we employ an Evidence-aware Group Relative Policy Optimization which jointly optimizes for both evidence localization and answer accuracy. Additionally, we introduce a Evidence-Guided Resolution Allocation strategy to mitigate memory constraints of training on multi-pages documents. Extensive experiments demonstrate that DocSeeker achieves superior performance on both in-domain and out-of-domain tasks. We show it robustly generalizes from short-page training to ultra-long documents and is naturally synergistic with visual Retrieval-Augmented Generation systems, serving as a solid foundation for their implementation.",
+    "authors": [
+      "Hao Yan",
+      "Yuliang Liu",
+      "Xingchen Liu",
+      "Yuyi Zhang",
+      "Minghui Liao",
+      "Jihao Wu",
+      "Wei Chen",
+      "Xiang Bai"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12812v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12812v1",
+    "fetched_at": "2026-04-15T09:14:43.785692",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584092"
+  },
+  {
+    "id": "2604.12782v1",
+    "title": "OSC: Hardware Efficient W4A4 Quantization via Outlier Separation in Channel Dimension",
+    "abstract": "While 4-bit quantization is essential for high-throughput deployment of Large Language Models, activation outliers often lead to significant accuracy degradation due to the restricted dynamic range of low-bit formats. In this paper, we systematically investigate the spatial distribution of outliers and demonstrate a token-persistent structural clustering effect, where high-magnitude outliers consistently occupy fixed channels across tokens. Building on this insight, we propose OSC, a hardware-efficient framework for outlier suppression. During inference, OSC executes a dual-path computation consisting of a low-precision 4-bit General Matrix Multiplication (GEMM) path and a high-precision 16-bit branch GEMM path. Specifically, OSC uses an offline group-wise strategy to identify the channels where outliers are located and then performs structured sub-tensor extraction to coalesce these scattered activation channels into a compact dense tensor online. This mechanism implements outlier protection through regularized and high-throughput GEMM operations, achieving a seamless fit with modern 4-bit micro-scaling hardware. Furthermore, for the inputs of W2 where outlier clustering is less pronounced, we integrate a fallback strategy to FP8. Evaluation on Qwen3-8B and Qwen3-30B restricts the average accuracy drop to 2.19 and 1.12 points, respectively. Notably, OSC is highly hardware-friendly, achieving a peak speedup of 1.78x over the W8A8 GEMM baseline on a modern AI accelerator.",
+    "authors": [
+      "Zhiyuan Zhang",
+      "Yanzhao Li",
+      "Zhiqiang Zou",
+      "Bai Du",
+      "Yupeng Sun",
+      "Hui Dong",
+      "Hui Wang"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12782v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12782v1",
+    "fetched_at": "2026-04-15T09:14:43.785720",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584102"
+  },
+  {
+    "id": "2604.12667v1",
+    "title": "Safe reinforcement learning with online filtering for fatigue-predictive human-robot task planning and allocation in production",
+    "abstract": "Human-robot collaborative manufacturing, a core aspect of Industry 5.0, emphasizes ergonomics to enhance worker well-being. This paper addresses the dynamic human-robot task planning and allocation (HRTPA) problem, which involves determining when to perform tasks and who should execute them to maximize efficiency while ensuring workers' physical fatigue remains within safe limits. The inclusion of fatigue constraints, combined with production dynamics, significantly increases the complexity of the HRTPA problem. Traditional fatigue-recovery models in HRTPA often rely on static, predefined hyperparameters. However, in practice, human fatigue sensitivity varies daily due to factors such as changed work conditions and insufficient sleep. To better capture this uncertainty, we treat fatigue-related parameters as inaccurate and estimate them online based on observed fatigue progression during production. To address these challenges, we propose PF-CD3Q, a safe reinforcement learning (safe RL) approach that integrates the particle filter with constrained dueling double deep Q-learning for real-time fatigue-predictive HRTPA. Specifically, we first develop PF-based estimators to track human fatigue and update fatigue model parameters in real-time. These estimators are then integrated into CD3Q by making task-level fatigue predictions during decision-making and excluding tasks that exceed fatigue limits, thereby constraining the action space and formulating the problem as a constrained Markov decision process (CMDP).",
+    "authors": [
+      "Jintao Xue",
+      "Xiao Li",
+      "Nianmin Zhang"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12667v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12667v1",
+    "fetched_at": "2026-04-15T09:14:43.785742",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584112"
+  },
+  {
+    "id": "2604.12487v1",
+    "title": "KG-Reasoner: A Reinforced Model for End-to-End Multi-Hop Knowledge Graph Reasoning",
+    "abstract": "Large Language Models (LLMs) exhibit strong abilities in natural language understanding and generation, yet they struggle with knowledge-intensive reasoning. Structured Knowledge Graphs (KGs) provide an effective form of external knowledge representation and have been widely used to enhance performance in classical Knowledge Base Question Answering (KBQA) tasks. However, performing precise multi-hop reasoning over KGs for complex queries remains highly challenging. Most existing approaches decompose the reasoning process into a sequence of isolated steps executed through a fixed pipeline. While effective to some extent, such designs constrain reasoning flexibility and fragment the overall decision process, often leading to incoherence and the loss of critical intermediate information from earlier steps. In this paper, we introduce KG-Reasoner, an end-to-end framework that integrates multi-step reasoning into a unified \"thinking\" phase of a Reasoning LLM. Through Reinforcement Learning (RL), the LLM is trained to internalize the KG traversal process, enabling it to dynamically explore reasoning paths, and perform backtracking when necessary. Experiments on eight multi-hop and knowledge-intensive reasoning benchmarks demonstrate that KG-Reasoner achieves competitive or superior performance compared to the state-of-the-art methods. Codes are available at the repository: https://github.com/Wangshuaiia/KG-Reasoner.",
+    "authors": [
+      "Shuai Wang",
+      "Yinan Yu"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12487v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12487v1",
+    "fetched_at": "2026-04-15T09:14:43.785762",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584122"
+  },
+  {
+    "id": "2604.12474v1",
+    "title": "From Kinematics to Dynamics: Learning to Refine Hybrid Plans for Physically Feasible Execution",
+    "abstract": "In many robotic tasks, agents must traverse a sequence of spatial regions to complete a mission. Such problems are inherently mixed discrete-continuous: a high-level action sequence and a physically feasible continuous trajectory. The resulting trajectory and action sequence must also satisfy problem constraints such as deadlines, time windows, and velocity or acceleration limits. While hybrid temporal planners attempt to address this challenge, they typically model motion using linear (first-order) dynamics, which cannot guarantee that the resulting plan respects the robot's true physical constraints. Consequently, even when the high-level action sequence is fixed, producing a dynamically feasible trajectory becomes a bi-level optimization problem. We address this problem via reinforcement learning in continuous space. We define a Markov Decision Process that explicitly incorporates analytical second-order constraints and use it to refine first-order plans generated by a hybrid planner. Our results show that this approach can reliably recover physical feasibility and effectively bridge the gap between a planner's initial first-order trajectory and the dynamics required for real execution.",
+    "authors": [
+      "Lidor Erez",
+      "Shahaf S. Shperberg",
+      "Ayal Taitler"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12474v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12474v1",
+    "fetched_at": "2026-04-15T09:14:43.785783",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584131"
+  },
+  {
+    "id": "2604.12431v1",
+    "title": "VeriX-Anon: A Multi-Layered Framework for Mathematically Verifiable Outsourced Target-Driven Data Anonymization",
+    "abstract": "Organisations increasingly outsource privacy-sensitive data transformations to cloud providers, yet no practical mechanism lets the data owner verify that the contracted algorithm was faithfully executed. VeriX-Anon is a multi-layered verification framework for outsourced Target-Driven k-anonymization combining three orthogonal mechanisms: deterministic verification via Merkle-style hashing of an Authenticated Decision Tree, probabilistic verification via Boundary Sentinels near the Random Forest decision boundary and exact-duplicate Twins with cryptographic identifiers, and utility-based verification via Explainable AI fingerprinting that compares SHAP value distributions before and after anonymization using the Wasserstein distance. Evaluated on three cross-domain datasets against Lazy (drops 5 percent of records), Dumb (random splitting, fake hash), and Approximate (random splitting, valid hash) adversaries, VeriX-Anon correctly detected deviations in 11 of 12 scenarios. No single layer achieved this alone. The XAI layer was the only mechanism that caught the Approximate adversary, succeeding on Adult and Bank but failing on the severely imbalanced Diabetes dataset where class imbalance suppresses the SHAP signal, confirming the need for adaptive thresholding. An 11-point k-sweep showed Target-Driven anonymization preserves significantly more utility than Blind anonymization (Wilcoxon $p = 0.000977$, Cohen's $d = 1.96$, mean F1 gap $+0.1574$). Client-side verification completes under one second at one million rows. The threat model covers three empirically evaluated profiles and one theoretical profile (Informed Attacker) aware of trap embedding but unable to defeat the cryptographic salt. Sentinel evasion probability ranges from near-zero for balanced datasets to 0.52 for imbalanced ones, a limitation the twin layer compensates for in every tested scenario.",
+    "authors": [
+      "Miit Daga",
+      "Swarna Priya Ramu"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.CR",
+      "cs.DB",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12431v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12431v1",
+    "fetched_at": "2026-04-15T09:14:43.785801",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584142"
+  },
+  {
+    "id": "2604.12311v1",
+    "title": "Is Vibe Coding the Future? An Empirical Assessment of LLM Generated Codes for Construction Safety",
+    "abstract": "The emergence of vibe coding, a paradigm where non-technical users instruct Large Language Models (LLMs) to generate executable codes via natural language, presents both significant opportunities and severe risks for the construction industry. While empowering construction personnel such as the safety managers, foremen, and workers to develop tools and software, the probabilistic nature of LLMs introduces the threat of silent failures, wherein generated code compiles perfectly but executes flawed mathematical safety logic. This study empirically evaluates the reliability, software architecture, and domain-specific safety fidelity of 450 vibe-coded Python scripts generated by three frontier models, Claude 3.5 Haiku, GPT-4o-Mini, and Gemini 2.5 Flash. Utilizing a persona-driven prompt dataset (n=150) and a bifurcated evaluation pipeline comprising isolated dynamic sandboxing and an LLM-as-a-Judge, the research quantifies the severe limits of zero-shot vibe codes for construction safety. The findings reveal a highly significant relationship between user persona and data hallucination, demonstrating that less formal prompts drastically increase the AI's propensity to invent missing safety variables. Furthermore, while the models demonstrated high foundational execution viability (~85%), this syntactic reliability actively masked logic deficits and a severe lack of defensive programming. Among successfully executed scripts, the study identified an alarming ~45% overall Silent Failure Rate, with GPT-4o-Mini generating mathematically inaccurate outputs in ~56% of its functional code. The results demonstrate that current LLMs lack the deterministic rigor required for standalone safety engineering, necessitating the adoption of deterministic AI wrappers and strict governance for cyber-physical deployments.",
+    "authors": [
+      "S M Jamil Uddin"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12311v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12311v1",
+    "fetched_at": "2026-04-15T09:14:43.785818",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584153"
+  },
+  {
+    "id": "2604.12290v1",
+    "title": "Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization",
+    "abstract": "Current LLM agent benchmarks, which predominantly focus on binary pass/fail tasks such as code generation or search-based question answering, often neglect the value of real-world engineering that is often captured through the iterative optimization of feasible designs. To this end, we introduce Frontier-Eng, a human-verified benchmark for generative optimization -- an iterative propose-execute-evaluate loop in which an agent generates candidate artifacts, receives executable verifier feedback, and revises them under a fixed interaction budget -- spanning $47$ tasks across five broad engineering categories. Unlike previous suites, Frontier-Eng tasks are grounded in industrial-grade simulators and verifiers that provide continuous reward signals and enforce hard feasibility constraints under constrained budgets. We evaluate eight frontier language models using representative search frameworks, finding that while Claude 4.6 Opus achieves the most robust performance, the benchmark remains challenging for all models. Our analysis suggests a dual power-law decay in improvement frequency ($\\sim$ 1/iteration) and magnitude ($\\sim$ 1/improvement count). We further show that although width improves parallelism and diversity, depth remains crucial for hard-won improvements under a fixed budget. Frontier-Eng establishes a new standard for assessing the capacity of AI agents to integrate domain knowledge with executable feedback to solve complex, open-ended engineering problems.",
+    "authors": [
+      "Yizhe Chi",
+      "Deyao Hong",
+      "Dapeng Jiang",
+      "Tianwei Luo",
+      "Kaisen Yang",
+      "Boshi Zhang",
+      "Zhe Cao",
+      "Xiaoyan Fan",
+      "Bingxiang He",
+      "Han Hao",
+      "Weiyang Jin",
+      "Dianqiao Lei",
+      "Qingle Liu",
+      "Houde Qian",
+      "Bowen Wang",
+      "Situ Wang",
+      "Youjie Zheng",
+      "Yifan Zhou",
+      "Calvin Xiao",
+      "Eren Cai",
+      "Qinhuai Na"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12290v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12290v1",
+    "fetched_at": "2026-04-15T09:14:43.785871",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584164"
+  },
+  {
+    "id": "2604.12282v1",
+    "title": "Towards Robust Real-World Spreadsheet Understanding with Multi-Agent Multi-Format Reasoning",
+    "abstract": "Spreadsheets are central to real-world applications such as enterprise reporting, auditing, and scientific data management. Despite their ubiquity, existing large language model based approaches typically treat tables as plain text, overlooking critical layout cues and visual semantics. Moreover, real-world spreadsheets are often massive in scale, exceeding the input length that LLMs can efficiently process. To address these challenges, we propose SpreadsheetAgent, a two-stage multi-agent framework for spreadsheet understanding that adopts a step-by-step reading and reasoning paradigm. Instead of loading the entire spreadsheet at once, SpreadsheetAgent incrementally interprets localized regions through multiple modalities, including code execution results, images, and LaTeX tables. The method first constructs a structural sketch and row/column summaries, and then performs task-driven reasoning over this intermediate representation in the Solving Stage. To further enhance reliability, we design a verification module that validates extracted structures via targeted inspections, reducing error propagation and ensuring trustworthy inputs for downstream reasoning. Extensive experiments on two spreadsheet datasets demonstrate the effectiveness of our approach. With GPT-OSS-120B, SpreadsheetAgent achieves 38.16% on Spreadsheet Bench, outperforming the ChatGPT Agent baseline (35.27%) by 2.89 absolute points. These results highlight the potential of SpreadsheetAgent to advance robust and scalable spreadsheet understanding in real-world applications. Code is available at https://github.com/renhouxing/SpreadsheetAgent.git.",
+    "authors": [
+      "Houxing Ren",
+      "Mingjie Zhan",
+      "Zimu Lu",
+      "Ke Wang",
+      "Yunqiao Yang",
+      "Haotian Hou",
+      "Hongsheng Li"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.12282v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.12282v1",
+    "fetched_at": "2026-04-15T09:14:43.785898",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584174"
+  },
+  {
+    "id": "2604.11479v2",
+    "title": "Structural Consequences of Policy-Based Interventions on the Global Supply Chain Network",
+    "abstract": "As global political tensions rise and the anticipation of additional tariffs from the United States on international trade increases, the issues of economic independence and supply chain resilience become more prominent. The importance of supply chain resilience has been further underscored by disruptions caused by the COVID-19 pandemic and the ongoing war in Ukraine. In light of these challenges, ranging from geopolitical instability to product supply uncertainties, governments are increasingly focused on adopting new trade policies. This study explores the impact of several of these policies on the global electric vehicle (EV) supply chain network, with a particular focus on their effects on country clusters and the broader structure of international trade. Specifically, we analyse three key policies: Country Plus One, Friendshoring, and Reshoring. Our findings show that Friendshoring, contrary to expectations, leads to greater globalisation by increasing the number of supply links across friendly countries, potentially raising transaction costs. The Country Plus One policy similarly enhances network density through redundant links, while the Reshoring policy creates challenges in the EV sector due to the high number of irreplaceable products. Additionally, the effects of these policies vary across industries; for instance, mining goods being less affected in Country Plus One than the Friendshoring policy.",
+    "authors": [
+      "Lea Karbevska",
+      "Liming Xu",
+      "Zehui Dai",
+      "Sara AlMahri",
+      "Alexandra Brintrup"
+    ],
+    "published": "2026-04-13",
+    "categories": [
+      "cs.LG",
+      "econ.GN",
+      "physics.soc-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.11479v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.11479v2",
+    "fetched_at": "2026-04-15T09:14:47.057297",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-15T09:16:55.584185"
+  }
+]
