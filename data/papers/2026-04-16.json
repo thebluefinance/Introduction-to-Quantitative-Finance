@@ -1,0 +1,534 @@
+[
+  {
+    "id": "2604.13798v1",
+    "title": "Higher-order ATM asymptotics for the CGMY model via the characteristic function",
+    "abstract": "Using only the characteristic function, we derive short-time at-the-money (ATM) call-price asymptotics for the exponential CGMY model with activity parameter $Y\\in(1,2)$. The Lipton--Lewis formula expresses the normalized ATM call price, denoted $c(t,0)$, in terms of the characteristic exponent, which, upon rescaling at the rate $t^{-1/Y}$ from the $Y$-stable domain of attraction, yields $c(t,0) = d_{1} t^{1/Y} + d_{2} t + o(t)$ as $t\\downarrow 0$. The first-order coefficient $d_{1}$ is the known stable limit from the domain of attraction of a symmetric $Y$-stable law, and $d_{2}$ is given by an explicit integral involving the characteristic exponent and the limiting stable exponent. We then extract closed-form higher-order coefficients by keeping the full Lipton--Lewis integrand intact and introducing a dynamic cutoff that partitions the domain into inner, core, and tail regions, establishing the expansion with controlled remainder. All coefficients are verified numerically against existing closed-form expressions where available.",
+    "authors": [
+      "Allen Hoffmeyer",
+      "Christian Houdré"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "q-fin.PR",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13798v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13798v1",
+    "fetched_at": "2026-04-16T09:14:08.574763"
+  },
+  {
+    "id": "2604.13458v1",
+    "title": "Interpretable Systematic Risk around the Clock",
+    "abstract": "In this paper, I present the first comprehensive, around-the-clock analysis of systematic jump risk by combining high-frequency market data with contemporaneous news narratives identified as the underlying causes of market jumps. These narratives are retrieved and classified using a state-of-the-art open-source reasoning LLM. Decomposing market risk into interpretable jump categories reveals significant heterogeneity in risk premia, with macroeconomic news commanding the largest and most persistent premium. Leveraging this insight, I construct an annually rebalanced real-time Fama-MacBeth factor-mimicking portfolio that isolates the most strongly priced jump risk, achieving a high out-of-sample Sharpe ratio and delivering significant alphas relative to standard factor models. The results highlight the value of around-the-clock analysis and LLM-based narrative understanding for identifying and managing priced risks in real time.",
+    "authors": [
+      "Songrun He"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13458v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13458v1",
+    "fetched_at": "2026-04-16T09:14:08.574803"
+  },
+  {
+    "id": "2604.13334v1",
+    "title": "Against a Universal Trading Strategy: No-Arbitrage, No-Free-Lunch, and Adversarial Cantor Diagonalization",
+    "abstract": "We investigate the impossibility of universally winning trading strategies -- those generating strict profit across all market trajectories -- through three distinct mathematical paradigms. Fundamentally, under standard admissibility constraints, the existence of such a strategy is a strict subset of strong arbitrage, which is mathematically precluded in competitive markets admitting an equivalent martingale measure. Beyond this rigorous measure-theoretic foundation, we explore analogous limitations in two alternative modeling regimes. Combinatorially, the No-Free-Lunch theorem demonstrates that outperformance requires exploitation of non-uniform market structure, as uniform averaging precludes universal dominance. Computationally, a Turing diagonalization argument constructs an adversarial environment that defeats any computable trading algorithm, shifting the impossibility from exogenous price paths to adaptive adversaries. These mathematical limits are framed by a time-reversal heuristic that establishes a formal analogy between financial martingale measures and thermodynamic detailed balance, resolving the Maxwell's Demon analogy for markets without relying on physically irrelevant Landauer erasure costs. Using the Wheel Options Strategy as a case study, we demonstrate that strategies succeeding ``for all practical purposes'' (FAPP) inherently depend on transient regime assumptions, meaning their automated execution systematically amplifies tail risks.",
+    "authors": [
+      "Karl Svozil"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13334v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13334v1",
+    "fetched_at": "2026-04-16T09:14:08.574830"
+  },
+  {
+    "id": "2604.13311v1",
+    "title": "Topological Complexity and Phase Space Stability: A Persistent Homology Approach to Cryptocurrency Risk",
+    "abstract": "Traditional risk measures in finance, predominantly based on the second moment of return distributions or tail risk heuristics (VaR/CVaR), fail to account for the intrinsic geometric structure of market dynamics. This paper introduces a rigorous mathematical framework utilizing Topological Data Analysis (TDA) to quantify risk as the structural instability of the reconstructed phase space. By applying Takens' Delay Embedding Theorem to cryptocurrency log-returns, we generate a point cloud representation of the underlying attractor. We analyze the evolution of the filtration of Vietoris-Rips complexes to compute persistent homology groups $H_k$. We define a \"Topological Persistence Norm\" to characterize market regimes and propose a leverage calibration heuristic based on the persistence of 1-dimensional cycles. This approach provides a coordinate-free, stability-invariant metric for risk assessment that is robust to high-frequency noise.",
+    "authors": [
+      "Gabriel Santana",
+      "Jemirson Ramirez"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "math.GN",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13311v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13311v1",
+    "fetched_at": "2026-04-16T09:14:08.574857"
+  },
+  {
+    "id": "2604.13260v1",
+    "title": "Which Voices Move Markets? Speaker Identity and the Cross-Section of Post-Earnings Returns",
+    "abstract": "We utilize FinBERT, a domain-specific transformer model, to parse 6.5 million sentences from 16,428 S&P 500 quarterly earnings call transcripts (2015-2025) and demonstrate that post-earnings stock returns are not equally affected by all speakers in a conference call. Our section-weighted sentiment, with empirically derived speaker weights (Analyst 49%, CFO 30%, Executive 16%, Other 5%), achieves an out-of-sample Spearman IC of 0.142 versus 0.115 in-sample, generates monthly long-short alpha of 2.03% unexplained by the Fama-French five-factor model (t = 6.49), and remains significant after controlling for standardized unexpected earnings (SUE). FinBERT section-weighted sentiment entirely subsumes the Loughran-McDonald dictionary approach (FinBERT t = 5.90; LM t = 0.86 in the combined specification). Signal decay analysis and cumulative abnormal return charts confirm gradual price adjustment consistent with sluggish assimilation of soft information. All results undergo rigorous out-of-sample validation with an explicit temporal split, yielding improved rather than deteriorated predictive power.",
+    "authors": [
+      "Karmanpartap Singh Sidhu",
+      "Junyi Fan",
+      "Maryam Pishgar"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13260v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13260v1",
+    "fetched_at": "2026-04-16T09:14:08.574886"
+  },
+  {
+    "id": "2604.10758v3",
+    "title": "Investing Is Compression",
+    "abstract": "In 1956 John Kelly wrote a paper at Bell Labs describing the relationship between gambling and Information Theory. What came to be known as the Kelly Criterion is both an objective and a closed-form solution to sizing wagers when odds and edge are known. Samuelson argued it was arbitrary and subjective, and successfully kept it out of mainstream economics. Luckily it lived on in computer science, mostly because of Tom Cover's work at Stanford. He showed that it is the uniquely optimal way to invest: it maximizes long-term wealth, minimizes the risk of ruin, and is competitively optimal in a game-theoretic sense, even over the short term.   One of Cover's most surprising contributions to portfolio theory was the universal portfolio. Related to universal compression in information theory, it performs asymptotically as well as the best constant-rebalanced portfolio in hindsight. I borrow a trick from that algorithm to show that Kelly's objective, even in the general form, factors the investing problem into three terms: a money term, an entropy term, and a divergence term. The only way to maximize growth is to minimize divergence which measures the difference between our distribution and the true distribution in bits. Investing is, fundamentally, a compression problem.   This decomposition also yields new practical results. Because the money and entropy terms are constant across strategies in a given backtest, the difference in log growth between two strategies measures their relative divergence in bits. I also introduce a winner fraction heuristic which allocates capital in proportion to each asset's probability of dominating the candidate set. The growth shortfall of this heuristic relative to the optimal portfolio is bounded by the entropy of the winner fraction distribution. To my knowledge, both the heuristic and the entropy bound are original contributions.",
+    "authors": [
+      "Oscar Stiffelman"
+    ],
+    "published": "2026-04-12",
+    "categories": [
+      "cs.CE",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.10758v3",
+    "arxiv_url": "https://arxiv.org/abs/2604.10758v3",
+    "fetched_at": "2026-04-16T09:14:08.575162"
+  },
+  {
+    "id": "2604.10402v2",
+    "title": "Regime-Aware Specialist Routing for Volatility Forecasting",
+    "abstract": "Volatility forecasting becomes challenging when market conditions shift and model performance varies across regimes. Motivated by this instability, we develop a regime-aware specialist routing framework for ETF volatility forecasting. The framework uses online risk-sensitive evaluation and state-dependent gating to combine different forecasting specialists across calm and stressed market states. Using a daily panel of six ETFs under a rolling walk-forward design, we find that the strongest forecaster is regime-dependent rather than stable across all regimes. Relative to the rolling-best baseline, the proposed routing framework reduces high-volatility forecast loss by about 24\\% and underprediction loss by about 22\\%. These results suggest that specialist routing provides a practical adaptive forecasting architecture for changing market conditions.",
+    "authors": [
+      "Tenghan Zhong"
+    ],
+    "published": "2026-04-12",
+    "categories": [
+      "q-fin.ST",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.10402v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.10402v2",
+    "fetched_at": "2026-04-16T09:14:08.575253"
+  },
+  {
+    "id": "2604.13928v1",
+    "title": "Unsupervised Anomaly Detection in Process-Complex Industrial Time Series: A Real-World Case Study",
+    "abstract": "Industrial time-series data from real production environments exhibits substantially higher complexity than commonly used benchmark datasets, primarily due to heterogeneous, multi-stage operational processes. As a result, anomaly detection methods validated under simplified conditions often fail to generalize to industrial settings. This work presents an empirical study on a unique dataset collected from fully operational industrial machinery, explicitly capturing pronounced process-induced variability.   We evaluate which model classes are capable of capturing this complexity, starting with a classical Isolation Forest baseline and extending to multiple autoencoder architectures. Experimental results show that Isolation Forest is insufficient for modeling the non-periodic, multi-scale dynamics present in the data, whereas autoencoders consistently perform better. Among them, temporal convolutional autoencoders achieve the most robust performance, while recurrent and variational variants require more careful tuning.",
+    "authors": [
+      "Sergej Krasnikov",
+      "Lukas Meitz",
+      "Samineh Bagheri",
+      "Michael Heider",
+      "Thorsten Schöler",
+      "Jörg Hähner"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13928v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13928v1",
+    "fetched_at": "2026-04-16T09:14:21.675316"
+  },
+  {
+    "id": "2604.13924v1",
+    "title": "ASTER: Latent Pseudo-Anomaly Generation for Unsupervised Time-Series Anomaly Detection",
+    "abstract": "Time-series anomaly detection (TSAD) is critical in domains such as industrial monitoring, healthcare, and cybersecurity, but it remains challenging due to rare and heterogeneous anomalies and the scarcity of labelled data. This scarcity makes unsupervised approaches predominant, yet existing methods often rely on reconstruction or forecasting, which struggle with complex data, or on embedding-based approaches that require domain-specific anomaly synthesis and fixed distance metrics. We propose ASTER, a framework that generates pseudo-anomalies directly in the latent space, avoiding handcrafted anomaly injections and the need for domain expertise. A latent-space decoder produces tailored pseudo-anomalies to train a Transformer-based anomaly classifier, while a pre-trained LLM enriches the temporal and contextual representations of this space. Experiments on three benchmark datasets show that ASTER achieves state-of-the-art performance and sets a new standard for LLM-based TSAD.",
+    "authors": [
+      "Romain Hermary",
+      "Samet Hicsonmez",
+      "Dan Pineau",
+      "Abd El Rahman Shabayek",
+      "Djamila Aouada"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13924v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13924v1",
+    "fetched_at": "2026-04-16T09:14:21.675361"
+  },
+  {
+    "id": "2604.13888v1",
+    "title": "GeoAgentBench: A Dynamic Execution Benchmark for Tool-Augmented Agents in Spatial Analysis",
+    "abstract": "The integration of Large Language Models (LLMs) into Geographic Information Systems (GIS) marks a paradigm shift toward autonomous spatial analysis. However, evaluating these LLM-based agents remains challenging due to the complex, multi-step nature of geospatial workflows. Existing benchmarks primarily rely on static text or code matching, neglecting dynamic runtime feedback and the multimodal nature of spatial outputs. To address this gap, we introduce GeoAgentBench (GABench), a dynamic and interactive evaluation benchmark tailored for tool-augmented GIS agents. GABench provides a realistic execution sandbox integrating 117 atomic GIS tools, encompassing 53 typical spatial analysis tasks across 6 core GIS domains. Recognizing that precise parameter configuration is the primary determinant of execution success in dynamic GIS environments, we designed the Parameter Execution Accuracy (PEA) metric, which utilizes a \"Last-Attempt Alignment\" strategy to quantify the fidelity of implicit parameter inference. Complementing this, a Vision-Language Model (VLM) based verification is proposed to assess data-spatial accuracy and cartographic style adherence. Furthermore, to address the frequent task failures caused by parameter misalignments and runtime anomalies, we developed a novel agent architecture, Plan-and-React, that mimics expert cognitive workflows by decoupling global orchestration from step-wise reactive execution. Extensive experiments with seven representative LLMs demonstrate that the Plan-and-React paradigm significantly outperforms traditional frameworks, achieving the optimal balance between logical rigor and execution robustness, particularly in multi-step reasoning and error recovery. Our findings highlight current capability boundaries and establish a robust standard for assessing and advancing the next generation of autonomous GeoAI.",
+    "authors": [
+      "Bo Yu",
+      "Cheng Yang",
+      "Dongyang Hou",
+      "Chengfu Liu",
+      "Jiayao Liu",
+      "Chi Wang",
+      "Zhiming Zhang",
+      "Haifeng Li",
+      "Wentao Yang"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13888v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13888v1",
+    "fetched_at": "2026-04-16T09:14:21.675408"
+  },
+  {
+    "id": "2604.13748v1",
+    "title": "Forecasting Multivariate Time Series under Predictive Heterogeneity: A Validation-Driven Clustering Framework",
+    "abstract": "We study adaptive pooling under predictive heterogeneity in high-dimensional multivariate time series forecasting, where global models improve statistical efficiency but may fail to capture heterogeneous predictive structure, while naive specialization can induce negative transfer. We formulate adaptive pooling as a statistical decision problem and propose a validation-driven framework that determines when and how specialization should be applied. Rather than grouping series based on representation similarity, we define partitions through out-of-sample predictive performance, thereby aligning data organization with predictive risk, defined as expected out-of-sample loss and approximated via validation error. Cluster assignments are iteratively updated using validation losses for both point (Huber) and probabilistic (pinball) forecasting, improving robustness to heavy-tailed errors and local anomalies. To ensure reliability, we introduce a leakage-free fallback mechanism that reverts to a global model whenever specialization fails to improve validation performance, providing a safeguard against performance degradation under a strict training-validation-test protocol. Experiments on large-scale traffic datasets demonstrate consistent improvements over strong baselines while avoiding degradation when heterogeneity is weak. Overall, the proposed framework provides a principled and practically reliable approach to adaptive pooling in high-dimensional forecasting problems.",
+    "authors": [
+      "Ziling Ma",
+      "Ángel López Oriona",
+      "Hernando Ombao",
+      "Ying Sun"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "stat.ME",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13748v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13748v1",
+    "fetched_at": "2026-04-16T09:14:21.675441"
+  },
+  {
+    "id": "2604.13630v1",
+    "title": "SafeHarness: Lifecycle-Integrated Security Architecture for LLM-based Agent Deployment",
+    "abstract": "The performance of large language model (LLM) agents depends critically on the execution harness, the system layer that orchestrates tool use, context management, and state persistence. Yet this same architectural centrality makes the harness a high-value attack surface: a single compromise at the harness level can cascade through the entire execution pipeline. We observe that existing security approaches suffer from structural mismatch, leaving them blind to harness-internal state and unable to coordinate across the different phases of agent operation. In this paper, we introduce \\safeharness{}, a security architecture in which four proposed defense layers are woven directly into the agent lifecycle to address above significant limitations: adversarial context filtering at input processing, tiered causal verification at decision making, privilege-separated tool control at action execution, and safe rollback with adaptive degradation at state update. The proposed cross-layer mechanisms tie these layers together, escalating verification rigor, triggering rollbacks, and tightening tool privileges whenever sustained anomalies are detected. We evaluate \\safeharness{} on benchmark datasets across diverse harness configurations, comparing against four security baselines under five attack scenarios spanning six threat categories. Compared to the unprotected baseline, \\safeharness{} achieves an average reduction of approximately 38\\% in UBR and 42\\% in ASR, substantially lowering both the unsafe behavior rate and the attack success rate while preserving core task utility.",
+    "authors": [
+      "Xixun Lin",
+      "Yang Liu",
+      "Yancheng Chen",
+      "Yongxuan Wu",
+      "Yucheng Ning",
+      "Yilong Liu",
+      "Nan Sun",
+      "Shun Zhang",
+      "Bin Chong",
+      "Chuan Zhou",
+      "Yanan Cao",
+      "Li Guo"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13630v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13630v1",
+    "fetched_at": "2026-04-16T09:14:21.675492"
+  },
+  {
+    "id": "2604.13252v1",
+    "title": "Out of Context: Reliability in Multimodal Anomaly Detection Requires Contextual Inference",
+    "abstract": "Anomaly detection aims to identify observations that deviate from expected behavior. Because anomalous events are inherently sparse, most frameworks are trained exclusively on normal data to learn a single reference model of normality. This implicitly assumes that normal behavior can be captured by a single, unconditional reference distribution. In practice, however, anomalies are often context-dependent: A specific observation may be normal under one operating condition, yet anomalous under another. As machine learning systems are deployed in dynamic and heterogeneous environments, these fixed-context assumptions introduce structural ambiguity, i.e., the inability to distinguish contextual variation from genuine abnormality under marginal modeling, leading to unstable performance and unreliable anomaly assessments. While modern sensing systems frequently collect multimodal data capturing complementary aspects of both system behavior and operating conditions, existing methods treat all data streams equally, without distinguishing contextual information from anomaly-relevant signals. As a result, abnormality is often evaluated without explicitly conditioning on operating conditions. We argue that multimodal anomaly detection should be reframed as a cross-modal contextual inference problem, in which modalities play asymmetric roles, separating context from observation, to define abnormality conditionally rather than relative to a single global reference. This perspective has implications for model design, evaluation protocols, and benchmark construction, and outline open research challenges toward robust, context-aware multimodal anomaly detection.",
+    "authors": [
+      "Kevin Wilkinghoff",
+      "Neelu Madan",
+      "Juan Miguel Valverde",
+      "Kamal Nasrollahi",
+      "Radu Tudor Ionescu",
+      "Rafal Wisniewski",
+      "Thomas B. Moeslund",
+      "Wenwu Wang",
+      "Zheng-Hua Tan"
+    ],
+    "published": "2026-04-14",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13252v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13252v1",
+    "fetched_at": "2026-04-16T09:14:21.675532"
+  },
+  {
+    "id": "2604.14125v1",
+    "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+    "abstract": "While end-to-end Vision-Language-Action (VLA) models offer a promising paradigm for robotic manipulation, fine-tuning them on narrow control data often compromises the profound reasoning capabilities inherited from their base Vision-Language Models (VLMs). To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control. In high-level part, a VLM planner first performs task decomposition and visual grounding to generate structured plans, comprising a subtask instruction and a precise target bounding box. Then, to translate this plan into physical actions, we introduce a flow-matching Diffusion Transformer (DiT) action expert in low-level part equipped with a novel cascaded cross-attention mechanism. This design sequentially fuses global context, high-resolution object-centric crops and skill semantics, enabling the DiT to focus purely on robust execution. Our decoupled architecture preserves the VLM's zero-shot reasoning while allowing independent improvement of both components. Extensive experiments in simulation and the real world demonstrate that HiVLA significantly outperforms state-of-the-art end-to-end baselines, particularly excelling in long-horizon skill composition and the fine-grained manipulation of small objects in cluttered scenes.",
+    "authors": [
+      "Tianshuo Yang",
+      "Guanyu Chen",
+      "Yutian Chen",
+      "Zhixuan Liang",
+      "Yitian Liu",
+      "Zanxin Chen",
+      "Chunpu Xu",
+      "Haotian Liang",
+      "Jiangmiao Pang",
+      "Yao Mu",
+      "Ping Luo"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.14125v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.14125v1",
+    "fetched_at": "2026-04-16T09:14:56.669633"
+  },
+  {
+    "id": "2604.13959v1",
+    "title": "[Emerging Ideas] Artificial Tripartite Intelligence: A Bio-Inspired, Sensor-First Architecture for Physical AI",
+    "abstract": "As AI moves from data centers to robots and wearables, scaling ever-larger models becomes insufficient. Physical AI operates under tight latency, energy, privacy, and reliability constraints, and its performance depends not only on model capacity but also on how signals are acquired through controllable sensors in dynamic environments. We present Artificial Tripartite Intelligence (ATI), a bio-inspired, sensor-first architectural contract for physical AI. ATI is tripartite at the systems level: a Brainstem (L1) provides reflexive safety and signal-integrity control, a Cerebellum (L2) performs continuous sensor calibration, and a Cerebral Inference Subsystem spanning L3/L4 supports routine skill selection and execution, coordination, and deep reasoning. This modular organization allows sensor control, adaptive sensing, edge-cloud execution, and foundation model reasoning to co-evolve within one closed-loop architecture, while keeping time-critical sensing and control on device and invoking higher-level inference only when needed. We instantiate ATI in a mobile camera prototype under dynamic lighting and motion. In our routed evaluation (L3-L4 split inference), compared to the default auto-exposure setting, ATI (L1/L2 adaptive sensing) improves end-to-end accuracy from 53.8% to 88% while reducing remote L4 invocations by 43.3%. These results show the value of co-designing sensing and inference for embodied AI.",
+    "authors": [
+      "You Rim Choi",
+      "Subeom Park",
+      "Hyung-Sin Kim"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13959v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13959v1",
+    "fetched_at": "2026-04-16T09:14:56.669676"
+  },
+  {
+    "id": "2604.13954v1",
+    "title": "HINTBench: Horizon-agent Intrinsic Non-attack Trajectory Benchmark",
+    "abstract": "Existing agent-safety evaluation has focused mainly on externally induced risks. Yet agents may still enter unsafe trajectories under benign conditions. We study this complementary but underexplored setting through the lens of \\emph{intrinsic} risk, where intrinsic failures remain latent, propagate across long-horizon execution, and eventually lead to high-consequence outcomes. To evaluate this setting, we introduce \\emph{non-attack intrinsic risk auditing} and present \\textbf{HINTBench}, a benchmark of 629 agent trajectories (523 risky, 106 safe; 33 steps on average) supporting three tasks: risk detection, risk-step localization, and intrinsic failure-type identification. Its annotations are organized under a unified five-constraint taxonomy. Experiments reveal a substantial capability gap: strong LLMs perform well on trajectory-level risk detection, but their performance drops to below 35 Strict-F1 on risk-step localization, while fine-grained failure diagnosis proves even harder. Existing guard models transfer poorly to this setting. These findings establish intrinsic risk auditing as an open challenge for agent safety.",
+    "authors": [
+      "Jiacheng Wang",
+      "Jinchang Hou",
+      "Fabian Wang",
+      "Ping Jian",
+      "Chenfu Bao",
+      "Zhonghou Lv"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13954v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13954v1",
+    "fetched_at": "2026-04-16T09:14:56.669715"
+  },
+  {
+    "id": "2604.13946v1",
+    "title": "CollabCoder: Plan-Code Co-Evolution via Collaborative Decision-Making for Efficient Code Generation",
+    "abstract": "Automated code generation remains a persistent challenge in software engineering, as conventional multi-agent frameworks are often constrained by static planning, isolated execution, high computational overhead, and limited adaptability to complex tasks. This paper introduces CollabCoder, a novel Plan-Code Co-Evolution framework that improves code generation through dynamic multi-agent collaboration. The core idea is to design a collaborative decision-making process between the plan module and the code module to decide which module should be executed for the debugging process. Extensive experiments on widely used benchmarks demonstrate that CollabCoder consistently improves code quality and robustness across tasks. Importantly, CollabCoder achieves performance comparable to or exceeding current state-of-the-art methods while reducing computational overhead, with efficiency gains becoming more pronounced as benchmark difficulty increases. On the more challenging LiveCodeBench and xCodeEval benchmarks, our approach improves performance by 11-20% over strong baselines while reducing the number of API calls by an average of 4-10 per execution.",
+    "authors": [
+      "Duy Tung Doan",
+      "Quang Huy Phung",
+      "Dzung Nguyen",
+      "Khac-Hoai Nam Bui"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.SE",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13946v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13946v1",
+    "fetched_at": "2026-04-16T09:14:56.669748"
+  },
+  {
+    "id": "2604.13822v1",
+    "title": "UI-Copilot: Advancing Long-Horizon GUI Automation via Tool-Integrated Policy Optimization",
+    "abstract": "MLLM-based GUI agents have demonstrated strong capabilities in complex user interface interaction tasks. However, long-horizon scenarios remain challenging, as these agents are burdened with tasks beyond their intrinsic capabilities, suffering from memory degradation, progress confusion, and math hallucination. To address these challenges, we present UI-Copilot, a collaborative framework where the GUI agent focuses on task execution while a lightweight copilot provides on-demand assistance for memory retrieval and numerical computation. We introduce memory decoupling to separate persistent observations from transient execution context, and train the policy agent to selectively invoke the copilot as Retriever or Calculator based on task demands. To enable effective tool invocation learning, we propose Tool-Integrated Policy Optimization (TIPO), which separately optimizes tool selection through single-turn prediction and task execution through on-policy multi-turn rollouts. Experimental results show that UI-Copilot-7B achieves state-of-the-art performance on challenging MemGUI-Bench, outperforming strong 7B-scale GUI agents such as GUI-Owl-7B and UI-TARS-1.5-7B. Moreover, UI-Copilot-7B delivers a 17.1% absolute improvement on AndroidWorld over the base Qwen model, highlighting UI-Copilot's strong generalization to real-world GUI tasks.",
+    "authors": [
+      "Zhengxi Lu",
+      "Fei Tang",
+      "Guangyi Liu",
+      "Kaitao Song",
+      "Xu Tan",
+      "Jin Ma",
+      "Wenqi Zhang",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang",
+      "Yongliang Shen"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13822v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13822v1",
+    "fetched_at": "2026-04-16T09:14:56.669856"
+  },
+  {
+    "id": "2604.13787v1",
+    "title": "ToolOmni: Enabling Open-World Tool Use via Agentic learning with Proactive Retrieval and Grounded Execution",
+    "abstract": "Large Language Models (LLMs) enhance their problem-solving capability by utilizing external tools. However, in open-world scenarios with massive and evolving tool repositories, existing methods relying on static embedding retrieval or parameter memorization of tools struggle to align user intent with tool semantics or generalize to unseen tools, respectively, leading to suboptimal accuracy of open-world tool retrieval and execution. To address these, we present ToolOmni, a unified agentic framework that enables LLMs for open-world tool use by proactive retrieval and grounded execution within a reasoning loop. First, we construct a cold-start multi-turn interaction dataset to instill foundational agentic capabilities via Supervised Fine-Tuning (SFT). Then, we introduce open-world tool learning based on a Decoupled Multi-Objective GRPO algorithm, which simultaneously optimizes LLMs for both tool retrieval accuracy and execution efficacy in online environments. Extensive experiments demonstrate that ToolOmni achieves state-of-the-art performance both in retrieval and execution, surpassing strong baselines by a significant margin of +10.8% in end-to-end execution success rate, while exhibiting exceptional robustness and generalization capabilities.",
+    "authors": [
+      "Shouzheng Huang",
+      "Meishan Zhang",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13787v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13787v1",
+    "fetched_at": "2026-04-16T09:14:56.669890"
+  },
+  {
+    "id": "2604.13757v1",
+    "title": "Rethinking AI Hardware: A Three-Layer Cognitive Architecture for Autonomous Agents",
+    "abstract": "The next generation of autonomous AI systems will be constrained not only by model capability, but by how intelligence is structured across heterogeneous hardware. Current paradigms -- cloud-centric AI, on-device inference, and edge-cloud pipelines -- treat planning, reasoning, and execution as a monolithic process, leading to unnecessary latency, energy consumption, and fragmented behavioral continuity. We introduce the Tri-Spirit Architecture, a three-layer cognitive framework that decomposes intelligence into planning (Super Layer), reasoning (Agent Layer), and execution (Reflex Layer), each mapped to distinct compute substrates and coordinated via an asynchronous message bus. We formalize the system with a parameterized routing policy, a habit-compilation mechanism that promotes repeated reasoning paths into zero-inference execution policies, a convergent memory model, and explicit safety constraints. We evaluate the architecture in a reproducible simulation of 2000 synthetic tasks against cloud-centric and edge-only baselines. Tri-Spirit reduces mean task latency by 75.6 percent and energy consumption by 71.1 percent, while decreasing LLM invocations by 30 percent and enabling 77.6 percent offline task completion. These results suggest that cognitive decomposition, rather than model scaling alone, is a primary driver of system-level efficiency in AI hardware.",
+    "authors": [
+      "Li Chen"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13757v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13757v1",
+    "fetched_at": "2026-04-16T09:14:56.669915"
+  },
+  {
+    "id": "2604.13733v1",
+    "title": "Jump-Start Reinforcement Learning with Vision-Language-Action Regularization",
+    "abstract": "Reinforcement learning (RL) enables high-frequency, closed-loop control for robotic manipulation, but scaling to long-horizon tasks with sparse or imperfect rewards remains difficult due to inefficient exploration and poor credit assignment. Vision-Language-Action (VLA) models leverage large-scale multimodal pretraining to provide generalist, task-level reasoning, but current limitations hinder their direct use in fast and precise manipulation. In this paper, we propose Vision-Language-Action Jump-Starting (VLAJS), a method that bridges sparse VLA guidance with on-policy RL to improve exploration and learning efficiency. VLAJS treats VLAs as transient sources of high-level action suggestions that bias early exploration and improve credit assignment, while preserving the high-frequency, state-based control of RL. Our approach augments Proximal Policy Optimization (PPO) with a directional action-consistency regularization that softly aligns the RL agent's actions with VLA guidance during early training, without enforcing strict imitation, requiring demonstrations, or relying on continuous teacher queries. VLA guidance is applied sparsely and annealed over time, allowing the agent to adapt online and ultimately surpass the guiding policy. We evaluate VLAJS on six challenging manipulation tasks: lifting, pick-and-place, peg reorientation, peg insertion, poking, and pushing in simulation, and validate a subset on a real Franka Panda robot. VLAJS consistently outperforms PPO and distillation-style baselines in sample efficiency, reducing required environment interactions by over 50% in several tasks. Real-world experiments demonstrate zero-shot sim-to-real transfer and robust execution under clutter, object variation, and external perturbations.",
+    "authors": [
+      "Angelo Moroncelli",
+      "Roberto Zanetti",
+      "Marco Maccarini",
+      "Loris Roveda"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13733v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13733v1",
+    "fetched_at": "2026-04-16T09:14:56.669948"
+  },
+  {
+    "id": "2604.13694v1",
+    "title": "Weight Patching: Toward Source-Level Mechanistic Localization in LLMs",
+    "abstract": "Mechanistic interpretability seeks to localize model behavior to the internal components that causally realize it. Prior work has advanced activation-space localization and causal tracing, but modules that appear important in activation space may merely aggregate or amplify upstream signals rather than encode the target capability in their own parameters. To address this gap, we propose Weight Patching, a parameter-space intervention method for source-oriented analysis in paired same-architecture models that differ in how strongly they express a target capability under the inputs of interest. Given a base model and a behavior-specialized counterpart, Weight Patching replaces selected module weights from the specialized model into the base model under a fixed input. We instantiate the method on instruction following and introduce a framework centered on a vector-anchor behavioral interface that provides a shared internal criterion for whether a task-relevant control state has been formed or recovered in open-ended generation. Under this framework, the analysis reveals a hierarchy from shallow candidate source-side carriers to aggregation and routing modules, and further to downstream execution circuits. The recovered component scores can also guide mechanism-aware model merging, improving selective fusion across the evaluated expert combinations and providing additional external validation.",
+    "authors": [
+      "Chenghao Sun",
+      "Chengsheng Zhang",
+      "Guanzheng Qin",
+      "Rui Dai",
+      "Xinmei Tian"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13694v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13694v1",
+    "fetched_at": "2026-04-16T09:14:56.669983"
+  },
+  {
+    "id": "2604.13583v1",
+    "title": "BenGER: A Collaborative Web Platform for End-to-End Benchmarking of German Legal Tasks",
+    "abstract": "Evaluating large language models (LLMs) for legal reasoning requires workflows that span task design, expert annotation, model execution, and metric-based evaluation. In practice, these steps are split across platforms and scripts, limiting transparency, reproducibility, and participation by non-technical legal experts. We present the BenGER (Benchmark for German Law) framework, an open-source web platform that integrates task creation, collaborative annotation, configurable LLM runs, and evaluation with lexical, semantic, factual, and judge-based metrics. BenGER supports multi-organization projects with tenant isolation and role-based access control, and can optionally provide formative, reference-grounded feedback to annotators. We will demonstrate a live deployment showing end-to-end benchmark creation and analysis.",
+    "authors": [
+      "Sebastian Nagl",
+      "Matthias Grabmair"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13583v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13583v1",
+    "fetched_at": "2026-04-16T09:14:56.670072"
+  },
+  {
+    "id": "2604.13560v1",
+    "title": "Parameter-efficient Quantum Multi-task Learning",
+    "abstract": "Multi-task learning (MTL) improves generalization and data efficiency by jointly learning related tasks through shared representations. In the widely used hard-parameter-sharing setting, a shared backbone is combined with task-specific prediction heads. However, task-specific parameters can grow rapidly with the number of tasks. Therefore, designing multi-task heads that preserve task specialization while improving parameter efficiency remains a key challenge. In Quantum Machine Learning (QML), variational quantum circuits (VQCs) provide a compact mechanism for mapping classical data to quantum states residing in high-dimensional Hilbert spaces, enabling expressive representations within constrained parameter budgets. We propose a parameter-efficient quantum multi-task learning (QMTL) framework that replaces conventional task-specific linear heads with a fully quantum prediction head in a hybrid architecture. The model consists of a VQC with a shared, task-independent quantum encoding stage, followed by lightweight task-specific ansatz blocks enabling localized task adaptation while maintaining compact parameterization. Under a controlled and capacity-matched formulation where the shared representation dimension grows with the number of tasks, our parameter-scaling analysis demonstrates that a standard classical head exhibits quadratic growth, whereas the proposed quantum head parameter cost scales linearly. We evaluate QMTL on three multi-task benchmarks spanning natural language processing, medical imaging, and multimodal sarcasm detection, where we achieve performance comparable to, and in some cases exceeding, classical hard-parameter-sharing baselines while consistently outperforming existing hybrid quantum MTL models with substantially fewer head parameters. We further demonstrate QMTL's executability on noisy simulators and real quantum hardware, illustrating its feasibility.",
+    "authors": [
+      "Hevish Cowlessur",
+      "Chandra Thapa",
+      "Tansu Alpcan",
+      "Seyit Camtepe"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.LG",
+      "cs.ET",
+      "quant-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13560v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13560v1",
+    "fetched_at": "2026-04-16T09:14:56.670098"
+  },
+  {
+    "id": "2604.13488v1",
+    "title": "Towards Scalable Lightweight GUI Agents via Multi-role Orchestration",
+    "abstract": "Autonomous Graphical User Interface (GUI) agents powered by Multimodal Large Language Models (MLLMs) enable digital automation on end-user devices. While scaling both parameters and data has yielded substantial gains, advanced methods still suffer from prohibitive deployment costs on resource-constrained devices. When facing complex in-the-wild scenarios, lightweight GUI agents are bottlenecked by limited capacity and poor task scalability under end-to-end episodic learning, impeding adaptation to multi-agent systems (MAS), while training multiple skill-specific experts remains costly. Can we strike an effective trade-off in this cost-scalability dilemma, enabling lightweight MLLMs to participate in realistic GUI workflows? To address these challenges, we propose the LAMO framework, which endows a lightweight MLLM with GUI-specific knowledge and task scalability, allowing multi-role orchestration to expand its capability boundary for GUI automation. LAMO combines role-oriented data synthesis with a two-stage training recipe: (i) supervised fine-tuning with Perplexity-Weighted Cross-Entropy optimization for knowledge distillation and visual perception enhancement, and (ii) reinforcement learning for role-oriented cooperative exploration. With LAMO, we develop a task-scalable native GUI agent, LAMO-3B, supporting monolithic execution and MAS-style orchestration. When paired with advanced planners as a plug-and-play policy executor, LAMO-3B can continuously benefit from planner advances, enabling a higher performance ceiling. Extensive static and online evaluations validate the effectiveness of our design.",
+    "authors": [
+      "Ziwei Wang",
+      "Junjie Zheng",
+      "Leyang Yang",
+      "Sheng Zhou",
+      "Xiaoxuan Tang",
+      "Zhouhua Fang",
+      "Zhiwei Liu",
+      "Dajun Chen",
+      "Yong Li",
+      "Jiajun Bu"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13488v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13488v1",
+    "fetched_at": "2026-04-16T09:14:56.670135"
+  },
+  {
+    "id": "2604.13440v1",
+    "title": "A KL Lens on Quantization: Fast, Forward-Only Sensitivity for Mixed-Precision SSM-Transformer Models",
+    "abstract": "Deploying Large Language Models (LLMs) on edge devices faces severe computational and memory constraints, limiting real-time processing and on-device intelligence. Hybrid architectures combining Structured State Space Models (SSMs) with transformer-based LLMs offer a balance of efficiency and performance. Aggressive quantization can drastically cut model size and speed up inference, but its uneven effects on different components require careful management. In this work, we propose a lightweight, backpropagation-free, surrogate-based sensitivity analysis framework to identify hybrid SSM-Transformer components most susceptible to quantization-induced degradation. Relying solely on forward-pass metrics, our method avoids expensive gradient computations and retraining, making it suitable for situations where access to in-domain data is limited due to proprietary restrictions or privacy constraints. We also provide a formal analysis showing that the Kullback-Leibler (KL) divergence metric better captures quantization sensitivity for Language modeling tasks than widely adopted alternatives such as mean squared error (MSE) and signal-to-quantization-noise ratio (SQNR). Through extensive experiments on SSM and hybrid architectures, our ablation studies confirm that KL-based rankings align with observed performance drops and outperform alternative metrics. This framework enables the practical deployment of advanced hybrid models on resource-constrained edge devices with minimal accuracy loss. We further validate our approach with real-world on-device profiling on Intel Lunar Lake hardware, demonstrating that KL-guided mixed-precision achieves near-FP16 perplexity with model sizes and throughput competitive with Uniform INT4 on both CPU and GPU execution modes. Code is available at https://github.com/jasonkongie/kl-ssm-quant.",
+    "authors": [
+      "Jason Kong",
+      "Nilesh Prasad Pandey",
+      "Flavio Ponzina",
+      "Tajana Rosing"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13440v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13440v1",
+    "fetched_at": "2026-04-16T09:14:56.670161"
+  },
+  {
+    "id": "2604.13392v1",
+    "title": "ReSS: Learning Reasoning Models for Tabular Data Prediction via Symbolic Scaffold",
+    "abstract": "Tabular data remains prevalent in high-stakes domains such as healthcare and finance, where predictive models are expected to provide both high accuracy and faithful, human-understandable reasoning. While symbolic models offer verifiable logic, they lack semantic expressiveness. Meanwhile, general-purpose LLMs often require specialized fine-tuning to master domain-specific tabular reasoning. To address the dual challenges of scalable data curation and reasoning consistency, we propose ReSS, a systematic framework that bridges symbolic and neural reasoning models. ReSS leverages a decision-tree model to extract instance-level decision paths as symbolic scaffolds. These scaffolds, alongside input features and labels, guide an LLM to generate grounded natural-language reasoning that strictly adheres to the underlying decision logic. The resulting high-quality dataset is used to fine-tune a pretrained LLM into a specialized tabular reasoning model, further enhanced by a scaffold-invariant data augmentation strategy to improve generalization and explainability. To rigorously assess faithfulness, we introduce quantitative metrics including hallucination rate, explanation necessity, and explanation sufficiency. Experimental results on medical and financial benchmarks demonstrate that ReSS-trained models improve traditional decision trees and standard fine-tuning approaches up to $10\\%$ while producing faithful and consistent reasoning",
+    "authors": [
+      "Chenlang Yi",
+      "Gang Li",
+      "Zizhan Xiong",
+      "Tue Minh Cao",
+      "Yanmin Gong",
+      "My T. Thai",
+      "Tianbao Yang"
+    ],
+    "published": "2026-04-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.13392v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.13392v1",
+    "fetched_at": "2026-04-16T09:15:52.547929"
+  }
+]
