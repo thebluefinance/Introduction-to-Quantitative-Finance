@@ -1,0 +1,945 @@
+[
+  {
+    "id": "2604.19605v1",
+    "title": "Tuning in to Frequencies: How Global Assets Align U.S. Put-Call Parity Residuals",
+    "abstract": "Put-call parity holds under risk-neutral pricing, yet enforcement exposes arbitrageurs to path-dependent capital costs. The carry gap-the annualized wedge between option-implied and OIS discount factors-is a Q-measure object, but P-measure investment opportunities may shape its enforcement burden. We document this alignment in SPX and RUT options: low-frequency global asset returns raise in-sample R^2 by 0.093 and 0.082 and lift pooled out-of-sample R^2 from 0.221 to 0.364 (SPX) and 0.171 to 0.309 (RUT). Effective horizons differ by asset-IEFA (70 days), IGOV (400 days), IAU (336 days)-and asset terms largely absorb the OIS baseline, providing systematic evidence of a P-Q channel.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19605v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19605v1",
+    "fetched_at": "2026-04-22T09:15:28.101882",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093558"
+  },
+  {
+    "id": "2604.19604v1",
+    "title": "The Cost of a Free Lunch: Evidence from U.S. Derivatives Markets",
+    "abstract": "Put-call parity is a terminal-payoff identity; quoted residuals against traded futures are near zero. Yet enforcing parity is path-dependent, exposing arbitrageurs to daily settlement, margin, and finite capital. Using minute-level NBBO data on S&P 500 and Russell 2000 options, I extract option-implied discount factors, compare them with the OIS curve, and construct an annualized carry gap. A reduced-form specification centered on a volatility times sqrt(tau) path-risk term links the carry gap to implementation risk, trading frictions, and financial conditions, with coefficient signs stable across leave-one-year-out validation. The carry gap is an implementation wedge invisible in price space but systematic in carry space.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19604v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19604v1",
+    "fetched_at": "2026-04-22T09:15:28.101917",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093579"
+  },
+  {
+    "id": "2604.19580v1",
+    "title": "Probabilistic Forecasting for Day-ahead Electricity Prices, Battery Trading Strategies and the Economic Evaluation of Predictive Accuracy",
+    "abstract": "Electricity price forecasting supports decision-making in energy markets and asset operation. Probabilistic forecasts are increasingly adopted to explicitly quantify uncertainty, typically issued as quantile predictions or ensembles of the full predictive distribution. However, how improvements in statistical forecast quality translate into economic value remains unclear. Battery storage arbitrage in day-ahead markets is a popular application-based benchmark for this purpose. We analyze quantile-based trading strategies (QBTS) and identify two critical flaws: they do not incentivize honest probabilistic forecasting and they ignore the intertemporal dependence structure of electricity prices. We therefore frame battery optimization as a stochastic program based on fully probabilistic forecasts and examine decision quality measurement for risk-neutral and risk-averse settings under different uncertainty models. Our discussion touches both sides of the coin: How reliable is the economic evaluation of forecasting models though (simplified) application studies - and how do improvements in statistical forecast quality for stochastic programs relate to the decision-quality and economic performance? We provide theoretical justification and empirical evidence from a case study on the German electricity market. Our results highlight the pitfalls of ranking forecasting models through battery trading strategies. We conclude with implications for evaluation practice and directions for future research in application-based forecast assessment.",
+    "authors": [
+      "Simon Hirsch",
+      "Florian Ziel"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.ST",
+      "econ.EM",
+      "q-fin.PM",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19580v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19580v1",
+    "fetched_at": "2026-04-22T09:15:28.101941",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093596"
+  },
+  {
+    "id": "2604.19476v1",
+    "title": "Cross-Stock Predictability via LLM-Augmented Semantic Networks",
+    "abstract": "Text-based financial networks are increasingly used to study cross-stock return predictability. A common approach constructs links from similarities in firms' disclosure embeddings, but such networks often contain spurious edges because textual proximity does not necessarily imply economic connection. We propose a two-stage framework that first builds a sparse candidate graph from 10-K embeddings and then uses a large language model to classify and filter candidate edges according to their economic relations. The refined graph is used to aggregate pair-level mean-reversion signals into stock-level trading signals with relation-aware and distance-based weights. In a backtest on S&P 500 constituents from 2011 to 2019, LLM-based edge filtering improves the long-short Sharpe ratio from 0.742 to 0.820 and reduces maximum drawdown from $-$10.47% to $-$7.85%. These results suggest that LLM-based reasoning can improve the economic fidelity of text-derived financial networks and strengthen cross-stock predictability.",
+    "authors": [
+      "Yikuan Huang",
+      "Zheqi Fan",
+      "Kaiqi Hu",
+      "Yifan Ye"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.GN",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19476v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19476v1",
+    "fetched_at": "2026-04-22T09:15:28.101966",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093609"
+  },
+  {
+    "id": "2604.19290v1",
+    "title": "Orthogonal reparametrization of the Nelson-Siegel-Svensson interest rate curve model: conditioning, diagnostics, and identifiability",
+    "abstract": "The Nelson-Siegel-Svensson (NSS) interest rate curve model yields a separable nonlinear least-squares problem whose inner linear block is often ill-conditioned because the basis functions become nearly collinear. We analyze this instability via an exact orthogonal reparametrization of the design matrix. A thin QR decomposition produces orthogonal linear parameters for which, conditional on the nonlinear parameters, the Fisher information matrix is diagonal. We also derive a finite-horizon analytical orthogonalization: on $[0,T]$, the $4\\times 4$ continuous Gram matrix has closed-form entries involving exponentials, logarithms, and the exponential integral $E_1$, yielding an explicit horizon-dependent orthogonal NSS basis. Together with Jacobian-rank and profile-likelihood arguments, this representation clarifies the degenerate manifold $λ_1=λ_2$, where the Svensson extension loses two degrees of freedom. Orthogonalization leaves the least-squares fit and uncertainty of the original linear parameters unchanged, but isolates the conditioning structure. When the decay parameters are estimated jointly, the full first-order covariance in orthogonal coordinates admits an explicit Schur-complement form. The approach also yields a scalar identifiability diagnostic through the QR element $R_{44}$ and separates model reduction from numerical instability. Synthetic experiments confirm that orthogonal parametrization eliminates correlations among the linear parameters and keeps their conditional uncertainty uniform. A daily U.S. Treasury study on a reduced fixed 9-tenor grid from 1981 to 2026 shows smoother orthogonal parameter series than classical NSS parameters while the moving QR basis remains nearly constant.",
+    "authors": [
+      "Robert Flassig",
+      "Emrah Gülay",
+      "Daniel Guterding"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF",
+      "q-fin.PR",
+      "q-fin.RM",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19290v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19290v1",
+    "fetched_at": "2026-04-22T09:15:28.101990",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093636"
+  },
+  {
+    "id": "2604.19107v1",
+    "title": "Structural Dynamics of G5 Stock Markets During Exogenous Shocks: A Random Matrix Theory-Based Complexity Gap Approach",
+    "abstract": "We identify a robust structural signature of stock markets during exogenous shock events by analyzing collective return dynamics across G5 countries. Using Random Matrix Theory, we introduce the complexity gap, defined as the difference between the normalized largest eigenvalue and the average pairwise correlation, to quantify changes in market structure. This measure reveals a consistent three-phase pattern across multiple shocks, including the 2025 U.S. tariff event, the COVID-19 crisis, and country-specific shocks in Japan and China during 2024. Before a shock, markets show a positive complexity gap, reflecting a rich structure with multiple interacting factors. During shocks, the gap collapses to near zero, signaling strong synchronization under a single dominant mode. Post-shock recovery follows a nonmonotonic path: an initial widening (a false recovery), a temporary recollapse, and final sustained restoration. This pattern holds at both market and sector levels and across global and local shocks. Ordinal entropy analysis confirms the same sequence of collapse and false recovery in directional diversity. We further demonstrate that lower complexity gap values predict higher future portfolio volatility, especially after shocks, establishing its value as a state-dependent risk indicator. For investors, initial gap widening may mislead, while sustained widening signals genuine structural stabilization. These findings reveal a robust structural signature governing financial market dynamics during crisis and recovery periods.",
+    "authors": [
+      "Kundan Mukhia",
+      "Imran Ansari",
+      "Md. Nurujjaman"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19107v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19107v1",
+    "fetched_at": "2026-04-22T09:15:28.102010",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093648"
+  },
+  {
+    "id": "2604.18821v1",
+    "title": "Evaluating Structured Strategy Backtests: Peer Benchmarks, Regime Timing, and Live Performance",
+    "abstract": "Institutional allocators often evaluate structured strategies on the basis of marketed backtests -- hypothetical track records constructed by applying a strategy's rules to historical data prior to any live trading, also referred to as pro-forma performance. It is unclear how much of that signal survives once the strategy is actually traded. Using 1,726 commercially distributed structured strategies from ten global institutions, this paper shows that raw pro-forma performance has only limited portability into the live period and weakens sharply once live outcomes are measured relative to peer and external benchmarks. The evidence indicates that marketed backtests predominantly reflect the common factor regime present before launch rather than strategy-specific skill. Strategies launched after unusually strong bucket-factor conditions experience materially worse subsequent deterioration. For allocators, the implication is practical: backtests should be judged relative to appropriate peer benchmarks, and the discount applied to them should increase when launch occurs after an extreme factor run.",
+    "authors": [
+      "Chang Liu"
+    ],
+    "published": "2026-04-20",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.18821v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.18821v1",
+    "fetched_at": "2026-04-22T09:15:28.102027",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093658"
+  },
+  {
+    "id": "2604.17579v2",
+    "title": "Vault as a credit instrument",
+    "abstract": "We derive five tractable credit risk metrics for DeFi lending vault depositors, grounded in a formal three level decomposition of vault risk into mechanical loss channels (Level 1), governance quality (Level 2) and smart contract code integrity (Level 3). For Level 1, we show that six structural features of onchain execution (oracle execution divergence, endogenous recovery, full information run dynamics, timelock constrained governance, oracle manipulation and congestion driven liquidation failure) break canonical TradFi analogies and generate depositor loss channels absent from standard credit frameworks. Vault credit risk metrics translate these channels into measurable risk components which are aggregated into a vault credit score. The empirical contribution is an implementable estimation architecture for credit risk metrics, including required onchain data, identification strategies for core parameters, partial identification bounds and a coherent stress scenario methodology. The results have direct implications for vault risk management and for minimum transparency standards necessary for depositor risk assessment.",
+    "authors": [
+      "Anastasiia Zbandut",
+      "Carolina Goldstein"
+    ],
+    "published": "2026-04-19",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.17579v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.17579v2",
+    "fetched_at": "2026-04-22T09:15:28.102139",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093675"
+  },
+  {
+    "id": "2604.16835v1",
+    "title": "The CTLNet for Shanghai Composite Index Prediction",
+    "abstract": "Shanghai Composite Index prediction has become a hot issue for many investors and academic researchers. Deep learning models are widely applied in multivariate time series forecasting, including recurrent neural networks (RNN), convolutional neural networks (CNN), and transformers. Specifically, the Transformer encoder, with its unique attention mechanism and parallel processing capabilities, has become an important tool in time series prediction, and has an advantage in dealing with long sequence dependencies and multivariate data correlations. Drawing on the strengths of various models, we propose the CNN-Transformer-LSTM Networks (CTLNet). This paper explores the application of CTLNet for Shanghai Composite Index prediction and the comparative experiments show that the proposed model outperforms state-of-the-art baselines.",
+    "authors": [
+      "Haibin Jiao"
+    ],
+    "published": "2026-04-18",
+    "categories": [
+      "q-fin.ST",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.16835v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.16835v1",
+    "fetched_at": "2026-04-22T09:15:28.102232",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093686"
+  },
+  {
+    "id": "2604.18846v1",
+    "title": "Trainability Beyond Linearity in Variational Quantum Objectives",
+    "abstract": "Barren-plateau results have established exponential gradient suppression as a widely cited obstacle to the scalability of variational quantum algorithms. When and whether these results extend to a given objective has been addressed through loss-specific arguments, but a general structural characterization has remained open. We show that the objective itself admits a fixed-observable representation if and only if the loss is affine in the measured statistics, thereby identifying the exact boundary of the standard concentration-based proof template. Existing transfer results for non-affine losses achieve this reduction under additional assumptions; our characterization implies that such a reduction is not structurally available for a class of non-affine objectives, placing them outside the automatic reach of the existing proof template. Beyond the affine regime, a chain-rule decomposition reveals three governing factors -- model responsivity, loss-side signal, and transmittance -- and induces a loss-class dichotomy: bounded-gradient losses inherit suppression, while amplification-capable losses can in principle counteract it. In the exponentially wide setting, both classes fail, but for different structural reasons. When the interface is instead designed at polynomial width -- exposing coarse-grained statistics rather than individual bitstring probabilities -- the exponential-dimensional obstruction is relaxed and the dichotomy plays a genuine role. In a numerical demonstration on a charge-conserving quantum system, the amplification-capable objective produces resolved gradients several orders of magnitude larger than affine and inheriting baselines at comparable shot budgets. Over the tested interval, its scaling trend is statistically distinguished from the exponential trend of both alternatives. The boundary is affine; what lies beyond it is a representation-design problem.",
+    "authors": [
+      "Gordon Ma",
+      "Xiufan Li"
+    ],
+    "published": "2026-04-20",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.18846v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.18846v1",
+    "fetched_at": "2026-04-22T09:15:34.948468",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093698"
+  },
+  {
+    "id": "2604.19538v1",
+    "title": "Integrating Anomaly Detection into Agentic AI for Proactive Risk Management in Human Activity",
+    "abstract": "Agentic AI, with goal-directed, proactive, and autonomous decision-making capabilities, offers a compelling opportunity to address movement-related risks in human activity, including the persistent hazard of falls among elderly populations. Despite numerous approaches to fall mitigation through fall prediction and detection, existing systems have not yet functioned as universal solutions across care pathways and safety-critical environments. This is largely due to limitations in consistently handling real-world complexity, particularly poor context awareness, high false alarm rates, environmental noise, and data scarcity. We argue that fall detection and fall prediction can usefully be formulated as anomaly detection problems and more effectively addressed through an agentic AI system. More broadly, this perspective enables the early identification of subtle deviations in movement patterns associated with increased risk, whether arising from age-related decline, fatigue, or environmental factors. While technical requirements for immediate deployment are beyond the scope of this paper, we propose a conceptual framework that highlights potential value. This framework promotes a well-orchestrated approach to risk management by dynamically selecting relevant tools and integrating them into adaptive decision-making workflows, rather than relying on static configurations tailored to narrowly defined scenarios.",
+    "authors": [
+      "Farbod Zorriassatine",
+      "Ahmad Lotfi"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.AI",
+      "cs.HC",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19538v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19538v1",
+    "fetched_at": "2026-04-22T09:15:41.691121",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093709"
+  },
+  {
+    "id": "2604.19342v1",
+    "title": "Are Large Language Models Economically Viable for Industry Deployment?",
+    "abstract": "Generative AI-powered by Large Language Models (LLMs)-is increasingly deployed in industry across healthcare decision support, financial analytics, enterprise retrieval, and conversational automation, where reliability, efficiency, and cost control are critical. In such settings, models must satisfy strict constraints on energy, latency, and hardware utilization-not accuracy alone. Yet prevailing evaluation pipelines remain accuracy-centric, creating a Deployment-Evaluation Gap-the absence of operational and economic criteria in model assessment. To address this gap, we present EDGE-EVAL-a industry-oriented benchmarking framework that evaluates LLMs across their full lifecycle on legacy NVIDIA Tesla T4 GPUs. Benchmarking LLaMA and Qwen variants across three industrial tasks, we introduce five deployment metrics-Economic Break-Even (Nbreak), Intelligence-Per-Watt (IPW ), System Density (\\r{ho}sys), Cold-Start Tax (Ctax), and Quantization Fidelity (Qret)-capturing profitability, energy efficiency, hardware scaling, serverless feasibility, and compression safety. Our results reveal a clear efficiency frontier-models in the <2B parameter class dominate larger baselines across economic and ecological dimensions. LLaMA-3.2-1B (INT4) achieves ROI break-even in 14 requests (median), delivers 3x higher energy-normalized intelligence than 7B models, and exceeds 6,900 tokens/s/GB under 4-bit quantization. We further uncover an efficiency anomaly-while QLoRA reduces memory footprint, it increases adaptation energy by up to 7x for small models-challenging prevailing assumptions about quantization-aware training in edge deployment.",
+    "authors": [
+      "Abdullah Mohammad",
+      "Sushant Kumar Ray",
+      "Pushkar Arora",
+      "Rafiq Ali",
+      "Ebad Shabbir",
+      "Gautam Siddharth Kashyap",
+      "Jiechao Gao",
+      "Usman Naseem"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19342v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19342v1",
+    "fetched_at": "2026-04-22T09:15:41.691194",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093719"
+  },
+  {
+    "id": "2604.19324v1",
+    "title": "PLaMo 2.1-VL Technical Report",
+    "abstract": "We introduce PLaMo 2.1-VL, a lightweight Vision Language Model (VLM) for autonomous devices, available in 8B and 2B variants and designed for local and edge deployment with Japanese-language operation. Focusing on Visual Question Answering (VQA) and Visual Grounding as its core capabilities, we develop and evaluate the models for two real-world application scenarios: factory task analysis via tool recognition, and infrastructure anomaly detection. We also develop a large-scale synthetic data generation pipeline and comprehensive Japanese training and evaluation resources. PLaMo 2.1-VL outperforms comparable open models on Japanese and English benchmarks, achieving 61.5 ROUGE-L on JA-VG-VQA-500 and 85.2% accuracy on Japanese Ref-L4. For the two application scenarios, it achieves 53.9% zero-shot accuracy on factory task analysis, and fine-tuning on power plant data improves anomaly detection bbox + label F1-score from 39.7 to 64.9.",
+    "authors": [
+      "Tommi Kerola",
+      "Yuya Masuda",
+      "Takashi Masuko",
+      "Toshiki Nakanishi",
+      "Daisuke Nishino",
+      "Kuniyuki Takahashi",
+      "Hanqin Wang",
+      "Yoshihiro Yamada"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19324v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19324v1",
+    "fetched_at": "2026-04-22T09:15:41.691222",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093728"
+  },
+  {
+    "id": "2604.19191v1",
+    "title": "Improved Anomaly Detection in Medical Images via Mean Shift Density Enhancement",
+    "abstract": "Anomaly detection in medical imaging is essential for identifying rare pathological conditions, particularly when annotated abnormal samples are limited. We propose a hybrid anomaly detection framework that integrates self-supervised representation learning with manifold-based density estimation, a combination that remains largely unexplored in this domain.   Medical images are first embedded into a latent feature space using pretrained, potentially domain-specific, backbones. These representations are then refined via Mean Shift Density Enhancement (MSDE), an iterative manifold-shifting procedure that moves samples toward regions of higher likelihood. Anomaly scores are subsequently computed using Gaussian density estimation in a PCA-reduced latent space, where Mahalanobis distance measures deviation from the learned normal distribution. The framework follows a one-class learning paradigm and requires only normal samples for training.   Extensive experiments on seven medical imaging datasets demonstrate state-of-the-art performance. MSDE achieves the highest AUC on four datasets and the highest Average Precision on five datasets, including near-perfect performance on brain tumor detection (0.981 AUC/AP). These results underscore the potential of the proposed framework as a scalable clinical decision-support tool for early disease detection, screening in low-label settings, and robust deployment across diverse imaging modalities.",
+    "authors": [
+      "Pritam Kar",
+      "Gouri Lakshmi S",
+      "Saptarshi Bej"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19191v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19191v1",
+    "fetched_at": "2026-04-22T09:15:41.691243",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093737"
+  },
+  {
+    "id": "2604.19118v1",
+    "title": "DP-FlogTinyLLM: Differentially private federated log anomaly detection using Tiny LLMs",
+    "abstract": "Modern distributed systems generate massive volumes of log data that are critical for detecting anomalies and cyber threats. However, in real world settings, these logs are often distributed across multiple organizations and cannot be centralized due to privacy and security constraints. Existing log anomaly detection methods, including recent large language model (LLM) based approaches, largely rely on centralized training and are not suitable for such environments. In this paper, we propose DP-FLogTinyLLM, a privacy preserving federated framework for log anomaly detection using parameter efficient LLMs. Our approach enables collaborative learning without sharing raw log data by integrating federated optimization with differential privacy. To ensure scalability in resource constrained environments, we employ low rank adaptation (LoRA) for efficient fine tuning of Tiny LLMs at each client. Empirical results on the Thunderbird and BGL datasets show that the proposed framework matches the performance of centralized LLM based methods, while incurring additional computational overhead due to privacy mechanisms. Compared to existing federated baselines, DP-FLogTinyLLM consistently achieves higher precision and F1-score, with particularly strong gains on the Thunderbird dataset, highlighting its effectiveness in detecting anomalies while minimizing false positives.",
+    "authors": [
+      "Isaiah Thompson",
+      "Tanmay Sen",
+      "Ritwik Bhattacharya"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19118v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19118v1",
+    "fetched_at": "2026-04-22T09:15:41.691262",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093746"
+  },
+  {
+    "id": "2604.18970v1",
+    "title": "Mechanistic Anomaly Detection via Functional Attribution",
+    "abstract": "We can often verify the correctness of neural network outputs using ground truth labels, but we cannot reliably determine whether the output was produced by normal or anomalous internal mechanisms. Mechanistic anomaly detection (MAD) aims to flag these cases, but existing methods either depend on latent space analysis, which is vulnerable to obfuscation, or are specific to particular architectures and modalities. We reframe MAD as a functional attribution problem: asking to what extent samples from a trusted set can explain the model's output, where attribution failure signals anomalous behavior. We operationalize this using influence functions, measuring functional coupling between test samples and a small reference set via parameter-space sampling. We evaluate across multiple anomaly types and modalities. For backdoors in vision models, our method achieves state-of-the-art detection on BackdoorBench, with an average Defense Effectiveness Rating (DER) of 0.93 across seven attacks and four datasets (next best 0.83). For LLMs, we similarly achieve a significant improvement over baselines for several backdoor types, including on explicitly obfuscated models. Beyond backdoors, our method can detect adversarial and out-of-distribution samples, and distinguishes multiple anomalous mechanisms within a single model. Our results establish functional attribution as an effective, modality-agnostic tool for detecting anomalous behavior in deployed models.",
+    "authors": [
+      "Hugo Lyons Keenan",
+      "Christopher Leckie",
+      "Sarah Erfani"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.LG",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.18970v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.18970v1",
+    "fetched_at": "2026-04-22T09:15:41.691282",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093756"
+  },
+  {
+    "id": "2604.19737v1",
+    "title": "Safe Continual Reinforcement Learning in Non-stationary Environments",
+    "abstract": "Reinforcement learning (RL) offers a compelling data-driven paradigm for synthesizing controllers for complex systems when accurate physical models are unavailable; however, most existing control-oriented RL methods assume stationarity and, therefore, struggle in real-world non-stationary deployments where system dynamics and operating conditions can change unexpectedly. Moreover, RL controllers acting in physical environments must satisfy safety constraints throughout their learning and execution phases, rendering transient violations during adaptation unacceptable. Although continual RL and safe RL have each addressed non-stationarity and safety, respectively, their intersection remains comparatively unexplored, motivating the study of safe continual RL algorithms that can adapt over the system's lifetime while preserving safety. In this work, we systematically investigate safe continual reinforcement learning by introducing three benchmark environments that capture safety-critical continual adaptation and by evaluating representative approaches from safe RL, continual RL, and their combinations. Our empirical results reveal a fundamental tension between maintaining safety constraints and preventing catastrophic forgetting under non-stationary dynamics, with existing methods generally failing to achieve both objectives simultaneously. To address this shortcoming, we examine regularization-based strategies that partially mitigate this trade-off and characterize their benefits and limitations. Finally, we outline key open challenges and research directions toward developing safe, resilient learning-based controllers capable of sustained autonomous operation in changing environments.",
+    "authors": [
+      "Austin Coursey",
+      "Abel Diaz-Gonzalez",
+      "Marcos Quinones-Grueiro",
+      "Gautam Biswas"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19737v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19737v1",
+    "fetched_at": "2026-04-22T09:16:12.933695",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093766"
+  },
+  {
+    "id": "2604.19677v1",
+    "title": "Learning Hybrid-Control Policies for High-Precision In-Contact Manipulation Under Uncertainty",
+    "abstract": "Reinforcement learning-based control policies have been frequently demonstrated to be more effective than analytical techniques for many manipulation tasks. Commonly, these methods learn neural control policies that predict end-effector pose changes directly from observed state information. For tasks like inserting delicate connectors which induce force constraints, pose-based policies have limited explicit control over force and rely on carefully tuned low-level controllers to avoid executing damaging actions. In this work, we present hybrid position-force control policies that learn to dynamically select when to use force or position control in each control dimension. To improve learning efficiency of these policies, we introduce Mode-Aware Training for Contact Handling (MATCH) which adjusts policy action probabilities to explicitly mirror the mode selection behavior in hybrid control. We validate MATCH's learned policy effectiveness using fragile peg-in-hole tasks under extreme localization uncertainty. We find MATCH substantially outperforms pose-control policies -- solving these tasks with up to 10% higher success rates and 5x fewer peg breaks than pose-only policies under common types of state estimation error. MATCH also demonstrates data efficiency equal to pose-control policies, despite learning in a larger and more complex action space. In over 1600 sim-to-real experiments, we find MATCH succeeds twice as often as pose policies in high noise settings (33% vs.~68%) and applies ~30% less force on average compared to variable impedance policies on a Franka FR3 in laboratory conditions.",
+    "authors": [
+      "Hunter L. Brown",
+      "Geoffrey Hollinger",
+      "Stefan Lee"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19677v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19677v1",
+    "fetched_at": "2026-04-22T09:16:12.933726",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093777"
+  },
+  {
+    "id": "2604.19667v1",
+    "title": "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
+    "abstract": "At present, executable visual workflows have emerged as a mainstream paradigm in real-world industrial deployments, offering strong reliability and controllability. However, in current practice, such workflows are almost entirely constructed through manual engineering: developers must carefully design workflows, write prompts for each step, and repeatedly revise the logic as requirements evolve-making development costly, time-consuming, and error-prone. To study whether large language models can automate this multi-round interaction process, we introduce Chat2Workflow, a benchmark for generating executable visual workflows directly from natural language, and propose a robust agentic framework to mitigate recurrent execution errors. Chat2Workflow is built from a large collection of real-world business workflows, with each instance designed so that the generated workflow can be transformed and directly deployed to practical workflow platforms such as Dify and Coze. Experimental results show that while state-of-the-art language models can often capture high-level intent, they struggle to generate correct, stable, and executable workflows, especially under complex or changing requirements. Although our agentic framework yields up to 5.34% resolve rate gains, the remaining real-world gap positions Chat2Workflow as a foundation for advancing industrial-grade automation. Code is available at https://github.com/zjunlp/Chat2Workflow.",
+    "authors": [
+      "Yi Zhong",
+      "Buqiang Xu",
+      "Yijun Wang",
+      "Zifei Shan",
+      "Shuofei Qiao",
+      "Guozhou Zheng",
+      "Ningyu Zhang"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19667v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19667v1",
+    "fetched_at": "2026-04-22T09:16:12.933754",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093787"
+  },
+  {
+    "id": "2604.19657v1",
+    "title": "An AI Agent Execution Environment to Safeguard User Data",
+    "abstract": "AI agents promise to serve as general-purpose personal assistants for their users, which requires them to have access to private user data (e.g., personal and financial information). This poses a serious risk to security and privacy. Adversaries may attack the AI model (e.g., via prompt injection) to exfiltrate user data. Furthermore, sharing private data with an AI agent requires users to trust a potentially unscrupulous or compromised AI model provider with their private data.   This paper presents GAAP (Guaranteed Accounting for Agent Privacy), an execution environment for AI agents that guarantees confidentiality for private user data. Through dynamic and directed user prompts, GAAP collects permission specifications from users describing how their private data may be shared, and GAAP enforces that the agent's disclosures of private user data, including disclosures to the AI model and its provider, comply with these specifications. Crucially, GAAP provides this guarantee deterministically, without trusting the agent with private user data, and without requiring any AI model or the user prompt to be free of attacks.   GAAP enforces the user's permission specification by tracking how the AI agent accesses and uses private user data. It augments Information Flow Control with novel persistent data stores and annotations that enable it to track the flow of private information both across execution steps within a single task, and also over multiple tasks separated in time. Our evaluation confirms that GAAP blocks all data disclosure attacks, including those that make other state-of-the-art systems disclose private user data to untrusted parties, without a significant impact on agent utility.",
+    "authors": [
+      "Robert Stanley",
+      "Avi Verma",
+      "Lillian Tsai",
+      "Konstantinos Kallas",
+      "Sam Kumar"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.OS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19657v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19657v1",
+    "fetched_at": "2026-04-22T09:16:12.933780",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093797"
+  },
+  {
+    "id": "2604.19606v1",
+    "title": "AblateCell: A Reproduce-then-Ablate Agent for Virtual Cell Repositories",
+    "abstract": "Systematic ablations are essential to attribute performance gains in AI Virtual Cells, yet they are rarely performed because biological repositories are under-standardized and tightly coupled to domain-specific data and formats. While recent coding agents can translate ideas into implementations, they typically stop at producing code and lack a verifier that can reproduce strong baselines and rigorously test which components truly matter. We introduce AblateCell, a reproduce-then-ablate agent for virtual cell repositories that closes this verification gap. AblateCell first reproduces reported baselines end-to-end by auto-configuring environments, resolving dependency and data issues, and rerunning official evaluations while emitting verifiable artifacts. It then conducts closed-loop ablation by generating a graph of isolated repository mutations and adaptively selecting experiments under a reward that trades off performance impact and execution cost. Evaluated on three single-cell perturbation prediction repositories (CPA, GEARS, BioLORD), AblateCell achieves 88.9% (+29.9% to human expert) end-to-end workflow success and 93.3% (+53.3% to heuristic) accuracy in recovering ground-truth critical components. These results enable scalable, repository-grounded verification and attribution directly on biological codebases.",
+    "authors": [
+      "Xue Xia",
+      "Chengkai Yao",
+      "Mingyu Tsoi",
+      "Xinjie Mao",
+      "Wenxuan Huang",
+      "Jiaqi Wei",
+      "Hao Wu",
+      "Cheng Tan",
+      "Lang Yu",
+      "Yuejin Yang",
+      "Siqi Sun",
+      "Zhangyang Gao"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19606v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19606v1",
+    "fetched_at": "2026-04-22T09:16:12.933815",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093806"
+  },
+  {
+    "id": "2604.19548v1",
+    "title": "Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment",
+    "abstract": "Large Language Model agents have rapidly evolved from static text generators into dynamic systems capable of executing complex autonomous workflows. To enhance reliability, multi-agent frameworks assigning specialized roles are increasingly adopted to enable self-reflection and mutual auditing. While such role-playing effectively leverages domain expert knowledge, we find it simultaneously induces a human-like cognitive bias known as Actor-Observer Asymmetry (AOA). Specifically, an agent acting as an actor (during self-reflection) tends to attribute failures to external factors, whereas an observer (during mutual auditing) attributes the same errors to internal faults. We quantify this using our new Ambiguous Failure Benchmark, which reveals that simply swapping perspectives triggers the AOA effect in over 20% of cases for most models. To tame this bias, we introduce ReTAS (Reasoning via Thesis-Antithesis-Synthesis), a model trained through dialectical alignment to enforce perspective-invariant reasoning. By integrating dialectical chain-of-thought with Group Relative Policy Optimization, ReTAS guides agents to synthesize conflicting viewpoints into an objective consensus. Experiments demonstrate that ReTAS effectively mitigates attribution inconsistency and significantly improves fault resolution rates in ambiguous scenarios.",
+    "authors": [
+      "Bobo Li",
+      "Rui Wu",
+      "Zibo Ji",
+      "Meishan Zhang",
+      "Hao Fei",
+      "Min Zhang",
+      "Mong-Li Lee",
+      "Wynne Hsu"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19548v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19548v1",
+    "fetched_at": "2026-04-22T09:16:12.933843",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093816"
+  },
+  {
+    "id": "2604.19540v1",
+    "title": "Mesh Memory Protocol: Semantic Infrastructure for Multi-Agent LLM Systems",
+    "abstract": "Teams of LLM agents increasingly collaborate on tasks spanning days or weeks: multi-day data-generation sprints where generator, reviewer, and auditor agents coordinate in real time on overlapping batches; specialists carrying findings forward across session restarts; product decisions compounding over many review rounds. This requires agents to share, evaluate, and combine each other's cognitive state in real time across sessions. We call this cross-session agent-to-agent cognitive collaboration, distinct from parallel agent execution. To enable it, three problems must be solved together. (P1) Each agent decides field by field what to accept from peers, not accept or reject whole messages. (P2) Every claim is traceable to source, so returning claims are recognised as echoes of the receiver's own prior thinking. (P3) Memory that survives session restarts is relevant because of how it was stored, not how it is retrieved. These are protocol-level properties at the semantic layer of agent communication, distinct from tool-access and task-delegation protocols at lower layers. We call this missing protocol layer \"semantic infrastructure,\" and the Mesh Memory Protocol (MMP) specifies it. Four composable primitives work together: CAT7, a fixed seven-field schema for every Cognitive Memory Block (CMB); SVAF, which evaluates each field against the receiver's role-indexed anchors and realises P1; inter-agent lineage, carried as parents and ancestors of content-hash keys and realising P2; and remix, which stores only the receiver's own role-evaluated understanding of each accepted CMB, never the raw peer signal, realising P3. MMP is specified, shipped, and running in production across three reference deployments, where each session runs an autonomous agent as a mesh peer with its own identity and memory, collaborating with other agents across the network for collective intelligence.",
+    "authors": [
+      "Hongwei Xu"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19540v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19540v1",
+    "fetched_at": "2026-04-22T09:16:12.933860",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093826"
+  },
+  {
+    "id": "2604.19526v1",
+    "title": "Evaluating LLM-Generated Obfuscated XSS Payloads for Machine Learning-Based Detection",
+    "abstract": "Cross-site scripting (XSS) remains a persistent web security vulnerability, especially because obfuscation can change the surface form of a malicious payload while preserving its behavior. These transformations make it difficult for traditional and machine learning-based detection systems to reliably identify attacks. Existing approaches for generating obfuscated payloads often emphasize syntactic diversity, but they do not always ensure that the generated samples remain behaviorally valid. This paper presents a structured pipeline for generating and evaluating obfuscated XSS payloads using large language models (LLMs). The pipeline combines deterministic transformation techniques with LLM-based generation and uses a browser- based runtime evaluation procedure to compare payload behavior in a controlled execution environment. This allows generated samples to be assessed through observable runtime behavior rather than syntactic similarity alone. In the evaluation, an untuned baseline language model achieves a runtime behavior match rate of 0.15, while fine-tuning on behavior-preserving source-target obfuscation pairs improves the match rate to 0.22. Although this represents a measurable improvement, the results show that current LLMs still struggle to generate obfuscations that preserve observed runtime behavior. A downstream classifier evaluation further shows that adding generated payloads does not improve detection performance in this setting, although behavior- filtered generated samples can be incorporated without materially degrading performance. Overall, the study demonstrates both the promise and the limits of applying generative models to adversarial security data generation and emphasizes the importance of runtime behavior checks in improving the quality of generated data for downstream detection systems.",
+    "authors": [
+      "Divyesh Gabbireddy",
+      "Suman Saha"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CR",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19526v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19526v1",
+    "fetched_at": "2026-04-22T09:16:12.933878",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093836"
+  },
+  {
+    "id": "2604.19516v1",
+    "title": "From Experience to Skill: Multi-Agent Generative Engine Optimization via Reusable Strategy Learning",
+    "abstract": "Generative engines (GEs) are reshaping information access by replacing ranked links with citation-grounded answers, yet current Generative Engine Optimization (GEO) methods optimize each instance in isolation, unable to accumulate or transfer effective strategies across tasks and engines. We reframe GEO as a strategy learning problem and propose MAGEO, a multi-agent framework in which coordinated planning, editing, and fidelity-aware evaluation serve as the execution layer, while validated editing patterns are progressively distilled into reusable, engine-specific optimization skills. To enable controlled assessment, we introduce a Twin Branch Evaluation Protocol for causal attribution of content edits and DSV-CF, a dual-axis metric that unifies semantic visibility with attribution accuracy. We further release MSME-GEO-Bench, a multi-scenario, multi-engine benchmark grounded in real-world queries. Experiments on three mainstream engines show that MAGEO substantially outperforms heuristic baselines in both visibility and citation fidelity, with ablations confirming that engine-specific preference modeling and strategy reuse are central to these gains, suggesting a scalable learning-driven paradigm for trustworthy GEO. Code is available at https://github.com/Wu-beining/MAGEO",
+    "authors": [
+      "Beining Wu",
+      "Fuyou Mao",
+      "Jiong Lin",
+      "Cheng Yang",
+      "Jiaxuan Lu",
+      "Yifu Guo",
+      "Siyu Zhang",
+      "Yifan Wu",
+      "Ying Huang",
+      "Fu Li"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19516v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19516v1",
+    "fetched_at": "2026-04-22T09:16:12.933908",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093845"
+  },
+  {
+    "id": "2604.19404v1",
+    "title": "M$^{2}$GRPO: Mamba-based Multi-Agent Group Relative Policy Optimization for Biomimetic Underwater Robots Pursuit",
+    "abstract": "Traditional policy learning methods in cooperative pursuit face fundamental challenges in biomimetic underwater robots, where long-horizon decision making, partial observability, and inter-robot coordination require both expressiveness and stability. To address these issues, a novel framework called Mamba-based multi-agent group relative policy optimization (M$^{2}$GRPO) is proposed, which integrates a selective state-space Mamba policy with group-relative policy optimization under the centralized-training and decentralized-execution (CTDE) paradigm. Specifically, the Mamba-based policy leverages observation history to capture long-horizon temporal dependencies and exploits attention-based relational features to encode inter-agent interactions, producing bounded continuous actions through normalized Gaussian sampling. To further improve credit assignment without sacrificing stability, the group-relative advantages are obtained by normalizing rewards across agents within each episode and optimized through a multi-agent extension of GRPO, significantly reducing the demand for training resources while enabling stable and scalable policy updates. Extensive simulations and real-world pool experiments across team scales and evader strategies demonstrate that M$^{2}$GRPO consistently outperforms MAPPO and recurrent baselines in both pursuit success rate and capture efficiency. Overall, the proposed framework provides a practical and scalable solution for cooperative underwater pursuit with biomimetic robot systems.",
+    "authors": [
+      "Yukai Feng",
+      "Zhiheng Wu",
+      "Zhengxing Wu",
+      "Junwen Gu",
+      "Junzhi Yu"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19404v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19404v1",
+    "fetched_at": "2026-04-22T09:16:12.933931",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093855"
+  },
+  {
+    "id": "2604.19368v1",
+    "title": "Mind2Drive: Predicting Driver Intentions from EEG in Real-world On-Road Driving",
+    "abstract": "Predicting driver intention from neurophysiological signals offers a promising pathway for enhancing proactive safety in advanced driver assistance systems, yet remains challenging in real-world driving due to EEG signal non-stationarity and the complexity of cognitive-motor preparation. This study proposes and evaluates an EEG-based driver intention prediction framework using a synchronised multi-sensor platform integrated into a real electric vehicle. A real-world on-road dataset was collected across 32 driving sessions, and 12 deep learning architectures were evaluated under consistent experimental conditions. Among the evaluated architectures, TSCeption achieved the highest average accuracy (0.907) and Macro-F1 score (0.901). The proposed framework demonstrates strong temporal stability, maintaining robust decoding performance up to 1000 ms before manoeuvre execution with minimal degradation. Furthermore, additional analyses reveal that minimal EEG preprocessing outperforms artefact-handling pipelines, and prediction performance peaks within a 400-600 ms interval, corresponding to a critical neural preparatory phase preceding driving manoeuvres. Overall, these findings support the feasibility of early and stable EEG-based driver intention decoding under real-world on-road conditions. Code: https://github.com/galosaimi/Mind2Drive.",
+    "authors": [
+      "Ghadah Alosaimi",
+      "Hanadi Alhamdan",
+      "Wenke E",
+      "Stamos Katsigiannis",
+      "Amir Atapour-Abarghouei",
+      "Toby P. Breckon"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CV",
+      "cs.HC",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19368v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19368v1",
+    "fetched_at": "2026-04-22T09:16:12.933955",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093865"
+  },
+  {
+    "id": "2604.19354v1",
+    "title": "Do Agents Dream of Root Shells? Partial-Credit Evaluation of LLM Agents in Capture The Flag Challenges",
+    "abstract": "Large Language Model (LLM) agents are increasingly proposed for autonomous cybersecurity tasks, but their capabilities in realistic offensive settings remain poorly understood. We present DeepRed, an open-source benchmark for evaluating LLM-based agents on realistic Capture The Flag (CTF) challenges in isolated virtualized environments. DeepRed places an agent in a Kali attacker environment with terminal tools and optional web search, connected over a private network to a target challenge, and records full execution traces for analysis. To move beyond binary solved/unsolved outcomes, we introduce a partial-credit scoring method based on challenge-specific checkpoints derived from public writeups, together with an automated summarise-then-judge labelling pipeline for assigning checkpoint completion from logs. Using DeepRed, we benchmark ten commercially accessible LLMs on ten VM-based CTF challenges spanning different challenge categories. The results indicate that current agents remain limited: the best model achieves only 35% average checkpoint completion, performing strongest on common challenge types and weakest on tasks requiring non-standard discovery and longer-horizon adaptation.",
+    "authors": [
+      "Ali Al-Kaswan",
+      "Maksim Plotnikov",
+      "Maxim Hájek",
+      "Roland Vízner",
+      "Arie van Deursen",
+      "Maliheh Izadi"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.AI",
+      "cs.CR",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19354v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19354v1",
+    "fetched_at": "2026-04-22T09:16:12.933979",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093874"
+  },
+  {
+    "id": "2604.19157v1",
+    "title": "SAW-INT4: System-Aware 4-Bit KV-Cache Quantization for Real-World LLM Serving",
+    "abstract": "KV-cache memory is a major bottleneck in real-world LLM serving, where systems must simultaneously support latency-sensitive small-batch requests and high-throughput concurrent workloads. Although many KV-cache compression methods improve offline accuracy or compression ratio, they often violate practical serving constraints such as paged memory layouts, regular memory access, and fused attention execution, limiting their effectiveness in deployment.   In this work, we identify the minimal set of 4-bit KV-cache quantization methods that remain viable under these constraints. Our central finding is that a simple design--token-wise INT4 quantization with block-diagonal Hadamard rotation--consistently achieves the best accuracy-efficiency trade-off. Across multiple models and benchmarks, this approach recovers nearly all of the accuracy lost by naive INT4, while more complex methods such as vector quantization and Hessian-aware quantization provide only marginal additional gains once serving compatibility is taken into account.   To make this practical, we implement a fused rotation-quantization kernel that integrates directly into paged KV-cache layouts and introduces zero measurable end-to-end overhead, matching plain INT4 throughput across concurrency levels. Our results show that effective KV-cache compression is fundamentally a systems co-design problem: under real serving constraints, lightweight block-diagonal Hadamard rotation is a viable method that delivers near-lossless accuracy without sacrificing serving efficiency.",
+    "authors": [
+      "Jinda Jia",
+      "Jisen Li",
+      "Zhongzhu Zhou",
+      "Jung Hwan Heo",
+      "Jue Wang",
+      "Tri Dao",
+      "Shuaiwen Leon Song",
+      "Ben Athiwaratkun",
+      "Chenfeng Xu",
+      "Tianyi Zhang",
+      "Xiaoxia Wu"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19157v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19157v1",
+    "fetched_at": "2026-04-22T09:16:12.934013",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093884"
+  },
+  {
+    "id": "2604.19092v1",
+    "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
+    "abstract": "Recent advances in large-scale video world models have enabled increasingly realistic future prediction, raising the prospect of leveraging imagined videos for robot learning. However, visual realism does not imply physical plausibility, and behaviors inferred from generated videos may violate dynamics and fail when executed by embodied agents. Existing benchmarks begin to incorporate notions of physical plausibility, but they largely remain perception- or diagnostic-oriented and do not systematically evaluate whether predicted behaviors can be translated into executable actions that complete the intended task. To address this gap, we introduce RoboWM-Bench, a manipulation-centric benchmark for embodiment-grounded evaluation of video world models. RoboWM-Bench converts generated behaviors from both human-hand and robotic manipulation videos into embodied action sequences and validates them through robotic execution. The benchmark spans diverse manipulation scenarios and establishes a unified protocol for consistent and reproducible evaluation. Using RoboWM-Bench, we evaluate state-of-the-art video world models and find that reliably generating physically executable behaviors remains an open challenge. Common failure modes include errors in spatial reasoning, unstable contact prediction, and non-physical deformations. While finetuning on manipulation data yields improvements, physical inconsistencies still persist, suggesting opportunities for more physically grounded video generation for robots.",
+    "authors": [
+      "Feng Jiang",
+      "Yang Chen",
+      "Kyle Xu",
+      "Yuchen Liu",
+      "Haifeng Wang",
+      "Zhenhao Shen",
+      "Jasper Lu",
+      "Shengze Huang",
+      "Yuanfei Wang",
+      "Chen Xie",
+      "Ruihai Wu"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19092v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19092v1",
+    "fetched_at": "2026-04-22T09:16:12.934045",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093893"
+  },
+  {
+    "id": "2604.19001v1",
+    "title": "When Safety Fails Before the Answer: Benchmarking Harmful Behavior Detection in Reasoning Chains",
+    "abstract": "Large reasoning models (LRMs) produce complex, multi-step reasoning traces, yet safety evaluation remains focused on final outputs, overlooking how harm emerges during reasoning. When jailbroken, harm does not appear instantaneously but unfolds through distinct behavioral steps such as suppressing refusal, rationalizing compliance, decomposing harmful tasks, and concealing risk. However, no existing benchmark captures this process at sentence-level granularity within reasoning traces -- a key step toward reliable safety monitoring, interventions, and systematic failure diagnosis. To address this gap, we introduce HarmThoughts, a benchmark for step-wise safety evaluation of reasoning traces. \\ourdataset is built on our proposed harm taxonomy of 16 harmful reasoning behaviors across four functional groups that characterize how harm propagates rather than what harm is produced. The dataset consists of 56,931 sentences from 1,018 reasoning traces generated by four model families, each annotated with fine-grained sentence-level behavioral labels. Using HarmThoughts, we analyze harm propagation patterns across reasoning traces, identifying common behavioral trajectories and drift points where reasoning transitions from safe to unsafe. Finally, we systematically compare white-box and black-box detectors on the task of identifying harmful reasoning behaviours on HarmThoughts. Our results show that existing detectors struggle with fine-grained behavior detection in reasoning traces, particularly for nuanced categories within harm emergence and execution, highlighting a critical gap in process-level safety monitoring. HarmThoughts is available publicly at: https://huggingface.co/datasets/ishitakakkar-10/HarmThoughts",
+    "authors": [
+      "Ishita Kakkar",
+      "Enze Zhang",
+      "Rheeya Uppaal",
+      "Junjie Hu"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19001v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19001v1",
+    "fetched_at": "2026-04-22T09:16:12.934066",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093903"
+  },
+  {
+    "id": "2604.19298v1",
+    "title": "IndiaFinBench: An Evaluation Benchmark for Large Language Model Performance on Indian Financial Regulatory Text",
+    "abstract": "We introduce IndiaFinBench, to our knowledge the first publicly available evaluation benchmark for assessing large language model (LLM) performance on Indian financial regulatory text. Existing financial NLP benchmarks draw exclusively from Western financial corpora (SEC filings, US earnings reports, and English-language financial news), leaving a significant gap in coverage of non-Western regulatory frameworks. IndiaFinBench addresses this gap with 406 expert-annotated question-answer pairs drawn from 192 documents sourced from the Securities and Exchange Board of India (SEBI) and the Reserve Bank of India (RBI), spanning four task types: regulatory interpretation (174 items), numerical reasoning (92 items), contradiction detection (62 items), and temporal reasoning (78 items). Annotation quality is validated through a model-based secondary pass (kappa=0.918 on contradiction detection) and a 60-item human inter-annotator agreement evaluation (kappa=0.611; 76.7% overall agreement). We evaluate twelve models under zero-shot conditions, with accuracy ranging from 70.4% (Gemma 4 E4B) to 89.7% (Gemini 2.5 Flash). All models substantially outperform a non-specialist human baseline of 60.0%. Numerical reasoning is the most discriminative task, with a 35.9 percentage-point spread across models. Bootstrap significance testing (10,000 resamples) reveals three statistically distinct performance tiers. The dataset, evaluation code, and all model outputs are available at https://github.com/rajveerpall/IndiaFinBench",
+    "authors": [
+      "Rajveer Singh Pall"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19298v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19298v1",
+    "fetched_at": "2026-04-22T09:17:59.746306",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093913"
+  },
+  {
+    "id": "2604.19098v1",
+    "title": "SAHM: A Benchmark for Arabic Financial and Shari'ah-Compliant Reasoning",
+    "abstract": "English financial NLP has progressed rapidly through benchmarks for sentiment, document understanding, and financial question answering, while Arabic financial NLP remains comparatively under-explored despite strong practical demand for trustworthy finance and Islamic-finance assistants. We introduce SAHM, a document-grounded benchmark and instruction-tuning dataset for Arabic financial NLP and Shari'ah-compliant reasoning. SAHM contains 14,380 expert-verified instances spanning seven tasks: AAOIFI standards QA, fatwa-based QA/MCQ, accounting and business exams, financial sentiment analysis, extractive summarization, and event-cause reasoning, curated from authentic regulatory, juristic, and corporate sources. We evaluate 19 strong open and proprietary LLMs using task-specific metrics and rubric-based scoring for open-ended outputs, and find that Arabic fluency does not reliably translate to evidence-grounded financial reasoning: models are substantially stronger on recognition-style tasks than on generation and causal reasoning, with the largest gaps on event-cause reasoning. We release the benchmark, evaluation framework, and an instruction-tuned model to support future research on trustworthy Arabic financial NLP.",
+    "authors": [
+      "Rania Elbadry",
+      "Sarfraz Ahmad",
+      "Ahmed Heakl",
+      "Dani Bouch",
+      "Momina Ahsan",
+      "Muhra AlMahri",
+      "Marwa Elsaid khalil",
+      "Yuxia Wang",
+      "Salem Lahlou",
+      "Sophia Ananiadou",
+      "Veselin Stoyanov",
+      "Jimin Huang",
+      "Xueqing Peng",
+      "Preslav Nakov",
+      "Zhuohan Xie"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19098v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19098v1",
+    "fetched_at": "2026-04-22T09:17:59.746356",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Sentiment Analysis",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093922"
+  },
+  {
+    "id": "2604.18838v1",
+    "title": "Quantum inspired qubit qutrit neural networks for real time financial forecasting",
+    "abstract": "This research investigates the performance and efficacy of machine learning models in stock prediction, comparing Artificial Neural Networks (ANNs), Quantum Qubit-based Neural Networks (QQBNs), and Quantum Qutrit-based Neural Networks (QQTNs). By outlining methodologies, architectures, and training procedures, the study highlights significant differences in training times and performance metrics across models. While all models demonstrate robust accuracies above 70%, the Quantum Qutrit-based Neural Network consistently outperforms with advantages in risk-adjusted returns, measured by the Sharpe ratio, greater consistency in prediction quality through the Information Coefficient, and enhanced robustness under varying market conditions. The QQTN not only surpasses its classical and qubit-based counterparts in multiple quantitative and qualitative metrics but also achieves comparable performance with significantly reduced training times. These results showcase the promising prospects of Quantum Qutrit-based Neural Networks in practical financial applications, where real-time processing is critical. By achieving superior accuracy, efficiency, and adaptability, the proposed models underscore the transformative potential of quantum-inspired approaches, paving the way for their integration into computationally intensive fields.",
+    "authors": [
+      "Kanishk Bakshi",
+      "Kathiravan Srinivasan"
+    ],
+    "published": "2026-04-20",
+    "categories": [
+      "cs.AI",
+      "quant-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.18838v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.18838v1",
+    "fetched_at": "2026-04-22T09:18:07.484760",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-22T09:18:31.093932"
+  }
+]
