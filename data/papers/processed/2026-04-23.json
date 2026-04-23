@@ -1,0 +1,721 @@
+[
+  {
+    "id": "2604.20406v1",
+    "title": "Bond Market Making with a Hit-Ratio Target",
+    "abstract": "We study OTC bond market making on a size ladder with quadratic inventory penalty and a running target on the dealer's size-weighted hit ratio within a stochastic optimal control approach. We demonstrate that the corresponding reduced Hamilton-Jacobi-Bellman (HJB) equation remains separable by dualizing the hit ratio target term and provides the exact optimal controls through the inverse of the fill-probability function and the Hamiltonian derivative. We then focus on the quadratic approximation á la Bergault et al., which yields a Riccati equation for the inventory curvature while retaining the exact quote map. In its linearized form, this approximation produces explicit quote decompositions into riskless spread, inventory-risk correction, and hit-ratio correction. The formulation is general and applies to multi-bond, multi-client-tier scenarios, with special cases obtained by restricting the targeted tiers, their bond coverage, and their associated targets.",
+    "authors": [
+      "Alexander Barzykin",
+      "Axel Ciceri"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20406v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20406v1",
+    "fetched_at": "2026-04-23T09:22:43.008323",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690871"
+  },
+  {
+    "id": "2604.20067v1",
+    "title": "Testing replication for an agent-based model of market fragmentation and latency arbitrage",
+    "abstract": "This study strengthens the foundations of multi-venue market modeling by attempting an independent replication of Wah and Wellman's 2016 model of latency arbitrage in a fragmented market. We find that faithful replication is hindered by missing implementation details in the original paper and limited quantitative reporting. We demonstrate that increasing the number of simulation runs beyond the original design allows for the creation of bootstrap confidence intervals to support rigorous tests of quantitative alignment, compensating for lacking distributional information (e.g. variance). We also demonstrate that increased complexity across the modeled scenarios corresponds with increased difficulty aligning to the original results. We draw on a codebase released by the original authors in connection with a later paper to recover additional implementation details; however, we reject quantitative alignment between that codebase and the published results. Combining information from the paper and the released code, we achieve relational equivalence for most metrics but reject quantitative alignment for model settings where latency is non-zero. We show that many of the qualitative takeaways from the original paper on the effects of market fragmentation and latency arbitrage are sensitive to the specifics of a `greedy strategy' extension given to the zero-intelligence (ZI) trader agents. Under an alternative interpretation of this strategy, we find that market fragmentation decreases execution times in all experiments and increases trader welfare in most experiments. Finally, to facilitate future replication, critique, and extension, we provide an ODD (Overview, Design concepts, Details) protocol for our implementations of the model.",
+    "authors": [
+      "Ethan Ratliff-Crain",
+      "Colin M. Van Oort",
+      "Matthew T. K. Koehler",
+      "Brian F. Tivnan"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20067v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20067v1",
+    "fetched_at": "2026-04-23T09:22:43.008365",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690912"
+  },
+  {
+    "id": "2604.19956v1",
+    "title": "On-chain Peak Shaving",
+    "abstract": "Blockchain technology is widely expected to reduce transaction costs by automating contract enforcement and eliminating intermediaries; yet, the execution costs imposed by network congestion have received little attention in the operations management literature. We study on-chain peak shaving, the systematic scheduling of Ethereum transactions toward low-congestion windows to reduce gas fee exposure. We use transaction-level data from seven firms across seven industries (N = 62,142 transactions, January-March 2026).   Gas fees vary significantly throughout the day: the peak-hour premium at 10 AM Eastern Time reaches USD 0.220 per transaction above the overnight baseline, driven primarily by speculative-arbitrage demand rather than operational activity. Firm-level scheduling responses are heterogeneous and not uniformly disciplined. Only three of seven firms transact disproportionately during off-peak hours; four transact counter-cyclically, concentrated in peak windows due to external deadlines or governance cycles. This heterogeneity is explained by two moderators: transaction deferrability and gas intensity. We formalize these into an On-Chain Scheduling Matrix that maps firms to four regimes: 1) full peak shaving, 2) selective peak shaving, 3) cost provisioning, and 4) accept-market-rate, with regime membership predicting both fee savings and residual cost floors (40-92 percent of actual expenditure).   Theoretically, we extend Transaction Cost Economics to account for time-varying execution costs imposed by congestion externalities. In addition to extending Williamson's original cost taxonomy, we introduce a dual classification of gas fees as execution costs in timing but maladaptation costs in origin. The findings reposition on-chain gas-fee management alongside energy procurement and foreign exchange hedging as a domain requiring systematic operational planning.",
+    "authors": [
+      "Irene Aldridge",
+      "Gavhar Annaeva",
+      "Leyla Beriker",
+      "Zhiheng Cai",
+      "Samyak Choudhary",
+      "Camila Godoy",
+      "Kaicheng Gong",
+      "Zitao Huang",
+      "Jonah Ji",
+      "Hetvi Kharvasiya",
+      "Heng Li",
+      "Yuxuan Li",
+      "Tianchi Ma",
+      "Qingcheng Meng",
+      "Ruiyang Shi",
+      "Ananya Shrivastava",
+      "Jiaqi Wang",
+      "Yifan Wang",
+      "Zihua Wu",
+      "Jiayang Xu",
+      "Yuheng Yan",
+      "Zijun Zeng",
+      "Bowen Zhang",
+      "Francesco Zhang"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "econ.EM",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19956v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.19956v1",
+    "fetched_at": "2026-04-23T09:22:43.008431",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690927"
+  },
+  {
+    "id": "2604.19605v2",
+    "title": "Tuning in to Frequencies: How Global Assets Align U.S. Put-Call Parity Residuals",
+    "abstract": "Put-call parity holds under risk-neutral pricing, yet enforcement exposes arbitrageurs to path-dependent capital costs. The carry gap-the annualized wedge between option-implied and OIS discount factors-is a Q-measure object, but P-measure investment opportunities may shape its enforcement burden. We document this alignment in SPX and RUT options: low-frequency global asset returns raise in-sample R^2 by 0.093 and 0.082 and lift pooled out-of-sample R^2 from 0.221 to 0.364 (SPX) and 0.171 to 0.309 (RUT). Effective horizons differ by asset-IEFA (70 days), IGOV (400 days), IAU (336 days)-and asset terms largely absorb the OIS baseline, providing systematic evidence of a P-Q channel.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19605v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.19605v2",
+    "fetched_at": "2026-04-23T09:22:43.008451",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690941"
+  },
+  {
+    "id": "2604.19604v2",
+    "title": "The Cost of a Free Lunch: Evidence from U.S. Derivatives Markets",
+    "abstract": "Put-call parity is a terminal-payoff identity; quoted residuals against traded futures are near zero. Yet enforcing parity is path-dependent, exposing arbitrageurs to daily settlement, margin, and finite capital. Using minute-level NBBO data on S&P 500 and Russell 2000 options, I extract option-implied discount factors, compare them with the OIS curve, and construct an annualized carry gap. A reduced-form specification centered on a volatility times sqrt(tau) path-risk term links the carry gap to implementation risk, trading frictions, and financial conditions, with coefficient signs stable across leave-one-year-out validation. The carry gap is an implementation wedge invisible in price space but systematic in carry space.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-04-21",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.19604v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.19604v2",
+    "fetched_at": "2026-04-23T09:22:43.008472",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690951"
+  },
+  {
+    "id": "2604.20374v1",
+    "title": "Towards Event-Aware Forecasting in DeFi: Insights from On-chain Automated Market Maker Protocols",
+    "abstract": "Automated Market Makers (AMMs), as a core infrastructure of decentralized finance (DeFi), uniquely drive on-chain asset pricing through a deterministic reserve ratio mechanism. Unlike traditional markets, AMM price dynamics is triggered largely by on-chain events (e.g., swap) that change the reserve ratio, rather than by continuous responses to off-chain information. This makes event-level analysis crucial for understanding price formation mechanisms in AMMs. However, existing research generally neglects the micro-structural dynamics at the AMMs level, lacking both a comprehensive dataset covering multiple protocols with fine-grained event classification and an effective framework for event-aware modeling. To fill this gap, we construct a dataset containing 8.9 million on-chain event records from four representative AMMs protocols: Pendle, Uniswap v3, Aave and Morpho, with precise annotations of transaction type and block height timestamps. Furthermore, we propose an Uncertainty Weighted Mean Squared Error (UWM) loss function, which incorporates the block interval regression term into the traditional Time-Point Process (TPP) objective function by weighting the uncertainty with homoscedasticity. Extensive experiments on eight advanced TPP architectures demonstrate that this loss function reduces the time prediction error by an average of 56.41\\% while maintaining the accuracy of event type prediction, establishing a robust benchmark for event-aware prediction in the AMMs ecosystem. This work provides the necessary data foundation and methodological framework for modeling the discreteness and event-driven characteristics of on-chain price discovery. All datasets and source code are publicly available. https://github.com/yosen-king/Deep-AMM-Events",
+    "authors": [
+      "Huaiyu Jia",
+      "Jiehshun You",
+      "Yizhi Luo",
+      "Jingyu Liu",
+      "Shuo Sun"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20374v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20374v1",
+    "fetched_at": "2026-04-23T09:22:46.375863",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690963"
+  },
+  {
+    "id": "2604.20259v1",
+    "title": "Causal-Transformer with Adaptive Mutation-Locking for Early Prediction of Acute Kidney Injury",
+    "abstract": "Accurate early prediction of Acute Kidney Injury (AKI) is critical for timely clinical intervention. However, existing deep learning models struggle with irregularly sampled data and suffer from the opaque \"black-box\" nature of sequential architectures, strictly limiting clinical trust. To address these challenges, we propose CT-Former, integrating continuous-time modeling with a Causal-Transformer. To handle data irregularity without biased artificial imputation, our framework utilizes a continuous-time state evolution mechanism to naturally track patient temporal trajectories. To resolve the black-box problem, our Causal-Attention module abandons uninterpretable hidden state aggregation. Instead, it generates a directed structural causal matrix to identify and trace the exact historical onset of severe physiological shocks. By establishing clear causal pathways between historical anomalies and current risk predictions, CT-Former provides native clinical interpretability. Training follows a decoupled two-stage protocol to optimize the causal-fusion process independently. Extensive experiments on the MIMIC-IV cohort (N=18,419) demonstrate that CT-Former significantly outperforms state-of-the-art baselines. The results confirm that our explicitly transparent architecture offers an accurate and trustworthy tool for clinical decision-making.",
+    "authors": [
+      "Weizhi Nie",
+      "Haolin Chen"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20259v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20259v1",
+    "fetched_at": "2026-04-23T09:22:56.454693",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Transformer"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690974"
+  },
+  {
+    "id": "2604.20255v1",
+    "title": "uLEAD-TabPFN: Uncertainty-aware Dependency-based Anomaly Detection with TabPFN",
+    "abstract": "Anomaly detection in tabular data is challenging due to high dimensionality, complex feature dependencies, and heterogeneous noise. Many existing methods rely on proximity-based cues and may miss anomalies caused by violations of complex feature dependencies. Dependency-based anomaly detection provides a principled alternative by identifying anomalies as violations of dependencies among features. However, existing methods often struggle to model such dependencies robustly and to scale to high-dimensional data with complex dependency structures. To address these challenges, we propose uLEAD-TabPFN, a dependency-based anomaly detection framework built on Prior-Data Fitted Networks (PFNs). uLEAD-TabPFN identifies anomalies as violations of conditional dependencies in a learned latent space, leveraging frozen PFNs for dependency estimation. Combined with uncertainty-aware scoring, the proposed framework enables robust and scalable anomaly detection. Experiments on 57 tabular datasets from ADBench show that uLEAD-TabPFN achieves particularly strong performance in medium- and high-dimensional settings, where it attains the top average rank. On high-dimensional datasets, uLEAD-TabPFN improves the average ROC-AUC by nearly 20\\% over the average baseline and by approximately 2.8\\% over the best-performing baseline, while maintaining overall superior performance compared to state-of-the-art methods. Further analysis shows that uLEAD-TabPFN provides complementary anomaly detection capability, achieving strong performance on datasets where many existing methods struggle.",
+    "authors": [
+      "Sha Lu",
+      "Jixue Liu",
+      "Stefan Peters",
+      "Thuc Duy Le",
+      "Craig Xie",
+      "Lin Liu",
+      "Jiuyong Li"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20255v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20255v1",
+    "fetched_at": "2026-04-23T09:22:56.454729",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.690992"
+  },
+  {
+    "id": "2604.20122v1",
+    "title": "Adaptive Conformal Anomaly Detection with Time Series Foundation Models for Signal Monitoring",
+    "abstract": "We propose a post-hoc adaptive conformal anomaly detection method for monitoring time series that leverages predictions from pre-trained foundation models without requiring additional fine-tuning. Our method yields an interpretable anomaly score directly interpretable as a false alarm rate (p-value), facilitating transparent and actionable decision-making. It employs weighted quantile conformal prediction bounds and adaptively learns optimal weighting parameters from past predictions, enabling calibration under distribution shifts and stable false alarm control, while preserving out-of-sample guarantees. As a model-agnostic solution, it integrates seamlessly with foundation models and supports rapid deployment in resource-constrained environments. This approach addresses key industrial challenges such as limited data availability, lack of training expertise, and the need for immediate inference, while taking advantage of the growing accessibility of time series foundation models. Experiments on both synthetic and real-world datasets show that the proposed approach delivers strong performance, combining simplicity, interpretability, robustness, and adaptivity.",
+    "authors": [
+      "Natalia Martinez Gil",
+      "Fearghal O'Donncha",
+      "Wesley M. Gifford",
+      "Nianjun Zhou",
+      "Dhaval C. Patel",
+      "Roman Vaculin"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20122v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20122v1",
+    "fetched_at": "2026-04-23T09:22:56.454757",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691003"
+  },
+  {
+    "id": "2604.20586v1",
+    "title": "A Hierarchical MARL-Based Approach for Coordinated Retail P2P Trading and Wholesale Market Participation of DERs",
+    "abstract": "The ongoing shift towards decentralization of the electric energy sector, driven by the growing electrification across end-use sectors, and widespread adoption of distributed energy resources (DERs), necessitates their active participation in the electricity markets to support grid operations. Furthermore, with bi-directional energy and communication flows becoming standard, intelligent, easy-to-deploy, resource-conservative demand-side participation is expected to play a critical role in securing power grid operational flexibility and market efficiency. This work proposes a market engagement framework that leverages a hierarchical multi-agent deep reinforcement learning (MARL) approach to enable individual prosumers to participate in peer-to-peer retail auctions and further aggregate these intelligent prosumers to facilitate effective DER participation in wholesale markets. Ultimately, a Stackelberg game is proposed to coordinate this hierarchical MARL-based DER market participation framework toward enhanced market performance.",
+    "authors": [
+      "Patrick Wilk",
+      "Ethan Cantor",
+      "Yikui Liu",
+      "Jie Li"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.LG",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20586v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20586v1",
+    "fetched_at": "2026-04-23T09:23:07.058698",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691015"
+  },
+  {
+    "id": "2604.20819v1",
+    "title": "Stream-CQSA: Avoiding Out-of-Memory in Attention Computation via Flexible Workload Scheduling",
+    "abstract": "The scalability of long-context large language models is fundamentally limited by the quadratic memory cost of exact self-attention, which often leads to out-of-memory (OOM) failures on modern hardware. Existing methods improve memory efficiency to near-linear complexity, while assuming that the full query, key, and value tensors fit in device memory. In this work, we remove this assumption by introducing CQS Divide, an operation derived from cyclic quorum sets (CQS) theory that decomposes attention into a set of independent subsequence computations whose recomposition yields exactly the same result as full-sequence attention. Exploiting this decomposition, we introduce Stream-CQSA, a memory-adaptive scheduling framework that partitions attention into subproblems that fit within arbitrary memory budgets. This recasts attention from a logically monolithic operation into a collection of schedulable tasks, enabling flexible execution across devices without inter-device communication. Experiments demonstrate predictable memory scaling and show that exact attention over billion-token sequences can be executed on a single GPU via streaming, without changing the underlying mathematical definition of attention or introducing approximation error.",
+    "authors": [
+      "Yiming Bian",
+      "Joshua M. Akey"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20819v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20819v1",
+    "fetched_at": "2026-04-23T09:23:29.241125",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691025"
+  },
+  {
+    "id": "2604.20714v1",
+    "title": "Learning to Evolve: A Self-Improving Framework for Multi-Agent Systems via Textual Parameter Graph Optimization",
+    "abstract": "Designing and optimizing multi-agent systems (MAS) is a complex, labor-intensive process of \"Agent Engineering.\" Existing automatic optimization methods, primarily focused on flat prompt tuning, lack the structural awareness to debug the intricate web of interactions in MAS. More critically, these optimizers are static; they do not learn from experience to improve their own optimization strategies. To address these gaps, we introduce Textual Parameter Graph Optimization (TPGO), a framework that enables a multi-agent system to learn to evolve. TPGO first models the MAS as a Textual Parameter Graph (TPG), where agents, tools, and workflows are modular, optimizable nodes. To guide evolution, we derive \"textual gradients,\" structured natural language feedback from execution traces, to pinpoint failures and suggest granular modifications. The core of our framework is Group Relative Agent Optimization (GRAO), a novel meta-learning strategy that learns from historical optimization experiences. By analyzing past successes and failures, GRAO becomes progressively better at proposing effective updates, allowing the system to learn how to optimize itself. Extensive experiments on complex benchmarks like GAIA and MCP-Universe show that TPGO significantly enhances the performance of state-of-the-art agent frameworks, achieving higher success rates through automated, self-improving optimization.",
+    "authors": [
+      "Shan He",
+      "Runze Wang",
+      "Zhuoyun Du",
+      "Huiyu Bai",
+      "Zouying Cao",
+      "Yu Cheng",
+      "Bo Zheng"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20714v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20714v1",
+    "fetched_at": "2026-04-23T09:23:29.241164",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691035"
+  },
+  {
+    "id": "2604.20704v1",
+    "title": "Auto-ART: Structured Literature Synthesis and Automated Adversarial Robustness Testing",
+    "abstract": "Adversarial robustness evaluation underpins every claim of trustworthy ML deployment, yet the field suffers from fragmented protocols and undetected gradient masking. We make two contributions. (1) Structured synthesis. We analyze nine peer-reviewed corpus sources (2020--2026) through seven complementary protocols, producing the first end-to-end structured analysis of the field's consensus and unresolved challenges. (2) Auto-ART framework. We introduce Auto-ART, an open-source framework that operationalizes identified gaps: 50+ attacks, 28 defense modules, the Robustness Diagnostic Index (RDI), and gradient-masking detection. It supports multi-norm evaluation (l1/l2/linf/semantic/spatial) and compliance mapping to NIST AI RMF, OWASP LLM Top 10, and the EU AI Act. Empirical validation on RobustBench demonstrates that Auto-ART's pre-screening identifies gradient masking in 92% of flagged cases, and RDI rankings correlate highly with full AutoAttack. Multi-norm evaluation exposes a 23.5 pp gap between average and worst-case robustness on state-of-the-art models. No prior work combines such structured meta-scientific analysis with an executable evaluation framework bridging literature gaps into engineering.",
+    "authors": [
+      "Abhijit Talluri"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20704v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20704v1",
+    "fetched_at": "2026-04-23T09:23:29.241183",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691045"
+  },
+  {
+    "id": "2604.20669v1",
+    "title": "A Field Guide to Decision Making",
+    "abstract": "High-consequence decision making demands peak performance from individuals in positions of responsibility. Such executive authority bears the obligation to act despite uncertainty, limited resources, time constraints, and accountability risks. Tools and strategies to motivate confidence and foster risk tolerance must confront informational noise and can provide qualified accountability. Machine intelligence augments human cognition and perception to improve situational awareness, decision framing, flexibility, and coherence through agentic stewardship of contextual metadata. We examine systemic and behavioral factors crucial to address in scenarios encumbered by complexity, uncertainty, and urgency.",
+    "authors": [
+      "Richard B. Arthur"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CY",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20669v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20669v1",
+    "fetched_at": "2026-04-23T09:23:29.241205",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691053"
+  },
+  {
+    "id": "2604.20556v1",
+    "title": "LayerTracer: A Joint Task-Particle and Vulnerable-Layer Analysis framework for Arbitrary Large Language Model Architectures",
+    "abstract": "Currently, Large Language Models (LLMs) feature a diversified architectural landscape, including traditional Transformer, GateDeltaNet, and Mamba. However, the evolutionary laws of hierarchical representations, task knowledge formation positions, and network robustness bottleneck mechanisms in various LLM architectures remain unclear, posing core challenges for hybrid architecture design and model optimization. This paper proposes LayerTracer, an architecture-agnostic end-to-end analysis framework compatible with any LLM architecture. By extracting hidden states layer-by-layer and mapping them to vocabulary probability distributions, it achieves joint analysis of task particle localization and layer vulnerability quantification. We define the task particle as the key layer where the target token probability first rises significantly, representing the model's task execution starting point, and the vulnerable layer is defined as the layer with the maximum Jensen-Shannon (JS) divergence between output distributions before and after mask perturbation, reflecting its sensitivity to disturbances. Experiments on models of different parameter scales show that task particles mainly appear in the deep layers of the model regardless of parameter size, while larger-parameter models exhibit stronger hierarchical robustness. LayerTracer provides a scientific basis for layer division, module ratio, and gating switching of hybrid architectures, effectively optimizing model performance. It accurately locates task-effective layers and stability bottlenecks, offering universal support for LLM structure design and interpretability research.",
+    "authors": [
+      "Yuhang Wu",
+      "Qinyuan Liu",
+      "Qiuyang Zhao",
+      "Qingwei Chong"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20556v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20556v1",
+    "fetched_at": "2026-04-23T09:23:29.241229",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691064"
+  },
+  {
+    "id": "2604.20496v1",
+    "title": "Mythos and the Unverified Cage: Z3-Based Pre-Deployment Verification for Frontier-Model Sandbox Infrastructure",
+    "abstract": "The April 2026 Claude Mythos sandbox escape exposed a critical weakness in frontier AI containment: the infrastructure surrounding advanced models remains susceptible to formally characterizable arithmetic vulnerabilities. Anthropic has not publicly characterized the escape vector; some secondary accounts hypothesize a CWE-190 arithmetic vulnerability in sandbox networking code. We treat this as unverified and analyze the vulnerability class rather than the specific escape. This paper presents COBALT, a Z3 SMT-based formal verification engine for identifying CWE-190/191/195 arithmetic vulnerability patterns in C/C++ infrastructure prior to deployment.   We distinguish two classes of contribution. Validated: COBALT detects arithmetic vulnerability patterns in production codebases, producing SAT verdicts with concrete witnesses and UNSAT guarantees under explicit safety bounds. We demonstrate this on four production case studies: NASA cFE, wolfSSL, Eclipse Mosquitto, and NASA F Prime, with reproducible encodings, verified solver output, and acknowledged security outcomes. Proposed: a four-layer containment framework consisting of COBALT, VERDICT, DIRECTIVE-4, and SENTINEL, mapping pre-deployment verification, pre-execution constraints, output control, and runtime monitoring to the failure modes exposed by the Mythos incident.   Under explicit assumptions, we further argue that the publicly reported Mythos escape class is consistent with a Z3-expressible CWE-190 arithmetic formulation and that pre-deployment formal analysis would have been capable of surfacing the relevant pattern. The broader claim is infrastructural: frontier-model safety cannot depend on behavioral safeguards alone; the containment stack itself must be subjected to formal verification.",
+    "authors": [
+      "Dominik Blain"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20496v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20496v1",
+    "fetched_at": "2026-04-23T09:23:29.241249",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691075"
+  },
+  {
+    "id": "2604.20495v1",
+    "title": "Towards Certified Malware Detection: Provable Guarantees Against Evasion Attacks",
+    "abstract": "Machine learning-based static malware detectors remain vulnerable to adversarial evasion techniques, such as metamorphic engine mutations. To address this vulnerability, we propose a certifiably robust malware detection framework based on randomized smoothing through feature ablation and targeted noise injection. During evaluation, our system analyzes an executable by generating multiple ablated variants, classifies them by using a smoothed classifier, and identifies the final label based on the majority vote. By analyzing the top-class voting distribution and the Wilson score interval, we derive a formal certificate that guarantees robustness within a specific radius against feature-space perturbations. We evaluate our approach by comparing the performance of the base classifier and the smoothed classifier on both clean executables and ablated variants generated using PyMetaEngine. Our results demonstrate that the proposed smoothed classifier successfully provides certifiable robustness against metamorphic evasion attacks without requiring modifications to the underlying machine learning architecture.",
+    "authors": [
+      "Nandakrishna Giri",
+      "Asmitha K. A.",
+      "Serena Nicolazzo",
+      "Antonino Nocera",
+      "Vinod P"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20495v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20495v1",
+    "fetched_at": "2026-04-23T09:23:29.241274",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691085"
+  },
+  {
+    "id": "2604.20436v1",
+    "title": "Shift-Up: A Framework for Software Engineering Guardrails in AI-native Software Development -- Initial Findings",
+    "abstract": "Generative AI (GenAI) is reshaping software engineering by shifting development from manual coding toward agent-driven implementation. While vibe coding promises rapid prototyping, it often suffers from architectural drift, limited traceability, and reduced maintainability. Applying the design science research (DSR) methodology, this paper proposes Shift-Up, a framework that reinterprets established software engineering practices, like executable requirements (BDD), architectural modeling (C4), and architecture decision records (ADRs), as structural guardrails for GenAI-native development. Preliminary findings from our exploratory evaluation compare unstructured vibe coding, structured prompt engineering, and the Shift-Up approach in the development of a web application. These findings indicate that embedding machine-readable requirements and architectural artifacts stabilizes agent behavior, reduces implementation drift, and shifts human effort toward higher-level design and validation activities. The results suggest that traditional software engineering artifacts can serve as effective control mechanisms in AI-assisted development.",
+    "authors": [
+      "Petrus Lipsanen",
+      "Liisa Rannikko",
+      "François Christophe",
+      "Konsta Kalliokoski",
+      "Vlad Stirbu",
+      "Tommi Mikkonen"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20436v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20436v1",
+    "fetched_at": "2026-04-23T09:23:29.241301",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691095"
+  },
+  {
+    "id": "2604.20401v1",
+    "title": "Onyx: Cost-Efficient Disk-Oblivious ANN Search",
+    "abstract": "Approximate nearest neighbor (ANN) search in AI systems increasingly handles sensitive data on third-party infrastructure. Trusted execution environments (TEEs) offer protection, but cost-efficient deployments must rely on external SSDs, which leaks user queries through disk access patterns to the host. Oblivious RAM (ORAM) can hide these access patterns but at a high cost; when paired with existing disk-based ANN search techniques, it makes poor use of SSD resources, yielding high latency and poor cost-efficiency. The core challenge for efficient oblivious ANN search over SSDs is balancing both bandwidth and access count. The state-of-the-art ORAM-ANN design minimizes access count at the ANN level and bandwidth at the ORAM level, each trading-off the other, leaving the combined system with both resources overutilized. We propose inverting this design, minimizing bandwidth consumption in the ANN layer and access count in the ORAM layer, since each component is better suited for its new role: ANN's inherent approximation allows for more bandwidth efficiency, while ORAM has no fundamental lower bounds on access count (as opposed to bandwidth). To this end, we propose a cost-efficient approach, Onyx, with two new co-designed components: Onyx-ANNS introduces a compact intermediate representation that proactively prunes the majority of bandwidth-intensive accesses without hurting recall, and Onyx-ORAM proposes a locality-aware shallow tree design that reduces access count while remaining compatible with bandwidth-efficient ORAM techniques. Compared to the state-of-the-art oblivious ANN search system, Onyx achieves $1.7-9.9\\times$ lower cost and $2.3-12.3\\times$ lower latency.",
+    "authors": [
+      "Deevashwer Rathee",
+      "Jean-Luc Watson",
+      "Zirui Neil Zhao",
+      "G. Edward Suh",
+      "Raluca Ada Popa"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20401v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20401v1",
+    "fetched_at": "2026-04-23T09:23:29.241325",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691104"
+  },
+  {
+    "id": "2604.20398v1",
+    "title": "WebGen-R1: Incentivizing Large Language Models to Generate Functional and Aesthetic Websites with Reinforcement Learning",
+    "abstract": "While Large Language Models (LLMs) excel at function-level code generation, project-level tasks such as generating functional and visually aesthetic multi-page websites remain highly challenging. Existing works are often limited to single-page static websites, while agentic frameworks typically rely on multi-turn execution with proprietary models, leading to substantial token costs, high latency, and brittle integration. Training a small LLM end-to-end with reinforcement learning (RL) is a promising alternative, yet it faces a critical bottleneck in designing reliable and computationally feasible rewards for website generation. Unlike single-file coding tasks that can be verified by unit tests, website generation requires evaluating inherently subjective aesthetics, cross-page interactions, and functional correctness. To this end, we propose WebGen-R1, an end-to-end RL framework tailored for project-level website generation. We first introduce a scaffold-driven structured generation paradigm that constrains the large open-ended action space and preserves architectural integrity. We then design a novel cascaded multimodal reward that seamlessly couples structural guarantees with execution-grounded functional feedback and vision-based aesthetic supervision. Extensive experiments demonstrate that our WebGen-R1 substantially transforms a 7B base model from generating nearly nonfunctional websites into producing deployable, aesthetically aligned multi-page websites. Remarkably, our WebGen-R1 not only consistently outperforms heavily scaled open-source models (up to 72B), but also rivals the state-of-the-art DeepSeek-R1 (671B) in functional success, while substantially exceeding it in valid rendering and aesthetic alignment. These results position WebGen-R1 as a viable path for scaling small open models from function-level code generation to project-level web application generation.",
+    "authors": [
+      "Juyong Jiang",
+      "Chenglin Cai",
+      "Chansung Park",
+      "Jiasi Shen",
+      "Sunghun Kim",
+      "Jianguo Li",
+      "Yue Wang"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CL",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20398v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20398v1",
+    "fetched_at": "2026-04-23T09:23:29.241354",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Reinforcement Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691115"
+  },
+  {
+    "id": "2604.20279v1",
+    "title": "AgentLens: Adaptive Visual Modalities for Human-Agent Interaction in Mobile GUI Agents",
+    "abstract": "Mobile GUI agents can automate smartphone tasks by interacting directly with app interfaces, but how they should communicate with users during execution remains underexplored. Existing systems rely on two extremes: foreground execution, which maximizes transparency but prevents multitasking, and background execution, which supports multitasking but provides little visual awareness. Through iterative formative studies, we found that users prefer a hybrid model with just-in-time visual interaction, but the most effective visualization modality depends on the task. Motivated by this, we present AgentLens, a mobile GUI agent that adaptively uses three visual modalities during human-agent interaction: Full UI, Partial UI, and GenUI. AgentLens extends a standard mobile agent with adaptive communication actions and uses Virtual Display to enable background execution with selective visual overlays. In a controlled study with 21 participants, AgentLens was preferred by 85.7% of participants and achieved the highest usability (1.94 Overall PSSUQ) and adoption-intent (6.43/7).",
+    "authors": [
+      "Jeonghyeon Kim",
+      "Byeongjun Joung",
+      "Junwon Lee",
+      "Joohyung Lee",
+      "Taehoon Min",
+      "Sunjae Lee"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.HC",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20279v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20279v1",
+    "fetched_at": "2026-04-23T09:23:29.241380",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691124"
+  },
+  {
+    "id": "2604.20246v1",
+    "title": "Cortex 2.0: Grounding World Models in Real-World Industrial Deployment",
+    "abstract": "Industrial robotic manipulation demands reliable long-horizon execution across embodiments, tasks, and changing object distributions. While Vision-Language-Action models have demonstrated strong generalization, they remain fundamentally reactive. By optimizing the next action given the current observation without evaluating potential futures, they are brittle to the compounding failure modes of long-horizon tasks. Cortex 2.0 shifts from reactive control to plan-and-act by generating candidate future trajectories in visual latent space, scoring them for expected success and efficiency, then committing only to the highest-scoring candidate. We evaluate Cortex 2.0 on a single-arm and dual-arm manipulation platform across four tasks of increasing complexity: pick and place, item and trash sorting, screw sorting, and shoebox unpacking. Cortex 2.0 consistently outperforms state-of-the-art Vision-Language-Action baselines, achieving the best results across all tasks. The system remains reliable in unstructured environments characterized by heavy clutter, frequent occlusions, and contact-rich manipulation, where reactive policies fail. These results demonstrate that world-model-based planning can operate reliably in complex industrial environments.",
+    "authors": [
+      "Adriana Aida",
+      "Walida Amer",
+      "Katarina Bankovic",
+      "Dhruv Behl",
+      "Fabian Busch",
+      "Annie Bhalla",
+      "Minh Duong",
+      "Florian Gienger",
+      "Rohan Godse",
+      "Denis Grachev",
+      "Ralf Gulde",
+      "Elisa Hagensieker",
+      "Junpeng Hu",
+      "Shivam Joshi",
+      "Tobias Knoblauch",
+      "Likith Kumar",
+      "Damien LaRocque",
+      "Keerthana Lokesh",
+      "Omar Moured",
+      "Khiem Nguyen",
+      "Christian Preyss",
+      "Ranjith Sriganesan",
+      "Vikram Singh",
+      "Carsten Sponner",
+      "Anh Tong",
+      "Dominik Tuscher",
+      "Marc Tuscher",
+      "Pavan Upputuri"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20246v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20246v1",
+    "fetched_at": "2026-04-23T09:23:29.241444",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691133"
+  },
+  {
+    "id": "2604.20179v1",
+    "title": "Taint-Style Vulnerability Detection and Confirmation for Node.js Packages Using LLM Agent Reasoning",
+    "abstract": "The rapidly evolving Node$.$js ecosystem currently includes millions of packages and is a critical part of modern software supply chains, making vulnerability detection of Node$.$js packages increasingly important. However, traditional program analysis struggles in this setting because of dynamic JavaScript features and the large number of package dependencies. Recent advances in large language models (LLMs) and the emerging paradigm of LLM-based agents offer an alternative to handcrafted program models. This raises the question of whether an LLM-centric, tool-augmented approach can effectively detect and confirm taint-style vulnerabilities (e.g., arbitrary command injection) in Node$.$js packages. We implement LLMVD$.$js, a multi-stage agent pipeline to scan code, propose vulnerabilities, generate proof-of-concept exploits, and validate them through lightweight execution oracles; and systematically evaluate its effectiveness in taint-style vulnerability detection and confirmation in Node$.$js packages without dedicated static/dynamic analysis engines for path derivation. For packages from public benchmarks, LLMVD$.$js confirms 84% of the vulnerabilities, compared to less than 22% for prior program analysis tools. It also outperforms a prior LLM-program-analysis hybrid approach while requiring neither vulnerability annotations nor prior vulnerability reports. When evaluated on a set of 260 recently released packages (without vulnerability groundtruth information), traditional tools produce validated exploits for few ($\\leq 2$) packages, while LLMVD$.$js generates validated exploits for 36 packages.",
+    "authors": [
+      "Ronghao Ni",
+      "Mihai Christodorescu",
+      "Limin Jia"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20179v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20179v1",
+    "fetched_at": "2026-04-23T09:23:29.241465",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691143"
+  },
+  {
+    "id": "2604.20145v1",
+    "title": "Pre-Execution Query Slot-Time Prediction in Cloud Data Warehouses: A Feature-Scoped Machine Learning Approach",
+    "abstract": "Cloud data warehouses bill compute based on slot-time consumed. In shared multi-tenant environments, query cost is highly variable and hard to estimate before execution, causing budget overruns and degraded scheduling. Static query-planner heuristics fail to capture complex SQL structure, data skew, and workload contention. We present a feature-scoped machine learning approach that predicts BigQuery slot-time before execution using only pre-execution observable signals: a structured query complexity score derived from SQL operator costs, data volume features from planner estimates and workload metadata, and textual features from query text. We deliberately exclude runtime factors (slot-pool utilization, cache state, realized skew) unknowable at submission. The model uses a HistGradientBoostingRegressor trained on log-transformed slot-time, with a TF-IDF + TruncatedSVD-512 text pipeline fused with numeric and categorical features. Trained on 749 queries across seven deployment environments and evaluated out-of-distribution on 746 queries from two held-out environments, the model achieves MAE 1.17 slot-minutes, RMSE 4.71, and 74% explained variance on the full workload. On cost-significant queries (slot-time >= 0.01 min, N=282) the model achieves MAE 3.10 versus 4.95 for a predict-mean baseline and 4.54 for predict-median, a 30-37% reduction. On long-tail queries (>= 20 min, N=22) the model does not outperform trivial baselines, consistent with the hypothesis that long-tail queries are dominated by unobserved runtime factors outside the current feature scope. A complexity-routed dual-model architecture is described as a practical refinement, and directions for closing the long-tail gap are identified as future work.",
+    "authors": [
+      "Prashant Kumar Pathak"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.DB",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20145v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20145v1",
+    "fetched_at": "2026-04-23T09:23:29.241483",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691154"
+  },
+  {
+    "id": "2604.20134v1",
+    "title": "AgentSOC: A Multi-Layer Agentic AI Framework for Security Operations Automation",
+    "abstract": "Security Operations Centers (SOCs) increasingly encounter difficulties in correlating heterogeneous alerts, interpreting multi-stage attack progressions, and selecting safe and effective response actions. This study introduces AgentSOC, a multi-layered agentic AI framework that enhances SOC automation by integrating perception, anticipatory reasoning, and risk-based action planning. The proposed architecture consolidates several layers of abstraction to provide a single operational loop to support normalizing alerts, enriching context, generating hypotheses, validating structural feasibility, and executing policy-compliant responses. Conceptually evaluated within a large enterprise environment, AgentSOC improves triage consistency, anticipates attackers' intentions, and provides recommended containment options that are both operationally feasible and well-balanced between security efficacy and operational impact. The results suggest that hybrid agentic reasoning has the potential to serve as a foundation for developing adaptive, safer SOC automation in large enterprises. Additionally, a minimal Proof-Of-Concept (POC) demonstration using LANL authentication data demonstrated the feasibility of the proposed architecture.",
+    "authors": [
+      "Joyjit Roy",
+      "Samaresh Kumar Singh"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20134v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20134v1",
+    "fetched_at": "2026-04-23T09:23:29.241503",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691163"
+  },
+  {
+    "id": "2604.20147v1",
+    "title": "Robust Out-of-Distribution Stochastic Optimization",
+    "abstract": "Data-driven decision-making under uncertainty typically presumes the collection of historical data from an unknown target probability distribution. However, one may have no access to any data from the target distribution prior to decision-making. To address this challenge, we propose robust out-of-distribution stochastic optimization, a novel data-driven framework that effectively utilizes relevant data distributions for robust decision-making under unseen distributions. A key feature of our framework is that all data distributions are assumed to be randomly generated from a meta-distribution over distributions. To describe uncertainty in distribution generation, we propose to learn a data-driven uncertainty set in a reproducing kernel Hilbert space (RKHS) from relevant data distributions, with adjustable conservatism. We then incorporate this set into a min-max stochastic program to derive robust decisions. Notably, under randomness of distribution generation, we establish rigorous out-of-distribution generalization guarantees for the uncertainty set as well as the solution. To ease problem-solving in RKHS, an approximate parametrization with a provably bounded suboptimality and a row generation strategy are presented. Extensive numerical experiments on multi-item newsvendor and portfolio optimization demonstrate the superior out-of-distribution performance of our decision-making framework under unseen data distribution, even when only a small or moderate number of relevant sources are available.",
+    "authors": [
+      "Xianyu Li",
+      "Huan Xu",
+      "Xiaolin Huang",
+      "Chao Shang"
+    ],
+    "published": "2026-04-22",
+    "categories": [
+      "math.OC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.20147v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.20147v1",
+    "fetched_at": "2026-04-23T09:25:40.116896",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-23T09:25:59.691173"
+  }
+]
