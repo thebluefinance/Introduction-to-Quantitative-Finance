@@ -1,0 +1,654 @@
+[
+  {
+    "id": "2604.22463v1",
+    "title": "Quantum analog-encoding for correlated Gaussian vectors and their exponentiation with application to rough volatility",
+    "abstract": "Quantum computing may speed up numerical problems involving large matrices that are demanding for classical computers, and active research on this possibility is ongoing. In this work, we propose quantum algorithms for the exact simulation of a normalised correlated Gaussian random vector $|x\\rangle=\\vec{x}/\\lVert\\vec{x}\\rVert$, $\\vec{x}\\sim\\mathcal{N}(0,Σ)$, and its exponentiation $|e^{\\vec{x}} \\rangle= e^{\\vec{x}}/\\lVert e^{\\vec{x}}\\rVert$. When an $O(\\mathrm{polylog} N)$-gate-depth quantum data loader for the covariance matrix $Σ\\in\\mathbb{R}^{N\\times N}$ is available, preparing $|x\\rangle$ and $|e^{\\vec{x}}\\rangle$ require $\\widetilde{O}\\left(\\frac{\\lVertΣ\\rVert_F}{λ_{\\max}}κ^{1.5}\\right)$ and $\\widetilde{O}\\left(\\lVert\\vec{x}\\rVert\\frac{\\lVertΣ\\rVert_F}{λ_{\\max}}κ^{1.5}\\right)$ elementary gate depth respectively, where $\\lVertΣ\\rVert_F$, $λ_{\\max}$, $κ$ denote the Frobenius norm, maximal eigenvalue, and condition number of $Σ$. Motivated by financial applications, we provide an end-to-end resource analysis when $\\vec{x}$ represents a sample path of a Riemann-Liouville or standard fractional Brownian motion, or of a stationary fractional Ornstein-Uhlenbeck process. As a concrete example, we construct the quantum state encoding the rough Bergomi variance process and analyse the extraction of the integrated variance via quantum amplitude estimation. Under specific conditions, the dependence of $\\lVertΣ\\rVert_F/λ_{\\max}$ and $κ$ on $N$ is small, and subcubic complexity in $N$ is achieved, indicating a quantum advantage over classical Cholesky-based sampling methods. To our knowledge, this constitutes the first quantum algorithmic framework for the amplitude encoding of exponentiated Gaussian processes, providing foundational primitives for quantum-enhanced financial modelling.",
+    "authors": [
+      "Tassa Thaksakronwong",
+      "Koichi Miyamoto"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "quant-ph",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22463v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22463v1",
+    "fetched_at": "2026-04-27T10:10:24.842230",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216518"
+  },
+  {
+    "id": "2604.22188v1",
+    "title": "Optimal Investment and Entropy-Regularized Learning Under Stochastic Volatility Models with Portfolio Constraints",
+    "abstract": "We study the problem of optimal portfolio selection under stochastic volatility within a continuous time reinforcement learning framework with portfolio constraints. Exploration is modeled through entropy-regularized relaxed controls, where the investor selects probability distributions over admissible portfolio allocations rather than deterministic strategies. Using dynamic programming arguments, we derive the associated entropy-regularized Hamilton-Jacobi-Bellman equation, whose Hamiltonian involves optimization over probability measures supported on a compact control set. We show that the optimal exploratory policy takes the form of a truncated Gaussian distribution characterized by spatial derivatives of the solution of the resulting nonlinear quasilinear parabolic partial differential equation. Under suitable structural conditions on the model coefficients, we prove the existence of classical solutions to this nonlinear HJB equation for the value function. We then establish a verification theorem and analyze the policy-improvement structure induced by the entropy-regularized Hamiltonian, showing how the resulting sequence of PDEs provides a continuous-time interpretation of actor-critic learning dynamics. Finally, our PDE analysis with a semi-closed form of optimal value and optimal policy enables the design of an implementable reinforcement learning algorithm by recasting the optimal problem in a martingale framework.",
+    "authors": [
+      "Thai Nguyen",
+      "Pertiny Nkuize"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22188v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22188v1",
+    "fetched_at": "2026-04-27T10:10:24.842271",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216542"
+  },
+  {
+    "id": "2604.22069v1",
+    "title": "Liquidity provision in CLMMs: evidence from transactions data",
+    "abstract": "The emergence of Concentrated Liquidity Market Makers (CLMMs) has made liquidity provision on decentralized exchanges an active and risk-sensitive task. However, the standalone profitability of liquidity provision remains unclear for liquidity providers (LPs) who neither hedge their inventory risk nor receive off-pool profits. This paper studies the actual outcomes of LP activity using historical transaction-level data from WETH/USD liquidity pools on the Base chain across the Uniswap, Aerodrome, PancakeSwap and SushiSwap protocols. We propose a methodology for reconstructing LP PnL dynamics from on-chain events and introduce an original metric that captures both the terminal state of LP capital and its path over time. Based on this framework, we estimate the share of successful LPs, classify their behavior and develop a taxonomy of 15 position types as structural components of PnL. We further identify a distinct class of multi-LPs operating across several pools and show that the dominant profitable position configurations are concentrated around the current pool price. The results show that only about one out of six LPs avoids losses in the selected market segment, raising an open question about the true economic motives of LP participation. Evidence also suggests that successful LPs often close positions before the full range is traversed, making observed behavior closer to profit-target-based strategies.",
+    "authors": [
+      "Andrey Urusov",
+      "Rostislav Berezovskiy",
+      "Anatoly Krestenko",
+      "Andrei Kornilov"
+    ],
+    "published": "2026-04-23",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22069v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22069v1",
+    "fetched_at": "2026-04-27T10:10:24.842299",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216559"
+  },
+  {
+    "id": "2604.22015v1",
+    "title": "Hierarchical Probabilistic Principal Component Analysis of Longitudinal Data",
+    "abstract": "In many longitudinal studies, a large number of variables are measured repeatedly over time, with substantial missing data. Existing methods, such as probabilistic principal component analysis (PPCA), are ill-equipped to handle such incomplete, high-dimensional longitudinal data, as they fail to account for the nested sources of variation and temporal dependency inherent in repeated measures. We introduce hierarchical probabilistic principal component analysis (HPPCA), a two-level probabilistic factor model that explicitly separates between-subject variance from time-varying within-subject dynamics. The within-subject latent factors are modeled by a Gaussian process. We develop an EM algorithm to handle missing data and flexible covariance kernels, accelerated by computationally efficient initializers. Simulation studies demonstrated that HPPCA robustly recovers model parameters subspaces and substantially outperforms both standard PPCA and multivariate functional PCA in imputation accuracy, even under heavy missingness and model misspecification. An application to the long COVID symptoms in the Researching COVID to Enhance Recovery adult cohort revealed that HPPCA effectively captured the data's hierarchical structure and its learned features significantly improved the prediction of clinical outcomes and the recovery of masked clinical records compared to exisiting methods.",
+    "authors": [
+      "Xinyu Zhang",
+      "Ameer Qaqish",
+      "D. Y. Lin",
+      "Didong Li"
+    ],
+    "published": "2026-04-23",
+    "categories": [
+      "stat.ME",
+      "stat.AP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22015v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22015v1",
+    "fetched_at": "2026-04-27T10:10:31.674955",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216572"
+  },
+  {
+    "id": "2604.22139v1",
+    "title": "Anatomy-Aware Unsupervised Detection and Localization of Retinal Abnormalities in Optical Coherence Tomography",
+    "abstract": "Reliable automated analysis of Optical Coherence Tomography (OCT) imaging is crucial for diagnosing retinal disorders but faces a critical barrier: the need for expensive, labor-intensive expert annotations. Supervised deep learning models struggle to generalize across diverse pathologies, imaging devices, and patient populations due to their restricted vocabulary of annotated abnormalities. We propose an unsupervised anomaly detection framework that learns the normative distribution of healthy retinal anatomy without lesion annotations, directly addressing annotation efficiency challenges in clinical deployment. Our approach leverages a discrete latent model trained on normal B-scans to capture OCT-specific structural patterns. To enhance clinical robustness, we incorporate retinal layer-aware supervision and structured triplet learning to separate healthy from pathological representations, improving model reliability across varied imaging conditions. During inference, anomalies are detected and localized via reconstruction discrepancies, enabling both image and pixel-level identification without requiring disease-specific labels. On the Kermany dataset (AUROC: 0.799), our method substantially outperforms VAE, VQVAE, VQGAN, and f-AnoGAN baselines. Critically, cross-dataset evaluation on Srinivasan achieves AUROC 0.884 with superior generalization, demonstrating robust domain adaptation. On the external RETOUCH benchmark, unsupervised anomaly segmentation achieves competitive Dice (0.200) and mIoU (0.117) scores, validating reproducibility across institutions.",
+    "authors": [
+      "Tania Haghighi",
+      "Sina Gholami",
+      "Hamed Tabkhi",
+      "Minhaj Nur Alam"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22139v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22139v1",
+    "fetched_at": "2026-04-27T10:10:38.341853",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216587"
+  },
+  {
+    "id": "2604.21956v1",
+    "title": "Conditional anomaly detection using soft harmonic functions: An application to clinical alerting",
+    "abstract": "Timely detection of concerning events is an important problem in clinical practice. In this paper, we consider the problem of conditional anomaly detection that aims to identify data instances with an unusual response, such as the omission of an important lab test. We develop a new non-parametric approach for conditional anomaly detection based on the soft harmonic solution, with which we estimate the confidence of the label to detect anomalous mislabeling. We further regularize the solution to avoid the detection of isolated examples and examples on the boundary of the distribution support. We demonstrate the efficacy of the proposed method in detecting unusual labels on a real-world electronic health record dataset and compare it to several baseline approaches.",
+    "authors": [
+      "Michal Valko",
+      "Hamed Valizadegan",
+      "Branislav Kveton",
+      "Gregory F. Cooper",
+      "Milos Hauskrecht"
+    ],
+    "published": "2026-04-23",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.21956v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.21956v1",
+    "fetched_at": "2026-04-27T10:10:38.341920",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216600"
+  },
+  {
+    "id": "2604.21953v1",
+    "title": "Performance Anomaly Detection in Athletics: A Benchmarking System with Visual Analytics",
+    "abstract": "Anti-doping programs rely on biological testing to detect performance-enhancing drugs, but such testing costs over $800 per sample and is limited by short detection windows for many prohibited substances. These constraints leave large portions of athletes without regular testing, motivating complementary screening approaches that analyze routine competition results to identify suspicious performance patterns. We present a system that processes 1.6 million athletics performances from over 19,000 competitions (2010-2025) using eight detection methods ranging from statistical rules to machine learning and trajectory analysis. We validate all methods against publicly confirmed anti-doping violations to measure their effectiveness in identifying sanctioned athletes. Trajectory-based methods, which compare performances to expected career progression, achieve the best balance between detecting violations and limiting false alarms, though all methods face challenges from incomplete data and rare confirmed violations. The system provides an interactive interface for expert-driven investigation, emphasizing transparency and human judgment to support, rather than replace, established anti-doping processes.",
+    "authors": [
+      "Blessed Madukoma",
+      "Prasenjit Mitra"
+    ],
+    "published": "2026-04-23",
+    "categories": [
+      "cs.LG",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.21953v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.21953v1",
+    "fetched_at": "2026-04-27T10:10:38.341968",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216612"
+  },
+  {
+    "id": "2604.21993v1",
+    "title": "When Quotes Crumble: Detecting Transient Mechanical Liquidity Erosion in Limit Order Books",
+    "abstract": "We study the detection of transient liquidity erosion (\"crumbling quotes\") in electronic limit order books, where observable quote deterioration may reflect either mechanical liquidity withdrawal or informational repricing. Using the ABIDES agent-based simulator, we construct a multi-agent environment in which crumbling emerges from stochastic regime switches in a market maker, providing time-resolved ground truth unavailable in real market data. We develop a detection pipeline that identifies mechanically driven quote erosion using order book features, and train a neural model to produce calibrated crumbling probabilities. Experiments demonstrate that the proposed framework reliably identifies crumbling events against agent-level ground truth, with the neural model achieving +36% AUC improvement over rule-based baselines and robust performance across normal, high-volatility, bull, and bear market conditions. Ablation studies on temporal features and varying the dependence structure of the ground-truth mechanism confirm that the framework generalizes across both independent and autocorrelated liquidity withdrawal dynamics.",
+    "authors": [
+      "Haohan Xu",
+      "Jason Bohne",
+      "Pawel Polak",
+      "Yurij Baransky",
+      "Ajay Alva",
+      "Violetta Fedotova",
+      "Gary Kazantsev",
+      "David Rosenberg"
+    ],
+    "published": "2026-04-23",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.21993v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.21993v1",
+    "fetched_at": "2026-04-27T10:11:05.864966",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216632"
+  },
+  {
+    "id": "2604.22753v1",
+    "title": "Spend Less, Fit Better: Budget-Efficient Scaling Law Fitting via Active Experiment Selection",
+    "abstract": "Scaling laws are used to plan multi-million-dollar training runs, but fitting those laws can itself cost millions. In modern large-scale workflows, assembling a sufficiently informative set of pilot experiments is already a major budget-allocation problem rather than a routine preprocessing step. We formulate scaling-law fitting as budget-aware sequential experimental design: given a finite pool of runnable experiments with heterogeneous costs, choose which runs to execute so as to maximize extrapolation accuracy in a high-cost target region. We then propose an uncertainty-aware method for sequentially allocating experimental budget toward the runs most useful for target-region extrapolation. Across a diverse benchmark of scaling-law tasks, our method consistently outperforms classical design-based baselines, and often approaches the performance of fitting on the full experimental set while using only about 10% of the total training budget. Our code is available at https://github.com/PlanarG/active-sl.",
+    "authors": [
+      "Sijie Li",
+      "Shanda Li",
+      "Haowei Lin",
+      "Weiwei Sun",
+      "Ameet Talwalkar",
+      "Yiming Yang"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22753v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22753v1",
+    "fetched_at": "2026-04-27T10:11:09.328983",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216643"
+  },
+  {
+    "id": "2604.22750v1",
+    "title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+    "abstract": "The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questions naturally arise: (1) Where do AI agents spend the tokens? (2) Which models are more token-efficient? and (3) Can agents predict their token usage before task execution? In this paper, we present the first systematic study of token consumption patterns in agentic coding tasks. We analyze trajectories from eight frontier LLMs on SWE-bench Verified and evaluate models' ability to predict their own token costs before task execution. We find that: (1) agentic tasks are uniquely expensive, consuming 1000x more tokens than code reasoning and code chat, with input tokens rather than output tokens driving the overall cost; (2) token usage is highly variable and inherently stochastic: runs on the same task can differ by up to 30x in total tokens, and higher token usage does not translate into higher accuracy; instead, accuracy often peaks at intermediate cost and saturates at higher costs; (3) models vary substantially in token efficiency: on the same tasks, Kimi-K2 and Claude-Sonnet-4.5, on average, consume over 1.5 million more tokens than GPT-5; (4) task difficulty rated by human experts only weakly aligns with actual token costs, revealing a fundamental gap between human-perceived complexity and the computational effort agents actually expend; and (5) frontier models fail to accurately predict their own token usage (with weak-to-moderate correlations, up to 0.39) and systematically underestimate real token costs. Our study offers new insights into the economics of AI agents and can inspire future research in this direction.",
+    "authors": [
+      "Longju Bai",
+      "Zhemin Huang",
+      "Xingyao Wang",
+      "Jiao Sun",
+      "Rada Mihalcea",
+      "Erik Brynjolfsson",
+      "Alex Pentland",
+      "Jiaxin Pei"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.CL",
+      "cs.CY",
+      "cs.HC",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22750v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22750v1",
+    "fetched_at": "2026-04-27T10:11:09.329031",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216656"
+  },
+  {
+    "id": "2604.22661v1",
+    "title": "Can QPP Choose the Right Query Variant? Evaluating Query Variant Selection for RAG Pipelines",
+    "abstract": "Large Language Models (LLMs) have made query reformulation ubiquitous in modern retrieval and Retrieval-Augmented Generation (RAG) pipelines, enabling the generation of multiple semantically equivalent query variants. However, executing the full pipeline for every reformulation is computationally expensive, motivating selective execution: can we identify the best query variant before incurring downstream retrieval and generation costs? We investigate Query Performance Prediction (QPP) as a mechanism for variant selection across ad-hoc retrieval and end-to-end RAG. Unlike traditional QPP, which estimates query difficulty across topics, we study intra-topic discrimination - selecting the optimal reformulation among competing variants of the same information need. Through large-scale experiments on TREC-RAG using both sparse and dense retrievers, we evaluate pre- and post-retrieval predictors under correlation- and decision-based metrics. Our results reveal a systematic divergence between retrieval and generation objectives: variants that maximize ranking metrics such as nDCG often fail to produce the best generated answers, exposing a \"utility gap\" between retrieval relevance and generation fidelity. Nevertheless, QPP can reliably identify variants that improve end-to-end quality over the original query. Notably, lightweight pre-retrieval predictors frequently match or outperform more expensive post-retrieval methods, offering a latency-efficient approach to robust RAG.",
+    "authors": [
+      "Negar Arabzadeh",
+      "Andrew Drozdov",
+      "Michael Bendersky",
+      "Matei Zaharia"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.IR",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22661v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22661v1",
+    "fetched_at": "2026-04-27T10:11:09.329056",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216667"
+  },
+  {
+    "id": "2604.22640v1",
+    "title": "Quality-Driven Selective Mutation for Deep Learning",
+    "abstract": "Mutants support testing and debugging in two roles: (i) as test goals and (ii) as substitutes for real faults. Hard-to-kill mutants provide better guidance for test improvement, while realism is essential when mutants are used to simulate real bugs. Building on these roles, selective mutation for deep learning (DL) aims to reduce the cost of mutant generation and execution by choosing operator configurations that yield resistant and realistic mutants. However, the DL literature lacks a unified measure that captures both aspects. This study presents a probabilistic framework to quantify mutant quality along two complementary axes: resistance and realism. Resistance adapts the classical notion of hard-to-kill mutants to the DL setting using statistical killing probabilities, while realism is measured via the generalized Jaccard similarity between mutant and real-fault detectability patterns. The framework enables ranking and filtering of low-quality mutation-operator configurations without assuming a specific use case. We empirically evaluate the approach on four datasets of real DL faults. Three datasets (CleanML, DeepFD, and DeepLocalize) are used to estimate and select high-quality operator configurations, and the held-out defect4ML dataset is used for validation. Results show that quality-driven selection reduces the number of generated mutants by up to 55.6% while preserving typical levels of resistance and realism under baseline-aligned selection thresholds. These findings confirm that dual-objective selection can lower cost without compromising the usefulness of mutants for either role.",
+    "authors": [
+      "Zaheed Ahmed",
+      "Emmanuel Charleson Dapaah",
+      "Philip Makedonski",
+      "Jens Grabowski"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22640v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22640v1",
+    "fetched_at": "2026-04-27T10:11:09.329080",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216677"
+  },
+  {
+    "id": "2604.22639v1",
+    "title": "Adversarial Malware Generation in Linux ELF Binaries via Semantic-Preserving Transformations",
+    "abstract": "Malware development and detection have undergone significant changes in recent years as modern concepts, such as machine learning, have been used for both adversarial attacks and defense. Despite intensive research on Windows Portable Executable (PE) files, there is minimal work on Linux Executable and Linkable Format (ELF). In this work, we summarize the academic papers submitted in this field and develop a new adversarial malware generator for the ELF format. Using a variety of metrics, we thoroughly evaluated our generator and achieved an Evasion Rate of 67.74 % while changing the confidence of the malware detector by -0.50 in the mean case for the dataset used. In our approach, we chose MalConv as the target classifier. Using this classifier, we found that the most successful modifications used strings typical of benign files as a data source. We conducted a variety of experiments and concluded that the target classifier appears sensitive to strings at any location within the executable file.",
+    "authors": [
+      "Lukáš Hrdonka",
+      "Martin Jureček"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22639v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22639v1",
+    "fetched_at": "2026-04-27T10:11:09.329105",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216687"
+  },
+  {
+    "id": "2604.22575v1",
+    "title": "SpikingBrain2.0: Brain-Inspired Foundation Models for Efficient Long-Context and Cross-Platform Inference",
+    "abstract": "Scaling context length is reshaping large-model development, yet full-attention Transformers suffer from prohibitive computation and inference bottlenecks at long sequences. A key challenge is to design foundation models that maintain performance and long-context efficiency with minimal training overhead. We introduce SpikingBrain2.0 (SpB2.0), a 5B model that advances both architecture and training efficiency of its predecessor.   Our contributions are two-fold. (1) Architectural Innovation: We propose Dual-Space Sparse Attention (DSSA), an inter-layer hybrid of Sparse Softmax Attention (MoBA) and Sparse Linear Attention (SSE), achieving an improved performance-efficiency trade-off for long-context modeling. SpB2.0 further supports dual quantization paths: INT8-Spiking coding enables sparse event-driven computation, while FP8 coding accelerates inference on modern GPUs. (2) Enhanced Training Strategy: We develop an optimized Transformer-to-Hybrid (T2H) pipeline with dual conversion paths for LLMs and VLMs using curated open-source data.   Empirically, SpB2.0-5B and SpB2.0-VL-5B recover most of the base Transformer (Qwen3-4B) capability with under 7k A100 GPU hours. SpB2.0 achieves a 10.13x TTFT speedup at 4M context and supports over 10M tokens on 8 A100 GPUs under vLLM, where full-attention models exceed memory limits. It also demonstrates strong cross-platform compatibility, enabling FP8 GPU inference (2.52x speedup at 250k) and efficient neuromorphic execution (64.31% sparsity, with 70.6% and 46.5% area and power reduction at 500MHz).   Overall, SpikingBrain2.0 provides a practical pathway for lightweight, multimodal, spiking foundation models, highlighting the potential of combining brain-inspired mechanisms with efficient architectures for resource-constrained and edge scenarios.",
+    "authors": [
+      "Yuqi Pan",
+      "Jinghao Zhuang",
+      "Yupeng Feng",
+      "Fangzhi Zhong",
+      "Siyu Ding",
+      "Xuerui Qiu",
+      "Shaowei Gu",
+      "Bohan Sun",
+      "Zhiyong Qin",
+      "Yibo Zhong",
+      "Lingtao Ouyang",
+      "Kun Yang",
+      "Zehao Liu",
+      "Yuhong Chou",
+      "Shurong Wang",
+      "Anjie Hu",
+      "Han Xu",
+      "Bo Xu",
+      "Guoqi Li"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22575v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22575v1",
+    "fetched_at": "2026-04-27T10:11:09.329157",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216698"
+  },
+  {
+    "id": "2604.22558v1",
+    "title": "SOLAR-RL: Semi-Online Long-horizon Assignment Reinforcement Learning",
+    "abstract": "As Multimodal Large Language Models (MLLMs) mature, GUI agents are evolving from static interactions to complex navigation. While Reinforcement Learning (RL) has emerged as a promising paradigm for training MLLM agents on dynamic GUI tasks, its effective application faces a dilemma. Standard Offline RL often relies on static step-level data, neglecting global trajectory semantics such as task completion and execution quality. Conversely, Online RL captures the long-term dynamics but suffers from high interaction costs and potential environmental instability. To bridge this gap, we propose SOLAR-RL (Semi-Online Long-horizon Assignment Reinforcement Learning). Instead of relying solely on expensive online interactions, our framework integrates global trajectory insights directly into the offline learning process. Specifically, we reconstruct diverse rollout candidates from static data, detect the first failure point using per-step validity signals, and retroactively assign dense step-level rewards with target-aligned shaping to reflect trajectory-level execution quality, effectively simulating online feedback without interaction costs. Extensive experiments demonstrate that SOLAR-RL significantly improves long-horizon task completion rates and robustness compared to strong baselines, offering a sample-efficient solution for autonomous GUI navigation.",
+    "authors": [
+      "Jichao Wang",
+      "Liuyang Bian",
+      "Yufeng Zhou",
+      "Han Xiao",
+      "Yue Pan",
+      "Guozhi Wang",
+      "Hao Wang",
+      "Zhaoxiong Wang",
+      "Yafei Wen",
+      "Xiaoxin Chen",
+      "Shuai Ren",
+      "Lingfang Zeng"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22558v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22558v1",
+    "fetched_at": "2026-04-27T10:11:09.329208",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216709"
+  },
+  {
+    "id": "2604.22551v1",
+    "title": "QDTraj: Exploration of Diverse Trajectory Primitives for Articulated Objects Robotic Manipulation",
+    "abstract": "Thanks to the latest advances in learning and robotics, domestic robots are beginning to enter homes, aiming to execute household chores autonomously. However, robots still struggle to perform autonomous manipulation tasks in open-ended environments. In this context, this paper presents a method that enables a robot to manipulate a wide spectrum of articulated objects.   In this paper, we automatically generate different robot low-level trajectory primitives to manipulate given object articulations. A very important point when it comes to generating expert trajectories is to consider the diversity of solutions to achieve the same goal. Indeed, knowing diverse low-level primitives to accomplish the same task enables the robot to choose the optimal solution in its real-world environment, with live constraints and unexpected changes. To do so, we propose a method based on Quality-Diversity algorithms that leverages sparse reward exploration in order to generate a set of diverse and high-performing trajectory primitives for a given manipulation task.   We validated our method, QDTraj, by generating diverse trajectories in simulation and deploying them in the real world. QDTraj generates at least 5 times more diverse trajectories for both hinge and slider activation tasks, outperforming the other methods we compared against. We assessed the generalization of our method over 30 articulations of the PartNetMobility articulated object dataset, with an average of 704 different trajectories by task. Code is publicly available at: https://kappel.web.isir.upmc.fr/trajectory_primitive_website",
+    "authors": [
+      "Mathilde Kappel",
+      "Mahdi Khoramshahi",
+      "Louis Annabi",
+      "Faiz Ben Amar",
+      "Stéphane Doncieux"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22551v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22551v1",
+    "fetched_at": "2026-04-27T10:11:09.329234",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216720"
+  },
+  {
+    "id": "2604.22534v1",
+    "title": "FeatEHR-LLM: Leveraging Large Language Models for Feature Engineering in Electronic Health Records",
+    "abstract": "Feature engineering for Electronic Health Records (EHR) is complicated by irregular observation intervals, variable measurement frequencies, and structural sparsity inherent to clinical time series. Existing automated methods either lack clinical domain awareness or assume clean, regularly sampled inputs, limiting their applicability to real-world EHR data. We present \\textbf{FeatEHR-LLM}, a framework that leverages Large Language Models (LLMs) to generate clinically meaningful tabular features from irregularly sampled EHR time series. To limit patient privacy exposure, the LLM operates exclusively on dataset schemas and task descriptions rather than raw patient records. A tool-augmented generation mechanism equips the LLM with specialized routines for querying irregular temporal data, enabling it to produce executable feature-extraction code that explicitly handles uneven observation patterns and informative sparsity. FeatEHR-LLM supports both univariate and multivariate feature generation through an iterative, validation-in-the-loop pipeline. Evaluated on eight clinical prediction tasks across four ICU datasets, our framework achieves the highest mean AUROC on 7 out of 8 tasks, with improvements of up to 6 percentage points over strong baselines. Code is available at github.com/hojjatkarami/FeatEHR-LLM.",
+    "authors": [
+      "Hojjat Karami",
+      "David Atienza",
+      "Jean-Philippe Thiran",
+      "Anisoara Ionescu"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22534v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22534v1",
+    "fetched_at": "2026-04-27T10:11:09.329257",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216730"
+  },
+  {
+    "id": "2604.22455v1",
+    "title": "On the Hybrid Nature of ABPMS Process Frames and its Implications on Automated Process Discovery",
+    "abstract": "A core component of any AI-Augmented Business Process Management System (ABPMS) is the process frame, which gives the system process-awareness and defines the boundaries in which the system must operate. Compared to traditional process models, the process frame should, in principle, provide a somewhat more permissive representation of the managed processes, such that the (semi) autonomous behavior of an ABPMS, referred to as framed autonomy, could emerge. At the same time, it is not limited to a single linguistic or symbolic formalism and may incorporate heterogeneous knowledge ranging from predefined procedures to commonsense rules and best practices. In this paper, we conceptualize the notion of an ABPMS process frame as a hybrid business process representation, consisting of semi-concurrently executed procedural and declarative process models. We rely on our earlier works to outline the execution semantics of this type of process frame, arguing in favor of adopting the open-world assumption of the declarative paradigm also for procedural process models. The latter leads to a constraint-like interpretation, where each procedural model is considered to constrain the activities within that model, without imposing explicit execution requirements nor limitations on activities that may be present in other models. This is analogous to existing declarative languages, such as Declare, where each constraint has a direct effect only on the specific activities being constrained. Given this similarity, we propose mapping subsets of discovered declarative constraints into equivalent semi-concurrently executed procedural fragments, thus laying the foundation for a corresponding process (frame) discovery approach.",
+    "authors": [
+      "Anti Alman",
+      "Izack Cohen",
+      "Avigdor Gal",
+      "Fabrizio Maria Maggi",
+      "Marco Montali"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22455v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22455v1",
+    "fetched_at": "2026-04-27T10:11:09.329281",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216740"
+  },
+  {
+    "id": "2604.22446v1",
+    "title": "From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company",
+    "abstract": "Individual agent capabilities have advanced rapidly through modular skills and tool integrations, yet multi-agent systems remain constrained by fixed team structures, tightly coupled coordination logic, and session-bound learning. We argue that this reflects a deeper absence: a principled organisational layer that governs how a workforce of agents is assembled, governed, and improved over time, decoupled from what individual agents know. To fill this gap, we introduce \\emph{OneManCompany (OMC)}, a framework that elevates multi-agent systems to the organisational level. OMC encapsulates skills, tools, and runtime configurations into portable agent identities called \\emph{Talents}, orchestrated through typed organisational interfaces that abstract over heterogeneous backends. A community-driven \\emph{Talent Market} enables on-demand recruitment, allowing the organisation to close capability gaps and reconfigure itself dynamically during execution. Organisational decision-making is operationalised through an \\emph{Explore-Execute-Review} ($\\text{E}^2$R) tree search, which unifies planning, execution, and evaluation in a single hierarchical loop: tasks are decomposed top-down into accountable units and execution outcomes are aggregated bottom-up to drive systematic review and refinement. This loop provides formal guarantees on termination and deadlock freedom while mirroring the feedback mechanisms of human enterprises. Together, these contributions transform multi-agent systems from static, pre-configured pipelines into self-organising and self-improving AI organisations capable of adapting to open-ended tasks across diverse domains. Empirical evaluation on PRDBench shows that OMC achieves an $84.67\\%$ success rate, surpassing the state of the art by $15.48$ percentage points, with cross-domain case studies further demonstrating its generality.",
+    "authors": [
+      "Zhengxu Yu",
+      "Yu Fu",
+      "Zhiyuan He",
+      "Yuxuan Huang",
+      "Lee Ka Yiu",
+      "Meng Fang",
+      "Weilin Luo",
+      "Jun Wang"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22446v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22446v1",
+    "fetched_at": "2026-04-27T10:11:09.329311",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216750"
+  },
+  {
+    "id": "2604.22436v1",
+    "title": "AgentSearchBench: A Benchmark for AI Agent Search in the Wild",
+    "abstract": "The rapid growth of AI agent ecosystems is transforming how complex tasks are delegated and executed, creating a new challenge of identifying suitable agents for a given task. Unlike traditional tools, agent capabilities are often compositional and execution-dependent, making them difficult to assess from textual descriptions alone. However, existing research and benchmarks typically assume well-specified functionalities, controlled candidate pools, or only executable task queries, leaving realistic agent search scenarios insufficiently studied. We introduce AgentSearchBench, a large-scale benchmark for agent search in the wild, built from nearly 10,000 real-world agents across multiple providers. The benchmark formalizes agent search as retrieval and reranking problems under both executable task queries and high-level task descriptions, and evaluates relevance using execution-grounded performance signals. Experiments reveal a consistent gap between semantic similarity and actual agent performance, exposing the limitations of description-based retrieval and reranking methods. We further show that lightweight behavioral signals, including execution-aware probing, can substantially improve ranking quality, highlighting the importance of incorporating execution signals into agent discovery. Our code is available at https://github.com/Bingo-W/AgentSearchBench.",
+    "authors": [
+      "Bin Wu",
+      "Arastun Mammadli",
+      "Xiaoyu Zhang",
+      "Emine Yilmaz"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.AI",
+      "cs.IR",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22436v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22436v1",
+    "fetched_at": "2026-04-27T10:11:09.329334",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216761"
+  },
+  {
+    "id": "2604.22363v1",
+    "title": "LeHome: A Simulation Environment for Deformable Object Manipulation in Household Scenarios",
+    "abstract": "Household environments present one of the most common, impactful yet challenging application domains for robotics. Within household scenarios, manipulating deformable objects is particularly difficult, both in simulation and real-world execution, due to varied categories and shapes, complex dynamics, and diverse material properties, as well as the lack of reliable deformable-object support in existing simulations. We introduce LeHome, a comprehensive simulation environment designed for deformable object manipulation in household scenarios. LeHome covers a wide spectrum of deformable objects, such as garments and food items, offering high-fidelity dynamics and realistic interactions that existing simulators struggle to simulate accurately. Moreover, LeHome supports multiple robotic embodiments and emphasizes low-cost robots as a core focus, enabling end-to-end evaluation of household tasks on resource-constrained hardware. By bridging the gap between realistic deformable object simulation and practical robotic platforms, LeHome provides a scalable testbed for advancing household robotics. Webpage: https://lehome-web.github.io/ .",
+    "authors": [
+      "Zeyi Li",
+      "Yushi Yang",
+      "Shawn Xie",
+      "Kyle Xu",
+      "Tianxing Chen",
+      "Yuran Wang",
+      "Zhenhao Shen",
+      "Yan Shen",
+      "Yue Chen",
+      "Wenjun Li",
+      "Yukun Zheng",
+      "Chaorui Zhang",
+      "Siyi Lin",
+      "Fei Teng",
+      "Hongjun Yang",
+      "Ming Chen",
+      "Steve Xie",
+      "Ruihai Wu"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22363v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22363v1",
+    "fetched_at": "2026-04-27T10:11:09.329382",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216770"
+  },
+  {
+    "id": "2604.22313v1",
+    "title": "CLARITY: A Framework and Benchmark for Conversational Language Ambiguity and Unanswerability in Interactive NL2SQL Systems",
+    "abstract": "NL2SQL systems deployed in industry settings often encounter ambiguous or unanswerable queries, particularly in interactive scenarios with incomplete user clarification. Existing benchmarks typically assume a single source of ambiguity and rely on user interaction for resolution, overlooking realistic failure modes.   We introduce Clarity, a framework for automatically generating an NL2SQL benchmark with multi-faceted ambiguities and diverse user behaviors across both single- and multi-turn settings. Using a constraint-driven pipeline, Clarity transforms executable SQL into ambiguous queries, augmented with grounded conversational continuations and schema-level metadata.   Empirical evaluation on Spider and BIRD shows that leading NL2SQL systems, including those based on strong LLMs, suffer significant performance degradation under multi-faceted ambiguity. While these systems often detect ambiguity, they struggle to accurately localize and resolve the underlying schema-level sources. Our results highlight the need for more robust ambiguity detection and resolution in industry-grade NL2SQL systems.",
+    "authors": [
+      "Tabinda Sarwar",
+      "Farhad Moghimifar",
+      "Cong Duy Vu Hoang",
+      "Xiaoxiao Ma",
+      "Shawn Chang Xu",
+      "Fahimeh Saleh",
+      "Poorya Zaremoodi",
+      "Avirup Sil",
+      "Katrin Kirchhoff"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22313v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22313v1",
+    "fetched_at": "2026-04-27T10:11:09.329414",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216780"
+  },
+  {
+    "id": "2604.22282v1",
+    "title": "STEM: Structure-Tracing Evidence Mining for Knowledge Graphs-Driven Retrieval-Augmented Generation",
+    "abstract": "Knowledge Graph-based Question Answering (KGQA) plays a pivotal role in complex reasoning tasks but remains constrained by two persistent challenges: the structural heterogeneity of Knowledge Graphs(KGs) often leads to semantic mismatch during retrieval, while existing reasoning path retrieval methods lack a global structural perspective. To address these issues, we propose Structure-Tracing Evidence Mining (STEM), a novel framework that reframes multi-hop reasoning as a schema-guided graph search task. First, we design a Semantic-to-Structural Projection pipeline that leverages KG structural priors to decompose queries into atomic relational assertions and construct an adaptive query schema graph. Subsequently, we execute globally-aware node anchoring and subgraph retrieval to obtain the final evidence reasoning graph from KG. To more effectively integrate global structural information during the graph construction process, we design a Triple-Dependent GNN (Triple-GNN) to generate a Global Guidance Subgraph (Guidance Graph) that guides the construction. STEM significantly improves both the accuracy and evidence completeness of multi-hop reasoning graph retrieval, and achieves State-of-the-Art performance on multiple multi-hop benchmarks.",
+    "authors": [
+      "Peng Yu",
+      "En Xu",
+      "Bin Chen",
+      "Haibiao Chen",
+      "Yinfei Xu"
+    ],
+    "published": "2026-04-24",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.22282v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.22282v1",
+    "fetched_at": "2026-04-27T10:11:09.329440",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-04-27T10:13:25.216789"
+  }
+]
