@@ -1,0 +1,335 @@
+[
+  {
+    "id": "2604.25897v1",
+    "title": "Variational Neural Belief Parameterizations for Robust Dexterous Grasping under Multimodal Uncertainty",
+    "abstract": "Contact variability, sensing uncertainty, and external disturbances make grasp execution stochastic. Expected-quality objectives ignore tail outcomes and often select grasps that fail under adverse contact realizations. Risk-sensitive POMDPs address this failure mode, but many use particle-filter beliefs that scale poorly, obstruct gradient-based optimization, and estimate Conditional Value-at-Risk (CVaR) with high-variance approximations. We instead formulate grasp acquisition as variational inference over latent contact parameters and object pose, representing the belief with a differentiable Gaussian mixture. We use Gumbel-Softmax component selection and location-scale reparameterization to express samples as smooth functions of the belief parameters, enabling pathwise gradients through a differentiable CVaR surrogate for direct optimization of tail robustness. In simulation, our variational neural belief improves robust grasp success under contact-parameter uncertainty and exogenous force perturbations while reducing planning time by roughly an order of magnitude relative to particle-filter model-predictive control. On a serial-chain robot arm with a multifingered hand, we validate grasp-and-lift success under object-pose uncertainty against a Gaussian baseline. Both methods succeed on the tested perturbations, but our controller terminates in fewer steps and less wall-clock time while achieving a higher tactile grasp-quality proxy. Our learned belief also calibrates risk more accurately, keeping mean absolute calibration error below 0.14 across tested simulation regimes, compared with 0.58 for a Cross-Entropy Method planner.",
+    "authors": [
+      "Clinton Enwerem",
+      "Shreya Kalyanaraman",
+      "John S. Baras",
+      "Calin Belta"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.RO",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25897v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25897v1",
+    "fetched_at": "2026-04-29T10:03:43.082900"
+  },
+  {
+    "id": "2604.25850v1",
+    "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
+    "abstract": "Harnesses have become a central determinant of coding-agent performance, shaping how models interact with repositories, tools, and execution environments. Yet automating harness engineering is hard: a heterogeneous action space, sparse and noisy evaluation signal, multi-million-token trajectories, and edits whose effect is hard to attribute to the next round's outcomes. We introduce Agentic Harness Engineering (AHE), a framework that automates harness-level evolution by instrumenting the three stages of any engineering loop (component editing, trajectory inspection, and decision making) with matched observability pillars: (1) component observability gives every editable harness component a file-level representation so the action space is explicit and revertible; (2) experience observability distills millions of raw trajectory tokens into a layered, drill-down evidence corpus that an evolving agent can actually consume; and (3) decision observability pairs every edit with a self-declared prediction, later verified against the next round's task-level outcomes. Together, these pillars turn every edit into a falsifiable contract, so harness evolution proceeds autonomously without collapsing into trial-and-error. Empirically, ten AHE iterations lift pass@1 on Terminal-Bench 2 from 69.7% to 77.0%, surpassing the human-designed harness Codex-CLI (71.9%) and the self-evolving baselines ACE and TF-GRPO. The frozen harness transfers without re-evolution: on SWE-bench-verified it tops aggregate success at 12% fewer tokens than the seed, and on Terminal-Bench 2 it yields +5.1 to +10.1pp cross-family gains across three alternate model families, indicating the evolved components encode general engineering experience rather than benchmark-specific tuning. These results position observability-driven evolution as a practical pathway to keep coding-agent harnesses continually improving.",
+    "authors": [
+      "Jiahang Lin",
+      "Shichun Liu",
+      "Chengjun Pan",
+      "Lizhi Lin",
+      "Shihan Dou",
+      "Xuanjing Huang",
+      "Hang Yan",
+      "Zhenhua Han",
+      "Tao Gui"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.CL",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25850v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25850v1",
+    "fetched_at": "2026-04-29T10:03:43.082945"
+  },
+  {
+    "id": "2604.25737v1",
+    "title": "SAFEdit: Does Multi-Agent Decomposition Resolve the Reliability Challenges of Instructed Code Editing?",
+    "abstract": "Instructed code editing is a significant challenge for large language models (LLMs). On the EditBench benchmark, 39 of 40 evaluated models obtain a task success rate (TSR) below 60 percent, highlighting a gap between general code generation and the ability to perform instruction-driven editing under executable test constraints. To address this, we propose SAFEdit, a multi-agent framework for instructed code editing that decomposes the editing process into specialized roles to improve reliability and reduce unintended code changes. A Planner Agent produces an explicit, visibility-aware edit plan, an Editor Agent applies minimal, literal code modifications, and a Verifier Agent executes real test runs. When tests fail, SAFEdit uses a Failure Abstraction Layer (FAL) to transform raw test logs into structured diagnostic feedback, which is fed back to the Editor to support iterative refinement. We compare SAFEdit against both prior single-model results reported for EditBench and an implemented ReAct single-agent baseline under the same evaluation conditions. We used EditBench to evaluate SAFEdit on 445 code editing instances in five languages (English, Polish, Spanish, Chinese, and Russian) under varying spatial context variants. SAFEdit achieved 68.6 percent TSR, outperforming the single-model baseline by 3.8 percentage points and the ReAct single-agent baseline by 8.6 percentage points. The iterative refinement loop was found to contribute 17.4 percentage points to SAFEdit's overall success rate. SAFEdit's automated error analysis further indicates a reduction in instruction-level hallucinations compared to single-agent approaches, providing an additional framework component for interpreting failures beyond pass or fail outcomes.",
+    "authors": [
+      "Noam Tarshish",
+      "Nofar Selouk",
+      "Daniel Hodisan",
+      "Bar Ezra Gafniel",
+      "Yuval Elovici",
+      "Asaf Shabtai",
+      "Eliya Nachmani"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25737v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25737v1",
+    "fetched_at": "2026-04-29T10:03:43.082975"
+  },
+  {
+    "id": "2604.25727v1",
+    "title": "Toward Scalable Terminal Task Synthesis via Skill Graphs",
+    "abstract": "Terminal agents have demonstrated strong potential for autonomous command-line execution, yet their training remains constrained by the scarcity of high-quality and diverse execution trajectories. Existing approaches mitigate this bottleneck by synthesizing large-scale terminal task instances for trajectory sampling. However, they primarily focus on scaling the number of tasks while providing limited control over the diversity of execution trajectories that agents actually experience during training. In this paper, we present SkillSynth, an automated framework for terminal task synthesis built on a scenario-mediated skill graph. SkillSynth first constructs a large-scale skill graph, where scenarios serve as intermediate transition nodes that connect diverse command-line skills. It then samples paths from this graph as abstractions of real-world workflows, and uses a multi-agent harness to instantiate them into executable task instances. By grounding task synthesis in graph-sampled workflow paths, SkillSynth explicitly controls the diversity of minimal execution trajectories required to solve the synthesized tasks. Experiments on Terminal-Bench demonstrate the effectiveness of SkillSynth. Moreover, task instances synthesized by SkillSynth have been adopted to train Hy3 Preview, contributing to its enhanced agentic capabilities in terminal-based settings.",
+    "authors": [
+      "Zhiyuan Fan",
+      "Tinghao Yu",
+      "Yuanjun Cai",
+      "Jiangtao Guan",
+      "Yun Yang",
+      "Dingxin Hu",
+      "Jiang Zhou",
+      "Xing Wu",
+      "Zhuo Han",
+      "Feng Zhang",
+      "Lilin Wang"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25727v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25727v1",
+    "fetched_at": "2026-04-29T10:03:43.083011"
+  },
+  {
+    "id": "2604.25724v1",
+    "title": "Scalable Inference Architectures for Compound AI Systems: A Production Deployment Study",
+    "abstract": "Modern enterprise AI applications increasingly rely on compound AI systems - architectures that compose multiple models, retrievers, and tools to accomplish complex tasks. Deploying such systems in production demands inference infrastructure that can efficiently serve concurrent, heterogeneous model invocations while maintaining cost-effectiveness and low latency. This paper presents a production deployment study of a modular, platform-agnostic inference architecture developed at Salesforce to support compound AI use cases including Agentforce (autonomous AI agents) and ApexGuru (AI-powered code analysis). The system integrates serverless execution, dynamic autoscaling, and MLOps pipelines to deliver consistent low-latency inference across multi-component agent workflows. We report production results demonstrating over 50% reduction in tail latency (P95), up to 3.9x throughput improvement, and 30 to 40% cost savings compared to prior static deployments. We further present a novel analysis of compound-system-specific challenges including multi-model fan-out overhead, cascading cold-start propagation, and heterogeneous scaling dynamics that emerge uniquely when serving agentic workloads. Through detailed case studies and operational lessons, we illustrate how the architecture enables compound AI systems to scale model invocations in parallel, handle bursty multi-agent workloads, and support rapid model iteration - capabilities essential for operationalizing agentic AI at enterprise scale.",
+    "authors": [
+      "Srikanta Prasad S",
+      "Utkarsh Arora"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25724v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25724v1",
+    "fetched_at": "2026-04-29T10:03:43.083030"
+  },
+  {
+    "id": "2604.25700v1",
+    "title": "Bug-Report-Driven Fault Localization: Industrial Benchmarking and Lesson Learned at ABB Robotics",
+    "abstract": "Software quality assurance remains a major challenge in industrial environments, where large-scale and long-lived systems inevitably accumulate defects. Identifying the location of a fault is often time-consuming and costly, particularly during maintenance phases when developers must rely primarily on textual bug reports rather than complete runtime or code-level context. In this study, we investigated if artificial intelligence can support fault localization using only the natural-language content of bug reports. By relying only on textual information, our approach requires no access to source code, execution traces, or static analysis artifacts, making it directly deployable within existing industrial maintenance workflows. We framed fault localization as a supervised text classification problem and evaluated three traditional machine learning models (Logistic Regression, Support Vector Machine, and Random Forest) and two fine-tuned transformer-based language models (RoBERTa-Base and Distil-RoBERTa). Our evaluation used proprietary data from ABB Robotics in Sweden, comprising five years of resolved industrial bug reports, each linked to its verified code fix. This setting allowed us to assess model effectiveness under realistic industrial constraints.   Our results showed that traditional models using term frequency-inverse document features consistently outperformed the fine-tuned language models on this dataset, while data augmentation improved Random Forest performance. These findings challenge the assumption that transformer-based models universally outperform classical approaches in industrial contexts with domain-specific data. We demonstrated that historical bug reports can be systematically used for text-based, artificial intelligence-assisted fault localization, providing a scalable, low-cost, and empirically grounded complement to common debugging practices in industry.",
+    "authors": [
+      "Pernilla Hall",
+      "Anton Ununger",
+      "Riccardo Rubei",
+      "Alessio Bucaioni"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25700v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25700v1",
+    "fetched_at": "2026-04-29T10:03:43.083056"
+  },
+  {
+    "id": "2604.25684v1",
+    "title": "Think Before You Act -- A Neurocognitive Governance Model for Autonomous AI Agents",
+    "abstract": "The rapid deployment of autonomous AI agents across enterprise, healthcare, and safety-critical environments has created a fundamental governance gap. Existing approaches, runtime guardrails, training-time alignment, and post-hoc auditing treat governance as an external constraint rather than an internalized behavioral principle, leaving agents vulnerable to unsafe and irreversible actions. We address this gap by drawing on how humans self-govern naturally: before acting, humans engage deliberate cognitive processes grounded in executive function, inhibitory control, and internalized organizational rules to evaluate whether an intended action is permissible, requires modification, or demands escalation. This paper proposes a neurocognitive governance framework that formally maps this human self-governance process to LLM-driven agent reasoning, establishing a structural parallel between the human brain and the large language model as the cognitive core of an agent. We formalize a Pre-Action Governance Reasoning Loop (PAGRL) in which agents consult a four-layer governance rule set: global, workflow-specific, agent-specific, and situational before every consequential action, mirroring how human organizations structure compliance hierarchies across enterprise, department, and role levels. Implemented on a production-grade retail supply chain workflow, the framework achieves 95% compliance accuracy and zero false escalations to human oversight, demonstrating that embedding governance into agent reasoning produces more consistent, explainable, and auditable compliance than external enforcement. This work offers a principled foundation for autonomous AI agents that govern themselves the way humans do: not because rules are imposed upon them, but because deliberation is embedded in how they think.",
+    "authors": [
+      "Eranga Bandara",
+      "Ross Gore",
+      "Asanga Gunaratna",
+      "Sachini Rajapakse",
+      "Isurunima Kularathna",
+      "Ravi Mukkamala",
+      "Sachin Shetty",
+      "Xueping Liang",
+      "Amin Hass",
+      "Tharaka Hewa",
+      "Abdul Rahman",
+      "Christopher K. Rhea",
+      "Anita H. Clayton",
+      "Preston Samuel",
+      "Atmaram Yarlagadda"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25684v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25684v1",
+    "fetched_at": "2026-04-29T10:03:43.083098"
+  },
+  {
+    "id": "2604.25602v1",
+    "title": "OxyGent: Making Multi-Agent Systems Modular, Observable, and Evolvable via Oxy Abstraction",
+    "abstract": "Deploying production-ready multi-agent systems (MAS) in complex industrial environments remains challenging due to limitations in scalability, observability, and autonomous evolution. We present OxyGent, an open-source framework that enables modular, observable, and evolvable MAS via a unified Oxy abstraction, in which agents, tools, LLMs, and reasoning flows are encapsulated as pluggable atomic components. This Lego-like assembly paradigm supports scalable system composition and non-intrusive monitoring. To enhance observability, OxyGent introduces permission-driven dynamic planning that replaces rigid workflows with execution graphs generated at runtime, which provide adaptive visualizations. To support continuous evolution, the framework integrates OxyBank, an AI asset management platform that supports automated data backflow, annotation, and joint evolution. Empirical evaluations and real-world case studies show that OxyGent provides a robust and scalable foundation for MAS. OxyGent is publicly available at https://oxygent.jd.com/.",
+    "authors": [
+      "Junxing Hu",
+      "Tianlong Li",
+      "Lei Yu",
+      "Ai Han"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25602v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25602v1",
+    "fetched_at": "2026-04-29T10:03:43.083120"
+  },
+  {
+    "id": "2604.25555v1",
+    "title": "From CRUD to Autonomous Agents: Formal Validation and Zero-Trust Security for Semantic Gateways in AI-Native Enterprise Systems",
+    "abstract": "Enterprise software engineering is shifting away from deterministic CRUD/REST architectures toward AI-native systems where large language models act as cognitive orchestrators. This transition introduces a critical security tension: probabilistic LLMs weaken classical mechanisms for validation, access control, and formal testing.   This paper proposes the design, formal validation, and empirical evaluation of a Semantic Gateway governed by the Model Context Protocol (MCP). The gateway reframes the enterprise API as a semantic surface where tools are dynamically discovered, authorized, and executed based on intent and policy enforcement. The central contribution rests on a paradigm shift: autonomous agents must not be validated as traditional software nor as simple API consumers, but as stochastic state-transition systems whose behavior must be abstracted, fuzzed, and audited through enabled-tool graphs.   The architecture introduces a three-layer Zero-Trust security model comprising a pre-inference Semantic Firewall, deterministic Tool-Level RBAC, and out-of-band Cryptographic Human-in-the-Loop approval. Enabledness-Preserving Abstractions (EPAs) and greybox semantic fuzzing--originally developed for blockchain smart contract verification--are adapted to audit agent behavior in enterprise environments. Results demonstrate an 84.2% reduction in incidental code. Across 500,000 multi-turn fuzzing sequences, the methodology achieved a 100% discovery rate of hidden unauthorized state transitions, proving that dynamic formal verification is strictly necessary for secure agentic deployment.",
+    "authors": [
+      "Ignacio Peyrano"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25555v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25555v1",
+    "fetched_at": "2026-04-29T10:03:43.083139"
+  },
+  {
+    "id": "2604.25477v1",
+    "title": "DDA-Thinker: Decoupled Dual-Atomic Reinforcement Learning for Reasoning-Driven Image Editing",
+    "abstract": "Recent image editing models have achieved strong visual fidelity but often struggle with tasks requiring complex reasoning. To investigate and enhance the reasoning-grounded planning for image editing, we propose DDA-Thinker, a Thinker-centric framework designed for the independent optimization of a planning module (Thinker) over a fixed generative model (Editor). This decoupled Thinker-centric paradigm facilitates a controlled analysis of the planning module and makes its contribution under a fixed Editor easier to assess. To effectively guide this Thinker, we introduce a dual-atomic reinforcement learning framework. This framework decomposes feedback into two distinct atomic rewards implemented through verifiable checklists: a cognitive-atomic reward to directly assess the quality of the Thinker's executable plan, which serves as the actionable outcome of the Thinker's reasoning, and a visual-atomic reward to assess the final image quality. To improve checklist quality, our checklist synthesis is grounded not only in the source image and user instruction but also in a rational reference description of the ideal post-edit scene. To support this training, we further develop a two-stage data curation pipeline that first synthesizes a diverse and reasoning-focused dataset, then applies difficulty-aware refinement to curate an effective training curriculum for reinforcement learning. Extensive experiments on reasoning-driven image editing benchmarks, including RISE-Bench and KRIS-Bench, demonstrate that our approach substantially improves overall performance. Our method enables a community model to achieve results competitive with strong proprietary models, highlighting the practical potential of Thinker-centric optimization under a fixed-editor setting.",
+    "authors": [
+      "Hanqing Yang",
+      "Qiang Zhou",
+      "Yongchao Du",
+      "Sashuai Zhou",
+      "Zhibin Wang",
+      "Jun Song",
+      "Tiezheng Ge",
+      "Cheng Yu",
+      "Bo Zheng"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25477v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25477v1",
+    "fetched_at": "2026-04-29T10:03:43.083172"
+  },
+  {
+    "id": "2604.25326v1",
+    "title": "AHASD: Asynchronous Heterogeneous Architecture for LLM Adaptive Drafting Speculative Decoding on Mobile Devices",
+    "abstract": "Speculative decoding enhances the inference efficiency of large language models (LLMs) by generating drafts using a small draft language model (DLM) and verifying them in batches with a large target language model (TLM). However, adaptive drafting inference on a mobile single-NPU-PIM system faces idle overhead in traditional operator-level synchronous execution and wasted computation in asynchronous execution due to fluctuations in draft length. This paper introduces AHASD, a task-level asynchronous mobile NPU-PIM heterogeneous architecture for speculative decoding. Notably, AHASD achieves parallel drafting on the PIM and verification on a single NPU through task-level DLM-TLM decoupling and specifically, it incorporates Entropy-History-Aware Drafting Control and Time-Aware Pre-Verification Control to dynamically manage adaptive drafting algorithm execution and pre-verification timing, suppressing invalid drafting based on low-confidence drafts. Additionally, AHASD integrates Attention Algorithm Units and Gated Task Scheduling Units within LPDDR5-PIM to enable attention link localization and sub-microsecond task switching on the PIM side. Experimental results for different LLMs and adaptive drafting algorithms show that AHASD achieves up to 4.2$\\times$ in throughput and 5.6$\\times$ in energy efficiency improvements over a GPU-only baseline, and 1.5$\\times$ in throughput and 1.24$\\times$ in energy efficiency gains over the state-of-the-art GPU+PIM baseline, with hardware overhead below 3\\% of the DRAM area.",
+    "authors": [
+      "Ma zirui",
+      "Fan Zhihua",
+      "Li Wenxing",
+      "Wu Haibin",
+      "Zhang Fulin",
+      "Ye Xiaochun",
+      "Li Wenming"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.AR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25326v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25326v1",
+    "fetched_at": "2026-04-29T10:03:43.083200"
+  },
+  {
+    "id": "2604.25325v1",
+    "title": "R$^3$-SQL: Ranking Reward and Resampling for Text-to-SQL",
+    "abstract": "Modern Text-to-SQL systems generate multiple candidate SQL queries and rank them to judge a final prediction. However, existing methods face two limitations. First, they often score functionally equivalent SQL queries inconsistently despite identical execution results. Second, ranking cannot recover when the correct SQL is absent from the candidate pool. We propose R$^3$-SQL, a Text-to-SQL framework that addresses both issues through unified reward for ranking and resampling. R$^3$-SQL first groups candidates by execution result and ranks groups for consistency. To score each group, it combines a pairwise preference across groups with a pointwise utility from the best group rank and size, capturing relative preference, consistency, and candidate quality. To improve candidate recall, R$^3$-SQL introduces agentic resampling, which judges the generated candidate pool and selectively resamples when the correct SQL is likely absent. R$^3$-SQL achieves 75.03 execution accuracy on BIRD-dev, a new state of the art among methods using models with disclosed sizes, with consistent gains across five benchmarks.",
+    "authors": [
+      "Hojae Han",
+      "Yeonseok Jeong",
+      "Seung-won Hwang",
+      "Zhewei Yao",
+      "Yuxiong He"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25325v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25325v1",
+    "fetched_at": "2026-04-29T10:03:43.083225"
+  },
+  {
+    "id": "2604.25166v1",
+    "title": "Training Transformers as a Universal Computer",
+    "abstract": "We demonstrate that a small transformer can learn to execute programs in MicroPy, a simplified yet computationally universal programming language. Given procedure definitions together with an expression to evaluate, the transformer predicts small-step execution using PENCIL scaffolding for space-efficient execution within a bounded context window. After training on randomly generated, meaningless MicroPy programs, the learned transformer generalizes to various human-written programs including bit copying and flipping, binary addition and multiplication, and SAT verification and solving. We note that the trained model can achieve out-of-distribution generalization; i.e., evaluate novel programs from distribution on programs. Since MicroPy can express any computation, our results provide empirical evidence that a standard transformer can be trained to act as a universal computer.",
+    "authors": [
+      "Ruize Xu",
+      "Chenxiao Yang",
+      "Yanhong Li",
+      "David McAllester"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25166v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25166v1",
+    "fetched_at": "2026-04-29T10:03:43.083248"
+  },
+  {
+    "id": "2604.25130v1",
+    "title": "LongSumEval: Question-Answering Based Evaluation and Feedback-Driven Refinement for Long Document Summarization",
+    "abstract": "Evaluating long document summaries remains the primary bottleneck in summarization research. Existing metrics correlate weakly with human judgments and produce aggregate scores without explaining deficiencies or guiding improvement, preventing effective refinement in applications requiring verifiable accuracy. We introduce LongSumEval, a unified framework bridging evaluation and generation through structured question-answering feedback. The framework operationalizes summary quality as answerability and factual alignment of question-answer pairs, generating interpretable scores and actionable feedback that identifies coverage gaps and factual inconsistencies. This resolves the misalignment where evaluation operates independently of generation objectives. Meta-evaluation of our QA-based evaluation module across seven benchmarks demonstrates substantially stronger agreement with human judgments compared to established metrics. Structured feedback enables significant quality improvements through self-refinement without retraining. By demonstrating that evaluation feedback can serve as executable instructions for generation, this work establishes a generalizable paradigm for aligning assessment with improvement, with direct implications for controllable text generation requiring verifiable accuracy and transparent quality control. All code and datasets will be released in GitHub for reproducibility.",
+    "authors": [
+      "Huyen Nguyen",
+      "Haoxuan Zhang",
+      "Yang Zhang",
+      "Haihua Chen",
+      "Junhua Ding"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25130v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25130v1",
+    "fetched_at": "2026-04-29T10:03:43.083272"
+  },
+  {
+    "id": "2604.25120v1",
+    "title": "Diagnosis, Bad Planning & Reasoning. Treatment, SCOPE -- Planning for Hybrid Querying over Clinical Trial Data",
+    "abstract": "We study clinical trial table reasoning, where answers are not directly stored in visible cells but must be reasoned from semantic understanding through normalization, classification, extraction, or lightweight domain reasoning. Motivated by the observation that current LLM approaches often suffer from \"bad reasoning\" under implicit planning assumptions, we focus on settings in which the model must recover implicit attributes such as therapy type, added agents, endpoint roles, or follow-up status from partially observed clinical-trial tables. We propose SCOPE (Structured Clinical hybrid Planning for Evidence retrieval in clinical trials), a multi-LLM planner-based framework that decomposes the task into row selection, structured planning, and execution. The planner makes the source field, reasoning rules, and output constraints explicit before answer generation, reducing ambiguity relative to direct prompting. We evaluate SCOPE on 1,500 hybrid reasoning questions over oncology clinical-trial tables against zero-shot, few-shot, chain-of-thought, TableGPT2, Blend-SQL, and EHRAgent. Results show that explicit multi-LLM planning improves accuracy for reasoning-based questions while offering a stronger accuracy-efficiency tradeoff than heavier agentic baselines. Our findings position clinical trial reasoning as a distinct table understanding problem and highlight hybrid planner-based decomposition as an effective solution",
+    "authors": [
+      "Suparno Roy Chowdhury",
+      "Manan Roy Choudhury",
+      "Tejas Anvekar",
+      "Muhammad Ali Khan",
+      "Kaneez Zahra Rubab Khakwani",
+      "Mohamad Bassam Sonbol",
+      "Irbaz Bin Riaz",
+      "Vivek Gupta"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25120v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25120v1",
+    "fetched_at": "2026-04-29T10:03:43.083301"
+  },
+  {
+    "id": "2604.25224v1",
+    "title": "ValueAlpha: Agreement-Gated Stress Testing of LLM-Judged Investment Rationales Before Returns Are Observable",
+    "abstract": "Long-horizon investment decisions create a pre-realization evaluation problem: realized returns are the eventual arbiter of investment quality, but they arrive too late and are too noisy to guide many model-development and governance decisions. LLM judges offer a tempting substitute for pre-deployment evaluation of AI-finance systems, but unvalidated judges may reward verbosity, confidence, or rubric mimicry rather than financial judgment. This paper introduces \\textbf{ValueAlpha}, a preregistered agreement-gated stress-test protocol for deciding when LLM-judged investment-rationale claims are publishable, qualified, or invalid.   In a controlled market-state capital-allocation prototype with 1,000 honest decision cycles and 100 preregistered adversarial controls (1,100 trajectories, 5,500 judge calls), ValueAlpha clears the aggregate agreement gate at \\(\\barκ_w = 0.7168\\) but prevents several overclaims. Lower-rank systems collapse into a tie-class, one rubric dimension fails the per-dimension gate (\\texttt{constraint\\_awareness}, \\(\\barκ_w = 0.2022\\)), single-judge rankings are family-dependent, and terse-correct rationales receive a \\(Δ= -2.81\\) rubric-point penalty relative to honest rationales. A targeted anchor-specificity probe further shows that financial constructs such as constraint awareness are operationally load-bearing.   The contribution is therefore not a leaderboard and not a claim to measure true investment skill. ValueAlpha is a pre-calibration metrology layer for AI-finance evaluation: it determines whether a proposed LLM-judge-based investment-rationale claim is stable enough, agreed enough, and uncontaminated enough to be reported at all.",
+    "authors": [
+      "Sidi Chang",
+      "Peiying Zhu",
+      "Yuxiao Chen"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "cs.AI",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25224v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.25224v1",
+    "fetched_at": "2026-04-29T10:05:29.933135"
+  }
+]
