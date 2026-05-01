@@ -1,0 +1,600 @@
+[
+  {
+    "id": "2604.28124v1",
+    "title": "Measuring the risk or reducing it, that is the question: is risk measurement necessary for risk reduction?",
+    "abstract": "In this research, starting from a widely accepted definition of risk, we support the idea that risk reduction is a more realistic objective than risk minimization, which represents a theoretical utopia. Furthermore, significant risk reduction can be achieved without relying on risk measurement and risk minimization. To this end, we propose a generalization of the numerical rank and the condition number of a matrix, specifically the return matrix in this application. This generalization considers the entire matrix spectrum instead of focusing only on the smallest eigenvalue, as the condition number does. The approach directly provides an order among a finite number of risky scenarios. Risk reduction is obtained by identifying the riskiest scenarios and reducing investment exposures corresponding to them. The validity of this theoretical proposal is supported by a comprehensive experiment performed on real data. The capacity of the proposed approach to effectively reduce risk is proven by measuring the variability of out-of-sample returns for benchmark portfolios-constructed by minimizing standard risk measures-compared to the strategy of reducing exposure in high-risk scenarios. Finally, preventing large losses with limited active management-thereby controlling the impact of transaction costs-not only reduces risk but also preserves the average return and, consequently, the portfolio's Sharpe ratio.",
+    "authors": [
+      "Pierpaolo Uberti"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28124v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.28124v1",
+    "fetched_at": "2026-05-01T09:28:58.788680"
+  },
+  {
+    "id": "2604.27837v1",
+    "title": "Distributionally Robust Insurance under Bregman-Wasserstein Divergence",
+    "abstract": "This paper investigates two optimal insurance contracting problems under distributional uncertainty from the perspective of a potential policyholder, utilizing a Bregman-Wasserstein (BW) ball to characterize the ambiguity set of loss distributions. Unlike the $p$-Wasserstein distance, BW divergence enables asymmetric penalization of deviations from the benchmark distribution. The first problem examines an insurance demand model where the policyholder adopts an $α$-maxmin preference with Value-at-Risk (VaR). We derive the optimal indemnity function in closed form and study, both analytically and numerically, how the asymmetry inherent in BW divergence influences the optimal indemnity structure. The second problem employs a robust optimization framework, where the policyholder aims to secure robust insurance indemnity by minimizing the worst-case convex distortion risk measure while adhering to a guaranteed VaR constraint. In this context, we provide explicit characterizations of both the optimal indemnity and the worst-case distribution in closed form through a combined approach using the Lagrangian method and modification arguments. To illustrate the practical implications of our theoretical findings, we include a concrete example based on Tail Value-at-Risk (TVaR).",
+    "authors": [
+      "Wenjun Jiang",
+      "Qingqing Zhang",
+      "Yiying Zhang"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27837v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27837v1",
+    "fetched_at": "2026-05-01T09:28:58.788722"
+  },
+  {
+    "id": "2604.27732v1",
+    "title": "A Note on the Generalized Cape Cod Reserving Method",
+    "abstract": "Claims reserving is one of the most important actuarial tasks in non-life insurance modeling. There are several popular methods to perform claims reserving such as the chain-ladder (CL), the Bornhuetter--Ferguson (BF) or the generalized Cape Cod (GCC) methods. These methods have originally been introduced as deterministic algorithms, and only in a later step, they have been lifted to stochastic models allowing for analyzing claims prediction uncertainty. This holds true for the CL and the BF methods, but not for the GCC method. The purpose of this article is to close this gap and derive an analytical formula for the mean squared error of prediction (MSEP) of the GCC method.",
+    "authors": [
+      "Ronald Richman",
+      "Mario V. Wüthrich"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "stat.AP",
+      "q-fin.RM",
+      "stat.OT"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27732v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27732v1",
+    "fetched_at": "2026-05-01T09:28:58.788750"
+  },
+  {
+    "id": "2604.27700v1",
+    "title": "Data-Driven Stochastic Optimal Control for Intraday Electricity Trading by Renewable Producers",
+    "abstract": "The rapid growth of weather-dependent renewable generation increases price volatility and imbalance penalty risk in power markets, creating the need for advanced quantitative trading strategies. We develop a data-driven continuous-time stochastic optimal control framework for intraday electricity trading using stochastic differential equations with drift terms ensuring mean reversion to deterministic forecast trajectories. Production follows a Jacobi diffusion, while prices follow an asymmetric jump-diffusion to reflect the heavy-tailed behavior observed in intraday markets. The framework accounts for realistic market features by incorporating gate closure and energy-based imbalance settlement over the delivery window, where the path-dependent imbalance cost is handled by state augmentation to preserve the Markovian structure. The value function is characterized via the dynamic programming principle by a three-stage sequence of two linear Kolmogorov backward equations and a nonlinear Hamilton-Jacobi-Bellman partial integro-differential equation. To solve this problem efficiently, we propose a monotone IMEX finite-difference scheme with operator splitting, semi-implicit linearization, and a differential formulation for the jump operator. Numerical experiments based on German market data indicate that, under the provided forecasts, the computed strategy outperforms the TWAP benchmark and approaches the perfect-foresight benchmark. Sensitivity experiments further show how jump intensity, delivery-window length, and trading horizon affect the trading policy and the resulting profit-and-loss distribution.",
+    "authors": [
+      "Chiheb Ben Hammouda",
+      "Michael Samet",
+      "Raúl Tempone"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27700v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27700v1",
+    "fetched_at": "2026-05-01T09:28:58.788774"
+  },
+  {
+    "id": "2604.27694v1",
+    "title": "The Satoshi Overhang: Why the Bear Case is Bounded",
+    "abstract": "Renewed public attention on the identity of Bitcoin's pseudonymous creator has sharpened focus on the Satoshi overhang, commonly framed as a tail risk for bitcoin. This paper argues that the mechanical downside of a disposition is bounded well below the existential-loss framing, and that the terminal states most consistent with sixteen years of holder behavior are nonbearish for bitcoin's effective supply. The approximately 1.148 million BTC Patoshi position is analyzed on two tracks. For a purely wealth-maximizing holder, a three-scenario quantitative analysis (Appendix A) shows that bitcoin's current market depth is sufficient to absorb a patient multi-year liquidation at a cumulative price impact in the mid-single-digit to mid-double-digit percent range relative to counterfactual, with the central scenario clustering near 10 percent. The paper maps a decision space rather than identifying a unique modal outcome, assuming a holder whose profile is consistent with the sixteen-year record. Preference sets consistent with the record, including ideological non-intervention, privacy above all, satisficing, and myth preservation, favor continued dormancy terminating in a cryptographically enforced nonrecovery or destruction arrangement; preference sets favoring adversarial or wealth-maximizing action are possible but less supported. Across the plausible region of the decision space, the bear case is bounded and the terminal states most consistent with observed behavior are neutral to slightly positive for bitcoin's effective supply.",
+    "authors": [
+      "Karl T. Ulrich"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "q-fin.GN",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27694v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27694v1",
+    "fetched_at": "2026-05-01T09:28:58.788792"
+  },
+  {
+    "id": "2604.27447v1",
+    "title": "Sampler-Robust Optimization under Generative Models",
+    "abstract": "Modern stochastic optimization pipelines increasingly rely on learned generative models to represent uncertainty, while downstream decisions are evaluated almost entirely through Monte Carlo scenarios. This shifts the operational object of uncertainty from an explicit probability law to the sampler induced by the learned generator. Reliability therefore depends on two errors: sampler misspecification and finite-simulation error. We propose Sampler-Robust Optimization (SRO), which optimizes decisions against the worst-case sampler induced by perturbing the learned generator. This sampler-first formulation aligns with simulation-based decision pipelines and admits a sharpness-aware interpretation: it favors decisions whose performance is stable under generator perturbations, rather than merely under the nominal sampler. Under a coverage assumption, we show that the empirical worst-case objective provides a high-probability upper certificate for the true population objective, with finite-simulation error partially absorbed by the robustification used to guard against sampler misspecification. The framework accommodates generative models with or without explicit densities and admits efficient minimax procedures. Portfolio-optimization experiments show that SRO produces more stable decisions and improves out-of-sample performance under distribution shift.",
+    "authors": [
+      "Ziwei Zhang",
+      "Jonathan Yu-Meng Li"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "math.OC",
+      "cs.AI",
+      "cs.LG",
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27447v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27447v1",
+    "fetched_at": "2026-05-01T09:28:58.788814"
+  },
+  {
+    "id": "2604.27287v1",
+    "title": "A Levered ETF Anomaly Explained",
+    "abstract": "Counterintuitively, the S&P 500 Index rose between January 1, 2022, and December 29, 2023, while exchange-traded funds (ETFs) seeking to deliver 2x and 3x daily returns of the index delivered substantially negative returns. Roughly two-thirds of the difference between the returns of the index and the levered ETFs can be attributed to compounding and volatility. The remaining difference is explained by the covariance between the ETFs' deviations from constant leverage and the index's return.",
+    "authors": [
+      "Stephen W. Bianchi",
+      "Lisa R. Goldberg"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27287v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27287v1",
+    "fetched_at": "2026-05-01T09:28:58.788835"
+  },
+  {
+    "id": "2604.27210v1",
+    "title": "Fast-Vollib: A Fast Implied Volatility Library for Pythonwith PyTorch, JAX, and CUDA Fused-Kernel Backends",
+    "abstract": "We present fast-vollib, an open-source Python library that provides high-performance European option pricing, implied volatility (IV) computation, and Greeks under the Black-76, Black-Scholes, and Black-Scholes-Merton models. The library is designed as a drop-in alternative to the de-facto-standard py_vollib and py_vollib_vectorized packages, with pluggable PyTorch and JAX execution backends, a CUDA fused-kernel Triton contribution for batched IV workloads, and a compatibility-first public API. In addition to a vectorized Halley-method IV solver, fast-vollib ships an experimental, fully-vectorized implementation of Jäckel's \"Let's Be Rational\" (LBR) algorithm with NumPy/Numba, torch.compile, JAX, and Triton single-pass GPU kernels for batched option chains. This note announces the library and describes its public API surface, with source, documentation, and packaging artifacts available at: GitHub (https://github.com/raeidsaqur/fast-vollib), Docs (https://raeidsaqur.github.io/fast-vollib/), PyPI (https://pypi.org/project/fast-vollib/).",
+    "authors": [
+      "Raeid Saqur"
+    ],
+    "published": "2026-04-29",
+    "categories": [
+      "q-fin.CP",
+      "cs.MS",
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27210v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27210v1",
+    "fetched_at": "2026-05-01T09:28:58.788854"
+  },
+  {
+    "id": "2604.27186v1",
+    "title": "Learning to Spend: Model Predictive Control for Budgeting under Non-Stationary Returns",
+    "abstract": "We study finite-horizon budget allocation as a closed-loop economic control problem and evaluate receding-horizon Model Predictive Control (MPC) relative to reactive budgeting policies. Budgets are allocated periodically under execution noise and operational constraints, while return efficiency may evolve over time. Using a controlled simulation framework motivated by digital marketing, we compare reactive pacing to MPC across environments with increasing degrees of non-stationarity. Our results show that non-stationarity alone does not justify predictive control. When return dynamics are stationary or evolve through unpredictable stochastic drift, MPC offers no systematic advantage over reactive baselines. By contrast, when return efficiency exhibits predictable structure over the planning horizon, that is captured through an underlying model, MPC consistently outperforms reactive budgeting by exploiting intertemporal trade-offs.",
+    "authors": [
+      "Nilavra Pathak",
+      "Smriti Shyamal",
+      "Prasant Mhasker",
+      "Christopher Swartz"
+    ],
+    "published": "2026-04-29",
+    "categories": [
+      "eess.SY",
+      "cs.AI",
+      "cs.LG",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27186v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27186v1",
+    "fetched_at": "2026-05-01T09:28:58.788877"
+  },
+  {
+    "id": "2604.27041v1",
+    "title": "The Signal Credibility Index for Prediction Markets: A Microstructure-Grounded Diagnostic with Weighted and Time-Varying Extensions",
+    "abstract": "Prediction-market price moves are widely treated as informationally equivalent: a price jump is read the same way regardless of whether it reflects durable Bayesian updating, transient liquidity pressure, strategic position adjustment, or genuine disagreement. This paper formalizes the Signal Credibility Index (SCI) introduced in Nechepurenko (2026) as a stand-alone diagnostic. We make four contributions: (i) a revised persistence component using the persistence ratio PR(t,w) on logit prices, well-defined on short rolling windows; (ii) a weighted Cobb-Douglas form SCI(ααα) with flow-based concentration HHI_flow; (iii) a time-varying specification SCI(t; w) for real-time monitoring; and (iv) Monte Carlo validation including an out-of-distribution stress test, coordinated multi-wallet manipulation, and a logistic-regression benchmark. The validation establishes discrimination among designed microstructure regimes, not external evidence of downstream coordination effects. We document two failure modes consistent with the index targeting coordination credibility rather than pure information content: a Type II error on informed-but-concentrated whale repricing, and a Type I error on coordinated multi-wallet manipulation.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-04-29",
+    "categories": [
+      "econ.GN",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27041v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27041v1",
+    "fetched_at": "2026-05-01T09:28:58.788895"
+  },
+  {
+    "id": "2604.25977v2",
+    "title": "Auditing Marketing Budget Allocation with Hindsight Regret",
+    "abstract": "Organizations routinely make strategic budget allocations under operational constraints, but often lack a principled way to assess whether realized allocations were close to the best feasible choices in hindsight. We present a retrospective auditing framework based on hindsight regret, defined as the opportunity cost of the realized allocation relative to a constraint-faithful benchmark under the same budget and stability guardrails. The framework estimates regime-specific spend--response functions from historical logs, computes feasible hindsight allocations via constrained optimization, and propagates uncertainty through Monte Carlo evaluation to produce regret distributions, expected lift, and probability-of-improvement summaries. This separates allocation inefficiency from uncertainty in the estimated response surfaces. Experiments on real marketing allocation logs show that the framework yields interpretable post-hoc diagnostics and reveals a practical trade-off between allocation flexibility and detectability: moderate feasible reallocations often capture most measurable gain, while larger shifts move into weak-support regions with higher uncertainty. The result is a practical method for auditing historical budget decisions when online experimentation is costly or infeasible.",
+    "authors": [
+      "Nilavra Pathak",
+      "Olivier Jeunen",
+      "Eric Lambert"
+    ],
+    "published": "2026-04-28",
+    "categories": [
+      "econ.EM",
+      "cs.AI",
+      "cs.LG",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.25977v2",
+    "arxiv_url": "https://arxiv.org/abs/2604.25977v2",
+    "fetched_at": "2026-05-01T09:28:58.789026"
+  },
+  {
+    "id": "2604.28163v1",
+    "title": "Sequential Inference for Gaussian Processes: A Signal Processing Perspective",
+    "abstract": "The proliferation of capable and efficient machine learning (ML) models marks one of the strongest methodological shifts in signal processing (SP) in its nearly 100-year history. ML models support the development of SP systems that represent complex, nonlinear relationships with high predictive accuracy. Adapting these models often requires sequential inference, which differs both theoretically and methodologically from the usual paradigm of ML, where data are often assumed independent and identically distributed. Gaussian processes (GPs) are a flexible yet principled framework for modeling random functions, and they have become increasingly relevant to SP as statistical and ML methods assume a more prominent role. We provide a self-contained, tutorial-style overview of GPs, with a particular focus on recent methodological advances in sequential, incremental, or streaming inference. We introduce these techniques from a signal-processing perspective while bridging them to recent advances in ML. Many of the developments we survey have direct applications to state-space modeling, sequential regression and forecasting, anomaly detection in time series, sequential Bayesian optimization, adaptive and active sensing, and sequential detection and decision-making. By organizing these advances from a signal-processing perspective, we intend to equip practitioners with practical tools and a coherent roadmap for deploying sequential GP models in real-world systems.",
+    "authors": [
+      "Daniel Waxman",
+      "Fernando Llorente",
+      "Petar M. Djurić"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "eess.SP",
+      "cs.LG",
+      "stat.CO",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28163v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.28163v1",
+    "fetched_at": "2026-05-01T09:29:12.106565"
+  },
+  {
+    "id": "2604.27172v1",
+    "title": "Context-Aware Graph Attention for Unsupervised Telco Anomaly Detection",
+    "abstract": "We propose C-MTAD-GAT, an \\emph{unsupervised}, \\emph{context-aware} graph-attention model for anomaly detection in multivariate time series from mobile networks. C-MTAD-GAT combines graph attention with lightweight context embeddings, and uses a deterministic reconstruction head and multi-step forecaster to produce anomaly scores. Detection thresholds are calibrated \\emph{without labels} from validation residuals, keeping the pipeline fully unsupervised. On the public TELCO dataset, C-MTAD-GAT consistently outperforms MTAD-GAT and the Telco-specific DC-VAE, two state-of-the-art baselines, in both event-level and pointwise F1, while triggering substantially fewer alarms. C-MTAD-GAT is also deployed in the Core network of a national mobile operator, demonstrating its resilience in real industrial settings.",
+    "authors": [
+      "Sara Malacarne",
+      "Eirik Hoel-Høiseth",
+      "Erlend Aune",
+      "David Zsolt Biro",
+      "Massimiliano Ruocco"
+    ],
+    "published": "2026-04-29",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27172v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27172v1",
+    "fetched_at": "2026-05-01T09:29:12.106602"
+  },
+  {
+    "id": "2604.27102v1",
+    "title": "Anomaly Detection in Soil Heavy Metal Contamination Using Unsupervised Learning for Environmental Risk Assessment",
+    "abstract": "Soil contamination by heavy metals poses a persistent environmental and public health concern in rapidly urbanising regions of Ghana, particularly at unregulated waste disposal sites. This study applies an unsupervised machine learning framework to detect and characterise anomalous heavy metal contamination patterns in soils from twelve waste sites and residential controls in the Central Region, of Ghana. Concentrations of eight metals (As, Cd, Cr, Cu, Hg, Ni, Pb, Zn) were analysed alongside standard health risk indices, including the Hazard Index (HI) and Incremental Lifetime Cancer Risk (ILCR). Isolation Forest and PCA reconstruction error each identified $12$ anomalous samples ($15.4\\%$ of $78$ samples), while DBSCAN detected no density-isolated noise points. A consensus approach isolated six robust anomalies ($7.7\\%)$, all spatially concentrated at a single site (S3). Anomalies exhibited approximately $70$--$80\\%$ higher mean HI values than normal samples, with all consensus anomalies exceeding the HI$=1$ threshold. PCA reconstruction error showed a strong positive association with HI ($r \\approx 0.8$), indicating consistency between multivariate deviation and health risk. Three distinct anomaly types were identified: extreme Cu enrichment at S3, anomalously low Ni at S4/S5, and moderate multi-metal (Pb--Zn) co-elevation at S9--S12. The results demonstrate that unsupervised machine learning provides granular, objective insight beyond aggregate indices, enabling targeted site prioritisation and risk-informed environmental management.",
+    "authors": [
+      "Isaac Tettey Adjokatse",
+      "Samuel Senyo Koranteng",
+      "George Yamoah Afrifa",
+      "Theophilus Ansah-Narh",
+      "Marcellin Atemkeng",
+      "Joseph Bremang Tandoh",
+      "Kow Ahor Essel-Yorke",
+      "Richmond Opoku-Sarkodie",
+      "Rebecca Davis"
+    ],
+    "published": "2026-04-29",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "physics.data-an",
+      "physics.geo-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27102v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27102v1",
+    "fetched_at": "2026-05-01T09:29:12.106649"
+  },
+  {
+    "id": "2604.28175v1",
+    "title": "Strait: Perceiving Priority and Interference in ML Inference Serving",
+    "abstract": "Machine learning (ML) inference serving systems host deep neural network (DNN) models and schedule incoming inference requests across deployed GPUs. However, limited support for task prioritization and insufficient latency estimation under concurrent execution may restrict their applicability in on-premises scenarios. We present \\emph{Strait}, a serving system designed to enhance deadline satisfaction for dual-priority inference traffic under high GPU utilization. To improve latency estimation, Strait models potential contention during data transfer and accounts for kernel execution interference through an adaptive prediction model. By drawing on these predictions, it performs priority-aware scheduling to deliver differentiated handling. Evaluation results under intense workloads suggest that Strait reduces deadline violations for high-priority tasks by 1.02 to 11.18 percentage points while incurring acceptable costs on low-priority tasks. Compared to software-defined preemption approaches, Strait also exhibits more equitable performance.",
+    "authors": [
+      "Haidong Zhao",
+      "Nikolaos Georgantas"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28175v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.28175v1",
+    "fetched_at": "2026-05-01T09:29:41.893681"
+  },
+  {
+    "id": "2604.28139v1",
+    "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+    "abstract": "LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many agent benchmarks freeze a curated task set at release time and grade mainly the final response, making it difficult to evaluate agents against evolving workflow demand or verify whether a task was executed. We introduce Claw-Eval-Live, a live benchmark for workflow agents that separates a refreshable signal layer, updated across releases from public workflow-demand signals, from a reproducible, time-stamped release snapshot. Each release is constructed from public workflow-demand signals, with ClawHub Top-500 skills used in the current release, and materialized as controlled tasks with fixed fixtures, services, workspaces, and graders. For grading, Claw-Eval-Live records execution traces, audit logs, service state, and post-run workspace artifacts, using deterministic checks when evidence is sufficient and structured LLM judging only for semantic dimensions. The release contains 105 tasks spanning controlled business services and local workspace repair, and evaluates 13 frontier models under a shared public pass rule. Experiments reveal that reliable workflow automation remains far from solved: the leading model passes only 66.7% of tasks and no model reaches 70%. Failures are structured by task family and execution surface, with HR, management, and multi-system business workflows as persistent bottlenecks and local workspace repair comparatively easier but unsaturated. Leaderboard rank alone is insufficient because models with similar pass rates can diverge in overall completion, and task-level discrimination concentrates in a middle band of tasks. Claw-Eval-Live suggests that workflow-agent evaluation should be grounded twice, in fresh external demand and in verifiable agent action.",
+    "authors": [
+      "Chenxin Li",
+      "Zhengyang Tang",
+      "Huangxin Lin",
+      "Yunlong Lin",
+      "Shijue Huang",
+      "Shengyuan Liu",
+      "Bowen Ye",
+      "Rang Li",
+      "Lei Li",
+      "Benyou Wang",
+      "Yixuan Yuan"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28139v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.28139v1",
+    "fetched_at": "2026-05-01T09:29:41.893732"
+  },
+  {
+    "id": "2604.28138v1",
+    "title": "Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes",
+    "abstract": "Autonomous agents act through sandboxed containers and microVMs whose state spans filesystems, processes, and runtime artifacts. Checkpoint and restore (C/R) of this state is needed for fault tolerance, spot execution, RL rollout branching, and safe rollback-yet existing approaches fall into two extremes: application-level recovery preserves chat history but misses OS-side effects, while full per-turn checkpointing is correct but too expensive under dense co-location. The root cause is an agent-OS semantic gap: agent frameworks see tool calls but not their OS effects; the OS sees state changes but lacks turn-level context to judge recovery relevance. This gap hides massive sparsity: over 75% of agent turns produce no recovery-relevant state, so most checkpoints are unnecessary. Crab (Checkpoint-and-Restore for Agent SandBoxes) is a transparent host-side runtime that bridges this gap without modifying agents or C/R backends. An eBPF-based inspector classifies each turn's OS-visible effects to decide checkpoint granularity; a coordinator aligns checkpoints with turn boundaries and overlaps C/R with LLM wait time; and a host-scoped engine schedules checkpoint traffic across co-located sandboxes. On shell-intensive and code-repair workloads, Crab raises recovery correctness from 8% (chat-only) to 100%, cuts checkpoint traffic by up to 87%, and stays within 1.9% of fault-free execution time.",
+    "authors": [
+      "Tianyuan Wu",
+      "Chaokun Chang",
+      "Lunxi Cao",
+      "Wei Gao",
+      "Wei Wang"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.OS",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28138v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.28138v1",
+    "fetched_at": "2026-05-01T09:29:41.893763"
+  },
+  {
+    "id": "2604.28028v1",
+    "title": "Reliable Answers for Recurring Questions: Boosting Text-to-SQL Accuracy with Template Constrained Decoding",
+    "abstract": "Large language models (LLMs) have revolutionized Text-to-SQL generation, allowing users to query structured data using natural language with growing ease. Yet, real-world deployment remains challenging, especially in complex or unseen schemas, due to inconsistent accuracy and the risk of generating invalid SQL. We introduce Template Constrained Decoding (TeCoD), a system that addresses these limitations by harnessing the recurrence of query patterns in labeled workloads. TeCoD converts historical NL-SQL pairs into reusable templates and introduces a robust template selection module that uses a fine-tuned natural language inference model to match or reject queries efficiently. Once the template is selected, TeCoD enforces it during SQL generation through grammar-constrained decoding, implemented via a novel partitioned strategy that ensures both syntactic validity and efficiency. Together, these components yield up to 36% higher execution accuracy than in-context learning (ICL) and 2.2x lower latency on matched queries.",
+    "authors": [
+      "Smit Jivani",
+      "Sarvam Maheshwari",
+      "Sunita Sarawagi"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.DB",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28028v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.28028v1",
+    "fetched_at": "2026-05-01T09:29:41.893786"
+  },
+  {
+    "id": "2604.28010v1",
+    "title": "Learning from Disagreement: Clinician Overrides as Implicit Preference Signals for Clinical AI in Value-Based Care",
+    "abstract": "We reframe clinician overrides of clinical AI recommendations as implicit preference data - the same signal structure exploited by reinforcement learning from human feedback (RLHF), but richer: the annotator is a domain expert, the alternatives carry real consequences, and downstream outcomes are observable. We present a formal framework extending standard preference learning with three contributions: a five-category override taxonomy mapping override types to distinct model update targets; a preference formulation conditioned on patient state s, organizational context c, and clinician capability kappa, where kappa decomposes into execution capability kappa-exec and alignment capability kappa-align; and a dual learning architecture that jointly trains a reward model and a capability model via alternating optimization, preventing a failure mode we term suppression bias-the systematic suppression of correct-but-difficult recommendations when clinician capability falls below the execution threshold. We argue that chronic disease management under outcome-based payment contracts produces override data with uniquely favorable properties-longitudinal density, concentrated decision space, outcome labels, and natural capability variation-and that training environments combining longitudinal outcome measurement with aligned financial incentives are a necessary condition for learning a reward model aligned with patient trajectory rather than with encounter economics. This framework emerged from operational work to improve clinician capability in a live value-based care deployment.",
+    "authors": [
+      "Prabhjot Singh",
+      "Abhishek Gupta",
+      "Chris Betz",
+      "Abe Flansburg",
+      "Brett Ives",
+      "Sudeep Lama",
+      "Jung Hoon Son"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.28010v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.28010v1",
+    "fetched_at": "2026-05-01T09:29:41.893815"
+  },
+  {
+    "id": "2604.27977v1",
+    "title": "D3-Gym: Constructing Real-World Verifiable Environments for Data-Driven Discovery",
+    "abstract": "Despite recent progress in language models and agents for scientific data-driven discovery, further advancing their capabilities is held back by the absence of verifiable environments representing real-world scientific tasks.To fill this gap, we introduce D3-Gym, the first automatically constructed dataset with verifiable environments for scientific Data-Driven Discovery. D3-Gym comprises (1) 565 tasks sourced from 239 real scientific repositories across four disciplines where (2) each task is equipped with a natural language instruction, an executable environment with pre-installed dependencies, input dataset and artifact previews, a reference code solution, and an automatically synthesized evaluation script. Rigorous evaluation of the quality of the verification signal in D3-Gym confirms that our evaluation scripts achieve 87.5% agreement with human-annotated gold standards and strong alignment in domain-specific evaluation logic, showing their scientific soundness. Further, training on trajectories sampled from D3-Gym yields consistent and substantial gains across Qwen3 models of varying sizes on ScienceAgentBench, boosting Qwen3-32B by 7.8 absolute points and substantially shrinking the gap with strong proprietary models. All D3-Gym artifacts (environments, creation workflow, trajectories, and models) can be found at https://github.com/OSU-NLP-Group/D3-Gym.",
+    "authors": [
+      "Hanane Nour Moussa",
+      "Yifei Li",
+      "Zhuoyang Li",
+      "Yankai Yang",
+      "Cheng Tang",
+      "Tianshu Zhang",
+      "Nesreen K. Ahmed",
+      "Ali Payani",
+      "Ziru Chen",
+      "Huan Sun"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27977v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27977v1",
+    "fetched_at": "2026-05-01T09:29:41.893850"
+  },
+  {
+    "id": "2604.27861v1",
+    "title": "TwinGate: Stateful Defense against Decompositional Jailbreaks in Untraceable Traffic via Asymmetric Contrastive Learning",
+    "abstract": "Decompositional jailbreaks pose a critical threat to large language models (LLMs) by allowing adversaries to fragment a malicious objective into a sequence of individually benign queries that collectively reconstruct prohibited content. In real-world deployments, LLMs face a continuous, untraceable stream of fully anonymized and arbitrarily interleaved requests, infiltrated by covertly distributed adversarial queries. Under this rigorous threat model, state-of-the-art defensive strategies exhibit fundamental limitations. In the absence of trustworthy user metadata, they are incapable of tracking global historical contexts, while their deployment of generative models for real-time monitoring introduces computationally prohibitive overhead. To address this, we present TwinGate, a stateful dual-encoder defense framework. TwinGate employs Asymmetric Contrastive Learning (ACL) to cluster semantically disparate but intent-matched malicious fragments in a shared latent space, while a parallel frozen encoder suppresses false positives arising from benign topical overlap. Each request requires only a single lightweight forward pass, enabling the defense to execute in parallel with the target model's prefill phase at negligible latency overhead. To evaluate our approach and advance future research, we construct a comprehensive dataset of over 3.62 million instructions spanning 8,600 distinct malicious intents. Evaluated on this large-scale corpus under a strictly causal protocol, TwinGate achieves high malicious intent recall at a remarkably low false positive rate while remaining highly robust against adaptive attacks. Furthermore, our proposal substantially outperforms stateful and stateless baselines, delivering superior throughput and reduced latency.",
+    "authors": [
+      "Bowen Sun",
+      "Chaozhuo Li",
+      "Yaodong Yang",
+      "Yiwei Wang",
+      "Chaowei Xiao"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.CR",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27861v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27861v1",
+    "fetched_at": "2026-05-01T09:29:41.893879"
+  },
+  {
+    "id": "2604.27855v1",
+    "title": "AI Inference as Relocatable Electricity Demand: A Latency-Constrained Energy-Geography Framework",
+    "abstract": "AI inference is becoming a persistent and geographically distributed source of electricity demand. Unlike many traditional electrical loads, inference workloads can sometimes be executed away from the user-facing service location, provided that latency, state locality, capacity, and regulatory constraints remain acceptable. This paper studies when such digital relocation of computation can be interpreted as latency-constrained relocation of electricity demand.   We develop an energy-geography framework for geo-distributed AI inference. The framework models a three-layer architecture of clients, service nodes, and compute nodes, and formulates inference placement as a constrained optimization problem over electricity prices, marginal carbon intensity, power usage effectiveness, compute capacity, network latency, and migration frictions. The key object is the energy-latency frontier: the marginal cost and carbon benefit unlocked by relaxing inference latency budgets.   The paper makes four contributions. First, it distinguishes physical electricity transmission from digital relocation of electricity-consuming computation. Second, it formulates a geo-distributed inference placement model with feasibility masks and migration frictions. Third, it introduces operational metrics, including relocatable inference demand, energy return on latency, carbon return on latency, and a relocation break-even condition. Fourth, it provides a transparent stylized simulation over representative global compute regions to show how heterogeneous latency tolerance separates workloads into local, regional, and energy-oriented execution layers.   The results show that latency relaxation expands feasible geography, while migration frictions, egress costs, state locality, legal constraints, and capacity limits can sharply reduce realized benefits.",
+    "authors": [
+      "Xubin Luo",
+      "Yang Cheng"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27855v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27855v1",
+    "fetched_at": "2026-05-01T09:29:41.893902"
+  },
+  {
+    "id": "2604.27850v1",
+    "title": "Reasoning over Object Descriptions Improves Coreference Resolution in Task-Based Dialogue Systems",
+    "abstract": "Task-based dialogue systems assist users in achieving specific goals, such as executing actions or retrieving information, through natural language interactions. Accurate coreference resolution is essential, as it involves identifying object references within the dialogue - a task that becomes increasingly challenging in visually grounded environments characterized by complex scenes and diverse object metadata. However, coreference resolution in task-based dialogue remains limited by poor generalization across domains and heavy reliance on supervised models that often overfit to dataset-specific artifacts. In this work, we propose a unimodal test-time reasoning approach that enables large language models (LLMs) to reason over detailed object metadata and dialogue history to improve coreference resolution. Empirical results on the SIMMC 2.1 dataset demonstrate that LLMs can generate step-by-step reasoning processes that effectively align dialogue context with objects present in the scene. Extensive experiments highlight the models' ability to link conversations and objects accurately. Moreover, we show that test-time reasoning under few-shot settings generalizes effectively to unseen scenarios and novel objects, outperforming encoder-based supervised methods in cross-domain evaluations. These findings underscore the critical role of structured metadata and careful prompt engineering in enhancing the robustness and generalization of task-oriented dialogue systems.",
+    "authors": [
+      "Oier Ijurco",
+      "Oier Lopez de Lacalle"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27850v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27850v1",
+    "fetched_at": "2026-05-01T09:29:41.893922"
+  },
+  {
+    "id": "2604.27820v1",
+    "title": "ObjectGraph: From Document Injection to Knowledge Traversal -- A Native File Format for the Agentic Era",
+    "abstract": "Every document format in existence was designed for a human reader moving linearly through text. Autonomous LLM agents do not read - they retrieve. This fundamental mismatch forces agents to inject entire documents into their context window, wasting tokens on irrelevant content, compounding state across multi-turn loops, and broadcasting information indiscriminately across agent roles. We argue this is not a prompt engineering problem, not a retrieval problem, and not a compression problem: it is a format problem.   We introduce OBJECTGRAPH (.og), a file format that reconceives the document as a typed, directed knowledge graph to be traversed rather than a string to be injected. OBJECTGRAPH is a strict superset of Markdown - every .md file is a valid .og file - requires no infrastructure beyond a two-primitive query protocol, and is readable by both humans and agents without tooling.   We formalize the Document Consumption Problem, characterise six structural properties no existing format satisfies simultaneously, and prove OBJECTGRAPH satisfies all six. We further introduce the Progressive Disclosure Model, the Role-Scoped Access Protocol, and Executable Assertion Nodes as native format primitives. Empirical evaluation across five document classes and eight agent task types demonstrates up to 95.3 percent token reduction with no statistically significant degradation in task accuracy (p > 0.05). Transpiler fidelity reaches 98.7 percent content preservation on a held-out document benchmark.",
+    "authors": [
+      "Mohit Dubey",
+      "Open Gigantic"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.AI",
+      "cs.DB",
+      "cs.IR",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27820v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27820v1",
+    "fetched_at": "2026-05-01T09:29:41.893944"
+  },
+  {
+    "id": "2604.27819v1",
+    "title": "MCPHunt: An Evaluation Framework for Cross-Boundary Data Propagation in Multi-Server MCP Agents",
+    "abstract": "Multi-server MCP agents create an information-flow control problem: faithful tool composition can turn individually benign read/write permissions into cross-boundary credential propagation -- a structural side effect of workflow topology, not necessarily malicious model behavior. We present MCPHunt, to our knowledge the first controlled benchmark that isolates non-adversarial, verbatim credential propagation across multi-server MCP trust boundaries, with three methodological contributions: (1) canary-based taint tracking that reduces propagation detection to objective string matching; (2) an environment-controlled coverage design with risky, benign, and hard-negative conditions that validates pipeline soundness and controls for credential-format confounds; (3) CRS stratification that disentangles task-mandated propagation (faithful execution of verbatim-transfer instructions) from policy-violating propagation (credentials included despite the option to redact). Across 3,615 main-benchmark traces from 5 models spanning 147 tasks and 9 mechanism families, policy-violating propagation rates reach 11.5--41.3% across all models. This propagation is pathway-specific (25x cross-mechanism range) and concentrated in browser-mediated data flows; hard-negative controls provide evidence that production-format credentials are not necessary -- prompt-directed cross-boundary data flow is sufficient. A prompt-mitigation study across 3 models reduces policy-violating propagation by up to 97% while preserving 80.5% utility, but effectiveness varies with instruction-following capability -- suggesting that prompt-level defenses alone may not suffice. Code, traces, and labeling pipeline are released under MIT and CC BY 4.0.",
+    "authors": [
+      "Haonan Li",
+      "Tianjun Sun",
+      "Yongqing Wang",
+      "Qisheng Zhang"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27819v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27819v1",
+    "fetched_at": "2026-05-01T09:29:41.893968"
+  },
+  {
+    "id": "2604.27776v1",
+    "title": "WindowsWorld: A Process-Centric Benchmark of Autonomous GUI Agents in Professional Cross-Application Environments",
+    "abstract": "While GUI agents have shown impressive capabilities in common computer-use tasks such as OSWorld, current benchmarks mainly focus on isolated and single-application tasks. This overlooks a critical real-world requirement of coordinating across multiple applications to accomplish complex profession-specific workflows. To bridge this gap, we present a computer-use benchmark in cross-application workflows, named WindowsWorld, designed to systematically assess GUI Agents on complex multi-step tasks that mirror real-world professional activities. Our methodology uses a multi-agent framework steered by 16 occupations to generate four difficulty-level tasks with intermediate inspection, which are then refined by human review and executed in a simulated environment. The resulting benchmark contains 181 tasks with an average of 5.0 sub-goals across 17 common desktop applications, of which 78% are inherently multi-application. Experimental results of leading large models and agents show that: 1) All computer-use agents perform poorly on multi-application tasks (< 21% success rate), far below the performance of simple single-app tasks; 2) They largely fail at tasks requiring conditional judgment and reasoning across $\\geq$ 3 applications, stalling at early sub-goals; 3) Low execution efficiency, where tasks often fail despite far exceeding human step limits. Code, benchmark data, and evaluation resources are available at github.com/HITsz-TMG/WindowsWorld.",
+    "authors": [
+      "Jinchao Li",
+      "Yunxin Li",
+      "Chenrui Zhao",
+      "Zhenran Xu",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27776v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27776v1",
+    "fetched_at": "2026-05-01T09:29:41.893995"
+  },
+  {
+    "id": "2604.27763v1",
+    "title": "Intent2Tx: Benchmarking LLMs for Translating Natural Language Intents into Ethereum Transactions",
+    "abstract": "The emergence of Large Language Models (LLMs) offers a transformative interface for Web3, yet existing benchmarks fail to capture the complexity of translating high-level user intents into functionally correct, state-dependent on-chain transactions. We present \\textsc{Intent2Tx}, a high-fidelity benchmark featuring 29,921 single-step and 1,575 multi-step instances meticulously derived from 300 days of real-world Ethereum mainnet traces. Unlike prior works that rely on synthetic instructions, \\textsc{Intent2Tx} grounds natural language intents in real-world protocol interactions across 11 categories, including diverse long-tail Decentralized Finance (DeFi) primitives. To enable rigorous evaluation, we propose an execution-aware framework that transcends surface-level text matching by employing differential state analysis on forked mainnet environments. Our extensive evaluation of 16 state-of-the-art LLMs reveals that while scaling and retrieval-augmentation enhance logical consistency and parameter precision, current models struggle with out-of-distribution generalization and multi-step planning. Crucially, our execution-based analysis demonstrates that syntactically valid outputs often fail to achieve intended state transitions, highlighting a significant gap in current \"reasoning-to-execution\" capabilities. \\textsc{Intent2Tx} serves as a critical foundation for developing autonomous, reliable agents in intent-centric Web3 ecosystems. Code and data: https://anonymous.4open.science/r/Intent2Tx_Bench-97FF .",
+    "authors": [
+      "Zhuoran Pan",
+      "Yue Li",
+      "Zhi Guan",
+      "Jianbin Hu",
+      "Zhong Chen"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27763v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27763v1",
+    "fetched_at": "2026-05-01T09:29:41.894019"
+  },
+  {
+    "id": "2604.27725v1",
+    "title": "AgentEconomist: An End-to-end Agentic System Translating Economic Intuitions into Executable Computational Experiments",
+    "abstract": "A long-standing challenge in economics lies not in the lack of intuition, but in the difficulty of translating intuitive insights into verifiable research. To address this challenge, we introduce AgentEconomist, an end-to-end interactive system designed to translate abstract intuitions into executable computational experiments. Grounded in a domain-specific knowledge base covering over 13,000 high-quality academic papers, the system employs a modular multi-stage architecture. Specifically, the Idea Development Stage generates literature-grounded hypotheses, the Experimental Design Stage configures simulator-aligned experimental parameters and protocols, and the Experimental Execution Stage runs experiments and returns structured analyses. Together, these stages form a human-in-the-loop, iterative workflow that translates economic intuitions into executable computational experiments. Through extensive experiments involving human expert evaluation and large language models (LLMs) as judges, we show that the system generates research ideas with stronger literature grounding and higher novelty and insight than state-of-the-art generic LLMs. Overall, AgentEconomist adopts a human-AI collaboration paradigm that enables researchers to focus on high-level intuitions, while delegating the labor-intensive processes of translation and computational execution to agents.",
+    "authors": [
+      "Jiaju Chen",
+      "Jinghua Piao",
+      "Xia Xu",
+      "Songwei Li",
+      "Tong Xia",
+      "Xiangnan He",
+      "Yong Li"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27725v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27725v1",
+    "fetched_at": "2026-05-01T09:29:41.894047"
+  },
+  {
+    "id": "2604.27699v1",
+    "title": "Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents",
+    "abstract": "Current embodied agents are often limited to passive instruction-following or reactive need-satisfaction, lacking a stable, high-order value framework essential for long-term, self-directed behavior and resolving motivational conflicts. We introduce \\textit{ValuePlanner}, a hierarchical cognitive architecture that decouples high-level value scheduling from low-level action execution. \\textit{ValuePlanner} employs an LLM-based cognitive module to generate symbolic subgoals by reasoning through abstract value trade-offs, which are then translated into executable action plans by a classical PDDL planner. This process is refined via a closed-loop feedback mechanism. Evaluating such autonomy requires methods beyond task-success rates, and we therefore propose a value-centric evaluation suite measuring cumulative value gain, preference alignment, and behavioral diversity. Experiments in the TongSim household environment demonstrate that \\textit{ValuePlanner} arbitrates competing values to generate coherent, long-horizon, self-directed behavior absent from instruction-following and needs-driven baselines. Our work offers a structured approach to bridging intrinsic values and grounded behavior for autonomous agents.",
+    "authors": [
+      "Chunhui Zhang",
+      "Yuxuan Wang",
+      "Aoyang Qin",
+      "Yi-Long Lu",
+      "Kunlun Wu",
+      "Yizhou Wang",
+      "Wei Wang"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27699v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27699v1",
+    "fetched_at": "2026-05-01T09:29:41.894075"
+  },
+  {
+    "id": "2604.27150v1",
+    "title": "Optimal Stop-Loss and Take-Profit Parameterization for Autonomous Trading Agent Swarm",
+    "abstract": "Autonomous crypto trading systems often spend most of their design effort on finding entries, while exits are left to fixed rules that are rarely tested in a systematic way. This paper examines whether better stop-loss and take-profit settings can improve the performance of an autonomous trading agent swarm. Using more than 900 historical trades, we replay each trade under many alternative exit policies and compare results against the existing production setup. The study finds that exit design matters meaningfully: stronger configurations improve risk-adjusted performance and generally favor tighter loss limits, earlier profit capture, and closer trailing protection. The paper also discusses a key evaluation challenge: a purely chronological split was initially used, but the newest trades fell into an unusual war-driven market period that sharply distorted test results. To reduce the influence of that single episode, the main comparison was run on randomized data, with the drawbacks of doing so acknowledged explicitly. Overall, the paper presents a practical framework for tuning exit logic in a more disciplined and transparent way.",
+    "authors": [
+      "Nathan Li",
+      "Aikins Laryea",
+      "Yigit Ihlamur"
+    ],
+    "published": "2026-04-29",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27150v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27150v1",
+    "fetched_at": "2026-05-01T09:30:38.996857"
+  },
+  {
+    "id": "2604.27374v1",
+    "title": "Measurement Risk in Supervised Financial NLP: Rubric and Metric Sensitivity on JF-ICR",
+    "abstract": "As LLMs become credible readers of earnings calls, investor-relations Q\\&A, guidance, and disclosure language, supervised financial NLP benchmarks increasingly function as decision evidence for model selection and deployment. A hidden assumption is that gold labels make such evidence objective. This assumption breaks down when the benchmark ruler itself is sensitive to rubric wording, metric choice, or aggregation policy. We study this measurement risk on Japanese Financial Implicit-Commitment Recognition (JF-ICR; a pinned 253-item test split x 4 frontier LLMs x 5 rubrics x 3 temperatures x 5 ordinal metrics). Three findings follow. First, rubric wording materially changes model-assigned labels: R2--R3 agreement ranges from 70.0% to 83.4%, with the dominant movement near the +1 / 0 implicit-commitment boundary. This pattern is consistent with a pragmatic-boundary interpretation, but is not a validated linguistic-causality claim because the present rubric variants confound semantics, examples, and verbosity. Second, not every metric remains informative under the JF-ICR class distribution. Within-one accuracy is too easy because near misses receive credit and the majority class dominates; worst-class accuracy is too noisy because the rarest class has only two examples. Exact accuracy, macro-F1, and weighted \\k{appa} are therefore the identifiable metrics under our operational rule. Third, ranking claims become more defensible only after this metric-identifiability audit: Bradley--Terry, Borda, and Ranked Pairs agree on the identifiable metric subset, while the full five-metric sweep produces disagreement on the closest pair. The contribution is not a new leaderboard, but a reporting discipline for supervised financial benchmarks whose gold labels exist and whose evaluation ruler still requires governance.",
+    "authors": [
+      "Sidi Chang",
+      "Peiying Zhu",
+      "Yuxiao Chen",
+      "Rongdong Chai"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2604.27374v1",
+    "arxiv_url": "https://arxiv.org/abs/2604.27374v1",
+    "fetched_at": "2026-05-01T09:30:45.955337"
+  }
+]
