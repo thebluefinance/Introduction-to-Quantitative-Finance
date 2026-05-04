@@ -1,0 +1,672 @@
+[
+  {
+    "id": "2605.00688v1",
+    "title": "Optimal Merton's Problem under Multivariate Affine Volterra Models with Jumps",
+    "abstract": "This paper is concerned with portfolio selection for an investor with exponential, power, and logarithmic utility in multi-asset financial markets allowing jumps. We investigate the classical Merton's portfolio optimization problem in a Volterra stochastic environment described by a multivariate Volterra--Heston model with jumps driven by an independent Poisson random measure. Owing to the non-Markovian and non-semimartingale nature of the model, classical stochastic control techniques are not directly applicable. Instead, the problem is tackled using the martingale optimality principle by constructing a family of supermartingale processes characterized via solutions to an original Riccati backward stochastic differential equation with jumps (Riccati BSDEJ).The resulting optimal strategies for Merton's problems are derived in semi-closed form depending on the solutions to time-dependent multivariate Riccati-Volterra equations, while the optimal value is expressed using the solution to this original Riccati BSDEJ. Numerical experiments on a two-dimensional rough Heston model illustrate the impact of both path roughness and jumps components on the value function and optimal strategies in the Merton problem.",
+    "authors": [
+      "Sigui Brice Dro",
+      "Emmanuel Gnabeyeu"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "math.OC",
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00688v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00688v1",
+    "fetched_at": "2026-05-04T10:09:14.733478",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686499"
+  },
+  {
+    "id": "2605.00493v1",
+    "title": "ForesightFlow: An Information Leakage Score Framework for Prediction Markets",
+    "abstract": "ForesightFlow is an Information Leakage Score (ILS) framework for detecting informed trading on decentralized prediction markets. For an event-resolved binary market, the score quantifies the fraction of the terminal information move priced in before the public news event. Three operational scope conditions (edge effect, non-trivial total move, anchor sensitivity) are stated as preconditions for interpretation. The score admits a Murphy-decomposition reading that connects label generation to the proper-scoring-rule literature.   A pilot empirical evaluation surfaces three findings. First, a resolution-anchored proxy for the public-event timestamp does not separate event-resolved markets from a matched control population (Mann-Whitney p = 1e-6, separation reversed), demonstrating that proxy quality is itself a binding constraint. Second, the article-derived timestamp on a single high-stakes case shifts the score by 0.444 in magnitude relative to the proxy and lies on the opposite side of zero. Third, an audit of the publicly documented Polymarket insider record reveals that documented cases are systematically deadline-resolved, falling outside the original ILS scope (0 of 24 FFIC inventory markets satisfied original scope conditions).   This last finding motivates a deadline-ILS extension introduced in Section 7, anchored at the public-event timestamp rather than the news timestamp, and equipped with a per-category exponential hazard baseline for the time-to-event distribution. The extension closes the gap between the methodology and the population in which insider trading has been empirically documented. An end-to-end evaluation of the extension on the 2026 U.S.-Iran conflict cluster is reported in a companion paper. We release the FFIC inventory, the resolution-typology classification of the 911,237-market corpus, and all code at github.com/ForesightFlow.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "q-fin.TR",
+      "cs.CR",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00493v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00493v1",
+    "fetched_at": "2026-05-04T10:09:14.733520",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686531"
+  },
+  {
+    "id": "2605.00459v1",
+    "title": "Information Leakage at Population Scale: An Evaluation of the Polymarket Insider-Relevant Subpopulation, 2020-2026",
+    "abstract": "We carry the deadline-resolved Information Leakage Score (ILS-dl) framework of Nechepurenko (2026a, 2026b) from a single-case proof of concept to a population-scale evaluation across 12,708 Polymarket markets, October 2020 to April 2026. We frame the paper as a scope-discovery study: scaling reveals that the framework's effective domain is materially narrower than initial framing suggested, and the principal obstacle is not score computation but resolution semantics.   We report four findings. First, only 88 of 12,708 candidate markets (0.7%) yield computable ILS-dl values; only 1 of 32 markets in the ForesightFlow Insider Cases (FFIC) inventory is in scope, and 14 of 32 FFIC markets are flagged unclassifiable due to genuine resolution-criterion ambiguity. Second, only 12 of the 88 computed markets (13.6%) satisfy anchor-sensitivity, and an independent-second-pass T_event validation reaches 57.8% exact-date agreement, below the 90% ex-ante criterion. Third, raw ILS-dl medians are negative across all six (sub-bucket by period) cells, but a hazard-decay baseline correction we introduce yields a heterogeneous result: regulatory_formal post-2024 shifts to near-zero (-0.21 to -0.02), while regulatory_announcement post-2024 retains a 95% bootstrap CI entirely below zero. Fourth, the constant-hazard exponential of Nechepurenko (2026b) is rejected in favor of Weibull on the pooled post-2024 cell, but a per-subcategory check confirms the preference reflects category mixture rather than within-cell duration dependence.   The implication is that detection of informed flow requires methodological refinement on the resolution-typology and score-baseline axes, not only on the score-computation axis where prior work concentrated.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "q-fin.TR",
+      "econ.EM",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00459v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00459v1",
+    "fetched_at": "2026-05-04T10:09:14.733544",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686546"
+  },
+  {
+    "id": "2605.00420v1",
+    "title": "Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents",
+    "abstract": "Evaluating the true forecasting ability of AI agents requires environments resistant to overfitting, free from centralized trust, and grounded in incentive-compatible scoring. Existing benchmarks either rely on static datasets vulnerable to training-data contamination, or measure trading PnL -- a metric conflating predictive accuracy with timing, sizing, and risk appetite. We introduce Foresight Arena, the first permissionless, on-chain benchmark for evaluating AI forecasting agents on real-world prediction markets. Agents submit probabilistic forecasts on binary Polymarket markets via a commit-reveal protocol enforced by Solidity smart contracts on Polygon PoS; outcomes are resolved trustlessly through the Gnosis Conditional Token Framework. Performance is measured by the Brier Score and a novel Alpha Score -- proper scoring rules that incentivize honest probability reporting and isolate predictive edge over market consensus. We provide a formal analysis: closed-form variance for per-market Alpha, the connection to Murphy's classical Brier decomposition, and a power analysis characterizing the number of rounds required to reliably distinguish agents of different skill levels. We show that detecting a true edge of $α^* = 0.02$ at 80% power requires approximately 350 resolved binary predictions (50 rounds of 7 markets), while $α^* = 0.01$ requires four times more. We complement these analytical results with a 50-round live evaluation of five frontier LLM agents plus a random baseline. Murphy decomposition distinguishes well-calibrated agents from market-tracking agents that fail through reduced resolution. All smart contracts and evaluation infrastructure are open-source.",
+    "authors": [
+      "Maksym Nechepurenko",
+      "Pavel Shuvalov"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.MA",
+      "cs.LG",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00420v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00420v1",
+    "fetched_at": "2026-05-04T10:09:14.733567",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686576"
+  },
+  {
+    "id": "2605.00196v1",
+    "title": "Modeling Stock Returns and Volatility Using Bivariate Gamma Generalized Laplace Law",
+    "abstract": "We consider a generalization of the variance-gamma (generalized asymmetric Laplace) distribution, defined as a normal mean - variance mixture with a gamma mixing distribution. While this model is typically studied in the univariate setting, we assume that the gamma mixing variable is observed alongside the primary variable, resulting in a bivariate framework. In this setting, maximum likelihood estimation becomes significantly simpler than in the standard univariate case, reducing to a form of classical linear regression. We derive explicit expressions for the resulting estimators. For certain parameter configurations, the estimators exhibit nonstandard convergence rates, exceeding the usual square-root rate. Finally, we illustrate the applicability of this model in financial contexts by analyzing stock index returns and associated volatility for several major indices.",
+    "authors": [
+      "Tomasz J. Kozubowski",
+      "Andrey Sarantsev",
+      "James A. Spiker"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "stat.ME",
+      "math.PR",
+      "math.ST",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00196v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00196v1",
+    "fetched_at": "2026-05-04T10:09:14.733589",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686590"
+  },
+  {
+    "id": "2605.00490v1",
+    "title": "Distance metric learning for conditional anomaly detection",
+    "abstract": "Anomaly detection methods can be very useful in identifying unusual or interesting patterns in data. A recently proposed conditional anomaly detection framework extends anomaly detection to the problem of identifying anomalous patterns on a subset of attributes in the data. The anomaly always depends (is conditioned) on the value of remaining attributes. The work presented in this paper focuses on instance-based methods for detecting conditional anomalies. The methods depend heavily on the distance metric that lets us identify examples in the dataset that are most critical for detecting the anomaly. To optimize the performance of such methods we study and devise a metric learning method that learns the distance metric to reflect best the conditional anomaly pattern.",
+    "authors": [
+      "Michal Valko",
+      "Milos Hauskrecht"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00490v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00490v1",
+    "fetched_at": "2026-05-04T10:09:27.941472",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686601"
+  },
+  {
+    "id": "2605.00482v1",
+    "title": "Scalable Context-Aware Graph Attention for Unsupervised Anomaly Detection in Large-Scale Mobile Networks",
+    "abstract": "Mobile network operators must monitor thousands of heterogeneous network elements across the radio access network and the packet core, each exposing high-dimensional KPI time series. The scale and cost of incident labelling make supervised approaches impractical, motivating unsupervised anomaly detection robust to context shifts and nonstationarity.   We propose \\textbf{C-MTAD-GAT} (\\emph{Context-aware Multivariate Time-series Anomaly Detection with Graph Attention}), an anomaly detection framework designed to operate as a single shared model across large populations of network elements. The model combines temporal and feature-wise graph attention with lightweight static and dynamic context conditioning and a dual-head decoder for reconstruction and multi-step forecasting. It produces per-element, per-feature anomaly scores, converted to alerts via fully unsupervised thresholds calibrated from validation residuals.   On the TELCO dataset released with DC-VAE \\cite{garcia2023onemodel}, C-MTAD-GAT improves event-level affiliation and pointwise F1 while generating fewer alarms than prior graph-attention and VAE-based baselines. We then apply the same system to nation-scale radio access and evolved packet core control-plane counter data from a mobile network operator, where it is deployed. Operator feedback indicates the alerts are actionable and support daily monitoring, showing scalability across domains without relying on labelled incidents.",
+    "authors": [
+      "Sara Malacarne",
+      "Eirik Hoel-Høiseth",
+      "Erlend Aune",
+      "David Zsolt Biró",
+      "Massimiliano Ruocco"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00482v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00482v1",
+    "fetched_at": "2026-05-04T10:09:27.941514",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686613"
+  },
+  {
+    "id": "2605.00351v1",
+    "title": "Hypergraph and Latent ODE Learning for Multimodal Root Cause Localization in Microservices",
+    "abstract": "Root cause localization in cloud native microservice systems requires modeling complex service dependencies, irregular temporal dynamics, and heterogeneous observability data. We present HyperODE RCA, a unified framework that combines hypergraph attention learning, latent ordinary differential equations, and multimodal cross attention fusion for fine grained root cause analysis. The method learns higher order service interactions through differentiable hyperedge construction, captures continuous anomaly evolution from irregular observations with an ODE RNN encoder, and adaptively fuses logs, traces, metrics, entities, and events using context aware modality routing. We further improve robustness with a variational information bottleneck, temporal causal regularization, and invariant risk constraints. Experiments on the Tianchi AIOps benchmark show clear gains over strong baselines in ranking and classification performance, while preserving interpretability through learned hypergraph attention.",
+    "authors": [
+      "Xin Liu",
+      "Yuhang He",
+      "Sichen Zhao",
+      "Kejian Tong",
+      "Xingyu Zhang"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00351v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00351v1",
+    "fetched_at": "2026-05-04T10:09:27.941539",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686632"
+  },
+  {
+    "id": "2605.00322v1",
+    "title": "Federated Weather Modeling on Sensor Data",
+    "abstract": "Federated weather modeling on sensor data is a distributed system underpinned by federated learning, enabling multiple sensor data sources, including ground weather stations, satellites and IoT devices, to collaboratively train deep learning models without sharing raw data. This method safeguards data privacy and security while leverages diverse, geographically distributed datasets to improve the accuracy and robustness of global/regional weather modeling tasks such as forecasting and anomaly detection.",
+    "authors": [
+      "Shengchao Chen",
+      "Guodong Long"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00322v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00322v1",
+    "fetched_at": "2026-05-04T10:09:27.941560",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686642"
+  },
+  {
+    "id": "2605.00218v1",
+    "title": "Selfie-Capture Dynamics as an Auxiliary Signal Against Deepfakes and Injection Attacks for Mobile Identity Verification",
+    "abstract": "Mobile remote identity verification (RIdV) systems are exposed to attacks that manipulate or replace the facial video stream, including presentation attacks, real-time deepfakes, and video injection. Recent European requirements, including ETSI TS 119 461 and CEN/TS 18099, motivate complementary evidence channels beyond camera-based presentation-attack detection. This paper investigates whether passive motion traces recorded during selfie capture provide auxiliary evidence for spoof screening and user verification. We introduce CanSelfie, a dataset of 375 bona fide multi-sensor sequences collected at 50\\,Hz from 30 participants using a commercial mobile RIdV application, together with stationary, handheld, and temporally shifted attack-proxy scenarios. We benchmark 7 multivariate time-series classifiers and 8 whole-series anomaly detectors across sensor configurations and temporal windows. For spoof screening, accelerometer-only ROCKAD obtains 0.00\\% false rejection rate (FRR) and 43.8\\% false acceptance rate (FAR), while QUANT+3-NN obtains the lowest overall FAR of 32.0\\% at 2.37\\% FRR; both reject all stationary attack proxies. For same-device and same-session user verification, WEASEL+MUSE reaches 1.07\\% equal error rate (EER) using 9 sensor channels. The analysis shows that raw accelerometer data, preserving gravity and orientation cues, is the most informative modality, and that closed-set classification accuracy alone does not imply good verification performance because threshold calibration depends on score distributions. The findings suggest that short selfie-capture motion traces contain measurable spoof-related and identity-related information, supporting their use as a low-friction auxiliary signal while also identifying the need for cross-device, cross-session, and real injection-attack evaluation.",
+    "authors": [
+      "Erkka Rantahalvari",
+      "Olli Silvén",
+      "Zinelabidine Boulkenafet",
+      "Constantino Álvarez Casado"
+    ],
+    "published": "2026-04-30",
+    "categories": [
+      "cs.CR",
+      "cs.ET",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00218v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00218v1",
+    "fetched_at": "2026-05-04T10:09:27.941584",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686654"
+  },
+  {
+    "id": "2605.00817v1",
+    "title": "When LLMs Stop Following Steps: A Diagnostic Study of Procedural Execution in Language Models",
+    "abstract": "Large language models (LLMs) often achieve strong performance on reasoning benchmarks, but final-answer accuracy alone does not show whether they faithfully execute the procedure specified in a prompt. We study this question through a controlled diagnostic benchmark for procedural execution, where models are given a step-wise arithmetic algorithm and two numeric inputs, and must return the final computed value. The benchmark uses simple arithmetic operations but increases complexity through algorithm length and look-back dependencies over intermediate variables. Across 14 models and 55 datasets, average first-answer accuracy drops from 61% on 5-step procedures to 20% on 95-step procedures. Generation-level analysis shows that failures often involve missing answers, premature answers, self-correction after an initial error, under-executed traces, and hallucinated extra steps. These findings suggest that apparent reasoning ability can mask substantial weaknesses in faithful instruction execution.",
+    "authors": [
+      "Sailesh Panda",
+      "Pritam Kadasi",
+      "Abhishek Upperwal",
+      "Mayank Singh"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00817v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00817v1",
+    "fetched_at": "2026-05-04T10:09:57.458981",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686665"
+  },
+  {
+    "id": "2605.00803v1",
+    "title": "Can Coding Agents Reproduce Findings in Computational Materials Science?",
+    "abstract": "Large language models are increasingly deployed as autonomous coding agents and have achieved remarkably strong performance on software engineering benchmarks. However, it is unclear whether such success transfers to computational scientific workflows, where tasks require not only strong coding ability, but also the ability to navigate complex, domain-specific procedures and to interpret results in the context of scientific claims. To address this question, we present AutoMat, a benchmark for evaluating LLM-based agents' ability to reproduce claims from computational materials science. AutoMat poses three interrelated challenges: recovering underspecified computational procedures, navigating specialized toolchains, and determining whether the resulting evidence supports a claim. By working closely with subject matter experts, we curate a set of claims from real materials science papers to test whether coding agents can recover and execute the end-to-end workflow needed to support (or undermine) such claims. We then evaluate multiple representative coding agent settings across several foundation models. Our results show that current LLM-based agents obtain low overall success rates on AutoMat, with the best-performing setting achieving a success rate of only 54.1%. Error analysis further reveals that agents perform worst when workflows must be reconstructed from paper text alone and that they fail primarily due to incomplete procedures, methodological deviations, and execution fragility. Taken together, these findings position AutoMat as both a benchmark for computational scientific reproducibility and a tool for diagnosing the current limitations of agentic systems in AI-for-science settings.",
+    "authors": [
+      "Ziyang Huang",
+      "Yi Cao",
+      "Ali K. Shargh",
+      "Jing Luo",
+      "Ruidong Mei",
+      "Mohd Zaki",
+      "Zhan Liu",
+      "Wyatt Bunstine",
+      "William Jurayj",
+      "Somdatta Goswami",
+      "Tyrel McQueen",
+      "Michael Shields",
+      "Jaafar El-Awady",
+      "Paulette Clancy",
+      "Benjamin Van Durme",
+      "Nicholas Andrews",
+      "William Walden",
+      "Daniel Khashabi"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00803v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00803v1",
+    "fetched_at": "2026-05-04T10:09:57.459044",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686677"
+  },
+  {
+    "id": "2605.00800v1",
+    "title": "Generating Statistical Charts with Validation-Driven LLM Workflows",
+    "abstract": "Generating diverse, readable statistical charts from tabular data remains challenging for LLMs, as many failures become apparent after rendering and are not detectable from data or code alone. Existing chart datasets also rarely provide fully aligned artifacts, such as executable code, dataset context, and question-answer pairs. We present a structured LLM-based workflow that decomposes chart generation into dataset screening, plot proposal, code synthesis, rendering, validation-driven refinement, description generation, and question-answer generation. By incorporating rendered-output validation, the workflow addresses visualization-specific failure modes such as readability and semantic mismatch. It treats chart generation as an inspectable process rather than a one-shot prompt-to-code task, retaining each chart with its code, dataset context, description, and question-answer pairs. Applied to UCI datasets, the workflow produces 1,500 charts from 74 datasets, spanning 24 chart families and paired with 30,003 question-answer pairs. We evaluate 16 multimodal LLMs (MLLMs) on these chart-question pairs. The results show that chart-syntax questions are nearly saturated, while value extraction, comparison, and reasoning remain more challenging, illustrating the workflow's utility for diagnostic studies of chart-grounded multimodal reasoning.",
+    "authors": [
+      "Pavlin G. Poličar",
+      "Andraž Pevcin",
+      "Blaž Zupan"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00800v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00800v1",
+    "fetched_at": "2026-05-04T10:09:57.459067",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686706"
+  },
+  {
+    "id": "2605.00798v1",
+    "title": "RunAgent: Interpreting Natural-Language Plans with Constraint-Guided Execution",
+    "abstract": "Humans solve problems by executing targeted plans, yet large language models (LLMs) remain unreliable for structured workflow execution. We propose RunAgent, a multi-agent plan execution platform that interprets natural-language plans while enforcing stepwise execution through constraints and rubrics. RunAgent bridges the expressiveness of natural language with the determinism of programming via an agentic language with explicit control constructs (e.g., \\texttt{IF}, \\texttt{GOTO}, \\texttt{FORALL}). Beyond verifying syntactic and semantic verification of the step output, which is performed based on the specific instruction of each step, RunAgent autonomously derives and validates constraints based on the description of the task and its instance at each step. RunAgent also dynamically selects among LLM-based reasoning, tool usage, and code generation and execution (e.g., in Python), and incorporates error correction mechanisms to ensure correctness. Finally, RunAgent filters the context history by retaining only relevant information during the execution of each step. Evaluations on Natural-plan and SciBench Datasets demonstrate that RunAgent outperforms baseline LLMs and state-of-the-art PlanGEN methods.",
+    "authors": [
+      "Arunabh Srivastava",
+      "Mohammad A.",
+      " Khojastepour",
+      "Srimat Chakradhar",
+      "Sennur Ulukus"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG",
+      "cs.CL",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00798v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00798v1",
+    "fetched_at": "2026-05-04T10:09:57.459093",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686718"
+  },
+  {
+    "id": "2605.00782v1",
+    "title": "GeoContra: From Fluent GIS Code to Verifiable Spatial Analysis with Geography-Grounded Repair",
+    "abstract": "Reliable spatial analysis in GIScience requires preserving coordinate semantics, topology, units, and geographic plausibility. Current LLM-based GIS systems generate fluent scripts but rarely enforce these geographic rules at scale. We present GeoContra, a verification and repair framework for LLM-driven Python GIS workflows. It represents each task as an executable geospatial contract-including natural-language questions, schemas, CRS metadata, expected outputs, spatial predicates, topology, metrics, required operations, and forbidden shortcuts. Generated programs undergo static rule inspection, runtime validation, and semantic verification, with violations fed back into a bounded repair loop. Evaluated on 7,079 real geospatial tasks across 15 Boston-area zones, 9 task families, and 11 open-source models (600 runs each), GeoContra improves spatial correctness on closed models from 47.6% to 77.5% for DeepSeek-V4 and from 57.7% to 81.5% for Kimi-K2.5. Across 11 open models, average correctness rises by 26.6%. GeoContra turns fluent code production into verifiable spatial analysis, catching negative travel times, CRS/field-schema violations, missing predicates, and brittle output casts that otherwise yield executable but geographically invalid results.",
+    "authors": [
+      "Yinhao Xiao",
+      "Rongbo Xiao",
+      "Yihan Zhang"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00782v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00782v1",
+    "fetched_at": "2026-05-04T10:09:57.459114",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686728"
+  },
+  {
+    "id": "2605.00754v1",
+    "title": "Themis: Training Robust Multilingual Code Reward Models for Flexible Multi-Criteria Scoring",
+    "abstract": "Reward models (RMs) have become an indispensable fixture of the language model (LM) post-training playbook, enabling policy alignment and test-time scaling. Research on the application of RMs in code generation, however, has been comparatively sparse, with existing work largely focusing on execution feedback. This choice constrains post-training to optimizing functional correctness over self-contained executable code. In this work, we examine the training and evaluation of multilingual, multi-criteria code RMs. To this end, we first compile Themis-CodeRewardBench, a benchmark to evaluate code RMs across five preference dimensions (i.e., criteria) and eight programming languages, on which we profile 50+ code, math, and general-purpose RMs. Observing the limited proficiency of current RMs beyond scoring for functional correctness, we develop Themis-CodePreference, the largest open-source collection of code preferences to date (more than 350k preference pairs), and use it to train Themis-RM, a suite of multilingual code reward models for flexible multi-criteria scoring, ranging in size from 600M to 32B parameters. Our experiments and ablations demonstrate positive scaling trends, strong cross-lingual transfer when training on diverse preferences, and the importance of multi-criteria training for reliable code reward modeling.",
+    "authors": [
+      "Indraneil Paul",
+      "Glavaš Glavas",
+      "Iryna Gurevych"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00754v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00754v1",
+    "fetched_at": "2026-05-04T10:09:57.459137",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686738"
+  },
+  {
+    "id": "2605.00632v1",
+    "title": "BlenderRAG: High-Fidelity 3D Object Generation via Retrieval-Augmented Code Synthesis",
+    "abstract": "Automatic generation of executable Blender code from natural language remains challenging, with state-of-the-art LLMs producing frequent syntactic errors and geometrically inconsistent objects. We present BlenderRAG, a retrieval-augmented generation system that operates on a curated multimodal dataset of 500 expert-validated examples (text, code, image) across 50 object categories. By retrieving semantically similar examples during generation, BlenderRAG improves compilation success rates from 40.8% to 70.0% and semantic normalized alignment from 0.41 to 0.77 (CLIP similarity) across four state-of-the-art LLMs, without requiring fine-tuning or specialized hardware, making it immediately accessible for deployment. The dataset and code will be available at https://github.com/MaxRondelli/BlenderRAG.",
+    "authors": [
+      "Massimo Rondelli",
+      "Francesco Pivi",
+      "Maurizio Gabbrielli"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.GR",
+      "cs.HC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00632v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00632v1",
+    "fetched_at": "2026-05-04T10:09:57.459159",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686749"
+  },
+  {
+    "id": "2605.00628v1",
+    "title": "EGREFINE: An Execution-Grounded Optimization Framework for Text-to-SQL Schema Refinement",
+    "abstract": "Text-to-SQL enables non-expert users to query databases in natural language, yet real-world schemas often suffer from ambiguous, abbreviated, or inconsistent naming conventions that degrade model accuracy. Existing approaches treat schemas as fixed and address errors downstream. In this paper, we frame schema refinement as a constrained optimization problem: find a renaming function that maximizes downstream Text-to-SQL execution accuracy while preserving query equivalence through database views. We analyze the computational hardness of this problem, which motivates a column-wise greedy decomposition, and instantiate it as EGRefine: a four-phase pipeline that screens ambiguous columns, generates context-aware candidate names, verifies them through execution-grounded feedback, and materializes the result as non-destructive SQL views. The pipeline carries two structural properties: column-local non-degradation, ensured by the conservative selection rule in the verification phase, and database-level query equivalence, ensured by the view-based materialization phase. Together they make the resulting refinement safe by construction at the column level, with cross-column and prompt-level interactions handled empirically rather than analytically. Across controlled schema-degradation, real-world, and enterprise benchmarks, EGRefine recovers accuracy lost to schema naming noise where applicable and correctly abstains where the underlying task exceeds current Text-to-SQL capabilities, with refined schemas transferring across model families to enable refine-once, serve-many-models deployment. Code and data are publicly available at https://github.com/ai-jiaqian/EGRefine.",
+    "authors": [
+      "Jiaqian Wang",
+      "Yutao Qi",
+      "Wenjin Hou",
+      "Yu Pang",
+      "Rui Yang"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.DB",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00628v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00628v1",
+    "fetched_at": "2026-05-04T10:09:57.459186",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686760"
+  },
+  {
+    "id": "2605.00572v1",
+    "title": "Instance-Aware Parameter Configuration in Bilevel Late Acceptance Hill Climbing for the Electric Capacitated Vehicle Routing Problem",
+    "abstract": "Algorithm performance in combinatorial optimization is highly sensitive to parameter settings, while a single globally tuned configuration often fails to exploit the heterogeneity of instances. This limitation is particularly evident in the Electric Capacitated Vehicle Routing Problem, where instances differ in structure, demand patterns, and energy constraints. This paper investigates instance-aware parameter configuration for Bilevel Late Acceptance Hill Climbing, a state-of-the-art metaheuristic for the Electric Capacitated Vehicle Routing Problem. An offline tuning procedure is used to obtain instance-specific parameter labels, which are then mapped from instance features via a regression model to enable parameter prediction for unseen instances prior to execution. Experimental results on the IEEE WCCI 2020 benchmark and its extensions show that the proposed approach achieves an average objective value reduction of $0.28\\%$ across eight held-out test instances relative to a globally tuned configuration. This corresponds to a significant cost reduction in multimillion-dollar transportation operations.",
+    "authors": [
+      "Yinghao Qin",
+      "Xinwei Wang",
+      "Mosab Bazargani",
+      "Jun Chen"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.AI",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00572v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00572v1",
+    "fetched_at": "2026-05-04T10:09:57.459215",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686770"
+  },
+  {
+    "id": "2605.00557v1",
+    "title": "Structure Liberates: How Constrained Sensemaking Produces More Novel Research Output",
+    "abstract": "Scientific discovery is an extended process of ideation--surveying prior work, forming hypotheses, and refining reasoning--yet existing approaches treat this phase as a brief preamble despite its central role in research. We introduce SCISENSE, a sensemaking-grounded framework that operationalizes ideation as a structured sequence of eight cognitive stages (Pirolli \\& Card, 2005). We construct SCISENSE-Traj, a 100K-scale dataset of citation-conditioned research trajectories in two modes: Target, where an LLM reconstructs the ideation path leading to a known paper from its cited works, and Infer, where the LLM proposes novel directions from the same citations. We distill these into SCISENSE-LM, a family of sensemaking LLMs spanning 3B to 70B parameters. Contrary to the assumption that looser supervision promotes greater exploration, Target-trained models achieve a 2.0\\% improvement in trajectory quality over Infer-trained models while also producing more novel and diverse outputs. This advantage propagates downstream: coding agents conditioned on Target trajectories produce research artifacts with higher executability and quality than those conditioned on Infer trajectories. This suggests that targeted ideation reduces cognitive burden on downstream agents, freeing them to explore more creatively. SCISENSE offers both a practical tool for augmenting LLM-driven research workflows and a principled testbed for studying how planning shapes scientific discovery.",
+    "authors": [
+      "James Mooney",
+      "Zae Myung Kim",
+      "Young-Jun Lee",
+      "Dongyeop Kang"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00557v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00557v1",
+    "fetched_at": "2026-05-04T10:09:57.459240",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686780"
+  },
+  {
+    "id": "2605.00536v1",
+    "title": "Tempus: A Temporally Scalable Resource-Invariant GEMM Streaming Framework for Versal AI Edge",
+    "abstract": "Scaling laws for Large Language Models (LLMs) establish that model quality improves with computational scale, yet edge deployment imposes strict constraints on compute, memory, and power. Since General Matrix Multiplication (GEMM) accounts for up to 90\\% of inference time, efficient GEMM acceleration is critical for edge AI. The Adaptive Intelligent Engines available in the AMD Versal adaptive SoCs are well suited for this task, but existing state-of-the-art (SOTA) frameworks maximize performance through spatial scaling, distributing workloads across hundreds of cores -- an approach that fails on resource-limited edge SoCs due to physical implementation failures, bandwidth saturation, and excessive resource consumption. We propose Tempus, a Resource-Invariant Temporal GEMM framework for the AMD Versal AI Edge SoC. Rather than expanding hardware resources with matrix size, Tempus employs a fixed compute block of 16 AIE-ML cores, achieving scalability through iterative graph execution and algorithmic data tiling and replication in the Programmable Logic. High-speed cascade streaming ensures low-latency partial sum reduction at Initiation Interval (II) of 1, while a deadlock-free DATAFLOW protocol maximizes transfer-compute overlap and PLIO reuse. Evaluated on GEMM workloads, Tempus achieves 607 GOPS at 10.677 W total on-chip power. By characterizing system-level efficiency through the Platform-Aware Utility (PAU) metric, we prove that Tempus achieves a 211.2x higher prominence factor than the leading spatial SOTA (ARIES). Furthermore, the framework maintains a 0.00\\% utilization of URAM/DSP, yielding 22.0x core frugality, 7.1x power frugality, and a 6.3x reduction in I/O demand, establishing a sustainable, scalable foundation for edge LLM inference.",
+    "authors": [
+      "M. Grailoo",
+      "J. Núñez-Yáñez"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.DC",
+      "cs.AR",
+      "cs.LG",
+      "cs.PF",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00536v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00536v1",
+    "fetched_at": "2026-05-04T10:09:57.459262",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686792"
+  },
+  {
+    "id": "2605.00528v1",
+    "title": "SAGA: Workflow-Atomic Scheduling for AI Agent Inference on GPU Clusters",
+    "abstract": "AI agents execute tens to hundreds of chained LLM calls per task, yet GPU schedulers treat each call as independent, discarding gigabytes of intermediate state between steps and inflating end-to-end latency by 3-8x. We argue that this request-level abstraction is fundamentally mismatched to compound AI workloads, and propose a shift to program-level scheduling: treating the entire agent workflow (not individual inference calls) as the first-class schedulable unit. We present SAGA, a distributed scheduler that implements this abstraction through three mechanisms: (1) Agent Execution Graphs that capture workflow structure to predict KV cache reuse across tool-call boundaries, achieving within 1.31x of Bélády's optimal offline policy; (2) session-affinity batching with work stealing that co-locates correlated requests while maintaining global load balance; and (3) Agent Fair Share, a task-completion-time fairness metric with provable bounded-deviation guarantees. On a 64-GPU cluster serving SWE-bench coding agents and WebArena browser tasks, SAGA reduces task completion time by 1.64x (geometric mean, p < 0.001) over vLLM v0.15.1 with prefix caching and affinity routing, while improving GPU memory utilization by 1.22x and achieving 99.2% SLO attainment under multi-tenant interference. These latency gains come at a quantified cost: approximately 30% lower peak throughput than throughput-optimal batch scheduling, a tradeoff appropriate for the latency-sensitive interactive deployments that dominate compound AI usage. Our results demonstrate that workflow-aware scheduling is essential for efficient compound AI serving.",
+    "authors": [
+      "Dongxin Guo",
+      "Jikun Wu",
+      "Siu Ming Yiu"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.LG",
+      "cs.OS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00528v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00528v1",
+    "fetched_at": "2026-05-04T10:09:57.459286",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686813"
+  },
+  {
+    "id": "2605.00519v1",
+    "title": "Silicon Showdown: Performance, Efficiency, and Ecosystem Barriers in Consumer-Grade LLM Inference",
+    "abstract": "The operational landscape of local Large Language Model (LLM) inference has shifted from lightweight models to datacenter-class weights exceeding 70B parameters, creating profound systems challenges for consumer hardware. This paper presents a systematic empirical analysis of the Nvidia and Apple Silicon ecosystems, specifically characterizing the distinct intra-architecture trade-offs required to deploy these massive models. On the Nvidia Blackwell architecture, we identify a critical \"Backend Dichotomy\" within the TensorRT-LLM stack: while the new NVFP4 quantization format delivers a 1.6x throughput advantage over optimized BF16 baselines (151 tokens/s vs. 92 tokens/s), realizing this performance requires navigating complex runtime constraints that trade startup latency for generation speed. Furthermore, we characterize the \"VRAM Wall\" for 70B+ models: on discrete GPUs, users face a destructive choice between aggressive quantization (e.g., Q2) that degrades model intelligence to fit in VRAM, or PCIe-bottlenecked CPU offloading, which reduces throughput by over 90% compared to full-GPU execution. Conversely, Apple's Unified Memory Architecture (UMA) circumvents these bottlenecks, enabling linear scaling for 80B parameter models at practical 4-bit precisions. This architectural divergence extends to operational sustainability, where Apple's SoC design demonstrates up to a 23x advantage in energy efficiency (tokens/joule). We conclude that for consumer-grade inference, the optimal hardware is defined by a complex interplay between compute density (Nvidia) and memory capacity (Apple), moderated by the significant \"ecosystem friction\" of proprietary quantization workflows.",
+    "authors": [
+      "Allan Kazakov",
+      "Abdurrahman Javat"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.PF",
+      "cs.AI",
+      "cs.AR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00519v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00519v1",
+    "fetched_at": "2026-05-04T10:09:57.459305",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686824"
+  },
+  {
+    "id": "2605.00515v1",
+    "title": "Space Network of Experts: Architecture and Expert Placement",
+    "abstract": "Leveraging continuous solar energy harvesting at high efficiency, space data centers are envisioned as a promising platform for executing energy-intensive large language models (LLMs). Recognizing this advantage, space and AI conglomerates (e.g., SpaceX, Google) are actively investing in this vision. One key challenge, however, is the efficient distributed deployment of a large-scale LLM in a satellite network due to the limited onboard computing and communication resources. This gives rise to a placement problem that involves partitioning and mapping model components to satellites such that the fundamentally different model architecture and network topology can be reconciled to ensure low-latency token generation. To address this problem, we present the Space Network of Experts (Space-XNet) framework targeting the distributed execution of a popular mixture-of-experts (MoE) model in space. The proposed placement strategies are two-level: (1) layer placement, which assigns MoE layers to satellite subnets; and (2) intra-layer expert placement, which assigns individual experts to satellites associated with the same layer/subnet. For layer placement, we exploit the ring-like communication pattern of autoregressive inference to partition the satellite constellation along the orbiting direction into subnets arranged on a ring, each hosting one MoE layer. Based on this architecture, we formulate and solve an optimization problem for intra-layer expert placement to map experts with heterogeneous activation probabilities onto satellites. The derived strategy reveals an intuitive principle: a frequently activated expert should be mapped to a satellite on a routing path with low expected latency. Experiments over a thousand-satellite constellation show that Space-XNet achieves at least a threefold latency reduction compared with conventional random and ablation-based placement strategies.",
+    "authors": [
+      "Zhanwei Wang",
+      "Huiling Yang",
+      "Min Sheng",
+      "Khaled B. Letaief",
+      "Kaibin Huang"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00515v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00515v1",
+    "fetched_at": "2026-05-04T10:09:57.459330",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686835"
+  },
+  {
+    "id": "2605.00510v1",
+    "title": "Scale-Aware Adversarial Analysis: A Diagnostic for Generative AI in Multiscale Complex Systems",
+    "abstract": "Complex physical systems, from supersonic turbulence to the macroscopic structure of the universe, are governed by continuous multiscale dynamics. While modern machine learning architectures excel at mapping the high-dimensional observables of these systems, it remains unclear whether they internalize the governing physical laws or merely interpolate discrete statistical correlations. Standard Explainable AI (XAI) architectures, particularly perturbation-based and gradient-saliency methods, rely on pixel-wise perturbations, which generate unphysical artifacts and push inputs off the valid empirical distribution. To resolve this, we introduce a diagnostic framework driven by Constrained Diffusion Decomposition (CDD), a diffusion-based multiscale data decomposition algorithm that enables physically constrained data generation and model evaluation via scale-aware modifications. Applying this framework to a Denoising Diffusion Probabilistic Model (DDPM), we execute deterministic interventions directly within the continuous, CDD-based scale space. We demonstrate that under moderate physical perturbations, the unconstrained generative model exhibits localized structural freezing and non-linear instability rather than continuous PDE-like responses. The network fails to maintain cross-scale continuity, causing the generative trajectory to diverge when pushed into unseen physical states. By synthesizing a continuum of physically coherent states, this scale-informed methodology establishes a controlled test ground to evaluate algorithmic vulnerabilities, providing the rigorous physical constraints necessary for future architectures to respect the multiscale causality of the natural universe.",
+    "authors": [
+      "Mengke Zhao",
+      "Guang-Xing Li",
+      "Duo Xu",
+      "Keping Qiu"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG",
+      "cs.CV",
+      "physics.comp-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00510v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00510v1",
+    "fetched_at": "2026-05-04T10:09:57.459353",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-04T10:12:07.686845"
+  }
+]
