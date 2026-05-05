@@ -1,0 +1,875 @@
+[
+  {
+    "id": "2605.02666v1",
+    "title": "Pareto frontier of portfolio investment under volatility uncertainty and short-sale constraints market",
+    "abstract": "In this paper, we investigate a portfolio investment problem under volatility uncertainty and short-sale constraints market via sublinear expectation which is used to model volatility uncertainty. We assume the stocks admit volatility uncertainty. Thus the related portfolio has upper variance (maximum risk) and lower variance (minimum risk). By introducing a risk factor $w$ to conduct coupled modeling of the maximum and minimum risks, a simplified Sublinear Expectation Mean-Uncertainty Variance (SLE-MUV) model is constructed. Theoretically, we show that the Pareto frontier of the SLE-MUV model is a continuous convex curve, and its optimal solution can be expressed as a polynomial analytical expression with respect to the risk factor $w$. Empirically, we systematically test the practical performance of the SLE-MUV model and conduct comparative analysis with the traditional Mean-Variance (MV) model as the benchmark based on three sets of samples -- simulated generated data, data of the US stock market and the A-share market. The empirical results show that the SLE-MUV model can significantly improving the risk-adjusted return of the investment portfolio.",
+    "authors": [
+      "Jing He",
+      "Shuzhen Yang"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02666v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02666v1",
+    "fetched_at": "2026-05-05T09:57:56.673618"
+  },
+  {
+    "id": "2605.02436v1",
+    "title": "Deepening the Secondary Market: Integrating Trade Credit into Market Clearing with the Cycles Protocol",
+    "abstract": "Current post-trade clearing systems rely almost exclusively on cash or cash-like collateral, leaving vast reserves of short-term liquidity embedded in trade credit outside formal settlement infrastructures. A key barrier to integrating this liquidity is the near-universal dependence of clearing services on novation, which imposes institutional overhead that restricts accessibility and limits the range of obligations that can be brought into settlement.   This paper introduces the Cycles Protocol: a distributed, multilateral clearing mechanism based on double-entry accounting and atomic cycle execution that maximizes balance sheet compression. Unlike novation-based clearing, Cycles does not redistribute counterparty risk; it can thus be applied generally to existing financial networks, without any change in counterparty relations, allowing it to complement existing clearing systems and Central Counterparties (CCPs).   By representing commitments as edges on a unified directed graph, Cycles surfaces liquidity hiding within existing network structure. We focus here on two applications of Cycles to deepening secondary market liquidity: first, as a compression layer between existing clearing participants and CCPs; and second, as a means to incorporate the liquidity of the trade credit network into formal settlement, extending market clearing beyond financial obligations and into real-economy financing.",
+    "authors": [
+      "Tomaž Fleischman",
+      "Ethan Buchman"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.RM",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02436v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02436v1",
+    "fetched_at": "2026-05-05T09:57:56.673658"
+  },
+  {
+    "id": "2605.02326v1",
+    "title": "Large-Scale Asset Selection via Metric Dependence with Enriched High Frequency Information",
+    "abstract": "Large scale portfolio choice is highly sensitive to estimation error, making the preliminary asset selection essential in empirical implementation. Existing selection rules typically rely on scalar returns or low dimensional high frequency summaries, and thus discard intraday risk dynamics that may be relevant for risk adjusted allocation. We propose Metric Dependence Screening (MDS), an asset selection procedure that incorporates high frequency information as object valued data. Each asset day observation is represented as a point-curve object combining daily return with an intraday risk state curve, equipped with a weighted product metric that preserves both reward information and within day risk dynamics. MDS ranks assets by a Fréchet variation based dependence score, measuring how much a risk adjusted target explains the metric dispersion of the asset representations. This yields a simple two stage portfolio procedure: MDS first reduces the investable universe, and standard mean-variance or minimum variance allocation is then applied. We develop a target slicing estimator and establish concentration, sure selection, and rank consistency guarantees under $α$-mixing time series dependence and ultrahigh dimensionality. Simulations show that MDS performs well across both Euclidean and non-Euclidean settings. Using 5 minute data for 2,938 Chinese A-share stocks from July 2023 to December 2025, we demonstrate that MDS improves out of sample portfolio performance over return based and scalar dependence based benchmarks, highlighting the value of preserving intraday risk dynamics.",
+    "authors": [
+      "Yangzhou Chen",
+      "Shuaida He",
+      "Xin Chen"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "stat.AP",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02326v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02326v1",
+    "fetched_at": "2026-05-05T09:57:56.673686"
+  },
+  {
+    "id": "2605.02287v1",
+    "title": "Per-Market Information Leakage and Order-Flow Skill: Two Methodological Lenses on Informed Trading in Decentralized Prediction Markets",
+    "abstract": "April 2026 saw notable methodological convergence in the academic study of informed trading on decentralized prediction markets. Three approaches surfaced almost simultaneously: Mitts and Ofir (2026) apply a composite screen to over 210,000 wallet-market pairs; Gomez-Cram et al. (2026) apply an event-level sign-randomization test to Polymarket's complete transaction history, classifying 3.14% of accounts as \"skilled winners\" and separately flagging 1,950 accounts as \"insiders\" via a lifecycle heuristic; Nechepurenko (2026) develops the Information Leakage Score (ILS) framework, which quantifies per-market information front-loading at an article-derived public-event timestamp. This paper provides a methodological comparison. The central claim is that these are three distinct layers of detection, not competing methods on a single layer. Sign-randomization is best understood as an account-level test of persistent directional skill conditional on opportunity selection -- not a direct test of insider trading, and not a per-market measure. The heuristic insider flag is separate from the skill classifier, applies to a population the classifier excludes by design, and has unknown precision. The Polymarket sample pools politics, sports, crypto, and other categories with different information technologies, so a platform-wide \"skilled winner\" classification is mechanism-ambiguous. The January 2026 U.S.-Venezuela operation cluster, where the DOJ indictment of Master Sergeant Gannon Van Dyke provides a rare external enforcement benchmark, illustrates how the layers stack: lifecycle heuristics identify suspicious accounts; legal investigation addresses non-public-information possession; per-market scoring would quantify how much information was leaked into each contract. A combined pipeline gains in precision because each layer filters a different dimension.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "q-fin.TR",
+      "cs.CY",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02287v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02287v1",
+    "fetched_at": "2026-05-05T09:57:56.673710"
+  },
+  {
+    "id": "2605.02286v1",
+    "title": "Empirical Evaluation of Deadline-Resolved Information Leakage on Documented Polymarket Insider Cases",
+    "abstract": "This paper reports an end-to-end empirical evaluation of the deadline-Information Leakage Score (ILS-dl) extension introduced in the companion methodology paper. The deadline-ILS extends the original ILS to deadline-resolved prediction-market contracts, the dominant structural form of publicly documented insider trading on Polymarket. We anchor the evaluation in the 2026 U.S.-Iran conflict cluster of the ForesightFlow Insider Cases (FFIC) inventory, the largest documented deadline cluster. The evaluation has four parts: per-category exponential-hazard estimation, a single-case ILS-dl computation, cross-market wallet analysis, and methodological refinements.   Hazard-rate estimation produces an adequate exponential fit for military-geopolitics markets (KS p = 0.609, half-life 2.3 days) and a preliminary fit for corporate-disclosure markets (n = 5). The regulatory-decision category is rejected as bimodal (p = 0.013). On the largest applicable FFIC contract (\"US forces enter Iran by April 30,\" $269M volume), the article-derived public-event timestamp yields ILS-dl = +0.113 versus a resolution-anchored proxy value of -0.331: a 0.444 shift in magnitude on opposite sides of zero, demonstrating that the extension distinguishes signal from proxy artefact. Pre-event drift is mild, and short-window variants (30-min, 2-hour) are exactly zero. Cross-market wallet analysis identifies 332 wallets active in both major Iran-cluster markets, but the available trade history covers only the resolution-settlement window.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02286v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02286v1",
+    "fetched_at": "2026-05-05T09:57:56.673730"
+  },
+  {
+    "id": "2605.02248v1",
+    "title": "Statistics of a multi-factor function from its Fourier transform",
+    "abstract": "For a phenomenon~$\\boldsymbol{f}$ that is a function of~$n$ factors, defined on a finite abelian group $G$, we derive its population statistics solely from its Fourier transform~$\\hat{\\boldsymbol{f}}$. Our main result is an \\emph{$m$-Coefficient/Index Annihilation Theorem}: the $m$th moment of~$\\boldsymbol{f}$ becomes a series of terms, each with precisely $m$ Fourier coefficients -- and surprisingly, the coefficient \\emph{indices} in each term sum to zero under group addition. This condition acts like a filter, limiting which terms appear in the Fourier domain, and can reveal deeper relationships between the variables driving~$\\boldsymbol{f}$. These techniques can also be used as an analytical/design tool, or as a feasibility constraint in search algorithms. For functions defined on $\\mathbb{Z}_2^n$, we show how the skew, kurtosis, etc.~of a binomial distribution can be derived from the Fourier domain. Several other examples are presented.",
+    "authors": [
+      "Matthew A. Herman",
+      "Stephen Doro"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "math.ST",
+      "cs.DM",
+      "eess.SP",
+      "q-bio.GN",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02248v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02248v1",
+    "fetched_at": "2026-05-05T09:57:56.673752"
+  },
+  {
+    "id": "2605.02085v1",
+    "title": "Fast Monte-Carlo",
+    "abstract": "This paper proposes an eigenvalue-based small-sample approximation of the celebrated Markov Chain Monte Carlo that delivers an invariant steady-state distribution that is consistent with traditional Monte Carlo methods. The proposed eigenvalue-based methodology reduces the number of paths required for Monte Carlo from as many as 1,000,000 to as few as 10 (depending on the simulation time horizon $T$), and delivers comparable, distributionally robust results, as measured by the Wasserstein distance. The proposed methodology also produces a significant variance reduction in the steady-state distribution.",
+    "authors": [
+      "Irene Aldridge"
+    ],
+    "published": "2026-05-03",
+    "categories": [
+      "econ.EM",
+      "cs.DS",
+      "math.ST",
+      "q-fin.PR",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02085v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02085v1",
+    "fetched_at": "2026-05-05T09:57:56.673771"
+  },
+  {
+    "id": "2605.02040v1",
+    "title": "Analytic approximation for Bachelier option prices and applications",
+    "abstract": "It is well-known that, in the Bachelier model, when asset prices and volatilities are uncorrelated, the implied volatility coincides with the fair value of the volatility swap. In this paper, via classical Itô calculus and Taylor expansions, we write the price for out-of-the-money (OTM) and in-the-money (ITM) options as an expansion with respect to the moneyness, where the coefficients are related to the negative (non-integer) powers of the future mean volatility. As an a application, we use it as a control variate to reduce the variance of Monte Carlo option prices in the correlated case.",
+    "authors": [
+      "Elisa Alòs",
+      "Òscar Burés"
+    ],
+    "published": "2026-05-03",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02040v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02040v1",
+    "fetched_at": "2026-05-05T09:57:56.673791"
+  },
+  {
+    "id": "2605.01384v1",
+    "title": "SBCA: Cross-Modal BERT-driven Actor-Critic for Multi-Asset Portfolio Optimization",
+    "abstract": "Portfolio optimization is constrained by linear assumptions and insufficient integration of multi-modal information in traditional models. This paper proposes a cross-modal BERT-driven Actor-Critic framework SBCA for multi-asset portfolio optimization to address the deficiencies of existing deep reinforcement learning DRL methods in fusing price data and financial text sentiment, as well as lacking practical trading constraints. The framework adopts a cross-modal gated fusion mechanism to adaptively integrate price time-series features and text semantic features, embeds downside risk and turnover penalty constraints into the reward function, and constructs a complete empirical system for validation. Experiments on 11-year U.S. stock multi-asset datasets show that SBCA outperforms equal weight, buy-and-hold and market benchmark strategies in portfolio value, annual return, Sharpe ratio and maximum drawdown. Ablation studies verify the complementary enhancement of Actor-Critic mechanism and cross-modal fusion module. Cost sensitivity analysis confirms the model's robustness under varying transaction costs. SBCA provides an effective and interpretable end-to-end solution for dynamic quantitative portfolio decision-making.",
+    "authors": [
+      "Jinfeng Pan",
+      "Jiahao Chen"
+    ],
+    "published": "2026-05-02",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01384v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01384v1",
+    "fetched_at": "2026-05-05T09:57:56.673811"
+  },
+  {
+    "id": "2605.01370v1",
+    "title": "Martingale Cohomology, Holonomy, and Homological Arbitrage",
+    "abstract": "We develop a cohomological framework for martingale theory based on categorical filtrations, where time is modeled by a small category and a filtration is defined as a contravariant functor to the category of probability spaces. By constructing a simplicial cochain complex associated with such filtrations, we show that martingales arise naturally as $0$-cocycles. A key feature of the construction is the presence of a multiplicative distortion encoded by a density operator, which prevents the naive coboundary from forming a cochain complex. We introduce a normalization procedure, called the $β$-gauge, which removes this obstruction and yields a well-defined cochain complex. Within this framework, $1$-cochains represent gain systems, and the first cohomology group captures consistent gains that cannot be generated by any price process. This leads to the notion of homological arbitrage, interpreted as a global cohomological obstruction. We further introduce an additive holonomy along loops in the time category, defined by transporting gains via conditional expectation. This provides an observable quantity measuring total gain accumulation along loops. By factoring out transport effects arising from price systems, we define a cohomological holonomy that depends only on the cohomology class and isolates the intrinsic loop-level arbitrage component. These results suggest a geometric perspective on financial markets in which arbitrage arises from global structures associated with nonlinear time.",
+    "authors": [
+      "Takanori Adachi"
+    ],
+    "published": "2026-05-02",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01370v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01370v1",
+    "fetched_at": "2026-05-05T09:57:56.673829"
+  },
+  {
+    "id": "2605.01300v1",
+    "title": "Visibility graphs can make money in financial markets",
+    "abstract": "Traditional technical analysis indicators, although widely used by market participants, are often not sufficiently effective. We propose the Visibility Graphs Relative Strength Index (VGRSI), based on backward visibility relations in the price of a financial instrument. Rescaled to the 0--100 range, it can generate profitable trading signals. The performance of the indicator was evaluated using an automated trading strategy based on a 30-day optimisation window and a 7-day test window for three instruments representing different asset classes: DJI30, EUR/USD and XAU/USD over the 2024--2025 period (503 trading days). The strategy based on VGRSI signals generated a profit of USD~146,000 for DJI30, USD~69,000 for EUR/USD, and USD~125,000 for XAU/USD. This gives a total result of USD$\\sim$340,000, which corresponds to an average profit of USD$\\sim$676 per trading day, with a fixed investment of USD~1,000 to open a single trade. For all three assets, the strategy generated substantial profits while maintaining a moderate drawdown (10--18\\% relative to a portfolio value of USD~10,000), a relatively low trading intensity (3.3--4.8 trades per day) and high Sharpe ratio values (2.55--3.6). These results indicate that VGRSI constitutes a promising technical analysis tool that goes beyond the classical trend-following approach by exploiting the geometric properties of asset price fluctuations.",
+    "authors": [
+      "Rafał Rak"
+    ],
+    "published": "2026-05-02",
+    "categories": [
+      "cs.CE",
+      "physics.data-an",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01300v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01300v1",
+    "fetched_at": "2026-05-05T09:57:56.673847"
+  },
+  {
+    "id": "2605.01176v1",
+    "title": "Decision-Induced Ranking Explains Prediction Inflation and Excessive Turnover in SPO-Based Portfolio Optimization",
+    "abstract": "Decision-focused learning (DFL) is attractive for portfolio optimization because it trains predictors according to downstream decision quality rather than prediction accuracy alone. However, SPO(Smart, Predict then Optimize surrogate)-based DFL may produce inflated return signals and unstable portfolio reallocations. This study provides a KKT-based interpretation showing that portfolio decisions can be viewed as ranking over risk- and transaction-cost-adjusted marginal scores. Empirically, we examine prediction inflation and excessive turnover in SPO-trained portfolios, and evaluate clipping, min-max rescaling, and partial portfolio adjustment as practical stabilization mechanisms. The results suggest that realistic output constraints and portfolio-level turnover control improve the implementability of SPO-based portfolio strategies.",
+    "authors": [
+      "Yi Wang",
+      "Takashi Hasuike"
+    ],
+    "published": "2026-05-02",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01176v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01176v1",
+    "fetched_at": "2026-05-05T09:57:56.673867"
+  },
+  {
+    "id": "2605.00420v2",
+    "title": "Foresight Arena: An On-Chain Benchmark for Evaluating AI Forecasting Agents",
+    "abstract": "Evaluating the true forecasting ability of AI agents requires environments that are resistant to environments resistant to overfitting, free from centralized trust, and grounded in incentive-compatible scoring. Existing benchmarks either rely on static datasets vulnerable to training-data contamination, or measure trading PnL -- a metric conflating predictive accuracy with timing, sizing, and risk appetite. We introduce Foresight Arena, the first permissionless, on-chain benchmark for evaluating AI forecasting agents on real-world prediction markets. Agents submit probabilistic forecasts on binary Polymarket markets via a commit-reveal protocol enforced by Solidity smart contracts on Polygon PoS; outcomes are resolved trustlessly through the Gnosis Conditional Token Framework. Performance is measured by the Brier Score and a novel Alpha Score -- proper scoring rules that incentivize honest probability reporting and isolate predictive edge over market consensus. We provide a formal analysis: closed-form variance for per-market Alpha, the connection to Murphy's classical Brier decomposition, and a power analysis characterizing the number of rounds required to reliably distinguish agents of different skill levels. We show that detecting a true edge of $α^* = 0.02$ at 80% power requires approximately 350 resolved binary predictions (50 rounds of 7 markets), while $α^* = 0.01$ requires four times more. We complement these analytical results with a deterministic, seed-controlled simulation study calibrated to literature-reported Brier-score ranges, illustrating how Murphy decomposition distinguishes well-calibrated agents from market-tracking agents that fail through reduced resolution. Live results from the deployed benchmark will be reported in a future revision. All smart contracts and evaluation infrastructure are open-source.",
+    "authors": [
+      "Maksym Nechepurenko",
+      "Pavel Shuvalov"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.MA",
+      "cs.LG",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00420v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.00420v2",
+    "fetched_at": "2026-05-05T09:57:56.673950"
+  },
+  {
+    "id": "2605.02884v1",
+    "title": "Unsupervised Machine Learning for Detecting Structural Anomalies in European Regional Statistics",
+    "abstract": "Ensuring the coherence of regional socio-economic statistics is a central task for national statistical institutes. Traditional validation tools, such as range edits, ratio checks, or univariate outlier detection, are effective for identifying extreme values in individual series but are less suited for detecting unusual combinations of indicators in high-dimensional settings. This paper proposes an unsupervised machine learning framework for identifying structurally atypical regional profiles within Europe using publicly available Eurostat data. We construct a cross-sectional dataset of NUTS2 regions (2022) covering four key indicators: GDP per capita in PPS, unemployment rate, tertiary educational attainment, and population density. We apply and compare five anomaly detection techniques, univariate z-scores, Mahalanobis distance, Isolation Forest, Local Outlier Factor, and One-Class SVM, and classify a region as a structural anomaly if it is flagged by at least three of the five methods. The findings show that machine learning methods identify a consistent set of regions whose multivariate profiles diverge substantially from the EU-wide pattern. These include both highly developed metropolitan economies (Brussels, Vienna, Berlin, Prague) and regions with persistent socio-economic disadvantages (Central and Western Slovakia, Northern Hungary, Castilla-La Mancha, Extremadura), as well as Istanbul, whose profile differs markedly from EU capital regions. Importantly, these anomalies do not necessarily signal data quality issues; rather, they reflect meaningful structural divergence that warrants analytical or policy attention. The proposed framework is fully reproducible, scalable, and compatible with existing validation workflows, offering a flexible tool for early detection of unusual regional configurations within the European Statistical System.",
+    "authors": [
+      "Bogdan Oancea"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02884v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02884v1",
+    "fetched_at": "2026-05-05T09:58:10.277362"
+  },
+  {
+    "id": "2605.02715v1",
+    "title": "Dimensionality-Aware Anomaly Detection in Learned Representations of Self-Supervised Speech Models",
+    "abstract": "Self-supervised speech models (S3Ms) achieve strong downstream performance, yet their learned representations remain poorly understood under natural and adversarial perturbations. Prior studies rely on representation similarity or global dimensionality, offering limited visibility into local geometric changes. We ask: how do perturbations deform local geometry, and do these shifts track downstream automatic speech recognition (ASR) degradation? To address this, we present GRIDS, a framework using Local Intrinsic Dimensionality (LID) across layer-wise representations in WavLM and wav2vec 2.0. We find that LID increases for all low signal-to noise ratio (SNR) perturbations and diverges at high SNR: benign noise converges toward the clean profile, while adversarial inputs retain early-layer LID elevation. We show LID elevation co-occurs with increased WER, and that layer-wise LID features enable anomaly detection (AUROC 0.78-1.00), opening the door to transcript-free monitoring in S3Ms.",
+    "authors": [
+      "Sandra Arcos-Holzinger",
+      "Sarah M. Erfani",
+      "James Bailey",
+      "Sanjeev Khudanpur"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "eess.AS",
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02715v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02715v1",
+    "fetched_at": "2026-05-05T09:58:10.277395"
+  },
+  {
+    "id": "2605.02519v1",
+    "title": "Evaluating Tabular Representation Learning for Network Intrusion Detection",
+    "abstract": "Classic Network Intrusion Detection Systems (NIDS) often rely on manual feature engineering to extract meaningful patterns from network traffic data. However, this approach requires domain expertise and runs counter to the widely adopted principle of modern machine learning and neural networks: that models themselves should learn meaningful representations directly from data. We investigate whether tabular representation learning techniques can improve intrusion detection performance by automatically learning robust feature representations for NetFlow data. This paper presents a systematic evaluation of state-of-the-art representation learning methods on benchmark NetFlow datasets, comparing against traditional autoencoders and end-to-end transformer baselines. We evaluate learned representations using both supervised classifiers and unsupervised anomaly detectors, with comprehensive hyperparameter exploration for each combination. Our results reveal strong dataset-model dependency, with no single approach consistently dominating across all scenarios. For supervised classification, TabICL achieves the best performance on CIDDS, while autoencoders follow closely and tie with end-to-end transformer models for the best average rank across datasets. Supervised approaches substantially outperform unsupervised anomaly detection methods, where no single combination consistently dominates as optimal choices depend on the dataset. Cross-dataset transfer experiments demonstrate that learned representations can generalize across network environments with appropriate method and classifier selection. However, transfer performance varies substantially depending on the source-target dataset combination, indicating sensitivity to distributional differences between network environments.",
+    "authors": [
+      "Muhammad Usman Butt",
+      "Andreas Hotho",
+      "Daniel Schlör"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.LG",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02519v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02519v1",
+    "fetched_at": "2026-05-05T09:58:10.277418"
+  },
+  {
+    "id": "2605.02454v1",
+    "title": "Causal Software Engineering: A Vision and Roadmap",
+    "abstract": "Software engineering increasingly involves making high-stakes decisions under uncertainty, using signals from code, field data, and socio-technical processes. Recent AI-driven support (e.g., anomaly detection, predictive analytics, AIOps, as well as LLM-based agents) has amplified engineers' ability to detect patterns and synthesize content and recommendations, but many critical questions are interventional or counterfactual: What is the expected impact of changing a load-balancing strategy? Would an outage have been avoided under a different release plan? Correlational models answer \"what tends to co-occur\"; they struggle to answer \"what would happen if we act.\" We propose Causal Software Engineering (CSE) as a future paradigm in which causal models and causal reasoning systematically inform activities across the software lifecycle, augmenting existing practices with explicit assumptions, uncertainty-aware effect estimates, and counterfactual diagnosis. We outline (i) a causal-first workflow view spanning development and operations, (ii) a staged roadmap for tools and organizational adoption, and (iii) an evaluation and benchmark agenda for measuring progress.",
+    "authors": [
+      "Roberto Pietrantuono",
+      "Luca Giamattei",
+      "Stefano Russo",
+      "Julien Siebert",
+      "Neil Walkinshaw"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02454v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02454v1",
+    "fetched_at": "2026-05-05T09:58:10.277443"
+  },
+  {
+    "id": "2605.02439v1",
+    "title": "Anomaly-Preference Image Generation",
+    "abstract": "Synthesizing realistic and diverse anomalous samples from limited data is vital for robust model generalization. However, existing methods struggle to reconcile fidelity and diversity, often hampered by distribution misalignment and overfitting, respectively.To mitigate this, we introduce Anomaly Preference Optimization,a novel paradigm that reformulates anomaly generation as a preference learning problem.Central to our approach is an implicit preference alignment mechanism that leverages real anomalies as positive references, deriving optimization signals directly from denoising trajectory deviations without requiring costly human annotation. Furthermore, we propose a Time-Aware Capacity Allocation module that dynamically distributes model capacity along the diffusion timeline,prioritizing structural diversity during highnoise phases while enhancing fine-grained fidelity in low-noise stages. During inference, a hierarchical sampling strategy modulates the coherencealignment trade-off, enabling precise control over generation. Extensive experiments demonstrate that significantly outperforms existing baselines,achieving state-of-the-art performance in both realism and diversity.",
+    "authors": [
+      "Fuyun Wang",
+      "Yuanzhi Wang",
+      "Xu Guo",
+      "Sujia Huang",
+      "Tong Zhang",
+      "Dan Wang",
+      "Hui Yan",
+      "Xin Liu",
+      "Zhen Cui"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02439v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02439v1",
+    "fetched_at": "2026-05-05T09:58:10.277475"
+  },
+  {
+    "id": "2605.02438v1",
+    "title": "Mixture Prototype Flow Matching for Open-Set Supervised Anomaly Detection",
+    "abstract": "Open-set supervised anomaly detection (OSAD) aims to identify unseen anomalies using limited anomalous supervision. However, existing prototype-based methods typically model normal data via a unimodal Gaussian prior, failing to capture inherent multi-modality and resulting in blurred decision boundaries. To address this, we propose Mixture Prototype Flow Matching (MPFM), a framework that learns a continuous transformation from normal feature distributions to a structured Gaussian mixture prototype space. Departing from traditional flow-based approaches that rely on a single velocity vector, MPFM explicitly models the velocity field as a Gaussian mixture prior where each component corresponds to a distinct normal class. This design facilitates mode-aware and semantically coherent distribution transport. Furthermore, we introduce a Mutual Information Maximization Regularizer (MIMR) to prevent prototype collapse and maximize normal-anomaly separability. Extensive experiments demonstrate that MPFM achieves state-of-the-art performance across diverse benchmarks under both single- and multi-anomaly settings.",
+    "authors": [
+      "Fuyun Wang",
+      "Yuanzhi Wang",
+      "Xu Guo",
+      "Sujia Huang",
+      "Tong Zhang",
+      "Dan Wang",
+      "Hui Yan",
+      "Xin Liu",
+      "Zhen Cui"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02438v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02438v1",
+    "fetched_at": "2026-05-05T09:58:10.277508"
+  },
+  {
+    "id": "2605.02060v1",
+    "title": "DR-SNE: Density-Regularized Stochastic Neighbor Embedding",
+    "abstract": "Dimensionality reduction methods such as t-SNE are designed to preserve local neighborhood structure but do not explicitly account for how probability mass is distributed, often leading to distortions of data density. We reformulate dimensionality reduction as the joint alignment of two components: (i) conditional structure, capturing local relationships, and (ii) relative density structure, captured via local density statistics. Based on this perspective, we introduce Density-Regularized SNE (DR-SNE), which augments the stochastic neighbor embedding objective with a density regularization term derived from normalized log-density estimates. Unlike prior approaches such as DensMAP and DenSNE, which rely on local scale consistency, DR-SNE directly aligns normalized density estimates, providing a simple and scale-invariant mechanism for preserving relative density variations. Empirically, DR-SNE improves density preservation while maintaining competitive neighborhood fidelity, and yields gains on density-sensitive tasks such as anomaly detection across multiple datasets. These results suggest that incorporating density information complements geometry-focused objectives in dimensionality reduction.",
+    "authors": [
+      "Maksim Kazanskii"
+    ],
+    "published": "2026-05-03",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02060v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02060v1",
+    "fetched_at": "2026-05-05T09:58:10.277525"
+  },
+  {
+    "id": "2605.01909v1",
+    "title": "Extrapolation in Statistical Learning with Extreme Value Theory",
+    "abstract": "Extreme value theory provides rigorous theory and statistical tools for extrapolation in machine learning, particularly in settings where traditional methods struggle due to data scarcity in the tails. A broad range of tasks benefit from these advances, including regression and classification beyond the training data, extreme quantile regression, supervised and unsupervised dimension reduction, generative artificial intelligence and anomaly detection. This review synthesizes recent developments in these fields at the intersection of statistical learning and extreme value theory, with a focus on principled methods based on asymptotically motivated representations of the tail of univariate and multivariate distributions. We consider different theoretical frameworks for both asymptotically dependent and independent data and discuss how they translate into efficient statistical methods for extrapolation to extreme regions. By addressing both theoretical and practical aspects, we offer a comprehensive overview of the state-of-the-art in this quickly evolving field, and identify promising directions for future research.",
+    "authors": [
+      "Sebastian Engelke",
+      "Nicola Gnecco",
+      "Anne Sabourin"
+    ],
+    "published": "2026-05-03",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "math.ST",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01909v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01909v1",
+    "fetched_at": "2026-05-05T09:58:10.277548"
+  },
+  {
+    "id": "2605.01901v1",
+    "title": "Behavior-Grounded Lane Representation Learning for Multi-Task Traffic Digital Twins",
+    "abstract": "Traffic digital twins are powerful tools for advanced traffic management, and most systems are built on static geometric representations. However, these representations fail to capture the dynamic functional semantics required for behavior-aware reasoning, such as how a lane operates under complex traffic conditions. To address this gap, we introduce GeoLaneRep, a behavior-grounded lane representation learning framework for traffic digital twins. GeoLaneRep jointly encodes static lane geometry, observed vehicle trajectories, and operational descriptors into a shared, cross-camera semantic embedding. The encoder is trained with a joint objective combining contrastive cross-camera alignment, auxiliary role supervision, and temporal anomaly detection. Across 16 roadside cameras and 132 lanes, the learned embeddings achieve a $0.004$ lateral-rank error and an edge-role F1 of $1.000$ in zero-shot cross-camera matching, and an AUROC of $0.991$ for window-level anomaly detection. We further show that the same behavioral embeddings can condition a diffusion-based generator to synthesize lane geometries that satisfy targeted operational specifications, with $87.9\\%$ overall specification accuracy across 38 lane groups. GeoLaneRep thus provides a semantic interface between roadside observations and downstream digital twin tasks, supporting cross-camera transfer, behavior-aware monitoring, and goal-directed lane synthesis. The framework is openly available at https://github.com/raynbowy23/GeoLaneRep.",
+    "authors": [
+      "Rei Tamaru",
+      "Pei Li",
+      "Bin Ran"
+    ],
+    "published": "2026-05-03",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01901v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01901v1",
+    "fetched_at": "2026-05-05T09:58:10.277569"
+  },
+  {
+    "id": "2605.01483v1",
+    "title": "Research on Vision-Language Question Answering Models for Industrial Robots",
+    "abstract": "A hierarchical cross-modal fusion model is proposed for vision-language question answering (VLQA) in industrial robotics, targeting the challenges of semantic ambiguity, complex environmental layouts, and domain-specific terminology common in modern manufacturing. The framework integrates advanced object detection, multi-scale visual encoding, syntactic parsing, and task-aware semantic attention to unite vision and language signals into a joint reasoning space. Region-based deep networks extract visual features, weighted embeddings aggregate, and recurrent neural parsing encodes sentence structures. Through fine-grained semantic alignment driven by adaptive fusion and cross-attention mechanisms, the system can handle operational queries, instruction steps, and anomaly detection with higher reliability. Compared to the existing VLQA benchmarks, validation experiments conducted on the IVQA and RIF benchmarks indicate improvements in semantic alignment, Top-1 accuracy, and robustness to ambiguous or procedural task queries. Ablation studies further quantify the impact of each architectural module, confirming the necessity of multi-level feature integration and context-driven gating for dependable industrial deployment. The technical advancements reported here provide core methodologies to improve the interpretability and operational effectiveness of industrial robots faced with diverse human-robot interaction tasks.",
+    "authors": [
+      "Ping Li",
+      "Bartlomiej Brzozka"
+    ],
+    "published": "2026-05-02",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01483v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01483v1",
+    "fetched_at": "2026-05-05T09:58:10.277589"
+  },
+  {
+    "id": "2605.00936v1",
+    "title": "EventADL: Open-Box Anomaly Detection and Localization Framework for Events in Cloud-Based Service Systems",
+    "abstract": "Anomaly detection and localization (ADL) is critical for maintaining reliability and availability in cloud systems. Recent ADL developments focus on metric and log data, leaving event data unexplored. To address this gap, we propose EventADL, the first open-box event-based ADL framework for cloud-based service systems. To motivate the design of our framework, we conduct a systematic analysis on 520 real-world incidents, and provide insights into how anomalies and their root causes manifest through event data. EventADL has three phases: offline training, online anomaly detection, and root cause localization. During the training phase, EventADL first learns Event Semantic Patterns (ESPs), which capture normal interactions between system entities using historical event data, and then learns Event Frequency Patterns (EFPs), which capture the normal frequency of known ESPs. In the online anomaly detection phase, any data in the event stream that deviates significantly from either pattern is identified as anomalous. For localization, EventADL constructs an Intervention Graph that models the relationships between recent system interactions and the detected anomalies for automatic root cause localization. The framework is designed to operate efficiently with unlabeled data and to produce interpretable anomalies with their corresponding root causes. Our evaluation on three real cloud service systems and two real-world incidents demonstrates that EventADL outperforms existing methods, achieving F1-scores of at least 90% for anomaly detection and 100% top-3 accuracy in root cause localization.",
+    "authors": [
+      "Luan Pham",
+      "Victor Nicolet",
+      "Joey Dodds",
+      "Hui Guan",
+      "Daniel Kroening"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.00936v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.00936v1",
+    "fetched_at": "2026-05-05T09:58:10.277660"
+  },
+  {
+    "id": "2605.02859v1",
+    "title": "From Sensors to Insight: Rapid, Edge-to-Core Application Development for Sensor-Driven Applications",
+    "abstract": "Scientists increasingly rely on sensor-based data, yet transforming raw streams into insights across the edge-to-cloud continuum remains difficult. Provisioning heterogeneous infrastructure and managing execution on emerging platforms like Data Processing Units typically requires cross-domain expertise, creating significant barriers to rapid prototyping.   This paper introduces an experience-driven methodology for the rapid development of sensor-driven applications. By combining pattern-based workflow engineering with AI-assisted development-implemented via Pegasus on the FABRIC testbed - we utilize an existing Orcasound hydrophone workflow as a reusable template. We introduce a pattern-based engineering methodology to generate and refine workflows for air quality, earthquake, and soil moisture monitoring. Furthermore, we show how these abstract structures are extended to edge resources through modular configuration and placement. Our evaluation focuses on user productivity and practical lessons rather than peak performance. Through these case studies, we illustrate how AI-assisted, pattern-based development lowers the entry barrier for non-experts and enables iterative exploration of sensor-driven applications across distributed infrastructures.",
+    "authors": [
+      "Komal Thareja",
+      "Anirban Mandal",
+      "Ewa Deelman"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02859v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02859v1",
+    "fetched_at": "2026-05-05T09:58:40.518505"
+  },
+  {
+    "id": "2605.02844v1",
+    "title": "(POSTER) From Sensors to Insight: Rapid, Edge-to-Core Application Development for Sensor-Driven Applications",
+    "abstract": "Scientists increasingly rely on sensor-based data; however transforming raw streams into insights across the edge-to-cloud continuum remains difficult due to the breadth of expertise required to coordinate the necessary data and computation flow. This paper introduces a pattern-based, AI-assisted methodology for rapid development of sensor-driven applications. Using Pegasus workflows executing on the FABRIC testbed, we demonstrate a 5-step development loop that shifts workflow construction and deployment from code-first to intent-first design. Starting from an existing Orcasound hydrophone workflow as a reusable template, we generate and refine workflows for air quality, earthquake, and soil moisture monitoring applications. We further show how these workflows extend to edge resources-including BlueField-3 DPUs and Raspberry Pis-through configuration and placement rather than workflow redesign. Our evaluation, from the perspective of a novice Pegasus user, shows that AI-assisted pattern reuse compresses multi-stage workflow development to 1-1.5 days per workflow while preserving the rigor and portability of workflow-based execution.",
+    "authors": [
+      "Komal Thareja",
+      "Anirban Mandal",
+      "Ewa Deelman"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02844v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02844v1",
+    "fetched_at": "2026-05-05T09:58:40.518538"
+  },
+  {
+    "id": "2605.02815v1",
+    "title": "FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents",
+    "abstract": "Text-to-SQL over large analytical databases requires navigating complex schemas, resolving ambiguous queries, and grounding decisions in actual data. Most current systems follow a fixed pipeline where schema elements are retrieved once upfront and the database is only revisited for post-hoc repair, limiting recovery from early mistakes. We present FlexSQL, a text-to-SQL agent whose core design principle is flexible database interaction: the agent can explore schema structure, inspect data values, and run verification queries at any point during reasoning. FlexSQL generates diverse execution plans to cover multiple query interpretations, implements each plan in either SQL or Python depending on the task, and uses a two-tiered repair mechanism that can backtrack from code-level errors to plan-level revisions. On Spider2-Snow, using gpt-oss-120b, FlexSQL achieves a 65.4\\% score, outperforming strong open-source baselines that use stronger, larger models such as gpt-o3 and DeepSeek-R1. When integrated into a general-purpose coding agent (as skills in Claude Code), our approach yields over 10\\% relative improvement on Spider2-Snow. Further analysis shows that flexible exploration and flexible execution jointly contribute to the effectiveness of our approach, highlighting flexibility as a key design principle. Our code is available at: https://github.com/StringNLPLAB/FlexSQL",
+    "authors": [
+      "Quang Hieu Pham",
+      "Yang He",
+      "Ping Nie",
+      "Canwen Xu",
+      "Davood Rafiei",
+      "Yuepeng Wang",
+      "Xi Ye",
+      "Jocelyn Qiaochu Chen"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02815v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02815v1",
+    "fetched_at": "2026-05-05T09:58:40.518570"
+  },
+  {
+    "id": "2605.02661v1",
+    "title": "AcademiClaw: When Students Set Challenges for AI Agents",
+    "abstract": "Benchmarks within the OpenClaw ecosystem have thus far evaluated exclusively assistant-level tasks, leaving the academic-level capabilities of OpenClaw largely unexamined. We introduce AcademiClaw, a bilingual benchmark of 80 complex, long-horizon tasks sourced directly from university students' real academic workflows -- homework, research projects, competitions, and personal projects -- that they found current AI agents unable to solve effectively. Curated from 230 student-submitted candidates through rigorous expert review, the final task set spans 25+ professional domains, ranging from olympiad-level mathematics and linguistics problems to GPU-intensive reinforcement learning and full-stack system debugging, with 16 tasks requiring CUDA GPU execution. Each task executes in an isolated Docker sandbox and is scored on task completion by multi-dimensional rubrics combining six complementary techniques, with an independent five-category safety audit providing additional behavioral analysis. Experiments on six frontier models show that even the best achieves only a 55\\% pass rate. Further analysis uncovers sharp capability boundaries across task domains, divergent behavioral strategies among models, and a disconnect between token consumption and output quality, providing fine-grained diagnostic signals beyond what aggregate metrics reveal. We hope that AcademiClaw and its open-sourced data and code can serve as a useful resource for the OpenClaw community, driving progress toward agents that are more capable and versatile across the full breadth of real-world academic demands. All data and code are available at https://github.com/GAIR-NLP/AcademiClaw.",
+    "authors": [
+      "Junjie Yu",
+      "Pengrui Lu",
+      "Weiye Si",
+      "Hongliang Lu",
+      "Jiabao Wu",
+      "Kaiwen Tao",
+      "Kun Wang",
+      "Lingyu Yang",
+      "Qiran Zhang",
+      "Xiuting Guo",
+      "Xuanyu Wang",
+      "Yang Wang",
+      "Yanjie Wang",
+      "Yi Yang",
+      "Zijian Hu",
+      "Ziyi Yang",
+      "Zonghan Zhou",
+      "Binghao Qiang",
+      "Borui Zhang",
+      "Chenning Li",
+      "Enchang Zhang",
+      "Feifan Chen",
+      "Feng Jian",
+      "Fengyin Sun",
+      "Hao Qiu",
+      "Hao Zheng",
+      "Haoran Zhu",
+      "Hongyu Liu",
+      "Jianbin Deng",
+      "Jiaxin Song",
+      "Jiaying Chi",
+      "Jiayou Shi",
+      "Jie Fang",
+      "Jinghui Zhong",
+      "Jingyu Zhou",
+      "Jinze Li",
+      "Junfeng Yi",
+      "Junyan Yu",
+      "Junzhi Xue",
+      "Ni Song",
+      "Pengyi Chen",
+      "Qi Chen",
+      "Quansheng Li",
+      "Rui Tao",
+      "Shenghai Gong",
+      "Shenhang Lu",
+      "Tianqi Shen",
+      "Tianxiang Zhu",
+      "Tiehan Kang",
+      "Tingyu Li",
+      "Wendi Wu",
+      "Xiao Shen",
+      "Xiao Zhou",
+      "Xiaotao Zhang",
+      "Xinrong Li",
+      "Xuankun Yang",
+      "Xun Zhang",
+      "Yan Li",
+      "Ye Lu",
+      "Yi Wang",
+      "Yibo Zhou",
+      "Yichi Zhang",
+      "Yihao Sun",
+      "Yijun Huang",
+      "Yixin Zhu",
+      "Yixuan Wu",
+      "Yuchen Sun",
+      "Yue Wu",
+      "Yuheng Sun",
+      "Yukun Li",
+      "Yutian Tu",
+      "Yuxuan Qin",
+      "Yuzhuo Wu",
+      "Zeyu Li",
+      "Zhengyu Lou",
+      "Zhenning Ran",
+      "Zizhu He",
+      "Pengfei Liu"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.AI",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02661v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02661v1",
+    "fetched_at": "2026-05-05T09:58:40.518727"
+  },
+  {
+    "id": "2605.02603v1",
+    "title": "Counterfactual Reasoning in Automated Planning",
+    "abstract": "Automated planning traditionally assumes that all aspects of a planning task (initial state, goals, and available actions) are fully specified in advance, an approach well-suited to domains with fixed rules and deterministic execution. However, real-world planning often requires flexibility, allowing for deviations from the original task parameters in response to unforeseen circumstances or to improve outcomes. This paper surveys existing works on counterfactual reasoning in automated planning, categorizing them by what elements are changed, when the reasoning is triggered, and why and how these changes are made. We conclude by discussing key findings and outlining open research questions to guide future work in this area.",
+    "authors": [
+      "Alberto Pozanco",
+      "Daniel Borrajo",
+      "Manuela Veloso"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02603v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02603v1",
+    "fetched_at": "2026-05-05T09:58:40.518749"
+  },
+  {
+    "id": "2605.02600v1",
+    "title": "CoRAL: Contact-Rich Adaptive LLM-based Control for Robotic Manipulation",
+    "abstract": "While Large Language Models (LLMs) and Vision-Language Models (VLMs) demonstrate remarkable capabilities in high-level reasoning and semantic understanding, applying them directly to contact-rich manipulation remains a challenge due to their lack of explicit physical grounding and inability to perform adaptive control. To bridge this gap, we propose CoRAL (Contact-Rich Adaptive LLM-based control), a modular framework that enables zero-shot planning by decoupling high-level reasoning from low-level control. Unlike black-box policies, CoRAL uses LLMs not as direct controllers, but as cost designers that synthesize context-aware objective functions for a sampling-based motion planner (MPPI). To address the ambiguity of physical parameters in visual data, we introduce a neuro-symbolic adaptation loop: a VLM provides semantic priors for environmental dynamics, such as mass and friction estimates, which are then explicitly refined in real time via online system identification, while the LLM iteratively modulates the cost-function structure to correct strategic errors based on interaction feedback. Furthermore, a retrieval-based memory unit allows the system to reuse successful strategies across recurrent tasks. This hierarchical architecture ensures real-time control stability by decoupling high-level semantic reasoning from reactive execution, effectively bridging the gap between slow LLM inference and dynamic contact requirements. We validate CoRAL on both simulation and real-world hardware across challenging and novel tasks, such as flipping objects against walls by leveraging extrinsic contacts. Experiments demonstrate that CoRAL outperforms state-of-the-art VLA and foundation-model-based planner baselines by boosting success rates over 50% on average in unseen contact-rich scenarios, effectively handling sim-to-real gaps through its adaptive physical understanding.",
+    "authors": [
+      "Berk Çiçek",
+      "Mert K. Er",
+      "Özgür S. Öğüz"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02600v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02600v1",
+    "fetched_at": "2026-05-05T09:58:40.518771"
+  },
+  {
+    "id": "2605.02584v1",
+    "title": "Beyond State Machines: Executing Network Procedures with Agentic Tool-Calling Sequences",
+    "abstract": "Agentic AI will be an essential enabling technology for designing future mobile communication systems, which could provide flexible and customized services, automate complex network operations, and drive autonomous decision-making across the network. This work studies how Large Language Model (LLM)-based network AI agents can be utilized to execute network procedures expressed as sequences of tool invocations. We investigate four approaches, which differ in how the agent obtains the procedure and in how execution is distributed between the agent and the underlying tools. We evaluated the latency and execution correctness across these approaches using a User Equipment (UE) IP allocation procedure as a case study. Furthermore, we conduct a stress test to examine how many sequential procedural steps an LLM agent can reliably execute before failure. Our results show that approaches relying on iterative agent-side reasoning incur higher latency and are more prone to execution errors, while approaches where the procedure is encapsulated within a single tool, which internally orchestrates the required steps by invoking other tools, reduce latency by limiting repeated reasoning. The stress-test results further show that the model with advanced tool-calling capability maintains reliable execution over longer procedures than the other evaluated models; however, all models exhibit reliability degradation as procedure length increases, revealing clear execution limits in multi-step tool-based workflows. To systematically analyze failures in procedure execution, we introduce a procedure-specific error taxonomy that categorizes deviations in multi-step procedural execution.",
+    "authors": [
+      "Purna Sai Garigipati",
+      "Onur Ayan",
+      "Kishor Chandra Joshi",
+      "Xueli An"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.NI",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02584v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02584v1",
+    "fetched_at": "2026-05-05T09:58:40.518794"
+  },
+  {
+    "id": "2605.02472v1",
+    "title": "Accurate Legal Reasoning at Scale: Neuro-Symbolic Offloading and Structural Auditability for Robust Legal Adjudication",
+    "abstract": "Legal texts often contain computational legal clauses--provisions whose understanding requires complex logic. While frontier Large Reasoning Models (LRMs) can describe such clauses, building production-ready systems is limited by reasoning errors and the high cost of inference. We propose Amortized Intelligence, a neuro-symbolic approach where we use an LLM once to translate a legal text into Deterministic Autonomous Contract Language (DACL): a typed graph intermediate representation. Adjudication then relies on deterministic graph executions with a visually auditable trace. In comparison against runtime LRM baselines (including GPT-5.2 and Gemini 3 Pro), our DACL-based Agent achieves near-perfect consistency and mitigates the \"reasoning cliff\" observed in probabilistic models. The system reduces compute costs by over 90% in high-volume workflows while satisfying the strict auditability requirements of legal adjudication.",
+    "authors": [
+      "Stanisław Sójka",
+      "Witold Kowalczyk"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02472v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02472v1",
+    "fetched_at": "2026-05-05T09:58:40.518813"
+  },
+  {
+    "id": "2605.02411v1",
+    "title": "FitText: Evolving Agent Tool Ecologies via Memetic Retrieval",
+    "abstract": "A semantic gap separates how users describe tasks from how tools are documented. As API ecosystems scale to tens of thousands of endpoints, static retrieval from the initial query alone cannot bridge this gap: the agent's understanding of what it needs evolves during execution, but its tool set does not. We introduce FitText, a training-free framework that makes retrieval dynamic by embedding it directly in the agent's reasoning loop. FitText generates natural-language pseudo-tool descriptions as retrieval probes, refines them iteratively using retrieval feedback, and explores diverse alternatives through stochastic generation. Memetic Retrieval adds evolutionary selection pressure over candidate descriptions, guided by a tool memory that avoids redundant search. On ToolRet (43k tools, 4 domains), FitText improves average retrieval rank from 8.81 to 2.78; on StableToolBench (16,464 APIs), it achieves a 0.73 average pass rate--a 24-point absolute gain over static query retrieval. The gains transfer across base models capable of acting as competent semantic operators; under weaker base models, Memetic's evolutionary search inverts--amplifying noise rather than refining signal--surfacing model capacity as a prerequisite for evolutionary tool exploration.",
+    "authors": [
+      "Kyle Zheng",
+      "Han Zhang",
+      "Renliang Sun",
+      "Chenchen Ye",
+      "Wei Wang"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.AI",
+      "cs.IR",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02411v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02411v1",
+    "fetched_at": "2026-05-05T09:58:40.518839"
+  },
+  {
+    "id": "2605.02396v1",
+    "title": "HeavySkill: Heavy Thinking as the Inner Skill in Agentic Harness",
+    "abstract": "Recent advances in agentic harness with orchestration frameworks that coordinate multiple agents with memory, skills, and tool use have achieved remarkable success in complex reasoning tasks. However, the underlying mechanism that truly drives performance remains obscured behind intricate system designs. In this paper, we propose HeavySkill, a perspective that views heavy thinking not only as a minimal execution unit in orchestration harness but also as an inner skill internalized within the model's parameters that drives the orchestrator to solve complex tasks. We identify this skill as a two-stage pipeline, i.e., parallel reasoning then summarization, which can operate beneath any agentic harness. We present a systematic empirical study of HeavySkill across diverse domains. Our results show that this inner skill consistently outperforms traditional Best-of-N (BoN) strategies; notably, stronger LLMs can even approach Pass@N performance. Crucially, we demonstrate that the depth and width of heavy thinking, as a learnable skill, can be further scaled via reinforcement learning, offering a promising path toward self-evolving LLMs that internalize complex reasoning without relying on brittle orchestration layers.",
+    "authors": [
+      "Jianing Wang",
+      "Linsen Guo",
+      "Zhengyu Chen",
+      "Qi Guo",
+      "Hongyu Zang",
+      "Wenjie Shi",
+      "Haoxiang Ma",
+      "Xiangyu Xi",
+      "Xiaoyu Li",
+      "Wei Wang",
+      "Xunliang Cai"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02396v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02396v1",
+    "fetched_at": "2026-05-05T09:58:40.518874"
+  },
+  {
+    "id": "2605.02351v1",
+    "title": "MolViBench: Evaluating LLMs on Molecular Vibe Coding",
+    "abstract": "Molecular Vibe Coding, a paradigm where chemists interact with LLMs to generate executable programs for molecular tasks, has emerged as a flexible alternative to chemical agents with predefined tools, enabling chemists to express arbitrarily complex, customized workflows. Unlike general coding tasks, molecular coding imposes a distinctive challenge that LLMs should jointly equip programming, molecular understanding, and domain-specific reasoning capabilities. However, existing benchmarks remain disconnected. General code generation benchmarks such as HumanEval and SWE-bench require no chemistry knowledge, while chemistry-focused benchmarks such as S^2-Bench and ChemCoTBench evaluate knowledge recall or property prediction rather than executable code generation. To bridge this gap, we introduce MolViBench, the first benchmark tailored for Molecular Vibe Coding. MolViBench comprises 358 curated tasks across five cognitive levels, ranging from single-API recall to end-to-end virtual screening pipeline design, spanning 12 real-world drug discovery workflows. To rigorously assess generated code, we also propose a multi-layered evaluation framework that combines type-aware output comparison and AST-based API-semantic fallback analysis, which jointly measures executability and chemical correctness. We systematically evaluate 9 frontier coding LLMs and compare three real-world Molecular Vibe Coding paradigms, providing a practical and fine-grained testbed for diagnosing LLMs' coding capabilities in AI-accelerated molecular discovery.",
+    "authors": [
+      "Jiatong Li",
+      "Yuxuan Ren",
+      "Weida Wang",
+      "Changmeng Zheng",
+      "Xiao-yong Wei",
+      "Qing Li",
+      "Yatao Bian"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02351v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02351v1",
+    "fetched_at": "2026-05-05T09:58:40.518903"
+  },
+  {
+    "id": "2605.02346v1",
+    "title": "APIOT: Autonomous Vulnerability Management Across Bare-Metal Industrial OT Networks",
+    "abstract": "Bare-metal operational technology (OT) devices -- especially the microcontrollers running Modbus/TCP and CoAP at the base of industrial control systems -- have remained outside the reach of autonomous security attacks. Prior autonomous pentesting studies target Linux and web systems, whose shells and filesystems are familiar to LLM agents. Bare-metal OT has neither, so agents must reason directly over protocol fields and parser semantics. This requires new action-space designs and runtime controls, and opens new research questions about protocol-level exploit reasoning and its deployment envelope. We present APIOT (Autonomous Purple-teaming for Industrial OT), the first large language model (LLM) framework demonstrating an autonomous attack and remediation of bare-metal OT devices, achieving the full discovery -> exploitation -> patching -> verification cycle without step-by-step human intervention. We implemented and evaluated this framework on Zephyr RTOS firmware across heterogeneous industrial IoT (IIoT) topologies. Through 290 experiment runs spanning five frontier LLMs, three network topologies, two impairment levels, and guided versus unguided conditions, APIOT achieved a mission success rate of 90.0% on the full attack-remediation cycle. We found that the runtime governance layer (which we call an overseer) is a critical engineering variable: without it, agents exhibit systematic degenerate patterns, including repetition loops, missing crash verification, and reconnaissance deadlocks. Together, these findings carry two implications beyond our testbed. Attacker expertise is no longer the binding constraint on bare-metal OT exploitation, and defender threat models must now assume LLM-augmented adversaries capable of executing autonomous discovery-through-remediation cycles against industrial firmware.",
+    "authors": [
+      "Adel ElZemity",
+      "Budi Arief",
+      "Shujun Li",
+      "Calvin Brierley",
+      "Yichao Wang",
+      "Yuxiang Huang",
+      "James Pope",
+      "Haoxiang Li",
+      "George Oikonomou"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02346v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02346v1",
+    "fetched_at": "2026-05-05T09:58:40.518937"
+  },
+  {
+    "id": "2605.02240v1",
+    "title": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+    "abstract": "We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within electronic health record (EHR) environments. Existing medical agent benchmarks primarily focus on static knowledge recall, single-step atomic actions, or action intent without verifiable execution against the environment. As a result, they fail to capture the long-horizon, composite workflows that characterize real clinical systems. PhysicianBench comprises 100 long-horizon tasks adapted from real consultation cases between primary care and subspecialty physicians, with each task independently reviewed by a separate panel of physicians. Tasks are instantiated in an EHR environment with real patient records and accessed through the same standard APIs used by commercial EHR vendors. Tasks span 21 specialties (e.g., cardiology, endocrinology, oncology, psychiatry) and diverse workflow types (e.g., diagnosis interpretation, medication prescribing, treatment planning), requiring an average of 27 tool calls per task. Solving each task requires retrieving data across encounters, reasoning over heterogeneous clinical information, executing consequential clinical actions, and producing clinical documentation. Each task is decomposed into structured checkpoints (670 in total across the benchmark) capturing distinct stages of completion graded by task-specific scripts with execution-grounded verification. Across 13 proprietary and open-source LLM agents, the best-performing model achieves only 46% success rate (pass@1), while open-source models reach at most 19%, revealing a substantial gap between current agent capabilities and the demands of real-world clinical workflows. PhysicianBench provides a realistic and execution-grounded benchmark for measuring progress toward autonomous clinical agents.",
+    "authors": [
+      "Ruoqi Liu",
+      "Imran Q. Mohiuddin",
+      "Austin J. Schoeffler",
+      "Kavita Renduchintala",
+      "Ashwin Nayak",
+      "Prasantha L. Vemu",
+      "Shivam C. Vedak",
+      "Kameron C. Black",
+      "John L. Havlik",
+      "Isaac Ogunmola",
+      "Stephen P. Ma",
+      "Roopa Dhatt",
+      "Jonathan H. Chen"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02240v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02240v1",
+    "fetched_at": "2026-05-05T09:58:40.518975"
+  },
+  {
+    "id": "2605.02187v1",
+    "title": "When Alignment Isn't Enough: Response-Path Attacks on LLM Agents",
+    "abstract": "Bring-Your-Own-Key (BYOK) agent architectures let users route LLM traffic through third-party relays, creating a critical integrity gap: a malicious relay can modify an aligned LLM response after generation but before agent execution. We formalize this post-alignment tampering threat and show that, without end-to-end integrity, the relay can observe, suppress, or replace downstream messages, making even perfectly aligned LLMs ineffective against such attacks. We instantiate this threat as the Relay Tampering Attack (RTA), which performs multi-round strategic rewriting, minimal security-critical edits, and stealth restoration by resubmitting tampered outputs to the upstream LLM. Across AgentDojo and ASB with six LLMs, RTA achieves up to 99.1% attack success, outperforming prompt-injection baselines with modest overhead. Case studies on OpenClaw and Claude Code demonstrate real-world feasibility, and evaluations of four defenses show that none fully prevent RTA. Finally, we propose a time-based detection defense that mitigates RTA while preserving agent utility.",
+    "authors": [
+      "Mingyu Luo",
+      "Zihan Zhang",
+      "Zesen Liu",
+      "Yuchong Xie",
+      "Zhixiang Zhang",
+      "Dung Hiu Hilton Yeung",
+      "Wai Ip Lai",
+      "Ping Chen",
+      "Ming Wen",
+      "Dongdong She"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02187v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02187v1",
+    "fetched_at": "2026-05-05T09:58:40.519009"
+  },
+  {
+    "id": "2605.02184v1",
+    "title": "RAFNet: Region-Aware Fusion Network for Pansharpening",
+    "abstract": "Pansharpening aims to generate high-resolution multispectral (HRMS) images by fusing low-resolution multispectral (LRMS) and high-resolution panchromatic (PAN) images. Although deep learning has advanced this field, mainstream frequency-based methods relying on standard scaled dot-product attention suffer from quadratic computational complexity and fail to exploit the inherent regional sparsity of remote sensing imagery. Furthermore, existing spatial enhancement strategies typically employ static convolution kernels, which struggle to adapt to the complex frequency and regional variations of PAN and MS images. To address these bottlenecks, we propose a Region-Aware Fusion (RAFNet) Network that synergistically models spatial and frequency information. Specifically, we design a Spatial Adaptive Refinement (SAR) module that leverages the discrete wavelet transform (DWT) for directional frequency separation and K-means clustering for regional partitioning, which enables the dynamic construction of region-specific adaptive convolution kernels, achieving spatially and frequency-adaptive feature enhancement. Moreover, we introduce a Clustered Frequency Aggregation (CFA) module based on a sparse attention mechanism guided by the semantic clusters, which executes a region-aware sparse attention strategy that drastically reduces computational redundancy while ensuring high-quality frequency feature extraction. In addition we integrated these modules into a progressive, multi-level spatial-frequency network architecture to facilitate robust interaction and accurate image reconstruction. Extensive experiments on multiple benchmark datasets demonstrate that the proposed RAFNet significantly outperforms state-of-the-art pansharpening methods in both reduced- and full-resolution assessments. The code is available at https://github.com/PatrickNod/RAFNet.",
+    "authors": [
+      "Jianing Zhang",
+      "Zijian Zhou",
+      "Kai Sun"
+    ],
+    "published": "2026-05-04",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02184v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.02184v1",
+    "fetched_at": "2026-05-05T09:58:40.519030"
+  },
+  {
+    "id": "2605.01160v1",
+    "title": "The Productivity-Reliability Paradox: Specification-Driven Governance for AI-Augmented Software Development",
+    "abstract": "Since 2022, AI-powered coding assistants have produced contradictory evidence: controlled studies report 20-56% productivity gains on well-scoped tasks, while the most rigorous RCT documents a 19% slowdown for experienced developers, and telemetry across 10,000+ developers shows 98% more pull requests but 91% longer review times with flat delivery metrics. This paper argues these findings constitute the Productivity-Reliability Paradox (PRP): a systematic phenomenon emerging from non-deterministic code generators and insufficient specification discipline. Through a multivocal literature review of 67 sources (2022-2026), this paper: (1) formally defines the PRP with three moderating variables (task abstraction, codebase maturity, developer experience) and two amplifying mechanisms (code review bottleneck, context window constraint); (2) proposes the AI-Augmented Methodology Taxonomy (AAMT), classifying six methodologies under three AI integration tiers; (3) introduces the Specification Governance Model (SGM), grounded in Transaction Cost Economics, with a practical governance decision guide; and (4) evaluates Spec Kit and TDAD as SGM instantiations via a four-month pilot study. Specification discipline, not model capability, is the binding constraint on AI-assisted software dependability.",
+    "authors": [
+      "Sabry E. Farrag"
+    ],
+    "published": "2026-05-01",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01160v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01160v1",
+    "fetched_at": "2026-05-05T09:58:43.853507"
+  },
+  {
+    "id": "2605.01892v1",
+    "title": "CyberAId: AI-Driven Cybersecurity for Financial Service Providers",
+    "abstract": "European financial institutions face mounting regulatory pressure while their security operations centres remain constrained not by data or staffing but by reasoning capacity: enterprise SIEMs cover only a fraction of MITRE ATT&CK techniques, two thirds of SOC teams cannot keep pace with alert volumes, and the majority of breaches are preceded by alerts that are generated but never investigated. Frontier large language models now achieve state-of-the-art results on isolated cybersecurity tasks (one-day vulnerability exploitation, code-level patching, intrusion detection) yet no narrow win constitutes a platform that can compose across functions, persist multi-tenant state, map findings to regulatory regimes and survive an audit. This position paper argues that the right unit of construction is a hybrid multi-agent system in which specialised LLM subagents reason over classical SIEM/XDR telemetry rather than replacing it, share accumulated agent state across institutions through privacy-preserving federation, and can connect to complementary capability packs such as quantum-based authentication, digital twins for adversarial validation, and eBPF-based kernel telemetry. We present CyberAId, a model-agnostic, on-premise-deployable platform in which a Main Agent coordination layer, a Reporting capability, and specialist subagents operate within a shared runtime under bounded human-in-the-loop autonomy, organised around four falsifiable design principles, and aligned with relevant regulations. CyberAId will be validated at four representative financial use cases (client impersonation, anti-money-laundering for payment service providers, retail-banking incident response, and high-frequency-trading resilience) and propose skill-based agent adaptation as the most promising research direction for turning each deployment into a contribution to a continuously refined collective defence.",
+    "authors": [
+      "George Fatouros",
+      "Georgios Makridis",
+      "John Soldatos",
+      "Dimosthenis Kyriazis",
+      "Pedro Malo",
+      "George Kousiouris",
+      "Giannis Ledakis",
+      "Louiza Kachrimani",
+      "Panagiotis Rizomiliotis",
+      "Bruno Almeida",
+      "Despina Tomkou",
+      "Kostas Metaxas",
+      "Konstantinos Ilias",
+      "Christos Gkizelis",
+      "Ernstjan de Gooyert",
+      "Amin Babazadeh",
+      "Kostis Mavrogiorgos",
+      "Pepi Paraskevoulakou",
+      "Christos Xenakis",
+      "Giannis Chouchoulis",
+      "Konstantina Tripodi"
+    ],
+    "published": "2026-05-03",
+    "categories": [
+      "cs.AI",
+      "cs.CR",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.01892v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.01892v1",
+    "fetched_at": "2026-05-05T09:58:57.395454"
+  }
+]
