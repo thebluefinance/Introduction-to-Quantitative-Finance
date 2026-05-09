@@ -1,0 +1,603 @@
+[
+  {
+    "id": "2605.06604v1",
+    "title": "A Geometry-Aware Residual Correction of Hagan's SABR Implied Volatility Formula",
+    "abstract": "This paper proposes a hybrid methodology to improve the approximation of SABR (Stochastic Alpha Beta Rho) implied volatility by combining analytical structure with machine learning. The approach augments the neural-network input representation with geometric features derived from the stochastic differential equations of the SABR model. Unlike approaches that fully replace analytical formulas with black-box models, the proposed framework preserves the analytical backbone of the model. The hybridization operates along two complementary dimensions. First, geometry-aware variables reflecting intrinsic properties of the SABR dynamics are used as structured inputs to the network. Second, the neural network is trained to learn the residual error relative to Hagan's closed-form approximation rather than implied volatility directly. The resulting model acts as a structured residual correction to the analytical formula, retaining interpretability while capturing higher-order effects that are not included in the asymptotic expansion. Numerical experiments conducted over realistic parameter domains, as well as stressed environments, show that the method improves accuracy and robustness compared with both analytical approximations and standard neural-network approaches. Because the correction remains lightweight and structurally consistent with the underlying model, the framework is well suited for real-time pricing and calibration in practical trading environments.",
+    "authors": [
+      "Adil Reghai",
+      "Lama Tarsissi",
+      "Gérard Biau",
+      "Alex Lipton"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "q-fin.CP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06604v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06604v1",
+    "fetched_at": "2026-05-09T09:14:29.885799"
+  },
+  {
+    "id": "2605.06570v1",
+    "title": "SNAPO: Smooth Neural Adjoint Policy Optimization for Optimal Control via Differentiable Simulation",
+    "abstract": "Many real-world problems require sequential decisions under uncertainty: when to inject or withdraw gas from storage, how to rebalance a pension portfolio each month, what temperature profile to run through a pharmaceutical reactor chain. Dynamic programming solves small instances exactly but scales exponentially in state dimensions. Black-box reinforcement learning handles high-dimensional states but trains slowly and produces no sensitivities. We introduce SNAPO (Smooth Neural Adjoint Policy Optimization), a framework that embeds a neural policy inside a known, differentiable simulator, replaces hard constraints with smooth approximations, and computes exact gradients of the objective with respect to all policy parameters and all inputs in a single adjoint pass. We demonstrate SNAPO on three domains: natural gas storage (training in under a minute, 365 forward curve sensitivities at no additional cost per sensitivity), pension fund asset-liability management (6.5x-200x sensitivity speedup over bump-and-revalue, scaling with the number of risk factors), and pharmaceutical manufacturing (cross-unit sensitivities through a 4-unit process chain, with 20 ICH Q8 regulatory sensitivities from 5 adjoint passes in 74.5 milliseconds). All sensitivities are produced by the same backward pass that trains the policy, at a cost proportional to one reverse pass regardless of how many sensitivities are computed.",
+    "authors": [
+      "Dmitri Goloubentsev",
+      "Natalija Karpichina"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.LG",
+      "math.OC",
+      "q-fin.CP",
+      "q-fin.MF",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06570v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06570v1",
+    "fetched_at": "2026-05-09T09:14:29.885847"
+  },
+  {
+    "id": "2605.06438v1",
+    "title": "Neural-Actuarial Longevity Forecasting: Anchoring LSTMs for Explainable Risk Management",
+    "abstract": "Traditional multi-population models, such as the Li-Lee framework, rely on the assumption of mean-reverting country-specific deviations. However, recent data from high-longevity clusters suggest a systemic break in this paradigm. We identify a stationarity paradox where mortality residuals in countries like Sweden and West Germany exhibit persistent unit roots, leading to a systematic mispricing of longevity risk in linear models. To address these non-linearities, we propose Hybrid-Lift, a neural-actuarial framework that combines Hierarchical LSTM networks with a Mean-Bias Correction (MBC) anchoring mechanism. Positioned as a governance-friendly model challenger rather than a replacement of classical approaches, the framework exhibits selective superiority on out-of-sample validation (2012-2020): it outperforms Li-Lee by 17.40% in Sweden and 12.57% in West Germany, while remaining comparable for near-linear regimes such as Switzerland and Japan. We complement the predictive model with an integrated governance suite comprising SHAP-based cross-country influence mapping, a dual uncertainty framework for regulatory capital calibration (Swiss ES 99.0% of +1.153 years), and a reverse stress test identifying the critical shock threshold for solvency buffer exhaustion. This research provides evidence that neural networks, when properly anchored by actuarial principles, can serve as effective model challengers for longevity risk management under the SST and Solvency II standards.",
+    "authors": [
+      "Davide Rindori"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06438v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06438v1",
+    "fetched_at": "2026-05-09T09:14:29.885873"
+  },
+  {
+    "id": "2605.06405v1",
+    "title": "Funding-Aware Optimal Market Making for Perpetual DEXs",
+    "abstract": "This paper studies optimal liquidity provision for perpetual contracts when the funding rate is a stochastic state variable. The core extension to classical market making is the coupling between inventory and funding payments: inventory creates both mark-to-market exposure and a state-dependent funding cash flow. A reduced inventory-funding control problem is formulated, solved with a monotone finite-difference Hamilton-Jacobi-Bellman scheme, and bid and ask quote offsets are recovered from discrete inventory value differences. Funding is calibrated on Hyperliquid ETH, BTC, and SOL perpetual data. Gaussian OU funding is retained as a tractable diffusion baseline, while OU-plus-jump diagnostics document the heavy-tailed funding innovations that should enter a future extension. In 100-seed holdout simulations under two official-fill proxy calibrations, the funding-aware HJB improves mean ETH/BTC performance while lowering inventory RMS relative to classical Avellaneda-Stoikov. SOL gains are positive versus unscaled AS but are not a Pareto improvement once a risk-scaled AS diagnostic is included.",
+    "authors": [
+      "Nam Anh Le"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06405v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06405v1",
+    "fetched_at": "2026-05-09T09:14:29.885899"
+  },
+  {
+    "id": "2605.06281v1",
+    "title": "INEUS: Iterative Neural Solver for High-Dimensional PIDEs",
+    "abstract": "In this paper, we introduce INEUS, a meshfree iterative neural solver for partial integro-differential equations (PIDEs). The method replaces the explicit evaluation of nonlocal jump integrals with single-jump sampling and reformulates PIDE solving as a sequence of recursive regression problems. Like Physics-Informed Neural Networks (PINNs), INEUS learns global solutions over the entire space-time domain, yet it offers a more efficient treatment of nonlocal terms and avoids the computationally expensive differentiation of full PIDE residuals. These features make INEUS particularly well suited for high-dimensional PDEs and PIDEs. Supported by a contraction-based convergence proof for linear PIDEs, our numerical experiments show that INEUS delivers accurate and scalable solutions for various high-dimensional linear and nonlinear examples.",
+    "authors": [
+      "Jean-Loup Dupret",
+      "Davide Gallon",
+      "Patrick Cheridito"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.LG",
+      "math.NA",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06281v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06281v1",
+    "fetched_at": "2026-05-09T09:14:29.885924"
+  },
+  {
+    "id": "2605.06220v1",
+    "title": "Numerical methods for lambda quantiles: robust evaluation and portfolio optimisation",
+    "abstract": "Lambda quantiles, originally introduced as lambda value at risk, generalise the classical value at risk by allowing for a variable confidence level. This work presents efficient algorithms for computing lambda quantiles and demonstrates their application in portfolio optimisation. We first develop a robust algorithm, Λ-Newton-Bis, that combines Newton's method with a bisection strategy to ensure global convergence. The algorithm handles potential discontinuities and achieves local quadratic convergence under standard regularity assumptions. To address cases with multiple roots, we also propose an interval analysis approach. We then demonstrate the algorithm's computational efficiency and practical relevance within a portfolio optimization framework. To this end, we develop two alternative solution methods that incorporate the Λ-Newton-Bis procedure. Numerical experiments confirm the algorithm's convergence properties and highlight its computational advantages in optimization tasks based on lambda quantiles.",
+    "authors": [
+      "Ilaria Peri",
+      "Linus Wunderlich"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06220v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06220v1",
+    "fetched_at": "2026-05-09T09:14:29.885946"
+  },
+  {
+    "id": "2605.05814v1",
+    "title": "Does social media information affect individual investor disposition effect? Evidence from Xueqiu",
+    "abstract": "The irrational behavior of investors selling profitable assets too early while holding onto losing assets for too long is known as the disposition effect. Due to the development of the Internet, the information environment for individual investors has been greatly improved. As an important source of information for individual investors, whether social media can improve investors' behavioral biases and return to rational expectations is a question worth studying. Based on the post data and actual trading data of the social investment platform Xueqiu.com, this paper studies the impact of social media information on the disposition effect of individual investors. The research results show that social media information can significantly reduce the disposition effect. Furthermore, it is through negative information that social media information reduces the disposition effect. When presented with negative information, individual investors will gradually become more rational in adjusting their positions. At the individual level, factors such as investment experience, users followed, region, and gender can all influence the effectiveness of the information acquired by individual investors in reducing the disposition effect.",
+    "authors": [
+      "Siliu Chen",
+      "Fei Ren"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05814v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05814v1",
+    "fetched_at": "2026-05-09T09:14:29.885969"
+  },
+  {
+    "id": "2605.05739v1",
+    "title": "Multi-Dimensional Behavioral Evaluation of Agentic Stock Prediction Systems Using LLM Judges with Closed-Loop Reinforcement Learning Feedback",
+    "abstract": "Agentic stock prediction systems make sequences of interdependent decisions (regime detection, pathway routing, reinforcement learning control) whose individual quality is hidden by aggregate metrics such as mean absolute percentage error (MAPE) or directional accuracy. We present a behavioral evaluation framework that addresses this gap. Behavioral traces logged at every autonomous decision point are grouped into five-day episodes and scored along six domain-specific dimensions (regime detection, routing, adaptation, risk calibration, strategy coherence, error recovery) by an ensemble of three large language model (LLM) judges (GPT 5.4, Claude 4.6 Opus, Gemini 3.1 Pro). Perturbation-based validation on 420 episodes yields targeted score drops of $-1.6$ to $-2.4$ on intended dimensions versus an average of $-0.32$ on the remaining five, with cross-model agreement up to Krippendorff's $α= 0.85$. The composite behavioral score, used here only for cross-episode reporting, correlates at $ρ= 0.72$ with realized 20-day Sharpe ratio from offline backtesting. Closing the loop, the framework converts deficient per-dimension scores into a credit-assigned penalty term added to the Soft Actor-Critic (SAC) reward. Three short fine-tuning cycles, all confined to the validation period, produce on the held-out 2017-2025 test period a one-day MAPE reduction from 0.61% to 0.54% (an 11.5% relative reduction; $p<0.001$, Cohen's $d=0.31$), a directional accuracy increase from 71% to 74%, and an 18% Sharpe ratio improvement (95% bootstrap CI [8.2%, 27.4%]), with gains concentrated in high-volatility episodes where the original system was most behaviorally deficient. Results are from offline backtesting and do not address effects specific to live deployment.",
+    "authors": [
+      "Mohammad Al Ridhawi",
+      "Mahtab Haj Ali",
+      "Hussein Al Osman"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05739v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05739v1",
+    "fetched_at": "2026-05-09T09:14:29.885998"
+  },
+  {
+    "id": "2605.05376v1",
+    "title": "Frustrated Dynamics of Distance Matrices",
+    "abstract": "We introduce the Frustrated Distance Matrix (FDM) model, a dynamic extension of the static distance-matrix ensemble on S^2 analyzed by Bogomolny, Bohigas, and Schmit (BBS). Its entries are pairwise geodesic distances between N Brownian particles on the sphere evolving under quenched random pairwise couplings linear in those distances. Where the static BBS theory recovers geometric information about the underlying manifold from spectra of distance matrices on i.i.d.\\ samples, the time-resolved FDM spectrum carries information about structural changes of the underlying point process. The particle dynamics realize one such change: a fast collapse from a uniform configuration onto a one-dimensional ring, followed by slow rotational drift of the ring orientation; the particle-level picture provides the ground truth against which spectral diagnostics are calibrated. We find that the static BBS template is preserved at every time, with the dynamics entering as a redistribution of spectral mass within that template, sharp enough to flag ring formation. We propose self-averaging of the bulk density as the mechanism behind this preservation, verified by an i.i.d.-resample comparison, and extract a small set of spectral diagnostics of the structural change computable from the distance matrix alone. We suggest that our diagnostics can be applied in other similar inverse-problem settings: financial correlation matrices, graph and network adjacency spectra, similarity matrices in molecular dynamics, and dynamics on parameter manifolds.",
+    "authors": [
+      "Igor Halperin"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "nlin.PS",
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "hep-th",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05376v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05376v1",
+    "fetched_at": "2026-05-09T09:14:29.886028"
+  },
+  {
+    "id": "2605.05140v2",
+    "title": "What Can Go Wrong During Caplet Stripping ?",
+    "abstract": "We study exact and near exact extraction of caplet volatilities from market cap quotes and identify why some common choices produce extreme oscillations or negative vols. Interpolation scheme and node placement are shown to be the primary drivers of instability, which can be amplified by isolated bad quotes. We propose practical, production ready remedies: continuous flat-linear and C1 flat-smooth kernels that preserve bootstrap equivalence, midpoint node placement with a global solver, positivity enforcement via an exponential reparametrization or Hyman non-negative C1 splines. We also introduce simple data quality checks. Numerical experiments demonstrate substantially reduced oscillations, robust positive caplet curves, and negligible repricing error, delivering a fast and stable caplet stripping workflow suitable for real-world use.",
+    "authors": [
+      "Fabien Le Floc'h"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05140v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.05140v2",
+    "fetched_at": "2026-05-09T09:14:29.886049"
+  },
+  {
+    "id": "2605.05089v1",
+    "title": "Dynamic Collateral Control for Permissionless Spot Perpetual Basis Trading",
+    "abstract": "We study permissionless spot--perpetual basis trading in decentralized finance as a collateral control problem. The strategy holds spot inventory, hedges directional exposure with a short perpetual, and allocates capital between spot inventory and derivative margin under on-chain liquidity and execution frictions.   The paper delivers three results. First, it solves a static control problem for the collateral share and shows that the risk-constrained formulation provides a more robust operating benchmark relative to the economic optimum. In comparative calibration, the required collateral rises monotonically under volatility stress. The collateral is the lowest for BTC and increases significantly for long tail assets such as LINK and DOGE. Second, the paper derives an asymmetric dynamic extension in which the lower boundary of intervention is solvency driven, and the upper boundary is determined by a trade-off between carry-loss and the cost of rebalancing. Monte Carlo simulation shows that the lower boundary remains structurally relevant, whereas meaningful interior upper triggers survive mainly in the regimes with high carry and low costs. Third, the paper validates an execution-aware implementation with live routed execution and historical backtests. The execution layer shows that the realized wedges are significant, but become worse in the case of selling the basis. This justifies a minimum effective rebalancing size and a positive execution buffer. The historical validation shows that in the case of a fixed control rule the realized performance is predominantly explained by the funding environment.",
+    "authors": [
+      "Anatoly Krestenko",
+      "Mikhail Butov",
+      "Rostislav Berezovskiy",
+      "Danila Bolotin"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05089v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05089v1",
+    "fetched_at": "2026-05-09T09:14:29.886082"
+  },
+  {
+    "id": "2605.04690v1",
+    "title": "Learning Time-Inhomogeneous Markov Dynamics in Financial Time Series via Neural Parameterization",
+    "abstract": "Modeling the dynamics of non-stationary stochastic systems requires balancing the representational power of deep learning with the mathematical transparency of classical models. While classical Markov transition operators provide explicit, theoretically grounded rules for system evolution, their empirical estimation collapses due to severe data sparsity when applied to high-resolution, high-noise environments. We explore this statistical barrier using financial time series as a canonical, real-world testbed. To overcome the degeneracy of empirical counting, we introduce a framework that utilizes neural networks strictly as parameterization engines to generate explicit, time-varying Markov transition matrices. By constraining the neural network to output its predictions as a formal stochastic operator, we maintain complete structural interpretability. We demonstrate that these learned operators successfully capture complex regime shifts: the state-conditioned model achieves mean row heterogeneity $\\barρ = 0.0073$ while the state-free ablation collapses to exactly zero, and operator row entropy correlates with realized variance at $r = -0.62$ ($p \\approx 10^{-251}$), revealing that high-volatility regimes homogenize transition dynamics rather than diversify them. Furthermore, rather than enforcing the Chapman-Kolmogorov equations as a rigid structural requirement, we repurpose them as a localized diagnostic tool to pinpoint specific temporal windows where first-order memory assumptions break down. Ultimately, this framework demonstrates how neural networks can be constrained to make rigorous, classical operator analysis viable for complex real-world time series.",
+    "authors": [
+      "Jan Rovirosa",
+      "Jesse Schmolze"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.LG",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.04690v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.04690v1",
+    "fetched_at": "2026-05-09T09:14:29.886106"
+  },
+  {
+    "id": "2605.04479v1",
+    "title": "ESG as Priced Crash Insurance: State-Dependent Tail Risk and Deconfounding Evidence",
+    "abstract": "This research establishes ESG as a state dependent insurance mechanism against equity crashes by addressing the decoupling of unconditional alpha from tail risk resilience. By validating market stress regimes as distinct economic states through a drawdown-based truncation rule, the study demonstrates that high ESG ratings materially reduce the incidence of discrete crash events during systemic drawdowns. To address the selection bias and high-dimensional confounding inherent in traditional linear frameworks, we implement Double Machine Learning as a structural deconfounding layer. Unlike simple predictive modeling, the Double Machine Learning framework utilizes machine learning to handle complex nuisance parameters, allowing us to isolate the asymmetric treatment effects of ESG across different market states. Distributional analysis reveals the underlying mechanism as ESG specifically attenuates the severity of realized tail losses at the most adverse quantiles instead of shifting the entire return distribution. Confirmed by structural estimates, this protection functions as priced insurance that incurs performance drags during stable periods while providing critical resilience when tail risks are most acute.",
+    "authors": [
+      "Jiayu Yi",
+      "Minxuan Hu",
+      "Wenxi Sun",
+      "Ziheng Chen"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "q-fin.MF",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.04479v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.04479v1",
+    "fetched_at": "2026-05-09T09:14:29.886134"
+  },
+  {
+    "id": "2605.03703v2",
+    "title": "Scaling Limits of Bivariate Nearly-Unstable Hawkes Processes and Applications to Rough Volatility",
+    "abstract": "We prove a functional limit theorem for a pair of nearly unstable Hawkes processes coupled through a triangular cross-excitation mechanism, when the two kernels have distinct heavy-tail exponents. This heterogeneous regime produces two different degrees of roughness and, to the best of our knowledge, had not previously been treated in the multivariate nearly unstable setting.   As the system approaches criticality, the renormalized intensity processes converge weakly to the unique solution of a coupled stochastic Volterra system driven by two independent Brownian motions. The first component evolves autonomously as a rough fractional diffusion, while the second is driven both by its own noise and by the first component through a convolution cross-kernel. This kernel, expressed as the convolution of the two associated Mittag-Leffler kernels, encodes both roughness exponents and distinguishes the limit from independent univariate limits or classical bivariate Brownian models.   We also derive a short-time decorrelation result showing that the functional correlation between the two limiting components vanishes at an explicit polynomial rate governed by the rougher component. Finally, we show that the scale-matching assumption is not structural: without it, the limiting cross-kernel is replaced by an explicitly time-rescaled convolution kernel. The proof combines kernel convergence, tightness, martingale identification via Rebolledo's theorem, and uniqueness for affine stochastic Volterra equations.",
+    "authors": [
+      "Sohaib El Karmi"
+    ],
+    "published": "2026-05-05",
+    "categories": [
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.03703v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.03703v2",
+    "fetched_at": "2026-05-09T09:14:29.886176"
+  },
+  {
+    "id": "2605.02040v2",
+    "title": "Analytic approximation for Bachelier option prices and applications",
+    "abstract": "It is well-known that, in the Bachelier model, when asset prices and volatilities are uncorrelated, the implied volatility coincides with the fair value of the volatility swap. In this paper, via classical Itô calculus and Taylor expansions, we write the price for out-of-the-money (OTM) and in-the-money (ITM) options as an expansion with respect to the moneyness, where the coefficients are related to the negative (non-integer) powers of the future mean volatility. As an a application, we use it as a control variate to reduce the variance of Monte Carlo option prices in the correlated case.",
+    "authors": [
+      "Elisa Alòs",
+      "Òscar Burés"
+    ],
+    "published": "2026-05-03",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.02040v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.02040v2",
+    "fetched_at": "2026-05-09T09:14:29.886550"
+  },
+  {
+    "id": "2605.06571v1",
+    "title": "CLAD: A Clustered Label-Agnostic Federated Learning Framework for Joint Anomaly Detection and Attack Classification",
+    "abstract": "The rapid expansion of the Internet of Things (IoT) and Industrial IoT (IIoT) has created a massive, heterogeneous attack surface that challenges traditional network security mechanisms. While Federated Learning (FL) offers a privacy-preserving alternative to centralized Intrusion Detection Systems (IDS), standard approaches struggle to generalize across diverse device behaviors and typically fail to utilize the vast amounts of unlabeled data present in realistic edge environments. To bridge these gaps, we propose CLAD, a holistic framework that seamlessly incorporates Clustered Federated Learning (CFL) with a novel Dual-Mode Micro-Architecture ($\\text{DM}^2\\text{A}$). This unified approach simultaneously tackles the two primary bottlenecks of IoT security: device heterogeneity and label scarcity. The $\\text{DM}^2\\text{A}$ component features a shared encoder followed by two branches, enabling joint unsupervised anomaly detection and supervised attack classification; this allows the framework to harvest intelligence from both labeled and unlabeled clients. Concurrently, the clustering component dynamically groups devices with congruent traffic patterns, preventing global model divergence. By carefully combining these elements, CLAD ensures that no data is discarded and distinct operational patterns are preserved. Extensive evaluations demonstrate that this integrated approach significantly outperforms state-of-the-art baselines, achieving a 30% relative improvement in detection performance in scenarios with 80% unlabeled clients, with only half the communication cost.",
+    "authors": [
+      "Iason Ofeidis",
+      "Nikos Papadis",
+      "Randeep Bhatia",
+      "Leandros Tassiulas",
+      "TV Lakshman"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.LG",
+      "cs.CR",
+      "cs.DC",
+      "cs.NI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06571v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06571v1",
+    "fetched_at": "2026-05-09T09:14:43.781995"
+  },
+  {
+    "id": "2605.06309v1",
+    "title": "MultiLinguahah : A New Unsupervised Multilingual Acoustic Laughter Segmentation Method",
+    "abstract": "Laughter is a social non-vocalization that is universal across cultures and languages, and is crucial for human communication, including social bonding and communication signaling. However, detecting laughter in audio is a challenging task, and segmenting is even more difficult. Currently, Machine Learning methods generally rely on costly manual annotation, and their datasets are mostly based on English contexts. Thus, we propose an unsupervised multilingual method that sets up the laughter segmentation task as an anomaly detection of energy-based segmented audio sequences. Our method applies an Isolation Forest on audio representations learned from BYOL-A encoder. We compare our method with several state-of-the-art laughter detection algorithms on four datasets, including stand-up comedy, sitcoms, and general short audio from AudioSet. Our results show that state-of-the-art methods are not optimized for multilingual contexts, while our method outperforms them in non-English settings.",
+    "authors": [
+      "Callejas Sofia",
+      "Gomez Nahuel",
+      "Pelachaud Catherine",
+      "Ravenet Brian",
+      "Barriere Valentin"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06309v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06309v1",
+    "fetched_at": "2026-05-09T09:14:43.782028"
+  },
+  {
+    "id": "2605.06204v1",
+    "title": "When Does Trimming Help Conformal Prediction? A Retained-Law Diagnostic under Calibration Contamination",
+    "abstract": "Trimming suspicious calibration points is a common response to contamination in conformal prediction. Its effect on clean-target coverage, however, is governed by the retained law induced by trimming, not by the contamination level alone. We analyse fixed-threshold trimming as conditioning rather than purification. It replaces the contaminated calibration law with a retained law, reducing clean-target coverage to a one-dimensional score-CDF transfer problem with an exact finite-sample identity. A componentwise bound on the transfer gap gives a population-level diagnostic. This separates a clean-side covariance cost from a retained-contamination cost, governed by the dirty-to-clean retention ratio. Trimming helps when the anomaly score separates retention probabilities while remaining score-neutral on the clean population. Otherwise, it cannot substantially reduce contamination through the retained mixture coefficient. We also give finite-sample certificate templates that provide numerical guarantees under independent audit.",
+    "authors": [
+      "Congye Wang"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06204v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06204v1",
+    "fetched_at": "2026-05-09T09:14:43.782045"
+  },
+  {
+    "id": "2605.05977v1",
+    "title": "BehaviorGuard: Online Backdoor Defense for Deep Reinforcement Learning",
+    "abstract": "Backdoor attacks pose a serious threat to deep reinforcement learning (DRL). Current defenses typically rely on reward anomalies to reverse-engineer triggers and model finetuning to remove backdoors. However, complex trigger patterns undermine their robustness, and fine-tuning entails high costs, limiting practical utility. Therefore, we shift defense concerns to trigger-agnostic backdoor output behaviors and propose BehaviorGuard, an online behavior-based backdoor detection and mitigation framework for DRL. Specifically, we find that regardless of attacks, backdoored policies induce consistent shifts in action distributions to ensure reliable activation, leaving detectable traces in high-quantile regions and distribution tails, even in the absence of triggers. Based on this, we design a novel metric that captures behavioral drift in action distributions to identify and suppress backdoor actions at runtime. To our knowledge, this is the first online backdoor defense that counters attacks both in single- and multi-agent DRL. Evaluated across diverse benchmarks with different backdoor attacks, BehaviorGuard consistently surpasses prior methods in both efficacy and efficiency.",
+    "authors": [
+      "Yinbo Yu",
+      "Xueyu Yin",
+      "Jiadai Wang",
+      "Chunwei Tian",
+      "Sai Xu",
+      "Qi Zhu",
+      "Daoqiang Zhang"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05977v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05977v1",
+    "fetched_at": "2026-05-09T09:14:43.782072"
+  },
+  {
+    "id": "2605.05953v1",
+    "title": "Hallucination as an Anomaly: Dynamic Intervention via Probabilistic Circuits",
+    "abstract": "One of the most critical challenges in Large Language Models is their tendency to hallucinate, i.e., produce factually incorrect responses. Existing approaches show promising results in terms of hallucination correction, but still suffer from a main limitation: they apply corrections indiscriminately to every token, corrupting also the originally correct generations. To overcome this drawback, we propose PCNET, a Probabilistic Circuit trained as a tractable density estimator over the LLM residual stream. The method detects hallucinations as geometric anomalies on the factual manifold, which is done via exact Negative Log-Likelihood computation, hence without the need for sampling, external verifiers, or weight modifications, as in existing techniques. To demonstrate its effectiveness, we exploit PCNET as a dynamic gate that distinguishes hallucinated from factual hidden states at each decoding step. This triggers our second main contribution, PC-LDCD (Probabilistic Circuit Latent Density Contrastive Decoding), only when the latent geometry deviates from factual regions, while leaving correct generations untouched. Across four LLMs, ranging from 1B to 8B models, and four benchmarks covering conversational reasoning, knowledge-intensive QA, reading comprehension, and truthfulness, PCNET achieves near-perfect hallucination detection across CoQA, SQuAD v2.0, and TriviaQA, with AUROC reaching up to 99%. Moreover, PC-LDCD obtains the highest True+Info, MC2, and MC3 scores on TruthfulQA in three out of four models, in comparison with state-of-the-art baselines, while reducing the mean corruption rate to 53.7% and achieving a preservation rate of 79.3%. Our proposed method is publicly available on GitHub.",
+    "authors": [
+      "Erik Nielsen",
+      "Elia Cunegatti",
+      "Marcus Vukojevic",
+      "Giovanni Iacca"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05953v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05953v1",
+    "fetched_at": "2026-05-09T09:14:43.782094"
+  },
+  {
+    "id": "2605.05891v1",
+    "title": "MTL-MAD: Multi-Task Learners are Effective Medical Anomaly Detectors",
+    "abstract": "Anomaly detection in medical images is a challenging task, since anomalies are not typically available during training. Recent methods leverage a single pretext task coupled with a large-scale pre-trained model to reach state-of-the-art performance. Instead, we propose to learn multiple self-supervised and pseudo-labeling tasks from scratch, using a joint model based on Mixture-of-Experts (MoE). By carefully integrating multiple proxy tasks, the joint model effectively learns a robust representation of normal anatomical structures, so that anomaly scores can be derived based on how well the multi-task learner (MTL) solves each task during inference. We perform comprehensive experiments on BMAD, a recent benchmark that comprises a broad range of medical image modalities. The empirical results indicate that our multi-task learner is an effective anomaly detector, outperforming all state-of-the-art competitors on BMAD. Moreover, our model produces interpretable anomaly maps, potentially helping physicians in providing more accurate diagnoses.",
+    "authors": [
+      "Bogdan Alexandru Bercean",
+      "Florinel Alin Croitoru",
+      "Vlad Hondru",
+      "Ciprian Mihai Ceausescu",
+      "Andreea Iuliana Ionescu",
+      "Radu Tudor Ionescu"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05891v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05891v1",
+    "fetched_at": "2026-05-09T09:14:43.782119"
+  },
+  {
+    "id": "2605.05725v1",
+    "title": "Detecting Time Series Anomalies Like an Expert: A Multi-Agent LLM Framework with Specialized Analyzers",
+    "abstract": "Recent studies have explored large language models for time-series anomaly detection, yet existing approaches often rely on a single general-purpose model to directly infer anomaly indices or intervals, limiting controllability, interpretability, and reliability for complex anomaly patterns. We propose SAGE (Specialized Analyzer Group for Expert-like Detection), a multi-agent framework for structured anomaly diagnosis in univariate time series. It decomposes anomaly analysis into four specialized Analyzers for point, structural, seasonal, and pattern anomalies. Each Analyzer applies family-specific numerical tools and diagnostic visualizations to generate evidence, while an evidence-grounded Detector consolidates the evidence into confidence-scored anomaly records with intervals and candidate types. A Supervisor then converts these structured records into analyst-facing diagnostic reports. SAGE further constructs synthetic in-context examples from normal-reference training segments, without using real anomalous segments or anomaly-type labels as in-context examples. Across three benchmarks, SAGE achieves the best average performance among strong ML/DL and language-model-based baselines. Ablation studies and human evaluation further show that the proposed framework improves detection reliability and the practical usefulness of diagnostic outputs.",
+    "authors": [
+      "Hyeongwon Kang",
+      "Jeongseob Kim",
+      "Jinwoo Park",
+      "Pilsung Kang"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05725v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05725v1",
+    "fetched_at": "2026-05-09T09:14:43.782141"
+  },
+  {
+    "id": "2605.05372v1",
+    "title": "Two Steps Are All You Need: Efficient 3D Point Cloud Anomaly Detection with Consistency Models",
+    "abstract": "Diffusion models are rapidly redefining 3D anomaly detection in point cloud data. As 3D sensing becomes integral to modern manufacturing, reliable anomaly detection is essential for high-throughput quality assurance and process control. Yet practical deployment on resource-constrained, latency-critical systems remains limited. Existing methods are often computationally prohibitive or unreliable in complex, unmasked regions, and diffusion pipelines are inherently bottlenecked by iterative denoising. In this work, we address this bottleneck by reformulating reconstructionbased anomaly detection through consistency learning, enabling direct prediction of anomaly-free geometry in one or two network evaluations. We further introduce a novel hybrid loss formulation that explicitly enforces reconstruction toward clean data. This design substantially reduces inference cost, achieving up to 80x faster runtime than the current state-of-the-art method, without GPU acceleration, while preserving strong detection performance. It outperforms R3D-AD on Anomaly-ShapeNet with 76.20% I-AUROC and remains competitive on Real3DAD with 72.80% I-AUROC, enabling efficient, low-latency anomaly detection on resource-constrained platforms, including drones, smart industrial cameras, and other edge devices.",
+    "authors": [
+      "Pranav A",
+      "Shashank B",
+      "Pranav Siddappa",
+      "Dominik Seuss",
+      "Minal Moharir",
+      "Subramanya KN"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05372v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05372v1",
+    "fetched_at": "2026-05-09T09:14:43.782170"
+  },
+  {
+    "id": "2605.05124v1",
+    "title": "Conditional outlier detection for clinical alerting",
+    "abstract": "We develop and evaluate a data-driven approach for detecting unusual (anomalous) patient-management actions using past patient cases stored in an electronic health record (EHR) system. Our hypothesis is that patient-management actions that are unusual with respect to past patients may be due to a potential error and that it is worthwhile to raise an alert if such a condition is encountered. We evaluate this hypothesis using data obtained from the electronic health records of 4,486 post-cardiac surgical patients. We base the evaluation on the opinions of a panel of experts. The results support that anomaly-based alerting can have reasonably low false alert rates and that stronger anomalies are correlated with higher alert rates.",
+    "authors": [
+      "Milos Hauskrecht",
+      "Michal Valko",
+      "Shyam Visweswaran",
+      "Iyad Batal",
+      "Gilles Clermont",
+      "Gregory Cooper"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.LG",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05124v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05124v1",
+    "fetched_at": "2026-05-09T09:14:43.782196"
+  },
+  {
+    "id": "2605.05026v1",
+    "title": "Local Intrinsic Dimension Unveils Hallucinations in Diffusion Models",
+    "abstract": "Diffusion models are prone to generating structural hallucinations - samples that match the statistical properties of the training data yet defy underlying structural rules, resulting in anomalies like hands with more than five fingers. Recent research studied this failure mode from several viewpoints, offering partial explanations to their occurrence, such as mode interpolation. In this work, we propose a complementary perspective that treats hallucinations as instabilities on the model-induced manifold. We begin by showing that a hallucination filter based on such instabilities matches or exceeds the performance of the recently proposed temporal one. By tracing the source of these instabilities, we identify local intrinsic dimension (LID) as their primary driver and propose Intrinsic Quenching (IQ), a direct corrective mechanism that deflates it to alleviate hallucinations. IQ consistently outperforms standard hallucination reduction baselines across a wide array of benchmarks and offers a highly promising solution for enforcing anatomical consistency in downstream medical imaging tasks.",
+    "authors": [
+      "Bartlomiej Sobieski",
+      "Matthew Tivnan",
+      "Dawid Płudowski",
+      "Michał Jan Włodarczyk",
+      "Pengfei Jin",
+      "Przemyslaw Biecek",
+      "Quanzheng Li"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05026v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05026v1",
+    "fetched_at": "2026-05-09T09:14:43.782223"
+  },
+  {
+    "id": "2605.04943v1",
+    "title": "DART: A Vision-Language Foundation Model for Comprehensive Rope Condition Monitoring",
+    "abstract": "The condition monitoring (CM) of synthetic fibre ropes (SFRs) used in offshore, maritime, and industrial settings demands more than a classifier: inspectors need continuous severity estimates, maintenance recommendations, anomaly flags, deterioration timelines, and automated reports, all from a single inspection image. We present DART (Damage Assessment via Rope Transformer), a vision-language foundation model that addresses the full rope inspection workflow through a unified multi-task architecture. DART extends the Joint-Embedding Predictive Architecture (JEPA) to the cross-modal domain by coupling a Vision Transformer (ViT-H/14) with Llama-3.2-3B-Instruct via a Severity-Conditioned Cross-Modal Fusion (SC-CMF) module. Three architectural innovations drive the model's versatility: (1) HD-MASK, a saliency-guided masking strategy that focuses self-supervised reconstruction on damage-dense patches; (2) per-class learnable severity gates that adaptively weight language grounding by damage category; and (3) a Contrastive Damage Disentanglement (CDD) loss that shapes the embedding space to simultaneously encode damage type, severity ordering, and cross-modal semantics. Trained once on 4,270 images spanning 14 fine-grained rope damage classes, the frozen DART backbone supports downstream tasks without any task-specific fine-tuning: damage classification (93.22 % accuracy, 91.04 % macro-F1, +38.5 pp over a vision-only baseline), continuous severity regression (Spearman rho = 0.94, within-1-ordinal accuracy 99.6 %), few-shot recognition (89.2 % macro-F1 at 20 shots). These results demonstrate that DART functions as a general-purpose CM backbone that goes well beyond classification, providing actionable inspection intelligence from a single shared representation.",
+    "authors": [
+      "Anju Rani",
+      "Daniel Ortiz-Arroyo",
+      "Petar Durdevic"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.04943v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.04943v1",
+    "fetched_at": "2026-05-09T09:14:43.782243"
+  },
+  {
+    "id": "2605.04664v1",
+    "title": "Evidence-based anomaly detection in clinical domains",
+    "abstract": "Anomaly detection methods can be very useful in identifying interesting or concerning events. In this work, we develop and examine new probabilistic anomaly detection methods that let us evaluate management decisions for a specific patient and identify those decisions that are highly unusual with respect to patients with the same or similar condition. The statistics used in this detection are derived from probabilistic models such as Bayesian networks that are learned from a database of past patient cases. We apply our methods to the problem of identifying unusual patient-management decisions in post-surgical cardiac patients.",
+    "authors": [
+      "Milos Hauskrecht",
+      "Michal Valko",
+      "Branislav Kveton",
+      "Shyam Visweswaran",
+      "Gregory Cooper"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.04664v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.04664v1",
+    "fetched_at": "2026-05-09T09:14:43.782266"
+  },
+  {
+    "id": "2605.04478v1",
+    "title": "CCL-D: A High-Precision Diagnostic System for Slow and Hang Anomalies in Large-Scale Model Training",
+    "abstract": "As training scales grow, collective communication libraries (CCL) increasingly face anomalies arising from complex interactions among hardware, software, and environmental factors. These anomalies typically manifest as slow/hang communication, the most frequent and time-consuming category to diagnose. However, traditional diagnostic methods remain inaccurate and inefficient, frequently requiring hours or even days for root cause analysis. To address this, we propose CCL-D, a high-precision diagnostic system designed to detect and locate slow/hang anomalies in large-scale distributed training. CCL-D integrates a rank-level real-time probe with an intelligent decision analyzer. The probe measures cross-layer anomaly metrics using a lightweight distributed tracing framework to monitor communication traffic. The analyzer performs automated anomaly detection and root-cause location, precisely identifying the faulty GPU rank. Deployed on a 4,000-GPU cluster over one year, CCL-D achieved near-complete coverage of known slow/hang anomalies and pinpointed affected ranks within 6 minutes-substantially outperforming existing solutions.",
+    "authors": [
+      "Yida Gu",
+      "Fakang Wang",
+      "Jianhao Fu",
+      "Zhenhang Sun",
+      "Qianyu Zhang",
+      "Hairui Zhao",
+      "Xingchen Liu",
+      "Yang Tian",
+      "Wenjing Huang",
+      "Zedong Liu",
+      "Yifan Chen",
+      "Jinwu Yang",
+      "Yueyuan Zhou",
+      "Qian Zhao",
+      "Haoxu Li",
+      "Tao Wang",
+      "Feng Yu",
+      "Zhan Wang",
+      "Guangming Tan",
+      "Dingwen Tao"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.04478v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.04478v1",
+    "fetched_at": "2026-05-09T09:14:43.782314"
+  },
+  {
+    "id": "2605.04431v1",
+    "title": "Towards Robust LLM Post-Training: Automatic Failure Management for Reinforcement Fine-Tuning",
+    "abstract": "Reinforcement fine-tuning (RFT) has become a core paradigm for post-training large language models, yet its training process remains highly fragile. Existing efforts mainly improve reliability at the system level or address specific issues in individual subproblems by modifying RFT algorithms. Despite their effectiveness, they largely overlook the problem of failure management at the training-process level. When training goes wrong, practitioners still rely heavily on expert-driven manual inspection and correction, and automatic failure management for RFT remains largely unexplored. In this paper, we take a first step toward systematic failure management for reinforcement fine-tuning. To understand the empirical structure of RFT failures, we first construct RFT-FaultBench, the first benchmark for fine-grained failures in reinforcement fine-tuning, covering 5 fault families, 16 fault types, 779 training runs, 22,549 train-step records, and 1,457,288 trajectory-level records. Based on this benchmark, we conduct a comprehensive empirical study showing that RFT failures are both observable from training dynamics and distinguishable through their empirical fault fingerprints. Building on these findings, we propose RFT-FM, an automatic failure management framework for reinforcement fine-tuning that unifies anomaly detection, failure diagnosis, and auto remediation in a closed loop. Experimental results show that RFT-FaultBench is neither trivial nor saturated: it exhibits clear anomaly structure while still posing substantial challenges, especially under subtle fault settings. Moreover, RFT-FM shows strong capability in detecting, diagnosing, and mitigating RFT failures.",
+    "authors": [
+      "Lingzhe Zhang",
+      "Tong Jia",
+      "Yunpeng Zhai",
+      "Liancheng Fang",
+      "Kening Zheng",
+      "Hongyi Liu",
+      "Xiaosong Huang",
+      "Philip S. Yu",
+      "Ying Li"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.04431v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.04431v1",
+    "fetched_at": "2026-05-09T09:14:43.782344"
+  },
+  {
+    "id": "2605.04405v1",
+    "title": "Detecting Deepfakes via Hamiltonian Dynamics",
+    "abstract": "Driven by the rapid development of generative AI models, deepfake detectors are compelled to undergo periodic recalibration to capture newly developed synthetic artifacts. To break this cycle, we propose a new perspective on deepfake detection: moving from static pattern recognition to dynamical stability analysis. Specifically, our approach is motivated by physics-inspired priors: we hypothesize that natural images, as products of dissipative physical processes, tend to settle near stable, low-energy equilibria. In contrast, generative models optimize for statistical similarity to real images but do not explicitly enforce structural constraints such as geometric smoothness, leaving deepfakes more likely to occupy unstable, high-energy states. To operationalize this, we introduce Hamiltonian Action Anomaly Detection (HAAD), comprising three contributions: \\textbf{i)} We model the image latent manifold as a potential energy surface. Under this hypothesis, real images are expected to produce basin-like low-energy responses, whereas fake images are more likely to induce high-potential, high-gradient responses. \\textbf{ii)} We employ Hamiltonian-inspired dynamics as a stability probe. By releasing latent states from rest, samples near stable regions remain bounded, while high-gradient samples produce larger trajectory responses. \\textbf{iii)} We quantify these dynamic behaviors through two trajectory statistics, \\ie, Hamiltonian action and energy dissipation. Extensive experiments show that HAAD outperforms evaluated state-of-the-art baselines on challenging cross-dataset transfer benchmarks, supporting a physics-inspired stability prior for digital forensics.",
+    "authors": [
+      "Harry Cheng",
+      "Ming-Hui Liu",
+      "Tianyi Wang",
+      "Weili Guan",
+      "Liqiang Nie",
+      "Mohan Kankanhalli"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.04405v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.04405v1",
+    "fetched_at": "2026-05-09T09:14:43.782369"
+  },
+  {
+    "id": "2605.05144v1",
+    "title": "Human-AI Co-Mentorship in Project-Based Learning: A Case Study in Financial Forecasting",
+    "abstract": "This paper reflects on a AI research project carried out by a team of high-school and early-undergraduate students under the mentorship of graduate researchers and ably assisted by AI tools. We share our experience in not only on the learning experience for the high school students, but also on how AI tools accelerated the process that enabled the high school students to focus on higher order problem formulation and solution. Although the participants entered the project with limited background in both AI and finance, they showed strong enthusiasm for technical market analysis and ETF price prediction. Traditional learning settings would first teach the necessary methods in a classroom setting and only later let students apply them. In contrast, our project emphasized workflow design: students identified the sequence of steps needed to address the problem and then used AI-driven tools to execute each step.   We note that the high school students developed the necessary code through iterating with the AI tools, and we used our daily stand-ups to debug and answer conceptual questions. Each of the student was able to dig deeper into their area of interest whether computer science or finance, while collaboratively making a significant advance over the summer of 2025. This project was an important pedagogical exercise on how AI tools can be used for mentoring high school students, allowing them to focus on their specific interests and using the daily stand-ups to focus on problem definition and conceptual understanding. Despite their limited technical qualifications, the students were able to leverage AI tools to build meaningful models with real-world application.",
+    "authors": [
+      "Freyaa Chawla",
+      "Ahan Chawla",
+      "Rishi Singh",
+      "Joe Germino",
+      "Grigorii Khvatskii"
+    ],
+    "published": "2026-05-06",
+    "categories": [
+      "cs.LG",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05144v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.05144v1",
+    "fetched_at": "2026-05-09T09:17:09.802610"
+  }
+]
