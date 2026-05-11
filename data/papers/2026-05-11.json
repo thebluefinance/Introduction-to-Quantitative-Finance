@@ -1,0 +1,517 @@
+[
+  {
+    "id": "2605.07558v1",
+    "title": "Stochastic Calculus and the Black-Scholes-Merton Model: A Simplified Approach",
+    "abstract": "This paper refutes the claim that the expected rate of return of the underlying asset plays no role in the Black-Scholes-Merton option pricing model.",
+    "authors": [
+      "Kuo-Ping Chang"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07558v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07558v1",
+    "fetched_at": "2026-05-11T10:56:46.193127"
+  },
+  {
+    "id": "2605.07352v1",
+    "title": "Corporate transparency and the disposition effect",
+    "abstract": "The disposition effect describes investors' irrational behavior of selling profitable assets too soon while holding onto losing assets for too long. This study examines the impact of transparency at the firm level on the disposition effect of individual investors who hold that company's stock. Our results show that an increase in corporate transparency significantly reduces the disposition effect. Further analysis reveals that for companies with greater transparency, when the held stock is profitable, investors' confidence in holding it increases, leading to a reduced bias toward selling profitable stocks. When the stock is held at a loss, investors' confidence in holding it weakens, but they often perceive the loss as temporary and maintain confidence in the company's long-term prospects, thus exacerbating the bias toward holding losing stocks. The effect of increased transparency on the selling behavior of profitable stocks is greater than its effect on the selling behavior of losing stocks. Overall, an increase in corporate transparency significantly reduces the disposition effect.",
+    "authors": [
+      "Siliu Chen",
+      "Fei Ren"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07352v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07352v1",
+    "fetched_at": "2026-05-11T10:56:46.193164"
+  },
+  {
+    "id": "2605.06818v1",
+    "title": "Modeling Dynamic Correlation Matrices with Shrinkage Priors",
+    "abstract": "Estimating time-varying correlation matrices is challenging because existing methods may adapt slowly to structural changes, impose insufficient regularization, or produce diffuse posterior uncertainty. In moderate dimensions, an additional difficulty is summarizing the estimated evolving dependence structure for downstream decision-making tasks. We propose a Bayesian approach based on a low-rank factor representation, with latent states evolving under a dynamic shrinkage prior and observation errors following a multivariate factor stochastic volatility model. This specification allows locally adaptive regularization of the estimated correlation structure over time and informative uncertainty quantification. We establish, to our knowledge, a first-of-its-kind posterior contraction result for dynamically regularized Bayesian models, showing contraction around the true model parameters at an explicit rate under averaged Hellinger distance. To summarize the estimated correlation matrices, we build on the information-theoretic concept of total correlation to obtain a scalar measure of cross-sectional dependence. Simulation studies show improved accuracy and responsiveness relative to competing methods in a range of challenging scenarios. We then apply our method to monitoring the correlation evolution of equity portfolios during periods of financial market stress, providing an ex post framework for assessing the changing benefits of diversification in backtesting analyses.",
+    "authors": [
+      "Daniel Andrew Coulson",
+      "David S. Matteson",
+      "Martin T. Wells"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "stat.ME",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06818v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06818v1",
+    "fetched_at": "2026-05-11T10:56:46.193189"
+  },
+  {
+    "id": "2605.07860v1",
+    "title": "On the Tradeoffs of On-Device Generative Models in Federated Predictive Maintenance Systems",
+    "abstract": "Federated Learning (FL) has emerged as a promising paradigm for preserving client data ownership and control over distributed Internet of Things (IoT) environments. While discriminative models dominate most FL use cases, recent advances in generative models -- such as Variational Autoencoders (VAE), Generative Adversarial Networks (GAN), and Diffusion Models (DM) -- offer new opportunities for unsupervised anomaly detection in time series analysis, with relevant applications in predictive maintenance (PdM) in critical industrial infrastructures. In this work, we present a comprehensive analysis of VAEs, GANs, and DMs in the context of federated PdM. We analyze their performance and communication overhead under both full and partial federation setups, where only subsets of model components are shared. Building on this analysis, the paper proposes a novel taxonomy for federated generative models that formalizes partial component sharing as a principled mechanism for model personalization. Our experiments over a real-world time series dataset reveal distinct trade-offs in model utility, stability, and scalability, especially in heterogeneous and bandwidth-constrained FL settings. For the evaluated GAN-based configurations, full federation improves training stability relative to independent local training, although the model remains less robust than the VAE- and DDPM-based alternatives. For DMs, however, partial federation -- especially decoder sharing -- can outperform full federation in bandwidth-constrained, non-IID settings.",
+    "authors": [
+      "Usevalad Milasheuski",
+      "Piero Baraldi",
+      "Enrico Zio",
+      "Stefano Savazzi"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07860v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07860v1",
+    "fetched_at": "2026-05-11T10:56:59.651856"
+  },
+  {
+    "id": "2605.07812v1",
+    "title": "GRASP -- Graph-Based Anomaly Detection Through Self-Supervised Classification",
+    "abstract": "Advanced persistent threat (APT) attacks remain difficult to detect due to their stealth, adaptability, and use of legitimate system components. Provenance-based intrusion detection systems (PIDS) offer a promising defense by capturing detailed relationships between system components and actions. However, current PIDS rely on predefined or subset-determined thresholds, which limit detection stability and the ability to detect any anomalous behavior in general. Furthermore, related work often neglects the role of process executables, which describe system activity by interacting through a process with files, network components, and other processes. We introduce GRASP, a PIDS based on masked self-supervised classification. GRASP masks the executable information of processes and learns to infer it from their two-hop provenance graph neighborhood, marking misclassified processes as anomalies. It captures behavior patterns for the learned executables without thresholding, making it robust against interference and unknown activities. Evaluations on the DARPA TC and OpTC datasets demonstrate that GRASP consistently detects anomalous behavior, including known attack-related activities, outperforming existing systems. Our PIDS identifies all documented attacks on datasets where the behavior of executables is learnable. In addition, compared to existing systems, GRASP uncovers potentially malicious anomalous behavior not labeled as an attack in the documentation.",
+    "authors": [
+      "Robin Buchta",
+      "Carsten Kleiner",
+      "Felix Heine",
+      "Gabi Dreo Rodosek"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07812v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07812v1",
+    "fetched_at": "2026-05-11T10:56:59.651887"
+  },
+  {
+    "id": "2605.07690v1",
+    "title": "Fortifying Time Series: DTW-Certified Robust Anomaly Detection",
+    "abstract": "Time-series anomaly detection is critical for ensuring safety in high-stakes applications, where robustness is a fundamental requirement rather than a mere performance metric. Addressing the vulnerability of these systems to adversarial manipulation is therefore essential. Existing defenses are largely heuristic or provide certified robustness only under $\\ell_p$-norm constraints, which are incompatible with time-series data. In particular, $\\ell_p$-norm fails to capture the intrinsic temporal structure in time series, causing small temporal distortions to significantly alter the $\\ell_p$-norm measures. Instead, the similarity metric \\emph{Dynamic Time Warping} (DTW) is more suitable and widely adopted in the time-series domain, as DTW accounts for temporal alignment and remains robust to temporal variations. To date, however, there has been no certifiable robustness result in this metric that provides guarantees. In this work, we introduce the first \\emph{DTW-certified robust defense} in time-series anomaly detection by adapting the randomized smoothing paradigm. We develop this certificate by bridging the $\\ell_p$-norm to DTW distance through a lower-bound transformation. Extensive experiments across various datasets and models validate the effectiveness and practicality of our theoretical approach. Results demonstrate significantly improved performance, e.g., up to 18.7\\% in F1-score under DTW-based adversarial attacks compared to traditional certified models.",
+    "authors": [
+      "Shijie Liu",
+      "Tansu Alpcan",
+      "Christopher Leckie",
+      "Sarah Erfani"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07690v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07690v1",
+    "fetched_at": "2026-05-11T10:56:59.651933"
+  },
+  {
+    "id": "2605.07536v1",
+    "title": "GESR: Graph-Based Edge Semantic Reconstruction for Stealthy Communication Detection with Benign-Only Training",
+    "abstract": "Detecting stealthy malicious communications from flow logs under benign-only training remains a critical challenge in network security. Malicious communications often camouflage as normal traffic like standard HTTPS flows. Conventional intrusion detectors rely strictly on known labeled attacks. Alternatively, they score flows completely independently. These approaches fail against sparse and context-dependent suspicious activity. To capture this essential context, graph anomaly detectors have been introduced to add valuable relational information to the analysis. However, existing methods fail to test the structural consistency of specific communication edges. To overcome these fundamental limitations, we present GESR, a novel graph-based framework for detecting suspicious communications and anomalous hosts under a benign-only training setting. GESR models complex network activity as attributed communication graphs. It cleverly reconstructs edge semantics entirely from local structural context rather than isolated features. This non-intuitive design forces the framework to predict expected communication patterns from neighborhood topologies. Attackers cannot easily manipulate this deep structural dependency. The model then converts the resulting structural inconsistencies into host-level anomaly scores. It utilizes robust Median Absolute Deviation (MAD) calibration for this final step. We evaluate GESR extensively on CTU-13 and CICIDS2017 datasets. These evaluations strictly impose tight false-positive operating constraints. On CICIDS2017, GESR achieves an outstanding ROC-AUC of 0.9753. It also yields a high TPR of 0.8569 at a strict 5% FPR threshold. GESR consistently outperforms existing methods across both evaluated benchmarks. The results prove that structure-conditioned edge reconstruction is a credible direction for practical intrusion detection.",
+    "authors": [
+      "Henghui Xu",
+      "Yuchen Zhang",
+      "Xiaobo Ma"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07536v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07536v1",
+    "fetched_at": "2026-05-11T10:56:59.651963"
+  },
+  {
+    "id": "2605.07133v1",
+    "title": "GAD in the Wild: Benchmarking Graph Anomaly Detection under Realistic Deployment Challenges",
+    "abstract": "Graph Anomaly Detection (GAD) is a critical task in graph machine learning with vital applications in financial fraud detection and social platform governance. However, existing GAD benchmarks are often restricted to small-scale, curated graphs with relatively balanced anomaly ratios, leaving a substantial gap between academic evaluation and real-world deployment. To bridge this gap, we present a multi-dimensional benchmark that systematically evaluates GAD models under three deployment-relevant challenges: million-scale graphs, extreme anomaly scarcity, and missing node attributes. We derive a family of controlled benchmark variants from five diverse graphs, including two native industrial-scale datasets with over 3.7 million nodes. Our extensive evaluation of nine representative GAD models reveals three major limitations: (1) most GNN-based methods fail to scale to million-node graphs due to prohibitive memory requirements; (2) detection performance drops sharply under realistic anomaly ratios (e.g., 0.1\\%), often resulting in zero recall; and (3) reconstruction-based models are highly sensitive to attribute imputation strategies. Our findings suggest that strong performance in laboratory settings does not guarantee robustness in production environments. We release this benchmark and empirical evaluation as a diagnostic testbed to promote the development of robust and scalable GAD systems for large-scale, imperfect graphs encountered in practice. Code is available at https://anonymous.4open.science/r/Benchmark_GAD-E7A3.",
+    "authors": [
+      "Jingjing Zhou",
+      "Shiyu Huang",
+      "Qing Qing",
+      "Zuquan Yuan",
+      "Huafei Huang",
+      "Ziqi Xu",
+      "Mingliang Hou",
+      "Xikun Zhang",
+      "Renqiang Luo",
+      "Ivan Lee"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07133v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07133v1",
+    "fetched_at": "2026-05-11T10:56:59.651995"
+  },
+  {
+    "id": "2605.06955v1",
+    "title": "Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection",
+    "abstract": "Denoising score matching (DSM) provides a way to learn data distributions by training a neural network to recover the score function, defined as the gradient of the log density, from noise-corrupted samples. Once trained, the score magnitude at a test point reflects how consistent that point is with the learned distribution, making it a natural anomaly signal. The key practical challenge is selecting the perturbation scale: too little noise yields unstable score estimates in sparse regions, while too much erases local structure and weakens anomaly sensitivity. This is compounded by the difficulty of hyperparameter tuning when anomalies are unknown and no validation set is available. We introduce kurtosis-based noise scaling (K-DSM), a per-feature scheme that sets noise levels from the shape of each marginal distribution, improving coverage of low-density regions and precision in high-density regions without extra model complexity. Contrary to prior claims that multi-scale or noise-conditioned training is necessary, we find that a carefully trained single-scale model is already a strong anomaly detector. On standard tabular anomaly detection benchmarks, K-DSM achieves state-of-the-art performance in the semi-supervised setting. When combined with a lightweight EMA-teacher filtering rule that removes low-density training points before each gradient step, it also achieves strong performance in the fully unsupervised (contaminated) setting, suggesting that simple, data-adaptive noise scaling enables robust anomaly detection while reducing reliance on hyperparameter tuning.",
+    "authors": [
+      "Victor Livernoche",
+      "Jie Zan",
+      "Reihaneh Rabbany"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06955v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06955v1",
+    "fetched_at": "2026-05-11T10:56:59.652015"
+  },
+  {
+    "id": "2605.06906v1",
+    "title": "TraXion: Rethinking Pre-training Frameworks for Mobility and Beyond",
+    "abstract": "Human mobility differs from text and from generic time series in three structural ways: visits are tuple-valued events whose meaning depends on the joint distribution over location, time, and activity; users carry persistent signatures across trajectories; and visits are not independent across users, since co-location at shared places is a primary signal. Existing pre-training recipes for mobility import objectives from language modeling, treating trajectories as sentences and visits as tokens, an analogy that fails against each of the three properties above. These properties define a broader class, multi-entity spatiotemporal event streams (MESES), spanning enterprise authentication logs, electronic health records, and other event-stream domains where entities share infrastructure, schedules, or contexts. We make the properties precise as three axioms that any pre-training framework for MESES should satisfy, and introduce TraXion, whose objectives and architecture are jointly designed to meet them. A single TraXion checkpoint per dataset beats task-specific baselines on every task across six public mobility datasets covering anomaly detection, next-POI recommendation, next-visit prediction, and social-link prediction. The same recipe, applied unchanged to enterprise authentication logs and ICU mortality prediction, matches or exceeds prior work on both, showing that event streams from domains as different as mobility, security, and healthcare can be modeled under a single framework.",
+    "authors": [
+      "Shang-Ling Hsu",
+      "Mark Tenzer",
+      "Cyrus Shahabi",
+      "Khurram Shafique"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06906v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06906v1",
+    "fetched_at": "2026-05-11T10:56:59.652036"
+  },
+  {
+    "id": "2605.06833v1",
+    "title": "PAMPOS: Causal Transformer-based Trajectory Prediction for Attack-Agnostic Misbehavior Detection in V2X Networks",
+    "abstract": "Misbehavior detection in Vehicle-to-Everything (V2X) networks is a second line of defense against insider falsification attacks that cryptographic mechanisms alone cannot address. Existing learning-based Misbehavior Detection Schemes (MDSs) are supervised, requiring labeled attack samples at training time, thus failing to counter unseen falsification attacks. We present PAMPOS, a causal transformer-decoder trained on benign VeReMi++ trajectories to learn normal mobility patterns. At inference time, misbehavior is identified as a deviation from the model's next-step kinematic predictions using a top-K normalized anomaly scoring mechanism that localizes falsification to specific kinematic features, without requiring attack-labeled training data. We evaluate PAMPOS across all 19 attack types in VeReMi++ under rush-hour and afternoon scenarios, achieving Area Under the Curve (AUC) values of up to 0.98 and F1-scores of up to 0.95 for most attack categories.",
+    "authors": [
+      "Konstantinos Kalogiannis",
+      "Ahmed Mohamed Hussain",
+      "Panos Papadimitratos"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.NI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.06833v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.06833v1",
+    "fetched_at": "2026-05-11T10:56:59.652056"
+  },
+  {
+    "id": "2605.08083v1",
+    "title": "LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling",
+    "abstract": "Test-time scaling (TTS) has become an effective approach for improving large language model performance by allocating additional computation during inference. However, existing TTS strategies are largely hand-crafted: researchers manually design reasoning patterns and tune heuristics by intuition, leaving much of the computation-allocation space unexplored. We propose an environment-driven framework, AutoTTS, that changes what researchers design: from individual TTS heuristics to environments where TTS strategies can be discovered automatically. The key to AutoTTS lies in environment construction: the discovery environment must make the control space tractable and provide cheap, frequent feedback for TTS search. As a concrete instantiation, we formulate width--depth TTS as controller synthesis over pre-collected reasoning trajectories and probe signals, where controllers decide when to branch, continue, probe, prune, or stop and can be evaluated cheaply without repeated LLM calls. We further introduce beta parameterization to make the search tractable and fine-grained execution trace feedback to improve discovery efficiency by helping the agent diagnose why a TTS program fails. Experiments on mathematical reasoning benchmarks show that the discovered strategies improve the overall accuracy--cost tradeoff over strong manually designed baselines. The discovered strategies generalize to held-out benchmarks and model scales, while the entire discovery costs only $39.9 and 160 minutes. Our data, and code will be open-source at https://github.com/zhengkid/AutoTTS.",
+    "authors": [
+      "Tong Zheng",
+      "Haolin Liu",
+      "Chengsong Huang",
+      "Huiwen Bao",
+      "Sheng Zhang",
+      "Rui Liu",
+      "Runpeng Dai",
+      "Ruibo Chen",
+      "Chenxi Liu",
+      "Tianyi Xiong",
+      "Xidong Wu",
+      "Hongming Zhang",
+      "Heng Huang"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.08083v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.08083v1",
+    "fetched_at": "2026-05-11T10:57:30.307115"
+  },
+  {
+    "id": "2605.08057v1",
+    "title": "CA-SQL: Complexity-Aware Inference Time Reasoning for Text-to-SQL via Exploration and Compute Budget Allocation",
+    "abstract": "While recent advancements in inference-time learning have improved LLM reasoning on Text-to-SQL tasks, current solutions still struggle to perform well on the most challenging tasks in the Bird-Bench (BIRD) benchmark. This is due to inadequate solution space exploration, which is necessary to uncover promising candidate queries that can be further refined to produce the correct output. To address this challenge, we introduce CA-SQL, a novel Text-to-SQL pipeline that utilizes the estimated difficulty of a task to dynamically scale the breadth of the exploration for generating solution candidates. In addition, we use a custom prompt seeding method, based on principles of evolutionary search, to further elicit exploratory behavior from the base LLM and a novel voting method to select the best candidate solution at the end of the search. Experiments demonstrate that our solution achieves a state-of-the-art score of 51.72% on the \"challenging\" tier of BIRD development set problems, using only GPT-4o-mini, out-performing other in-context learning approaches, even those that leverage larger models. Overall, our method attains a competitive 61.06% execution accuracy and 68.77% Soft F1 score on the BIRD development dataset.",
+    "authors": [
+      "James Petullo",
+      "Nianwen Xue"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.08057v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.08057v1",
+    "fetched_at": "2026-05-11T10:57:30.307144"
+  },
+  {
+    "id": "2605.08013v1",
+    "title": "Learning CLI Agents with Structured Action Credit under Selective Observation",
+    "abstract": "Command line interface (CLI) agents are emerging as a practical paradigm for agent-computer interaction over evolving filesystems, executable command line programs, and online execution feedback. Recent work has used reinforcement learning (RL) to learn these interaction abilities from verifiable task feedback, yet few methods exploit the native structured attributes of CLI actions as learning signals. Beyond this underused action structure, CLI learning also couples two bottlenecks for coding agents. First, the agent must identify task-relevant evidence in a large codebase from partial observations. Second, sparse terminal rewards must be assigned to the actions that shape a long multi-turn trajectory. We study these bottlenecks through shell-driven information extraction and file editing tasks. For selective observation, we introduce $σ$-Reveal, an inference-time mechanism that selects token-budgeted context for the same CLI. For credit assignment, we propose Action Advantage Assignment ($\\mathrm{A}^3$), a native agentic RL method that preserves the algorithmic complexity of standard agentic RL. $\\mathrm{A}^3$ constructs turn-level advantages from episode-level relative feedback, abstract syntax tree (AST) based action sub-chain residuals, and tree-level trajectory margins. To further evaluate this problem setting, we construct ShellOps, a verifiable dataset suite covering CLI tasks in repository environments.",
+    "authors": [
+      "Haoyang Su",
+      "Ying Wen"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.08013v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.08013v1",
+    "fetched_at": "2026-05-11T10:57:30.307163"
+  },
+  {
+    "id": "2605.07990v1",
+    "title": "Tool Calling is Linearly Readable and Steerable in Language Models",
+    "abstract": "When a tool-calling agent picks the wrong tool, the failure is invisible until execution: the email gets sent, the meeting gets missed. Probing 12 instruction-tuned models across Gemma 3, Qwen 3, Qwen 2.5, and Llama 3.1 (270M to 27B), we find the identity of the chosen tool is linearly readable and steerable inside the model. Adding the mean-difference between two tools' average internal activations switches which tool the model selects at 77-100% accuracy on name-only single-turn prompts (93-100% at 4B+), and the JSON arguments that follow autoregressively match the new tool's schema, so flipping the name is enough. The same per-tool means also flag likely errors before they happen: on Gemma 3 12B and 27B, queries where the gap between the top-1 and top-2 tool is smallest produce 14-21x more wrong calls than queries with the largest gap. The causal effect concentrates along one direction, the row of the output layer that produces the target tool's first token: a unit vector along it at matched magnitude already reaches 93-100%, while what is left over leaves the choice almost untouched. Activation patching localises this to a small set of mid- and late-layer attention heads, and a within-topic probe across 14 same-domain $τ$-bench airline tools reaches top-1 61-89% across five 4B-14B models, ruling out the reading that we are just moving the model along a topic axis. Even base models encode the right tool before they can emit it: cosine readout from the internal state recovers 69-82% on BFCL while base generation reaches only 2-10%, suggesting pretraining forms the representation and instruction tuning later wires it to the output. We measure tool identity selection and JSON schema correctness in single-turn fixed-menu settings; multi-turn agentic transfer is more fragile and is discussed in Limitations.",
+    "authors": [
+      "Zekun Wu",
+      "Ze Wang",
+      "Seonglae Cho",
+      "Yufei Yang",
+      "Adriano Koshiyama",
+      "Sahan Bulathwela",
+      "Maria Perez-Ortiz"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07990v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07990v1",
+    "fetched_at": "2026-05-11T10:57:30.307194"
+  },
+  {
+    "id": "2605.07937v1",
+    "title": "Ask Early, Ask Late, Ask Right: When Does Clarification Timing Matter for Long-Horizon Agents?",
+    "abstract": "Long-horizon AI agents execute complex workflows spanning hundreds of sequential actions, yet a single wrong assumption early on can cascade into irreversible errors. When instructions are incomplete, the agent must decide not only whether to ask for clarification but when, and no prior work measures how clarification value changes over the course of execution. We introduce a forced-injection framework that provides ground-truth clarifications at controlled points in the agent's trajectory across four information dimensions (goal, input, constraint, context), three agent benchmarks, and four frontier models (three per benchmark; one on a single benchmark only; 84 task variants; 6,000+ runs). Counter to the common intuition that \"earlier is always better,\" we find that the value of clarification depends sharply on what information is missing: goal clarification loses nearly all value after 10% of execution (pass@3 drops from 0.78 to baseline), while input clarification retains value through roughly 50%. Deferring any clarification type past mid-trajectory degrades performance below never asking at all. Cross-model Kendall tau correlations (0.78-0.87 among models sharing identical task coverage; 0.34-0.67 across the full 4-model panel) confirm these timing profiles are substantially task-intrinsic. A complementary study of 300 unscripted sessions reveals that no current frontier model asks within the empirically optimal window, with strategies ranging from over-asking (52% of sessions) to never asking at all. These empirical demand curves provide the quantitative foundation that existing theoretical frameworks require but have lacked, and establish concrete design targets for timing-aware clarification policies. Code and data will be publicly released.",
+    "authors": [
+      "Anmol Gulati",
+      "Hariom Gupta",
+      "Elias Lumer",
+      "Sahil Sen",
+      "Vamse Kumar Subbiah"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07937v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07937v1",
+    "fetched_at": "2026-05-11T10:57:30.307217"
+  },
+  {
+    "id": "2605.07935v1",
+    "title": "TraceFix: Repairing Agent Coordination Protocols with TLA+ Counterexamples",
+    "abstract": "We present TraceFix, a verification-first pipeline for Large Language Model (LLM) multi-agent coordination. An agent synthesizes a protocol topology as a structured intermediate representation (IR) from a task description, generates PlusCal coordination logic, and iteratively repairs the protocol using counterexamples from the TLA+ model checker (TLC) until verification succeeds. Verified process bodies are compiled into per-agent system prompts and executed under a runtime monitor that rejects out-of-topology coordination operations. On 48 tasks spanning 16 scenario families, all tasks reach full TLC verification; 62.5% pass on the first attempt and none requires more than four repair iterations. State spaces span six orders of magnitude yet verification completes in under 60 s for every task. A 3,456-run runtime comparison shows that topology-monitored execution achieves the highest task completion (89.4% average, 81.5% full) and that runtimes using the verified protocol degrade at roughly half the rate of prompt-only and chat-only baselines when model capability is reduced. A paired ablation under a fixed runtime shows that TLC-verified protocols cut deadlock/livelock (DL/LL) from 31.1% to 14.1%, with the largest separation under fault injection.",
+    "authors": [
+      "Shuren Xia",
+      "Qiwei Li",
+      "Taqiya Ehsan",
+      "Jorge Ortiz"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07935v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07935v1",
+    "fetched_at": "2026-05-11T10:57:30.307238"
+  },
+  {
+    "id": "2605.07926v1",
+    "title": "AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents",
+    "abstract": "As LLM-based agents increasingly rely on external tools, it is important to evaluate their ability to sustain tool-grounded reasoning beyond familiar workflows and short-range interactions. We introduce AgentEscapeBench, an escape-room-style benchmark that tests whether agents can infer, execute, and revise novel tool-use procedures under explicit long-range dependency constraints. Each task defines a directed acyclic dependency graph over tools and items, requiring agents to invoke real external functions, track hidden state revealed incrementally, propagate intermediate results, and submit a deterministically verifiable final answer. AgentEscapeBench includes 270 instances across five difficulty tiers and supports fully automated evaluation. Experiments with sixteen LLM agents and human participants show that performance drops sharply as dependency depth increases: humans decline from 98.3% success at difficulty-5 to 80.0% at difficulty-25, while the best model drops from 90.0% to 60.0%. Trajectory analysis attributes model failures mainly to breakdowns in long-range state tracking, clue adherence, and intermediate-result propagation. These findings suggest that current agents can often handle local tool use but still struggle with deep contextual dependencies. We hope AgentEscapeBench can serve as a diagnostic testbed for measuring current agent capabilities and informing future training efforts toward more robust general-purpose reasoning, action, and adaptation.",
+    "authors": [
+      "Zhengkang Guo",
+      "Yiyang Li",
+      "Lin Qiu",
+      "Xiaohua Wang",
+      "Jingwen Xv",
+      "Dongyu Ru",
+      "Xiaoyu Li",
+      "Xiaoqing Zheng",
+      "Xuezhi Cao",
+      "Xunliang Cai"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07926v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07926v1",
+    "fetched_at": "2026-05-11T10:57:30.307269"
+  },
+  {
+    "id": "2605.07840v1",
+    "title": "RelAgent: LLM Agents as Data Scientists for Relational Learning",
+    "abstract": "Relational learning is a challenging problem that has motivated a wide range of approaches, including graph-based models (e.g., graph neural networks, graph transformers), tabular methods (e.g., tabular foundation models), and sequence-based approaches (e.g., large language models), each with its own advantages and limitations. We propose RelAgent, an LLM-based autonomous data scientist for relational learning, which operates in two phases. In the search phase, an LLM agent uses database, validation, and evaluation workspace tools to construct SQL feature programs and select a predictive model. In the inference phase, the resulting program is executed without further LLM calls. The final predictor consists of SQL queries and a classical model, enabling fast, deterministic, and intrinsically interpretable predictions: features are human-readable queries, and predictions depend only on the resulting query-defined feature map, enabling scalable deployment using standard database systems.",
+    "authors": [
+      "Xingyue Huang",
+      "Louis Tichelman",
+      "Jinwoo Kim",
+      "Krzysztof Olejniczak",
+      "İsmail İlkan Ceylan"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07840v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07840v1",
+    "fetched_at": "2026-05-11T10:57:30.307291"
+  },
+  {
+    "id": "2605.07807v1",
+    "title": "Text-to-CAD Evaluation with CADTests",
+    "abstract": "Text-to-CAD has recently emerged as an important task with the potential to substantially accelerate design workflows. Despite its significance, there has been surprisingly little work on Text-to-CAD evaluation, and assessing CAD model generation performance remains a considerable challenge. In this work, we introduce a new evaluation perspective for Text-to-CAD based on automated testing. We propose CADTestBench, the first test-based benchmark for Text-to-CAD, based on CADTests, executable software tests that verify whether a generated CAD model satisfies the geometric and topological requirements of the input prompt. Using CADTestBench, we conduct comprehensive benchmarking of recent Text-to-CAD methods and further demonstrate that CADTests can also guide CAD model generation, yielding simple baselines that surpass performance of current methods. CADTestBench code and data are available at GitHub and Hugging Face dataset.",
+    "authors": [
+      "Dimitrios Mallis",
+      "Marco Wang",
+      "Ahmet Serdar Karadeniz",
+      "Elisa Ricci",
+      "Anis Kacem",
+      "Djamila Aouada"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07807v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07807v1",
+    "fetched_at": "2026-05-11T10:57:30.307337"
+  },
+  {
+    "id": "2605.07796v1",
+    "title": "PolySQL: Scaling Text-to-SQL Evaluation Across SQL Dialects via Automated Backend Isomorphism",
+    "abstract": "SQL dialects vary in syntax, types, and functions across database engines. Text-to-SQL benchmarks, however, predominantly support only SQLite. This creates a critical evaluation gap: cross-dialect evaluation reveals weak per-query agreement (Cohen's ), showing that SQLite performance is an unreliable proxy for other dialects. Yet such evaluation remains prohibitively difficult: existing approaches either require expensive manual query transpilation or rely on tools that often fail on complex SQL. To close this gap, we introduce PolySQL, a novel dual-execution method that eliminates the need for query transpilation by comparing normalized execution results. Notably, our approach achieves higher evaluation fidelity than query transpilation with 100% query coverage. PolySQL comprises three datasets, enabling the first large-scale cross-dialect study. Our study reveals a 10.1% average accuracy drop from SQLite to other dialects and identifies a significant dialect difficulty hierarchy. We find this degradation stems from logical rather than syntactic errors (61% vs. 8%). We release our framework code and leaderboard to enable rigorous dialect-robust evaluation.",
+    "authors": [
+      "Yotam Perlitz",
+      "Elad Venezian",
+      "Corentin Royer",
+      "Francesco Fusco",
+      "Andrea Giovannini"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07796v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07796v1",
+    "fetched_at": "2026-05-11T10:57:30.307359"
+  },
+  {
+    "id": "2605.07719v1",
+    "title": "An Efficient Hybrid Sparse Attention with CPU-GPU Parallelism for Long-Context Inference",
+    "abstract": "Long-context inference increasingly operates over CPU-resident KV caches, either because decoding-time KV states exceed GPU memory capacity or because disaggregated prefill-decode systems place KV data in host memory. Although block-sparse attention reduces attention cost in this setting, sparsity alone is insufficient for end-to-end efficiency. GPU-only designs remain constrained by PCIe bandwidth and metadata memory overhead, while CPU-GPU hybrid designs still suffer from substantial GPU idle time and bottlenecks in CPU-side top-k selection and sparse attention computation.   Fluxion is built on three key insights: output-aware KV budgeting, head-specific and granularity-aware sparse configuration, and cross-device coordinated execution for sparse attention over CPU-resident KV caches. Guided by these insights, Fluxion combines a lightweight head-property predictor, a granularity-budget selector, and a priority-based scheduler to jointly optimize budget allocation, sparse configuration, and CPU-GPU execution overlap. This co-design enables hybrid sparse attention to achieve both accuracy and system efficiency in long-context inference. Across 2 models, 3 benchmarks, and 40 tasks, Fluxion preserves quality well -- the worst average degradation is only -0.26 relative to FULL, while delivering 1.5$\\times$-3.7$\\times$ speedup over the strongest fixed sparse hybrid baseline, whose KV budget is only 0.05.",
+    "authors": [
+      "Feiyu Yao",
+      "Zhixiong Niu",
+      "Xiaqing Li",
+      "Yongqiang Xiong",
+      "Juan Fang",
+      "Qian Wang"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.PF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07719v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07719v1",
+    "fetched_at": "2026-05-11T10:57:30.307386"
+  },
+  {
+    "id": "2605.07707v1",
+    "title": "Hierarchical Task Network Planning with LLM-Generated Heuristics",
+    "abstract": "HTN planning is a variation of classical planning where, instead of searching for a linear sequence of actions, an algorithm decomposes higher-level tasks using a method library until only executable actions remain. On one hand, this allows one to introduce domain knowledge that can speed up the search for a solution through the method library. On the other hand, it creates challenges that go beyond those of classical state-space search. While recent research produced a number of heuristics and novel algorithms that speed up HTN planning, these heuristics are not yet as informative as those available in classical planning algorithms. We investigate whether large language models (LLMs) can generate effective search heuristics for HTN planning, extending the methodology of Corrêa, Pereira, and Seipp (2025) from classical to hierarchical planning. Using the Pytrich planner on six standard total-order HTN benchmark domains, we evaluate heuristics generated by nine LLMs under domain-specific prompting and compare them against the TDG and LMCount domain-independent baselines and the PANDA planner. Our results show that LLM-generated heuristics nearly match the coverage of the best available HTN planner, while substantially reducing search effort on 83% of shared problems.",
+    "authors": [
+      "Felipe Meneguzzi",
+      "Alexandre Buchweitz",
+      "Augusto B. Corrêa",
+      "Victor Scherer Putrich",
+      "André Grahl Pereira"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07707v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07707v1",
+    "fetched_at": "2026-05-11T10:57:30.307408"
+  },
+  {
+    "id": "2605.07692v1",
+    "title": "GASim: A Graph-Accelerated Hybrid Framework for Social Simulation",
+    "abstract": "Large-scale social simulators are essential for studying complex social patterns. Prior work explores hybrid methods to scale up simulations, combining large language models (LLM)-based agents with numerical agent-based models (ABM). However, this incurs high latency due to expensive memory retrieval and sequential ABM execution. To address this challenge, we propose GASim, a graph-accelerated hybrid multi-agent framework for large-scale social simulations. For core agents driven by LLM, GASim introduces Graph-Optimized Memory (GOM) to replace intensive LLM-based retrieval pipelines with lightweight propagation over a sparse memory graph. For the majority of ordinary agents, GASim employs Graph Message Passing (GMP), substituting sequential ABM execution with parallel updates by fine-grained feature aggregation and Graph Attention Network. We further introduce Entropy-Driven Grouping (EDG) that coordinates this hybrid partitioning, leveraging information entropy to dynamically identify emergent core agents situated in information-diverse neighborhoods. Extensive experiments show that GASim not only delivers a substantial 9.94-fold end-to-end speedup over the traditional hybrid framework but also consumes less than 20% of baseline tokens, significantly reducing costs while preserving strong alignment with real-world public opinion trends. Our code is available at https://github.com/Jasmine0201/GASim.",
+    "authors": [
+      "Xuan Zhou",
+      "Yanhui Sun",
+      "Hantao Yao",
+      "Allen He",
+      "Yongdong Zhang",
+      "Wu Liu"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07692v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07692v1",
+    "fetched_at": "2026-05-11T10:57:30.307432"
+  },
+  {
+    "id": "2605.07639v1",
+    "title": "Tacit Knowledge Extraction via Logic Augmented Generation and Active Inference",
+    "abstract": "Tacit knowledge plays a central role in human expertise, yet it remains difficult to capture, formalize, and reuse in machine-interpretable form. This challenge is especially relevant in procedural domains, where successful execution depends not only on explicit instructions, but also on implicit assumptions, contextual constraints, embodied skills, and experience-based judgments rarely documented. As a result, current knowledge engineering pipelines struggle to transform tacit and process-centric knowledge into formally specified, machine-interpretable representations that can be queried, validated, reasoned over, and reused. In this paper, we introduce a neuro-symbolic framework that combines Logic-Augmented Generation and an Active-Inference-inspired approach for ontology-grounded Knowledge Graph construction. We evaluate the approach in a knowledge transfer case study in manufacturing, using assembly-like repair procedures from instructional videos as a reproducible proxy domain. Results show that the proposed solution improves completeness and semantic quality, advancing neuro-symbolic knowledge engineering for industrial domains.",
+    "authors": [
+      "Lorenzo Lamazzi",
+      "Aldo Gangemi",
+      "Alessio Giberti",
+      "Andrea Giovanni Nuzzolese",
+      "Vittorio Andrea Rocca",
+      "Mattia Torta",
+      "Francesco Poggi"
+    ],
+    "published": "2026-05-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.07639v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.07639v1",
+    "fetched_at": "2026-05-11T10:57:30.307457"
+  },
+  {
+    "id": "2605.05995v2",
+    "title": "Safety Anchor: Defending Harmful Fine-tuning via Geometric Bottlenecks",
+    "abstract": "The safety alignment of Large Language Models (LLMs) remains vulnerable to Harmful Fine-tuning (HFT). While existing defenses impose constraints on parameters, gradients, or internal representations, we observe that they can be effectively circumvented under persistent HFT. Our analysis traces this failure to the inherent redundancy of the high-dimensional parameter space: attackers exploit optimization trajectories that are orthogonal to defense constraints to restore harmful capabilities while deceptively adhering to safety restrictions. To address this, we propose Safety Bottleneck Regularization (SBR). SBR shifts the defensive focus from the redundant parameter space to the unembedding layer, which serves as a geometric bottleneck. By anchoring the final hidden states of harmful queries to those of the safety-aligned model, SBR enables the model to maintain safe responses even under persistent HFT. Extensive experiments confirm SBR's effectiveness, demonstrating that utilizing just a single safety anchor is sufficient to reduce the Harmful Score to $<$10 while preserving competitive performance on benign downstream tasks.",
+    "authors": [
+      "Guoxin Lu",
+      "Letian Sha",
+      "Qing Wang",
+      "Peijie Sun",
+      "Hao Zhou",
+      "Hua Dai",
+      "Fu Xiao"
+    ],
+    "published": "2026-05-07",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.05995v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.05995v2",
+    "fetched_at": "2026-05-11T10:57:51.646468"
+  }
+]
