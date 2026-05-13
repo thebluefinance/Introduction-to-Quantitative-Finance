@@ -1,0 +1,722 @@
+[
+  {
+    "id": "2605.12250v1",
+    "title": "The P behind Q: Empirical Evidence from Physical Drift in Put-Call Parity",
+    "abstract": "Put-call parity is exact as a terminal-payoff identity, yet its market enforcement is path-dependent and capital-using. This paper examines whether physical-measure drift is reflected in the carry gap, defined as the annualized wedge between option-implied and OIS-implied discounting, using SPX and RUT European index options. I derive a drift-preserving extension of the GBM implementation-risk term that adds an (rμτ) component to the standard (rσ\\sqrtτ) path-risk component. The drift input (μ) is measured by a lagged rolling-OLS trend proxy and should not be interpreted as an observed expected return. Empirically, the drift term improves both in-sample and leave-one-year-out fit, especially for SPX, consistent with drift-sensitive margin burden in parity enforcement rather than a failure of no-arbitrage.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12250v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12250v1",
+    "fetched_at": "2026-05-13T10:20:45.346464"
+  },
+  {
+    "id": "2605.12189v1",
+    "title": "A deep learning approach for pricing convertible bonds with path-dependent reset and call provisions",
+    "abstract": "This paper develops a deep learning-based framework for pricing convertible bonds with path-dependent contractual features, namely downward conversion price reset and issuer call clauses under rolling-window trigger rules, which are widespread in the convertible bond market. We formulate the valuation problem as a path-dependent partial differential equation (PPDE), which explicitly captures the dependence of the convertible bond value on the historical path of the underlying asset and the dynamic evolution of the conversion price. We derive consistent PPDE formulations for three canonical underlying dynamics: geometric Brownian motion (GBM), constant elasticity of variance (CEV) and Heston stochastic volatility. We then construct a discrete-time dynamic programming scheme in which conditional expectations are approximated by neural networks, which remains tractable in such high-dimensional path-dependent setting. Empirical tests on China CITIC Bank Convertible Bond show that our framework produces stable and accurate prices and sensitivity patterns across all model specifications. Three key economic insights emerge: 1. Contractual features dominate underlying dynamics in determining convertible bond values. 2. The call provision decreases convertible bonds prices by truncating upside gains. 3. Counterintuitively, despite improving conversion terms, the downward reset provision further decreases the price of convertible bonds by lowering the effective call threshold and making early redemption more likely. The proposed PPDE-deep learning approach provides an efficient, flexible tool for pricing convertible bonds with complex path-dependent structures.",
+    "authors": [
+      "Qinwen Zhu",
+      "Wen Chen",
+      "Nicolas Langrené"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.PR",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12189v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12189v1",
+    "fetched_at": "2026-05-13T10:20:45.346498"
+  },
+  {
+    "id": "2605.12151v1",
+    "title": "RED-2400: A Public Benchmark of Algorithmically-Rejected Trading Events with Outcome Labels",
+    "abstract": "RED-2400 is a public benchmark of algorithmically-rejected trading events from a live Solana decentralized-exchange filter stack. I logged the data continuously between 2026-04-10 and 2026-05-02. The benchmark contains 6,659 rejection events linked to 169,122 post-rejection price and liquidity observations and 1,836 graveyard-tracker snapshots. Outcome labels follow the five-tier classification of Kamat (2026c): saved (windowed), saved (early-death), missed, flat, and unclassifiable. Thresholds use the trough-to-reference and peak-to-reference price ratios within a 24-hour window. Most filter-design datasets cover the accept side only. That gap leaves reject-side outcomes unmeasured and biases filter validation. RED-2400 lets researchers replicate filter-precision claims directly. RED-2400 is the first window in a planned dataset series; subsequent windows will extend the time horizon and enable regime-stratified analysis.",
+    "authors": [
+      "Arati U. Kamat"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.CP",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12151v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12151v1",
+    "fetched_at": "2026-05-13T10:20:45.346517"
+  },
+  {
+    "id": "2605.12142v1",
+    "title": "Nonlinear filtering with stochastic discontinuities",
+    "abstract": "Filtering problems with jumps in both the signal and the observation have been extensively studied, typically under the assumption that jump times are totally inaccessible. In many applications, however, jump times are known in advance (i.e., predictable), such as scheduled clinical visits, dividend payment dates, or inspection times in engineering systems. Taking predictable jump times as a starting point, we investigate a filtering problem in which both the signal and the observations can exhibit jumps at predictable times. We derive the corresponding Kushner-Stratonovich and Zakai equations, thereby extending classical nonlinear filtering results to a setting with predictable discontinuities. We illustrate the framework on a Kalman filtering model with predictable jumps and on applications to longitudinal clinical studies, such as spinal muscular atrophy (SMA), as well as to machine learning models (neural jump ODEs) and credit risk.",
+    "authors": [
+      "Thorsten Schmidt",
+      "Félix B. Tambe-Ndonfack"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12142v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12142v1",
+    "fetched_at": "2026-05-13T10:20:45.346533"
+  },
+  {
+    "id": "2605.12099v1",
+    "title": "Bayesian Dynamic Modeling of Realized Volatility in Financial Asset Price Forecasting",
+    "abstract": "We present a new class of Bayesian dynamic models for bivariate price-realized volatility time series in financial forecasting. A novel dynamic gamma process model adopted for realized volatility is integrated with traditional Bayesian dynamic linear models (DLMs) for asset price series. This represents reduced-form volatility leverage and feedback effects through use of realized volatility proxies in conditional DLMs for prices or returns, coupled with the synthesis of higher frequency data to track and anticipate volatility fluctuations. Analysis is computationally straightforward, extending conjugate-form Bayesian analyses for sequential filtering and model monitoring with simple and direct simulation for forecasting. A main applied setting is equity return forecasting with daily prices and realized volatility from high-frequency, intraday data. Detailed empirical studies of multiple S&P sector ETFs highlight the improvements achievable in asset price forecasting relative to standard models and deliver contextual insights on the nature and practical relevance of volatility leverage and feedback effects. The analytic structure and negligible extra computational cost will enable scaling to higher dimensions for multivariate price series forecasting for decouple/recouple portfolio construction and risk management applications.",
+    "authors": [
+      "Patrick Woitschig",
+      "Mike West"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "stat.ME",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12099v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12099v1",
+    "fetched_at": "2026-05-13T10:20:45.346550"
+  },
+  {
+    "id": "2605.11717v1",
+    "title": "On convergence of the Mayer problems arising in the theory of financial markets with transaction cost",
+    "abstract": "The geometric approach to financial markets with proportional transaction cost prescribes to imbed a specific model (of stock market, of currency market etc.), usually given in a parametric form, into a natural framework defined by the two random processes, S and K. The first one, d-dimensional, models the price evolution of basic securities while the second one, cone-valued, describes the evolution of the solvency set. It happened that the fundamental questions -- no-arbitrage criteria, hedging problems, portfolio optimization -- can be studied in this general setting opening the door to set-valued techniques. In this note we explore, in such a general framework, the stochastic Mayer control problem, consisting in the maximization of the expected utility of the portfolio terminal wealth. We get results on continuity of the optimal value and the optimal control under price approximations in a general multi-asset framework described by the geometric formalism.",
+    "authors": [
+      "Yuri Kabanov",
+      "Artur Sidorenko"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11717v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11717v1",
+    "fetched_at": "2026-05-13T10:20:45.346565"
+  },
+  {
+    "id": "2605.11645v1",
+    "title": "GeomHerd: A Forward-looking Herding Quantification via Ricci Flow Geometry on Agent Interactive Simulations",
+    "abstract": "Herding -- where agents align their behaviors and act collectively -- is a central driver of market fragility and systemic risk. Existing approaches to quantify herding rely on price-correlation statistics, which inherently lag because they only detect coordination after it has already moved realised returns. We propose GeomHerd, a forward-looking geometric framework that bypasses this observability lag by quantifying coordination directly on upstream agent-interaction graphs. To generate these graphs, we treat a heterogeneous LLM-driven multi-agent simulator -- each financial trader instantiated by a persona-conditioned LLM call -- as a forecastable world, and evaluate the geometric pipeline on the Cividino--Sornette continuous-spin agent-based substrate as our headline financial testbed. By tracking the discrete Ollivier--Ricci curvature of these action graphs, GeomHerd captures the structural topology of emerging coordination. Theoretically, we establish a mean-field bridge mapping our graph-theoretic metric to CSAD, the classical macroscopic herding statistic, linking GeomHerd to downstream price-dispersion measurement. Empirically, GeomHerd anticipates herding long before aggregate market baselines: on the continuous-spin substrate, our primary detector fires a median of 272 steps before order-parameter onset; a contagion detector ($β_{-}$) recalls 65% of critical trajectories 318 steps early; and on co-firing trajectories the agent-graph signal precedes price-correlation-graph baselines by 40 steps. As a complementary indicator, the effective vocabulary of agent actions contracts during cascades. The geometric signature transfers out-of-domain to the Vicsek self-driven-particle model, and a curvature-conditioned forecasting head reduces cascade-window log-return MAE over detector-conditioned and price-only baselines.",
+    "authors": [
+      "Lake Yang",
+      "Junwei Su",
+      "Jingfeng Zeng",
+      "Wenhao Lu",
+      "Xingzhi Qian",
+      "Weitong Zhang",
+      "Chuan Wu",
+      "Dunhong Jin"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.MA",
+      "cs.LG",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11645v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11645v1",
+    "fetched_at": "2026-05-13T10:20:45.346590"
+  },
+  {
+    "id": "2605.11640v1",
+    "title": "Fill-Side Non-Retail Trading on Polymarket: An Empirical Study of Behavioral Tiers and Microstructure Signatures Under Quote-Attribution Constraints",
+    "abstract": "Prediction markets cannot exist without market makers, arbitrageurs, and other non-retail liquidity providers, yet the supply-side microstructure of Polymarket-class venues has not been characterized at on-chain pseudonymous-address scale. This paper studies non-retail participation on Polymarket using an empirical run on the PMXT v2 archive over 2026-04-21 through 2026-04-27 (13,356,931 OrderFilled events; 77,204 addresses with five+ fills; 43,116 markets).   We report three findings. First, Polymarket's off-chain CLOB architecture renders address-level quote-lifecycle attribution permanently unavailable: OrderPlaced and OrderCancelled events are off-chain and absent from public archives, so quote-intensity, two-sided-ratio, and posted-spread features cannot be built at address level. We document this as a structural validity-gate failure (G-QUOTE-LIFE universal fail) and restrict analysis to a six-feature fill-side vector. Second, density-based clustering (DBSCAN, fifteen sensitivity configurations) on the fill-side vector produces a single dense cluster with zero noise: fill-side behavior in the empirical window is uni-modal under the six-feature vector, contradicting the pre-registered hypothesis of four-to-five separable archetypes. Third, robust retail vs non-retail separation is achievable through clustering-independent feature-tier stratification: whale-tier, high-frequency-operator, and power-trader tiers jointly hold 81.4% of total notional across 12.6% of addresses.   Address-level market-making and liquidity-provision claims are withdrawn per the G-QUOTE-LIFE failure; spoof-by-non-fill manipulation detection is downgraded to market-level book diagnostics. A privacy-respecting derived-dataset deposit accompanies the paper as Bundle 3 of the PMXT family. Fourth paper in a four-paper programme on event-linked perpetuals and leveraged prediction-market microstructure.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.TR",
+      "cs.CY",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11640v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11640v1",
+    "fetched_at": "2026-05-13T10:20:45.346610"
+  },
+  {
+    "id": "2605.11423v1",
+    "title": "A Validated Volatility-Volume-Gap Classifier for Regime Identification in MNQ Intraday Data",
+    "abstract": "This paper constructs and validates a composite day-classification system for Micro E-Mini Nasdaq 100 futures (MNQ) using three pre-market observable conditions: first-30-minute return magnitude, overnight gap magnitude, and abnormal opening-bar volume relative to a rolling baseline. Using 947 regular trading days of five-minute data from 2021-2025, we find that classifier-positive days exhibit statistically distinct intraday behavior, including directional morning drift followed by systematic late-session reversal. Despite these descriptive characteristics, all tested directional trading strategies fail institutional validation standards after transaction costs and multi-year consistency requirements are applied. The highest-performing configuration achieves T = 1.46 and mean net +7.80 points but fails year-stability criteria. The primary contribution is the validation of the Volatility-Volume-Gap (VVG) classifier as a descriptive regime-identification framework and the documentation of failed attempts to convert these statistical patterns into deployable trading signals under realistic execution constraints.",
+    "authors": [
+      "Mathias Mesfin"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.CP",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11423v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11423v1",
+    "fetched_at": "2026-05-13T10:20:45.346624"
+  },
+  {
+    "id": "2605.11263v1",
+    "title": "Optimal Control of the Ethena Yield-Bearing Stablecoin",
+    "abstract": "We formulate and solve stochastic control problems that model the core yield-generating strategy of the Ethena protocol, a decentralized finance (DeFi) stablecoin that earns yield by combining a long position in staked Ethereum (stETH) with an equal-sized short position in ETH perpetual futures. The combined position is delta-neutral with respect to the ETH spot price, yet earns carry from two sources: staking rewards on the stETH leg, and funding-rate payments received from long perpetual holders when the perpetual trades at a premium to spot. A key feature of our model is that the control -- the rate of simultaneously buying stETH and shorting the perpetual -- exerts two distinct types of price impact. \\textit{Permanent} impact shifts the mid-market prices of both legs, compressing the basis and permanently eroding future funding income. \\textit{Temporary} impact reflects execution slippage on each leg. We study both an infinite-horizon discounted problem and a finite-horizon problem in which the protocol maximizes total wealth up to a fixed date $T$, subject to a terminal cost for liquidating any remaining position. In both cases the optimal control is obtained explicitly.",
+    "authors": [
+      "Matthew Lorig"
+    ],
+    "published": "2026-05-11",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11263v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11263v1",
+    "fetched_at": "2026-05-13T10:20:45.346639"
+  },
+  {
+    "id": "2605.11200v1",
+    "title": "The Epistemic Risk of Risk: A Modal Framework for Quantitative Risk Management",
+    "abstract": "Risk governance is not only about identifying and measuring adverse states of the world. It also asks when an institution is entitled to rely on a risk claim. This paper introduces modal epistemic tools for that second layer of QRM. For a risk proposition $p$, $Kp$ denotes assurance-grade endorsement for certification, audit reliance, board sign-off, or regulatory reporting. By contrast, $Bp$ denotes working commitment: a disciplined action-guiding stance under incomplete assurance.   The framework distinguishes object-level risk claims from stances toward them. It develops crisp and fuzzy modal semantics for assurance, working commitment, live possibility, non-exclusion, hesitation, and epistemic inconsistency. The central diagnostics are \\[ p\\wedge\\neg Kp \\qquad\\text{and}\\qquad p\\wedge\\neg Bp, \\] which identify cases in which a risk is present but lacks the relevant stance. Thus QRM should model not only hazards and losses, but also evidential incompleteness, model risk, validation gaps, and failures of escalation.   Two governance principles motivate the analysis. The Risk Management Principle says that if $p$ is a risk, then the absence of the relevant stance, $p\\wedge\\neg Mp$, is itself risk-relevant. The Risk Reach Principle says that real and decision-relevant risks should be reachable by the appropriate stance. Their unrestricted combination creates Moorean and Fitch-style collapse pressure: treating $p\\wedge\\neg Kp$ or $p\\wedge\\neg Bp$ as ordinary targets of the same stance whose absence they record undermines the diagnostic.   The response is architectural. Object-level risk claims should be separated from meta-level epistemic diagnostics. The latter should be governed through an audit layer that records and controls epistemic gaps. This preserves action and precaution without collapsing risk governance into institutional omniscience.",
+    "authors": [
+      "Hirbod Assa"
+    ],
+    "published": "2026-05-11",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11200v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11200v1",
+    "fetched_at": "2026-05-13T10:20:45.346653"
+  },
+  {
+    "id": "2605.11180v1",
+    "title": "The Value of Information: A Puzzle",
+    "abstract": "We show that under mild assumptions, the total value of information to informed traders in the market can be measured by the covariance between price changes and order flow. This covariance captures noise trader losses, which equal informed trader gains when market making is competitive. We estimate the value of information using high frequency data on US equities at about $3.5 million per year for the average stock. The aggregate value of information is about 0.04% of market cap, which is considerably lower than the 0.67% in fees investors pay each year searching for superior returns (French 2008). We discuss potential resolutions for these puzzling findings.",
+    "authors": [
+      "Ohad Kadan",
+      "Asaf Manela"
+    ],
+    "published": "2026-05-11",
+    "categories": [
+      "q-fin.GN",
+      "econ.GN",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11180v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11180v1",
+    "fetched_at": "2026-05-13T10:20:45.346668"
+  },
+  {
+    "id": "2605.12069v1",
+    "title": "Anomaly-Aware Vision-Language Adapters for Zero-Shot Anomaly Detection",
+    "abstract": "Zero-shot anomaly detection aims to identify defects in unseen categories without target-specific training. Existing methods usually apply the same feature transformation to all samples, treating normal and anomalous data uniformly despite their fundamentally asymmetric distributions, compact normals versus diverse anomalies. We instead exploit this natural asymmetry by proposing AVA-DINO, an anomaly-aware vision-language adaptation framework with dual specialized branches for normal and anomalous patterns that adapt frozen DINOv3 visual features. During training on auxiliary data, the two branches are learned jointly with a text-guided routing mechanism and explicit routing regularization that encourages branch specialization. At test time, only the input image and fixed, predefined language descriptions are used to dynamically combine the two branches, enabling an asymmetric activation. This design prevents degenerate uniform routing and allows context-specific feature transformations. Experiments across nine industrial and medical benchmarks demonstrate state-of-the-art performance, achieving 93.5% image-AUROC on MVTec-AD and strong cross-domain generalization to medical imaging without domain-specific fine-tuning. https://github.com/aqeeelmirza/AVA-DINO",
+    "authors": [
+      "Muhammad Aqeel",
+      "Maham Nazir",
+      "Uzair Khan",
+      "Marco Cristani",
+      "Francesco Setti"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12069v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12069v1",
+    "fetched_at": "2026-05-13T10:20:59.146130"
+  },
+  {
+    "id": "2605.11749v1",
+    "title": "Learning Feature Encoder with Synthetic Anomalies for Weakly Supervised Graph Anomaly Detection",
+    "abstract": "Weakly supervised graph anomaly detection aims to unveil unusual graph instances, e.g., nodes, whose behaviors significantly differ from normal ones, given only a limited number of annotated anomalies and abundant unlabeled samples. A major challenge is to learn a meaningful latent feature representation that reduces intra-class variance among normal data while remaining highly sensitive to anomalies. Although recent works have applied self-supervised feature learning for graph anomaly detection, their strategies are not specifically tailored to its unique requirements, motivating our exploration of a more domain-specific approach. In this paper, we introduce a weakly supervised graph anomaly detection method that leverages a feature learning strategy tailored for graph anomalies. Our approach is built upon a multi-task learning scheme that extracts robust feature representations through synthesized anomalies. We generate synthetic anomalies by perturbing the normal graph in various ways and assign a dedicated detection head to each anomaly type, ensuring that learned features are sensitive to potential deviations from normal patterns. Although synthetic anomalies may not perfectly replicate real-world patterns, they provide valuable auxiliary data for effective feature learnin, much like features learned from ImageNet classification transfer to downstream vision tasks. Additionally, we adopt a two-phase learning strategy: an initial warm-up phase using only synthetic samples, followed by a full-training phase integrating both tasks, to balance the influence of synthetic and real data. Extensive experiments on public datasets demonstrate the superior performance of our method over its competitors. Code is available at https://github.com/yj-zhou/SAWGAD.",
+    "authors": [
+      "Yingjie Zhou",
+      "Yuqin Xie",
+      "Fanxing Liu",
+      "Dongjin Song",
+      "Ce Zhu",
+      "Lingqiao Liu"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11749v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11749v1",
+    "fetched_at": "2026-05-13T10:20:59.146162"
+  },
+  {
+    "id": "2605.11723v1",
+    "title": "CaC: Advancing Video Reward Models via Hierarchical Spatiotemporal Concentrating",
+    "abstract": "In this paper, we propose Concentrate and Concentrate (CaC), a coarse-to-fine anomaly reward model based on Vision-Language Models. During inference, it first conducts a global temporal scan to anchor anomalous time windows, then performs fine-grained spatial grounding within the localized interval, and finally derives robust judgments via structured spatiotemporal Chain-of-Thought reasoning. To equip the model with these capabilities, we construct the first large-scale generated video anomaly dataset with per-frame bounding-box annotations, temporal anomaly windows, and fine-grained attribution labels. Building on this dataset, we design a three-stage progressive training paradigm. The model initially learns spatial and temporal anchoring through single- and multi-frame supervised fine-tuning, and then is optimized by a reinforcement learning strategy based on two-turn Group Relative Policy Optimization (GRPO). Beyond conventional accuracy rewards, we introduce Temporal and Spatial IoU rewards to supervise the intermediate localization process, effectively guiding the model toward more grounded and interpretable spatiotemporal reasoning. Extensive experiments demonstrate that CaC can stably concentrate on subtle anomalies, achieving a 25.7% accuracy improvement on fine-grained anomaly benchmarks and, when used as a reward signal, CaC reduces generated-video anomalies by 11.7% while improving overall video quality.",
+    "authors": [
+      "Jiyuan Wang",
+      "Huan Ouyang",
+      "Jiuzhou Lin",
+      "Chunyu Lin",
+      "Dewen Fan",
+      "Boheng Zhang",
+      "Haonan Fan",
+      "Fei Zuo",
+      "Jia Sun",
+      "Huaiqing Wang",
+      "Honglie Wang",
+      "Yiyang Fan",
+      "Zhenlong Yuan",
+      "Zijun Li",
+      "Yongrui Heng",
+      "Guosheng Lin",
+      "Fan Yang",
+      "Tingting Gao"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11723v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11723v1",
+    "fetched_at": "2026-05-13T10:20:59.146200"
+  },
+  {
+    "id": "2605.11287v1",
+    "title": "Beyond Similarity: Temporal Operator Attention for Time Series Analysis",
+    "abstract": "A persistent paradox in time-series forecasting is that structurally simple MLP and linear models often outperform high-capacity Transformers. We argue that this gap arises from a mismatch in the sequence-modeling primitive: while many time-series dynamics are governed by global temporal operators (e.g., filtering and harmonic structure), standard attention forms each output as a convex combination of inputs. This restricts its ability to represent signed and oscillatory transformations that are fundamental to temporal signal processing. We formalize this limitation as a simplex-constrained mixing bottleneck in softmax attention, which becomes especially restrictive for operator-driven time-series tasks. To address this, we propose $\\textbf{Temporal Operator Attention (TOA)}$, a framework that augments attention with explicit, learnable sequence-space operators, enabling direct signed mixing across time while preserving input-dependent adaptivity. To make dense $N \\times N$ operators practical, we introduce Stochastic Operator Regularization, a high-variance dropout mechanism that stabilizes training and prevents trivial memorization. Across forecasting, anomaly detection, and classification benchmarks, TOA consistently improves performance when integrated into standard backbones such as PatchTST and iTransformer, with particularly strong gains in reconstruction-heavy tasks. These results suggest that explicit operator learning is a key ingredient for effective time-series modeling.",
+    "authors": [
+      "Jevon Twitty",
+      "Vinh Pham",
+      "Nitiwith Rotchanarak",
+      "Viresh Pati",
+      "Yubin Kim",
+      "Shihao Yang",
+      "Jiecheng Lu"
+    ],
+    "published": "2026-05-11",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11287v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11287v1",
+    "fetched_at": "2026-05-13T10:20:59.146222"
+  },
+  {
+    "id": "2605.11122v1",
+    "title": "FedSurrogate: Backdoor Defense in Federated Learning via Layer Criticality and Surrogate Replacement",
+    "abstract": "Federated Learning remains highly susceptible to backdoor attacks--malicious clients inject targeted behaviours into the global model. Existing defenses suffer from substantial false-positive rates under realistic non-independent and identically distributed (non-IID) data, incorrectly flagging benign clients and degrading model accuracy even when adversaries are correctly identified. We present FedSurrogate, a novel backdoor defense that addresses this limitation by combining bidirectional gradient alignment filtering with layer-adaptive anomaly detection. FedSurrogate performs selective clustering on security-critical layers identified via directional divergence analysis, concentrating the detection signal on a low-dimensional subspace. A bidirectional soft-filtering stage screens trusted clients for residual contamination while rescuing false positives from suspects, substantially reducing misclassifications under heterogeneous conditions. Rather than removing confirmed malicious updates, FedSurrogate replaces them with downscaled surrogate updates from structurally similar benign clients, preserving gradient diversity while neutralising adversarial influence. Extensive evaluations demonstrate that FedSurrogate maintains false-positive rates below 10% across all datasets and attack types, compared to 31-32% for the nearest comparably effective baseline, while achieving superior main-task accuracy and maintaining attack success rates below 2.1% across all tested datasets and attack types under challenging non-IID settings.",
+    "authors": [
+      "Fatima Z. Abacha",
+      "Sin G. Teo",
+      "Yuanxiang Wu",
+      "Lucas C. Cordeiro",
+      "Mustafa A. Mustafa"
+    ],
+    "published": "2026-05-11",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11122v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11122v1",
+    "fetched_at": "2026-05-13T10:20:59.146241"
+  },
+  {
+    "id": "2605.09469v1",
+    "title": "FinMoji: A Framework for Emoji-driven Sentiment Analysis in Financial Social Media",
+    "abstract": "This paper explores the use of emojis in financial sentiment analysis, focusing on the social media platform StockTwits. Emojis, increasingly prevalent in digital communication, have potential as compact indicators of investor sentiment, which can be critical for predicting market trends. Our study examines whether emojis alone can serve as reliable proxies for financial sentiment and how they compare with traditional text-based analysis. We conduct a series of experiments using logistic regression and transformer models. We further analyze the performance, computational efficiency, and data requirements of emoji-based versus text-based sentiment classification. Using a balanced dataset of about 528,000 emoji-containing StockTwits posts, we find that emoji-only models achieve F1 approximately 0.75, lower than text-emoji combined models, which achieve F1 approximately 0.88, but with far lower computational cost. This is a useful feature in time-sensitive settings such as high-frequency trading. Furthermore, certain emojis and emoji pairs exhibit strong predictive power for market sentiment, demonstrating over 90 percent accuracy in predicting bullish or bearish trends. Finally, our research reveals large statistical differences in emoji usage between financial and general social media contexts, stressing the need for domain-specific sentiment analysis models.",
+    "authors": [
+      "Ahmed Mahrous",
+      "Roberto Di Pietro"
+    ],
+    "published": "2026-05-10",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.09469v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.09469v1",
+    "fetched_at": "2026-05-13T10:21:06.285262"
+  },
+  {
+    "id": "2605.12481v1",
+    "title": "ToolCUA: Towards Optimal GUI-Tool Path Orchestration for Computer Use Agents",
+    "abstract": "Computer Use Agents (CUAs) can act through both atomic GUI actions, such as click and type, and high-level tool calls, such as API-based file operations, but this hybrid action space often leaves them uncertain about when to continue with GUI actions or switch to tools, leading to suboptimal execution paths. This difficulty stems from the scarcity of high-quality interleaved GUI-Tool trajectories, the cost and brittleness of collecting real tool trajectories, and the lack of trajectory-level supervision for GUI-Tool path selection. In this paper, we propose ToolCUA, an end-to-end agent designed to learn optimal GUI-Tool path selection through a staged training paradigm. We first introduce an Interleaved GUI-Tool Trajectory Scaling Pipeline that repurposes abundant static GUI trajectories and synthesizes a grounded tool library, enabling diverse GUI-Tool trajectories without manual engineering or real tool-trajectory collection. We then perform Tool-Bootstrapped GUI RFT, combining warmup SFT with single-turn RL to improve decisions at critical GUI-Tool switching points. Finally, we optimize ToolCUA with Online Agentic RL in a high-fidelity GUI-Tool environment, guided by a Tool-Efficient Path Reward that encourages appropriate tool use and shorter execution paths. Experiments on OSWorld-MCP show that ToolCUA achieves 46.85% accuracy, a relative improvement of approximately 66% over the baseline, establishing a new state of the art among models of comparable scale. It also improves by 3.9% over GUI-only settings, demonstrating effective GUI-Tool orchestration. The results further suggest that training in a hybrid action space is a promising paradigm for real-world digital agents. Open-sourced here: https://x-plug.github.io/ToolCUA/",
+    "authors": [
+      "Xuhao Hu",
+      "Xi Zhang",
+      "Haiyang Xu",
+      "Kyle Qiao",
+      "Jingyi Yang",
+      "Xuanjing Huang",
+      "Jing Shao",
+      "Ming Yan",
+      "Jieping Ye"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12481v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12481v1",
+    "fetched_at": "2026-05-13T10:21:30.536788"
+  },
+  {
+    "id": "2605.12453v1",
+    "title": "Enabling AI-Native Mobility in 6G: A Real-World Dataset for Handover, Beam Management, and Timing Advance",
+    "abstract": "To address the issues of high interruption time and measurement report overhead under user equipment (UE) mobility especially in high speed 5G use cases the use of AI/ML techniques (AI/ML beam management and mobility procedures) have been proposed. These techniques rely heavily on data that are most often simulated for various scenarios and do not accurately reflect real deployment behavior or user traffic patterns. Therefore, there is an utmost need for realistic datasets under various conditions. This work presents a dataset collected from a commercially deployed network across various modes of mobility (pedestrian, bike, car, bus, and train) and at multiple speeds to depict real time UE mobility. When collecting the dataset, we focused primarily on handover (HO) scenarios, with the aim of reducing the HO interruption time and maintaining continuous throughput during and immediately after HO execution. To support this research, the dataset includes timing advance (TA) measurements at various signaling events such as RACH trigger, MAC CE, and PDCCH grant which are typically missing in existing works.   We cover a detailed description of the creation of the dataset; experimental setup, data acquisition, and extraction. We also cover an exploratory analysis of the data, with a primary focus on mobility, beam management, and TA. We discuss multiple use cases in which the proposed dataset can facilitate understanding of the inference of the AI/ML model. One such use case is to train and evaluate various AI/ML models for TA prediction.",
+    "authors": [
+      "Mannam Veera Narayana",
+      "Rohit Singh",
+      "Deepa M. R",
+      "Radha Krishna Ganti"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "eess.SP",
+      "cs.AI",
+      "cs.DB",
+      "cs.LG",
+      "cs.NI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12453v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12453v1",
+    "fetched_at": "2026-05-13T10:21:30.536820"
+  },
+  {
+    "id": "2605.12421v1",
+    "title": "Formalize, Don't Optimize: The Heuristic Trap in LLM-Generated Combinatorial Solvers",
+    "abstract": "Large Language Models (LLMs) struggle to solve complex combinatorial problems through direct reasoning, so recent neuro-symbolic systems increasingly use them to synthesize executable solvers. A central design question is how the LLM should represent the solver, and whether it should also attempt to optimize search. We introduce CP-SynC-XL, a benchmark of 100 combinatorial problems (4,577 instances), and evaluate three solver-construction paradigms: native algorithmic search (Python), constraint modeling through a Python solver API (Python + OR-Tools), and declarative constraint modeling (MiniZinc + OR-Tools). We find a consistent representational divergence: Python + OR-Tools attains the highest correctness across LLMs, while MiniZinc + OR-Tools has lower absolute coverage despite using the same OR-Tools back-end. Native Python is the most likely to return a schema-valid solution that fails verification, whereas solver-backed paths preserve higher conditional fidelity. On the heuristic axis, prompting for search optimization yields only small median speed-ups (1.03-1.12x) and a strongly bimodal effect: many instances slow down, and correctness drops sharply on a long tail of problems. A paired code-level audit traces these regressions to a recurring heuristic trap. Under an efficiency-oriented prompt, the LLM may replace complete search with local approximations (Python), inject unverified bounds (Python + OR-Tools), or add redundant declarative machinery that overwhelms or over-constrains the model (MiniZinc + OR-Tools). These findings support a conservative design principle for LLM-generated combinatorial solvers: use the LLM primarily to formalize variables, constraints, and objectives for verified solvers, and separately check any LLM-authored search optimization before use.",
+    "authors": [
+      "Haoyu Wang",
+      "Yuliang Song",
+      "Tao Li",
+      "Zhiwei Deng",
+      "Yaqing Wang",
+      "Deepak Ramachandran",
+      "Eldan Cohen",
+      "Dan Roth"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12421v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12421v1",
+    "fetched_at": "2026-05-13T10:21:30.536845"
+  },
+  {
+    "id": "2605.12376v1",
+    "title": "ProfiliTable: Profiling-Driven Tabular Data Processing via Agentic Workflows",
+    "abstract": "Table processing-including cleaning, transformation, augmentation, and matching-is a foundational yet error-prone stage in real-world data pipelines. While recent LLM-based approaches show promise for automating such tasks, they often struggle in practice due to ambiguous instructions, complex task structures, and the lack of structured feedback, resulting in syntactically correct but semantically flawed code. To address these challenges, we propose ProfiliTable, an autonomous multi-agent framework centered on dynamic profiling, which constructs and iteratively refines a unified execution context through interactive exploration, knowledge-augmented synthesis, and feedback-driven refinement. ProfiliTable integrates (i) a Profiler that performs ReAct-style data exploration to build semantic understanding, (ii) a Generator that retrieves curated operators to synthesize task-aware code, and (iii) an Evaluator-Summarizer loop that injects execution scores and diagnostic insights to enable closed-loop refinement. Extensive experiments on a diverse benchmark covering 18 tabular task types demonstrate that ProfiliTable consistently outperforms strong baselines, particularly in complex multi-step scenarios. These results highlight the critical role of dynamic profiling in reliably translating ambiguous user intents into robust and governance-compliant table transformations.",
+    "authors": [
+      "Wei Liu",
+      "Yang Gu",
+      "Xi Yan",
+      "Zihan Nan",
+      "Beicheng Xu",
+      "Keyao Ding",
+      "Bin Cui",
+      "Wentao Zhang"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12376v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12376v1",
+    "fetched_at": "2026-05-13T10:21:30.536869"
+  },
+  {
+    "id": "2605.12364v1",
+    "title": "Attacks and Mitigations for Distributed Governance of Agentic AI under Byzantine Adversaries",
+    "abstract": "Agentic AI governance is a critical component of agentic AI infrastructure ensuring that agents follow their owner's communication and interaction policies, and providing protection against attacks from malicious agents. The state-of-the-art solution, SAGA, assumes a logically centralized point of trust, the Provider, which serves as a repository for user and agent information and actively enforces policies. While SAGA provides protection against malicious agents, it remains vulnerable to a malicious Provider that deviates from the protocol, undermining the security of the identity and access control infrastructure. Deployment on both private and public clouds, each susceptible to insider threats, further increases the risk of Provider compromise.   In this work, we analyze the attacks that can be mounted from a compromised Provider, taking into account the different system components and realistic deployments. We identify and execute several concrete attacks with devastating effects: undermining agent attributability, extracting private data, or bypassing access control. We then present three types of solutions for securing the Provider that offer different trade-offs between security and performance. We first present SAGA-BFT, a fully byzantine-resilient architecture that provides the strongest protection, but incurs significant performance degradation, due to the high-cost of byzantine resilient protocols. We then propose SAGA-MON and SAGA-AUD, two novel solutions that leverage lightweight server-side monitoring or client-side auditing to provide protection against most classes of attacks with minimal overhead. Finally, we propose SAGA-HYB, a hybrid architecture that combines byzantine-resilience with monitoring and auditing to trade-off security for performance. We evaluate all the architectures and compare them with SAGA. We discuss which solution is best and under what conditions.",
+    "authors": [
+      "Matthew D. Laws",
+      "Alina Oprea",
+      "Cristina Nita-Rotaru"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.CR",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12364v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12364v1",
+    "fetched_at": "2026-05-13T10:21:30.536886"
+  },
+  {
+    "id": "2605.12294v1",
+    "title": "Executable Agentic Memory for GUI Agent",
+    "abstract": "Modern GUI agents typically rely on a model-centric and step-wise interaction paradigm, where LLMs must re-interpret the UI and re-decide actions at every screen, which is fragile in long-horizon tasks. In this paper, we propose Executable Agentic Memory (EAM), a structured Knowledge Graph (KG) that shifts GUI planning from free-form generation to a robust retrieval-and-execution process. Our approach includes a sample-efficient memory construction pipeline using state-aware DFS and action-group mining to compress multi-step routines. To ensure efficient planning, we introduce a value-guided graph search where a lightweight Q-function model steers Monte Carlo Tree Search (MCTS) over the KG. We theoretically establish bias-consistency for the Q-model and derive sample complexity bounds for path recovery. Empirically, EAM outperforms state-of-the-art baselines like UI-TARS-7B by up to $19.6\\%$ on AndroidWorld, while reducing token costs $6\\times$ relative to GPT-4o. With a $2.8$s average latency, EAM enables reliable, quick, and long-horizon GUI automation.",
+    "authors": [
+      "Zerui Qin",
+      "Sheng Yue",
+      "Xingyuan Hua",
+      "Yongjian Fu",
+      "Ju Ren"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12294v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12294v1",
+    "fetched_at": "2026-05-13T10:21:30.536906"
+  },
+  {
+    "id": "2605.12280v1",
+    "title": "Iterative Audit Convergence in LLM-Managed Multi-Agent Systems: A Case Study in Prompt Engineering Quality Assurance",
+    "abstract": "Prompt specifications for multi-agent large language model (LLM) systems carry data contracts and integration logic across many interdependent files but are rarely subjected to structured-inspection rigor. This paper reports a single-system empirical case study of iterative, agent-driven auditing applied to AEGIS (Autonomous Engineering Governance and Intelligence System), a production seven-lane orchestration pipeline whose prompt-specification surface comprises approximately 7150 lines: 6907 across seven lane PROMPT.md files and a 245-line shared Ticket Contract. Nine sequential audit rounds, executed by Claude sub-agents using a checklist-driven walkthrough adapted from Weinberg and Freedman, surfaced 51 prompt-specification consistency defects, distinct from the 51 STRIDE-categorized adversarial code findings reported in the companion preprint. Per-round counts were 15, 8, 12, 2, 8, 1, 4, 1, and 0. We report a seven-category post-hoc defect taxonomy with explicit coding rules, observed non-monotonic convergence consistent with cascading edits and audit-scope expansion, and an audit protocol distilled from the study, with the final locked checklist released as a reproducibility appendix. Single-file review missed defect classes that were surfaced only by later expanded-scope rounds in this system. The same LLM family authored and audited the specifications; replication with dissimilar models and human reviewers is required before generalization.",
+    "authors": [
+      "Elias Calboreanu"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12280v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12280v1",
+    "fetched_at": "2026-05-13T10:21:30.536919"
+  },
+  {
+    "id": "2605.12240v1",
+    "title": "No Action Without a NOD: A Heterogeneous Multi-Agent Architecture for Reliable Service Agents",
+    "abstract": "Large language model (LLM) agents have increasingly advanced service applications, such as booking flight tickets. However, these service agents suffer from unreliability in long-horizon tasks, as they often produce policy violations, tool hallucinations, and misaligned actions, which greatly impedes their real-world deployment. To address these challenges, we propose NOD (Navigator-Operator-Director), a heterogeneous multi-agent architecture for service agents. Instead of maintaining task state implicitly in dialogue context as in prior work, we externalize a structured Global State to enable explicit task state tracking and consistent decision-making by the Navigator. Besides, we introduce selective external oversight before critical actions, allowing an independent Director agent to verify execution and intervene when necessary. As such, NOD effectively mitigates error propagation and unsafe behavior in long-horizon tasks. Experiments on $τ^2$-Bench demonstrate that NOD achieves higher task success rates and critical action precision over baselines. More importantly, NOD improves the reliability of service agents by reducing policy violations, tool hallucinations, and user-intent misalignment.",
+    "authors": [
+      "Zixu Yang",
+      "Hang Zheng",
+      "Nan Jiang",
+      "Zhiyang Tang",
+      "Situo Zhang",
+      "Xiaobao Wu",
+      "Lu Chen",
+      "Kai Yu"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12240v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12240v1",
+    "fetched_at": "2026-05-13T10:21:30.536943"
+  },
+  {
+    "id": "2605.12239v1",
+    "title": "Harness Engineering as Categorical Architecture",
+    "abstract": "The agent harness, the system layer comprising prompts, tools, memory, and orchestration logic that surrounds the model, has emerged as the central engineering abstraction for LLMbased agents. Yet harness design remains ad hoc, with no formal theory governing composition, preservation of properties under compilation, or systematic comparison across frameworks. We show that the categorical Architecture triple (G, Know, Phi) from the ArchAgents framework provides exactly this formalization. The four pillars of agent externalization (Memory, Skills, Protocols, Harness Engineering) map onto the triple's components: Memory as coalgebraic state, Skills as operad-composed objects, Protocols as syntactic wiring G, and the full Harness as the Architecture itself. Structural guarantees-integrity gates, quality-based escalation, supported convergence checks-are Know-level certificates whose preservation is structural replay: our compiler checks identity and verifier replay, not output-layer correctness or model behavior. We validate this correspondence with a reference implementation featuring compiler functors targeting Swarms, DeerFlow, Ralph, Scion, and LangGraph: the four configuration compilers preserve three named certificate types by identity or replay, and LangGraph preserves the same certificates through its shared per-stage execution path. The LangGraph compiler creates one node per stage using the same per-stage method as the native runtime, providing LangGraph-native observability without reimplementing harness logic. An end-to-end escalation experiment with real LLM agents confirms that the quality-based escalation control path is model-parametric in this two-model, one-task experiment. The result positions categorical architecture as the formal theory behind harness engineering.",
+    "authors": [
+      "Bogdan Banu"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.PL",
+      "cs.AI",
+      "math.CT"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12239v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12239v1",
+    "fetched_at": "2026-05-13T10:21:30.536957"
+  },
+  {
+    "id": "2605.12233v1",
+    "title": "No More, No Less: Task Alignment in Terminal Agents",
+    "abstract": "Terminal agents are increasingly capable of executing complex, long-horizon tasks autonomously from a single user prompt. To do so, they must interpret instructions encountered in the environment (e.g., README files, code comments, stack traces) and determine their relevance to the task. This creates a fundamental challenge: relevant cues must be followed to complete a task, whereas irrelevant or misleading ones must be ignored. Existing benchmarks do not capture this ability. An agent may appear capable by blindly following all instructions, or appear robust by ignoring them altogether. We introduce TAB (Task Alignment Benchmark), a suite of 89 terminal tasks derived from Terminal-Bench 2.1. Each task is intentionally underspecified, with missing information provided as a necessary cue embedded in a natural environmental artifact, alongside a plausible but irrelevant distractor. Solving these tasks requires selectively using the cue while ignoring the distractor. Applying TAB to ten frontier agents reveals a systematic gap between task capability and task alignment. The strongest Terminal-Bench agent achieves high task completion but low task alignment on TAB. Evaluating six prompt-injection defenses further shows that suppressing distractor execution also suppresses the cues required for task completion. These results demonstrate that task-aligned agents require selective use of environmental instructions rather than blanket acceptance or rejection.",
+    "authors": [
+      "Sina Mavali",
+      "David Pape",
+      "Jonathan Evertz",
+      "Samira Abedini",
+      "Devansh Srivastav",
+      "Thorsten Eisenhofer",
+      "Sahar Abdelnabi",
+      "Lea Schönherr"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12233v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12233v1",
+    "fetched_at": "2026-05-13T10:21:30.536980"
+  },
+  {
+    "id": "2605.12159v1",
+    "title": "ALGOGEN: Tool-Generated Verifiable Traces for Reliable Algorithm Visualization",
+    "abstract": "Algorithm Visualization (AV) helps students build mental models by animating algorithm execution states. Recent LLM-based systems such as CODE2VIDEO generate AV videos in an end-to-end manner. However, this paradigm requires the system to simultaneously simulate algorithm flow and satisfy video rendering constraints, such as element layout and color schemes. This complex task induces LLM hallucinations, resulting in reduced execution success rates, element overlap, and inter-frame inconsistencies.   To address these challenges, we propose ALGOGEN, a novel paradigm that decouples algorithm execution from rendering. We first introduce Visualization Trace Algebra (VTA), a monoid over algorithm visual states and operations. The LLM then generates a Python tracker that simulates algorithm flow and outputs VTA-JSON traces, a JSON encoding of VTA. For rendering, we define a Rendering Style Language (RSL) to templatize algorithm layouts. A deterministic renderer then compiles algorithm traces with RSL into Manim, LaTeX/TikZ, or Three.js outputs.   Evaluated on a LeetCode AV benchmark of 200 tasks, ALGOGEN achieves an average success rate improvement of 17.3% compared to end-to-end methods, with 99.8% versus 82.5%. These results demonstrate that our decoupling paradigm effectively mitigates LLM hallucinations in complex AV tasks, providing a more reliable solution for automated generation of high-quality algorithm visualizations. Demo videos and code are available in the project repository.",
+    "authors": [
+      "Kunpeng Liao",
+      "Yuexiao Ma",
+      "Yisheng Lin",
+      "Hualin Zeng",
+      "Xiawu Zheng",
+      "Rongrong Ji"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI",
+      "cs.GR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12159v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12159v1",
+    "fetched_at": "2026-05-13T10:21:30.537002"
+  },
+  {
+    "id": "2605.12154v1",
+    "title": "MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling",
+    "abstract": "Optimization modeling translates real decision-making problems into mathematical optimization models and solver-executable implementations. Although language models are increasingly used to generate optimization formulations and solver code, existing benchmarks are almost entirely text-only. This omits many optimization-modeling tasks that arise in operational practice, where requirements are described in text but instance information is conveyed through visual artifacts such as tables, graphs, maps, schedules, and dashboards. We introduce multimodal optimization modeling, a benchmark setting in which models must construct both a mathematical formulation and executable solver code from a text-and-visual problem specification. To evaluate this setting, we develop a solver-grounded framework that generates structured optimization instances, verifies each with an exact solver, and builds both the model-facing inputs and hidden reference files from the same verified source. We instantiate the framework as MM-OptBench, a benchmark of 780 solver-verified instances spanning 6 optimization families, 26 subcategories, and 3 structural difficulty levels. We evaluate 9 multimodal large language models (MLLMs), including 6 frontier general-purpose models and 3 math-specialized models, with aggregate, family-level, difficulty-level, and failure-mode analyses. The results show that the task remains far from solved: the best two models reach 52.1% and 51.3% pass@1, while on average across the six general-purpose MLLMs, pass@1 is 43.4% on easy instances and 15.9% on hard instances. All three math-specialized MLLMs solve 0/780 instances. Failure attribution shows that errors arise both when extracting instance data from text and visuals and when turning extracted data into solver-correct formulations and code. MM-OptBench provides a testbed for solver-grounded, decision-oriented multimodal intelligence.",
+    "authors": [
+      "Zhong Li",
+      "Qi Huang",
+      "Yuxuan Zhu",
+      "Mohammad Mohammadi Amiri",
+      "Niki van Stein",
+      "Thomas Bäck",
+      "Matthijs van Leeuwen",
+      "Zaiwen Wen",
+      "Lincen Yang"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12154v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12154v1",
+    "fetched_at": "2026-05-13T10:21:30.537027"
+  },
+  {
+    "id": "2605.12129v1",
+    "title": "It's Not the Size: Harness Design Determines Operational Stability in Small Language Models",
+    "abstract": "This paper experimentally analyzes how the level of harness engineering affects the operational performance of small language models (SLMs, 2-3B parameters). Three harness conditions - model-only (raw prompt), minimal-shell (wrapper tags), and a 4-stage pipeline (plan->execute->verify->recover) - are applied to three models (Gemma4 E2B, Qwen3.5:2B, LLaMA 3.2 3B) across 24 tasks, comparing Task Success Rate (TSR) and Valid TSR (VTSR). The pipeline harness achieves TSR=0.952 and VTSR=1.000 on Gemma4 E2B (T1-T5, 21 tasks). A non-monotonic phenomenon - minimal-shell TSR < model-only TSR - is observed in two models. In LLaMA 3.2 3B model-only, seven format violations yield TSR=0.429, revealing scaffold collapse: the model abandons JSON structure under complex format requirements without harness support. Ablation shows planning and recovery each contribute approximately 24.7% of total gain. VCR (Verification Catch Rate)=0.625 across all pipeline runs.",
+    "authors": [
+      "Yong-eun Cho"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.OS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12129v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12129v1",
+    "fetched_at": "2026-05-13T10:21:30.537041"
+  },
+  {
+    "id": "2605.12120v1",
+    "title": "To Whom Do Language Models Align? Measuring Principal Hierarchies Under High-Stakes Competing Demands",
+    "abstract": "Language models deployed in high-stakes professional settings face conflicting demands from users, institutional authorities, and professional norms. How models act when these demands conflict reveals a principal hierarchy -- an implicit ordering over competing stakeholders that determines, for instance, whether a medical AI receiving a cost-reduction directive from a hospital administrator complies at the expense of evidence-based care, or refuses because professional standards require it. Across 7,136 scenarios in legal and medical domains, we test ten frontier models and find that models frequently fail to adhere to professional standards during task execution, such as drafting, when user instructions conflict with those standards -- despite adequately upholding them when users seek advisory guidance. We further find that the hierarchies between user, authority, and professional standards exhibited by these models are unstable across medical and legal contexts and inconsistent across model families. When failing to follow professional standards, the primary failure mechanism is knowledge omission: models that demonstrably possess relevant knowledge produce harmful outputs without surfacing conflicting knowledge. In a particularly troubling instance, we find that a reasoning model recognizes the relevant knowledge in its reasoning trace -- e.g., that a drug has been withdrawn -- yet suppresses this in the user-facing answer and proceeds to recommend the drug under authority pressure anyway. Inconsistent alignment across task framing, domain, and model families suggests that current alignment methods, including published alignment hierarchies, are unlikely to be robust when models are deployed in high-stakes professional settings.",
+    "authors": [
+      "Fangyi Yu",
+      "Nabeel Seedat",
+      "Jonathan Richard Schwarz",
+      "Andrew M. Bean"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12120v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12120v1",
+    "fetched_at": "2026-05-13T10:21:30.537058"
+  },
+  {
+    "id": "2605.12015v1",
+    "title": "SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces",
+    "abstract": "Reusable skills are becoming a common interface for extending large language model agents, packaging procedural guidance with access to files, tools, memory, and execution environments. However, this modularity introduces attack surfaces that are largely missed by existing safety evaluations: even when the user request is benign, task-relevant skill materials or local artifacts can steer an agent toward unsafe actions. We present SkillSafetyBench, a runnable benchmark for evaluating such skill-mediated safety failures. SkillSafetyBench includes 155 adversarial cases across 47 tasks, 6 risk domains, and 30 safety categories, each evaluated with a case-specific rule-based verifier. Experiments with multiple CLI agents and model backends show that localized non-user attacks can consistently induce unsafe behavior, with distinct failure patterns across domains, attack methods, and scaffold-model pairings. Our findings suggest that agent safety depends not only on model-level alignment, but also on how agents interpret skills, trust workflow context, and act through executable environments.",
+    "authors": [
+      "Chang Jin",
+      "An Wang",
+      "Zeming Wei",
+      "Kai Wang",
+      "Biaojie Zeng",
+      "Qiaosheng Zhang",
+      "Chao Yang",
+      "Jingjing Qu",
+      "Xia Hu",
+      "Xingcheng Xu"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12015v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12015v1",
+    "fetched_at": "2026-05-13T10:21:30.537095"
+  },
+  {
+    "id": "2605.09104v1",
+    "title": "Token Economics for LLM Agents: A Dual-View Study from Computing and Economics",
+    "abstract": "As LLM agents evolve, tokens have emerged as the core economic primitives of Agentic AI. However, their exponential consumption introduces severe computational, collaborative, and security bottlenecks. Current surveys remain fragmented across system optimization, architecture design, and trust, lacking a unified framework to evaluate the fundamental trade-off between output quality and economic cost. To bridge this gap, this survey presents the first comprehensive survey of Token Economics. By unifying computer science and economics, we conceptualize tokens as production factors, exchange mediums, and units of account. We synthesize existing literature across a four-dimensional taxonomy: (1) Micro-level (Single Agent): Optimizing budget-constrained factor substitution via neoclassical firm theory. (2) Meso-level (Multi-Agent Systems): Minimizing collaboration friction using transaction cost and principal-agent theories. (3) Macro-level (Agent Ecosystems): Addressing congestion externalities and pricing via mechanism design. (4) Security: Internalizing adversarial threats as endogenous economic constraints. Finally, we outline frontier directions, including differentiable token budgets and dynamic markets, to lay the theoretical foundation for scalable next-generation agent systems.",
+    "authors": [
+      "Yuxi Chen",
+      "Junming Chen",
+      "Chenyu He",
+      "Yiwei Li",
+      "Yicheng Ji",
+      "Yifan Wu",
+      "Dingyu Yang",
+      "Lansong Diao",
+      "Lidan Shou",
+      "Hongliang Zhang",
+      "Huan Li",
+      "Gang Chen"
+    ],
+    "published": "2026-05-09",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.09104v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.09104v1",
+    "fetched_at": "2026-05-13T10:21:34.089043"
+  },
+  {
+    "id": "2605.11581v1",
+    "title": "Ada-MK: Adaptive MegaKernel Optimization via Automated DAG-based Search for LLM Inference",
+    "abstract": "When large language models (LLMs) serve real-time inference in commercial online advertising systems, end-to-end latency must be strictly bounded to the millisecond range. Yet every token generated during the decode phase triggers thousands of kernel launches, and kernel launch overhead alone can account for 14.6% of end-to-end inference time. MegaKernel eliminates launch overhead and inter-operator HBM round-trips by fusing multiple operators into a single persistent kernel. However, existing MegaKernel implementations face a fundamental tension between portability and efficiency on resource-constrained GPUs such as NVIDIA Ada: hand-tuned solutions are tightly coupled to specific architectures and lack portability, while auto-compiled approaches introduce runtime dynamic scheduling whose branch penalties are unacceptable in latency-critical settings. We observe that under a fixed deployment configuration, the optimal execution path of a MegaKernel is uniquely determined, and runtime dynamic decision-making can be entirely hoisted to compile time. Building on this insight, we propose Ada-MK: (1) a three-dimensional shared-memory constraint model combined with K-dimension splitting that reduces peak shared memory usage by 50%; (2) MLIR-based fine-grained DAG offline search that solidifies the optimal execution path, completely eliminating runtime branching; and (3) a heterogeneous hybrid inference engine that embeds MegaKernel as a plugin into TensorRT-LLM, combining high-throughput Prefill with low-latency Decode. On an NVIDIA L20, Ada-MK improves single-batch throughput by up to 23.6% over vanilla TensorRT-LLM and 50.2% over vLLM, achieving positive gains across all tested scenarios--the first industrial deployment of MegaKernel in a commercial online advertising system.",
+    "authors": [
+      "Wenxin Dong",
+      "Mingqing Hu",
+      "Guanghui Yu",
+      "Qiang Fu",
+      "Peng Xu",
+      "Hui Xu",
+      "Yue Xing",
+      "Xuewu Jiao",
+      "Shuanglong Li",
+      "Lin Liu"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.11581v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.11581v1",
+    "fetched_at": "2026-05-13T10:21:37.651189"
+  },
+  {
+    "id": "2605.09366v1",
+    "title": "Towards a Virtual Neuroscientist: Autonomous Neuroimaging Analysis via Multi-Agent Collaboration",
+    "abstract": "Transforming neuroimaging data into clinically actionable biomarkers is a knowledge-intensive and labor-intensive process. Standardized workflows such as fMRIPrep have improved robustness and efficiency, but they are statically configured and cannot reason about downstream objectives, deliberate over alternative strategies, or close the loop between intermediate evidence and subsequent decisions in the way a human researcher would. This lack of closed-loop adaptation often leaves domain experts trapped in a cycle of manual trial-and-error to tune parameters and remediate pipeline failures, severely constraining the scalability of clinical biomarker development. To bridge this gap, we introduce NIAgent, a multi-agent system for autonomous end-to-end neuroimaging analysis. Unlike conventional flat tool-calling agents, NIAgent adopts a code-centric execution paradigm where specialist agents collaboratively synthesize and optimize executable programs over composable domain-specific primitives. This design enables robust, long-horizon workflow construction that adapts dynamically to runtime observations. Furthermore, we propose a hierarchical verification framework for autonomous quality control, integrating cohort-level metric screening with agentic visual inspection to drive evidence-grounded workflow remediation. Experiments on ADHD-200 and ADNI demonstrate that NIAgent outperforms standard workflow-based baselines in predictive performance while exhibiting sophisticated agentic behaviors, including strategy exploration and adaptive refinement.",
+    "authors": [
+      "Keqi Han",
+      "Songlin Zhao",
+      "Yao Su",
+      "Lifang He",
+      "Carl Yang"
+    ],
+    "published": "2026-05-10",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.09366v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.09366v1",
+    "fetched_at": "2026-05-13T10:21:37.651221"
+  }
+]
