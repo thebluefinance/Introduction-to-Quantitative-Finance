@@ -1,0 +1,835 @@
+[
+  {
+    "id": "2605.13407v1",
+    "title": "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction",
+    "abstract": "Predicting cross-sectional stock returns is challenging due to low signal-to-noise ratios and evolving market regimes. Classical factor models offer interpretability but limited flexibility, while deep learning models achieve strong performance yet often underutilize financial priors. We address this gap with PRISM-VQ (PRior-Informed Stock Model with Vector Quantization), a dynamic factor framework that integrates expert prior factors, vector-quantized discrete latent factors learned from cross-sectional structure, and a structure-conditioned Mixture-of-Experts to generate time-varying factor loadings. Vector quantization acts as an information bottleneck that suppresses noise while capturing robust market structure, with discrete codes serving both as latent factors and as routing signals for temporal expert specialization. Experiments on CSI 300 and S&P 500 show consistent improvements in cross-sectional return prediction and portfolio performance over strong baselines while preserving interpretability. Our code is available at https://github.com/finxlab/PRISM-VQ.",
+    "authors": [
+      "Namhyoung Kim",
+      "Jae Wook Song"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.LG",
+      "cs.CE",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13407v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13407v1",
+    "fetched_at": "2026-05-14T10:11:09.832743",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining",
+      "Asset Pricing"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693404"
+  },
+  {
+    "id": "2605.13320v1",
+    "title": "The fine structure of electricity price volatility",
+    "abstract": "We conduct the first rigorous study of electricity price volatility for the full panel of electricity prices across three European generation zones. By interpreting the observed day-ahead prices as local averages of a latent price process governed by a stochastic partial differential equation, we develop estimators of the weekly integrated variance. The inherently infinite dimensional setting introduce several complications that are not relevant in the conventional finite dimensional semimartingale setting, and we spend considerable effort in dealing with these. In particular, we must account for both mean-reversion in prices and semigroup-smoothing in the estimated variance. We provide a detailed decomposition and interpretation of the empirical estimates across three vastly different European generation zones, namely Germany, Norway, and Spain. Our findings indicate that each zone has very different drivers of volatility, and that the impact of generation variables differs considerably. We document that leverage effects appear to be present at first sight, but disappear once we condition on suitable state variables, thereby showing that electricity price volatility does not generally exhibit asymmetric responses to price shocks.",
+    "authors": [
+      "Thomas K. Kloster",
+      "Fred Espen Benth"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "q-fin.GN",
+      "econ.EM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13320v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13320v1",
+    "fetched_at": "2026-05-14T10:11:09.832780",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693427"
+  },
+  {
+    "id": "2605.12977v1",
+    "title": "Enhancing a Risk Model by Adding Transient Statistical Factors",
+    "abstract": "Estimating the covariance of asset returns, i.e., the risk model, is a key component of financial portfolio construction and evaluation. Most risk modeling approaches produce a factor model that decomposes the asset variability into two components: the first attributed to a small number of factors that are common among the assets and the second attributed to the idiosyncratic behavior of each asset. Third-party providers typically provide risk models to investors, and while these models are typically of high quality, they may fail to capture important information, e.g., changing market regimes and transient factors. To overcome these limitations, we propose a systematic method based on maximum likelihood estimation to enhance an existing factor model by both refining the given model and adding new statistical factors. Our approach relies only on the observed sequence of realized returns and on the choice of two hyperparameters: the number of additional factors and the half-life parameter that determines the weights assigned to returns in the log-likelihood objective. Importantly, our methodology applies to the situation where asset returns may be missing, making it suitable for typical equity datasets. We demonstrate our approach on the Barra short-term US risk model, a high-quality risk model used in practice, for a universe of US high-capitalization equities. We show that the proposed extension captures structure in the returns that is missed by the original model.",
+    "authors": [
+      "Alexandros E. Tzikas",
+      "Emmanuel J. Candès",
+      "Trevor Hastie",
+      "Stephen P. Boyd",
+      "Mykel J. Kochenderfer",
+      "Ronald N. Kahn"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "stat.AP",
+      "q-fin.MF",
+      "q-fin.RM",
+      "q-fin.ST",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12977v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12977v1",
+    "fetched_at": "2026-05-14T10:11:09.832813",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693445"
+  },
+  {
+    "id": "2605.12764v1",
+    "title": "Yield Curves Dynamics Using Variational Autoencoders Under No-arbitrage",
+    "abstract": "This paper introduces a physics-informed generative framework that resolves the fundamental conflict between the statistical flexibility of deep learning and the rigorous theoretical constraints of fixed-income modeling. We demonstrate that standard generative models and unconstrained statistical extrapolations suffer from \"manifold collapse\" and severe arbitrage violations when forecasting term structures across diverse macroeconomic regimes. To overcome this, we propose a two-stage architecture. First, a Student-t Conditional Variational Autoencoder with Dynamic Level Injection (CVAEsT+LS) extracts a robust, heavy-tailed term structure manifold, effectively decoupling macroeconomic shape dynamics from absolute base rates. Second, the latent dynamic evolution is governed by a continuous-time Neural Stochastic Differential Equation (SDE) strictly penalized by a No-Arbitrage Partial Differential Equation (PDE). Empirical results across multiple sovereign currencies (USD, GBP, JPY) confirm that our synergistic approach drastically reduces out-of-sample forecasting errors -- achieving an exceptional 6.58 bps Mean Tenor RMSE -- and successfully overcomes the massive parallel drift and zero-lower-bound violations exhibited by the classical HJM model in extreme environments. Furthermore, through phase space vector field analysis, we demonstrate the model's superior capability in unsupervised macroeconomic regime detection and high-quality continuous-time scenario generation. Ultimately, this research provides a highly scalable, mathematically sound evolutionary engine for term structure modeling.",
+    "authors": [
+      "Fusheng Luo",
+      "H'elyette Geman"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.MF",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12764v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12764v1",
+    "fetched_at": "2026-05-14T10:11:09.832835",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693460"
+  },
+  {
+    "id": "2605.12698v1",
+    "title": "Optimal investment and Pension policy in Pay-As-You-Go systems under forward utility and ageing population",
+    "abstract": "This paper investigates optimal investment and pension policies in a Pay-As-You-Go (PAYG) system supplemented by a buffer fund used as an intergenerational risk-sharing mechanism. The social planner's preference criterion is represented by non-zero volatility forward Constant Relative Risk Aversion (CRRA) utilities, and explicitly accounts for both sustainability and adequacy constraints. The optimal policies are characterized in closed form, and an in-depth analysis of the impact of preference sensitivities on the pension scheme is conducted. A detailed numerical analysis is performed to evaluate the sustainability and benefit adequacy of this hybrid PAYG buffer fund arrangement under a range of demographic, financial, and macroeconomic scenarios.   arxiv tells me that there is a \"bad\" character help me",
+    "authors": [
+      "Jennifer Alonso-Garcia",
+      "Caroline Hillairet",
+      "Sarah Kaakai",
+      "Mohamed Mrad"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.MF",
+      "math.OC",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12698v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12698v1",
+    "fetched_at": "2026-05-14T10:11:09.832860",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693471"
+  },
+  {
+    "id": "2605.12250v2",
+    "title": "The P behind Q: Empirical Evidence from Physical Drift in Put-Call Parity",
+    "abstract": "Put-call parity is exact as a terminal-payoff identity, yet its market enforcement is path-dependent and capital-using. This paper examines whether physical-measure drift is reflected in the carry gap, defined as the annualized wedge between option-implied and OIS-implied discounting, using SPX and RUT European index options. I derive a drift-preserving extension of the GBM implementation-risk term that adds an (rμτ) component to the standard (rσ\\sqrtτ) path-risk component. The drift input (μ) is measured by a lagged rolling-OLS trend proxy and should not be interpreted as an observed expected return. Empirically, the drift term improves both in-sample and leave-one-year-out fit, especially for SPX, consistent with drift-sensitive margin burden in parity enforcement rather than a failure of no-arbitrage.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12250v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.12250v2",
+    "fetched_at": "2026-05-14T10:11:09.832879",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693489"
+  },
+  {
+    "id": "2605.12547v1",
+    "title": "The Payment Heterogeneity Index: An Integrated Unsupervised Framework for High-Volume Procurement Oversight and Decision Support",
+    "abstract": "Public procurement is vulnerable to error, fraud and corruption, yet high transaction volumes overwhelm oversight. While research often focuses on tender-stage anomalies, post-award payments remain underexplored. Since labelled datasets are rare and existing methods such as Benford's Law face restrictive assumptions, there is a need for additional interpretable, unsupervised frameworks that augment oversight and simplify management. This paper introduces the Structural Heterogeneity Index (SHI), a composite statistic for one-dimensional samples defined by four components: modality, asymmetry, tail behaviour, and structural dispersion. The Payment Heterogeneity Index (PHI) is its multiplicative instance for post-award payments. PHI combines a tail-behaviour component, sensitive to outliers and point clustering, with a structural-dispersion component summarising payment regime architecture. Structural dispersion is computed via Gaussian Mixture Model (GMM) estimation, integrating within-regime variability, prevalence, and separation from the dominant mode. Applied to UK municipal procurement data, PHI isolates a financially significant cohort (10.1% of high-volume suppliers) whose structural signatures deviate from the population and interact with recurring payment anchors. Permutation and Kolmogorov-Smirnov tests confirm that high-PHI suppliers exhibit statistically significant structural differences. A forensic review by a Certified Fraud Examiner supports the plausibility of the prioritised cases. Comparison shows PHI uniquely identifies regime separation obscured by metrics like the Coefficient of Variation (\\r{ho}=0.310). PHI functions as an effective discovery tool where no confirmed labels exist, offering a transparent, lightweight screening mechanism for post-award oversight.",
+    "authors": [
+      "Kyriakos Christodoulides"
+    ],
+    "published": "2026-05-09",
+    "categories": [
+      "econ.EM",
+      "cs.LG",
+      "q-fin.ST",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12547v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12547v1",
+    "fetched_at": "2026-05-14T10:11:09.833300",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693502"
+  },
+  {
+    "id": "2605.12933v1",
+    "title": "ATD-Trans: A Geographically Grounded Japanese-English Travelogue Translation Dataset",
+    "abstract": "Geographic text, or textual data rich in geographic (geo-) information is a valuable source for various geographic applications, e.g., tourism management. Making such information accessible to speakers of other languages further enhances its utility; thus, accurate machine translation (MT) is essential for equity in multilingual geo-information access. To facilitate in-depth analysis for geographic text, we introduce ATD-Trans, a geographically grounded Japanese--English travelogue translation dataset, which enables evaluation of MT quality at both the overall and geo-entity levels across domestic (within Japan) and overseas regions. Our experiments on existing language models examine two factors: model language focus and geographic regions. The results highlight advantages of Japanese-enhanced models and greater difficulty in translating domestic-region geo-entities mentioned in travel blogs.",
+    "authors": [
+      "Shohei Higashiyama",
+      "Hiroki Ouchi",
+      "Atsushi Fujita",
+      "Masao Utiyama"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12933v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12933v1",
+    "fetched_at": "2026-05-14T10:11:16.607086",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693520"
+  },
+  {
+    "id": "2605.13816v1",
+    "title": "Uncertainty-Driven Anomaly Detection for Psychotic Relapse Using Smartwatches: Forecasting and Multi-Task Learning Fusion",
+    "abstract": "Digital phenotyping enables continuous passive monitoring of behavior and physiology, offering a promising paradigm for early detection of psychotic relapse. In this work, we develop and systematically study two smartwatch-based frameworks for daily relapse detection. The first forecasts cardiac dynamics and flags deviations between predicted and observed features as indicators of abnormality. The second adopts a multi-task formulation that fuses sleep with motion and cardiac-derived signals, learning time-aware embeddings and predicting measurement timing. Both pipelines use Transformer encoders and output a daily anomaly score, derived from predictive uncertainty estimated via an ensemble of multilayer perceptrons to improve robustness to real-world wearable variability. While each framework independently demonstrates strong predictive power, we show that they capture complementary physiological signatures. Consequently, we propose a late-fusion strategy that synergistically combines the anomaly signals from both architectures into a unified decision score. We benchmark our methodology on the 2nd e-Prevention Grand Challenge dataset, where our fused model achieves a 8% relative improvement over the competition-winning baseline. Our results, supported by extensive ablation studies, suggest that the integration of diverse digital phenotypes, cardiac, motion, and sleep, is essential for the high-fidelity detection of psychotic relapse in real-world settings.",
+    "authors": [
+      "Nikolaos Tsalkitzis",
+      "Panagiotis P. Filntisis",
+      "Petros Maragos",
+      "Niki Efthymiou"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13816v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13816v1",
+    "fetched_at": "2026-05-14T10:11:23.215351",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693532"
+  },
+  {
+    "id": "2605.13764v1",
+    "title": "VectorSmuggle: Steganographic Exfiltration in Embedding Stores and a Cryptographic Provenance Defense",
+    "abstract": "Modern retrieval-augmented generation (RAG) systems convert sensitive content into high-dimensional embeddings and store them in vector databases that treat the resulting numerical artifacts as opaque. Major vector-store products do not provide native controls for embedding integrity, ingestion-time distributional anomaly detection, or cryptographic provenance attestation. We show this opens a class of steganographic exfiltration attacks: an attacker with write access to the ingestion pipeline can hide payload data inside embeddings using simple post-embedding perturbations (noise injection, rotation, scaling, offset, fragmentation, and combinations thereof) while preserving the surface-level retrieval behavior the RAG system exposes to legitimate users.   We evaluate these techniques across a synthetic-PII corpus on text-embedding-3-large, four locally hosted open embedding models, a cross-corpus replication on BEIR NFCorpus and a Quora subset (over 26,000 chunks combined), seven vector-store configurations, an adaptive-attacker variant of the detector evaluation, and a paraphrased-query retrieval benchmark. Distribution-shifting perturbations are often caught by simple anomaly detectors; small-angle orthogonal rotation defeats distribution-based detection across every (model, corpus) pair tested. A disjoint-Givens rotation encoder gives a closed-form per-vector capacity ceiling of floor(d/2) * b bits, but real embedding manifolds impose a capacity-detectability trade-off, and the retrieval-preserving operating point sits well below it.   We propose VectorPin, a cryptographic provenance protocol that pins each embedding to its source content and producing model via an Ed25519 signature over a canonical byte representation. Any post-embedding modification breaks signature verification. Embedding-level integrity is a deployable, standardizable control that closes this attack class.",
+    "authors": [
+      "Jascha Wanger"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CR",
+      "cs.IR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13764v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13764v1",
+    "fetched_at": "2026-05-14T10:11:23.215384",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693545"
+  },
+  {
+    "id": "2605.13746v1",
+    "title": "Weakly-Supervised Spatiotemporal Anomaly Detection",
+    "abstract": "In this paper, we explore a weakly supervised method for anomaly detection. Since annotating videos is time-consuming, we only look at weak video-level labels during training. This means that given a video, we know that it is either normal or contains an anomaly, but no further annotations are used to train the network. Features are extracted from video clips that are either normal or anomalous. These features are used to determine anomaly scores for spatiotemporal regions of the clips based on a classifier and the implementation of a multiple instance ranking loss (MIL). We represent both anomalous and normal video clips as positive and negative bags, respectively, to apply MIL. Furthermore, since anomalies are usually localized to a part of a frame rather than the whole frame, we chose to explore temporal as well as spatial anomaly detection. We show our results on the UCF Crime2Local Dataset, which contains spatiotemporal annotations for a portion of the UCF Crime Dataset.",
+    "authors": [
+      "Urvi Gianchandani",
+      "Praveen Tirupattur",
+      "Mubarak Shah"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13746v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13746v1",
+    "fetched_at": "2026-05-14T10:11:23.215407",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693554"
+  },
+  {
+    "id": "2605.13642v1",
+    "title": "Conformal Anomaly Detection in Python: Moving Beyond Heuristic Thresholds with 'nonconform'",
+    "abstract": "Most anomaly detection systems output scores rather than calibrated decisions, leaving practitioners to choose thresholds heuristically and without clear statistical interpretation. Conformal anomaly detection addresses this limitation by converting anomaly scores into calibrated p-values that are valid under the statistical assumption of data exchangeability, with a growing literature extending this idea beyond that setting. We present 'nonconform', a Python package for applying conformal anomaly detection within existing machine-learning workflows, and use it as the basis for an implementation-grounded introduction to the field. The package integrates with 'scikit-learn', 'pyod', and custom anomaly detectors, and provides a unified interface for calibration, p-value generation, and false discovery rate control. It supports several conformalization strategies, ranging from simple split-conformal calibration to more data-efficient and shift-aware extensions. Through a progression from foundational concepts to advanced conformalization strategies, complemented by code examples, the paper connects the statistical ideas behind conformal anomaly detection to their practical use in 'nonconform'. Empirical results demonstrate that the implemented methods enable statistically principled anomaly detection. Together, the package and exposition aim to make core conformal anomaly detection workflows more accessible and reproducible in experimental and production-oriented settings.",
+    "authors": [
+      "Oliver Hennhöfer",
+      "Maximilian Kirsch",
+      "Christine Preisach"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "stat.CO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13642v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13642v1",
+    "fetched_at": "2026-05-14T10:11:23.215429",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693565"
+  },
+  {
+    "id": "2605.13262v1",
+    "title": "Chem-GMNet: A Sphere-Native Geometric Transformer for Molecular Property Prediction",
+    "abstract": "Modern SMILES-based chemical language models obtain strong MoleculeNet performance by treating SMILES as generic text and compensating with multi-million-molecule self-supervised pretraining. We ask: when a domain carries structural priors as rich as chemistry's, does it warrant a domain-native transformer rather than a generic one rescued by scale? We answer affirmatively with \\textbf{GM-Net} (Geometric Measure Network), a transformer family in which every module is replaced by a sphere-native counterpart, and instantiate it as \\textbf{Chem-GMNet}. Three blocks follow: SH-Embedding (tokens as learnable directions on $S^{k-1}$ lifted through a Gegenbauer feature map); DualSKA (a per-head fusion of a linear-time gated Sphere-Flow recurrence whose persistent state we prove is the truncated multipole expansion of the input distribution, and a softmax Sphere-Kernel branch over the same Schoenberg-valid kernel); and SH-FFN (sphere projection $\\to$ Gegenbauer lift $\\to$ moment readout). On canonical DeepChem scaffold splits, against same-shape ChemBERTa-2 baselines under the chemberta3-faithful protocol: (i) random-initialised, Chem-GMNet wins on 7 of 10 MoleculeNet endpoints at $\\sim\\!35\\%$ fewer parameters; (ii) pretrained on the same 10M-SMILES ZINC corpus as ChemBERTa-2 MLM-10M, it matches or beats the public release on 6 of 8 shared endpoints (5/7 excluding a known ClinTox release anomaly). A $(k,L)$ ablation shows that increasing the sphere dimension from $k\\!=\\!8$ to $k\\!=\\!10$ at fixed $L\\!=\\!3$ lowers ESOL RMSE to $0.938$ at scratch, beating pretrained ChemBERTa-2 MLM-10M on this endpoint without any pretraining at all.",
+    "authors": [
+      "Deepak Warrier",
+      "Raja Sekhar Pappala"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.LG",
+      "q-bio.QM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13262v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13262v1",
+    "fetched_at": "2026-05-14T10:11:23.215449",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Transformer"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693576"
+  },
+  {
+    "id": "2605.12916v1",
+    "title": "SHM-Agents: A Generalist-Specialist Integrated Agent System for Structural Health Monitoring",
+    "abstract": "Artificial intelligence is increasingly used to simplify complex tasks. In engineering applications of structural health monitoring (SHM), existing specialized algorithms, while effective, often face high implementation barriers, limited interoperability and complex training procedures. To overcome these challenges, this paper proposes SHM-Agents, a generalist-specialist agent system that integrates the reasoning and planning abilities of large language models with the problem-solving strengths of specialized algorithms. SHM-Agents enables end-to-end execution of single and combined SHM tasks via natural language, supports deep learning pre-training to simplify deployment and allows flexible expansion through a modular design. Experiments on a long-span cable-stayed bridge show that SHM-Agents can accurately and efficiently perform diverse SHM tasks, including data anomaly diagnosis and recovery, signal processing, statistical analysis, modal identification, damage identification, finite element model updating, vehicle load modeling, response calculation, reliability assessment, fatigue estimation and bridge knowledge Q\\&A.",
+    "authors": [
+      "Yuequan Bao",
+      "Xing Li",
+      "Huabin Sun",
+      "Dawei Liu",
+      "Yuxuan Tian",
+      "Haiyang Hu"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.MA",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12916v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12916v1",
+    "fetched_at": "2026-05-14T10:11:23.215477",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693587"
+  },
+  {
+    "id": "2605.13839v1",
+    "title": "Good Agentic Friends Do Not Just Give Verbal Advice: They Can Update Your Weights",
+    "abstract": "Multi-agent LLM systems usually collaborate by exchanging natural-language messages. This interface is simple and interpretable, but it forces each sender's intermediate computation to be serialized into tokens and then reprocessed by the receiver, thereby increasing the generated-token cost, prefill overhead, and KV-cache memory. We study an alternative communication interface: instead of appending a sender's message to the receiver's context, compile the sender's hidden states into a transient, receiver-specific weight perturbation. We introduce TFlow (Thought Flow), a weight-space communication framework for a known and fixed receiver architecture. For each query, frozen role-prompted sender agents process the input, and a learned parameter generator maps their internal activations into low-rank LoRA perturbations targeting the receiver's modules. These perturbations are fused and applied only during the receiver's generation, enabling instance-level adaptation without permanently changing the model or enlarging the receiver's text context. With three Qwen3-4B agents, TFlow improves over a standalone receiver by up to 8.5 accuracy points across five benchmarks while reducing processed tokens by up to 32.69%. Compared with a text-based three-agent baseline, it reduces total processed tokens by up to 83.27% and the wall-clock inference time by up to 4.6$\\times$, while maintaining competitive accuracy on four of five benchmarks. These results suggest that transient low-rank weight perturbations can serve as an executable communication medium for efficient multi-agent LLM collaboration.",
+    "authors": [
+      "Wenrui Bao",
+      "Huan Wang",
+      "Jian Wang",
+      "Zhangyang Wang",
+      "Kai Wang",
+      "Yuzhang Shang"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13839v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13839v1",
+    "fetched_at": "2026-05-14T10:11:53.347960",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693598"
+  },
+  {
+    "id": "2605.13785v1",
+    "title": "Amplification to Synthesis: A Comparative Analysis of Cognitive Operations Before and After Generative AI",
+    "abstract": "Cognitive operations are a rising concern in the geopolitical sphere, a quiet yet rigorous fight for public perception and decision making. While such operations have been extensively studied in the context of bot-driven amplification, the emergence of generative AI introduces a new set of capabilities that may have fundamentally altered how these operations are designed and executed. The possible evolution of cognitive operation via generative AI puts nation states vulnerable without proper mitigation strategies. To address this, we compared behavioral and linguistic coordination patterns in X (formerly Twitter) datasets from the 2016 and 2024 U.S. presidential elections. Utilizing a combined corpus of over 133,000 posts, we applied post-type distribution, semantic clustering, temporal synchrony analysis, and Jaccard-based lexical overlap measures. Findings suggest that the 2024 corpus exhibits a distinct pattern from 2016. Original content rose from 59% to 93% with retweets virtually disappeared; lexical overlap collapsed from a mean Jaccard score of 0.99 to 0.27, with posts converging on the same subject matter expressed in markedly different words; and temporal coordination shifted from pervasive cross-semantic synchrony to narratively concentrated co-occurrence. Taken together, these patterns point toward an operational logic organized around active content generation and narrative-specific targeting - characteristics consistent with generative AI involvement. These findings offer an empirical baseline for future research investigating generative AI's role in the cognitive operation pipeline, and as a practical reference point for security practitioners developing detection frameworks calibrated to the post-generative AI threat environment.",
+    "authors": [
+      "Liz Cho",
+      "Dongwook Yoon"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CY",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13785v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13785v1",
+    "fetched_at": "2026-05-14T10:11:53.347991",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693609"
+  },
+  {
+    "id": "2605.13647v1",
+    "title": "FlowCompile: An Optimizing Compiler for Structured LLM Workflows",
+    "abstract": "Structured LLM workflows, where specialized LLM sub-agents execute according to a predefined graph, have become a powerful abstraction for solving complex tasks. Optimizing such workflows, i.e., selecting configurations for each sub-agent to balance accuracy and latency, is challenging due to the combinatorial design space over model choices, reasoning budgets, and workflow structures. Existing cost-aware methods largely treat workflow optimization as a routing problem, selecting a configuration at inference time for each query according to the accuracy-latency objective used during training. We argue that structured LLM workflows can also be optimized from a compilation perspective: before deployment, the system can globally explore the workflow design space and construct a reusable set of workflow-level configurations spanning diverse accuracy-latency trade-offs. Drawing inspiration from machine learning compilers, we introduce FlowCompile, a structured LLM workflow compiler that performs compile-time design space exploration to identify a high-quality, reusable trade-off set. FlowCompile decomposes a workflow into sub-agents, profiles each sub-agent under diverse configurations, and composes these measurements through a structure-aware proxy to estimate workflow-level accuracy and latency. It then identifies diverse high-quality configurations in a single compile-time pass, without retraining or online adaptation. Experiments across diverse workflows and challenging benchmarks show that FlowCompile consistently outperforms heuristically optimized workflow configurations and routing-based baselines, delivering up to 6.4x speedup. The compiled configuration set further serves as a reusable optimization artifact, enabling flexible deployment under varying runtime preferences and supporting downstream selection or routing.",
+    "authors": [
+      "Junyan Li",
+      "Zhang-Wei Hong",
+      "Maohao Shen",
+      "Yang Zhang",
+      "Chuang Gan"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13647v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13647v1",
+    "fetched_at": "2026-05-14T10:11:53.348017",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693619"
+  },
+  {
+    "id": "2605.13625v1",
+    "title": "How to Interpret Agent Behavior",
+    "abstract": "Autonomous agents such as Claude Code and Codex now operate for hours or even days. Understanding their runtime behavior has become critical for downstream tasks such as diagnosing inefficiencies, fixing bugs, and ensuring better oversight. A primary way to gain this understanding is analyzing the reasoning trajectories and execution traces these agents generate. Yet such data remains in unstructured natural-language form, making it difficult for humans to interpret at scale. We introduce ACT*ONOMY (a combination of Action and Taxonomy), a taxonomy for describing and analyzing agent behavior at runtime. ACT*ONOMY has two components: (1) the taxonomy itself, developed through Grounded Theory and structured as a three-level hierarchy of 10 actions, 46 subactions, and 120 leaf categories; and (2) an open repository that hosts the living taxonomy, provides an automated analysis pipeline that applies it to agent trajectories analysis, and defines an extension protocol for customization and growth. Our experiments show that ACTONOMY can compare behavioral profiles across agents and characterize a single agent's behavior across diverse trajectories, surfacing patterns indicative of failure modes. By providing a shared vocabulary, ACT*ONOMY helps researchers, agent designers, and end users interpret agent behavior more consistently, enabling better oversight and control.",
+    "authors": [
+      "Jie Gao",
+      "Kaiser Sun",
+      "Jen-tse Huang",
+      "Katherine Van Koevering",
+      "Sijie Ji",
+      "Heyuan Huang",
+      "Weiyan Shi",
+      "Zhuoran Lu",
+      "Ziang Xiao",
+      "Daniel Khashabi",
+      "Mark Dredze"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13625v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13625v1",
+    "fetched_at": "2026-05-14T10:11:53.348052",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693629"
+  },
+  {
+    "id": "2605.13618v1",
+    "title": "OpenAaaS: An Open Agent-as-a-Service Framework for Distributed Materials-Informatics Research",
+    "abstract": "The Materials Genome Initiative catalyzed the proliferation of centralized platforms--SaaS, PaaS, and IaaS--that aggregate computational and experimental resources for accelerated materials discovery. In parallel, breakthroughs in large language models (LLMs) and autonomous agents have created powerful new reasoning capabilities for scientific research. Yet a critical \"last mile\" problem remains: while we possess world-class models and vast repositories of materials data, we lack the organizational infrastructure to compose these capabilities securely across institutional boundaries. The development of structural and functional materials for harsh service environments--high-temperature alloys, radiation resistant steels, corrosion-resistant coatings--remains characterized by long-term iteration, mechanistic complexity, and high domain expertise--demands that exceed both monolithic agent systems and traditional centralized platforms. To address this gap we propose OpenAaaS, an open-source hierarchical and distributed Agent-as-a-Service framework that enables organized multi-agent collaboration for intelligent materials design. OpenAaaS is built on a single foundational principle: code flows, data stays still. A Master Agent plans and decomposes complex research tasks without requiring direct access to subordinate agents' managed data and computational resources. Sub-agents, deployed as near-data execution nodes, retain full sovereignty over local datasets, proprietary algorithms, and specialized hardware. This architecture guarantees that raw data never leaves its domain of origin while enabling cross-scale, cross-domain secure integration of previously isolated materials intelligence silos. We validate the framework through two representative case studies: (i) AlphaAgent, an evidence-grounded materials literature analysis executor that achieves 4.66/5.0 on deep analytical questions against single-pass RAG baselines; and (ii) an ultra-large-scale hexa-high-entropy alloy descriptor database service that demonstrates secure near-data execution and domain-specific scientific workflows under strict data-sovereignty constraints. OpenAaaS establishes a principled pathway toward \"organized research\" via agent collectives, offering a scalable foundation for next-generation materials intelligent design platforms. All source code is available at https://github.com/Wolido/OpenAaaS.",
+    "authors": [
+      "Peng Kang",
+      "Bixuan Li",
+      "Xiaoya Huang",
+      "Shuo Shi",
+      "Weiqiao Zhou",
+      "Zhen Li",
+      "Yu Liu",
+      "Lei Zheng"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13618v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13618v1",
+    "fetched_at": "2026-05-14T10:11:53.348083",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693641"
+  },
+  {
+    "id": "2605.13527v1",
+    "title": "MMSkills: Towards Multimodal Skills for General Visual Agents",
+    "abstract": "Reusable skills have become a core substrate for improving agent capabilities, yet most existing skill packages encode reusable behavior primarily as textual prompts, executable code, or learned routines. For visual agents, however, procedural knowledge is inherently multimodal: reuse depends not only on what operation to perform, but also on recognizing the relevant state, interpreting visual evidence of progress or failure, and deciding what to do next. We formalize this requirement as multimodal procedural knowledge and address three practical challenges: (I) what a multimodal skill package should contain; (II) where such packages can be derived from public interaction experience; and (III) how agents can consult multimodal evidence at inference time without excessive image context or over-anchoring to reference screenshots. We introduce MMSkills, a framework for representing, generating, and using reusable multimodal procedures for runtime visual decision making. Each MMSkill is a compact, state-conditioned package that couples a textual procedure with runtime state cards and multi-view keyframes. To construct these packages, we develop an agentic trajectory-to-skill Generator that transforms public non-evaluation trajectories into reusable multimodal skills through workflow grouping, procedure induction, visual grounding, and meta-skill-guided auditing. To use them, we introduce a branch-loaded multimodal skill agent: selected state cards and keyframes are inspected in a temporary branch, aligned with the live environment, and distilled into structured guidance for the main agent. Experiments across GUI and game-based visual-agent benchmarks show that MMSkills consistently improve both frontier and smaller multimodal agents, suggesting that external multimodal procedural knowledge complements model-internal priors.",
+    "authors": [
+      "Kangning Zhang",
+      "Shuai Shao",
+      "Qingyao Li",
+      "Jianghao Lin",
+      "Lingyue Fu",
+      "Shijian Wang",
+      "Wenxiang Jiao",
+      "Yuan Lu",
+      "Weiwen Liu",
+      "Weinan Zhang",
+      "Yong Yu"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13527v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13527v1",
+    "fetched_at": "2026-05-14T10:11:53.348120",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693654"
+  },
+  {
+    "id": "2605.13414v1",
+    "title": "TRIAGE: Evaluating Prospective Metacognitive Control in LLMs under Resource Constraints",
+    "abstract": "Deploying language models as autonomous agents requires more than per-task accuracy: when an agent faces a queue of problems under a finite token budget, it must decide which to attempt, in what order, and how much compute to commit to each, all before any execution feedback is available. This is the prospective form of metacognitive control studied for decades in human cognition, yet whether language models possess it remains untested. We introduce TRIAGE, an evaluation framework in which a model receives a task pool and a token budget calibrated to its own baseline cost, and commits to a single ordered plan that jointly encodes selection, sequencing, and per-problem allocation. Plans are scored against an oracle with full knowledge of the model's solvability and cost on each problem, yielding a triage efficiency ratio on a common scale. We evaluate frontier and open-source models, with and without reasoning enabled, across competition mathematics, graduate-level science, code generation, and expert multidisciplinary knowledge, and find that current language models exhibit substantial gaps in prospective metacognitive control, revealing a previously unmeasured capability dimension with direct implications for resource-efficient agent deployment.",
+    "authors": [
+      "Zabir Al Nazi",
+      "Shubhashis Roy Dipta"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13414v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13414v1",
+    "fetched_at": "2026-05-14T10:11:53.348139",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693663"
+  },
+  {
+    "id": "2605.13391v1",
+    "title": "RS-Claw: Progressive Active Tool Exploration via Hierarchical Skill Trees for Remote Sensing Agents",
+    "abstract": "The rise of multi-modal large language models (MLLMs) is shifting remote sensing (RS) intelligence from \"see\" to \"action\", as OpenClaw-style frameworks enable agents to autonomously operate massive RS image-processing tools for complex tasks. Existing RS agents adopt a passive selection paradigm for tool invocation, relying on either full tool registration (Flat) or retrieval-augmented generation (RAG). However, in the massive and multi-source heterogeneous RS tool ecosystem, such passive mechanisms struggle to dynamically balance \"context load\" and \"toolset completeness\" throughout task reasoning, thus exhibiting inherent limitations: full tool registration triggers context space deficits during long-horizon tasks, whereas RAG retrieval may omit critical tools in essential steps. To overcome these bottlenecks, this paper redefines tool selection by arguing that the agent should act as an active explorer within the tool space. Based on this perspective, we propose RS-Claw, a novel RS agent architecture. By leveraging Skill encapsulation technology at the tool end, this architecture hierarchically structures tool descriptions, enabling the agent to execute on-demand sequential decision-making: initially selecting relevant skill branches by reading only tool summaries, then dynamically loading detailed descriptions, and ultimately achieving precise invocation. This active paradigm not only significantly liberates the agent's context space but also effectively ensures the accurate hit rate of critical tools during long-horizon reasoning. Systematic experiments on the Earth-Bench benchmark demonstrate that RS-Claw's active exploration mechanism effectively filters semantic noise and substantially frees up reasoning space, achieving an input token compression ratio of up to 86%, and comprehensively outperforming existing Flat and RAG baselines across complex reasoning evaluations.",
+    "authors": [
+      "Liangtian Liu",
+      "Zeyuan Wang",
+      "Ziyu Li",
+      "Kai Ouyang",
+      "Zichao Tang",
+      "Chengfu Liu",
+      "Haifeng Li",
+      "Hanwen Yu",
+      "Wentao Yang",
+      "Cheng Yang",
+      "Dongyang Hou"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13391v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13391v1",
+    "fetched_at": "2026-05-14T10:11:53.348175",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693673"
+  },
+  {
+    "id": "2605.13360v1",
+    "title": "Building Interactive Real-Time Agents with Asynchronous I/O and Speculative Tool Calling",
+    "abstract": "There is a growing demand for agentic AI technologies for a range of downstream applications like customer service and personal assistants. For applications where the agent needs to interact with a person, real-time low-latency responsiveness is required; for example, with voice-controlled applications, under 1 second of latency is typically required for the interaction to feel seamless. However, if we want the LLM to reason and execute an agentic workflow with tool calling, this can add can add several seconds or more of latency, which is prohibitive for real-time latency-sensitive applications. In our work, we aim to enable real-time interaction even for agents with complex multi-turn tool calling. We propose Asynchronous I/O, which decouples the core agent reason-and-act thread from waiting for additional information from either the user or environment, thereby allowing for overlapping agentic processing while waiting on external delays. We also propose Speculative Tool Calling as a method to manage task execution when the agent is still unsure if it has received the full information or if additional user information may later be provided. For strong cloud models, our method can be applied out-of-the-box to existing real-time cloud APIs, providing 1.3-1.7$\\times$ speedups with minor accuracy loss. To enable real-time interaction with small edge-scale models, we also present a clock-based training methodology that adapts the model to handle streaming inputs and asynchronous responses, and demonstrate a synthetic data generation strategy for SFT. Altogether, this approach provides 1.6-2.2$\\times$ speedups with the Qwen2.5-3B-Instruct and Llama-3.2-3B-Instruct models across multiple tool calling benchmarks.",
+    "authors": [
+      "Coleman Hooper",
+      "Minwoo Kang",
+      "Suhong Moon",
+      "Nicholas Lee",
+      "Eric Wen",
+      "John Wawrzynek",
+      "Michael W. Mahoney",
+      "Yakun Sophia Shao",
+      "Amir Gholami",
+      "Kurt Keutzer"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13360v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13360v1",
+    "fetched_at": "2026-05-14T10:11:53.348208",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693683"
+  },
+  {
+    "id": "2605.13335v1",
+    "title": "Ego2World: Compiling Egocentric Cooking Videos into Executable Worlds for Belief-State Planning",
+    "abstract": "Embodied agents in household environments must plan under partial observation: they need to remember objects, track state changes, and recover when actions fail. Existing benchmarks only partially test this ability. Egocentric video datasets capture realistic human activities but remain passive, while interactive simulators support execution but rely on synthetic scenes and hand-crafted dynamics, introducing a sim-to-real gap and often assuming fully observable state. We introduce Ego2World, an executable benchmark that turns egocentric cooking videos into executable symbolic worlds governed by graph-transition rules. Built on HD-EPIC, Ego2World derives reusable transition rules from video annotations and executes them in a hidden symbolic world graph. During evaluation, the simulator maintains the hidden world graph, while the agent plans over its own partial belief graph using only local observations and execution feedback. This separation forces agents to update memory and replan without observing the true world state. Experiments show that action-overlap scores overestimate physical-state success, and that persistent belief memory improves task completion while reducing repeated visual exploration -- suggesting that belief maintenance should be a first-class target of embodied-agent evaluation.",
+    "authors": [
+      "Qinchuan Cheng",
+      "Zhantao Gong",
+      "Pengzhan Sun",
+      "Angela Yao",
+      "Xulei Yang",
+      "Shijie Li"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13335v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13335v1",
+    "fetched_at": "2026-05-14T10:11:53.348235",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693693"
+  },
+  {
+    "id": "2605.13328v1",
+    "title": "What Limits Vision-and-Language Navigation ?",
+    "abstract": "Vision-and-Language Navigation (VLN) is a cornerstone of embodied intelligence. However, current agents often suffer from significant performance degradation when transitioning from simulation to real-world deployment, primarily due to perceptual instability (e.g., lighting variations and motion blur) and under-specified instructions. While existing methods attempt to bridge this gap by scaling up model size and training data, we argue that the bottleneck lies in the lack of robust spatial grounding and cross-domain priors. In this paper, we propose StereoNav, a robust Vision-Language-Action framework designed to enhance real-world navigation consistency. To address the inherent gap between synthetic training and physical execution, we introduce Target-Location Priors as a persistent bridge. These priors provide stable visual guidance that remains invariant across domains, effectively grounding the agent even when instructions are vague. Furthermore, to mitigate visual disturbances like motion blur and illumination shifts, StereoNav leverages stereo vision to construct a unified representation of semantics and geometry, enabling precise action prediction through enhanced depth awareness. Extensive experiments on R2R-CE and RxR-CE demonstrate that StereoNav achieves state-of-the-art egocentric RGB performance, with SR and SPL scores of 81.1% and 68.3%, and 67.5% and 52.0%, respectively, while using significantly fewer parameters and less training data than prior scaling-based approaches. More importantly, real-world robotic deployments confirm that StereoNav substantially improves navigation reliability in complex, unstructured environments. Project page: https://yunheng-wang.github.io/stereonav-public.github.io.",
+    "authors": [
+      "Yunheng Wang",
+      "Yuetong Fang",
+      "Taowen Wang",
+      "Lusong Li",
+      "Kun Liu",
+      "Junzhe Xu",
+      "Zizhao Yuan",
+      "Yixiao Feng",
+      "Jiaxi Zhang",
+      "Wei Lu",
+      "Zecui Zeng",
+      "Renjing Xu"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13328v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13328v1",
+    "fetched_at": "2026-05-14T10:11:53.348273",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693703"
+  },
+  {
+    "id": "2605.13276v1",
+    "title": "D-VLA: A High-Concurrency Distributed Asynchronous Reinforcement Learning Framework for Vision-Language-Action Models",
+    "abstract": "The rapid evolution of Embodied AI has enabled Vision-Language-Action (VLA) models to excel in multimodal perception and task execution. However, applying Reinforcement Learning (RL) to these massive models in large-scale distributed environments faces severe systemic bottlenecks, primarily due to the resource conflict between high-fidelity physical simulation and the intensive VRAM/bandwidth demands of deep learning. This conflict often leaves overall throughput constrained by execution-phase inefficiencies. To address these challenges, we propose D-VLA, a high-concurrency, low-latency distributed RL framework for large-scale embodied foundation models. D-VLA introduces \"Plane Decoupling,\" physically isolating high-frequency training data from low-frequency weight control to eliminate interference between simulation and optimization. We further design a four-thread asynchronous \"Swimlane\" pipeline, enabling full parallel overlap of sampling, inference, gradient computation, and parameter distribution. Additionally, a dual-pool VRAM management model and topology-aware replication resolve memory fragmentation and optimize communication efficiency. Experiments on benchmarks like LIBERO show that D-VLA significantly outperforms mainstream RL frameworks in throughput and sampling efficiency for billion-parameter VLA models. In trillion-parameter scalability tests, our framework maintains exceptional stability and linear speedup, providing a robust system for high-performance general-purpose embodied agents.",
+    "authors": [
+      "Yucheng Guo",
+      "Yongjian Guo",
+      "Zhong Guan",
+      "Wen Huang",
+      "Haoran Sun",
+      "Haodong Yue",
+      "Xiaolong Xiang",
+      "Shuai Di",
+      "Zhen Sun",
+      "Luqiao Wang",
+      "Junwu Xiong",
+      "Yicheng Gong"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13276v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13276v1",
+    "fetched_at": "2026-05-14T10:11:53.348310",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693713"
+  },
+  {
+    "id": "2605.13228v1",
+    "title": "ReTool-Video: Recursive Tool-Using Video Agents with Meta-Augmented Tool Grounding",
+    "abstract": "Video understanding requires active evidence seeking, motivating tool-augmented video agents for temporal reasoning, cross-modal understanding, and complex question answering. Existing video agents have improved video reasoning with retrieval, memory, frame inspection, and verifier tools, but they still face two limitations: (1) a coarse tool space that lacks fine-grained operations for compositional reasoning; and (2) a flat action space that forces high-level video intents into primitive executable tool calls. In this paper, we address these challenges with two complementary designs. First, we construct a MetaAug-Video Tool Library (MVTL), an extensible tool library with 134 registered tools, including 26 base tools for general multimodal signal processing and 108 meta tools for filtering, aggregation, reranking, formatting, and other intermediate-result operations. MVTL supports dual-level access to both structured video information and raw modal evidence, enabling diverse video reasoning scenarios. Second, we propose ReTool-Video, a recursive tool-using method that grounds high-level video intents into executable tool chains. In ReTool-Video, matched actions are executed directly, while unmatched intents are delegated to a resolver for parameter repair, tool substitution, or decomposition. This allows abstract actions such as temporal merging, cross-modal verification, or repeated-event aggregation to be progressively translated into concrete multimodal operations at runtime. Experiments on MVBench, MLVU, and Video-MME w/o sub. show that ReTool-Video consistently outperforms strong baselines. Further analysis demonstrates that recursive grounding and fine-grained meta tools improve the stability and effectiveness of complex video understanding.",
+    "authors": [
+      "Xiao Liu",
+      "Nayu Liu",
+      "Junnan Zhu",
+      "Ruirui Chen",
+      "Guohui Xiang",
+      "Changjian Wang",
+      "Kaiwen Wei",
+      "Rongzhen Li",
+      "Jiang Zhong"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13228v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13228v1",
+    "fetched_at": "2026-05-14T10:11:53.348342",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693723"
+  },
+  {
+    "id": "2605.13221v1",
+    "title": "An Agentic AI Framework with Large Language Models and Chain-of-Thought for UAV-Assisted Logistics Scheduling with Mobile Edge Computing",
+    "abstract": "In cloud manufacturing, unmanned aerial vehicles (UAVs) can support both product collection and mobile edge computing (MEC). This joint operation forms a hybrid scheduling problem, where physical logistics decisions are coupled with computational task scheduling. In this paper, UAVs collect finished products from manufacturing stations and transport them back to a central depot. Meanwhile, computational tasks generated by industrial sensor devices at these stations are processed locally, at UAVs, or offloaded via UAVs to the cloud. This coupling makes the problem challenging. A UAV can provide MEC services only during its service window at a station, so routing decisions directly determine when UAV-assisted offloading is available. Routing decisions also affect the UAV energy budget and the availability of onboard computing and communication resources for computational task execution under task deadline constraints. To address this, we propose an agentic-AI-assisted optimization framework with two components. First, we develop an agentic AI that combines large language models, retrieval-augmented generation, and chain-of-thought reasoning to translate user input into an interpretable mathematical formulation for the hybrid scheduling problem. Second, we design a hierarchical deep reinforcement learning approach based on proximal policy optimization (PPO), where the upper layer learns UAV routing and the lower layer optimizes per-slot task execution and resource allocation. Simulation results show that the proposed framework yields more consistent formulations, while the hierarchical PPO achieves full product collection in 99.6% of the last 500 episodes and maintains a 100% deadline satisfaction rate, with more stable performance than the advantage actor-critic approach.",
+    "authors": [
+      "Hanwen Zhang",
+      "Dusit Niyato",
+      "Wei Zhang",
+      "Xin Lou",
+      "Malcolm Yoke Hean Low"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13221v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13221v1",
+    "fetched_at": "2026-05-14T10:11:53.348366",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693733"
+  },
+  {
+    "id": "2605.13167v1",
+    "title": "GeoBuildBench: A Benchmark for Interactive and Executable Geometry Construction from Natural Language",
+    "abstract": "We introduce GeoBuildBench, a benchmark designed to evaluate whether large language models and multimodal agents can ground informal natural-language plane geometry problems into executable geometric constructions. Unlike existing geometry benchmarks that focus on answer correctness or static diagram interpretation, GeoBuildBench treats geometry diagram as an interactive construction task: given a textual problem, an agent must generate a domain-specific language (DSL) program to produce a diagram satisfying explicitly specified geometric objects and verifiable constraints. The benchmark features 489 Chinese textbook-style problems, curated through automated filtering and human validation to ensure text-complete, constructible problem specifications. We evaluate several state-of-the-art multimodal models in a bounded iterative setting and show that, despite reasonable success rates, models frequently exhibit structural hallucinations, missing objects, and failures to satisfy geometric constraints, with limited ability to exploit visual and constraint-based feedback for self-correction. These results highlight geometry construction as a rigorous testbed for grounded, executable reasoning beyond textual or visual plausibility. Our benchmark and code are publicly available.",
+    "authors": [
+      "Jinwoong Kim",
+      "Rui Yang",
+      "Huishuai Zhang"
+    ],
+    "published": "2026-05-13",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.13167v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.13167v1",
+    "fetched_at": "2026-05-14T10:11:53.348392",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693743"
+  },
+  {
+    "id": "2605.12653v1",
+    "title": "Plan Before You Trade: Inference-Time Optimization for RL Trading Agents",
+    "abstract": "Reinforcement learning agents for portfolio management are typically trained and deployed as static policies, with no mechanism for using price forecasts at inference time. We propose $\\text{FPILOT}$ (**Fin**ancial **P**lugin **I**nference-time **L**earning for **O**ptimal **T**rading), a plugin inference-time optimization framework inspired by Model Predictive Control (MPC). Our key structural insight is that future prices mostly do not depend on one agent's portfolio allocation, so a suitable predictive model can produce a multi-step price trajectory without iterative action-conditioned rollouts as in typical reinforcement learning. At each decision step, we use the forecaster's predicted price trajectory to construct an allocation-based imagined return objective, and optimize the policy at inference-time before executing one step of the trade. Our framework is compatible with any pre-trained agent and adapts the policy to the forecaster's predictions without any retraining. Evaluated across five policy learning algorithms on the TradeMaster DJ30 benchmark, $\\text{FPILOT}$ produces consistent improvements in total return and return-based risk-adjusted metrics (Sharpe, Sortino, Calmar), with stochastic policies benefiting more than deterministic ones. Further, using synthetic forecasts at calibrated quality levels, we show that gains consistently improve with forecaster quality, suggesting that our performance will improve based on advances in financial forecasting.",
+    "authors": [
+      "Eun Go",
+      "Rohan Deb",
+      "Arindam Banerjee"
+    ],
+    "published": "2026-05-12",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.12653v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.12653v1",
+    "fetched_at": "2026-05-14T10:13:45.910884",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-05-14T10:14:05.693754"
+  }
+]
