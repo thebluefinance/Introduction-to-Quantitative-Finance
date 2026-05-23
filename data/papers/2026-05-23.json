@@ -1,0 +1,558 @@
+[
+  {
+    "id": "2605.22792v1",
+    "title": "From Arbitrage Removal to Density Extraction: A Model-Free Framework for Short-Dated Options",
+    "abstract": "We study risk-neutral density extraction from short-dated option chains. As expiry approaches, option premia decline and bid--ask spreads can be large relative to prices, making mid quotes particularly uninformative. Stale or asynchronous quotes may also generate potential static arbitrages, rendering standard procedures infeasible or unstable. We develop a model-free pipeline that treats bid-ask quotes as the primitive market constraint. The pipeline consists of two steps. First, a procedure called ``Arbitrage Removal Iterative Executable Strategy'' (ARIES) filters executable static arbitrage at quoted bid and ask prices under market-depth constraints. Second, the ``Smooth Entropic Density EXtraction'' (SEDEx) then recovers the density through a criterion leveraging smoothness and entropy under bid-ask constraints. We test the pipeline on synthetic Heston panels and short-dated SPX option data, sampled from a few hours to one week before expiry. Computation is fast and returns robust densities across various market conditions, including scheduled macroeconomic announcements. As an empirical application, we use the recovered densities to construct short dated implied-volatility smiles.",
+    "authors": [
+      "Aaron Wizman",
+      "Gabriel Turinici",
+      "Gregory Merran"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22792v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22792v1",
+    "fetched_at": "2026-05-23T09:47:11.590475"
+  },
+  {
+    "id": "2605.22667v1",
+    "title": "Imperfect Commitment in Maximal Extractable Value Auctions",
+    "abstract": "Ethereum block builders run sealed auctions among searchers, but nothing in the protocol forces a builder to honor the auction outcome after observing submitted bundles. This paper studies the commitment problem. We model a builder who defects with probability $\\varepsilon$ and, upon defection, replicates a type-specific fraction $γ(τ)$ of the winning MEV opportunity. Searchers anticipate this behavior and choose between a risky first-price bid and a safe deterrence bid that makes frontrunning unprofitable. The resulting equilibrium is piecewise, with the cost of imperfect commitment depending jointly on replicability and competition. Using the \\texttt{libmev} dataset, we estimate $γ(τ)$ from right-tail bribe plateaus and decompose observed auction revenue against the surplus a defecting builder could capture. The results show sharp heterogeneity across MEV types: sandwich opportunities are already highly competitive, while naked arbitrage and liquidations leave substantially more surplus exposed to builder defection. Credible MEV auctions, therefore, require not only an auction format, but also constraints on the builder's ability to use observed bid and payload information ex post.",
+    "authors": [
+      "Aleksei Adadurov",
+      "Sergey Barseghyan",
+      "Anton Chtepine",
+      "Antero Eloranta",
+      "Andrei Sebyakin",
+      "Arsenii Valitov"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.GT",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22667v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22667v1",
+    "fetched_at": "2026-05-23T09:47:11.590529"
+  },
+  {
+    "id": "2605.22427v1",
+    "title": "Faster Monotone Implied Volatility Solver",
+    "abstract": "We present ThiopheneIV, a Black-Scholes implied-volatility solver with a monotone core and explicit production guards. Prices are first reduced to Jäckel's out-of-the-money normalisation and inverted through a tail-stable logarithmic price equation. The solver starts from the non-iterative Choi-Huh-Su L3 lower-bound seed and applies three Euler-Chebyshev corrections. In exact arithmetic, the seed is below the admissible root and the Euler-Chebyshev map increases monotonically without overshooting; the proof is included. The implementation then adds the floating-point machinery needed in practice: parity normalisation, microscopic Bachelier-limit handling, saturated-price treatment, finite-update checks, fallback seeds, and an optional Jäckel-Newton polish. Against the highly accurate expanded Jäckel reference price, ThiopheneIV is faster than a Java port of Jäckel's Let's Be Rational while keeping regular-grid errors close. ThiopheneIV+ adds one final Jäckel-Newton correction for systems that need closer agreement with that expanded reference price. The broader lesson is that a convergence proof gives a clean core, but robust production inversion still depends on boundary handling and on the pricing objective one chooses to match.",
+    "authors": [
+      "Fabien Le Floc'h"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22427v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22427v1",
+    "fetched_at": "2026-05-23T09:47:11.590551"
+  },
+  {
+    "id": "2605.22215v1",
+    "title": "A Generative Adversarial Graph Neural Network for Synthetic Time Series Data",
+    "abstract": "Generating synthetic data for financial time series poses challenges, especially considering their non-stationary nature. Traditional statistical time series models normally assume weak stationarity. However, this assumption can constrain their effectiveness. Deep learning models, particularly Generative Adversarial Networks (GANs), have exhibited considerable potential in emulating complex probability distributions. GANs employ a generator-discriminator framework, where the generator creates data samples, while the discriminator distinguishes real from generated data. In this research, we introduce the Sig-Graph GAN model, which integrates the time-series signature, offering a structured summary of its temporal evolution; the Long Short-Term Memory network, capturing its inherent autoregressive structure; and Graph Neural Networks (GNNs), leveraging geometric patterns within the time-series data. To employ GNNs optimally, we use the visibility graph algorithm to derive a graph-based representation of the underlying time series. Numerical evaluations demonstrate that the Sig-Graph GAN model outperforms baseline methods in replicating the distribution of logarithmic returns across different stock exchanges. The integration of the graph structure with the autoregressive component effectively captures both geometric and temporal patterns embedded in time-series data. This research advances the field of GAN models for time series by introducing a model capable of leveraging both autoregressive properties and geometric structures for synthetic data generation.",
+    "authors": [
+      "Marco Gregnanin",
+      "Johannes De Smedt",
+      "Giorgio Gnecco",
+      "Maurizio Parton"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.CE",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22215v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22215v1",
+    "fetched_at": "2026-05-23T09:47:11.590576"
+  },
+  {
+    "id": "2605.21759v1",
+    "title": "An optimal transport foundation for a class of dynamically consistent risk measures",
+    "abstract": "We study a class of dynamically consistent risk measures that robustify a time-homogeneous Markovian reference model by allowing for distributional uncertainty in its transition laws. We start from one-step convex risk evaluations in which ambiguity is captured by penalized worst-case expectations over alternative transition laws. Imposing time consistency then yields a convex monotone semigroup on bounded continuous payoff functions, and this semigroup represents the associated dynamic risk measure. The semigroup is uniquely characterized by its risk generator. Under a lower bound on the family of penalties in terms of suitable optimal transport costs relative to the reference laws, we identify the generator on smooth test functions. For optimal transport bounds with linear small-time scaling, this produces a first-order, drift-type correction given by a convex Hamiltonian acting on the gradient. Under martingale transport constraints and a different scaling, however, the leading correction is genuinely of second order and is described by a convex monotone functional acting on the Hessian. We illustrate both regimes for Wasserstein and martingale Wasserstein penalizations and derive explicit formulas via convex conjugates of the underlying transport costs. The associated dynamic risk measures admit stochastic control representations in which the control acts on the drift in the first-order case and on the volatility in the second-order case.",
+    "authors": [
+      "Sven Fuhrmann",
+      "Michael Kupper",
+      "Max Nendel"
+    ],
+    "published": "2026-05-20",
+    "categories": [
+      "q-fin.MF",
+      "math.OC",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.21759v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.21759v1",
+    "fetched_at": "2026-05-23T09:47:11.590598"
+  },
+  {
+    "id": "2605.21696v1",
+    "title": "What Does Deep Hedging Actually Learn? Delta Corrections, Regime Fragility, and Symbolic Distillation",
+    "abstract": "This paper studies empirical deep hedging for S&P 500 index options under a local downside-shortfall reward. It moves beyond performance comparison by asking what the learned hedge does, when it fails, and whether it can be made auditable. TD3 agents are compared with a daily-updated Black-Scholes delta hedge on the same option episodes. In walk-forward tests from 2015 to 2023, the agents usually learn a systematic delta haircut relative to Black-Scholes. The correction is explained by spot-implied-volatility co-movement and often improves accumulated reward and terminal downside variance, but it is regime-fragile: 2022 exposes losses in adverse daily states, while 2023 shows that underhedging can raise ordinary variance when option P&L is spot-dominated and the volatility channel is unusually weak. Symbolic regression distills the neural policies into compact formulas that can be traded out of sample; these formulas preserve much of the reward, downside-variance, and CVaR advantage over Black-Scholes, and sometimes sharpen it, but inherit the same fragility in difficult regimes.",
+    "authors": [
+      "Kirill Zernikov"
+    ],
+    "published": "2026-05-20",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.CP",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.21696v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.21696v1",
+    "fetched_at": "2026-05-23T09:47:11.590618"
+  },
+  {
+    "id": "2605.20137v2",
+    "title": "A Three-Variable Benchmark for Post-GFC Covered Interest Parity Deviations",
+    "abstract": "This paper proposes a public daily-frequency benchmark for post-GFC government-bond CIP deviations. Although CIP deviations are observed daily, the literature lacks a canonical benchmark for daily regressions comparable to standard factor models in asset pricing. Using G10 plus KRW currency-tenor panels, I show that three lagged public state variables-NFCI, the nominal broad U.S. dollar index, and the Treasury 10-year minus 2-year slope-deliver strong in-sample and leave-one-year-out performance. Cointegration, quarter-end, and aggregation-difference diagnostics suggest that the benchmark captures a persistent background component rather than short-maturity quarter-end spikes or spurious level correlation.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-05-19",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.20137v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.20137v2",
+    "fetched_at": "2026-05-23T09:47:11.590761"
+  },
+  {
+    "id": "2605.22779v1",
+    "title": "FAME: Failure-Aware Mixture-of-Experts for Message-Level Log Anomaly Detection",
+    "abstract": "Production systems generate millions of log lines daily, yet most anomaly detectors operate at the session or window-level, flagging groups of lines rather than identifying the specific message responsible. This coarse granularity forces operators to inspect many routine lines per alert. Message-level detection offers finer granularity, but remains challenging. A single event template may correspond to both normal and anomalous messages, failures arise from heterogeneous subsystems, and line-level labeling at scale is impractical. Although large language models (LLMs) can reason over log semantics, applying them to every line is too costly for continuous monitoring. We present FAME (Failure-Aware Mixture-of-Experts), a label-efficient message-level mixture-of-experts framework that uses an LLM only once offline. We annotate at most K labeled lines per template to derive binary normal/anomaly indicators and representative examples. The LLM proposes a partition of templates into failure domains, and a certification step validates the proposal before training. FAME trains a lightweight router and domain experts that run on-premise and output anomaly predictions and failure-domain labels. On BGL, FAME achieves F1 = 98.16 at K = 100 reducing annotation effort by 76x and detects 86.3% of anomalies from unseen EventIDs. On Thunderbird, FAME reaches F1 = 99.95 with perfect recall.",
+    "authors": [
+      "Huanchi Wang",
+      "Zihang Huang",
+      "Yifang Tian",
+      "Kristina Dzeparoska",
+      "Hans-Arno Jacobsen",
+      "Alberto Leon-Garcia"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22779v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22779v1",
+    "fetched_at": "2026-05-23T09:47:24.718291"
+  },
+  {
+    "id": "2605.22749v1",
+    "title": "Cyber-Physical Anomaly Detection in IoT-Enabled Smart Grids Using Machine Learning and Metaheuristic Feature Optimization",
+    "abstract": "Modern smart grids rely on dense measurement infrastructures, communication links, and intelligent field devices. Although this improves supervision and control, it also increases vulnerability to cyber-physical disruptions. Operators must distinguish physical incidents, such as faults or line disturbances, from malicious actions, such as false data injection or unauthorized command execution. This chapter investigates this problem using the well-known MSU/ORNL Power System Attack Dataset. The proposed method combines machine learning with genetic-algorithm-based feature selection. The objective is twofold: to classify attack and natural events accurately, and to determine whether a reduced set of physically informative PMU/IED measurements can support reliable detection. Several baseline models are evaluated, including logistic regression, RBF-SVM, XGBoost, Random Forest, and Extra Trees. The results show that tree-based ensemble models are the most effective for the considered dataset, with Extra Trees providing the strongest full-feature baseline. After feature selection, the GA + Extra Trees model reduces the clean PMU feature space from 112 attributes to an average of 27.4 attributes over five runs, while increasing macro-F1 from 0.9118 to 0.9212 and ROC-AUC from 0.9791 to 0.9837. These results indicate that many synchronized electrical measurements are redundant. A compact subset of phasor-based features can still provide accurate and interpretable anomaly detection in smart grids.",
+    "authors": [
+      "Adis Alihodžić",
+      "Eva Tuba",
+      "Milan Tuba"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22749v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22749v1",
+    "fetched_at": "2026-05-23T09:47:24.718324"
+  },
+  {
+    "id": "2605.22457v1",
+    "title": "KAPPS: A knowledge-based CPPS Architecture for the Circular Factory",
+    "abstract": "While linear manufacturing relies on homogeneous materials and predefined process sequences, circular manufacturing reintroduces used products with heterogeneous and uncertain conditions. This shift demands manufacturing systems capable of handling variable product states, dynamically reconfigurable processes, and the integration of human and machine knowledge. Conventional manufacturing IT architectures, designed for stable structures and deterministic execution, are unable to meet these requirements, as they cannot adequately represent and manage the uniqueness of individual components at runtime. Following a design science methodology for developing a Cyber Physical Production System for circular manufacturing, we derive 14 requirements from five complementary perspectives. Based on these requirements, we design KAPPS, a knowledge-based architecture that uses an ontology-grounded knowledge graph as a unifying data backbone, combined with a semantic interface layer to enable consistent data and information integration, reasoning, and communication across heterogeneous systems and services, turning the knowledge graph from an integration layer into the factories authoritative write-time state. KAPPS incorporates modules for constraint enforcement and event-driven planning, enabling incremental adaptation of execution plans under uncertainty and human-machine knowledge exchange. The applicability of KAPPS is demonstrated through two implemented use cases: (i) Anomaly detection and learning through knowledge graph mediated services and (ii) runtime constraint enforcement in a modular conveyor system. Subsequently, the architecture is evaluated against the 14 requirements (ed. abstract shortened)",
+    "authors": [
+      "Etienne Hoffmann",
+      "Jan-Felix Klein",
+      "Sören Weindel",
+      "Max Goebels",
+      "Sebastian Behrendt",
+      "Daniel Hernández",
+      "Ratan Bahadur Thapa",
+      "Jürgen Fleischer",
+      "Kai Furmans",
+      "Steffen Staab"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22457v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22457v1",
+    "fetched_at": "2026-05-23T09:47:24.718359"
+  },
+  {
+    "id": "2605.22112v1",
+    "title": "Self-Supervised ConvLSTM for Fermi Large Area Telescope Transient Detection",
+    "abstract": "We present a framework for detecting transient gamma-ray phenomena in a controlled environment by combining end-to-end simulations of the Fermi-LAT sky with self-supervised spatio-temporal deep learning. We generate a ten-year synthetic Universe with gtobssim and process the simulated events into daily all-sky maps of counts and exposure, obtaining a time-ordered sequence that mirrors the structure of Fermi-LAT observations. To model the nominal evolution of the sky, we employ a Convolutional Long Short-Term Memory (ConvLSTM) network that operates directly on map sequences, preserving spatial locality while learning temporal dependencies. The model is trained to reconstruct expected emission, and departures from the learned baseline are quantified through pixel-wise mean-squared residual maps. We then define statistically motivated anomaly criteria by estimating per-pixel thresholds from the residual distribution on the training set, and we enforce spatial coherence via local filtering to suppress isolated fluctuations. The ConvLSTM is then deployed as trained predictor on Fermi-LAT daily maps, where the sky can depart from the nominal behavior because of genuine astrophysical variability and instrumental non-stationarities. The resulting pipeline flags localized, time-dependent excesses consistent with high-variable sources or transient events (e.g., flares or GRBs) and provides a benchmark for evaluating anomaly-detection strategies on long-duration, Fermi-LAT-like datasets.",
+    "authors": [
+      "Alberto Garinei",
+      "Stefano Speziali",
+      "Alessandro Vispa",
+      "Andrea Marini",
+      "Sara Cutini",
+      "Emanuele Piccioni",
+      "Marcello Marconi",
+      "Francesco Longo",
+      "Matteo Martini",
+      "Francesca Fallucchi",
+      "Romeo Giuliano",
+      "Ernesto William De Luca",
+      "Umberto Di Matteo",
+      "Sabino Meola"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "astro-ph.HE",
+      "astro-ph.IM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22112v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22112v1",
+    "fetched_at": "2026-05-23T09:47:24.718401"
+  },
+  {
+    "id": "2605.21726v1",
+    "title": "Probabilistic Attribution For Large Language Models",
+    "abstract": "The generative nature of Large Language Models (LLMs) is reflected in the conditional probabilities they compute to sample each response token given the previous tokens. These probabilities encode the distributional structure that the model learns in training and exploits in inference. In this work, we use these probabilities to situate LLMs within the mathematical theory of stochastic processes. We use this framework to design a model-agnostic probabilistic token attribution measure, using Bayes rule to invert the next-token log-probabilities so as to capture the models internal representation of the distribution over token sequences. The representation is independent of the models computational structure. This representation yields the conditional probability of the response given the prompt, and of the response given the prompt with a token marginalized away. Our attribution score is the log of the ratio of these probabilities. We further compute the entropies of a single prompts token distributions, conditioned on the remaining context. The interplay between entropy and attribution score sheds light on LLM behavior. We evaluate 8 models across 7 prompts and investigate anomalies, token sensitivity, response stability, model stability, and training convergence, thereby improving interpretability and guiding users to focus on uncertain or unstable parts of the generation.",
+    "authors": [
+      "Shilpika Shilpika",
+      "Carlo Graziani",
+      "Bethany Lusch",
+      "Venkatram Vishwanath",
+      "Michael E. Papka"
+    ],
+    "published": "2026-05-20",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.21726v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.21726v1",
+    "fetched_at": "2026-05-23T09:47:24.718426"
+  },
+  {
+    "id": "2605.21707v1",
+    "title": "Zero-shot adaptation to order book dynamics",
+    "abstract": "We describe an adaptive market-making architecture that preserves the analytical structure of the Avellaneda--Stoikov framework while introducing a successor measure-style adaptation mechanism. In our paper we keep Avellaneda--Stoikov fast Hamilton--Jacobi--Bellman structure and make it adaptive to changing market regimes and trading objectives. The central idea is to separate market dynamics from the trading objective. The market state determines a low-dimensional set of Avellaneda--Stoikov parameters, while recent realized rewards determine a low-dimensional objective vector. The HJB forward map then converts this objective into optimal bid and ask quotes through a scalarization of future reward features.",
+    "authors": [
+      "Arip Asadulaev"
+    ],
+    "published": "2026-05-20",
+    "categories": [
+      "cs.CE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.21707v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.21707v1",
+    "fetched_at": "2026-05-23T09:47:47.845017"
+  },
+  {
+    "id": "2605.22675v1",
+    "title": "Self-Policy Distillation via Capability-Selective Subspace Projection",
+    "abstract": "Self-distillation bootstraps large language models (LLMs) by training on their own generations. However, existing methods either rely on external signals to curate self-generated outputs (e.g., correctness filtering, execution feedback, and reward search), which are costly and unavailable for the best-performing frontier models, or skip curation entirely and train on all raw outputs, an approach that is often domain-specific and hard to generalize. Both also share a deeper weakness that self-generated outputs entangle task-relevant capability with others, such as stylistic patterns, formatting artifacts, and model-specific errors, diluting the signal for the specific capability one aims to improve. In this paper, we propose Self-Policy Distillation (SPD), which achieves generalizable, capability selective without any external signal. Specifically, SPD extracts a low-rank capability subspace from the model's own gradients on correctness-defining tokens, projects key-value (KV) activations into this subspace during self-generation, and fine-tunes on the resulting raw outputs with standard next-token prediction loss. Through extensive experiments across code generation, mathematical reasoning, and multiple-choice QA, we show that SPD achieves up to 13% improvement over state-of-the-art self-distillation methods without external signals and up to 16% improvement over pre-trained baselines. Notably, SPD demonstrates superior generalizability, achieving 15% better performance under out-of-domain generalization settings.",
+    "authors": [
+      "Guangya Hao",
+      "Yitong Shang",
+      "Yunbo Long",
+      "Zhuokai Zhao",
+      "Hanxue Liang"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22675v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22675v1",
+    "fetched_at": "2026-05-23T09:47:54.388711"
+  },
+  {
+    "id": "2605.22662v1",
+    "title": "Claw AI Lab: An Autonomous Multi-Agent Research Team",
+    "abstract": "We present Claw AI Lab, a lab-native autonomous research platform that advances automated research from a hidden prompt-to-paper pipeline into an interactive AI laboratory. Rather than centering the system around a single agent or a fixed serial workflow, we allow users to instantiate a full research team from one prompt, with customizable roles, collaborative workflows, real-time monitoring, artifact inspection, and rollback/resume control through a unified dashboard. The platform also supports distinct research modes for exploration, multi-agent discussion, and reproduction, making autonomous research substantially more steerable and laboratory-like in practice. A key practical contribution of Claw AI Lab lies in its Claw-Code Harness, which connects local codebases, datasets, and checkpoints to runnable experiments and feeds execution artifacts back into the research loop. As a result, the harness improves not only execution integration, but also experimental completion and result integrity: experiments are easier to inspect, iterate on, and faithfully transfer into final papers, reducing common failure modes such as partial runs and malformed result reporting. In our internal evaluation on five AI research case studies, using AutoResearchClaw as the baseline, Claw AI Lab is consistently preferred by AI expert judges on idea novelty, experiment completeness, and paper presentation quality. We view Claw AI Lab as an early step toward a new paradigm: autonomous research as usable, interactive, and reliability-aware scientific infrastructure.",
+    "authors": [
+      "Fan Wu",
+      "Cheng Chen",
+      "Zhenshan Tan",
+      "Taiyu Zhang",
+      "Xinzhen Xu",
+      "Yanyu Qian",
+      "Dingcheng Gao",
+      "Lanyun Zhu",
+      "Qi Zhu",
+      "Yi Tan",
+      "Deyi Ji",
+      "Guosheng Lin",
+      "Tianrun Chen",
+      "Deheng Ye",
+      "Fayao Liu"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22662v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22662v1",
+    "fetched_at": "2026-05-23T09:47:54.388755"
+  },
+  {
+    "id": "2605.22613v1",
+    "title": "Evolutionary Multi-Task Optimization for LLM-Guided Program Discovery",
+    "abstract": "Recent LLM-guided evolutionary search methods have shown that iterative program mutation can discover strong algorithms, but they typically optimize each task independently, even when related tasks share reusable structure. We introduce Evolutionary Multi-Task Optimization (EMO) for LLM-guided program discovery, and propose EMO-STA (Shared-Then-Adapt), a two-stage framework that first evolves a shared archive of executable programs across a task family and then adapts selected shared candidates to each target task. Within EMO-STA, we explore multiple adaptation strategies, including warm-starting from the shared archive, adapting the best average shared program, and adapting the shared program that performs best on each target task. Across eight task families spanning continuous optimization, geometric construction, modeling, and algorithmic optimization, EMO-STA improves over matched-compute single-task evolution in most settings, with STA Best-Local providing the strongest in-distribution adaptation and STA Best-Shared yielding robust transfer to unseen tasks. Compute-allocation experiments show that allocating a substantial fraction of the family-level budget to shared evolution is consistently beneficial, with roughly balanced shared and adaptation budgets often being optimal. Beyond compute efficiency, we show that shared evolution can mitigate overfitting in low-evidence settings (e.g. few training data), including ARC tasks and time-series feature engineering, by favoring programs that generalize across all tasks rather than exploiting task-specific brittle artifacts.",
+    "authors": [
+      "Halil Alperen Gozeten",
+      "Xuechen Zhang",
+      "Emrullah Ildiz",
+      "Ege Onur Taga",
+      "Tara Javidi",
+      "Samet Oymak"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22613v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22613v1",
+    "fetched_at": "2026-05-23T09:47:54.388781"
+  },
+  {
+    "id": "2605.22566v1",
+    "title": "GraphFlow: A Graph-Based Workflow Management for Efficient LLM-Agent Serving",
+    "abstract": "Large Language Model (LLM)-based agents demonstrate strong reasoning and execution capabilities on complex tasks when guided by structured instructions, commonly referred to as workflows. However, existing workflow-assisted agent serving systems typically rely on predefined templates and shallow matching mechanisms, which limit their ability to capture deep semantic relationships and generalize to previously unseen tasks. To address these limitations, we propose a new workflow management paradigm that represents workflows using a unified graph, termed wGraph, where each node corresponds to an atomic operation. wGraph serves as a shared substrate from which task-specific workflows are dynamically instantiated. Building on wGraph primitives, we introduce GraphFlow, a system that efficiently integrates workflows into agent serving through two key designs. First, adaptive workflow generation dynamically constructs workflows from wGraph based on task semantics and constraint requirements. Second, workflow state management exploits wGraph structure to efficiently manage Key-Value (KV) caches, reducing redundant computation during agent serving. Extensive experiments across five benchmark datasets show that GraphFlow consistently outperforms state-of-the-art methods, yielding an average performance improvement of approximately 4.95 percentage points, while achieving an approximately 4$\\times$ reduction in memory footprint.",
+    "authors": [
+      "Ao Li",
+      "Shangpeng Yang",
+      "Fahao Chen",
+      "Tianheng Xu",
+      "Peng Li",
+      "Zhou Su"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22566v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22566v1",
+    "fetched_at": "2026-05-23T09:47:54.388807"
+  },
+  {
+    "id": "2605.22564v1",
+    "title": "SynAE: A Framework for Measuring the Quality of Synthetic Data for Tool-Calling Agent Evaluations",
+    "abstract": "Today, tool-calling agents are commonly evaluated or tested on static datasets of execution traces, including input commands, agent responses, and associated tool calls. However, internal production datasets are often insufficient or unusable for testing; for example, they may contain sensitive or proprietary data, or they may be too sparse to support comprehensive testing (especially pre-deployment). In these settings, practitioners are increasingly replacing or augmenting real datasets with synthetic ones for evaluation purposes. A key challenge is quantifying the relation between these synthetic datasets and the real data. We introduce SynAE, an evaluation framework for assessing how well synthetic benchmarks for multi-turn, tool-calling agents replicate and augment the characteristics of real data trajectories. SynAE assesses the validity, fidelity, and diversity of synthetic data across four metric categories: (i) task instructions and intermediate responses, (ii) tool calls, (iii) final outputs, and (iv) downstream evaluation. We evaluate SynAE using recent agent benchmarks and test common synthetic data failure modes via realistic and controlled generation schemes. SynAE detects fine-grained variations in data validity, fidelity and diversity, and shows that no single metric is sufficient to fully characterize synthetic data quality, motivating a multi-axis evaluation of synthetic data for agent testing. A demo of SynAE is available at https://synae-2026-synae-demo.static.hf.space/index.html, with code at https://github.com/wsqwsq/SynAE.",
+    "authors": [
+      "Shuaiqi Wang",
+      "Aadyaa Maddi",
+      "Zinan Lin",
+      "Giulia Fanti"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.CL",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22564v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22564v1",
+    "fetched_at": "2026-05-23T09:47:54.388831"
+  },
+  {
+    "id": "2605.22498v1",
+    "title": "The Neural Compiler: Program-to-Network Translation for Hybrid Scientific Machine Learning",
+    "abstract": "Scientific machine learning often requires combining known physics with unknown parameters or correction terms learned from data. Existing approaches either ignore known structure, encode it as a soft penalty, or require hand-written PyTorch code for each equation. We present The Neural Compiler, a system that translates programs written in a first-order Scheme-like expression language into frozen, differentiable PyTorch modules. These modules match the source program to floating-point precision and provide gradients through autograd. In hybrid models, the compiled module encodes known physics exactly while learned components model the unknown remainder. We evaluate the compiler across six experiment domains: Feynman physics equations, Lotka-Volterra dynamics, a damped pendulum, a one-dimensional heat equation, three-dimensional vector mechanics, and compositional generalization. Compiled modules match hand-coded PyTorch implementations numerically for single equations, showing no accuracy loss from compilation. With only 1 to 4 trainable parameters, compiled models recover physical constants to less than 1 percent error in most cases, while standard PINN baselines with more than 8500 parameters show 7 to 93 percent error. Compiled modules also compose with zero error, while neural approximations can accumulate large errors in deep composition chains. The main value of the compiler is not improved accuracy over hand-coded equations, but systematic composability: it generates correct, differentiable modules from symbolic specifications without rewriting each equation by hand. The system supports 51 primitive operations, including vector and matrix algebra, enabling PDE discretizations and hybrid scientific models. This string-in, module-out interface also provides a natural target for large language models that translate scientific descriptions into executable differentiable modules.",
+    "authors": [
+      "Lucas Sheneman"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.SC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22498v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22498v1",
+    "fetched_at": "2026-05-23T09:47:54.388848"
+  },
+  {
+    "id": "2605.22463v1",
+    "title": "Reinforcement learning for ion shuttling on trapped-ion quantum computers",
+    "abstract": "Scalable trapped-ion quantum computing is commonly realized with modular chips that feature distinct zones with specific functionalities, such as storage, state preparation, and gate execution. To execute a quantum circuit, the ions must be transported between these zones. This process is called ion shuttling. To achieve reliable computation results, the shuttling process must be optimized. However, as the number of ions increases, this becomes a high-dimensional optimization problem where optimal solutions cannot be computed efficiently. We demonstrate, to the best of our knowledge, the first use of reinforcement learning (RL) for the optimization of ion shuttling. RL is well-suited for such scenarios, as it enables learning a strategy through direct interaction with the problem. We show that our RL approach outperforms current state-of-the-art heuristic techniques, yielding a reduction in shuttling operations of up to 36.3 %. Furthermore, we show that our method is easily applicable to various chip architectures. Our approach offers a versatile method to study shuttling efficiency during chip design and, therefore, a highly relevant tool for future, more complex architectures.",
+    "authors": [
+      "Maximilian Schier",
+      "Lea Richtmann",
+      "Christian Staufenbiel",
+      "Tobias Schmale",
+      "Daniel Borcherding",
+      "Michèle Heurs",
+      "Bodo Rosenhahn"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22463v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22463v1",
+    "fetched_at": "2026-05-23T09:47:54.388879"
+  },
+  {
+    "id": "2605.22448v1",
+    "title": "S2ED: From Story to Executable Descriptions for Consistency-Aware Story Illustration",
+    "abstract": "Multi-frame story illustration requires long-horizon coherence beyond single-image text-to-image generation, including narrative decomposition and persistent character identity, layout, and affect across frames. We propose Story-to-Executable Descriptions (S2ED), a training-free, model-agnostic, prompt-layer framework that converts a full story into a sequence of explicit, editable executable descriptions for more consistent rendering. S2ED coordinates three agents to segment the narrative, ground canonical character attributes, and enrich spatial and affective cues, enabling interpretable prompt-carried state propagation and local edits to repair drift without retraining the generator. Experiments on Flintstones and Shakoo Maku show that S2ED improves sequence-level consistency and character fidelity over strong prompting, large-model planning, and a reference training-based method, under both automatic metrics and human judgments. We also deploy S2ED in an end-to-end story-to-storybook system for children's illustrated stories, with a supplementary video.",
+    "authors": [
+      "Sijing Yin",
+      "Jiamou Liu",
+      "Xiao Tang",
+      "Yaser Shakib",
+      "Qian Liu"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22448v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22448v1",
+    "fetched_at": "2026-05-23T09:47:54.388936"
+  },
+  {
+    "id": "2605.22446v1",
+    "title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts",
+    "abstract": "While large vision-language-action (VLA) models and generative world models (WM) have advanced long-horizon embodied intelligence, their practical deployment remains challenged by uncertainty in learning-based action generation. Low-quality actions may cause physical failures during execution or lead to misleading world-model rollouts with redundant rendering costs. To address this issue, we propose Pre-VLA, a unified runtime verification architecture that performs preemptive action validity assessment before physical execution or world-model imagination. Pre-VLA leverages an efficient multimodal backbone with modality-aware pooling and a lightweight dual-branch head to predict both safety confidence and critic-derived advantage scores for candidate action chunks. To handle severe class imbalance and unstable boundary decisions, we train Pre-VLA with a multi-task objective combining Focal classification, advantage regression, and soft-threshold calibration. During deployment, a dual-mode preemptive resampling scheduler filters low-quality actions and triggers adaptive resampling under a limited computation budget. Experiments on the LIBERO benchmark show that Pre-VLA improves the average closed-loop success rate across four suites from 30.79\\% to 37.62\\% over RynnVLA-002, reduces task execution steps, achieves 183.9 ms average forward verification time per action chunk, and mitigates error accumulation in world-model rollouts.",
+    "authors": [
+      "Zhen Sun",
+      "Yongjian Guo",
+      "Haoran Sun",
+      "Luqiao Wang",
+      "Wei Lu",
+      "Jiachi Ji",
+      "Shengzhe Ji",
+      "Junwu Xiong",
+      "Zhijun Meng"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22446v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22446v1",
+    "fetched_at": "2026-05-23T09:47:54.388968"
+  },
+  {
+    "id": "2605.22343v1",
+    "title": "Sibyl-AutoResearch: Autonomous Research Needs Self-Evolving Trial-and-Error Harnesses, Not Paper Generators",
+    "abstract": "Autonomous research systems increasingly make the scientific workflow executable: agents can propose ideas, run code, inspect results, and draft papers. But executable workflows do not by themselves produce research judgment. We analyze where current systems lose trial experience: weak evidence becomes prose, pilot signals become broad claims, memory remains textual, and recurring process failures do not change later behavior. We introduce Sibyl-AutoResearch, a self-evolving AutoResearch framework built around Scientific Trial-and-Error Harnesses. A harness lets agents run bounded trials, preserve positive and negative outcomes, and route lessons into later planning, validation, claim scope, scheduling, critique, writing, and harness repair. We formalize this through two auditable conversion units: trial-to-behavior conversion, which links trial signals to later research actions, and trial-to-harness-behavior conversion, which links recurring process failures to system updates. We implement the framework in SIBYL, a file-backed autonomous research system that exposes the state, roles, memory, gates, and artifact traces needed to inspect these conversion paths. A retrospective audit identifies eight high-confidence conversion events, with a median latency of one iteration and a maximum latency of three iterations. A recovered-failure registry further shows how five naturally occurring failure classes, including duplicate results, stale numbers, and unsupported statistics, were blocked, downgraded, or routed into later repair. These traces do not establish a comparative performance claim; they show that the proposed conversion units are recoverable from realistic autonomous-research workspaces. The SIBYL framework and system are available at https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem.",
+    "authors": [
+      "Chengcheng Wang",
+      "Qinhua Xie",
+      "Wei He",
+      "Jianyuan Guo",
+      "Shiqi Wang",
+      "Chang Xu"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.MA",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22343v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22343v1",
+    "fetched_at": "2026-05-23T09:47:54.388995"
+  },
+  {
+    "id": "2605.22321v1",
+    "title": "Benchmarking Autonomous Agents against Temporal, Spatial, and Semantic Evasions",
+    "abstract": "As autonomous agents (e.g., OpenClaw) increasingly operate with deep system-level privileges to execute complex tasks, they introduce severe, unmitigated security risks. Current vulnerability analyses overwhelmingly focus on single-turn, stateless behaviors, overlooking the expanded attack surface inherent in stateful, multi-turn interactions and dynamic tool invocations. In this paper, we propose a novel, multi-dimensional evasion framework targeting LLM-based agent systems. We introduce three stealthy attack vectors: (1) Temporal evasion, which fragments malicious payloads across sequential interaction turns; (2) Spatial evasion, which conceals payloads within complex external artifacts that evade standard LLM parsing mechanisms; and (3) Semantic evasion, which obscures malicious intents beneath benign contextual noise. To systematically quantify these threats, we construct A3S-Bench, a comprehensive benchmark comprising 2,254 real-world agent execution trajectories. Evaluating a standard agent framework separately integrated with 10 mainstream LLM backbones against 20 practical threat scenarios, we demonstrate that our evasion framework elevates the average risk trigger rate from a 28.3\\% baseline to 52.6\\%. These findings reveal systemic, architecture-level vulnerabilities in current autonomous agent systems that existing defenses fail to address, highlighting an urgent need for defense mechanisms tailored to the unique threats.",
+    "authors": [
+      "Jianan Ma",
+      "Xiaohu Du",
+      "Ruixiao Lin",
+      "Yaoxiang Bian",
+      "Jialuo Chen",
+      "Jingyi Wang",
+      "Xiaofang Yang",
+      "Shiwen Cui",
+      "Changhua Meng",
+      "Xinhao Deng",
+      "Zhen Wang"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22321v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22321v1",
+    "fetched_at": "2026-05-23T09:47:54.389032"
+  },
+  {
+    "id": "2605.22304v1",
+    "title": "Evaluation of Pipelines for Data Integration into Knowledge Graphs",
+    "abstract": "Integrating new data into knowledge graphs (KG) typically involves different tasks that are executed within workflows or pipelines There are many possible pipelines for a specific integration problem but there is not yet a general approach to evaluate the overall quality and performance of such pipelines to be able to determine the best choices. We therefore propose a new benchmark KGI-Bench to evaluate integration pipelines that ingest different kinds of input data into an existing KG. We evaluate pipelines by analyzing their output, i.e., the updated KG, with the three complementary quality metrics coverage, correctness and consistency. We also provide benchmark datasets (seed KG, overlapping input data of three formats, reference KG as a ground truth) for the movie domain. To demonstrate the applicability and usefulness of the proposed benchmark, we comparatively evaluate 12 pipelines and analyze their behavior across different input data formats and design choices.",
+    "authors": [
+      "Marvin Hofer",
+      "Erhard Rahm"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.AI",
+      "cs.DB",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22304v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22304v1",
+    "fetched_at": "2026-05-23T09:47:54.389051"
+  },
+  {
+    "id": "2605.22263v1",
+    "title": "Tailoring Teaching to Aptitude: Direction-Adaptive Self-Distillation for LLM Reasoning",
+    "abstract": "On-policy self-distillation (OPSD) is an emerging LLM post-training paradigm in which the model serves as its own teacher: conditioned on privileged information such as a reference trace or hint, the same policy provides dense token-level supervision on its own rollouts. However, recent studies show that OPSD degrades complex reasoning by suppressing predictive uncertainty, which supports exploration and hypothesis revision. Our token-level analysis shows that this failure arises from applying a uniform direction of teacher supervision across tokens with different uncertainty levels: conformity to the privileged self-teacher suppresses exploration at high entropy, while deviation from the teacher degrades step accuracy at low entropy. Accordingly, we propose \\textbf{Direction-Adaptive Self-Distillation} (\\textbf{DASD}), which reframes privileged self-distillation from uniform teacher imitation into entropy-routed directional supervision: high-entropy tokens are pushed away from the privileged teacher to preserve exploration, while low-entropy tokens are pulled toward the teacher to stabilize step-level execution. Across six mathematical reasoning benchmarks, DASD achieves the best macro Avg@16 over strong RLVR and self-distillation baselines. Pass@$k$, reasoning-health, and generalization analyses show that these average gains come from preserving exploration without sacrificing step-level execution.",
+    "authors": [
+      "Hongbin Zhang",
+      "Chaozheng Wang",
+      "Kehai Chen",
+      "Youcheng Pan",
+      "Yang Xiang",
+      "Jinpeng Wang",
+      "Min Zhang"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22263v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22263v1",
+    "fetched_at": "2026-05-23T09:47:54.389079"
+  },
+  {
+    "id": "2605.21748v1",
+    "title": "RankJudge: A Multi-Turn LLM-as-a-Judge Synthetic Benchmark Generator",
+    "abstract": "As interactive LLM-based applications are created and refined, model developers need to evaluate the quality of generated text along many possible axes. For simpler systems, human evaluation may be practical, but in complicated systems like conversational chatbots, the amount of generated text can overwhelm human annotation resources. Model developers have begun to rely heavily on auto-evaluation, where LLMs are also used to judge generation quality. However, existing LLM-as-a-judge benchmarks largely focus on simple Q\\&A tasks that do not match the complexity of multi-turn conversations. We introduce RankJudge, a benchmark generator for evaluating LLM-as-a-judge on multi-turn conversations grounded in reference documents. RankJudge creates pairs of conversations where one conversation has a single flaw injected into one turn. This construction allows paired conversations to be labeled unambiguously as better or worse, and precisely isolates failure categories to individual turns, enabling a strict joint correctness criterion for judging. We implement RankJudge across the domains of machine learning, biomedicine, and finance, evaluate 21 frontier LLM judges, and rank those judges via the Bradley-Terry model. Our formulation also allows ranking each conversation pair with difficulty ratings, which we use to dynamically curate the evaluation slice to reduce label noise, as confirmed via human annotation. We find that judge rankings are stable under partial observability, coarser correctness criteria, and an alternative random-walk rating algorithm.",
+    "authors": [
+      "Zhenwei Tang",
+      "Zhaoyan Liu",
+      "Rasa Hosseinzadeh",
+      "Tongzi Wu",
+      "Keyvan Golestan",
+      "Jesse C. Cresswell"
+    ],
+    "published": "2026-05-20",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.21748v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.21748v1",
+    "fetched_at": "2026-05-23T09:48:59.222908"
+  }
+]
