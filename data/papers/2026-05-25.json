@@ -1,0 +1,467 @@
+[
+  {
+    "id": "2605.23007v1",
+    "title": "MadEvolve: Evolutionary Optimization of Trading Systems with Large Language Models",
+    "abstract": "We explore the application of LLM-driven algorithm optimization to several common tasks in quantitative finance. MadEvolve, a general-purpose algorithm optimization framework inspired by DeepMind's Alpha-Evolve, was recently developed to optimize algorithms in computational cosmology. Here we demonstrate the utility of MadEvolve to optimize algorithmic trading strategies and alpha generation at the example of Bitcoin trading. On our simulation and backtesting setup, we achieve significant improvements on all tasks we considered, such as evolving feature sets for signal generation, optimizing separate components of the trading strategy, and jointly evolving the feature pipeline together with the execution strategy. Additionally, we compare our method to other agentic search approaches, specifically Claude Code, and carefully evaluate p-hacking probabilities on our simulation setup. Our findings strongly support the utility of AI-driven agentic and evolutionary algorithms for algorithmic trading and quantitative finance.",
+    "authors": [
+      "Yurii Kvasiuk",
+      "Tianyi Li",
+      "Owen Colegrove",
+      "Moritz Münchmeyer"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "q-fin.TR",
+      "cs.AI",
+      "cs.LG",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23007v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23007v1",
+    "fetched_at": "2026-05-25T11:49:53.321578"
+  },
+  {
+    "id": "2605.22994v1",
+    "title": "Dynamic Evolution of Corporate Emissions Determinants",
+    "abstract": "This paper examines how firm-level determinants of industrial emissions evolve over time as firms adapt to environmental regulation, economic conditions, and organisational constraints. Using a panel of 204 U.S. industrial facilities observed from 1992 to 2023, we link facility-level emissions from the Toxics Release Inventory to firm financial characteristics, managerial attributes, local labour-market conditions, and aggregate macroeconomic indicators. We employ a time-varying mean-group estimator that allows average relationships to change smoothly over time while accommodating persistent heterogeneity across facilities. We find several covariates display episodic associations with emissions growth. The results reveal pronounced stage-like dynamics in emissions determinants, with firm-level characteristics and aggregate conditions dominating in different periods. From an innovation-policy perspective, the findings highlight that firms' responses to environmental regulation are time-dependent and shaped by their adaptive capacity.",
+    "authors": [
+      "George Kapetanios",
+      "Steven Ongena",
+      "Alexia Ventouri",
+      "Huiyan Xiao"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "econ.EM",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22994v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22994v1",
+    "fetched_at": "2026-05-25T11:49:53.321619"
+  },
+  {
+    "id": "2605.22892v1",
+    "title": "Is TabPFN the Silver Bullet for Insurance Pricing?",
+    "abstract": "Modelling claim frequency and severity for non-life insurance pricing predominantly relies on generalised linear models, with gradient-boosted machines as the leading machine learning alternative. Tabular foundation models (TFMs) offer a fundamentally different paradigm. By pre-training on large collections of synthetic datasets, TFMs enable inference on new data through in-context learning, without any dataset-specific fitting or hyperparameter tuning. This paper presents a first empirical evaluation of TabPFN for motor insurance pricing, benchmarking it against GLM and XGBoost on two publicly available MTPL datasets. Our results show that TabPFN does not consistently outperform established baselines, exhibits substantially longer inference times, and is sensitive to the size of the in-context training set. While tabular foundation models represent a promising direction, particularly in data-scarce settings, their current formulation does not offer a viable replacement for established actuarial methods.",
+    "authors": [
+      "Bruno Deprez",
+      "Wouter Verbeke",
+      "Tim Verdonck"
+    ],
+    "published": "2026-05-21",
+    "categories": [
+      "q-fin.RM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.22892v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.22892v1",
+    "fetched_at": "2026-05-25T11:49:53.321701"
+  },
+  {
+    "id": "2605.23744v1",
+    "title": "Contrast to Detect: Dynamic Graph Contrastive Regularization for Unsupervised Anomaly Detection in Multivariate Time Series",
+    "abstract": "Anomaly detection in multivariate time series (MTS) is hindered by dynamic inter-variable dependencies and feature entanglement under spectral noise, and in practice, is further complicated by the absence of anomaly labels. Existing reconstruction-based detectors tend to recover anomalies as faithfully as normal patterns, while prevailing graph contrastive methods enforce invariance across views and thus assume a stationary relational structure, an assumption that breaks under structural drift in real systems. We propose ContrastAD, an unsupervised framework that turns structural evolution itself into a learning signal rather than suppressing it. A Multi-Perspective Embedder encodes inputs from temporal, attribute, and structural perspectives. A Frequency-Aware Attention Mixer then performs spectral top-K filtering before attention, preventing noise from leaking into query-key similarities. The core component, a Dynamic Graph Contrastive Learner, builds power-law-inspired sparse graph snapshots from batch-level DTW distances and contrasts the most divergent pair against a stable anchor, regularizing the latent space without imposing rigid invariance. Across five real-world benchmarks, ContrastAD attains the highest mean F1 on all five datasets and the highest AUC on three (SWaT 93.60, SMD 98.66, PSM 97.79), with statistically significant F1 and AUC margins over the strongest baseline on SWaT and PSM. On MSL and SMAP, it trails the AUC leader by under 0.7 points while still leading on F1. Ablation and sensitivity studies further confirm that the contrastive objective works best as a soft regularizer, supporting our claim that strict invariance is suboptimal under non-stationary dynamics.",
+    "authors": [
+      "Yunhua Pei",
+      "Zixing Song",
+      "Jin Zheng",
+      "John Cartlidge"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23744v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23744v1",
+    "fetched_at": "2026-05-25T11:50:06.362916"
+  },
+  {
+    "id": "2605.23723v1",
+    "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+    "abstract": "Large language model agents increasingly rely on persistent memory to store past interactions, retrieve relevant demonstrations, and improve long-horizon task execution. However, this memory mechanism also creates a practical security vulnerability: an adversarial user may inject malicious records into the agent's memory through ordinary interaction, and these records can later be retrieved to steer the agent's reasoning and actions. Existing defenses primarily focus on online intervention, such as prompt filtering or output blocking, but they do not address the post-hoc question of which stored memories are responsible after harmful behavior has already been observed. We propose \\textbf{MemAudit}, a post-hoc causal memory auditing framework for memory-augmented LLM agents. The framework combines two complementary signals: (1) a counterfactual memory influence score that measures each memory's causal contribution to harmful outputs, and (2) a memory consistency graph that identifies structurally anomalous memories within the broader memory store. We evaluate MemAudit against MINJA, a query-only memory injection attack in which malicious records are generated and stored through normal agent interactions rather than direct memory-bank modification. Across both QA and reasoning-agent settings, MemAudit substantially reduces attack success rates under realistic post-hoc auditing scenarios. The results show that QA attack success is reduced from $70\\%$ to $0\\%$, while RAP attack success drops from $83.3\\%$ to $0\\%$.",
+    "authors": [
+      "Zhewen Tan",
+      "Yilun Yao",
+      "Huiyan Jin",
+      "Wenhan Yu",
+      "Guoan Wang",
+      "Mengyuan Fan",
+      "liang lu",
+      "Feng Liu",
+      "Xiangzheng Zhang",
+      "Duohe Ma",
+      "Tong Yang",
+      "Lin Sun"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23723v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23723v1",
+    "fetched_at": "2026-05-25T11:50:06.362966"
+  },
+  {
+    "id": "2605.23504v1",
+    "title": "VACE: Learning Geometrically Structured Representations for Time Series Anomaly Detection",
+    "abstract": "Anomaly detection in multivariate time series is a critical task across a wide range of real-world applications, where abnormal behaviour is rare, labels are unavailable, and the cost of a miss is high. The central challenge is learning a characterisation of normality precise enough to flag deviations. Representation self-supervised learning, typically through contrastive approaches, addresses this by embedding temporal patches into a latent space where normality occupies a well-defined region, with anomalies detected by geometric deviation. However, contrastive approaches shape this space indirectly through pair-sampling heuristics, providing no explicit control over the geometric structure that distance-based scoring requires. This means how tightly normal representations are grouped, and whether distances are directionally meaningful. We present VACE (Velocity-Aligned Channel Embeddings), a self-supervised anomaly detection method that represents normality as a compact, directionally coherent region in the embedding space. To this end, VACE trains a channel-aware encoder through a velocity-consistency objective, with no negatives and no synthetic anomalies, so that normal trajectories are locally smooth and aligned. At test time, a Mahalanobis positional score and a velocity-bank directional score are combined multiplicatively, flagging points that are simultaneously off-distribution and dynamically atypical. Despite its simplicity, VACE achieves state-of-the-art performance on TSB-AD-M under rigorous evaluation, significantly outperforming more complex methods trained on substantially larger budgets.",
+    "authors": [
+      "Alberto D. Cencillo",
+      "Leonardo Concepción",
+      "Isaac Triguero",
+      "Julián Luengo"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23504v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23504v1",
+    "fetched_at": "2026-05-25T11:50:06.362991"
+  },
+  {
+    "id": "2605.23139v1",
+    "title": "CALAD: Channel-Aware contrastive Learning for multivariate time series Anomaly Detection",
+    "abstract": "Multivariate time series anomaly detection has become increasingly important in real-world applications, where labeled data are often scarce. Many existing approaches rely on unsupervised learning to model normal patterns, but they often treat all channels equally. This design can dilute anomaly-relevant signals, since not all channels contribute equally to anomaly detection. In this paper, we propose CALAD, a channel-aware contrastive learning framework for multivariate time series anomaly detection. CALAD governs the construction of contrastive samples using estimated channel relevance, allowing the learning process to reflect anomaly semantics rather than generic similarity. Channel relevance is estimated from reconstruction errors of a transformer-based autoencoder and is used to distinguish channels that are more influential to anomalous behaviors. Using this information, we design a channel-wise augmentation strategy in which positive and negative samples are constructed based on whether anomaly-relevant channels are preserved or perturbed. This encourages invariance to changes in irrelevant channels while being sensitive to changes in anomaly-relevant channels. Furthermore, CALAD combines contrastive learning and an auxiliary reconstruction head, allowing the model to learn discriminative representations while retaining normal structures. Experiments on multiple real-world datasets shows that CALAD consistently outperforms existing methods, particularly under distribution shift scenarios. We provide the code for reproducibility at https://github.com/hirundo1218/CALAD",
+    "authors": [
+      "Jaehyeop Hong",
+      "Youngbum Hur"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23139v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23139v1",
+    "fetched_at": "2026-05-25T11:50:06.363031"
+  },
+  {
+    "id": "2605.23116v1",
+    "title": "CoReVAD: A Contextual Reasoning Framework for Training-Free Video Anomaly Detection",
+    "abstract": "Existing Video Anomaly Detection (VAD) methods typically rely on task-specific training, leading to strong domain dependency and high training costs. Moreover, most existing methods output only scalar anomaly scores, providing limited insight into why specific events are considered abnormal. Recent advances in Vision-Language Models (VLMs) have enabled both anomaly detection and human-interpretable reasoning. However, many VLM-based approaches still require additional training steps (e.g., instruction tuning or verbalized learning) or external Large Language Models (LLMs), incurring further training costs and inference overhead. To address these challenges, we propose CoReVAD, a contextual reasoning framework for training-free video anomaly detection that operates with a single frozen VLM. CoReVAD directly generates anomaly scores and temporal descriptions from the VLM. To mitigate noise in generative outputs, we introduce a Local Response Cleaning (LRC) module based on local vision-text alignment. Furthermore, global temporal context and progression are incorporated through softmax-based refinement, Gaussian smoothing, and position weighting. Experiments on UCF-Crime and XD-Violence demonstrate that CoReVAD achieves competitive performance among training-free methods while providing reliable and interpretable explanations. Our official code is available at: https://github.com/Muk-00/CoReVAD",
+    "authors": [
+      "Hyeongmuk Lim",
+      "Youngbum Hur"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23116v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23116v1",
+    "fetched_at": "2026-05-25T11:50:06.363053"
+  },
+  {
+    "id": "2605.23904v1",
+    "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+    "abstract": "Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, none of which behaves like a deep-learning optimizer for the skill, and none of which reliably improves over its starting point under feedback. We argue the skill should instead be trained as the external state of a frozen agent, with the same discipline that makes weight-space optimization reproducible. SkillOpt is, to our knowledge, the first systematic controllable text-space optimizer for agent skills: a separate optimizer model turns scored rollouts into bounded add/delete/replace edits on a single skill document, and an edit is accepted only when it strictly improves a held-out validation score. A textual learning-rate budget, rejected-edit buffer, and epoch-wise slow/meta update make skill training stable while adding zero inference-time model calls at deployment. Across six benchmarks, seven target models, and three execution harnesses (direct chat, Codex, Claude Code), SkillOpt is best or tied on all 52 evaluated (model, benchmark, harness) cells and beats every per-cell competitor among human, one-shot LLM, Trace2Skill, TextGrad, GEPA, and EvoSkill skills. On GPT-5.5 it lifts the average no-skill accuracy by +23.5 points in direct chat, by +24.8 inside the Codex agentic loop, and by +19.1 inside Claude Code. Transfer experiments further show that optimized skill artifacts retain value when moved across model scales, between Codex and Claude Code execution environments, and to a nearby math benchmark without further optimization.",
+    "authors": [
+      "Yifan Yang",
+      "Ziyang Gong",
+      "Weiquan Huang",
+      "Qihao Yang",
+      "Ziwei Zhou",
+      "Zisu Huang",
+      "Yan Li",
+      "Xuemei Gao",
+      "Qi Dai",
+      "Bei Liu",
+      "Kai Qiu",
+      "Yuqing Yang",
+      "Dongdong Chen",
+      "Xue Yang",
+      "Chong Luo"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23904v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23904v1",
+    "fetched_at": "2026-05-25T11:50:36.030545"
+  },
+  {
+    "id": "2605.23771v1",
+    "title": "PhotoFlow: Agentic 3D Virtual Photography Missions",
+    "abstract": "Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters, and render the final photograph. Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that remain hard to evaluate together: complex 3D spatial understanding and abstract aesthetic judgment. We introduce PhotoFlow, a Director-Reviewer-Reflector agent for closed-loop camera search. The Director builds a soft photographic blueprint and proposes diverse candidate cameras; the Reviewer combines rule checks, visual critique, and pairwise incumbent selection; and the Reflector converts failures into region memory, dead-zone suppression, and high-explore relocation. We also introduce VPhotoBench, a benchmark of 47 open-license Blender scenes and 141 language-conditioned photography missions spanning subject placement, relational composition, and atmosphere/style. On held-out experiments, PhotoFlow achieves the strongest external quality-alignment composite and success rate among one-shot prediction, single-chain reflection, anchor-bank selection, and random search under a six-round rendering budget. To our knowledge, this is the first work to make language-conditioned virtual photography in arbitrary Blender scenes an executable agent task, and our results show that an LLM-centered spatial agent can already produce strong photographs in a setting designed to challenge both 3D reasoning and aesthetic choice.",
+    "authors": [
+      "Jiarui Guo",
+      "Haojia Wei",
+      "Yiming Zhang",
+      "Yifei Liu",
+      "Yuning Gong",
+      "Hongjie Zhang",
+      "Xue Yang",
+      "Zhihang Zhong"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23771v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23771v1",
+    "fetched_at": "2026-05-25T11:50:36.030586"
+  },
+  {
+    "id": "2605.23623v1",
+    "title": "Adversarial Vulnerability Under Temporal Concept Drift: A Longitudinal Study of Android Malware Detection",
+    "abstract": "We present a longitudinal, drift-aware evaluation of adversarial robustness across more than a decade of Android applications using static and dynamic feature representations extracted from emulator and real-device executions. The dataset is organized into yearly slices and evaluated under three deployment protocols that emulate realistic learning scenarios: (1) same-year training and testing, (2) cross-year deployment without model updates, and (3) expanding-window retraining with cumulative historical data. Across multiple classifier families, adversarial examples are generated using FGSM and SPSA under feasibility constraints. We measure clean performance, Adversarial Accuracy (AA), Attack Success Rate (ASR), and introduce temporal linkage metrics -- RobustDrop, $Δ$ASR, and Adversarial Amplification Factor (AAF) -- to quantify the relationship between distribution shift and robustness degradation.nResults show that temporal separation is associated with reduced adversarial robustness under the evaluated transfer-based feature-space setting. As the train-test gap increases, clean accuracy and adversarial accuracy decline, while attack success exhibits configuration-dependent increases, particularly under FGSM perturbations and static features. Expanding-window retraining mitigates, but does not eliminate, robustness loss under continued distributional evolution. These findings indicate that temporal drift should be considered when assessing the long-term robustness of intelligent detection systems under evolving data distributions and highlight the need for drift-aware robustness assessment frameworks in long-lived adversarial environments.",
+    "authors": [
+      "Ahmed Sabbah",
+      "Mohammed Kharma",
+      "Radi Jarrar",
+      "Samer Zein",
+      "David Mohaisen"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23623v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23623v1",
+    "fetched_at": "2026-05-25T11:50:36.030650"
+  },
+  {
+    "id": "2605.23491v1",
+    "title": "CoSPlay: Cooperative Self-Play at Test-Time with Self-Generated Code and Unit Test",
+    "abstract": "Recently, Reinforcement Learning with Verifiable Rewards (RLVR) and Test-Time Scaling (TTS) have advanced LLM code generation through executable verification. Yet Ground-Truth Unit Tests (GT UTs) remain a bottleneck: SOTA RLVR methods require them for costly training, while existing TTS methods lose competitiveness without them. This motivates GT-free TTS, where existing methods directly use self-generated UTs to refine and select code candidates. Yet such UTs are often noisy or spuriously coupled with wrong code, and UT quality in turn cannot be validated without reliable code. The key challenge is therefore to jointly improve both. To this end, we present CoSPlay, a GT-free, training-free framework that jointly improves codes and UTs through cooperative self-play. It first explores diverse solution ideas and identifies their potential failure modes to produce discriminative UT ideas. It then uses bidirectional pass-count signals from the Code-UT execution matrix to iteratively prune or fix weak codes and refresh or replace unreliable UTs, letting the two pools co-evolve. Finally, when multiple codes remain tied at the highest pass count, it picks the final code from the largest output-consensus cluster, since correct codes agree on the same inputs while wrong codes diverge. Experiments on four challenging benchmarks show that CoSPlay on Qwen2.5-7B-Instruct improves average BoN from 22.1% to 33.2% and UT accuracy from 14.6% to 78.3%, matching or surpassing the RLVR model CURE-7B. When applied to CURE-7B, it further improves BoN by 5.7%. CoSPlay also generalizes across diverse backbones and outperforms GT-free TTS baselines under comparable token budgets, with continued gains as the budget scales up. These results suggest a scalable inference strategy for competitive code generation without any GT data.",
+    "authors": [
+      "Zhangyi Hu",
+      "Chenhui Liu",
+      "Tian Huang",
+      "Jindong Li",
+      "Yang Yang",
+      "Jiemin Wu",
+      "Zining Zhong",
+      "Menglin Yang",
+      "Yutao Yue"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23491v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23491v1",
+    "fetched_at": "2026-05-25T11:50:36.030683"
+  },
+  {
+    "id": "2605.23414v1",
+    "title": "When Planning Fails Despite Correct Execution: On Epistemic Calibration for LLM-Based Multi-Agent Systems",
+    "abstract": "LLM-based multi-agent systems can fail even when planned actions are executed correctly because agents may misjudge their knowledge when evaluating plan feasibility, a phenomenon we term epistemic miscalibration in planning. Unlike execution errors, epistemic miscalibration is latent during planning, as generated plans can remain self-consistent and executable without observable errors; the miscalibration is also dynamic, as new information can alter feasibility assessments, potentially obscuring past miscalibration signals and causing them to recur over time. To address this, we propose the Epistemic Planning Calibration Agentic Workflow (EPC-AW), which assesses whether plans remain supported under varying information conditions rather than directly verifying feasibility. EPC-AW employs Information-consistency-based Plan Selection, selecting plans whose evaluations are stable across agents, together with Consistency-guided Epistemic State Refinement to adapt calibration over time by leveraging past discrepancies to guide future planning. Experiments show that EPC-AW improves system-level success by an average of 9.75%.",
+    "authors": [
+      "Zehao Wang",
+      "Shilong Jin",
+      "Zhao Cao",
+      "Lanjun Wang"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23414v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23414v1",
+    "fetched_at": "2026-05-25T11:50:36.030706"
+  },
+  {
+    "id": "2605.23403v1",
+    "title": "Hybrid Quantum-Classical Corrective Diffusion Modeling for Meteorological Downscaling",
+    "abstract": "Statistical downscaling is a crucial component of the weather modeling field, where high-resolution outputs must be reconstructed from coarse-resolution inputs with the full cost of dynamical refinement. In this work, we investigate a hybrid quantum-classical corrective diffusion model for probabilistic statistical downscaling of weather fields. The proposed model inserts variational quantum circuit layers into the most compressed bottleneck of the diffusion UNet while leaving the regression branch fully classical. This placement tests whether quantum circuits can act as compact nonlinear feature maps for latent-channel mixing. We evaluate intra-channel and cross-channel ansätze on 10m wind components. On the 2020 validation set, the hybrid models remain stable, preserve the large-scale spatial organization of the generated wind fields, and improve both MAE and CRPS relative to a classical corrective diffusion model in several configurations. Structural diagnostics further show that the hybrid variants preserve kinetic-energy spectra and windspeed distributions similar to its classical counterpart while producing controlled changes in tail behavior, extreme-windspeed localization, and joint wind field components structure. Backend studies on the 2020 validation set show negligible impact from simulated device noise at the tested circuit scale, whereas real-hardware deployment remains limited by qubit availability and execution fidelity. The 2021 out-of-distribution test shows that these in-distribution gains do not transfer uniformly under temporal shift, revealing a generalization gap that motivates future mitigation through stabilization and regularization. These results show that bottleneck-level quantum hybridization can make a nontrivial contribution to weather statistical downscaling, while also highlighting that circuit scale and hardware deployment remain key limiting factors.",
+    "authors": [
+      "Rui Wang",
+      "Edoardo Pasetto",
+      "Amer Delilbasic",
+      "Morris Riedel",
+      "Kristel Michielsen",
+      "Gabriele Cavallaro"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.LG",
+      "physics.ao-ph",
+      "quant-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23403v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23403v1",
+    "fetched_at": "2026-05-25T11:50:36.030733"
+  },
+  {
+    "id": "2605.23384v1",
+    "title": "Metacognition as Reward: Reinforcing LLM Reasoning via Knowledge and Regulation Signals",
+    "abstract": "Recent RL methods have substantially improved the reasoning abilities of LLMs. Existing reward designs mainly follow two paradigms: (1) Reinforcement learning with verifiable rewards (RLVR) derives outcome signals from executable checks or ground-truth answers, but provides limited guidance for intermediate reasoning behaviors. (2) Rubrics-as-reward (RaR) goes beyond final-answer checking by using natural-language rubrics to assess reasoning quality and task compliance, but often requires instance-specific rubrics and substantial design effort. To address these issues, we introduce Metacognition-as-Reward (MaR), a metacognition-inspired RL framework that guides LLM reasoning through two general process dimensions: i) metacognitive knowledge, which identifies task-relevant information without hand-crafted instance-specific rubrics, and ii) metacognitive regulation, which plans and adjusts the reasoning process to provide reward guidance beyond final-answer outcomes. MaR scaffolds model rollouts into explicit metacognitive components and optimizes them with a trajectory-level reward over task knowledge coverage, regulation fidelity, and final-answer correctness. In this way, MaR extends reward feedback to reasoning trajectories while grounding the reward signals in general metacognitive dimensions. Experiments on 22 benchmarks show that MaR consistently improves model performance, achieving up to a 7.7% gain over the base model and up to an 11.0% gain over vanilla DAPO. Notably, Qwen3.5-9B + MaR narrows the gap to frontier models, surpassing GPT-OSS-120B on overall average and outperforming stronger models on several individual benchmarks. Process-level analysis further shows substantial improvements in reasoning process quality. MaR also generalizes to out-of-domain datasets, where MaR-trained models improve over their corresponding base models on average.",
+    "authors": [
+      "Sirui Chen",
+      "Lei Xu",
+      "Yuying Zhao",
+      "Yutian Chen",
+      "Yu Wang",
+      "Beier Zhu",
+      "Hanwang Zhang",
+      "Shengjie Zhao",
+      "Chaochao Lu"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23384v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23384v1",
+    "fetched_at": "2026-05-25T11:50:36.030765"
+  },
+  {
+    "id": "2605.23341v1",
+    "title": "Sparse Compositional Flow Matching by geometric assembly from motion primitives",
+    "abstract": "Embodied trajectories, such as the executable motion sequences of robotic manipulators, underwater vehicles, and mobile robots, are a fundamental output of embodied AI. Modern generative models often treat them as a dense, monolithic signal generated point by point, fitting an intricate high-dimensional posterior while leaving the data's latent structure unmodeled, the same sample inefficiency long identified by the structured generative model literature. We argue that a compositional latent structure is a natural choice: many embodied tasks share recurring motion fragments that can be made explicit as a finite repertoire of reusable motion primitives, and compositional units naturally align with subtask boundaries to support task decomposition. Existing compositional generators, however, compose in a latent space and rely on post-hoc decoding to relate sampled units to actual trajectory segments. We instead compose directly in the physical trajectory space through a flow-matching framework with two coupled designs. Motion-Primitive Dictionary Learning equips each atom with a learnable length mask and binary starting indicators so the atom itself is the primitive, reused verbatim wherever it is placed. Structural Sparse Flow Matching with Geometric Constraints then generates a binary placement matrix using duration-aware tokenization and a differentiable geometric loss that enforces spatial continuity and temporal contiguity where adjacent primitives meet. On Open X-Embodiment and 3DMoTraj, the framework attains state-of-the-art accuracy and reduces the FDE/ADE ratio from 1.8 to 1.07, improving ADE by 19.2% and FDE by 21.0% over the strongest baseline.",
+    "authors": [
+      "Yan Tang",
+      "Yuanbo Tang",
+      "Tingyu Cao",
+      "Shaolun Huang",
+      "Yang Li"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23341v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23341v1",
+    "fetched_at": "2026-05-25T11:50:36.030791"
+  },
+  {
+    "id": "2605.23311v1",
+    "title": "DART: Semantic Recoverability for Structured Tool Agents",
+    "abstract": "When a structured tool agent fails mid-execution, the runtime faces a dilemma: replaying the entire task is safe but wasteful, while restoring from a local checkpoint is efficient but can leave committed downstream work tied to an upstream history that no longer exists. This tension is acute in commitment-sensitive settings, where rollback targets a single failed instance yet downstream consumers have already acted on its output. Existing recovery approaches provide mechanical rollback but no criterion for whether a local restore remains semantically valid after downstream commitment. We formalize this gap as semantic recoverability and address it in DART, a modular runtime that localizes the failed instance, certifies semantically recoverable boundaries of that instance, aligns checkpoints to those boundaries, and selects an admissible restore point that preserves committed downstream work under dependency and effect constraints-or blocks otherwise. Across three LLM-driven domains and external validation on a LangGraph-based substrate, DART correctly recovers all evaluated commitment-sensitive cases where baseline local recovery fails, and a five-domain safety audit finds no unsafe admitted rollbacks. These results show that controller legality does not imply semantic validity, and that sound local recovery requires an explicit admissibility check.",
+    "authors": [
+      "Ke Yang",
+      "Panpan Li",
+      "Zonghan Wu",
+      "Kejin Xu",
+      "Huaxi Huang",
+      "Xiaoshui Huang"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23311v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23311v1",
+    "fetched_at": "2026-05-25T11:50:36.030817"
+  },
+  {
+    "id": "2605.23297v1",
+    "title": "Ontological Knowledge Blocks: Executable Compliance and Profile-Based Validation for Trustworthy AI Systems",
+    "abstract": "AI-enabled services deployed in critical digital infrastructure are subject to governance obligations spanning transparency, accountability, fairness, and traceability. Compliance today remains documentation-centric: obligations are described in prose, audits rely on static checklists, and verification depends on manual review. Such approaches do not scale to automated AI systems. This paper introduces Ontological Knowledge Blocks (OKBs), a programmable governance infrastructure that compiles regulatory obligations into machine-checkable constraints over structured evidence graphs. We formalize an OKB as a 5-tuple that binds normative obligations to an RDF/OWL concept schema, executable SHACL validation rules, explicit evidence requirements, and PROV-O provenance links. A deterministic regulatory compiler translates structured Intermediate Representation (IR) records into composable KB modules, enabling profile-based governance reconfiguration without modifying service code. We implement two prototypes and evaluate them in an AI-assisted HPC resource allocation scenario across 24 validation runs and four governance profiles. Results demonstrate profile-sensitive validation, strictly additive violation accumulation, SHACL validation latency between 12.6 ms and 100.3 ms, and profile equivalence testing confirming Combined as the strictly most comprehensive profile. All artefacts are released as open source.",
+    "authors": [
+      "Aasish Kumar Sharma",
+      "Julian M. Kunkel"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23297v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23297v1",
+    "fetched_at": "2026-05-25T11:50:36.030838"
+  },
+  {
+    "id": "2605.23262v1",
+    "title": "Design and Report Benchmarks for Knowledge Work",
+    "abstract": "The development of LLM agents has led to a growing body of work on knowledge-work AI, including coding, research, and healthcare. However, current knowledge-work evaluation and benchmark design still largely follow the logic of traditional NLP tasks. As a result, higher benchmark performance does not reliably show that a system can carry out knowledge work in real-world deployment settings. This paper contributes a three-step approach for making explicit how benchmarked tasks represent the work claims attached to their scores: defining the work activity under evaluation, specifying the tested setting, and scoring the appropriate work product. We review work studies showing that knowledge work is organized through roles and responsibilities, local materials and tools, and artifacts that must remain usable in downstream workflows. We then translate these concerns into benchmark design and reporting guidance, covering how tasks should be mapped to work activities, how tested settings should specify materials, tools, roles, and constraints, and how scoring should focus on the work product left by the system. To name the work activity being evaluated and distinguish it from common benchmark tasks, we derive an inventory of 18 work activities from the O{*}NET occupational task database. We demonstrate the approach through three benchmark case analyses: GDPval, a non-code occupational deliverable benchmark; OfficeQA Pro, a grounded document-analysis benchmark scored by final answers; and APEX-SWE, a software-engineering benchmark with executable scored products. These cases show how benchmark design choices shape the strongest work claim a score can support, and where gaps arise between the benchmarked task, tested setting, scored product, and broader work claim.",
+    "authors": [
+      "Yining Hua",
+      "Hongbin Na",
+      "Cyrus Ayubcha",
+      "Levi Lian"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23262v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23262v1",
+    "fetched_at": "2026-05-25T11:50:36.030860"
+  },
+  {
+    "id": "2605.23204v1",
+    "title": "AutoResearch AI: Towards AI-Powered Research Automation for Scientific Discovery",
+    "abstract": "Scientific research is being reshaped by AI systems that move beyond isolated assistance toward longer-horizon workflows spanning literature grounding, hypothesis generation, experimentation, validation, reporting, and revision. This shift marks a transition from task-level AI for science to workflow-level research automation. Yet current systems remain fragmented, differing in autonomy, domain scope, execution environment, validation mechanism, and human oversight, while still struggling with evidence preservation, reproducibility, weak-direction rejection, provenance tracking, cross-domain robustness, and accountable scientific closure. This survey examines these developments through AutoResearch, defined as the developmental spectrum of AI-powered scientific workflow automation. Within it, Vibe Research denotes the human-steered region of prompt-based assistance and human-verified execution, whereas emerging AI-led systems coordinate larger portions of the discovery loop without achieving robust autonomy. We analyze how research systems redistribute control, evidence, execution, validation, and accountability across workflows and organize the field around five workflow conditions: literature and research grounding; hypothesis formation and planning; experimentation and tool use; feedback, validation, and review; and reporting and knowledge communication. We further synthesize AI scientist systems, mixed-initiative co-research frameworks, benchmarks, domain deployments, and open-source infrastructures. Finally, we propose five evaluation dimensions--novelty, validity, impact, reliability, and provenance--and show that AutoResearch autonomy is domain-conditioned, being more credible in structured, executable, and rapidly verifiable settings but limited in embodied, delayed, heterogeneous, ethical, or institutionally accountable contexts.",
+    "authors": [
+      "Guiyao Tie",
+      "Jiawen Shi",
+      "Dingjie Song",
+      "Yixiao Huang",
+      "Ziji Sheng",
+      "Xueyang Zhou",
+      "Daizong Liu",
+      "Pan Zhou",
+      "Yongchao Chen",
+      "Ran Xu",
+      "Lifang He",
+      "Qingsong Wen",
+      "Manling Li",
+      "Cong Lu",
+      "Shuai Li",
+      "Pengtao Xie",
+      "Yixuan Yuan",
+      "Rui Meng",
+      "Lei Xing",
+      "Lichao Sun",
+      "Caiming Xiong",
+      "Philip S. Yu",
+      "Jianfeng Gao"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23204v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23204v1",
+    "fetched_at": "2026-05-25T11:50:36.030916"
+  },
+  {
+    "id": "2605.23200v1",
+    "title": "Adaptive Mass-Segmented KV Compression for Long-Context Reasoning",
+    "abstract": "The linear growth of the Key-Value (KV) cache is a critical bottleneck in long-form LLM inference. Existing KV compression methods mitigate this by evicting tokens based on importance scores. However, we show that their reliance on global Top-k selection triggers Region Wipe-out: the severe eviction of contiguous reasoning blocks that derails logical coherence. To address this, we propose Adaptive Mass-Segmented (AMS) KV Compression, a framework that shifts the paradigm from token-level competition to region-aware quota allocation. AMS adaptively partitions the KV cache based on the spatial distribution of attention mass, ensuring structurally vital reasoning segments receive guaranteed memory quotas. To ensure stability during iterative decoding, an EMA-based smoothing mechanism is incorporated to prevent jitter in segment boundaries. Crucially, AMS is a universal plug-and-play layer that is orthogonal to existing scorers. It can be seamlessly integrated into representative methods such as TOVA, Expected Attention, KeyDiff, R-KV and TriAttention. AMS is also system-compatible with modern paged-KV serving frameworks such as vLLM, supporting efficient gather-and-compact KV execution without introducing additional steady-state attention overhead. Extensive experiments across a diverse suite of tasks, including mathematical reasoning (MATH500, AIME, GSM8K), code completion, open-domain QA, and sparse retrieval, demonstrate that AMS consistently mitigates structural fragmentation and boosts model performance.",
+    "authors": [
+      "Junzhe Yang",
+      "Xiaoyu Shen"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23200v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23200v1",
+    "fetched_at": "2026-05-25T11:50:36.030936"
+  },
+  {
+    "id": "2605.23179v1",
+    "title": "Redrawing the AI Map: A Theory of Accountability Boundaries in Agentic Ecosystems",
+    "abstract": "Agentic AI orchestrators reduce the interface and assembly costs of composing information systems capabilities across organizational boundaries, seemingly accelerating modularization and organizational disaggregation. Yet AI-enabled capabilities whose outputs require evidence, review, signoff, or assignable responsibility may retain integrated accountability boundaries even when their technical interfaces become modular. We develop a capability-level theory of accountability-boundary placement in agentic ecosystems. We introduce accountability assets: complementary assets that make AI-supported outputs legitimate, auditable, reviewable, and assignable to a responsible party. We argue that verification cost and responsibility transferability determine whether the execution and accountability boundaries can move together. The theory identifies three boundary strategies: component, integrated, and dual-track. It also introduces rule debt, the governance burden that accrues when organizational decision rules migrate from formal information systems into ungoverned agentic execution environments. Integrating digital innovation, transaction cost, complementary-assets, digital platform governance, and IS control perspectives, we develop seven propositions linking agentic assembly-cost reductions, accountability assets, appropriability, orchestrator intent capture, and boundary misconfiguration to boundary strategy, value appropriation, and rule debt. The theory explains when digital modularization extends to organizational disaggregation and when accountability keeps capabilities integrated. Structured illustrations across document processing, legal services, audit, clinical decision support, and procurement discipline the boundary logic.",
+    "authors": [
+      "Muhammad Zia Hydari",
+      "Farooq Muzaffar"
+    ],
+    "published": "2026-05-22",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.23179v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.23179v1",
+    "fetched_at": "2026-05-25T11:50:36.030954"
+  }
+]
