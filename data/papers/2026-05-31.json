@@ -1,0 +1,99 @@
+[
+  {
+    "id": "2605.29174v1",
+    "title": "Paper Agents, Paper Gains: An Empirical Analysis of DeFi Investment Agents",
+    "abstract": "DeFi investment agents, systems that use AI for autonomous on-chain trading, have attained over USD 3 billion in combined token valuations since late 2024. We survey over 1,900 AI-tagged crypto projects, filter to investment-focused agents, and curate 10 representative projects spanning strategy and observability dimensions. We then conduct a deep-dive architectural analysis of two prominent agent frameworks, ElizaOS and Virtuals Protocol, and a quantitative on-chain performance analysis of 11 Solana-based agent treasuries with publicly attributable trading activity, covering 925,323 token holders. We find that current deployments remain early and heterogeneous: (1) in our sample, many projects do not yet provide clear evidence of autonomous trade execution, and developer interviews suggest that many visible deployments remain basic API integrations; (2) agent treasuries retain over USD 30M in paper gains while token holders collectively lost USD 191.7M, with the top 1% of wallets capturing 81.4% of all gains (USD 1.81B); (3) token valuations are weakly connected to treasury fundamentals, with market-cap-to-AUM ratios exceeding 10,000x versus below 1x for established DeFi protocols; and (4) aggregate user gains peaked at USD 2.4B before declining to net losses, with median returns negative on every platform and tokens declining 93% on average from all-time highs. We interpret these outcomes as characteristic of a permissionless, first-generation market in which open infrastructure enables rapid experimentation but also allows naive or speculative agents to launch before robust standards for autonomy, performance, and stakeholder alignment emerge. We therefore propose a maturity framework along three dimensions: autonomous execution, risk-adjusted profitability, and stakeholder alignment, to characterize the gap between current deployments and future investment-grade agent systems.",
+    "authors": [
+      "Jay Yu",
+      "Amy Zhao",
+      "Danning Sui"
+    ],
+    "published": "2026-05-27",
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.29174v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.29174v1",
+    "fetched_at": "2026-05-31T10:20:48.502277"
+  },
+  {
+    "id": "2605.28198v1",
+    "title": "Hierarchical Synthetic Tabular Data Generation: A Hybrid Top-Down and Bottom-Up Framework",
+    "abstract": "Existing approaches for synthetic tabular data generation are based on either purely generative models or LLMs, both of which struggle with data heterogeneity, logical consistency, rare-event coverage, and robustness in low-data regimes. In this paper, we propose a hierarchical hybrid top-down and bottom-up (H-TDBU) framework that decouples semantic structures from stochastic texture. In the top-down path, structure-driven logical constraints and cross-modal alignment rules are constructed, while in the bottom-up path, lightweight tabular generators are used to learn local statistical patterns from real data. The two paths are consolidated in a unified synthesis engine with an iterative feedback loop. We evaluate the framework on weak multimodal financial benchmarks combining tabular and sentiment-text data. Experimental results show that our H-TDBU approach improves train-synthetic-test-real performance over neural baseline methods while preserving semantic consistency. Our results suggest that hierarchical rule-guided synthesis provides an effective mechanism for combining controllability, semantic coherence, and statistical fidelity in synthetic data generation.",
+    "authors": [
+      "Junfeng Nie",
+      "Alvin Jin",
+      "Xiaohui Chen"
+    ],
+    "published": "2026-05-27",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.28198v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.28198v1",
+    "fetched_at": "2026-05-31T10:20:59.521608"
+  },
+  {
+    "id": "2605.27896v1",
+    "title": "FinBoardBench: Benchmarking Dynamic Wealth Management and Strategic Financial Reasoning of LLMs via Board Game Simulations",
+    "abstract": "Recently, large language models (LLMs) have achieved superior performance in static financial reasoning and simple dynamic trading tasks. However, existing static financial benchmarks are insufficient to assess the dynamic wealth management and financial decision-making capabilities of LLMs in real-world environments. To bridge this gap, we present FinBoardBench, an evaluation suite based on three classic financial board games: Cashflow, Acquire, and Monopoly. FinBoardBench assesses a comprehensive set of financial skills, including personal cash flow management with debt balancing, corporate investment and acquisition forecasting, and competitive trade negotiations with asset auctions. Our experiments with 9 advanced LLMs reveal that while exhibiting basic long-term planning and investment logic, they fail to effectively leverage complex interactions for profit, and their strong static reasoning performance does not transform into successful dynamic decision-making. Notably, they tend to prioritize immediate asset acquisition over maintaining sufficient liquidity, making them vulnerable to financial crises triggered by random events. We hope that FinBoardBench can provide a valuable reference for more intelligent LLM-based decision-making systems in the future.",
+    "authors": [
+      "Xuesi Hu",
+      "Peng Wang",
+      "Jinpeng Miao",
+      "Xilin Tao",
+      "Caiwei Li",
+      "Yue Ma",
+      "Jie He",
+      "Qiancheng Zhang",
+      "Yuntao Zou",
+      "Dagang Li"
+    ],
+    "published": "2026-05-27",
+    "categories": [
+      "cs.CL",
+      "cs.CE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.27896v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.27896v1",
+    "fetched_at": "2026-05-31T10:20:59.521645"
+  },
+  {
+    "id": "2605.27864v2",
+    "title": "FundaPod: A Multi-Persona Agent Pod Platform with Knowledge Graph Memory for AI-Assisted Fundamental Investment Research",
+    "abstract": "Large language models (LLMs) are increasingly applied in finance, yet most existing work emphasizes trading signals or financial NLP tasks centered on prediction. Institutional fundamental research, by contrast, requires human analysts or AI agents to gather evidence, identify business drivers, compare competing viewpoints, and generate investment memos. Its broader goal is not merely to predict outcomes, but to produce investment plans that are transparent, reusable, and verifiable, while contributing to the cumulative development of investment knowledge. We present FundaPod, a multi-persona agent platform for AI-assisted fundamental investment research. We argue that fundamental research is a human-centric decision-support task that is qualitatively distinct from trading-signal generation, and is therefore better served by an independence-preserving architecture. In FundaPod, AI agents with different personas, such as value investors or macro strategists, conduct research independently under a shared provenance contract. Their disagreements are then surfaced post hoc for adjudication by the human portfolio manager (PM) through a knowledge-graph memory system. This paper contributes five design principles for human-AI hybrid systems supporting fundamental research, grounded in design-science practice and theories of cognitive isolation and human-machine coordination. It also describes four architectural mechanisms: a persona distillation pipeline that turns public investor materials into deployable agents; a declarative skill registry that lets the planner derive typed task graphs; a grounded evidence model that links memo claims to verifiable sources; and a knowledge-graph \"second brain\" that connects tickers, memos, analysts, and themes. We demonstrate the architecture through a complete case study and a persona-based memo comparison.",
+    "authors": [
+      "Di Zhu",
+      " Lei",
+      " Zheng",
+      "Zihan Chen"
+    ],
+    "published": "2026-05-27",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.27864v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.27864v2",
+    "fetched_at": "2026-05-31T10:21:48.161302"
+  },
+  {
+    "id": "2605.28520v1",
+    "title": "GS-FUSE: Granger-Supervised Gated Fusion and Multi-Granularity Alignment for Event-Driven Financial Forecasting",
+    "abstract": "Accurately forecasting the impact of salient financial events on markets is critical for investors and policymakers. However, existing multimodal time-series models typically fuse text and prices symmetrically, without an explicit way to decide when event text is truly predictive, and thus struggle to exploit the directional event-to-price structure and the heterogeneous roles of textual and price signals. In this work, we propose GS-Fuse, a multimodal event-based forecasting framework that employs (i) a Granger-supervised, causal-aware gated fusion module, which learns to open toward event text only when it provides incremental predictive value beyond historical prices, and (ii) a multi-granularity alignment mechanism that jointly aligns high-level event representations and fine-grained textual cues with future market trajectories. Built as a flexible, plug-and-play adapter on top of off-the-shelf large language models and time-series foundation models, GS-Fuse can be instantiated across diverse backbones and market settings. Extensive experiments on real-world financial datasets show that GS-Fuse consistently outperforms state-of-the-art time-series and multimodal baselines across multiple assets and forecasting horizons.",
+    "authors": [
+      "Yang Zhang",
+      "En Chun",
+      "Ziyun Mao",
+      "Yulu Wu",
+      "Jun Wang"
+    ],
+    "published": "2026-05-27",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.28520v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.28520v1",
+    "fetched_at": "2026-05-31T10:21:58.002475"
+  }
+]
