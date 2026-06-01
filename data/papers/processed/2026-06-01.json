@@ -1,0 +1,195 @@
+[
+  {
+    "id": "2605.30943v1",
+    "title": "Inspectable Neural Markov Models for Non-Stationary Time Series",
+    "abstract": "Modeling non-stationary stochastic systems requires balancing the representational capacity of deep learning with the structural transparency of classical probabilistic models. Markov transition matrices provide such a framework, but traditional frequency-based estimation collapses at high resolutions due to data sparsity. We propose a hybrid approach that parameterizes the manifold of stochastic matrices through a neural network, enabling estimation of time-inhomogeneous Markov chains in sparse-data regimes, and use financial markets as a testbed to investigate the Markov state variable as a critical inductive bias. We show that conditioning on realized volatility produces a more internally consistent Markovian structure than return-based states, achieving a $5.6\\%$ reduction in Chapman-Kolmogorov discrepancy and superior held-out likelihood in 9 of 10 assets. Unlike black-box sequence models, our approach generates explicit matrices amenable to direct geometric analysis, surfacing structural findings such as the universal homogenization of transition probabilities under high-volatility regimes.",
+    "authors": [
+      "Jan Rovirosa",
+      "Jesse Schmolze"
+    ],
+    "published": "2026-05-29",
+    "categories": [
+      "q-fin.MF",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30943v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30943v1",
+    "fetched_at": "2026-06-01T13:32:08.570802",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513366"
+  },
+  {
+    "id": "2605.30672v1",
+    "title": "Residual Supply and the Price of Risk Absorption",
+    "abstract": "When redeeming open-end funds sell and natural buyers do not step in at once, some limited-capital investor must take the other side and carry the inventory until prices recover. This paper asks what return that investor requires. A continuous-time market-clearing model delivers an expected-return restriction in which the price of residual supply depends on inventory risk, trading costs, funding frictions, and the scarcity of balance sheet available to absorb it. Mapping U.S. mutual fund flows through predetermined holdings over 2003--2024, we measure one observable component of this residual supply. Forced-sale pressure predicts actual fund selling, contemporaneous price declines, and positive returns over the following one to six months. The premium roughly doubles when market-wide absorption capacity is tight, and it concentrates in stocks with thin investor bases and limited trading capacity -- precisely the cross section in which clearing the imbalance should be most costly, and a pattern that mechanical return reversal does not generate.",
+    "authors": [
+      "Ziyao Wang"
+    ],
+    "published": "2026-05-29",
+    "categories": [
+      "q-fin.GN",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30672v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30672v1",
+    "fetched_at": "2026-06-01T13:32:08.570839",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513388"
+  },
+  {
+    "id": "2605.30643v1",
+    "title": "Quality-Adjusted Hit-Ratio Targeting in Corporate Bond Market Making",
+    "abstract": "Hit ratio is a common service metric for electronic corporate bond market making, but raw hit-ratio targets can be economically misleading when client flow has heterogeneous adverse-selection content. This paper extends a stochastic-control framework for OTC bond RFQ market making with hit-ratio constraints by replacing raw hit ratio with a residual-quality-adjusted hit ratio. The key modelling distinction is that adverse post-trade markouts are first decomposed into observable credit factors, carry/rolldown, issuer-relative-value effects, index or ETF demand effects, and residual adverse selection. Only the residual component is treated as client-flow toxicity. The resulting control problem remains tractable: after dualizing the quality-hit-ratio penalty, the HJB retains separable Hamiltonians, and the dual variable is the solution of an exact one-dimensional nonlinear fixed point for each targeted tier. Under a quadratic value-function approximation, optimal quotes decompose into a riskless spread, inventory skew, credit-alpha skew, residual-toxicity charge, and quality-hit-ratio subsidy. Synthetic multi-bond simulations with nonlinear dual solves illustrate that raw hit-ratio targeting can subsidize residual-toxic flow, while residual-quality targeting reallocates service toward low-residual-toxicity flow and improves the attained service/economics frontier. A final reduced-form extension studies inventory-recycling value through risk-aware style-aligned client-flow warehousing. Sweep or portfolio-trade opportunities fill randomly, and participation is sized using the same quadratic value approximation as the RFQ quoting problem. A passive/index-demand experiment is reported in the appendix as a special case of forecastable client flow. The numerical evidence is synthetic and mechanism-oriented; no proprietary RFQ data are used.",
+    "authors": [
+      "Bouna Niang"
+    ],
+    "published": "2026-05-28",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30643v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30643v1",
+    "fetched_at": "2026-06-01T13:32:08.570859",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513403"
+  },
+  {
+    "id": "2605.30567v1",
+    "title": "Valuation of GLWB-LTC Annuities with Lévy Equity Dynamics, Stochastic Interest Rates and Health-State Transitions",
+    "abstract": "This paper develops a valuation framework for guaranteed lifetime withdrawal benefit (GLWB) contracts with long-term care (LTC) features when the reference fund follows exponential Levy dynamics and the short rate follows the Hull-White model. The contract combines financial guarantees, longevity protection, health-contingent LTC payments, and surrender optionality, requiring the joint treatment of jump risk, stochastic discounting, and disability risk. The numerical method couples a recombining Hull-White trinomial tree with an implicit-explicit (IMEX) finite difference scheme. The framework incorporates a seven-state health model, annual fees, LTC payments, guaranteed withdrawals, and bang-bang policyholder actions, and is benchmarked against Monte Carlo simulation. Numerical results show that the hybrid tree-IMEX method delivers stable long-maturity prices consistent with simulation benchmarks. They also show that Levy equity dynamics and stochastic interest rates generate material corrections to fair fees, value decomposition, and surrender incentives. The findings highlight the importance of modelling financial tail risk and interest-rate risk jointly when pricing long-term insurance guarantees with LTC-contingent benefits.",
+    "authors": [
+      "Andrea Molent"
+    ],
+    "published": "2026-05-28",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30567v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30567v1",
+    "fetched_at": "2026-06-01T13:32:08.570877",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513424"
+  },
+  {
+    "id": "2605.30562v1",
+    "title": "Option Pricing under Stochastic Volatility and Jumps:A PIDE Framework with Empirical Evidence",
+    "abstract": "We develop a partial integro-differential equation (PIDE) framework for option pricing under joint stochastic volatility and jump dynamics, and evaluate its empirical content using the S&P500 index option contracts across three maturities. The framework is derived from the infinitesimal generator of an affine Lévy-type process and implemented via finite-difference discretization with FFT-based treatment of the nonlocal jump operator. Calibration via GMM reveals that stochastic volatility accounts for the dominant share of pricing improvement, where relative to Black-Scholes, the Heston specification reduces implied-volatility RMSE by 39%. Jump augmentation via either Merton or CGMY specifications yields marginal improvements concentrated at short maturities and in the deep out-of-the-money region. The calibrated CGMY activity index supports a compound-Poisson structure, consistent with high-frequency evidence on S&P500 index returns.",
+    "authors": [
+      "Abigail Anokyewaa Mensah",
+      "Ayush Jha",
+      "Hongwei Mei",
+      "Rui Wang",
+      "Svetlozar T. Rachev",
+      "Frank J. Fabozzi"
+    ],
+    "published": "2026-05-28",
+    "categories": [
+      "q-fin.PR",
+      "econ.EM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30562v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30562v1",
+    "fetched_at": "2026-06-01T13:32:08.570909",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513443"
+  },
+  {
+    "id": "2605.30464v1",
+    "title": "Distributional Portfolio Optimization (DPO): A Unified Framework for Distributions over Weights, Returns, and Parameters",
+    "abstract": "Classical portfolio optimization treats expected returns, covariances, and allocations as deterministic. Modern practice replaces at least one by a distribution: a posterior over parameters, a law of future returns, a stochastic allocation policy, or a distributional-robustness set. We call distributional portfolio optimization (DPO) the unified framework in which weights, returns, and parameters are all modeled as probability measures, organized around the joint coupling Gamma_theta(dw,dr) and its marginal triple (W,R,P). The contribution is synthetic and structural: we organize Bayesian, robust, chance-constrained, stochastic-allocation, and distributional reinforcement-learning portfolio methods through this coupling and prove boundary results connecting them, including a portfolio specialization of Wasserstein-CVaR duality, a static no-randomization theorem, a Bayesian credible-radius calibration of Wasserstein DRO, a Gaussian-isotropic second-order conservatism bound, a conditional two-sided rate W_1 = Theta(n^{-(1+alpha)/2}) governed by the local boundary Holder exponent alpha in [0,1], and a risk-shifted distributional Bellman contraction. A controlled experiment shows that across factor models at K in {10,25,50}, the credible-radius rule lands within 3-7 bp of the oracle out-of-sample tail risk and beats a 24-month validation-tuned radius while spending no validation data. On a K=25 DJIA backtest, equal-weight, no-view Black-Litterman, and Ledoit-Wolf shrinkage attain higher Sharpe than every distributional method; the operational claim is therefore confined to calibration-without-validation and turnover, not raw-return dominance.",
+    "authors": [
+      "Miquel Noguer i Alonso"
+    ],
+    "published": "2026-05-28",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30464v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30464v1",
+    "fetched_at": "2026-06-01T13:32:08.570927",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513456"
+  },
+  {
+    "id": "2605.30442v1",
+    "title": "When market boundaries weaken: Network reconfiguration and regime-dependent cross-asset spillovers",
+    "abstract": "Cryptocurrencies are increasingly adopted as investment assets, making their interactions with traditional financial markets central to cross-asset diversification and systemic risk. This paper studies the integration of cryptocurrencies, fiat currencies, and S&P500 equities using a balanced panel of 381 assets from October 2017 to February 2024. We combine rolling correlation networks, consensus-based community detection, market-specific and system-wide Turbulence Indices, and VAR-based connectedness analysis to examine how market stress, network topology, and shock transmission co-evolve across regimes. The results show that cross-asset integration is episodic. In normal periods, the three asset classes remain relatively segmented, whereas under stress, local clustering increases, modular separation weakens, and communities become more compositionally mixed across asset classes. Connectedness analysis further shows that regime shifts alter the structure of transmission rather than simply increasing spillover magnitudes. In high-turbulence states, fiat-market turbulence becomes the main propagation channel, while network clustering and modularity become more involved in forecast-uncertainty transmission. These findings support the interpretation of network topology as an emergent, state-dependent amplification channel rather than a persistent exogenous driver of turbulence. The results highlight the need for regime-aware risk monitoring, since full-sample connectedness estimates can understate the coupling that arises when diversification benefits are most vulnerable.",
+    "authors": [
+      "Ruixue Jing",
+      "Luis Enrique Correa Rocha"
+    ],
+    "published": "2026-05-28",
+    "categories": [
+      "physics.pop-ph",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30442v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30442v1",
+    "fetched_at": "2026-06-01T13:32:08.570947",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513468"
+  },
+  {
+    "id": "2605.30652v1",
+    "title": "Bridging the Gap Between Natural Language and Market Dynamics via High-Dimensional Representation Learning",
+    "abstract": "Traditional multi-modal financial forecasting often relies on scalar sentiment scores, which fail to capture the nuances of financial news. To address this information loss, this paper explores high-dimensional representation learning by replacing discrete polarity ratings with dense FinBERT embeddings within a Transformer-based forecasting architecture. We benchmarked various embedding strategies on the FNSPID dataset, including raw embeddings, attention-weighted aggregation, and a custom Siamese network. While the attention-based mechanism struggled with the low signal-to-noise ratio typical of financial data, the integration of Siamese-optimized embeddings outperformed both the scalar baseline and raw embedding approaches, demonstrating that preserving high-dimensional narrative context yields improved predictive accuracy for short-term stock price movements.",
+    "authors": [
+      "Yujin Jeong",
+      "Noelle Jung",
+      "Brian Y. C. Leung"
+    ],
+    "published": "2026-05-28",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30652v1",
+    "arxiv_url": "https://arxiv.org/abs/2605.30652v1",
+    "fetched_at": "2026-06-01T13:40:46.652937",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Sentiment Analysis"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-01T13:41:06.513486"
+  }
+]
