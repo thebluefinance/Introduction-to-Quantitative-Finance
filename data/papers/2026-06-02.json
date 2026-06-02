@@ -1,0 +1,259 @@
+[
+  {
+    "id": "2606.02528v1",
+    "title": "Auditing Asset-Specific Preferences in Financial Large Language Models: Evidence from Bitcoin Representations and Portfolio Allocation",
+    "abstract": "Large language models now power robo-advisors and trading agents, yet whether they carry built-in biases toward specific assets is largely untested. We ask three questions: do LLMs systematically prefer certain financial instruments; can an internal representation with causal leverage over those preferences be identified; and does that representation affect downstream financial decisions?   We develop a three-level audit protocol and apply it to Bitcoin. First, a behavioral audit of eight frontier LLMs shows that Bitcoin's ranking among money-like instruments is frame-dependent: models place it around rank 5 of 8 as \"reliable money\" but near the top under crisis and autonomous-agent frames, and an attribute-swap experiment confirms rankings track functional properties, not names. Second, we open a model's internals: a search across thousands of sparse-autoencoder features in Gemma 3 identifies a dominant Bitcoin-selective feature. Amplifying it shifts the model toward the asset and suppressing it shifts the model away, even when \"Bitcoin\" never appears in the prompt. Third, we test financial consequences: amplification raises Bitcoin's portfolio share by 5.2 percentage points while suppression lowers it by 4.6 pp, with amplification reallocating within crypto and suppression cutting total crypto exposure.   We characterize this as bounded behavioral leverage (leverage meaning causal influence over outputs, not financial leverage): an identifiable internal feature can be perturbed to move financial choices, but only within measurable limits. The framework links internal representations to external recommendations, validated with random controls and mechanism boundaries. As LLMs become autonomous financial agents, this is a first step toward a behavioral layer for emerging know-your-agent (KYA) standards: knowing what an agent prefers, and how far that preference can be moved.",
+    "authors": [
+      "Wenbin Wu"
+    ],
+    "published": "2026-06-01",
+    "categories": [
+      "q-fin.GN",
+      "cs.CY",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.02528v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.02528v1",
+    "fetched_at": "2026-06-02T12:00:37.717779"
+  },
+  {
+    "id": "2606.02336v1",
+    "title": "VIX options in Bergomi models",
+    "abstract": "We present a study of the leading-order asymptotics for VIX option prices in Bergomi models in the short-maturity and small volatility-of-volatility regimes. Both out-of-the-money (OTM) and at-the-money (ATM) asymptotics are considered for one-factor, two-factor Bergomi and $N$-factor models. The leading-order asymptotics are obtained in closed-form, which are translated into predictions for the small-maturity asymptotics of the VIX implied volatility. Numerical illustrations are provided to illustrate the efficiency of the closed-form asymptotic formulas.",
+    "authors": [
+      "Desen Guo",
+      "Dan Pirjol",
+      "Lingjiong Zhu"
+    ],
+    "published": "2026-06-01",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.02336v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.02336v1",
+    "fetched_at": "2026-06-02T12:00:37.717818"
+  },
+  {
+    "id": "2606.01979v1",
+    "title": "A Simple Hierarchical Causality Primer",
+    "abstract": "We provide a brief primer for the idea behind formalising hierarchical causality in the context of complex systems. Here actors are not simply agents. Actors instantiate causation classes. Agents implement local dynamics in given levels or organisation in a given system. Hierarchical causality then describes how actor-level roles constrain, select, and organise agent-level behaviour across levels. The system then necessarily requires three additional structures. First, causation classes to abstract a given form of causal influence that an actor instantiates. Second, aggregation operators to move across the levels. Third, discrete event-time maps are required because the system comprises events, and the relation between local event counts and any global clock must be specified. Our formulation here is purposefully simple and discrete.",
+    "authors": [
+      "Tim Gebbie"
+    ],
+    "published": "2026-06-01",
+    "categories": [
+      "cs.MA",
+      "math.OC",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01979v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01979v1",
+    "fetched_at": "2026-06-02T12:00:37.717841"
+  },
+  {
+    "id": "2606.01650v1",
+    "title": "Post Selection Estimation of Sharpe Ratios",
+    "abstract": "We consider the problem of estimating the true Sharpe ratio of an asset selected for having the highest observed in-sample Sharpe ratio among many assets. We discuss estimators based on the polyhedral lemma, James Stein shrinkage, debiasing the expected maximum Sharpe ratio, thresholding and empirical Bayes. We test these estimators in simulations, computing bias and root mean square error across different values of sample size, number of assets, and spread and shape of population Sharpe ratios. We also compute rank correlation of the estimators against the underlying quantity, simulating how these estimators might be used to compare or rank the output of different teams which perform this selection process. We find that the James Stein estimator provides the best performance across many different realistic values of the relevant parameters, followed by the GMLEB estimator of Jiang and Zhang. These results are fairly robust to correlation of asset returns, with some caveats.",
+    "authors": [
+      "Steven E. Pav"
+    ],
+    "published": "2026-06-01",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.TR",
+      "stat.AP",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01650v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01650v1",
+    "fetched_at": "2026-06-02T12:00:37.717860"
+  },
+  {
+    "id": "2606.01575v1",
+    "title": "Boom, Bubble, or Buildout? A Multi-Method Evaluation of Whether Artificial Intelligence Is in an Ongoing Financial Bubble",
+    "abstract": "The rapid expansion of artificial intelligence (AI) investment has revived a recurrent question in financial economics: are AI-related assets experiencing a bubble, or is the market capitaliz- ing a durable general-purpose technology? This paper develops a hybrid review and diagnostic framework for evaluating whether AI is in an ongoing financial bubble as of May 2026. The analysis begins from asset-pricing foundations in state prices, stochastic discount factors, martingale valuation, and pricing kernels, then connects these foundations to rational bubbles, behavioral bubbles, technology manias, and modern econometric bubble-detection methods. Current evidence shows both genuine fundamentals and bubble-like fragilities. On the fundamental side, realized revenue growth, enterprise adoption, and productivity evidence support a nontrivial share of AI valuations. On the fragile side, capital expenditure has accelerated faster than observed monetization in some layers, private- market valuations are concentrated in a small number of firms, and investor narratives often capitalize future productivity gains before they have appeared in cash flows. The paper proposes a five-pillar diagnostic framework that combines fundamental valuation, residual-exuberance tests, SADF/GSADF explosive-root procedures, LPPL/HLPPL price-pattern diagnostics, sen- timent and issuance measures, and capex-payback analysis. The central conclusion is that AI is best understood as a real technological revolution with localized bubble dynamics rather than as either a pure speculative mania or a bubble-free productivity miracle.",
+    "authors": [
+      "Qianan Wang",
+      "Zen Chen"
+    ],
+    "published": "2026-06-01",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01575v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01575v1",
+    "fetched_at": "2026-06-02T12:00:37.717880"
+  },
+  {
+    "id": "2606.01477v1",
+    "title": "Avellaneda-Stoikov and Cartea-Jaimungal as One Framework: A Forced Uniqueness Theorem for Inventory Market Making",
+    "abstract": "In inventory market making, the running-penalty coefficient $φ$ of the Cartea-Jaimungal framework and the risk-aversion parameter $γ$ of the Avellaneda-Stoikov framework are typically treated as independent free parameters, calibrated separately. We show that they are in fact not independent. A small set of axioms on the market maker's dynamic preference functional, namely cash-additivity, normalization, concavity, strong dynamic consistency, and law-invariance, forces the preference functional to be the entropic certainty-equivalent on liquidation-adjusted terminal wealth, parametrized by a single positive scalar $γ$. The Avellaneda-Stoikov framework is the unique representative of this axiom class. The Cartea-Jaimungal framework is its second-order Taylor expansion in inventory magnitude, with the running coefficient forced to $φ= γσ^2/2$ and (under a mild regularity condition on the liquidation cost) the terminal coefficient forced to $α= \\frac{1}{2}L''(0)$. The two frameworks, typically presented as competing alternatives with the choice between them driven by tractability, are different manifestations of a single underlying object. The forced relation is invertible, $γ= 2φ/σ^2$, giving a consistency cross-check on independently calibrated desk parameters.",
+    "authors": [
+      "Frank M. V. Feys"
+    ],
+    "published": "2026-05-31",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.RM",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01477v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01477v1",
+    "fetched_at": "2026-06-02T12:00:37.717900"
+  },
+  {
+    "id": "2606.01356v1",
+    "title": "A Formally Verified Library of Mathematical Finance in Lean 4",
+    "abstract": "We describe a library of mathematical finance built in the Lean 4 proof assistant, on top of Mathlib and the BrownianMotion package. It is broad: more than two hundred sorry-free theorems across eleven areas, from the measure-theoretic foundations of continuous-time stochastic calculus through derivative pricing to applied risk, portfolio, and fixed-income theory, and, to our knowledge, the most comprehensive machine-checked development of mathematical finance to date. Breadth is the setting, not the point. Two things make it more than a catalogue. It reaches into the continuous theory far enough to construct the L2 Itô integral as a bounded linear isometry and to derive, rather than assume, the risk-neutral pricing measure. And it audits its own faithfulness: every result is classified by how its Lean statement relates to the mathematics it claims, and a build-enforced gate pins the axioms each proof actually uses, so a reader can see precisely what has been proved and what has only been proved under added hypotheses. We close with a candid finding: a formal base over classical financial mathematics yields certified unification of known results rather than new financial theory. The contribution is therefore methodological and infrastructural, reusable verified foundations for mathematical finance, together with the faithfulness audit.",
+    "authors": [
+      "Raphael Coelho"
+    ],
+    "published": "2026-05-31",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01356v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01356v1",
+    "fetched_at": "2026-06-02T12:00:37.717922"
+  },
+  {
+    "id": "2606.01274v1",
+    "title": "Strategic Users in a Priority Queue with Bulk Service on Blockchains",
+    "abstract": "This paper analyzes transaction fees on blockchains by considering that they form a priority queue and users play a queueing game. Using an M/G^K/1 priority queue model, we provide new insights into the dynamics governing transaction fees and their impact on user behavior. We derive semi-closed form expressions for steady-state quantities and extend the relationship between user delay costs and transaction fees to general block generation times. We apply the model to the Bitcoin network and simulate user responses under various scenarios. Cross-chain analysis across Bitcoin, Dogecoin, and Litecoin reveals similarities in normalized cost structures.",
+    "authors": [
+      "Donghwa Seo",
+      "Kyoung-Kuk Kim"
+    ],
+    "published": "2026-05-31",
+    "categories": [
+      "q-fin.TR",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01274v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01274v1",
+    "fetched_at": "2026-06-02T12:00:37.717942"
+  },
+  {
+    "id": "2606.01131v1",
+    "title": "Tokenized but Illiquid? Evidence from Real-World Asset Markets",
+    "abstract": "Real-world asset tokenization is often presented as a mechanism for improving the liquidity of traditionally illiquid assets. However, on-chain representation and secondary-market liquidity are distinct outcomes. This paper examines whether tokenized real-world assets exhibit meaningful observed liquidity and identifies the token characteristics associated with higher market activity. Using token-level data from RWA.xyz and supplemental contract-level observations from Etherscan, the study constructs an Ethereum-based monthly panel of non-stablecoin real-world assets across three prominent categories: U.S. Treasury-backed tokens, gold-backed commodity tokens, and private-credit-related tokens. Liquidity is measured using turnover, active addresses, and an active-month indicator. The empirical design combines descriptive statistics, non-parametric group tests, and exploratory panel regressions suited to short and sparse token histories. The results show substantial heterogeneity across asset categories. Gold-backed tokens exhibit broader holder bases and more persistent on-chain activity than many Treasury and private-credit-related products, while outstanding asset value alone does not reliably predict observed liquidity. The paper contributes to the literature by developing a clearer empirical measurement framework for real-world-asset liquidity and showing that tokenization and liquidity should be analyzed as distinct outcomes.",
+    "authors": [
+      "Rischan Mafrur"
+    ],
+    "published": "2026-05-31",
+    "categories": [
+      "cs.CE",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01131v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01131v1",
+    "fetched_at": "2026-06-02T12:00:37.717959"
+  },
+  {
+    "id": "2606.01122v1",
+    "title": "A Per-Component Diagnostic Protocol for Neural HJB-PIDE Solvers under Control-Dependent Lévy Jumps",
+    "abstract": "We propose a five-step diagnostic protocol for residual-trained neural HJB-PIDE solvers with control-dependent Lévy jumps, targeting a general failure mode of neural PDE methods: a learned solution can match headline scalar diagnostics while miscomputing an operator inside its training loss. The protocol pairs each neural solve with at least one from-scratch independent reference, decomposes the Hamiltonian into drift, diffusion, compensator, and nonlocal-integral components across a u-grid, and compares the value function and its low-order derivatives over a (t,x) grid before any argmax comparison. Applied to a standard CRRA-Merton-Variance-Gamma benchmark, it isolates a missing 1/2-mixture factor in the neural method's importance-proposal density that scaled the nonlocal integral by exactly half - a textbook signature of a constant proposal scale error, invisible to longer training, grid refinement, and truncation sweeps. With the bug corrected, four references - two finite-difference solvers with disjoint discretizations, the neural solver, and a semi-analytic scalar baseline obtained from CRRA homogeneity - agree on the optimal control to within ~2%. The constant-coefficient CRRA benchmark collapses by homogeneity to a scalar maximization, so the scalar baseline is the efficient method here; the contribution is the protocol, applicable in principle to non-homogeneous and higher-dimensional settings where neural HJB-PIDE solvers are genuinely needed. The episode is a concrete instance of a broader neural-PDE verification failure: pointwise agreement of a learned value or control can coexist with a systematically wrong nonlocal operator, so per-component and surface-level checks are needed before trusting the argmax policy.",
+    "authors": [
+      "R. Drissi"
+    ],
+    "published": "2026-05-31",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.01122v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.01122v1",
+    "fetched_at": "2026-06-02T12:00:37.717977"
+  },
+  {
+    "id": "2606.00800v1",
+    "title": "Multiplicative Langevin Process for Volatilities Produces Observed Q-Variance Regularities",
+    "abstract": "Q-variance (so-called) posits a statistical relationship $\\mathbf{E}(σ^2 | z) = σ_0^2 + \\tfrac{1}{2}z^2$ between an asset's volatility $σ^2$, as observed in a time interval $T$, and its (suitably scaled) return $z$ in the same interval. We here show that this relationship is {\\em exactly equivalent} to to positing an Inverse Gamma probability distribution for $σ^2$ itself. We then show that such a distribution is exactly generated by a multiplicative Langevin process with an arbitrary, settable coherence time $τ_c$, so that very nearly the same Q-variance relationship will hold for all $T \\ll τ_c$.",
+    "authors": [
+      "William H. Press",
+      "Alex Dannenberg"
+    ],
+    "published": "2026-05-30",
+    "categories": [
+      "q-fin.PR",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.00800v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.00800v1",
+    "fetched_at": "2026-06-02T12:00:37.717996"
+  },
+  {
+    "id": "2606.00624v1",
+    "title": "Macro-aware time series forecasting via hierarchical mixed-frequency attention models",
+    "abstract": "Deep learning models show promise in financial forecasting, yet their generalization is often undermined by small datasets, noisy signals, and non-stationarity. While meta-learning and related techniques mitigate some of these issues, they typically do not account for a core limitation in macro-financial prediction: the scarcity of distinct macroeconomic regimes that drive asset returns. We introduce HANET (Hierarchical Attention Network), a hybrid LSTM-based architecture that integrates macroeconomic domain knowledge through attention over long-run macro contexts while preserving high-frequency market dynamics. HANET organizes information in a hierarchical mixed-frequency structure, with daily asset-return signals nested within monthly macroeconomic windows, and introduces a Hierarchical Cross-Attention mechanism that reconciles low-frequency macro signals with high-frequency returns without discarding granular daily information. By framing regime selection as attention over macroeconomic contexts, the model adapts to scarce and shifting regimes. Empirically, across 55 liquid futures spanning multiple asset classes, HANET consistently outperforms neural forecasters that ignore macroeconomic information, particularly during turbulent periods, improving risk-adjusted returns and mitigating losses. Ablation studies show that these gains rely on structured macro conditioning rather than naive feature augmentation: an LSTM with the same macro representation performs poorly, and shuffling macro contexts substantially degrades performance. Finally, HANET provides interpretability through attention weights, highlighting which historical regimes are most influential for each forecast and linking macro conditions to portfolio outcomes. These results establish HANET as a systematic approach to integrating macroeconomic information into attention-based deep learning for financial forecasting.",
+    "authors": [
+      "Daniel Cunha Oliveira",
+      "Kieran Wood",
+      "Stefan Zohren",
+      "Mihai Cucuringu",
+      "André Fujita"
+    ],
+    "published": "2026-05-30",
+    "categories": [
+      "q-fin.ST",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.00624v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.00624v1",
+    "fetched_at": "2026-06-02T12:00:37.718020"
+  },
+  {
+    "id": "2606.00143v1",
+    "title": "Regime-Adaptive Continual Learning for Portfolio Management",
+    "abstract": "Financial markets are inherently non-stationary, exhibiting frequent regime shifts and structural changes that render traditional Portfolio Management (PM) approaches ineffective. Existing remedies, such as rolling-window retraining and naive online fine-tuning, are hindered by high computational costs and insufficient knowledge utilization, respectively, resulting in low returns and limited adaptability. Continual learning (CL) offers a promising paradigm by enabling trading agents to accumulate and transfer knowledge across sequential tasks. In this paper, we propose \\textbf{Re}gime-aware \\textbf{C}ontinual \\textbf{A}daptive \\textbf{P}ortfolio management (\\textbf{ReCAP}), a novel framework that integrates CL into PM to address the challenges of dynamic financial environments. ReCAP employs an adaptive regime detection module to segment historical market data into variable-length regimes, enabling regime-specific learning of policy vectors and the construction of a policy library. During continual trading, a regime-gate module adaptively combines policy vectors from the library based on the current market state, facilitating rapid adaptation to newly detected regimes. Only the regime-gate and the current regime's policy vector are continually updated to preserve useful knowledge effectively. Extensive experiments on five real-world datasets demonstrate that ReCAP consistently outperforms popular baselines, achieving superior returns in long-term investment horizons and rapid adaptation to regime shifts.",
+    "authors": [
+      "Chaofan Pan",
+      "Lingfei Ren",
+      "Linbo Xiong",
+      "Yonghao Li",
+      "Wei Wei",
+      "Xin Yang"
+    ],
+    "published": "2026-05-29",
+    "categories": [
+      "q-fin.PM",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.00143v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.00143v1",
+    "fetched_at": "2026-06-02T12:00:37.718065"
+  },
+  {
+    "id": "2605.30567v2",
+    "title": "Valuation of GLWB-LTC Annuities with Lévy Equity Dynamics, Stochastic Interest Rates and Health-State Transitions",
+    "abstract": "This paper develops a valuation framework for guaranteed lifetime withdrawal benefit (GLWB) contracts with long-term care (LTC) features when the reference fund follows exponential Levy dynamics and the short rate follows the Hull-White model. The contract combines financial guarantees, longevity protection, health-contingent LTC payments, and surrender optionality, requiring the joint treatment of jump risk, stochastic discounting, and disability risk. The numerical method couples a recombining Hull-White trinomial tree with an implicit-explicit (IMEX) finite difference scheme. The framework incorporates a seven-state health model, annual fees, LTC payments, guaranteed withdrawals, and bang-bang policyholder actions, and is benchmarked against Monte Carlo simulation. Numerical results show that the hybrid tree-IMEX method delivers stable long-maturity prices consistent with simulation benchmarks. They also show that Levy equity dynamics and stochastic interest rates have a material impact on fair fees and surrender incentives, and affect the decomposition of contract value. The findings highlight the importance of modelling financial tail risk and interest-rate risk jointly when pricing long-term insurance guarantees with LTC-contingent benefits.",
+    "authors": [
+      "Andrea Molent"
+    ],
+    "published": "2026-05-28",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.30567v2",
+    "arxiv_url": "https://arxiv.org/abs/2605.30567v2",
+    "fetched_at": "2026-06-02T12:00:37.718118"
+  },
+  {
+    "id": "2605.27864v3",
+    "title": "FundaPod: A Multi-Persona Agent Pod Platform with Knowledge Graph Memory for AI-Assisted Fundamental Investment Research",
+    "abstract": "Large language models (LLMs) are increasingly applied in finance, yet most existing work emphasizes trading signals or financial NLP tasks centered on prediction. Institutional fundamental research, by contrast, requires human analysts or AI agents to gather evidence, identify business drivers, compare competing viewpoints, and generate investment memos. Its broader goal is not merely to predict outcomes, but to produce investment plans that are transparent, reusable, and verifiable, while contributing to the cumulative development of investment knowledge. We present FundaPod, a multi-persona agent platform for AI-assisted fundamental investment research. We argue that fundamental research is a human-centric decision-support task that is qualitatively distinct from trading-signal generation, and is therefore better served by an independence-preserving architecture. In FundaPod, AI agents with different personas, such as value investors or macro strategists, conduct research independently under a shared provenance contract. Their disagreements are then surfaced post hoc for adjudication by the human portfolio manager (PM) through a knowledge-graph memory system. This paper contributes five design principles for human-AI hybrid systems supporting fundamental research, grounded in design-science practice and theories of cognitive isolation and human-machine coordination. It also describes four architectural mechanisms: a persona distillation pipeline that turns public investor materials into deployable agents; a declarative skill registry that lets the planner derive typed task graphs; a grounded evidence model that links memo claims to verifiable sources; and a knowledge-graph \"second brain\" that connects tickers, memos, analysts, and themes. We demonstrate the architecture through a complete case study and a persona-based memo comparison.",
+    "authors": [
+      "Di Zhu",
+      "Lei Nico Zheng",
+      "Zihan Chen"
+    ],
+    "published": "2026-05-27",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2605.27864v3",
+    "arxiv_url": "https://arxiv.org/abs/2605.27864v3",
+    "fetched_at": "2026-06-02T12:07:44.968469"
+  }
+]
