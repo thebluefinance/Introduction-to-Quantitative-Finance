@@ -1,0 +1,728 @@
+[
+  {
+    "id": "2606.07450v1",
+    "title": "Information Networks of Stock Prices",
+    "abstract": "The collective movement of stock prices harbors complex interdependencies that are conventionally simplified only through a linear lens. This paper explores computed structural network representations in the Indonesian capital market by testing the limits of Pearson correlation and Mutual Information (MI) in unveiling the spectral dynamics of the market. Across 2,328 rolling observation windows from 2015 to 2025, we examine 24 methodological configurations that combine three dependency estimators (Pearson, MI adaptive binning, and MI-kNN), two graph filtering schemes (Minimum Spanning Tree/MST and Planar Maximally Filtered Graph/PMFG), and four community decoders.   The empirical results unveil a fundamental reality: topological richness does not always resonate with sectoral classification precision. The Pearson, MST, and Infomap configuration is shown to remain the most robust foundation for recovering conventional sectoral taxonomy. Nevertheless, when deeper observation demands the exposition of local structures and the weave of heterogeneous communities, the architectural relaxation through PMFG demonstrates its superiority. In the realm of residual information detection, MI adaptive binning appears far more proportional than kNN; histogram-based regularization successfully tames empirical noise without sweeping away traces of non-linear dependency. Ultimately, the synergy of MI and PMFG is not positioned to dethrone the dominance of linear correlation, but rather to provide an essential analytical lens for excavating hidden economic sub-structures -- such as the cohesion of commodity regimes -- that have long transcended the rigid boundaries of the market's formal sectors.",
+    "authors": [
+      "Muhammad Aldy Hassan",
+      "Hokky Situngkir"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.SI",
+      "q-fin.PM",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07450v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07450v1",
+    "fetched_at": "2026-06-08T12:24:41.649544",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587488"
+  },
+  {
+    "id": "2606.07445v1",
+    "title": "Bubbles vs. Baselines: Token Valuation and Institutional Capital in PoS Networks under EIP-1559",
+    "abstract": "This paper presents an open-economy macroeconomic equilibrium model for Proof-of-Stake (PoS) networks with fee-burn mechanics (EIP-1559) that formalizes the strategic interplay between a Kelly-optimizing rational institutional investor and a utility-driven retail consumer. We analyze network dynamics across two behavioral regimes. In The Unbounded Accumulation Model, the consumer purely accumulates tokens, creating an exclusive buy-side pressure that interacts with institutional portfolio rebalancing to fuel an ever-expanding speculative bubble and generate compounding excess returns for investors. Conversely, in The Utility-Consumption Model, the consumer dynamically buys and sells tokens to balance crypto wealth against real-world fiat consumption. Within this framework, we derive an explicit steady-state equilibrium price for ETH, demonstrating how token valuation anchors to a stable fundamental baseline that scales directly with network adoption while completely dissolving the institutional yield premium. Our numerical simulations show that while exogenous traditional finance (TradFi) shocks propagate through portfolio rebalancing to drive high token price volatility, network inflation remains highly stable. Furthermore, we prove that network security is insulated from institutional monopoly by counter-cyclical consumer behavior. Our findings reveal that institutional excess wealth creation in PoS ecosystems is not native to the staking protocol itself, but is strictly driven by the leveraged extraction of the retail consumer's continuous demand for transactional utility.",
+    "authors": [
+      "Mikhail Perepelitsa"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "q-fin.MF",
+      "cs.GT",
+      "econ.TH",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07445v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07445v1",
+    "fetched_at": "2026-06-08T12:24:41.649580",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587509"
+  },
+  {
+    "id": "2606.07290v1",
+    "title": "Boundary behaviour of the Volterra square-root process",
+    "abstract": "In this work, we study the boundary behaviour of the Volterra square- root process on $\\mathbb{R}_+$. For regular Volterra kernels, we establish a time-dependent Feller condition that guarantees that the process does not hit zero on $[0, T]$, and prove finiteness of negative $p$-moments. For rough kernels that are regularly varying at zero, we show that the process necessarily hits zero with positive probability, and that its law has an atom at the boundary. Finally, for the limit distribution, we show that finiteness of negative moments is determined by the long-time asymptotics of the associated resolvent. In particular, while in the rough case the process has an atom at zero, its limit distribution has finite negative exponential moments. Our proofs are based on comparison principles for Volterra integral equations and generalized Riemann-Liouville fractional equations. The latter provide us with upper and lower bounds for the solution of the associated Volterra Riccati equation, and hence also on the asymptotics of the Laplace transform. As an application, we study the structure of equivalent martingale measures in the Volterra Heston model. For the rough case, we show that equivalent martingale measures exist only under very restrictive assumptions on the drift under the real-world measure.",
+    "authors": [
+      "Martin Friesen",
+      "Stefan Gerhold",
+      "Kristof Wiedermann"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07290v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07290v1",
+    "fetched_at": "2026-06-08T12:24:41.649607",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587521"
+  },
+  {
+    "id": "2606.07276v1",
+    "title": "The Balance Property: The Constrained Case, with a View on Risk Sharing",
+    "abstract": "The balance property is an important property of fitted statistical models deployed for insurance pricing. It guarantees that the total actuarial price in the fitted model is equal to the totally observed loss used to fit the model. This can be seen as an in-sample global unbiasedness property. Maximum likelihood fitted generalized linear models (GLMs) with canonical links automatically fulfill the balance property. Lindholm-Wüthrich (Scandinavian Actuarial Journal, 2026) discussed two popular balance correction methods in case the balance property fails to hold. This note extends this discussion with a third method, constrained GLM fitting, that turns out to be superior over the two previously discussed ones. Moreover, we highlight the connection between the balance property and ex-post risk sharing rules.",
+    "authors": [
+      "Mario V. Wüthrich"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "math.ST",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07276v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07276v1",
+    "fetched_at": "2026-06-08T12:24:41.649627",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587543"
+  },
+  {
+    "id": "2606.07059v1",
+    "title": "Diffusive in plain sight: An inconspicuous law of market impact",
+    "abstract": "Decomposing impact as the difference between realized and counterfactual returns and requiring both to be diffusive yields an identity that restricts admissible impact scaling at the level of individual participants. This constraint implies the square-root law in the information-neutral regime and a crossover to linear impact under strong informational coupling, consistent with empirical observations. In the weak-coupling regime, cumulative market impact is itself diffusive -- a diagnostic that many propagator and latent liquidity models fail to satisfy.",
+    "authors": [
+      "Julius F. Bonart"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07059v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07059v1",
+    "fetched_at": "2026-06-08T12:24:41.649645",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587556"
+  },
+  {
+    "id": "2606.06823v1",
+    "title": "PandaAI: A Practical Agent CQ2 for Neuro-symbolic Data Analysis And Integrated Decision-Making in Quantitative Finance",
+    "abstract": "While deep learning has excelled in various domains, its application to sequential decision-making in finance remains challenging due to the low Signal-to-Noise Ratio (SNR) and non-stationarity of financial data. Leveraging the reasoning capabilities of Large Language Models (LLMs), we propose \\textbf{PandaAI}, a closed-loop neuro-symbolic LLM agent with market regime modeling and constrained alpha generation, which bridges general LLM reasoning with financial rigor and suppresses the financial toxicity of LLM-generated outputs. To bridge the gap between general linguistic capability and financial rigor, we fine-tune a domain-specific LLM. Furthermore, we integrate this LLM into a modular architecture and form a closed-loop system. Unlike traditional models that optimize isolated prediction metrics, \\textbf{PandaAI} is designed as a neuro-symbolic agent that navigates the complex, real-world financial environment with explicit risk awareness. Extensive experiments on CSI 300 stock data show that \\textbf{PandaAI} achieves a $18.2\\%$ higher Rank IC and $25.7\\%$ lower maximum drawdown than state-of-the-art time-series models. Our constrained LLM generation and dual-channel adaptation method provide a general paradigm for LLM deployment in high-stakes sequential decision-making scenarios.",
+    "authors": [
+      "Yuqi Li",
+      "Siyuan Liu",
+      "Bingjun Liu"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.06823v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.06823v1",
+    "fetched_at": "2026-06-08T12:24:41.649668",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587568"
+  },
+  {
+    "id": "2606.06737v1",
+    "title": "Fast-excursion limit of the Heston model",
+    "abstract": "This article introduces an unconventional model for price processes in finance that emerges from the classical Heston model under Mechkov's fast-reversion limit. This new fast-excursion Heston model exhibits instantaneous (i.e. fast) excursions through an interval of prices at each time, which are invisible to vanilla options but critical for hitting probabilities and continuously monitored exotics. Theoretically, the model provides a rare example of a non-degenerate limit of stochastic volatility models that escapes the Skorokhod topologies. This leads us to a class of interval-valued processes which exist as lifts of subordinated Levy processes, through the concept of selections in the theory of random closed sets. On the practical side, we show how the model can be simulated using price-time parametric representations, and utilise a purpose-built classical Heston simulation scheme in order to visualise convergence. Finally we demonstrate how this model raises hitting probabilities for barrier options considerably (of order 10% for one-month EURUSD options), due to taking excursion risk into account.",
+    "authors": [
+      "Ryan McCrickerd"
+    ],
+    "published": "2026-06-04",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.06737v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.06737v1",
+    "fetched_at": "2026-06-08T12:24:41.649686",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587577"
+  },
+  {
+    "id": "2606.07303v1",
+    "title": "Bootstrap Theory of Representational Emergence: Explanatory Insufficiency as a Driver of Representation Learning and World Models",
+    "abstract": "Representation learning is central to modern machine learning, enabling transitions from handcrafted features to learned embeddings, latent spaces, foundation models, world models, and digital twins. Yet most research examines how representations are optimized after a representational framework has been selected, while less attention is given to when a new level of representation becomes necessary. We introduce the Bootstrap Theory of Representational Emergence (TBER), a framework describing how new representations arise when existing ones become explanatorily insufficient. In this view, representational innovation is not only driven by more data, larger models, or greater computational power, but also by persistent explanatory gaps: situations in which a representation can still describe observations but can no longer make their organization or transformations intelligible. TBER identifies explanatory insufficiency as a positive signal for representational transition. A representation becomes insufficient not because it is necessarily false, but because its explanatory domain has been exceeded. The bootstrap dynamic follows a recursive sequence: observations reveal anomalies; anomalies expose insufficiencies; insufficiencies motivate new representations; and these new representations generate further observations and possible new insufficiencies.We formalize this process through five stages: stabilized observation, anomaly detection, recognition of explanatory insufficiency, representational emergence, and provisional stabilization. We discuss applications to representation learning, latent spaces, foundation models, world models, digital twins, adaptive biological systems, and scientific discovery. TBER suggests that future AI systems may benefit from mechanisms for detecting the explanatory limits of their own internal representations.",
+    "authors": [
+      "Jacques Raynal",
+      "Pierre Slangen",
+      "Elsa Raynal",
+      "Jacques Margerit"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07303v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07303v1",
+    "fetched_at": "2026-06-08T12:24:54.979642",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587597"
+  },
+  {
+    "id": "2606.07031v1",
+    "title": "CF-JEPA: Mask-free forward prediction with asymmetric encoder utilization for time-series representation learning",
+    "abstract": "Self-supervised learning (SSL) for time-series representation learning is dominated by two paradigms: contrastive methods, which face challenges in constructing positive or negative pairs, and masking-based methods, which disrupt the temporal continuity of time-series signals. Joint-Embedding Predictive Architecture (JEPA) offers a promising alternative by predicting in representation space rather than reconstructing raw inputs. However, existing time-series JEPA variants still rely on masking and therefore inherit its continuity problem. Crop-based Forward JEPA (CF-JEPA) is proposed as an innovative mask-free framework that replaces masking with multi-horizon forward prediction: random crops serve as context views, and short-, mid-, and long-horizon future representations are predicted in the forward temporal direction, directly leveraging the inherent temporal ordering of time-series data as a learning signal. A strong asymmetry is also identified between the online encoder and the exponential moving average (EMA) target encoder, both produced from a single training run: the online encoder develops higher-rank discriminative features, while the EMA target encoder develops smoother, lower-rank temporal features. Exploiting this asymmetry, classification is routed to the online encoder and forecasting or anomaly detection to the EMA target encoder, achieving a 27% reduction in multivariate forecasting mean squared error (MSE) at no additional training cost. Across 126 University of California, Riverside (UCR) and 26 University of East Anglia (UEA) classification datasets, eight electricity transformer temperature forecasting benchmarks, and Key Performance Indicator /Yahoo anomaly detection, CF-JEPA achieves the highest average accuracy and rank on UCR and UEA among self-supervised baselines and ranks second on univariate forecasting and k-nearest neighbors-scored anomaly detection.",
+    "authors": [
+      "Jaehoon Lee",
+      "Sunghyun Sim"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07031v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07031v1",
+    "fetched_at": "2026-06-08T12:24:54.979669",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587609"
+  },
+  {
+    "id": "2606.06536v1",
+    "title": "Attention-Guided Autoencoder Fusion for Insulator Defect Detection Using UAV Transmission-Line Imaging",
+    "abstract": "Automated defect detection in high-voltage transmission-line insulators remains challenging due to severe class imbalance, large scale variation, and the small spatial extent of defect instances in Unmanned Aerial Vehicle (UAV) imagery. To address these challenges, this paper proposes AE-YOLO, an Attention-Guided AutoEncoder-Enhanced YOLO framework for robust insulator defect detection. The architecture integrates lightweight bottleneck autoencoders within a Feature Pyramid Network-Path Aggregation Network (FPN-PAN) neck. This preserves anomaly-sensitive information during multi-scale feature fusion. Convolutional Block Attention Modules (CBAM) are used throughout the backbone, enhancing feature discrimination and suppressing background interference. The framework also introduces a variance-maximizing autoencoder regularization strategy, which encourages diverse, defect-discriminative latent representations. The network trains using a unified objective that combines focal loss, Complete IoU (CIoU) loss, and autoencoder regularization to address foreground-background imbalance and improve localization accuracy. During inference, Weighted Boxes Fusion (WBF) combines predictions from YOLOv8, YOLOv10, and YOLO11. An autoencoder-guided confidence boosting mechanism improves sensitivity to rare defect categories. Experiments on the Insulator-Defect Detection dataset show that AE-YOLO with an EfficientNetV2 backbone achieves 95.10 percent mAP at 0.5, 96.40 percent precision, and 93.80 percent recall. This performance surpasses the strongest YOLO-family baseline by 5.0 points in mAP at 0.5 and 6.7 points in recall. These results confirm the effectiveness and adaptability of the framework. The model is a practical and scalable solution for UAV-based transmission-line inspection and defect monitoring.",
+    "authors": [
+      "Malak Allam",
+      "Khaled Shaban",
+      "Ali Hamdi"
+    ],
+    "published": "2026-06-03",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.06536v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.06536v1",
+    "fetched_at": "2026-06-08T12:24:54.979924",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587620"
+  },
+  {
+    "id": "2606.07491v1",
+    "title": "Twelve quick tips for designing AI-driven HPC workflows",
+    "abstract": "High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new computational paradigm. AI-driven workflows are characteristically iterative, data-driven, and probabilistic, introducing unique challenges regarding data gravity, heterogeneous resource management, and complex workflow orchestration.   This guide provides twelve practical tips designed to help researchers design efficient, scalable, and reproducible AI-driven HPC workflows. By addressing critical system-level bottlenecks - such as containerisation for environment portability, strategic deployment of job arrays, explicit feedback loop mechanics, and I/O optimisation for small files - this article offers a framework for transitioning from rigid execution pipelines to adaptive, intelligent computational environments. While these architectural principles are broadly applicable across distributed environments, they are particularly tailored to the resource-intensive throughput demands of modern computational biology.",
+    "authors": [
+      "Jamie J. Alnasir"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07491v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07491v1",
+    "fetched_at": "2026-06-08T12:25:25.519113",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587631"
+  },
+  {
+    "id": "2606.07489v1",
+    "title": "How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope",
+    "abstract": "Frontier AI systems are bridging the gap between intelligence and utility by shifting from conversational assistants to autonomous agents that execute tasks end to end. Using production data from Perplexity's Search and Computer products, we study this transition by examining how AI agents accelerate and reshape knowledge work. Three key empirical findings emerge. First, using sessions with near-identical initial query pairs as natural experiments for the same underlying task attempted with both products, Computer performs 26 minutes of autonomous work per user session, versus 33 seconds for Search. Computer automates task decomposition and execution that Search users might otherwise manually orchestrate and implement. As a result, Computer shifts follow-up query distribution toward higher-order work such as verification and extension. Autonomy also increases execution quality, with per-query dissatisfaction rates 55% lower on Computer than on Search. Second, due to its autonomy advantage, Computer reduces completion time from 269 to 36 minutes on matched tasks, lowering estimated time and cost by 87% and 94%, respectively, compared to humans equipped with Search alone. Third, Computer changes the scope of work that users attempt: Computer queries more often cross occupational boundaries, require higher-order cognition, draw on broader expertise, take the form of composite tasks that bundle interdependent subtasks into a single query, and unlock work activities that are essentially absent from Search usage among the same users. Together, the evidence indicates that AI agents accelerate workflows, enhance output quality, reduce costs, and expand the breadth and depth of automated work.",
+    "authors": [
+      "Jeremy Yang",
+      "Kate Zyskowski",
+      "Noah Yonack",
+      "Jerry Ma"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.AI",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07489v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07489v1",
+    "fetched_at": "2026-06-08T12:25:25.519149",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587641"
+  },
+  {
+    "id": "2606.07462v1",
+    "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle",
+    "abstract": "As foundation models advance and agent scaffolding becomes increasingly sophisticated, agents have demonstrated remarkable proficiency in complex, long-horizon coding tasks and even autonomous experiment execution. Despite their evolution from research assistants into autonomous research agents, these systems still exhibit significant limitations in field sensitivity, research ethics, and nuanced scientific judgment. Consequently, frontier agents remain unable to fully replace human researchers. To bridge this gap, we conceptualize the AARR (Act As a Real Researcher) benchmark series. Unlike existing benchmarks that primarily assess macro-level execution capabilities, AARR focuses on whether agents can emulate the professionalism, thoroughness, and nuanced reasoning that characterize human researchers in granular research scenarios. In this work, we propose AARRI-Bench (Act As a Real Research Intern), the first benchmark in this series. We conduct extensive experiments across frontier models and agentic systems, revealing that even the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3\\% success rate, frequently overlooking subtle yet critical details that are obvious to real human researchers. Our results indicate that developing researcher-like AI requires further exploration of research behavior, rather than merely complex scaffolding. Our data is released at https://github.com/AARR-bench/AARRI-bench.",
+    "authors": [
+      "Jiayu Wang",
+      "Weijiang Lv",
+      "Bowen Fu",
+      "Jing Fu",
+      "Jiayi Song",
+      "Lingyu Zhang",
+      "Lanxuan Xue",
+      "Luodi Chen",
+      "Zepeng Xin",
+      "Kaiyu Li",
+      "Xiangyong Cao"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07462v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07462v1",
+    "fetched_at": "2026-06-08T12:25:25.519188",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587652"
+  },
+  {
+    "id": "2606.07412v1",
+    "title": "Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills",
+    "abstract": "LLM-driven software engineering agents have become a central testbed for real-world language-model capability, yet their training remains limited by the availability of high-quality SWE tasks. Existing synthetic data methods typically create tasks through fixed mutation or bug-injection procedures, making the resulting distributions largely independent of the agent's own weaknesses and training progress. We introduce Socratic-SWE, a closed-loop self-evolution framework that reuses the agent's historical solving traces as a source of training signal. Rather than treating traces only as evidence for reward computation, Socratic-SWE distills them into structured agent skills that summarize recurring failures and effective repair patterns. These skills then guide the generation of targeted repair tasks in real repositories. Candidate tasks are checked through execution-based validation and scored with a solver-gradient alignment reward, so that the retained tasks are both verifiable and useful for improving the Solver. The updated Solver produces new traces, enabling the task curriculum to adapt over successive rounds. Across SWE-bench Verified, SWE-bench Lite, SWE-bench Pro, and Terminal-Bench 2.0, Socratic-SWE consistently improves over self-evolving baselines under the same compute budget, reaching 50.40% on SWE-bench Verified after three iterations. These results suggest that solving traces can serve as a scalable substrate for self-evolving SWE agents.",
+    "authors": [
+      "Chuan Xiao",
+      "Zhengbo Jiao",
+      "Shaobo Wang",
+      "Wei Wang",
+      "Bing Zhao",
+      "Hu Wei",
+      "Linfeng Zhang",
+      "Lin Qu"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07412v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07412v1",
+    "fetched_at": "2026-06-08T12:25:25.519220",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587661"
+  },
+  {
+    "id": "2606.07383v1",
+    "title": "RhinoVLA Technical Report",
+    "abstract": "Vision-Language-Action (VLA) models have shown strong potential for robotic manipulation, but real-time deployment on edge hardware remains challenging. In this work, we identify VLM visual and context tokens as a major source of deployment latency: for GEMM-dominated projection operators, computation grows linearly with the number of input tokens when model dimensions are fixed. Motivated by this observation, we propose RhinoVLA, a deployment-oriented VLA model co-designed with the Huixi R1 edge SoC. RhinoVLA adopts a token-efficient Qwen3-VL backbone and a continuous Action Expert, reducing the VLM-side token and computation burden while preserving pretrained multimodal capability. To support cross-robot learning, RhinoVLA further introduces a unified interface that combines View Registry, 72D physical state-action slot space, and robotinstance LoRA, allowing heterogeneous robot observations and action schemas to be aligned under a shared policy. On the deployment side, RhinoVLA is optimized through hardware-aware compilation, mixed-precision execution, and parallel visual encoding. Experiments show that RhinoVLA achieves downstream performance comparable to π0.5 at a similar parameter scale, while reaching 11.69 Hz end-to-end inference on Huixi R1, meeting the 10 Hz real-time closedloop control target. The project will be open-sourced at https://github.com/HuixiAI/RhinoVLA.",
+    "authors": [
+      "Huixi Intelligence",
+      " :",
+      "Chen Zhang",
+      "Chenyang Zhou",
+      "Guanglei Ding",
+      "Guanghui He",
+      "Haibin Gao",
+      "Jiajia Chen",
+      "Jianyong Zhang",
+      "Lianyi Yu",
+      "Ningyi Xu",
+      "Ping Xu",
+      "Qingchen Li",
+      "Yingjun Hu",
+      "Yijia Zhang",
+      "Yuxi Liu"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07383v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07383v1",
+    "fetched_at": "2026-06-08T12:25:25.519266",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587679"
+  },
+  {
+    "id": "2606.07342v1",
+    "title": "LLM-Guided Evolution for Medical Decision Pipelines",
+    "abstract": "Adapting large language models (LLMs) to clinical workflows often requires costly fine-tuning or manual prompt and pipeline engineering. We study LLM-guided MAP-Elites evolution as an inference-time alternative for discovering medical decision strategies and provide an implementation repository at https://github.com/univanxx/llm_guided_evo_medical. We formulate urgency triage, interactive consultation, and medical image classification as evolutionary searches over executable artifacts optimized by task-specific fitness functions.   Across all three settings, evolution improves over manually designed baselines under practical constraints. In triage, evolved programs increase Semigran accuracy from $77.3\\%$ to $87.1\\%$ and emergency recall from $0.60$ to $0.97$, while improving safety-weighted held-out MIMIC-ESI performance. In interactive consultation, evolved policies improve the accuracy--cost frontier across Llama-3, Qwen-3.5, and Gemma-4 and transfer to held-out iCRAFTMD. In PneumoniaMNIST, prompt-only evolution improves frozen MedGemma VLMs while preserving strict JSON outputs. Qualitative analysis shows that the gains come from interpretable program-level mechanisms, calibrated triage boundaries, targeted evidence acquisition, selective commitment, and finding-oriented visual decision rules, rather than superficial prompt rewording alone.",
+    "authors": [
+      "Ivan Sviridov",
+      "Artem Oskin",
+      "Ivan Panin",
+      "Iaroslav Bespalov",
+      "Dmitry Dylov",
+      "Ivan Oseledets",
+      "Aleksandr Nesterov"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.CL",
+      "cs.NE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07342v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07342v1",
+    "fetched_at": "2026-06-08T12:25:25.519298",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587689"
+  },
+  {
+    "id": "2606.07299v1",
+    "title": "DuMate-DeepResearch: An Auditable Multi-Agent System with Recursive Search and Rubric-Grounded Reasoning",
+    "abstract": "Deep Research (DR) has emerged as a new agentic paradigm to tackle complex, open-ended research tasks, demanding systems that can iteratively frame problems, acquire evidence, verify sources, and synthesize long-form reports. In practice, however, current DR systems are constrained by four interrelated limitations: long-horizon planning over an underspecified scope, the bottleneck of decomposing and scheduling such tasks within a single agent, hallucination risk in long-form synthesis, and limited process auditability. This technical report presents DuMate-DeepResearch, a multi-agent DR framework built on the Qianfan Agent Foundry. The framework decouples the Agent Core, which handles task understanding, planning, and scheduling, from an extensible Tool Ecosystem for retrieval, evidence acquisition, and report rendering, making every intermediate decision and tool invocation explicitly traceable. Building on this infrastructure, DuMate-DeepResearch further introduces three mechanisms: (i) a graph-based dynamic planning strategy expands the research roadmap coarse-to-fine and continuously revises it through reflection, re-planning, backtracking, and parallel branching; (ii) a recursive two-level execution design delegates each complex search sub-task to an inner Search Agent that runs its own planning loop, isolating noisy retrieval and stabilizing long-horizon execution; (iii) a rubric-based test-time optimization mechanism dynamically generates task-specific quality criteria and uses them as live reasoning scaffolds for evidence-grounded synthesis and adaptive stopping. Across two deep research benchmarks, DuMate-DeepResearch establishes new state-of-the-art results: the best overall score (58.03%) on DeepResearch Bench, and the best overall score (61.95%) on DeepResearch Bench II while ranking first in information recall and analysis.",
+    "authors": [
+      "Lingyong Yan",
+      "Can Xu",
+      "Yukun Zhao",
+      "Wenxuan Li",
+      "Qingyang Chen",
+      "Jiulong Wu",
+      "Wenli Song",
+      "Xiangnan Li",
+      "Weixian Shi",
+      "Yiqun Chen",
+      "Xuchen Ma",
+      "Yuchen Li",
+      "Jiashu Zhao",
+      "Shuaiqiang Wang",
+      "Jianmin Wu",
+      "Dawei Yin"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07299v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07299v1",
+    "fetched_at": "2026-06-08T12:25:25.519343",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587699"
+  },
+  {
+    "id": "2606.07244v1",
+    "title": "Beyond Waypoints: A Trajectory-Centric Waypointing Paradigm for Vision-Language Navigation",
+    "abstract": "Vision-Language Navigation in Continuous Environments (VLN-CE) requires agents to follow natural-language instructions while navigating in real-world-like environments. Most VLN-CE approach\\-es adopt a three-stage framework: a waypoint predictor proposes navigable waypoints, and a navigator selects the best waypoint, with a low-level controller executing the movement to it. However, this decoupled paradigm often leads to unreachable waypoints or inconsistencies between planning and control. In this work, instead of predicting isolated waypoints, we introduce a novel paradigm called Trajectory Waypoint, which grounds each candidate waypoint in an executable trajectory. To realize this, we design a Trajectory Waypoint Predictor formulated as a TSDF-guided diffusion policy, which steers trajectory generation away from obstacles, inherently ensuring the reachability of the predicted waypoints. We further propose a trajectory-enhanced navigator that injects the associated trajectory as additional information for planning, enabling strict consistency between high-level semantic decisions and low-level execution. Extensive experiments on the VLN-CE benchmark show that our Trajectory Waypoint paradigm achieves superior performance over the baselines.",
+    "authors": [
+      "Haoxiang Shi",
+      "Xiang Deng",
+      "Haoyu Zhang",
+      "Qiaohui Chu",
+      "Yaowei Wang",
+      "Liqiang Nie"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07244v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07244v1",
+    "fetched_at": "2026-06-08T12:25:25.519371",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587709"
+  },
+  {
+    "id": "2606.07229v1",
+    "title": "MMAE: A Massive Multitask Audio Editing Benchmark",
+    "abstract": "We introduce MMAE, a Massive Multitask Audio Editing benchmark, serving as the first comprehensive evaluation testbed designed for general-purpose instruction-based audio editing. Spurred by the shift toward intelligent creation, interactive editing has rapidly expanded from visual domains, pioneered by models like Nano-banana 2 for images and Gemini-Omni for video, into audio. However, the current evaluation infrastructure lags severely, remaining highly fragmented and restricted to specific subdomains or basic operations. Unlike existing benchmarks that are limited in scope, MMAE extends to a broad spectrum of real-world scenarios, encompassing 7 distinct audio modalities, including sound, speech, music, and their mixtures. Furthermore, we establish a comprehensive taxonomy spanning 6 levels of task complexity, from basic modifications to multi-hop reasoning and multi-round editing, 2 levels of granularity, and 8 distinct operation types. Meticulously curated through human-agent collaboration, MMAE comprises 2,000 high-fidelity samples paired with a pioneering rubric-based evaluation framework. By decomposing free-form tasks into 17,741 verifiable criteria, this robust rubric-based paradigm enables a precise, multi-dimensional assessment of both instruction following and context consistency. Our extensive evaluation of leading models reveals that current systems remain far from achieving reliable edits. Strikingly, the Exact Match Rate (EMR) consistently falls below 5% and plummets to an absolute 0% in complex, mixed-modality tasks, exposing critical bottlenecks in precise execution and structural robustness. We hope MMAE will serve as a catalyst for future advances in the intelligent creation community, providing a clear diagnostic roadmap and establishing a standardized, long-lasting evaluation paradigm for next-generation audio editing systems.",
+    "authors": [
+      "Ziyang Ma",
+      "Ruiqi Yan",
+      "Ruiyang Xu",
+      "Jie Fang",
+      "Zhikang Niu",
+      "Yi-Wen Chao",
+      "Wenming Tu",
+      "Tianrui Wang",
+      " Auden",
+      "Qi Chen",
+      "Wenxi Chen",
+      "Jiaying Chi",
+      "Yanru Huo",
+      "Zixuan Jiang",
+      "Xiquan Li",
+      "Yalin Li",
+      "Junxi Liu",
+      "Minghao Liu",
+      "Binghao Qiang",
+      "Yijia Shan",
+      "Zheshu Song",
+      "Tian Tan",
+      "Zixiang Wang",
+      "Zeyu Xie",
+      "Zhifei Xie",
+      "Xiaoyu Xing",
+      "Qixiang Xu",
+      "Chen Yang",
+      "Guanrou Yang",
+      "Shan Yang",
+      "Yifan Yang",
+      "Steve Yves",
+      "Haotian Zhang",
+      "Haina Zhu",
+      "Kai Yu",
+      "Liefeng Bo",
+      "Eng-Siong Chng",
+      "Xie Chen"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.SD",
+      "cs.CL",
+      "cs.MM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07229v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07229v1",
+    "fetched_at": "2026-06-08T12:25:25.519456",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587739"
+  },
+  {
+    "id": "2606.07127v1",
+    "title": "Learning Explicit Behavioral Models with Adaptive Questions and World-Model Probes",
+    "abstract": "Interactive agents trained only against task return can achieve high scores while failing to represent the mechanisms that make their actions succeed. This makes brittle behavior difficult to diagnose and limits adaptation when environment dynamics change. Existing LLM reflection and policy-code repair can revise behavior from failed trajectories, but questions and world-understanding tests are usually used only after training. We introduce an Explicit Symbolic Behavioral Model (ESBM), a trainable behavioral model that couples task performance with evidence-grounded question answering and executable mechanism prediction. An ESBM represents behavior through typed predicates, weighted rules, bounded options and mechanism memory; the mechanism layer predicts symbolic events, object changes, rewards and terminal consequences under action interventions. After each rollout, adaptive questions and active world-model probes convert score failures, QA errors and transition-prediction errors into constraints for local ESBM edits. Candidate models are selected by a multi-criterion rule that jointly evaluates task score, answerability and active world-model consistency. Under the tested Atari-style protocols, ESBM learns high-scoring policies while producing explicit answers and executable mechanism predictions, indicating that adaptive questions can serve as both training pressure and reusable benchmarks for mechanistic policy learning in this setting.",
+    "authors": [
+      "Hikaru Shindo",
+      "Yu Deng",
+      "Teng Cao",
+      "Quentin Delfosse",
+      "Christopher Tauchmann",
+      "Jannis Blüml",
+      "Gopika Sudhakaran",
+      "Kristian Kersting"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07127v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07127v1",
+    "fetched_at": "2026-06-08T12:25:25.519487",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587749"
+  },
+  {
+    "id": "2606.07108v1",
+    "title": "DyCon: Dynamic Reasoning Control via Evolving Difficulty Modeling",
+    "abstract": "Recent advances in Large Reasoning Models (LRMs) demonstrate remarkable performance improvements by iteratively reflecting, exploring, and executing complex tasks, yet suffer from inefficiencies due to redundant reasoning, known as \"overthinking\". Existing methods to mitigate this issue either rely on static difficulty estimates or require task-specific training, and thus fail to adapt to the dynamic complexity during reasoning. In this work, we empirically show that the problem difficulty evolves dynamically throughout the reasoning process and is linearly encoded in the LRM's step-level embeddings. Building on this insight, we propose DyCon, a training-free framework that leverages latent step-level representations to explicitly model the evolving task difficulty, enabling the dynamic control of reasoning depth to mitigate the overthinking issue. Extensive experiments conducted on four models ranging from 4B to 32B, and across twelve benchmarks in math reasoning, general question answering, and coding tasks demonstrate that DyCon significantly enhances reasoning efficiency by reducing redundant steps without sacrificing accuracy or generalization. Project page and code are available at https://github.com/yu-lin-li/DyCon.",
+    "authors": [
+      "Tengyao Tu",
+      "Yulin Li",
+      "Hui-Ling Zhen",
+      "Libo Qin",
+      "Zhoujun Wei",
+      "Jinghua Piao",
+      "Zhuotao Tian",
+      "Yong Li",
+      "Min Zhang"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07108v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07108v1",
+    "fetched_at": "2026-06-08T12:25:25.519519",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587758"
+  },
+  {
+    "id": "2606.07094v1",
+    "title": "MetaConfigurator: AI-Assisted RDF Authoring from JSON Data",
+    "abstract": "Scientific workflows increasingly generate structured JSON data that is easy to exchange but difficult to interpret consistently across systems due to lacking semantic interoperability. While JSON Schema ensures structural validation, it provides no native support for Linked Data semantics.   This paper presents an RDF Authoring View extending the open-source JSON Schema editor MetaConfigurator, enabling researchers to transform existing JSON, YAML, or CSV data into RDF using AI-assisted RML mappings, refine triples, execute SPARQL queries, visualize knowledge graphs, and export RDF serializations within a single integrated web interface. This workflow is supported by ontology-aware IRI auto-completion, bidirectional synchronization between JSON-LD text views and RDF triple tables, and AI-assisted SPARQL query generation from natural language hints.   We demonstrate the workflow using laboratory data from metal-organic framework (MOF) synthesis experiments. Protocol data describing reagents, procedure steps, and quantities is converted from JSON to ontology-based JSON-LD via RML mappings. We then refine the semantic representation, query relationships between experimental conditions and outcomes, and explore the resulting knowledge graph interactively. This integrated environment bridges conventional structured data management with Semantic Web technologies while preserving experimental context and lowering technical barriers through AI assistance.",
+    "authors": [
+      "Felix Neubauer",
+      "Mahdi Jafarkhani",
+      "Kenichi Endo",
+      "Jürgen Pleiss",
+      "Benjamin Uekermann"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07094v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07094v1",
+    "fetched_at": "2026-06-08T12:25:25.519545",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587767"
+  },
+  {
+    "id": "2606.07027v1",
+    "title": "StainFlow: Entity-Stain Tracking and Evidence Linking for Process Rewards in GUI Agents",
+    "abstract": "Reinforcement Learning (RL) has become a promising approach for improving GUI Agents in long-horizon, stochastic digital environments, but trajectory-level success feedback is too sparse to provide reliable credit assignment for intermediate exploration steps. To mitigate this issue, recent studies introduce Process Reward Models (PRMs), which provide finer-grained training feedback through global milestone verification or local step-level evaluation. However, these methods still suffer from two level-specific limitations: global milestone decomposition is subjective and singular, making it difficult to accommodate the multiple valid execution paths in real GUI tasks, while fixed local judging windows may miss long-range key evidence or dilute the decision signal with irrelevant frames. Inspired by stain-tracing mechanisms in network flow analysis, we propose StainFlow, an entity-stain-flow process reward model for GUI Agents. To reduce the subjectivity of global partitioning, we introduce the Global Entity Stain Tracking module, which extracts visually verifiable task entities and tracks how their stain concentrations and states evolve along the trajectory, allowing task phases to be objectively separated by changes in the entity evidence flow. To improve the accuracy of local verification, we introduce the Local Stain Evidence Linking module. Centered on the triggering entities of each candidate key node, it retrieves relevant steps based on their stain concentrations and state changes, and dynamically constructs high-density evidence windows for verifying true key nodes. Extensive experiments on AndroidWorld and OGRBench show that StainFlow relatively improves online RL success by 3.2% and trajectory completion judgment accuracy by 1.8%.",
+    "authors": [
+      "Haojie Hao",
+      "Longkun Hao",
+      "Yihang Lou",
+      "Yan Bai",
+      "Zhenyang Li",
+      "Zhichao Yang",
+      "Dongshuo Huang",
+      "Hongyu Lin",
+      "Lanqing Hong",
+      "Jiakai Wang",
+      "Xianglong Liu"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07027v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07027v1",
+    "fetched_at": "2026-06-08T12:25:25.519582",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587777"
+  },
+  {
+    "id": "2606.07001v1",
+    "title": "DataEvolver: Automatic Data Preparation for Large Language Models through Multi-Level Self-Evolving",
+    "abstract": "High-quality training data is essential to large language models (LLMs) and typically requires extensive and costly manual curation. Existing automatic data preparation methods rely on predefined pipelines or customized human instructions, which limits their adaptability to diverse data distributions and lacks principled guidance from high-quality examples. In this paper, we introduce DataEvolver, the first self-evolving data preparation system that automatically constructs pipelines to transform raw data into high-quality data. DataEvolver employs a multi-level mechanism to ensure both pipeline executability and effectiveness. At the operator level, it incrementally expands the operator set to construct a logical plan while resolving dependency conflicts. At the pipeline level, it instantiates logical plans into executable code and iteratively refines pipeline orchestration through a feedback loop that reduces the distribution gap between prepared data and high-quality examples. Experiments on seven benchmarks show that DataEvolver substantially improves data quality and achieves an average 10\\% gain in downstream LLM performance compared with training on original data, highlighting new opportunities for the iterative co-evolution of LLMs and data.",
+    "authors": [
+      "Chao Deng",
+      "Shaolei Zhang",
+      "Ju Fan",
+      "Xiaoyong Du"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.DB",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.07001v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.07001v1",
+    "fetched_at": "2026-06-08T12:25:25.519605",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587787"
+  },
+  {
+    "id": "2606.06967v1",
+    "title": "GenPO++: Generative Policy Optimization with Jacobian-free Likelihood Ratios",
+    "abstract": "Generative policies provide expressive and multimodal action distributions, making them attractive for reinforcement learning (RL) in complex continuous-control tasks. Among them, flow-based policies are especially appealing because they generate actions through deterministic transport maps. However, applying such generative policies to likelihood-based on-policy learning remains limited by the difficulty of evaluating the probability of executed actions. Existing flow RL methods either replace the true action-density ratio with approximate surrogates, which can introduce biased updates, or recover exact likelihoods through dummy-action augmentation, which enlarges the policy space and increases computation. In this work, we propose GenPO++, a reversible generative policy optimization framework that uses history states as auxiliary memory in a high-order reversible ODE solver, yielding exact inversion without changing the original action dimension. The resulting generative policy map has a log-determinant determined only by fixed solver coefficients, enabling exact and Jacobian-free likelihood-ratio computation. This design preserves the expressiveness of generative flow policies while avoiding both action ratio bias and dummy-action overhead. We evaluate GenPO++ on large-scale simulated control, fine-tuning, and real-world robotic manipulation tasks, where it achieves competitive or superior performance over state-of-the-art on-policy RL methods, while improving training stability and computational efficiency.",
+    "authors": [
+      "Ke Hu",
+      "Shutong Ding",
+      "Panxin Tao",
+      "Jingya Wang",
+      "Ye Shi"
+    ],
+    "published": "2026-06-05",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.06967v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.06967v1",
+    "fetched_at": "2026-06-08T12:25:25.519630",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-08T12:27:41.587796"
+  }
+]
