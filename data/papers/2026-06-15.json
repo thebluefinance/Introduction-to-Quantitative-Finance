@@ -1,0 +1,551 @@
+[
+  {
+    "id": "2606.14484v1",
+    "title": "Quantum Horizon: An evaluation of quantum computing as a threat to Bitcoin and Ethereum",
+    "abstract": "Quantum computing poses a real, broad-based, but bounded and substantially mitigable threat to Bitcoin and Ethereum. We separate the two quantum algorithms that public discussion routinely conflates: Shor's algorithm breaks the elliptic-curve signatures (ECDSA over secp256k1, BLS over BLS12-381) that authorize spending, whereas Grover's algorithm does not meaningfully threaten proof-of-work mining, which is protected by a merely quadratic speedup, fault-tolerant per-operation costs, a square-root parallelization wall, and difficulty adjustment. Folding hardware scaling, the falling resource requirement, a fault-tolerance readiness lag, and expert surveys into a single Monte-Carlo forecast yields a wide, bimodal arrival distribution for a cryptographically relevant quantum computer: about a one-in-six chance by 2035, near 30% by 2040, and about 60% by 2050. Exposure is concentrated and mostly migratable: of Bitcoin's roughly six million quantum-exposed coins only about 2.3 million are irreducibly at risk, while 50 to 65% of Ether sits at key-revealed accounts that can adopt post-quantum signatures. A timely migration beats even an optimistic 2035 machine, so the binding constraint is governance, not technology. A survey of the top twenty cryptocurrencies finds none fully post-quantum. Reproducible models accompany every quantitative claim.",
+    "authors": [
+      "Iosif M. Gershteyn",
+      "Jacob A. Alber"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "quant-ph",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14484v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14484v1",
+    "fetched_at": "2026-06-15T13:50:10.684799"
+  },
+  {
+    "id": "2606.14386v1",
+    "title": "Discovery under Hypothesis Redundancy: A Geometric Theory of Discovery Bottlenecks",
+    "abstract": "Scientific discovery saturates when new hypotheses cease to provide independent information, even if the nominal hypothesis space remains large. We study hybrid discovery systems that combine structured local search with LLM-generated non-local proposals and pose the Search Compression Hypothesis: non-local exploration helps only when three geometric conditions co-occur: spectral compression, orthogonal escape from the explored span, and residual signal alignment with the target. We formalize these conditions, derive necessary conditions for hybrid advantage, and test the mechanism in controlled synthetic environments, large-scale A-share factor discovery, and symbolic-regression benchmarks; a public tabular operational sanity check tests the associated budget-allocation implication. Signal-planting and directed-versus-random experiments show that novelty alone is insufficient: random orthogonal jumps expand coverage but do not improve yield without predictive alignment. Across compression sweeps, real factor archives, and LLM-SRBench tasks, hybrid gains concentrate in weakly represented but target-bearing directions and vanish as the hypothesis space approaches full rank. The framework turns LLM-guided discovery from generic novelty search into a diagnostic procedure for deciding when directed non-local exploration is warranted.",
+    "authors": [
+      "Li Xia",
+      "Baoxun Wang"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14386v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14386v1",
+    "fetched_at": "2026-06-15T13:50:10.684838"
+  },
+  {
+    "id": "2606.14182v1",
+    "title": "Correlation emergence and the Epps effect in two coupled limit order books",
+    "abstract": "We give a unified analytic account of correlation emergence and the Epps effect in two coupled limit order books. The model starts from a discrete random-walk description of order flow with creation, cancellation and diffusion. A pair-trader coupling between the books is introduced at the level of order creation. We clarify how the discrete model reduces to coupled reaction--diffusion equations with a moving reaction boundary defining the transaction price. Using a regularised local-response representation of the coupling, we derive approximate closed-form expressions for realised correlations as a function of aggregation time. Here the Epps effect is shown to arise from three distinct mechanisms: asynchronous event clocks (subordination), finite coupling response times, and their combination.",
+    "authors": [
+      "Chris Angstmann",
+      "Tim Gebbie"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "q-fin.TR",
+      "math.AP",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14182v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14182v1",
+    "fetched_at": "2026-06-15T13:50:10.684862"
+  },
+  {
+    "id": "2606.14050v1",
+    "title": "Battery Bidding under Price Uncertainty in Wholesale Electricity Markets",
+    "abstract": "Grid-scale batteries increasingly influence outcomes in wholesale electricity markets, but their observed bid patterns remain difficult to interpret. In particular, bids that appear to reflect strategic withholding may instead arise from rational operations under price uncertainty and risk management. We develop an asset-level model of a price-taking battery that submits stepwise buy and sell bid curves in the day-ahead market under a finite set of price scenarios. The battery chooses quantity--price pairs to maximize a mean--CVaR objective subject to physical and market constraints. A direct formulation is a mixed-integer linear program, but we show that its integer decisions can be removed, yielding an exact linear programming reformulation suitable for empirical analysis. Our empirical results deliver three insights. First, withholding behavior can arise even without market power, because scarce stored energy and uncertain future prices increase the value of holding energy. Second, the effect of uncertainty depends on the state of charge: when stored energy is scarce, greater uncertainty raises sell bid prices, whereas when stored energy is abundant it can lower them. Third, risk management reshapes bid curves into layered structures that secure profitable execution across a broad set of scenarios while preserving some exposure to rare but valuable price spikes.",
+    "authors": [
+      "Vincent Yinjun-Wang",
+      "Madeleine Udell"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "math.OC",
+      "econ.GN",
+      "eess.SY",
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14050v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14050v1",
+    "fetched_at": "2026-06-15T13:50:10.684885"
+  },
+  {
+    "id": "2606.13992v1",
+    "title": "Group Quantization and Mellin Representations of the Heston Model",
+    "abstract": "We construct a lifted local Lie groupoid formulation of the Heston stochastic-volatility model and use it to give a geometric interpretation of its affine-transform structure. The construction extends the Group Quantization framework previoulsy applied to quadratic financial diffusion models.   The purpose of this paper is not to propose a new Heston pricing formula. The contribution is geometric: the Heston pricing operator in coordinate space and the Riccati equations in momentum space arise from two representations of the same lifted local groupoid construction. The usual characteristic-function and Riccati formulas are recovered.",
+    "authors": [
+      "Santiago Garcia"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.13992v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.13992v1",
+    "fetched_at": "2026-06-15T13:50:10.684906"
+  },
+  {
+    "id": "2606.13981v1",
+    "title": "An Actuarial Cost and Revenue Model for Helicopter Emergency Medical Services: Estimating Population-Based Coverage and Sustainability Thresholds",
+    "abstract": "Helicopter emergency medical services (HEMS) provide rapid access to critical care but are costly to operate and difficult to sustain financially. A clear understanding of these costs is essential for evaluating the feasibility and design of population-based funding or policy strategies. We developed a two-part model: (1) a cost framework capturing capital and operating expenses (e.g., aircraft, equipment, labor, facilities), and (2) an actuarial revenue model using healthcare encounter data and payer reimbursement rates. The model was applied to a commercially insured Massachusetts population (3.9M lives), using provider charge data and Medicare fee schedules. We analyzed breakeven transport volumes under varying reimbursement and labor cost assumptions, including sensitivity scenarios. Under optimistic assumptions (full charge realization, minimal overhead), breakeven is reached with approximately 90 annual transports. More realistic scenarios, incorporating commercial reimbursement at 50% of charges and full 24/7 staffing, require 184 transports. If labor costs are doubled or Medicare rates are used exclusively, breakeven thresholds exceed 1,000 transports per year. A Monte Carlo simulation (10,000 iterations) confirmed the robustness of these thresholds: the median simulated breakeven was 190 transports under commercial reimbursement, closely matching the deterministic base case. The 90th percentile reached 304 (commercial) and 1,066 (Medicare) annual transports. HEMS programs are highly sensitive to labor costs and payer reimbursement levels. Sustainable operation requires more transport volume than previously estimated, especially when reimbursement is constrained or staffing costs increase. This model provides a transparent, replicable tool to inform financial planning, policy evaluation, and payer negotiations for air medical services.",
+    "authors": [
+      "Robert D. Lieberthal",
+      "Sabin Ahmed",
+      "David M. Hechtman",
+      "Lauren R. Indrisano",
+      "Douglas R. Amirault",
+      "Susan Haas",
+      "Varun Saraswathula"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.13981v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.13981v1",
+    "fetched_at": "2026-06-15T13:50:10.684936"
+  },
+  {
+    "id": "2606.13880v1",
+    "title": "A Longitudinal Attribute-Conditioned Neural Network for Modeling Health-State Transition Probabilities in Temporally Irregular Data: The LANTERN Framework",
+    "abstract": "Accurate estimation of long-term care transition probabilities is central to disability insurance pricing, reserving, and solvency assessment. Classical actuarial multi-state models commonly rely on Markov, semi-Markov, or proportional-hazard specifications, which provide a direct connection to cohort projection but may be restrictive for irregular longitudinal health data with nonlinear aging patterns and heterogeneous covariate histories. This paper develops a well-calibrated estimator of multi-state transition probabilities for irregular longitudinal health data. The model learns from individual health history, incorporates the time elapsed between observations, and conditions transition probabilities on demographic and socioeconomic attributes. It produces a valid probability distribution over the next observed health state, with four possible states: healthy, mild disability, severe disability, and death. Individual probabilities are aggregated by age group and origin state to form transition matrices compatible with actuarial cohort projection. Using longitudinal data from the Health and Retirement Study, we compare the proposed estimator with logistic regression, gradient-boosted trees, a recurrent neural network, and a last-state persistence benchmark. The evaluation considers probabilistic accuracy, endpoint discrimination and calibration for severe disability and death, risk concentration, and transition matrix error after aggregation. The proposed estimator improves severe disability discrimination relative to logistic regression and gradient-boosted tree benchmarks, maintains strong calibration, and yields the lowest transition matrix error among the evaluated models in the held-out test analysis. Results show that a structured machine learning estimator can support long-term care transition modeling when judged by calibration and projection fidelity, beyond discrimination.",
+    "authors": [
+      "Bright Kwaku Manu",
+      "Beckett Sterner",
+      "Petar Jevtic"
+    ],
+    "published": "2026-06-11",
+    "categories": [
+      "cs.LG",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.13880v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.13880v1",
+    "fetched_at": "2026-06-15T13:50:10.684963"
+  },
+  {
+    "id": "2606.13812v1",
+    "title": "CFOs Meet LLMs",
+    "abstract": "Business sentiment is a closely watched economic signal, but measuring it is slow and costly: surveys reach only a few hundred firms, arrive periodically, and take time to compile. We show that large language models hold the potential to address these shortcomings. We prompt an LLM to role-play as the CFO of a specific company at a specific date and focus on the economic-optimism question on the Duke-Federal Reserve CFO Survey over 2002-2025. We find that the LLM reproduces individual human responses: the predicted optimism score significantly forecasts the CFO's actual answer, surviving firm and year-quarter fixed effects and a control for the most recent prior response. Predictive accuracy increases with the amount of information supplied, as both respondent history and firm characteristics improve fit, and the relationship persists under quarterly aggregation. With appropriate conditioning, LLMs may be able to serve as credible digital twins of executives, offering scalable, high-frequency expectations data for financial research and policy.",
+    "authors": [
+      "John R. Graham",
+      "Campbell R. Harvey",
+      "Manish Jha"
+    ],
+    "published": "2026-06-11",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.13812v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.13812v1",
+    "fetched_at": "2026-06-15T13:50:10.684984"
+  },
+  {
+    "id": "2606.13780v1",
+    "title": "Conformal calibration and look-elsewhere effect in anomaly detection for new-physics searches",
+    "abstract": "Machine-learned anomaly detection is reshaping searches for new physics, but it has outrun the statistics used to interpret it. A raw anomaly score has no calibrated meaning, a model that scans many regions inflates the look-elsewhere effect, and the asymptotic significances the field relies on are blind to the background mismodelling that anomaly detectors are especially prone to. We propose a calibration layer, built on conformal prediction, that turns any anomaly score into a defensible significance with distribution-free, finite-sample guarantees. Conformal prediction converts scores into valid local p-values, weighted and Mondrian variants repair the sideband-to-signal-region exchangeability failures that resonant searches suffer, and a Gross-Vitells step carries the result through to a look-elsewhere-aware global significance. The layer does two things at once. It exposes miscalibration that the standard pipeline cannot see, and it corrects it without retraining the detector. On public LHC Olympics data, a classifier develops a substructure-mass correlation that makes sideband-calibrated background p-values anti-conservative. Taken at face value, this manufactures a $\\sim 46σ$ excess from background sculpting alone, which the label-free weighted correction removes, restoring an honest null. When run as a blind wide-mass bump hunt, the standard asymptotic and unweighted procedures fabricate $\\gtrsim10σ$ excesses and $\\approx5σ$ excesses even in signal-free windows, while the conformal layer raises no false alarms and its global false-positive rate is verified on background-only pseudoexperiments. The result is an auditable, detector-agnostic path from an uncalibrated score to a trials-factor-aware significance, ready to be folded into experimental anomaly searches.",
+    "authors": [
+      "Jack Y. Araz",
+      "Michael Spannowsky"
+    ],
+    "published": "2026-06-11",
+    "categories": [
+      "hep-ph",
+      "cs.LG",
+      "hep-ex",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.13780v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.13780v1",
+    "fetched_at": "2026-06-15T13:50:23.900198"
+  },
+  {
+    "id": "2606.13754v1",
+    "title": "D2H-AD: A Hybrid Model Utilizing Hyperdimensional Computing for Advanced Anomaly Detection",
+    "abstract": "Anomaly detection is a fundamental component of intelligent systems with applications in healthcare, cybersecurity, smart grids, and IoT environments. Although conventional machine learning and deep learning methods have demonstrated effectiveness in identifying anomalies, they often rely on large labeled datasets, incur high computational costs, and face scalability challenges in edge and high-dimensional settings. This paper presents D2H-AD, a novel anomaly detection framework based on Hyperdimensional Computing (HDC), a brain-inspired paradigm that represents information using high-dimensional distributed vectors. Unlike existing HDC-based methods, D2H-AD integrates distance-based similarity and density-aware encoding within a unified framework, improving anomaly representation and detection performance. Ablation studies show that hyperdimensional encoding alone yields up to 5.4% higher ROC-AUC than applying the same density-distance scoring directly in the original feature space. Furthermore, D2H-AD consistently outperforms five established baselines, namely HDAD, ODHD, One-Class SVM, Isolation Forest, and Autoencoders, across all evaluated datasets. The framework is lightweight, interpretable, and computationally efficient, making it suitable for resource-constrained and real-time applications. We validate D2H-AD on five benchmark datasets and demonstrate superior F1-score and ROC-AUC performance, together with robustness to class imbalance, noise, and data complexity. In addition to improved accuracy, D2H-AD offers scalability, a small memory footprint, and low-latency operation enabled by binary computations and a compact design. These properties make it particularly attractive for TinyML and edge AI deployments. The proposed framework highlights the potential of HDC for accurate, interpretable, and energy-efficient anomaly detection in dynamic environments.",
+    "authors": [
+      "Ghazal Ghajari",
+      "Elaheh Ghajari",
+      "Ashutosh Ghimire",
+      "Saeid Ataei",
+      "Faris Alsulami",
+      "Fathi Amsaad"
+    ],
+    "published": "2026-06-11",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.13754v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.13754v1",
+    "fetched_at": "2026-06-15T13:50:23.900258"
+  },
+  {
+    "id": "2606.14674v1",
+    "title": "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+    "abstract": "LLM agents are increasingly built not as single model calls, but as scaffolded systems that combine reasoning, memory, reflection, action execution, and learning. While such scaffolds often improve performance, they are often embedded in tightly coupled pipelines, making it difficult to isolate component contributions, compare alternative designs, or understand how module interactions shape agent behavior. We introduce AgentSpec, a modular specification framework that represents embodied agents as typed compositions of reusable policy components with standardized interfaces. AgentSpec standardizes the interfaces among perception, memory, reasoning, reflection, action, and optional learning, enabling components to be swapped and recombined under controlled conditions. We instantiate this framework across DeliveryBench, ALFRED, MiniGrid, and RoboTHOR, and analyze reasoning, memory, reflection, and reinforcement-learning modules across model backbones. Our results show that agent performance is governed by scaffold compatibility and interaction effects rather than isolated module strength. In particular, structured multi-granularity memory improves long-horizon state tracking, reasoning and memory interact non-uniformly across environments, reflection trades off correction and cost, and RL-trained policies compose best when optimized with deployment-time scaffold structure. AgentSpec provides a controlled foundation for studying, comparing, and designing composable LLM agents. Our code, baselines and interactive playground are publicly available at https://agentspec-embodied.github.io.",
+    "authors": [
+      "Jixuan Chen",
+      "Jianzhi Shen",
+      "Haoqiang Kang",
+      "Zhi Hong",
+      "Qingyi Jiang",
+      "Soham Bose",
+      "Yiming Zhang",
+      "Leon Leng",
+      "Amit Vyas",
+      "Lingjun Mao",
+      "Siru Ouyang",
+      "Kun Zhou",
+      "Lianhui Qin"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14674v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14674v1",
+    "fetched_at": "2026-06-15T13:50:53.541567"
+  },
+  {
+    "id": "2606.14672v1",
+    "title": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+    "abstract": "Large language models increasingly serve as execution engines for agentic systems, yet they still consume context through a sequential text interface. This creates a mismatch with modern structured agent workflows, in which independent branches explore subtasks, retrieve evidence, or generate candidate solutions before a final synthesis step. Existing systems typically merge these branches by concatenating their textual outputs, which discards the parallel structure and incurs redundant prefill computation. In this work, we introduce Parallel-Synthesis, a plug-and-play framework that enables a synthesizer to directly consume the KV caches produced by parallel worker agents. Parallel-Synthesis combines a cache mapper that calibrates independently generated branch caches with a fine-tuned synthesizer adapter that enables generation from this non-sequential cache interface. We train Parallel-Synthesis using data that exposes the synthesizer to parallel cache contexts, teaches aggregation across cached branches, and distills reasoning behavior from standard text-concatenation-based synthesis. Across nine downstream datasets spanning math, science QA, code generation, GAIA, and multi-agent database diagnosis, Parallel-Synthesis matches or outperforms text-based synthesis on seven datasets and remains close on the other two. It also reduces time-to-first-token by 2.5x-11x, suggesting that direct cache-based synthesis is a promising interface for more native and efficient synthesis over parallel agent branches.",
+    "authors": [
+      "Shikun Liu",
+      "Mufei Li",
+      "Dongqi Fu",
+      "Haoyu Wang",
+      "Yinglong Xia",
+      "Hong Li",
+      "Hong Yan",
+      "Pan Li"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14672v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14672v1",
+    "fetched_at": "2026-06-15T13:50:53.541607"
+  },
+  {
+    "id": "2606.14582v1",
+    "title": "A Temporal Planning Framework for Disruption Aware Dynamic Route Optimization in Heterogeneous Railway Systems",
+    "abstract": "Efficient route optimization play a vital role in ensuring both safety and punctuality in railway operations. It is very crucial particularly in heterogeneous multi-gauge railway networks with varying train speed, stopping pattern, infrastructure compatibility constraints increase coordination complexity. In single-track systems these challenges are further intensify due to all trains to share the same track and requires frequent track switching.Stochastic disruptions events including blocked tracks, blocked trains, engine failure and speed slowdowns introduces additional unpredictability in operations and deviate the timetable. However, existing studies predominantly focuses on high-level timetabling, omitting operational details such as track switching coordination. As a result leaving decision to human operators, increasing safety risks into railway operations. This study proposes a framework based on temporal planning for dynamic route optimization and disruption management in heterogeneous railway systems. The framework formulates railway operations as a temporal planning problem using PDDL 2.1 with explicitly modeling gauge compatibility constraints and diverse disruption scenarios. It generates conflict-free timestamped operational plans specifying both optimized schedules and executable action sequences. To evaluate the proposed framework, we developed a benchmark problem set with 200 instances using up to 1,000 track points and 120 trains. Two state-of-the-art temporal planners and a plan validator were employed to assessed the framework. The experimental results demonstrate that the framework effectively generates temporal operational plans for heterogeneous railway systems and handles multi-gauge constraints, disruptions, and reduces dependence on manual decision making.",
+    "authors": [
+      "Pollob Chandra Ray",
+      "Sabah Binte Noor",
+      "Fazlul Hasan Siddiqui"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14582v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14582v1",
+    "fetched_at": "2026-06-15T13:50:53.541629"
+  },
+  {
+    "id": "2606.14574v1",
+    "title": "SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model",
+    "abstract": "Large language models (LLMs) are increasingly deployed as planners for autonomous agents in household environments. While existing benchmarks evaluate whether LLM-generated plans execute successfully, they overlook a critical type of failure: latent failures. Unlike immediate failures that trigger instant feedback at execution time and enable timely correction, latent failures do not immediately halt plan execution but silently compromise goal achievement. In severe cases, they cause irreversible harm. To address this gap, we introduce SIMMER, a benchmark for evaluating latent failures in LLM planning through a human-curated symbolic world model grounded in the kitchen domain. SIMMER defines a world model comprising 77 actions, 262 unique objects, and approximately 46,800 possible interactions that are semantically realistic, derived from real-world cooking scripts. It then leverages a state machine executor that validates plans against the world model and detects immediate precondition violations, latent hazards, and irreversible failures. Experiments across six LLMs show that even frontier models achieve at most 17% error-free plans. Moreover, up to 56% of plans contain latent failures, the majority of which lead to irreversible consequences. We further demonstrate that explicit state reasoning via counterfactual foresight simulation can reduce latent failures by up to 72% and irreversible cases by up to 75%, suggesting a promising direction for more robust LLM planners.",
+    "authors": [
+      "Xiaoxin Lu",
+      "Ranran Haoran Zhang",
+      "Rui Zhang"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14574v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14574v1",
+    "fetched_at": "2026-06-15T13:50:53.541650"
+  },
+  {
+    "id": "2606.14551v1",
+    "title": "TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation",
+    "abstract": "Robots under autonomous operation may require decisions based on evidence that is no longer visible. We study \\emph{delayed-evidence} tasks, where an early cue disappears before a later decision point, so visually similar observations can require different actions. In these settings, the current observation is not a sufficient state for control. We introduce TRAjectory-routed Causal Evidence (TRACE), a memory framework for visuomotor imitation policies. TRACE stores task-relevant visual and robot-state evidence, such as object identity, target choice, or route-dependent state, in a fixed-size latent memory that remains bounded over long episodes. Instead of indexing memory by raw time or manually provided task labels, TRACE uses \\emph{path signatures}: compact, order-sensitive features of the executed robot-state trajectory. These signatures do not store the visual cue itself; rather, they provide trajectory-conditioned keys for writing and retrieving the evidence stored when the cue was visible. When the robot later reaches an ambiguous observation, the policy conditions on TRACE memory to recover the missing context and choose the correct branch. TRACE attaches through lightweight adapters to policies, without changing the policy backbone, action head, or imitation objective. Across real-world long-horizon manipulation tasks with visually ambiguous branch points, TRACE improves branch selection and task success over alternative baselines, including short-history and recurrent memory. Project page: https://jeong-zju.github.io/trace",
+    "authors": [
+      "Zihao Li",
+      "Ranpeng Qiu",
+      "Yincong Chen",
+      "Guoqiang Ren",
+      "Weiming Zhi"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14551v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14551v1",
+    "fetched_at": "2026-06-15T13:50:53.541674"
+  },
+  {
+    "id": "2606.14518v1",
+    "title": "Behavioral Audit of Machine Unlearning Has a Privacy Cost",
+    "abstract": "The removal of learned data from Machine Learning models through Machine Unlearning (MU) has been widely studied; however, there has yet to be an agreed-upon scheme for auditing MU. Existing work has shown that a dishonest model owner can falsify evidence to avoid executing MU, while curious auditors (and adversaries) can infer the privacy-sensitive properties of the model and its training data even with limited access. Yet auditing of MU under mutual distrust between the model owner and the auditor remains unexplored. We provide an information-theoretic proof for this scenario: for convex ML models, a generic audit scheme that relies solely on querying the model for \\textit{behavioral} signals cannot identify insufficiently unlearned models without revealing membership information of the retained set. Therefore, auditing MU under the assumption of a dishonest model owner and an honest-but-curious auditor faces an inherent privacy-audit tradeoff. Our empirical results on convex models strongly supports this result, while further experiments demonstrate that this privacy-audit tension persists in non-convex models. Our results call for a more careful consideration of the privacy-audit tension under a realistic auditor threat model, and serve as a foundation for more scrutiny of designs of privacy-preserving audit schemes for the MU pipeline. We also release our code implementation at https://github.com/LiouTang/Behavioral-Unlearn-Audit.",
+    "authors": [
+      "Liou Tang",
+      "James Joshi",
+      "Ashish Kundu"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14518v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14518v1",
+    "fetched_at": "2026-06-15T13:50:53.541695"
+  },
+  {
+    "id": "2606.14502v1",
+    "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+    "abstract": "Large Language Models (LLMs) are undergoing a fundamental transformation from conversational generators into integrated AI systems capable of reasoning, action, memory, and self-improvement. We conceptualize this transition as a shift from Chatbot to Digital Colleague: from conversational answers to persistent work. We organize this transition along two tightly coupled dimensions. First, at the cognitive core level, LLMs are advancing from Chatbot-era \"fast thinking\" systems driven by next-token prediction toward Thinking LLMs that leverage inference-time computation, Chain-of-Thought reasoning, reflection, process supervision, and reinforcement learning to support more deliberate and reliable cognition. Second, at the tool-augmented task execution level, LLMs are progressing from tool-calling Agents that invoke external resources in an ad hoc manner toward OpenClaw-style workstation systems (OpenClaw) equipped with persistent Workspaces, skills, verification loops, and governance. The \"Workspace + Skill\" paradigm makes episodic tool use colleague-like via state persistence, reusable procedures, task closure, and experience reuse. We examine data construction shifts from instruction-response pairs to State-Action-Observation trajectories and evaluation from static benchmarks to sandboxed, auditable, self-evolving AI ecosystems.",
+    "authors": [
+      "Yongheng Zhang",
+      "Ziang Liu",
+      "Jiaxuan Zhu",
+      "Shuai Wang",
+      "Xiangqi Chen",
+      "Haojing Huang",
+      "Jiayi Kuang",
+      "Siyu Chen",
+      "Ao Shen",
+      "Hao Wu",
+      "Qiufeng Wang",
+      "Qian-Wen Zhang",
+      "Junnan Dong",
+      "Wenhao Jiang",
+      "Ying Shen",
+      "Hai-Tao Zheng",
+      "Yinghui Li",
+      "Di Yin",
+      "Xing Sun",
+      "Philip S. Yu"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14502v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14502v1",
+    "fetched_at": "2026-06-15T13:50:53.541765"
+  },
+  {
+    "id": "2606.14445v1",
+    "title": "tap: A File-Based Protocol for Heterogeneous LLM Agent Collaboration",
+    "abstract": "Existing multi-agent software development systems have proposed many forms of agent collaboration, including role-based collaboration and automated code review. However, many systems assume a common runtime, a central conversation server, or the same API family. Under these assumptions, LLM agents from different vendors cannot easily exchange messages directly from their own execution environments while dividing development and review work on a shared codebase. This paper presents tap, a file-based collaboration protocol that allows Claude (Anthropic) and Codex (OpenAI) to collaborate on one codebase without shared memory or an identical runtime. The core of tap is a file-first design that preserves markdown files with metadata as original messages, combines a file inspection path (file communication, Tier 1) with real-time notification paths for Claude and Codex (real-time communication, Tier 2), and isolates work through separate git worktrees. Even if real-time notification fails or a receiver restarts, the message file remains available and the same content can be inspected again. In a 27-day, 37-generation self-applied operation where tap was used to develop and review itself, we collected 209 tap-related pull requests and 717 operational artifacts. An analysis of 375 review artifacts showed that the share of reviews recording at least one defect or requested change was 69.8% for heterogeneous model pairs and 53.1% for homogeneous model pairs. These results show that tap, which combines file-based message preservation with real-time notification, operates in a real production repository, and that combining heterogeneous models and execution environments can broaden review perspectives. tap is distributed as the open-source npm package @hua-labs/tap (v0.5.2).",
+    "authors": [
+      "Minseo Kim"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14445v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14445v1",
+    "fetched_at": "2026-06-15T13:50:53.541785"
+  },
+  {
+    "id": "2606.14375v1",
+    "title": "Elastic Queries Reinforcement Learning: Self-Aware Policy Execution for VLA Models",
+    "abstract": "Vision-language-action (VLA) models are powerful action generators for robot manipulation, but they are typically executed with fixed inference and replanning schedules. This rigidity ignores the uneven difficulty of robot control: contact-rich or uncertain states may need more computation and fresher feedback, while easier states can often be handled with fewer inference steps and longer open-loop execution. We propose Elastic Queries Reinforcement Learning (EQRL), a framework that makes each VLA policy query elastic. A lightweight latent-schedule adaptor jointly selects the latent input, denoising budget, and action chunk length, without fine-tuning the underlying VLA model. To make scheduling difficulty-aware, EQRL trains a critic over the joint latent-schedule action and derives a state difficulty signal from critic ensemble disagreement. This signal guides compute toward difficult states, while a learned residual allows task-driven correction. We formulate variable chunk execution as query-level macro-action RL with chunk-dependent discounting and an amortized number-of-function-evaluations (NFE) budget. Across simulation and real-robot manipulation, EQRL reduces amortized inference cost while preserving or improving task success.",
+    "authors": [
+      "Ge Wang",
+      "Xinyu Tan",
+      "Xiang Li",
+      "Man Luo",
+      "Chengsi Yao",
+      "Shenhao Yan",
+      "Jiahao Yang",
+      "Fan Feng",
+      "Honghao Cai",
+      "Xiangyuan Wang",
+      "Zhixin Mai",
+      "Yiming Zhao",
+      "Yatong Han",
+      "Zhen Li"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14375v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14375v1",
+    "fetched_at": "2026-06-15T13:50:53.541825"
+  },
+  {
+    "id": "2606.14356v1",
+    "title": "PLAIground: SLO-Driven Runtime Model Selection for Compound AI Systems in the Edge-Cloud-Space Continuum",
+    "abstract": "Applications in the 3D Computing Continuum, which unifies edge, cloud, and space, require combining multiple AI tasks such as object detection, time-series analytics, and natural language processing into Compound AI systems. These systems must satisfy stringent Service Level Objectives (SLOs) on accuracy, latency, and cost. A key mechanism for maintaining SLO compliance of Compound AI systems is runtime model selection, where AI models are dynamically switched for each workflow task. However, existing distributed and compound AI frameworks do not natively support runtime model selection. We present PLAIground, a framework that enables runtime model selection for Compound AI systems. PLAIground introduces Compoundable AI Model (CAIM) abstraction, which decouples task semantics from AI model implementations via Task and Data Contracts, enabling model switching without workflow changes. Additionally, PLAIground introduces Pixie, an SLO-driven runtime model selection algorithm, which dynamically selects the most suitable model for each task during execution. Our evaluation on two realistic Compound AI workflows demonstrates that Pixie achieves up to 91.3% accuracy while maintaining SLO compliance where fixed-model strategies either violate cost and latency budgets up to 21x or miss accuracy targets by 4%.",
+    "authors": [
+      "Milos Gravara",
+      "Cynthia Marcelino",
+      "Andrija Stanisic",
+      "Stefan Nastic"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14356v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14356v1",
+    "fetched_at": "2026-06-15T13:50:53.541848"
+  },
+  {
+    "id": "2606.14302v1",
+    "title": "Retrospective Progress-Aware Self-Refinement for LLM Agent Training",
+    "abstract": "LLM-based agents trained with reinforcement learning optimize step-wise action prediction but lack metacognitive awareness of task progress, inducing a gap that hinders long-horizon scaling. A pilot study reveals that online progress prompting hurts performance while retrospective demonstrations help, yet this capability cannot emerge from outcome-reward training alone. We present RePro, Retrospective Progress-Aware Training, a framework that trains agents to self-generate progress signals via a forward-then-reflect rollout paradigm: the agent executes actions online, then retrospectively reassesses its step-wise progress given the completed trajectory and known outcome. RePro initializes with a Retrospection Warmup that teaches reflection format from minimal external demonstrations, then further trains through RePro-PO with a composite reward that produces self-generated signals without continuous external supervision. Experiments on WebShop, ALFWorld, and Sokoban show that RePro enhances the Qwen family's performance, with up to $12\\%$ absolute success rate gains.",
+    "authors": [
+      "Xinbei Ma",
+      "Congmin Zheng",
+      "Jiyang Qiu",
+      "Jiale Hong",
+      "Yao Yao",
+      "Xiangmou Qu",
+      "Jiaxin Yin",
+      "Xingyu Lou",
+      "Jun Wang",
+      "Weiwen Liu",
+      "Weinan Zhang",
+      "Zhuosheng Zhang",
+      "Hai Zhao"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14302v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14302v1",
+    "fetched_at": "2026-06-15T13:50:53.541886"
+  },
+  {
+    "id": "2606.14295v1",
+    "title": "AgentCyberRange: Benchmarking Frontier AI Systems in Realistic Cyber Ranges",
+    "abstract": "Frontier AI systems are increasingly capable of cybersecurity tasks, including codebase inspection, vulnerability detection, and exploitation. However, evaluating their offensive capabilities remains constrained by limited access to open, reproducible, multi-host cyber ranges. Existing public benchmarks capture isolated skills such as CTF solving, vulnerability reproduction, and exploit generation, but often abstract away realistic intrusion workflows: discovering exposed services, gaining a foothold, collecting internal information, and expanding compromise across hosts. This gap makes it difficult to observe emerging risks early, because frontier AI systems are rarely evaluated under realistic attack conditions.   We introduce AgentCyberRange, the first open, multi-range infrastructure for measuring autonomous cyber attack capability in realistic cyber ranges. It combines 110 vulnerabilities across 15 real web applications and 8 enterprise-like cyber ranges with 156 internal hosts, plus Cage, a toolchain for execution, orchestration, result collection, and verification. The benchmark covers two core stages: web exploitation, where agents explore exposed applications and validate vulnerabilities, and post exploitation, where agents turn an initial foothold into broader internal compromise. We evaluate six frontier AI systems under matched prompts and budgets. GPT-5.5 with Codex performs best, solving 16.1% of web exploitation tasks and 31.7% of post-exploitation tasks; with more concrete hints, these rates increase to 33.0% and 46.3%. We also observe out-of-benchmark findings, including unknown vulnerabilities in popular projects, and payload mutation that bypasses host defenses. These results show that open cyber-range evaluation is necessary for observing emerging offensive capabilities under realistic and reproducible conditions.",
+    "authors": [
+      "Fengyu Liu",
+      "Jiarun Dai",
+      "Yihe Fan",
+      "Wuyuao Mai",
+      "Ziao Li",
+      "Bofei Chen",
+      "Jie Zhang",
+      "Zheng Lou",
+      "Bocheng Xiang",
+      "Qiyi Zhang",
+      "Xudong Pan",
+      "Geng Hong",
+      "Yuan Zhang",
+      "Min Yang"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14295v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14295v1",
+    "fetched_at": "2026-06-15T13:50:53.541929"
+  },
+  {
+    "id": "2606.14249v1",
+    "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+    "abstract": "AI agent performance depends critically on the runtime harness, comprising the prompts, tools, memory, and control flow that mediate how a model observes, reasons, and acts. Yet today's harnesses remain largely hand-crafted and static: each new model or task still demands bespoke scaffolding, and the rich traces produced during execution are rarely distilled back into systematic improvement. We introduce HarnessX, a foundry for composable, adaptive, and evolvable agent harnesses. HarnessX assembles typed harness primitives via a substitution algebra, adapts them through AEGIS, a trace-driven multi-agent evolution engine grounded in an operational mirror between symbolic adaptation and reinforcement learning, and closes the harness-model loop by turning trajectories into both harness updates and model training signal. Across five benchmarks (ALFWorld, GAIA, WebShop, tau^3-Bench, and SWE-bench Verified), HarnessX yields an average gain of +14.5% (up to +44.0%), with gains largest where baselines are lowest. These results suggest that agent progress need not come from model scaling alone: composing and evolving runtime interfaces from execution feedback is an actionable and complementary lever. The complete codebase will be open-sourced in a future release.",
+    "authors": [
+      "Tingyang Chen",
+      "Shuo Lu",
+      "Kang Zhao",
+      "Weicheng Meng",
+      "Hanlin Teng",
+      "Tianhao Li",
+      "Chao Li",
+      "Xule Liu",
+      "Jian Liang",
+      "Zhizhong Zhang",
+      "Yuan Xie",
+      "Heng Qu",
+      "Kun Shao",
+      "Jian Luan"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14249v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14249v1",
+    "fetched_at": "2026-06-15T13:50:53.541969"
+  },
+  {
+    "id": "2606.14239v1",
+    "title": "SkillAudit: Ground-Truth-Free Skill Evolution via Paired Trajectory Auditing",
+    "abstract": "Agent skills are structured procedural packages that guide frozen LLM agents in specialized workflows. Skills rarely remain sufficient after deployment: edge cases, API changes, and deployment constraints become visible only through use, making skill evolution a practical necessity. Existing methods depend on privileged feedback such as held-out validation scores, hidden test outcomes, or environment rewards -- signals often unavailable when a practitioner has only a task description and workspace data. We introduce SkillAudit, a framework for evolving agent skills without ground-truth feedback. The key idea is paired trajectory auditing: at each iteration, the same task is executed with and without the candidate skill, isolating how the skill changes agent behavior without external labels. To turn behavioral differences into edit guidance, SkillAudit uses Process-Aligned Contrastive Evaluation (PACE), a cluster of evaluators that maps trajectory divergences to diagnostic signals linked to specific passages in the skill document. A structural verifier, compiled once from the task specification and then fixed, checks task constraints and rolls back harmful updates. SkillAudit routes edits through two pipelines: Refine removes noisy or irrelevant guidance from broadly useful skills, while Repair replaces passages that conflict with the task. Across 89 containerized tasks spanning 8 professional domains, SkillAudit achieves 73.9% average task reward, outperforming an agent without skills (40.9%) and the static expert skill (56.7%). These gains are obtained without accessing hidden tests, reference solutions, or external scoring functions during evolution.",
+    "authors": [
+      "Haowen Gao",
+      "Haoran Chen",
+      "Can Wang",
+      "Shasha Guo",
+      "Liang Pang",
+      "Zhaoyang Liu",
+      "Huawei Shen",
+      "Xueqi Cheng"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14239v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14239v1",
+    "fetched_at": "2026-06-15T13:50:53.541998"
+  },
+  {
+    "id": "2606.14219v1",
+    "title": "Selective Agentic Recovery for UAV Autonomy with a Persistent Mission Runtime",
+    "abstract": "Agentic AI can support unmanned aerial vehicle (UAV) autonomy by providing high-level recovery reasoning when local waypoint- or setpoint-based execution encounters blocked passages, repeated no-progress behavior, or mission-level ambiguity. On physical UAVs, however, remote reasoning is most useful when it is invoked selectively, since each call introduces latency, resource cost, backend uncertainty, and a need to validate the returned decision. This paper presents Persistent Mission Runtime (PMR), a UAV recovery framework that keeps the mission loop and safety-critical execution local while using an external agentic reasoner only as an on-demand recovery module. The reasoner selects from predefined recovery skills, and each returned decision is parsed, verified, safety-filtered, and mapped to local executor actions before it can affect flight. PMR introduces learned Cognitive Value of Invocation (learned-CVI), a compact admission gate that estimates when remote agentic reasoning is likely to improve near-term mission progress enough to justify its operational cost. Across a fixed 400-run Gazebo/PX4 benchmark with eight scenarios, learned-CVI raises hard/ambiguous-regime success from 5.0% under local-only autonomy to 95.0%, outperforms one-shot and periodic reasoning baselines by 20.0 and 32.5 percentage points, and reduces remote-agent calls by 16.7% and logged tokens by 29.2% relative to a manually tuned rule-based invocation baseline.",
+    "authors": [
+      "Taewoo Park",
+      "Kyeonghyun Yoo",
+      "Seunghyun Yoo",
+      "Hwangnam Kim"
+    ],
+    "published": "2026-06-12",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.14219v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.14219v1",
+    "fetched_at": "2026-06-15T13:50:53.542020"
+  },
+  {
+    "id": "2606.13803v1",
+    "title": "Neural Slack Variables for Shape Constraints",
+    "abstract": "Enforcing functional inequality constraints such as monotonicity and convexity in neural networks is a fundamental challenge in many industrial and scientific applications. Classical one-sided penalty methods, along with primal-dual methods gated by complementary slackness, provide constraint gradients only at violated locations, resulting in fragile satisfaction. Architectures that guarantee feasibility by construction, on the other hand, remain largely limited to elementary cases and impose additional inductive biases. We introduce neural slack variables, a deep learning native primal-side approach that converts constraint enforcement into a regression problem by coupling the primary network with a jointly learned auxiliary network. The auxiliary network serves as a valid target for the primary network's constraint quantities, inducing feasibility and regularity. Neural slack variables achieve zero measured violations on dense-grid monotonicity and convexity test cases, where penalty and primal-dual baselines leave residual violations, and enable arbitrage-free learning of volatility surfaces, an open industrial challenge in quantitative finance.",
+    "authors": [
+      "Ruben Wiedemann",
+      "Antoine Jacquier",
+      "Lukas Gonon"
+    ],
+    "published": "2026-06-11",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.13803v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.13803v1",
+    "fetched_at": "2026-06-15T13:52:51.832259"
+  }
+]
