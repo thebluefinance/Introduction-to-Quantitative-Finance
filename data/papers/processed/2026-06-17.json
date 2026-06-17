@@ -1,0 +1,703 @@
+[
+  {
+    "id": "2606.18199v1",
+    "title": "Conformal Prediction Intervals with Tail-Specific Guarantees",
+    "abstract": "This paper extends classical conformal frameworks for constructing prediction intervals with global marginal coverage $1-α$ to intervals that provide explicitly calibrated guarantees for the upper and lower tails separately. Focusing on split conformal prediction, we first construct lower and upper one-sided conformal intervals that achieve marginal validity, and then derive the induced two-sided interval by intersection. Theoretical results prove both tail-specific and global marginal coverage of the induced two-sided interval. Results are presented first for the exchangeable setting, where coverage has finite-sample guarantees, and then for non-exchangeable data, where guarantees are asymptotic. Simulation studies show that the proposed approach achieves improved directional calibration relative to classical two-sided intervals, especially relevant in skewed data. Finally, the benefit of the proposed framework is showcased in a financial application, where one aims for return maximization while seeking strict control on the left tail.",
+    "authors": [
+      "Simone Cuonzo",
+      "Nina Deliu"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "math.ST",
+      "q-fin.RM",
+      "stat.ME",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18199v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18199v1",
+    "fetched_at": "2026-06-17T12:12:29.043094",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193257"
+  },
+  {
+    "id": "2606.17545v1",
+    "title": "Continuous-time Optimal Stopping through Deep Reinforcement Learning",
+    "abstract": "Simulation based solvers for optimal stopping problems must discretize the stopping decision. Under classical dynamic programming, a coarse exercise grid with only a few stopping opportunities can materially undervalue the optimal expected reward, whereas on a very fine grid, approximation errors accumulate through the backward recursion. To remove this limitation, we develop a new reinforcement-learning inspired algorithm that enables us to learn the exercise rule at arbitrarily fine time resolution. Our CARLOS (Continuous-time Adaptive Reinforcement Learning for Optimal Stopping) algorithm utilizes an aggregate deep neural network (ADNN) to learn a joint space-time decision boundary. Starting from a coarse time grid, we progressively increase the frequency of stopping opportunities, while in parallel training the ADNN to refine its timing-value estimates. We moreover design an adaptive sampling strategy that gradually concentrates training effort near the stopping boundary. Benchmarked results show that CARLOS delivers higher prices than existing Bermudan solvers, approaching the American upper bound, and achieves high computational efficiency relative to non-RL comparators.",
+    "authors": [
+      "Cosmin Borsa",
+      "Michael Ludkovski"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17545v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17545v1",
+    "fetched_at": "2026-06-17T12:12:29.043132",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193283"
+  },
+  {
+    "id": "2606.17423v1",
+    "title": "Martingale Doppelgänger-Eval: An Identification Framework for Auditing Candlestick Understanding in Vision-Language Models",
+    "abstract": "We introduce Martingale Doppelgänger-Eval, a public shadow-market benchmark for auditing whether vision-language models (VLMs) use candlestick evidence rather than extrapolate past trends. The central difficulty is identification: on real market histories, chart evidence and trend are strongly coupled, so an observational score cannot determine whether a fluent technical-analysis narrative is grounded in local visual evidence. We prove this limitation formally: no evaluation functional computed from observational chart--label data can distinguish a grounded responder from a trend-shortcut responder under strong coupling, whereas matched evidence interventions separate the same responders at an exponential rate and trend--label swaps provide an independent shortcut stress test. The benchmark therefore evaluates frozen VLMs on rendered OHLCV charts under four controlled mechanisms: a martingale-null market, injected-alpha counterfactual pairs, trend-confounder swaps, and regime shifts. A structural behavioral model identifies null-market bias, trend sensitivity, evidence sensitivity, prompt/renderer fragility, and evidence faithfulness; the accompanying statistical toolkit provides minimum detectable effects, block-aware sequential testing for metered APIs, and an overlap-weighted artifact check. Across frozen commercial and open VLMs, the identified regression assigns large positive coefficients to past trend but evidence coefficients that are zero or opposite to the rule-implied sign. Matched-pair analyses show that models either ignore injected candlestick semantics or move opposite to the rule-implied direction conditional on responding. The benchmark isolates a failure mode that standard observational chart benchmarks cannot detect and gives a reusable audit template for time-series imagery with controllable label mechanisms.",
+    "authors": [
+      "Ziyao Wang"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "q-fin.CP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17423v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17423v1",
+    "fetched_at": "2026-06-17T12:12:29.043153",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193318"
+  },
+  {
+    "id": "2606.17383v1",
+    "title": "Model Validation of Agentic AI Systems: A POMDP-Based Framework for Belief-State, Forecast, and Policy Validation",
+    "abstract": "Agentic artificial intelligence systems introduce a new class of model risk. Unlike traditional predictive models, autonomous agents continuously acquire information, form beliefs regarding latent states of the environment, generate forecasts, select actions, and adapt their behavior over time. Existing validation methodologies focus primarily on predictive accuracy and therefore provide limited insight into the quality of the underlying decision process. This paper proposes a model validation framework for agentic AI based on Partially Observable Markov Decision Processes (POMDPs). The framework decomposes autonomous decision making into information, beliefs, forecasts, actions, and utility, allowing each component to be validated independently. Large language models (LLMs) are formalized as approximate Bayesian filtering operators, and a model-risk taxonomy is developed encompassing state-space, filtering, forecast, policy, utility-specification, and parameter risks.   The model risk validation methodology is demonstrated through a portfolio-management case study in which an agent infers latent market regimes from market and macroeconomic information, generates belief-conditioned forecasts, and constructs portfolios using a Black--Litterman framework. Empirical validation combines performance analysis, belief calibration diagnostics, coverage tests, ablation studies, and parameter-sensitivity analysis. The results indicate that latent-state inference contributes independently to decision quality and that the principal conclusions remain robust across a broad range of parameter values. The principal contribution of the paper is a practical framework for extending established model risk management concepts to autonomous AI systems and providing a rigorous foundation for their validation, governance, and monitoring.",
+    "authors": [
+      "Matthew Francis Dixon"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "q-fin.RM",
+      "cs.AI",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17383v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17383v1",
+    "fetched_at": "2026-06-17T12:12:29.043174",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193333"
+  },
+  {
+    "id": "2606.12872v2",
+    "title": "Non-Spanning Identification of Scheduled Event Risk in Option Pricing",
+    "abstract": "Short-dated index options make scheduled macro-announcement risk visible in market prices, but visibility does not imply identification: a flexible no-event surface fitted to event-spanning quotes can absorb event premia, while a jump calibrated without event-spanning quotes is unidentified. To separate the continuous surface from the scheduled jump, we model Federal Open Market Committee (FOMC) decisions, Consumer Price Index (CPI) releases, and nonfarm payroll (NFP) reports as deterministic-time jumps in risk-neutral option pricing and propose a non-spanning identification protocol. Non-spanning expiries identify the no-event volatility surface, event-spanning training quotes calibrate the scheduled jump, and held-out event-spanning quotes are used only for pricing evaluation. On PM-settled S\\&P 500 index (SPX) options from May 2022 to August 2025, Gaussian and two-component mixture jumps improve held-out event-spanning pricing, with the clearest gains in robust median pricing errors and in event-volatility option combinations (straddles and strangles) rather than directional risk reversals. A contaminated-surface stress test confirms the identification concern: allowing event-spanning training quotes into the no-event surface fit produces strong held-out performance by absorbing event premia rather than identifying scheduled jump risk. An amortized mixture density network (MDN) benchmark shows limited cross-event transfer: pure leave-one-event-out amortization reduces implied-volatility errors but not mean dollar or mean spread-normalized pricing errors, while the scale-calibrated variant restores Gaussian-level performance yet remains below event-specific mixture calibration. Scheduled-jump identification is strongest for CPI and FOMC and weaker for NFP.",
+    "authors": [
+      "Tenghan Zhong"
+    ],
+    "published": "2026-06-11",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.12872v2",
+    "arxiv_url": "https://arxiv.org/abs/2606.12872v2",
+    "fetched_at": "2026-06-17T12:12:29.043725",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193345"
+  },
+  {
+    "id": "2606.18144v1",
+    "title": "Memory as a Wasting Asset: Pricing Flash Endurance for Embodied Agents, and the Limits of Doing So",
+    "abstract": "A robot's flash endurance is a non-renewable stock: every persisted write spends one of a few thousand program/erase cycles and never refills, yet no fielded robot memory system prices which memories are worth an erase cycle. We treat embodied memory as depreciating capital and price that stock with a single endurance shadow price $η$, which makes cost-minimizing placement across a RAM / on-board NVM / cloud hierarchy a threshold in a wear-augmented per-byte index. The index is cost-optimal whatever the sign of the value-write association $χ$; only when $χ> 0$ does the optimum turn non-monotone, sending a robot's most valuable memories off its flash.   The pivot is thus empirical, and we measure $χ$ on real robot logs at a pre-specified gate: its sign is a property of the deployment regime -- positive on recurrent long-horizon manipulation ($\\hatχ \\approx +1.0 \\times 10^{-3}$, replicated at full power), null on a shorter-horizon suite, and negative on non-recurrent teleoperation. Two boundaries scope the result. The endurance budget is dormant on premium 3,000-P/E TLC at datasheet prices and binding on the commodity QLC/eMMC ($\\sim$1,000 P/E) that cheaper edge robots run. And where it binds, a learned wear-aware controller only ties price-based routing on task value, because realized value is tier-invariant across RAM, NVM, and cloud: the rent governs device lifetime and cost, not task performance. Whether wear-aware placement improves task value remains open -- $χ$ is measured against a value proxy, and the non-monotone optimum, while proven, is not yet observed in data.",
+    "authors": [
+      "Josef Liyanjun Chen"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.AI",
+      "cs.CY",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18144v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18144v1",
+    "fetched_at": "2026-06-17T12:12:32.420245",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193367"
+  },
+  {
+    "id": "2606.17267v1",
+    "title": "Bayesian Poisson-Randomized Gamma Tensor Factorization with Application to International Trade Flows",
+    "abstract": "We study sparse semi-continuous tensor data with excess zeros, heavy right tails, and slice-specific dispersion. Such features arise naturally in monetary-valued multi-way data, such as international trade, where most exporter--importer--product--year cells are zero while positive values are continuous and highly variable. To model these data, we propose a Bayesian hierarchical tensor factorization model that places a low-rank CP structure on a latent Poisson rate tensor and couples it with a conditional Gamma model for positive outcomes, with rate parameters that can vary across slices within a mode. The model therefore separates the occurrence and magnitude of positive observations while borrowing strength across all tensor dimensions through a shared low-rank latent structure. To scale posterior inference to large arrays, we develop a hybrid variational--Monte Carlo algorithm that combines efficient coordinate ascent updates with a partially collapsed augmented-data sampler. Applied to approximately 60 million trade flows, the method surfaces multiway dependence across exporters, importers, products, and years that is difficult to recover from gravity-type or pairwise network analyses, which do not jointly model the product and temporal dimensions.",
+    "authors": [
+      "Jie Jian",
+      "Aaron Schein"
+    ],
+    "published": "2026-06-15",
+    "categories": [
+      "stat.ME",
+      "econ.EM",
+      "math.NA",
+      "stat.AP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17267v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17267v1",
+    "fetched_at": "2026-06-17T12:12:35.792145",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193378"
+  },
+  {
+    "id": "2606.17978v1",
+    "title": "MoCo-AIS: A Contrastive Learning Framework for Similarity Computation of Vessel Trajectories",
+    "abstract": "Trajectory similarity is a fundamental task in analyzing mobility patterns, essential for applications such as route pattern extraction, mobility prediction, and anomaly detection. Traditional distance-based measures for computing similarity incur high computational cost, driving the adoption of lightweight learning-based approaches. Supervised methods rely on extensive labels derived from traditional distance measures and often reproduce these metrics, which limits generalization. While self-supervised learning addresses this issue through contrastive learning, it lacks a unified framework, making it difficult to compare deep learning (DL) models for consistent trajectory representation. Accordingly, this paper presents MoCo-AIS, a unified framework for learning vessel trajectory embeddings based on the Momentum Contrast (MoCo) paradigm, which formulates similarity learning through positive and negative trajectory pairs. Within this framework, we evaluate a diverse set of leading DL models on large-scale, real-world vessel-tracking AIS datasets that capture diverse navigation behaviors and operating conditions. Results demonstrate that our framework significantly improves similarity learning over existing baselines, while providing a benchmarking platform for evaluating trajectory representation models.",
+    "authors": [
+      "Ruixin Song",
+      "Md Mahbub Alam",
+      "Zahra Sadeghi",
+      "Amilcar Soares",
+      "José F. Rodrigues-Jr",
+      "Gabriel Spadon"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17978v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17978v1",
+    "fetched_at": "2026-06-17T12:12:42.484597",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193396"
+  },
+  {
+    "id": "2606.17182v1",
+    "title": "Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems",
+    "abstract": "Multi-agent LLM systems share state through memory stores, vector indices, and tool registries. We model such sharing as long-running read-generate-write operations under deterministic-generation semantics -- the regime durable-execution engines enforce by deterministic replay -- and formalize four concurrency anomalies in TLA+: stale-generation, phantom-tool, causal-cascade, and tool-effect reordering, structural analogues of classical isolation anomalies, each with a TLC counter-example. The exclusion lattice over these anomalies is trivial; the contribution is the mechanically verified realizability and strict separation of one maximal chain within it, $L_0 \\subsetneq \\cdots \\subsetneq L_4$, to our knowledge the first machine-checked consistency hierarchy for such runtimes. A development of 274 Verus obligations (zero assume, zero admit; trust base: two structural axioms and a mutex correspondence) proves the detectors sound and complete against the specifications and each runtime its avoidance set. Three deployed Rust runtimes realize L0-L1 (pessimistic locking, serializable snapshot isolation, default-SI), each verified against stale-generation and refined to its state machine; L2-L4 are exec-mode-verified with dependency-free prevention twins (A3, A6, A2: 0/1000 versus 1000/1000), and L2 is run live across three model families (A3 prevented in all 120 retracted sessions). We reproduce a silent lost update in ByteDance's deer-flow, formalizing its fix as a verified $L_0 \\to L_1$ refinement, and exhibit tool-effect reordering in LangGraph's ToolNode on unmodified output, removed by an L3 commit-order sequencer. The verified detector, refinements, and realizability artifacts are the contribution; the phenomena and lattice are classical.",
+    "authors": [
+      "Sajjad Khan"
+    ],
+    "published": "2026-06-15",
+    "categories": [
+      "cs.LG",
+      "cs.DC",
+      "cs.LO",
+      "cs.MA",
+      "cs.PL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17182v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17182v1",
+    "fetched_at": "2026-06-17T12:12:42.484631",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193409"
+  },
+  {
+    "id": "2606.18237v1",
+    "title": "ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues",
+    "abstract": "Reproducing research results from papers and released code is central to scientific progress. Existing works have introduced benchmarks to evaluate whether LLM agents can assist with reproducibility, but they are difficult to scale due to their reliance on substantial manual effort for data curation and evaluation. We introduce ReproRepo, a scalable framework for reproducibility evaluation that leverages human-raised GitHub issues as naturally occurring supervision on realistic reproduction blockers. We instantiate ReproRepo on 1,149 recent machine learning papers from major conferences and evaluate four frontier model-agent configurations. Our results show that LLM agents, even without executing code, can identify many real-world reproducibility problems from paper-repository pairs: the best agent in our study, namely Codex with GPT-5.5, surfaces at least one semantically related human-reported blocker for ~90% of papers in the study. Further analysis shows that agents are particularly effective for surfacing visible failures and identifying the right semantic region, but may still be insufficient in exact localization. ReproRepo can serve as a reusable, scalable framework for future evaluations of LLM agents on real-world reproducibility auditing. Our code is released at https://github.com/LithiumDA/ReproRepo.",
+    "authors": [
+      "Shanda Li",
+      "Qiuhong Anna Wei",
+      "Jingwu Tang",
+      "Valerie Chen",
+      "Nihar B Shah",
+      "Tim Dettmers",
+      "Yiming Yang",
+      "Ameet Talwalkar"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18237v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18237v1",
+    "fetched_at": "2026-06-17T12:13:12.894973",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193421"
+  },
+  {
+    "id": "2606.18168v1",
+    "title": "All Smoke, No Alarm: Oracle Signals in Agent-Authored Test Code",
+    "abstract": "Software practitioners increasingly use AI coding agents that generate test code alongside production code in open source pull requests (PRs). Recent studies report more than 932,000 agent-authored PRs across more than 116,000 repositories, yet whether their test files contain meaningful verification logic remains underexplored. Test files lacking explicit assertions execute code without verifying behavior, so quality gates based on test-file presence overestimate verification strength. The goal of this paper is to help practitioners assess the verification strength of agent-authored patches by characterizing oracle signals and their link to merge outcomes and review effort. We conduct an empirical study of 86,156 test-file patches from 33,596 agent-authored PRs across 2,807 GitHub repositories produced by five coding agents: OpenAI Codex, GitHub Copilot, Devin, Cursor, and Claude Code. A qualitative analysis of 384 stratified patches informs a syntactic taxonomy of eight oracle signal categories. Applied at scale, 80.2% of test patches contain weak or no explicit oracle signals. While raw merge rates are lower for strong-oracle PRs, a regression analysis adjusting for agent, PR size, repository popularity, task type, and language shows strong oracles significantly improve merge likelihood (OR = 1.28, p < 0.001). Our findings suggest that test file counts substantially overestimate verification strength and that practitioners can adopt oracle-aware quality checks to more accurately evaluate agent-authored contributions.",
+    "authors": [
+      "Dipayan Banik",
+      "Kowshik Chowdhury",
+      "Shazibul Islam Shamim"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18168v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18168v1",
+    "fetched_at": "2026-06-17T12:13:12.895007",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193431"
+  },
+  {
+    "id": "2606.18147v1",
+    "title": "WEQA: Wearable hEalth Question Answering with Query-Adaptive Agentic Reasoning",
+    "abstract": "Language models are remarkably capable at medical question answering, in some cases surpassing the accuracy of general physicians. However, answering questions about wearable health data remains challenging and understudied, as these ubiquitous sensors produce continuous, high-dimensional, and longitudinal data, which is non-trivial to align with text-centric distributions in LLM pretraining. The diversity of sensor modalities and user intents cannot be effectively handled by a fixed reasoning workflow or a single pretrained foundation model. To address these challenges, we propose WEQA, a query-adaptive agent framework that unifies LLM reasoning with specialized wearable analytical and modeling tools. An LLM controller is employed to synthesize execution plans and dynamically route each query to the appropriate combination of sensor analysis and pretrained models, and perform grounded response auditing with external knowledge. We also curate a benchmark spanning four open wearable datasets comprising analytic and predictive tasks in three different health domains. Experiments show that our framework is 24% more accurate than LLM and agentic baselines, and a blinded study with 12 medical experts and 8 users shows substantial gains in usefulness and clinical soundness.",
+    "authors": [
+      "Yuwei Zhang",
+      "Tong Xia",
+      "Bianca Emmerich",
+      "Yu Yvonne Wu",
+      "Dimitris Spathis",
+      "Xin Liu",
+      "Daniel McDuff",
+      "Cecilia Mascolo"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18147v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18147v1",
+    "fetched_at": "2026-06-17T12:13:12.895037",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193440"
+  },
+  {
+    "id": "2606.18108v1",
+    "title": "Querying an astronomical database using large language models: the ALeRCE text-to-SQL system",
+    "abstract": "We develop a text-to-SQL (structured query language) system based on large language models (LLMs) using in-context learning and apply it to the Automatic Learning for the Rapid Classification of Events (ALeRCE) astronomical database. ALeRCE is a community broker for the Zwicky Transient Facility and the Vera C. Rubin Observatory. The system enables users to query the database in natural language (NL) and generates executable SQL queries. To develop and evaluate the system, we constructed a dataset of 110 NL/SQL pairs. We propose a step-by-step generation framework comprising four modules: schema linking, query classification, prompt decomposition, and self-correction. The performance of thirteen LLMs is evaluated using in-context learning and prompt engineering techniques. Text-to-SQL performance is assessed using the perfect-match (PM) rate for row identifiers (e.g., object identifiers) and column identifiers (i.e., column names). The proposed step-by-step framework consistently outperforms a direct-inference baseline, while the self-correction module consistently reduces execution errors. For Claude Opus 4.6, PM performance on row (column) identifiers is high for simple queries, reaching 0.97 (0.94), and decreases with query complexity to 0.44 (0.72) for medium queries and 0.59 (0.49) for hard queries. Among the thirteen evaluated models, the best-performing LLMs for the text-to-SQL task are Claude Opus 4.6, Gemini 2.5 Pro, Gemini 3 Flash, and GPT-5.2-Codex.",
+    "authors": [
+      "P. A. Estevez",
+      "J. Espejo-Moreira",
+      "S. Sanfeliu-Alvarez",
+      "F. Forster",
+      "A. M. Munoz Arancibia",
+      "G. Cabrera-Vives",
+      "F. E. Bauer",
+      "A. Bayo",
+      "M. Catelan",
+      "R. Dastidar",
+      "L. Hernandez-Garcia",
+      "J. A. Intriago",
+      "G. Pignata"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "astro-ph.IM",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18108v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18108v1",
+    "fetched_at": "2026-06-17T12:13:12.895073",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193450"
+  },
+  {
+    "id": "2606.18105v1",
+    "title": "OmniPlan: An Adaptive Framework for Timely and Near-Optimal Network Planning Optimization",
+    "abstract": "Network planning optimization is a fundamental problem across diverse domains, including transportation systems, communication networks, and power grids. It requires simultaneous optimization of multiple competing objectives under complex constraints. Existing network planning optimization frameworks rely on mixed integer programming (MIP) solvers, heuristics, and deep reinforcement learning (DRL) models to compute planning decisions. However, they lack effective adaptability to diverse and dynamic user intents, thus leading to the trade-off between execution time and optimality. In this paper, we propose OmniPlan, an adaptive framework that achieves both timeliness and near-optimality in network planning optimization. To achieve the adaptability lacking in existing solutions, OmniPlan employs a large language model (LLM)-based interpreter to convert heterogeneous natural-language intents into a unified and quantifiable user-preference vector. Then it employs a mixture-of-experts architecture that integrates MIP solvers, heuristics, and DRL models as specialized experts, where OmniPlan adapts to diverse intents by dynamically selecting timely and near-optimal experts. Finally, it incorporates a DRL-based expert configuration module that fine-tunes optimization objective weights to align planning decisions with user-specific preferences. We evaluate OmniPlan with a representative real-world workload, i.e., distributed machine learning (ML), where we leverage OmniPlan to offload a wide spectrum of ML inference tasks, e.g., decision trees, SVM, naive Bayes, XGBoost, and random forests, onto a network of hardware devices. Our experiments on a real-world testbed indicate that OmniPlan achieves near-optimal and low-execution-time offloading for real-world ML inference tasks, reducing latency by up to 97.8\\% and network device resource consumption by up to 11.5\\%.",
+    "authors": [
+      "Longlong Zhu",
+      "Jiashuo Yu",
+      "Zedi Chen",
+      "Yuhan Wu",
+      "Zhifan Jiang",
+      "Yuchen Xian",
+      "Yimeng Liu",
+      "Jiajie Su",
+      "Shaopeng Zhou",
+      "Xingyuan Li",
+      "Hongyan Liu",
+      "Xuan Liu",
+      "Dong Zhang",
+      "Chunming Wu",
+      "Xiang Chen"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.NI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18105v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18105v1",
+    "fetched_at": "2026-06-17T12:13:12.895113",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193461"
+  },
+  {
+    "id": "2606.18063v1",
+    "title": "When LLMs Analyze Scars: From Images to Clinically-Meaningful Features",
+    "abstract": "Medical image classification faces a fundamental dilemma: while deep learning models achieve remarkable performance at scale, real-world clinical scenarios often suffer from severe data scarcity due to annotation costs, privacy constraints, and disease rarity. This challenge is particularly pronounced in pathological scar classification, where differentiating keloids from hypertrophic scars requires subtle expert knowledge and labeled images are extremely limited. We propose a novel paradigm that repositions large language models (LLMs) as knowledge-driven feature engineers rather than end-to-end classifiers. We call this framework ScaFE (Scar Feature Engineering). Our key insight is that LLMs encode rich medical knowledge that can be externalized as executable feature extraction code, enabling the transformation of high-dimensional images into low-dimensional, clinically interpretable representations. Specifically, we prompt an LLM with established scar assessment criteria to generate deterministic Python code that extracts features aligned with clinical scoring systems such as the Vancouver Scar Scale. Our approach offers three key advantages: (1) data efficiency, achieving robust performance with limited training samples by decoupling knowledge acquisition from statistical learning; (2) privacy preservation, as raw images are processed locally without exposure to external LLMs; and (3) interpretability, through explicit features grounded in clinical reasoning. Extensive experiments on scar classification demonstrate that our method consistently outperforms end-to-end deep learning baselines or using LLMs as black-box classifiers under limited data conditions, establishing a promising direction for integrating LLMs into data-efficient and clinically transparent medical AI systems.",
+    "authors": [
+      "Ruman Wang",
+      "Hangting Ye"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18063v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18063v1",
+    "fetched_at": "2026-06-17T12:13:12.895132",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193472"
+  },
+  {
+    "id": "2606.18051v1",
+    "title": "Compositional Skill Routing for LLM Agents: Decompose, Retrieve, and Compose",
+    "abstract": "LLM agents increasingly rely on external skills -- reusable tool specifications -- but real-world tasks often require composing multiple skills, not just selecting one. We formalize this as the Compositional Skill Routing problem: given a complex user query and a large skill library, decompose the query into atomic sub-tasks, retrieve the appropriate skill for each sub-task, and compose an executable plan. We present SkillWeaver, a decompose-retrieve-compose framework combining an LLM task decomposer, a bi-encoder skill retriever with FAISS indexing, and a dependency-aware DAG planner. To support evaluation, we introduce CompSkillBench, a benchmark of 300 compositional queries over 2,209 real MCP server skills spanning 24 functional categories, sourced from the public MCP ecosystem. Our experiments reveal that task decomposition quality is the primary bottleneck: standard LLM decomposition reaches only 34.2% category recall at the step level. To address this, we propose Iterative Skill-Aware Decomposition (SAD), a retrieval-augmented feedback loop that iteratively aligns decomposition with available skills. SAD improves decomposition accuracy from 51.0% to 67.7% (+32.7%, Wilcoxon p < 10^-6) in a single iteration; DA-conditioned analysis confirms that correct granularity is the prerequisite for effective retrieval (CatR@1 rises from 34% to 41% when DA=1). SkillWeaver reduces context window consumption by over 99%, and transfer experiments confirm generalization (+35.6% relative DA gain even when target categories are absent from the retrieval pool).",
+    "authors": [
+      "Xueping Gao"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.18051v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.18051v1",
+    "fetched_at": "2026-06-17T12:13:12.895149",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193481"
+  },
+  {
+    "id": "2606.17924v1",
+    "title": "PearlVLA: Progressive Embodied Action-Plan Refinement in Latent Space",
+    "abstract": "Current Vision-Language-Action (VLA) models face a trade-off between efficient action generation and explicit deliberation. Directly decoding actions from vision-language backbone representations enables low-latency control, whereas explicit reasoning through textual chains, pixel-level subgoals, or action search can improve planning but incurs substantial latency and computational cost. We propose PearlVLA, a VLA framework that moves deliberation into the latent space of a vision-language model (VLM). PearlVLA separates VLM meta-query representations into a fixed visual grounding branch and an iterative latent plan branch. At each refinement round, a plan-conditioned world query probes a lightweight frozen latent world model for an action-free future observation latent, which is fed back to guide plan refinement. A future-guided RefineNet then applies scheduled residual updates to progressively refine a coarse semantic draft into a fine-grained latent action plan. The refined plan after K rounds is then decoded in parallel into an action chunk for low-latency execution. We further introduce Causal Refinement-Grouped Process-Reward RL to optimize the latent refinement process with rewards from longer-horizon imagined futures induced by latent plan edits. Empirical evaluations on the LIBERO benchmark demonstrate that PearlVLA achieves state-of-the-art performance among existing methods.",
+    "authors": [
+      "Bochen Yang",
+      "Lianlei Shan"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17924v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17924v1",
+    "fetched_at": "2026-06-17T12:13:12.895168",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193491"
+  },
+  {
+    "id": "2606.17915v1",
+    "title": "Trustworthy Self-Composable Big-Data-as-a-Service: An LLM-Orchestrated Multi-Agent Framework for Automated Data Engineering, AutoML, MLOps Deployment, and Drift-Aware Lifecycle Optimization",
+    "abstract": "Big-Data-as-a-Service (BDaaS) platforms require re liable automation across data ingestion, cleaning, feature engi neering, model development, deployment, and post-deployment monitoring. However, existing LLM-based data science agents and AutoML systems mainly focus on isolated workflow stages, leaving limited support for lifecycle-level orchestration, artifact governance, human oversight, and drift-aware adaptation. This paper proposes a trustworthy self-composable BDaaS frame work based on LLM-orchestrated multi-agent collaboration. The proposed architecture decomposes the BDaaS lifecycle into specialized agents for data ingestion, data cleaning, feature engineering, AutoML training, model evaluation, MLOps de ployment, monitoring, and drift detection. A central LLM or chestration layer coordinates agent execution, validates interme diate outputs, manages workflow context, and enables dynamic workflow composition. The framework also incorporates shared artifact governance, reproducibility support, human-in-the-loop checkpoints, and drift-aware feedback loops. A prototype-based evaluation is conducted using controlled tabular benchmark datasets with missing values, categorical variables, outliers, class imbalance, and simulated covariate drift. Compared with manual ML, AutoML-only, and single-agent LLM baselines, the pro posed multi-agent BDaaS pipeline achieves competitive predictive performance while improving lifecycle-level reliability, including workflow completion, artifact traceability, deployment readiness, reproducibility, and drift recovery. The results suggest that LLM-orchestrated multi-agent systems can extend conventional AutoML toward trustworthy, adaptive, and production-oriented BDaaS lifecycle automation.",
+    "authors": [
+      "Aueaphum Aueawatthanaphisut",
+      "Badri Raj Lamichhane"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.MA",
+      "cs.AI",
+      "cs.DB",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17915v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17915v1",
+    "fetched_at": "2026-06-17T12:13:12.895187",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193502"
+  },
+  {
+    "id": "2606.17861v1",
+    "title": "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?",
+    "abstract": "Game generation is an emerging application of coding agents, requiring models to transform natural-language specifications into playable interactive systems. Unlike traditional coding tasks, game generation takes place within a game engine, where scripts, scenes, assets, rendering, and runtime interactions must jointly produce coherent gameplay. We formalize end-to-end game generation as the problem of producing a complete game artifact that realizes a specification through observable player-game interaction in a target environment. We argue that evaluating this setting requires three desiderata: Engine Grounding, Artifact Completeness, and Interactive Verification. We propose an interaction-grounded evaluation framework that assesses executable gameplay through replayed demonstrations and rubric-guided multimodal judging. We instantiate this framework as GameCraft-Bench, a benchmark comprising 140 Godot tasks across 15 game families. Evaluations of frontier coding agents show that end-to-end game generation remains highly challenging: the strongest agent achieves only 41.46%, and most agents score below 40%. Further analysis reveals that while agents often implement recognizable mechanics, they struggle to deliver complete games with sufficient content, functional visual feedback, and coherent presentation. See https://tongxuluo.github.io/gamecraft-bench-website for demos, code, and data.",
+    "authors": [
+      "Tongxu Luo",
+      "Rongsheng Wang",
+      "Jiaxi Bi",
+      "Chenming Xu",
+      "Zhengyang Tang",
+      "Jianlong Chen",
+      "Juhao Liang",
+      "Ke Ji",
+      "Shuqi Guo",
+      "Yuhao Du",
+      "Fan Bu",
+      "Wenyu Du",
+      "Xiaotong Zhang",
+      "Kyle Li",
+      "Shaobo Wang",
+      "Linfeng Zhang",
+      "Yuxuan Liu",
+      "Xin Lai",
+      "Chenxin Li",
+      "Yiduo Guo",
+      "Zhexin Zhang",
+      "Xinyuan Wang",
+      "Tianyi Bai",
+      "Ziniu Li",
+      "Benyou Wang"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17861v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17861v1",
+    "fetched_at": "2026-06-17T12:13:12.895242",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193512"
+  },
+  {
+    "id": "2606.17821v1",
+    "title": "DecoSearch: Complexity-Aware Routing and Plan-Level Repair for Text-to-SQL",
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in translating natural language to SQL, yet existing methods still falter on complex queries requiring multi-step, data-aware reasoning. We introduce DecoSearch, a training-free framework that addresses this by routing each query to the appropriate level of reasoning effort. A lightweight Schema Selector first prunes the full database schema to the relevant tables and columns. An LLM Judger then decides whether the question requires decomposition: straightforward questions follow a direct generation path and complex ones are escalated to a Directed Acyclic Graph (DAG) of atomic sub-questions, each solved by a targeted SQL generation step. A RAG component grounds the decomposer with semantically similar training examples, and a Topology Refiner restructures the reasoning plan when execution failures signal a flawed decomposition rather than a fixable SQL error. DecoSearch achieves 70.53% execution accuracy on BIRD and 88.31% on Spider with a DeepSeek backbone, surpassing all training-free baselines while consuming an order of magnitude fewer tokens than competing methods. It also functions as a model-agnostic wrapper, consistently improving fine-tuned SQL generation backbones without any modification to the pipeline.",
+    "authors": [
+      "Esteban Schafir",
+      "Xu Zheng",
+      "Hojat Allah Salehi",
+      "Zhuomin Chen",
+      "Mo Sha",
+      "Wei Cheng",
+      "Dongsheng Luo"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17821v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17821v1",
+    "fetched_at": "2026-06-17T12:13:12.895267",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193521"
+  },
+  {
+    "id": "2606.17805v1",
+    "title": "QueryMarket: Cost-Aware Online Active Learning in Data Markets",
+    "abstract": "Data acquisition is a major bottleneck for learning in real-time streams: analysts must decide on the fly which labels to purchase while respecting a rolling budget. However, existing online active learning rarely unifies pricing, information gain, and rolling budget constraints under concept drift. We introduce QueryMarket, a market-inspired framework that queries each incoming data point based on its estimated utility to the model and its price. Within this framework, we propose OVBAL (online variance-based active learning), which integrates data pricing with information-driven selection by estimating each sample's marginal utility via a D-optimality criterion with exponential forgetting and executing cost-aware purchases under rolling budget constraints. OVBAL yields a simple, fully online decision rule that adapts to nonstationary streams and heterogeneous label costs. Experiments on synthetic data and a real-world solar power generation forecasting task show that OVBAL is particularly effective under seller-centric pricing and yields a more favorable long-run error-cost trade-off in the real-world task under both pricing schemes.",
+    "authors": [
+      "Xiwen Huang",
+      "Pierre Pinson"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17805v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17805v1",
+    "fetched_at": "2026-06-17T12:13:12.895285",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193530"
+  },
+  {
+    "id": "2606.17781v1",
+    "title": "MIVE: A Minimalist Integer Vector Engine for Softmax LayerNorm and RMSNorm Acceleration",
+    "abstract": "The rapid growth of Large Language Models (LLMs) has intensified the need for specialized hardware accelerators that can satisfy stringent inference latency and power constraints. Although matrix multiplications dominate the overall computational workload, non-linear vector normalization operations, such as LayerNorm, RMSNorm and Softmax can become critical hardware bottlenecks. Existing accelerators typically implement these functions using dedicated hardware blocks, leading to duplicated resources and inefficient silicon utilization. To address this limitation, we propose a Minimalist Integer Vector Engine (MIVE), a programmable architecture capable of executing all three operations within a unified datapath. By exploiting common computational patterns across LayerNorm, RMSNorm and Softmax the proposed vector engine maximizes hardware sharing while reducing implementation overhead. Physical ASIC implementation results show that MIVE provides comprehensive multi-function support while achieving higher area and hardware efficiency than most state-of-the-art standalone accelerators.",
+    "authors": [
+      "Kosmas Alexandridis",
+      "Giorgos Dimitrakopoulos"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.AR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17781v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17781v1",
+    "fetched_at": "2026-06-17T12:13:12.895303",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193539"
+  },
+  {
+    "id": "2606.17739v1",
+    "title": "ED3R: Energy-Aware Distributed Disaster Detection Enabled by Cooperative Robotic Agents",
+    "abstract": "Robotics are expected to support environmental monitoring and natural disaster management, where decisions must be made under uncertainty, resource limitations, and strict operational constraints. In critical missions, such as wildfires, robotic agents must not only identify hazardous events with sufficient confidence, but also manage the energy cost and time until detection. This paper introduces ED3R, an energy-aware distributed framework for wildfire detection under uncertainty. ED3R enables hierarchical cooperative decision-making between a robot and a remote controller. The remote controller decides upon the robot's motion, while the robot senses the environment and decides where to execute the wildfire detection (onboard or remotely) and how. The common goal is to detect wildfires with a required confidence while minimizing the energy consumed by any robot operation. ED3R further integrates mechanisms to avoid nearby obstacles, prevent redundant exploration, enable adaptive early mission completion, and ensure feasibility through a custom penalty function. ED3R also introduces a forward-looking capability, enabled through distributed neural regression models that allow the agents to anticipate the future by evaluating candidate strategies before execution. The framework is evaluated through realistic robotics simulations, ablation studies, and baseline comparisons. Overall, ED3R achieves a mission success rate of up to 97.18%. Especially in the most demanding missions, it reduces energy consumption by up to 36.4% and detects wildfires up to 41% faster than baselines.",
+    "authors": [
+      "Lina Magoula",
+      "Nikolaos Koursioumpas",
+      "Nancy Alonistioti",
+      "Ramin Khalili"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17739v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17739v1",
+    "fetched_at": "2026-06-17T12:13:12.895324",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193550"
+  },
+  {
+    "id": "2606.17727v1",
+    "title": "LongWebBench: Evaluating Structural and Functional Webpage Generation in Long-Horizon Settings",
+    "abstract": "Recent vision-language models (VLMs) have shown promising progress in generating webpages from visual inputs, yet existing evaluations mainly focus on short, single-screen, and largely static webpages. We introduce LongWebBench, a benchmark for evaluating long-horizon webpage generation from both structural and functional perspectives. LongWebBench contains 490 real-world long webpages for structural fidelity evaluation and 507 goal-oriented interaction tasks over 129 webpages for functional evaluation. It employs two complementary protocols: a multi-dimensional VLM-based metric for assessing long-range structural coherence, and a DOM-augmented agent-based pipeline for end-to-end functional verification. We further examine the automatic evaluation protocols through human agreement analysis. Experiments with state-of-the-art open-source and proprietary VLMs under single-image and multi-image settings reveal that structural fidelity degrades as webpage length increases, while visually plausible generations often fail to support executable multi-step interactions. These results highlight the need to evaluate long webpage generation beyond visual similarity, with executable interaction as a core criterion. Our code and data are available at https://github.com/zheny2751-dotcom/LongWebBench.",
+    "authors": [
+      "Yi Zhao",
+      "Zhen Yang",
+      "Mengpan Chen",
+      "Mingde Xu",
+      "Shanghui Gong",
+      "Xijun Liu",
+      "Jibing Gong",
+      "Jie Tang"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17727v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17727v1",
+    "fetched_at": "2026-06-17T12:13:12.895352",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193559"
+  },
+  {
+    "id": "2606.17591v1",
+    "title": "Closing the Feedback Loop: From Experience Extraction to Insight Governance in Verbal Reinforcement Learning",
+    "abstract": "Training-free verbal reinforcement learning enables LLM agents to learn from world feedback -- objective signals such as dynamic task outcomes, market returns, or demand forecasts -- by extracting verbal rules from experience and injecting them as context, updating the agent's behavior without parameter changes. However, in non-stationary environments these agents face a retention-forgetting dilemma: retaining stale insights causes negative transfer, while discarding them causes catastrophic forgetting when conditions recur. We identify four requirements for navigating this dilemma -- outcome-driven evaluation, persistent structured evidence, non-monotonic knowledge lifecycle, and compositional governance -- and show that existing methods invest heavily in experience extraction while underinvesting in insight governance. We propose a three-layer architecture -- rules, evidence, and skills -- connected by a feedback-driven curation loop that closes the governance gap. Rules capture distilled experience from world outcomes; evidence logs track each rule's reliability across episodes; skills govern which rules to apply, how to resolve conflicts, and when to abstain. On financial forecasting as a case study, where world feedback is naturally abundant, noisy, and non-stationary, we show that the same accumulated experience either degrades performance below the zero-shot baseline or dramatically improves accuracy and risk-adjusted returns, depending on whether the curation loop is present.",
+    "authors": [
+      "Yanwei Cui",
+      "Xing Zhang",
+      "Yulong Zhang",
+      "Li Shao",
+      "Xiaofeng Shi",
+      "Guanghui Wang",
+      "Peiyang He"
+    ],
+    "published": "2026-06-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.17591v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.17591v1",
+    "fetched_at": "2026-06-17T12:15:07.330359",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-17T12:15:27.193569"
+  }
+]
