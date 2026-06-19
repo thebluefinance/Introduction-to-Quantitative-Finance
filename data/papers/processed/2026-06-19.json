@@ -1,0 +1,776 @@
+[
+  {
+    "id": "2606.20485v1",
+    "title": "Optimal Order of Multi-Agent and General Many-Body Systems",
+    "abstract": "This paper develops a general framework for analyzing multi-agent systems with feedback loops between agents actions and collective observations. The framework is built on two fundamental agent-level variables: power, which measures agent influence on collective outcomes, and response functions, which determine how agents react to observations. We derive how macroscopic properties, including total power, useful power, entropy, order, fragility, and mobility, emerge from these two variables of heterogeneous agents. To study the trade off between growth and resilience, we introduce a system-level utility function parameterized by a risk-appetite coefficient and derive an optimal degree of order that balances productivity, stability, and adaptability. The analysis suggests that stronger synchronization can increase collective output but may also increase systemic fragility and reduce mobility. We further argue that order, entropy, information, and useful energy are task-dependent and system-relative concepts whose meanings depend on the objectives of the system. By measuring and designing agent power distributions and response functions, it may be possible to better understand, predict, and optimize collective behavior and identify the conditions under which collective intelligence and optimal order emerge.",
+    "authors": [
+      "Jake J. Xia"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "q-fin.RM",
+      "cs.AI",
+      "nlin.AO",
+      "physics.soc-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20485v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20485v1",
+    "fetched_at": "2026-06-19T12:01:48.618155",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943812"
+  },
+  {
+    "id": "2606.20420v1",
+    "title": "Advanced Calibration Analysis and Tools: Identifying Influential Observations in Stochastic Interest Rate Model Calibration",
+    "abstract": "The accurate calibration of interest rate models is central to market-consistent valuation and Economic Scenario Generators (ESGs). Traditional calibration methods for multi-factor models such as the G2++ model often rely on point estimates, neglecting the influence of specific market data and the quantification of estimation uncertainty. This paper develops a diagnostic framework embedding the calibration problem into non-linear regression theory. It shows that the common industry practice of minimizing the Root Mean Squared Relative Error (RMSRE) is equivalent to a Weighted Least Squares (WLS) problem. This equivalence yields the corresponding formulations for diagnostic tools, including the Weighted Hat Matrix for leverage analysis, Influence Functions for local sensitivity diagnostics, and the Functional Delta Method for local, boundary-respecting confidence intervals. The implementation uses an efficient Jacobian factorization that exploits the analytical tractability of At-The-Money (ATM) caps. The framework is applied to a dataset of Euro ATM caps covering the period 2016--2025. Our empirical analysis reveals a boundary-dominated leverage profile, repeated losses of effective dimensionality due to active parameter constraints, and a diagnostic regime shift in local parameter stability around the post-2022 market transition. The resulting message for actuarial model governance is that low RMSRE is not sufficient for calibration validation. We conclude by discussing the framework's applicability to general least-squares problems while highlighting the computational challenges for instruments lacking closed-form gradients, such as swaptions.",
+    "authors": [
+      "Philipp Mahler",
+      "Peter Ruckdeschel"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "q-fin.CP",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20420v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20420v1",
+    "fetched_at": "2026-06-19T12:01:48.618195",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943839"
+  },
+  {
+    "id": "2606.20145v1",
+    "title": "Trends, Volatility, Correlations, and Critical Phenomena in Financial Markets",
+    "abstract": "We forecast future volatilities and correlations of financial markets based on the current trends in these markets. This complements previous work that models future expected returns by a cubic polynomial of the current trend strength. Empirically, we observe that volatilities and correlations tend to increase day after day in times of strong up- or down-trends. This effect is particularly pronounced in down-trends. It can be accurately quantified by quadratic polynomials of today's trend strengths, which refine common mean-reversion models of volatilities and correlations. Our results improve the prediction of market risk by accounting for market trends. They also support a recent proposal to model financial markets by a lattice gas near its critical point.",
+    "authors": [
+      "Sara A. Safari",
+      "Christoph Schmidhuber"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "q-fin.ST",
+      "cond-mat.stat-mech",
+      "physics.data-an",
+      "q-fin.MF",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20145v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20145v1",
+    "fetched_at": "2026-06-19T12:01:48.618221",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943855"
+  },
+  {
+    "id": "2606.20079v1",
+    "title": "How to spot outliers: an Ensemble Anomaly Detection Framework",
+    "abstract": "Errors in risk valuation outputs arising from data-feed failures, model misconfiguration, or system malfunctions can propagate undetected through an investment bank's risk infrastructure and generate material operational losses. Using proprietary daily credit-derivatives data from a major global investment bank covering 183 trades across 129 trading days, we design, implement, and empirically evaluate the Ensemble Quality Assessment Framework (EQAF), a layered unsupervised architecture that combines complementary outlier-detection methods to monitor risk calculation integrity in real time. Using a controlled anomaly-injection protocol with eight operationally realistic scenarios, we show that the calibrated ensemble achieves F1 scores of 61-79%, substantially outperforming the best individual method (6-66%) across four distinct risk-measure datasets. Improvements of 4-6 percentage points in AUC-ROC confirm that this advantage is robust to threshold selection. We further demonstrate that purely statistical detection methods systematically fail to identify stale-value anomalies, a class of frozen-feed errors in which valuation outputs are identical to prior observations and therefore indistinguishable from normal data, and that domain-specific deterministic rules are architecturally indispensable. These findings have direct implications for model risk management under Basel III and the Fundamental Review of the Trading Book (FRTB), where automated and auditable quality controls for internal risk models are increasingly required.",
+    "authors": [
+      "Daniil Peysakhovich",
+      "Rafał Sieradzki"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20079v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20079v1",
+    "fetched_at": "2026-06-19T12:01:48.618242",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943868"
+  },
+  {
+    "id": "2606.20041v1",
+    "title": "AI Economist Agent: An Agentic Framework for Model-Grounded Economic Analysis with RAG, Knowledge Graphs, and Large Language Models",
+    "abstract": "We propose a model-grounded RAG-based AI economist with an agentic framework for economic scenario analysis using large language models (LLMs) and knowledge graphs. While LLMs can generate fluent economic narratives, economists are often required to make economic claims grounded by economic theory and real-world data. Based on this motivation, this study proposes an RAG-based AI economist, which utilizes knowledge graphs including economic data and theory and LLM-based agents to plan the analysis, retrieve relevant evidence, select appropriate models, and generate reports. In our framework, we do not produce quantitative claims directly with the language model alone; instead, we generate narratives grounded in explicit model-based computations and linked to the retrieved evidence via AI agents. We refer to our framework as an AI economist agent. We evaluate the AI economist agent in two applications: economist report generation for U.S. inflation persistence and Federal Reserve policy, and bank stress-test narrative generation for U.S. commercial real estate refinancing stress. The results illustrate how grounding the generated reports improves their economic coherence and traceability.",
+    "authors": [
+      "Masahiro Kato"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "econ.GN",
+      "cs.AI",
+      "cs.LG",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20041v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20041v1",
+    "fetched_at": "2026-06-19T12:01:48.618262",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943884"
+  },
+  {
+    "id": "2606.19550v1",
+    "title": "Which Portfolios? The Construction Dependence of Factor Model Performance",
+    "abstract": "Factor-model performance depends not only on the model but also on how test assets are constructed. We form characteristic-unsorted random portfolios from a broad CRSP universe and vary stock selection, initial weighting, holding, and rebalancing. Rankings shift materially: buy-and-hold favors FF5 and FF6, whereas daily constant-weighting favors FF3, the most stable model across designs. Although q5 attains the highest maximum Sharpe ratio in factor-spanning tests, it leaves comparatively large and construction-sensitive pricing errors on random portfolios. These results reflect construction-specific weighting of each model's pricing-error vector. Test-asset construction, including dynamic weight management, is therefore a design choice in model evaluation.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-06-17",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19550v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19550v1",
+    "fetched_at": "2026-06-19T12:01:48.618283",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943896"
+  },
+  {
+    "id": "2606.19517v1",
+    "title": "Do Prediction Markets Match Option Prices? Bitcoin Threshold Evidence from Binance and Polymarket",
+    "abstract": "The digitization of financial markets has produced two classes of platforms that price, in principle, the same state - contingent payoffs: centralized crypto-option exchanges and blockchain-based prediction markets. This paper provides the first option-implied benchmark test of prediction-market pricing for cryptocurrency threshold contracts. For each hour in a matched sample, we compare the Polymarket Yes price with the discounted risk-neutral binary value implied by a listed Binance call option on the same underlying, strike, and maturity, and study the gap between them. In the main September 2023 Bitcoin contract, the mean pricing gap equals 5.6 percentage points across 214 hourly observations (t = 6.46, p < 10^{-9}). Pooling three Binance-compatible Bitcoin threshold markets yields a mean gap of 6.3 percentage points across 287 observations, robust to HAC and block-bootstrap inference. The gap is persistent - with an AR(1) half-life of roughly four hours - yet mean-reverting, consistent with slow information transmission between segmented venues rather than mechanical noise. Cross-sectional regressions reveal that the wedge is largest at low option-implied probabilities and long maturities, a pattern consistent with speculative demand for prediction-market contracts rather than measurement error. A delta-hedged arbitrage proxy remains profitable after conservative transaction costs, though with marginal statistical precision. A Deribit extension on the same three Bitcoin contracts produces a larger pooled gap of 11 percentage points, while a smaller Ethereum exercise yields mixed evidence. The results demonstrate that digital fragmentation of financial markets generates systematic, persistent pricing wedges even for economically identical payoffs.",
+    "authors": [
+      "Victoria Portnaya"
+    ],
+    "published": "2026-06-17",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19517v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19517v1",
+    "fetched_at": "2026-06-19T12:01:48.618303",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943907"
+  },
+  {
+    "id": "2606.19501v1",
+    "title": "DeXposure-Claw: An Agentic System for DeFi Risk Supervision",
+    "abstract": "Decentralized finance exposes supervisors to fast-moving, networked credit risks. General-purpose LLM agents fit this setting poorly: they over-read weak evidence and recommend high-stakes interventions, while existing evaluations offer no regulator-aligned way to measure the resulting false alarms. We introduce DeXposure-Claw, a forecast-grounded agentic supervision system that routes LLM decisions through structured evidence: (1) DeXposure-FM, a graph time-series foundation model, forecasts future exposure networks; (2) deterministic monitors and stress scenarios then turn those forecasts into typed alerts, attribution signals, and scenario evidence; and (3) data-health and confidence gates constrain escalation before DeXposure-Claw emits auditable supervisory tickets with rationales. We further develop DeXposure-Bench, a six-axis evaluation harness, whose decision axis scores tickets against a regulator-aligned absolute-loss ground truth and an explicit false-intervention rate. Experiments on five years of weekly real data fully support our system. Code is at https://github.com/EVIEHub/DeXposure-Claw.",
+    "authors": [
+      "Aijie Shu",
+      "Bowei Chen",
+      "Wenbin Wu",
+      "Cathy Yi-Hsuan Chen",
+      "Fengxiang He"
+    ],
+    "published": "2026-06-17",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19501v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19501v1",
+    "fetched_at": "2026-06-19T12:01:48.618330",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning",
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943928"
+  },
+  {
+    "id": "2606.16326v2",
+    "title": "Gaming-Resistant Insurance Contracts for Autonomous AI Agents: Strategy-Proof Toll Mechanism Design",
+    "abstract": "Paper A defines a time-consistent actuarial runtime that prices each side-effect-bearing action against a contractually fixed safe default and gates execution against a reserve budget. It treats the operator as passive. This paper makes the operator strategic. We characterise a five-attack space for autonomous AI-agent insurance contracts and prove when the actuarial runtime is gaming-resistant. Two attack surfaces -- post-toll safe-default selection and within-boundary action splitting -- are closed by Paper A's minimal-authority and no-splitting clauses. The remaining three require new contract clauses. First, common-control aggregation prevents cross-boundary re-routing from reducing toll below the boundary potential applied to total exposure. Second, interface failures such as invalid JSON are contract-relevant events, not safety wins: treating them as zero-toll safe defaults can reward unreliable models, while escalation fees reverse the incentive. We validate this interface-compliance theorem on committed cross-model traces from the companion empirical paper. Third, a model-identity menu with a componentwise-minimum penalty schedule makes truthful reporting of the deployed model weakly dominant. We then compose these clauses with Paper A's runtime guarantees to obtain joint incentive compatibility over the five-attack space. Finally, a two-parameter premium family discharges operator individual rationality and weak budget balance at the truthful equilibrium. The result is an incentive-compatibility layer for actuarial control of autonomous-agent side effects.",
+    "authors": [
+      "Hao-Hsuan Chen"
+    ],
+    "published": "2026-06-15",
+    "categories": [
+      "cs.GT",
+      "cs.AI",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.16326v2",
+    "arxiv_url": "https://arxiv.org/abs/2606.16326v2",
+    "fetched_at": "2026-06-19T12:01:48.618640",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943941"
+  },
+  {
+    "id": "2606.19540v1",
+    "title": "Overfitted high-dimensional matrix factorizations via adaptive spectral shrinkage",
+    "abstract": "Factor models are popular approaches for analyzing high-dimensional data to extract low-rank signals and estimate covariances. They decompose the covariance matrix as the sum of low-rank and diagonal components. A key issue is how to choose the latent dimension $k$, which is particularly challenging when the factor model only holds approximately and in low signal-to-noise scenarios. Bayesian overfitted factor models specify an upper bound on $k$ and rely on structured shrinkage priors to effectively remove extra components. Such approaches are popular and effective, but computationally expensive. We propose a much faster \\texttt{EigenBayes} approach that provides valid uncertainty quantification, based on spectral estimation of latent factors and adaptive empirical Bayes calibration of key hyperparameters. The resulting posterior distribution factorizes across outcomes and is analytically tractable, bypassing Markov chain Monte Carlo. We show that \\texttt{EigenBayes} adapts to the signal-to-noise ratio of each outcome and latent dimension, while shrinking superfluous latent components to zero. We establish favorable asymptotic properties and demonstrate strong empirical performance in numerical experiments and a genomics application, where EigenBayes outperforms state-of-the-art alternatives.",
+    "authors": [
+      "Lorenzo Mauri",
+      "David B. Dunson"
+    ],
+    "published": "2026-06-17",
+    "categories": [
+      "stat.ME",
+      "stat.CO",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19540v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19540v1",
+    "fetched_at": "2026-06-19T12:01:55.432098",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943953"
+  },
+  {
+    "id": "2606.20108v1",
+    "title": "EFIQA: Explainable Fundus Image Quality Assessment via Anatomical Priors",
+    "abstract": "Image quality control is vital for a wide range of downstream applications. Deep learning-based image quality assessment methods typically train classifiers on dataset-specific quality labels, inheriting two limitations: (1) generalization is tied to the labeling criteria of the training set and (2) these methods cannot provide spatial feedback on where the quality is degraded, lacking explainability. In this work, we propose EFIQA, a framework that requires no quality-related supervision and produces spatial quality maps by design. Rather than learning ``what is degradation\" from human-annotated labels, EFIQA learns ``what should be there\" by leveraging anatomical priors. For fundus photography, we instantiate this as a two-stage approach, by first training an unsupervised anomaly detector via masked anatomical inpainting to identify regions of missing vasculature, and then distilling this prior knowledge into a shallow adapter mapping features of a frozen foundation model to precise quality maps. External-dataset evaluation demonstrates that this label-free approach with minimal adaptation achieves better performance and explainability compared with supervised methods across benchmarks with different quality criteria, highlighting its potential for real-world applications.",
+    "authors": [
+      "Pengwei Wang",
+      "José Morano",
+      "Qian Wan",
+      "Hrvoje Bogunović"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20108v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20108v1",
+    "fetched_at": "2026-06-19T12:02:02.043663",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943963"
+  },
+  {
+    "id": "2606.20055v1",
+    "title": "PaAno+: Multiscale Encoding and Cross-Variable Attention for Time Series Anomaly Detection",
+    "abstract": "Time-series anomaly detection has significant practical value for industrial and medical monitoring, as well as other critical domains. Current Transformer- and large-model-based detection approaches incur excessive computational overhead, while existing lightweight alternatives are constrained by insufficient feature extraction and inadequate modeling of dependencies across multivariate variables. To mitigate the above drawbacks, this study develops a lightweight, efficient anomaly detection model, dubbed PaAno, within the patch-oriented representation learning paradigm. In the encoder module, a multiscale feature-extraction backbone is constructed using convolutional kernels with differentiated receptive fields to capture hierarchical temporal characteristics; subsequent cross-scale adaptive attention aggregation, combined with residual connection optimization, further stabilizes feature representation learning. A cross-variable fusion attention module is embedded to explicitly characterize inter-variable correlations, empowering the model to identify anomalous patterns amid intricate operational conditions. Moreover, a novel pretext task based on temporal patch-window sorting is customized to uncover intrinsic structural properties of time series, and triplet loss is leveraged to optimize the patch embedding space for enhanced feature discrimination. Extensive experiments on the TSB-AD benchmark demonstrate that the proposed PaAno achieves state-of-the-art detection accuracy on both univariate and multivariate tasks, yielding significant performance gains across evaluation metrics, including VUS-PR, relative to the original PaAno. Leveraging a compact network design, the presented model achieves favorable computational efficiency, enabling deployment on resource-limited terminals for real-time anomaly inference.",
+    "authors": [
+      "Youji Zhu",
+      "Hongbing Wang",
+      "Wenchao Liu",
+      "Xiaodong Liu",
+      "Xiangguang Xiong"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20055v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20055v1",
+    "fetched_at": "2026-06-19T12:02:02.043701",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943975"
+  },
+  {
+    "id": "2606.19660v1",
+    "title": "A Layered Security Framework Against Prompt Injection in RAG-Based Chatbots",
+    "abstract": "Prompt injection is ranked as the most critical vulnerability in large language model (LLM) deployments by the OWASP Top 10 for LLM Applications, yet existing defenses operate at isolated pipeline stages and remain incomplete. Input filters cannot inspect retrieved documents, while output monitors cannot prevent malicious payloads from reaching the model. Consequently, retrieval-augmented generation (RAG) chatbots remain vulnerable to indirect injection, where a poisoned knowledge-base document compromises every user whose query retrieves it. We present a three-layer framework that intercepts both direct and indirect prompt injection throughout the inference pipeline. Layer 1 screens user input using a rule-based pattern library and a fine-tuned semantic anomaly classifier. Layer 2 enforces a provenance-based instruction hierarchy during context assembly, preventing retrieved content from overriding operator policy. Layer 3 audits model output using a policy rule engine and semantic drift detector before delivery. A continuous audit loop aggregates structured logs and supports retraining to adapt the classifier to emerging attack patterns. The framework is model-agnostic and deploys as middleware without modifying the underlying LLM. Evaluation on 5,080 samples across GPT-4o, Llama 3, and Mistral 7B shows that the framework reduces Attack Success Rate (ASR) from 71.4\\% to 11.3\\%, outperforming the best single-layer baseline by 27.3 percentage points and a published guardrail system by 23.8 percentage points, while maintaining a 4.8\\% false positive rate and a median latency overhead of 61.2 ms. Ablation studies confirm that all three layers provide complementary protection and that their combined effect exceeds the sum of individual contributions.",
+    "authors": [
+      "Gulshan Saleem",
+      "Nisar Ahmed",
+      "Muhammad Imran Zaman",
+      "Ali Hassan"
+    ],
+    "published": "2026-06-17",
+    "categories": [
+      "cs.CR",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19660v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19660v1",
+    "fetched_at": "2026-06-19T12:02:02.043724",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943985"
+  },
+  {
+    "id": "2606.19579v1",
+    "title": "FlowFake: Liquid Networks for Audio Deepfake Detection",
+    "abstract": "Audio deepfakes generated by neural text-to-speech and voice-cloning systems threaten speaker verification and public discourse at scale. The core challenge is cross-dataset generalization: detectors trained on one synthesis pipeline collapse on unseen forgeries. We argue that this failure is primarily because of structural synthetic speech artifacts which are multi-timescale trajectory anomalies. Though every existing detector aggregates a fixed-window frame statistics, this misaligns the architecture with the signal. We propose FlowFake, a Liquid Time-Constant (LTC) architecture whose hidden state evolves via a learned ODE, with per-neuron adaptive time constants simultaneously resolving spectral (10ms) and prosodic (2s) cues. At only 34K parameters FlowFake achieves formal BIBO stability and O(dt^4) integration error. On a four-dataset cross domain benchmark (ASVspoof2019-LA, FakeOrReal, InTheWild, MLAAD), FlowFake reaches 75.29% on ASVspoof2019 trained only on FakeOrReal and 79.97% trained only on MLAAD. It outperforms RawGAT-ST and Whisper-DF on every evaluated pair and matching SSL Wav2vec2 (300x larger) at 0.01% of its parameter count. The source code is available on : https://github.com/GhostRider2023/FlowFake",
+    "authors": [
+      "Shivaay Dhondiyal",
+      "Divyansh Sharma",
+      "Dinesh Kumar Vishwakarma"
+    ],
+    "published": "2026-06-17",
+    "categories": [
+      "cs.SD",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19579v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19579v1",
+    "fetched_at": "2026-06-19T12:02:02.043762",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.943995"
+  },
+  {
+    "id": "2606.20537v1",
+    "title": "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
+    "abstract": "Mainstream LLM serving systems reuse prefix work mainly through paged or radix key-value (KV) caches. This is highly effective for high-throughput, high-concurrency serving, but it manages only one positional fragment of execution state: the KV cache. We study the opposite regime: low-latency, small-batch, on-device physical-AI serving, where interactive LLM agents, speech systems, and robot policies repeatedly branch, reset, interrupt, and re-enter under tight responsiveness budgets. We introduce execution-state capsules, a graph-bound checkpoint and restore mechanism for the complete restorable state at a committed boundary. FlashRT is a white-box, backend-facing kernel runtime whose evaluated NVIDIA CUDA backend runs captured graph plans over contiguous static buffers with no block-table indirection. Because the live state is a closed set of named buffers, a capsule can snapshot, restore, fork, or roll back the whole execution boundary, including KV, recurrent state, convolution state, MTP state, and metadata. This moves reuse from token-addressed KV fragments to graph-bound execution-state boundaries. On an RTX 5090, capsule restore is byte-exact at the stored-state level and token-identical under greedy decode. A KV-only ablation diverges, showing that recurrent state is load-bearing. GPU-resident snapshot and restore are sub-millisecond, and TTFT speedup over cold prefill grows from 3.9x at 2k tokens to 27x at 16k tokens. On Jetson AGX Thor and DGX Spark, the same correctness and structural properties hold. Capsules are not a replacement for high-throughput KV-cache serving; they define a complementary latency-first serving point for explicit execution-state reuse.",
+    "authors": [
+      "Liang Su"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20537v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20537v1",
+    "fetched_at": "2026-06-19T12:02:32.565965",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944007"
+  },
+  {
+    "id": "2606.20529v1",
+    "title": "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents",
+    "abstract": "Policy-adherent tool-calling agents in customer-service domains must maintain task states across turns while calling tools and obeying domain policies. Task states consist of relevant facts, identifiers, constraints, and conditions observed through user interaction and tool calls. In standard agents, task states are not represented separately. Observations, tool returns, and policy instructions are placed in the prompt, leaving agents to reconstruct the relevant states from the prompt each time they decide what to do next. This design makes state management implicit, creating two common failure modes. An agent may retrieve the right facts but later ground its decision in stale, missing, or incorrect information; and a syntactically valid tool call may still violate a domain policy that depends on the current task state. We introduce \\textsc{LedgerAgent}, an inference-time method for tool-calling agents that maintains observed task states in a separate ledger and renders the states into the prompt. The ledger is also used to check state-dependent policy constraints before environment-changing tool calls are executed, blocking policy violations. Across four customer-service domains and a mixed panel of open- and closed-weight models, \\textsc{LedgerAgent} improves average pass\\textasciicircum{}k over a standard prompt-based tool-calling approach, with the largest gains under stricter multi-trial consistency metrics.",
+    "authors": [
+      "Md Nayem Uddin",
+      "Amir Saeidi",
+      "Eduardo Blanco",
+      "Chitta Baral"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20529v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20529v1",
+    "fetched_at": "2026-06-19T12:02:32.566000",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944017"
+  },
+  {
+    "id": "2606.20520v1",
+    "title": "Sovereign Execution Brokers: Enforcing Certificate-Bound Authority in Agentic Control Planes",
+    "abstract": "Autonomous agents are increasingly connected to cloud, deployment, and data-control workflows, but production mutation authority should not reside inside non-deterministic reasoning processes. Existing access-control mechanisms authorize identities, while assurance layers certify proposed actions; neither alone provides a mandatory enforcement point for certified authority at the moment of mutation. This paper introduces the Sovereign Execution Broker (SEB), a runtime enforcement boundary for certificate-bound agentic infrastructure. SEB consumes certificates issued by the Sovereign Assurance Boundary (SAB), verifies that the requested mutation matches the certified execution contract, checks validity windows, policy epochs, revocation epochs, and live-state drift, mints scoped execution identity, invokes infrastructure APIs, and records signed decision and outcome records. By separating proposal, admission, and execution, SEB turns certified authority into a short-lived, revocable, auditable runtime capability, provided that production mutation APIs reject non-broker identities. We present the SEB execution model, certificate and replay-verification predicates, scoped identity semantics, bypass-prevention deployment patterns, failure behavior, and a concrete prototype implementation. We evaluate the prototype on AWS and Kubernetes clusters, measuring latency overheads, revocation propagation, drift detection, and security under fault injection.",
+    "authors": [
+      "Jun He",
+      "Deying Yu"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.DC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20520v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20520v1",
+    "fetched_at": "2026-06-19T12:02:32.566020",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944029"
+  },
+  {
+    "id": "2606.20487v1",
+    "title": "Beyond Global Replanning: Hierarchical Recovery for Cross-Device Agent Systems",
+    "abstract": "Real-world computer-use tasks often span multiple applications and devices, requiring agents to coordinate heterogeneous environments under dynamic runtime failures. Existing multi-device agent systems support task decomposition and cross-device assignment, but recovery remains largely coarse-grained: when execution fails, they typically retry the same strategy, reassign the subtask, or revise the global plan, without systematically modeling the device-local strategy space. This limits their ability to distinguish failures that can be repaired within the current device from those that require cross-device replanning. We propose \\textbf{H-RePlan}, a hierarchical replanning framework for multi-device agents with unified API--CLI--GUI execution. H-RePlan equips each device with interchangeable execution strategies and separates device-local strategy recovery from orchestrator-level global replanning through a compact cross-layer failure abstraction. To evaluate this capability, we introduce \\textbf{HeraBench}, a fault-injected benchmark that constructs cross-device workflows over Linux and Android devices and injects strategy- and device-level failures. Experiments show that H-RePlan substantially outperforms single-strategy and coarse-grained multi-device baselines, achieving higher completion, instruction adherence, and perfect-pass rates while reducing the token cost required for reliable end-to-end success. These results demonstrate that scope-aware hierarchical recovery is essential for robust multi-device agent execution.",
+    "authors": [
+      "Shu Yao",
+      "Yuhua Luo",
+      "Qian Long",
+      "Jingru Fan",
+      "Zhuoyuan Yu",
+      "Yuheng Wang",
+      "Lin Wu",
+      "Yufan Dang",
+      "Huatao Li",
+      "Chen Qian"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20487v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20487v1",
+    "fetched_at": "2026-06-19T12:02:32.566055",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944039"
+  },
+  {
+    "id": "2606.20333v1",
+    "title": "SoftSkill: Behavioral Compression for Contextual Adaptation",
+    "abstract": "Agent skills are commonly deployed as natural-language Markdown files that encode answer policies, evidence-use habits, and task procedures. These files are readable and portable, but they are consumed indirectly: for each task instance, a frozen language model must translate a long textual artifact into generation-time behavior. This paper asks whether a natural-language skill can instead initialize a compact continuous context object, refined by a trainable soft delta while the base model remains frozen. We propose SoftSkill, a frozen-backbone method that tunes such soft skills with next-token prediction and deploys them as latent behavioral priors at inference time. In our main single-round setting, a length-32 SoftSkill prefix on Qwen3.5-4B improves over no-skill prompting by 8.3 points on SearchQA, 42.1 points on LiveMath, and 1.3 points on DocVQA. Relative to SkillOpt, SoftSkill improves accuracy by 5.2 points on SearchQA and 12.5 points on LiveMath, while replacing hundreds to thousands of Markdown skill tokens with a few virtual tokens. We further study agentic execution as a harder boundary case, where sparse trajectory imitation provides useful signal but does not yet robustly compress long-horizon procedural behavior. More broadly, the results suggest that some task skills are better treated not as additional Markdown to be reinterpreted at inference time, but as compact latent controls over how a frozen model enters the task.",
+    "authors": [
+      "Xijia Tao",
+      "Yihua Teng",
+      "Xinyu Fu",
+      "Ziru Liu",
+      "Kecheng Chen",
+      "Yuzhi Zhao",
+      "Suiyun Zhang",
+      "Rui Liu",
+      "Lingpeng Kong"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20333v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20333v1",
+    "fetched_at": "2026-06-19T12:02:32.566087",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944048"
+  },
+  {
+    "id": "2606.20274v1",
+    "title": "Lagrange: An Open-Vocabulary, Energy-Based Sparse Framework for Generalized End-to-End Driving",
+    "abstract": "Scaling end-to-end autonomous driving to complex, open-world environments requires perceptual models that generalize to anomalous scenarios and planners that produce kinematically valid trajectories. Existing paradigms face a distinct dichotomy between representational efficiency and generalization capacity. Dense models (e.g., occupancy networks), while geometrically robust, incur critical computational bottlenecks and struggle with high-level semantic reasoning. Conversely, sparse, query-based planners are efficient but reliant on closed-set definitions, rendering them vulnerable to out-of-distribution (OOD) events. Although recent Vision-Language-Action (VLA) models offer open-vocabulary reasoning, their autoregressive, discrete token generation fundamentally conflicts with the continuous, high-frequency control requirements of vehicle dynamics. To address this, we propose Lagrange, an open-vocabulary, computationally sparse driving framework based on Masked Latent Fields (MLF). Rather than relying on dense volumetric reconstructions or closed-set query mechanisms, Lagrange exploits Vision-Language Models (VLMs) to encode class-agnostic object proposals into continuous semantic visual tokens. We introduce an intent-driven masked cross-attention module that temporally filters irrelevant entities, decoding the attended tokens into an implicit continuous energy field defined over spatial coordinates. By framing decision-making as a Lagrangian action minimization problem spanning this energy field, we enforce strict compliance with vehicle kinematics while executing collision avoidance. Extensive offline evaluations on both standard (nuScenes) and long-tail (CODA) benchmarks demonstrate that Lagrange establishes a promising framework for robust, interpretable, and kinematically feasible open-world autonomy.",
+    "authors": [
+      "Shihao Ji",
+      "HongXi Li",
+      "Zihui Song",
+      "Mingyu Li"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20274v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20274v1",
+    "fetched_at": "2026-06-19T12:02:32.566110",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944058"
+  },
+  {
+    "id": "2606.20236v1",
+    "title": "A Multi-Agent system for Multi-Objective constrained optimization",
+    "abstract": "Many decision-making problems in computing and networking systems can be naturally formulated as cost-minimization problems under performance constraints. In dynamic environments, reinforcement learning (RL) is often used to solve such problems at runtime by embedding both costs and constraint violations into a single scalar reward through weighted penalty terms, following a Lagrangian-inspired formulation. However, in this context the behavior of the learned policy critically depends on the choice of these weights, which are typically selected manually. This makes it difficult to identify an appropriate trade-off between optimizing the primary objective and effectively avoiding constraint violations, particularly in non-stationary environments where their relative importance may change. This paper presents MAMO (Multi-Agent system for Multi-Objective constrained optimization), an approach to tackle this balancing problem through multi-agent RL. MAMO decouples task execution from objective design by formulating the selection of reward weights as a learning problem, providing a !rst step towards more autonomous and robust RL-based solutions for constrained optimization problems in dynamic environments.",
+    "authors": [
+      "Federica Filippini"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20236v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20236v1",
+    "fetched_at": "2026-06-19T12:02:32.566128",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944068"
+  },
+  {
+    "id": "2606.20142v1",
+    "title": "RACL: Reasoning-Agent Control Layers for Continuous Metaheuristic Learning",
+    "abstract": "This paper introduces RACL, a Reasoning-Agent Control Layer for metaheuristics. RACL places a reasoning agent above an existing optimizer. The agent does not replace the optimizer and does not modify business constraints. Instead, it controls the optimizer's internal search behavior by observing operational memory, reasoning over past behavior, formulating bounded hypotheses, testing interventions, evaluating outcomes, applying guardrails, consolidating useful policies and explaining its decisions. The experiment uses vehicle routing as a testbed, but the contribution is not a new routing solver, a particular ALNS configuration or a specific set of routing rules. The contribution is the RACL method: a way for a reasoning agent to discover, validate, consolidate and explain algorithmic control rules for a metaheuristic. In the current experimental setting, RACL improves or ties the Operational Memory Policy in 21 of 21 feasible cases and improves or ties a non-reasoning Stagnation-Triggered Policy in 18 of 21 feasible cases, with an average RACL vs STP cost delta of -0.641%. In the Sevilla-9/10 runtime sample, RACL improves average cost by -8.337% versus Fixed and -1.605% versus STP without showing material computational overhead. During the proof-of-concept, Codex was used as an in-the-loop reasoning agent observing executions, interpreting logs and proposing live bounded interventions. The policy proxy was later used only to make quantitative evaluation reproducible.",
+    "authors": [
+      "Antón Asla Manzárraga"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20142v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20142v1",
+    "fetched_at": "2026-06-19T12:02:32.566145",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944077"
+  },
+  {
+    "id": "2606.20120v1",
+    "title": "Dual-Agent Framework for Cross-Model Verified Translation of Natural-Language Protocols into Robotic Laboratory Platform",
+    "abstract": "Biological experiment protocols are written in natural language, whereas automation systems rely on predefined control commands, creating a semantic gap that limits autonomous execution. Microplate-based automatic experiments are particularly challenging due to the need to simultaneously control well mapping, sample-reagent combinations, replicate placement, and parallel dispensing. This study proposes an agent-based protocol translation framework that converts natural-language microplate-based protocols into executable control commands for a robotic laboratory platform. A Parser Agent formalizes the natural-language protocol into a structured representation, and a rule-based mapping engine deterministically incorporates the operational constraints of the robotic laboratory platform to generate device-level control commands. A heterogeneous LLM Validation Agent verifies completeness, parameter accuracy, and execution order, and triggers a self-correction loop with structured feedback when errors are detected. A sweep involving 7 Parsers and 3 Validators on randomly selected ELISA protocols evaluates how model scale and Validator type affect translation accuracy and pass rates under cross-model verification. The accuracy-latency trade-off is further verified by comparing the rule-based mapping of the proposed framework with LLM end-to-end direct mapping. Finally, Bradford assay-based protein quantification using a microplate was demonstrated on a robotic laboratory platform, validating end-to-end autonomous execution from natural-language protocols to real-world experiments. The proposed framework provides a flexible approach to narrowing the semantic gap between natural-language protocols and microplate-based self-driving laboratories.",
+    "authors": [
+      "Hyeonna Choi",
+      "Jung Yup Kim",
+      "Hyuneui Lim",
+      "Seunggyu Jeon"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20120v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20120v1",
+    "fetched_at": "2026-06-19T12:02:32.566167",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944088"
+  },
+  {
+    "id": "2606.20058v1",
+    "title": "Autonomous Event-Driven Multi-Agent Orchestration for Enterprise AI at Scale",
+    "abstract": "Enterprise AI aims to move toward continuous event monitoring, detection, and action across specialist agents, yet existing multi-agent systems largely assume discrete request-response workflows and remain underexplored at enterprise scale. We evaluate DAG Plan and Execute and ReAct across 208 production-derived enterprise scenarios spanning Persona (<10 agents), Department (20-80), and Enterprise (200) scales, and introduce a Task Manager for continuous operation via priority inference, related-event merging, and preemption. Results show that scale, not task complexity, dominates orchestration performance: both architectures perform well at small scale but degrade at enterprise scale as agent discovery noise becomes the primary bottleneck, with simple tasks degrading more sharply than complex ones. DAG Plan and Execute offers higher precision and structured parallelization at smaller scales, but its higher overhead worsens at enterprise scale; ReAct is more robust by handling failures incrementally. The Task Manager reduces high-priority queue latency by 14-75% and improves related-event correctness by over 20 percentage points at enterprise scale.",
+    "authors": [
+      "Harsh Rao Dhanyamraju",
+      "Leonidas Raghav",
+      "Aaron Lee"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20058v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20058v1",
+    "fetched_at": "2026-06-19T12:02:32.566190",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944097"
+  },
+  {
+    "id": "2606.20014v1",
+    "title": "Hierarchical Control in Multi-Agent Games: LLM-based Planning and RL Execution",
+    "abstract": "Reinforcement learning (RL) has achieved strong performance in sequential decision-making, yet scaling to complex multi-agent environments remains challenging due to sparse rewards, large state-action spaces, and the difficulty of learning coordinated strategies. We propose a hierarchical architecture where a pretrained large language model (LLM) acts as a centralized strategic controller that selects among specialized RL skill policies for a team of agents, while RL policies handle reactive low-level execution. We evaluate this hybrid system in a competitive 2v2 King of the Hill environment against behavior tree (BT) and \\emph{``Flat''} RL (end-to-end training without skill decomposition) baselines. The LLM+RL system achieves task performance statistically equivalent to hand-crafted BT (46.4\\% vs 51.5\\% win rate, $p=0.103$) while both significantly outperform Flat RL trained without skill decomposition. A user study ($n=15$) reveals that 60\\% of participants perceive LLM+RL agents as the most human-like ($p=0.027$), citing behavioral adaptability and tactical variability. These results demonstrate that pretrained LLM reasoning can effectively orchestrate pretrained RL skills, achieving competitive multi-agent coordination and superior perceived believability without manual rule engineering.",
+    "authors": [
+      "Jannik Hösch",
+      "Alessandro Sestini",
+      "Florian Fuchs",
+      "Amir Baghi",
+      "Joakim Bergdahl",
+      "Konrad Tollmar",
+      "Jean-Philippe Barrette-LaPierre",
+      "Linus Gisslén"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.20014v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.20014v1",
+    "fetched_at": "2026-06-19T12:02:32.566219",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944107"
+  },
+  {
+    "id": "2606.19992v1",
+    "title": "Beyond Static Endpoints: Tool Programs as an Interface for Flexible Agentic Web Services",
+    "abstract": "In the agentic web era, LLM-based agents increasingly invoke web services as tools, yet most interfaces remain \\emph{static endpoints} that poorly express long-horizon workflows with loops, conditionals, joins, and retries. We present ToolPro, which represents an agent's tool intent as an \\emph{executable tool program} that compactly encodes multi-step service interactions with explicit effect types. ToolPro combines constraint-guided program construction, effect-aware replay for exactly-once state-modifying calls, and a profile-driven policy that decides when program execution outperforms stepwise calling. We instantiate ToolPro over MCP-style services with WebAssembly sandboxing and evaluate it on diverse workflows of real-world applications. ToolPro reduces end-to-end latency by up to 53.4\\% and client-side traffic by up to 96.1\\%, with larger gains under higher network latency and workflow complexity.",
+    "authors": [
+      "Mugeng Liu",
+      "Shuoqi Li",
+      "Yixuan Zhang",
+      "Yun Ma"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19992v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19992v1",
+    "fetched_at": "2026-06-19T12:02:32.566243",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944117"
+  },
+  {
+    "id": "2606.19980v1",
+    "title": "ENPIRE: Agentic Robot Policy Self-Improvement in the Real World",
+    "abstract": "Achieving dexterous robotic manipulation in the real world heavily relies on human supervision and algorithm engineering, which becomes a central bottleneck in the pursuit of general physical intelligence. Although emerging coding agents can generate code to automate algorithm search, their successes remain largely confined in digital environments. We conjecture that the missing abstraction to automate robotics research is a repeatable feedback loop for real-world policy improvement: reset the scene, execute a policy, verify the outcome, and refine the next iteration. To bridge this gap, we introduce ENPIRE, a harness framework for coding agents that instantiates this physical feedback routine with four core modules: an Environment module (EN) for automatic reset and verification, a Policy Improvement module (PI) that launches policy refinement, a Rollout module (R) to evaluate policies with one or multiple physical robots operating in parallel, and an Evolution module (E) in which coding agents analyze logs, consult literature, improve training infrastructure and algorithm code to address failure modes. This closed-loop system transforms real-world manipulation learning into a controllable optimization procedure, minimizing human effort while allowing fair ablations across training recipe and agent variants. Powered by ENPIRE, frontier coding agents can autonomously train a policy to achieve a 99% success rate on challenging, dexterous manipulation tasks, such as organizing a pin box, fastening a zip tie, and tool use, a process that further accelerates when we dispatch an agent team on a robot fleet. Our results suggest a practical and scalable path toward deploying coding agents to autonomously advancing robotics in the physical world.",
+    "authors": [
+      "Wenli Xiao",
+      "Jia Xie",
+      "Tonghe Zhang",
+      "Haotian Lin",
+      "Letian \"Max\" Fu",
+      "Haoru Xue",
+      "Jalen Lu",
+      "Yi Yang",
+      "Cunxi Dai",
+      "Zi Wang",
+      "Jimmy Wu",
+      "Guanzhi Wang",
+      "S. Shankar Sastry",
+      "Ken Goldberg",
+      "Linxi \"Jim\" Fan",
+      "Yuke Zhu",
+      "Guanya Shi"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19980v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19980v1",
+    "fetched_at": "2026-06-19T12:02:32.566288",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944127"
+  },
+  {
+    "id": "2606.19964v1",
+    "title": "Low-Energy Reduced RISC-V Instruction Subset Processor for Tsetlin Machine Inference at the Edge",
+    "abstract": "Tsetlin Machine (TM) is a logic-based machine learning approach that relies on simple bitwise operations and finite-state automata, which makes it attractive for edge AI deployments. Recent work has focused on co-processor and accelerator designs based on Tsetlin Machines (TMs). Although these designs achieve high performance, they typically depend on tightly coupled interfaces, microcode-style programming, and external host processors, limiting flexibility and ease of programming. In this work, we present a domain-specific RISC-V microprocessor architecture and design flow tailored for TM inference. Leveraging the modular structure of RISC-V, we design a reduced instruction subset processor that retains programmability while targeting improved performance and lower energy consumption for TM workloads. Instruction profiling is employed to guide instruction reduction, followed by datapath and control path simplifications tailored to TM inference. Both the baseline RV32IM core and the proposed reduced core are evaluated across multiple datasets and compared with Binarized Neural Networks (BNNs), which serve as a hardware-efficient baseline due to their reliance on bitwise operations during inference. Results show that TM achieves comparable or higher accuracy (e.g., up to 88.18% on CIFAR-2 compared to 60.0% for BNN) while reducing execution time by up to 98% across multiple datasets. Furthermore, the proposed design achieves an average $29.7\\times$ reduction in energy consumption, demonstrating its effectiveness for programmable and efficient edge AI systems.",
+    "authors": [
+      "Chanda Gupta",
+      "Sanidhya Bhatia",
+      "Shaurya Priyadarshi",
+      "Himani Panwar",
+      "Rishad Shafik",
+      "Sudip Roy"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.LG",
+      "cs.AR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19964v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19964v1",
+    "fetched_at": "2026-06-19T12:02:32.566315",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944136"
+  },
+  {
+    "id": "2606.19948v1",
+    "title": "Advancing DialNav through Automatic Embodied Dialog Augmentation",
+    "abstract": "For embodied agents capable of physical interaction, the capability to create and understand dialog is crucial to ensure both safety and effectiveness. While DialNav~\\cite{han2025dialnav} provides a framework for holistic evaluation of the dialog--execution loop in photorealistic indoor navigation, its performance remains limited by a critical scarcity of training data (2K episodes). To address this, we propose an automatic generation pipeline, and construct the \\textbf{RAINbow} dataset, a large-scale training dataset with 238K episodes for DialNav. Our pipeline converts existing VLN datasets into multi-turn dialog and creates cost-efficient and high-quality dataset. Then, we introduce two additional complementary advances to unlock the data's full potential: (1) Dual-Strategy Training, a navigation training scheme to align the navigation training with the dynamic dialog-navigation loop, and (2) a localization model that leverages VLN knowledge. By combining these complementary solutions, our model substantially outperforms the baseline in success rate on both \\textbf{Val Seen} (58.24, \\textbf{+89\\%}) and \\textbf{Val Unseen} (29.05, \\textbf{+100\\%}) splits, establishing a new state of the art.",
+    "authors": [
+      "Leekyeung Han",
+      "Sangwon Jung",
+      "Hyunji Min",
+      "Jinseong Jeong",
+      "Minyoung Kim",
+      "Paul Hongsuck Seo"
+    ],
+    "published": "2026-06-18",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2606.19948v1",
+    "arxiv_url": "https://arxiv.org/abs/2606.19948v1",
+    "fetched_at": "2026-06-19T12:02:32.566340",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-06-19T12:04:43.944145"
+  }
+]
