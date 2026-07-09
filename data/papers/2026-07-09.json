@@ -1,0 +1,399 @@
+[
+  {
+    "id": "2607.07465v1",
+    "title": "Innovating Risk Modelling for Global Funds",
+    "abstract": "Markowitz defined portfolio risk as an internal property, built from the covariance among a book's own holdings rather than the distance to any index. Seventy years of simplification reversed that. The market beta of CAPM, the fixed style and industry axes of Barra-type models, and the promotion of benchmark deviation to the definition of risk all traded the inward view for an external one. Risk became distance from an index. For a fund that fits no benchmark, that trade fails. A global book concentrated in a few markets and a few innovation sectors has no natural index to deviate from, and the active-risk number it produces measures the mismatch, not the risk. We return to the covariance. Principal component analysis (PCA) recovers the systematic structure inside the portfolio directly from its own returns. PCA has always carried one cost: its factors resist a plain-English reading. We clear that with a generative-AI labelling layer. It names the leading factors, ranked by their actual contribution to risk rather than by universe variance, and a deterministic rubric keeps it from inventing structure the loadings do not contain. Around this sit four independent signals. Density-based clustering with a mismatch ratio flags groups whose risk outruns their capital. A sign-invariant PCA Risk Score (PRS) marks the names that build the dominant factor bets. A standalone Bleed score catches the slow capital destroyers PCA cannot see. A trailing-return timing gate routes disagreements between the risk signals and recent price action to human judgment. We run the full engine on a proxy global-innovation book of thirty names over one year.",
+    "authors": [
+      "Swaraj Gambhir",
+      "Thanu George",
+      "Kairavi Sivasankar"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07465v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07465v1",
+    "fetched_at": "2026-07-09T10:49:44.992233"
+  },
+  {
+    "id": "2607.06908v1",
+    "title": "Iterative detection of global factors near the BBP phase transition",
+    "abstract": "Detecting the number of global factors in high-dimensional correlation matrices is a central problem in multivariate statistics and random matrix theory, with important implications for asset pricing and econophysics. When the number of variables $p$ is comparable to the number of observations $n$, signal-to-noise separation becomes difficult, especially near the Baik--Ben Arous--Péché (BBP) transition, where weak factors may be confused with fluctuations at the Marčenko--Pastur spectral edge. In this work, we characterize the participation-ratio (PR) structure of the Brown--Harding (BH) factor model. Under strong common loadings, the leading coherent eigenvector $u_1$ satisfies $\\mathrm{PR}(u_1)/p\\to 1$, whereas weak-factor directions and typical idiosyncratic sample eigenvectors $u$ satisfy the delocalized benchmark $\\mathrm{PR}(u)/p\\to 1/3$. These limits motivate an eigenvector-level criterion for retaining extensive directions. We propose an iterative global factor (IGF) algorithm that combines adaptive Marčenko--Pastur edge recalibration with a PR delocalization filter. The method iteratively reestimates the effective noise level, tests eigenvalue separation from the residual bulk, and retains only spectrally separated components with sufficiently extended eigenvectors. Monte Carlo simulations of the BH factor model show that IGF recovers the true number of factors near the BBP transition, where eigenvalue-only criteria can fail or remain ambiguous. A synthetic moving-window calibration matched to the empirical dimensions, which is then applied to S\\&P 500 returns. IGF detects a richer and more dynamic set of global factors than the Onatski test, with a median count of 7 factors. The results indicate that combining spectral separation with eigenvector delocalization improves the detectability of global-factor estimation in high-dimensional financial correlation matrices.",
+    "authors": [
+      "Andrés García-Medina"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.06908v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.06908v1",
+    "fetched_at": "2026-07-09T10:49:44.992273"
+  },
+  {
+    "id": "2607.06702v1",
+    "title": "Dynamic Causal Portfolio Choice: Hedging the Rotation of the Common-Driver Manifold",
+    "abstract": "When a portfolio is conditioned on a minimal set of observable drivers under which its assets become mutually independent over the investment horizon, the dynamic investment problem acquires a distinctive geometric structure. We study continuous-time portfolio choice in this setting. The conditioning representation, rather than the asset vector, becomes the natural state of the problem, and it moves: the sensitivity of returns to the drivers depends on the state, the conditioning set may itself change over time, and the induced information geometry both rotates and, at discrete instants, jumps. The optimal policy separates into a static component that allocates along the conditioning geometry at each instant and an intertemporal component that hedges the predictable motion of that geometry, a first-order effect in the model rather than a refinement, placing the coordinates of the information geometry in the role played by exogenous state variables in classical intertemporal asset pricing. Because the problem is organized by the drivers, its computational cost is governed by their number rather than by the number of assets. Changes in the conditioning set generate a risk that continuous trading cannot span, so the market is incomplete in the direction of its own geometry. The analysis is carried out in a controlled diffusion model, and the resulting structure is illustrated on synthetic economies designed to isolate each mechanism.",
+    "authors": [
+      "Alejandro Rodriguez Dominguez"
+    ],
+    "published": "2026-07-07",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.06702v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.06702v1",
+    "fetched_at": "2026-07-09T10:49:44.992293"
+  },
+  {
+    "id": "2607.06690v1",
+    "title": "tsbootstrap: Distribution-Free Uncertainty Quantification and Conformal Prediction for Time Series",
+    "abstract": "Finance, sensing, and demand streams violate the exchangeability that IID conformal prediction and the IID bootstrap assume, and existing libraries implement either a general resampling engine or conformal calibration without the other. tsbootstrap provides block, residual, sieve, and wild resampling, classical bootstrap confidence intervals, and adaptive conformal calibrators (EnbPI, ACI, NexCP, AgACI) through a single typed API in which a specification object selects each method. In a controlled coverage study the IID bootstrap undercovers sharply under dependence; dependence-aware methods reduce the coverage deficit, the sieve nearest to nominal under short-memory linear dependence. On the shared fixed-statistic path a compiled backend runs several times faster than arch, and a streaming reduce avoids materializing the $O(Bn)$ replicate tensor, limiting peak extra memory to $O(B)$ for the statistic array. The software is MIT licensed (v0.6.1).",
+    "authors": [
+      "Sankalp Gilda"
+    ],
+    "published": "2026-07-07",
+    "categories": [
+      "stat.ME",
+      "cs.AI",
+      "cs.MS",
+      "q-fin.ST",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.06690v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.06690v1",
+    "fetched_at": "2026-07-09T10:49:44.992313"
+  },
+  {
+    "id": "2607.06963v1",
+    "title": "Large Language Models (LLMs) and Generative AI in Cybersecurity and Privacy: A Survey of Dual-Use Risks, AI-Generated Malware, Explainability, and Defensive Strategies",
+    "abstract": "Large Language Models (LLMs) and generative AI (GenAI) systems, such as ChatGPT, Claude, Gemini, LLaMA, Copilot, Stable Diffusion by OpenAI, Anthropic, Google, Meta, Microsoft, Stability AI, respectively, are revolutionizing cybersecurity, enabling both automated defense and sophisticated attacks. These technologies power real-time threat detection, phishing defense, secure code generation, and vulnerability exploitation at unprecedented scales. Following a rapid surge where LLM-generated malware grew to account for an estimated 50% of detected threats by 2025, up from just 2% in 2021, navigating this highly automated threat landscape in 2026 demands next-generation security frameworks. This paper presents a comprehensive survey of the beneficial and malicious applications of LLMs in cybersecurity, including zero-day detection, DevSecOps, federated learning, synthetic content analysis, and explainable AI (XAI). Drawing on a review of over 70 academic papers, industry reports, and technical documents, this work synthesizes insights from real-world case studies across platforms like Google Play Protect, Microsoft Defender, Amazon Web Services (AWS), Apple App Store, OpenAI Plugin Stores, Hugging Face Spaces, and GitHub, alongside emerging initiatives like the SAFE Framework and AI-driven anomaly detection. We conclude with practical recommendations for responsible and transparent LLM deployment and trustworthy AI, including model watermarking, adversarial defense, and cross-industry collaboration, setting a new benchmark for rigorous, holistic cybersecurity research at the intersection of AI and threat defense, and offering a roadmap for secure, scalable LLM systems that serves as a critical reference for researchers, engineers, and security leaders navigating the complex challenges of AI-driven cybersecurity.",
+    "authors": [
+      "Kiarash Ahi",
+      "Saeed Valizadeh"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.06963v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.06963v1",
+    "fetched_at": "2026-07-09T10:49:58.530129"
+  },
+  {
+    "id": "2607.07702v1",
+    "title": "From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization",
+    "abstract": "The optimization of long-horizon agents increasingly relies on reflection-based mechanisms, where a large language model (LLM) acts as an optimizer to diagnose agent failures and improve agent policies. However, real execution traces are difficult to use directly for optimization: large trace collections are often redundant and heterogeneous, making optimization inefficient and prone to overfitting to low-value failures; meanwhile, each individual trajectory also contains many irrelevant steps, while naive context reduction methods such as truncation or sliding windows can discard causally important evidence and produce misleading optimization signals. To resolve this dilemma, we introduce STRACE (Structural TRajectory Analysis and Causal Extraction), a framework that constructs high signal-noise optimization contexts for more precise and effective optimization. At the batch level, STRACE mines failure patterns to filter redundant traces and retain representative failures; within each selected trace, it performs causal localization over a textual dependency graph to remove non-causal steps and identify the true root-cause module for optimization. Empirical results demonstrate that STRACE significantly outperforms standard context-filtering baselines. Notably, on a challenging formal verification task (VeruSAGE-Bench), it successfully optimizes human-expert designed agents, delivering $1.4\\times$ success-rate improvement (42.5% to 58.5%). The code is available at https://github.com/moomight/STRACE .",
+    "authors": [
+      "Ying Chang",
+      "Jiahang Xu",
+      "Xuan Feng",
+      "Chenyuan Yang",
+      "Peng Cheng",
+      "Yuqing Yang"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07702v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07702v1",
+    "fetched_at": "2026-07-09T10:50:29.352610"
+  },
+  {
+    "id": "2607.07696v1",
+    "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+    "abstract": "Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver layers that are not designed for bulk columnar analytics. We present Jailbreak, an approach that bypasses the database engine entirely by reading storage files directly and materializing data as in-memory columnar buffers. Jailbreak's key insight is that database file formats, while complex, are fully specified by their source code and documentation, artifacts that Large Language Models (LLMs) can ingest to regenerate operator-specific table reading components without human-engineered parsing logic. Jailbreak leverages LLM-assisted code synthesis for database storage decoding, turning a traditionally opaque format into a directly queryable artifact. We evaluate Jailbreak on PostgreSQL and MySQL storage files, targeting analytical snapshot scenarios common in read replicas and offline processing pipelines. The generated reader produces Apache Arrow buffers consumable directly by most of the widely known query engines, including DuckDB, Apache Spark, and GPU-accelerated frameworks such as cuDF and Spark RAPIDS. We validate correctness against JDBC/ODBC-based baselines using the TPC-H benchmark across all query results, and demonstrate significant performance improvements in end-to-end analytical throughput, achieving up to 27x speedups. Our results showcase that LLM-assisted storage reader synthesis is a viable and generalizable methodology for breaking data lock-in across database systems, with applications beyond PostgreSQL and MySQL for any system whose file format is available to the LLM from documentation or source code.",
+    "authors": [
+      "Victor Giannakouris",
+      "Immanuel Trummer"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.DB",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07696v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07696v1",
+    "fetched_at": "2026-07-09T10:50:29.352635"
+  },
+  {
+    "id": "2607.07676v1",
+    "title": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
+    "abstract": "Autonomous AI agents can execute complex tasks with limited human review, yet they often lack the grounded operational knowledge to make their outputs not just executable but correct, secure, and maintainable. We introduce SkillCenter, to our knowledge the largest open skill library for agents by total count: 216,938 structured skills across 24 domain bundles. A SkillGate-filtered pipeline contributes 114,565 source-grounded skills from peer-reviewed journals, ArXiv, and over 24,000 technical sources, integrated with 102,373 community skills from GitHub and the ClawHub marketplace. We present the end-to-end framework that builds the pipeline subset: multi-source acquisition, an LLM-based quality gate (SkillGate), template-driven generation, iterative source-grounding, and quality-controlled publishing. Source grounding is a traceability guarantee: each retained claim maps to an exact quotation in its source. All skills ship as offline-searchable SQLite FTS5 bundles.",
+    "authors": [
+      "Tianming Sha",
+      "Yue Zhao",
+      "Lichao Sun",
+      "Yushun Dong"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07676v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07676v1",
+    "fetched_at": "2026-07-09T10:50:29.352653"
+  },
+  {
+    "id": "2607.07612v1",
+    "title": "Towards Agentic AI Governance: A Preliminary Assessment",
+    "abstract": "Artificial intelligence is rapidly evolving from generative systems to agentic AI capable of autonomously planning and executing tasks. Widely characterized as the Year of Agentic AI, 2025 marked accelerated development and deployment, introducing new ethical and governance challenges. This paper presents a systematic review of the emerging literature on agentic AI governance. Our analysis identifies features that distinguish agentic AI from traditional systems and why it warrants targeted governance attention. We synthesize prevailing governance priorities, proposed mechanisms, and stakeholder roles shaping this evolving domain. As an initial scholarly effort, this review lays the preliminary groundwork for developing a structured roadmap to guide responsible and adaptive agentic AI governance.",
+    "authors": [
+      "Mubarak Raji",
+      "Masooda Bashir"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.CY",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07612v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07612v1",
+    "fetched_at": "2026-07-09T10:50:29.352668"
+  },
+  {
+    "id": "2607.07601v1",
+    "title": "CARLA-GS: Decoupling Representation, Reasoning, and Physics Simulation for Autonomous Driving Corner-Case Synthesis",
+    "abstract": "Safety evaluation for autonomous driving is dominated by rare, safety-critical interactions, motivating simulators that can deliberately synthesize corner cases with photorealistic observations. Corner-case generation is inherently a multi-source problem spanning visual representation, scene reasoning, and vehicle trajectory generation and control. Prior knowledge- and model-based approaches typically focus on scene or trajectory components in isolation, while diffusion-based methods attempt end-to-end generation but still struggle to ensure spatiotemporal consistency and physical realism. To unify these aspects within a single framework, we propose CARLA-GS, a modular corner-case synthesis pipeline that decouples visual representation, semantic reasoning, and physics-based execution while maintaining tight cross-module coupling. Starting from real driving data, we reconstruct an editable gaussian scene with additional geometry-consistent constraints. A multi-agent LLM then performs scene-level reasoning to identify risky interactions and generate intent-level waypoint trajectories, while the low-level motion control is delegated to CARLA, where a PID controller ensures kinematic and dynamic feasibility. The simulated vehicle states are finally re-projected into the gaussian scene for ego-centric rendering. This design enables high-level semantic reasoning, low-level physically executable motion, and photorealistic corner-case generation within a unified pipeline. Experiments on the Waymo Open Dataset show, both quantitatively and qualitatively, that our framework enables controllable corner-case generation and produces photorealistic, spatiotemporally consistent videos aligned with semantic intent and physically feasible motion.",
+    "authors": [
+      "Kaicong Huang",
+      "Meng Ma",
+      "Ruimin Ke"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07601v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07601v1",
+    "fetched_at": "2026-07-09T10:50:29.352696"
+  },
+  {
+    "id": "2607.07548v1",
+    "title": "Think Big, Search Small: Where Capacity Matters in Hierarchical Search Agents?",
+    "abstract": "Large language model based search agents increasingly adopt multi-agent architectures in which a main agent decomposes a complex question into sub-queries and dispatches them to parallel sub-agents. However, existing systems instantiate all roles from a single model of identical scale, leaving open how model capacity should be distributed across roles. We factorize hierarchical search into three roles: a delegation role responsible for task decomposition, an execution role responsible for retrieval and evidence extraction, and an answer generation role held fixed as a confound control. We then conduct controlled capacity sweeps along the delegation and execution axes on five multi-hop QA benchmarks. The experiments yield three findings. First, role factorization consistently outperforms a single-agent baseline, improving exact match from 4.5 to 8.6 points across six model scales. Second, capacity sensitivity is asymmetric: scaling the delegation backbone improves EM by ~11 points, whereas scaling the execution sub-agent moves EM by only ~2.6 points, identifying decomposition as the capability bottleneck. Third, a 1.7B-parameter executor trained via quality-filtered trajectory distillation matches a frontier sub-agent in accuracy while consuming 37% fewer sub-agent tokens, advancing the Pareto frontier. These results suggest a concrete recipe for building hierarchical search agents: concentrate capacity at delegation and downsize execution without sacrificing accuracy. Our code is available at https://github.com/QinnanCai0115/role-factorized-search.",
+    "authors": [
+      "Qinnan Cai",
+      "Yibo Zhao",
+      "Xiang Li"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07548v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07548v1",
+    "fetched_at": "2026-07-09T10:50:29.352712"
+  },
+  {
+    "id": "2607.07504v1",
+    "title": "Do LLM-Generated Skills Make Better AI Data Scientists? A Component Ablation Across Data-Science Workflows",
+    "abstract": "Product data scientists often ask LLM-based agents to help with recurring execution tasks such as cleaning data, writing SQL, choosing statistical tests, and formatting results. Reusable skill files are meant to avoid prompting from scratch by packaging guidance for a task family. Expert-written skills can encode high-quality guidance, but writing and maintaining them across many data-science task families creates a manual bottleneck. We ask whether LLM-generated skills offer a useful low-curation alternative: do they improve performance over the task prompt alone? We test this question across four lifecycle stages: data preparation, data extraction, statistical analysis, and reporting, using one generated skill per stage. We find no reliable improvement from full generated skills over No-Skill prompting. We then ask whether any part of the skill is useful by ablating different skill components. The main ablation covers 56 tasks, nine model configurations, and three providers, yielding 7,560 runs. Compared with prompting using the task alone, neither the full generated skill nor any ablated skill variant significantly improves performance; all p-values are at least 0.396, and the total spread across variants is only 1.2 pp. A supplemental token-matched control adds 1,512 runs and finds that Full skills perform similarly to task-irrelevant skill-formatted content. The results caution against using one LLM-generated skill per data-science workflow as a default single-shot prompting strategy.",
+    "authors": [
+      "Wei-Jung Huang"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07504v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07504v1",
+    "fetched_at": "2026-07-09T10:50:29.352725"
+  },
+  {
+    "id": "2607.07474v1",
+    "title": "Beyond Attack-Success Rate: Action-Graded Severity Scale for Tool-Using AI Agents",
+    "abstract": "Agentic red-teaming benchmarks report whether an injected agent was compromised as a single bit: the attack succeeded, or it did not. We argue that this binary attack-success rate discards the information a defender most needs, namely how harmful the resulting action was. We introduce an action-graded harm rubric that scores an agent's tool-call trajectory on a seven-level ordinal scale (L0 to L6) according to whether the executed action was reversible, whether it crossed scope to reach another party, and whether it expanded privilege. We compute the scale two ways: a deterministic oracle that reads the trajectory and the attacker's stated goal, and a panel of three frontier language-model judges that read a tag-free account of the same trajectory. Across four victim models and two defenses on the AgentDojo workspace suite, severity grading exposes three cases the binary metric hides, including a defense that reports a zero attack-success rate while still permitting an externally visible cross-scope leak through an unfiltered tool. The judge panel reproduces the oracle with high ordinal agreement (Krippendorff's alpha = 0.91) but shares systematic blind spots that we characterize, most notably a failure to recognize escalation chains. Unlike prior work that provides harm taxonomies, harmful-task completion tests, execution-level safety benchmarks, or severity-aware simulation, our contribution is a reusable, trace-grounded severity instrument applied to the actual actions recorded in existing red-team logs. All code, prompts, and per-episode logs are released.",
+    "authors": [
+      "Harry Owiredu-Ashley"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07474v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07474v1",
+    "fetched_at": "2026-07-09T10:50:29.352741"
+  },
+  {
+    "id": "2607.07405v1",
+    "title": "Reason Less, Verify More: Deterministic Gates Recover a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents",
+    "abstract": "Tool-using LLM agents can violate the very policies they are deployed to enforce while appearing to complete the task successfully. In policy-permissive environments, a tool may execute any well-formed call even when the corresponding state transition is forbidden by domain policy. The result is a silent wrong state (a booking cancelled, a passenger count changed, a claim acted on without verification) that neither the tool nor the agent's self-report exposes.   We study this failure mode in the $τ^2$-bench airline domain. On a budget agent, 78% of observed failures are silent wrong-state failures with no tool error, and the aggregate failure rate is reproducible across disjoint seeds, not sampling noise. We then evaluate a lightweight intervention: deterministic, read-only pre-execution gates that inspect the proposed call and current state before allowing a write. A four-gate suite raises full-benchmark success from 29.6% to 42.0% on gpt-4o-mini (+12.4pp; paired task-level bootstrap P=0.0012), and the lift reproduces on a disjoint 15-seed set (+12.3pp; P=0.0008).   The effect is concentrated where the gates fire: on the 26/50 firing tasks, success rises by +19.2pp, while movement on the 24 non-firing tasks does not exclude zero. Two negative controls (a self-enforcing retail domain and BFCL) bound the mechanism: gates help when tools are policy-permissive and add little where tools already self-enforce. As suggestive evidence, not a central claim, the same failure mode persists at the frontier: gpt-5.2 at default reasoning still attempts policy-violating writes, and the same suite improves success from 61.2% to 71.6% (+10.4pp; P=0.020; n=5, no replication). The contribution is a bounded evaluation and reliability result: deterministic gates do not guarantee task success, but they can deterministically prevent a known class of silent policy-violating writes at the action boundary.",
+    "authors": [
+      "Vikas Reddy",
+      "Sumanth Reddy Challaram",
+      "Abhishek Basu"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07405v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07405v1",
+    "fetched_at": "2026-07-09T10:50:29.352760"
+  },
+  {
+    "id": "2607.07397v1",
+    "title": "Agentic Data Environments",
+    "abstract": "Autonomous agents promise substantial gains in speed, scale, and labor efficiency, but their failures can impose abrupt and often irreversible costs. The central challenge for agentic automation is therefore to increase the benefits of automation while bounding the consequences of failure.   While databases remain central to modern computing, agents operate over a broader data environment spanning files, APIs, applications, and system state. In this talk, I will outline early work on Agentic Data Environments -- the execution substrate in which agents operate -- that both amplify agent capabilities and enforce safety guarantees. This perspective reframes data systems from passive stores of state into active substrates for safe, reliable execution.",
+    "authors": [
+      "Elaine Ang",
+      "Chenxi Huang",
+      "Georgios Liargkovas",
+      "Jerry Liu",
+      "Jinhui Liu",
+      "Nikos Pagonas",
+      "Charlie Summers",
+      "Haonan Wang",
+      "Jiakai Xu",
+      "Tianle Zhou",
+      "Yusen Zhang",
+      "Zhou Yu",
+      "Zhuo Zhang",
+      "Tianyi Peng",
+      "Kostis Kaffes",
+      "Eugene Wu"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.AI",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07397v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07397v1",
+    "fetched_at": "2026-07-09T10:50:29.352794"
+  },
+  {
+    "id": "2607.07370v1",
+    "title": "Behavior Foundations for Quadruped Robots: ABot-C0 Technical Report",
+    "abstract": "In embodied intelligence systems, the motion controller serves as the critical bridge between semantic reasoning and physical execution. Humanoid control has progressed rapidly through large-scale human motion-capture data and motion-tracking paradigm. However, producing quadruped robots motion corpora with scalability and physical feasibility faces more fundamental obstacles: animal motion data is scarce, and cross-embodiment retargeting remains fragile. We present ABot-C0, a generalist motion-control system for quadruped robots that establishes three complementary behavior foundations: a scalable multi-source motion-data pipeline, robust policy learning across motion tracking, locomotion, and scene interaction, and a unified deployment stack for reliable real-world operation. Fundamentally, we construct a data pyramid through conditional video-generation synthesis, annotated motion capture, teleoperation and human design, producing 16,074 physically feasible motion clips as the data foundation for various motion learning demands. We then train a Flow-Matching generalist policy that demonstrates for the first time quadruped motion tracking scaling law that its performance improves consistently as training scales up, with zero-shot capability to track unseen motions. Then, we push a step further for robust all-terrain traversal locomotion by adopting a three-stage privileged-to-perceptive framework with temporal LiDAR memory and terrain-predictive supervision. Collectively, these components form a motion generalist that coordinates multi-policy execution, smooth behavior transitions, energy-efficient control, and safety mechanisms for real-world deployment. Extensive experiments on urban-terrain autonomous navigation and companion-style multimodal interaction demonstrate that quadruped robots move beyond single-function demos toward product-level behavioral intelligence.",
+    "authors": [
+      "Xufeng Zhao",
+      "Fuzhi Yang",
+      "Jianhui Chen",
+      "Li Gao",
+      "Zhang Meng",
+      "Jie Gao",
+      "Yao Zheng",
+      "Wenyu Liu",
+      "Menglin Yang",
+      "Minqi Gu",
+      "Yaru Zhao",
+      "Honglin Han",
+      "Shihui Su",
+      "Zixiao Tang",
+      "Liu Liu",
+      "Mu Xu",
+      "Yang Cai",
+      "Wenbin Tang"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.HC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07370v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07370v1",
+    "fetched_at": "2026-07-09T10:50:29.352830"
+  },
+  {
+    "id": "2607.07321v1",
+    "title": "From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents",
+    "abstract": "Tool utilization enables Large Language Model (LLM) agents to interact with the real world and resolve complex tasks. However, existing agent frameworks predominantly rely on static toolsets composed of granular atomic actions (e.g., basic file I/O or single-turn search), which forces agents to reinvent low-level logic for every recurring workflow, leading to increased reasoning overhead and failure rates. In this study, we propose that agents can achieve self-evolution by synthesizing these atomic actions into reusable Standard Operating Procedures (SOPs), which function as callable higher-order tools that encapsulate multi-step logic. We further introduce EvoSOP, a framework that empowers agents to extract SOPs from execution trajectories and iteratively optimize the toolset through a systematic lifecycle of construction, merging, evaluation, and pruning. Extensive experiments demonstrate that EvoSOP significantly boosts task success rates while substantially reducing the number of interaction rounds compared to baselines. Our analysis also reveals that iterative tool optimization fosters reliable and efficient tool-use patterns, providing a scalable pathway for the development of self-evolving agents.",
+    "authors": [
+      "Haipeng Ding",
+      "Yuexiang Xie",
+      "Zhewei Wei",
+      "Yaliang Li",
+      "Bolin Ding"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07321v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07321v1",
+    "fetched_at": "2026-07-09T10:50:29.352848"
+  },
+  {
+    "id": "2607.07316v1",
+    "title": "Mechanistic Interpretability for Neural Networks: Circuits, Sparse Features and Symbolic Reasoning",
+    "abstract": "This article offers a comprehensive overview of mechanistic interpretability, an emerging field that seeks to reverse-engineer the internal algorithms of modern neural networks. While traditional explainable AI methods often stop at surface-level input-output correlations, this approach directly addresses the opaque \"black box\" nature of machine learning models, which is essential for ensuring safety and auditability in high-stakes deployments. The paper provides a detailed examination of Transformer circuit analysis, exploring how internal components like the residual stream, attention mechanisms, and induction heads drive complex tasks and in-context learning. It subsequently tackles the core challenge of superposition and polysemanticity, demonstrating how tools like Sparse Autoencoders (SAEs) and transcoders can decompose tangled network activations into distinct, human-interpretable features. Furthermore, the paper explores methods for actively controlling and modifying model behavior through steering vectors and causal interventions. Finally, it connects these mechanistic insights with neurosymbolic AI frameworks designed to translate neural representations into explicit, executable logical rules.",
+    "authors": [
+      "Pranav Sawant",
+      "Jakub Krejčí"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07316v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07316v1",
+    "fetched_at": "2026-07-09T10:50:29.352863"
+  },
+  {
+    "id": "2607.07144v1",
+    "title": "Fractal KV-Cache Archives: Lossless Symbolic Storage with In-Place Retrieval for Long-Context LLM Inference",
+    "abstract": "The key-value (KV) cache dominates the memory cost of long-context autoregressive inference, and a growing body of work compresses it through quantization, eviction, or offloading. We study a complementary question: once a position's KV state has been quantized to codebook indices, how should the resulting symbol stream be stored, and can the storage layer do more than store? A family of contractive iterated-map codes that serialize a symbol sequence into a sequence of low-dimensional real vectors is revisited, and it is shown that they form a natural archive format for a quantized KV cache with the following features. The method provides exactly the access pattern a growing cache requires. It is lossless, it runs in linear time, and supports O(1) random access and O(1) amortized append. A controlled study of the quantizer feeding this archive is conducted on GPT-2 with 1024-token contexts. Keeping a small exact window (4 attention sinks + 32 recent tokens) and archiving the rest, per-head residual vector quantization reduces the archived cache by 36-54x relative to an fp16 cache at a perplexity cost of 11-15%, and we quantify a sharp key/value asymmetry -- quantizing keys is roughly 4x more damaging than quantizing values, consistent with prior low-bit KV work -- and use it to allocate bits in a hybrid scheme. Finally, we show the archive is simultaneously a search index: approximate substring queries execute directly on the stored vectors, and matched context is decoded from the matched vector without ever materializing the surrounding text. We release all code; every number reproduces from a single command on a laptop CPU.",
+    "authors": [
+      "Vladimir Gusev"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07144v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07144v1",
+    "fetched_at": "2026-07-09T10:50:29.352876"
+  },
+  {
+    "id": "2607.07128v1",
+    "title": "Distributed Sparse Interventions in Language Models",
+    "abstract": "Language models perform a wide range of tasks at varying levels of abstraction with the capacity to flexibly infer tasks from context, execute multiple tasks simultaneously, and select among competing tasks. To study the role of model components in task behaviour, their causal influence can be investigated through interventions. Prior work on model steering has largely focused on interventions along global directions in activation space, modeling task representations as approximately linear and additive. By studying interventions at the neuron level, we find substantial, neuron-specific nonlinear effects on model outputs that are not captured by current steering approaches. We introduce Distributed Sparse Interventions (DSI), an intervention approach that considers nonlinearities and interactions between neurons across layers to identify sparse sets of neurons that elicit task-relevant computations. Across a range of tasks, we demonstrate that DSI can activate task behaviour in instruction-tuned language models by localising and intervening on as few as 0.01% of neurons, highlighting the effectiveness of sparse, distributed interventions in the neuron basis. Additionally, adopting a set-based perspective enables computations over the identified neuron sets, offering insights into the roles of individual neurons by analysing their effects across tasks. Through sparse interventions, DSI enables fine-grained control over model behaviour, localisation of task-relevant neuron sets, and furthers our understanding of task composition.",
+    "authors": [
+      "Maximilian S. Ernst",
+      "Lorenz Linhardt",
+      "Aaron Peikert",
+      "Oliver Eberle"
+    ],
+    "published": "2026-07-08",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.07128v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.07128v1",
+    "fetched_at": "2026-07-09T10:50:29.352893"
+  },
+  {
+    "id": "2607.06610v1",
+    "title": "Deep Reinforcement Learning for Reliability Based Bi-Objective Portfolio Optimization",
+    "abstract": "Portfolio optimization under uncertainty is inherently a multi-objective decision problem involving complex interactions among return, risk, market dynamics, and practical investment constraints. Existing reliability based portfolio optimization approaches primarily rely on static optimization frameworks and often fail to capture sequential decision making, tail risk, and market frictions such as transaction costs. To address these limitations, we propose a deep reinforcement learning framework for multi-objective reliability based portfolio optimization (MORP-DRL). The proposed framework jointly optimizes expected return and downside risk using three complementary risk measures: variance, Conditional Value-at-Risk (CVaR), and Entropic Value-at-Risk (EVaR). To model uncertainty and heavy-tailed market behavior, asset returns are represented using GARCH(1,1), Extreme Value Theory, and a t-copula dependence structure, while realistic scenarios are generated through quasi-Monte Carlo simulation. A Proximal Policy Optimization (PPO) based strategy is developed under practical constraints including transaction costs and portfolio bounds, and is benchmarked against NSGA-II. Experiments on ten global equity indices across pre-COVID, COVID, and post-COVID market regimes demonstrate that MORP-DRL achieves competitive risk-return performance, reduced downside risk during periods of market stress, and scalability to high-dimensional portfolio settings.",
+    "authors": [
+      "Sounaq Das",
+      "Tanmay Sen",
+      "Raghu Nandan Sengupta",
+      "Aditya Gupta"
+    ],
+    "published": "2026-07-07",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.06610v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.06610v1",
+    "fetched_at": "2026-07-09T10:50:32.788460"
+  }
+]
