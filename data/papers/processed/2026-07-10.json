@@ -1,0 +1,721 @@
+[
+  {
+    "id": "2607.08531v1",
+    "title": "Optimal Prediction of Resistance and Support Levels under Constant Elasticity of Variance Processes",
+    "abstract": "Assuming that the asset price $X$ follows a constant elasticity of variance process, this paper studies the optimal prediction problem $\\inf_{0\\leq τ\\leq T}\\mathbb{E}|X_τ-\\ell|$, where the infimum is taken over stopping times $τ$ of $X$ and $\\ell$ is a hidden aspiration level independent of $X$. Adopting the aspiration level hypothesis, we show that a class of admissible laws of $\\ell$ leads to optimal trading boundaries which are located relative to the median interval of $\\ell$ and serve as predictors of the resistance and support levels. The existence of these boundaries is proved and nonlinear integral equations are derived to characterise them uniquely. In the positive drift case the stopping set is bounded by two curves, while in the negative drift case the stopping set is described by a single boundary.",
+    "authors": [
+      "Ruibo Ma"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "q-fin.MF",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08531v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08531v1",
+    "fetched_at": "2026-07-10T10:48:22.596388",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991493"
+  },
+  {
+    "id": "2607.08524v1",
+    "title": "Stablecoins under Stress in a National Economy: Transaction-Level Evidence from Austrian Crypto-Asset Service Providers",
+    "abstract": "Cryptoassets are increasingly entangled with the traditional financial system, and how this activity integrates into national economies and behaves under stress bears on financial stability and the design of public digital money. However, blockchain pseudonymity and the lack of geographic identifiers force existing work to rely on indirect proxies to infer and locate market participants. Here we use a regulatory registry that directly identifies the on-chain addresses of all crypto-asset service providers (CASPs) registered in Austria, reconstructing their on-chain transaction activity across Bitcoin, Ether, USDC, and USDT through May 2025, and separating retail-like from institutionally mediated flows. We find that Austrian CASPs intermediate roughly USD 30 billion with external counterparties and are integrated globally rather than domestically. In value, this activity is dominated by a few institutional counterparties; in number, by retail-like ones. Around three major shocks, the Terra-Luna collapse, the FTX bankruptcy, and the Silicon Valley Bank failure, the two groups respond through different mechanisms, and stablecoins do not act as a uniform safe haven. The clearest case is SVB, where retail-like deposits and institutional withdrawals are consistent with USDC's two-tiered redemption mechanism. These patterns are invisible in aggregate data. Registry-based, transaction-level measurement thus offers a reproducible, cross-jurisdictional basis for monitoring how cryptoasset markets transmit risk.",
+    "authors": [
+      "Pietro Saggese",
+      "Michael Sigmund",
+      "Burkhard Raunig",
+      "Esther Segalla",
+      "Bernhard Haslhofer",
+      "Christos Makridis"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "q-fin.GN",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08524v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08524v1",
+    "fetched_at": "2026-07-10T10:48:22.596426",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991513"
+  },
+  {
+    "id": "2607.08500v1",
+    "title": "Estimating the Stochastic Discount Factor from Option Prices and Predicting the Equity Premium",
+    "abstract": "This paper proposes a stochastic discount factor (SDF) scaled by time-varying volatility. By utilizing prices and market data implied solely from S\\&P 500 options, the proposed framework recovers a stable, non-monotonic SDF that captures the pure forward-looking expectations of market participants while mitigating observation noise. Our empirical analysis reveals that the SDF exhibits a distinctive hump on the shallow put side, which transitions into a more clearly defined W-shape as the time to maturity increases, identifying maturity as a key factor influencing the intensity of the central hump. We show that this structural feature can be theoretically rationalized by stochastic volatility dynamics under a constant market price of risk. The equity premium derived from the time-varying volatility scaled SDF demonstrates superior out-of-sample predictive performance relative to existing benchmarks, such as the Martin bounds.",
+    "authors": [
+      "Kenichiro Shiraya",
+      "Tomohisa Yamakami",
+      "Akira Yamazaki"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08500v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08500v1",
+    "fetched_at": "2026-07-10T10:48:22.596451",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991524"
+  },
+  {
+    "id": "2607.08346v1",
+    "title": "Grounded Event Extraction from SEC 8-K Filings with a Fine-Grained Taxonomy",
+    "abstract": "Form 8-K filings are the primary channel through which U.S. public companies disclose material events, but the SEC item codes attached to them are coarse: a single item spans routine administrative changes and chief executive departures, and many of the most market-moving disclosures fall into a catch-all item. Large language models make fine-grained labelling feasible at corpus scale, but only if the labels can be traced to the source text and shown to be reliable. We present a two-stage system that tags 8-K disclosures against a three-tier taxonomy of 119 event types. The first stage constrains output to valid taxonomy entries and anchors every tag to a verbatim quote via fuzzy n-gram validation; the second re-grades each cited quote against the category definition to produce a quality score. Applying the system to 292,984 filings from 2022 to 2026 yields 601,088 grounded event tags, which we release. Over 5,125 stratified tags, an LLM judge finds precision rises monotonically with the quality score, from 12% to 96%, while unsupported tags fall from 8% to near zero. Ablation shows the score is calibrated only when assigned in a dedicated second pass. An event study on unsigned abnormal returns confirms, without any language model, that the taxonomy separates economically distinct events sharing an item code.",
+    "authors": [
+      "Rian Dolphin",
+      "Joe Dursun",
+      "Jarrett Blankenship",
+      "Katie Adams",
+      "Quinton Pike"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CL",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08346v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08346v1",
+    "fetched_at": "2026-07-10T10:48:22.596472",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991534"
+  },
+  {
+    "id": "2607.08291v1",
+    "title": "Robustness in Sequential Decision Making under Evolving Uncertainty: Evidence from High-Frequency Market Making",
+    "abstract": "We study sequential decision making under evolving uncertainty in high-frequency financial markets, where changing market dynamics continually challenge static decision policies. We show that robustness has two economically meaningful dimensions: uncertainty tolerance, which determines how much uncertainty the decision maker allows, and action robustness, which governs how conservatively decisions respond. Robustness is not merely protection against model misspecification, but a state-dependent mechanism that reshapes sequential decision behaviors. Simulation and empirical evidence show that action robustness has a substantially larger impact than uncertainty tolerance. Moreover, excessive robustness may reduce profitability in illiquid markets by limiting execution opportunities.",
+    "authors": [
+      "Ying Chen",
+      "Hoa Nguyen",
+      "Julian Sester",
+      "Hoang Hai Tran",
+      "Yijiong Zhang"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.MF",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08291v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08291v1",
+    "fetched_at": "2026-07-10T10:48:22.596492",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991546"
+  },
+  {
+    "id": "2607.08199v1",
+    "title": "Volatility in Prediction Markets: A Structural Approach",
+    "abstract": "Forward-looking volatility forecasts are central inputs to derivatives pricing, market making, risk management, and volatility-linked trading strategies, with ARCH and GARCH models serving as the canonical workhorses. Such models are natural in standard asset markets, where prices are positive-valued stochastic processes and volatility is typically inferred from return dynamics. Prediction markets have a different structure: prices are bounded probabilities, payoffs are binary, and contracts resolve at known deadlines.   We develop and estimate a volatility model tailored to binary prediction markets. The model combines two economic mechanisms: a Wright-Fisher deadline-resolution component, capturing how remaining binary uncertainty is forced to resolve over time, and a Glosten-Milgrom order-flow component, capturing volatility from informed trading as reflected in spreads and volume. Using a large panel of Kalshi contracts, we show that these structural variables carry substantial forecasting power. Plain ARCH/GARCH benchmarks are dominated by structural specifications; combining the structural model with residual GARCH dynamics gives the best overall forecasts. The model also provides an interpretable measurement framework: volatility is highest near fifty-fifty prices, rises near resolution, and varies across categories with the timing and discreteness of information arrival. Economics contracts are closer to smooth deadline-resolution dynamics, while sports contracts exhibit more event-concentrated, jump-like behavior. Across major categories, category-specific fitting does not systematically improve out-of-sample performance, suggesting that the structural specification transfers beyond the pooled headline result.",
+    "authors": [
+      "Weiye Xi",
+      "Ciamac C. Moallemi",
+      "Mallesh Pai",
+      "Shouqiao Want"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08199v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08199v1",
+    "fetched_at": "2026-07-10T10:48:22.596514",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991558"
+  },
+  {
+    "id": "2607.05091v3",
+    "title": "Any Axes Are Allowed: A Characteristic-Axis Integral Diagnosis of Factor Models",
+    "abstract": "This paper extends the cap-axis integral diagnostic to general characteristic axes, measuring factor-model pricing errors as bridge-alpha curves. A predetermined characteristic order generates prefix portfolios; subtracting equal-exposure aggregate portfolios yields zero-investment bridges indexed by cutoff p. The null is a zero-curve restriction on the subspace generated by the order, not a pointwise decile test. In 1967-2024 CRSP data, adding a counterpart factor flips the curve's sign on every axis, but only HML and CMA overcorrect enough to be rejected, whereas RMW and UMD flatten their axes. A size-split reconstruction traces the overcorrection to 2x3 factor construction rather than the premium. Axis pricing errors are largely unrelated to maximum-Sharpe gains.",
+    "authors": [
+      "Useong Shin"
+    ],
+    "published": "2026-07-06",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.CP",
+      "q-fin.PR",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.05091v3",
+    "arxiv_url": "https://arxiv.org/abs/2607.05091v3",
+    "fetched_at": "2026-07-10T10:48:22.596797",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991568"
+  },
+  {
+    "id": "2607.05011v2",
+    "title": "Reaction-boundary variance and adjoint-consistent local-volatility projection",
+    "abstract": "We derive an operational-time variance kernel for a latent-order-book reaction boundary and use it to separate three objects usually collapsed in calendar-time volatility models: a structural boundary cumulant, a clock projection, and a pricing-measure choice. The reaction boundary is the zero of a bid--ask imbalance field. For a locally linear book, signed order-flow perturbations displace this zero through a damped Abel response kernel, so the variance of boundary increments is obtained as a finite-scale Green-function cumulant rather than introduced as a primitive diffusion coefficient. For long-memory forcing with exponent $0<γ<1$, the operational variance has a closed asymptotic form involving effective signed-forcing intensity, liquidity slope, resilience, memory, and operational coarse-graining scale. A deterministic activity clock gives the benchmark local-volatility projection. More general, non-unique clocks generate candidate calendar-time pricing systems. We argue that such projections are admissible only when the induced forward density operator and backward valuation operator remain adjoint on the same state space. Adjoint consistency is therefore a reality constraint on operational-to-calendar time projection: it disciplines non-unique time and identifies where incompleteness enters.",
+    "authors": [
+      "Chris Angstmann",
+      "Tim Gebbie"
+    ],
+    "published": "2026-07-06",
+    "categories": [
+      "q-fin.PR",
+      "q-fin.MF",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.05011v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.05011v2",
+    "fetched_at": "2026-07-10T10:48:22.596813",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991590"
+  },
+  {
+    "id": "2607.04103v2",
+    "title": "Governing Generative AI Across Financial Institutions: An SR 26-2-Compatible Framework for Generative AI Risk Control",
+    "abstract": "The release of SR 26-2 marks a significant modernization of U.S. model risk management by replacing SR 11-7 with a more risk-based and materiality-sensitive supervisory framework. However, generative and agentic AI are excluded, creating an important governance challenge for banking organizations and other financial institutions. Although generative AI may not directly estimate credit risk or make underwriting decisions, its outputs can materially affect the surrounding control environment through monitoring interpretation, policy analysis, or adverse-action language drafting. These uses may influence how regulated financial decisions are explained, challenged, documented, and governed.   This paper proposes the Generative AI Control Framework (GAICF), an SR 26-2-compatible governance framework for generative AI-enabled financial workflows. The framework translates core model risk management principles into a layered control structure for generative AI applications that operate outside the formal model boundary but remain embedded within regulated banking processes. GAICF provides a practical approach for financial institutions seeking to align emerging generative AI governance practices with the risk-based supervisory expectations reflected in SR 26-2.",
+    "authors": [
+      "Yiqing Wang",
+      "Yixin Kang",
+      "Luyun Lin",
+      "Siqi Mao"
+    ],
+    "published": "2026-07-05",
+    "categories": [
+      "q-fin.RM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.04103v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.04103v2",
+    "fetched_at": "2026-07-10T10:48:22.596959",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991601"
+  },
+  {
+    "id": "2607.08555v1",
+    "title": "CAAD: Causality-Aware Multivariate Time Series Anomaly Detection via Multi-Scale Alignment and Structural Causal Consistency",
+    "abstract": "The operational integrity of complex industrial systems relies on precise anomaly detection and diagnosis. The vast majority of existing methods narrowly focus on capturing temporal similarities of representations, often overlooking the disruption of internal causal relationships, which characterizes system failures and latent anomalies. In this paper, we propose a novel framework (CAAD) that reframes anomaly detection as the continuous verification of Granger causality consistency through exogenous variables.   Specifically, the CAAD framework models exogenous time-series variables as residuals, identifying anomalies as significant deviations caused by external interventions. The proposed framework leverages multi-scale alignment to internalize system dynamics and utilizes a gradient-based matrix to monitor internal causal relationship breakdowns. By quantifying causal deviations of both dynamic evolution and relational topology, the CAAD is able to capture subtle causal shifts to achieve precise anomaly detection. Extensive experiments on real-world industrial datasets demonstrate that the CAAD achieves high-precision anomaly detection, outperforming most state-of-the-art baselines.",
+    "authors": [
+      "Xin Wang",
+      "Yunshi Wen",
+      "Yanan He",
+      "Haotian Xu",
+      "Youlan Zhao",
+      "Michel Ferreira Cardia Haddad",
+      "Tengfei Ma"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08555v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08555v1",
+    "fetched_at": "2026-07-10T10:48:36.180985",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991610"
+  },
+  {
+    "id": "2607.08417v1",
+    "title": "Detecting Ladder Logic Bombs in IEC 61131-3 PLC Programs using ESBMC-PLC+: A Formal Verification Approach with Trigger Synthesis",
+    "abstract": "A Ladder Logic Bomb (LLB) is malicious control logic in a Programmable Logic Controller (PLC) program that lies dormant until a trigger activates a payload to manipulate actuators, forge sensor readings, or deny operator control. We observe that real malicious logic hides inside function-block bodies, which existing ladder-diagram verifiers drop from their intermediate representation (IR), making bombs invisible to provers. We present ESBMC-LLB, which uses ESBMC-PLC+ as its verification engine and adds a modeling layer that exposes function-block logic and recasts bomb detection as a formal verification problem: a scan-watchdog exposes non-termination payloads, and output wiring exposes actuator-forgery payloads as safety violations. k-induction gives an unbounded proof of bomb-absence across all scans, and the bounded model checker returns a counterexample that is the trigger - guarantees that signature, anomaly, and CFG-triage detectors lack. On the public Iacobelli 2024 dataset, ESBMC-LLB detects all 30 bombs and recovers every trigger; it also detects adaptive triggers (computed, opaque-arithmetic, multi-scan) that evade CFG-triage. We also report the first semantic model-checker evaluation on PLC-Defuser's SWaT corpus: our analog extension makes the full corpus parseable; on v1.0.0, it detects 149/150 bombs (99%) with zero false positives, recovering each trigger; on a later version with nonlinear non-termination bombs, detection drops to 49% as the SMT solver times out. We conclude that semantic model checking and CFG-triage are complementary - the former gives unbounded proofs, adaptive-trigger robustness, and handles Boolean/integer and linear analog logic; the latter leads to nonlinear analog non-termination, and we delineate where each wins.",
+    "authors": [
+      "Pierre Dantas",
+      "Lucas Cordeiro",
+      "Waldir Junior"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CL",
+      "cs.AR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08417v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08417v1",
+    "fetched_at": "2026-07-10T10:48:36.181014",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991619"
+  },
+  {
+    "id": "2607.08373v1",
+    "title": "Self-Adaptive Anomaly Detection with Reinforcement Learning and Human Feedback in Connected Vehicles",
+    "abstract": "Connected vehicles are autonomous cyber-physical systems whose behavior must be continuously monitored during operation to detect deviations from normal operation before they propagate into failures. Such evaluation is challenging because the systems themselves evolve: over-the-air updates, configuration changes, and shifting workloads alter the definition of normal behavior, causing static diagnostic methods to degrade silently over time. Existing approaches typically address either automated model adaptation or operator integration in isolation, rather than as a single coordinated supervisory loop.   This paper presents an online anomaly detection framework for autonomous CPS that integrates three coordinated mechanisms. A factorized deep Q-network with self-attention selects the most suitable detector from a candidate pool for each monitored service, exploiting inter-service dependencies in the microservice topology. An ensemble of three statistical drift detectors monitors the input distribution and raises an alarm only when all three concur, prioritizing precision over recall. A human-in-the-loop retraining mechanism, built around a pending transition buffer and a 60/40 prioritized replay strategy, allows the operator to incorporate expert knowledge while preserving the system's learned response to prior data distributions.   The framework is evaluated on a connected-vehicle testbed running an automated valet parking application across seven backend microservices. The attention-augmented agent achieves an F1 score of 0.69, compared to at most 0.11 for any single detector applied uniformly. Following a real software update that induces measurable concept drift, F1 drops to 0.52; after operator-triggered retraining, performance recovers to 0.65 on the new distribution while remaining at 0.69 on the prior one, demonstrating sustained adaptation without catastrophic forgetting.",
+    "authors": [
+      "Matthias Weiß",
+      "Athreya Hosahalli Prakash",
+      "Maurice Artelt",
+      "Falk Dettinger",
+      "Nasser Jazdi",
+      "Michael Weyrich"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08373v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08373v1",
+    "fetched_at": "2026-07-10T10:48:36.181038",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991628"
+  },
+  {
+    "id": "2607.08740v1",
+    "title": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
+    "abstract": "Large language model (LLM) applications increasingly use explicit workflows for tool use, retrieval, branching, checkpointing, and human approval. Existing workflow systems already address many execution concerns. This paper proposes a Lisp-inspired but language-independent conceptual model: symbolic forms, object identity, and live-image thinking are used as explanatory lenses, not implementation commitments. In this model, workflow definitions, workflow instances, inference records, context snapshots, and dependency relations are represented as persistent knowledge objects in a shared knowledge substrate. Its central semantic distinction is between derive and infer: derive is deterministic computation over available state; infer is mediated LLM judgment under declared context and executor-controlled capability policy.   The result is a preliminary conceptual account of semantic persistence: workflows do not merely produce knowledge and leave traces, but can themselves be represented as inspectable, resumable, and reviewable knowledge objects, while formal transition semantics remain future work.",
+    "authors": [
+      "Emanuele Quinto",
+      "Carlo Andrea Rozzi",
+      "Francesco Zanitti"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.AI",
+      "cs.PL",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08740v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08740v1",
+    "fetched_at": "2026-07-10T10:49:06.624062",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991636"
+  },
+  {
+    "id": "2607.08703v1",
+    "title": "MPFlow: Learning Budgeted Max-Flow Optimization on the Lightning Network with Deep Graph Reinforcement Learning",
+    "abstract": "We address liquidity placement in the Bitcoin Lightning Network (LN): given a fixed budget, which channels should a node open to maximize its routing capacity? We cast this as a budget-constrained combinatorial optimization problem on graphs, selecting $k$ edge additions that maximize $s$--$t$ max-flow, a theory-grounded measure of routing capacity, and solve it with graph reinforcement learning. Our lightweight agent combines a message-passing policy network with proximal policy optimization (PPO) and action masking, and is trained under a hub-exclusion curriculum: the network's top hubs are removed from training subgraphs, forcing the policy to learn capacity-aware placement rather than hub attachment. In extensive experiments on real Lightning Network snapshots, our method consistently outperforms strong heuristic baselines on the max-flow objective across multiple seeds and unseen graphs. The agent has been deployed in production for peer recommendations, executing 4640 channel-open decisions that cumulatively allocate 267.3 BTC over $16 million across 30 managed nodes.",
+    "authors": [
+      "Harrison Rush",
+      "Vincent Davis",
+      "Simone Antonelli",
+      "Vikash Singh",
+      "Jesse Shrader",
+      "Emanuele Rossi"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08703v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08703v1",
+    "fetched_at": "2026-07-10T10:49:06.624094",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991645"
+  },
+  {
+    "id": "2607.08662v1",
+    "title": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+    "abstract": "Large language model (LLM)-based web search agents are transforming information seeking from simple factoid question answering into complex, deep-and-wide search and research-oriented tasks. A single ReAct-style agent is constrained by one long trajectory and limited context, making it difficult to handle depth and coverage simultaneously. Existing multi-agent systems improve search coverage through parallel execution and aggregation, but still exhibit clear limitations in recursive depth, collaboration adaptability, and evidence-grounded expansion. We propose WebSwarm, a progressive recursive delegation framework that jointly constructs task decomposition, recursive expansion, and agent collaboration during inference. WebSwarm dynamically instantiates agentic search nodes, each coupling a local objective with a search mode that specifies how the node should organize search and collaboration. Each node can either solve its objective itself or further delegate child nodes; after solving, it returns evidence and results upward, enabling parent nodes to further expand, revise, or aggregate the search process. To guide this process, WebSwarm first probes how task-relevant information is organized on the web to ground subsequent node expansion, and reuses process-level experience across homogeneous sibling nodes. Experiments on BrowseComp-Plus, WideSearch, DeepWideSearch, and GISA show that WebSwarm consistently outperforms single-agent and multi-agent baselines on deep, wide, and interleaved deep-and-wide tasks. Further analyses of ablation, task difficulty, web tool efficiency, and model generalization explain WebSwarm's effectiveness and provide insights for multi-agent search systems.",
+    "authors": [
+      "Xiaoshuai Song",
+      "Liancheng Zhang",
+      "Kangzhi Zhao",
+      "Yutao Zhu",
+      "Zhongyuan Wang",
+      "Guanting Dong",
+      "Jinghan Yang",
+      "Han Li",
+      "Kun Gai",
+      "Ji-Rong Wen",
+      "Zhicheng Dou"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08662v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08662v1",
+    "fetched_at": "2026-07-10T10:49:06.624122",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991653"
+  },
+  {
+    "id": "2607.08646v1",
+    "title": "UltraX: Refining Pre-Training Data at Scale with Adaptive Programmatic Editing",
+    "abstract": "As available training data approaches its physical limit, gains from Scaling Laws have begun to diminish. Consequently, improving Large Language Models (LLMs) now depends less on data expansion and more on higher-quality data utilization. However, in the context of large-scale corpora, existing refinement methodologies face significant limitations in quality, efficiency, and reliability: Rule-based approaches are constrained by fixed heuristics and struggle with instance-level variations; LLM-based approaches improve quality but fail to meet the efficiency and reliability requirements of large-scale data processing. To address these challenges, we propose UltraX, a function-calling refinement framework for large-scale pre-training data that completes the editing function space by introducing insertion in addition to deletion and modification, enabling fine-grained instance-level editing. Specifically, UltraX builds a reliable program-supervision generation pipeline. In this pipeline, dataset-adaptive prompt optimization first guides an expert LLM to produce high-quality end-to-end refined texts, and Line Alignment Mapping and Dynamic Context Replacement then convert original-refined text pairs into structured program supervision. Meanwhile, UltraX improves supervision quality and stabilizes the training distribution with low-confidence example filtering and ratio-controlled sampling by operation combination. During inference and execution, it normalizes and validates model outputs through sliding-window prediction, global operation aggregation, and systematic post-processing, improving the stability and reliability of large-scale execution. Experiments show that UltraX achieves the highest average performance across all corpora and also matches or surpasses baselines with fewer training tokens, demonstrating stronger data efficiency and refinement reliability.",
+    "authors": [
+      "Xinlong Zhao",
+      "Dongsheng Liu",
+      "Hengyu Zhao",
+      "Zixuan Fu",
+      "Zheng Wang",
+      "Jie Cai",
+      "Jie Zhou",
+      "Qiang Ma",
+      "Xuanhe Zhou",
+      "Xu Han",
+      "Yudong Wang",
+      "Zhiyuan Liu"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08646v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08646v1",
+    "fetched_at": "2026-07-10T10:49:06.624151",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991662"
+  },
+  {
+    "id": "2607.08497v1",
+    "title": "Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing",
+    "abstract": "Recent unified multimodal models show a single architecture can jointly perform vision/language understanding and image generation/editing. However, they repeatedly feed all historical visual and textual inputs into a shared context window, limiting long-horizon multimodal dialogue due to visual token explosion and unreliable cross-turn referencing. We propose a Cognitive-structured Multimodal Agent that externalizes visual information into an Episodic Visual Memory and selectively reactivates relevant episodes during reasoning. The agent consists of a Perceptual Abstraction Engine for structured visual abstraction, a Cognitive Retrieval Engine for cross-turn memory retrieval, and a Multimodal Executive Controller for autonomous task inference and action planning. To address the lack of turn-level retrieval supervision in existing datasets, we develop a Unified Scenario Engine that programmatically generates structured multi-turn conversations with fine-grained retrieval annotations, enabling reinforcement learning to optimize abstraction and retrieval policies. We also construct a long-horizon visual-dialogue benchmark stratified by difficulty to evaluate episodic visual recall. Our 8B agent achieves 91.4% retrieval accuracy over 20-turn sessions, surpassing 32B baselines by +8.2% while nearly halving per-turn inference time (23.1s -> 12.7s). We further present the Cognitive-structured Multimodal Agent Harness (CMA-Harness), a tool-augmented deployment of the same cognitive structure integrating persistent multimodal memory, web access, image generation/editing/composition tools, and OpenAI-compatible serving. Structured memory and modular decision-making offer a more scalable, efficient paradigm for long-horizon multimodal agents than monolithic parameter scaling. Code: https://github.com/caseclose/cma-harness ; Project page: https://caseclose.github.io/cma-harness/",
+    "authors": [
+      "Feng Wang",
+      "Canmiao Fu",
+      "Zhipeng Huang",
+      "Chen Li",
+      "Jing Lyu",
+      "Ge Li"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08497v1",
+    "fetched_at": "2026-07-10T10:49:06.624172",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991672"
+  },
+  {
+    "id": "2607.08400v1",
+    "title": "TRACE: A Two-Channel Robust Attribution Watermark via Complementary Embeddings for LLM-Agent Trajectories",
+    "abstract": "LLM agents reach users through resellers, who may rebrand a developer's agent or substitute a cheaper model. When provenance is disputed, attribution rests on the trajectory log (the record of tool calls, observations, and executed actions, not the model's reasoning), which the reseller stores and processes to meter usage. A watermark must therefore survive an adversary with full read/write access to the very evidence it is detected from; existing agent watermarks do not, as their attribution is read straight off that log. We present TRACE, to our knowledge the first agent watermark that is distortion-free in its action choices, self-synchronizing under deletion, and unconditionally invariant under rewriting. Deletion desynchronizes a position-derived key and rewriting alters content, so a deletion-robust key must come from content and a rewrite-robust key from position, and no single key serves both. A trajectory, however, has room for two watermarks. TRACE superposes a selection channel that sets which action is chosen, keyed on local content with a distortion-free sampler, so the agent's distribution is provably unchanged and detection resynchronizes after deletions, and a tally channel that sets how many records each decision group holds, keyed on the log's skeleton alone, which no rewriting can touch. We prove this behavioral watermark's signal is bought with decision entropy, each decision paying at least half its entropy and deterministic decisions nothing, and that erasing both channels forces the reseller to corrupt the trajectories it resells. On ToolBench and ALFWorld, TRACE matches the unwatermarked agent's success rate while its selection channel reaches detection scores near z = 100 on long-horizon trajectories, stays detectable under 70% step deletion, and keeps a tally channel exactly unchanged under LLM rewriting of any strength.",
+    "authors": [
+      "Zheng Gao",
+      "Xiaoyu Li",
+      "Xiaoyan Feng",
+      "Jiaojiao Jiang",
+      "Yang Song",
+      "Yulei Sui",
+      "Zhenchang Xing",
+      "Liming Zhu"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08400v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08400v1",
+    "fetched_at": "2026-07-10T10:49:06.624209",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991681"
+  },
+  {
+    "id": "2607.08395v1",
+    "title": "Token-Flow Firewall: Semantic Runtime Auditing for Persistent AI Agents",
+    "abstract": "Persistent AI agents extend large language models (LLMs) beyond single-turn interaction into long-lived software systems. Unlike traditional chat assistants, unsafe content in these agents can propagate through persistent state, reusable skills, and tool-mediated interactions, creating a substantially larger semantic attack surface. We observe that most security-critical interactions in such agents are transmitted through natural-language token flows, including memory updates, tool arguments, retrieved files, and inter-component communications. This observation enables a new security formulation: unsafe behavior can be intercepted as risky semantic flows before reaching privileged runtime sinks. Based on this insight, we propose TokenWall, a runtime defense framework that acts as a semantic firewall over agent token flows. TokenWall performs boundary-aware semantic auditing over these flows, constructing structured source-sink audit records, applying lightweight local inspection before execution, and selectively escalating ambiguous high-risk cases to stronger arbitration modules. Unlike prior approaches that rely on sparse auditing or remote large-model oversight, TokenWall enables full-coverage pre-execution mediation while reducing remote arbitration and latency. Experiments on CIK-Bench show that TokenWall reduces attack success rate to 12.5% while maintaining a 97.4% benign executable pass rate without human confirmation. TokenWall further introduces only 0.69 seconds of additional latency on benign cases, demonstrating that semantic runtime containment can achieve a practical security-utility trade-off for persistent AI agents.",
+    "authors": [
+      "Puji Wang",
+      "Yingchen Zhang",
+      "Ruqing Zhang",
+      "Jiafeng Guo",
+      "Xueqi Cheng"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CR",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08395v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08395v1",
+    "fetched_at": "2026-07-10T10:49:06.624228",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991690"
+  },
+  {
+    "id": "2607.08391v1",
+    "title": "On Exploring Input Resolution Scaling For Anytime LiDAR Object Detection",
+    "abstract": "Making tradeoffs between execution latency and result utility (i.e., anytime computing) for adapting to dynamic operational requirements has been shown to enhance the performance of cyber-physical systems. In this work, we focus on enabling anytime computing for deep neural networks (DNNs) that process LiDAR point clouds for 3D object detection. We propose a novel method that enables multi-resolution inference for models that process point clouds as pillars or voxels, allowing the input to be dynamically scaled and processed at the resolution needed to meet timing requirements. Importantly, our memory-efficient approach requires the deployment of only a single DNN model, avoiding the need to deploy multiple models, each trained for a different input resolution. We also introduce a deadline-aware scheduler that selects the highest possible resolution for any given input by accurately predicting the execution time for all possible resolutions at runtime, which is challenging due to the irregularity of LiDAR point clouds. Experimental results on the nuScenes autonomous driving dataset demonstrate that our method significantly outperforms existing anytime computing approaches for LiDAR object detection. Finally, we deploy our approach in a simulated autonomous driving system, where it consistently enables collision-free navigation while avoiding unnecessary stalls caused by environmental complexity.",
+    "authors": [
+      "Ahmet Soyyigit",
+      "Shuochao Yao",
+      "Heechul Yun"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08391v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08391v1",
+    "fetched_at": "2026-07-10T10:49:06.624244",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991698"
+  },
+  {
+    "id": "2607.08332v1",
+    "title": "XALPHA: A Memory-Driven AI Quant Researcher for Hypothesis-to-Code Alpha Discovery",
+    "abstract": "Financial markets are noisy, non-stationary, and high-dimensional, making it difficult to discover predictive and robust trading signals. Alpha discovery has evolved from manual factor design to machine learning, evolutionary search, and recent LLM-based frameworks, improving the efficiency of factor generation, search, and evaluation. However, existing methods still mostly automate isolated steps, rather than functioning as end-to-end quant researchers that can absorb external knowledge, close the hypothesis-to-code validation loop, and learn from accumulated discovery feedback. To fill this gap, we introduce XAlpha, a memory-driven AI Quant Researcher for continuous hypothesis-to-code alpha discovery. XAlpha maintains a multi-source research memory system that integrates report-grounded financial knowledge with discovery feedback from prior generations and research cycles. Guided by this memory system, a Macro Brain plans research themes and selects suitable Archetypes; a Micro Brain transforms the planned hypothesis pool into executable factor code and verifies ex-ante tri-alignment among the hypothesis idea, code logic, and financial plausibility; and a Cross Brain consolidates empirical outcomes into generation-level feedback, cycle-level summaries, and archetype-level research cues for future exploration. In this way, XAlpha turns alpha mining from isolated factor generation into a closed-loop research process that continuously reads, hypothesizes, implements, validates, reflects, and evolves. Experiments on CSI300 show that XAlpha achieves stronger overall alpha discovery performance than representative baselines.",
+    "authors": [
+      "Fengyuan Liu",
+      "Yuchen Fu",
+      "Yuqi Wang",
+      "Qi Liu"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08332v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08332v1",
+    "fetched_at": "2026-07-10T10:49:06.624284",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991706"
+  },
+  {
+    "id": "2607.08255v1",
+    "title": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum to Improve a Coding Student Beyond Imitation",
+    "abstract": "Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
+    "authors": [
+      "Miseong Shawn Kim"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08255v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08255v1",
+    "fetched_at": "2026-07-10T10:49:06.624299",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991714"
+  },
+  {
+    "id": "2607.08241v1",
+    "title": "Closing the Null Space: Guidance-Aware Quantization for Classifier-Free Diffusion",
+    "abstract": "Deploying classifier-free guidance (CFG) diffusion models under real-world compute budgets requires quantization, yet existing post-training quantization (PTQ) methods treat CFG models as single-branch networks, ignoring the paired conditional/unconditional structure that CFG inference fundamentally relies on. This structural blind spot has two consequences. At the system level, the two-pass CFG execution pattern imposes a latency overhead that parameter-count and bit-operation metrics conceal entirely, and commodity INT8 inference stacks fail to realize the theoretical efficiency gains that BOPs calculations promise. At the algorithmic level, calibrating against the guidance gap alone admits an exact null space: a quantized model can achieve perfect gap-fidelity diagnostics while the unconditional branch drifts arbitrarily, corrupting every guided prediction at inference time. This paper terms this the branch-drift trap, proves its existence analytically, and confirms it empirically through a false-positive result in which the best-calibrated model by standard diagnostics simultaneously produces the worst sample quality. To close the trap, Guidance-Aware Mixed Precision (GAMP) is proposed, which calibrates directly on the guided prediction, derives per-layer activation-bit sensitivity from guided-output degradation, and allocates bits via a greedy knapsack -- provably preventing unconditional branch drift by construction.",
+    "authors": [
+      "Abdullah Al Shafi",
+      "Sumaiya Rahim Suma"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08241v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08241v1",
+    "fetched_at": "2026-07-10T10:49:06.624314",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991722"
+  },
+  {
+    "id": "2607.08161v1",
+    "title": "SQuaD-SQL: Efficient Text-to-SQL with Small Language Models via LLM-Guided Knowledge Distillation",
+    "abstract": "Text-to-SQL is a fundamental task in natural language processing that enables users to interact with structured databases using natural language. While large language models (LLMs) have demonstrated remarkable performance on this task, their substantial computational requirements hinder deployment in resource-constrained settings. In this paper, we introduce SQuaD-SQL (Small-Qualified and Distilled for SQL), a novel approach that empowers small language models (SLMs) to approach the performance of LLMs on the Text-to-SQL task while significantly improving efficiency through knowledge distillation and synthetic data generation. Our method comprises three key components: (1) LLM-based synthetic data generation, where structured knowledge is extracted from LLMs via carefully designed prompting strategies; (2) parameter-efficient fine-tuning, enabling full model training on a single consumer-grade GPU; and (3) domain-adaptive fine-tuning, where domain-specific synthetic data further enhances performance in targeted domains. Experiments on the WikiSQL dataset demonstrate that SQuaD-SQL achieves an execution accuracy of 86.9% on the test set, approaching the performance of LLMs while offering faster inference and lower memory usage. These results suggest that, with proper training strategies, SLMs can serve as practical and efficient alternatives for Text-to-SQL applications in resource-limited environments.",
+    "authors": [
+      "Wangyu Wu",
+      "Xiaojian Lin",
+      "Rong Fu",
+      "Zaiyang Yu",
+      "Xuhang Chen",
+      "Wenjun Yu",
+      "Zhenhong Chen"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08161v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08161v1",
+    "fetched_at": "2026-07-10T10:49:06.624336",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991730"
+  },
+  {
+    "id": "2607.08124v1",
+    "title": "TTHE: Test-Time Harness Evolution",
+    "abstract": "The behavior of an LLM agent is determined not only by the underlying model, but also by its harness: the executable program that constructs context, invokes tools, verifies intermediate results, and recovers from failures. Existing approaches optimize such harnesses before deployment, searching training or development data for a fixed agent workflow that is then frozen at test time. This limits adaptation when the test distribution, failure modes, or tool interactions differ from those seen during development. We ask whether the harness can instead be optimized during evaluation itself, using only the unlabeled execution traces the agent produces on the test inputs. We introduce Test-Time Harness Evolution (TTHE), which treats the executable harness as the state of test-time adaptation. During evaluation, TTHE maintains a population of candidate harnesses and refines them through an agentic proposer that reasons over their execution traces, without gold labels or task-specific supervision; a judge then commits an improved harness from execution-derived proxy signals, and the selected program persists to govern subsequent inputs. Crucially, TTHE does not update model weights, require gold labels, or train a separate adaptation model: solver, proposers, and judge are different roles and harnesses around the same frozen LLM, so all adaptation occurs through changes to the surrounding program. Across text-to-SQL, competitive programming, software engineering, data-science coding, and agentic tool-use tasks, TTHE improves fixed ReAct-style baseline harnesses, yielding persistent, inspectable improvements rather than a pre-searched workflow or per-query retries. These results recast test-time adaptation for LLM agents as evolution over executable control programs and identify execution-derived proxy reliability as a central challenge for robust unsupervised agent improvement.",
+    "authors": [
+      "Jun Nie",
+      "Yonggang Zhang",
+      "Jun Song",
+      "Qianshu Cai",
+      "Dahai Yu",
+      "Yike Guo",
+      "Xinmei Tian",
+      "Bo Han"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08124v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08124v1",
+    "fetched_at": "2026-07-10T10:49:06.624359",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991738"
+  },
+  {
+    "id": "2607.08057v1",
+    "title": "Towards Efficient Large Language Model Serving: A Survey on System-Aware KV Cache Optimization",
+    "abstract": "Despite the rapid advancements of large language models (LLMs), LLM serving systems remain memory-intensive and costly. The key-value (KV) cache, which stores KV tensors during autoregressive decoding, is crucial for enabling low-latency, high-throughput LLM inference serving. In this survey, we focus on system-aware KV infrastructure for serving LLMs (abbreviated as sKis). We revisit recent work from a system behavior perspective, organizing existing efforts into three dimensions: execution and scheduling (temporal), placement and migration (spatial), and representation and retention (structural). Furthermore, we analyze cross-behavior co-design affinity and behavior-objective links, highlighting future opportunities. Our work systematizes a rapidly evolving area, providing a foundation for understanding and innovating KV cache designs in modern LLM serving infrastructure.",
+    "authors": [
+      "Jiantong Jiang",
+      "Peiyu Yang",
+      "Rui Zhang",
+      "Feng Liu"
+    ],
+    "published": "2026-07-09",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.08057v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.08057v1",
+    "fetched_at": "2026-07-10T10:49:06.624377",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-10T10:51:18.991746"
+  }
+]
