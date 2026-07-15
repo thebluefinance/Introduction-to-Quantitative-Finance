@@ -1,0 +1,768 @@
+[
+  {
+    "id": "2607.12990v1",
+    "title": "A Noise-Aware Quantum Algorithm for Credit Valuation Adjustments on Real Quantum Hardware",
+    "abstract": "Credit Valuation Adjustment (CVA) requires repeated risk-neutral expectation estimation, making it a natural test bed for quantum amplitude estimation, whose coherent amplification can in principle reduce Monte Carlo sampling cost. Whether this advantage survives realistic financial encoding and noisy hardware remains open. We develop an end-to-end, noise-aware quantum workflow for CVA, covering market calibration, discretisation, oracle construction, hardware execution and error-budget analysis. The model combines a correlated two-asset exposure with discount and default factors, encoded through a QCBM-based joint time-market distribution and controlled payoff rotations. We introduce contrast-aware Bayesian iterative quantum amplitude estimation (CABIQAE), which incorporates experimentally calibrated Grover-contrast loss into Bayesian inference and circuit-depth selection. Hardware-calibrated experiments show that CABIQAE exploits the limited amplification available on current devices more effectively than noise-agnostic alternatives and achieves a much lower classical post-processing runtime than the noise-aware BAE baseline. The analysis further decomposes the total CVA error into statistical, encoding, discretisation and hardware contributions. The full CVA oracle remains limited by circuit depth and discretisation resolution.",
+    "authors": [
+      "Guillem Borràs Espert",
+      "Francisco Gómez Casanova",
+      "Luis de Pedro Sánchez",
+      "Senaida Hernández Santana",
+      "Pablo Serrano Molinero"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "quant-ph",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12990v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12990v1",
+    "fetched_at": "2026-07-15T09:57:12.595003",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.484950"
+  },
+  {
+    "id": "2607.12479v1",
+    "title": "Ito-Wentzell Formula and Dupire Stochastic PDE",
+    "abstract": "Starting from the classic result of Wentzell, we derive a conditional forward equation and an associated stochastic Dupire PDE for a local-stochastic-volatility model (LSV). As an application, we obtain a density-weighted Rao--Blackwell estimator for the leverage function in LSV. We also derive an SPDE for a rolling expiry vanilla option, in the spirit of the Musiela parametrization in interest rate modeling.",
+    "authors": [
+      "Vladimir Lucic"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "q-fin.MF",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12479v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12479v1",
+    "fetched_at": "2026-07-15T09:57:12.595034",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.484974"
+  },
+  {
+    "id": "2607.12407v1",
+    "title": "Statistical Properties and Power Analysis of Divergence Measures for Credit Risk Model Monitoring",
+    "abstract": "Divergence measures are essential tools for detecting distributional shifts in model monitoring, particularly crucial given the volatility of financial data. While the Population Stability Index is the most widely used measure, Jensen-Shannon Divergence and Kullback-Leibler Divergence offer distinct advantages. Jensen-Shannon Divergence handles mixture models, addresses zero-binning problems, and is symmetric, while Kullback-Leibler Divergence excels in Bayesian model comparison.   This study extends the work of Yurdakul and Naranjo (2020) with two primary contributions. First, we derive the statistical properties and chi-square benchmark values for Jensen-Shannon Divergence and Kullback-Leibler Divergence. Second, we demonstrate their applicability by detecting distributional changes in credit default probabilities from Merton, Merton with jump, and stochastic volatility with jump models.   Our results establish that Jensen-Shannon Divergence and Kullback-Leibler Divergence follow chi-square distributions and reveal important practical trade-offs. Jensen-Shannon Divergence exhibits superior Type I error control, maintaining rejection rates closest to 5%, thereby minimizing false positives. However, this conservatism reduces statistical power at small samples (27% versus 32% for Population Stability Index and Kullback-Leibler Divergence at n = m = 200), requiring larger samples for reliable detection. This trade-off enables practitioners to select measures based on whether minimizing false alarms or maximizing detection sensitivity is the priority.",
+    "authors": [
+      "Abdullah Karasan",
+      "Alper Hekimoğlu"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "q-fin.ST",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12407v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12407v1",
+    "fetched_at": "2026-07-15T09:57:12.595056",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.484991"
+  },
+  {
+    "id": "2607.12248v1",
+    "title": "When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting",
+    "abstract": "Large pretrained time-series models such as TimesFM are attractive for financial forecasting, but raw directional accuracy is a misleading scoreboard in equity markets. An early LoRA adapter in this project appeared to reach roughly 80% directional accuracy; we show this is not evidence of skill. Over a long horizon in a rising market, a trivial \"always-up\" rule attains comparably high accuracy without using the input at all. To separate genuine skill from this base-rate artifact, we build a reproducible, frozen-data benchmark with expanding walk-forward folds, a stratified held-out-ticker split, honest baselines (zero-shot TimesFM, always-up, random-walk, persistence, AR(1)), and paired significance tests (McNemar, Diebold-Mariano) under Benjamini-Hochberg FDR control. We apply the identical method to two universes -- a tech-heavy NASDAQ-100 and a broad S&P 500 -- reporting excess accuracy over the always-up base rate. Three findings replicate. First, when the historical ~80% condition is recreated, the high number is a base rate of ~0.70 that the fine-tuned model scores below. Second, pooled LoRA shows no directional skill over the base rate at any horizon on either universe (negative at the six-month horizon). Third, per-sector specialization is significantly worse than a single pooled adapter (Diebold-Mariano p<0.001 on held-out stocks at h=128). Fine-tuning's only measurable benefit is a statistically significant reduction in point-forecast error relative to zero-shot TimesFM, which nonetheless does not beat naive baselines and confers no tradeable directional edge. The contribution is methodological: a defensible, fully seeded protocol that prevents the base-rate trap, together with the replicated negative result it produces.",
+    "authors": [
+      "Taizhen Cheung",
+      "SA Kwon"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "q-fin.ST",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12248v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12248v1",
+    "fetched_at": "2026-07-15T09:57:12.595074",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485005"
+  },
+  {
+    "id": "2607.12205v1",
+    "title": "A Unified Credit Expansion Theory on Housing Cycle: Causal Evidence for Within- and Cross-Metro Patterns in the Prior, Boom, Bust, and Recovery Periods",
+    "abstract": "During the 1999-2019 U.S. housing cycle, three empirical facts present a puzzle: in the boom period, the correlation between income growth and mortgage growth is (1) negative across ZIP codes within a metropolitan area, but (2) positive across metropolitan areas, and (3) the metropolitan areas that experience the worst bust also show the strongest recovery. I develop a unified credit expansion theory that explains both within- and cross-metro patterns in the prior, boom, bust, and recovery periods (including the three facts above) and generates new testable implications of ``double differences\" (cross ZIP codes and cross metros) for the four periods. Following the idea of ``Economic Base Theory\", I construct local economic exposure to net export growth as the driving force of local economy and credit expansion. For the identification strategy, I use a new instrumental variable approach from the International trade literature for the following empirical results. First, I show that high-net-export-growth metros experience a stronger boom-bust-recovery housing cycle due to credit expansion in private-label mortgages (PLMs), rather than in government-sponsored enterprise mortgages (GSEMs), because only the former can legally respond to local economic conditions. Second, for the ``double differences\", I define a low-minus-high (LMH) factor as the private-label mortgage (and house price) growth in low-income ZIP codes minus that in high-income ZIP codes within the same metropolitan area. I show that this low-minus-high factor (as a measure of credit expansion) in the high-net-export-growth metros is more positive during the boom period, more negative during the bust period, and slightly more positive in the recovery period than in the low-net-export-growth metros. Lastly, I employ five tests to demonstrate that ``speculation\" is unlikely to play a dominant role in this housing cycle.",
+    "authors": [
+      "Bo Li"
+    ],
+    "published": "2026-07-13",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12205v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12205v1",
+    "fetched_at": "2026-07-15T09:57:12.595089",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485022"
+  },
+  {
+    "id": "2607.12156v1",
+    "title": "(Early) AI Compute Asset Pricing",
+    "abstract": "Compute (computing power) is a scarce, capital-intensive input at the center of the AI economy. Compute capital expenditure and service flow already exceed 1% of U.S. GDP and are growing rapidly. The price of compute reflects uncertainty over AI adoption. The announced launch of compute futures turns this uncertainty into a tradable risk, raising questions on the pricing of a new asset class. We provide an early asset-pricing framework for compute. We begin by discussing the underlying compute rental market and its indexation. We then turn to pricing: 1) direct no-arbitrage links between futures prices and current spot prices fail due to the non-storable nature of compute, 2) synthetic futures prices from existing term rental contracts are likely upper bounds on true futures prices and, 3) upon financialization, futures prices will be investors' expectations of spot prices at expiration net of a risk premium. Using synthetic futures as stand-ins before the compute futures market launches, we construct the first compute futures return panel sorted by GPU generation and maturity. Our preliminary evidence is consistent with a positive compute risk premium, suggesting hedging pressure on the part of compute providers.",
+    "authors": [
+      "Federico M. Bandi",
+      "Yinan Su"
+    ],
+    "published": "2026-07-13",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12156v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12156v1",
+    "fetched_at": "2026-07-15T09:57:12.595106",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Reinforcement Learning",
+      "Asset Pricing"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485035"
+  },
+  {
+    "id": "2607.12208v1",
+    "title": "The Benjamini--Hochberg Procedure Can Fail to Control the FDR for Correlated Two-Sided Gaussian Tests",
+    "abstract": "We show that the Benjamini--Hochberg procedure can fail to control the false discovery rate (FDR) at its nominal level for correlated two-sided Gaussian $p$-values. We construct a factor model for which, at level $α=0.01$, a rigorous interval-arithmetic certificate proves $FDR>0.0104$ for all sufficiently large numbers of hypotheses. This disproves a conjecture widely believed to be true for twenty years. Monte Carlo experiments are consistent with the theoretical result. The proof was obtained by GPT-5.6 Pro and carefully checked by the author.",
+    "authors": [
+      "Edgar Dobriban"
+    ],
+    "published": "2026-07-13",
+    "categories": [
+      "math.ST",
+      "cs.AI",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12208v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12208v1",
+    "fetched_at": "2026-07-15T09:57:19.468898",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485051"
+  },
+  {
+    "id": "2607.12747v1",
+    "title": "Tracing Agentic Failure from the Flow of Success",
+    "abstract": "Failure attribution for LLM-based agentic systems, i.e., identifying which steps in a failure trajectory caused the task to fail, is critical for debugging and improving these systems. Existing approaches either rely on prompting-based pipelines, which are computationally expensive, or require post-training on failure trajectories with step-level error annotations, which are costly to collect and difficult to scale. We argue that a practical failure attribution model should be lightweight and trainable without step-level supervision on failure data. To this end, we address unsupervised failure attribution, i.e., training exclusively on successful trajectories and identifying error steps at inference time given a failure trajectory. We propose OAT, which casts this problem as one-class learning with neural controlled differential equations, modeling the dynamical pattern of successful trajectories in latent space. At inference time, each step in a failure trajectory is assigned an anomaly score based on its deviation from the dynamics learned on successful trajectories, which is then used to form a set of error steps. With training on only 100 successful trajectories, experiments show that OAT is 200--5000 $\\times$ faster than prompting-based baselines, and, at the same time, consistently outperforms them in both in-domain and out-of-distribution datasets with +20% and +7% F1 scores, respectively, demonstrating that OAT is a promising and efficient direction for diagnosing agentic system failures.",
+    "authors": [
+      "Samuel Yeh",
+      "Yiwen Zhu",
+      "Shaleen Deep",
+      "Sharon Li"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12747v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12747v1",
+    "fetched_at": "2026-07-15T09:57:26.363095",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485073"
+  },
+  {
+    "id": "2607.12726v1",
+    "title": "Physically Consistent Parameter Inference: Transparent Machine Learning Emulation in High Energy Physics and Cosmology",
+    "abstract": "Global fits in high energy physics and cosmology often face the challenge of exploring high-dimensional parameter spaces with computationally expensive or topologically complex likelihood functions. In this work, we present a Machine Learning framework designed to emulate complex, often non-Gaussian likelihood landscapes using gradient-boosted regression trees (XGBoost). We discuss the advantages of the Machine Learning approach in terms of computational efficiency and the resolution of confidence regions, particularly in scenarios with complex correlations or \"curved\" degeneracies. We validate this methodology by applying it to a recent analysis on flavour anomalies in semileptonic $B$ meson decays and discussing the adaptability of this framework to other phenomenological systems, such as axion-like particles or cosmology global fits. Finally, we utilise SHAP (Shapley Additive exPlanations) values to provide a transparent analysis of feature importance, ensuring that the Machine Learning predictions remain physically interpretable and consistent with the underlying physics.",
+    "authors": [
+      "Jorge Alda",
+      "Jacobo Asorey",
+      "Alejandro Mir",
+      "Siannah Peñaranda"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "hep-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12726v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12726v1",
+    "fetched_at": "2026-07-15T09:57:26.363126",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485085"
+  },
+  {
+    "id": "2607.12599v1",
+    "title": "Lightweight Multi-Scale Anomaly Detection for Resource-Constrained Edge Devices",
+    "abstract": "Time-series anomaly detection is increasingly important in IoT systems, sensor networks, and edge monitoring applications, where models must operate under strict constraints on memory, latency, and power consumption. While recent deep-learning approaches have improved detection accuracy, many remain computationally expensive and often fail to capture subtle anomalies due to limited multi-scale sensitivity. Autoencoders are widely used for anomaly detection because they reconstruct normal patterns well, leading to elevated reconstruction errors for anomalous inputs. Their simplicity and efficiency also make them suitable lightweight backbones for handling multi-scale inputs. To address these challenges, we propose a Lightweight MultiScale AutoEncoder (LMSAE) network for univariate time-series anomaly detection, designed to be compact and computationally efficient. LMSAE leverages the Discrete Wavelet Transform (DWT) to extract multi-scale features and employs a multi-scale loss function to improve sensitivity to subtle or hidden anomalies. Experiments on benchmark datasets demonstrate competitive or superior detection performance despite using significantly fewer parameters and a model size of less than 500 KB. LMSAE also achieves low-latency, low-power inference on the NVIDIA Jetson Nano, with 9x reduction in inference latency and 2x reduction in power consumption, making it ideal for edge deployment.",
+    "authors": [
+      "Raheen Junaid Wani",
+      "Smruti R. Sarangi"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12599v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12599v1",
+    "fetched_at": "2026-07-15T09:57:26.363143",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485097"
+  },
+  {
+    "id": "2607.12523v1",
+    "title": "OOD-RL-Bench: A Benchmark Framework for Out-of-Distribution Detection in Reinforcement Learning",
+    "abstract": "Reliable reinforcement learning (RL) agents must maintain operational integrity amidst sensor malfunctions, dynamic disturbances, and slow environmental shifts. The detection of out-of-distribution conditions is pivotal to determining when an agent's observations, transitions, or trajectory dynamics deviate from the assumptions underpinning its policy training. Current out-of-distribution (OOD) detection benchmarks typically evaluate image classifiers or static low-dimensional datasets, failing to account for the complex, action-dependent temporal structure inherent in RL trajectories. To address this gap, we present OOD-RL-Bench, a comprehensive and extensible framework designed to evaluate OOD detectors against categories of anomalies injected into RL trajectories. Detectors and anomaly injectors are integrated through shared interfaces and configuration, which allows new scoring methods and perturbation families to be evaluated without modification of the core benchmark loop. We evaluate the utility of the framework using a Deep Q-Network policy within the LunarLander-v3 environment. We assess the performance of each detector across a suite of anomaly types using matched-time AUROC, matched-time AUPRC, matched-time false-positive rate, detection delay, and segmented-onset metrics. Our analysis reveals significant performance variance across anomaly types: observation perturbations and regime switches are identified with high accuracy by several methods, while observation delay and action-conditioned dynamics remain difficult even when post-onset anomaly scores are compared against clean scores from the same timesteps. We make the framework, trained policy checkpoint, and complete results publicly available as a reproducible artefact.",
+    "authors": [
+      "Emil Mittag",
+      "Richard Dazeley",
+      "Peter Vamplew"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12523v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12523v1",
+    "fetched_at": "2026-07-15T09:57:26.363160",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485109"
+  },
+  {
+    "id": "2607.12454v1",
+    "title": "Exploring Zero-Shot Foundation Models for Multivariate Time Series Anomaly Detection",
+    "abstract": "Multivariate Time Series Anomaly Detection (MTSAD) is essential for reliability and safety in domains such as industrial process monitoring and financial risk management, yet conventional approaches rely on application-specific models that are costly to train and hard to scale. Foundation Models (FMs), pre-trained on broad data with strong zero-shot generalization, have recently become available for univariate time series forecasting, raising the question of whether they can address MTSAD without task-specific training. We investigate the zero-shot application of a univariate forecasting FM, TimesFM, to industrial MTSAD on the Secure Water Treatment (SWaT) benchmark, evaluating two strategies: treating the FM as a per-feature forecaster with thresholded prediction errors, and as an embedder whose intermediate representations feed standard outlier detectors. Neither of our proposed setups is competitive with established baselines; embeddings reveal only partial separation between normal and anomalous segments, insufficient for reliable detection. The cause is that the FM is too effective at capturing temporal dynamics, yielding low error even within fully anomalous windows, so persistent anomalies become indistinguishable from normal behavior. However, these observations yield valuable insights: the error peaks at anomaly boundaries, indicating FMs reliably detect distribution changes. We conclude that the proposed naive zero-shot FMs are unsuitable for MTSAD but promising for change-point detection.",
+    "authors": [
+      "Martin Uray",
+      "Saverio Messineo",
+      "Roland Kwitt",
+      "Stefan Huber"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12454v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12454v1",
+    "fetched_at": "2026-07-15T09:57:26.363179",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485121"
+  },
+  {
+    "id": "2607.11969v1",
+    "title": "Did We Actually Fix It? An Independent Adversarial Stress-Test of Post-Point-Adjustment Evaluation Metrics for Time-Series Anomaly Detection",
+    "abstract": "Point-adjustment (PA), long the default scoring protocol in time-series anomaly detection (TSAD), was shown by Kim et al. (2022) to award near-perfect F1 to random scores. The field migrated to replacement metrics: PA%K, range-based precision/recall, affiliation precision/recall, and Volume-Under-the-Surface (VUS) ROC/PR. But did the fix work? Every robustness check to date is proposer-run or theoretical; no independent, adversarial, SOTA-relative audit on real benchmarks exists. We provide one. We stress-test 12 adopted metrics against trivial and adversarial no-skill score generators on the 250-series UCR Anomaly Archive (primary) plus five further benchmarks (SMD, SMAP, MSL, NAB, PSM), under a pre-registered SOTA-relative gameability criterion (a metric is gamed on a series if a no-skill generator reaches >=90% of the best real detector's score). The fix is only partial: affiliation-F1 (gamed on 99% of series) and every ROC-based metric tested (all roughly 62-64%) are gamed by no-skill detectors, genuinely so (real detectors score 0.97-1.00 on the very series they game), while the PR-based metrics and PA%K resist (14-18%). A decisive, one-directional McNemar split: VUS-ROC is gamed on 119 series where its sibling VUS-PR is not, and the reverse on none. The ROC-over-PR direction replicates across all five further benchmarks and never reverses, but the absolute gameability rate is benchmark-dependent and no single metric stays safe on all six (even VUS-PR is gamed on NAB). We release a pip-installable stress-test harness with all metric implementations vendored at frozen commits, plus a metric-selection decision protocol: prefer a PR-based metric or PA%K, treat affiliation-F1 and the ROC-AUC variants as gameable, and verify per benchmark rather than assuming robustness.",
+    "authors": [
+      "Zongye Lyu"
+    ],
+    "published": "2026-07-12",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.11969v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.11969v1",
+    "fetched_at": "2026-07-15T09:57:26.363215",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485133"
+  },
+  {
+    "id": "2607.13034v1",
+    "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+    "abstract": "Large language model (LLM) agents increasingly automate multi-step engineering and informatics workflows, yet they rarely ask how much effort a task actually requires. They often follow a maximum-context-first strategy--re-reading files and dependencies they have already seen--turning a one-line edit into a small code-base audit. We argue the missing capability is task-aware execution-scope estimation: judging a task's difficulty, the information it truly needs, and the shortest reliable path before committing budget. We formalize minimum-sufficient execution and the Agent Cognitive Redundancy Ratio (ACRR), and propose E3 (Estimate, Execute, Expand): the agent estimates an initial operating point, executes a minimum viable path, and expands scope only when verification fails. On MSE-Bench--a deterministic benchmark of 121 edits in a capability-controlled simulator--E3 matches the strongest baseline's 100% success while cutting cost by 85%, tokens by 91%, and inspected files by 92%, and further beats a strong adaptive retrieval baseline by 16%; the gains survive held-out instruction wording and essentially every cost weighting. A companion real-model harness (LLM-Case) corroborates the effect on a live gpt-4o agent editing a real open-source library, with every candidate patch graded by actually running the project's real pytest suite against a measured oracle: the over-reading is milder but real, and E3 is the leanest and fastest policy at comparable task success--its one shortfall a provider rate-limit, not a wrong edit. We frame this as a controlled probe of execution redundancy, not a measurement of any deployed agent, and position task-aware execution as a step toward engineering-grounded AI (EGAI)--agents whose effort is anchored in the engineering reality of the task. We release the framework and benchmark.",
+    "authors": [
+      "Junjie Yin",
+      "Xinyu Feng"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.SE",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13034v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13034v1",
+    "fetched_at": "2026-07-15T09:57:56.997907",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485145"
+  },
+  {
+    "id": "2607.13027v1",
+    "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
+    "abstract": "Large Language Model (LLM) agents have moved beyond generating responses to executing multi-step tasks by calling tools, observing the results, and iteratively deciding the next action. Most agent systems run on desktops or servers, which support tool use and task automation. Mobile devices are also important agent environments because they are widely accessible and contain users' data, sensors, and daily-use applications. Existing mobile agents mainly operate smartphones through graphical user interface (GUI) actions such as tapping, swiping, and typing, which often form long, interface-dependent sequences, cannot directly access device capabilities, and make execution boundaries difficult to define. We present \\textbf{PalmClaw}, an open-source agent framework that runs natively on mobile phones and manages the sessions, memory, skills, tools, and agent loop directly on the device. PalmClaw exposes device capabilities as device tools with explicit arguments, structured results, and clearly defined execution boundaries. This design enables agents to use mobile capabilities directly while keeping each action explicit and controlled. Experiments show an 11.5\\% relative improvement in task success and a 94.9\\% reduction in completion time over the strongest baseline, with lower setup burden and traces illustrating how execution boundaries are applied. Code is available at https://github.com/ModalityDance/PalmClaw.",
+    "authors": [
+      "Hongru Cai",
+      "Yongqi Li",
+      "Ran Wei",
+      "Wenjie Li"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13027v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13027v1",
+    "fetched_at": "2026-07-15T09:57:56.997940",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485155"
+  },
+  {
+    "id": "2607.12962v1",
+    "title": "Form, Not Content? A Preregistered, Placebo-Controlled Evaluation of Learned Error-Conditioned Self-Repair Through Prompts and Weights in Frozen Small Code Models",
+    "abstract": "Frozen small code LLMs are deployed locally, yet the information guiding a retry after a failed attempt is still measured without placebo controls in the self-repair literature. We treat a failed program as a conjecture and an execution counterexample as an oracle-relative refutation, and introduce PoPE (Popperian Placebo-controlled Evaluation): a methodology for measuring whether evidence that falsifies LLM-generated code can be used operationally by that same model. In PoPE, error content is paired with channel-specific placebos that keep the predeclared scaffold while ablating task-relevant content or deranging the task-error assignment. Frozen small code models (0.5-1.5B) are evaluated under preregistered rules through a prompt channel and a weight channel (small-data adapter training), with four generations per arm-unit pair. In the prompt channel, public-tier screening unlocked 12 units under the content-ablated form placebo versus 10 under the live error-pattern arm on a 40-unit resistant band; the result was recorded as mechanism-null. In the weight channel, an 8-8 tie was observed between the error-content adapter and the intervention-free baseline (p=1.0), while the SHA-deranged placebo adapter stayed ahead with 10 unlocks; content-attributable superiority was not confirmed. These results do not constitute evidence of equivalence or non-inferiority. Equivalence was not tested separately. Findings are restricted to the public-tier screening endpoint; hidden-tier confirmation was deferred by design. We read this not as compiled criticism disappearing as information, but as the loss of its external role in testing a new conjecture: when a representation learned from the oracle is written back into the generation state, testing is replaced by conditioning. No working JEPA-RL controller is claimed. PoPE is presented as a placebo-controlled, retestable measurement standard.",
+    "authors": [
+      "Mehmet Iscan"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12962v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12962v1",
+    "fetched_at": "2026-07-15T09:57:56.997956",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485169"
+  },
+  {
+    "id": "2607.12723v1",
+    "title": "Bulkhead: Automated Semantic Detection and Remediation of Container Escape Vulnerabilities",
+    "abstract": "Filesystem isolation in container ecosystems is often weakened by cross-boundary path misresolution, causing path traversal (PaTra) vulnerabilities. These vulnerabilities stem from insecure host-container interactions and have become increasingly pervasive as cloud systems mount shared resources, such as GPUs and agent workspaces, into containers to support AI workloads. Existing defenses remain inadequate. Kernel-level protections are intrusive, can destabilize system calls, and have therefore not been accepted into the Linux mainline. Detection methods rely on static rule matching or manual code auditing. Static rules can flag path-related functions but fail to capture the semantics needed to determine whether a host-container interaction exists, causing many false positives. Manual review requires domain expertise, making it costly, inefficient, and difficult to scale.   To address this threat, we present Bulkhead, an automated framework that integrates large language models (LLMs) with formal methods for semantic vulnerability discovery and remediation. Bulkhead uses a multi-agent system to identify and repair PaTra vulnerabilities through multi-dimensional knowledge patterns generalized from known cases. It first applies high-risk functional patterns to locate entry points for cross-boundary interactions in containerized code, then uses call-chain patterns to recover the corresponding execution paths at suitable depth. The Detection pipeline analyzes these call chains against the application scenarios and threat model, identifying vulnerabilities such as missing security checks and TOCTOU flaws in cross-boundary interactions, and generating proof-of-concept (PoC) exploits for validation. These PoCs then guide patch generation. To ensure remediation correctness, the Patch pipeline performs assertion-driven verification using predefined model-checking templates.",
+    "authors": [
+      "Qiyuan Fan",
+      "Zhi Li",
+      "Junjie Li",
+      "XiaoFeng Wang",
+      "Bin Yuan",
+      "Deqing Zou"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12723v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12723v1",
+    "fetched_at": "2026-07-15T09:57:56.997981",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485180"
+  },
+  {
+    "id": "2607.12662v1",
+    "title": "Internet of Agentic Things: Networked AI Agents for Closed-Loop IoT Orchestration",
+    "abstract": "The paper introduces the Internet of Agentic Things (IoAT), an architectural framework that integrates agentic AI, IoT, cyber-physical systems, Physical AI, edge computing, and digital twins into a unified closed-loop orchestration framework. The proposed architecture consists of cloud, edge/fog, and physical IoT layers connected through autonomous AI agents that perceive, reason, coordinate, and actuate across distributed cyber-physical environments. The paper formalizes IoAT as a coupled workflow-control problem with nested strategic and tactical decision making using a hylomorphic dynamic programming framework that links agentic planning with physical execution. Smart-building orchestration is presented as a representative use case, and key research challenges related to safety, security, governance, resilience, and trustworthy deployment are discussed.",
+    "authors": [
+      "Quanyan Zhu"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI",
+      "cs.MA",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12662v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12662v1",
+    "fetched_at": "2026-07-15T09:57:56.997996",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485190"
+  },
+  {
+    "id": "2607.12659v1",
+    "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+    "abstract": "Vision-Language-Action (VLA) models have achieved impressive performance on diverse embodied tasks. However, deploying VLA models on low-power onboard devices, such as the Jetson Orin, remains challenging due to their high computational complexity, which leads to substantial inference latency and low control frequency. Asynchronous inference can partially mask this latency by parallelizing action execution and subsequent inference, but it introduces two critical issues: perception-execution misalignment and long reaction time. In this paper, we propose Jetson-PI, a method for efficient VLA deployment on onboard devices via Foresight-Aligned Asynchronous Correction. To address misalignment, we train a lightweight future correction module that predicts future environment representation conditioned on committed actions, enabling the action expert to directly predict actions from the future time step. To reduce reaction time, we introduce confidence-based scheduling optimization that adaptively balances VLM and action expert invocations, complemented by system-level accelerations including CUDA graph reuse, GPU-resident intermediate buffering, and flow unrolling. Extensive experiments demonstrate that Jetson-PI achieves 8.66x and 5.41x improvements in control frequency compared with naive PyTorch and vla.cpp on NVIDIA Jetson Orin, while outperforming VLASH by 14.8\\% in average success rate on the LIBERO benchmark. The code of our asynchronous algorithm is available on https://github.com/PKU-SEC-Lab/Jetson-PI, and our efficient llama.cpp-based inference engine is available on https://github.com/PKU-SEC-Lab/Jetson-PI-Edge.",
+    "authors": [
+      "Zebin Yang",
+      "Qi Wang",
+      "Yunhe Wang",
+      "Xiurui Guo",
+      "Bo Yu",
+      "Shaoshan Liu",
+      "Jiafeng Xu",
+      "Hao Dong",
+      "Meng Li"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12659v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12659v1",
+    "fetched_at": "2026-07-15T09:57:56.998023",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485202"
+  },
+  {
+    "id": "2607.12625v1",
+    "title": "KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill",
+    "abstract": "OpenClaw has emerged as a leading agent framework for complex task automation, yet it faces insufficient cross-platform GUI interaction support and a well-built self-evolution mechanism. These flaws limit its adaptation to diverse device ecosystems and prevent performance improvements through continuous learning from execution experience. To resolve these issues, we propose the Know Deeply, Act Perfectly paradigm for personal assistants, which holds that accumulated user interaction and task-running experience directly improve execution accuracy and efficiency, unifying cognitive comprehension and operational execution. Based on this paradigm, we introduce KnowAct-GUIClaw, a novel Know-Route-Act-Reflect framework designed to address OpenClaw's GUI manipulation deficits and break through its cross-platform and recursive self-improvement constraints. First, the host agent leverages accumulated interaction experience and task-relevant knowledge for long-horizon task decomposition and allocation (Know). Second, a pluggable GUI subagent with an experience-attributable memory system (Know) and self-evolving skill library (Act), enabling seamless cross-platform migration and fast-path integration. Especially, this framework continuously stores user profiles and feedback to improve the accuracy of task decomposition and tool calls. Extensive experiments across Android, iOS, HarmonyOS and Windows show that KnowAct-GUIClaw achieves superior efficiency, accuracy and cross-platform adaptability. Especially, the GUIClaw with open-source Kimi-2.6 models achieves the best performance (64.1%) on the long-horizon MobileWorld benchmark, beating all agentical frameworks and closed-source agentical models, e.g., Seed-2.0-Pro and GPT-5.5. Additionally, the knowledgeable memory and execution skills supported by our framework are transferable across diverse base models, improving by 8.5% with Kimi-2.6.",
+    "authors": [
+      "Yunxin Li",
+      "Jinchao Li",
+      "Shibo Su",
+      "Zhenran Xu",
+      "Chenrui Zhao",
+      "Tongshu Bian",
+      "Xiaoman Liang",
+      "Meishan Zhang",
+      "Baotian Hu",
+      "Min Zhang"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12625v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12625v1",
+    "fetched_at": "2026-07-15T09:57:56.998052",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485213"
+  },
+  {
+    "id": "2607.12605v1",
+    "title": "Multi-Perspective Agentic Program Repair via Code Property Graphs and Temporal Execution Graphs",
+    "abstract": "Large language models (LLMs) have improved automated program repair (APR), but two limitations remain. First, raw execution traces are often too large and repetitive to serve as effective model context. Second, repeated patch sampling may produce different implementations without yielding distinct root-cause hypotheses or repair strategies. We present CT-Repair, an agentic APR framework representing static and dynamic evidence as queryable Code Property Graph (CPG) and Temporal Execution Graph (TEG). CT-Repair applies a three-stage filtering pipeline to construct compact TEGs. Three finite-state-machine-guided agents analyze each bug from static, dynamic, and hybrid perspectives and independently produce evidence-grounded repair strategies. A strategy-guided generation procedure instantiates these strategies as candidate patches and uses validation feedback to refine the most promising strategy.   We evaluate CT-Repair on 854 Java bugs from Defects4J v3.0. In the mixed-model configuration, CT-Repair correctly repairs 489 bugs. Under a controlled GPT-5.4-mini configuration, it repairs 388 bugs, 19 and 30 more than ReinFix and RepairAgent, respectively. The union of the three evidence perspectives repairs 99 more bugs than the strongest individual perspective. The filtering pipeline also compacts runtime evidence, with execution filtering narrowing the candidate method scope by 94.85% on average and behavior filtering further reducing retained runtime records by 55.97%. These results show that structured runtime evidence and multi-perspective reasoning can improve repair effectiveness without relying solely on a larger patch-generation budget.",
+    "authors": [
+      "Zhili Huang",
+      "Ling Xu",
+      "Hongyu Zhang"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12605v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12605v1",
+    "fetched_at": "2026-07-15T09:57:56.998072",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485224"
+  },
+  {
+    "id": "2607.12547v1",
+    "title": "Mind the Gap: Promises and Pitfalls of Hierarchical Planning in LeWorldModel",
+    "abstract": "We investigate whether temporal hierarchy can improve LeWorldModel on long-horizon goal-conditioned control. We introduce Hi-LeWM, an extension that freezes the pretrained low-level LeWM and adds high-level planning over latent subgoals. We evaluate Hi-LeWM on PushT and Cube across increasing goal offsets. Hierarchy does not automatically improve performance: at short horizons, the best configuration uses a one-step high-level horizon, while longer horizons reveal a mismatch between the learned high-level action space and the inference-time search distribution. Experiments with true future latent subgoals show that the frozen low-level controller can execute well-aligned intermediate targets, indicating that high-level subgoal generation is the main bottleneck. Unconstrained search can select latent macro-actions that appear favorable under the learned model but produce poor control targets. Constraining search around macro-actions encoded from training trajectories, with appropriate subgoal execution timing, recovers useful hierarchical regimes, improving over flat LeWM by +11.3 percentage points at medium-range horizons and +14.7 percentage points at the longest PushT horizon. Overall, temporal abstraction can benefit compact frozen LeWM, but only when high-level search remains compatible with the low-level controller",
+    "authors": [
+      "Niccolò Caselli",
+      "Salvatore Lo Sardo",
+      "Francesco Massafra",
+      "Ippokratis Pantelidis",
+      "Samuele Punzo",
+      "Sathya Kamesh Bhethanabhotla"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12547v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12547v1",
+    "fetched_at": "2026-07-15T09:57:56.998094",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485234"
+  },
+  {
+    "id": "2607.12527v1",
+    "title": "Evidence-Grounded AI for Musculoskeletal Care",
+    "abstract": "Musculoskeletal diseases are among the leading causes of disability worldwide and create the greatest global need for rehabilitation. Because recovery, remodelling and degeneration often unfold over months to years, musculoskeletal care requires longitudinal management that repeatedly integrates evolving patient evidence, external medical knowledge and stage-specific functional goals. In routine practice, this evidence is fragmented across visits, departments and hospital systems, limiting individualized, evidence-based care. Here we report OrthoPilot, a clinical artificial intelligence system powered by a large language model that integrates hospital data streams with authoritative external knowledge for continuous musculoskeletal management. OrthoPilot autonomously retrieves real-time imaging, laboratory, pathology and order data and converts evolving patient states into evidence-based decisions from admission diagnosis to rehabilitation planning. We established a specialist-validated benchmark from real-world electronic health records spanning 1,000 disease codes. In a reader study across the complete care pathway, OrthoPilot was compared with 81 orthopaedic physicians and surpassed experts with 25 years of experience in diagnostic reasoning, clinical decision-making and management planning. It also outperformed all evaluated intelligent systems across 60 external clinical centres. In a prospective study of 1,870 complex cases, OrthoPilot increased full-chain management success by 10.6%. During an 8-month randomised deployment involving 8,240 inpatients, it increased cumulative cases per bed by 9.7% and improved patient-reported access to health information. These results move clinical AI from predicting isolated events toward executing longitudinal management across complete musculoskeletal care pathways.",
+    "authors": [
+      "Wenjie Li",
+      "Yujie Zhang",
+      "Fanrui Zhang",
+      "Haoran Sun",
+      "Renhao Yang",
+      "Junjun He",
+      "Weiran Huang",
+      "Yuanfeng Ji",
+      "Chenrun Wang",
+      "Kailing Wang",
+      "Hongcheng Gao",
+      "Kaipeng Zhang",
+      "Hanyu Wang",
+      "Angela Lin Wang",
+      "Xingqi He",
+      "Yilin Huang",
+      "Shiyi Yao",
+      "Lilong Wang",
+      "Yankai Jiang",
+      "Yirong Chen",
+      "Chenglong Ma",
+      "Jiyao Liu",
+      "Ming Hu",
+      "Gen Li",
+      "Yidong Xu",
+      "Chengyu Zhuang",
+      "Jiawei Liu",
+      "Yin Zhang",
+      "Lequan Yu",
+      "Lu Chen",
+      "Yinpeng Dong",
+      "Lei Liu",
+      "Carlos Gutierrez Sanroman",
+      "Yu Qiao",
+      "Weijie Ma",
+      "Xiaosong Wang",
+      "Lei Wang"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12527v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12527v1",
+    "fetched_at": "2026-07-15T09:57:56.998160",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485244"
+  },
+  {
+    "id": "2607.12422v1",
+    "title": "Accepted Prefixes Are Not All You Need: A Negative Result on PEFT-Based Block-Diffusion Drafting",
+    "abstract": "Speculative decoding accelerates autoregressive language model inference by using a cheap drafter to propose multiple future tokens and a target model to verify them. A common design goal is therefore to improve draft quality while reducing auxiliary parameters and systems overhead. We study a negative result for this direction through PEFT-BD, a same-backbone speculative decoding method in which a LoRA-like adapter acts as a block-diffusion drafter for an autoregressive verifier. PEFT-BD is motivated by several attractive properties: it avoids tokenizer mismatch, avoids loading a separate draft model, adds only a small number of trainable parameters, and uses a BD3LM-style denoising objective to propose a block of tokens in parallel. Despite these advantages, PEFT-BD does not yield a practical speedup in our Qwen3-0.6B experiments. Although the method obtains nontrivial accepted prefixes, profiling shows that each speculative step requires an adapter-enabled full-backbone draft pass followed by an adapter-disabled full-backbone verification pass. Thus, the drafter is parameter-efficient but not compute-efficient. Our results isolate a simple but important condition for successful speculative decoding: the drafter must be substantially cheaper to execute than the verifier. Longer accepted prefixes alone cannot compensate when draft computation remains verifier-scale.",
+    "authors": [
+      "Abdurrahman Javat",
+      "Allan Kazakov"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12422v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12422v1",
+    "fetched_at": "2026-07-15T09:57:56.998176",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485253"
+  },
+  {
+    "id": "2607.12406v1",
+    "title": "Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions",
+    "abstract": "The capability of LLM agents to function as the ``brain'' of a system fundamentally expands the scope of analysis beyond a standalone model. Consequently, safety is no longer only about input--output content alignment. It also concerns system behavior and real-world execution outcomes. However, the current literature is fragmented across attack types, applications, and benchmarks. This makes it hard to explain why failures such as prompt injection, tool misuse, and memory poisoning often share the same structural cause, and how they spread through an agent workflow. In this survey, we treat isolation as a first-class principle for LLM-agent system safety. By isolation, we refer to the separation of user inputs, tool access, execution channels, inter-agent communication, and environment-originated context. We organize the literature with a boundary-centric taxonomy of five boundaries: user-agent, agent-tool, agent-execution, agent-agent, and system-environment. This view helps identify where the loss of isolation first occurs, how compromise propagates across boundaries, and which defenses are most relevant at each interface. We also summarize cross-boundary failure paths, discuss open challenges, and outline a research agenda for isolation-by-construction in future agent systems.",
+    "authors": [
+      "Huihao Jing",
+      "Wenbin Hu",
+      "Shaojin Chen",
+      "Haochen Shi",
+      "Sirui Zhang",
+      "Hanyu Yang",
+      "Changxuan Fan",
+      "Zhongwei Xie",
+      "Hongyu Luo",
+      "Wun Yu Chan",
+      "Wei Fan",
+      "Haoran Li",
+      "Yangqiu Song"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12406v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12406v1",
+    "fetched_at": "2026-07-15T09:57:56.998211",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485263"
+  },
+  {
+    "id": "2607.12397v1",
+    "title": "Critic Experience Bank: Self-Evolving Step-Level Confidence Estimation for LLM Agents",
+    "abstract": "LLM agents act in external environments where each action changes the state that later decisions condition on, and where a single wrong step can waste interaction budget or trigger irreversible side effects long before the final failure is observed. Reliable deployment therefore requires \\emph{step-level confidence estimation}: a calibrated probability that each proposed action is productive, available \\emph{before} the action is executed. Existing LLM confidence estimators are designed to score a response from the given prompt, but agent confidence also depends on execution consequences: whether similar actions in similar situations actually advanced the task after the environment responded. We introduce the \\method (\\methodshort), a self-evolving critic framework in which an LLM critic accumulates evidence from its own past judgments and their observed consequences. After each trajectory, a hindsight LLM that sees the full execution feedback votes on whether each step was productive. The resulting pseudo-labels populate a memory bank from which related productive and unproductive experiences are retrieved into the critic's prompt whenever a similar step recurs. \\methodshort requires no training and uses no ground truth step labels. Across three agent benchmarks and three critic backbones, \\methodshort attains the best calibration (ECE and Brier) and ranking (AUC) in every dataset--critic combination, reducing ECE by up to $54\\%$ relative to the strongest training-free baseline.",
+    "authors": [
+      "Yaopei Zeng",
+      "Congchao Wang",
+      "JianHang Chen",
+      "Nan Wang",
+      "Yurui Chang",
+      "Lu Lin"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12397v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12397v1",
+    "fetched_at": "2026-07-15T09:57:56.998233",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485273"
+  },
+  {
+    "id": "2607.12385v1",
+    "title": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
+    "abstract": "A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing. We introduce PM-Bench, a text-based benchmark for measuring prospective memory capabilities in modern LLM agents. Inspired by the Virtual Week paradigm from cognitive science, PM-Bench evaluates how well LLM agents maintain user intentions, execute delayed intentions, and monitor latent environment changes. Over the course of a simulated seven-day week, agents must continue an ongoing activity while deciding whether any deferred task is due. We compare eight state-of-the-art LLMs on PM-Bench under eight different agent configurations. PM-Bench proves challenging across all settings: the best method, a GPT-5.4 agent, reaches only 65.1\\% F1 score under our evaluation. Furthermore, no single strategy for improving prospective memory dominates across models. We release PM-Bench as a controlled testbed for diagnosing these failures and developing training or inference-time interventions that support reliable prospective behavior.",
+    "authors": [
+      "Genglin Liu",
+      "Saadia Gabriel"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12385v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12385v1",
+    "fetched_at": "2026-07-15T09:57:56.998249",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485281"
+  },
+  {
+    "id": "2607.12341v1",
+    "title": "Policy-Conditioned Constrained Decoding for Column-Level Access Control in Text-to-SQL",
+    "abstract": "Text-to-SQL is increasingly deployed across trust boundaries between data providers and users. Such deployment must balance three competing requirements: policy compliance, answer coverage, and bounded cost. Existing approaches typically decide refusal based on which columns a query mentions and enforce it stochastically. Whether a query is compliant, however, depends not only on which columns appear but on how they are used, and stochastic enforcement cannot deterministically rule out violations. We formalize this requirement as a column-use policy over semantic use: output, filter condition, and aggregation argument. We integrate the policy by aligning each role with grammar productions tracked by the decoder. The resulting system, PCC-SQL, applies a per-token logits mask that deterministically eliminates single-query column-use violations on the supported SQL fragment in a single decoding pass. Across three benchmarks and three open-source models, PCC-SQL achieves 0% Leakage Rate and Coverage up to 88.7% on Spider-CU, while staying within +10% tokens of direct prompting. We additionally assess semantic alignment with execution accuracy.",
+    "authors": [
+      "Ryoto Miyamoto",
+      "Xin Fan",
+      "Hayato Yamana"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.CL",
+      "cs.CR",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12341v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.12341v1",
+    "fetched_at": "2026-07-15T09:57:56.998267",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-15T10:00:17.485291"
+  }
+]
