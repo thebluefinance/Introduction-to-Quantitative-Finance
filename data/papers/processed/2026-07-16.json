@@ -1,0 +1,735 @@
+[
+  {
+    "id": "2607.13968v1",
+    "title": "Measuring Sentiment News with Transformer-Based Language Models",
+    "abstract": "Measuring sentiment from financial news is a central task in economics and finance, yet most existing indicators rely on dictionary-based approaches that infer sentiment from word counts and only partially capture context, negation, and semantic structure. This paper proposes a framework for constructing daily news mood indices using transformer-based language models and evaluates whether they better represent sentiment than dictionary-based alternatives. Using 143,755 financial news articles from Factiva, we classify sentiment at the sentence level with FinBERT and aggregate these predictions into article-level and daily sentiment measures through alternative normalization schemes. We compare the resulting indices with benchmark measures based on Shapiro et al., 2022 and Barbaglia et al., 2025. A central contribution is the validation of alternative sentiment measures against human judgments. We conducted an incentivized annotation exercise in which 444 participants evaluated a validation subsample of 588 financial news articles. Consensus ratings from independent human evaluations serve as an external benchmark for assessing the quality of automated sentiment measures. Across correlation, regression, and classification exercises, transformer-based measures show stronger agreement with human judgments than vocabulary-based alternatives and perform substantially better in distinguishing positive, neutral, and negative articles. Overall, the results suggest that incorporating contextual information through transformer-based language models produces sentiment measures that more closely reflect human assessments of financial news.",
+    "authors": [
+      "Maria Saveria Mavillonio",
+      "Stefano Borgioli",
+      "Caterina Giannetti",
+      "Chiara Ongari",
+      "Giampiero M. Gallo"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13968v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13968v1",
+    "fetched_at": "2026-07-16T10:02:53.397453",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Sentiment Analysis",
+      "Transformer"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377707"
+  },
+  {
+    "id": "2607.13929v1",
+    "title": "VAIOM: Continuous-Input, Discrete-Output Decoder-Only Financial Sequence Modeling",
+    "abstract": "Financial observations are continuous, heterogeneous, and noisy, whereas decoder-only next-token models are usually built around discrete symbolic inputs. We introduce Vector-Input Autoregressive Inference for Ordinal-Return Modeling (VAIOM), a decoder-only Transformer for probabilistic next-return modeling on one-hour foreign-exchange bars. VAIOM separates input representation from output likelihood: continuous multivariate financial-event vectors preserve numerical structure at the input, while a categorical distribution over the next volatility-normalized return bucket supports cross-entropy training and likelihood evaluation. The selected 0.9M Hybrid Continuous Input model combines continuous event features with categorical asset metadata, a Mixture-of-Market-States return head, Gap, volatility-regime, and Ordinal auxiliary objectives, and full-sequence supervision. Models and preprocessing are fit using pre-2024 Train data; models are selected on 2024H2 Validation and evaluated without refitting on two 2025 Test periods. Across three independent training seeds, every model outperforms fixed single-bar LightGBM baseline in both Test halves. For the canonical checkpoint, paired gains over LightGBM are 0.029 and 0.043 bits per event. Validation experiments show that continuous input improves over discrete-token input under the same categorical return objective, full-sequence supervision improves over last-position training, and auxiliary representation shaping together with a mixture-structured return head improves return likelihood in controlled comparisons. A supporting capacity study finds that the smallest evaluated complete architecture rung achieves the strongest Validation likelihood on the present corpus.",
+    "authors": [
+      "Yiming Ma",
+      "Xinyu Chen"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13929v1",
+    "fetched_at": "2026-07-16T10:02:53.397487",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377728"
+  },
+  {
+    "id": "2607.13916v1",
+    "title": "Detecting unusual trading patterns on cryptocurrency exchanges by means of complexity measures",
+    "abstract": "Artificial transaction generation remains an important source of potential market manipulation on cryptocurrency exchanges, as it may distort reported liquidity and reduce market transparency. This study proposes a diagnostic framework for detecting unusual trading patterns based on complexity and statistical-structure measures derived from high-frequency trade-level data. The analysis considers log-returns, trading volume, and transaction counts, using tail distributions, autocorrelation functions, multifractal characteristics, approximate entropy, and detrended cross-correlations. The methodology is applied to BTC, ETH, and XRP traded on Binance, Bitget, KuCoin, and Kraken over the period from April 1 to June 30, 2025. The results reveal a pronounced anomaly on Bitget for BTC and ETH after mid-May 2025. The number of transactions increases sharply, but there is no proportional increase in traded volume or return fluctuations. This regime is characterised by numerous low-volume trades, weaker autocorrelations, reduced multifractal organisation, higher short-pattern irregularity, and weaker cross-correlations involving the transaction-count series. These features are consistent with a noise-like component in trading activity and may indicate artificially increased transaction counts, although they do not provide direct proof of wash trading. The findings show that complexity-based indicators can be useful for detecting exchange-specific trading anomalies that remain hidden in price-based measures.",
+    "authors": [
+      "Jakub Zwydak",
+      "Marcin Wątorek",
+      "Jarosław Kwapień",
+      "Stanisław Drożdż"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "q-fin.TR",
+      "cs.CE",
+      "econ.EM",
+      "physics.data-an",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13916v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13916v1",
+    "fetched_at": "2026-07-16T10:02:53.397515",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377743"
+  },
+  {
+    "id": "2607.13353v1",
+    "title": "Is Deep Hedging Reinforcement Learning?",
+    "abstract": "The deep hedging framework of Buehler et al. (2019) trains a neural network policy, via Monte Carlo simulation of price paths and stochastic gradient descent, to minimize a risk measure applied to the terminal hedging error. In a recent stream of papers, my coauthors and I have referred to this technique as reinforcement learning (RL), a characterization that referees on several submissions have challenged on two grounds, among others: first, that because feedback is generated only at the terminal date, with no intermediate reward signal, the method cannot constitute genuine RL; and second, that the absence of a value function, a Bellman equation, temporal-difference (TD) learning, and an explicit exploration mechanism disqualifies the method from the RL category altogether, so that it should instead be labeled a neural-network method for stochastic optimal control. I argue that both objections rest on an unduly narrow, TD-centric reading of what constitutes RL. Once RL is understood, as it is in the standard references of the field, to include Monte Carlo policy-gradient methods and direct (actor-only) policy search as first-class members, the deep hedging algorithm of Buehler et al. (2019) falls squarely within the RL umbrella.",
+    "authors": [
+      "Frédéric Godin"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13353v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13353v1",
+    "fetched_at": "2026-07-16T10:02:53.397534",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377757"
+  },
+  {
+    "id": "2607.13112v1",
+    "title": "Anchored Geodesic Analysis for Multivariate Extremes",
+    "abstract": "Extremal dependence is naturally described by the angular law of large multivariate observations. We introduce anchored geodesic component analysis (AGCA), a dimension-reduction method for extremal angular laws on the positive unit sphere. AGCA approximates angular variation by great subspheres constrained to pass through a chosen reference direction, with balanced complete dependence as the default anchor. Under a bounded sine-squared geodesic loss, the population and empirical problems reduce exactly to eigenanalysis of a second-moment matrix of anchored tangent departures. The resulting scores, loadings, residual risks and explained-variation summaries describe departures from the benchmark and remain well defined for face and near-axis extremes. Low-rank AGCA reconstructions also support tail simulation: bounded Lipschitz functionals and homogeneous tail scores, including portfolio capped excesses and value-at-risk, inherit explicit error bounds from the AGCA residual risk. We establish top-\\(k\\) consistency for oracle and rank-Pareto AGCA summaries and an oracle central limit theorem whose covariance is that of an independent sample from the limiting angular law. In daily equity-portfolio losses, AGCA finds concentrated benchmark-relative tail directions: ten components explain about \\(91\\%\\) of anchored variation and approximate capped-excess and normalized value-at-risk summaries with about \\(1.25\\%\\) average relative error.",
+    "authors": [
+      "Alberto Quaini",
+      "Chen Zhou"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "stat.ME",
+      "math.ST",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13112v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13112v1",
+    "fetched_at": "2026-07-16T10:02:53.397582",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377769"
+  },
+  {
+    "id": "2607.12479v2",
+    "title": "Ito-Wentzell Formula and Dupire Stochastic PDE",
+    "abstract": "Starting from the classic result of Wentzell, we derive a conditional forward equation and an associated stochastic Dupire PDE for a local-stochastic-volatility model (LSV). As an application, we obtain a density-weighted Rao--Blackwell estimator for the leverage function in LSV. We also derive an SPDE for a rolling expiry vanilla option, in the spirit of the Musiela parametrization in interest rate modeling.",
+    "authors": [
+      "Vladimir Lucic"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "q-fin.MF",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12479v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.12479v2",
+    "fetched_at": "2026-07-16T10:02:53.397604",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377778"
+  },
+  {
+    "id": "2607.11328v2",
+    "title": "Strategic OTC market making with reputation feedback",
+    "abstract": "Electronic over-the-counter (OTC) liquidity provision is increasingly shaped not only by the price of the next quote, but also by a dealer's accumulated standing with clients and platforms. We develop a stochastic-control model in which request-for-quote (RFQ) win ratios and streaming fill ratios feed back into future flow through performance-based flow gates, creating an explicit trade-off between immediate spread capture and long-term franchise value. The resulting policy naturally alternates between reputation-building campaigns and franchise monetization phases, and can generate multiple stable client-flow regimes even in a parsimonious single dealer control problem.",
+    "authors": [
+      "Alexander Barzykin"
+    ],
+    "published": "2026-07-13",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.11328v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.11328v2",
+    "fetched_at": "2026-07-16T10:02:53.397723",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377788"
+  },
+  {
+    "id": "2607.13897v1",
+    "title": "RF Spectrogram Anomaly Detection with Quantum Kitchen Sinks: Architecture, Representation, and Hardware Validation",
+    "abstract": "The broadcast nature of wireless channels exposes radio-frequency (RF) networks to anomalous and malicious transmissions, making anomaly detection a fundamental requirement for secure spectrum management. Quantum Kitchen Sinks (QKS) offer a lightweight hybrid quantum feature map suitable for near-term quantum devices, yet their behavior on structured signal data remains poorly understood. In this paper, we extend the standard QKS template with multi-depth data re-uploading and ring entanglement, and evaluate the resulting pipeline on controlled RF spectrogram anomaly detection. We introduce a validation-locked five-stage ablation protocol that systematically separates the effects of shallow architecture, re-uploading depth, episode budget, input representation, and classical readout. Across the completed benchmark, Discrete Cosine Transform (DCT) representations consistently dominate raw and Principal Component Analysis (PCA) inputs, moderate-depth entangled QKS configurations form the strongest operating regime, and QKS improves over matched classical direct-readout baselines across all evaluated representation-readout pairs on the held-out test set, with the best configuration reaching a test Area Under the Receiver Operating Characteristic curve (AUROC) of 0.8778 and a test F1 of 0.7995. The study bridges two levels of realism: real measured sub-6\\,GHz cellular signals on the data side and real-device validation on the ibm_quebec Quantum Processing Unit (QPU) on the computing side, with AUROC deviations below 0.013 relative to simulation. These results provide a practical, reproducible framework for deploying QKS-based anomaly detection in wireless networks.",
+    "authors": [
+      "Abdallah Aaraba",
+      "Alexis Vieloszynski",
+      "Remon Polus",
+      "Ola Ahmad",
+      "Soumaya Cherkaoui"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13897v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13897v1",
+    "fetched_at": "2026-07-16T10:03:06.819497",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377806"
+  },
+  {
+    "id": "2607.13548v1",
+    "title": "How Far Can Root Cause Analysis Go on Real-World Telemetry Data?",
+    "abstract": "Identifying root causes in production microservice failures requires reasoning over large-scale, multimodal telemetry spanning metrics, logs, and traces, a problem that has proved resistant to both classical and LLM-based approaches. The OpenRCA dataset exemplifies these challenges: it is large-scale, multimodal, and lacks detailed domain knowledge, and yields consistently low accuracy across all existing methods. We show that classical causal discovery methods and existing LLM-based multi-agent systems fail to reliably identify root causes on this benchmark, and present a Structured Multi-Agent RCA pipeline that substantially outperforms existing LLM-based and classical baselines, supporting both domain-knowledge and knowledge-free operating modes. To diagnose where failures originate, we introduce a reverse reasoning agent that, given the correct answer, identifies which signals in the extracted anomalies support it and determines whether Stage~1 had access to those signals, classifying each failure as Reasoning Gap (evidence present but unused) or Data Ambiguity (evidence genuinely absent). This analysis reveals that the required evidence is present in the vast majority of failures: the bottleneck is not data access but the agent's ability to reason over it correctly. We further introduce an automated rule mining pipeline that systematically extracts discrimination rules from reverse reasoning reports, reducing reliance on manual knowledge curation. Across all configurations, model reasoning capability and domain knowledge are the primary constraints: stronger models embed more domain expertise, and explicit knowledge injection partially compensates for this gap. Reasoning performance remains practically bounded even when evidence extraction is perfect: scaffold engineering and better data pipelines alone cannot close this gap; progress requires improvements at the model level.",
+    "authors": [
+      "Athira Gopal",
+      "Ashwanth Krishnan"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13548v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13548v1",
+    "fetched_at": "2026-07-16T10:03:06.819527",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377818"
+  },
+  {
+    "id": "2607.13544v1",
+    "title": "Clustering algorithms for multivariate wind farm SCADA data filtering",
+    "abstract": "During wind farm operation, Supervisory Control and Data Acquisition (SCADA) systems record numerous anomalies, transients, and specific operational modes, leading to large datasets. However, for a wide range of applications, only measurements corresponding to normal operation are required and, therefore, the SCADA data must be filtered. For this purpose, several methods have been proposed to automate and replace manual filtering conducted by experts via visual inspection of the data. In this paper, we compare the filtering accuracy of multiple clustering algorithms against manual filtering, introducing evaluation metrics that are suitable for unlabeled data and robust across potential applications. Based on the results, we provide recommendations for generalizing model calibration to different datasets and discuss potential use cases for each model. The models are applied to the SCADA data of three turbines of an existing offshore wind farm, using 10-minute statistics across multiple data channels. In addition to the anomalies and operational modes typically recorded, the dataset presents a large number of non-evident outliers due to several field tests. Overall, the results highlight the importance of extending the analysis beyond the power curve, both in feature selection and in the design of evaluation metrics. In most cases, cluster-based methods are able to detect both evident and subtle outliers, achieving higher accuracy than manual filtering. However, the accuracy and the amount of data retained vary considerably depending on the model, and expert involvement remains necessary, though to a reduced extent compared to manual filtering.",
+    "authors": [
+      "Nicolò Italiano",
+      "Vasilis Pettas",
+      "Tuhfe Göçmen",
+      "Nicolaos A. Cutululis"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13544v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13544v1",
+    "fetched_at": "2026-07-16T10:03:06.819552",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377829"
+  },
+  {
+    "id": "2607.13469v1",
+    "title": "Explainable Artificial Intelligence for Anomaly Detection in Banking Transactions: An Internal Audit Perspective",
+    "abstract": "The banking sector increasingly relies on automated systems to monitor electronic transactions for signs of fraud, yet conventional rule-based approaches struggle with high false-positive rates and offer no justification for their outputs, limiting their utility for compliance teams. This paper introduces an Explainable Artificial Intelligence (XAI) framework tailored for banking transaction anomaly detection within internal audit workflows. An Isolation Forest (iForest) model performs unsupervised anomaly scoring, while a SHAP (SHapley Additive exPlanations) layer provides transaction-level, feature-attributed explanations grounded in cooperative game theory [8]. A lightweight Streamlit dashboard renders these outputs in a form accessible to audit professionals without machine learning expertise. Evaluation on a synthetic banking dataset yields 0.91 precision and 0.88 recall, outperforming three unsupervised baselines. Expert feedback confirms that feature-level explanations measurably improve auditor confidence and decision quality. The framework advances the practical deployment of accountable, transparent AI in regulated financial environments.",
+    "authors": [
+      "Anupa Lodhi"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13469v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13469v1",
+    "fetched_at": "2026-07-16T10:03:06.819571",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377839"
+  },
+  {
+    "id": "2607.13239v1",
+    "title": "Cost-Optimal Foundation Model Deployment Portfolio for Transportation Management",
+    "abstract": "Foundation models, including large language models (LLMs) and vision-language models (VLMs), are increasingly used for transportation management center (TMC) tasks such as anomaly detection, incident reporting, and traveler information. Deploying multiple such models across TMC functions raises a portfolio question: which model should serve each function, in which deployment mode, and under what shared hardware budget? We formulate this as the Foundation Model Deployment Portfolio (FMDP) problem, a mixed-integer program minimizing total cost of ownership (TCO) subject to per-function quality, latency, and safety constraints over shared GPU capacity. We prove the problem NP-hard by reduction from the 0-1 knapsack problem and propose a polynomial-time greedy heuristic. In an illustrative case study with five TMC functions and 19 candidate (model, mode) pairs, FMDP identifies a mixed portfolio costing $34/mo (97% below the cheapest feasible all-closed-API baseline) by routing four functions to open-source APIs and the one function whose quality floor no open-source model meets to a closed API. Break-even analysis shows that on-premise GPU investment becomes reasonable only above approximately 309 vision queries/hour or if API prices double.",
+    "authors": [
+      "Xi Cheng",
+      "Ke Liu",
+      "Siyuan Feng",
+      "Jane Lin",
+      "H. Oliver Gao"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13239v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13239v1",
+    "fetched_at": "2026-07-16T10:03:06.819596",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377849"
+  },
+  {
+    "id": "2607.13123v1",
+    "title": "AI in Cyberpsychology: A systematic literature review of Cybersecurity enhancement by using AI for analyzing psychology of Victims, Attackers, and Defenders",
+    "abstract": "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks. Cyberpsychology (CPSY) is defined as the use of psychology to enhance cybersecurity applications. Since the early 2010s, the evolution of Artificial Intelligence (AI) has increasingly integrated with CPSY, leveraging advanced data analysis to decode the distinct personality traits and behavioral patterns of victims, attackers, and defenders. In this systematic literature review (SLR), we carefully analyze 34 collected research studies of AI usage in cyberpsychology (AI-CPSY) using the preferred reporting items for systematic reviews and meta-analyses (PRISMA) methodology. The review presents a comprehensive taxonomy of the cyber-security applications, the AI methodologies used, and the psychological concepts employed across the studies . We sort the research studies into four cybersecurity applications: Anomaly Detection (AD), Vulnerability Risk Prediction (VRP), Security Awareness Training (SAT), and Authentication/Identity Verification (AIV). Within each application area, studies are further sorted according to the AI method used including machine learning (ML), deep learning (DL), natural language processing (NLP), and reinforcement learning (RL). Furthermore, the review identifies the most commonly utilized psychological concepts, quantify the datasets used in the field, and present their current implementation and deployment status. At last, it detect research gaps, present open challenges, and deduce the trending and most effective and emerging methodologies used across the AI-CPSY landscape.",
+    "authors": [
+      "Georg Thamer Francis",
+      "Malek Malkawi",
+      "Sevim Eyüpoğlu",
+      "Reda Alhajj",
+      "Selim Akyokuş"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13123v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13123v1",
+    "fetched_at": "2026-07-16T10:03:06.819622",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377860"
+  },
+  {
+    "id": "2607.14006v1",
+    "title": "Rethinking Penetration Testing for AI-Enabled Systems: From Resource Compromise to Behavioral Objective Violation",
+    "abstract": "Penetration testing traditionally evaluates whether adversaries can exploit weaknesses in software, infrastructure, configurations, or operational controls to achieve security-relevant compromise. This paradigm remains necessary for AI-enabled systems, but it is no longer sufficient. In such systems, adversaries may influence prompts, retrieved content, sensor inputs, training data, memory, tools, or human-AI interaction loops to alter system behavior without directly compromising the underlying infrastructure. This paper reframes penetration testing for AI-enabled systems as objective-driven behavioral evaluation. We define an AI-enabled system as one in which learned models materially influence behavior affecting operational outcomes, and we define AI-enabled penetration as the feasible induction of AI-governed behavior that violates one or more operational objectives under an explicit threat model. This definition preserves conventional penetration testing while extending it to adversarial pathways such as prompt injection, indirect prompt injection, data poisoning, sensor manipulation, retrieval poisoning, tool misuse, and agentic misalignment. We further propose a testing workflow that identifies operational objectives, maps AI-governed behavior, analyzes adversarial influence surfaces, defines behavioral failure criteria, executes scenario-based tests, and reports evidence linking adversarial action to objective violation. A running example involving an AI-enabled security operations center assistant illustrates how penetration may occur through behavioral influence rather than infrastructure compromise. Together, the definitions, workflow, and example provide a technical framework for evaluating adversarial success in deployed AI-enabled systems.",
+    "authors": [
+      "Mohammad Allahbakhsh",
+      "Mohammad Hassan Bahari",
+      "Moslem Attar-Raouf"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14006v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14006v1",
+    "fetched_at": "2026-07-16T10:03:52.245412",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377871"
+  },
+  {
+    "id": "2607.13998v1",
+    "title": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
+    "abstract": "The rapid proliferation of Agentic Artificial Intelligence fundamentally disrupts traditional customer loyalty paradigms. As AI evolves from passive recommendation algorithms to autonomous, goal-directed agents capable of executing purchasing decisions, the conventional understanding of consumer-brand relationships requires a structural reevaluation. By synthesizing extant literature across human-machine teaming, consumer decision-making, and algorithmic trust dynamics, we demonstrate that traditional loyalty models fail to account for algorithmic bounded rationality and constructed autonomy. To address this, we introduce the Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) model. We formalize brand choice via a softmax probability formulation where human emotional equity, agentic machine-experience utility, calibrated trust, delegated authority, and verifiable execution jointly determine selection. The model features recursive updating mechanisms to dynamically calibrate trust and delegation after each interaction. Crucially, the framework integrates a verifiable execution layer for Decentralized Finance (DeFi) and tokenized loyalty settings, incorporating execution risks -- such as gas costs, slippage, MEV exposure, and smart-contract vulnerabilities -- as core predictors of agentic brand preference. Furthermore, we introduce the Net Human-Agent Score (NHAS), an auditable, risk-weighted metric designed to measure human-agent alignment using human feedback, execution logs, benchmark comparisons, and verifiable receipts. Finally, we propose a comprehensive three-stage empirical validation plan spanning controlled shopping experiments, multi-agent market simulations, and DeFi testbeds. This framework provides the foundational theory required for brands to navigate the impending transition toward machine customers.",
+    "authors": [
+      "Sai Srikanth Madugula",
+      "Peplluis Esteva de la Rosa",
+      "Daya Shankar"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.SI",
+      "cs.AI",
+      "cs.GT",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13998v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13998v1",
+    "fetched_at": "2026-07-16T10:03:52.245457",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377882"
+  },
+  {
+    "id": "2607.13884v1",
+    "title": "Experience Memory Graph: One-Shot Error Correction for Agents",
+    "abstract": "Large Language Model (LLM) agents have shown remarkable capabilities in autonomous decision-making by generating sequential trajectories of states, actions, and observations. However, in complex, long-horizon tasks, these agents frequently suffer from compounding errors and struggle to recover from failures. Existing self-correction mechanisms rely on prompt-based reflection, which is inherently brittle, incurs heavy time and API costs due to iterative trial-and-error loops, and produces task-specific memory that may be hard to generalize to new scenarios. To address this, we propose Experience Memory Graph (EMG), a framework that reformulates agent failure recovery as a graph matching problem. At training time, we convert both failed exploration trajectories and successful expert trajectories into directed action decision graphs. By matching these graphs, we extract common subgraphs (successful workflows) and graph edit paths that explicitly indicate how to correct failures (e.g., which actions to add, delete, or relabel under a given observation), and store them in a memory graph with intra-task nodes and cross-task edges. At test time, EMG retrieves relevant insights and guides the agent in a single, loop-free execution. Experiments on ALFWorld and ScienceWorld show that EMG consistently outperforms state-of-the-art reflection baselines in success rate and average reward, while requiring no test-time trial-and-error.",
+    "authors": [
+      "Wenjun Wang",
+      "Yuchen Fang",
+      "Fengrui Liu",
+      "Zibo Liang",
+      "Kai Zheng"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13884v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13884v1",
+    "fetched_at": "2026-07-16T10:03:52.245484",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377892"
+  },
+  {
+    "id": "2607.13854v1",
+    "title": "SPyCE: Skill-Policy Co-evolution for Multimodal Agents",
+    "abstract": "Multimodal agents that think with images iteratively manipulate visual evidence and invoke tools across many steps. Existing reinforcement learning methods reduce trajectories to scalar rewards, forcing the policy to discover reusable tool-use patterns from scratch on every new task; memory-based alternatives retain past experience, yet they rely on test-time retrieval, without updating the policy to absorb reusable patterns from that experience. Our key insight is that multimodal reasoning trajectories should be distilled into reusable skills that co-evolve with the policy during training, rather than being consumed as rewards or retrieved from a static store. To this end, we propose SPyCE (Skill-Policy Co-evolution), a framework that distills trajectories into a hierarchical skill library and updates it throughout reinforcement learning. Execution skills capture local visual operations, while workflow skills encode high-level priors that orchestrate tool use. During training, the policy model conditions on retrieved skills to guide its rollouts, while the skill library evolves using valuable rollouts generated by the policy. This creates a closed loop in which improved policies yield better skills, and the evolving skill library, in turn, provides stronger priors for policy rollouts. Experiments across eight benchmarks demonstrate that SPyCE consistently outperforms both RL-based and memory-based baselines. Further analysis reveals that both the hierarchical skill design and the co-evolution mechanism are critical to our design. These results suggest joint skill-policy optimization as a promising paradigm for building capable multimodal agents.",
+    "authors": [
+      "Ru Zhang",
+      "Weijie Qiu"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13854v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13854v1",
+    "fetched_at": "2026-07-16T10:03:52.245503",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377902"
+  },
+  {
+    "id": "2607.13716v1",
+    "title": "CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems",
+    "abstract": "Agentic AI systems increasingly act through heterogeneous runtimes: local coding hooks, SDK tools, browser automation, managed-agent traces, API gateways, and workflow engines. A single operational act such as publishing code, changing identity state, moving money, or exporting data may therefore be represented by many incompatible runtime records. This makes a basic governance question difficult to answer: what action was actually approved, what evidence binds the approval to execution, and can an independent verifier reproduce the same action identity later?   This paper presents Canonical Action Verification and Attestation (CAVA), a runtime-semantics layer for converting heterogeneous agent activity into canonical runtime action objects. CAVA is positioned below Proof-Carrying Agent Actions (PCAA): PCAA defines the deployer-owned route-review-prove governance process, while CAVA defines the stable action object that process governs. The paper formalizes canonical action identity, semantic pattern detection, approval binding, receipt integrity, runtime-portable projection, and optional attestation substrates. We study a reference implementation through a 96-seed, 384-variant benchmark covering semantic equivalence, semantic separation, wrapper bypass, false-positive control, approval binding, receipt reproducibility, attestation tamper detection, runtime portability, semantic pattern detection, policy degradation, and Azure deployment drills. The contribution is a systems formulation of action-level canonicalization and policy-addressable semantic patterns as a necessary substrate for deployer-side AI governance.",
+    "authors": [
+      "Zexun Wang"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13716v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13716v1",
+    "fetched_at": "2026-07-16T10:03:52.245523",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377912"
+  },
+  {
+    "id": "2607.13705v1",
+    "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
+    "abstract": "As Large Language Models (LLMs) evolve into autonomous agents, the need for unified evaluation infrastructure becomes critical. However, current evaluation pipelines remain highly fragmented and tightly coupled, hindering reproducibility and causing redundant engineering. To address this, we introduce AgentCompass, an open-source, lightweight, and extensible infrastructure for evaluating LLM-based agents. AgentCompass organizes the evaluation process around three independent components, namely Benchmark, Harness, and Environment, thereby enabling flexible configurations without requiring the reimplementation of complex execution logic. Furthermore, it features a fault-tolerant asynchronous runtime and comprehensive trajectory analysis tools to transparently diagnose nuanced failure modes like reward-hacking. Natively supporting over 20 benchmarks across five capability dimensions, AgentCompass provides the community with a scalable and reproducible infrastructure for advancing agent research.",
+    "authors": [
+      "Zichen Ding",
+      "Jiaye Ge",
+      "Shufan Jiang",
+      "Kai Chen",
+      "Mo Li",
+      "Qingqiu Li",
+      "Zehao Li",
+      "Zonglin Li",
+      "Tiaohao Liang",
+      "Shudong Liu",
+      "Zerun Ma",
+      "Zixing Shang",
+      "Wenhui Tian",
+      "Zun Wang",
+      "Liwei Wu",
+      "Zhenyu Wu",
+      "Jun Xu",
+      "Bowen Yang",
+      "Dingbo Yuan",
+      "Qi Zhang",
+      "Songyang Zhang",
+      "Peiheng Zhou",
+      "Dongsheng Zhu"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13705v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13705v1",
+    "fetched_at": "2026-07-16T10:03:52.245582",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377921"
+  },
+  {
+    "id": "2607.13624v1",
+    "title": "From Language to Navigation Goals: A Vision-Language Approach for Semantic Navigation of Mobile Robots Using RGB-D Perception",
+    "abstract": "Natural language interaction provides an intuitive way for non-expert users to communicate with robotic platforms. However, transforming user requests into executable navigation actions remains a challenging task, requiring the integration of language understanding, environment perception, and autonomous navigation. This work presents a language-driven navigation framework that enables mobile robots to interpret user requests in natural language to move the robot to a destination and autonomously navigate towards it.   The framework is composed of modular ROS 2 components that cooperate to transform natural language instructions into navigation actions. Given a natural language request referring to a target in the environment (e.g., \"go to the mail box\"), the system identifies the referenced object, estimates its position using RGB-D data, and generates a navigation goal, which is then executed through the ROS 2 Nav2 navigation stack. The ROS 2-based implementation facilitates portability across different robotic platforms, requiring only the configuration of the corresponding topics and services.   The system is evaluated in both simulation and real-world scenarios using a TurtleBot3 Waffle and a Unitree Go2 robot with a RealSense camera. Experimental results show that the framework successfully interprets both direct commands and contextual requests, generates meaningful natural-language feedback, and navigates towards the desired target. These results demonstrate the feasibility of combining semantic perception and autonomous navigation to provide an intuitive human-robot interaction paradigm. Code will be released as open source upon acceptance.",
+    "authors": [
+      "Jose Martínez-Fajardo",
+      "Pablo Pueyo",
+      "Fernando Caballero",
+      "Luis Merino"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13624v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13624v1",
+    "fetched_at": "2026-07-16T10:03:52.245607",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377932"
+  },
+  {
+    "id": "2607.13597v1",
+    "title": "Semantic Anchoring for Robotic Action Representations",
+    "abstract": "Vision-Language-Action (VLA) models inherit rich semantic representations from pretrained Vision-Language Models, yet fine-tuning on limited robot demonstrations degrades this structure and undermines generalization. A fundamental question therefore arises: what constitutes a good action representation? Inspired by the mirror neuron theory's insight that observation and execution share an intention-level encoding, we examine whether a robot's action representations preserve the semantic structure captured by pretrained encoders. Systematic probing confirms that this structure erodes during finetuning, and that its quality synchronizes with both task success and out-of-distribution generalization. We further introduce a plug-and-play method that anchors action representations to a semantic manifold while decomposing representations into a shared semantic channel and a private channel, all discarded at inference, leaving the deployed model unchanged. Validated on different VLA backbones across simulation and real-world benchmarks, our method yields up to +18.7% on real-world in-distribution tasks and +21.5% on out-of-distribution generalization.",
+    "authors": [
+      "Yuan Xu",
+      "Youheng Shi",
+      "Chengyang Li",
+      "Wentao Zhu",
+      "Yizhou Wang"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13597v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13597v1",
+    "fetched_at": "2026-07-16T10:03:52.245633",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377941"
+  },
+  {
+    "id": "2607.13594v1",
+    "title": "SAFETY SENTRY: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing",
+    "abstract": "LLM agents act on real-world environments through tool calls, and a single misjudged action can cause irreversible harm. The standard safeguard is a guard model that labels each proposed action as safe or unsafe, but this binary view conflates two distinct decisions: whether the action is harmful in itself, and whether it is appropriate given the user's context. It also operates at the granularity of action categories rather than individual instances, producing routine interruptions that erode autonomy and train users to wave through the most consequential alerts. We reframe the problem as a per-instance three-way routing decision over {EXECUTE, ASK, REFUSE} and instantiate it with Safety Sentry, a lightweight guard model whose inference reduces to a single decoding call. A single decoding-time threshold lets one fixed checkpoint be re-positioned across deployments of differing risk tolerance without retraining. Safety Sentry outperforms a broad set of open-weight and frontier closed-source baselines on overall accuracy and safety-related recall, while controlling both directional error rates simultaneously.",
+    "authors": [
+      "Tianyu Chen",
+      "Chujia Hu",
+      "Wenjie Wang"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13594v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13594v1",
+    "fetched_at": "2026-07-16T10:03:52.245657",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377949"
+  },
+  {
+    "id": "2607.13474v1",
+    "title": "MyAG: A Graph-Based Framework for Designing and Analyzing Composable LLM Agent Systems",
+    "abstract": "We present MyAG, a graph-based framework for designing and analyzing composable LLM agent systems. Our framework separates agent system construction into three graph abstractions: a component graph for agents, environments, and modules; a workflow graph for execution control; and a search graph for runtime execution. This separation allows users to flexibly reuse the same components with different strategies. We further support hierarchical composition through recursive system nodes and provide monitoring and visualization tools for inspecting agent execution. Experiments on representative agent applications show that our framework supports flexible agent system design and helps analyze performance-efficiency tradeoffs. Our framework is publicly available and fully open-source.",
+    "authors": [
+      "Zhisong Zhang"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13474v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13474v1",
+    "fetched_at": "2026-07-16T10:03:52.245675",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377959"
+  },
+  {
+    "id": "2607.13465v1",
+    "title": "DevicesWorld: Benchmarking Cross-Device Agents in Heterogeneous Environments",
+    "abstract": "LLM-based agents have rapidly improved at operating individual digital environments such as mobile applications, desktop systems, and smart homes. However, real-world user goals often span multiple devices: information may come from a phone, be processed on a desktop, and the result may need to appear on another device. Most existing benchmarks center on a single dominant execution environment, making it difficult to evaluate whether agents can acquire and integrate information across heterogeneous devices and complete end-to-end tasks with cross-device dependencies. We introduce DevicesWorld, a large-scale executable benchmark for cross-device collaborative operation. DevicesWorld contains 6,140 tasks and integrates three classes of device environments -- mobile, desktop, and IoT -- into a unified cross-device interaction and evaluation framework. Each task defines a natural-language user goal, participating devices and initial states, executable actions, rule-based verifiers, and a cleanup procedure. A multi-stage construction and quality-control pipeline keeps tasks close to realistic user needs while allowing final outcomes to be automatically verified from device states and generated files. We evaluate five frontier LLM-agent systems on a fixed evaluation set. All methods achieve low success rates, with the best reaching only 12.5%. Among failed runs, about 28.7% satisfy at least one scoring condition yet still fail the full task. Trajectories show that agents become stuck acquiring information or manipulating interfaces, confuse source and output devices, or terminate before all conditions are jointly satisfied. DevicesWorld turns cross-device collaborative operation into an executable, reproducible, and diagnostically useful evaluation problem for research on reliable cross-device agents.",
+    "authors": [
+      "Huatao Li",
+      "Xinwei Geng",
+      "Yuheng Wang",
+      "Yutong Li",
+      "Runde Yang",
+      "Hantao Chen",
+      "Shu Yao",
+      "Jingru Fan",
+      "Xuhui Ren",
+      "Yuanyuan Zhao",
+      "Fei Huang",
+      "Chen Qian"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.HC",
+      "cs.MA",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13465v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13465v1",
+    "fetched_at": "2026-07-16T10:03:52.245713",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377970"
+  },
+  {
+    "id": "2607.13303v1",
+    "title": "Faithful Autoformalization of Natural Language Assertions",
+    "abstract": "Formal contracts are essential for software testing and verification, yet writing them remains labor-intensive and error-prone. LLMs offer a promising path toward autoformalization: synthesizing executable assertions from natural-language specifications and thereby bridging the gap between informal developer intent and formal executable specifications. We present Monty: an autoformalization framework for assertions that tackles the challenges of expectations of validity of assertions and ambiguity in natural-language. Our techniques are based on filtering formalizations using a novel conformance score metric and validity scores obtained from testing the code against formalized assertions. We evaluate our approach on 541 assertion-generation tasks derived from 22 collection-like Java classes, and show that our technique produces the ground truth more reliably (improving upto 20 points in precision on average) than when using LLMs naively to translate assertions.",
+    "authors": [
+      "Hongyi Liu",
+      "Madhusudan Parthasarathy",
+      "Adithya Murali"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13303v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13303v1",
+    "fetched_at": "2026-07-16T10:03:52.245734",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377978"
+  },
+  {
+    "id": "2607.13285v1",
+    "title": "Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable",
+    "abstract": "The capability of a modern AI agent depends not only on its foundation model but also on its harness, which constructs prompts, manages state, invokes tools, and coordinates execution. As models, APIs, environments, and requirements evolve, the harness must be continually modified. Before such a change can be made, a developer or coding agent must identify all code locations that implement the target behavior. This is difficult because production harnesses are large, tightly coupled, and behaviorally distributed, while modification requests describe what the system should do and repositories are organized by files and modules. Code search, repository indexing, and long-context processing ease inspection, but still leave this behavior-to-code mapping to be recovered by hand. Behavior localization is therefore a central bottleneck in harness evolution. We introduce the Harness Handbook, a behavior-centric representation synthesized automatically from a harness codebase via static analysis and LLM-assisted structuring, linking each behavior to its corresponding source. We also introduce Behavior-Guided Progressive Disclosure (BGPD), which guides agents from high-level behaviors to relevant implementation details and verifies candidate locations against the current source. On diverse modification requests from two open-source harnesses, Handbook-Assisted planning improves behavior localization and edit-plan quality while using fewer planner tokens, with the largest gains on scattered sites, rarely executed paths, and cross-module interactions. Evolving complex agentic systems thus depends not only on generating edits, but also on determining where those edits should be made.",
+    "authors": [
+      "Ruhan Wang",
+      "Yucheng Shi",
+      "Zongxia Li",
+      "Zhongzhi Li",
+      "Yue Yu",
+      "Junyao Yang",
+      "Kishan Panaganti",
+      "Haitao Mi",
+      "Dongruo Zhou",
+      " Leoweiliang"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13285v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13285v1",
+    "fetched_at": "2026-07-16T10:03:52.245767",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377988"
+  },
+  {
+    "id": "2607.13220v1",
+    "title": "Networked Intelligence: Active Shared Context Graphs for Human-AI Team Science",
+    "abstract": "Most AI-for-science systems focus on scaling a single reasoning process through better models, larger context windows, long-horizon agentic execution, or digital co-scientists working with one principal user. However, challenging scientific problems are rarely solved by one reasoner alone. They are solved by teams whose members bring different priors, experimental backgrounds, tacit knowledge, and domain-trained intuitions. The open problem is therefore not only how to scale models, but how to cultivate networked intelligence: scaling the connections between humans and AI systems so that a result or hypothesis produced in one context reaches another person, agent, instrument, or robot that can act on it. We introduce Mycelium, an active shared workspace that automatically connects researchers and AI agents as a multi-user co-scientist. As human users and agents work, the system captures important observations and hypotheses, tracks how they relate to the team's evolving model, and routes them to the person or agent whose next decision they can inform. We evaluate Mycelium in its first empirical test, a biological multi-omics campaign in which routed shared context turned a local analytical finding into a cross-expert mechanistic constraint and ultimately into an experimental design. We also give networked intelligence a computational account as sparse conditional computation over distributed scientific contexts. This account distinguishes when a scaled standalone agent can match the network from when independent expertise and non-mergeable contexts make the network irreducible.",
+    "authors": [
+      "Sutanay Choudhury",
+      "Jeffrey J. Czajka",
+      "Lummy M. O. Monteiro",
+      "Erin Bredeweg",
+      "Jason McDermott",
+      "Katherine Wolf",
+      "Alex Beliaev",
+      "Josh Elmore",
+      "Paul Piehowski",
+      "Kylee Tate",
+      "Yuqian Gao",
+      "Aivett Bilbao",
+      "Kelly Stratton",
+      "Scott Baker",
+      "Jaydeep P. Bardhan",
+      "Kristin Burnum Johnson",
+      "Chris Oehmen",
+      "Robert Rallo"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "cs.AI",
+      "cs.CE",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.13220v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.13220v1",
+    "fetched_at": "2026-07-16T10:03:52.245814",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-16T10:06:04.377998"
+  }
+]
