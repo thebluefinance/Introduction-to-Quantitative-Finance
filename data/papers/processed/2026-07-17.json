@@ -1,0 +1,711 @@
+[
+  {
+    "id": "2607.15195v1",
+    "title": "SciPhy Reinforcement Learning for Portfolio Optimization",
+    "abstract": "This paper introduces a dynamic portfolio optimization framework for large institutional investors using Scientific Physics-Informed Reinforcement Learning (SciPhyRL). Formulated in continuous time over an extended state space that includes explicit cumulative costs, the approach leverages offline historical data to learn optimal, distribution-aware strategies. A core innovation reduces the optimization challenge to solving an HJB equation by projecting it onto observed trajectories as a pathwise Hamilton-Jacobi equation. This is solved directly from data using PINN in a single offline sweep, eliminating the need for traditional value or policy iteration. To make the method effective at practical short horizons, the control variable is recast from a continuous trading rate to a discrete target holding. This ensures signal-implied positions are reached immediately, while execution costs are evaluated against a microstructure-grounded quadratic price impact model. Evaluated on a $14$-asset ETF universe using an engineered oracle signal, the learned Gibbs policy yields substantial out-of-sample Sharpe ratio improvements over static and myopic baselines. The results demonstrate that the proposed framework successfully translates known signal quality into a robust, multi-period, and cost-aware allocation mechanism with strictly controlled volatility and turnover.",
+    "authors": [
+      "Igor Halperin",
+      "Andrey Itkin"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "q-fin.PM",
+      "math.AP",
+      "math.NA",
+      "q-fin.CP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15195v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15195v1",
+    "fetched_at": "2026-07-17T09:51:55.656164",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.703897"
+  },
+  {
+    "id": "2607.15119v1",
+    "title": "Thermodynamic theory of voting and EU elections",
+    "abstract": "We introduce a thermodynamic theory of voting and show that it provides a good description of distribution of party votes in EU elections. The theory traces parallels between system energies of coupled nonlinear oscillators and party vote fractions. Such a classical system evolution is characterized by the conservation of total energy and probability norm that leads to the Rayleigh-Jeans (RJ) thermalization and condensation at low energy states. A similar thermalization also describes the wealth inequality in society. This feature belongs to the phenomena of constraint driven condensation known in statistical mechanics. We show that the RJ theory well depicts the Lorenz and Pareto curves obtained from the EU vote results. The theory also recovers the dispersion of votes between candidates of first round presidential elections in France.",
+    "authors": [
+      "Klaus M. Frahm",
+      "Dima L. Shepelyansky"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cond-mat.stat-mech",
+      "econ.GN",
+      "nlin.CD",
+      "physics.soc-ph",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15119v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15119v1",
+    "fetched_at": "2026-07-17T09:51:55.656202",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.703917"
+  },
+  {
+    "id": "2607.15057v1",
+    "title": "Existence and convergence of discrete-time Kyle models with multiple insiders",
+    "abstract": "We extend the limited participation model in Basak and Cuoco (1998) to allow for traders with different time-preference coefficients but identical constant relative risk-aversion coefficients. Our main result gives parameter restrictions which ensure the existence of a Radner equilibrium. As an application, we give further parameter restrictions which ensure all traders survive in the long run.",
+    "authors": [
+      "Jin Choi",
+      "Kasper Larsen"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "q-fin.TR",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15057v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15057v1",
+    "fetched_at": "2026-07-17T09:51:55.656229",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.703929"
+  },
+  {
+    "id": "2607.14518v1",
+    "title": "Structure-Aware Variational State Preparation for Quantum Basket Option Pricing",
+    "abstract": "Basket option pricing often relies on Monte Carlo estimation, for which quantum amplitude estimation (QAE) provides a quadratic speed-up. However, the practical benefit of QAE can be limited by the depth of the state-preparation circuit. We propose a structure-aware quantum state-preparation framework for QAE-based basket option pricing. The framework uses tensor-train (TT) rank information to design shallow variational state-preparation circuits. In the independent regime, TT ranks remove unnecessary entangling links from a hardware-efficient ansatz. In correlated basket settings, we instead prepare asset-wise marginals locally and train a compact latent block to match the basket cumulative distribution function. The Basket-CDF objective targets the basket pushforward distribution rather than the full joint state, directly aligning state preparation with basket-dependent payoffs. Numerical experiments show that the proposed circuits replace the exponential state-preparation depth scaling of exact amplitude loading with linear scaling, while maintaining low-percent basket-pricing errors. Additional sampling-based training experiments and an end-to-end QAE integration study support compatibility with sample-estimated training and standard QAE-based pricing workflows.",
+    "authors": [
+      "Dongwoo Kim",
+      "Zhenyu Cui",
+      "Daniel K. Park",
+      "Chihoon Lee"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "quant-ph",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14518v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14518v1",
+    "fetched_at": "2026-07-17T09:51:55.656255",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.703941"
+  },
+  {
+    "id": "2607.14373v1",
+    "title": "A Noise-Robust Elicit-to-Optimize Framework for Distortion Riskmetrics via Inverse Reinforcement Learning",
+    "abstract": "We propose a noise-robust elicit-to-optimize framework that integrates inverse reinforcement learning (IRL) and reinforcement learning (RL) for eliciting agents' risk preferences and optimizing policies under a broad class of risk objectives characterized by distortion riskmetrics. On the elicitation side, we propose an adaptive Bayesian IRL method that infers agents' latent risk objectives from their noisy observed decisions, explicitly allowing agents to take stochastic and suboptimal actions. We establish the existence of a finite set of distinguishing questions that identifies the preferred distortion riskmetric within the candidate class and prove that the convergence rate of the algorithm is of order $O(\\exp(-cm+O(\\sqrt{m\\log m})))$ under general settings, where $c>0$ is a constant and $m$ denotes the number of algorithm iterations. On the optimization side, we develop a model-free RL algorithm for optimizing policies under conditional distortion riskmetrics. By representing the objective as an integral of the conditional cost quantile function with respect to the distortion function, the method unifies distortion-riskmetric objectives. We optimize diverse risk objectives by extending the Proximal Policy Optimization (PPO) algorithm with policy, value, and quantile neural networks, where the quantile network estimates the full conditional cost quantile function and enables numerical evaluation of general risk objectives. A comprehensive empirical study demonstrates the framework's elicitation accuracy and effectiveness in complex financial environments.",
+    "authors": [
+      "Yang Liu",
+      "Yuhao Liu",
+      "Yunran Wei"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.LG",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14373v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14373v1",
+    "fetched_at": "2026-07-17T09:51:55.656279",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.703957"
+  },
+  {
+    "id": "2607.14361v1",
+    "title": "NeuralChaos: Optimal Adapted Approximation of Square Integrable Predictable Processes",
+    "abstract": "We address fundamental challenges in representing and computing $\\mathbb{R}^{d}$-valued predictable square-integrable processes over $[0,T]$, collected in the space $\\mathcal{H}^2_T(\\mathbb{R}^{d})$. These processes are central to continuous-time stochastic control, reinforcement learning, and mathematical finance. Although Wiener-chaos expansions offer strong theoretical tools, traditional computational methods are hindered by the need for large chaos dictionaries and high-order iterated integrals. To overcome these obstacles, we introduce NeuralChaos -- a neural operator architecture that produces elements of $\\mathcal{H}^2_T(\\mathbb{R}^{d})$ using only finitely many evaluations of the driving Brownian motion, while preserving predictability and square-integrability. We prove that NeuralChaos is dense in $\\mathcal{H}^2_T(\\mathbb{R}^{d})$ and achieves the best $N$-term chaoslet approximation rates for compressible and Malliavin--Sobolev regular processes. Moreover, compressibility is shown to be typical for processes from $\\mathcal{H}^2_T(\\mathbb{R}^{d})$ under non-degenerate sub-Gaussian sampling. In contrast, we show that finite-dimensional Markovian neural SDE models constitute a meagre and Gaussian-null subset in $\\mathcal{H}^2_T(\\mathbb{R}^{d})$, regardless of discretization, whereas compressible processes are generic. Numerical experiments on a stochastic optimal control problem and dynamic hedging highlight the practical effectiveness of our approach. Our results enable more efficient and expressive modelling in stochastic analysis and mathematical finance.",
+    "authors": [
+      "Anastasis Kratsios",
+      "Giulia Livieri",
+      "Philipp Schmocker"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "math.PR",
+      "cs.LG",
+      "q-fin.CP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14361v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14361v1",
+    "fetched_at": "2026-07-17T09:51:55.656303",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.703971"
+  },
+  {
+    "id": "2607.14174v1",
+    "title": "How Much of a 10-K Matters? Aggregation-Dependent Value of Full-Text versus Risk-Factor Sentiment",
+    "abstract": "Financial sentiment extraction has largely relied on news text and supervised extraction against return labels alone, leaving 10-K filings -- and volatility, the target risk disclosure is arguably best suited to informing -- comparatively unexplored. We extend a supervised lexicon-learning approach to 10-K filings and their Item 1A risk-factor sections, training sentiment scores against both return and volatility labels at three levels of aggregation: sector, portfolio, and individual firm. Across 1,383 filings from 94 Nasdaq-100 technology constituents (2006--2023), we evaluate the resulting twelve sentiment metrics on classification accuracy, correlation with realised market outcomes, and qualitative lexical content. Full-filing text produces more accurate sentiment at the sector and portfolio level for both targets, but this reverses at the individual-firm level, where the narrower Item 1A section performs better -- an effect we attribute to the interaction between document volume and the amount of independent training signal available at each level of aggregation. A Loughran-McDonald dictionary baseline is consistently, strongly negatively correlated with price at every level tested, underscoring the value of a supervised approach for regulatory disclosure text. These findings, and the design choices they motivate, establish the sentiment-generation methodology underlying a subsequent, larger-scale, multi-source system.",
+    "authors": [
+      "Sanggyu Sean Choi"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP",
+      "q-fin.MF",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14174v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14174v1",
+    "fetched_at": "2026-07-17T09:51:55.656428",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Sentiment Analysis",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.703982"
+  },
+  {
+    "id": "2607.12248v2",
+    "title": "When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting",
+    "abstract": "Large pretrained time-series models such as TimesFM are attractive for financial forecasting, but raw directional accuracy is a misleading scoreboard in equity markets. An early LoRA adapter in this project appeared to reach roughly 80% directional accuracy; we show this is not evidence of skill. Over a long horizon in a rising market, a trivial \"always-up\" rule attains comparably high accuracy without using the input at all. To separate genuine skill from this base-rate artifact, we build a reproducible, frozen-data benchmark with expanding walk-forward folds, a stratified held-out-ticker split, honest baselines (zero-shot TimesFM, always-up, random-walk, persistence, AR(1)), and paired significance tests (McNemar, Diebold-Mariano) under Benjamini-Hochberg FDR control. We apply the identical method to two universes -- a tech-heavy NASDAQ-100 and a broad S&P 500 -- reporting excess accuracy over the always-up base rate. Three findings replicate. First, when the historical ~80% condition is recreated, the high number is a base rate of ~0.70 that the fine-tuned model scores below. Second, pooled LoRA shows no directional skill over the base rate at any horizon on either universe (negative at the six-month horizon). Third, per-sector specialization is significantly worse than a single pooled adapter (Diebold-Mariano p<0.001 on held-out stocks at h=128). Fine-tuning's only measurable benefit is a statistically significant reduction in point-forecast error relative to zero-shot TimesFM, which nonetheless does not beat naive baselines and confers no tradeable directional edge. The contribution is methodological: a defensible, fully seeded protocol that prevents the base-rate trap, together with the replicated negative result it produces.",
+    "authors": [
+      "Taizhen Cheung"
+    ],
+    "published": "2026-07-14",
+    "categories": [
+      "q-fin.ST",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.12248v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.12248v2",
+    "fetched_at": "2026-07-17T09:51:55.656575",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704002"
+  },
+  {
+    "id": "2607.14287v1",
+    "title": "XCT-SAM: Sequential Parameter-Efficient Domain Adaptation of SAM for Industrial XCT Defect Segmentation",
+    "abstract": "Defect segmentation in additive manufacturing (AM) X-ray computed tomography (XCT) images remains challenging due to severe class imbalance and large distribution shifts across scan conditions. Although recent foundation models such as the Segment Anything Model (SAM) provide strong general-purpose segmentation priors, their natural-image pre-training transfers poorly to the AM XCT domain, where defects appear as subtle non-semantic microstructural anomalies. Moreover, adapting SAM to the AM domain is further limited by the large domain gap and scarcity of labeled real XCT data. We present XCT-SAM, a sequential parameter-efficient adaptation framework for AM XCT defect segmentation. Instead of adapting SAM directly from natural images to XCT data, we first fine-tune Conv-LoRA adapters on an alloy-microstructure dataset and subsequently transfer the adapted model to XCT images, progressively bridging the domain gap. Using Conv-LoRA adapters with rank r=2, the framework injects convolutional spatial inductive bias into SAM's backbone while training approximately 4.15M parameters and keeping over 99% of the model frozen. We evaluate XCT-SAM on out-of-distribution CycleGAN-XCT benchmarks and real-world NIST XCT scans. Across both settings, XCT-SAM consistently outperforms zero-shot SAM and other domain-adapted SAM baselines, achieving the best overall IoU and Dice scores. These results demonstrate the effectiveness of intermediate domain adaptation with parameter-efficient adapters for industrial XCT defect segmentation. The source code is publicly available at https://github.com/Mahedi-61/XCT-SAM.git",
+    "authors": [
+      "Md Mahedi Hasan",
+      "Md Mushfiqur Rahaman",
+      "Alan Pachkovskiy",
+      "Imtiaz Ahmed",
+      "Jeremy Dawson",
+      "Srinjoy Das"
+    ],
+    "published": "2026-07-15",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14287v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14287v1",
+    "fetched_at": "2026-07-17T09:52:09.253675",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704015"
+  },
+  {
+    "id": "2607.15272v1",
+    "title": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+    "abstract": "Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manuscripts. Automating this editing workflow under a natural-language instruction, however, is challenging, because a scientific figure is a dense infographic in which heterogeneous visual elements such as schematics, plots, photos, captions, and arrows are composed under a tight visual grammar to advance a specific argument. To address this, we present SciDiagramEdit, a benchmark and skill-evolution framework that learns from natural paper revisions and operates on the figure's editable vector source, where users can inspect and co-edit individual primitives alongside the agent. Our benchmark mines before/after figure pairs from arXiv version histories, each grounded in the authors' own revision intent. To accommodate the diversity of editing instructions, we adopt agentic learning via skill evolution: an agentic proposer continually refines the agent's skill specification from execution traces over multiple epochs. The resulting skill progressively lifts edit accuracy on a held-out validation set, providing evidence that natural paper revisions are an effective training signal for instruction-driven figure editing.",
+    "authors": [
+      "Yasheng Sun",
+      "Zezi Zeng",
+      "Yifan Yang",
+      "Chong Luo",
+      "Wenyi Wang",
+      "Ziwei Liu",
+      "Jürgen Schmidhuber"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15272v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15272v1",
+    "fetched_at": "2026-07-17T09:52:39.769258",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704026"
+  },
+  {
+    "id": "2607.15257v1",
+    "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+    "abstract": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-agent framework that turns fragile, implicit search progress into explicit, persistent, and shared state. First, we formulate open-domain information seeking as relational schema completion with grounded citations, where agents discover entities, populate attributes across linked tables, and anchor each value to source evidence. Then we design Search-Oriented Context Management (SOCM), which externalizes the evolving state into Frontier Task, an Evidence Graph, a Coverage Map, and Failure Memory. Built on SOCM, SearchOS applies a pipeline-parallel scheduling mechanism that overlaps the execution of sub-agents and continuously refills freed slots with tasks targeting unresolved coverage gaps to improve utilization and throughput. To schedule and control the execution of search agents, SearchOS introduces a Search Tool Middleware Harness that intercepts model and tool interactions to record grounded evidence and react to stalls or budget exhaustion, and provides a reusable hierarchical skill system comprising strategy and access skills to augment the agents' search process and avoid repeating failed search patterns across runs. On WideSearch and GISA, SearchOS leads all metrics among the evaluated single- and multi-agent baselines, paving the way toward robust information-seeking collaboration.",
+    "authors": [
+      "Yuyao Zhang",
+      "Junjie Gao",
+      "Zhengxian Wu",
+      "Jiaming Fan",
+      "Jin Zhang",
+      "Shihan Ma",
+      "Yao Yao",
+      "Weiran Qi",
+      "Chuyan Jin",
+      "Guiyu Ma",
+      "Xingzhong Xu",
+      "Kai Yang",
+      "Ji-Rong Wen",
+      "Zhicheng Dou"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.AI",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15257v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15257v1",
+    "fetched_at": "2026-07-17T09:52:39.769313",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704037"
+  },
+  {
+    "id": "2607.15207v1",
+    "title": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+    "abstract": "World-action models (WAMs) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world prediction. This coupling is often viewed as a source of robustness, interpretability, and safety, as a robot's action can in principle be checked against its imagined future. In this paper, we show that this assumption is fragile. We introduce BadWAM, a unified framework for modeling and evaluating World-Action Drift Attacks: a new class of WAM-specific adversarial attacks that use small visual perturbations to break the alignment between what a WAM imagines and what it executes. BadWAM characterizes this attack surface along two natural criteria: attack strength and stealthiness. When the adversary prioritizes disruption, BadWAM instantiates an action-only adversarial attack, which directly drives the model toward task-failing actions. When the adversary additionally prioritizes stealth, BadWAM instantiates an imagination-preserving adversarial attack, which seeks to induce harmful action shifts while keeping the model's predicted future close to its clean imagination. Together, these two attacks capture a spectrum of WAM-specific failures: from overt action hijacking to stealthier cases where the model appears to imagine a plausible future but executes a desynchronized action. We evaluate BadWAM across different variants of WAMs. Results show that our attacks substantially reduce task success rates under closed-loop execution. For example, our action-only attack reduces the model performance from 96.5% to 43.1% success. The results of our imagination-preserving attack further exposes a WAM-specific vulnerability: moderate future-preserving regularization can maintain strong attack performance while reducing future imagination drift.",
+    "authors": [
+      "Qi Li",
+      "Xingyi Yang",
+      "Xinchao Wang"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.LG",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15207v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15207v1",
+    "fetched_at": "2026-07-17T09:52:39.769335",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704048"
+  },
+  {
+    "id": "2607.15193v1",
+    "title": "Plover: Steering GUI Agents through Plan-Centric Interaction",
+    "abstract": "Graphical user interface (GUI) automation remains challenging in real-world environments, where dynamic layouts, unexpected dialogs, and evolving interface states can cause autonomous agents to drift from user intent. Recent vision-based multimodal agents improve flexibility by operating directly over screenshots and natural language instructions, but planning and adaptation often remain internal, limiting users' ability to inspect, supervise, or correct system behavior. We present Plover, a plan-centric vision-based GUI automation system that externalizes task plans and replanning as persistent, inspectable, and revisable artifacts. Through a planner--executor architecture, Plover supports explicit supervision of evolving execution, localized correction through editable plans, natural-language guidance, and screenshot-grounded interventions, while preserving prior progress during repair. A formative study with six participants informed the interaction design. We then evaluate Plover through benchmark failure-case repair and scenario-based workflow analyses. Our results show that many autonomous GUI-agent failures are structurally repairable when plans remain visible and interventions are localized, and that explicit replanning helps make GUI automation more transparent, controllable, and adaptable.",
+    "authors": [
+      "Madhumitha Venkatesan",
+      "Shicheng Wen",
+      "Jiajing Guo",
+      "Jorge Piazentin Ono",
+      "Liu Ren",
+      "Dongyu Liu"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15193v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15193v1",
+    "fetched_at": "2026-07-17T09:52:39.769363",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704058"
+  },
+  {
+    "id": "2607.15166v1",
+    "title": "MedFailBench: A Clinician-Built Open-Source Benchmark for Medical AI Safety Boundary Inspection",
+    "abstract": "Most medical AI benchmarks measure whether a model knows the correct answer. MedFailBench asks a different question: which safety boundary failed? We present a clinician-built synthetic benchmark and failure atlas that labels medical AI errors by severity (1--5) and safety gate type (missed urgent escalation, unsafe remote dosing, unsafe discharge reassurance, evidence fabrication, unsafe protocol execution, source support gap). The current public release (v0.2.1) contains 44 clinician-reviewed synthetic cases with severity annotations, a live HuggingFace leaderboard preview, a safety gate taxonomy, a clinical severity rubric, and an automated pipeline for archiving model-response screening runs. No patient data, clinical validation claims, or model rankings are included. MedFailBench is released under Apache-2.0 and CC-BY-4.0 and carries the Zenodo DOI 10.5281/zenodo.21205535.",
+    "authors": [
+      "Goktug Ozkan"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15166v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15166v1",
+    "fetched_at": "2026-07-17T09:52:39.769382",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704067"
+  },
+  {
+    "id": "2607.15079v1",
+    "title": "BrainPilot: Automating Brain Discovery with Agentic Research",
+    "abstract": "Understanding the brain increasingly depends on integrating evidence across scales, modalities, and disciplines. Addressing a single research question therefore requires a coordinated sequence of operations, from surveying prior work to executing analyses and interpreting results in light of domain knowledge. AI agents promise to accelerate this process, but current agents lack domain expertise in brain science, may fabricate claims, drift during multi-step reasoning, and offer few defined points for expert intervention. These failures are especially costly in brain science, where conclusions feed into downstream scientific claims and depend on laboratory-specific expertise and careful human judgment. We present \\textbf{BrainPilot} a \\textbf{fully open-source} multi-agent system that accelerates brain science research with traceable logs and agent-verified results. A principal investigator (PI) agent coordinates specialist agents grounded in curated domain knowledge: a unified brain science knowledge base containing 7{,}233 indexed items and a skill library of 72 reusable methodology units across seven research domains. Every major step is recorded in the Graph of Trace, an auditable record that links subgoals, tool use, evidence, and claims and allows researchers to follow and inspect the workflow. An Auditor agent further integrates fabrication checking into the workflow. For evaluation, we run three brain science tasks from Agents' Last Exam, introduce our own benchmark, \\textbf{BrainPilotBench-v0}, and present additional end-to-end case studies. Across these evaluations, BrainPilot with an open-source backbone model attains performance comparable to state-of-the-art agent framework with less costs.",
+    "authors": [
+      "Haoxuan Li",
+      "Tianci Gao",
+      "Jianhe Li",
+      "Yang Fan",
+      "Runze Shi",
+      "Weiran Wang",
+      "Tianxiang Zhao",
+      "Zezhao Wu",
+      "Xiaoyang Jiang",
+      "Qihui Zhang",
+      "Jia Li",
+      "Xiao Xiao",
+      "Kai Du",
+      "Xiaoxuan Jia",
+      "Chao Xie",
+      "Lu Mi"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15079v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15079v1",
+    "fetched_at": "2026-07-17T09:52:39.769449",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704077"
+  },
+  {
+    "id": "2607.15001v1",
+    "title": "LQCDMaster: Agentic Scientific Computing for Lattice Quantum Chromodynamics Research",
+    "abstract": "Lattice quantum chromodynamics (LQCD) provides a first-principles framework for computing hadronic observables, but its practical use remains limited by the substantial expertise required to turn research motivation into reliable computing workflows. Here we present \\textsc{LQCDMaster}, a tool-augmented, skill-guided and domain-specialized scientific computing agent that converts natural-language LQCD research tasks into executable PyQUDA computing workflows, including measurement scripts, job-submission artifacts, execution logs and numerical outputs. The system combines agentic planning, expert-annotated LQCD skills and a deterministic Wick-contraction tool to constrain the algebraically fragile components of code generation. We evaluate \\textsc{LQCDMaster} on a benchmark at the forefront of scientific research, comprising 70 LQCD computing tasks, with observables covering local and nonlocal two-point functions, Wilson loops, meson and baryon three-point functions. The generated workflows exactly reproduce expert-written implementations in 63 of 70 tasks at machine precision, with three additional discrepancies attributable to convention mismatches. Across representative observables, the agent reduces implementation time from hours to minutes while preserving end-to-end numerical validation. Further, we present a typical case of \\textsc{LQCDMaster}-driven exploration: a lattice computation of light-cone distribution amplitudes with diagonal Wilson-line, a quantity accessible with standard methods but never before computed, and computation of the spectrum of proton, deuteron, triton, hyperon, hyperdeuteron and hypertriton. This work pioneers the paradigm of agentic scientific computing by automating the end-to-end scientific computing workflows in lattice QCD research, lowering its barrier and facilitating the exploration and verification of non-standard scientific ideas.",
+    "authors": [
+      "Haofei Gao",
+      "Tingjia Miao",
+      "Wenkai Jin",
+      "Muhua Zhang",
+      "Hanzhang Wang",
+      "Jie Ran",
+      "Jinxin Tan",
+      "Zhentao Zhang",
+      "Bo Tang",
+      "Leiyi Li",
+      "Jun Hua",
+      "Xiangyu Jiang",
+      "Qi-An Zhang",
+      "Siheng Chen",
+      "Wei Wang"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "hep-lat",
+      "cs.AI",
+      "hep-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.15001v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.15001v1",
+    "fetched_at": "2026-07-17T09:52:39.769493",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704089"
+  },
+  {
+    "id": "2607.14989v1",
+    "title": "OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios",
+    "abstract": "Large language models are increasingly evolving from text generators into general agents capable of understanding user requests, invoking external tools, and completing complex tasks through interaction. However, existing agent benchmarks often focus on limited scenarios, tool ecosystems, or interaction formats, making it difficult to systematically characterize model capabilities across heterogeneous application settings. We introduce OmniaBench, a benchmark for evaluating general agents across diverse scenarios with explicit state spaces. We derive application-oriented scenario knowledge from app stores, product documents, industry resources, Web retrieval, and human refinement, forming a hierarchical taxonomy that spans ToC, ToB and ToE with 90 level-1 and 354 level-2 domains. Based on this taxonomy, we construct executable environments and synthesize single-turn and multi-turn tasks through four complementary routes: DAG, DAG-S, Solver, and Program. OmniaBench further introduces a ten-dimensional capability taxonomy and eight compositional atomic difficulty factors to support fine-grained evaluation and analysis. The resulting dataset contains 1,431 tasks, together with a challenging subset of 644 tasks designed to reduce evaluation cost and mitigate potential contamination of the full set after public release. The bench presents substantial challenges to current frontier models, with even Claude-Sonnet-5 and GPT-5.6-Sol achieving Overall Pass@1 scores of only 58.54 and 57.14, respectively. Further analyses reveal clear differences across domains and capabilities, as well as persistent limitations in planning, constraint maintenance, and adaptive correction. OmniaBench provides a broad and diagnostic benchmark for characterizing the capability boundaries of general agents.",
+    "authors": [
+      "Chengyu Shen",
+      "Yujie Fu",
+      "Gangtao Xin",
+      "Yanheng Hou",
+      "Wenlong Fei",
+      "Guojie Zhu",
+      "Jiawei Li",
+      "Hongcheng Gao",
+      "Runming He",
+      "Zhen Hao Wong",
+      "Meiyi Qiang",
+      "Hao Liang",
+      "Zhao Cao",
+      "Hao Jiang",
+      "Chong Chen",
+      "Wentao Zhang"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14989v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14989v1",
+    "fetched_at": "2026-07-17T09:52:39.769536",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704100"
+  },
+  {
+    "id": "2607.14952v1",
+    "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+    "abstract": "A growing gap separates inference context lengths from RL post-training: inference systems are approaching million-token contexts, while post-training workloads often remain at 256K tokens or below and rely on length generalization at deployment. The gap is especially important for AI agents, whose observations, tool outputs, documents, and prior decisions accumulate over long trajectories. LongStraw is an architecture-aware execution stack for million-token RL post-training under a fixed GPU budget, instantiated with Group Relative Policy Optimization (GRPO). It evaluates the shared prompt without autograd, retains only model-specific state needed by later tokens, and replays short response branches one at a time, reducing the live training graph at the cost of additional replay time. We implement it for the hybrid recurrent and full-attention Qwen3.6-27B and the compressed-attention mixture-of-experts GLM-5.2. On eight H20 GPUs, LongStraw completes grouped Qwen scoring and response backward at 2.1M positions for groups of 2 and 8; increasing the group size adds only 0.21 GB of peak allocated memory, while a separate stress test reaches 4.46M positions. On 32 H20 GPUs, we validate the end-to-end LongStraw execution path for a 2.1M-token prompt across all 78 layers of GLM-5.2. These experiments establish execution capacity rather than complete training correctness because the captured prompt state is detached and some distributed forward and gradient composition paths remain incomplete.",
+    "authors": [
+      "Changhai Zhou",
+      "Kieran Liu",
+      "Yuhua Zhou",
+      "Qian Qiao",
+      "Jun Gao",
+      "Harry Zhang",
+      "Irvine Lu",
+      "Nolan Ho",
+      "Lucian Li",
+      "Andrew Lei",
+      "Cleon Cheng",
+      "Steven Chiang",
+      "Yihang Zeng",
+      "Di Zhang",
+      "Rio Yang",
+      "Kaijie Chen",
+      "Andrew Chen",
+      "Pony Ma",
+      "Weizhong Zhang",
+      "Cheng Jin"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14952v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14952v1",
+    "fetched_at": "2026-07-17T09:52:39.769586",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704109"
+  },
+  {
+    "id": "2607.14896v1",
+    "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+    "abstract": "Addressing a structural-engineering request requires more than a single answer; it requires a chain of interdependent artifacts: interpreted requirements, a computable model, validation records, solver outputs, code-check records, and a final report. Evaluations centered on question answering or script generation rarely verify this complete evidence chain and may therefore reward fluent outputs even when the underlying engineering workflow is incomplete, internally inconsistent, or non-executable. To address this limitation, we present StructureClaw, an artifact-centered workbench in which LLM agents operate through governed engineering skills, typed tools, shared artifact state, and local analysis backends. We also introduce StructureClaw-Bench, an executable benchmark of 150 controlled scenarios spanning standard workflow execution, interactive robustness, and multimodal structural-model reconstruction. A scenario succeeds only when all required artifact- and execution-level assertions pass in a single run. Across ten agent-model configurations, each evaluated on the same 50 standard cases, the average Success Rate rises from 56.8% with the generic-skill baseline to 88.6% with the full automatic workflow. The interactive and multimodal evaluations identify two prominent remaining challenges: safe handling of invalid numerical inputs and fixture-consistent reconstruction of structural models. These findings show that artifact-centered evaluation can expose workflow-level failures that are difficult to identify from final responses alone, providing a more rigorous basis for evaluating and improving structural-engineering agents. The code and benchmark are available at https://github.com/structureclaw/structureclaw.",
+    "authors": [
+      "Sizhong Qin",
+      "Yi Gu",
+      "Yao Jiang",
+      "Ao Cai",
+      "Changjian Zhou",
+      "Shaoxuan Shuai",
+      "Jiachang Wang",
+      "Tianhao Shen",
+      "Yueqiang Li",
+      "Xinhao Li",
+      "Li Zeng",
+      "Yueshi Chen",
+      "Dachen Gao",
+      "Genrong Xu",
+      "Wenjie Liao",
+      "Xinzheng Lu"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14896v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14896v1",
+    "fetched_at": "2026-07-17T09:52:39.769631",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704120"
+  },
+  {
+    "id": "2607.14890v1",
+    "title": "Proof-or-Stop: Don't Trust the Agent, Trust the Evidence -- Loop Engineering for Verifiable Evidence-Gated Lifecycle Control",
+    "abstract": "Autonomous coding agents increasingly execute multi-step software work, but lifecycle states such as reviewed, tested, DONE, and ready-to-merge remain claims unless supported by current evidence. We present Proof-or-Stop Lifecycle Control, a method that permits lifecycle transitions only when fresh, tracked-source-state-bound, mechanically verifiable evidence satisfies the relevant gate. The method treats agent outputs as claims rather than lifecycle state, and uses proof operationally to mean gate-admissible evidence under a stated trust model, not semantic program correctness.   We evaluate an open-source implementation through mechanism tests, a powered control-policy ablation, and operated self-application evidence. The unattended-loop engine passed 10 of 10 scenarios with zero false-DONE, and local-key receipt bundles rejected 18 tamper classes with zero false accepts. In a 9,240-cell ablation, the pre-registered A4 versus A2-prime comparison reduced visible-pass/hidden-fail amplification from 31 of 1,800 injected cells under a compute-budgeted naive loop to 2 of 1,800 under the gated loop, a 1.6 percentage-point improvement in not-amplified rate with a 95 percent confidence interval of [0.8, 2.5]. A near-compute A3 versus A4 comparison, 14 of 1,800 versus 2 of 1,800, indicates that the gain is associated with enforcing review as a lifecycle gate rather than merely adding a reviewer. The self-application corpus contains 565 stories and 1,007 review findings, with 94.8 percent resolved, plus a 68-row high/critical cross-vendor exhibit. These results support Proof-or-Stop as a model-agnostic, host-neutral control layer for deciding which autonomous-agent claims a lifecycle may act on. The evaluation is limited to one model family, 24 ablation tasks, and a self-hosted corpus.",
+    "authors": [
+      "Jek Huang",
+      "Jeffery Hsia",
+      "Jiayi Sun",
+      "Freddie Shi",
+      "Wei Huang",
+      "Ian H. White"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14890v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14890v1",
+    "fetched_at": "2026-07-17T09:52:39.769664",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704131"
+  },
+  {
+    "id": "2607.14826v1",
+    "title": "Interventional Causal Circuits for Safe Robot Action Testing and Failure Recovery",
+    "abstract": "Safe physical AI for robot actions are required not only likely to succeed but tested to be safe before execution. In practice, however, formal testing of motion parameters is computationally expensive, and the cost scales poorly with the dimensionality of the action space. When a proposed action is rejected by a tester, the naive response is to resample blindly until a passing candidate is found. This is wasteful, uninformative, and offers no convergence. We argue that rejection should instead trigger causal diagnosis: a principled identification of which action parameter caused the failure and what corrective value maximises the probability of passing testing under the interventional probability distribution. We propose a closed-loop framework that couples a Joint Probability Tree (JPT) with a Causal Circuit derived from a Marginal-Deterministic Variable Tree, enabling exact polytime computation without retraining, or additional data collection. The framework validates tractability of all interventional queries before the robot begins operating, and out-of-support candidates are detected and excluded from correction automatically. We perform experiments in a ROS2 simulation environment, and the framework demonstrates complementary roles across quality of distribution: under a high-quality JPT, the Causal Circuit reduces failed attempts by 10.3% and under a degraded JPT, it reduces total failed attempts by 37%. Every rejected plan produces a structured, interpretable causal report naming the primary cause variable, its observed value, and the recommended corrective region, supporting operator oversight and autonomous recovery without a separately trained failure model.",
+    "authors": [
+      "Naren Vasantakumaar",
+      "Tom Schierenbeck",
+      "Michael Beetz"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14826v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14826v1",
+    "fetched_at": "2026-07-17T09:52:39.769686",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704142"
+  },
+  {
+    "id": "2607.14709v1",
+    "title": "Gold-Guided Programmatic Distillation for Financial Reasoning over Hybrid Tables and Text",
+    "abstract": "Financial question answering over hybrid tabular and textual data may require multi-source reasoning and precise numerical computation. While large language models (LLMs) can generate intermediate reasoning steps, natural-language rationales remain prone to arithmetic errors, making them an unreliable supervision source for distillation. Building on programmatic distillation, we develop an approach that transfers reliable numerical reasoning from a large teacher model to a compact student using execution-verified Python programs instead of free-form textual rationales. It leverages gold derivations to guide teacher-side program synthesis and retains only programs that execute correctly and produce the gold answer, ensuring high-quality supervision. We further introduce an iterative recovery stage that revisits teacher-failed examples, enabling the student to recover and incorporate newly verified programs into training. Experiments on TAT-QA show that our framework is highly effective for hybrid financial reasoning. Our best 7B student achieves 87.00 EM / 87.18 F1 on the test set, substantially outperforming the 72B teacher (78.46 EM) as well as traditional and strong LLM-based baselines, including TAGOP and TAT-LLM. These results demonstrate that execution-verified programmatic distillation provides an effective and extensible framework for training smaller models to perform reliable numerical reasoning.",
+    "authors": [
+      "Yun Dong",
+      "Erica Zhao",
+      "Elana Chen"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14709v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14709v1",
+    "fetched_at": "2026-07-17T09:52:39.769708",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704151"
+  },
+  {
+    "id": "2607.14675v1",
+    "title": "An Intelligent-Cloud Edge Multimodal Interaction System for Robots",
+    "abstract": "Robust human-robot interaction in complex environments requires accurate gesture perception, semantic scene understanding, and reliable task planning under limited onboard computing resources. This paper presents a cloud-edge multimodal interaction framework that integrates an enhanced YOLO-based gesture detector with coordinated large language model (LLM) and vision-language model (VLM) agents. The proposed detector, incorporates the Convolutional Block Attention Module (CBAM) into the neck and replaces the baseline bounding-box regression objective with Distance-IoU (DIoU) loss. These modifications improve feature discrimination and localization for small or partially occluded gestures in complex backgrounds. The cloud layer performs gesture detection, scene understanding, multimodal fusion, and action planning, whereas the TonyPi robot locally handles data acquisition, communication, action execution, and feedback. Experiments on a public gesture dataset and a custom dataset show that YOLO-DC achieves precision values of 98.9% and 95.0%, with mAP@0.5 values of 90.7% and 92.7%, respectively. System-level evaluation yields success rates of 95%, 88%, and 82% for single-action, composite-action, and vision-dependent tasks. A 30 participant evaluation yields an overall mean satisfaction score of 3.69 out of 5. These results demonstrate the feasibility of combining refined gesture detection with multimodal agents for resource-constrained robotic interaction.",
+    "authors": [
+      "Zihan Guo",
+      "Xiaoqi Li"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14675v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14675v1",
+    "fetched_at": "2026-07-17T09:52:39.769727",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704161"
+  },
+  {
+    "id": "2607.14658v1",
+    "title": "TopoAgent: A Self-Evolving Topological Agent for Multimodal Scientific Reasoning",
+    "abstract": "While Multimodal Large Language Models (MLLMs) excel in general tasks, rigorous scientific reasoning remains challenging due to the limitations of monolithic, linear planning. Such sequential designs often suffer from visual-semantic misalignment, long-context hallucinations, and brittle execution under fixed task granularity. We propose TopoAgent, a self-evolving topological framework that replaces linear trajectories with dynamic, state-isolated graph evolution. TopoAgent first employs a front-end decomposer to fracture complex queries into visually-grounded atoms. These atoms are organized into a Directed Acyclic Graph (DAG) based on their dependencies, enabling strict context isolation to shield the reasoning engine from irrelevant historical noise. Furthermore, we introduce adaptive atomic fission, which dynamically splits bottleneck nodes into finer-grained sub-atoms at runtime when tool capability boundaries are exceeded. Extensive experiments across mathematics, physics, and chemistry benchmarks demonstrate that TopoAgent significantly outperforms state-of-the-art linear agent frameworks, providing a robust, noise-resistant, and self-correcting paradigm for autonomous scientific reasoning.",
+    "authors": [
+      "Mingze Xu",
+      "Yinghui Li",
+      "Jiayi Kuang",
+      "Zhanhui Kang",
+      "Di Yin",
+      "Ying Shen",
+      "Xing Sun",
+      "Yuxing Han"
+    ],
+    "published": "2026-07-16",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.14658v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.14658v1",
+    "fetched_at": "2026-07-17T09:52:39.769756",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-17T09:54:53.704170"
+  }
+]
