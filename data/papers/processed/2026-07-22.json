@@ -1,0 +1,757 @@
+[
+  {
+    "id": "2607.19279v1",
+    "title": "Gaussian Boson Sampling for Asset Clustering in Statistical Arbitrage Portfolios",
+    "abstract": "Gaussian Boson Sampling (GBS) provides a native photonic quantum heuristic for sampling dense subgraphs from adjacency matrices, offering a scalable physical approach to combinatorial graph search problems. Simultaneously, correlation matrix clustering algorithms, such as Spectral and SPONGE, have established robust benchmarks for identifying co-moving assets from correlation matrices in statistical arbitrage (StatArb) strategies. In this work, we map S&P 500 residual correlation data into GBS-compatible adjacency matrices. We benchmark those classical clustering algorithms against two quantum clustering algorithms, GBS Boost and our novel GBS Roots, to construct dynamic, market-neutral portfolios over a rolling one-year window. Simulations across distinct macroeconomic regimes reveal that quantum clustering generates superior alpha within large stock universes during periods of high volatility, effectively isolating structural market idiosyncrasies. Crucially, this economic advantage persists under simulated low-loss conditions and extends into high-loss regimes via the application of coherent displacement to compensate for photon loss. Our findings underscore the efficacy of GBS-derived graph clustering in constructing robust StatArb portfolios, establishing a quantum foundation for broader quantitative finance applications.",
+    "authors": [
+      "Dayne Marcus Lopena",
+      "Daniel Buguks",
+      "Zhenghao Li",
+      "Ewan Mer",
+      "Shana H. Winston",
+      "Shang Yu",
+      "Mihai Cucuringu",
+      "Del Rajan",
+      "Philip Intallura",
+      "Raj B. Patel"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "quant-ph",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19279v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19279v1",
+    "fetched_at": "2026-07-22T10:20:47.622553",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886138"
+  },
+  {
+    "id": "2607.19218v1",
+    "title": "Denoising Subordinated Probabilistic Models: Diffusion with a Tempered-Stable Volatility Clock, and What the Noise Mechanism Actually Controls",
+    "abstract": "Heavy-tailed diffusion models replace Gaussian noise by a Gaussian variance mixture: denoising Levy probabilistic models (DLPM) take the mixing variables i.i.d. across coordinates, while Student-t EDM shares one mixing variable per sample. Neither has dynamics, yet temporal dependence of the noise amplitude - volatility clustering - is the defining stylized fact of financial returns. We introduce the Denoising Subordinated Probabilistic Model (DSPM), whose mixing vector is a stationary AR(1) chain driven by tempered-stable subordinator increments (the discrete Barndorff-Nielsen-Shephard volatility process) along the data axis. Conditionally on the chain the DDPM machinery survives verbatim; kurtosis and squared-noise autocorrelation are closed-form in the chain parameters, giving an exactly identified, analytically invertible calibration; DDPM, DLPM and Student-t noise are boundary cases of one memory parameter. We then prove a delimiting result: when the denoiser is conditioned on the mixing variables, their law is a nuisance - in the exact-denoiser limit the generated distribution is invariant to it and interventions on the chain do nothing. Experiments confirm both halves: conditioned models match the data's clustering whatever the mixing law, a designed x8 volatility shock moves the envelope by under 13%, while blind models transmit the mechanism exactly as calibrated. Finally, coupling the chain to the data by a variational volatility encoder - trained with the stochastic-volatility likelihood whose log-determinant the simplified denoising loss provably drops - restores control (shock response 3.07 vs. naive 2.83), recovers latent volatility (correlation 0.76), and learns the prior memory toward the true persistence.",
+    "authors": [
+      "Junchi Shen",
+      "Helin Zhao"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.MF",
+      "math.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19218v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19218v1",
+    "fetched_at": "2026-07-22T10:20:47.622588",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886165"
+  },
+  {
+    "id": "2607.19030v1",
+    "title": "Pricing options on illiquid assets using liquid market benchmarks: an application to energy markets",
+    "abstract": "The Gasoil options market is illiquid, making it difficult to construct its implied volatility surface directly. However, it is closely linked to the highly liquid Brent options market. In this paper, we jointly model Brent and Gasoil futures prices through a correlated Bachelier local volatility model: the Brent factor is described by a normal mixture diffusion model, while the Gasoil-Brent spot volatility spread is estimated using a data-driven procedure that identifies clusters of historical crack-spread levels and Gasoil-Brent volatility spreads. The resulting bivariate model allows us to compute an implied volatility correction that maps Brent implied volatilities to Gasoil implied volatilities without using illiquid Gasoil option prices as inputs. Monte Carlo simulations demonstrate that the resulting implied volatilities closely match observed Gasoil implied volatilities when benchmarked against more direct approaches. These results suggest that the proposed framework is well suited for modeling refined products and pricing the corresponding financial derivatives.",
+    "authors": [
+      "Federico Aluigi",
+      "Lucia Caramellino",
+      "Paolo Pigato",
+      "Edoardo Scrima"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.PR",
+      "stat.CO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19030v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19030v1",
+    "fetched_at": "2026-07-22T10:20:47.622615",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886182"
+  },
+  {
+    "id": "2607.19005v1",
+    "title": "Observable Matrix Dynamics of Stocks",
+    "abstract": "The Observable Matrix Dynamics (OMD) approach monitors the time development of complex non-linear systems through the trajectory of a fixed-size distance matrix and its spectrum. We apply it to the S\\&P 500 cross section over three crisis decades, the 2001 dot-com bust, the 2007--2008 financial crisis, and the 2020 Covid crash, with three fixed-size observables on a fixed universe. The arccos distance matrix of the rolling return correlations reads the correlation geometry: its effective dimension collapses at the 2008 and 2020 crises, while the 2001 bust is a dispersed unwind. Read against machine-learning distance matrices, its spectrum stays in the un-relaxed, pre-learning regime with no low-dimensional manifold, so the market never learns its correlation structure or relaxes to a stationary geometry. Subtracting the market factor exposes a coherent sector rotation, whose name-level attribution identifies which stocks drive each crisis and in what order. At a short lookback these signals resolve precursors and forecast the endogenous 2008 crisis, though not the exogenous 2020 shock. The other two observables model the daily return and volatility rankings as Markov chains on their ranking spaces. The return chain has persistent, defensive-led bellwethers and near-reversible dynamics. The volatility chain is far more persistent, led by the financial sector, and is the only one to carry a weak, episodic arrow of time, flaring at market stress and matching volatility clustering and the Zumbach effect. All three matrices show coherent changes during market crashes.",
+    "authors": [
+      "Igor Halperin"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.ST",
+      "cs.CE",
+      "q-fin.GN",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19005v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19005v1",
+    "fetched_at": "2026-07-22T10:20:47.622637",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886197"
+  },
+  {
+    "id": "2607.18815v1",
+    "title": "Cloud failure and cyber insurance: calibration of stress scenarios and diversification",
+    "abstract": "The expansion of the cyber insurance market remains exposed to the threat of accumulation events that could simultaneously affect a large number of policyholders. Although few such catastrophes have been observed so far, apart from worldwide cyberattacks such as WannaCry and NotPetya in 2017, the nature of cyber risk makes their occurrence plausible. Stress-testing tools are therefore needed to assess whether an insurance portfolio can withstand such crises. In this perspective, the European Insurance and Occupational Pensions Authority (EIOPA) has identified cloud outage as one of the key scenarios to consider in cyber insurance stress-testing frameworks. In this paper, we propose a framework to model and calibrate cloud-outage scenarios and to measure the diversification of a cyber insurance portfolio. We also show how this diversification can protect against accumulation risk and provide underwriting guidelines to reduce the vulnerability of a portfolio to cloud-outage scenarios.",
+    "authors": [
+      "Olivier Lopez",
+      "Daniel Nkameni"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18815v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18815v1",
+    "fetched_at": "2026-07-22T10:20:47.622657",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886212"
+  },
+  {
+    "id": "2607.18813v1",
+    "title": "Mixing-Law Uncertainty in Multivariate Normal Mean-Variance Mixtures: Semi-parametric Estimation and Robust Cumulative-Prospect Decisions",
+    "abstract": "The distribution of a normal mean-variance mixture depends on the law of its positive mixing variable. We compare six parametric mixing laws with a grid nonparametric maximum likelihood estimator under the same determinant identification constraint. The mixing mean $m=\\E(Z)$ is estimated and is not fixed at one. A paired block bootstrap is used to compare multivariate holdout log scores. The models that cannot be distinguished from the model with the largest score define a finite ambiguity set. We then consider a cumulative prospect problem on a common portfolio direction. For each model in the set, the NMVM representation gives a scalar projected return and a corresponding prospect-value function of the exposure. The distributionally robust decision maximizes the lower envelope of these functions. We prove existence of a solution, give the candidate points for the piecewise smooth problem, derive a reference-gap scaling result, and construct an interval branch-and-bound certificate for the finite-scenario optimum. In an application to 30 stock returns, the mixture models give higher holdout density scores than the multivariate Gaussian model. Several parametric and semi-parametric models, however, remain in the ambiguity set. The worst-case model is therefore determined at the portfolio optimization stage rather than selected in advance from a point estimate of the holdout score.",
+    "authors": [
+      "Nuerxiati Abudurexiti"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.PM",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18813v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18813v1",
+    "fetched_at": "2026-07-22T10:20:47.622678",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886226"
+  },
+  {
+    "id": "2607.18705v1",
+    "title": "Pathwise Portfolio Theory and Market Viability",
+    "abstract": "The theory of portfolios, and its allied notions and fundamental results concerning growth optimality, the numéraire property, and ``market viability'' -- which rules out the possibility of financing nontrivial future liability streams starting with arbitrarily small initial capital -- is developed in a pathwise setting, completely devoid of probabilistic considerations. The approach replaces the familiar semimartingale decomposition of stochastic analysis for assets' returns, by decompositions generated through suitable trend extractors and their associated residual paths; then deploys Föllmer's celebrated pathwise version of classical Itô integration and calculus. The resulting growth-numéraire and viability-boundedness equivalences bear considerable similarities to their semimartingale counterparts, but need not collapse into a single equivalence class in the pathwise setting; this separation is illustrated by two examples.",
+    "authors": [
+      "Ioannis Karatzas",
+      "Donghan Kim"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18705v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18705v1",
+    "fetched_at": "2026-07-22T10:20:47.622722",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886245"
+  },
+  {
+    "id": "2607.18623v1",
+    "title": "Dead Reckoning: Counting Your Customers Who Never Say Goodbye",
+    "abstract": "Firms in non-contractual commerce face the challenge of knowing how many customers they actually have because customers can stop buying without ever saying they have left. Buy-Till-You-Die models address this by estimating each customer's probability of being alive, a quantity called P(alive) and used in every major software tool for dashboards, churn, customer equity, and enterprise valuation. We show this practice confounds two distinct quantities. Within the beta-geometric family, P(alive) is the infinite-horizon limit of an observable family of finite-horizon repeat-purchase probabilities. Every finite-horizon estimate, such as the probability of repeat purchase within 12 months, is a forecast of a verifiable event. The infinite-time limit can only be reached by extrapolation, a customer count obtained by dead reckoning. The implied count is therefore only partially identified: realized returners are the lower bound, and estimation conventions determine the reported point estimate above that. On a seven-year panel of 31,683 customers, specifications with nearly identical observable forecasts estimate the number of alive customers anywhere from 3,654 to 27,734, a factor of 7.6; a default software weighting parameter alone swings the count 42 percent; and five years of later purchases falsify the maximum-likelihood count from below. The patterns replicate on the CDNOW benchmark, with a 2.4x spread. Most of what practice calls miscalibration is instead a category error: summed P(alive) overshoots realized eighteen-month returners by 2.25x, while the same model's own eighteen-month forecast errs by just 1.18x. The remedy is to report an auditable horizon count, estimate return probabilities at a stated horizon, audit them across scoring dates and horizons, recalibrate as cohorts drift, and report the total count, if at all, as an interval rather than a point.",
+    "authors": [
+      "Karl T. Ulrich"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.GN",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18623v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18623v1",
+    "fetched_at": "2026-07-22T10:20:47.622754",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886265"
+  },
+  {
+    "id": "2607.18616v1",
+    "title": "Prediction of bank transaction fraud using TabNet an adaptive deep learning architecture",
+    "abstract": "The development of online banking has brought about an increase in fraudulent operations, which is a major problem for banks. This study delves into the urgent requirement for interpretable, scalable, and top-notch fraud detection systems by using TabNet, an adaptable deep learning framework, on a Kaggle dataset consisting of actual bank transactions in India. Maximizing operational risk management by improving the accuracy of transaction anomaly detection and ensuring regulatory compliance through transparent models is the goal. We utilize a supervised learning pipeline that incorporates the Synthetic Minority Oversampling Technique (SMOTE) to ensure that classes are balanced. Subsequently, we conduct thorough exploratory data analysis (EDA) to identify patterns of fraud, both during specific times and across behaviors. On this dataset, five different deep learning architectures are tested: DNN, GRU, LSTM, CNN1D, and TabNet. Assessment of predictive performance was carried out using a 3-fold cross-validation framework. With a ROC-AUC of 0.9739 and an accuracy of 97.39 %, TabNet considerably outperformed the competition. The method of sparse feature selection used improved interpretability, generalized better on tabular data, and produced fewer false positives and negatives. Critical insights for operational fraud detection systems and a contribution to the broader literature on explainable AI (XAI) in financial decision-making are offered by the findings. Goals 8 and 16 of the Sustainable Development Agenda are supported by this study, which promotes inclusive economic growth and institutional transparency. Supporting strong, policy-compliant, and interpretable decision-support systems, it also offers practical use for real-time implementation in banking infrastructure.",
+    "authors": [
+      "Prashanth BS",
+      "Manoj Kumar",
+      "Ariful Hoque",
+      "Nasser Al Muraqab",
+      "Immanuel Azaad Moonesar",
+      "Udo Christian Braendle",
+      "Ananth Rao"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18616v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18616v1",
+    "fetched_at": "2026-07-22T10:20:47.622788",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886278"
+  },
+  {
+    "id": "2607.19321v1",
+    "title": "ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D",
+    "abstract": "As AI agents begin to automate AI R&D, we need ways to assess whether their outputs are safe to deploy, even when the agents themselves may be untrusted. AI control offers one such approach: rather than trusting the agent, it treats it as a potential adversary and uses a monitor to detect covert sabotage before deployment. We evaluate AI control for automated AI R&D with ResearchArena, a framework spanning four long-horizon tasks: safety post-training, capabilities post-training, CUDA-kernel optimization, and inference-server optimization. Because the deliverable in AI R&D is an artifact that will be deployed and run, we pair each main task with two kinds of hidden side task: an embedded side task that sabotages the submitted model, adapter, kernel, or server itself, and an independent side task that takes a covert out-of-scope action in the sandbox while leaving the artifact honest. We evaluate frontier agents at both sabotage and monitoring, across four monitor types that vary along two axes: whether the monitor may execute and probe the produced artifact, and whether it sees the agent's chain-of-thought. We find that sabotage hidden in the training data is the hardest to catch, flagged fewer than half the time. Letting the monitor run experiments on the artifact, rather than only read the trajectory, helps, but it is not enough: monitors still miss embedded sabotage by inspecting only the surface, by noticing the anomaly but explaining it away, or by probing the artifact with the wrong test. We release ResearchArena as a modular framework for evaluating sabotage and control in automated AI R&D.",
+    "authors": [
+      "Lena Libon",
+      "Ben Rank",
+      "Jehyeok Yeon",
+      "David Schmotz",
+      "Jeremy Qin",
+      "Daniel Donnelly",
+      "Derck Prinzhorn",
+      "Maksym Andriushchenko"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI",
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19321v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19321v1",
+    "fetched_at": "2026-07-22T10:21:00.883944",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886291"
+  },
+  {
+    "id": "2607.19266v1",
+    "title": "Toward Auditable Fraud Detection: Combining Graph Features, Model Explanations, and Agentic Case Investigation",
+    "abstract": "Fraud detection systems must scale with rising transaction volume while remaining explainable and reviewable. We study a layered pipeline on the PaySim dataset that combines a gradient-boosted classifier, graph-derived structural features, an autoencoder-based anomaly signal, TreeSHAP explanations, and a bounded LLM investigation agent applied to cases the classifier scores uncertainly. Before any model comparison, we identify and remove a simulator-specific balance shortcut that would otherwise inflate baseline performance. After this correction, neither the graph features nor the anomaly signal improves Average Precision on the full test set. Both, however, rank fraud better within the subset of cases receiving intermediate baseline scores. In a controlled experiment with injected multi-account fraud rings, engineered structural features recover all injected test transactions, while the tabular baseline misses roughly a quarter of them. The investigation agent underperforms direct thresholding of the classifier it relies on, reaching 65.0% accuracy against 71.7% on a balanced 60-case sample, despite having access to model explanations, graph context, and retrieved reference cases. Of the eight decisions the agent changed, six replaced correct classifier outputs with errors, and it produced a coherent written rationale in each case. An exploratory disagreement-based escalation rule flagged two of these agent errors for human review without flagging any correct decision. We conclude that each component of a layered fraud system contributes only under specific conditions, and that a plausible rationale from an investigation agent is not evidence of a better decision.",
+    "authors": [
+      "Rahil Sharma"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19266v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19266v1",
+    "fetched_at": "2026-07-22T10:21:00.883975",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886304"
+  },
+  {
+    "id": "2607.18850v1",
+    "title": "OPD-IAD: From Language Judgment to Industrial Anomaly Detection via On-Policy Self-Distillation",
+    "abstract": "Large vision-language models (LVLMs) have recently shown strong potential for industrial anomaly detection (IAD) by providing image-level anomaly judgments and interpretable defect reasoning. However, current LVLM-based IAD methods still struggle to produce precise pixel-level anomaly maps from generated language judgments. We aim to achieve precise pixel-level localization while using language as guidance rather than letting it dominate the visual response. Specifically, we propose \\textbf{OPD-IAD}, an evidence-privileged dense on-policy self-distillation framework for LVLM-based IAD. OPD-IAD distills privileged defect evidence onto the model's own on-policy judgment trajectory, enabling the final generated judgment to be learned under dense supervision rather than treated only as a textual answer. The resulting judgment serves as a semantic condition for dense anomaly perception. To turn this condition into dense visual evidence, we introduce \\textbf{Language-guided Visual Anchoring}, which uses a judgment reforward to re-encode the image and question under the final-judgment condition into semantic anchors and contrasts them with dense visual features through a contrastive heatmap head to generate anomaly maps. The language judgment therefore provides compact semantic guidance, while dense visual features remain the basis for pixel-level scoring, allowing language to guide anomaly localization without letting language quality directly dictate the pixel-level response. Extensive experiments show that OPD-IAD achieves the best overall performance among LVLM-based IAD methods, leading on most image-level, pixel-level, and QA metrics.",
+    "authors": [
+      "Shuimu Chen",
+      "Jing Jin",
+      "Nan Su",
+      "Hongbo Xu",
+      "Zebang Cheng",
+      "Wenming Yang",
+      "Fei Ma",
+      "Guijin Wang"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18850v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18850v1",
+    "fetched_at": "2026-07-22T10:21:00.884007",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886316"
+  },
+  {
+    "id": "2607.18479v1",
+    "title": "Hybrid Latent-Structural Fusion (HLSF) for Cyber Anomaly Detection",
+    "abstract": "Malicious anomalous activity detection is a fundamental challenge for cyber security systems. Both tensor decomposition under statistical framework with CANDECOMP-PARAFAC alternating Poisson regression (CP-APR) and normalizing flows have proven to be powerful unsupervised machine learning methods that model multi-dimensional data and capture complex and multi-faceted details of behavior profiles in cyber security applications. In this study, we propose Hybrid Latent-Structural Fusion (HLSF), a weighted anomaly fusion framework integrating CP-APR structural anomaly scores with latent-space density scores derived from normalizing flows. In our experiments, we show that the HLSF framework improves anomaly detection performance on a dataset of real-world compromised user credentials collected from the large enterprise network of Los Alamos National Laboratory (LANL) during a red-teaming exercise, compared with using CP-APR or normalizing flows alone.",
+    "authors": [
+      "Dorianis M. Perez",
+      "Maksim E. Eren",
+      "Bryan E. Kaiser"
+    ],
+    "published": "2026-07-20",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18479v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18479v1",
+    "fetched_at": "2026-07-22T10:21:00.884029",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886326"
+  },
+  {
+    "id": "2607.18325v1",
+    "title": "Hazard or Anomaly? Evaluating VLMs for Understanding Dangers and Discrepancies",
+    "abstract": "Modern safety-critical systems increasingly rely on human-robot interaction to reduce disaster risk and support decision-making during emergencies. Vision-Language Models (VLMs) are promising for these settings because they can interpret complex scenes and communicate safety-relevant information, but they still require careful evaluation to ensure reliable safety reasoning. In particular, current evaluations often frame danger recognition as a binary decision (Safe/Unsafe), making it unclear whether a model is identifying true physical hazards or merely reacting to unusual scene elements. We address this limitation by introducing an explicit distinction between hazard and anomaly, and by separately recognizing hazardous and anomalous states. We evaluate several state-of-the-art VLMs across two datasets and multiple prompting strategies to test whether this distinction changes model behavior. Our results show that VLMs frequently misinterpret anomalousness as hazardousness, revealing an over-reliance on contextual irregularity as a proxy for danger. We further show that explicitly separating anomaly from hazard provides a more informative evaluation of VLM safety reasoning and exposes failure modes that binary safety judgments can obscure. Our public dataset is available on Roboflow https://app.roboflow.com/vlm-in-context-anomaly-and-hazard-detection/camera-ready-roman-ds.",
+    "authors": [
+      "Murali Indukuri",
+      "Mohammad Eskandari",
+      "Sree Nitya Kollu",
+      "Stephanie Lukin",
+      "Cynthia Matuszek"
+    ],
+    "published": "2026-07-18",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18325v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18325v1",
+    "fetched_at": "2026-07-22T10:21:00.884169",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886337"
+  },
+  {
+    "id": "2607.19338v1",
+    "title": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents",
+    "abstract": "Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a cheap model first, then escalate hard cases to a stronger and more expensive model. In coding, however, execution feedback can also make further cheap-model recovery worthwhile, raising a budgeted deployment question: when should an agent spend more cheap compute, and when should it escalate? We formulate this post-failure decision as recovery routing over heterogeneous actions and train a supervised router from execution rollouts. To make the same router usable under changing budgets, we add a Conformal Risk Control (CRC) layer that selects a deployment-time cost penalty without retraining and provides marginal expected-cost control under exchangeability. Across held-out failures from five coding benchmarks, cheap recovery and escalation exhibit complementary success patterns. The calibrated frontier improves over fixed actions, prompt-only routers, and a binary cascade baseline; in the main GPT-5.4-nano/GPT-5.4 setting, one CRC-calibrated frontier point exceeds always-escalate solve rate while using 35% of its mean recovery cost. Code is available at https://github.com/Qijia-He/agent-budget-control.",
+    "authors": [
+      "Qijia He",
+      "Jiayi Cheng",
+      "Chenqian Le",
+      "Rui Wang",
+      "Xunmei Liu",
+      "Yixian Chen",
+      "Jie Mei",
+      "Zhihao Wang",
+      "Xupeng Chen",
+      "Yuhuan Chen",
+      "Tao Wang"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19338v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19338v1",
+    "fetched_at": "2026-07-22T10:21:30.623245",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886347"
+  },
+  {
+    "id": "2607.19297v1",
+    "title": "Graph-Based Agentic AI with LangGraph: Workflow Pathways for Long-Running Stateful Business Processes",
+    "abstract": "This paper is a practitioner guide to graph-based workflow pathways for long-running, stateful, multi-step generative AI systems in business processes. Rather than treating LangGraph, a low-level orchestration framework for stateful agents, as a model-quality benchmark target, we present three executable recipes -- SQL analytics with repair loops, agentic retrieval-augmented generation with evidence gating, and human-in-the-loop policy review with interrupt and checkpoint recovery -- to show how typed state, conditional routing, deterministic tools, retries, interrupts, checkpoints, and traces fit together. LangGraph is positioned by workflow-complexity fit, not as a universal default: simpler ReAct-style or plain SDK loops may be better for basic tool use, schema-first tools for structured extraction and validation, and DSPy when prompt or program optimization is the main goal. Each recipe explains when LangGraph is worth the extra structure and which implementation patterns make routes, pauses, and audit trails explicit product behavior rather than hidden prompt logic.",
+    "authors": [
+      "Daniel Pearson",
+      "Sidney Shapiro",
+      "Emiliano Sebastian Gonzalez Venegas",
+      "Sanad Al-Khatib",
+      "Aurora Pinzón Arzola"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19297v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19297v1",
+    "fetched_at": "2026-07-22T10:21:30.623318",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886357"
+  },
+  {
+    "id": "2607.19232v1",
+    "title": "S3: Stable Subgoal Selection by Constraining Uncertainty of Coarse Dynamics in Hierarchical Reinforcement Learning",
+    "abstract": "Hierarchical Reinforcement Learning (HRL) intends to separate strategic planning from primitive execution. It has been widely successful in solving long-horizon and complex tasks, where flat-RL algorithms have difficulty in learning. However, while the low-level agent in HRL benefits from dense feedback and abundant trial opportunities, the high-level agent receives sparse, delayed feedback from the environment and its performance depends on the low-level execution capability. In this paper, we study whether subgoal selection by the high-level agent can be performed more strategically, by providing it with dynamics-aware intrinsic motivation. Since motivation based on primitive transition dynamics would require broad coverage of the state-action space, we propose to use coarse dynamics, i.e., environment transitions aggregated over multiple steps at the temporal scale at which the high-level agent operates. This approach stabilizes the high-level policy by learning to minimize the predictive uncertainty associated with the coarse dynamics, and provides a guided structure for navigation. We model the predictive uncertainty by evaluating different dispersion metrics as approximated by a Mixture Density Network (MDN). Empirically, we observe that a dense, dynamics-aware intrinsic reward leads to risk-averse subgoal selection, enabling it to outperform state-of-the-art HRL methods in non-stationary long-horizon environments.",
+    "authors": [
+      "Kshitij Kumar Srivastava",
+      "Kshitij Jerath"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.LG",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19232v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19232v1",
+    "fetched_at": "2026-07-22T10:21:30.623337",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886368"
+  },
+  {
+    "id": "2607.19117v1",
+    "title": "Comparative Study of Multi-Agent Actor-Critic Algorithms in Parameterized Action Reinforcement Learning",
+    "abstract": "Parameterized action reinforcement learning has shown strong performance in environments requiring both discrete action selection and continuous parameterization. Prior work established the effectiveness of single-agent actor-critic algorithms - Greedy Actor-Critic (GAC), Soft Actor-Critic (SAC), and Truncated Quantile Critics (TQC) - on benchmark parameterized action tasks, but their extension to multi-agent settings remains largely unexplored. This paper presents a comparative study of shared-experience multi-agent extensions of these algorithms: Multi-Agent Greedy Actor-Critic (MAGAC), Multi-Agent Soft Actor-Critic (MASAC), and Multi-Agent Truncated Quantile Critics (MATQC). Rather than following the centralized training, decentralized execution (CTDE) paradigm, the proposed framework uses multiple independent actor-critic agents that share a replay buffer while maintaining separate policy and value networks. We evaluate the algorithms on the Platform-v0 and Goal-v0 benchmarks against their single-agent counterparts, using three-, five-, and ten-agent configurations to assess scalability. Performance is measured by average evaluation return and training time across ten independent runs, with one-way ANOVA and Tukey HSD post-hoc tests used to assess statistical significance. Results show that the multi-agent framework consistently improves Greedy Actor-Critic performance, while MASAC and MATQC show comparatively modest gains over their single-agent versions. Increasing the number of agents beyond five yields limited additional performance while substantially raising computational cost, particularly for MAGAC. These results highlight a trade-off between learning performance and computational efficiency, offering insight into the scalability of shared-experience multi-agent actor-critic methods for parameterized action reinforcement learning.",
+    "authors": [
+      "Ubayd Ali Bapoo",
+      "Clement N Nyirenda"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19117v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19117v1",
+    "fetched_at": "2026-07-22T10:21:30.623358",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886380"
+  },
+  {
+    "id": "2607.19104v1",
+    "title": "SciCodePile: A 128GB Corpus and Executable Benchmark for Challenging Scientific Code Generation",
+    "abstract": "Large language models (LLMs) excel at general-purpose code generation, yet how well they handle scientific code remains an open question. Existing datasets and benchmarks are limited in scale, domain coverage, or executable verification, leaving the true gap between current LLMs and reliable scientific code generators inadequately assessed. To address these limitations, we present SciCodePile, the largest scientific code corpus to date, constructed from 37,737 public repositories and collectively comprising 128GB of code that spans multiple computational science disciplines. From this corpus, we further curate an executable benchmark of 200 tasks, each equipped with a sandboxed execution environment and an automated test harness for functional verification. We evaluate 15 LLMs from both open-source and closed-source families on three tasks: prefix-to-suffix completion, fill-in-the-middle infilling, and executable code generation. Results show that scientific code generation remains highly challenging: The best CodeBLEU reaches only 38.13 and 38.37 on the two completion tasks, while the strongest model achieves just 12.30\\% Pass@1 on the executable benchmark, underscoring how far current models remain from reliable scientific code generation. To demonstrate the training utility of SciCodePile, we further show that continued pretraining on our corpus improves CodeBLEU by $\\times$2.84 on scientific code completion, and instruction tuning on our data improves Pass@1 by $\\times$4.79 on the executable benchmark. All code and data are available at https://huggingface.co/SciCodePile.",
+    "authors": [
+      "Weifeng Sun",
+      "Ye Fan",
+      "Yuchen Chen",
+      "Gou Tan",
+      "Jieke Shi",
+      "Yuan Yidi",
+      "Swee Liang Wong",
+      "Jonathan Pan",
+      "David Lo"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19104v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19104v1",
+    "fetched_at": "2026-07-22T10:21:30.623389",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886391"
+  },
+  {
+    "id": "2607.18970v1",
+    "title": "Skillware: A Software Ontology and Engineering Lifecycle for Persistent Behavioral Artifacts",
+    "abstract": "Agent Skills have become persistent behavioral artifacts across independent AI agent systems. They combine natural-language task specifications with metadata and optional references, scripts, assets, hooks, package manifests, tests, and companion interfaces. Existing studies explain how Skills are specified, executed, maintained, and evolved, but lack an ontology that defines these artifacts as independent software objects. This paper introduces Skillware as the software abstraction that extends software engineering to persistent Behavioral Artifacts in agent systems. A Skill Artifact specifies reusable task behavior; a Skillware Unit manages that artifact as software through an independent identity and lifecycle. A compatible Agent Host activates the unit for runtime interpretation. Three necessary conditions operationalize category membership: behavioral primacy, independent software identity, and an Agent Host execution relationship. Lifecycle Continuity records whether the same unit identity persists through update, maintenance, rollback, and removal as a separate software-grade property. Evidence combines the Agent Skills specification, a frozen corpus of 138,133 content-deduplicated SKILL.md records associated with 20,556 repository identifiers, independent empirical studies, 15 category-boundary cases, and 13 fixed-revision engineering implementations. The evidence establishes a recurring artifact envelope, separable software identities, compatible execution paths, and lifecycle engineering pressure. Skillware provides the software ontology and engineering lifecycle through which agent capabilities can become identifiable, composable, maintainable, and evolvable software artifacts.",
+    "authors": [
+      "Haodi Fan",
+      "Zucong Lan"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18970v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18970v1",
+    "fetched_at": "2026-07-22T10:21:30.623408",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886403"
+  },
+  {
+    "id": "2607.18839v1",
+    "title": "HPD-Parsing: Hierarchical Parallel Document Parsing",
+    "abstract": "Efficient teamwork typically combines global coordination with parallel execution, a principle not yet fully reflected in unified Vision-Language Model (VLM)-based document parsers. Existing unified parsers process an entire page jointly but generate its output through a single token-by-token autoregressive trajectory, creating a sequential bottleneck that grows with document length. Such full-page sequential generation overlooks a key property of document parsing: layout must be analyzed globally, whereas block content can be parsed in parallel. Based on this observation, we introduce HPD-Parsing, which replaces full-page autoregressive generation with a Hierarchical Parallel Decoding paradigm. A main layout branch organizes the overall document structure and dynamically assigns block-level content decoding to concurrent branches, while progressive multi-token prediction (P-MTP) further reduces the decoding steps within each branch. Experiments on public benchmarks show that HPD-Parsing achieves 4,752 tokens per second, delivering $2.62\\times$ the throughput of the fastest existing document parsing model and $3.06\\times$ that of the vanilla autoregressive baseline, while maintaining competitive parsing accuracy. These results establish hierarchical parallel decoding as an effective alternative to full-page autoregressive generation, opening a new direction for efficient unified document parsing.",
+    "authors": [
+      "Shu Wei",
+      "Jingjing Wu",
+      "Lingshu Zhang",
+      "Qunyi Xie",
+      "Hao Zou",
+      "Le Xiang",
+      "Xu Fan",
+      "Yangliu Xu",
+      "Manhui Lin",
+      "Xiaolong Ma",
+      "Cheng Cui",
+      "Tengyu Du",
+      " YY"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18839v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18839v1",
+    "fetched_at": "2026-07-22T10:21:30.623446",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886413"
+  },
+  {
+    "id": "2607.18816v1",
+    "title": "AgentTrails: Towards Trust and Reuse for Agentic Tasks",
+    "abstract": "LLM-powered agents increasingly tackle complex tasks by invoking tools, querying databases, executing code, and manipulating intermediate artifacts. These agents follow trajectories that are typically stored as chronological logs, obscuring the underlying dataflow -- the dependencies between their actions and the artifacts they create and manipulate. This limits developers' ability to understand the agents' trails, compare executions, debug failures, and re-use the computations. We present AgentTrails, a prototype system for agent provenance and sensemaking. AgentTrails converts raw trajectories into structured provenance graphs, where tool calls are modeled as computational actions and inputs and outputs as data artifacts. The system supports the comparison of executions by placing multiple provenance graphs on a shared canvas and constructing a joined quotient graph that aligns recurring tools, artifacts, and dependency structures across trajectories. On top of this representation, AgentTrails supports pattern extraction, downstream analysis, and skill abstraction. We demonstrate AgentTrails on real-world agent trajectories, showing that it reveals hidden dependencies, aligns divergent executions, and surfaces recurring tool-use patterns beyond chronological logs.",
+    "authors": [
+      "Eden Wu",
+      "Sonia Castelo",
+      "Yurong Liu",
+      "Cláudio T. Silva",
+      "Juliana Freire"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.DB",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18816v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18816v1",
+    "fetched_at": "2026-07-22T10:21:30.623471",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886422"
+  },
+  {
+    "id": "2607.18785v1",
+    "title": "SkillSight: Seeing Through Shared Descriptions for Accurate Skill Retrieval",
+    "abstract": "As large language model agents gain access to increasingly large skill libraries, retrieving the right skill becomes critical to reliable capability selection and execution. Existing retrievers often treat skill descriptions as ordinary documents, overlooking their highly regular structure: shared descriptive patterns recur across many skills while providing little evidence for distinguishing the required capability. We show that this shared descriptive background systematically contributes to dense relevance scores, induces a pronounced energy gap between queries and skill documents, and obscures task-relevant signals. Based on this observation, we propose SkillSight, a training-free retrieval framework that calibrates shared background in both semantic and lexical spaces. Semantic Background Calibration estimates a background subspace from generic tokens identified by IDF, reducing similarity induced by shared descriptive patterns, while Lexical Evidence Calibration downweights shared background tokens to recover discriminative token-level evidence. Experiments on SRA-Bench and SkillBench-Supp demonstrate consistent improvements across retrieval metrics, with SkillSight improving Recall@10 by up to 20.21 percentage points over the original dense retriever. In end-to-end evaluation, SkillSight achieves the best overall performance across three agent models and outperforms LLM Selection by up to 4.97 percentage points. It is also up to 1,248 times faster than the Dense + Reranker baseline. These results identify shared descriptive background as a key source of bias in skill retrieval and demonstrate that explicitly calibrating it enables accurate and efficient skill selection without additional training. Our code is available at https://github.com/xiaojinying/SkillSight.",
+    "authors": [
+      "Jinying Xiao",
+      "Bin Ji",
+      "Shasha Li",
+      "Xiaodong Liu",
+      "Ma Jun",
+      "Jiacheng Jie",
+      "Chao Wang",
+      "Nyima Tashi",
+      "Jie Yu"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18785v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18785v1",
+    "fetched_at": "2026-07-22T10:21:30.623503",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886433"
+  },
+  {
+    "id": "2607.18756v1",
+    "title": "RAGAL: A Frugal, Fully Local Retrieval-Augmented Assistant for Technical Support at a Government Agency",
+    "abstract": "Public institutions hold large volumes of sensitive documents and support tickets that cannot leave the premises, ruling out cloud-hosted language models entirely. We report on RAGAL, a retrieval-augmented assistant for the technical-support team of AFIR, the Romanian Agency for Financing Rural Investments, built and operated under three hard constraints: zero data egress (no external API calls, even for synthetic data), a read-only mandate (the assistant drafts, humans execute), and a single 8 GB consumer laptop as the only development and training machine. Over a Romanian-language corpus of ~25,000 chunks -- 15,073 resolved support tickets and internal normative documents -- we show that the highest-leverage investments were retrieval engineering and retriever fine-tuning rather than a larger generator: hybrid dense-sparse retrieval with intent routing raised our internal evaluation from 62% to 81%, and fine-tuning the bge-m3 embedder on real ticket data improved recall@10 from 0.663 to 0.850 (MRR 0.489 to 0.684) after 72 minutes of training. We document a general pitfall: single-domain fine-tuning silently degraded retrieval on the untouched document domain below the stock baseline, detected only after building a per-domain evaluation set and repaired with locally generated queries (GenQ). We report two counter-intuitive findings -- PII masking improved generation quality, and a structural \"anchor distillation\" scheme made SQL hallucination impossible by construction -- along with a reproducible recipe for full embedder fine-tuning in 8 GB of VRAM. Finally, since zero egress also rules out a cloud judge, we describe a substitute: a 744B-parameter model run on CPU, too slow to serve interactively but affordable in overnight batch, used as a second opinion whose limits we quantify. We release the sanitized pipeline scripts for institutions facing similar data-locality constraints.",
+    "authors": [
+      "Dan Musetoiu"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.IR",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18756v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18756v1",
+    "fetched_at": "2026-07-22T10:21:30.623520",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886445"
+  },
+  {
+    "id": "2607.18754v1",
+    "title": "AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents",
+    "abstract": "LLM agent failures are difficult to debug because the step where an error surfaces is often not the one that caused it. Existing observability tools replay execution traces but provide little support for identifying the root cause or translating diagnosis into recovery. We present AgentDebugX, an open-source debugging framework that organizes debugging as a closed loop of Detect, Attribute, Recover, and Rerun. At its core, DeepDebug performs multi-turn root-cause diagnosis through global trajectory understanding, structure-guided investigation, and cross-examination. On the Who and When benchmark, DeepDebug achieves the best strict attribution accuracy among the evaluated methods on both tested open-weight backbones, reaching 28.8 percent exact agent-and-step accuracy on qwen3.5-9b versus 21.7 percent for the strongest single-pass baseline. On GAIA, DeepDebug repairs 13 of 73 failed tasks in a single rerun, compared with 4 to 6 for three decoupled self-correction baselines, improving overall accuracy from 55.8 percent to 63.6 percent. AgentDebugX exposes this workflow through a Python library, CLI, web console, and installable agentic skill, and provides an opt-in Error Hub for sharing scrubbed failure-diagnosis-repair bundles and reusing them as debugging memory.",
+    "authors": [
+      "Kunlun Zhu",
+      "Xuyan Ye",
+      "Zhiguang Han",
+      "Yuchen Zhao",
+      "Bingxuan Li",
+      "Weijia Zhang",
+      "Muxin Tian",
+      "Xiangru Tang",
+      "Pan Lu",
+      "James Zou",
+      "Jiaxuan You",
+      "Heng Ji"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18754v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18754v1",
+    "fetched_at": "2026-07-22T10:21:30.623557",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886456"
+  },
+  {
+    "id": "2607.18724v1",
+    "title": "One Rewrite to Fix Them All? Type-Aware Repair Allocation for Text-to-Image Prompt Optimization",
+    "abstract": "Text-to-image (T2I) generators often fail to follow their prompts faithfully, producing wrong counts, swapped attributes, ambiguous relations, and illegible text. Prompt optimization repairs such failures by rewriting the user prompt, requiring no generator retraining, and has yielded promising results. However, existing optimizers absorb heterogeneous failures into one uniform prompt expansion, even though each calls for different repair language. We formulate semantic prompt optimization as atomic repair allocation: each failed proposition is routed to a type-conditioned repair operator before the resulting local constraints are compiled into one executable prompt. We instantiate this formulation in the training-free Type-Aware Repair Allocation (TARA) framework, which separates diagnosis, allocation, compilation, and a semantic repair gate, an accept-or-revert controller over exactly one prescribed repair that prevents semantic regressions. Extensive experiments on DSG and TIFA across four frozen generators demonstrate that TARA achieves the best semantic accuracy in all eight benchmark-generator cells, improving over VisualPrompter by 5.6 and 2.6 points on DSG and TIFA, respectively, while maintaining image quality and running fastest in our matched local setting at 16.0 seconds versus 20.0 seconds per prompt.",
+    "authors": [
+      "Haoyue Liu",
+      "Xiaoyu Ma",
+      "Ye Chen",
+      "Shuguang Cui",
+      "Xiaoying Tang"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18724v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18724v1",
+    "fetched_at": "2026-07-22T10:21:30.623581",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886466"
+  },
+  {
+    "id": "2607.18696v1",
+    "title": "Do AI-Native Biotechs Need Departments? Benchmarking Company World Models for AI-Driven Drug Development",
+    "abstract": "AI-native biotechnology companies are often designed by copying human biotech org charts into agent roles. We argue for a different abstraction: a Company World Model, defined as a persistent asset-to-value state representation with transition models, explicit value functions, planning, and updating across scientific, regulatory, BD, commercial, financial, and execution constraints. We introduce a dry-lab benchmark for testing whether AI-agent organizations should mimic departments or operate around such a world model. The benchmark contains 45 retrospective public-information decision cases with strict time cutoffs, hidden outcomes, common schemas, automatic scoring, and blinded pairwise judging. We compare human-org-mimic, stronger human-org-mimic-plus, AI-native asset-centric, and AI-native value-conversion architectures. The value-conversion architecture is a prompt-level approximation of a Company World Model: a Live Asset Value Record updated by Deal, Approval, Revenue, and Investment Arbiter loops. Under a success function defined by external BD, regulatory approval and launch, and revenue discipline, it achieved the highest automatic value-conversion score and was strongly preferred over the original baselines by value-specific blinded judges. Stress tests narrowed the claim: a stronger human baseline remained competitive, and a neutral judge did not show robust value-conversion dominance. Codex-only mechanistic ablations suggest that Revenue Room, Deal Room, and Approval Room carry useful work under the target objective. The central finding is objective-sensitive: departments may remain useful governance views, but the core AI-native operating primitive should be a shared, predictive asset-to-value state rather than a static human org chart. The study is dry-lab only and does not establish real-world drug success, clinical benefit, or revenue prediction accuracy.",
+    "authors": [
+      "Yinan Wang"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18696v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18696v1",
+    "fetched_at": "2026-07-22T10:21:30.623601",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886477"
+  },
+  {
+    "id": "2607.18666v1",
+    "title": "Fusion Embedding: A Unified Embedding Space for Text, Image, Video, and Audio",
+    "abstract": "A single embedding space that covers text, images, video, and audio lets one index serve every query a user can pose. Embedding models built on vision-language backbones now lead text/image/video retrieval benchmarks but lack audio entirely, while audio-text retrieval is led by specialist systems that serve no other modality. We present the Fusion Embedding family, which adds audio to a frozen vision-language embedding base whose parameters are never updated: generation 1 (fusion-embedding-1) trains only a 16.4M-parameter connector between a frozen audio tower and the frozen base, and generation 2 (fusion-embedding-2) adds modality-gated deep adapters (44.2M parameters) whose branch never executes on text, image, or video inputs: their outputs are bit-for-bit those of the released base, verified after every training run. Because the base already binds text, images, and video, aligning audio to text alone makes audio-image retrieval emerge, with zero paired audio-visual training data. Alongside the recipe we map its design space with controlled negative results (rewriting training captions with an LLM, substituting a leaderboard-stronger audio tower, and widening the connector each reduce retrieval) and with training-protocol findings that we expect to transfer to any frozen decoder-LM embedding backbone. Both generations train in hours on a single GPU. Weights, code, and the evaluation harness are openly released.",
+    "authors": [
+      "Abdul Basit Tonmoy",
+      "Kazi Fardinul Hoque",
+      "Md. Shahrier Islam Arham",
+      "Arman Luthra"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.CL",
+      "cs.SD"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.18666v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.18666v1",
+    "fetched_at": "2026-07-22T10:21:30.623627",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-22T10:23:41.886487"
+  }
+]
