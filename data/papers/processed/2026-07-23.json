@@ -1,0 +1,668 @@
+[
+  {
+    "id": "2607.20415v1",
+    "title": "Flux-Corrected Diagonal Frog: second order and positivity at all time steps",
+    "abstract": "By Godunov's theorem, linear second-order finite-difference schemes for the Fokker-Planck equation cannot preserve positivity. The Diagonal Frog (DF) framework previously bypassed this barrier using eventual positivity, but required a strict minimum time step. This paper resolves the small-step limitation using a nonlinear extension of the DF solvers. We split the second-order directional operator into a monotone M-matrix core and an antidiffusive flux correction. A Zalesak-type limiter is then applied iteratively within the implicit banded solve. The resulting Flux-Corrected DF (FCDF) schemes (variants A and B) are unconditionally positive across all time steps. Because the limiter acts on fluxes rather than point values, these schemes conserve discrete mass exactly and maintain second-order accuracy. Crucially, the limiter activates only within unresolved layers. This ensures the global $L_1$ convergence remains second-order uniformly in the cell Péclet number, avoiding the first-order degradation seen in the Chang-Cooper scheme. The method's Picard iteration is contractive under a purely convective step restriction. To support arbitrary step sizes, we develop an active-set reformulation. This solves the system using a semismooth Newton iteration, where computational cost scales only with the number of nodes where positivity binds. Finally, we introduce a defect-corrected time stepping approach that restores second-order time accuracy. Numerical experiments on Ornstein-Uhlenbeck and advection-dominated benchmarks confirm our claims.",
+    "authors": [
+      "Andrey Itkin"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "math.NA",
+      "cs.CE",
+      "physics.comp-ph",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20415v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20415v1",
+    "fetched_at": "2026-07-23T10:15:06.964819",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830573"
+  },
+  {
+    "id": "2607.20343v1",
+    "title": "Model Risk via Signature-Induced Optimal Transport",
+    "abstract": "We propose a signature-induced, optimal transport framework for path-space model risk, in which ambiguity between stochastic path laws is factorized through optimal transport costs on signature coordinates under a common coupling. Via an ambient feature-space relaxation, we derive for affine signature scores and affine half-space events explicit robust expectation and probability bounds that depend only on the baseline model. In both cases, the correction is governed by the same effective budget, which depends only on the affine score and the budget vector of the ambiguity set. Moreover, the same quantity leads to a budget-aware sparse signature surrogate method for more general, possibly implicit, or data-driven, path functionals. We illustrate the resulting methodology through controlled stress tests and benchmark model-misspecification problems in finance and insurance.",
+    "authors": [
+      "Tomoyuki Ichiba",
+      "Qijin Shi"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "q-fin.RM",
+      "math.OC",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20343v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20343v1",
+    "fetched_at": "2026-07-23T10:15:06.964854",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830605"
+  },
+  {
+    "id": "2607.20168v1",
+    "title": "Quantum Kernels and the Cross-Section of Stock Returns: Anatomy of a Vanishing Advantage",
+    "abstract": "Do quantum kernels improve cross-sectional stock return prediction? We run a controlled horse race on the Chinese A-share market in which a quantum fidelity kernel, a projected quantum kernel, and a classical RBF control share identical training subsamples, solver, and tuning budgets, so that only the kernel is exchanged. On the main evaluation -- a point-in-time universe and 170 walk-forward windows (2012-2025) -- no quantum advantage exists: the fidelity kernel is indistinguishable from its RBF control ($Δ$IC $=+0.005$, $p=0.42$), and a $2\\times2$ design crossing kernel type with training budget (a Nystrom extension to the full ~38,000-observation windows) shows quantum kernels matching, but never beating, equal-budget linear models; after family-wise correction no pairwise difference among eleven models is significant, with point estimates favoring penalized linear regressions throughout. We then document how the opposite conclusion arises: a 60-window evaluation on a universe screened with full-sample information makes the same quantum kernel appear dominant on stability criteria and significantly better than neural baselines. Interaction characteristics from the anomalies literature help nothing, quantum or classical; a widened bandwidth grid reveals an interior optimum rather than the near-classical endpoint a coarse grid suggests; and the geometric difference, while large throughout ($g \\gg 1$), does not predict out-of-sample gains ($ρ=-0.20$). We propose protocol standards -- kernel-swap controls, budget-equalized comparisons, point-in-time universes, and multiplicity-robust inference -- for empirical claims of quantum advantage in finance.",
+    "authors": [
+      "Junchi Shen"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "q-fin.PR",
+      "quant-ph",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20168v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20168v1",
+    "fetched_at": "2026-07-23T10:15:06.964872",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830625"
+  },
+  {
+    "id": "2607.20093v1",
+    "title": "Retail Trader's Ruin: An Anatomy of Popular Signal Failure",
+    "abstract": "We test whether five widely promoted retail signal families - trend, oscillator, candlestick, volume, and calendar rules - deliver a positive, economically meaningful, net-of-cost, and survivable edge. Practical viability is the conjunction of three predeclared gates: statistical edge after multiplicity correction, economic viability after trading costs, and finite-bankroll survival under leverage. Exposure-matched benchmarks, stationary-bootstrap confidence intervals, hierarchical Benjamini-Yekutieli control, one-sided claim-exclusion tests, and equivalence tests distinguish positive evidence, statistically refuted materiality, and unresolved cases. Four of six candidates - oscillator, volume, calendar, and candlestick - are REFUTED, ruled out on statistical and/or economic materiality grounds; trend and a momentum calibration benchmark are INCONCLUSIVE, with confidence intervals too wide at this sample size to resolve the claim; none is SUPPORTED. Cross-sectional tests use point-in-time membership and delisting corrections. The momentum benchmark itself does not clear the statistical gate and is classified INCONCLUSIVE, not REFUTED - the critical validity signature that a genuinely uncertain positive control is never falsely falsified by this design. Under FINRA- and ESMA-anchored leverage and margin scenarios, survival is not the binding constraint for any tested family at the US headline scenario, though it becomes discriminating for trend and oscillator under the higher-leverage EU CFD scenario. The results reject specific promoted deployability claims where confidence bounds rule out the declared effect threshold and classify the remaining cases as unresolved rather than treating non-significance as proof.",
+    "authors": [
+      "Adam Darmanin"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "q-fin.ST",
+      "q-fin.RM",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20093v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20093v1",
+    "fetched_at": "2026-07-23T10:15:06.964888",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830638"
+  },
+  {
+    "id": "2607.19497v1",
+    "title": "The Science and Practice of Trend-Following Systems",
+    "abstract": "We present a unified approach to designing trend-following (TF) systems and classify them into European, American, and Time Series Momentum categories. For European TF systems, we derive an exact relationship between profit-and-loss, autocorrelation, and drift in volatility-normalized returns. We analyze the expected return under fractional ARFIMA processes and show that TF systems are profitable when the long-term autocorrelation is positive, even under short-term mean reversion. In the frequency domain, the expected return is represented as a Poisson-kernel reading of the analytical or empirical spectrum of the volatility-normalized returns: the system profits at zero drift when the kernel-weighted spectral mass exceeds one, so trend-following alpha is excess spectral mass at low frequencies. Longer lookbacks benefit in addition from the squared drift of the return process. We derive the closed-form Sharpe ratio, with the excess kurtosis of the innovations entering through a single loading, and the net Sharpe ratio and cost-optimal span under trading costs. Under white noise, we derive the closed-form skewness of aggregated TF returns, which is positive at every horizon and peaks near half the filter span. Monte Carlo experiments confirm the analytical results. We show that the positive skewness of TF returns is structural under various model assumptions. Empirically, we evaluate the systems on liquid contracts, and show that all TF systems are strongly correlated and our analytical results can be applied for their performance attribution. Our results enable design, simulation, and performance attribution of TF systems from trend persistence, mean reversion, drift, and skewness.",
+    "authors": [
+      "Artur Sepp",
+      "Vladimir Lucic"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.ST",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19497v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19497v1",
+    "fetched_at": "2026-07-23T10:15:06.964904",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830649"
+  },
+  {
+    "id": "2607.19453v1",
+    "title": "Predictive Extrema, Unprofitable Policies: An AI-Assisted Audit of Candle-Based Binance Spot Timing Models",
+    "abstract": "We audit whether candle-based machine-learning models can turn predictions of cryptocurrency extrema or short-horizon outcomes into positive Binance Spot paper policies after assumed costs. Numerical results come from scripted fixed-seed model runs and deterministic simulators; human-supervised AI agents supported the July 20 evidence-integrity revision through literature retrieval, separately tasked critique, artifact reconciliation, documentation, and source packaging, not trading decisions. The strongest later-period evidence, conditional on extensive predecessor search, is negative: an unchanged ten-pair mandatory-daily selector lost 6.72\\% over 19 July cycles at an assumed 31-bps completed-cycle cost, with 3 wins and 16 losses. In short model-specific July evaluations, the validation-selected local-minimum policy returned -1.79\\%, while the local-maximum sell-to-cash/re-entry policy underperformed continuous holding by 2.80\\%; their gross mean advantages of 11.11 and 12.21 bps were below even the 21-bps stress. A Gurgul-inspired, OHLCV-only daily adaptation attained minimum/maximum ROC AUC of 0.874/0.896 but average precision of only 0.134/0.116 and lost 44.30\\% over seven cycles, versus -41.20\\% for buy-and-hold. A forensic audit also downgraded an earlier One4All \"30-day holdout\": its dates had influenced prior architecture work, its four-hour outcome horizon was not purged at split boundaries, it used same-close entry, and its raw result directories were absent. Across the tested, mostly exploratory protocols, event-ranking performance did not establish positive executable policy value. Every operational decision remains NO\\_TRADE.",
+    "authors": [
+      "Ayoub Jadouli"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-fin.ST",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19453v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19453v1",
+    "fetched_at": "2026-07-23T10:15:06.964963",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830660"
+  },
+  {
+    "id": "2607.19005v2",
+    "title": "Observable Matrix Dynamics of Stocks",
+    "abstract": "The Observable Matrix Dynamics (OMD) approach monitors the time development of complex non-linear systems through the trajectory of a fixed-size distance matrix and its spectrum. We apply it to the S\\&P 500 cross section over three crisis decades, the 2001 dot-com bust, the 2007--2008 financial crisis, and the 2020 Covid crash, with three fixed-size observables on a fixed universe. The arccos distance matrix of the rolling return correlations reads the correlation geometry: its effective dimension collapses at the 2008 and 2020 crises, while the 2001 bust is a dispersed unwind. Read against machine-learning distance matrices, its spectrum stays in the un-relaxed, pre-learning regime with no low-dimensional manifold, so the market never learns its correlation structure or relaxes to a stationary geometry. Subtracting the market factor exposes a coherent sector rotation, whose name-level attribution identifies which stocks drive each crisis and in what order. At a short lookback these signals resolve precursors and forecast the endogenous 2008 crisis, though not the exogenous 2020 shock. The other two observables model the daily return and volatility rankings as Markov chains on their ranking spaces. The return chain has persistent, defensive-led bellwethers and near-reversible dynamics. The volatility chain is far more persistent, led by the financial sector, and is the only one to carry a weak, episodic arrow of time, flaring at market stress and matching volatility clustering and the Zumbach effect. All three matrices show coherent changes during market crashes.",
+    "authors": [
+      "Igor Halperin"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "q-fin.ST",
+      "cs.CE",
+      "q-fin.GN",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19005v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.19005v2",
+    "fetched_at": "2026-07-23T10:15:06.964997",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830670"
+  },
+  {
+    "id": "2607.20302v1",
+    "title": "Classical Hardware Acceleration of Quantum Autoencoders for Real-Time Anomaly Detection in Collider Experiments",
+    "abstract": "Quantum machine learning (QML) algorithms in high energy physics (HEP) can efficiently represent and leverage long-range, high-order correlations in high-dimensional collider data, potentially with fewer parameters and favorable scaling relative to classical models. Deployment of QML in real-time collider applications such as trigger systems requires the ability to emulate and compile quantum circuits classically, then synthesize the resulting quantum gates onto low-latency hardware accelerators, namely field-programmable gate arrays (FPGAs). We present a study of variational quantum autoencoder models for real-time anomaly detection triggers in modern collider experiments. The models achieve performance comparable to state-of-the-art classical approaches and, after FPGA synthesis, satisfy resource usage and timing constraints consistent with trigger applications in future colliders. This work provides one of the first FPGA implementations of QML models for HEP triggers, enabling higher-capability models in today's classical data acquisition pipelines while advancing quantum readiness of collider experiment infrastructure.",
+    "authors": [
+      "Ivan Ge",
+      "Sagar Addepalli",
+      "Abhilasha Dave",
+      "Julia Gonski"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.LG",
+      "hep-ph",
+      "physics.ins-det"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20302v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20302v1",
+    "fetched_at": "2026-07-23T10:15:20.474327",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830686"
+  },
+  {
+    "id": "2607.20011v1",
+    "title": "Drift-Aware RL-based Wavelet Denoising for Network-Traffic Anomaly Detection",
+    "abstract": "Traffic-utilisation measurements for network monitoring are corrupted by additive noise and statistical drift: time-dependent change in the signal's mean, variance, distributional shape, or tail behaviour. Static wavelet denoising, calibrated under stationary independent and identically distributed (i.i.d.) Gaussian assumptions, becomes mismatched under drift and, at moderate-to-high signal-to-noise ratio (SNR), over-suppresses useful structure and degrades monitoring decisions. We propose a drift-aware framework treating adaptive wavelet denoising as a preprocessing layer optimised for two tasks: anomaly detection, recovering the multi-scale transient load bursts that noise and drift obscure, and capacity estimation, recovering the operational required capacity $C_{95}$ (95th percentile of utilisation). Because localised bursts are multi-scale structure a wavelet preserves but a low-pass filter removes, detection discriminates denoiser families. A four-detector gate (Page-Hinkley, variance-ratio, Jensen-Shannon, Anderson-Darling) determines when to invoke a learned policy, and a Proximal Policy Optimization agent selects a per-window wavelet configuration over a mixed discrete-continuous action space. Unlike prior work, the reward is downstream task utility, not reconstruction fidelity. The denoiser is benchmarked, per drift type and input SNR, against a low-pass moving-average filter, VisuShrink, SureShrink, BayesShrink, and a Wiener filter. Defining the anomaly target on the clean signal and the drift gate on the corruption keeps both stages non-circular.",
+    "authors": [
+      "Priyalakshmi Sheela",
+      "Indrakshi Dey"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "eess.SP",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20011v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20011v1",
+    "fetched_at": "2026-07-23T10:15:20.474369",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830696"
+  },
+  {
+    "id": "2607.19522v1",
+    "title": "Geospatial Diffusion-based Evolution Synthesis (GeoDES) for Storm-Centered Weather Augmentation",
+    "abstract": "While machine learning-based weather models hold significant promise, they struggle to predict the detailed structure of large-scale weather systems such as cyclonic storms. Regional models are constrained by limited historical records within fixed geographic boundaries, while global models are computationally expensive and often operate at resolutions too coarse to capture fine-grained storm dynamics. To bridge this gap, we introduce the Geospatial Diffusion-based Evolution Synthesis (GeoDES) model, a custom image-to-video diffusion model. By focusing generation strictly on the evolving storm structure, GeoDES synthesizes physically consistent, high-fidelity weather events suitable for stress-testing forecast models and expanding meteorological datasets. Evaluations demonstrate that GeoDES outperforms prior methods on key metrics, achieving $52\\%$ lower Peak Vorticity Error and $8\\%$ higher Anomaly Correlation Coefficient than the next strongest methods on the North Atlantic test set.",
+    "authors": [
+      "Sonia Cromp",
+      "Satya Sai Srinath Namburi GNVV",
+      "Youran Wang",
+      "Grace Kisslinger",
+      "Frederic Sala",
+      "James Booth",
+      "Allegra LeGrande"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19522v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19522v1",
+    "fetched_at": "2026-07-23T10:15:20.474391",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830704"
+  },
+  {
+    "id": "2607.19444v1",
+    "title": "Marine Engine Fault Dataset: Open-Access Data under Controlled Reference and Fault Scenario Conditions",
+    "abstract": "Open-access datasets for marine-engine predictive maintenance remain scarce, particularly those from controlled fault experiments with documented operating conditions, subsystem-level interventions and system-level measurements. This work presents the Marine Engine Fault Dataset, an openly available dataset from a turbocharged, intercooled three-cylinder marine diesel engine operated on a testbed under both reference and fault-scenario conditions. The experimental campaign combined a reference-performance program across the 30-90% load range with scenario-based tests in which abnormal conditions were introduced after stabilized fault-free operation, enabling controlled comparison between baseline and fault-affected behaviour. Five anomaly classes were implemented through physical interventions affecting major engine subsystems: cooling-water pump cavitation, compressor air-filter clogging, air-cooler fouling, injection-valve nozzle clogging and turbine degradation induced through increased exhaust-side restriction. The released data comprise multi-sensor time-series of operating, thermal, pressure, flow and combustion-related variables, with a separate reference-performance record and metadata for structured reuse. Technical validation shows that the reference measurements remain physically coherent across the operating range and that the imposed anomalies produce interpretable response patterns consistent with the affected subsystems, including progressively distinguishable behaviour where different severities were implemented. By combining controlled fault realization, multi-load operation and system-level measurements within a real marine-engine platform, the dataset provides a well-documented benchmark for anomaly detection, fault diagnosis, degradation modelling and related condition-monitoring studies in maritime machinery.",
+    "authors": [
+      "Ahmad BahooToroody",
+      "Oleksiy Bondarenko",
+      "Mohammad Mahdi Abaei",
+      "Niki Yoichi",
+      "Enrico Zio"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.LG",
+      "eess.SP",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19444v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19444v1",
+    "fetched_at": "2026-07-23T10:15:20.474450",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830714"
+  },
+  {
+    "id": "2607.20377v1",
+    "title": "Statevector-Referenced Geometry Survival of a Four-Qubit ZZ Quantum Kernel on IBM Quantum Hardware: A Fixed-Subset Diagnostic Across Three Execution Configurations",
+    "abstract": "Quantum-kernel methods encode a dataset's geometry in a Gram matrix, so learning claims on hardware kernels assume the intended geometry survives execution. We measure that survival for one frozen four-qubit ZZ feature-map kernel on $N=24$ real indoor air-quality windows, reconstructed on ibm_fez (1024 shots per circuit) under baseline, dynamical decoupling alone, and gate twirling alone, each a single non-interleaved job. Every configuration returned a complete, finite, positive-semidefinite Gram matrix and preserved the centered statevector geometry to a substantial but incomplete descriptive degree (full-matrix centered kernel alignment, CKA, 0.933-0.989). Gate twirling was most faithful on every reported geometry axis, with the only jackknife-resolved improvement over baseline (persisted Spearman, mean absolute error, and full-matrix CKA diagnostics); dynamical decoupling alone was not separated from baseline at the frozen-window scale. Residual hardware distortion, not finite sampling, dominates the discrepancy. Yet fidelity and label alignment were reversed: the most faithful configuration had the lowest centered kernel-target alignment, which sits at or below label-permutation references for statevector and hardware alike. We read the small hardware uplift as a normalization property of the non-affine distortion, not captured signal. These are descriptive results for single jobs on one backend, not causal mitigation-efficacy estimates; no quantum-advantage, hardware-classifier-superiority, or forecasting claim is made. Implementation fidelity and task relevance are distinct axes; hardware quantum machine-learning studies should report both.",
+    "authors": [
+      "Rostyslav Sipakov"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20377v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20377v1",
+    "fetched_at": "2026-07-23T10:15:51.291917",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830724"
+  },
+  {
+    "id": "2607.20345v1",
+    "title": "Closing the Lab-to-Store Gap: A Data-Efficient Post-Training and Experience-Driven Learning VLA Framework for Retail Humanoids",
+    "abstract": "Closing the gap between benchmark performance and reliable real-world operation remains a central challenge for Vision-Language-Action (VLA) humanoid robots, which must handle execution errors, distribution shifts, and environmental variability. This paper presents DEED (Data-Efficient Post-Training and Experience-Driven Learning), a systems-level approach evaluated on a supermarket chip-restocking task using a Unitree G1-Edu humanoid robot and the GR00T N1.6 foundation model. DEED comprises three key components: (1) a data-efficient post-training pipeline with control-frequency alignment, data curation, task-relevant visual highlighting, and reduced VLA dependence; (2) a real-world study of experience-driven refinement, adapted from RECAP via a text-based advantage prefix and a vision-language value function; and (3) a latent-space analysis tool for studying in- and out-of-distribution behavior. Our results suggest that bridging the lab-to-store gap is primarily a systems integration challenge rather than an architectural one: careful data design and targeted post-training can transform a policy that fails under naive fine-tuning into a competent real-world system using only a single GPU.",
+    "authors": [
+      "Roger Sala Sisó",
+      "Tiago Silvério",
+      "Jakob Sand",
+      "Tran Nguyen Le"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20345v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20345v1",
+    "fetched_at": "2026-07-23T10:15:51.291947",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830732"
+  },
+  {
+    "id": "2607.20145v1",
+    "title": "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD",
+    "abstract": "Full-parameter post-training of trillion-parameter-scale MoE models introduces substantial system-level challenges for large-scale distributed training, including severe memory pressure, non-overlapped communication overhead, and inefficient kernel execution. While most large-scale LLM training systems are built around GPU-based clusters, this report presents an end-to-end optimization practice on the Ascend NPU SuperPOD. Using the DeepSeek-V4 model family as the target workload, we develop a hierarchical optimization framework spanning model-level parallelism, computation-communication orchestration, and low-level kernel execution. The resulting system achieves 34.22% Model FLOPs Utilization (MFU) with a 2.93x improvement over the open-source baseline recipe while maintaining training stability. Building on this optimized infrastructure, we further establish a CPT and SFT workflow for complex Operations Research (OR) tasks. We refer to the integrated framework as SLAI T-Rex. Using DeepSeek-V4-Flash, we develop OR-oriented CPT and SFT data pipelines that combine collected domain resources with solver-verified synthetic optimization documents. The resulting dataset contains 10K high-quality SFT samples spanning four task categories and three problem representations. The specialized model achieves the highest average zero-shot Pass@1 score among the evaluated models, reaching 71.81% and outperforming GPT-5.4-Mini and the base DeepSeek-V4-Flash model by 3.98 and 11.27 percentage points, respectively. Overall, this work demonstrates a full-stack pathway from efficient trillion-parameter model post-training on Ascend infra to domain-specialized Flash models for solver-grounded mathematical modeling, advancing frontier-model systems for complex reasoning.",
+    "authors": [
+      "Dongfang Li",
+      "Xiaodong Luo",
+      "Ruoyu Sun",
+      "Xuhui Chen",
+      "Linyuan Qiu",
+      "Jian Meng",
+      "Zhengxuan Lu",
+      "Yiting Wang",
+      "Yucheng Xie",
+      "Tao Guo",
+      "Tianxiang Fang",
+      "Jing Li",
+      "Sihang Chen",
+      "Shihao Hong",
+      "Chang Liu",
+      "Weihua Dai",
+      "Zirong Zeng",
+      "Ziwei Zhu",
+      "Zhuohan Wang",
+      "Zhengjun Yue",
+      "Igor Vasilyev",
+      "Min Liu",
+      "Weijian Sun",
+      "Xin Chen",
+      "Yingmeng Gao",
+      "Jinhua Zhou",
+      "Taolue Chen",
+      "Chenwei Wu",
+      "Dong Zhang",
+      "Wenlong Jin",
+      "Jinmin Xiang",
+      "Barkova Maria",
+      "Ushakov Anton",
+      "Xianfei Jin",
+      "Tian Ding",
+      "Zhihang Lin",
+      "Qian Chen",
+      "Linxin Yang",
+      "Mingzhe Yang",
+      "Bingwei Zhang",
+      "Hongzhang Yang",
+      "Fangxue Zhang",
+      "Shijun Qin",
+      "Jie Yu",
+      "Cuihua Hu",
+      "Tolstykh Vasiliy",
+      "Nosov Ivan",
+      "Abdullin Amir",
+      "Zhichen Zhou",
+      "Xin Zhang",
+      "Zhixiong Ning",
+      "Xutong Zhao",
+      "Junjie Huang",
+      "Jiajun Liu",
+      "Weiyan Kong",
+      "Zheng Zhang",
+      "Wenhan Luo",
+      "Lin Hu",
+      "Yangbo Guo",
+      "Li Zeng",
+      "Shihao Zeng",
+      "Baotian Hu",
+      "Min Zhang",
+      "Haizhou Li",
+      "Zhiquan Luo"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20145v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20145v1",
+    "fetched_at": "2026-07-23T10:15:51.292052",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830741"
+  },
+  {
+    "id": "2607.20121v1",
+    "title": "OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills",
+    "abstract": "LLM-based agents leverage third-party skills to extend their capabilities in open-world scenarios. However, third-party skills can introduce extra security vulnerabilities, as seemingly harmless skills can contain latent safety risks that only emerge during actual execution. In this work, we conduct a systematic investigation into how well current agent systems recognize and avoid such risks. To support quantitative and qualitative evaluation, we construct OpenSkillRisk, a dedicated safety benchmark containing 263 risky skills collected from public skill marketplaces. We classify these skills into seven categories based on their threat types and pair each skill with a standardized user task and a corresponding sandbox for controlled evaluation. Distinct from prior benchmarks, OpenSkillRisk not only covers more realistic and diverse unsafe scenarios, but also provides a fine-grained analysis to diagnose the behavioral patterns of agents in such scenarios. We conduct comprehensive experiments covering three mainstream CLI agent frameworks and thirteen state-of-the-art LLMs. Experimental results show that no tested system handles risky skills reliably: even the safest configurations still execute unsafe actions in about 17% of cases. Context-dependent and system-level risks are especially difficult for current agent systems to avoid. Our behavioral analysis reveals three recurring failure patterns: agents may fail to recognize the risk, recognize it but fail to intervene before acting, or follow skill instructions beyond the user's intended scope. These findings highlight the need to improve both risk reasoning in LLMs and execution control in agent frameworks.",
+    "authors": [
+      "Qiyuan Liu",
+      "Tingfeng Hui",
+      "Kun Zhan",
+      "Kaike Zhang",
+      "Ning Miao"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20121v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20121v1",
+    "fetched_at": "2026-07-23T10:15:51.292073",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830750"
+  },
+  {
+    "id": "2607.19973v1",
+    "title": "The Giant Hippocampus: From Structural Monoculture to a System of Systems",
+    "abstract": "AI researchers describe state-of-the-art models as one thing repeated at scale: the Transformer, wired identically for text, pixels, or speech. Neuroscientists describe the cortex as a mosaic - dense Layer 4 in visual cortex for spatial encoding, thick Layers 5/6 in motion cortex for temporal integration - different jobs solved by different structures. This paper argues the gap is a structural error, not a stylistic one, and is measurable. A century of cytoarchitecture, from Brodmann to single-cell Patch-seq, shows distinct cognitive functions are implemented by qualitatively different structures, not by rescaling one template. The convolutional neural network is the field's own proof: local receptive fields and hierarchical depth encoded this prior directly, reaching strong image recognition on far less data than later architectures needed. The paper traces how this lesson was discarded: the \"Hardware Lottery\" made the Transformer the path of least resistance, not the principled choice, and Mixture-of-Experts, often cited as diversity, in fact partitions parameters among identical experts. A functionalist analysis shows the Transformer is best understood as a functional analog of the hippocampal formation, not a general-purpose cortex - the same mistake as treating cortex as one giant Broca's area, except the field has now standardized on a giant hippocampus, applied to tasks it was never built for: audition, executive gating, working memory. The paper closes with an alternative: a Heterogeneous Topological Network, a System of Systems in which distinct modules keep the inductive bias their computation demands and communicate through standardized interfaces. This is a design discipline for AI architects, not cognitive science: specify modularity before training, using structural evidence as a design input rather than reverse-engineering architecture from a trained model's behavior.",
+    "authors": [
+      "Jaeho Seol"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.NE",
+      "q-bio.NC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19973v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19973v1",
+    "fetched_at": "2026-07-23T10:15:51.292089",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830759"
+  },
+  {
+    "id": "2607.19913v1",
+    "title": "JANUS: Foreseeing Latent Risk for Long-Horizon Agent Safety",
+    "abstract": "Agent safety is moving from content moderation toward preventing operational failures before tool-using agents act. We propose Janus, a foresight-oriented framework for long-horizon agent safety that trains guards to anticipate delayed risks from partial trajectories. Janus synthesizes diverse agent trajectories via multi-agent simulation and learns a shared policy with two coupled tasks: an anticipation task that forecasts safety-relevant futures and an adjudication task that decides safety from both the observed prefix and anticipated future. The two tasks are jointly optimized with CoAA-RL, which rewards forecasts by their utility for downstream safety judgment. The resulting guard model, Vanguard, blocks unsafe actions before execution. Across four agent-safety benchmarks, Vanguard improves average protection by 15.9 percentage points over baseline guards while increasing benign task completion by 5.1 percentage points.",
+    "authors": [
+      "Yuan Xiong",
+      "Linji Hao",
+      "Shizhu He",
+      "Yequan Wang",
+      "Lijun Li"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19913v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19913v1",
+    "fetched_at": "2026-07-23T10:15:51.292109",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830767"
+  },
+  {
+    "id": "2607.19843v1",
+    "title": "Beyond Fail-to-Pass: Iterative Hardening of Co-Generated Bug Reproduction Tests and Fixes",
+    "abstract": "Large language models (LLMs) have made automated program repair (APR) increasingly practical for real-world bugs, but repairing directly from bug reports remains underconstrained. Bug reproduction tests (BRTs) help close this gap by turning a bug report into an executable, bug-specific signal that can guide repair and validate candidate patches. Existing work has therefore studied BRT generation as a core subproblem in APR and mainly evaluates a generated BRT using the fail-to-pass (F->P) criterion, which requires the test to fail on the buggy code but pass on the golden fix. We show that F->P alone is insufficient when the goal of a BRT is to improve downstream repair. In particular, some F->P BRTs are lax, reproducing the observed symptom yet still admitting plausible-but-incorrect patches. We formalize this missing quality dimension by separating F->P BRTs into rigorous and lax ones, and show empirically that only the former consistently improve repair success. We further find that co-generation introduces test--fix error coupling, where the in-trajectory fail-to-pass (F->P) check can pass even when both the generated patch and generated test are wrong. Based on these findings, we propose CoHarden, a co-generation framework that uses the Lax signal as an in-loop convergence criterion. CoHarden first generates a test before any fix, then iteratively hardens the test and fix against surviving mutation patches until the generated test no longer admits Lax regressions. Experiments show that CoHarden reaches 69.4% Resolved and 78.9% F->P on SWE-bench Verified, outperforming the strongest fix-only and cogeneration baselines by +9.6 and +7.9 percentage points in Resolved, respectively, with consistent gains across LLM backbones and benchmarks.",
+    "authors": [
+      "Yuhao Tan",
+      "Zhibang Yang",
+      "Fangkai Yang",
+      "Yuan Yao",
+      "Yu Kang",
+      "Lu Wang",
+      "Pu Zhao",
+      "Xin Zhang",
+      "Xiaoxing Ma",
+      "Qingwei Lin",
+      "Saravan Rajmohan",
+      "Dongmei Zhang"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19843v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19843v1",
+    "fetched_at": "2026-07-23T10:15:51.292140",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830775"
+  },
+  {
+    "id": "2607.19742v1",
+    "title": "An Automated Framework for Extracting Reachable Attack Chains from Cyber Threat Intelligence Reports",
+    "abstract": "Cyber Threat Intelligence (CTI) reports richly describe real-world attack processes, but their unstructured narratives cannot be directly used for automated attack-path reasoning. Existing CTI extraction methods focus on indicators, entities, or TTP labels without modeling the execution conditions and resulting states of each attack step, so the extracted knowledge supports neither state matching nor reachability analysis across multi-stage attack chains. This paper proposes an automated framework that extracts reachable attack chains by modeling each attack step as an attack unit of preconditions, an attack behavior, and postconditions. A multi-stage pipeline assisted by large language models (LLMs) extracts attack behavior skeletons, recovers their preconditions and postconditions, normalizes them into predefined predicates, and repairs broken dependencies; the resulting units are compiled into Datalog-style rules for attack-goal reachability reasoning. On a dataset of 20 CTI reports containing 334 human-validated annotated steps, our framework achieves higher annotated-step coverage than representative CTI extraction systems in recovering attack behaviors. Moreover, by explicitly generating preconditions and postconditions, it produces attack units that are more complete and consistent than those generated by end-to-end LLM baselines. On the extracted chains, Datalog inference reaches the specified attack goal in 19 of 20 reports, while backward search yields 34 attack paths under the generated rules. The source code and experimental artifacts are available in an anonymized repository. .",
+    "authors": [
+      "Wenbo Hou",
+      "Ning Hu",
+      "Xueping Wang",
+      "Jiahao Gu",
+      "Wenjian Luo"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19742v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19742v1",
+    "fetched_at": "2026-07-23T10:15:51.292158",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830784"
+  },
+  {
+    "id": "2607.19621v1",
+    "title": "Understanding Developer Pain Points in Federated Learning: Insights from Stack Overflow and GitHub",
+    "abstract": "Federated Learning (FL) enables collaborative model training without centralizing raw data, but building and operating FL systems remains difficult due to distributed execution, rapidly evolving frameworks, and privacy and governance requirements. In this paper, we present an empirical study of FL developer challenges by independently analyzing 495 Stack Overflow posts and 9,116 GitHub issues and pull requests from 92 FL-related projects. Using BERTopic-based topic modeling and difficulty indicators such as unresolved rates and median resolution time, we characterize recurring problem areas and compare how they manifest across the two support platforms, Stack Overflow and GitHub. Our analysis surfaces nine dominant Stack Overflow topics and thirteen GitHub topics, with persistent difficulties concentrated in environment setup and dependency compatibility, API breakages and migration, training instability under non-IID data, evaluation and metric correctness, and the integration of privacy-preserving mechanisms. We also categorize posts by question intent to understand the kinds of help developers seek; this intent analysis shows that \"How\"-type questions dominate, reflecting strong demand for procedural guidance. Several topics, such as \"TFF Installation and Environment Compatibility\" and \"Federated Feature Engineering and SecureBoost Issues,\" exhibit high unresolved rates and long resolution times, suggesting shortcomings in tooling, documentation, and debugging support. Based on these findings, we provide actionable implications for FL framework designers, documentation authors, and educators. Although our results are constrained to public discussions and a subset of widely discussed frameworks, the study offers a scalable method for continuously monitoring developer pain points and improving the usability, reliability, and deployability of FL systems.",
+    "authors": [
+      "Sahand Saed",
+      "Khairul Alam",
+      "Banani Roy"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19621v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19621v1",
+    "fetched_at": "2026-07-23T10:15:51.292175",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830792"
+  },
+  {
+    "id": "2607.19595v1",
+    "title": "Twin Agent: Context Residual Compression for Privilege Separated Agents",
+    "abstract": "Large language model (LLM) agents are vulnerable to security risks, such as prompt injection attacks from untrusted context that manipulate downstream reasoning and tool use. Existing secure-by-design approaches mitigate this risk by separating untrusted observations from privileged execution and careful control of information flow, but often degrade utility and require extensive task-specific engineering. We thus propose Twin Agent, a general privilege separation design pattern inspired by residual coding in the agent context. Twin Agent consists of two nearly symmetric agents: an Explore Agent that inspects untrusted information and a Safe Agent that executes privileged actions. The Explore Agent is conditioned on the Safe Agent's current context and communicates only compact hints to the Safe Agent about the next action to take. This design reduces the information needed to preserve task utility and thus achieves a better security--utility tradeoff, which we empirically verify by measuring how utility and attack success change as the length of hints varies. We evaluate Twin Agent on long-horizon software engineering tasks with SWE-bench Lite and on heterogeneous multi-tool interaction tasks with AgentDojo and DecodingTrust-Agent. Across both benchmarks, Twin Agent preserves high task utility while preventing prompt injection attacks, outperforming both undefended agents and privilege separation baselines.",
+    "authors": [
+      "Zhanhao Hu",
+      "Dennis Jacob",
+      "Xiao Huang",
+      "Zhaorun Chen",
+      "Bo Li",
+      "David Wagner"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.CR",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19595v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19595v1",
+    "fetched_at": "2026-07-23T10:15:51.292195",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830800"
+  },
+  {
+    "id": "2607.19539v1",
+    "title": "Fine-grained Computation-Communication Overlap via Tile-level Signaling and Scheduling for Mixture-of-Experts",
+    "abstract": "Mixture-of-Experts (MoE) architectures increase model capacity without proportionally increasing computation cost and have become a key building block for scaling large language models (LLMs) to trillion-parameter regimes. Efficient deployment of these MoE models relies on distributed execution across multiple GPUs, where each MoE layer involves two all-to-all communications: dispatching tokens to expert ranks and returning the expert outputs to their source ranks. Conventional MoE implementations launch this return all-to-all after expert compute completes, exposing communication latency on the critical path and reducing GPU utilization. We present a fine-grained approach that overlaps expert compute with the second all-to-all via tile-level signaling and scheduling. Our producer-consumer co-design combines: (1) a persistent per-rank computation kernel (producer) that covers all local experts on the rank to eliminate repeated kernel launch overhead and prioritizes remote-critical tiles, and (2) a persistent communication kernel (consumer) on a small dedicated partition of streaming multiprocessors (SMs) that issues segment-granular transfers as tiles become ready. Our co-design avoids intrusive changes to the underlying computation operators or communication primitives, making it practical for improving distributed MoE execution efficiency on multi-GPU systems. On a 4-A100 GPU platform, evaluated on three MoE models against four state-of-the-art MoE systems, our approach achieves up to 2.64x end-to-end speedup and 2.74x MoE-layer speedup. Compared with a conventional non-overlap baseline, our approach consistently improves both operator- and MoE-layer-level performance across varying GEMM shapes, router modes, and a broad range of producer/consumer SM partitions, while preserving correctness.",
+    "authors": [
+      "Minyu Cui",
+      "Anna Wingkvist",
+      "Morgan Ericsson"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19539v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19539v1",
+    "fetched_at": "2026-07-23T10:15:51.292212",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830809"
+  },
+  {
+    "id": "2607.19490v1",
+    "title": "Integrity of peer-to-peer distributed LLM inference under malicious nodes",
+    "abstract": "Peer-to-peer distributed inference executes a Large Language Model (LLM) on pooled consumer hardware by spreading its layers across many nodes. Every request passes through nodes that are owned and controlled by multiple independent parties. However, in this setting, any party can tamper with the output of its layers to corrupt the end result. Recomputing the forward pass on trusted hardware can catch this, but it introduces additional computational cost. The scientific literature includes several prior integrity-checking approaches, such as known-answer traps for image classifiers and cryptographic commitments. However, these solutions test only the exact correctness and do not account for the ordinary variation that may arise between benign nodes. In this paper, we propose a method that checks the output integrity by measuring the variation in the activations that each node passes to the next. A peer who wants to use the network selects a small set of secret canary inputs whose correct activations are known in advance and mixes them into regular traffic. Because the peers cannot tell a canary from a real query, any tampering node corrupts them as well. The deviation from the known reference then reveals malicious activity: benign nodes exhibit only minor variation from hardware-induced noise, whereas tampered nodes deviate far more. We treat the identification of malicious nodes as a probabilistic test that separates two drift distributions, without relying on a fixed threshold. We study 408 configurations with metrics and success criteria fixed before any experiment ran; the detector reaches AUROC 1.0, correctly ranking the malicious shard above every benign shard on every canary in every configuration.",
+    "authors": [
+      "Mert Cihangiroglu",
+      "Antonino Nocera"
+    ],
+    "published": "2026-07-21",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.19490v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.19490v1",
+    "fetched_at": "2026-07-23T10:15:51.292226",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-23T10:18:04.830816"
+  }
+]
