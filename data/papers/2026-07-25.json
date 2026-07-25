@@ -1,0 +1,88 @@
+[
+  {
+    "id": "2607.21170v1",
+    "title": "Portfolio Optimization under Dynamic Rebalancing via Topological Data Analysis and News Sentiments",
+    "abstract": "Understanding similarity among financial assets is essential for effective portfolio diversification. This paper proposes a novel sentiment-adjusted portfolio optimization framework that integrates Topological Data Analysis (TDA) with technical indicators and FinBERT-based sentiment scores extracted from financial news. A TDA-based distance measure is employed within an agglomerative clustering framework to identify topologically dissimilar assets for portfolio construction. By incorporating sentiment information, the framework captures rapid changes in market perception and investor behavior that are not reflected by technical indicators alone. Unlike conventional correlation and Euclidean distance based approaches, the proposed method characterizes complex nonlinear relationships through topological summaries. To account for the transient nature of market sentiment, a dynamic rolling-window rebalancing strategy with frequent portfolio updates is adopted. A retention mechanism is further introduced to preserve high-quality assets across consecutive rebalancing windows, thereby reducing portfolio turnover and transaction costs. Extensive empirical analysis on S&P 500 constituents demonstrates that the proposed framework consistently outperforms correlation and Euclidean distance based methods, as well as benchmark strategies including Naïve, Index, and full-universe portfolios, in terms of returns and reward-risk performance. Furthermore, the framework exhibits strong robustness by delivering positive performance during periods of heightened market uncertainty, such as the U.S.-Israel-Iran conflict.",
+    "authors": [
+      "Divyanee Garg"
+    ],
+    "published": "2026-07-23",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.21170v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.21170v1",
+    "fetched_at": "2026-07-25T09:41:04.357845"
+  },
+  {
+    "id": "2607.20762v1",
+    "title": "Quantifying Sub-Optimality in Routing for Automated Market Makers",
+    "abstract": "We provide a large-scale empirical audit of DEX routing using 2.98 million WETH-USDC swaps on Ethereum. Comparing realized routes with optimized benchmarks, we measure an average shortfall of 2.02 bps per trade or \\$24 million. To attribute losses, we introduce three reproducible optimal benchmarks: a Support-Constrained Optimum (SCO) that evaluates split quality conditional on the pools actually used; a Full-Venue Optimum (FVO) that considers all available pools to quantify the value of broader pool access; and a Gas-Aware FVO (G-FVO) that augments FVO with gas costs to capture the trade-off between additional pool usage and gas expenditure. Computing these benchmarks at scale is enabled by a bisection-based algorithm for optimal routing across multiple pools for the same token pair. Two regularities emerge. First, information timeliness is crucial: moving from execution-time state to one-block lagged state optimization significantly raises mean shortfall and additional delays further degrade performance, albeit with diminishing increments; evaluated on the same stale snapshots, realized routes lie closer to optimal, indicating timing-mismatch as a key component. Second, inefficiency is heterogeneous and heavy-tailed: small trades suffer higher percentage losses, while a few extreme outliers dominate the aggregate dollar shortfalls. Finally, we demonstrate that sandwiching attacks drive a significant fraction of routing sub-optimality. Our benchmark protocol and algorithm offer a rigorous, reproducible basis for evaluating and improving information-timely, gas-aware routing.",
+    "authors": [
+      "Weiye Xi",
+      "Ciamac C. Moallemi"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20762v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.20762v1",
+    "fetched_at": "2026-07-25T09:41:04.357883"
+  },
+  {
+    "id": "2607.20343v2",
+    "title": "Path-Space Model Risk via Signature-Induced Optimal Transport",
+    "abstract": "We propose a signature-induced, optimal transport framework for path-space model risk, in which ambiguity between stochastic path laws is factorized through optimal transport costs on signature coordinates under a common coupling. Via an ambient feature-space relaxation, we derive for affine signature scores and affine half-space events explicit robust expectation and probability bounds that depend only on the baseline model. In both cases, the correction is governed by the same effective budget, which depends only on the affine score and the budget vector of the ambiguity set. Moreover, the same quantity leads to a budget-aware sparse signature surrogate method for more general, possibly implicit, or data-driven, path functionals. We illustrate the resulting methodology through controlled stress tests and benchmark model-misspecification problems in finance and insurance.",
+    "authors": [
+      "Tomoyuki Ichiba",
+      "Qijin Shi"
+    ],
+    "published": "2026-07-22",
+    "categories": [
+      "q-fin.RM",
+      "math.OC",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.20343v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.20343v2",
+    "fetched_at": "2026-07-25T09:41:04.357982"
+  },
+  {
+    "id": "2607.17428v2",
+    "title": "Uniform-Loss Automated Market Making for Prediction Markets",
+    "abstract": "Automated market makers (AMMs) for prediction markets descend from market scoring rules, where a mechanism operator subsidizes a market to aggregate beliefs about uncertain events. The existing literature has focused on bounding the total worst-case loss to the subsidizer, but has not addressed how that loss is distributed across price states or over time. We use the framework of loss-versus-rebalancing (LVR) to study this distribution and introduce \\textit{uniform AMMs}, defined by the property that instantaneous LVR is proportional to pool value and independent of the current token price. In a static setting, we show that for a broad class of \\textit{win-martingales} -- processes that converge to 0 or 1 at a fixed resolution time -- there exists a pricing function that achieves uniform LVR under that process, and conversely, that any sufficiently regular pricing function induces a win-martingale under which it is uniform. We then extend the framework to dynamic liquidity management, showing that liquidity levels can be adjusted over time to implement a prescribed target expected cumulative loss schedule. This theory is illustrated with canonical examples of win-martingales and pricing functions. Our results can inform AMM designers and liquidity providers on how the inevitable cost of subsidizing price discovery can be shaped and controlled across both price and time.",
+    "authors": [
+      "Ciamac C. Moallemi",
+      "Dan Robinson",
+      "Brian Zhu"
+    ],
+    "published": "2026-07-19",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.17428v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.17428v2",
+    "fetched_at": "2026-07-25T09:41:04.358348"
+  },
+  {
+    "id": "2607.21559v1",
+    "title": "Unsupervised Consensus-Based Anomaly Detection for Spatiotemporal Malaria Incidence in Ghana",
+    "abstract": "A consensus anomaly detection framework was applied to monthly malaria surveillance data from Ghana (2014-2023) to identify atypical transmission patterns. Anomalies were highly structured in space and time. Ashanti and Northern Regions accounted for most recurrent anomalies, with persistent hotspots at Tamale, Kumasi, and Accra. A key finding was the spatial distinction between anomaly burden (cumulative cases during anomalous periods) and anomaly frequency (persistence of unusual behaviour). Tamale had the highest burden during anomalies, whereas the highest anomaly rates clustered in Ashanti districts, showing that high-burden areas are not necessarily those with the most frequent anomalous transmission. Anomalous months formed a statistically distinct group, with much higher case counts (Cohen's $d = 3.252$) and large seasonal deviations ($d > 1.2$) compared with normal months. Malaria burden alone provides an incomplete picture of transmission dynamics. By distinguishing where malaria is most prevalent from where transmission behaves most unusually, this framework can strengthen surveillance, prioritise investigations, and support targeted control strategies.",
+    "authors": [
+      "T. Ansah-Narh",
+      "Y. Asare Afrane"
+    ],
+    "published": "2026-07-23",
+    "categories": [
+      "cs.AI",
+      "cs.CE",
+      "cs.ET",
+      "stat.AP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.21559v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.21559v1",
+    "fetched_at": "2026-07-25T09:41:17.967649"
+  }
+]
