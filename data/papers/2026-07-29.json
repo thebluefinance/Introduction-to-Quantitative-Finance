@@ -1,0 +1,604 @@
+[
+  {
+    "id": "2607.25599v1",
+    "title": "An Analytic COS Method for Compound Option Valuation",
+    "abstract": "We develop an analytic Fourier cosine (COS) method for the valuation of compound options. By deriving closed-form expressions for the cosine coefficients at all compound stages, the proposed method eliminates the need for numerical quadrature in intermediate exercise stages while retaining the convergence properties of the underlying COS approximation. The formulation extends to multi-stage compound structures and a broader class of payoffs, and remains applicable to a wide class of stochastic models characterized by known characteristic functions, including jump-diffusion dynamics. Numerical experiments demonstrate improved computational efficiency compared with quadrature-based implementations while maintaining high accuracy. Applications to staged real-option problems further illustrate the flexibility of the method in handling nested decision structures under different uncertainty dynamics.",
+    "authors": [
+      "Zhipeng Huang",
+      "Cornelis W. Oosterlee"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "q-fin.CP",
+      "cs.CE",
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25599v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25599v1",
+    "fetched_at": "2026-07-29T10:33:48.150608"
+  },
+  {
+    "id": "2607.25459v1",
+    "title": "Emergent Latent-State Computation under Stochastic Volatility",
+    "abstract": "Mechanistic interpretability has largely focused on language models and deterministic toy tasks. Much less is known about how sequence models internally represent latent stochastic dynamics under noisy, partially observed observations. We study this question in a controlled multivariate stochastic volatility setting, where models observe only returns while the ground-truth latent volatility state is known to the researcher. This setting provides a useful benchmark for mechanistic interpretability under partial observability: the latent state is hidden from the model but directly available for evaluation. Across architectures, losses, and output heads, we find evidence for a two-stage computation. Hidden representations encode substantial information about the next latent volatility state, and the output head maps this representation to squared return forecasts. Furthermore, in Transformers, latent-state decodability emerges at identifiable architectural stages whose location depends on the volatility period. In long-cycle regimes, this computation simplifies into an explicit latent-state filter consisting of a learned linear projection followed by $\\ell^2$ normalization. Output-head replacement further shows that part of the degradation under noisy MSE training arises from readout misalignment rather than representation failure. These results suggest that stochastic volatility models provide a useful benchmark for mechanistic interpretability under noisy latent dynamics and partial observability.",
+    "authors": [
+      "Xiaoyu Huang",
+      "Lulu Wang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25459v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25459v1",
+    "fetched_at": "2026-07-29T10:33:48.150645"
+  },
+  {
+    "id": "2607.25353v1",
+    "title": "How Likely and How Deep? Sharp Joint Bounds on Risk-Neutral Crash Probability and Conditional Depth from Option Bid-Ask Quotes",
+    "abstract": "A finite panel of option quotes with bid-ask spreads generally does not point-identify either the risk-neutral probability of breaching a specified threshold or the expected shortfall below that threshold conditional on a breach. Sharp marginal bounds characterize each quantity in isolation but not their jointly attainable combinations: values within the two marginal intervals may require different risk-neutral distributions, so pairing them can produce a tail scenario inconsistent with the option panel. We characterize the closure of the jointly attainable probability and loss pairs under finite bid-ask constraints. Partitioning the state space at observed strikes and at the crash threshold makes the model-implied value of every retained option linear in cell probabilities and first moments, and one additional variable tracks mass at the threshold itself. Under a strict interior condition, the identified set is the projection of a finite linear system, and an adaptive hull algorithm recovers the probability-loss polygon. Vertical sections report the conditional depths consistent with a candidate crash probability, and the support function gives sharp upper and lower values for any portfolio of digital and put payoffs. In 557 weekly SPX panels from January 2013 to August 2023, with 1,966 primary cases, the complete put wing lowers median transformed area by 5.4-18.2% relative to a local set of eight strikes, and the joint set fills a median 63.40% of the benchmark formed from separate marginal bounds and the universal probability-loss restriction.",
+    "authors": [
+      "Jirong Zhuang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25353v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25353v1",
+    "fetched_at": "2026-07-29T10:33:48.150666"
+  },
+  {
+    "id": "2607.25258v1",
+    "title": "Robust Hedging Valuation Adjustment for Deep Hedging Policies under Market Frictions",
+    "abstract": "Hedging a derivative position under transaction costs and market frictions requires a trading rule that adapts to changing conditions. Deep hedging trains a neural policy for this task but policy training does not determine whether a trading desk can afford to run the policy. We apply robust hedging valuation adjustment (HVA) as a post-training valuation-adjustment layer that evaluates tracking-loss CVaR together with explicit funding and margin add-ons. The funding and margin add-ons share the same KL uncertainty set as HVA. For each policy, a single common-stress tilt computes HVA, funding and margin jointly and a trading desk can get one internally consistent reserve instead of the three separately. We compare classical hedge policies with learned hedge specifications across three market environments with different liquidity. No single specification dominates in every market. Under the strict tracking-risk budget, gamma-wide classical bands are selected in High and Middle Liquidity while sparse learned execution is selected in Low Liquidity. At looser validation budgets wider classical bands are generally selected.",
+    "authors": [
+      "Takayuki Sakuma"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.CP",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25258v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25258v1",
+    "fetched_at": "2026-07-29T10:33:48.150689"
+  },
+  {
+    "id": "2607.25199v1",
+    "title": "RIDGE: An Autonomous Framework for Validation and Method Discovery in LLM-Generated Option Pricing",
+    "abstract": "Automated code generation is becoming an important tool in quantitative finance, where large language models can generate option pricing implementations directly from mathematical model specifications. Validating such implementations, however, requires considerably more than conventional software testing: numerical pricing methods must remain mathematically consistent, numerically stable, and reliable across a wide range of model parameters.   We introduce RIDGE, an autonomous validation framework in which generated pricing implementations are subjected to structured no-arbitrage tests, stress tests, benchmark comparisons, and consistency checks. Validation evidence is interpreted diagnostically, while the resulting knowledge is accumulated in a repository and reused across models and successive validation iterations. This enables systematic refinement of both the pricing implementation and the validation methodology.   The framework is applied to five stochastic volatility models. Across these studies, all detected implementation defects are removed and, in two cases, the validation process itself leads to new semi-analytic pricing methodologies. The supplementary material is available in the GitHub repository: https://github.com/ShQiangLiu/ridge.",
+    "authors": [
+      "Liexin Cheng",
+      "Xue Cheng",
+      "Shuaiqiang Liu",
+      "Cornelis W. Oosterlee"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "q-fin.CP",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25199v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25199v1",
+    "fetched_at": "2026-07-29T10:33:48.150716"
+  },
+  {
+    "id": "2607.25189v1",
+    "title": "Long-memory GARCH via a two-dimensional Markov chain",
+    "abstract": "This paper proposes a GARCH-type volatility model in which level-and-slope updates of a latent power-law kernel generate state-dependent decay of past shocks within a two-dimensional Markov state. We derive a joint Foster--Lyapunov condition and establish positive Harris recurrence and uniqueness of the invariant distribution. Simulations show substantial low-frequency persistence in log-squared innovations, especially near the diagnostic stability boundary. Empirically, the model captures a substantial portion of observed volatility persistence and delivers competitive out-of-sample forecast accuracy using only a two-dimensional Markov state.",
+    "authors": [
+      "Kyungsub Lee",
+      "Kennedy Titus Kayaki"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "q-fin.ST",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25189v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25189v1",
+    "fetched_at": "2026-07-29T10:33:48.150740"
+  },
+  {
+    "id": "2607.25162v1",
+    "title": "Quantum Transformer BSDE Solver via Multi-Layer Fully-Connected Variational Quantum Circuits",
+    "abstract": "Solving high-dimensional parabolic partial differential equations (PDEs) is important in engineering, physics, and stochastic control. Deep BSDE methods reformulate semilinear PDEs as backward stochastic differential equations and admit a model-based reinforcement learning interpretation, where trajectories are generated from known stochastic dynamics while a trainable model learns the gradient-related control process. We propose a Quantum Transformer BSDE solver based on Multi-Layer Fully-Connected Variational Quantum Circuits (FC-VQC). The method treats the normalized state trajectory as time--coordinate tokens and applies causal self-attention to learn interactions in the adapted BSDE gradient process. All trainable model parameters are contained within the FC-VQC embedding, projection, feed-forward, and decoder modules, while attention and structural operations remain classical and parameter-free. Experiments on three d=36 PDE benchmarks show that QTransformer consistently improves over the non-attentive FC-VQC baseline and outperforms the classical Transformer at compact hidden widths, while the wider classical Transformer achieves the best overall accuracy. These results demonstrate that combining causal attention with FC-VQC provides an effective quantum architecture for high-dimensional BSDE trajectory learning.",
+    "authors": [
+      "Howard Su",
+      "Huan-Hsin Tseng",
+      "Chi-Sheng Chen",
+      "Lance Bai"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "quant-ph",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25162v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25162v1",
+    "fetched_at": "2026-07-29T10:33:48.150764"
+  },
+  {
+    "id": "2607.24973v1",
+    "title": "Discrete dividends after maturity adjust the stock and strike prices",
+    "abstract": "The standard method to price European calls on a discrete dividend-paying stock is to subtract the present value of the dividends from the initial stock price in the Black-Scholes formula. However, when there are dividends after maturity, this is inconsistent with the model. Within the escrowed dividend model, we highlight an extension of the Black-Scholes formula in which those dividends after maturity adjust both the stock price and strike price, allowing for calls over all maturities to be priced in a model-consistent way. As a related application to American calls with a single dividend before maturity, we establish a neglected case where it is always optimal to early exercise and derive an extension of the Roll-Geske-Whaley formula when there are dividends after maturity, including fully characterising the optimal exercise policy.",
+    "authors": [
+      "Kevin W. Lu"
+    ],
+    "published": "2026-07-27",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.24973v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.24973v1",
+    "fetched_at": "2026-07-29T10:33:48.150781"
+  },
+  {
+    "id": "2607.25989v1",
+    "title": "Untangling Co-Drift: Proactive Multi-Intent Failure Prediction and Root-Cause Disambiguation for Self-Driving Networks",
+    "abstract": "The vision of self-driving networks that monitor, reason, and act upon themselves with minimal human intervention relies on tightly coupled monitoring, analytics, and actuation functions. In this work, we treat these functions as three operational macro-intents: continuous telemetry, real-time analytics, and programmatic actuation, and formalize the health of each function as an intent that the network must continuously satisfy. A critical, yet underexplored, challenge stems from the causal coupling among these intents, where a singular fault within one macro-intent propagates as a co-drift and subsequently triggers cascading, symptomatic anomalies across the remaining intents. This ambiguity makes it exceedingly difficult for existing, reactive approaches to distinguish the true root-cause intent from symptomatic victim intents, and their reliance on threshold-crossing detection leaves insufficient time for proactive remediation. We introduce MILD, a novel framework that reformulates intent assurance from reactive drift detection to proactive failure prediction. Grounded in our three-macro-intent formulation of the self-driving control loop, MILD employs a teacher-augmented Mixture-of-Experts architecture with a hybrid objective that jointly optimizes intent failure prediction and root-cause attribution. MILD enables KPI-level diagnostics via SHAP explainability and dynamic intent failure urgency estimation via multi-horizon modeling. Our extensive evaluation of MILD across three environments of increasing realism, from a controlled statistical benchmark, to a microservices application, to an SDN-based edge-to-cloud testbed, demonstrates that MILD achieves high failure detection rates, strong remediation lead times, and accurate intent-level root-cause disambiguation. This positions MILD as a practical enabler of closed-loop assurance in next-generation autonomous networks.",
+    "authors": [
+      "Md. Kamrul Hossain",
+      "Walid Aljoby"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.NI",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25989v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25989v1",
+    "fetched_at": "2026-07-29T10:34:01.995078"
+  },
+  {
+    "id": "2607.25929v1",
+    "title": "Can Deep Generative Models Reproduce Non-Stationary Gaussian Random Fields?",
+    "abstract": "Deep generative models (DGMs) are widely used for complex high-dimensional data and increasingly applied to spatial and spatio-temporal modeling. Their generated samples implicitly represent the learned data distribution and associated uncertainty. However, for real-world data, assessing whether DGMs have learned the underlying process is difficult because the ground truth is unknown and evaluation often relies on observations alone. We evaluate representative DGMs, flow matching (FM), DDPM, score-SDE, and VAE, on a known non-stationary Gaussian random field. This paper provides comprehensive metrics to assess recovery of the ground-truth mean and covariance structures, with oracle samples and a stationary control as references. All four models recover the mean surface, while their covariance recovery differs across model families: DDPM and score-SDE recover the covariance structure reasonably well, FM exhibits mildly attenuated non-stationarity and slight variance under-dispersion, and VAE has difficulty recovering the covariance structure. An experiment on ERA5 temperature anomalies further demonstrates how the framework can support the validation and development of DGMs for complex real-world spatio-temporal data.",
+    "authors": [
+      "Daniel Kua",
+      "Yan Song"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25929v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25929v1",
+    "fetched_at": "2026-07-29T10:34:01.995113"
+  },
+  {
+    "id": "2607.25921v1",
+    "title": "Evaluating VLMs for Autonomous Agent-Driven Geometry Clipping Detection in Video Game QA",
+    "abstract": "In this work, we study the use of Vision-Language Models (VLMs) for anomaly detection in an agent-driven game Quality Assurance (QA) pipeline focusing on geometry clipping. In this evaluation, a custom exploration agent navigates a game level to collect visual observations, while the automatic annotation pipeline provides frame-level clipping labels. This setup allows us to evaluate recent VLMs on a controlled anomaly detection task without manual annotation. We benchmark six recent VLMs (Gemini, GPT, Qwen, Gemma, Llama, and Ministral) under a zero-shot prompting setting and analyse their sensitivity to four prompt variants.   Our results show that while the VLMs can capture visual cues associated with geometry clipping, they all produce substantial false positives on visually ambiguous frames such as near-contact geometry and partial occlusions. Gemini-3.1-Flash achieves the best overall accuracy and is the most robust to prompt variation, while open-source models exhibit large precision--recall swings depending on the prompt design. These findings suggest that current VLMs are best suited as high-recall candidate filters within multi-stage QA pipelines rather than as standalone bug detectors.",
+    "authors": [
+      "Carlos Celemin",
+      "Benedict Wilkins",
+      "Adrián Barahona-Ríos",
+      "Saman Zadtootaghaj",
+      "Nabajeet Barman"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25921v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25921v1",
+    "fetched_at": "2026-07-29T10:34:01.995149"
+  },
+  {
+    "id": "2607.25665v1",
+    "title": "Generalised Robust Bayes for Joint Inference of Model and Contamination",
+    "abstract": "Generalised Bayesian inference (GBI) has emerged as a compelling robust alternative to standard Bayesian inference, mitigating sensitivity to data contamination by replacing the log-likelihood with a robust loss or divergence. However, existing robust GBI frameworks typically provide only qualitative robustness: while they can make posterior inference less sensitive to contamination, they lack an intrinsic mechanism to quantify the contamination proportion or identify anomalous observations. This paper introduces Hölder-Bayes, a GBI framework for joint inference of the model parameter and the contamination proportion. We construct a generalised joint posterior over both model and contamination parameter by applying the Hölder divergence to a scaled model density. Theoretically, we establish global bias-robustness via the uniform boundedness of the posterior influence function, derive a finite-sample excess-risk bound, and prove a Bernstein--von Mises approximation together with interpretable contamination-induced bias bounds under a heavy-contamination regime. We further show that, for the Hölder posterior, temperature calibration admits a direct interpretation as affine volume scaling of the data space. The resulting posterior yields a self-contained probabilistic mechanism for outlier detection: posterior uncertainty in both the model parameter and the contamination proportion is propagated to observation-level Frequency-of-Detection scores, without requiring an external anomaly-score threshold. Empirical evaluations demonstrate that Hölder-Bayes provides robust parameter inference, contamination-level recovery, and uncertainty-aware outlier detection.",
+    "authors": [
+      "Masahiro Fujisawa",
+      "Masaki Adachi",
+      "Takuo Matsubara"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "stat.ME",
+      "math.ST",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25665v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25665v1",
+    "fetched_at": "2026-07-29T10:34:01.995176"
+  },
+  {
+    "id": "2607.25439v1",
+    "title": "Robust Unsupervised Network Intrusion Detection via Federated Learning with Selective Aggregation under Anomalous Sample Contamination",
+    "abstract": "Network intrusion detection systems (NIDS) have become essential for Internet of Things (IoT) environments, as malware targeting IoT devices continues to evolve in sophistication. Unsupervised learning approaches offer a promising direction by removing the dependency on labeled datasets. However, the common assumption that training data are entirely clean is often violated in practice, particularly when data samples are collected directly from deployed network devices, where anomalies are likely to be present in the training datasets. Such contamination degrades detection performance and highlights the need for robust unsupervised NIDS methods capable of operating effectively under contaminated unlabeled training data.   To address this issue, we propose a robust training methodology for anomaly detection (AD) that remains effective even in the presence of unlabeled anomalies. Our method consists of two primary components. First, we exploit a known limitation of federated learning (FL), namely its tendency to underrepresent minority data. By leveraging this characteristic, we attenuate the influence of anomalous data originating from a small number of compromised clients. Second, we introduce a selective aggregation mechanism during model aggregation, which quantifies the \"distance\" between local client models and a global reference. Specifically, we employ the Expectation-Maximization (EM) algorithm to detect and exclude client groups whose model updates significantly diverge from the majority. This selective aggregation ensures that anomalous updates do not compromise the global model.   Experiments conducted on multiple NIDS datasets demonstrate that our method outperforms existing approaches in environments contaminated with anomalous data. Furthermore, the proposed method maintains its detection performance even as the proportion of anomalies increases.",
+    "authors": [
+      "Shohei Kamiguchi",
+      "Takayuki Nishio"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.NI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25439v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25439v1",
+    "fetched_at": "2026-07-29T10:34:01.995221"
+  },
+  {
+    "id": "2607.25020v1",
+    "title": "Localized Anomaly Detection via Differentiable D-vine Copulas",
+    "abstract": "Vine copulas provide a flexible framework for modeling complex multivariate distributions through a hierarchical decomposition into bivariate pair-copulas. Fitting a D-vine requires selecting a copula family and parameter configuration for each pair-copula from a set of candidates encoding different dependence patterns. As the number of variables and candidate families increases, the number of possible configurations grows combinatorially. Existing fitting procedures address this challenge through sequential greedy decisions, committing to a single locally optimal family at each step and potentially discarding configurations that would yield a better global fit. To overcome this limitation, we propose a novel estimation framework that combines gradient-based maximum likelihood estimation, enabled by our fully differentiable implementation, with a beam-search strategy that maintains multiple competing D-vine configurations throughout the fitting process. This allows a broader exploration of the configuration space while remaining computationally tractable. Building on the fitted D-vine, we introduce a localized anomaly detection framework that exploits the hierarchical decomposition to produce both global anomaly scores and edge-level explanations. Statistical guarantees are provided through Mondrian conformal prediction, while the pair-copula structure enables the localization of anomalies to specific variable relationships. We evaluate the proposed framework on both benchmark and real-world datasets, demonstrating its effectiveness for interpretable anomaly detection with uncertainty quantification.",
+    "authors": [
+      "Nicholas Andrea Pearson",
+      "Francesca Zanello",
+      "Davide Russo",
+      "Luca Bortolussi",
+      "Francesca Cairoli"
+    ],
+    "published": "2026-07-27",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25020v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25020v1",
+    "fetched_at": "2026-07-29T10:34:01.995253"
+  },
+  {
+    "id": "2607.26055v1",
+    "title": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "abstract": "Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input arriving mid-execution, sacrificing \\emph{reactivity}. Replanning more often would restore it, but the perception-to-action pipeline (a large backbone plus multiple denoising steps) is too slow: this \\emph{latency} forbids frequent replanning and leaves committed actions stale, making such policies ill-suited for dynamic, closed-loop control. We present $π\\mathbf{R}^2$, which makes these policies reactive and real-time while retaining large backbones, expressive multi-modal policies, and multi-action prediction. Built on the per-position noise schedule of diffusion forcing, $π\\mathbf{R}^2$ contributes two ideas. First, it splits conditioning into a fast channel (proprioception, fresh every tick) and an asynchronously updated slow channel (vision-language features), so the policy reacts to proprioception within a chunk while tolerating stale vision. Second, a latency-adaptive flow schedule treats in-flight actions as inpainting conditioning and emits actions in one denoising step per call, letting one trained model adapt to varying hardware latency. Requiring minimal modification to existing architectures, $π\\mathbf{R}^2$ can be finetuned from a pretrained policy: applied to GR00T-N1.7 on a real xArm6+XHand platform, it replans closed-loop roughly $4\\times$ faster than the base policy (~$25$Hz on an A5000 GPU), acting on a fresh observation every $40$ms. Across simulation and real-world manipulation tasks, $π\\mathbf{R}^2$ improves the success rate by up to $23\\%$ in simulation and $30\\%$ in the real world over the strongest baseline. Project page: https://pi-r2-flow.github.io/",
+    "authors": [
+      "Sungjae Park",
+      "Shubham Tulsiani"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26055v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26055v1",
+    "fetched_at": "2026-07-29T10:34:56.750950"
+  },
+  {
+    "id": "2607.26017v1",
+    "title": "UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams",
+    "abstract": "Memory is essential for LLM agents to accumulate task experience and reuse task-specific execution strategies. However, real-world deployment over boundary-agnostic and evolving task streams exposes a fundamental stability-plasticity dilemma. External retrieval-based memory can rapidly absorb new evidence, but it often fails to internalize recurring execution patterns and incurs inference-time retrieval overhead. Parametric memory enables stable and efficient execution once learned, but typically relies on explicit task boundaries and fixed parameter budgets. Inspired by the human brain, which balances plasticity and stability through complementary episodic storage and gradual consolidation, we propose UniMem, a self-routing framework for autonomous memory management. UniMem uses learnable routing tokens as memory controllers, enabling adaptive coordination between complementary memory pathways: novel or sparse tasks are retained in an episodic buffer for retrieval-augmented execution, while recurring and reliable patterns are consolidated into expandable parametric memory. By decoupling task identification from task execution with routing tokens and parametric memory blocks, UniMem expands memory on demand without task labels during deployment or uncontrolled parameter growth. Experiments on long-horizon streaming task sequences show that UniMem consistently outperforms baselines while maintaining execution fidelity, achieving an average gain of 4.0 EM points across three backbone models.",
+    "authors": [
+      "Siyu Xia",
+      "Chenheng Zhang",
+      "Yanting Wu",
+      "Haoxuan Li",
+      "Jiajun Chai",
+      "Xiaohan Wang",
+      "Guojun Yin",
+      "Wei Lin",
+      "Zhouchen Lin",
+      "Haifeng Zhang",
+      "Jun Wang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26017v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26017v1",
+    "fetched_at": "2026-07-29T10:34:56.751006"
+  },
+  {
+    "id": "2607.26016v1",
+    "title": "MDTransformer: A Hardware-Software Co-Design of Mode-Division Photonic Transformer Accelerator with Inverse-Designed Coherent Crossbar",
+    "abstract": "Recently, photonic transformer accelerators (PTAs) have successfully achieved significant speedup and energy efficiency improvements over electronic accelerators for expediting Transformer inference. However, state-of-the-art rely on expensive multi-wavelength light generation and large dot-product units due to active phase-shifter components, thus making their approach inefficient and impractical. To address this, we propose MDTransformer, a novel hardware-software co-design of PTA based on mode-division optical dataflow and operations. Specifically, MDTransformer performs complex matrix operations using spatial-mode interference, that leverages the inverse-designed multi-mode couplers, crossings, and Mach-Zehnder IQ modulators into a compact mode-division photonic tensor core (MPTC), capable of executing matrix multiplications in the optical domain. Its each guided mode (i.e., TE0-TE3) acts as an independent computational lane, enabling four-fold parallelism-per-waveguide without spectral filtering or free-spectral-range limitations. Moreover, its coherent detection and IQ modulation jointly encode amplitude and phase, realizing complex-valued arithmetic for full-range operations in transformers. MDTransformer offers analog multiplication with sub-4-bit effective precision and inter-modal crosstalk below -30 dB. Its inverse-designed approach also offers scalable and full compatibility with single-laser continuous-wave operation at 1550 nm. Experimental results show that MDTransformer achieves 40.4% area reduction, 63.6% power saving, 40.6% energy saving, and comparable latency over the state-of-the-art PTA across different workloads (i.e., DeiT-Tiny/Small/Base and BERT-Base/Large). These results show that MDTransformer offers a practical solution for high-performance and energy-efficient transformer-based systems.",
+    "authors": [
+      "Solomon Micheal Serunjogi",
+      "Rachmad Vidya Wicaksana Putra",
+      "Ayat Taha",
+      "Muhammad Shafique",
+      "Mahmoud Rasras"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.AR",
+      "cs.AI",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26016v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26016v1",
+    "fetched_at": "2026-07-29T10:34:56.751039"
+  },
+  {
+    "id": "2607.25970v1",
+    "title": "Reinforcement Learning for Code Optimization",
+    "abstract": "RL for code correctness is now established: have the model generate a program, run it against hidden test cases, and reward solutions that pass. Extending this to code optimization seems straightforward: just add execution time to the reward. But in practice, once timing drives the reward, small problems in measurement noise, reward sparsity, or GRPO instability overwhelm the signal and make RL fail: generated solutions are barely faster, and more of them can fail. We make execution time learnable through three stages: (1) how code is tested, by building DMC-Optim with large optimization tests and a calibrated sandbox; (2) how speed is turned into reward, by composing correctness and speed in the RL environment and using an offline simulator to predict the most promising configurations; and (3) how the model learns from that reward, by adapting GRPO and evaluation to the sparser, noisier timed-execution setting. On DMC-Optim, the strongest optimization-aware configurations improve strict top-50% pass@1 from 18.0% to 31.3% on Qwen 2.5 7B and from 30.7% to 50.4% on CWM 32B. These gains further increase at stricter percentiles such as top-30%, with 125% relative improvement for CWM 32B, while preserving pure-correctness scores. When the timing sandbox is degraded, robust optimization RL reaches 100% to 200% improvement over standard RLVR, depending on the evaluation criterion. On LCB, CWM 32B wins up to 83% of median-sample speed comparisons against standard RLVR. Relative to the fastest correct human submissions per problem, it reaches about half the human rate of complexity-class improvements (14% vs. 28%).",
+    "authors": [
+      "Pierre Chambon",
+      "Kunhao Zheng",
+      "Juliette Decugis",
+      "Benoit Sagot",
+      "Gabriel Synnaeve"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25970v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25970v1",
+    "fetched_at": "2026-07-29T10:34:56.751070"
+  },
+  {
+    "id": "2607.25956v1",
+    "title": "Large Language Model for Operations Research Formulation Selection in Multi-Warehouse Inventory Allocation",
+    "abstract": "Multi-warehouse inventory allocation is typically formulated as a mixed-integer programming (MIP) problem, yet no single formulation consistently matches heterogeneous instance-level regimes induced by demand concentration, inventory imbalance, replenishment scale, service constraints, and forecast volatility. We study this issue as instance-wise operations research (OR) formulation selection, where each allocation instance is assigned to a solver-executable formulation from a candidate OR expert library. We propose a solver-guided large language model (LLM) framework for OR formulation selection, in which each OR expert corresponds to a MIP formulation encoding a distinct allocation priority. To train the selector, the framework first constructs balanced expert-conditioned supervised fine-tuning (SFT) records for schema learning, and then uses MIP solver evaluation on historical instances to convert solver-evaluated allocation-quality gaps into margin-weighted identity preference optimization (IPO) preferences and per-instance expert-score metadata for reward lookup during group relative policy optimization (GRPO) to assign rewards to sampled responses. Experiments on multi-warehouse inventory allocation instances from JD$\\mathord{.}$com, one of China's largest e-retailers, demonstrate that GRPO substantially improves expert-selection accuracy relative to the SFT+IPO selector and, more importantly, produces higher realized allocation quality than both the preference-trained selector and the best fixed formulation. With GRPO, Hit Ratio@1 and Hit Ratio@2 increase from 21.45% to 50.42% and from 70.47% to 82.31%. The resulting selector achieves an allocation accuracy gain of 12.57 percentage points over the incumbent baseline, outperforming both the SFT+IPO selector and the best fixed OR expert, and reduces the gap to the ex-post oracle to 4.85 percentage points.",
+    "authors": [
+      "Jintao Xu",
+      "Yingzheng Ma",
+      "Jiong Dong",
+      "Yongzhi Qi",
+      "Jianshen Zhang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.AI",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25956v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25956v1",
+    "fetched_at": "2026-07-29T10:34:56.751100"
+  },
+  {
+    "id": "2607.25915v1",
+    "title": "Penelope: Localized Latent Recurrence for Efficient Structured Reasoning",
+    "abstract": "Complex structured reasoning tasks often require additional computation, yet current language models obtain it mainly by increasing parameter scale or by serializing intermediate steps as chain-of-thought (CoT) tokens. The former raises training and deployment costs, while the latter ties reasoning computation to autoregressive output length. We introduce Penelope, an efficient latent-reasoning framework for pretrained decoder-only Transformers that localizes recurrent computation to a selected decoder interval. The lower decoder prefix is evaluated once to construct a problem-conditioned boundary memory, which is then iteratively refined through time-modulated GRU dynamics and recurrent readout states before answer generation. A progressive CoT-to-latent curriculum transfers visible reasoning into this internal recurrent path, allowing additional computation to be allocated in latent space without repeatedly executing the complete decoder or generating a long intermediate trace. Experiments on open-source structured-reasoning benchmarks show that, at validation-selected latent budgets, Penelope attains competitive accuracy relative to established latent-reasoning models while reducing measured inference latency. These results show that latent refinement can be localized to a narrow decoder interval, reducing repeated full-decoder execution without generating a long visible reasoning trace and providing a practical accuracy-efficiency tradeoff for decoder-only Transformer models.",
+    "authors": [
+      "Yutong Chen",
+      "Shouqian Shi",
+      "Xinran Liu",
+      "Haochen Wang",
+      "Jiaying Wang",
+      "Tianxing Xu",
+      "Yuanxi Wang",
+      "Zirui Ding"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25915v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25915v1",
+    "fetched_at": "2026-07-29T10:34:56.751138"
+  },
+  {
+    "id": "2607.25911v1",
+    "title": "AnnoBench: A Benchmark for Visualization Annotation Generation",
+    "abstract": "Annotation is among the most demanding visualization tasks to automate, as it simultaneously requires correctly navigating visual, semantic, and stylistic constraints. Failure to meet any of these conditions severely undermines the utility of an annotation, rendering it challenging to read, inaccurate, or visually discordant. Despite a growing body of annotation tools and automations, no existing benchmark or evaluation framework tests whether these conditions are met because of their scope and annotation not being the focus of their studies. We introduce AnnoBench, a benchmark for visualization annotation that materializes the inherent challenges of this domain in a structured and testable manner. AnnoBench pairs visualizations from professional data journalism and visualization galleries with annotation tasks, spanning four representation formats, five chart description conditions, and two prompt specification levels. The benchmark is executed via VLM-as-a-judge, using models aligned with manual human assessment. We evaluate the benchmark via four one-factor-at-a-time experiments, exploring the effects of input representation, semantic context, and prompt specificity, and model selection on annotation quality. This work provides a foundation for advancing annotation automation, tooling, and visualization-generation pipelines.",
+    "authors": [
+      "Md Rahat-uz-Zaman",
+      "Md Dilshadur Rahman",
+      "Andrew McNutt",
+      "Paul Rosen"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25911v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25911v1",
+    "fetched_at": "2026-07-29T10:34:56.751166"
+  },
+  {
+    "id": "2607.25904v1",
+    "title": "Interactive Reward Agent: GUI Task Evaluation via Environment-State Verification",
+    "abstract": "Graphical user interface task evaluation aims to determine whether a GUI agent has successfully completed a user instruction. Automated GUI task evaluation has received increasing attention because the evaluation results can serve as reward signals for both test-time scaling and post-training. However, reliable GUI task evaluation remains challenging because the judgments often require access to environment states, such as system configurations, file data, and application settings, beyond the screenshots of execution trajectories. In this paper, we propose an interactive reward agent (IRA) based on a propose-then-verify framework to acquire and verify evidence from the post-execution environment. Given a task instruction and a GUI environment after the GUI agent execution, IRA first proposes the task completion conditions and then verifies them by invoking system tools, application tools, and GUI tools. This design combines evidence from both visible interfaces and the environment state in an interactive process. We further introduce GUI-RewardBench, a benchmark of 321 GUI task trajectories spanning 10 Ubuntu desktop application categories. Experiments show that IRA achieves 86.9% accuracy on GUI-RewardBench, outperforming existing evaluator baselines. We further apply IRA to reinforcement learning of GUI agents, achieving a 34.0% OSWorld success rate, which demonstrates that IRA can provide effective reward signals for training GUI agents.",
+    "authors": [
+      "Chenrui Shi",
+      "Yuwei Wu",
+      "Yang Liu",
+      "Ruining Feng",
+      "Zirui Shang",
+      "Zhi Gao",
+      "Lifeng Fan",
+      "Che Sun"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25904v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25904v1",
+    "fetched_at": "2026-07-29T10:34:56.751220"
+  },
+  {
+    "id": "2607.25853v1",
+    "title": "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs",
+    "abstract": "Skills have become an important abstraction for enabling large language model (LLM) agents to reuse past experience in long-horizon interactive tasks. However, existing trajectory-to-skill methods often produce flat collections of high-level textual skills that are stored and retrieved independently, leaving skill relations underutilized and maintaining a gap between high-level skills and executable actions. In this paper, we propose HiSkill, a hierarchical skill graph framework that organizes interaction trajectories into a directed graph with skill nodes, AtomicOp nodes, and typed edges. Specifically, the graph connects reusable high-level skills with executable action templates, while also capturing decomposition, temporal transition, compatibility, support, and recovery relations among them. At inference time, HiSkill retrieves a compact task-relevant subgraph and performs subgraph-guided task execution, where a symbolic task state, an active skill, and the retrieved subgraph guide the LLM agent to switch skills, select AtomicOps, and ground executable actions iteratively. Experiments on three interactive environments show that HiSkill outperforms state-of-the-art baselines while reducing inference token consumption, demonstrating the effectiveness of bridging high-level skills and executable action grounding through a hierarchical skill graph. Our data and code is available at https://github.com/BUPT-GAMMA/HiSkill.",
+    "authors": [
+      "Yu Hao",
+      "Jinxuan Cai",
+      "Qi Zhang",
+      "Yawen Li",
+      "Zhiqiang Zhang",
+      "Chuan Shi",
+      "Cheng Yang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25853v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25853v1",
+    "fetched_at": "2026-07-29T10:34:56.751255"
+  },
+  {
+    "id": "2607.25834v1",
+    "title": "Lowering the implementation barrier of neutral-atom quantum computing with agentic workflows",
+    "abstract": "Quantum computers are moving from research laboratories to industrial machines accessible via the cloud and integrated into high-performance computing facilities. However, translating theoretical quantum protocols into hardware experiments remains a major bottleneck, requiring expertise across protocol design, compilation, simulation, and cloud execution. Here, we introduce an agentic workflow that automates this pipeline on neutral-atom quantum processors (here two Pasqal QPUs available on the cloud) while keeping the researcher in the loop for critical validation. In three case studies from many-body physics and optimization, the agent went from published paper or patent to a QPU campaign run overnight. In particular, human intervention was crucial to ensure scientific validity: the agent selected an inadequate observable in one experiment and constructed a plausible but incorrect hardware diagnosis in another, with both failures detected only through domain-expert review. Finally, we use a second agent to classify a corpus of 633 Rydberg-array arXiv papers and show that nearly half are implementable on present-day QPUs while identifying specific hardware upgrades needed for the rest. Together, these results demonstrate that agentic workflows provide a practical bridge between theoretical ideas and physical hardware, opening quantum experimentation to a much broader scientific community.",
+    "authors": [
+      "Constantin Dalyac",
+      "Alexandre Dauphin",
+      "Loïc Henriet",
+      "Christophe Jurczak"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "quant-ph",
+      "cond-mat.quant-gas",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25834v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25834v1",
+    "fetched_at": "2026-07-29T10:34:56.751285"
+  },
+  {
+    "id": "2607.25816v1",
+    "title": "Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL",
+    "abstract": "Large language model agents often spend substantial wall-clock time waiting for tool call results. Tool-call speculation can hide this latency by predicting and pre-executing an agent's next tool call if the prediction matches the agent's eventual tool call, but existing speculators are typically separate draft models or cached traces that are poorly aligned with the deployed agent's own behavior. We identify this speculator-agent gap and show that the target agent itself is a strong next-call speculator. This points to a simpler design: unifying the agent and speculator within the same model. In this paper, we introduce the self-speculating agent, a single model that both solves tasks in agent mode and predicts its next tool call from partial trajectories in speculator mode, fully reusing prefix KV cache. To enable this dual-mode agent without degrading performance, we propose a joint agent-speculator reinforcement learning method, which derives speculation targets from the agent's own rollouts and alternates agent and speculator updates. Across agentic search QA and conversational tool-use agentic tasks, our method improves average next tool-call Hit@1 from 44.1 to 61.2 for Qwen3-4B and from 48.9 to 66.3 for Qwen3.5-4B, while preserving agent task success.",
+    "authors": [
+      "Jiabao Ji",
+      "Yujian Liu",
+      "Li An",
+      "Rohit Jain",
+      "Gungor Polatkan",
+      "Siyu Zhu",
+      "Shiyu Chang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25816v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25816v1",
+    "fetched_at": "2026-07-29T10:34:56.751320"
+  },
+  {
+    "id": "2607.25765v1",
+    "title": "WorkSurface-Bench: Benchmarking Enterprise Agents on Multi-Surface Knowledge Routing",
+    "abstract": "Enterprise agents often need to integrate heterogeneous knowledge sources: documents for narrative facts, tables for computation, and dependency graphs for file relationships. Existing benchmarks typically evaluate retrieval or tool use without distinguishing whether an agent first selects the appropriate knowledge sources. We introduce WorkSurface-Bench, a benchmark for evaluating this capability as surface routing. It contains 1,151 atomic tasks derived from persona-scoped Workspace-Bench-Lite workspaces, spanning document, table, graph, and cross-surface questions. Its reference answers are auditable: table answers are reproduced through executed DuckDB queries, document answers are grounded in verified text spans, and graph answers are traced to source dependency annotations. We evaluate four model backbones across six controlled agent settings, yielding 27,624 protocol-error-free trajectories. Under gold-constrained tool access, agents achieve 98.7-99.8 Route F1, while Answer remains only 56.1-75.3 percent, showing that correct surface selection is necessary but insufficient for task completion. Matched interventions further show that surface hints improve Answer for three of four models, whereas removing irrelevant tools primarily improves routing and efficiency. In an independent three-annotator audit, all 200 sampled tasks pass all six quality criteria by majority vote, with 192 receiving unanimous judgments on every criterion. We release the dataset, construction pipeline, scoring code, and agent harness at https://github.com/haolpku/WorkSurface-Bench.",
+    "authors": [
+      "Hao Liang",
+      "Meiyi Qiang",
+      "Sizhe Qiu",
+      "Linzhuang Sun",
+      "Wentao Zhang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.CL",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25765v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25765v1",
+    "fetched_at": "2026-07-29T10:34:56.751348"
+  },
+  {
+    "id": "2607.25728v1",
+    "title": "Shared Voxel-Map-Based Cooperative Indoor UAV Guidance with a Multi-Agent Soft Actor-Critic Controller",
+    "abstract": "This paper presents a cooperative indoor UAV guidance framework that combines a shared voxel-map world model with a multi-agent Soft Actor-Critic (MASAC) controller. Multiple drones fuse 360 LiDAR observations into a common world-frame occupancy map, which is converted into a compact bird's-eye-view (BEV) representation and provided to each agent as an ego-aligned local crop. This integrate-in-world, act-in- ego design enables consistent multi-UAV spatial fusion whilst retaining decentralised continuous control. The policy combines BEV map features, near-field obstacle observations, and compact goal and peer-state information within a centralised-training, decentralised-execution framework. In simulation, the learned controller achieves a 90.3% success rate in corridor navigation, outperforming Astar planning, an artificial potential field controller, and a prior guidance method. To address residual sim-to-real mismatch, the simulation-trained policy is further adapted using offline imitation fine-tuning from real-world data. Real-world experiments in GNSS-denied indoor environments demonstrate stable two-UAV cooperative operation across increasingly chal- lenging obstacle layouts. The results show that shared voxel-map representations provide an effective and scalable spatial substrate for learned cooperative indoor UAV guidance.",
+    "authors": [
+      "Thomas Hickling",
+      "Dylan Wynne",
+      "Yu Su",
+      "Nabil Aouf"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25728v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25728v1",
+    "fetched_at": "2026-07-29T10:34:56.751374"
+  },
+  {
+    "id": "2607.25656v1",
+    "title": "OrchBench: Evaluating Multi-Agent Orchestration Plans in Isolation via Deterministic Simulation",
+    "abstract": "Complex tasks often decompose into parallelizable yet interdependent subtasks, making orchestration critical to the performance of multi-agent systems (MAS). Existing evaluations typically rely on end-to-end execution, which conflates orchestration-plan quality with worker capabilities, tool reliability, and environmental noise. Moreover, the time and token costs of real execution grow rapidly with workflow scale, making systematic evaluation expensive. We present OrchBench, a simulation-based benchmark for evaluating multi-agent orchestration plans in isolation. Starting from real-world tasks, OrchBench constructs directed acyclic graphs (DAGs) that encode task dependencies, with controlled sizes and degrees of parallelism. Given a DAG, a per-agent context limit, and an agent budget, the evaluated planner assigns subtasks to agents and specifies cross-agent information transfers and their retention ratios. A deterministic simulator evaluates the resulting plan without invoking worker agents and returns interpretable measures of result quality, makespan, and token cost. The simulated scores produced by OrchBench correlate strongly with quality scores from Claude Code executions, achieving a Pearson correlation of \\(r=0.816\\), while requiring only \\(1.3\\%\\) of the tokens and \\(10.3\\%\\) of the wall-clock time. Across diverse planners and workflow scales, we find that preserving task-critical information is more important than simply increasing the number of agents, and the benefits of parallelism diminish as coordination failures accumulate. These results establish OrchBench as an efficient and interpretable benchmark for comparing and diagnosing multi-agent orchestration plans.",
+    "authors": [
+      "Zhenzhen Ren",
+      "Jiyan He",
+      "Xinpeng Zhang",
+      "Zhenxing Qian",
+      "Ke Han",
+      "Shuxin Zheng",
+      "GuoBiao Li",
+      "Xiaoqing Zhang"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25656v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25656v1",
+    "fetched_at": "2026-07-29T10:34:56.751407"
+  },
+  {
+    "id": "2607.25647v1",
+    "title": "KQFuzz: Knowledge-Guided Fuzzing for Quantum Libraries via Large Language Models",
+    "abstract": "As quantum computing continually improves, ensuring the reliability and correctness of quantum libraries has become increasingly critical. To this end, many LLM-based fuzzing approaches towards quantum libraries have been proposed to uncover potential bugs. However, these methods still suffer from limitations such as insufficient flexibility and low efficiency, which hinder the progress of the quantum computing field. To address these challenges, we propose KQFuzz, a novel knowledge-guided fuzzer for quantum libraries. It leverages comprehensive codebase knowledge to ground LLM-based test generation, synergizing this with fitness-guided evaluation and two-level mutations to explore complex execution paths and trigger potential bugs. Firstly, KQFuzz introduces a novel prompting scheme tailored to quantum programs, which strategically incorporates knowledge of the codebase to efficiently generate high-quality quantum seed programs. Moreover, we develop evaluation and mutation strategies to handle the generated seed programs, facilitating efficient fuzzing execution while further enriching the diversity of the resulting test cases. We implement KQFuzz and conduct fuzzing on three popular quantum libraries, including Qiskit, PennyLane, and Cirq. Experimental results demonstrate that our approach significantly outperforms other state-of-the-art methods, with coverage improved by up to 18.44%. During the development of KQFuzz, we discovered 13 bugs, all of which have been confirmed and 12 have already been fixed by the developers.",
+    "authors": [
+      "Fuyuan Xia",
+      "Qixin Zhang",
+      "Chenhao Ying",
+      "Haojin Zhu",
+      "Shuai Wang",
+      "Yuan Luo",
+      "Pingchuan Ma",
+      "Yuxuan Du"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.MA",
+      "quant-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.25647v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.25647v1",
+    "fetched_at": "2026-07-29T10:34:56.751441"
+  },
+  {
+    "id": "2607.24341v2",
+    "title": "Simulating Tenant Responses to Energy Policy Interventions with Transaction-Cost-Aware LLM Age",
+    "abstract": "Recent studies use Large language models (LLMs) to simulate human opinions and decisions by prompting models with demographic, attitudinal, or persona-based descriptions. Yet such simulations rarely model the practical, cognitive, or social frictions that shape how people respond to policy interventions. Perceived transaction cost (PTC) provides a useful lens for modeling the practical frictions that shape policy responses, such as information burden, administrative effort, coordination demands, and perceived uncertainty. We use this lens to develop a friction-aware persona modeling approach for LLM-based simulation. In the context of energy-efficient renovation (EER), tenants are represented not only by who they are demographically, but by how they perceive the costs, benefits, barriers, and uncertainties associated with proposed renovation plans. Using survey data collected from 1,068 citizens in the Netherlands, comprising approximately 40,548 survey question and answer pairs, we compare prompt-only and fine-tuned settings across GPT-3.5-turbo, Ministral-8B-Instruct, and Llama-3.1-8B-Instruct, and evaluate supervised fine-tuning (SFT) and Group Relative Policy Optimization (GRPO) for local open-weight models. Results show that incorporating PTC-based personas and reasoning consistently improves model performance across both prompt-only and fine-tuned settings, suggesting that PTC-based persona design provides a useful bridge between institutional policy theory and interpretable LLM-based policy simulation. Code is available at https://github.com/xiaweijie1996/socialagent.",
+    "authors": [
+      "Weijie Xia",
+      "Stefanie Horian",
+      "Hanyue Huang",
+      "Queena K. Qian",
+      "Jie Yang",
+      "Pedro P. Vergara Barrios"
+    ],
+    "published": "2026-07-27",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.24341v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.24341v2",
+    "fetched_at": "2026-07-29T10:35:00.156257"
+  },
+  {
+    "id": "2607.24875v1",
+    "title": "FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting",
+    "abstract": "Large language models (LLMs) can synthesize financial narratives but may express high confidence when evidence is sparse, stale, or contradictory. This failure is especially consequential in forecasting, where filings, news, prices, volume, and technical signals can disagree. We present FinAbstain, a research framework for uncertainty-calibrated multimodal retrieval-augmented generation (RAG) with selective prediction. A point-in-time retriever admits only information public at the forecast timestamp and supplies modality-specific evidence to fundamental, news, technical, risk, and verification agents. Their probabilistic assessments are aggregated with retrieval relevance, evidence contradiction, repeated-sample consistency, and historical calibration statistics. Temperature scaling, isotonic regression, conformal prediction, and a proposed hybrid uncertainty score are evaluated under a common chronological protocol. A controller predicts bullish, bearish, or neutral outcomes only when uncertainty is below a validated threshold; otherwise it abstains, requests evidence, reduces exposure, or routes the case to human review. The evaluation covers one- and five-day abnormal-return direction, twenty-day volatility intervals, and abstention decisions, using accuracy, calibration, risk--coverage, citation, trading, latency, and cost metrics. To make the design auditable before a full data collection is complete, we report explicitly labeled simulated results rather than empirical claims. These results illustrate the intended hypothesis: calibrated abstention may trade coverage for lower selective error and drawdown. The contribution is a time-safe architecture, a composite uncertainty formulation, and a reproducible evaluation blueprint for evidence-grounded selective financial forecasting.",
+    "authors": [
+      "Dorothy Torres",
+      "Wei Cheng",
+      "Henan Huang"
+    ],
+    "published": "2026-07-27",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.24875v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.24875v1",
+    "fetched_at": "2026-07-29T10:36:49.274902"
+  }
+]
