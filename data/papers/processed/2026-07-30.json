@@ -1,0 +1,875 @@
+[
+  {
+    "id": "2607.27188v1",
+    "title": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
+    "abstract": "Accurate option prices do not imply accurate recovery of the latent risk-neutral density. We study this distinction with two complementary benchmarks. A controlled benchmark exposes simulator-truth densities for latent evaluation, while a chronological NIFTY benchmark tests only held-out market prices. A two-component lognormal mixture has the lowest aggregate price, $L^1$, Wasserstein, and fixed-tail errors on the synthetic benchmark. Learned operators retain narrower strengths: DeepONet reduces 1% quantile and variance error by 39.0% and 34.6% relative to the mixture, and a quote transformer reduces $L^1$ by 16.4% on the structurally misspecified Merton family. A numerical conditioning analysis explains why these rankings can differ: after enforcing mass and forward constraints, 95 of 126 pricing directions are numerically null, and two densities separated by $L^1 = 0.061$ produce identical prices on the covered strikes. On 524 held-out NIFTY calls, validation-selected test-time adaptation reduces DeepONet RMSE by 28.3%, but per-expiry mixture and SVI fits remain much more accurate. The evidence supports target-dependent inductive bias, not a universal winner.",
+    "authors": [
+      "Lennon J. Shikhman",
+      "Michael Galarnyk",
+      "Aadi Dash",
+      "Nicholas A. Welsh"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.LG",
+      "q-fin.CP",
+      "q-fin.PR",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27188v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27188v1",
+    "fetched_at": "2026-07-30T10:20:09.141881",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844067"
+  },
+  {
+    "id": "2607.27099v1",
+    "title": "Rainfall is rough",
+    "abstract": "We propose a new approach to model rainfall by combining heterogeneous data sources at different time scales. Continuous arrivals of rain cells are incorporated into a Hawkes process formalism that encompasses the classical Bartlett-Lewis and Neyman-Scott models, thereby providing a more flexible representation of clustering. Analysis of high frequency rainfall data (at the minute scale over several years) indicates that critical Hawkes processes with heavy-tailed power-law kernels yield a superior fit relative to classical models and alternative kernel specifications. Scaling arguments inspired by Jaisson and Rosenbaum (2016) imply that aggregated rainfall at coarse time scales converges to a rough fractional process with Hurst exponent close to zero. This prediction is supported by empirical evidence from low-frequency data (annual observations spanning centuries to millennia), where the Hurst exponent is estimated to lie between 0.01 and 0.1 based on either direct observations from weather stations or proxy reconstructions such as tree-ring records. These results establish a connection between rainfall dynamics and models developed in quantitative finance for market microstructure and volatility. They also provide a new perspective on classical scaling phenomena originally studied by Hurst and Mandelbrot.",
+    "authors": [
+      "Thomas Deschatre",
+      "Marc Hoffmann",
+      "Mathieu Rosenbaum"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "stat.AP",
+      "q-fin.ST",
+      "stat.CO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27099v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27099v1",
+    "fetched_at": "2026-07-30T10:20:09.141909",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844081"
+  },
+  {
+    "id": "2607.27070v1",
+    "title": "Where does the criticality live? Early-warning signals are event-heterogeneous across seven crypto-perpetual liquidation cascades",
+    "abstract": "Do crypto perpetual-futures crashes carry a reproducible early-warning fingerprint of a critical transition, and in which state variable? We study seven major BTC liquidation cascades (2022-2025, including the record 19B USD event of 10 October 2025) using minute-level price and 5-minute leverage/order-flow data. On detrended residuals we compute rolling variance and lag-1 autocorrelation and test their pre-cascade trend with the Kendall-tau statistic, sweeping 39 analysis configurations per variable per event. No variable is event-invariant. Price carries the critical-slowing-down signature in five of seven events but is silent in exactly the two sudden-news (tariff) shocks, suggesting a two-type structure: endogenous-buildup versus exogenous-shock cascades. The October 2025 event, whose in-sample analysis suggests the signature lives in leverage rather than price, turns out to be the outlier, not the rule. The one regularity surviving all events with data is a compression of taker order-flow variance, which passes a 300-onset placebo test (Fisher-combined p ~ 5e-6) but is a population-level precursor, not a per-event alarm. Single-event critical-slowing-down claims in crypto derivatives are therefore fragile by construction. We argue the pattern of failures is itself diagnostic: slowing down is absent exactly where the destabilising mechanism is most abrupt, as one would expect if these cascades are discontinuous, shock-driven transitions rather than critical ones.",
+    "authors": [
+      "Ramon Marc Garcia Seuma"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "q-fin.ST",
+      "physics.soc-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27070v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27070v1",
+    "fetched_at": "2026-07-30T10:20:09.141923",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844091"
+  },
+  {
+    "id": "2607.27063v1",
+    "title": "Herding, Momentum, and Reversal in China's A-Share Market: An Agent-Based Network Model with Information Diffusion",
+    "abstract": "This study develops an agent-based financial market model to explain stock-price momentum and reversal through the joint effects of local herding and delayed information diffusion. Investors form heterogeneous Gaussian beliefs about the next-period price, choose among buying, selling, and remaining inactive, and revise their action probabilities in response to neighboring investors. The local interaction structure is represented by von Neumann and Moore lattices and is later replaced by Erdős--Rényi and Watts--Strogatz networks for robustness. A separate information process updates investor beliefs through a finite-speed diffusion mechanism, allowing informational adjustment to be distinguished from behavioral imitation. The simulations show that stronger herding produces spatially clustered trading, larger price fluctuations, and more pronounced excess kurtosis in returns. Faster information diffusion reduces the time required for prices to approach the signal-implied value, whereas the combination of information diffusion and social reinforcement generates overshooting and subsequent reversal. An empirical application to China's A-share market compares conventional CSAD and LSV measures with a rolling tail-based herding indicator obtained after Johnson $S_U$ transformation. The indicators display similar time variation and rise during major market disruptions. These findings identify information delay, local social reinforcement, and the eventual decay of herding as complementary mechanisms behind momentum and reversal.",
+    "authors": [
+      "Jiahao Weng"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27063v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27063v1",
+    "fetched_at": "2026-07-30T10:20:09.141934",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844109"
+  },
+  {
+    "id": "2607.27039v1",
+    "title": "Forcing and duality-corrected contracts for volatility control",
+    "abstract": "In this paper, we revisit the construction of optimal incentives in continuous-time principal-agent problems with drift and volatility control. Originally, a general approach relying on dynamic programming and second-order backward stochastic differential equations (2BSDEs) was developed by Cvitanić, Possamaï, and Touzi (2018) [8] to determine the optimal form of contracts in this setting. More recently, Chiusolo and Hubert (2026) [5] proposed a BSDE-based approach by introducing an alternative `contractible-volatility' problem for the principal. In addition to the proposed new method, this work highlights that the optimality result of [8] actually hinges on an assumption, stated below as Assumption 2.3, which may not hold in general. Motivated by this, we introduce in this paper a more general class of contracts, parametrised by a function $ψ$ subject to conditions that make the contract revealing for the agent and without loss of generality for the principal. We further provide two natural specifications of $ψ$: one, inspired by the BSDE approach, yielding a forcing-type contract; the other, motivated by the 2BSDE approach, correcting the duality gap when Assumption 2.3 is not satisfied.",
+    "authors": [
+      "Alessandro Chiusolo",
+      "Emma Hubert",
+      "Dylan Possamaï",
+      "Nizar Touzi"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "math.OC",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27039v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27039v1",
+    "fetched_at": "2026-07-30T10:20:09.141949",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844123"
+  },
+  {
+    "id": "2607.27019v1",
+    "title": "Multi-Asset Liquidation in Dark Pools with Adverse Selection",
+    "abstract": "Multi-asset liquidation in dark pools with adverse selection remains unsolved in literature. In this paper, we investigate multi-asset portfolio liquidation in dark pools with quadratic adverse selection cost by analyzing a multidimensional stochastic control problem, which leads to a matrix-valued BSDE with jumps and a singular terminal condition. Beyond establishing the existence of a solution, our key contribution lies in proving uniqueness, a result that is novel even in simplified settings and strengthens existing findings in the literature. In the two-asset case, we further examine the interaction between asset correlation and adverse selection. On the one hand, we find that the protection of a well-diversified portfolio is not determined by adverse selection but rather by the spillover effects of dark-pool orders. On the other hand, we show that the primary role of adverse selection is to determine whether a poorly diversified portfolio can be rescued through dark-pool trading.",
+    "authors": [
+      "Guanxing Fu",
+      "Johannes Ruf",
+      "Xiaomin Shi",
+      "Zuo Quan Xu"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27019v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27019v1",
+    "fetched_at": "2026-07-30T10:20:09.141963",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844135"
+  },
+  {
+    "id": "2607.26859v1",
+    "title": "No Data Is Not No Risk: Visibility Aware Graph-Based Inference of Business Conduct Risk",
+    "abstract": "The monitoring of business conduct risk is hindered by sparse, uneven, and visibility-biased data. Prior studies show that business conduct risk information and media coverage propagate through supply chain, peer, and corporate structure networks, yet incident records remain incomplete for many firms. As a result, the absence of reported events could reflect limited coverage rather than the absence of underlying business conduct risk. This paper examines whether inter-firm relationships can improve the prediction of future recorded conduct related incidents, particularly among firms with limited prior visibility. We formulate the task as Positive--Unlabeled node classification on a corporate ownership graph, where firms with recorded incidents are treated as labeled positives and firms without recorded incidents remain unlabeled. We then propose a visibility- and relation-aware GCNII framework that combines relation specific message passing with non-negative Positive--Unlabeled learning to account for positive contamination in the unlabeled set. In a forward-looking evaluation, the proposed approach achieved the strongest observed ranking performance relative to non-graph- and simple graph-based benchmarks. The results further show that graph-based inference retains its predictive value among firms without prior recorded incidents. These findings demonstrate the value of inter-firm relational structure as a complementary source of information for extending risk prioritization",
+    "authors": [
+      "Tsuyoshi Iwata",
+      "Johannes Laurmaa",
+      "Ryohei Hisano"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "q-fin.RM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26859v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26859v1",
+    "fetched_at": "2026-07-30T10:20:09.141977",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844146"
+  },
+  {
+    "id": "2607.26792v1",
+    "title": "Crossing-Free Probabilistic K-Line Forecasts Without Retraining",
+    "abstract": "Probabilistic K-line forecasting describes uncertainty in four complementary prices, namely open--high--low--close (OHLC). However, it introduces two consistency problems: quantile crossing and K-line crossing. Quantile crossing occurs when a higher-quantile forecast falls below a lower-quantile forecast, while K-line crossing occurs when the forecast low exceeds the open or close, or the forecast high falls below the open or close. Existing solutions generally address only one problem through output reordering, specialized architectures, or penalized training objectives. We propose K-line--Quantile Sequential Projection (KQSP), a parameter-free and training-free reconciliation method applicable to forecasts produced by any model. Compared with other crossing solutions, KQSP preserves predictive accuracy while producing substantially smaller corrections to the original forecasts. To mitigate model bias, we evaluate KQSP using various models, including pretrained foundation models. KQSP reduces both quantile and K-line crossing rates to zero for all test data undertaken. These results show that probabilistic K-line consistency can be enforced independently of forecast generation and without retraining.",
+    "authors": [
+      "Runyao Yu",
+      "Yuchen Tao",
+      "Yujie Chen",
+      "Wentao Wang",
+      "Derek W. Bunn"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "stat.ML",
+      "cs.AI",
+      "cs.CE",
+      "cs.LG",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26792v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26792v1",
+    "fetched_at": "2026-07-30T10:20:09.141993",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844160"
+  },
+  {
+    "id": "2607.26405v1",
+    "title": "Multi-Currency AMMs for Decentralized FOREX Markets: Feasibility & Optimal Design",
+    "abstract": "Most currency pairs lack a direct liquid market, so international foreign exchange relies on routing transactions through a dominant vehicle currency. Multi-currency automated market makers (AMMs) offer an alternative by sharing liquidity across many currency pairs, facilitating direct cross-currency trade while exploiting liquidity consolidation. This paper studies a multi-currency pool design that minimizes trading cost. Under a constant-mean AMM architecture, equilibrium trading costs reflect the trade-off between reduced price impact from consolidated liquidity and increased impermanent loss from joint return risk. This work derives closed-form costs, characterizes optimal pool weights, and shows that the optimized multi-currency pool dominates the status quo over a range of market parameters. It then formulates the system-level problem of partitioning currencies into multi-currency pools, which is solved using a hierarchical agglomerative clustering algorithm. Empirically, using exchange rate and trade data for 43 currencies over 2008-2023, the algorithm runs in 1.6 seconds and produces pools with geographic and economic structure. Notably, this reduces realized costs by ~13% relative to the status quo of vehicle-currency routing, with gains stable through episodes of global financial stress.",
+    "authors": [
+      "Reina Ke Xin Li",
+      "Andreas Park",
+      "Andreas Veneris",
+      "Srisht Fateh Singh"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26405v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26405v1",
+    "fetched_at": "2026-07-30T10:20:09.142007",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844168"
+  },
+  {
+    "id": "2607.26245v1",
+    "title": "OpenMarket: A Synchronized Polymarket-Binance Dataset for High-Frequency Prediction-Market Research",
+    "abstract": "OpenMarket began as an attempt to trade Polymarket's BTC 15-minute binary markets against Binance BTC/USDT order flow. The attempt did not produce a tradable edge: out-of-sample, a walk-forward logistic model over 43 microstructure features does not beat, and slightly underperforms, the probability already implied by Polymarket's own order book, and simulated trading nets -0.116 normalized payoff units per attempted trade under stated fee and slippage assumptions. We release the synchronized corpus and infrastructure that attempt produced and, to our knowledge, the first public millisecond-level Polymarket BTC / Binance BTC-USDT paired corpus with explicit pairing metadata. The frozen archive (tag v0.5.2) contains 727,098,247 deduplicated rows across 202 archival snapshots, with event data on 54 observed Polymarket days (57 Binance days) between 2026-02-12 and 2026-05-15, including 2,936,031 explicit lead-lag pairs, alongside a reproducible Rust pipeline for collection, millisecond pairing, Parquet export, and walk-forward calibration. Initial analyses establish Polymarket stylized facts (one-tick top-of-book spreads) and characterize cross-venue timing: an apparent 16 ms median lag on venue source clocks, with relative clock drift bounded to at most 6 ms over the archive but a remaining single-vantage constant-offset ambiguity of approximately plus or minus 99 ms. A synchronization-free event study, measured only on the collector clock, independently shows that Polymarket quotes respond to large Binance moves after a median 347 ms. We position this work as a data-and-methods release whose central empirical result is a null out-of-sample forecasting result.",
+    "authors": [
+      "Gregory Young"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26245v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26245v1",
+    "fetched_at": "2026-07-30T10:20:09.142018",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844177"
+  },
+  {
+    "id": "2607.26188v1",
+    "title": "Bitcoin Runs on a Clock: Why Every Price Indicator Dies and the Halving Clock Doesn't",
+    "abstract": "Every widely followed Bitcoin cycle indicator (Pi Cycle, MVRV, Mayer, Puell) called turns precisely for a decade, then degraded in one sequence: precise, then early, then silent. This is one structural phenomenon. Across the four halving epochs (2011-2026), the per-cycle maxima of five top-calling oscillators decline monotonically while minima end higher, so any threshold calibrated on past cycles must stop firing; short-horizon indicators decay toward zero and several invert sign; yet Bitcoin's time structure stays fixed, with mature-cycle tops 525/546/534 days after their halvings and bottoms 406/364/366 days after their tops. Turns are identified retrospectively by a fixed mechanical rule, not a real-time record. Timing-free nulls put the joint clustering at 5e-6 to 1e-3 across every variant. A harder empirical null (block-bootstrapped paths under the identical rule) never reproduces the top cluster under its deterministic construction (0 of 10,000); the bottom cluster is largely intrinsic to the drawdown process (31-43% of paths), so the evidence concentrates in top phase-alignment. In block height (the exact 210,000-block unit) the top null stays 0 of 10,000 and partial bottom structure emerges; shape and volatility overlays do not improve. A causal power law in time-since-genesis (exponent near 5.6) is the only signal whose sign is stable across mature epochs, replicates on a second source and Ethereum, and whose timing edge over buy-and-hold turns positive in the current cycle (one holdout, suggestive not decisive). We rest nothing on per-epoch significance: a rotation null shows HAC inference over-rejects here (size 0.33 at nominal 0.05; p=0.21). Macro drivers (M2, yield curve) show the same instability and lose a joint horse race. We pre-register falsifiable windows: a 2026 bottom (Oct 5-Nov 16) and a next top 525-546 days after the following halving.",
+    "authors": [
+      "Josh Molnar"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26188v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26188v1",
+    "fetched_at": "2026-07-30T10:20:09.142029",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844184"
+  },
+  {
+    "id": "2607.26704v1",
+    "title": "Early Failure Prediction from Near-Anomaly Detection: A Proactive Approach",
+    "abstract": "Anomaly detection methods often have uncertain behavior with respect to samples near the distribution boundary, limiting their ability to anticipate future anomalies. This work introduces the concept of near-anomalies that, while not yet anomalous, lie close to the boundary and are likely to transition into anomalies in the near future. To address this, we propose an unsupervised method, named Christoffel-based ANomaly Anticipation for eaRly dIscovery (CANARI), which leverages the strong theoretical foundations of the Christoffel function to detect near-anomalies. The method is validated on industrial in-circuit testing data from printed circuit boards, with synthetically generated near-anomaly samples due to the lack of real-world data labeling. Experimental results show that CANARI outperforms the compared baselines that generally use a dual-threshold mechanism (one for anomalies and one for near-anomalies). It therefore provides a proactive solution for anticipating anomalies before they occur, offering a promising approach for resilience, predictive maintenance, and quality control.",
+    "authors": [
+      "Léa Billet",
+      "Louise Travé-Massuyès",
+      "Elodie Chanthery",
+      "Alexandre Gaffet"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26704v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26704v1",
+    "fetched_at": "2026-07-30T10:20:22.651509",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844191"
+  },
+  {
+    "id": "2607.26641v1",
+    "title": "FakeIDet3-DB: Refining Digital Attacks and Patch Extraction for Secure ID Benchmarking",
+    "abstract": "Identity document (ID) authentication relies on the structural integrity of complex, high-frequency security patterns. However, advanced Generative AI models can now inject localized, high-fidelity manipulations, creating deceptive attacks that bypass standard verification. Training robust image forensic models to detect these anomalies is hindered by privacy regulations, forcing reliance on synthetic templates lacking the intricate visual patterns of real IDs. To bridge this domain gap, we introduce FakeIDet3-DB, the first comprehensive database of digital manipulations on real, government-issued IDs. FakeIDet3-DB encompasses classical (e.g., copy-move) and Generative AI-driven manipulations (e.g., face-swapping, inpainting) enhanced with advanced image refinement procedures to suppress visual artifacts. In addition, to comply with strict data protection regulations (e.g., GDPR), we adopt a recently-proposed framework based on patches. In order to maximize forensic utility, we formulate privacy-aware patch extraction from a real ID as a geometrically constrained image processing problem. We propose PACE, a Pseudo-Anonymized Contextual patch Extraction algorithm, which leverages Integral Image mapping and distance-driven Non-Maximum Suppression (NMS). PACE efficiently contours anonymization masks that prevent Personally Identifiable Information (PII) leakage while maximizing semantic density in peri-censorship regions, yielding almost 5.2M patches extracted from more than 6.4K images from real/fake IDs. Furthermore, an extensive evaluation of the proposed FakeIDet3-DB is performed using state-of-the-art models, showcasing they all struggle to detect and locate attacks coming from generative and classic techniques (32.45\\% EER in detection and 83.48\\% AUC-ROC in localization).",
+    "authors": [
+      "Muñoz-Haro Javier",
+      "Teruel Andres",
+      "Tolosana Ruben",
+      "DeAlcala Daniel",
+      "Vera-Rodriguez Ruben",
+      "Morales Aythami",
+      "Fierrez Julian"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26641v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26641v1",
+    "fetched_at": "2026-07-30T10:20:22.651537",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844199"
+  },
+  {
+    "id": "2607.26581v1",
+    "title": "Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities",
+    "abstract": "Convolutional long short-term memory networks (ConvLSTMs) are widely used for precipitation forecasting, but most evidence for their performance comes from dense, high-frequency radar sequences. This study tests whether convolutional recurrence improves one-day-ahead rainfall-field prediction on small daily reanalysis grids. Indian Monsoon Data Assimilation and Analysis (IMDAA) fields for June-September 1998-2020 were analysed for Bengaluru, Delhi, Kolkata and Mumbai. Ten naive, statistical, tree-based and neural approaches were compared using atmospheric-only and rainfall-history-plus-atmospheric inputs. Performance was assessed for complete fields, domain-mean rainfall, spatial anomalies and high-rainfall days.   ConvLSTM did not consistently outperform simpler alternatives. FC-LSTM produced the numerically lowest domain-mean rainfall error in Bengaluru, Kolkata and Mumbai, whereas persistence performed best in Delhi. ConvLSTM produced the numerically lowest spatial-anomaly error only in Mumbai, where rainfall fields showed greater short-term spatial continuity and rainfall-history inputs improved all three neural architectures. The difference between ConvLSTM and FC-LSTM was nevertheless small. Neural models underestimated rainfall magnitude and predicted too few threshold exceedances on high-rainfall days, while persistence achieved the highest detection performance in every city. Post-hoc analyses showed that the selected models were most sensitive to the latest input day, with broader recent-lag sensitivity in Mumbai. These findings show that gridded inputs alone do not justify ConvLSTM and that architecture choice should follow strong benchmarking across average, spatial and high-rainfall performance.",
+    "authors": [
+      "Tanmay Ghosh",
+      "Shaurabh Anand",
+      "Rakesh Gomaji Nannewar",
+      "Nithin Nagaraj"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26581v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26581v1",
+    "fetched_at": "2026-07-30T10:20:22.651553",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844206"
+  },
+  {
+    "id": "2607.26397v1",
+    "title": "Knowledge before Reasoning: EC-Reason-Bench, a Training-Free Diagnostic Benchmark for LLM Enzyme Classification",
+    "abstract": "Enzyme function prediction is a hierarchical, knowledge-intensive form of protein function classification. Existing benchmarks expose an anomaly: general LLMs often get the coarse first level right, yet once asked for a complete EC number their accuracy at levels two through four drops to almost zero, while specialized models and tools stay usable. We propose EC-Reason-Bench, a training-free, diagnostic evaluation protocol built to answer two questions: why general LLMs score close to nothing on EC number prediction, and how much of that loss can be recovered without updating a single weight. We break enzyme classification ability into four orthogonal levers that can each be measured on their own: output structure, external knowledge, reasoning structure, and reasoning robustness. We test each lever with an inference-time method against a shared zero-shot baseline reproducing previously reported near-zero performance. Experiments with several strong reasoning LLMs yield four main findings. First, external knowledge is decisive and must precede reasoning: uniformly low closed-book performance rises sharply with open-book access, narrowing model gaps. Second, in closed-book settings, whether cascading and chain-of-thought help or hurt depends on a model's tendency to abstain. Third, once evidence is available the aggregate score of the best LLM setting is indistinguishable from simply voting the EC numbers of the nearest retrieved neighbors; that tie is an artifact of averaging, and it hides a large gain on adversarial evidence set against an equally large loss on multi-functional enzymes. Reasoning over evidence therefore acts as an arbiter of conflicting neighbors rather than as a source of knowledge, and no single-number leaderboard can see it. Fourth, accuracy obeys a law of homology availability.",
+    "authors": [
+      "Linyu Li",
+      "Zhi Jin",
+      "Yichi Zhang",
+      "Dongming Jin",
+      "Yuanpeng He",
+      "Huanyao Zhang",
+      "Xuan Zhang",
+      "Gadeng Luosang",
+      "Nyima Tashi"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.CL",
+      "cs.LG",
+      "q-bio.QM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26397v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26397v1",
+    "fetched_at": "2026-07-30T10:20:22.651573",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "LLM",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844214"
+  },
+  {
+    "id": "2607.26201v1",
+    "title": "(EC)2: Event-Centric Explainability for Cybersecurity Through Multi-Agent LLM Investigations",
+    "abstract": "Security operations centers rely on anomaly detection systems to flag suspicious events. Feature-level explanations for anomaly detectors offer limited value for operational investigations. To effectively handle alerts, analysts need to know contextual relationships and need actionable understanding of the entities involved. This paper introduces an event-centric detector-agnostic approach for explaining cybersecurity alerts in small- to medium-sized enterprise networks. We present (EC)2, a multi-agent framework that performs structured, hypothesis-driven investigation to provide explanations grounded in verifiable evidence. Evaluation results show that the proposed framework improves post-detection analysis by generating operationally meaningful explanations, which also enhance event classification accuracy.",
+    "authors": [
+      "Neta Kirmayer",
+      "David Tayouri",
+      "Andrés Murillo",
+      "Motoyoshi Sekiya",
+      "Asaf Shabtai",
+      "Rami Puzis"
+    ],
+    "published": "2026-07-28",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26201v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26201v1",
+    "fetched_at": "2026-07-30T10:20:22.651589",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844221"
+  },
+  {
+    "id": "2607.27177v1",
+    "title": "Partner Capability Estimation for Task-Agnostic Adaptation in Ad-Hoc Teamwork",
+    "abstract": "Effective collaboration with novel and diverse partners is a crucial skill for autonomous agents. Most current ad-hoc teamwork (AHT) approaches assume that agents will collaborate on a single, fixed task and that the partner's capabilities, their ability to successfully execute the desired action, are already known. In reality, a partner's true capabilities are often hidden, and human collaborators may act sub-optimally on tasks with multiple valid strategies. To address these limitations, we extend ad-hoc teamwork into a multi-task setting by re-framing it as a problem of joint planning with decentralised execution under hidden partner capabilities. We introduce CE-CM (Capability Estimation via Contextual Models), an approximate Bayesian method that infers task-invariant capability vectors. By using simulation-based sampling, the agent estimates capabilities and induces a contextual Multi-agent Markov Decision Processes for planning. This approach requires no population pre-training and refines its beliefs online from just a few tasks. To account for human unpredictability, we propose CE-CM-Div, an extension that evaluates capability hypotheses against diverse planner rollouts rather than a single optimal trajectory. Simulated experiments demonstrate that CE-CM rapidly recovers hidden capabilities, reduces infeasible action assignments, and adapts to changes over time. Furthermore, in an offline human study of 225 trajectories from 15 participants, CE-CM-Div substantially improved capability estimates over the baseline CE-CM method. Our results suggest capability-based modelling is a promising interpretable, task-agnostic representation in the studied settings, demonstrating that accounting for behavioural diversity is essential for robust human-AI teaming.",
+    "authors": [
+      "Peter Tisnikar",
+      "Maja Swieczkowska",
+      "Benteng Ma",
+      "Gerard Canal",
+      "Matteo Leonetti"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.AI",
+      "cs.HC",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27177v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27177v1",
+    "fetched_at": "2026-07-30T10:20:53.293026",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844228"
+  },
+  {
+    "id": "2607.27167v1",
+    "title": "SpecFirst: Behavioral Specification Elicitation as a First-Class Step in Agent-Based Program Synthesis from Scratch",
+    "abstract": "LLM-based agents excel at software engineering tasks where an existing codebase provides context, but constructing a program from scratch remains fundamentally harder. Recent benchmarks such as ProgramBench quantify this gap: given only natural-language documentation and an execute-only binary as a behavioral oracle, even frontier models solve fewer than 1% of instances. Existing frameworks conflate documentation reading, behavioral exploration, and code synthesis into a single pass, causing agents to probe insufficiently, lose behavioral intent as context drifts, and propagate early misinterpretations into the final implementation. Inspired by classical requirements engineering, we argue that behavioral specification elicitation should be a first-class phase that precedes implementation. We present SpecFirst, a two-stage framework that forces the specification elicitation before code synthesis. A dedicated spec agent first probes the binary and combines observations with documentation into a structured specification. Next, a code synthesis agent then uses this specification to drive implementation. This decomposition resolves documentation ambiguities before coding begins and provides a stable behavioral reference throughout synthesis. We evaluate SpecFirst on all 200 ProgramBench instances across four models spanning two families and an order of magnitude of capability. SpecFirst consistently outperforms the single-loop baseline, improving test pass rates by 6.9%-21.3% and binary exploration coverage by 9.4%-18.5%, all statistically significant. Behavioral analysis on code synthesis further shows that a prior specification enables earlier and more sustained code construction. Our results demonstrate that an explicit requirements-engineering phase is an effective paradigm for from-scratch program construction.",
+    "authors": [
+      "Yihao Chen",
+      "Shi Chang",
+      "Feng Lin",
+      "Khaled Chawa",
+      "Boyuan Chen",
+      "Shaowei Wang",
+      "Ahmed E. Hassan"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.SE",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27167v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27167v1",
+    "fetched_at": "2026-07-30T10:20:53.293054",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844236"
+  },
+  {
+    "id": "2607.27146v1",
+    "title": "MindForge: Teaching Small Language Models Whole-Life-Cycle Software Engineering via Source-Free Program Synthesis",
+    "abstract": "Coding agents have made substantial progress on software engineering tasks that modify existing codebases, including bug fixing and feature implementation. However, constructing a complete program from scratch remains a major challenge: even the frontier models evaluated on ProgramBench fully resolve fewer than 1% of tasks. One obstacle is the lack of scalable training environments for this from-scratch setting, spanning the whole software engineering life cycle, as existing environment-construction frameworks focus only on a single phase in software development. To address this gap, we introduce MindForge, an automated pipeline that converts open-source command-line programs into source-free environments that expose only a compiled reference executable and its documentation. Using MindForge, we construct training environments from repositories disjoint from those in ProgramBench, and curate a high-quality data recipe consisting of program synthesis trajectories using GLM-5.2 as the teacher agent. Fine-tuning Qwen3.6-27B on these trajectories increases its ProgramBench average test pass rate from 37.98% to 49.51%, achieving performance comparable to substantially larger frontier models. Moreover, the fine-tuned model consistently improves over the base model across all seven unseen software engineering benchmarks, spanning long-horizon repository generation and translation, bug fixing, feature implementation, and cross-language issue resolution, with absolute gains of 31.00 points on RepoZero-C2Rust, 14.16 on DeepSWE, 10.70/4.56 on NL2Repo-Bench (with/without tests), 5.04 on SWE-bench Verified, 5.93 on SWE-bench Pro, 5.22 on SWE-bench Multilingual, and 4.94 on FeatBench.",
+    "authors": [
+      "Yihao Chen",
+      "Shi Chang",
+      "Khaled Chawa",
+      "Feng Lin",
+      "Boyuan Chen",
+      "Shaowei Wang",
+      "Ahmed E. Hassan"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.SE",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27146v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27146v1",
+    "fetched_at": "2026-07-30T10:20:53.293071",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844244"
+  },
+  {
+    "id": "2607.27083v1",
+    "title": "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
+    "abstract": "As LLM agents increasingly depend on diverse external services such as search engines, databases, and connectors, agent harnesses face a fundamental tool-selection challenge: acquiring too few tools leaves the task under-informed, while too many adds cost, context load, and privacy exposure. Routers and retrievers can rank candidate tools by relevance, but a ranking alone does not determine how many are worth selecting. Existing approaches leave acquisition under heterogeneous costs unaddressed. We formulate this decision as cost-aware marginal decision-focused stopping (CAM-DF) over ranked tool prefixes, with CAM-DF-lite as a compact interpretable variant. We train directly on the offline gap between stopping now and the best continuation: its sign labels the decision, its magnitude weights each error by the payoff at stake. We prove this objective is Bayes-aligned with the stopping target and that score-only rules are suboptimal under heterogeneous costs. We evaluate on 1,343 tasks across five tool-use domains. On $τ$-bench Retail, CAM-DF attains the highest payoff among deployable methods, with gains over a predict-then-threshold baseline across all five ranking sources and two cost regimes. Our approach is state-of-the-art under heterogeneous costs and high cost pressure, with larger gains under weaker rankings. In live execution, CAM-DF exposes the agent to 37\\% fewer tools than full access while maintaining comparable task success. The CAM-DF family is a lightweight pre-execution plugin that turns existing tool rankings into lower-cost acquisition decisions without fine-tuning the underlying LLM.",
+    "authors": [
+      "Yicheng Feng",
+      "Yan Zhang",
+      "Yan Cheng",
+      "Wei Qi"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27083v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27083v1",
+    "fetched_at": "2026-07-30T10:20:53.293086",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844258"
+  },
+  {
+    "id": "2607.27080v1",
+    "title": "MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair",
+    "abstract": "Memory systems allow agents to retain and reuse information from past interactions, but they can also let malicious content persist. A malicious instruction crafted by an attacker may be stored in long-term memory, recalled much later, and quietly shape a real action. Recent benchmarks increasingly examine agent memory security, yet few trace the same malicious semantics across persistence, downstream consequences, and selective repair under diverse memory-backend comparisons. To address this gap, we introduce MemSecBench, a task-grounded benchmark for the lifecycle security of agent memory systems. It contains 310 cases drawn from 48 realistic contexts across code and science, daily life, and office work. Each case follows a controlled Write--Execute--Forget protocol in an isolated runtime under an exact agent configuration, defined by an agent harness, a memory backend, and an LLM backend. Evidence-based adjudication combines a deterministic write check, checkpoint-specific judge-model evaluations, and programmatic gates across seven lifecycle checkpoints. The experimental design spans a 24-configuration matrix of two agent harnesses, four memory backends, and three LLM backends. Across all 24 configurations, malicious memory persists in 84.2% of all cases, and the full Write--Execute chain succeeds in 50.3%. Among successfully poisoned cases, 59.6% complete the full Execute chain, while 56.1% achieve selective repair.Compared with matched Native configurations, the largest absolute differences are 16.1 percentage points for end-to-end attack success and 41.3 percentage points for selective repair. These descriptive contrasts indicate that the evaluated memory system stacks differ in lifecycle security, both in the propagation of malicious memory and in selective repair after successful memory poisoning.",
+    "authors": [
+      "Xuanze Chen",
+      "Xukang Xie",
+      "Wentao Fu",
+      "Jiajun Zhou",
+      "Shanqing Yu",
+      "Qi Xuan"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.27080v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.27080v1",
+    "fetched_at": "2026-07-30T10:20:53.293101",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844265"
+  },
+  {
+    "id": "2607.26977v1",
+    "title": "TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning",
+    "abstract": "Travel planning is a demanding stress test for tool-using LLM agents: a usable itinerary is a single artifact that must be right along many axes at once - every flight, hotel, and attraction must exist and be bookable, the days must be physically traversable, the total must clear a budget, and the plan must serve a traveler whose needs are only partly stated. Existing agent benchmarks reward these properties one at a time and grade the final output with soft or LLM-judged rubrics, which cannot certify that a returned plan is executable and are neither reproducible nor auditable. We introduce TREK (Travel Reasoning and Evaluation Kit), a benchmark for feasible itinerary synthesis: producing a single plan that is jointly constraint-correct, hallucination-free, spatio-temporally executable, budget-valid, and responsive to the traveler's unstated persona needs. TREK comprises 800 multi-constraint tasks - 533 feasible and 267 provably infeasible with typed route/entity/budget causes - over a synthetic, internally consistent knowledge base of 212,530 records across 375 cities and 13 personas, served through a production-style tool sandbox of validated RESTful APIs. Every task is scored by a fully deterministic, rule-based evaluator with no LLM judge and ships a human-verified gold reference that scores a perfect 1.0 under that same evaluator, so the ceiling is demonstrably achievable and every remaining gap is an agent limitation rather than scorer strictness. Evaluating 15 LLM agents across nine constraint dimensions, we find that even the strongest (GPT-5.6) produces a fully-feasible plan on only 46.2% of solvable tasks, with a median of 6.6% and a floor of 0.0%; satisfying travelers' unstated needs emerges as the universal bottleneck, unsolved even at the frontier. We release the dataset, tool sandbox, deterministic evaluator, and agent code as a fully reproducible benchmark.",
+    "authors": [
+      "Jinhu Qi",
+      "Wentao Zhang",
+      "Siu Man Ng",
+      "Feiyang Xu",
+      "Yanyu Chen",
+      "Yaoman Li",
+      "Irwin King"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26977v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26977v1",
+    "fetched_at": "2026-07-30T10:20:53.293118",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844272"
+  },
+  {
+    "id": "2607.26903v1",
+    "title": "From Passive Video to Editable Experience: Physically Grounded Experience Synthesis for Embodied Intelligence",
+    "abstract": "The key bottleneck in embodied AI is not model architecture but data. Although billions of human manipulation videos exist online, robots cannot directly learn from them due to the embodiment gap between human morphology and robot hardware. We introduce Pegasus, a low-resource framework that bridges this gap by translating human demonstrations into robot-learnable data through structured knowledge transfer. Instead of relying on raw video prompts, Pegasus constructs a graph-based intermediate representation: a Task Graph extracted from human videos is transformed through Affordance and Constraint Graphs into a Robot Planning Graph for robot-conditioned video generation. A hierarchical affordance latent space models the relationship between object states, affordances, and tasks, enabling generalization beyond object identities. A closed-loop physics verifier further filters invalid generations using kinematic feasibility, collision constraints, and joint limits. We evaluate Pegasus across a range of egocentric manipulation benchmarks, including GTEA Gaze+ and EPIC-KITCHENS-100, and diverse robot embodiments, assessing Task Correctness, Executability, State Consistency, and Learnability. Results demonstrate reliable cross-embodiment translation and show that robot data generation can be reframed from a hardware collection problem into a scalable, low-resource knowledge transfer problem.",
+    "authors": [
+      "Jia Luo"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26903v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26903v1",
+    "fetched_at": "2026-07-30T10:20:53.293128",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844279"
+  },
+  {
+    "id": "2607.26784v1",
+    "title": "SkillRise: Agentic Reinforcement Learning for Cross-Task Skill Evolution",
+    "abstract": "Large language model agents often encounter related yet distinct tasks that share reusable solution patterns. Yet standard agentic reinforcement learning treats tasks as independent episodes, while existing approaches to skill learning either focus on repeated attempts of one task or use pipelines with multiple stages that entangle extraction, retrieval, and execution. We introduce SkillRise, a unified reinforcement learning framework for learning skills across tasks. SkillRise organizes related instances into progressively challenging sequences and uses a single policy to alternate between task solving and curating an evolving skill document passed directly to the next task. Decoupled credit assignment across tasks supervises solving with the current task outcome and curation with discounted downstream outcomes. Experiments on ALFWorld, WebShop, and ScienceWorld show that SkillRise achieves the strongest Pass@1 performance among the compared methods, with gains over the strongest baseline ranging from 2.3 to 8.5 percentage points. Although trained across distinct tasks, its learned curation policy remains effective for repeated attempts on the same task. Further analysis reveals scaling at test time across tasks: performance improves with longer sequences of related tasks even when each task is attempted only once. This trend suggests that SkillRise reuses transferable skills across tasks rather than benefiting from repeated sampling of the same task. SkillRise further retains strong performance while substantially reducing the runtime overhead of skill learning pipelines with multiple stages. Together, these results provide a simple and efficient training paradigm for LLM agents to extract, refine, and reuse transferable skills across tasks.",
+    "authors": [
+      "Zhiyuan Yao",
+      "Yuxin Chen",
+      "Zhengxi Lu",
+      "Zishan Xu",
+      "Yueqing Sun",
+      "Yifu Guo",
+      "Yuquan Lu",
+      "Zhengzhou Cai",
+      "Kangning Zhang",
+      "Zhuowen Han",
+      "Zi-Han Wang",
+      "Ziang Ye",
+      "Qi Gu",
+      "Xunliang Cai",
+      "Weiwen Liu",
+      "Yongliang Shen"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26784v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26784v1",
+    "fetched_at": "2026-07-30T10:20:53.293153",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844286"
+  },
+  {
+    "id": "2607.26724v1",
+    "title": "UrbanDS: A Graph-Guided LLM Multi-Agent System for Data-Intensive Urban Tasks",
+    "abstract": "Large language model (LLM) agents have been widely applied in automating data science tasks. However, existing methods typically rely on a limited set of provided datasets, and they face challenges in data-intensive scenarios that require discovering and leveraging relevant information from large-scale and heterogeneous data repositories. Urban tasks are representative examples of such scenarios, as urban data are not only large-scale and multi-sourced, but also exhibit complex spatial, temporal, and semantic relationships. To address these challenges, we propose UrbanDS, a graph-guided LLM multi-agent system for data-intensive urban tasks. We first construct a unified dataset graph to organize reusable dataset skills and the relationships among datasets. Specifically, we develop a Data Profiling Agent that constructs a skill for each dataset. Moreover, a Relation Agent identifies relationships among datasets and integrates these relationships into the dataset graph. At runtime, a Planner Agent retrieves task-relevant datasets from the graph and generates execution plans. Multiple Execution Agents then perform data processing and analysis, while their execution progress and intermediate results are shared through a common memory. Finally, a Report Agent synthesizes the experimental logs into a report, which can be further refined based on user feedback. To systematically evaluate the capability of agents in handling data-intensive urban scenarios, we further construct UrbanDS-Bench, an urban data science benchmark covering representative data analysis and modeling tasks. Experiments on both general and urban benchmarks demonstrate that UrbanDS consistently outperforms existing data science agents on data-intensive tasks. Furthermore, UrbanDS has been deployed on the urban operations platform of Dongxihu District, Wuhan, demonstrating its effectiveness in real-world urban applications.",
+    "authors": [
+      "Zhilun Zhou",
+      "Jianghao Yu",
+      "Yuming Lin",
+      "yongjun yang",
+      "Sun Yongquan",
+      "Depeng Jin",
+      "Yong Li"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26724v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26724v1",
+    "fetched_at": "2026-07-30T10:20:53.293170",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844293"
+  },
+  {
+    "id": "2607.26642v1",
+    "title": "AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining",
+    "abstract": "Automated alpha mining has increasingly adopted large language model (LLM) agents for factor generation and iterative discovery. However, existing LLM-based systems often delegate both factor construction and search decisions to the agent itself, without an explicit exploration space or a principled mechanism for navigating that space. As a result, exploration remains largely implicit and difficult to control or optimize systematically. We introduce AlphaSchema, which constructs and explores a structured space of trading semantics for alpha mining. Each point in this space is a schema plan composed of Event, Context, Qualities, Direction, and Output, specifying the semantics of a candidate factor before implementation. AlphaSchema decouples exploration from implementation: an LLM translates selected schema plans into executable factors, while evaluated rewards are accumulated to learn a surrogate model over the semantic space. An iterative selection mechanism uses this model to balance global exploration, surrogate-guided exploitation, and local mutation. Experiments on the Chinese stock market show that AlphaSchema discovers factor pools with strong predictive and portfolio performance. Further analyses show that the semantic search process navigates diverse regions while increasingly allocating evaluations toward high-reward regions, and that implementations of the same schema plans by different LLMs exhibit comparable predictive quality, suggesting that alpha mining quality is largely robust to the choice of LLM within our framework.",
+    "authors": [
+      "Jingyang Yi",
+      "Jian Yang",
+      "Yifei Jin",
+      "Yuqi Li",
+      "Jian Li"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26642v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26642v1",
+    "fetched_at": "2026-07-30T10:20:53.293184",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844299"
+  },
+  {
+    "id": "2607.26637v1",
+    "title": "Filesystem-Based Memory for LLM Agents: Organization, Evolution, and Sustainability",
+    "abstract": "Deployed LLM agents increasingly keep their long-term memory as a filesystem: a directory tree of markdown files that the agent itself reads, writes, and reorganizes through generic file tools. Yet research has largely passed over this medium: prior systems design bespoke memory representations and study retrieval over them, leaving the default's two working assumptions untested: that an agent can keep a growing store organized as memories accumulate, conflict, and go stale, and that this organization pays. We present the first systematic exploration of filesystem-based memory for LLM agents. We formalize the setting as three roles around one memory filesystem: a management agent integrates and organizes incoming content, a search agent answers queries with cited sources, and an execution agent supplies task trajectories that are distilled into skills, unifying declarative memory and skills in a single store. Across long-conversation benchmarks and embodied tasks, we vary memory shape (agent-organized hierarchy, verbatim dump, chunk retrieval), stream scale, tool harness (sandboxed shell, memory-tool-style functions, varied search tooling), and the strengths of the management and search agents, tracking answer quality, cost, and store health as memory grows. What organization reliably buys is search economy: organized stores roughly halve retrieval cost where material is large. Today's agents, however, fall short of the default's promise: in our growth study, organization erodes for all but the strongest management agent, and no agent we measure converts organization itself into better answers. And the model is not the only lever over a store's shape: changing the tool set alone reshapes the store as strongly as swapping the model. The study turns the filesystem default from an assumption into a design space for agent memory.",
+    "authors": [
+      "Sizhe Zhou",
+      "Sheldon Yu",
+      "Hui Wei",
+      "Junda Wu",
+      "Siru Ouyang",
+      "Yizhu Jiao",
+      "Shijia Pan",
+      "Julian McAuley",
+      "Yu Zhang",
+      "Tong Yu",
+      "Jiawei Han"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26637v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26637v1",
+    "fetched_at": "2026-07-30T10:20:53.293205",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844307"
+  },
+  {
+    "id": "2607.26634v1",
+    "title": "Guarding Organizations Against Malware Risk: A Novel Graph-Based Malware Detection Method",
+    "abstract": "Organizational digitalization expands cybersecurity risks, making cybersecurity an increasingly important research area in Information Systems (IS). Among these risks, malware has become a pervasive and destructive threat. Byte-based machine learning (ML) methods are widely used for malware detection but remain vulnerable to evasive behaviors that manipulate raw bytes to evade detection. Graph-based methods are less affected by such manipulations because they represent software as program graphs that capture execution behavior. However, they do not explicitly identify cohesive groups of basic blocks that jointly realize meaningful program behaviors, nor do they learn sufficiently expressive program graph representations for accurate detection. To this end, we propose MalGuard, a graph-based malware detection method for organizational malware risk management. MalGuard introduces two methodological innovations: an operational role identification approach and a program graph representation learning method. The former identifies these cohesive groups of basic blocks as operational roles, enabling the detector to capture program behaviors that may not be visible from isolated basic blocks. The latter learns expressive program graph representations by modeling interactions among operational roles, preserving sparse malicious signals, and capturing hierarchical graph structure. Extensive experiments show that MalGuard improves detection performance and reduces the expected cost of undetected malware.",
+    "authors": [
+      "Yinan Gao",
+      "Jiarong Xu",
+      "Xiaohang Zhao",
+      "Xiao Fang"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26634v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26634v1",
+    "fetched_at": "2026-07-30T10:20:53.293218",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844314"
+  },
+  {
+    "id": "2607.26611v1",
+    "title": "Fewer Clarifications, Better Code: Benchmarking Cross-Session Personalized Ambiguity Adaptation in Coding Assistants",
+    "abstract": "AI-assisted coding increasingly translates informal user intent into executable software, yet coding requests often contain ambiguities that recur in user-specific ways across tasks and sessions. Existing disambiguation methods typically address each ambiguous request in isolation within the current coding session, often through eliciting additional clarification. However, whether resolved session history from the same user can serve as memory for resolving recurring personalized ambiguity in a newly opened session remains underexplored. We formulate personalized ambiguity adaptation as a new task: given a user's previously resolved coding sessions and a new ambiguous request, an assistant should identify the recurring ambiguity pattern, produce the intended executable solution, and minimize clarification. To benchmark this task, we introduce CAPA, which characterizes personalized coding ambiguity through six mechanisms and injects these mechanisms into unambiguous executable tasks using a controlled three-stage generation pipeline. CAPA contains 600 coding sessions across 60 balanced user--ambiguity cells, including 300 held-out evaluation sessions. We evaluate 12 recent LLMs under no-history and same-user-history conditions using executable success, first-turn success, and turns-to-completion. Our analyses examine task difficulty, user identity, and memory-based history use, and we further propose same-user history gating as a lightweight inference-time method. CAPA provides a foundation for developing long-term coding assistants that better align generated code with user intent while reducing repeated clarification.",
+    "authors": [
+      "Zijian Xu",
+      "Wenshuo Zhang",
+      "Zisen Qin",
+      "Rui Sheng",
+      "Yushi Sun",
+      "Huamin Qu",
+      "Chuhan Shi"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26611v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26611v1",
+    "fetched_at": "2026-07-30T10:20:53.293234",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844321"
+  },
+  {
+    "id": "2607.26598v1",
+    "title": "Living-Harness Is an Interactive-Agent Evolver",
+    "abstract": "Large language model (LLM) agents may recover from a failure within an episode or after a retry, yet the same execution failure can recur in later tasks because post-episode feedback rarely revises the persistent harness that guides future interactions. Static harnesses improve reliability through fixed tools, context, memory, and workflow structures, but remain unchanged after deployment. We propose $\\textbf{Living-Harness}$, a self-evolving agent harness that converts each completed trajectory and its evaluator signals into posterior evidence for bounded harness updates. Guided by a domain-level $\\textbf{Evolution-SOP}$ ($\\textbf{S}$tandard $\\textbf{O}$perating $\\textbf{P}$rocedure), Living-Harness extracts an episode abstraction and structured update evidence, and writes two complementary forms of procedural knowledge: episodic memory that records trigger conditions, failure patterns, and recovery actions, and a state graph that records state nodes, repair edges, and transition rules. The updated harness state is retrieved to guide future interactions, while tools and base context remain frozen, allowing procedural repairs to accumulate across evolution cycles. On eight interactive environments derived from $τ^2$-Bench and MultiWOZ-2.4, Living-Harness improves average Pass@1 over the strongest interactive baseline by 10.07 and 9.91 percentage points, respectively, and supports retrieval-only reuse of the evolved harness state across model backbones.",
+    "authors": [
+      "Yuetian Du",
+      "Yucheng Wang",
+      "He Xu",
+      "Jiexu Xu",
+      "Shanwen Tan",
+      "Bing Zhao",
+      "Boyu Yang",
+      "Zhijie Xu",
+      "Ming Kong",
+      "Hu Wei",
+      "Jie Liu",
+      "Qiang Zhu"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.MA",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26598v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26598v1",
+    "fetched_at": "2026-07-30T10:20:53.293255",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844333"
+  },
+  {
+    "id": "2607.26566v1",
+    "title": "ServerlessT2I: Efficient Text-to-Image Workflow Serving on a Serverless Platform",
+    "abstract": "Text-to-image (T2I) workflows are increasingly deployed on serverless platforms because users often compose customized workflows and invoke them intermittently. Existing platforms typically deploy each workflow as an opaque GPU function, provisioning, placing, and scaling all constituent models in the workflow together. This monolithic design obscures workflow structure, inflates scaling overhead, forces users to manage low-level GPU coordination, and limits fine-grained fairness in multi-tenant clusters. In this paper, we present ServerlessT2I, a serverless-native system that decomposes a T2I workflow into loosely coupled model functions that can be independently managed and scheduled. By explicitly managing individual model execution, ServerlessT2I enables per-model scaling, declarative workflow composition, transparent GPU-resident communication, and fairness-aware scheduling. To make this decomposition efficient, ServerlessT2I harvests slack GPU memory left idle by compute-bound T2I inference to build a data plane that reduces model loading and data communication overheads. \\sys{} further introduces a fair scheduler for multi-tenant serving. Using production traces, ServerlessT2I sustains up to 2$\\times$ higher request rates than existing T2I workflow serving systems with the same GPU budget; for a fixed request rate, it saves up to 3$\\times$ GPU resources while satisfying service level objectives (SLOs).",
+    "authors": [
+      "Xiaoxiao Jiang",
+      "Suyi Li",
+      "Sheng Yao",
+      "Tianyu Feng",
+      "Lingyun Yang",
+      "Dapeng Nie",
+      "Haoran Yang",
+      "Wei Wang"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26566v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.26566v1",
+    "fetched_at": "2026-07-30T10:20:53.293272",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-07-30T10:23:06.844340"
+  }
+]
