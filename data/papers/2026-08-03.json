@@ -1,0 +1,432 @@
+[
+  {
+    "id": "2607.29583v1",
+    "title": "Fund Competition under Conflicting ESG Rating Methodologies",
+    "abstract": "Competing ESG rating providers reward different portfolio attributes. This paper models funds that choose portfolios and fees for investors with heterogeneous ESG priorities. Portfolio changes can improve both providers' scores or favour one methodology over the other, and investor demand determines which methodology each fund targets. Greater disagreement makes provider-specific positioning more productive but common improvement less productive. Funds therefore specialise more, yet both provider scores, investor participation, and equilibrium fees fall in the benchmark equilibrium. Investor heterogeneity creates matching gains from specialisation, while common improvement supports holdings-based ESG exposure. Methodology convergence improves participation and common exposure but weakens matching across investor clienteles. Convergence raises welfare when the social value of common exposure is sufficiently high.",
+    "authors": [
+      "Wanling Rudkin"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29583v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29583v1",
+    "fetched_at": "2026-08-03T11:17:31.101094"
+  },
+  {
+    "id": "2607.29220v1",
+    "title": "Decoupled Probabilistic Forecasting and Arbitrage-Aware Refinement of Implied Volatility Surfaces",
+    "abstract": "Implied volatility surface forecasting is essential for option valuation, hedging,and risk management, but remains difficult because future surfaces are stochastic while pricing inputs must satisfy static no-arbitrage shape restrictions. We propose a decoupled generative refinement framework for IVS forecasting as an operational risk surface modeling problem. The first stage uses a conditional diffusion model to learn the conditional distribution of future surfaces. The generated ensemble captures predictive distributional variation, and its median provides a robust representative surface for subsequent refinement. The second stage introduces a Surface Aware Attention Module (SAAM), a cross sectional refinement operator that improves fit to market observations and staticno-arbitrage diagnostics for the representative surface. This design separates distribution learning from surface refinement, allowing the diffusion model to capture stochastic market dynamics while SAAM controls static no-arbitrage residual violations on the final surface. We evaluate the framework on CSI 300 index options from June 2020 to September 2024 under daily and minute level forecasting protocols. The diffusion stage improves forecasting accuracy and produces predictive intervals that vary across moneyness, maturity, and sampling frequency. The refinement stage improves fitting accuracy against market observations and reduces measured static no-arbitrage residual violations, with stronger gains at the minute level. Attention diagnostics suggest that SAAM performs adaptive cross sectional refinement rather than fixed local smoothing",
+    "authors": [
+      "Lifeng Hao",
+      "Shaolin Ji"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29220v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29220v1",
+    "fetched_at": "2026-08-03T11:17:31.101131"
+  },
+  {
+    "id": "2607.29024v1",
+    "title": "A Policy Iteration Scheme for Semilinear Stochastic Hamilton-Jacobi-Bellman Equations with Exponential Convergence",
+    "abstract": "This paper is concerned with the non-Markovian stochastic optimal control problems in which the value function is a random field characterized by a stochastic Hamilton-Jacobi-Bellman (SHJB) equation. When the stochastic integration coefficients are not controlled, the SHJB equation takes a semilinear form, which is subject to computational challenges compared to the Markovian case due to the measurable randomness. We introduce a policy-iteration algorithm based on successive linearization that reduces the nonlinear SHJB equation to a sequence of linear ones. Furthermore, we prove that the resulting approximation sequence converges monotonically to the value function in the mean-square sense with an exponential rate.",
+    "authors": [
+      "Hasib Uddin Molla",
+      "Jinniao Qiu"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "math.OC",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29024v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29024v1",
+    "fetched_at": "2026-08-03T11:17:31.101156"
+  },
+  {
+    "id": "2607.28847v1",
+    "title": "Effort-Centric Fairness in Lending Decisions",
+    "abstract": "Algorithmic credit scoring must satisfy fairness and explanation requirements, yet prevailing predictive-parity criteria assess only outcomes at the decision point. They can therefore overlook whether rejected applicants face unequal burdens in reaching future approval, a phenomenon we call masked inequality. We develop an effort-centric framework that measures an applicant's effort as the minimum weighted cost of feasible changes required to cross the approval boundary. The framework distinguishes feature-independent actions from additive structural shifts that propagate through a causal model and defines parity by comparing average minimum effort across protected groups. We derive tractable local expressions for general differentiable classifiers and exact expressions for logistic regression, embed them in an in-processing fairness objective, and bound changes in portfolio credit risk. The same optimisation yields actionable pathways to approval. Using mortgage data with continuous and discrete features, we find that rejected female applicants require greater effort even when standard predictive-parity criteria are satisfied. Feature-independent regularisation reduces the effort gap by more than 50\\% with modest predictive changes. Causal regularisation yields reductions above 90\\% at the tested positive penalty weights, but with larger predictive and risk-return trade-offs. Expected and unexpected losses remain broadly stable under feature-independent regularisation and increase under causal regularisation; RAROC declines but remains positive. These results show that effort parity complements predictive fairness by revealing and mitigating hidden barriers to future credit access while making the associated operational trade-offs explicit.",
+    "authors": [
+      "Shiqi Fang",
+      "Zexun Chen",
+      "Jake Ansell"
+    ],
+    "published": "2026-07-30",
+    "categories": [
+      "q-fin.ST",
+      "q-fin.GN",
+      "q-fin.RM",
+      "stat.CO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.28847v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.28847v1",
+    "fetched_at": "2026-08-03T11:17:31.101181"
+  },
+  {
+    "id": "2607.29383v1",
+    "title": "Exploring Block Anomaly Detection In HDFS Log Data Analysis",
+    "abstract": "In recent years, with the development of big data technology, increasingly more companies use HDFS for data processing and storage. As a result, the maintenance of distributed file systems has become an extremely important part of data management. As the function of server systems is becoming increasingly diversified and their services are becoming complex, the logs, recording real-time events make it easier for system operators to locate the failures and errors that happened in the server systems to make server always available. HDFS, a distributed file system, which contains large data sets, will record a large number of logs. Moreover, the logs are not always structured data, they are not stable as well. However, to detect the problems that occur in the system by checking one log by one log, it's complicated and boring work for the system operators. Using machine learning techniques and natural language processing techniques to detect the HDFS block anomaly will help the system operators to locate and fix the anomaly rapidly and accurately. This paper proposes a streaming HDFS log block anomaly workflow. It helps maintenance practitioners to use parallel computing network in processing historical log, and construct LLM-BiLSTM hybrid deep learning model to detect anomaly block in HDFS, then build streaming log pipeline based on Kafka to give one real-time HDFS log block anomaly detection solution.",
+    "authors": [
+      "WenYang Zhong",
+      "Tutut Herawan"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.LG",
+      "cs.DC",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29383v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29383v1",
+    "fetched_at": "2026-08-03T11:17:44.706415"
+  },
+  {
+    "id": "2607.28879v1",
+    "title": "RareSense: Rarity-Aware Similarity Search for Anomaly Retrieval in Transactional Data",
+    "abstract": "Similarity search over sparse set-valued data is often dominated by frequent background attributes because classical measures such as Jaccard, cosine, and Hamming compare objects through atomic overlap. IDF (Inverse document frequency) weighting partially reduces this effect but remains atom-wise and cannot explicitly represent informative higher-order co-occurrences. We introduce RareSense, a rarity-aware similarity framework for sparse transactional anomaly data. RareSense mines minimal rare itemsets as intermediate structures, derives reliable rare association rules, maps objects into sparse rare-rule profiles, and compares them using weighted Jaccard similarity. Rule weights combine inverse support, confidence, lift, structural complexity, and stability, so that neighborhoods are determined by shared rare evidence rather than uniform feature overlap. We show that IDF-weighted Jaccard is a restricted singleton case of RareSense, and that the induced distance is a pseudometric on the original objects and a metric over equivalence classes defined by identical rule profiles. Experiments across four benchmark families spanning cybersecurity and general categorical domains show that RareSense attains the highest observed macro-average query-conditioned retrieval performance among the evaluated similarity measures. The statistical analysis indicates significant overall differences, with corrected paired comparisons favoring RareSense over the atomic baselines. The gains remain workload-dependent and are strongest when anomalies share repeatable rare higher-order structure. For global anomaly ranking, RareSense achieves the highest observed macro-average performance while remaining statistically comparable to several strong dedicated detectors.",
+    "authors": [
+      "Sidahmed Benabderrahmane",
+      "Talal Rahwan"
+    ],
+    "published": "2026-07-30",
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.28879v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.28879v1",
+    "fetched_at": "2026-08-03T11:17:44.706442"
+  },
+  {
+    "id": "2607.29626v1",
+    "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+    "abstract": "As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important. Existing benchmarks typically focus on static code generation, paper replication, or final answer correctness, but do not directly assess whether agents can interpret experimental evidence and use it to guide subsequent hyperparameter decisions. To address this gap, we introduce AgentHPOBench, a sequential benchmark comprising 30 executable machine learning tasks across seven research categories. Each task begins with a validated baseline run, after which an agent performs several sequential interventions. At each step, the agent observes the accumulated configurations, metrics, and logs before proposing the next valid configuration. We evaluate 12 widely used agents and conventional HPO baselines under a unified protocol. The results show that current agents exhibit measurable experimental optimization ability across domains, but still face clear limitations in sustained iterative refinement, complex log diagnosis, and consistent progress toward reported reference performance.",
+    "authors": [
+      "Tianyu Huai",
+      "Tingshuo Fan",
+      "Xinchi Chen",
+      "Yining Zheng",
+      "Yuxin Wang",
+      "Shuang Chen",
+      "Jie Zhou",
+      "Xuanjing Huang"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29626v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29626v1",
+    "fetched_at": "2026-08-03T11:18:18.805208"
+  },
+  {
+    "id": "2607.29577v1",
+    "title": "DungeonBench: A Benchmark for Rules-Rich Tactical Reasoning in Dungeons & Dragons Combat",
+    "abstract": "Games and simulators make valuable benchmarks by turning decisions into measurable outcomes, but many current suites under-test rules-rich tactical reasoning: the ability to choose well when geometry, timing, resources, objectives, and rule interactions all matter at once. We introduce DungeonBench, a benchmark for tactical reasoning in Dungeons & Dragons combat, built to cover the vast majority of combat-relevant 2014 System Reference Document content whose effects can be resolved by the simulator while retaining mechanics that simplified combat simulators often abstract away. At each step, DungeonBench exposes a complete tactical observation, a pending decision, and an indexed list of executable options spanning movement, attacks, spells, reactions, objectives, preparation, and scarce resources. The task is to value legal choices whose consequences depend on action economy, creature traits, battlefield geometry, timing windows, and future encounters. DungeonBench has two tracks: Encounter, which evaluates local tactical play in single fights, and Day, which links encounters through persistent hit points, spell slots, consumables, preparation, and short-rest timing, forcing policies to trade off immediate tactical advantage against future survivability. The same engine-generated decision stream supports heuristic controllers, language-model policies, learned option rankers, and masked-action reinforcement-learning agents. We evaluate frontier language-model policies on this shared decision stream. Results show that full tactical observations do not saturate the benchmark: frontier policies often win direct encounters, but linked encounter days expose failures in resource budgeting, rest timing, and rule-aware tactical discipline.",
+    "authors": [
+      "Ismayil Ismayilov",
+      "Atakan Kara",
+      "Kaan Oktay"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29577v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29577v1",
+    "fetched_at": "2026-08-03T11:18:18.805240"
+  },
+  {
+    "id": "2607.29549v1",
+    "title": "AMTFV: Agentic Mathematical Tool-Flow Verification for LLM Self-Correction",
+    "abstract": "Large language models have demonstrated strong mathematical problem-solving capabilities, yet reliably verifying their candidate answers remains challenging. Existing representative methods mainly revise outputs through natural-language reflection or assist verification by directly generating verification programs; the former may not reliably support exact computation, whereas the latter prematurely couples mathematical modeling with low-level implementation. We propose AMTFV (Agentic Mathematical Tool-Flow Verification). By introducing Mathematical Tool Flow (MTF) as an interrupt--execute--resume interface, AMTFV decouples verification modeling from concrete execution and supports exact computation through a mathematical toolbox. Specifically, the verification agent first constructs a verification workflow, encodes the mathematical objects and computational intent requiring reliable execution in an MTF request, and sends it to the mathematical toolbox agent. The latter parses the request, generates executable calls, and dispatches them to the backend for exact computation. Tool outputs then support candidate-answer adjudication, answer revision, and verification-workflow revision. We evaluate AMTFV on five challenging mathematical reasoning datasets with seven model configurations from DeepSeek, GPT, and Gemini. Experimental results show that AMTFV outperforms the representative baselines evaluated in this study overall; under an individual model configuration, it improves average accuracy over the strongest baseline by up to 8.3 percentage points, with larger gains on samples of medium and high verification complexity.",
+    "authors": [
+      "Rui Zou",
+      "Yutao Zhu",
+      "Mengqi Wei",
+      "Ji-Rong Wen"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29549v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29549v1",
+    "fetched_at": "2026-08-03T11:18:18.805264"
+  },
+  {
+    "id": "2607.29479v1",
+    "title": "MolGVR: A Chemistry-Grounded Framework for Text-to-Molecule Generation",
+    "abstract": "Text-to-molecule generation is typically formulated as a one-shot sequence generation problem, where a model directly maps target descriptions to molecular representations. However, molecular descriptions often contain informative structural constraints, and violating such constraints can change the molecular identity. This makes chemical verification and error correction important but underexplored. To fill this gap, we propose MolGVR, a chemistry-grounded Generator--Verifier--Refiner framework. The Generator infers structural evidence and generates candidate molecules. The Verifier addresses the lack of chemical validation by converting descriptions into chemical constraints and checking candidates against them. The Refiner addresses generation failures by revising candidates rejected by the Verifier. Experiments on ChEBI-20 and PCDes show that MolGVR improves exact-match performance. These results suggest that coupling generation with executable verification and feedback-guided refinement is an effective way to improve text-to-molecule generation.",
+    "authors": [
+      "Qian Tan",
+      "Xuanyu Zhu",
+      "Lei Jiang",
+      "Zhonghang Yuan",
+      "Chen Zhang",
+      "Yuqiang Li"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29479v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29479v1",
+    "fetched_at": "2026-08-03T11:18:18.805291"
+  },
+  {
+    "id": "2607.29431v1",
+    "title": "ModelEquivBench: Certifying Multi-Relational Evaluation of LLM-Generated Optimization Models",
+    "abstract": "Large language models increasingly generate optimization models from natural language, but existing evaluation often reduces a generated model and its ground truth to a single equivalent/not-equivalent verdict or an execution-success rate--labels that are neither independently checkable nor faithful to the multiple distinct senses in which two formulations can agree. We present ModelEquivBench, a certifying, multi-relational evaluation system that reports a per-pair semantic profile E0--E6: model construction and exact ingestion (E0), verified representation alignment (E1), same-space and projected feasible-set relations (E2, E3), objective-order equivalence (E4), optimal-value equality (E5), and optimizer-set equivalence (E6). Each decided entry carries relation-appropriate, independently re-checkable evidence: replayable traces or explicit maps for E0--E1, exact-rational certificates for positive E2--E6 conclusions, and explicit witnesses for supported negatives. Incomplete mapping search, unsupported structure, and resource limits produce typed UNKNOWN or N/A outcomes rather than guesses, while unmet prerequisites are reported as ABSENT. Using ModelEquivBench to evaluate three model snapshots--GPT-5.4, Claude Sonnet 4.6, and Qwen3.5-397B-A17B--on the same frozen cohort of 173 base problems (346 cells per model) under a no-repair protocol, the resulting profiles expose distinctions that coarse baselines do not represent: 49, 35, and 25 cells contain executable candidates that are nevertheless certified negative on at least one supported relation, and 25, 8, and 18 structural rejections occur on pairs for which E2 certifies mapped feasible-set equality under a verified map. The three model snapshots fail at different stages of the profile and therefore cannot be meaningfully reduced to a single accuracy score.",
+    "authors": [
+      "Penglin Zhu",
+      "Jungang Xu"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29431v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29431v1",
+    "fetched_at": "2026-08-03T11:18:18.805311"
+  },
+  {
+    "id": "2607.29422v1",
+    "title": "AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair",
+    "abstract": "Automated vulnerability repair aims to reduce the time and effort required to patch security flaws from a vulnerability triage report. Recent agentic AI approaches have shown promising results in automated program repair. However, vulnerability repair demands richer program context than general bug repair - context that security engineers routinely assemble in practice but that existing agentic approaches do not engineer. We identify three critical gaps: code-structure context capturing cross-file data flows and memory operation patterns, runtime-execution context revealing crash semantics and memory origins, and commit-history context recovering how fragile code patterns were introduced. We present AgenticRepair, an agentic vulnerability repair framework that addresses the gaps through multi-faceted program context engineering. AgenticRepair orchestrates three specialized LLM subagents to engineer the contexts, which are then embedded into the memory of a dedicated repair subagent for context-conditioned patch synthesis. Evaluated on SEC-Bench comprising 300 real-world instances with sanitizer-based patch verification, AgenticRepair achieves a 73% success rate, substantially outperforming the strongest baseline by 29%. Our ablation study confirms that the three context facets are mutually complementary, and that multi-agent scaffolding and base-model capacity each play an essential role. Collectively, these findings establish multi-faceted program context engineering as a promising design direction for agentic vulnerability repair.",
+    "authors": [
+      "Michael Fu",
+      "Qiyue Mei",
+      "Patanamon Thongtanunam",
+      "Kla Tantithamthavorn"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29422v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29422v1",
+    "fetched_at": "2026-08-03T11:18:18.805335"
+  },
+  {
+    "id": "2607.29389v1",
+    "title": "Simulation Code Generation for Fluid Systems using Large Language Models: Benchmarking Models and Prompting Strategies",
+    "abstract": "Large language models (LLMs) have demonstrated a strong ability to generate syntactically correct code from natural-language specifications. In this study, we explore how LLMs can be harnessed to automatically translate a neutral graph representation of fluid system models into executable code for two widely adopted simulation environments: the Python library WNTR and the Modelica Standard Library. We conduct a systematic comparison of ten state-of-the-art LLMs and six prompting strategies that differ in the contextual information supplied (e.g., code or documentation). For each configuration we assess the generated code using a suite of software-quality metrics and we validate the functional fidelity of the resulting simulation models by reproducing benchmark fluid system scenarios. Our findings offer concrete guidance for researchers and engineers seeking to integrate LLM-driven code synthesis into model-based design pipelines. While the best-performing configurations achieve acceptable syntactic quality, we observe substantial gaps remain in simulation fidelity.",
+    "authors": [
+      "Jan Marius Stürmer",
+      "Jascha Knack",
+      "Tobias Koch",
+      "Andreas Weinmann"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29389v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29389v1",
+    "fetched_at": "2026-08-03T11:18:18.805358"
+  },
+  {
+    "id": "2607.29347v1",
+    "title": "SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery",
+    "abstract": "Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic planning and execution engines, the framework scalably generates hypotheses and analytical pipelines on demand. Systematic evaluation on the expert-annotated BrainArena benchmark demonstrates that SeekBrain substantially outperforms state-of-the-art agent baselines across various analysis tasks. Crucially, when deployed in real-world research, SeekBrain integrated behavioral, neural, and anatomical data to reveal structured, distributed neural representations of larval zebrafish behavior and a shared axis of regional decoding strength across the brain in a mouse decision-making task. These results establish SeekBrain as a scalable and practical tool for accelerating data-driven discoveries in neuroscience.",
+    "authors": [
+      "Jiamin Wu",
+      "Peishan Xiang",
+      "Jingyang Chen",
+      "Yuqing Zhu",
+      "Yuxi Li",
+      "Ling Luo",
+      "Qihao Zheng",
+      "Jialiang Zu",
+      "Yongchao Wu",
+      "Mindong Liu",
+      "Haitao Wu",
+      "Chaofan Hu",
+      "Yijie Sun",
+      "Yuqi Hang",
+      "Yu Zhu",
+      "Shuo Li",
+      "Yue Fan",
+      "Shiyang Feng",
+      "Wanghan Xu",
+      "Tianlei Zhang",
+      "Jie Zhang",
+      "Wenlong Zhang",
+      "Bo Zhang",
+      "Kai Wang",
+      "Lei Bai",
+      "Mianxin Liu",
+      "Wanli Ouyang",
+      "Jiulin Du",
+      "Chunfeng Song"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29347v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29347v1",
+    "fetched_at": "2026-08-03T11:18:18.805426"
+  },
+  {
+    "id": "2607.29320v1",
+    "title": "MAGA: Multi-Platform Self-Fusion of GUI Agents via Structured Action Distillation",
+    "abstract": "Graphical user interface (GUI) agents based on large language models are increasingly deployed across mobile, web, and desktop environments. However, existing agents are typically domain-specific, limiting the deployment and user experience. This motivates the consolidation of specialized models into a single cross-environment policy. Weight merging directly merges domain-specific experts but can corrupt executable actions under expert disagreement, while on-policy distillation (OPD) avoids conflicting teacher supervision yet still treats all response tokens equally during distillation, ignoring that action tokens are the only interface between the environment and the agent. To address this, We introduce MAGA that re-allocates training signal according to the structured action. Based on the correctness of the generated action, it suppresses unnecessary or invalid distillation signals and focuses learning on erroneous actions. Besides, a training-only hint optimizes the supervision signal provided by domain-specific teachers without changing the student input. Across two model scales, MAGA achieves the highest mean success rate, outperforming the strongest baseline by 2.0% at 8B and achieves almost the same average performance with teachers.",
+    "authors": [
+      "Hang Yan",
+      "Zhangxuan GU",
+      "Beitong Zhou",
+      "Jiaxuan Chen",
+      "Runze Li",
+      "Yusong Hu",
+      "Shuheng Shen",
+      "Changhua Meng"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29320v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29320v1",
+    "fetched_at": "2026-08-03T11:18:18.805457"
+  },
+  {
+    "id": "2607.29254v1",
+    "title": "Tool Specifications Matter: Uncovering and Mitigating Safety Risks in AI Agents",
+    "abstract": "AI agents extend large language models (LLMs) with external tools, enabling them to perform complex tasks and translate model outputs into consequential real-world actions. Yet LLMs often become substantially less safe when deployed as agents, and the source of this degradation remains poorly understood. In this paper, we identify schema-formatted tool specifications as a primary source of agent safety degradation and show, through white-box representation analysis, that they weaken the model's internal refusal signals and contribute to unsafe tool execution. Building on this finding, we propose SafeKeep, an inference-time safeguard that decouples safety judgment from tool execution: it assesses requests using flattened textual tool specifications while retaining the original schema-formatted specifications for execution. Across two representative benchmarks and four LLMs, including both white-box and black-box models, SafeKeep increases the average refusal rate for harmful requests from 23.8% to 70.6% and reduces the average attack success rate under observation-level prompt injection from 25.6% to 2.5%. It also outperforms existing safeguards and preserves task-handling capability. We release the code and data at https://github.com/snowcatsmoking/SafeKeep .",
+    "authors": [
+      "Minghui Pan",
+      "Jiayuxuan Yang",
+      "Yuanyuan Yuan",
+      "Yu Jiang",
+      "Zhenpeng Chen"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29254v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29254v1",
+    "fetched_at": "2026-08-03T11:18:18.805481"
+  },
+  {
+    "id": "2607.29241v1",
+    "title": "RecHarness: A Bandit-Routed Agentic Harness for Self-Evolving Recommender Systems",
+    "abstract": "Optimizing modern recommender models still depends heavily on engineers manually iterating over architectural, objective, and training-strategy changes. While LLM-based agents can automate this trial-and-error process, allowing the LLM to both select modification directions and generate concrete hypotheses often leads to unstable search under limited experiment budgets. Inspired by the above challenge, we propose RecHarness, a Bandit-Routed Agentic Harness for automated recommender model optimization. RecHarness separates the optimization process into two steps: a bandit router selects the next modification direction according to historical validation feedback, while the LLM generates a concrete optimization hypothesis and executable code edit within the selected direction. To sustain long-horizon exploration, RecHarness uses a jump-basin mechanism to activate a structural-jump arm when local edits stagnate. Across multiple recommendation tasks, datasets, and model backbones, RecHarness achieves more stable performance improvements and uses limited trial budgets more effectively than LLM-reasoning search. During a 7-day online A/B test on a large-scale short-video advertising platform, the selected candidate improves ADVV by 2.084%, Revenue by 0.534%, and Exposure by 0.559%. Code is available at https://github.com/6lyc/RecHarness.",
+    "authors": [
+      "Haoran Ling",
+      "Yuecheng Li",
+      "Zeyu Song",
+      "Jing Yao",
+      "Shuwen Kang",
+      "Chi Lu",
+      "Wenjin Wu",
+      "Peng Jiang"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29241v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29241v1",
+    "fetched_at": "2026-08-03T11:18:18.805512"
+  },
+  {
+    "id": "2607.29235v1",
+    "title": "FBFM: A Training-Free Asynchronous Feedback Mechanism for Flow-Matching in World-Action Models Execution",
+    "abstract": "Although world-action models (WAMs) enhance long-horizon robot control by predicting visual evolution before acting, long-horizon reliability demands repeated re-grounding in real observations--not recursive rollout. Existing WAMs address this by refreshing history or KV cache with ground-truth data between chunks. However, such chunk-wise feedback operates at a coarse temporal granularity and thus fails to correct prediction errors at the individual time-step level. To address this, we propose Feedback Flow Matching (FBFM), a training-free inference mechanism that pushes re-grounding inside the actively generated chunk. During flow matching, FBFM applies a masked pseudoinverse correction to the conditional velocity field: it leverages the preceding action chunk to guide generation of the next action chunk, and uses the image observed after executing that preceding chunk to guide the next frame prediction. This cross-chunk pairing--where feedback from one chunk arrives in time to shape the next--creates an asynchronous loop that corrects errors without waiting for chunk boundaries. Being training-free, the mechanism improves responsiveness to unexpected events and suppresses drift in long-horizon tasks. We evaluate FBFM on both a joint-generation WAM (DreamZero) and a stage-wise WAM (LingBot-VA). On selected LIBERO and RoboTwin2.0 tasks, it improves success rates by over 5% in favorable settings, and real-world robot observation-prediction diagnostics show notably better tracking. We argue that FBFM offers a new paradigm for fine-grained online correction, bridging open-loop flow generation with closed-loop real-world dynamics.",
+    "authors": [
+      "Peize Li",
+      "Ruimeng Zhang",
+      "Ru Zhang",
+      "Cong Huang",
+      "Kai Chen",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29235v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29235v1",
+    "fetched_at": "2026-08-03T11:18:18.805539"
+  },
+  {
+    "id": "2607.29196v1",
+    "title": "Hy-MultiTurn: A Six-Dimensional Benchmark for Deep Multi-Turn Dialogue Understanding",
+    "abstract": "Long-running multi-turn interactions with chatbots and agents are now common, and a correct response often depends on remembering earlier details, tracking later revisions, identifying intended objects or referents, and withholding action when required conditions are unmet. Existing multi-turn benchmarks typically cover short exchanges and do not fully evaluate these capabilities in long multi-turn interactions, particularly in Chinese, while offering limited insight into how and why models fail. To address these limitations, we analyze real chatbot failures to identify six recurring mechanisms and use them to define six controlled evaluation modes in Hy-MultiTurn, a Chinese benchmark for deep multi-turn dialogue understanding. The six modes evaluate constraint memory, precise execution, constraint synthesis, object localization, action suppression, and reference resolution. Across the six modes, we construct 209 controlled tasks spanning 12-76 turns, with dialogue length, irrelevant-topic distraction, and colloquial phrasing adding further difficulty. Evaluation of 22 frontier model configurations shows that Hy-MultiTurn is broadly challenging, as even GPT-5.5, the strongest overall configuration, satisfies all requirements in only 41.1 percent of responses and no model performs best in all six modes.",
+    "authors": [
+      "Eileen Ye",
+      "Jiawen Tao",
+      "Yaoming Li",
+      "Chenxu Liu",
+      "Wenhan Yu",
+      "Yaxin Fan",
+      "Xiaokun Yuan",
+      "Mengzhou Wu",
+      "Yanbing Jiang",
+      "Maxm Pan"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29196v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29196v1",
+    "fetched_at": "2026-08-03T11:18:18.805573"
+  },
+  {
+    "id": "2607.29190v1",
+    "title": "CAGE: Certified Authorization under Typed-Return Uncertainty for Tool-Using Agents",
+    "abstract": "Tool-using LLM agents act on typed tool returns, records pairing provenance and categorical fields with numerical values. Runtime permission gates generally authorize the observed return and action, leaving the decision unprotected against small errors in how the return was bound to its source. We ask whether a candidate action stays authorized over a declared neighborhood of plausible correctly bound returns: one admissible binding fault plus bounded numerical drift. We prove that certifying the categorical and numerical channels separately does not compose: perturbations that are safe on each channel alone can jointly turn the same action unsafe. CAGE certifies this joint neighborhood directly, enumerating the discrete branches exactly and certifying the continuous perturbation within each branch. Across synthetic, policy-as-code, regulatory, and real-transaction settings, CAGE removes the in-budget false allows that accurate pointwise gates admit, while keeping a useful fraction of decisions autonomous. When the policy is executable, CAGE-Exact certifies the policy itself; otherwise CAGE-Lip and CAGE-RS certify a learned gate under an explicit, measured fidelity assumption.",
+    "authors": [
+      "Blaise Delattre",
+      "Cong Wang",
+      "Yang Cao"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29190v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29190v1",
+    "fetched_at": "2026-08-03T11:18:18.805594"
+  },
+  {
+    "id": "2607.29169v1",
+    "title": "ActFovea: Runtime Safeguarding for VLA Policies via Spatiotemporal Visual-Action Consistency",
+    "abstract": "Vision-language-action (VLA) policies achieve strong performance in robotic manipulation but remain vulnerable to runtime disturbances that break the temporal alignment among visual observations, robot states, and executed actions. We introduce ActFovea, a plug-and-play safeguarding framework that detects and mitigates such failures without retraining or modifying the underlying VLA policy. ActFovea uses robot kinematics, proprioceptive states, and recent actions to construct action-conditioned foveated regions that retain contact-relevant areas and predicted motion corridors while suppressing task-irrelevant visual content. It detects runtime risks by evaluating whether visual motion and observation freshness remain consistent with geometric, proprioceptive, and action transitions. For recoverable disturbances, ActFovea constructs disturbance-specific candidate observations and accepts a recovery only after verifying the resulting action chunk. When stale or replayed observations make reliable recovery impossible, it invokes a bounded safe-failure procedure. In closed-loop evaluations of $π_0$ across multiple LIBERO suites, ActFovea increases success under localized visual overlays from 49.3\\% to 90.3\\%, closing 93.7\\% of the gap to clean performance. It further improves success under action drift and visual delay by 7.0 and 9.8 percentage points, respectively, while preserving clean-task performance. Under frozen-observation replay, ActFovea triggers timely safe failure in all trials, with no unprotected failures. These results demonstrate that spatiotemporal visual-action consistency provides an effective basis for runtime safeguarding of VLA policies.",
+    "authors": [
+      "Wenda Yu",
+      "Tianshi Wang",
+      "Fengling Li",
+      "Xin Li",
+      "Jingjing Li",
+      "Lei Zhu"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.29169v1",
+    "arxiv_url": "https://arxiv.org/abs/2607.29169v1",
+    "fetched_at": "2026-08-03T11:18:18.805621"
+  }
+]
