@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "2608.02475v1",
+    "title": "Methodology for Modelling Token Economies and Performing Event Impact Analysis with DeTEcT",
+    "abstract": "The objective of this paper is to provide a methodology for applying the DeTEcT framework to modelling token economies, to formalise the configuration of the simulation environment, and to introduce an event analysis framework. A token economy is an economic system that has a unique mechanism for controlling its monetary supply, and a medium, in the form of a token or currency, for the valuation of goods and services, the settlement of transactions, and the storage of value. We show the key decisions that must be made when modelling an economy with the DeTEcT framework and showcase some numerical methods that can be used in conjunction with the framework to perform economic simulations. We also propose a framework for analysing and measuring the impacts of events on an economy, while also developing a procedure to measure the significance of these impacts.   Throughout the paper, we use Bitcoin as a case study to demonstrate how to apply the frameworks and tools we proposed here. We show how a model of Bitcoin token economy can be set up, and how to measure the impacts of Bitcoin's endogenous policies (i.e., BIPs) on the wealth distribution of its economic participants.",
+    "authors": [
+      "Rem Sadykhov",
+      "Geoffrey Goodell",
+      "Philip Treleaven"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "q-fin.GN",
+      "cs.CE",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02475v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02475v1",
+    "fetched_at": "2026-08-04T10:32:06.913234",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937582"
+  },
+  {
+    "id": "2608.02355v1",
+    "title": "Path Portfolio Optimization: Defect, Lift, and the Price of Path Complexity",
+    "abstract": "This paper builds Path Portfolio Optimization: portfolio theory on a path-first framework in which the signature is the universal coordinate of the price path, and asks whether it survives estimation. A portfolio is a linear functional of the signature, so the control lives in a truncated tensor algebra, the covariance of signature coordinates is the non-group-like part of the expected signature --- a defect form --- and the whole mean--variance problem becomes a linear system in one tensor. Two structural results follow. The lift is the execution convention: the gap between the Marcus and forward lifts, contracted with portfolio weights, is Fernholz's excess growth rate exactly, so excess growth is the geometricity defect of the portfolio map. And the antisymmetric block at level two is lift-invariant pathwise, so directional signals are convention-free while variance signals and ruin are not. The empirical finding is a dimensional trade-off. With the expected signature known, quadratic path functionals raise the certainty equivalent elevenfold for a pair of assets and sixtyfold for a cross section of twenty; with it estimated, the unregularized policy is severely negative until the sample exceeds roughly six observations per parameter, and shrinkage flips from harmful in the pair to indispensable in the cross section. The entire gain sits in the symmetric block, which is convexity in the terminal increment rather than path-dependence; the path-dependent antisymmetric block earns nothing when the driver has no expected area. And the sample-size floor belongs to unstructured estimation rather than to path complexity: an estimator that fits only the generator of the driver and rebuilds the expected signature recovers almost all of the attainable value at barely one observation per parameter",
+    "authors": [
+      "Miquel Noguer i Alonso"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02355v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02355v1",
+    "fetched_at": "2026-08-04T10:32:06.913266",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937604"
+  },
+  {
+    "id": "2608.02311v1",
+    "title": "AI Governance for Institutional Readiness in Finance",
+    "abstract": "Agentic AI is gaining acceptance in asset management, but governance has not kept pace: 88% of surveyed finance professionals report no operational governance framework for agentic AI despite universal awareness of its deployment, and only 24 of 75 large U.S. money managers disclosing AI use in Form ADV filings report a formal governance policy. We argue this gap is architectural, not cultural: governance built for deterministic systems assumes static validation. However, continuously retrained agentic policies violate static governance by design. We propose a four-layer framework (Policy, Engineering, Composition, Systemic) with computable instantiations: a regret-covariance statistic that detects policy drift from observed data alone, and a calibrated crowding model showing joint drawdown probability rising from 39.2% to 79.3% as institutions converge on correlated exposures. We support the framework with a study of a deployed LLM-embedding trading strategy and a contemporaneous discretionary fund blowup, clarifying which controls transfer across agentic and human-directed risk-taking. We also provide a 90-day framework implementation sequence for institutions.",
+    "authors": [
+      "Irene Aldridge",
+      "Steve Krawciw"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "econ.EM",
+      "q-fin.RM",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02311v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02311v1",
+    "fetched_at": "2026-08-04T10:32:06.913317",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937617"
+  },
+  {
+    "id": "2608.02002v1",
+    "title": "Hawkes-Driven OTC Market Making: Volterra-Riccati Approximation",
+    "abstract": "We formulate an over-the-counter (OTC) market-making problem in which request-for-quote (RFQ) arrivals are modelled by general Hawkes kernels and fills are controlled thinnings of the exogenous request flow. The modelling choice is motivated by spot-FX RFQ data: after filtering and transforming to seasonality-adjusted RFQ activity time, two-way activity in major currency pairs exhibits large fitted branching ratios and multi-scale persistence. For general Hawkes kernels the control problem is path-dependent: the relevant state contains the order-flow history, or equivalently the forward curve of conditional future RFQ intensities. Exact Markovian lifting is available for exponential kernels, but it becomes high-dimensional for mixtures of exponentials and impractical for long-memory kernels. We therefore develop a hierarchy of Volterra-Riccati approximations. The first level replaces random future request flow by its conditional Volterra forecast; the second adds a covariance correction for intensity uncertainty; the third updates the quote rule with the realized Hawkes memory, or equivalently with the post-request conditional forecast curve. The approximation hierarchy is validated in an exponential Hawkes benchmark, where the exact lifted HJB can be solved numerically. The state-feedback Volterra-Riccati policy closely tracks the exact benchmark, especially in directional regimes, while a memory-free Poisson policy suffers substantial regret. We then apply the same state-feedback rule to a power-law-like RFQ memory model. A directional RFQ burst changes the conditional forecast of future flow and is converted by the continuation-value shadow price into a persistent quote skew. The resulting endogenous OTC quote impact inherits the long-memory decay of the RFQ forecast response and improves inventory and P&L risk control relative to a no-conditioning Poisson benchmark.",
+    "authors": [
+      "Alexander Barzykin"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02002v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02002v1",
+    "fetched_at": "2026-08-04T10:32:06.913340",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937630"
+  },
+  {
+    "id": "2608.01607v1",
+    "title": "AI Financial Advice: Supply, Demand, and Life Cycle Implications",
+    "abstract": "We ask a representative sample to write prompts seeking spending and investing advice from LLMs, then simulate the lifetime effects of following the advice under realistic asset and labor market conditions. Applying this method to GPT-5.2, we find following the advice would move respondents toward life cycle theory: broader participation in diversified equity funds, age-declining equity shares, and larger savings buffers. Recommendations vary systematically by gender, prior AI experience, and financial literacy. For gender, two-thirds of recommended equity-share differences arise from men and women writing different prompts (demand), while one-third arise from gender labels attached to otherwise identical prompts (supply).",
+    "authors": [
+      "Taha Choukhmane",
+      "Tim de Silva",
+      "Weidong Lin",
+      "Matthew Akuzawa"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "econ.GN",
+      "q-fin.GN",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01607v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01607v1",
+    "fetched_at": "2026-08-04T10:32:06.913365",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937644"
+  },
+  {
+    "id": "2608.01554v1",
+    "title": "P-Bubbles, Q-Bubbles, and Risk Premia",
+    "abstract": "We develop a unified modeling framework that connects two distinct types of bubbles defined in the literature: the rational bubbles (aka P-bubbles), and the local martingale bubbles (aka Q-bubbles). We show that the local martingale bubble model includes the classical rational bubble as a special case. We relate both types of bubbles to an equity's risk premium via a novel decomposition.",
+    "authors": [
+      "Robert A. Jarrow",
+      "Simon S. Kwok"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "q-fin.MF",
+      "econ.TH"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01554v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01554v1",
+    "fetched_at": "2026-08-04T10:32:06.913385",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937653"
+  },
+  {
+    "id": "2608.01494v1",
+    "title": "Conformal Kelly: Conformal Prediction Intervals as the Scale in Fractional Kelly Position Sizing",
+    "abstract": "Conformal prediction has traditionally been used to quantify prediction uncertainty. We put that uncertainty to a second use, combining a 75% conformal interval with fractional Kelly to size portfolio positions: as the range widens we shrink the position, and as it narrows we grow it. On a six-year development window (2016-2021), with trading costs and strict leverage caps, this compounds at 28.5% annualised net log growth with a Sharpe ratio of 1.34 and a 27.7% maximum drawdown, versus 15.9% for holding the S&P 500 and 21-22% for passive portfolios at the same leverage.   Our main development-window finding runs against the literature's advice for conformal prediction on time series. Every tweak that adapts the interval faster to market conditions costs 0.7 to 5.3 points of annual growth; the winner is the simplest method: slow, unweighted, per-asset rolling quantiles. When an interval sizes a position rather than describing one forecast, width stability beats local sharpness. It also beats the textbook standard deviation by 2.1 points at matched leverage. We also implement a risk control: when the intervals miss on the downside far more than their historical rate, we cut leverage. On the development window this cut maximum drawdown from 27.7% to 20.3% while raising the Sharpe ratio, beating all 40 placebo timings (rank-based p = 1/41).   These numbers came from an autonomous LLM-agent search over 200 configurations, so we sealed all data from 2022 onward and pre-registered configurations, benchmarks, and interpretation rules before one evaluation. Calibration held (0.745 coverage against 0.750, weakest through 2022); growth did not: the two configurations earned 8.5% and 7.0% per year, below the passive benchmarks, and a pre-registered hindsight benchmark beat them on raw growth while taking a 46% drawdown. All outcomes are reported as pre-registered.",
+    "authors": [
+      "Robert Jacob Ryan"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01494v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01494v1",
+    "fetched_at": "2026-08-04T10:32:06.913406",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937666"
+  },
+  {
+    "id": "2608.01479v1",
+    "title": "The VIX-Derived Volatility Model: A VIX-first Joint SPX-VIX Framework",
+    "abstract": "We propose the VIX-derived volatility (VDV) model, a VIX-first framework for joint SPXVIX modeling. In the model, we define explicit dynamics for the VIX process to price VIX futures and options, yielding a VIX-side calibration that is independent of the SPX dynamics. Using the rolling-window definition of the VIX, we then derive a coupling function to obtain the SPX volatility process as a latent process consistent with the calibrated VIX dynamics. This produces a stochastic-volatility representation for SPX that can be further calibrated to SPX options without altering the VIX dynamics. Relative to existing joint-calibration approaches based on global optimization or highly flexible black-box dynamics, the method offers an interpretable and tractable decomposition of the joint problem by separating the calibration of the VIX from the calibration of the SPX. In a numerical experiment, we show that a VDV model with local volatility and mean-reverting dynamics for the VIX achieves a close model fit to the VIX futures market, VIX option market, and the SPX option market at the same time, providing a consistent joint framework.",
+    "authors": [
+      "Nicola F. Zaugg",
+      "Lech A. Grzelak"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.MF",
+      "math.PR",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01479v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01479v1",
+    "fetched_at": "2026-08-04T10:32:06.913427",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937684"
+  },
+  {
+    "id": "2608.01294v1",
+    "title": "An Information-Geometric Framework for Bayesian Credit Risk Monitoring",
+    "abstract": "We propose an information-geometric framework for credit risk monitoring in which a bank's knowledge of a borrower is represented by a posterior distribution over latent dimensions of creditworthiness and financial fragility.   Under a linear-Gaussian specification, Bayesian updating maps observed behavioural scores into Gaussian posterior beliefs, which form a statistical manifold endowed with the Fisher information metric.   In the common-covariance case, the induced geometry reduces to the Mahalanobis metric on posterior means, while borrower-specific covariance matrices allow informational distances to account for both expected risk and assessment uncertainty.   Simulation exercises illustrate how Kullback-Leibler and Jeffreys divergences can be used to compare portfolio segments.   The framework provides a geometric interpretation of credit monitoring as the evolution of posterior beliefs over borrower risk.",
+    "authors": [
+      "Lorenzo Quirini"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01294v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01294v1",
+    "fetched_at": "2026-08-04T10:32:06.913445",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937694"
+  },
+  {
+    "id": "2608.01217v1",
+    "title": "Amortizing the Calibration Triple: A Projection-Consistent Neural Operator for Local-Stochastic Volatility",
+    "abstract": "Local-stochastic volatility (LSV) combines vanilla marginals with richer smile dynamics, but calibration requires a slow, noisy and sequential McKean--Vlasov fixed point. We learn a projection-consistent operator for the calibration triple. Given finite quotes and a stochastic-volatility (SV) backbone, it jointly returns an implied-volatility surface subject to static-arbitrage constraints, its Dupire local volatility, LSV leverage and the conditional moment required by the projection identity. Starting from option-price marginals, we derive a division-free Dupire residual in log-implied-variance coordinates and a quotient Fokker--Planck equation after Gyöngy projection. Deep Operator Network (DeepONet) and Fourier Neural Operator (FNO) implementations enforce quote fit, static-arbitrage, Dupire and projection constraints. For the witness-augmented residual system, we prove conditional identification and empirical consistency under LSV existence and inverse residual stability. In controlled synthetic tests, forward-start and cliquet errors differ from a particle method by 0.1 and 0.2 percentage points, while calibration latency falls from 98.5 to 0.6 ms. Compared with the tested baselines, local-volatility root-mean-square error (RMSE) falls by 36% and leverage RMSE by 7-16%. These results support amortizing the LSV fixed point: the expensive solve moves offline, while online calibration reduces to a single projection-consistent operator evaluation.",
+    "authors": [
+      "Xiaozhen Wang",
+      "Anaïs Després",
+      "Martin Dureau",
+      "Francois Buet-Golfouse"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.MF",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01217v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01217v1",
+    "fetched_at": "2026-08-04T10:32:06.913469",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937716"
+  },
+  {
+    "id": "2608.01208v1",
+    "title": "Climate-Dyna Deep Hedging for XVAs: Model-Based Reinforcement Learning, Residual Climate HVA, and Hedge-Instrument Discovery",
+    "abstract": "For a trading desk, residual climate hedging valuation adjustment (HVA) is the climate cost left after its inherited hedge and any admissible overlay have been taken into account; it therefore cannot be inferred from a stand-alone stress loss. We obtain this residual by comparing paired climate-on and baseline worlds and reoptimizing the overlay for each hedge universe, which also turns hedge-instrument discovery into a valuation problem: an instrument is useful to the extent that it lowers the optimized residual cost. The linear-Gaussian case has an exact finite-horizon Riccati solution; Climate-Dyna starts from that hedge and learns the remaining nonlinear correction from paired world-model rollouts, with an independent gate deciding whether to deploy the update. In a public-data-calibrated semi-synthetic EU ETS study, crediting the inherited hedge lowers the mean climate charge from 1.517 to 0.906, and the learned overlay lowers it to 0.831 against a 0.821 exact floor; residual Dyna cuts regret by 93% relative to replay with one quarter as many trajectories, while adaptation from only 25 target transitions retains 60.7% of the exact-assisted gain.",
+    "authors": [
+      "Xiaozhen Wang",
+      "Francois Buet-Golfouse"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.MF",
+      "cs.LG",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01208v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01208v1",
+    "fetched_at": "2026-08-04T10:32:06.913493",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937728"
+  },
+  {
+    "id": "2608.00988v1",
+    "title": "Exactly solvable model for the diffusive price-dynamics paradox under long-range correlated market-order flow",
+    "abstract": "We develop an exactly solvable nonlinear time-series model by incorporating the square-root price-impact law into the Lillo--Mike--Farmer (LMF) model to resolve the diffusive price-dynamics paradox under predictable market-order flow. In financial market microstructure, it is well established that the price dynamics are approximately described by Brownian motion at long times. However, it is also well-known that market-order flow is clearly predictable due to long-range correlations, as mathematically formulated by the LMF model. Since market orders have a positive price impact in general, predictable market-order flow seems to contradict Brownian price dynamics. In this work, we resolve this diffusive price-dynamics paradox by developing nonlinear time-series models that generalize the LMF model based on the square-root price-impact law. Our time-series models can be mathematically mapped onto the Lévy-walk framework---an exactly solvable class of non-Markovian stochastic processes developed in statistical physics. We prove that the price dynamics are diffusive at long times under the square-root law even under predictable market-order flow. Our work highlights the crucial practical importance of the square-root law in understanding the microstructural foundation of the Efficient Market Hypothesis.",
+    "authors": [
+      "Yuki Sato",
+      "Shunta Fujiwara",
+      "Kiyoshi Kanazawa"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.TR",
+      "cond-mat.stat-mech",
+      "econ.GN",
+      "q-fin.GN",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00988v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00988v1",
+    "fetched_at": "2026-08-04T10:32:06.913516",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937747"
+  },
+  {
+    "id": "2608.00917v1",
+    "title": "Pro-rata mechanisms in groundwater markets",
+    "abstract": "We introduce a pro-rata rationing mechanism for resolving supply-demand imbalances in groundwater markets, extending the price-formation model of Cialenco and Ludkovski (2025). We show that under the pro-rata distribution, every price is a Nash equilibrium, thereby pro-rata approach provides a rationing device whenever supply and demand fail to match. By the very nature of the pro-rata mechanism, the resolution of supply-demand imbalances is unique, and the proportional rationing approach is fair. First, we consider markets with exogenous restrictions on the amounts each agent may buy and/or sell, deriving closed-form first-best consumption and characterizing how one-sided caps monotonically shift the Pareto price, while two-sided caps have an ambiguous effect. These results give the market-maker (or regulator) a tool for studying the impact of trading restrictions on price formation. Second, we study a leader-follower setting in which a regulator (the leader) sets the trading price by optimizing first its own objective, such as balancing social welfare against a target traded volume or a fairness objective such as Gini-type disparity measure across farmers' profitability, while farmers (the `followers') respond via pro-rata trading. We further compare the proposed pro-rata approach to a family of asymmetric rationing schemes (seniority-based, excess-based, uniform, and mixed pro-rata rules) that trade off proportional fairness against protections for small or senior water-rights holders. Throughout, we illustrate the theoretical results with a numerical case study calibrated to a stylized four-farmer groundwater market.",
+    "authors": [
+      "Igor Cialenco",
+      "Michael Ludkovski",
+      "Gael Dimitri Tekam Fongouo"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00917v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00917v1",
+    "fetched_at": "2026-08-04T10:32:06.913538",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937757"
+  },
+  {
+    "id": "2608.00911v1",
+    "title": "Battery Storage Co-Optimization in Day-Ahead and Real-Time Markets with Bayesian Optimization",
+    "abstract": "We propose Adaptive Refinement Bayesian Optimization for Day-Ahead and Real-Time (ARBO-DART) markets, an algorithm for BESS intraday dispatch co-optimization in which day-ahead (DA) commitment profiles are optimized against value of real-time (RT) recourse computed by a black-box stochastic control solver. In our framework, the DA price curve is taken as exogenous and RT prices evolve as a mean-reverting process around it. The RT recourse layer performs dynamic closed-loop control while accounting for the piecewise-linear state-of-charge dynamics and the DA-driven feasible control set. By wrapping Bayesian Optimization (BO) around the RT solver, ARBO-DART jointly optimizes DA commitments and dynamic RT flexibility without requiring analytic gradients, closed-form value functions, or finite-scenario approximations. To overcome the curse of dimensionality in fixed-resolution DA profiles, ARBO-DART starts from a coarse partition of DA commitments and progressively refines charge and discharge blocks where additional temporal resolution is most needed, as judged by the corresponding RT policy. Numerical experiments across realistic DA price curves reveal the effectiveness of ARBO-DART in recovering economically meaningful DA bidding structures while being several times faster relative to fixed-resolution",
+    "authors": [
+      "Thiha Aung",
+      "Mike Ludkovski"
+    ],
+    "published": "2026-08-02",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00911v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00911v1",
+    "fetched_at": "2026-08-04T10:32:06.913558",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937767"
+  },
+  {
+    "id": "2608.00885v1",
+    "title": "Optimal Trading of Microstructure Mean Reversion",
+    "abstract": "At the scale of seconds the observed mid carries a stationary, mean-reverting error around a latent efficient price. We build an order book whose own flow produces that error and solve for the trading rule that maximises the long-run average profit rate net of the bid-ask spread. In a liquid large-tick asset the spread is one tick or two, and it is exactly the parity of the mid on the half-tick grid: tight at a half-integer, open at an integer. One coordinate therefore carries the problem: the gap $G$ between the mid and the efficient price; the price is an exogenous Brownian martingale, and $G$ is observable. The mid is a pure jump process whose move intensities lean toward the efficient price. Under one balanced-response condition, which equalises the book's corrective drift across parities, mean reversion of $G$ is a theorem: its conditional mean and stationary covariance are exactly those of an Ornstein-Uhlenbeck process with reversion rate $α$ and stationary standard deviation $s_G$. Its paths are not: the mid jumps. Passage times are therefore evaluated on the Gaussian diffusion those two moments define, at an error we bound on the reward side and leave heuristic on the timing side. A symmetric band of half-width $θ$ buys when the gap reaches $-θ$, sells at $+θ$, and holds inside; on the surrogate it is optimal among all admissible strategies, on the jump process itself that reduction remains a conjecture. With $φ$ the tight-book half-spread, the optimal half-width and its profit rate are $θ^*(θ^*-φ)=s_G^2$ and $R^*=αs_G\\sqrt{2/π}\\,e^{-θ^{*2}/2s_G^2}$. Threshold times margin equals the stationary variance of the gap. Trading as soon as the gap covers the spread earns zero: all profit is the option value of waiting.",
+    "authors": [
+      "Lucas Rabechini Amaral"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00885v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00885v1",
+    "fetched_at": "2026-08-04T10:32:06.913576",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937788"
+  },
+  {
+    "id": "2608.00858v1",
+    "title": "Data-Driven Measures of High-Frequency Trading",
+    "abstract": "We introduce data-driven measures of high-frequency trading (HFT) that distinguish between liquidity-supplying and liquidity-demanding strategies. We train machine learning models on a proprietary dataset with observed HFT activity, then apply these models to public intraday data to generate HFT measures across all U.S. stocks during 2010-2023. Our measures outperform conventional proxies, which struggle to capture the temporal dynamics of HFT. Consistent with theory, our measures respond to a quasi-exogenous speed bump introduction and a data feed upgrade. The measures help uncover the differential impact of HFT on information acquisition. Liquidity-supplying HFT improves price informativeness around earnings announcements, while liquidity-demanding HFT impedes it.",
+    "authors": [
+      "Gbenga Ibikunle",
+      "Ben Moews",
+      "Dmitriy Muravyev",
+      "Khaladdin Rzayev"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00858v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00858v1",
+    "fetched_at": "2026-08-04T10:32:06.913599",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937798"
+  },
+  {
+    "id": "2608.00761v1",
+    "title": "AI and Exchange Rate Predictability",
+    "abstract": "I revisit the exchange rate disconnect puzzle, first documented by Meese and Rogoff (1983), using generative artificial intelligence (AI) to forecast currency returns based on economic fundamentals. Using ChatGPT and DeepSeek, I analyze a comprehensive dataset of economic data releases for major currency pairs and measure the fundamental strength of each currency. These AI-powered fundamentals exhibit significant cross-sectional predictive power. A simple trading strategy that goes long currencies with strong fundamentals and short currencies with weak fundamentals generates a Sharpe ratio exceeding 0.7 per annum. The excess returns of this strategy remain significant after controlling for traditional currency factors. To mitigate concerns of look-ahead bias, I run multiple exercises to ensure that predictability stems from AI reasoning rather than memorization. Finally, I explore the potential sources of predictability and find evidence that the Taylor rule framework, generally used by central banks to set interest rates, is a key mechanism connecting exchange rates to economic fundamentals.",
+    "authors": [
+      "Amin Izadyar"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "q-fin.GN",
+      "q-fin.CP",
+      "q-fin.PM",
+      "q-fin.ST",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00761v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00761v1",
+    "fetched_at": "2026-08-04T10:32:06.913617",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937809"
+  },
+  {
+    "id": "2608.00647v1",
+    "title": "Axient: On-Chain Credit and Loss Allocation for Leveraged Event Markets: A Venue-Agnostic Protocol for Traders, Credit Providers, Market Makers, and Liquidation Backstops",
+    "abstract": "A physically backed leveraged event position requires real credit: if collateral C receives leverage L, the protocol supplies (L-1)C and uses the combined amount to acquire recognized event exposure. This paper develops a venue-agnostic on-chain credit architecture for that capital layer and an endogenous model of its capital market. It separates traders, Senior Credit LPs, market makers, liquidators, and Liquidation Backstop Providers; formalizes pool and debt shares, utilization- and risk-sensitive interest, collateral-locked position accounts, venue capabilities, market-maker commitments, withdrawal queues, isolated pools, non-redeemable reserves, and a deterministic loss waterfall; and models endogenous provider participation, leverage demand, liquidity withdrawal, liquidator entry, reserve replenishment, runs, and common-factor contagion. Formal results establish balanced real- and integer-unit accounting, settlement-confirmed debt priority, trader residual ownership, idempotent partial settlement, non-dilutive share issuance, junior-before-Senior impairment, loss-participating withdrawal queues, utilization-equilibrium conditions, and loss-allocation and contagion bounds. The release preserves 28 exact fixtures and 31,082 deterministic checks and adds fixed-seed agent-based experiments with 70,207,488 scalar invariant evaluations and zero failures. The experiments show that layered protection reduces but does not eliminate Senior loss, that 5x leverage materially increases capital pressure, and that market-maker capacity can raise aggregate shortfall if admission expands too quickly. Results are synthetic mechanism comparisons under author-specified behavior, not forecasts of APY, defaults, venue liquidity, or production safety.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.CP",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00647v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00647v1",
+    "fetched_at": "2026-08-04T10:32:06.913635",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937823"
+  },
+  {
+    "id": "2608.00631v1",
+    "title": "Axient: Debt-Free Finality for Leveraged Binary Event Markets",
+    "abstract": "Leveraged event positions combine a repayable loan with an outcome claim that may become non-tradable before oracle payout is final. This paper specifies Axient, a physically backed margin layer for binary event markets that separates leverage maturity from claim maturity and makes the hard-flat decision under explicit execution uncertainty. The model distinguishes quoted book proceeds, matched proceeds, settled proceeds, and redemption. At decision time, the protocol selects the smallest sale whose lower settled-proceeds envelope covers an upper bound on debt at the settlement horizon plus a buffer. We prove robust ex-ante debt clearing, pathwise debt-extinguishment and debt-free-finality invariants, maximal residual spot exposure, payout-vector and dispute-duration invariance of lender principal after debt extinction, and an impossibility boundary when execution, signer control, settlement, or market closure leave the registered operating set. We also derive a book-dependent leverage envelope, aggregate hard-flat capacity without double-counting shared liquidity, and scenario-conditional reserve bounds. A deterministic verifier covers step books, partial fills, settlement delay, adversarial book transformations, shared-book liquidation, reserve allocation, zero liquidity, and multiple payout vectors. The operating and stress sets are author-specified; empirical calibration is separate. The contribution is a conditional mechanism-design result and reference-implementation boundary, not a production-safety claim.",
+    "authors": [
+      "Maksym Nechepurenko"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00631v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00631v1",
+    "fetched_at": "2026-08-04T10:32:06.913653",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937833"
+  },
+  {
+    "id": "2608.00616v1",
+    "title": "Latent Flow Matching for Arbitrage-Aware Implied Volatility Surface Generation",
+    "abstract": "We propose an arbitrage-aware latent flow-matching framework for unconditional implied volatility surface generation. The method first compresses high-dimensional surfaces into a low-dimensional latent space using a variational autoencoder regularized by differentiable calendar-spread, call-spread and butterfly-arbitrage penalties. A flow-matching model then learns to transport a Gaussian prior toward the empirical latent distribution, and generated latent samples are decoded back into volatility surfaces. We evaluate the approach using marginal and surface-level Wasserstein distances, smile and skew diagnostics, pointwise quantile surfaces, financially interpretable shape metrics, and static no-arbitrage tests. The proposed model closely reproduces the empirical distribution and the main maturity-moneyness structures, achieves the best performance in the extreme Q99 regime, and generates 90.8% of surfaces satisfying all tested static no-arbitrage conditions. Overall, the results show that latent flow matching provides a favorable balance between distributional similarity, tail preservation, and financial consistency without requiring post-sampling reweighting.",
+    "authors": [
+      "Oscar Brooks",
+      "Dusica Bajalica",
+      "Yating Lui",
+      "Imen Ben Tahar"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00616v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00616v1",
+    "fetched_at": "2026-08-04T10:32:06.913677",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937844"
+  },
+  {
+    "id": "2608.00127v1",
+    "title": "Drawdown Risk Beyond Brownian Motion: A Monte-Carlo Framework, Non-Gaussian Extensions, and Long Memory",
+    "abstract": "How deep and how long should the drawdowns of a systematic trading strategy run, given its Sharpe ratio and the statistical structure of its returns? Building on the drawdown framework of Rej, Seager and Bouchaud (2017), we develop the answer in three steps. We first reframe their closed-form results as a transparent Monte-Carlo experiment, validate it against their analytic benchmarks, and extend the mapping from drawdowns to four decision-relevant measures: maximum drawdown, maximum loss, final negative time and longest recovery time. We then relax the Gaussian assumption, holding the true Sharpe and volatility fixed while varying skewness, fat tails, volatility clustering and Sharpe-estimation uncertainty across strategy archetypes; the four measures move differently, so a single Gaussian table mis-warns. We finally replace short-memory persistence with fractional Brownian motion and show that the apparent amplification of drawdown risk under persistence is, for maximum-drawdown depth, almost entirely self-similar dispersion scaling (T^(H-1/2)) rather than path geometry: a failure of square-root-of-time calibration, not intrinsic danger. We provide reproducible lookup tables and a practical calibration recipe.",
+    "authors": [
+      "Francesco Landolfi"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.PM",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00127v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00127v1",
+    "fetched_at": "2026-08-04T10:32:06.913718",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Risk Management",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937854"
+  },
+  {
+    "id": "2607.28230v2",
+    "title": "Boundary-Induced Apparent Risk Aversion in Nonergodic Multiplicative Growth",
+    "abstract": "Observed risk-taking behavior is often rationalized through expected-utility curvature, yet the curvature required to fit choices in one context can differ sharply from the curvature required in another, a tension highlighted by calibration critiques of expected-utility theory. Finite multiplicative systems often cease to evolve when a lower continuation threshold is reached, whereas standard growth-optimal benchmarks assume uninterrupted continuation. We study a finite-horizon binary multiplicative process in which a fixed exposure is chosen ex ante and paths crossing an absorbing boundary are assigned a residual value. Exact lattice propagation yields the optimal exposure as a function of initial log distance to the boundary, horizon, and residual ratio. Costly absorption compresses exposure below the no-boundary Kelly fraction near the boundary. When interpreted through an unconstrained constant-relative-risk-aversion benchmark, this compression appears as elevated risk aversion. As the residual value approaches the boundary, a local above-Kelly reversal can occur. In this minimal finite-horizon setting, absorbing-boundary geometry is therefore sufficient to generate state-dependent risk-averse-looking behavior without heterogeneous primitive preference parameters.",
+    "authors": [
+      "Ling Zhang",
+      "Boyan Xing",
+      "Zhenyu She",
+      "Zixiang Xu"
+    ],
+    "published": "2026-07-30",
+    "categories": [
+      "econ.GN",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.28230v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.28230v2",
+    "fetched_at": "2026-08-04T10:32:06.913904",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937863"
+  },
+  {
+    "id": "2608.02258v1",
+    "title": "Open-Set Visual Text Forensics via Sparse-Constraint Rectified Flow",
+    "abstract": "Rapidly evolving Generative AI enables sophisticated visual text manipulations that increasingly evade current forensic detectors. Existing discriminative models often overfit specific forgery patterns, limiting their generalization to unseen, open-set attacks. To address this challenge, we propose a generative detector that localizes tampering by estimating the local restoration cost required to align a query image with authentic visual-text statistics, rather than by learning forgery-specific decision boundaries. Specifically, we introduce Sparse-Constraint Rectified Flow (SC-RF), a detector-oriented adaptation of Flow Matching for spatially sparse anomaly localization. We further mitigate data scarcity via self-supervised Artifact Injection and preserve high-frequency forensic traces using a pixel-space Forensic-DiT. Extensive experiments on three benchmarks show that our method achieves state-of-the-art performance, surpassing the runner-up by 3.2 and 4.8 percentage points in F1 and IoU, respectively. In particular, the proposed detector demonstrates strong zero-shot performance on challenging unseen text editing patterns. We further provide an auxiliary stress-test analysis showing that local harmonization produced by our model can weaken the statistical cues relied upon by existing detectors, offering a complementary vulnerability-analysis perspective.",
+    "authors": [
+      "Jiangling Zhang",
+      "Shuxuan Gao",
+      "Zeyu Chen",
+      "Yichao Liu",
+      "Yu Zhou"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02258v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02258v1",
+    "fetched_at": "2026-08-04T10:32:24.159187",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937873"
+  },
+  {
+    "id": "2608.01885v1",
+    "title": "CARE: A Cascaded Framework for Efficient and Reliable Time Series Anomaly Detection",
+    "abstract": "While deep learning models have achieved state-of-the-art performance in time series anomaly detection, their complex architectures incur substantial inference overhead. Existing methods typically apply a uniform inference strategy across all data points, which is inefficient given that anomalies are inherently scarce and the vast majority of temporal data consists of predictable normal patterns. To mitigate this bottleneck, we propose CARE, a model-agnostic cascaded inference framework that integrates a Lightweight Pre-filter Model (LPM) with an existing high-capacity Complex Detection Model (CDM). The LPM rapidly filters high-confidence normal samples using a Residual MLP AutoEncoder and a Normality-Conditioned Gating mechanism. Crucially, we introduce a Structure Attention module to explicitly capture channel-wise anomaly contributions, and optimize the gating network via a confidence-guided selective routing objective that learns reliable routing decisions to reduce unnecessary CDM invocations. Extensive experiments across eight real-world benchmarks demonstrate that CARE effectively isolates high-confidence normal samples. By routing only uncertain samples to the CDM, our framework achieves $2.7\\times$ to $4.8\\times$ inference speedup compared to the most accurate SOTA approaches, while still maintaining competitive detection quality.",
+    "authors": [
+      "Zemin Chao",
+      "Qianhui Xu",
+      "Jianhe Cen",
+      "Guangzhi Ge",
+      "Xiao Chen",
+      "Hoangzhi Wang"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01885v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01885v1",
+    "fetched_at": "2026-08-04T10:32:24.159224",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937882"
+  },
+  {
+    "id": "2608.01793v1",
+    "title": "ReFP-AD: Rectified Flow Preconditioning for Energy-Based Anomaly Detection",
+    "abstract": "Unified anomaly detection requires modeling highly heterogeneous normal data without access to anomalous samples. While foundation models like DINOv2 provide rich token representations, leveraging these spaces for explicit density estimation remains challenging. Energy-Based Models (EBMs) offer a principled formulation, but their training in high-dimensional token spaces is unstable due to anisotropy and strong cross-dimensional correlations, which degrades finite-step Markov Chain Monte Carlo (MCMC) sampling. We identify this instability as fundamentally geometric and introduce ReFP-AD (Rectified Flow Preconditioning for Anomaly Detection), which learns a geometric reparameterization that maps high-dimensional embeddings into a well-conditioned latent space via an optimal transport (OT)-coupled rectified flow. This preconditioning enables stable persistent contrastive divergence with preconditioned Stochastic Gradient Langevin Dynamics (SGLD) in full-dimensional token spaces. Anomaly scores are then derived from the learned energy landscape using gradient norms. Under a strict unified protocol on the MVTec-AD and VisA datasets, ReFP-AD achieves 98.6%/97.9% Image/Pixel AUROC on MVTec-AD and 97.3%/99.0% on VisA, outperforming prior unified EBM baselines by up to +10.8% in Image AUROC. Ablation experiments demonstrate that geometric reparameterization is critical for finite-step MCMC and accurate anomaly localization in high-dimensional token spaces. Code is available at https://github.com/CLendering/ReFP-AD",
+    "authors": [
+      "Camile Lendering",
+      "Erkut Akdag",
+      "Joaquín Figueira",
+      "Egor Bondarev"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01793v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01793v1",
+    "fetched_at": "2026-08-04T10:32:24.159249",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937892"
+  },
+  {
+    "id": "2608.00745v1",
+    "title": "Behavioral Grammar: Detecting Adaptive Malware via Tiny Language Model Priors and Second-Order Temporal Analysis",
+    "abstract": "Modern endpoint detection systems face a fundamental tension: signature-based approaches are trivially evaded by polymorphic or adaptive threats, while heavy deep-learning models resist auditability and deployment at scale. This paper presents Behavioral Grammar, a detection architecture that treats host runtime behavior as a structured language and learns its grammar with a compact 0.88M-parameter causal Transformer (TinyGPT). Each system event is discretized into an 8-token representation spanning event type, process, argument skeleton, path category, parent process, user, destination, and inter-event timing. The model learns the conditional distribution of normal behavior in a purely self-supervised manner, and anomaly scores are derived from per-slot negative log-likelihood (NLL) statistics, yielding a mathematically bounded false-positive rate. We augment this prior with prototype learning for known-attack attribution, second-order temporal analysis for cadence-based detection, self-learning pattern extraction, and a five-network fusion pipeline. Against an Adaptive Adversarial Agent (AAA)--a threat that learns survival strategies under defensive pressure, performs behavioral mimicry, and matches host event rates--our system achieves 93% detection at 3.84% onboarding false-positive rate. The strongest discriminative signal arises not from any single event but from the coefficient of variation of inter-event intervals: the AAA stepping cadence exhibits CV=0.310 versus 9.786 for benign sleep intervals, a 30x separation reflecting a fundamental stealth-functionality trade-off. We frame these findings within a coevolutionary economics model, arguing that behavior-grammar detection shifts the evasion cost from rule circumvention (cheap) to distribution matching (expensive), establishing a structural asymmetry favoring the defender.",
+    "authors": [
+      "Zihan Luo"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00745v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00745v1",
+    "fetched_at": "2026-08-04T10:32:24.159267",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937903"
+  },
+  {
+    "id": "2608.00566v1",
+    "title": "Crushing the Evidence: A Dual-Penalty Evasion Framework for Fooling White-Box Explainable AI Auditors",
+    "abstract": "Post-hoc model explainers such as LIME, SHAP, and Integrated Gradients are widely deployed to audit models in high-stakes sensitive domains, including finance, healthcare, and social welfare. This ensures the model's transparency and acceptability. However, a few studies have examined potential attacks in the explainability pipeline. Adversaries can attempt to conceal algorithmic biases or backdoors using adversarial explanation attacks. These attacks have relied on scaffolding out-of-distribution (OOD) detectors that toggle predictions when queried by an explainer. Consequently, defenses have been developed to successfully neutralize these black-box attacks by identifying their anomalous perturbation footprints. In this paper, we demonstrate a critical vulnerability by introducing a more potent white-box, gradient-regularized evasion attack framework. By employing a continuous-embedding dual-penalty framework, we directly penalize trigger feature gradients during training on in-distribution data. Since our approach embeds the evasion logic natively into the model parameters, without relying on OOD scaffolding wrappers, it generates smooth, in-distribution predictions that leave no anomaly footprint. Empirical evaluations across four benchmark tabular datasets (COMPAS, German Credit, IEEE-CIS, and Communities & Crime) confirm that our method systematically crushes target feature attribution to near-zero (<0.02), maintains >90% Attack Success Rates, and fundamentally bypasses Conditional Anomaly Detection.",
+    "authors": [
+      "Niraj Kumar",
+      "Harsh Kasyap"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00566v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00566v1",
+    "fetched_at": "2026-08-04T10:32:24.159308",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937913"
+  },
+  {
+    "id": "2608.00442v1",
+    "title": "Beyond Static Anchors: Bounded Prototype Conditioning for Language-Free Medical Anomaly Detection",
+    "abstract": "Medical anomaly detection identifies abnormal images and localizes lesions under scarce supervision while generalizing across organs and modalities. Existing CLIP-based methods reduce annotation requirements through vision--language alignment, but their normal and abnormal references, whether text prompts or learned visual tokens, remain fixed across test images. Such static references may not transfer reliably to unseen targets in a cross-domain medical imaging scenario. To address this, we propose ReCAP, a language-free framework that replaces static anchors with input-conditioned visual prototypes. ReCAP re-centers separated normal and abnormal prototypes for each image through a bounded gated modulation, enabling query-adaptive anomaly scoring while constraining context-induced prototype drift. For the few-shot setting, we introduce a non-parametric normal-reference memory to preserve instance-level target-domain variation and complement the conditional prototype branch. Across six medical benchmarks, ReCAP achieves the best image-level AUROC on all zero-shot and 23 of 24 few-shot settings, and the best zero-shot pixel-level AUROC on all three segmentation datasets. Particularly, it reduces inference latency by over 70% compared to the fastest baseline, without text prompts or test-time gradient updates.",
+    "authors": [
+      "Yibo Wan",
+      "Jinyu Cai",
+      " Seekiong-Ng"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00442v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00442v1",
+    "fetched_at": "2026-08-04T10:32:24.159332",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937922"
+  },
+  {
+    "id": "2608.00309v1",
+    "title": "OrEdge: Efficient Multi-Modal Anomaly Detection in Distributed Software Systems via Orthogonal-Domain Learning",
+    "abstract": "We introduce Orthogonal-Edge (OrEdge), a lightweight framework for real-time anomaly detection in multi-modal distributed software systems. Unlike existing approaches that rely on computationally expensive attention- and graph-based architectures, OrEdge leverages orthogonal-domain temporal representations to achieve accurate anomaly detection with substantially lower computational complexity and model size. It jointly analyzes heterogeneous monitoring data, including logs, metrics, and traces, to identify abnormal software behavior, capture temporal dependencies, and reduce redundancy across observability signals. At its core, OrEdge incorporates OrEdgeCore, a lightweight orthogonal-domain reconstruction module that captures recurring temporal patterns while suppressing transient variations. Evaluated on three real-world microservice datasets (MSDS, SN, and TT), OrEdge achieves competitive detection performance while reducing the reconstruction model size to at most 9.6K parameters, compared with 20K--143K parameters in existing methods. This compact design enables efficient deployment on resource-constrained edge devices: on Raspberry Pi platforms, OrEdge achieves sub-second inference and reduces inference latency by over an order of magnitude compared with existing approaches. Extensive ablation studies, sensitivity analyses, orthogonal basis evaluations, and qualitative case studies further validate the effectiveness of each design component. Overall, OrEdge demonstrates that orthogonal-domain temporal modeling provides an effective alternative to computationally intensive attention- and graph-based architectures, achieving a favorable balance between detection accuracy and computational efficiency for real-time multi-modal anomaly detection in edge environments. The code is available at https://github.com/theamrzaki/MicroService_Twin_Original.",
+    "authors": [
+      "Amr M. Zaki",
+      "Farhoud Jafari Kaleibar",
+      "Honggeun Ji",
+      "Komal Sarda",
+      "Marin Litoiu"
+    ],
+    "published": "2026-07-31",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00309v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00309v1",
+    "fetched_at": "2026-08-04T10:32:24.159358",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937933"
+  },
+  {
+    "id": "2607.26704v2",
+    "title": "Early Failure Prediction from Near-Anomaly Detection: A Proactive Approach",
+    "abstract": "Anomaly detection methods often have uncertain behavior with respect to samples near the distribution boundary, limiting their ability to anticipate future anomalies. This work introduces the concept of near-anomalies that, while not yet anomalous, lie close to the boundary and are likely to transition into anomalies in the near future. To address this, we propose an unsupervised method, named Christoffel-based ANomaly Anticipation for eaRly dIscovery (CANARI), which leverages the strong theoretical foundations of the Christoffel function to detect near-anomalies. The method is validated on industrial in-circuit testing data from printed circuit boards, with synthetically generated near-anomaly samples due to the lack of real-world data labeling. Experimental results show that CANARI outperforms the compared baselines that generally use a dual-threshold mechanism (one for anomalies and one for near-anomalies). It therefore provides a proactive solution for anticipating anomalies before they occur, offering a promising approach for resilience, predictive maintenance, and quality control.",
+    "authors": [
+      "L{é}a Billet",
+      "Louise Trav{é}-Massuy{è}s",
+      "Elodie Chanthery",
+      "Alexandre Gaffet"
+    ],
+    "published": "2026-07-29",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2607.26704v2",
+    "arxiv_url": "https://arxiv.org/abs/2607.26704v2",
+    "fetched_at": "2026-08-04T10:32:24.159499",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937943"
+  },
+  {
+    "id": "2608.02599v1",
+    "title": "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
+    "abstract": "Artificial intelligence (AI) is increasingly central to power and energy systems, supporting modeling, forecasting, optimization, and control. Yet most existing works emphasize specialized applications and offer little reusable material for newcomers or interdisciplinary learners, who increasingly rely on large language models rather than building their own. This gap points to a need for engineering-grounded AI (EGAI), in which AI workflows follow established engineering and power-system domain rules rather than acting as task-agnostic black boxes. Motivated by a community survey of researchers and practitioners, which shows 92% report at least one barrier before running an AI model and 94% want a power-specific hands-on course. This paper presents a framework consisting of open, executable module library that lowers the entry barrier for AI in power systems. The modules follow a progressive difficulty ladder that maps core AI concepts onto representative power-system tasks: (i) foundational deep neural network (DNN) templates for function approximation and load-curve fitting; (ii) a domain-coupled convolutional neural network (CNN) power-flow surrogate for a 5-bus system; and (iii) frontier modules on DNN-assisted optimization, deep reinforcement learning (DRL) for battery storage control, and physics-informed neural networks (PINNs) for the swing equation. All modules are released as Jupyter notebooks that run locally or on Google Colab and are delivered through an IEEE online course and IEEE Power & Energy Society (PES) webinar series. The webinar drew more than 590 live attendees, which is among the ten most-attended IEEE PES webinars, and over 344 repository visits within two weeks, reinforcing the survey-based motivation.",
+    "authors": [
+      "Junjie Yin",
+      "Buxin She",
+      "Xinyu Feng",
+      " Fangxing",
+      " Li"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "eess.SY",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02599v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02599v1",
+    "fetched_at": "2026-08-04T10:32:54.431025",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937952"
+  },
+  {
+    "id": "2608.02595v1",
+    "title": "onepot-Bench 0: towards lab-aware in silico chemistry benchmarks",
+    "abstract": "Language models are playing an increasingly important role in laboratory science, performing tasks such as experiment planning, execution, and post-hoc analysis. However, precisely measuring their abilities is difficult, as scientific capabilities require a mixture of both problem-solving skills and domain-specific intuition. Existing evaluations rarely measure the capabilities required to make reliable decisions in a physical laboratory and often rely on public data that may have appeared in model training corpora.   We introduce onepot-Bench 0, a proprietary benchmark suite for evaluating language models on synthetic chemistry capabilities relevant to wet-lab execution. onepot-Bench 0 comprises three complementary evaluations: ChemAbacus measures tool-free cheminformatics literacy and numerical reasoning; SynthRefusal characterizes safety and refusal behavior across a variety of benign, controlled, and designer-drug targets; and SynthBench evaluates reaction-outcome prediction and catalyst selection using private experimental data generated in our laboratory. Together, these evaluations probe basic competency, reliability, and deeper knowledge, all skills which are required for reliable performance in the lab.",
+    "authors": [
+      "Brandon Wang",
+      "Andrei S. Tyrin",
+      "Daniil A. Boiko"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02595v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02595v1",
+    "fetched_at": "2026-08-04T10:32:54.431056",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937961"
+  },
+  {
+    "id": "2608.02578v1",
+    "title": "CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs",
+    "abstract": "World Action Models (WAMs) augment robot policies with action-conditioned predicted futures, but a plausible future alone does not justify changing the action that a bimanual policy would execute. We present CoWAM, a selective intervention layer that expresses synchronization, role compatibility, and collision convergence as coordination contracts. Each contract combines typed admissibility checks with event-conditioned verification and calibrated intervention gates. CoWAM preserves the nominal action unless an alternative satisfies every active obligation and provides a clear, low-risk improvement; when the nominal action is also inadmissible, it invokes a predefined abstention fallback. To separate selector quality from proposal quality, all methods operate on identical candidate pools and commit their decisions before shared oracle labeling. Across eight simulated bimanual tasks, CoWAM improves coordination-valid selection by 16.7 percentage points over the contract-only variant and raises closed-loop success by 9.6 percentage points over the strongest selective baseline, while keeping harmful interventions below 1%. Together, these results establish coordination contracts as an effective interface for conservative policy intervention with predicted world-action evidence across coordination-rich bimanual tasks.",
+    "authors": [
+      "Shuaijun Liu",
+      "Qifu Wen",
+      "Shuyang Hao",
+      "Qi Luo",
+      "Chenglong Zhang",
+      "Feiyang You",
+      "Chengyu Wu",
+      "Ningxin Su"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02578v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02578v1",
+    "fetched_at": "2026-08-04T10:32:54.431093",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937971"
+  },
+  {
+    "id": "2608.02553v1",
+    "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+    "abstract": "Cognitive AI seeks to move beyond language generation and autonomous task execution toward systems capable of sustained reasoning, adaptive behavior, persistent memory, and self-regulation. While generative and agentic AI have demonstrated impressive capabilities across a wide range of tasks, many fundamental cognitive functions remain fragmented or weakly developed, limiting reliable operation over extended time horizons. This paper presents a taxonomy-driven survey of the major cognitive capability gaps that continue to constrain the development of Cognitive AI. The literature is organized around five dimensions: persistent state modeling, goal-directed autonomy, self-monitoring and control, environment interaction, and learning and adaptation. For each dimension, we review recent advances, identify recurring limitations, and discuss open research challenges. Building on these insights, we outline a conceptual Adaptive Cognitive Intelligence Architecture (ACIA) and examine emerging directions in cognition-centric evaluation. The proposed taxonomy provides a unified framework for organizing existing research, identifying unresolved challenges, and guiding the design of future cognitively capable systems. Together, the taxonomy, architectural perspective, and evaluation framework offer a roadmap for advancing AI systems that exhibit more reliable long-term reasoning, adaptive decision-making, and continual learning. The survey highlights key research opportunities toward more adaptive, reliable, and cognitively capable AI systems, providing a foundation for future progress toward Cognitive AI and, ultimately, Artificial General Intelligence (AGI).",
+    "authors": [
+      "Taye Akinrele",
+      "Sindhuja Penchala",
+      "Noorbakhsh Amiri Golilarz",
+      "Sudip Mittal",
+      "Shahram Rahimi"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02553v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02553v1",
+    "fetched_at": "2026-08-04T10:32:54.431118",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937981"
+  },
+  {
+    "id": "2608.02518v1",
+    "title": "Magnet: Detecting Cross-Session AI Misuse Through Capability Accumulation",
+    "abstract": "The most capable AI deployments are not single models but ensembles of specialized agents that delegate and act in coordination. This architecture unlocks powerful new capabilities, and it also introduces risks that existing frameworks for monitoring, detection, and mitigation were not designed to address. Most state-of-the-art AI abuse detection literature focuses on single-turn or multi-turn (single-session) threat models. This leaves a critical gap: an attacker can decompose a harmful goal into innocuous-looking units and execute each in isolated agentic sessions. The agent is stateless between conversations, but the attacker is not. This asymmetry allows for cross-session trajectories that are effective at evading detection. Our contributions are twofold. First, we demonstrate cross-session goal decomposition as an evasion technique, showing it may elicit more harmful capability than equivalent single-session or multi-turn attacks. By capability we mean an artifact produced at one step of an objective, evidenced by what an interaction produced (model responses and tool-call results), and composable with capabilities accrued elsewhere into a harmful whole. Second, we propose Magnet: an efficient and robust detection approach that models relevant capabilities accrued over time and across agentic conversations, aggregated at a higher-level correlator (in this case, a user ID) rather than per-conversation state. The main challenge is assembling the evidence bundle Magnet reasons over. The incriminating artifacts may be needles scattered through a haystack of benign sessions that are individually harmless, dangerous only once collected. Rather than searching the haystack straw-by-straw (i.e. per-session inspection), Magnet does what its name implies: it attracts the relevant needles out of the hay, across sessions and across time, into a compact evidence bundle a detector can act on.",
+    "authors": [
+      "Natalie Isak",
+      "Matthew Dressman"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02518v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02518v1",
+    "fetched_at": "2026-08-04T10:32:54.431138",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.937992"
+  },
+  {
+    "id": "2608.02509v1",
+    "title": "Optimizing Minimax Regret in Uncertain MDPs with Small Sets of Policies",
+    "abstract": "Sequential decision-making in real-world applications often involves uncertainty about the environment's model. Uncertain Markov decision processes (UMDPs) represent the possible environments as a set of MDPs with shared states and actions but potentially different transition probabilities and rewards. Optimizing a single policy across all possible MDPs may sacrifice performance, while preparing an individually optimized policy for every MDP may violate operational, regulatory, or interpretability constraints on the number of policies that can be prepared and deployed. We consider settings in which model uncertainty is resolved shortly before execution, allowing the most suitable policy to be selected from a limited set prepared in advance. We introduce $k$-adaptable policy synthesis, which optimizes such a set of $k$ policies under a minimax-regret objective. We prove that the problem is NP-hard and develop KAPS, an exact nested branch-and-bound algorithm with problem-specific bounds and heuristics. KAPS jointly optimizes which MDPs share a policy and the policies themselves. Experiments across various UMDP benchmarks show that the largest reduction in regret consistently occurs when increasing from one to two policies. In the single-policy setting, KAPS is competitive with existing methods in solution quality and proves optimality substantially more often.",
+    "authors": [
+      "Sterre Lutz",
+      "Daniël Vos",
+      "Matthijs T. J. Spaan",
+      "Anna Lukina"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02509v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02509v1",
+    "fetched_at": "2026-08-04T10:32:54.431162",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938001"
+  },
+  {
+    "id": "2608.02505v1",
+    "title": "Abduction Without a Body? Representational Grounding and the Abduction Loop for Scientific Hypothesis Generation",
+    "abstract": "Can scientific abduction occur without continuous sensorimotor embodiment? Recent arguments in AI and philosophy of science hold that genuine hypothesis generation requires an agent continuously coupled to the physical world. We defend a narrower claim: online embodiment is not necessary for every abductive scientific act. Our focus is identity abduction: the inference that two independently developed structures are one object under an explicit correspondence, reached through representational grounding rather than bodily interaction. An agent may acquire new inferential affordances not through physical interaction but through transformations into representations that expose latent invariants. Scientific diagrams are a practical substrate because they embody independently evolved conventions that partially canonicalize symmetry, topology, and operator structure across disciplines - a property we develop as convention space, which answers a hard retrieval problem: finding mathematically related work when two fields share no discriminating vocabulary. We operationalize the mechanism as an architecture, the Abduction Loop: representation generation, motif extraction, convention-space canonicalization, cross-domain retrieval, identity-hypothesis generation, and adversarial verification, with abstention as the designed default. A documented episode, in which a multimodal model given a figure of a gravitational-memory transport model generated and then verified the hypothesis that its central differential complex is equivalent to the spherical Kaiser-Squires mass-mapping complex of weak-lensing cosmology, serves as a motivating possibility witness from which the architecture is abstracted, not as evidence of general capability. We close with a falsifiable evaluation program, the DAB-30 benchmark. The contribution is a mechanistic proposal, an architecture, and a test program.",
+    "authors": [
+      "Michael Farmer"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI",
+      "cs.CV",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02505v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02505v1",
+    "fetched_at": "2026-08-04T10:32:54.431180",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938012"
+  },
+  {
+    "id": "2608.02440v1",
+    "title": "Intention Inference Under Execution Noise: Separating Aleatoric and Epistemic Uncertainty in Social Dilemmas",
+    "abstract": "In noisy social dilemmas, intended actions are stochastically corrupted before execution, so an observed defection may reflect hostile intent or action error. Standard Markov Decision Process (MDP) formulations treat executed actions as states, structurally precluding this distinction and causing systematic over-retaliation. We introduce a Partially Observable MDP (POMDP) formulation encoding opponent intentions as latent states and executed actions as noisy observations, solved within the active inference (AIF) framework with a cost function that decomposes into epistemic and pragmatic components that jointly address inferring current intent and learning how intent evolves. In the Iterated Prisoner's Dilemma with symmetric noise, we derive a critical noise threshold governing cooperation collapse, connecting it to a fixed-point condition on learned priors. Experiments reveal that the value of intention inference is context-dependent: the POMDP provides consistent advantages against conditionally cooperative opponents, but mutual intention inference under sufficient noise produces correlated belief-driven collapse. The advantage is specific to games where intent attribution is decision-relevant.",
+    "authors": [
+      "Kival Mahadew",
+      "Jonathan Shock"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.GT",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02440v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02440v1",
+    "fetched_at": "2026-08-04T10:32:54.431200",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938022"
+  },
+  {
+    "id": "2608.02422v1",
+    "title": "Agentic Incident Response through Digital Twin-Enhanced Multiscale Planning",
+    "abstract": "Incident response is currently managed by security operators using predefined playbooks, resulting in slow, labor-intensive security decision-making processes. Consequently, there is a growing need for automated incident response planning. Decision-theoretic approaches based on control, optimization, and reinforcement learning have been proposed to automate such planning tasks with well-grounded approaches, yet most of which, while guaranteeing strong performance, are limited to abstract models and cannot be directly applied to operational systems. A promising approach to mitigate this limitation is to use the security knowledge embedded in large language models (LLMs) to develop agentic response systems. However, current agentic approaches rely on repeated invocations of the LLM to generate a response plan, which is unreliable and limits the planning horizon due to hallucination. In this paper, we develop a principled LLM-based planning method by combining decision-theoretic planning with LLM-generated response commands. The proposed agentic incident response approach uses a rollout planner to compute a high-level response strategy that allocates security resources (the tactical scale), which is then translated into executable commands by a lightweight LLM agent (the operational scale). Within this architecture, we use a digital twin that supports tactical planning through simulation and operational execution through emulation. Across three attack scenarios, our agentic approach reduces recovery execution time by 15.1\\% on average and increases the recovery rate by 33.6\\% over frontier LLM baselines.",
+    "authors": [
+      "Yiran Gao",
+      "Tao Li",
+      "Kim Hammar"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02422v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02422v1",
+    "fetched_at": "2026-08-04T10:32:54.431221",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938032"
+  },
+  {
+    "id": "2608.02379v1",
+    "title": "Chess on Ice: Curling Tactical Decision-Making via Backward Induction and Deep Reinforcement Learning",
+    "abstract": "Curling is often referred to as \"Chess on Ice\", owing to the tactical complexity of its decision-making process. Yet unlike chess, curling remains largely underexplored from a machine learning perspective, with prior work confined mainly to statistical approaches. We propose a reinforcement learning framework capable of quantitatively evaluating and comparing tactical options in curling. The game poses several modeling challenges: continuous state and action spaces, stochastic action outcomes reflecting player skill variability, and state transitions that are highly sensitive to small perturbations in the executed action. To address them, we employ the Deep Deterministic Policy Gradient actor-critic algorithm, adapted to exploit the finite-horizon structure of the game. Our experiments show that effective curling strategies can be acquired in a fully self-supervised manner, without any human-annotated data: on a reduced four-rock variant, the learned agent matches a hand-crafted expert heuristic in a regime where that heuristic is close to optimal, a parity we quantify against the intrinsic hammer advantage of the variant. Beyond the resulting policy, the learned critic provides a dense value estimate over the entire continuous action space, enabling the quantitative comparison of tactical alternatives for applications such as post-game performance analysis and decision support during athlete preparation.",
+    "authors": [
+      "Patrick Oberlin",
+      "Matteo Cederle",
+      "Aren Karapetyan",
+      "Saverio Bolognani",
+      "Gian Antonio Susto",
+      "Florian Dörfler"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02379v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02379v1",
+    "fetched_at": "2026-08-04T10:32:54.431247",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938042"
+  },
+  {
+    "id": "2608.02358v1",
+    "title": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
+    "abstract": "To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation. However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery. To address this limitation, we introduce ScrambleToolBench, an interactive terminal benchmark designed to isolate behavioral reasoning. By removing semantic cues and enforcing a continuous task curriculum, the benchmark requires agents to uncover hidden tool behaviors entirely through trial-and-error interaction. The benchmark further introduces dynamic challenges, including mapping drift, stochastic action failures, and temporal execution windows, to evaluate whether agents can revise and adapt their hypotheses as the environment changes. Our evaluation of state-of-the-art language models reveals that successful initial discovery does not translate into robust adaptation. When faced with structural changes such as mapping drift, agents fail to use deductive strategies such as cycle tracing, and instead exhibit belief inertia or fall back to exhaustive search. Increasing test-time reasoning only amplifies this expensive brute-force search rather than enabling deductive recovery. While equipping agents with persistent memory reduces compounding errors, they remain unable to efficiently infer structural changes, highlighting a gap in current agent reasoning.",
+    "authors": [
+      "Vernon Toh",
+      "Navonil Majumder",
+      "Zhengyuan Liu",
+      "Nancy F. Chen",
+      "Soujanya Poria"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02358v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02358v1",
+    "fetched_at": "2026-08-04T10:32:54.431272",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938052"
+  },
+  {
+    "id": "2608.02356v1",
+    "title": "SkillTrace: Traversing a Query-Skill Graph for Composable LLM Agents",
+    "abstract": "Large language model agents increasingly solve complex tasks by composing reusable skills from a library. To address this, the key challenge is not merely to retrieve individually relevant skills, but to identify a complete and executable skill composition. In this paper, we argue that this problem can be solved in a graph with three levels: compositional relations among skill queries, similarity between queries and candidates in the skill library, and the dependencies among the selected candidates. We introduce SkillTrace, which organizes the user query into a semantic hierarchy, matches skill queries and candidates, and propagates over the skill dependencies. Experiments on SkillsBench and ALFWorld demonstrate that SkillTrace achieves state-of-the-art performance, reaching a success rate of 53.17% on SkillsBench and 91.43% on ALFWorld. SkillTrace also delivers consistent improvements across different backbone language models, demonstrating the generality and robustness of graph-based skill retrieval.",
+    "authors": [
+      "Yue Yao",
+      "Shengyuan Wang",
+      "Xin Chen",
+      "Minke Zhang",
+      "Jia He",
+      "Bingjun Luo",
+      "Tom Gedeon"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02356v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02356v1",
+    "fetched_at": "2026-08-04T10:32:54.431319",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938061"
+  },
+  {
+    "id": "2608.02353v1",
+    "title": "Global Optimization and Inference-Time Region Grafting for Agentic Workflows",
+    "abstract": "Recent advances in agentic workflow optimization automate workflow design through task-specific workflow search or input-conditioned architecture selection. However, they determine the workflow before execution and cannot adapt failed workflow regions using execution-time label-free quality signals. Naively enabling such inference-time adaptation through whole-workflow re-optimization would be computationally prohibitive. To tackle this challenge, we introduce GRAFT, which preserves a globally optimized workflow while locally replacing only selected regions for each input. Without parameter training, GRAFT evaluates region-level alternatives using label-free execution-quality signals and accepts only replacements that improve local quality while preserving workflow-level consistency, thereby enabling instance-wise adaptation without whole-workflow re-optimization. GRAFT applies without modification across a range of tasks spanning mathematical reasoning, code generation, and multi-hop and knowledge-intensive question answering. Under matched optimizer and executor settings, it improves over the strongest prior workflow-optimization method, MaAS, by 3.85 points on average. Replacing only the executor with a stronger model yields further gains without re-optimizing the global workflow. This suggests that an optimized workflow is not merely a static optimization artifact, but an adaptable execution policy that can evolve with inference-time feedback and stronger executors.",
+    "authors": [
+      "Donghyeok Koh",
+      "Gyuwan Kim",
+      "Jinyeong Bak",
+      "Seung-Hoon Na",
+      "Tao Yang",
+      "Haneol Jang",
+      "Cheoneum Park"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02353v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02353v1",
+    "fetched_at": "2026-08-04T10:32:54.431348",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938071"
+  },
+  {
+    "id": "2608.02351v1",
+    "title": "KC-Agent: A Dual-Process Cognitive Architecture for Efficient ML Model Improvement",
+    "abstract": "Data drift poses significant challenges for machine learning systems in production, requiring continuous model updates to maintain performance. We present KC-Agent, a dual-process cognitive architecture for automated ML model improvement that combines fast pattern recognition (System 1) with deliberate incremental updates (System 2). Our approach implements structured memory systems enabling System 1 to leverage successful solutions previously discovered by System 2, achieving efficient pattern-based responses without costly re-computation. KC-Agent incorporates atomic change principles and rollback capabilities to ensure reliable, verifiable updates in production environments. We evaluate our method on five datasets including real-world NASA turbofan data with authentic temporal degradation and synthetic datasets with controlled drift scenarios. KC-Agent achieves state-of-the-art performance (76.8% accuracy) while maintaining optimal efficiency (13.2s execution time), outperforming established cognitive architectures: CodeAct (+2.4%), Tree of Thoughts (+3.6%), ReAct (+8.0%), and Reflexion (+8.9%). Consensus evaluation by a panel of state-of-the-art LLMs confirms superior strategic efficacy (8.33/10 Smartness score), significantly outperforming baseline agents. The knowledge consolidation mechanism delivers 91% speedup over the slow variant while maintaining higher accuracy. Our approach demonstrates both theoretical foundations and practical viability for cognitive-inspired automated ML improvement systems capable of handling complex real-world data drift scenarios.",
+    "authors": [
+      "Gusseppe Bravo-Rocca",
+      "Jordi Guitart",
+      "Ajay Dholakia",
+      "David Ellison",
+      "Puneet Jain"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02351v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02351v1",
+    "fetched_at": "2026-08-04T10:32:54.431372",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938080"
+  },
+  {
+    "id": "2608.02287v1",
+    "title": "SKT: Skill-Use Training at Scale via Verified Synthetic Data Generation",
+    "abstract": "Agent skills have become an important mechanism for equipping language-model agents with reusable procedural knowledge. However, providing skills alone does not guarantee that current models can effectively identify, apply, and coordinate them. To improve skill-use capabilities, we introduce SKT, a verified data synthesis pipeline that constructs skill-grounded tasks and executable trajectories from large collections of agent skills. SKT selects suitable single-skill and multi-skill configurations, synthesizes tasks through rule-based and agent-based verification with feedback-guided repair, and retains only successful trajectories that substantially use every required skill. Using 2,000 public skills, SKT produces 4,000 task packages and 27,164 verified trajectories. Based on the same pipeline and a disjoint test pool, we further construct SkillEval, a held-out executable benchmark for evaluating skill use. Experiments across diverse models, benchmarks, and agent harnesses show that supervised fine-tuning on SKT-generated trajectories consistently improves skill-use performance. Verification ablations, cross-harness evaluation, and scaling experiments further demonstrate that these gains depend on high-quality supervision, extend beyond a single agent interface, and increase with broader skill coverage. Together, these results establish verified data synthesis as an effective and scalable approach for skill-use training.",
+    "authors": [
+      "Zelin Tan",
+      "Yiqun Zhang",
+      "Hao Li",
+      "Zhiyao Cui",
+      "Hejia Geng",
+      "Shao Zhang",
+      "Hangfan Zhang",
+      "Yang Chen",
+      "Xiaosong Wang",
+      "Lilong Wang",
+      "Zhenfei Yin",
+      "Shuyue Hu",
+      "Chen Zhang",
+      "Lei Bai"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.02287v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.02287v1",
+    "fetched_at": "2026-08-04T10:32:54.431413",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938090"
+  },
+  {
+    "id": "2608.00374v1",
+    "title": "Tensor Probabilistic Model Checking of Finite-Horizon Markov Chains (Extended Version)",
+    "abstract": "We reexamine the problem of verifying Markov chains with respect to step-bounded reachability probabilities. Prevailing approaches rely on encoding the state-transition matrix using either explicit or symbolic representations. While these approaches are effective for sparse transition dynamics, they scale less favorably in the dense regime.   Our insight is to cast probabilistic model checking of Markov chains as computations over dense tensors. This methodology enables the use of off-the-shelf compiler toolchains for optimized execution of these tensor computations on hardware accelerators. We prove the soundness of the methodology of mapping probabilistic model checking to tensor computations. We implement our approach in a tool called Tessa . Empirical evaluation shows that Tessa unlocks massive speedups over state-of-theart methods on selected benchmarks from the literature.",
+    "authors": [
+      "Jianlin Li",
+      "Nick Guo",
+      "Peter Ye",
+      "Yizhou Zhang"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "cs.LO",
+      "cs.AI",
+      "cs.MS",
+      "cs.PL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00374v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00374v1",
+    "fetched_at": "2026-08-04T10:33:01.231217",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938099"
+  },
+  {
+    "id": "2608.00764v1",
+    "title": "FinDeepIndicator: Benchmarking Deep Research Agents in End-to-End Financial Indicator Construction",
+    "abstract": "Financial indicators are essential tools for transforming raw financial data into interpretable measures for various downstream tasks, such as valuation, risk assessment, and economic analysis. However, existing financial benchmarks largely focus on answer-level accuracy and often assume that relevant data are already provided, leaving the assessment of the intermediate process of indicator construction underexplored. In this work, we propose FinDeepIndicator, the first benchmark dedicated to evaluating Deep Research (DR) agents in end-to-end financial indicator construction. Specifically, FinDeepIndicator evaluates DR agents across four stages in indicator construction: formula specification, data collection, indicator calculation, and answer generation, and covers fundamental, technical, and macroeconomic indicators organized into 21 fine-grained sub-categories. It contains 3,350 curated question-answer (QA) pairs derived from both U.S. and Chinese markets, 10 years of historical financial data, and 800 listed companies. Extensive experiments on search-equipped Large Language Models (LLMs) and DR agents show that, while LLMs generally perform well in formula specification, their accuracy drops substantially during data retrieval and numerical execution. DR agents consistently outperform search-equipped LLMs, yet remain unreliable in realistic financial analysis settings. These findings provide insights for developing more capable and trustworthy DR agents in finance.",
+    "authors": [
+      "Chaoqun Yang",
+      "Fengbin Zhu",
+      "Xinyu Lin",
+      "Long Bai",
+      "Xiaoluan Liu",
+      "Ke-Wei Huang",
+      "Roger Zimmermann",
+      "Tat-Seng Chua"
+    ],
+    "published": "2026-08-01",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.00764v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.00764v1",
+    "fetched_at": "2026-08-04T10:33:55.783126",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938109"
+  },
+  {
+    "id": "2608.01857v1",
+    "title": "Beyond Magnitude and Shape: A Direction-Aware Loss for Time Series Forecasting",
+    "abstract": "The direction of change --- whether a series will move up or down --- is often as important as its exact value in decisiondriven applications such as risk management and financial forecasting. However, most forecasting losses optimize either point magnitude or shape and frequency structure, and none explicitly targets the direction of change. In this paper, we find that MSE-trained forecasters fail on the direction of small moves. To address this, we propose CosDir, a simple yet effective direction-aware loss that aligns the difference vectors of the prediction and the target via cosine similarity. Being scale-invariant, CosDir keeps a directional gradient on small moves, re-injecting learning signal exactly where MSE neglects it. CosDir is a lightweight, plug-in term that attaches to any backbone without architectural modification. Since the best ratio for mixing the directional and magnitude terms differs across datasets, we further propose CosDir-UW, an extension that makes this ratio adaptive by learning it during training, matching a per-dataset tuned weight with no hyperparameter. We conduct over 100K experiments, demonstrating that our method consistently and significantly improves directional accuracy while preserving magnitude accuracy, and that it outperforms various loss functions. Code is available at: https://github.com/seunghan96/cosdir.",
+    "authors": [
+      "Seunghan Lee",
+      "Jaehoon Lee",
+      "Jun Seo",
+      "Junhyeok Kang",
+      "Sangjun Han",
+      "Sungdong Yoo",
+      "Minjae Kim",
+      "Tae Yoon Lim",
+      "Dongwan Kang",
+      "Hwanil Choi",
+      "Soonyoung Lee",
+      "Wonbin Ahn"
+    ],
+    "published": "2026-08-03",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.01857v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.01857v1",
+    "fetched_at": "2026-08-04T10:34:59.383727",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-04T10:35:19.938118"
+  }
+]
