@@ -1,0 +1,627 @@
+[
+  {
+    "id": "2608.06971v1",
+    "title": "Mixture of Geodesic Factor Analyzers on Riemannian Homogeneous Spaces",
+    "abstract": "This paper introduces Mixtures of Geodesic Factor Analyzers (MGFA) on Riemannian homogeneous spaces. MGFA uses a geodesic factor model within each mixture component, providing greater expressiveness than mixtures of Riemannian radial distributions and enabling clustering of manifold-valued data with anisotropic subpopulations. We establish root-$n$ consistency for the MGFA maximum likelihood estimator (MLE), thereby filling a theoretical gap for mixtures of Riemannian radial distributions as a special case. We also propose an iterative estimation algorithm and implement it on spheres, shape spaces, and hyperbolic spaces. Numerical experiments show that MGFA substantially outperforms competing methods in well-specified regimes while remaining robust under model misspecification. Finally, case studies on corpus callosum and left hippocampus shape datasets demonstrate MGFA's effectiveness for both 2D contour and 3D shape analysis.",
+    "authors": [
+      "Hengchao Chen",
+      "Yuanyao Tan",
+      "Chao Huang",
+      "Hongtu Zhu",
+      "Qiang Sun"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "math.ST",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.06971v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.06971v1",
+    "fetched_at": "2026-08-10T09:14:47.194006",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413102"
+  },
+  {
+    "id": "2608.06618v1",
+    "title": "Beyond Co-Movement: Locality by Exposures Enables a Joint Factor-Graph Framework for Portfolio Diversification",
+    "abstract": "Current portfolio construction methods are either agnostic to the effects of idiosyncratic shocks (standard factor models) or to the latent data structure driving systematic returns (recent graph-based approaches). This presents an opportunity to combine the complementary market aspects captured by the factor and graph domains, allowing asset allocations to operate directly on the underlying market structure, rather than on its observed co-movement or its finite-sample artefacts. In this work, we introduce the Mutually-INformed Graph-Locality and Exposures framework (MINGLE), which mutually regularises the factor and graph domains by redefining graph locality through systematic factor exposure profiles, rather than via observed co-movements. This is formalised through a unified Alternating Direction Method of Multipliers (ADMM) framework that jointly learns a latent factor representation and its induced graph topology directly from market returns. The resulting exposure-similarity graph aligns more closely with established economic sectors than conventional correlation-based graphs. Portfolios constructed from this representation are shown to consistently outperform their correlation-based counterparts across a range of volatility regimes and transaction cost levels. For rigour, paired statistical testing confirms that these gains stem from the reconciliation of the graph and factor domains.",
+    "authors": [
+      "Sara Chehab",
+      "Giorgos Iacovides",
+      "Parisa Yazdanparast",
+      "Danilo Mandic"
+    ],
+    "published": "2026-08-06",
+    "categories": [
+      "q-fin.PM",
+      "cs.LG",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.06618v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.06618v1",
+    "fetched_at": "2026-08-10T09:14:47.194046",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413137"
+  },
+  {
+    "id": "2608.07427v1",
+    "title": "A Picture is Worth a Thousand Tokens: How Vision Language Models Cut AI Energy Costs While Improving Accuracy",
+    "abstract": "LLM inference accounts for over 90% of AI operational energy, scaling directly with input token count---a critical inefficiency for telecom network analytics and numerical time-series data analysis (NTSDA), where raw multivariate KPI windows from 4G/5G cell sites expand into thousands of floating-point tokens. Vision-Language Models (VLMs) eliminate this mismatch by encoding time-series as 2D plots, achieving 3.6-10.4x input token reduction across Llama-3.2-90B, Qwen2.5-VL-72B, and Pixtral-12B architectures. This translates to 1.8-2.5x measured inference energy reduction, saving approximately 7.2 MJ/day at telecom edge deployments and CloudRAN that monitor 200 cells per 15-minute interval. Critically, efficiency gains do not sacrifice accuracy: a fine-tuned Llama-3.2-90B-Vision VLM achieves 220.7% higher precision than its text-only counterpart and outperforms LSTM and ARIMA baselines by over 144% on telecom anomaly detection. On public benchmarks, Pixtral-12B achieves a 20.6x improvement in J/F1 score at mean F1 = 0.82. At 24 KPIs, text representations exceed the 128K context window of most production LLMs, rendering text-only processing infeasible without truncation, while visual representations remain within standard limits. These results establish VLMs as an energy-efficient and accuracy-superior modality for numerical time-series workloads, providing empirical grounding for AI inference systems that treat energy consumption as a first-class engineering constraint.",
+    "authors": [
+      "Bhavika Jalli",
+      "Nikhil Korati Prasanna",
+      "Jayanta Choudhury"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI",
+      "cs.PF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07427v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07427v1",
+    "fetched_at": "2026-08-10T09:15:13.737297",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413163"
+  },
+  {
+    "id": "2608.07126v1",
+    "title": "PHOENIX: Fine-Tuned SLM-Powered Autonomous Satellite Lifetime Extension via Predictive Self-Healing and Multi-Agent AI Recovery",
+    "abstract": "Most CubeSats, small and low-cost satellites roughly the size of a shoebox, do not survive as long as they were designed to: a study of 178 missions found that only 48-65% remain operational after two years, against a designed lifetime of 2-5 years. The deeper issue is that a CubeSat in low Earth orbit (LEO) is physically unreachable from the ground for roughly 85 minutes out of every 96-minute orbit, so faults that start during that window go unnoticed until the next contact pass, by which point recovery may no longer be possible. We propose PHOENIX (Predictive Health On-orbit Edge Neural Intelligence eXtension) to give the satellite its own fault reasoning capability. A fine-tuned Small Language Model (SLM) compact enough to run on embedded hardware is deployed onboard the CubeSat, running on the flight-proven Aethero NxN-ECM computer, monitoring all sensor readings continuously, and resolving recurring faults using a memory system that stores past repairs so the same inference does not need to run twice. Once per orbit it sends a short structured health report to the ground instead of a raw data dump; six specialized AI agents on the ground read that report and generate validated satellite commands within the 5-10 minute contact window. A generative diffusion model (DDPM) creates synthetic training data because real fault examples make up only 0.57-1.80% of the dataset. We report preliminary results on the ESA Anomaly Detection Benchmark (14 years, 76 channels, 118 labeled faults).",
+    "authors": [
+      "Sumaiya Islam",
+      "Harsha Kumara Moraliyage"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07126v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07126v1",
+    "fetched_at": "2026-08-10T09:15:13.737349",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413186"
+  },
+  {
+    "id": "2608.06876v1",
+    "title": "FedVAR: Prototype-Aligned Federated Framework for Video Anomaly Recognition",
+    "abstract": "In the era of Industrial Internet of Things (IIoT) and Cyber-Physical Systems (CPS), Federated Learning (FL) offers a promising decentralized intelligence paradigm for Video Anomaly Recognition (VAR). This task is vital for maintaining high-fidelity Digital Twins and ensuring safety in mission-critical environments. However, the inherent data heterogeneity across distributed edge clients leads to a fundamental challenge known as semantic misalignment, where clients learn divergent feature representations of \"normal\" and \"abnormal\" events. The problem becomes particularly pronounced in VAR, where the presence of diverse and fine-grained anomaly categories leads each client to develop distinct semantic interpretations of abnormality. Existing federated methods primarily focus on binary anomaly detection and fail to address this misalignment, preventing effective fine-grained recognition. In this paper, we introduce FedVAR, a weakly-supervised FL framework explicitly designed for VAR. Leveraging the rich representations of Vision-Language Models (VLMs), FedVAR employs a prototype-based alignment mechanism that creates a shared semantic anchor for all clients to re-center and align their visual and textual feature spaces. This process enforces a consistent representation of \"normality\" across the decentralized network, directly mitigating semantic misalignment and enabling robust prompt-learning of anomaly direction vectors with minimal communication overhead. We conduct extensive experiments on challenging benchmarks under various non-IID data partitioning schemes, unseen domains, and novel anomaly classes. The results demonstrate that FedVAR consistently outperforms state-of-the-art federated baselines, establishing a robust framework for distributed intelligence in video-based CPS.",
+    "authors": [
+      "Ghani Haider",
+      "Majid Kundroo",
+      "Boyun Eom",
+      "Dong Hwan Park",
+      "Chen Chen",
+      "Taehong Kim"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.DC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.06876v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.06876v1",
+    "fetched_at": "2026-08-10T09:15:13.737378",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413208"
+  },
+  {
+    "id": "2608.06587v1",
+    "title": "SyncSBC: Decentralized Swarm Behavior Prediction for Synchronized Autonomous Control",
+    "abstract": "Robot swarms utilize many independent limited-sensing agents to produce complex emergent behaviors without requiring centralized control. However, little research explores how agents can infer swarm-level behavior from purely local perception, a capability critical for detecting faults and behavior changes. In this paper, we introduce Synchronized Swarm Behavior Classification (SyncSBC), which combines improvements in machine learning and distributed consensus to classify collective swarm behavior and synchronize swarm decision-making in an entirely decentralized manner. We show that SyncSBC achieves high classification accuracy and low synchronization delay, making it suitable for real-world deployment. Finally, we use SyncSBC to demonstrate two promising swarm applications on real robots where we show that swarms utilizing SyncSBC can accurately identify anomalies in robot behavior and autonomously coordinate collective changes in swarm behavior. Videos, code and supplemental experiments are available at https://sites.google.com/view/sync-sbc/home.",
+    "authors": [
+      "Varun Raveendra",
+      "Connor Mattson",
+      "Daniel S. Brown"
+    ],
+    "published": "2026-08-06",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.06587v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.06587v1",
+    "fetched_at": "2026-08-10T09:15:13.737400",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413225"
+  },
+  {
+    "id": "2608.07449v1",
+    "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
+    "abstract": "LLM agents increasingly adapt to recurring tasks by accumulating procedural knowledge in skills. These skills are lightweight, reusable textual artifacts that are loaded into the agent's context without weight updates. Recent methods refine skills through iterative task execution, failure diagnosis, and trajectory-guided text-space updates. However, existing frameworks lack explicit diagnosis--outcome feedback and treat deletion as a generic edit operation rather than a dedicated mechanism for consolidating accumulated knowledge. We introduce SkillProx, a proximal-gradient-inspired forward--backward framework that couples closed-loop diagnostic evolution with utility-aware proximal refinement. Motivated by a composite objective balancing task loss and skill complexity, the forward stage re-executes diagnosis-driven edits on the same task batch, rolls back regressions, and feeds measured outcomes into subsequent diagnoses. The backward stage decomposes the resulting skill into auditable knowledge units, estimates their contributions using a frozen leave-one-out utility audit, and applies validation-gated consolidation, demotion, or removal. Experiments on in-distribution and out-of-distribution benchmarks across multiple backbone LLMs show that SkillProx improves average accuracy by 3.0 percentage points over the strongest gradient-based baseline. Component ablations demonstrate the complementary effects of closed-loop diagnosis and proximal refinement.",
+    "authors": [
+      "Mingxuan Zheng",
+      "Yujin Zhou",
+      "Chuxue Cao",
+      "Boqin Yin",
+      "Yuyao Zhang",
+      "Jiapeng Sun",
+      "Shuaishuai Gong",
+      "Sirui Han",
+      "Yike Guo"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07449v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07449v1",
+    "fetched_at": "2026-08-10T09:15:44.224367",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413244"
+  },
+  {
+    "id": "2608.07438v1",
+    "title": "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents",
+    "abstract": "Human-like cognition does not select past experience by topical similarity alone: affective significance and unresolved conflict also shape what becomes accessible. We present PsychoAgent, a cognitive architecture for LLM agents that separates factual and affective memory and integrates both through a conflict-aware executive controller. Affective memories are first filtered by semantic relevance and then re-ranked by salience, preserving topical fit while allowing emotionally important traces to enter the prompt. Across three controlled conflict scenarios, the full architecture retrieved more conflict-critical memories than semantic-affective and single-memory RAG baselines (0.933 vs. 0.500 and 0.667), with a small semantic-similarity cost. Five blinded raters evaluated 27 outputs. After within-rater standardization, the full architecture had the highest overall mean (+0.22 SD), but corrected pairwise differences were not significant. A three-day illustrative trace further shows persistent affect, offline memory recombination, and selective memory reweighting. The findings support affect-sensitive retrieval as an inspectable mechanism for modeling human-like conflict effects in LLM agents.",
+    "authors": [
+      "Mohammad Amanlou",
+      "Parham Abed Azad",
+      "Farbod Davoodi",
+      "Mostafa Masumi",
+      "Behnam Bahrak",
+      "Abdol-Hossein Vahabie"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07438v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07438v1",
+    "fetched_at": "2026-08-10T09:15:44.224412",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413273"
+  },
+  {
+    "id": "2608.07437v1",
+    "title": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+    "abstract": "Reliable hypothesis testing is the foundation of many empirical scientific claims. Large language model (LLM) agents are increasingly used to automate this process, as they can inspect datasets, generate code, and produce analyses end-to-end. However, we show that they frequently make subtle inferential errors that lead to incorrect conclusions despite correctly executed analyses. Existing benchmarks fail to capture this failure mode, as they rarely assess whether a reported p-value is statistically valid given the assumptions underlying the data. We address this gap by building P-Bench, a benchmark comprising 425 open-ended, realistic hypothesis-testing tasks spanning economics, biology, and medicine. Each task requires an agent to select a statistical method, compute a p-value, and draw a conclusion given only a scientific hypothesis and a dataset. We further introduce Fisher-R1, an open-weight LLM agent trained for rigorous hypothesis testing using synthetic tasks and reinforcement learning. On P-Bench, Fisher-R1-14B substantially improves over its backbone and outperforms strong proprietary and open-source baselines, including GPT-5.4 and DeepSeekV4-Pro, achieving a 21% average relative improvement in single-trial success over DeepSeek-V4-Pro, with gains up to 26% on the most challenging tasks. Our results demonstrate that current LLM agents lack reliable statistical reasoning for hypothesis testing and that reinforcement learning on tasks with verified statistical reward substantially improves reliability.",
+    "authors": [
+      "Jiacheng Miao",
+      "Jin Mu",
+      "Guanhua Chen",
+      "James Zou"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07437v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07437v1",
+    "fetched_at": "2026-08-10T09:15:44.224438",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413291"
+  },
+  {
+    "id": "2608.07429v1",
+    "title": "TEPA: Revoking Stale Memories for Conflict-Robust Language Agents",
+    "abstract": "Long-term memory enables language agents to reuse past facts, preferences, and task experience. Persistence also creates a central falsifiability problem: when the world changes, stale memories can remain retrievable and pollute the prompt. We characterize this failure mode as memory pollution: degradation caused by active memories that newer conflicting evidence has superseded. We introduce TEPA, a revocable evidence-memory mechanism that makes validity an explicit state of memory. TEPA represents observations as keyed precedents and revokes active precedents when fresh evidence contradicts them under the same key, allowing retrieval to draw from current evidence while preserving revoked history for audit. Across controlled hidden-regime drift, real file-backed executable drift, and preference-update streams, revocation prevents stale active memory from remaining in the retrieval set after reversal. In controlled drift over 50 seeds, append-only and last-write-wins memory fell below no memory during full reversal (append-only and last-write-wins both 0.210, no memory 0.309, TEPA 0.950), and the same pattern reproduced under real file execution (append-only 0.203, no memory 0.298, TEPA 0.950). On clean MemoryAgentBench SH-6k, TEPA matches a strong last-write-wins cache, confirming that current-key replacement is the decisive operation for single-hop fact consolidation. Boundary tests on multi-hop and very long-context MemoryAgentBench settings expose retrieval-chain and context-selection bottlenecks beyond fact-level validity tracking. Together, these results establish lifecycle revocation as a core memory operation for agents that must falsify, audit, and later re-promote evolving knowledge.",
+    "authors": [
+      "Yan Zhou",
+      "Yue Ouyang",
+      "Kaiyang Zheng",
+      "Suncheng Xiang"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07429v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07429v1",
+    "fetched_at": "2026-08-10T09:15:44.224464",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413337"
+  },
+  {
+    "id": "2608.07395v1",
+    "title": "PACE: Primitive-Aware Code Evolution for Automated Algorithm Design",
+    "abstract": "Large Language Model (LLM)-based automated algorithm design typically evolves algorithms as complete, indivisible programs. While this whole-program perspective simplifies the search space, it fundamentally couples the useful local logic to its host program. Consequently, valuable code snippets vanish when the overall program is discarded, making it highly difficult to assess the contribution of individual algorithmic components.To address this, we propose Primitive-Aware Code Evolution (PACE), which decouples local logic from complete programs by representing it as persistent units called Executable Algorithmic Primitives (EAPs). To enable code-level transfer, PACE maintains a dynamic set of EAPs. Algorithm evolution is driven by primitive-aware operators that structurally guarantee the retention and cross-program transfer of these components. To evaluate them effectively, PACE leverages Thompson sampling based on parent-relative performance improvements, guiding primitive selection from the set without requiring extra evaluation datasets. Experiments on four tasks demonstrate that PACE effectively discovers competitive algorithms while structurally preserving valuable algorithmic components.",
+    "authors": [
+      "Zhuoliang Xie",
+      "Ruihao Zheng",
+      "Xiang Xu",
+      "Genghui Li",
+      "Zhengkun Wang"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07395v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07395v1",
+    "fetched_at": "2026-08-10T09:15:44.224495",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413355"
+  },
+  {
+    "id": "2608.07346v1",
+    "title": "An End-to-End Agent Auditing Engine",
+    "abstract": "With the rapid advancement of large language models (LLMs), harnesses have become essential infrastructure for deploying agents across a wide range of domains. The fast-evolving harness ecosystem has also made rigorous capability evaluation increasingly important. However, efficiently building an end-to-end, systematic, and comprehensive evaluation pipeline remains a significant challenge. To address this challenge, we introduce $A^2E$ (Agent Auditing Engine), an end-to-end evaluation engine designed for agent harnesses. $A^2E$ leverages our newly proposed Agent Task Protocol (ATP) to enable the rapid integration of evaluation tasks with different harnesses. Through an automatically instrumented Monitor, it captures and generates standardized execution traces during experiments. In the Evaluation stage, $A^2E$ systematically assesses harness capabilities using a suite of multidimensional metrics. Compared with correctness alone, these metrics provide a more fine-grained characterization of differences among harnesses in execution efficiency, tool use, task planning, and error recovery. Experiments conducted with $A^2E$ further reveal that model-harness combinations exhibit substantial performance variation across different types of tasks, and that no single combination consistently outperforms all others across every task. These findings not only demonstrate the necessity of systematic evaluation but also provide useful guidance for the co-evolving of models and harnesses. Our code is available at https://github.com/datamllab/A2E.",
+    "authors": [
+      "Haoning Wang",
+      "Mingxun Zhang",
+      "Chenyue Yu",
+      "Yingjun Shang",
+      "Xia Hu",
+      "Guanchu Wang",
+      "Na Zou"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07346v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07346v1",
+    "fetched_at": "2026-08-10T09:15:44.224527",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413375"
+  },
+  {
+    "id": "2608.07317v1",
+    "title": "Towards Assurance Closure in AI-Native Large-Scale Agile Software Development",
+    "abstract": "The AI-Native Manifesto envisions large-scale agile software development in which humans increasingly govern intent, risk, and exceptions while agents execute more of the engineering process. Realizing that end-state requires more than better code generation: it requires assurance closure, meaning that the system can establish what must be true, determine and obtain appropriate evidence, judge the credibility of that evidence, preserve its validity through change, and use the resulting uncertainty to bound agent authority. Existing work already provides many of the necessary mechanisms across formal methods, testing, simulation, assurance cases, digital twins, and runtime assurance. We identify six residual gaps in making the surrounding assurance reasoning sufficiently machine-operable, propose a high-level architecture with six corresponding capabilities built on a shared semantic assurance layer, and formulate four research questions to turn that architecture into dependable, human-on-the-loop, AI-native R&D.",
+    "authors": [
+      "Ricardo Britto"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07317v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07317v1",
+    "fetched_at": "2026-08-10T09:15:44.224548",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413388"
+  },
+  {
+    "id": "2608.07299v1",
+    "title": "EliSeg: Verified Target Construction for Report-Grounded Abnormality Segmentation",
+    "abstract": "Radiology reports describe clinical observations but do not specify executable segmentation targets. They may contain present, negated, prior,uncertain, or irrelevant findings, while multiple valid abnormalities may coexist. Existing segmentation methods largely bypass this ambiguity by receiving a target identity or spatial prompt before inference, which acts as a hidden target oracle. We study report-grounded abnormality segmentation, where a model must determine target eligibility, cardinality, and finding-to-mask correspondence directly from an unfiltered report before delineating the corresponding regions. We propose \\textbf{EliSeg}, an atcor--verify--revise framework that integrates target construction with mask generation. A grammar-constrained Actor proposes target slots and masks, an independent text-only Verifier reconstructs the eligible finding inventory, and Revision selectively re-executes the shared Actor when their target structures disagree. EliSeg requires no predefined target identity, finding prompt, point, or bounding box. Experiments on MIMIC-CXR-ILS show that EliSeg consistently outperforms direct segmentation methods and extract-then-segment cascades across findings, while effectively suppressing masks for ineligible report mentions. Ablation studies confirm the complementary roles of verification and revision, and evaluation on CheXlocalize demonstrates effective transfer of the EliSeg to an external dataset.Code is available at https://github.com/Maybach-dream/EliSeg.",
+    "authors": [
+      "Chengyi Peng",
+      "Haoyu Yang",
+      "Meixing Shi",
+      "Yuxiang Cai",
+      "Yankai Jiang"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07299v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07299v1",
+    "fetched_at": "2026-08-10T09:15:44.224576",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413398"
+  },
+  {
+    "id": "2608.07167v1",
+    "title": "NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs",
+    "abstract": "Giving an AI agent the ability to send emails, query databases, or execute commands is useful--until the agent is tricked into doing something it shouldn't. Prompt injection, hallucinated reasoning, and unsafe tool calls form the primary attack surface for autonomous LLM agents. Existing defenses rely on software checks like system prompts or policy filters running on the same machine the attacker targets, offering no verifiable proof of execution. We introduce Niyam-AI, a framework that makes safety enforcement provable. At session start, permitted tools and constraints are locked into an Intent Contract committed via SHA-256. Every tool call is intercepted and validated by an isolated Judge model; upon passing, a zk-SNARK proof is generated via EZKL.   The tool executes only after proof verification, allowing third parties to confirm enforcement without accessing Judge model weights. Evaluating Niyam-AI on 2,000 real-world scenarios from Agent-SafetyBench against NeMo Guardrails, Meta's Llama Prompt Guard 2, and OpenAI's GPT-OSS-Safeguard using 5-fold stratified cross-validation yields an F1 score of 88.5% with a 1.1% false-positive rate (bootstrap 95% CI: [85.19%, 91.88%], N=1000). McNemar's exact paired test confirms significant improvement: Niyam-AI wins 390 discordant scenarios against NeMo (vs 20 losses), 115 against Prompt Guard 2 (vs 13), and 384 against GPT-OSS-Safeguard (vs 19) with p < 0.0001 in all cases.   Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verification takes 53.1 +/- 11.8 ms. Niyam-AI provides a guardrail that is both highly accurate and mathematically verifiable--though this reflects a classifier adapted to Agent-SafetyBench evaluated against zero-shot baselines, a distinction discussed in Section IV.C.",
+    "authors": [
+      "Aditya Katkar",
+      "Om Karkele",
+      "Kartik Mandhane",
+      "Manisha More",
+      "Yash Kashid"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07167v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07167v1",
+    "fetched_at": "2026-08-10T09:15:44.224605",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413409"
+  },
+  {
+    "id": "2608.07154v1",
+    "title": "Representation Handoffs for OpenArm-Based Laboratory Mobile Manipulation",
+    "abstract": "Open-source robotics and foundation models have lowered the barrier to embodied AI, yet language-guided laboratory automation still requires reliable alignment from instructions and observations to safe actions. This field report presents an OpenArm-based mobile manipulation prototype for laboratory-style tasks, built by integrating dual OpenArm manipulators with a mobile base, vertical slide, RGB-D sensing, lidar-based mapping, ROS2/MoveIt execution, and profile-defined skill interfaces. The system is organized around representation handoffs: natural language requests are constrained into registered skill calls, sensor observations are grounded into maps and object poses, object priors provide role and skill constraints, and runtime bindings compile validated skills into executable motion goals. We use dry-run traces and startup checks to evaluate this integration path, showing how the prototype exposes missing calibration, incomplete object assets, and unfinished real-scene visual grounding as explicit deployment blockers. These intermediate representations serve as practical debugging interfaces for integrating language, perception, planning, and robot safety in embodied systems.",
+    "authors": [
+      "Yang Shen",
+      "Chonghao Cheng",
+      "Ziyi Zhao",
+      "Jialuo Zhu",
+      "Zhenyi Yi",
+      "Qi Zhao",
+      "Jian Yang",
+      "Yuhui Shi",
+      "Chin-Teng Lin"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07154v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07154v1",
+    "fetched_at": "2026-08-10T09:15:44.224641",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413419"
+  },
+  {
+    "id": "2608.07151v1",
+    "title": "Interpretable reinforcement learning with decision-tree pruning",
+    "abstract": "Reinforcement learning policies are difficult to inspect, but interpreting them is a prerequisite for trustworthiness. Converting a trained policy into explicit decision-tree rules improves transparency and the resulting artifacts often remain too complex for human understanding. We present a pruning process that simplifies such rule-based policies while preserving task performance and making edits to the policy auditable. The process defines a small set of structural and usage-aware operators and evaluates candidate edits by re-executing the policy to measure return and interpretability proxies. This exposes an transformation process from complex to compact policy structures. We investigate this approach on classic control and MuJoCo benchmarks, where pruning traces reveal consistent interpretability improvements while maintaining high performance.",
+    "authors": [
+      "Mark Leon Ringer",
+      "Michel Tokic"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07151v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07151v1",
+    "fetched_at": "2026-08-10T09:15:44.224663",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413430"
+  },
+  {
+    "id": "2608.07148v1",
+    "title": "A MARL Centered Reference Architecture for Large Language Model Augmentation in Smart Manufacturing",
+    "abstract": "Modern manufacturing imposes six coupled demands on adaptive control: local decisions with global consequences, partial observability, nonstationarity, reflex speed response with long horizon effects, delayed and diffuse outcomes, and dynamics that resist explicit modeling. Cooperative multiagent reinforcement learning (MARL), posed as a Dec-POMDP under centralized training with decentralized execution, is a particularly natural formalism for these demands. This paper adopts a MARL centered scope and asks where large language models (LLMs) should augment, interface with, train, or, in the strongest competitive case, replace that coordination core. A taxonomy organizes the literature through four LLM attachment points: policy, reward design, communication between agents, and hierarchical planning. A conditional capability profile separates native mechanism, reported performance, formal guarantee, and engineering maturity, and a deployment readiness analysis identifies the evidence behind each role. These stages yield the principal contribution: a three layer MARL centered reference architecture, grounded in evidence, for semantic reasoning, adaptive cooperative control, and independently assured execution. The LLM-Augmented Dec-POMDP is a descriptive comparative notation for that architecture, recording four attachment choices without introducing a new decision process class or algorithm. Under the reviewed evidence, conventional MARL is better suited to frequent, structured, decentralized coordination after task specific training, whereas LLM components are promising for semantic interpretation, reward drafting, human interaction, and slower supervisory planning. Current LLM only manufacturing controllers do not yet establish equivalence for strict real time, decentralized, safety critical control; this conclusion is bounded by the available evidence and does not assert impossibility.",
+    "authors": [
+      "Fouad Bahrpeyma",
+      "Dirk Reichelt"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07148v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07148v1",
+    "fetched_at": "2026-08-10T09:15:44.224687",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413442"
+  },
+  {
+    "id": "2608.07147v1",
+    "title": "DiDPO: Diff-in-Diff Policy Optimization for Coding Agent Training",
+    "abstract": "Reinforcement learning with Verifiable Reward (RLVR) has emerged as a powerful paradigm for training coding agents, where the execution feedback from compilation and tests provides objective verification. However, unlike agent tasks, coding agents face a unique and finer-grained credit assignment challenge: at each step, coding actions simultaneously pack varying changes into different regions of a code version, which makes the contribution of independent change indistinguishable. Existing RLVR methods mostly leverage the outcome reward or step-level reward, which fails to dive into a code diff and makes unique properties of coding actions invisible to training. In this paper, we propose Diff-in-Diff Policy Optimization (DiDPO), a critic-free RL method that constructs fine-grained credit units directly from the structure of code diffs. DiDPO organizes multi-turn coding interactions into multiple thought--action steps and discovers code diffs across sampled trajectories. It then selects anchors by aggregating highly similar sub-diffs split from each whole diff by our ``groupability score'', which provides the splitting schema that optimally balances the semantic scope of anchors and the group mass they may form. Finally these anchors form advantage groups and project the diff-level advantage back to individual response tokens. Experiments on long-horizon coding and reasoning benchmarks show that DiDPO significantly outperforms strong agentic RL baselines. On Qwen2.5-7B-Coder, DiDPO exceeds comparable methods by over 10\\% and narrows the gap with far larger models, offering a principled framework for fine-grained credit assignment in coding agent training. We also open-source verl-code, an agentic rl codebase that supports various RL methods and coding benchmarks.",
+    "authors": [
+      "Xucong Wang",
+      "Zhe Zhao",
+      "Liheng Yu",
+      "Di Wu",
+      "Xiaofeng Cao",
+      "Pengkun Wang"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07147v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07147v1",
+    "fetched_at": "2026-08-10T09:15:44.224716",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413452"
+  },
+  {
+    "id": "2608.07106v1",
+    "title": "Synthetic LiDAR Data Generation and Deterministic Downsampling for Point Cloud Classification on the Edge",
+    "abstract": "Deploying three-dimensional deep learning frameworks to low-power embedded processors is bottlenecked by the unstructured nature of spatial data and the resource-intensive distance sorting algorithms often used before neural network inference. To address this gap, this paper presents a hardware-constrained workflow optimized for native execution on the Raspberry Pi 5. To account for the reality gap between noiseless, clean computer-aided design (CAD) datasets and real-world sensor data, we use physics-based simulation to construct a synthetic LiDAR dataset. Cross-dataset evaluations demonstrate a substantial drop in classification accuracy when networks trained on clean CAD data are evaluated on synthetic LiDAR sensor data, highlighting the critical need for sensor-aware training. To address the latency bottleneck of traditional geometric preprocessing on edge CPUs, we integrate an isolated, feature-driven Critical Points Layer (CPL) as a frontend filter. Our results show that the pretrained CPL deterministically compresses raw 1024-point clouds to a subset of 40 to 60 unique coordinates. When profiled on the ARM Cortex-A76 processor, the complete pipeline achieves an inference throughput of approximately 50 FPS while maintaining an instance classification accuracy of 88.36%, demonstrating the viability of deterministic real-time 3D perception at the edge.",
+    "authors": [
+      "Niclas Meyer",
+      "Stefan Reitmann"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.LG",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07106v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07106v1",
+    "fetched_at": "2026-08-10T09:15:44.224737",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413463"
+  },
+  {
+    "id": "2608.07078v1",
+    "title": "Scalable High-Fidelity Macromolecular Docking for GPU-Accelerated Supercomputers",
+    "abstract": "Flexible macromolecular docking offers high-fidelity predictions of biomolecular interactions, but remains prohibitively expensive at scale. Among existing approaches, LightDock leverages Glowworm Swarm Optimization (GSO) for accuracy, yet suffers from limited parallelism, irregular computation, and severe load imbalance, preventing efficient execution on GPU supercomputers. We present SparkleDock, a scalable GSO-based docking framework enabling near-real-time flexible docking. We redesign GSO to expose massive fine-grained parallelism at the glowworm-agent level, and restructure the dominant energy scoring computation into a Tensor Core-compatible formulation, enabling efficient execution of irregular pairwise interactions through structured matrix operations. We further introduce a performance-model-driven scheduling for load balancing and out-of-core scaling across GPUs. SparkleDock achieves 9.7 $\\times$ and 18.9 $\\times$ speedups over LightDock on single A100 and H100 GPU, and delivers over two orders of magnitude acceleration at scale. On 512 GPUs, it reduces docking time from hours to seconds, enabling large-scale, high-fidelity virtual screening previously impractical with flexible docking.",
+    "authors": [
+      "Xiangyu Meng",
+      "Peng Chen",
+      "Mingzhen Li",
+      "Jianmin Wang",
+      "Sen Wang",
+      "Guangming Tan",
+      "Weile Jia",
+      "Mohamed Wahib",
+      "Tao Luo",
+      "Xun Wang"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07078v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07078v1",
+    "fetched_at": "2026-08-10T09:15:44.224774",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413471"
+  },
+  {
+    "id": "2608.07113v1",
+    "title": "Optimized Certainty Equivalent Risk Minimization Using Samples: Algorithms, Convergence Rates, and Applications",
+    "abstract": "We consider the optimization of the Optimized Certainty Equivalent (OCE) risk, with applications including portfolio optimization in finance, and uncertainty quantification, classification, and regression in machine learning. Our contributions cover popular special cases of OCE, such as entropic risk, mean-variance risk, and smooth variants of Conditional Value-at-Risk. Our treatment sets out the conditions that facilitate the extension of OCE to unbounded r.v.s.. We provide a useful characterization of OCE that links OCE to utility-based shortfall risk (UBSR). Our characterization enables us to form an OCE estimator from the classic sample-average approximation (SAA) of UBSR. We derive mean-squared error (MSE) bounds for our proposed OCE estimator. For OCE optimization, we first derive an expression for the OCE gradient using the characterization linking OCE to UBSR. This expression serves as the basis for a gradient estimator for the OCE. We derive non-asymptotic bounds on the MSE for the proposed OCE gradient estimator. We incorporate the aforementioned gradient estimator into a stochastic gradient (SG) algorithm to optimize OCE and quantify its convergence rate using non-asymptotic bounds that we derive. Finally, we present three experiments that use our OCE optimization algorithm to solve portfolio optimization and uncertainty quantification problems.",
+    "authors": [
+      "Sumedh Gupte",
+      "Prashanth L. A.",
+      "Sanjay P. Bhat"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07113v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07113v1",
+    "fetched_at": "2026-08-10T09:17:59.269732",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413481"
+  },
+  {
+    "id": "2608.07400v1",
+    "title": "FinRank: An Evidence-Grounded Benchmark for Financial Question Answering and Retrieval over SEC Filings",
+    "abstract": "Financial question answering is typically evaluated by answer correctness, yet in SEC filings a plausible and even numerically correct answer can be grounded in the wrong evidence. Similar facts and disclosures recur across sections of a filing, across reporting periods of the same firm, and across comparable firms. FinRank targets this provenance-sensitive retrieval problem by requiring systems to identify evidence for the intended entity, reporting period, and disclosure context. The benchmark contains 1185 manually authored question-answer records over the 10-K and 10-Q filings of 22 companies. Each record includes a reference answer, gold supporting passages, and hand-curated hard negatives drawn from confusable passages within filings, across reporting periods, and across comparable firms. FinRank evaluates passage retrieval, reranking, and hard-negative discrimination as separately measured tasks. Baseline results demonstrate the difficulty of this setting: among the evaluated systems, even a 7B instruction-tuned embedder reaches only 44.8% Recall@10 on the pooled evidence corpus; sub-billion-parameter encoders gain at most 3.5 points over BM25, a finance-adapted embedder trails BM25 by 9.7 points, and pairwise accuracy falls by 13.0-20.5 percentage points when random negatives are replaced with the curated hard negatives. FinRank provides an evidence-first benchmark for developing financial question answering systems that are not only accurate but also grounded in the correct disclosure.",
+    "authors": [
+      "Sasan Mansouri",
+      "Daniel Saad",
+      "Mark Wahrenburg",
+      "Manu Weissel",
+      "Fabian Woebbeking"
+    ],
+    "published": "2026-08-07",
+    "categories": [
+      "cs.AI",
+      "cs.DB",
+      "econ.GN",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.07400v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.07400v1",
+    "fetched_at": "2026-08-10T09:18:02.814146",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-10T09:18:16.413492"
+  }
+]
