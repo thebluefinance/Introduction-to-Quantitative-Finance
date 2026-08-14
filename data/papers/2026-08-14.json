@@ -1,0 +1,697 @@
+[
+  {
+    "id": "2608.13340v1",
+    "title": "Fee Implied Volatility on Uniswap v3: A DEX Native Proxy and Its Limits",
+    "abstract": "Narrow Uniswap v3 liquidity ranges resemble short dated options, and Panoptic's streaming premium echoes the short maturity concentration of Black-Scholes theta near the strike. This motivates a natural question: can implied volatility be extracted from Uniswap v3 and Panoptic using only on chain observables? A direct identification of theta with realized fee income is too strong, since fee income captures only the compensation leg of a narrow range LP position. The remaining leg, the cost of dynamically hedging the LP's negative convexity through arbitrage aligned trades, is formalized elsewhere as predictable loss or loss versus rebalancing and is not observable from fees alone. We therefore reformulate the object of interest. We derive $σ_{fee} = 2 \\cdot feeRate \\cdot \\sqrt{Volume/L_{tick}}$, and interpret it as a DEX native fee implied volatility proxy: an observable, oracle free measure of fee flow relative to active liquidity. We show that recovering a structural latent volatility from pool observables alone is not identified in general, since aggregate volume mixes informed and uninformed flow while the missing hedging cost term depends on external price dynamics and arbitrage timing. What the pool data support directly is a fee implied activity index, not a Black-Scholes consistent implied volatility.",
+    "authors": [
+      "Amy Oumayma Khaldoun"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13340v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13340v1",
+    "fetched_at": "2026-08-14T09:02:20.147337"
+  },
+  {
+    "id": "2608.13096v1",
+    "title": "FlowLOB: Efficient and Controllable Limit Order Book Generation with Flow Matching",
+    "abstract": "Limit order book (LOB) simulators are most useful to practitioners when they combine realistic market dynamics, computationally efficient sampling, controllable scenario generation, and the ability to generalize beyond the instruments seen during training---properties that existing agent-based and deep generative simulators provide only partially. We present \\textbf{FlowLOB}, a conditional \\textbf{flow}-matching generator of \\textbf{LOB} trajectories, trained on multiple Hong Kong Exchange (HKEX) symbols at three sampling frequencies ($0.1$s, $1$s, $10$s) in tick-relative representation that transfers to unseen instruments. Because flow and diffusion models admit a common formulation, we train both with identical data, architecture, and budget, and sample both through the same fixed-step ODE solvers, yielding a controlled comparison of sampling efficiency and fidelity. Flow matching attains its best quality with only $10$ ODE-solver steps, whereas diffusion needs many more function evaluations to approach the same fidelity. At this efficient operating point, FlowLOB improves realism over baselines, two learned and two agent-based models, in most distributional metrics at the two finer sampling frequencies. We evaluate counterfactual controllability with a distributional test that asks whether changing a scenario condition moves the generated statistic toward the corresponding real tail regime; FlowLOB satisfies this criterion in most tested settings. Both realism and control effects transfer zero-shot on a held-out symbol. We additionally conduct ablation studies on the network architecture and the learning rate.",
+    "authors": [
+      "Zhuohan Wang",
+      "Andreea Bacalum",
+      "Ollie Olby",
+      "Carmine Ventre",
+      "Namid Stillman"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.LG",
+      "cs.CE",
+      "q-fin.CP",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13096v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13096v1",
+    "fetched_at": "2026-08-14T09:02:20.147382"
+  },
+  {
+    "id": "2608.13082v1",
+    "title": "LOB-ID: Evaluating Synthetic Market Data by Inception Distances",
+    "abstract": "Generative models of limit orderbook (LOB) data have advanced rapidly, but their evaluation often focuses on stylised facts and selected market statistics. These measures provide useful diagnostics but may not capture the joint temporal and cross-level structure of order-book trajectories. We introduce LOB-ID, an embedding-based framework that adapts the Fréchet Inception Distance (FID) and Monge Inception Distance (MIND) to LOB data. To obtain domain-specific embeddings, we train the DeepLOB architecture on four months of Level-2 order-book data for five equities. We show that LOB-ID is stable across time, instruments, and embedding checkpoints, and rises monotonically under controlled distortions. We then construct a moment-matching attack against FID and a deep-book perturbation that evades statistic-based evaluation. MIND remains substantially more sensitive to both distortions. Finally, we score five generative LOB models, spanning stochastic baselines and deep learning approaches, and find that LOB-ID ranks them in line with the joint temporal and cross-level structure each captures by construction.",
+    "authors": [
+      "Andreea Bacalum",
+      "Zhuohan Wang",
+      "Ollie Olby",
+      "Martin Garaj",
+      "Namid Stillman"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "q-fin.CP",
+      "cs.AI",
+      "cs.CE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13082v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13082v1",
+    "fetched_at": "2026-08-14T09:02:20.147413"
+  },
+  {
+    "id": "2608.13056v1",
+    "title": "Simulating Stress Laws under Extremal Dependence: Characterizing What Generative Models Must Preserve",
+    "abstract": "We study stress-scenario generation for systems driven by multivariate heavy-tailed risk factors. Within regions where several financial losses are simultaneously extreme, stress analysis concerns both the conditional law of the risk factors and the most plausible configurations producing those losses. We show that both are governed by the same limiting tail law. Preserving its measure recovers rare-event probabilities and scaled conditional stress laws, while misspecifying extremal dependence distorts some regular joint-stress probability. Its density governs reverse-stress optimization, whose maximizers identify the most plausible stress configurations. To exploit this common structure in finite samples, we develop SSGEN (Self-Similar Generative Estimation), which learns extremal dependence from intermediate exceedances and extrapolates to rarer levels using a Pareto radial component. Even when the target event is absent from the sample, we establish convergence rates for the generated conditional law, and data-driven reverse-stress solutions.",
+    "authors": [
+      "Mantu Gupta",
+      "Anand Deo"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13056v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13056v1",
+    "fetched_at": "2026-08-14T09:02:20.147434"
+  },
+  {
+    "id": "2608.12777v1",
+    "title": "Physical Extinction and Long-Run Pricing under Time-Varying Beliefs",
+    "abstract": "An investor may be optimistic about aggregate endowment growth at some times and pessimistic at others. The weight placed on her forecast in bond valuation can therefore vary across maturities. We study whether this maturity dependence disappears at the long end of the yield curve. In a two-investor Arrow--Debreu economy, physical extinction follows when \\emph{total disagreement} grows without bound. We find that bond valuation depends on net disagreement. If \\emph{net disagreement} has no limit, neither the long-forward measure nor the long bond exists. Bond yields can converge along the same belief path. The long yield alone therefore cannot reveal whether valuation weights and bond returns converge across maturities. We also obtain finite-maturity error bounds for bond prices and forward densities.",
+    "authors": [
+      "Sourav Majumdar"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12777v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12777v1",
+    "fetched_at": "2026-08-14T09:02:20.147456"
+  },
+  {
+    "id": "2608.12634v1",
+    "title": "The Price of Permission: Classification Uncertainty in Constrained Capital Markets",
+    "abstract": "Shariah-compliant equity screening provides a transparent setting in which institutional rules determine who may own a stock. A binary label identifies current eligibility but not whether the feasible investor base is fragmented across standards or close to changing. We define this instability as classification uncertainty and formalize its investor-base consequence through permitted investor mass. In a 1999-2024 CRSP-Compustat panel of 13,188 securities classified under seven researcher-emulated Shariah rulebooks, screening-rule disagreement and proximity to active boundaries rank next-month screen-implied transitions. U.S. Fama-MacBeth diagnostics do not support an unconditional equal-weighted permission premium, and a September 2023 DJIM/S&P methodology change produces no robust matched repricing. The central event evidence uses 25 official Securities Commission Malaysia lists. The 410 inclusions already trading before the preceding review have positive but imprecise matched returns. Applying the pre-event turnover floor yields 295 inclusions with 1.76 percentage points over $[0,10]$ trading days ($p_{\\mathrm{date}}=0.008$; $p_{\\mathrm{wild}}=0.017$) and 2.25 points over $[0,20]$ ($p_{\\mathrm{date}}=0.018$; $p_{\\mathrm{wild}}=0.035$). Leave-one-date-out, first-inclusion-only, and mid-review placebo checks are supportive, although a joint 20-day pre-event test rejects. Ownership and demand-pressure diagnostics do not identify a unique marginal buyer or clean causal demand shock. The evidence supports treating classification risk as a portfolio-monitoring state. Official Shariah permission is associated with price effects in a recognized local market among sufficiently tradable securities; formal eligibility alone is insufficient.",
+    "authors": [
+      "Abdulrahman Qadi",
+      "Akash Sharma",
+      "Francesca Medda"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "q-fin.ST",
+      "q-fin.GN",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12634v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12634v1",
+    "fetched_at": "2026-08-14T09:02:20.147481"
+  },
+  {
+    "id": "2608.12594v1",
+    "title": "What Makes a Peer? Valuation-Anchored Similarity in Private Markets",
+    "abstract": "As more investors contemplate private markets and contend with limited transparency, sparse disclosures, and infrequent transactions, identifying economically meaningful peer companies for comparison is a fundamental challenge for valuation, due diligence, portfolio construction, and risk management. We propose an ensemble tree-based supervised similarity learning framework that defines company similarity through the lens of market valuation rather than static feature matching or semantic descriptions. Specifically, we train a CatBoost gradient-boosted decision tree model on observed private company valuations and derive a valuation-aware similarity metric from importance-weighted leaf-node co-occurrences across the ensemble. The similarity metric captures shared valuation drivers while accommodating nonlinear relationships, mixed data types, and pervasive missing data common in private markets. Using a global private-market universe of approximately 270,000 companies, including more than 53,000 firms with observed or derivable post-money valuations spanning multiple industries, geographies, and deal stages, we demonstrate that the proposed similarity framework improves upon traditional distance-based and text-embedding-based approaches in downstream k-nearest-neighbor valuation tasks in the evaluated industry groups, while retaining case-based explainability.",
+    "authors": [
+      "Sebastian Frank",
+      "Jingrao Lyu",
+      "Max Jarmey",
+      "Preetha Saha",
+      "Mingshu Li",
+      "Sweet Kaur",
+      "Sola Akinola",
+      "Dhagash Mehta"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "q-fin.ST",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12594v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12594v1",
+    "fetched_at": "2026-08-14T09:02:20.147512"
+  },
+  {
+    "id": "2608.12587v1",
+    "title": "DYSANOS Generative Dynamic Smooth Arbitrage-free Non-parametric Option Surfaces",
+    "abstract": "This article presents with DYSANOS the first generative market model for smooth SANOS option surfaces for all strikes and expiries which are free of static arbitrage. Our model is designed to generate entire paths of daily spot and option prices for years in the future.   We present a robust and useful if somewhat simplistic baseline hidden state generative model in the form of an AR(1) model. We discuss model setup, data pipeline, and training and investigate numerical resence of dynamic arbitrage. We illustrate model performance on Option Metrics' IvyDB S\\&P Index data from 2020 to~2025 and compare it to a pure implied-vol PCA model.",
+    "authors": [
+      "Hans Buehler",
+      "Blanka Horvath",
+      "Anastasis Kratsios"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "q-fin.MF",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12587v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12587v1",
+    "fetched_at": "2026-08-14T09:02:20.147535"
+  },
+  {
+    "id": "2608.12583v1",
+    "title": "Diffusion Models in Finance: A Survey",
+    "abstract": "Diffusion generative models have rapidly emerged as powerful tools for modeling complex financial data. Their appeal is both structural and practical: they offer stable likelihood-based training, strong mode coverage, flexible conditioning, and a stochastic-differential-equation formulation that aligns naturally with the Itô calculus and stochastic control frameworks widely used in finance. This survey reviews the growing literature on diffusion-family generative models for financial applications. We organize prior work primarily by financial data type, covering time series, limit order books, tabular data, and other structured financial objects, while discussing the modeling goals and application contexts that arise within each category. To the best of our knowledge, this is the first survey dedicated specifically to diffusion-family models for financial data. For more detailed information, we have open-sourced a repository https://github.com/ZhuoHan1998/Diffusion-Models-In-Finance.",
+    "authors": [
+      "Zhuohan Wang",
+      "Carmine Ventre"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12583v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12583v1",
+    "fetched_at": "2026-08-14T09:02:20.147553"
+  },
+  {
+    "id": "2608.12493v1",
+    "title": "Beyond the Skew-Stickiness Ratio: Transport Geometry of Spot-Driven Variance Surface Dynamics",
+    "abstract": "We develop a geometric theory of arbitrage-free implied variance surface dynamics. Smile dynamics are formulated as transport flows on the admissible class of static-arbitrage-free surfaces: spot movements generate transport vector fields, and the transport velocity field v(k) unifies all classical stickiness regimes. The skew-stickiness ratio (SSR) is the zeroth-order transport coefficient; higher-order coefficients govern ATM skew, curvature, and higher smile derivatives. A local jet transport corollary extends the theory to arbitrary log-moneyness and identifies v(k) nonparametrically from market data. Under explicit regularity conditions, the flow preserves butterfly and calendar arbitrage-freeness locally. Sticky-strike, sticky-delta, SSR, local volatility, and rough volatility all arise as special cases within this framework.   Empirically, we apply a sequential forward-substitution estimator to five years of SPX implied-volatility data across seven tenors from one month to two years. Three findings emerge. First, SPX exhibits super-skew behavior: the SSR coefficient declines monotonically from 1.44 at one month toward 1.01 at two years. Second, self-similar transport is rejected at all tenors; the skew-transport coefficient changes sign between the six- and nine-month tenors. Third, the velocity profile varies significantly with moneyness at intermediate tenors and evolves from U-shaped at short maturities to monotonically decreasing at long maturities. Out-of-sample, the full three-parameter model outperforms SSR on curvature dynamics by 17-21% at medium tenors.",
+    "authors": [
+      "Charlie Che",
+      "Pradeepta Das"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12493v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12493v1",
+    "fetched_at": "2026-08-14T09:02:20.147574"
+  },
+  {
+    "id": "2608.12424v1",
+    "title": "AI-Driven Multiscenario Interest Rate Forecasting: A Proof of Concept for Banking Asset Management",
+    "abstract": "This study focuses on developing an AI-supported prototype for multiperspective interest rate forecasting that combines classical econometric models with modern artificial intel-ligence methods. Tested in a major European bank, the system enables more precise and flexible prediction of interest rate developments, supporting strategic decision-making in Asset-Liability Management (ALM). It integrates topic modeling, sentiment analysis, econometric forecasting, and market-based analyses within an interactive platform. Leveraging AI to analyze large volumes of financial documents and market data enables the identification of monetary policy trends and sentiment signals at an early stage. The core econometric model is a Bayesian vector autoregression (BVAR) that enables simulation-based scenario analyses to evaluate economic developments from multiple perspectives. The system's innovation lies in its integration of several forecasting approaches that consolidate previously separate information sources and present them transparently and interpretably. Financial analysts and risk managers thus gain a better basis for making decisions, allowing them to assess interest rate risks more accurately and manage market movements more proactively. While the prototype demonstrates how AI can transform interest rate management in banking, further development is required to optimize real-time data integration and regulatory compliance. Even at this stage, the study shows that multi-perspective, AI-driven forecasting provides substantial added value for banks by increasing transparency, strengthening evidence-based decision-making, and improving risk management.",
+    "authors": [
+      "Ekkehardt Bauer",
+      "Dirk Holländer",
+      "Linus Wolff",
+      "Christoph Ostermair",
+      "Kyrillus Aiad",
+      "Joachim Hasebrook"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "q-fin.CP",
+      "cs.LG",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12424v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12424v1",
+    "fetched_at": "2026-08-14T09:02:20.147702"
+  },
+  {
+    "id": "2608.11344v2",
+    "title": "Governing Agentic AI in FinTech",
+    "abstract": "Financial institutions are delegating consequential decisions to agentic AI systems that decompose goals, coordinate models and tools, and act with little oversight. Yet agentic AI governance in FinTech is under-investigated. We argue the binding governance constraint is not capability but verifiability. We define the Verifiability Gap as the shortfall between the verification delegated authority demands and the explainability and reproducibility retained after a decision. It is indexed to a verifier, evidentiary standard, and audit lag. We develop a multilevel governance theory for agentic AI and test its mechanisms in three studies over nine model versions, from a three-billion-parameter local model to a commercial frontier system. Study 1 shows that provider releases alter historical financial actions, and that the controls replay needs belong to the provider: the frontier model rejects temperature, top_p and top_k outright and exposes no random seed. Under the tightest controls each endpoint allows, a local model reproduced 320 of 320 executions, hosted models 319 of 320 and 959 of 960. Study 2 shows that orchestration is a latent policy layer. Architecture changes final actions, and no execution record repeated in any configuration at any scale. The frontier model reproduces its own actions more often than the local ones, its record no better, and loses a comparable share of its differentiation. Capability buys a higher starting point, not auditability. Study 3 shows two deterministic credit-model versions each reproduce their current action perfectly, yet the current cannot recover a historical one. We conceptualize reproducibility as a governance profile, not a scalar, yielding evidence-contingent delegation: authority is defensible only while retained evidence substantiates its exercise. Beyond finance, the framework extends to other high-stakes domains requiring auditability.",
+    "authors": [
+      "Henry Han"
+    ],
+    "published": "2026-08-11",
+    "categories": [
+      "cs.CY",
+      "cs.AI",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.11344v2",
+    "arxiv_url": "https://arxiv.org/abs/2608.11344v2",
+    "fetched_at": "2026-08-14T09:02:20.147739"
+  },
+  {
+    "id": "2608.12589v1",
+    "title": "Supervised Mixed-Frequency Learning for Macro-Financial Forecasting When Factors are Weak",
+    "abstract": "Factor-MIDAS regressions forecast a low-frequency target by extracting common factors from a large panel of high-frequency predictors via principal component analysis (PCA). While PCA mitigates the curse of dimensionality, it relies on factor pervasiveness, an assumption often violated when factors are weak, as is common in macro-financial forecasting. We propose SsPCA-MIDAS, which integrates supervised scaled PCA (SsPCA) into the mixed-data sampling framework. We establish consistency and asymptotic normality under weak factors, permitting inference on the prediction target. Simulations show that SsPCA-MIDAS outperforms competing PCA-based and supervised methods, especially when weak factors are prevalent. Applying machine-learning techniques such as boosting to the cleaner factors it extracts yields further gains. An extensive application to U.S. macro-financial forecasting shows that SsPCA-MIDAS selects economically meaningful predictors and improves forecasts of GDP, inflation, unemployment, asset prices, and volatility.",
+    "authors": [
+      "Ulrich Hounyo",
+      "Zhendong Li"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "econ.EM",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12589v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12589v1",
+    "fetched_at": "2026-08-14T09:02:23.415086"
+  },
+  {
+    "id": "2608.13418v1",
+    "title": "Wasserstein Filtering: A Sample Selection Method for Robust Distribution Learning",
+    "abstract": "Given a dataset where a portion of the samples are contaminated, our goal is to recover the underlying clean population distribution. To this end, we propose Wasserstein Filtering (WF), a novel sample selection framework that discards a fraction of suspicious samples and estimates the target distribution using the empirical measure of the remaining data. The core insight is to select a subset of samples whose empirical distribution maximizes its Wasserstein distance to the fully contaminated empirical distribution, thereby preferentially isolating and removing geometrically influential outliers. To render this optimization computationally tractable, we introduce three algorithms: a marginal screening scheme, SinkMarg, and two joint optimization algorithms, SinkWF and SlicedWF, leveraging entropic optimal transport and sliced Wasserstein approximations, respectively. On the theoretical front, we introduce the Far Exclusion and Local Projection (FELP) contamination model, which characterizes corruptions consisting of well-separated outliers and locally indistinguishable perturbations. Under this model, we prove that the WF estimator achieves minimax optimality over distribution families with bounded covariance. Extensive numerical experiments on synthetic datasets, benchmark anomaly detection suites, and robust generative learning with diffusion models demonstrate that WF serves as a highly practical, model-agnostic preprocessing tool. It delivers competitive outlier detection performance and provides substantial downstream benefits for generative modeling under heavy contamination.",
+    "authors": [
+      "Yikai Xu",
+      "Zhao Chen",
+      "Jian Huang"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13418v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13418v1",
+    "fetched_at": "2026-08-14T09:02:33.145328"
+  },
+  {
+    "id": "2608.13344v1",
+    "title": "LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning",
+    "abstract": "Long-horizon Earth observation reasoning requires models to organize multi-stage geographic evolution, localize spatial changes, detect temporal anomalies, and infer future from extended image sequences. However, existing remote sensing vision-language models mainly focus on isolated images, image pairs, or short sequences, limiting reliable grounding in the relevant frames and regions. We introduce LongEarth-Bench, a benchmark containing approximately 120k question-answering samples derived from 117k unique images. Its sequences average 15.14 frames and extend to 30 frames, covering 12 tasks across evolution summarization, spatial reasoning, anomaly identification, and logical prediction. A 30k-sample subset further provides structured reasoning traces linking key frames and changed regions to final answers. We develop LongEarth through supervised fine-tuning with explicit sequence identifiers and structured chain-of-thought supervision. Building on LongEarth, LongEarth-R1 applies group relative policy optimization with format, temporal, and spatial rewards. LongEarth-R1 achieves the best results on all 12 long-sequence tasks while remaining competitive on standard remote sensing benchmarks.",
+    "authors": [
+      "Yupan Ding",
+      "Jing Xiao",
+      "Zhenyuan Zhang",
+      "Chaofeng Chen",
+      "Liang Liao",
+      "Gui-Song Xia",
+      "Mi Wang"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13344v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13344v1",
+    "fetched_at": "2026-08-14T09:02:33.145366"
+  },
+  {
+    "id": "2608.13063v1",
+    "title": "Explanatory Engagement Under Rare Anomalous Failure: Asymptotic Rarity in Model Behavior (or: The Asymptotic AI)",
+    "abstract": "Prior work on LLM behavior under anomalous conditions asks whether a model notices anomalies. We ask a narrower question: once a model sits in a workflow with a low, controllable failure rate, does its explanatory engagement - length, specificity, self-reported confidence - change as failure grows asymptotically rarer? We built a local, zero-cost harness on three open-weight models (qwen3:8b, llama3.1:8b, mistral:7b) running a repeated tool-call task where one call fails at probability p, swept across eight rates from 0.2 to 0.0001, under five elicitation conditions from immediate prompting to none. We hypothesized a rise in engagement as failures grew rarer, then a collapse near a detectability threshold. Pooled across conditions this appeared false: length fell in a flat, monotonic pattern. Splitting by condition overturned that. Under immediate_forced, where the model must explain every failure instantly, the predicted rise is confirmed but followed by a plateau, not a collapse: length peaks at 28.4 words at p=0.05, settles to 17.4-19.0 words at the rarest rates, and confidence rises unevenly from about 53% to the 70s-90s. Under grouped_runs, explanation batched to run-end, no collapse appears. Under passive_unprompted, aggregate magnitude is a floor artifact, but a recovered logging gap revealed real, model-specific self-monitoring: llama3.1:8b volunteers structured confidence reports unprompted, sometimes eroding its own confidence as trials accumulate; the other two do so only once, as boilerplate. Elicitation structure is a first-class moderator of collapse observability. A companion guaranteed-failure run (72 cells, backfilling rates where random sampling gave zero real failures) shows models differ in whether they recognize an anomaly, distinct from engagement once recognized. Limitation: discrete rate points cannot capture behavior between them, a direction for future work.",
+    "authors": [
+      "Sam Mao"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13063v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13063v1",
+    "fetched_at": "2026-08-14T09:02:33.145385"
+  },
+  {
+    "id": "2608.13031v1",
+    "title": "UniTraffic-Agent: Unified Traffic Video Reasoning for AI City Challenge 2026 Track 3 with Two Out-of-Domain Evaluations",
+    "abstract": "Traffic video understanding has become an important problem in intelligent transportation, as road videos provide direct evidence for accidents, violations, and interactions between vehicles and vulnerable road users. A useful system should explain how a traffic event develops, why it happens, and when the relevant interaction occurs, yet this remains difficult for multimodal large language models (MLLMs) because traffic videos contain sparse events and varied viewpoints. We introduce UniTraffic-Agent, the MR-CAS solution for Track~3 of the 10th AI City Challenge, which includes Traffic Anomaly Reasoning (TAR) and two out-of-domain evaluations: FETV for fisheye traffic events and PSI-VQA for pedestrian intention reasoning. UniTraffic-Agent follows an observe--reason--act--verify workflow that samples timestamped visual evidence, reasons over all questions from the same clip in one request, and converts responses through task-specific action adapters. On the official Public leaderboards, MR-CAS ranks 16th on TAR with a score of 0.5780, 2nd on FETV with 0.4884, and 4th on PSI-VQA with 64.4161. The code is available at https://github.com/Roclp/UniTraffic-Agent.",
+    "authors": [
+      "Peng Li",
+      "Qianqian Xu",
+      "Shilong Bao",
+      "Yangbangyan Jiang",
+      "Qingming Huang"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13031v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13031v1",
+    "fetched_at": "2026-08-14T09:02:33.145410"
+  },
+  {
+    "id": "2608.12852v1",
+    "title": "Falsehood and Impossibility Are Different Directions in an AI's Representation of Language",
+    "abstract": "Language can describe states of affairs that are false and states of affairs that could not be the case at all. Whether an AI model internally distinguishes these failures remains unclear. I report an exploratory activation study of the multimodal open-weight model Gemma 3 4B IT using 85 prompts from 17 philosophical families and a topic-matched modality set of 15 topics, each expressed as a truth, contingent falsehood, improbable claim, semantic anomaly, and necessary falsehood. In its answers, the model conflates contingent falsehood with contradiction, labeling 12 of 15 false statements \"contradiction.\" Its activations show a different pattern. A linear truth probe separates impossible from true statements (AUC 0.93) but not impossible from false statements (AUC 0.20). An impossibility probe evaluated on held-out topic families separates necessary from contingent falsehood at AUC 1.00, peaking at layer 15 with balanced accuracy 0.97 (Bonferroni-adjusted P=0.018). The truth and impossibility directions are close to orthogonal, whereas the impossibility direction partially overlaps a semantic anomaly direction while remaining distinguishable from it. Sparse autoencoder features at the same layer repeat this geometry. Features selective for impossibility also fire on anomalous sentences but rarely on contingent falsehoods. In this model's activation space, necessary falsehoods are not extreme cases of contingent falsehood but lie closer to the experimentally defined category of semantic anomaly. This representational proximity does not imply that impossible statements are intrinsically meaningless. These correlational observations from one small model offer an empirical footnote to an old philosophical distinction.",
+    "authors": [
+      "Yoon Pyo Lee"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12852v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12852v1",
+    "fetched_at": "2026-08-14T09:02:33.145427"
+  },
+  {
+    "id": "2608.12843v1",
+    "title": "Heterogeneous Vision-Language Ensemble with Disagreement-Aware Reranking for Text-Based Person Anomaly Retrieval",
+    "abstract": "Text-based person anomaly retrieval aims to retrieve pedestrians exhibiting anomalous behaviors from a large image gallery using natural language descriptions. Compared with conventional text-based person retrieval, this task requires fine-grained reasoning over pedestrian appearance, behaviors, object interactions, and scene context, making robust cross-modal matching significantly more challenging. This paper presents the GENAI4E team's solution to AI City Challenge 2026 Track 4. Our framework builds upon a strong retrieval backbone and progressively integrates heterogeneous vision-language embedding models through score alignment and iterative ensemble fusion, followed by disagreement-aware VLM reranking for ambiguous queries. On the official Pedestrian Anomaly Behavior (PAB) benchmark, our approach achieves 90.92% mAP, 85.13% Recall@1, 97.72% Recall@5, and 98.68% Recall@10, demonstrating the effectiveness of combining complementary vision-language representations with selective multimodal reasoning for large-scale text-based person anomaly retrieval.",
+    "authors": [
+      "Huu-An Vu",
+      "Cam Tu Tran Thi",
+      "Thanh Toan Le Ngo",
+      "Hoang Vo",
+      "Do Trung Hieu",
+      "Hieu Dinh Trung Pham",
+      "Khang Minh Le",
+      "Huy Minh Nhat Nguyen"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12843v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12843v1",
+    "fetched_at": "2026-08-14T09:02:33.145457"
+  },
+  {
+    "id": "2608.12441v1",
+    "title": "Dual Spatial-Temporal Attribution: Architecture-Aligned Post-Hoc Explainability for Recurrent Graph Anomaly Detection",
+    "abstract": "Deep learning detectors for anomalies in dynamic graphs have reached strong accuracy, yet they remain opaque: when an edge is flagged, the analyst receives a score but no reason. This opacity is untenable in the cooperative, regulated information systems where such detectors are deployed, where automated decisions must be auditable and trustworthy. We address this gap for AddGraph, the foundational GCN+GRU framework for edge-level anomaly detection in dynamic graphs, which to our knowledge has never been equipped with any form of explainability. We present a strictly post-hoc explainability framework, X-AddGraph, built on a Dual Spatial-Temporal Attribution (DSTA) mechanism whose three components are each aligned with one of AddGraph's architectural modules: a gradient-based relevance attribution over the current adjacency structure (spatial), a direct reading of the contextual attention weights already computed during inference (short-term temporal, at zero additional cost), and a gradient rollback through the recurrent hidden states (long-term temporal). Because the detector is frozen, detection performance is preserved exactly (Delta AUC = 0, verified empirically to ten decimal places). On the UCI Message benchmark, our trained AddGraph baseline reaches an average per-snapshot AUC of 0.8705, exceeding the originally published result; X-AddGraph reproduces every score identically while adding explanations where none existed. Evaluated across four edge populations - confident true positives, low-confidence true positives, false positives, and random samples - the long-term attribution identifies historical snapshots carrying significantly more counterfactual signal than random selection (0.127 vs. 0.074), a capability that no spatially-blind explainer can provide. We release our implementation for full reproducibility.",
+    "authors": [
+      "Iyad Assaad Nekka",
+      "Hamida Seba",
+      "Khaled Walid Hidouci",
+      "Karima Amrouche"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12441v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12441v1",
+    "fetched_at": "2026-08-14T09:02:33.145479"
+  },
+  {
+    "id": "2608.13560v1",
+    "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+    "abstract": "Transforming multimodal sources into condensed and structured media outputs can be fundamentally conceptualized as a long-horizon agentic process centered on a model-harness system. While an ideal harness system should align with human design priors and accumulate reusable experience through empirical exploration to drive recursive self-improvement, existing paradigms remain static and fall short of this capability. In this paper, we present AutoDesign, a framework that aligns with human design priors, where a meta-harness optimizer guides a code agent to recursively improve harness based on rollout feedback. To instantiate and evaluate this framework, we focus on the academic paper-to-poster generation task and introduce PosterBench, comprising a 100-paper Main Track spanning five disciplines and PosterBench-mini, a shared 10-paper subset for controlled evaluation. On the PosterBench Main Track, AutoDesign achieves the highest score of 78.32, surpassing the closed-source commercial system Claude Design by 7.45 points. Across seven controlled code-agent-model configurations, integrating the learned DesignHarness consistently improves performance, increasing the average PosterBench Score from 54.99 to 67.39 (+12.4%). In a fully autonomous long-horizon loop, it executes 253 tool calls and 11 editing turns within 40 minutes for under $3, reaching average conference-poster quality in human evaluation. A system-blind human study further demonstrates that AutoDesign achieves the highest human preference among evaluated systems.",
+    "authors": [
+      "Yaxin Luo",
+      "Haobin Jiang",
+      "Jialv Zou",
+      "Xu Huang",
+      "Wenhao Yan",
+      "Haodong Li",
+      "Zhengrong Yue",
+      "Jing Li",
+      "Xiaofu Chen",
+      "Xiaohan Zhao",
+      "Jiacheng Liu",
+      "Jiacheng Cui",
+      "Zhiqiang Shen",
+      "Xiaotong Li"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13560v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13560v1",
+    "fetched_at": "2026-08-14T09:03:02.832314"
+  },
+  {
+    "id": "2608.13558v1",
+    "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+    "abstract": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems typically reason over text, code, labels, or precomputed summaries, leaving scientifically decisive spatial, temporal, cross-channel, and procedural relations unavailable to the agent. We introduce OmniScientist, an end-to-end, omni-modal AI scientist that conducts multidisciplinary research directly from heterogeneous raw evidence. A perception layer and 3 autonomous agents for ideation, experiment, and writeup operate within a deterministic pipeline, allowing observations to shape research questions, experimental decisions, and final claims throughout the research lifecycle. By running idea, rigour, and claim checks in code, the system enforces novelty screening, statistical validity, execution provenance, and numerical traceability. We evaluate OmniScientist on 36 real-data cases spanning 5 discipline families, 4 families of scientific evidence, and modalities including images, signals, audio, video, 3-D structures, trajectories, tables, formulae, and graphs. The system completes the full path from raw data to a compiled manuscript in all 36 cases and achieves a mean overall paper score of 6.3 with the reference reasoning backbone. In paired comparisons against a blind variant that receives only precomputed scalar features, direct perception improves all 7 evaluation dimensions and wins 85% of head-to-head judgments. These results show that lifecycle-wide perception is essential for evidence-grounded scientific discovery and provides a practical path toward broadly capable AI scientists.",
+    "authors": [
+      "Bobo Li",
+      "Hao Fei",
+      "Tianjie Ju",
+      "Mong-Li Lee",
+      "Wynne Hsu"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13558v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13558v1",
+    "fetched_at": "2026-08-14T09:03:02.832350"
+  },
+  {
+    "id": "2608.13547v1",
+    "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+    "abstract": "LLM coding agents issue Bash commands through interfaces that may serialize, wrap, and reparse model output. Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. QuoteBench measures this boundary with exact final-state validation on 56 one-shot tasks from 14 incident-derived families, crossing the generation contract with the execution transport around one deliberately unescaped added parser. Escaping at the interpolation point reproduces each replayed reply's raw-path outcome, so any recovery under a disclosed boundary must come from the model changing its generation. Across eight same-window configurations, replaying the same reply through the added parser lowers success by 55.4 to 73.2 percentage points; disclosure recovers 30.4 to 60.7 points for six configurations, and zero or slightly negative for the other two. Raw generation is nearly saturated at the frontier; boundary adaptation is what still separates models. GPT-5.6-sol's matched gap of -3.6 points hides -64.3 points of damage and +60.7 points of compensation. The deployment configuration reorders models: one reversal among 26 comparable pairs is unambiguous and four more sit on single-task margins. Evaluations of command-issuing agents should report the model configuration, generation contract, execution path, operating point, and final-state validator rather than treat a matched score as an intrinsic model property.",
+    "authors": [
+      "Shangao Li",
+      "Yao Zhang",
+      "Volker Tresp",
+      "Yuanyuan Yang"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13547v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13547v1",
+    "fetched_at": "2026-08-14T09:03:02.832374"
+  },
+  {
+    "id": "2608.13450v1",
+    "title": "LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles",
+    "abstract": "Autonomous vehicles depend on large safety-critical software stacks, where weaknesses reachable from adversarial inputs may affect steering, braking, or other control decisions. Static analysis can identify candidate sites, but dynamically confirming exploitability requires executable test artifacts that are difficult to construct manually. We investigate whether large language models (LLMs) can automate this process for Autoware, an open-source autonomous-driving stack. We perform compiler-precise static analysis across 185 packages, identifying 1,375 decision rules, 2,274 validation checks, and 482 input-to-safety-output flows, from which we derive a weakness taxonomy and sample 740 reachable sites. Two local open-weight LLMs, a no-static-context ablation, and a naive-template baseline generate 3,700 artifact sets, which are compiled against the real build under sanitizers, repaired through compiler-in-the-loop feedback, and fuzzed when executable. The main result is a build-integration failure taxonomy showing that 80% of first-shot compilation failures arise from dependency wiring rather than program logic. The reasoning model compiled 64% of harnesses on the first attempt, compared with 6% for the code-specialized model. Repair achieved full object-compileability for the reasoning model only through extensive stubbing; fewer than half of its harnesses reached the fuzzer, and all 37 observed crashes originated in stubbed code rather than Autoware. No candidate weakness was dynamically confirmed within budget. These results show that build integration, not candidate generation or fuzzing, is the primary barrier to reliable LLM-assisted dynamic analysis of full autonomous-vehicle software stacks.",
+    "authors": [
+      "Md Wasiul Haque",
+      "Sagar Dasgupta",
+      "Mizanur Rahman",
+      "Md Rayhanur Rahman"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.SE",
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13450v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13450v1",
+    "fetched_at": "2026-08-14T09:03:02.832398"
+  },
+  {
+    "id": "2608.13438v1",
+    "title": "ContactGuard: Pre-Contact Execution Monitoring with Action-Conditioned Latent World Models",
+    "abstract": "Contact-rich manipulation failures are often detected only after the robot has committed to contact. This is especially limiting in wrist-camera setups: close gripper--object views help observe contact, but a poor approach may already push, miss, slip, or disturb the object before conventional detectors react. We introduce \\emph{ContactGuard}, a pre-contact execution monitor for chunked visuomotor policies. Given the policy's planned action chunk, ContactGuard predicts its short-horizon consequence in latent visual space and aborts if the predicted future latent indicates likely failure. Its latent world model is trained from unlabelled robot trajectories to predict compact multi-view visual embeddings under planned actions, avoiding pixel-level video prediction. A lightweight failure probe is then trained from a small labelled set of pre-contact clips. At deployment, ContactGuard anchors prediction before an imminent contact event, rolls the model forward under the policy's own actions, and verifies the predicted post-contact latent. Across real-world contact-rich manipulation tasks, ContactGuard predicts failure more accurately than direct and corrupted-action ablations, and transfers to live robot as a pre-contact abort signal without modifying the underlying policy.",
+    "authors": [
+      "Gehan Zheng",
+      "Matthew Johnson-Roberson",
+      "Weiming Zhi"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13438v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13438v1",
+    "fetched_at": "2026-08-14T09:03:02.832420"
+  },
+  {
+    "id": "2608.13417v1",
+    "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+    "abstract": "Autonomous agents are increasingly capable of improving models, systems, and other technical artifacts through long-horizon experimentation. To understand the current state of this capability, however, evaluation must go beyond final scores, which neither reveal where progress is gained or lost nor indicate whether accumulated experience improves later decisions. We therefore present a systematic evaluation of seven frontier models on 36 long-horizon tasks based on a new framework that uses rule-based metrics to characterize within-run behavior through Solution Framing, Execution, and Feedback Control and controlled comparisons to assess experience reuse within and across tasks. The results show that current agents operate more like engineering optimizers than fully autonomous researchers: they can formulate and implement practical solutions, but their performance varies substantially across runs, their strongest solutions mainly adapt or combine established techniques, and genuine methodological novelty remains rare. Detailed analysis reveals that observed performance is shaped by multiple factors, including distinct process bottlenecks behind similar final outcomes, experience reuse that can help or mislead subsequent decisions, and harness designs that affect performance stability. These findings suggest concrete directions for improving model training, inference-time strategies, experience management, and harness design.",
+    "authors": [
+      "Yiwei Li",
+      "Wanli Yang",
+      "Hexiang Tan",
+      "Xiangzhou Huang",
+      "Zhengyu Chen",
+      "Ziran Li",
+      "Borun Chen",
+      "Shanglin Lei",
+      "Huaisheng Zhu",
+      "Hao Tian",
+      "Fei Sun",
+      "Xunliang Cai",
+      "Jingang Wang"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13417v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13417v1",
+    "fetched_at": "2026-08-14T09:03:02.832459"
+  },
+  {
+    "id": "2608.13389v1",
+    "title": "TopoIntent: Compiling Security Intent into Executable, Compliance-Checked Network Topologies",
+    "abstract": "Enterprise security topology design requires translating business intent, regulatory requirements, and risk assumptions into zones, boundary devices, inter-zone paths, and access-control policies. Existing NetOps automation tools mainly operate after this design is fixed, providing limited support for generating structured security topologies from underspecified natural-language requirements. We present TopoIntent, a system that compiles security intent into executable, compliance-checked network topologies. It uses a schema contract to constrain generation, retrieves reference architectures from a curated template library via dense-vector search, and applies staged fusion for intent-template alignment and security completion. The generated topology is checked against CIS Controls v8.1.2 safeguards visible at the topology layer, while unresolved cases are marked for manual review. Structural gaps are repaired through additive schema-preserving edits. The final topology is exported to Mininet scripts with kernel-level iptables ACLs, enabling executable reachability and allow/deny tests. Because no public benchmark exists for this requirement-to-topology task, we construct an evaluation set from reference security architecture diagrams. The retrieval set contains 22 templates and 44 synthetic intents across five scenarios, while the held-out set contains 7 templates and 14 intents from finance and government scenarios excluded from retrieval. On the held-out set, additive repair improves topology-visible CIS satisfaction from 0.78 to 1.00 in fewer than 1.5 rounds on average, and one feedback round raises the post-ACL policy pass rate from 0.78 to 0.88.",
+    "authors": [
+      "Xiaokang Qu",
+      "Jianliang Ma",
+      "Zao Fan",
+      "Tianshu Chu",
+      "Tianlong Fan",
+      "Linyuan Lü"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI",
+      "cs.CR",
+      "cs.NI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13389v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13389v1",
+    "fetched_at": "2026-08-14T09:03:02.832485"
+  },
+  {
+    "id": "2608.13228v1",
+    "title": "Capability Sheaves for Compositional Agent-Harness Repair: Controlled Quotients and a Real-Repository Stress Test",
+    "abstract": "Agent harnesses combine retrieval, routing, state, provenance, and verification, but locally successful components may disagree on shared state. We model this failure with a finite \\emph{capability sheaf}: stalks encode typed behavior signatures, restriction maps retain shared fields, and accepted runs are useful global sections. An exact finite constraint-satisfaction problem (CSP) defines acceptance, while a linearized relative cohomology class provides a diagnostic and search feature.   A controlled experiment over 20 task clusters introduces hidden interior mediators whose raw states are nuisance variables. Quotienting their coboundaries reduces the candidate budget from 2,000 to 1,000 per cluster; aligning the hidden state removes the gap. Exact CSP matches the quotient, so the result demonstrates invariance to stale representatives, not superiority over exact reasoning.   We then test the method on a discovery split from the SWE-bench Multilingual pool of PatchFuseBench: 160 issues from 20 repositories, 875 real candidate patches, 2,579 source-aware edit atoms, and 153 newly executed patches. A first pool-level construction is constant because $[b-Dx]=[b]$ in $\\operatorname{coker}D$ and therefore cannot rank configurations. A candidate-indexed repair is nontrivial on 848/875 candidates and varies within 120/160 issues. It resolves 118 issues versus 116 for a matched noncohomological selector, but the difference is not supported across repositories (exact sign-flip $p=0.75$). A leave-one-repository-out abstention gate reaches 127/160, tying the strong anchor and exceeding its matched gate by one issue ($p=1.0$). The discovery gate therefore fails and the confirmatory split remains sealed. The study supports the controlled invariance mechanism and an identifiability correction, but not a real-world cohomological advantage.",
+    "authors": [
+      "Saveliy Batruin"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13228v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13228v1",
+    "fetched_at": "2026-08-14T09:03:02.832505"
+  },
+  {
+    "id": "2608.13173v1",
+    "title": "SkillShapley: Boundary-Adaptive Shapley Valuation for Skill Step Attribution in LLM Agents",
+    "abstract": "Agent skills are crucial external instructions that enable language agents to execute long procedural tasks such as coding or document processing. Existing agent skills are primarily created through human manual crafting or agent execution traces, with limited understanding of how each step contributes to overall skill performance on specific tasks; i.e., there remains an open problem in quantifying the contribution of individual steps within an agent skill. To address this issue, we first model skill-step attribution as a Shapley value-based contribution estimation problem, and then propose SkillShapley, a step-level attribution framework for agent skills. Notably, SkillShapley operates in two phases, motivated by key empirical insights, i.e., discretized benchmark rewards that create sharp performance cliffs, and step interactions that are largely additive rather than synergistic. Specifically, it first identifies informative coalitional regions, and then adaptively samples new coalitions that can yield reusable marginal evidence. Experiments on skills from the widely adopted SkillsBench demonstrate that our SkillShapley can effectively and efficiently identify high- or low-value skill steps, providing several key takeaways for agent skill creation.",
+    "authors": [
+      "Chang Liu",
+      "Yuqi Zhang",
+      "Yiman Zhong",
+      "Boyi Liu",
+      "Hengjun Wang",
+      "Shuyue Wei"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13173v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13173v1",
+    "fetched_at": "2026-08-14T09:03:02.832531"
+  },
+  {
+    "id": "2608.13129v1",
+    "title": "Numeracy in Large Language Models: Fundamental Limitations and Paths to Improvement",
+    "abstract": "Large language models (LLMs) achieve strong results on mathematical reasoning benchmarks yet remain unreliable on elementary numerical tasks, including magnitude comparison, large-integer arithmetic, fractions, and scientific notation. This survey examines basic numerical understanding as a capability distinct from high-level mathematical reasoning. We propose the Numerical Grounding Framework (NGF), which decomposes numeracy into Representational Grounding (RG), mapping numeral forms to value, magnitude, and equivalent representations, and Procedural Grounding (PG), executing arithmetic operations in accordance with their mathematical definitions. Using NGF, we organize recent diagnostic benchmarks, failure modes, structural explanations, and mitigation strategies. We review evidence concerning tokenization, positional encoding, embedding geometry, and pretraining-data distribution. We also apply NGF in a coordinated evaluation of three frontier model families across Number Cookbook, NumericBench, and GSM-Symbolic, comparing atomic, contextual, and reasoning-assisted numeracy. Architectural interventions such as digit-aware tokenization and Abacus Embeddings can improve models trained from scratch but are generally unavailable to users of pretrained systems, for whom supervised fine-tuning, reasoning scaffolds, and external tools are more practical. We conclude with deployment recommendations and research directions for more reliable numerical behavior in foundation models.",
+    "authors": [
+      "Aoxin Ni"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13129v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13129v1",
+    "fetched_at": "2026-08-14T09:03:02.832565"
+  },
+  {
+    "id": "2608.12977v1",
+    "title": "Beyond Handcrafted Security: Towards Self-Evolving Defense for LLM Agents",
+    "abstract": "The expanding operational capabilities of large language model (LLM) agents introduce sophisticated security threats. Runtime defenses have emerged as an effective approach to mitigating these risks by integrating security mechanisms into the agent execution loop. However, existing runtime defenses rely heavily on manually designed interventions and lack a principled framework for their construction and maintenance. In this work, we first develop a harness-level formulation of runtime defense that systematically characterizes how harness mechanisms enable defense construction and provides a unified view of existing runtime defense interventions from a harness perspective. Building on this formulation, we propose HARD (Harness-based Autonomous Runtime Defense Evolution), a self-evolving runtime defense framework that automatically identifies appropriate intervention strategies and iteratively improves defense artifacts based on observed failure traces. HARD transforms runtime defense development from manual engineering into an autonomous evolution process, and extensive experiments demonstrate that it improves security performance over existing handcrafted defenses while preserving benign task utility. Our findings highlight autonomous defense evolution as a promising new paradigm for securing deployed LLM agents, enabling agents to identify defense weaknesses and continuously improve their protection mechanisms.",
+    "authors": [
+      "Jiajun Ruan",
+      "Peiyang Li",
+      "Yukun Chen",
+      "Fengting Li",
+      "Chao Feng"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12977v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12977v1",
+    "fetched_at": "2026-08-14T09:03:02.832590"
+  },
+  {
+    "id": "2608.12921v1",
+    "title": "Discovering Efficient and Explainable Communication Topologies for LLM-based Multi-Agent Systems via Causal Inference",
+    "abstract": "The performance of large language model (LLM)-based multi-agent systems (MAS) largely depends on effective communication topologies. Existing topology generation methods, however, typically learn communication topologies through black-box optimization driven solely by task-level rewards. While effective, such optimization provides little insight into why particular communication edges are selected, making it difficult to identify the critical communication subgraphs responsible for successful collaboration. To address this limitation, we propose E2-Explainer, a model-agnostic framework for providing interpretable explanations of communication topologies produced by arbitrary topology generators. Specifically, we formulate topology explanation as a causal attribution problem that identifies compact communication subgraphs supported by edge-level evidence of task preservation. We obtain this evidence with a Granger-style objective that measures how masking each communication channel changes the task outcome and the stability of the final response. The resulting budgeted subgraphs are then distilled into an amortized explainer, enabling efficient post-hoc explanation without repeated edge-level evaluations at deployment. Extensive experiments on multiple reasoning and coding benchmarks demonstrate that E2-Explainer identifies critical communication subgraphs that preserve successful collaboration. These subgraphs can also be executed directly to prune redundant communication edges, substantially reducing communication costs while maintaining competitive task performance.",
+    "authors": [
+      "Junzhi Li",
+      "Peng He",
+      "Qirui Ji",
+      "Wei Wang",
+      "Lixiang Liu",
+      "Chuxiong Sun"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12921v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12921v1",
+    "fetched_at": "2026-08-14T09:03:02.832617"
+  },
+  {
+    "id": "2608.12895v1",
+    "title": "Agent Behavioral Contracts II: Certifying Compositional Reliability Without Assuming Independence",
+    "abstract": "Compositional reliability bounds for multi-agent systems multiply component reliabilities, a step licensed by a conditional-independence assumption that is routinely stated and rarely tested. We test it. Two instances of one model, in a two-agent handoff, co-fail on 90.0% of the missions on which either fails (log OR 6.66, 95% CI [6.38, 7.00]; phi 0.916), in a preregistered evaluation of 18,000 missions scored by deterministic code with no LLM judge. Substituting a different model reduces the association in six of six contrasts; substituting a different vendor, model already different, does not -- a registered hypothesis reported as a null.   The error is signed and runs against the operator: positive dependence inflates joint failure above the independence product, so redundancy is over-credited exactly when components share a model. The assumption-free alternative is often vacuous, and fitting a dependence model is worse: we prove a bootstrap bound on a fitted model's functional loses coverage of the truth as n grows, the identification gap being O(1) while the bootstrap haircut is O(n^{-1/2}). More data makes such a certificate worse, with no visible symptom.   We give a finite-sample certificate assuming no dependence structure: a linear program over the joint, over a Bonferroni-Clopper-Pearson box around measured co-execution moments. It is sound, sharp for the information supplied, and monotone in the moment family. Enriching ten moment functionals to fourteen narrows the identified interval by 85.7% and lifts the certified floor from 0.2455 to 0.4116. A companion anytime-valid certificate holds type-I error at 0.0471 under optional stopping.   Common dependence statistics are marginal-bounded and can reverse an apparent ordering of conditions when the compared agents fail at different rates. Contracts, scoring code, analysis scripts, and the preregistration are released.",
+    "authors": [
+      "Varun Pratap Bhardwaj",
+      "Garima Singh",
+      "Arun Pratap Bhardwaj"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12895v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12895v1",
+    "fetched_at": "2026-08-14T09:03:02.832639"
+  },
+  {
+    "id": "2608.12880v1",
+    "title": "Labels Are Not Endpoints: Treatment Leakage and Construct Validity in MCP Agent Security Evaluation",
+    "abstract": "Security evaluations of tool-using agents often equate stored labels with behavioral facts. We audit a preserved campaign by tracing 10,200 execution rows to 180 model-bound requests, 45 semantic requests, and 15 observable stimuli. Two schema treatments were delivered, but the planned external payload-family corpus was not. The historical grader exhibited direct treatment leakage: treatment metadata gated the ATTACK_SUCCESS class, so fixed behavior could change class under treatment relabeling. A treatment-blind reconstruction corrects 58 historical ATTACK_SUCCESS or HIJACK_ATTEMPT labels to authorized benign completions while preserving three verified protected-data transfers and one separate unauthorized-forwarding case. The locked v2 census contains exactly zero ATTACK_SUCCESS records, while the forwarding case remains a HIJACK_ATTEMPT at a semantic boundary concerning objective completion. A dual-reviewer blinded concordance review of all 96 requests deemed structurally interpretable by locked v2 produced identical reviewer-consensus classes but differed from the locked codebook on four construct-boundary cases. We contribute a seven-link Integrity Chain and an executable, scope-bounded endpoint-integrity linter. The result is a campaign-bounded measurement audit, not a population attack-rate, model-ranking, defense-efficacy, or causal estimate.",
+    "authors": [
+      "Rana Muhammad Ahmed",
+      "Sabahat Abbas"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12880v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12880v1",
+    "fetched_at": "2026-08-14T09:03:02.832658"
+  },
+  {
+    "id": "2608.12876v1",
+    "title": "SPARED: Reasoning-Based AI-Generated Image Detection via Adversarially Edited Data",
+    "abstract": "Detecting AI-generated images is only half the task: a deployed detector must also justify its verdict, yet existing detectors inherit three failure modes from their training data: real and fake images collected from different sources invite provenance shortcuts, supervised explanation corpora teach templated rationales, and a static forgery corpus leaves the decision boundary standing still while generators keep moving. We introduce \\methodname{}, an adversarial reinforcement learning framework that pits two heterogeneous models against each other. A diffusion image editor learns to edit real photographs into fake counterparts of those same photographs that fool the current detector, while a reasoning MLLM learns to expose them with a verdict grounded in free-form reasoning. Both rewards are shortcut-proof by design: the attacker is credited only when its edit is faithfully executed, and the defender only when its verdict is correct. As the two models alternate, each round's attacker regenerates a harder training pool aimed at the current detector's blind spots, so the detector must generalize rather than memorize any fixed artifact distribution. Although the explanation is never rewarded, its quality rises round over round as a side effect of accuracy-only training. A detector trained within this loop improves monotonically across rounds on each of three external benchmarks.",
+    "authors": [
+      "Yicheng Bao",
+      "Xiahui Guo",
+      "Xuhong Wang",
+      "Xin Tan"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12876v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.12876v1",
+    "fetched_at": "2026-08-14T09:03:02.832680"
+  },
+  {
+    "id": "2608.13079v1",
+    "title": "Learning Discrete Decisions for MIPs with Constraint-Aware Diffusion",
+    "abstract": "This paper proposes a novel learning-based approach to approximately solve instances of mixed-integer optimization problems. These problems are computationally challenging, as they require jointly determining discrete and continuous decisions while satisfying complex combinatorial constraints. The proposed method relies on a graph-based generative diffusion model that learns the discrete component of mixed-integer optimization problems while integrating a training-free feasibility projection operator directly into the reverse diffusion process to steer intermediate samples toward the feasible set throughout generation. Once the discrete decisions are generated, the remaining optimization reduces to a continuous problem that can be solved efficiently (relative to the original problem) using existing numerical methods. The resulting framework named Constrained Graph Diffusion (CGD), is problem-agnostic and can accommodate a broad class of mixed-integer optimization problems through suitable projection operators. We evaluate CGD on optimal transmission switching for ACOPF and discrete portfolio optimization, demonstrating substantial improvements in feasibility and solution quality over learning-based baselines while achieving speedups of up to $425\\times$ over state-of-the-art numerical solvers for MINLPs.",
+    "authors": [
+      "Vincenzo Di Vito",
+      "Mehdi Taghizadeh",
+      "Deepjyoti Deka",
+      "Kaarthik Sundar",
+      "Ferdinando Fioretto"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13079v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13079v1",
+    "fetched_at": "2026-08-14T09:04:56.293198"
+  }
+]
