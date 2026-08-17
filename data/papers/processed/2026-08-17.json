@@ -1,0 +1,741 @@
+[
+  {
+    "id": "2608.14323v1",
+    "title": "Dependence-Informed Sparse Neural Architecture for Stock Return Prediction",
+    "abstract": "Using neural networks for stock return prediction typically requires choices about depth and hidden-layer width that are difficult to connect to financial interpretation. We study an alternative: estimate dependence among firm characteristics with a Maximally Filtered Clique Forest (MFCF), then map its clique structure to a Homological Neural Network (HNN). The MFCF maximum clique size K is the only parameter controlling architectural complexity, and it has a clear graphical meaning: it bounds the number of characteristics in each maximal clique and hence the highest interaction order the network can represent. The filtered graph then fixes the neural network's depth, layer widths, and sparse connections before training, in place of a separately chosen depth and width sequence. We apply two HNN variants to annual out-of-sample forecasts of U.S. stock excess returns from 1987 to 2016 using 94 firm characteristics. The HNN models match a three-hidden-layer benchmark on pooled predictive accuracy, rank the cross-section more accurately, and use roughly 80 times fewer parameters than a fully connected network with the same induced layer widths. Two structural ablations indicate that both the sparse connectivity and the estimated grouping of characteristics contribute to the ranking advantage, and both effects remain significant after correcting for multiple testing. These findings show that HNNs offer a practical and interpretable way to incorporate estimated dependence among firm characteristics into neural architecture design.",
+    "authors": [
+      "Hongyu Lin",
+      "Yulin Chen",
+      "Yuanrong Wang",
+      "Antonio Briola",
+      "Tomaso Aste"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14323v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14323v1",
+    "fetched_at": "2026-08-17T08:36:16.061735",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957386"
+  },
+  {
+    "id": "2608.14256v1",
+    "title": "An ergodic theorem for multi-period mutual insurance",
+    "abstract": "Suppose there are $N$ heterogeneous agents in a market with idiosyncratic risks but no uninsurable systematic risk factors. These agents may agree arbitrary financial contracts with one another, subject to the condition that contracts are self-enforcing under coalitions of agents in a common state. We show that, under mild conditions, this uniquely determines the limiting utility of every agent as $N$ tends to infinity. The result is an ergodic theorem: as the population grows, the number of degrees of freedom in the problem collapses, so that agents in the same state are treated identically in the limit. We exhibit an explicit, practically realisable mechanism achieving this limit using only short-dated contracts. The model can be applied either to an economy of heterogeneous agents pooling idiosyncratic risk through self-enforcing contracts or to the design of optimal insurance products such as pensions.",
+    "authors": [
+      "John Armstrong"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14256v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14256v1",
+    "fetched_at": "2026-08-17T08:36:16.061767",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957403"
+  },
+  {
+    "id": "2608.14134v1",
+    "title": "Photonic Quantum Computing vs. Classical Solvers in Constrained Factor Portfolio Optimization",
+    "abstract": "The authors present a rigorous empirical evaluation of three distinct optimization paradigms for institutional factor portfolio construction: an entropy-based photonic quantum annealer (Dirac-3, Quantum Computing Inc.), a commercial mixed-integer programming solver (Gurobi), and a model-free deep reinforcement learning agent (SAC). Evaluating these pipelines on the Jensen-Kelly-Pedersen 13-factor equity library across 164 months test window, we implement a full factorial penalty sweep comprising 48 hyperparameter configurations that govern return, volatility, and skewness trade-offs. Our findings demonstrate that while photonic hardware can locate superior risk-return topologies within a narrow operating range, classical mixed-integer programming remains superior for risk-constrained mandates requiring tight tail-risk control and cross-seed stability. Furthermore, we document structural failure modes in reinforcement learning factor allocators under unanchored higher-moment shaping. We translate these empirical results into actionable, mandate-specific guidelines for quantitative portfolio managers deploying advanced optimization engines.",
+    "authors": [
+      "Nirvik Sahoo",
+      "Chyng Wen Tee",
+      "Paul Robert Griffin"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "quant-ph",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14134v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14134v1",
+    "fetched_at": "2026-08-17T08:36:16.061793",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957420"
+  },
+  {
+    "id": "2608.14014v1",
+    "title": "Buy the Rumor, Sell the News: When Is News Priced In?",
+    "abstract": "Two old market sayings hold that news is already priced in by the time it is published, and that the rumor is bought while the news is sold. Both place the price move associated with a piece of news before and at publication rather than after it. Whether the claims hold, for which kinds of news, and by how much are basic questions about how fast markets absorb public information. We test them on 4.57 million financial news articles covering roughly 3,000 US stocks (2023-2026). A large language model teacher, distilled into a compact classifier through active learning, assigns each article one of 17 event tags and five attributes; articles are clustered into stories to separate first reports from follow-up coverage; and beta-adjusted abnormal returns are measured around the resulting 1.68 million stock-day events, with 364,405 neutral-sentiment events as a placebo group. Three results follow. First, the price move associated with news concentrates before and at publication: pooled across all signed events, the cumulative move in the news direction by the close of publication day is 2.8 times its value 20 days later, and for rumor-flagged events the rumor day captures the entire move while the subsequent confirmation contributes nothing. Second, measured against the placebo of comparable stocks, markets underreact to numbers and overreact to stories: quantified fundamental news (earnings, dividends, guidance, analyst actions) keeps drifting in the direction of the news for weeks, while soft story-driven news (launches, macro commentary, leadership) gives back its move. Third, news carries width as well as direction: publicity raises volatility before the publication day, and volatility declines once the news is out, because publication resolves uncertainty. The study also produces a table of measured drift for each event tag, usable as a prior in news-conditioned forecasting models.",
+    "authors": [
+      "Alireza Kargarzadeh",
+      "Nariman Khaledian",
+      "Navid Parvini",
+      "Sid Ghatak",
+      "Arman Khaledian"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14014v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14014v1",
+    "fetched_at": "2026-08-17T08:36:16.061820",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Sentiment Analysis"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957434"
+  },
+  {
+    "id": "2608.13979v1",
+    "title": "Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in",
+    "abstract": "We develop a model of interbank networks with random liquidity shocks. Networks of dilutable debt---e.g., long-term, unsecured---facilitate efficient liquidity transfers: Shocked banks pledge interbank claims as collateral for new senior debt, diluting existing debt. Unlike with non-dilutable debt, indebtedness and connectedness are sources of stability, not fragility. Dilution is thus a ``backdoor bail-in'' that reallocates losses absent a resolution authority, trigger security, or ex post renegotiation. We uncover a class of networks, ``exponential networks,'' that implement optimal contingent transfers via plain debt. Yet exponential networks are not pairwise stable, whereas some core--periphery networks are, rationalizing observed interbank structures and their under-insurance against crises.",
+    "authors": [
+      "Jason Roderick Donaldson",
+      "Giorgia Piacentino",
+      "Xiaobo Yu"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "econ.TH",
+      "math.OC",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13979v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13979v1",
+    "fetched_at": "2026-08-17T08:36:16.061842",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957447"
+  },
+  {
+    "id": "2608.13745v1",
+    "title": "Dynamic Physical Hedging amid Jump Losses, Reconstruction-Price Uncertainty, Population Interactions",
+    "abstract": "We study dynamic physical hedging for insurers exposed jointly to catastrophe losses and stochastic reconstruction costs. Surplus evolves as a controlled jump diffusion whose loss amplitude combines marked catastrophe severity, an exogenous mean-reverting cost factor, and endogenous mitigation. We establish well-posedness, moment and stability estimates, and a stopping-time dynamic programming principle, and prove that the value function is the unique viscosity solution of the resulting nonlocal Hamilton-Jacobi-Bellman (HJB) equation Strategic interaction is introduced through a mean field game (MFG) with reduced-form vulnerability costs, yielding a coupled backward-forward HJB-Kolmogorov system. We establish relaxed equilibrium existence, Markovian realization, and uniqueness under appropriate compactness and monotonicity conditions. Numerical experiments show that reconstruction costs and capitalization materially affect optimal hedging and that cross-sectional vulnerability alters equilibrium costs. Tail-family robustness calculations further assess the sensitivity of these conclusions to alternative catastrophe-severity specifications.",
+    "authors": [
+      "Paramahansa Pramanik",
+      "Michael Bowdin"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13745v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13745v1",
+    "fetched_at": "2026-08-17T08:36:16.061862",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957458"
+  },
+  {
+    "id": "2608.13732v1",
+    "title": "On the First Hitting Time Problems for Diffusion Processes: Local Time-Space Approach",
+    "abstract": "Using the local time-space calculus of Peskir (2005) and the method developed in Mijatovic (2010), we derive a new integral representation for the distribution of the first-passage time (FPT) of a diffusion process through a time-dependent barrier. We present a complete three-step numerical algorithm: first, the problem is reduced to a Volterra-type integral equation; second, its kernel is approximated by a Markov chain; finally, the resulting equation is solved using a quadrature method. The method is implemented for several representative examples, and its convergence properties are established. An extension to double barrier problems is carried out.",
+    "authors": [
+      "Jerome Detemple",
+      "Yerkin Kitapbayev",
+      "Danila Shabalin"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "math.PR",
+      "q-fin.CP",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13732v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13732v1",
+    "fetched_at": "2026-08-17T08:36:16.061884",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957469"
+  },
+  {
+    "id": "2608.12424v2",
+    "title": "AI-Driven Multiscenario Interest Rate Forecasting: A Proof of Concept for Banking Asset Management",
+    "abstract": "This study focuses on developing an AI-supported prototype for multiperspective interest rate forecasting that combines classical econometric models with modern artificial intel-ligence methods. Tested in a major European bank, the system enables more precise and flexible prediction of interest rate developments, supporting strategic decision-making in Asset-Liability Management (ALM). It integrates topic modeling, sentiment analysis, econometric forecasting, and market-based analyses within an interactive platform. Leveraging AI to analyze large volumes of financial documents and market data enables the identification of monetary policy trends and sentiment signals at an early stage. The core econometric model is a Bayesian vector autoregression (BVAR) that enables simulation-based scenario analyses to evaluate economic developments from multiple perspectives. The system's innovation lies in its integration of several forecasting approaches that consolidate previously separate information sources and present them transparently and interpretably. Financial analysts and risk managers thus gain a better basis for making decisions, allowing them to assess interest rate risks more accurately and manage market movements more proactively. While the prototype demonstrates how AI can transform interest rate management in banking, further development is required to optimize real-time data integration and regulatory compliance. Even at this stage, the study shows that multi-perspective, AI-driven forecasting provides substantial added value for banks by increasing transparency, strengthening evidence-based decision-making, and improving risk management.",
+    "authors": [
+      "Ekkehardt Bauer",
+      "Dirk Holländer",
+      "David Scholz",
+      "Linus Wolff",
+      "Christoph Ostermair",
+      "Kyrillus Aiad",
+      "Joachim Hasebrook"
+    ],
+    "published": "2026-08-12",
+    "categories": [
+      "q-fin.CP",
+      "cs.LG",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.12424v2",
+    "arxiv_url": "https://arxiv.org/abs/2608.12424v2",
+    "fetched_at": "2026-08-17T08:36:16.062237",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Sentiment Analysis"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957487"
+  },
+  {
+    "id": "2608.14186v1",
+    "title": "Revisiting Energy-based Tabular Anomaly Detection: Energy and Reconstruction are Complementary",
+    "abstract": "Tabular anomaly detection is dominated by classical density-proxy methods (Isolation Forest, OCSVM, LOF), reconstruction-based detectors (Autoencoders, VAEs), and modern non-parametric scorers (COPOD, ECOD, Deep SVDD), all of which approximate the inlier distribution only indirectly; explicit energy-based models are largely absent. Motivated by the recent revival of EBMs in deep learning (e.g., Energy-Based Transformers, JEPA), we revisit the classical Deep Boltzmann Machine (DBM) for this task and hypothesize that its mean-field energy combines more effectively with a reconstruction-based score than same-lineage pairs do. We evaluate a two-hidden-layer DBM on two tabular benchmarks spanning distinct domains (UCI Bank Marketing and NSL-KDD) against eight classical and modern baselines across twenty random seeds. The DBM mean-field energy matches the strongest baseline (the Autoencoder) on Bank Marketing and statistically beats it on NSL-KDD, while significantly outperforming the remaining seven on both datasets. When fused with the Autoencoder via rank fusion, the DBM energy yields a statistically significant improvement on both datasets (AUROC=+0.014, p<0.01 on Bank Marketing; +0.002, p<0.001 on NSL-KDD); every non-DBM-derived base model instead fails to improve or significantly degrades the AE-paired ensemble. Our position is that classical EBMs, exemplified by the DBM, deserve a place in the tabular anomaly detection toolbox as a non-redundant complementary view to the reconstruction-based scores that dominate current practice.",
+    "authors": [
+      "Junichiro Niimi"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14186v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14186v1",
+    "fetched_at": "2026-08-17T08:36:29.396617",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957500"
+  },
+  {
+    "id": "2608.13932v1",
+    "title": "Post-training Quantization for Hybrid Iterative Generative Models",
+    "abstract": "Iterative Generative Models (IGMs) span autoregressive and diffusion paradigms, and hybrid variants that couple them can achieve remarkable image-generation fidelity. However, their iterative inference incurs substantial computational overhead, making Post-training Quantization (PTQ) appealing for acceleration, while directly applying vanilla PTQ to hybrid IGMs can trigger model collapse. By analyzing these failures, we identify two critical challenges: Excessive Outliers (EOs) in the activations create an irreconcilable trade-off between preserving normal precision and covering EOs, resulting in severe degradation in generation quality; Amplified Anomalies (AAs) arising unpredictably from minor quantization errors, create a mismatch between calibration and inference, thus iteratively triggering model collapse. To address these challenges, we introduce HyGenQ, a PTQ framework for hybrid IGMs. HyGenQ comprises Hierarchical Cluster Decoupling (HCD) and Scaling Recalibration (SR). HCD identifies and decouples outlier channels via a multi-stage clustering process, effectively isolating EOs while maintaining normal value precision, thereby alleviating performance degradation. SR scales AAs beyond Gaussian Bound, thereby avoiding model collapse caused by aggressive truncation. Extensive experiments demonstrate that HyGenQ successfully quantizes representative hybrid IGMs to 8-bit precision (W8A8), significantly outperforming existing baselines and validating its robustness across different model families.",
+    "authors": [
+      "Jing Gao",
+      "Junyi Wu",
+      "Wei Wang",
+      "Yan Yan",
+      "Yao Zhao"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13932v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13932v1",
+    "fetched_at": "2026-08-17T08:36:29.396668",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957511"
+  },
+  {
+    "id": "2608.13652v1",
+    "title": "Contrastive Learning for Interpretable Anomaly Detection at Collider Experiments",
+    "abstract": "Generic event-level anomaly detection for collider physics has two recurring problems: anomaly scores are hard to interpret, and they correlate strongly with energy scale and object multiplicity. We present Organized Representation via Contrastive learning for Anomaly detection (ORCA), a two-stage framework that first learns an embedding space via supervised contrastive learning across a diverse set of physics processes, then runs a standard autoencoder in that space to generate event-level anomaly scores. On a simulated dataset consistent with conditions at the High-Luminosity Large Hadron Collider, ORCA delivers significant gains in both breadth and depth of sensitivity to new physics signals with respect to a baseline autoencoder architecture. Beyond improved sensitivity, the contrastive embedding makes the anomalous sample interpretable: because known processes occupy distinct regions of the space, a maximum-likelihood template fit to the embedding distributions can attribute events in an anomalous sample to template physics processes with quantified uncertainties. We demonstrate that the fit accurately recovers injected signal yields, including for signals excluded from the training of the embedding, and characterizes signals absent from the template library through the known processes they most resemble. These results establish ORCA as a route to interpretable anomaly detection-based searches at colliders, where the embedding geometry carries higher dimensional physics information compared to standard one-dimensional output fits, enhancing downstream statistical analysis.",
+    "authors": [
+      "Haoyi Jia",
+      "Sagar Addepalli",
+      "Julia Gonski"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.LG",
+      "hep-ex",
+      "hep-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13652v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.13652v1",
+    "fetched_at": "2026-08-17T08:36:29.396691",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957522"
+  },
+  {
+    "id": "2608.14498v1",
+    "title": "Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training",
+    "abstract": "Vision-language models (VLMs) enable embodied agents to reason and act from visual observations and language instructions. Reinforcement learning (RL) post-training enhances these capabilities using task feedback, but current on-policy RL runtimes execute rollout, reference scoring, and actor training in strict serial phases. While effective for text-only RL, this phase-granular execution is wasteful for VLMs, where processing dense video inputs and prompt prefixes occupies a large fraction of each phase. Because prefix processing is independent of the generated response, it can be run alongside rollout decoding, which leaves GPU compute capacity underutilized, without breaking synchronous on-policy semantics.   We present Rollplex, a runtime that decomposes the reference and training phase and moves the prefix computation into the rollout decode window. Realizing this schedule requires more than concurrent kernel launches: naive colocation of Qwen2.5-VL-32\\,B requires roughly 165\\,GiB per GPU, while rollout and training prefer different tensor-parallel (TP) degrees and weight layouts. Rollplex addresses these constraints with two mechanisms. Phase-aware memory management controls HBM residency according to producer--consumer lifetimes. Parallelism-aware weight sharing uses the same physical storage for layout-compatible tensors across distinct TP degrees and reconstructs only incompatible tensors, avoiding a complete second actor copy. On 32 H800 GPUs, Rollplex achieves $1.23\\times$--$1.30\\times$ speedup over serial colocation and $1.57\\times$--$2.24\\times$ over disaggregation under the same GPU budget, while preserving the synchronous RL update.",
+    "authors": [
+      "Hanfeng Lu",
+      "Tianyu Feng",
+      "Suyi Li",
+      "Yuheng Zhao",
+      "Wei Gao",
+      "Shaopan Xiong",
+      "Ju Huang",
+      "Siran Yang",
+      "Jiamang Wang",
+      "Lin Qu",
+      "Wei Wang"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14498v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14498v1",
+    "fetched_at": "2026-08-17T08:36:58.857979",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957533"
+  },
+  {
+    "id": "2608.14490v1",
+    "title": "Twin: Playing an Unknown Game with a Test-Time Digital Twin",
+    "abstract": "We present a Test-time World-model Inference (Twin) system, in which a frontier coding agent writes an executable world model for completing continual learning tasks, such as ARC-AGI-3 games. Traditional approaches hand-engineer such models, one custom design per task. Each game hides its rules and goal, and our system constructs them from simulation and interaction alone. Its inductive prior over grid games is strong enough to recover the true transitions of the game and the goal on nearly all levels. Replay validation happens in a twin world model. The harness enforces that an action is not made until the program reproduces every previous observed game transition. Each mismatch between a world model prediction and the actual action result becomes a counterexample that is used to repair the world model. Twin clears 179 out of 183 levels (97.8%), and does so more efficiently than humans in 158 out of 179 levels (88.3%). The system infers the goal before any reward on 156 of the levels it clears (87.2%), and in the remaining levels automatically discovers the goal by search. The benchmark scores completion and action efficiency, between 0 and 100, against humans playing each game for the first time. Played directly, the base model scores only 7.8%; an off-the-shelf harness increases it to 61.1%, whereas our twin world model increases the same base model to 93.3%, clearing 23 out of 25 games. Building a usable world model is simpler than anticipated, whereas the harder problem is inferring the right goal.",
+    "authors": [
+      "Alexy Skoutnev",
+      "Kirill Acharya",
+      "Gaston Longhitano",
+      "Madeleine Udell",
+      "Kevin Ellis",
+      "Iddo Drori"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14490v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14490v1",
+    "fetched_at": "2026-08-17T08:36:58.858014",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957543"
+  },
+  {
+    "id": "2608.14441v1",
+    "title": "PACE-Bench: Benchmarking Physics Adaptation via Code Evolution in Dynamic Environments",
+    "abstract": "Self-evolving agents improve future behavior from interaction experience, yet existing evaluations typically optimize under fixed execution conditions and do not test recovery after those conditions change. To address this gap, we introduce PACE-Bench (Physics Adaptation via Code Evolution), a simulator-grounded benchmark of 144 source-to-target adaptation pairs across six physics domains. Each pair links a source environment to a mutated target environment with the same goal and interface. A code-driven design that succeeds in the source fails in the target, where agents must iteratively adapt it into a working target design using diagnostic sandbox feedback within a limited attempt budget. We compare ten self-evolving methods from four paradigms. The benchmark remains far from saturated: Reflexion + Qwen3-14B succeeds on only 35.9\\% of full-benchmark pairs, while GPT-5.5 solves 66.7\\% of the Statics subset under the full budget. Together, these results show that simulator-grounded reflection is more reliable than unverified self-revision, while memory anchors agents to early designs and broad tree search explores without converging. Even revealing exact physical changes does not raise the performance ceiling, pointing to mechanism redesign rather than parameter inference as the central bottleneck. Data and code are available at https://github.com/thunlp/PACE-Bench.",
+    "authors": [
+      "Yuhao Zhan",
+      "Bingxiang He",
+      "Zecong Tang",
+      "Chaojun Xiao"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14441v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14441v1",
+    "fetched_at": "2026-08-17T08:36:58.858037",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957552"
+  },
+  {
+    "id": "2608.14407v1",
+    "title": "The Past and Future of AI Scientists",
+    "abstract": "We present a survey of the past and future of AI Scientists: machines capable of automating science. AI Scientists can originate hypotheses, deduce their consequences, design and execute experiments, interpret their results, and revise their beliefs. Such systems are integrated scientific agents, connected to the literature, formal knowledge, mathematical models, simulations, data-analysis systems and physical laboratories.   Adam was the first machine to make novel scientific discoveries through cycles of hypothesis formation and physical experimentation. Eve established the architecture of the modern self-driving laboratory. Foundation models, autonomous agents and laboratory robotics now make it possible to build systems far more general than either Adam or Eve.   The central problem is no longer whether individual components of science can be automated. They can. The problem is integration. AI Scientists must combine neural learning with logic, probability, mathematics, causal reasoning, simulation, experimental design, robotics and formal scientific records.   AI Scientists have the potential to transform science: to make science faster, cheaper, more systematic and more reproducible. AI Scientists could investigate systems too complicated for unaided human science, and enable thousands of AI scientists to work together on single problems.   The Nobel Turing Challenge sets the goal of developing by 2050 AI systems capable of automating Nobel-quality discoveries. Progress is ahead of schedule. When we succeed it will create a new form of science and transform the world.",
+    "authors": [
+      "Ross D. King"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14407v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14407v1",
+    "fetched_at": "2026-08-17T08:36:58.858056",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957562"
+  },
+  {
+    "id": "2608.14380v1",
+    "title": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
+    "abstract": "Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in execution may propagate through both the agent context and environment state, and their effects may be difficult to reverse through subsequent actions. Existing methods mainly seek to reduce such errors through plan refinement and safety checks but provide little support after errors occur. To enable recovery during long-horizon execution, we present AgentRewind, a runtime recovery framework that records aligned checkpoints of the agent context and controlled environment, allowing agents to return to an earlier state and resume execution with information from previous attempts. We also construct MettleBench, a benchmark for evaluating task completion and partial progress on long-horizon engineering assignments containing a series of related requirements. Experiments across tasks, multiple models, execution strategies, and agent harnesses show that AgentRewind improves task success rate and average checklist progress over the compared baselines.",
+    "authors": [
+      "Yu Zhuang",
+      "Kefei Chen",
+      "Yitong Duan",
+      "Shuxin Zheng",
+      "Jian Li",
+      "Xu-Yao Zhang"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14380v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14380v1",
+    "fetched_at": "2026-08-17T08:36:58.858082",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957572"
+  },
+  {
+    "id": "2608.14359v1",
+    "title": "Designing Sustainable Federated Learning as a Service using Neural Architecture Search",
+    "abstract": "The sustainability constraints of FLaaS consumers pose significant challenges to maintaining carbon-feasible federated training in FLaaS environments. These constraints often lead to infeasible consumer participation and unstable federated training under hard carbon constraints. We propose a Sustainable Federated Learning as a Service (SFLaaS), a carbon- constrained Neural Architecture Search (NAS) framework for heteroge- neous sustainable constraints. We introduce a requirement-driven search space that transforms consumer sustainability profiles into a feasible architecture region before federated execution. We develop a consumer-level carbon feasibility estimation mechanism to evaluate candidate architectures under dynamic carbon conditions. We propose a sustainable con- sumer scheduling strategy that adaptively selects feasible consumers and allocates local workloads to preserve consumer participation and statistical data coverage. An evolutionary search strategy jointly optimised for predictive performance, consumer feasibility, and participation coverage under hard carbon constraints. Experiments on real-world datasets and a simulated environment demonstrate the effectiveness of the proposed approach.",
+    "authors": [
+      "Keya Patel",
+      "Sajib Mistry",
+      "Sheik Fattah",
+      "Deepak Kanneganti",
+      "Aneesh Krishna",
+      "Mufti Mahmud",
+      "Monowar Bhuyan"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14359v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14359v1",
+    "fetched_at": "2026-08-17T08:36:58.858110",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957581"
+  },
+  {
+    "id": "2608.14354v1",
+    "title": "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
+    "abstract": "Enabling LLM agents to sustain productive, stable, and goal-aligned research over extended horizons is a central challenge for autonomous machine learning and scientific discovery, as progress hinges on continuously managing evolving state, exploration decisions, and computational resources. Pioneering autoresearch agents, despite great success, still lack mechanisms for continuity, recovery from dead ends, and value-driven compute allocation, which inherently undermines overall search efficiency, wastes computational resources, and lowers the chance of ultimate success. To bridge this gap, we introduce ScienceFlow, an end-to-end autoresearch agent framework that organizes long-horizon research work into research segments grounded in executable workspaces. It represents research progress as recoverable executable states, enabling efficient exploration, revision, and execution. Transitions between research segments are governed by Executable-State Transition through Re-Anchoring (ESTRA), which selects either the live state or an archived state as the next anchor and determines whether to continue or redirect the research trajectory. An evidence-aware execution controller allocates resources to physical jobs based on resource availability, remaining budget, and validated progress. We evaluate ScienceFlow on tasks spanning machine learning, scientific modeling, and mathematical optimization. Results on diverse long-horizon benchmarks demonstrate its ability to sustain effective research processes, highlighted by a SOTA 70.22 percent Any-Medal score on the full MLE-bench within a 24-hour budget, outperforming prior reported results by 4.92 percentage points. The efficacy of ScienceFlow further demonstrates that efficient state management, adaptive exploration, and objective-aligned execution are critical for scaling autonomous research beyond short-horizon interactions.",
+    "authors": [
+      "Mingming Zhao",
+      "Jiqian Dong",
+      "Kangping Xu",
+      "Zadid Hasan",
+      "Chengrui Fan",
+      "Shan Jiang",
+      "Shuai Mao",
+      "Ting Lingya",
+      "Linyi Zou",
+      "Tailin Zhou",
+      "Yun Hin Chan",
+      "Wenkai Zhang",
+      "Zhanhong Zhou",
+      "Guowei Huang",
+      "Hongliang Li",
+      "Wenjing Cun",
+      "Zhitang Chen",
+      "Mingxuan Yuan",
+      "Yanhui Geng"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14354v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14354v1",
+    "fetched_at": "2026-08-17T08:36:58.858158",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957592"
+  },
+  {
+    "id": "2608.14352v1",
+    "title": "ATLAS: Discovering Agent Strategies through LLM-Guided Abstraction and Automata Learning",
+    "abstract": "Large Language Model (LLM)-based agents are increasingly used for complex tasks such as software testing and cybersecurity assessment. While these agents demonstrate impressive capabilities, their behavior is difficult to understand, explain, and analyze. Existing evaluations focus mainly on task success and execution traces, offering limited insight into the strategies employed by the agent. We present ATLAS (Automata Learning for Agent Trajectory Analysis and Strategy Discovery), an approach for recovering interpretable behavioral models from agent trajectories. ATLAS combines trace abstraction with automata learning to infer finite-state models that capture observed agent-environment interaction strategies. These models provide human-interpretable insights and support automated analyses of recurring behaviors, decision points, successful task-completion paths, and failure loops. As a proof of concept, we apply ATLAS to trajectories generated by an LLM-based penetration-testing agent. The resulting models expose high-level behavioral strategies for exploiting vulnerable machines that are difficult to identify from raw execution traces alone. We discuss how learned behavioral models can support explainability, model-guided exploration, auditing, and analysis of agentic systems. We further demonstrate symbolic model-based knowledge transfer from powerful frontier models to compact language models. In addition, we show how model transformations can derive concise explanations of agent behavior in a penetration-testing case study comprising 12 vulnerable machines. ATLAS highlights a new opportunity for model-driven engineering: transforming agent trajectories into explicit behavioral models that enable systematic understanding and analysis of otherwise opaque AI agents.",
+    "authors": [
+      "Ignacio D. Lopez-Miguel",
+      "Andreas Happe",
+      "Jürgen Cito",
+      "Ezio Bartocci",
+      "Bettina Könighofer",
+      "Martin Tappler"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14352v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14352v1",
+    "fetched_at": "2026-08-17T08:36:58.858184",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957603"
+  },
+  {
+    "id": "2608.14312v1",
+    "title": "Envs-FORGE: Frontier-Optimized Reward-Grounded Environment Synthesis for Agent RL",
+    "abstract": "Reinforcement learning (RL) for terminal agents needs executable training environments with reliable rewards and useful difficulty. Fixed recipes such as few-shot, Self-Instruct, and Evol-Instruct apply the same prompting policy to every seed, even when the current policy would benefit from a harder, easier, or simply different task. We present Envs-FORGE, a prompting policy that converts verifier rewards into per-seed environment-synthesis actions. Envs-FORGE estimates seed pass rates, scores six projection--direction actions around a target learning frontier, and solves a per-seed mixed-integer linear program (MILP) to choose the action that conditions generation. The selected action drives synchronized rewriting of the instruction, fixtures, oracle solution, tests, and Docker environment; only gold-verified bundles enter RL training. The indexed MILP form also supports optional soft skill coverage for portfolio planning. On Qwen 3.5 35B, Envs-FORGE improves Pass@1 over Base by 9.2 percentage points on tb-core (40.0% to 49.2%) and 6.4 points on tb-2.0 (23.0% to 29.4%), exceeding the strongest fixed-recipe baseline by 2.4 and 2.1 points. It reaches 77.1% on SWE-bench Verified versus 73.4% for Base, and improves tb-core by 6.8--9.2 points across the evaluated 4B--35B models. All synthesis methods export 100 verified environments and use 2.27M--2.88M synthesis tokens, placing the comparison at the same downstream training-set size and the same operational scale. The source code is available at https://github.com/DataArcTech/DataArc-SynData-Toolkit/.",
+    "authors": [
+      "Xiaojun Wu",
+      "Cehao Yang",
+      "Honghao Liu",
+      "Xueyuan Lin",
+      "Zhichao Shi",
+      "Hao Zhou",
+      "Xuhui Jiang",
+      "Chengjin Xu",
+      "Jia Li",
+      "Jian Guo"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14312v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14312v1",
+    "fetched_at": "2026-08-17T08:36:58.858218",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957614"
+  },
+  {
+    "id": "2608.14306v1",
+    "title": "Sensor-Driven Mission Synthesis for UAV/UGV Swarms: A TB-CSPN Coordination Architecture with Hardware-Enforced Safety",
+    "abstract": "This paper presents a coordination architecture for heterogeneous UAV/UGV swarms that synthesises mission actions from uncertain, multi-modal sensor evidence while preserving hardware-enforced safety at the actuation boundary. The approach combines radar, RF, acoustic, and visual observations with Topic-Based Communication Space Petri Net (TB-CSPN) orchestration to support incremental mission formation under partial and evolving information. Consultant agents transform sensor outputs into temporally bounded semantic tokens, while supervisor agents provide authorisation and policy-governed release of mission transitions. This separation between interpretation, coordination, and execution yields auditable decision paths, constrains non-determinism within the coordination layer through guards and synchronisation, and enables bounded-time integration of heterogeneous evidence. To improve resilience in contested environments, including cyber compromise, spoofing, jamming, and communication loss, the digital coordination layer is complemented by independent analogue safety envelopes that clamp or veto unsafe actuator commands issued to individual vehicles. A coastal-surveillance case study illustrates how the proposed architecture enables dependable, governed, and physically safe swarm coordination under operational uncertainty.",
+    "authors": [
+      "Uwe M. Borghoff",
+      "Paolo Bottoni",
+      "Remo Pareschi"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14306v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14306v1",
+    "fetched_at": "2026-08-17T08:36:58.858239",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957648"
+  },
+  {
+    "id": "2608.14252v1",
+    "title": "Grounding Without Corrective Control: Truth-Tracking Profiles for Large Language Models",
+    "abstract": "Recent work suggests that some large language model representations have content or reference. Grounding can secure either without supplying live routes for correction. This paper asks what follows from that gap. An output is answerable when discrepancies can affect what a target- and task-specific arrangement produces, accepts, or withdraws. The arrangement has corrective control only when live, sufficiently independent routes can detect and repair fresh discrepancies. A route profile records which routes constrain the arrangement and how they are related. Those profiles support analysis of truth-tracking: patterned support for representational success.   Language models are the pressure case; text-only arrangements provide a task-relative limiting case. Text-trained models inherit patterns of testimony, coherence, and prior correction. Where target-sensitive correction survives training, these can supply derivative answerability (inherited constraint); live answerability is the relation supplied by a current route for fresh discrepancies. Fluent failures should follow when a task requires independently informative access to the facts. Self-consistency, retrieval, tools, code execution, multimodal input, and feedback should help selectively. Route-by-task interactions test the distinctions. The decomposition's empirical burden is to predict held-out route--task combinations or improve intervention choice without conceptual refitting. Surface improvement and truth-tracking improvement can come apart.",
+    "authors": [
+      "Brett Reynolds"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14252v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14252v1",
+    "fetched_at": "2026-08-17T08:36:58.858257",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957661"
+  },
+  {
+    "id": "2608.14212v1",
+    "title": "APTER: Adaptive Post-Training with Expert-Grounded Rubrics",
+    "abstract": "As large language models enter professional domains, they must satisfy domain constraints, include critical evidence, and provide complete reasoning rather than merely produce fluent responses. Existing post-training methods often rely on holistic preferences or outcome-level verification, while recent rubric-based methods usually generate rubrics independently for each query. In specialized domains, such unconstrained rubrics may omit critical requirements and vary across samples, hindering the diagnosis and targeted repair of persistent capability deficiencies. We propose APTER (Adaptive Post-Training with Expert-Grounded Rubrics), a framework that integrates structured domain knowledge into fine-grained evaluation, optimization, and diagnosis for specialized complex reasoning. First, expert-grounded rubric construction starts from an expert criteria framework built by domain experts, where each criterion represents a stable professional capability. For each query, APTER selects relevant criteria and instantiates them into query-level rubrics linked to their source criteria, turning reusable expert criteria into executable query-level supervision without reference answers. Second, adaptive post-training uses rubric verdicts as both optimization and criterion-level diagnostic signals. Aggregating low-scoring verdicts by criterion ID reveals persistent deficiencies and triggers targeted supervised fine-tuning updates during reinforcement learning. Experiments on mathematical reasoning and medical question answering show consistent gains across both domains. Across three model generations, APTER improves the mathematics and medical averages over the corresponding base models by up to 15.86 and 8.04 points, respectively. Code and rubric datasets are available at https://github.com/AntDT-APTER/APTER.",
+    "authors": [
+      "Xukai Wang",
+      "Liangqi Li",
+      "Zhiyue Xu",
+      "Jingang Zhou",
+      "Xiaoyu Shi",
+      "Jiansheng Cai",
+      "Bo Zhang",
+      "Zhe Li",
+      "Xu-Yao Zhang"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14212v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14212v1",
+    "fetched_at": "2026-08-17T08:36:58.858288",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957671"
+  },
+  {
+    "id": "2608.14205v1",
+    "title": "FreeBalance: Pre-Routing Online Moe Load Balancing via Residual Workload Prediction",
+    "abstract": "Load imbalance poses a major bottleneck to the efficiency of expert parallelism in distributed inference of Mixture-of-Experts (MoE) models. The most heavily loaded rank stalls global execution due to skewed routing distributions, directly increasing latency. While offline expert placement can alleviate persistent imbalance, practical multi-task serving workloads exhibit layer- and batch-dependent routing dynamics, making online load balancing indispensable. Existing approaches rely on routing statistics collected after each MoE router, requiring expert weight load or migration to begin only after routing decisions are available, consequently placing migration overhead on the inference critical path. In this work, we observe that online balancing can instead be largely overlapped with computation before target routing (e.g., attention), if routing distributions can be predicted accurately in advance. Therefore, we propose FreeBalance, a lossless online load-balancing framework that overlaps expert migration with preceding computation stages via residual workload prediction. FreeBalance leverages cross-layer similarities in hidden representations within the residual network to build a lightweight workload predictor. This enables proactive expert migration planning before routing decisions are available, creating substantial overlap between weight transfer and computation-heavy pre-routing stages. Furthermore, a cost model constrains the number of swaps to fully hide the synchronization overhead within the available window. Experiments across models and datasets show that FreeBalance reduces the max-to-mean rank load ratio by 32.8% and end-to-end prefill latency by 13.1%. Specifically, our method hides balancing overhead of an average of 5.1 experts per layer, which would otherwise account for about 8.5% of the critical-path latency.",
+    "authors": [
+      "Pengfei Chen",
+      "Yize Wu",
+      "Shouxu Kuang",
+      "Ke Gao",
+      "Ling Li"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14205v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14205v1",
+    "fetched_at": "2026-08-17T08:36:58.858312",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957682"
+  },
+  {
+    "id": "2608.14132v1",
+    "title": "Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions",
+    "abstract": "Mobile GUI Agents powered by multimodal large language models (MLLMs) show promise in human-computer intelligence. However, current research primarily focuses on reactive task execution while lacking a comprehensive understanding-prediction-execution process for user intentions, which are the core requirements of active agents. In this paper, we propose the Act2Intention framework that builds an active mobile agent by integrating understanding, predicting user intentions, and executing decisions. First, we construct the Act2Intention Bench through data collection and validated generation, comprising 72,511 intentions and over 700,000 actions across 52 apps, thereby establishing the first benchmark for evaluating proactive agents via continuous intention-action trajectories. We further develop the Act2Intention Agent, achieving proactive services through Proactive-oriented Intention Understanding, Personalized Proactive Intention Prediction, and Experience-guided Intention Execution. Experimental results show that supervised fine-tuning on Act2Intention Bench yields absolute improvements of +32.0 Acc-S, +10.25 Acc-S, and +6.9 SSR points over non-fine-tuned counterparts under the same agent framework for intention understanding, prediction, and execution, respectively. This success underscores the necessity and value of the Act2Intention Bench, which establishes a standardized platform for developing and evaluating proactive agents and consequently paves the way for research on intention-driven human-computer interaction.",
+    "authors": [
+      "Xiaokai Yan",
+      "Jingtao Ding",
+      "Yong Li",
+      "Zhiwen Yu"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14132v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14132v1",
+    "fetched_at": "2026-08-17T08:36:58.858335",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957693"
+  },
+  {
+    "id": "2608.14125v1",
+    "title": "Traj-LeWM: Path-Aware World-Model Planning via Latent Trajectory Cost",
+    "abstract": "LeWM is a lightweight visual world model that learns latent dynamics end-to-end from pixels and ranks candidate action sequences by the distance between their predicted endpoints and the goal. However, LeWM has two limitations. First, during training, it learns local next-step transitions without evaluating complete trajectories relative to the task goal. Second, during planning, it ranks candidates solely by predicted endpoint distance. Because model predictions may differ from actual execution outcomes, the candidate whose predicted endpoint is closest to the goal may not perform best when executed in the environment. The evolution of the complete predicted trajectory can therefore provide complementary information beyond endpoint distance. To address these limitations, we propose Traj-LeWM, which retains LeWM's local-dynamics objective and endpoint score while introducing a goal-conditioned latent trajectory cost (LTC) that aggregates trajectory-level information as a complementary signal. During training, LTC-based trajectory-preference supervision complements next-step prediction in shaping the shared representation. During planning, LTC is combined with endpoint distance to incorporate intermediate-path information into candidate ranking. With joint endpoint-plus-LTC scoring, Traj-LeWM outperforms LeWM on Push-T, OGBench-Cube, Reacher, and Two-Room by $3$, $14$, $7$, and $7$ percentage points, respectively. Controlled experiments and ablations further verify the complementary roles of trajectory-level representation shaping and path-aware candidate ranking.",
+    "authors": [
+      "Xiaodi Huang",
+      "Ziyi Ding",
+      "Jingtian Wan",
+      "Yuchen Liu",
+      "Yuan Zhang",
+      "Xiao-Ping Zhang",
+      "Jiayu Chen",
+      "Zhang Zhang",
+      "Tao Huang"
+    ],
+    "published": "2026-08-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.14125v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.14125v1",
+    "fetched_at": "2026-08-17T08:36:58.858366",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957703"
+  },
+  {
+    "id": "2608.13079v2",
+    "title": "Learning Discrete Decisions for MIPs with Constraint-Aware Diffusion",
+    "abstract": "This paper proposes a novel learning-based approach to approximately solve instances of mixed-integer optimization problems. These problems are computationally challenging, as they require jointly determining discrete and continuous decisions while satisfying complex combinatorial constraints. The proposed method relies on a graph-based generative diffusion model that learns the discrete component of mixed-integer optimization problems while integrating a training-free feasibility projection operator directly into the reverse diffusion process to steer intermediate samples toward the feasible set throughout generation. Once the discrete decisions are generated, the remaining optimization reduces to a continuous problem that can be solved efficiently (relative to the original problem) using existing numerical methods. The resulting framework named Constrained Graph Diffusion (CGD), is problem-agnostic and can accommodate a broad class of mixed-integer optimization problems through suitable projection operators. We evaluate CGD on optimal transmission switching for ACOPF and discrete portfolio optimization, demonstrating substantial improvements in feasibility and solution quality over learning-based baselines while achieving speedups of up to $425\\times$ over state-of-the-art numerical solvers for MINLPs.",
+    "authors": [
+      "Vincenzo Di Vito",
+      "Mehdi Taghizadeh",
+      "Deepjyoti Deka",
+      "Kaarthik Sundar",
+      "Ferdinando Fioretto"
+    ],
+    "published": "2026-08-13",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.13079v2",
+    "arxiv_url": "https://arxiv.org/abs/2608.13079v2",
+    "fetched_at": "2026-08-17T08:38:52.468909",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-17T08:39:08.957712"
+  }
+]
