@@ -1,0 +1,433 @@
+[
+  {
+    "id": "2608.20842v1",
+    "title": "Rethinking Synthetic Scenario Realism: Compatibility, Not Fidelity, Drives Hedging Performance",
+    "abstract": "Deep hedging is a data-driven approach to learn hedging strategies. It relies on synthetic price paths generator, as real market data is often limited for training. Existing approaches primarily evaluate such generators based on realism, i.e., how well they capture statistical properties of real markets, but the relationship between realism and hedging performance remains unclear. In this work, we introduce a decision-centric perspective on synthetic data for deep hedging based on the notion of compatibility. Compatibility measures the extent to which strategies trained on synthetic scenarios remain effective in the true market. We theoretically show that 1) hedging performance decomposes into learning error and a compatibility gap, and 2) realism and compatibility can diverge. Empirically, we find that hedging performance is governed not by realism alone, but by the alignment between the generator and the hedger, together with task structure. Taken together, this work provides a principled basis for designing synthetic data in finance aligned with decision tasks.",
+    "authors": [
+      "Ryuji Hashimoto",
+      "Masanori Hirano",
+      "Ryota Ozaki",
+      "Kentaro Imajo"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20842v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20842v1",
+    "fetched_at": "2026-08-24T08:41:04.912416"
+  },
+  {
+    "id": "2608.20727v1",
+    "title": "A Multiscale Ball Test for Conditional Mean Independence",
+    "abstract": "Tests of conditional mean independence can lose power when departures are confined to a bounded part of a multivariate predictor space and the relevant spatial scale is unknown. We propose a Multiscale Ball Conditional Mean Independence (MBCMI) test that aggregates support-weighted local mean contrasts in an outcome variable across balls centered on each data point in a predictor set. Fixed-grid theory identifies the population target, establishes consistency for grid-visible alternatives, and derives a Pitman local-power limit governed by the ball-smoothed mean departure. For serial data, feasible recursive-sign-bootstrap validity for stable finite-order autoregressions with conditionally sign-symmetric innovations is established. Application-aligned serial null experiments reject 4.25% of the time. MBCI is demonstrated to be strongest for local and radial signals. Predictor-law experiments show that these conclusions are not an artefact of independent Gaussian covariates. In monthly U.S. finance data, cross-fitted residual MBCMI tests remove every full-sample rejection, suggesting contemporaneous conditional-mean dependence rather than evidence of distinctive nonlinear structure.",
+    "authors": [
+      "Simon Rudkin",
+      "Wanling Rudkin"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "stat.ME",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20727v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20727v1",
+    "fetched_at": "2026-08-24T08:41:04.912447"
+  },
+  {
+    "id": "2608.20589v1",
+    "title": "Calibrating Inelastic Markets to Options: The Lean Marketron and the Generalized Langevin Equation",
+    "abstract": "The Marketron model of \\cite{HalperinItkin2025Mark} and its option pricing extension in \\cite{HalperinItkinMarketron2} suffer from structural non-identifiability: an eighteen-parameter space traps solvers in suboptimal local minima and renders economic quantities unmeasurable. By removing exact scaling gauges and sign symmetries, freezing non-financial parameters by explicit criteria, and adiabatically eliminating the fast hidden signal, we derive a robust nine-parameter reduced model. A Gauss-Newton Hessian with empty null space and a manifold-boundary analysis confirm that the reduced core carries no exact symmetry and admits no further reduction. A diffusive correlation between flow and return innovations captures the short-maturity skew. A staged calibration from the physical measure to the risk-neutral measure, illustrated on SPX options, fits the whole surface with a single parameter set. The same reduction turns the wedge between the physical and pricing values of the flow block into a well-defined market price of flow risk rather than a ridge artifact, identifiable here for the first time, though a single surface constrains its level only weakly. Finally, our analysis reveals that in the Marketron model the log-price obeys a generalized Langevin equation with a closed-form, state-modulated memory kernel, and that the memory variable itself is the exact Markovian lift of this kernel. This mapping also yields a testable condition, the equality of the signal and memory relaxation rates, which on the SPX surface come out well separated, though both weakly identified, placing the fitted market tentatively in the driven, non-equilibrium regime and turning the active-matter reading from an analogy into a falsifiable constraint.",
+    "authors": [
+      "Andrey Itkin"
+    ],
+    "published": "2026-08-20",
+    "categories": [
+      "q-fin.CP",
+      "physics.comp-ph",
+      "q-fin.MF",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20589v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20589v1",
+    "fetched_at": "2026-08-24T08:41:04.912466"
+  },
+  {
+    "id": "2608.21251v1",
+    "title": "TRACE-C: Rank-Calibrated Relational Anomaly Detection for Multi-Stream Operational Telemetry",
+    "abstract": "Operational telemetry can be jointly anomalous while every individual stream stays inside its familiar range. TRACE-C is an auditable strictly-prior rank-calibrated detector for aligned multi-stream telemetry: same-regime rolling median/MAD residuals feed three window channels -- a maximum normalized local sum, a Gaussian copula-form dependence contrast on robust-z residuals, and a worst standardized AR(1) innovation -- whose channel ranks are Fisher-aggregated and ranked against earlier aggregates.   We evaluate six Great Britain grid streams with a January-April 2019 fit, July-December 2019 development evidence, and a 2020 hold-out frozen before inspection. TRACE-C ranks Storm Atiyah first among 2019 test windows, but a disclosed channel ablation attributes that rank to the local channel, not the copula-form channel: copula-only ranks Atiyah 59th. The short 9 August frequency event is ranked far lower by the fused detector (143) than by the temporal channel alone (40), and reconstruction baselines rank it first. In 2020 no window is selected, which is consistent with record-rule saturation rather than an uneventful year; the highest-ranked frozen window was later interpreted as Storm Ellen.   Three interpretive limits carry throughout. The resulting p-values are selection quantities, not event probabilities. The copula-form channel is not a literal copula density: the method applies no probability-integral or normal-score transform. Empirical rank counts are diagnostics, not coverage or false-discovery proofs. Every table and figure in this paper is generated from committed machine-readable reports.",
+    "authors": [
+      "Matthew Faucher"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21251v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21251v1",
+    "fetched_at": "2026-08-24T08:41:18.358404"
+  },
+  {
+    "id": "2608.21117v1",
+    "title": "Root cause analysis via difference graph discovery from linear time-series data",
+    "abstract": "Root cause analysis aims to identify the mechanisms responsible for anomalies in complex dynamical systems. In this paper, we study root cause analysis in linear time-series through the lens of difference graph discovery. We focus on effect-defying root causes, corresponding to variables whose causal coefficients change between a normal and an anomalous regime. We formalize this problem using linear discrete-time dynamic structural causal models and adapt several methods originally introduced for discovering difference graphs between two populations to the time-series setting, where the two populations are replaced by a normal and an anomalous regime. We first evaluate the proposed approaches on simulated data, and then demonstrate their practical relevance on real-world datasets from IT monitoring and intensive care monitoring. Our results show how difference graph discovery can help localize causal mechanisms responsible for anomalous behavior.",
+    "authors": [
+      "Anouk Ruer",
+      "Timothée Loranchet",
+      "Daria Bystrova",
+      "Charles K. Assaad"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21117v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21117v1",
+    "fetched_at": "2026-08-24T08:41:18.358434"
+  },
+  {
+    "id": "2608.20513v1",
+    "title": "Making Deployments Safe at Meta: Health Checks for Continuous Change-Safety",
+    "abstract": "Continuous deployment to large scale production systems creates a tension between release velocity and reliability. Every change is a potential reliability incident, yet every delay is a missed opportunity. This paper describes the deployment time health check infrastructure that Meta uses to mediate this tension across thousands of heterogeneous services. We summarize the architecture of this prevention based distributed system's service called Service Health Checker, explain how check authors compose templated metric queries, thresholds, and workflow predicates; and discuss how the system is integrated with tiered and phased rollouts so that regressions trigger automatic rollback. We then describe the operational problems that emerged at scale, such as noise, alert fatigue, drift, and uncovered regressions, and the program of measurement, tooling, and improved defaults we deployed to address them. We close with lessons learned from years of operating deployment health checks at Meta, and the directions we are exploring next, including AI assisted health check tuning. Index Terms: deployment safety, continuous deployment, monitoring, software reliability, release engineering, software reliability engineering, AIOps, anomaly detection",
+    "authors": [
+      "Prakash KL",
+      "Anton Korenkov",
+      "Uttam Thakore",
+      "Christopher Hegre"
+    ],
+    "published": "2026-08-20",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20513v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20513v1",
+    "fetched_at": "2026-08-24T08:41:18.358454"
+  },
+  {
+    "id": "2608.21356v1",
+    "title": "AI with Authority, from Application to Silicon",
+    "abstract": "For sixty years, machine verification has been a major cost overhead, affordable only for exceptional artifacts. Here we report that generative AI inverts this relationship: at AI speed, machine verification is not only economical but essential to productivity --- it is the incorruptible referee that lets one person safely direct autonomous machine work at scale. In five weeks, one researcher on consumer AI subscriptions directed a small fleet of AI agents from application code, through a verified compiler and executive, to a RISC-V processor taped out on a community silicon shuttle; no proof passed through human review, and no RTL was written by a human. The working discipline --- the Salt method --- rests on a proof kernel no hallucinated proof can pass: mathematical claims travel between agents as kernel-checked artifacts, and human attention is reserved for statements, designs, and rulings. Verification is stated link by link, from the Lean 4 kernel to SAT-checked equivalence at the silicon boundary. We publish the complete accounting: theorem provenance, a pre-registered token meter, floor-bounded human time, and an error ledger whose catch numbering runs to #256 --- a monotone counter over the mathematics campaign's append-only flags ledger, maintained 2026-07-07 to 2026-07-20 (one number, #79, was never assigned; later catches are recorded un-numbered) --- against zero incorrect proofs reaching the record.",
+    "authors": [
+      "Jason Hickey"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.AR",
+      "cs.LO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21356v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21356v1",
+    "fetched_at": "2026-08-24T08:41:48.641602"
+  },
+  {
+    "id": "2608.21277v1",
+    "title": "ConceptTS: LLM-Guided Concept Bottlenecks for Interpretable Multivariate Time-Series Forecasting",
+    "abstract": "State-of-the-art multivariate time-series forecasters can model complex temporal and cross-variable dependencies, yet their opaque representations provide limited insight into why a particular forecast is produced. This lack of transparency restricts their use in settings where practitioners must understand and assess the factors underlying a prediction. We introduce ConceptTS, an interpretable forecasting framework that organizes its predictions around named, human-readable concepts. ConceptTS uses a large language model to propose task-relevant concepts and generate executable labeling rules, translating the language model's domain knowledge into direct supervision without costly manual concept annotation. The proposed concepts are organized into three complementary bottlenecks that describe the historical context, local forecast intervals, and the full forecast horizon. A shared decoder combines representations derived from their predicted activations to construct the forecast, making the model's decision process explicit and supporting direct concept-level interventions. Experiments on the Beijing Multi-Site Air Quality dataset show that ConceptTS achieves accuracy competitive with strong black-box baselines while producing semantically meaningful concept activations.",
+    "authors": [
+      "Yichen Jiang",
+      "Yueqiao Chen",
+      "Dongyu Liu"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21277v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21277v1",
+    "fetched_at": "2026-08-24T08:41:48.641629"
+  },
+  {
+    "id": "2608.21223v1",
+    "title": "Event-triggered Implicit Perturbation for Zeroth-Order Fine-Tuning of Spiking Transformers",
+    "abstract": "Zeroth-order (ZO) optimization estimates gradients using only forward-pass evaluations, making it suitable for fine-tuning non-differentiable, event-driven spiking neural networks (SNNs). However, its deployment on in-memory computing (IMC) accelerators is constrained by the repeated read-modify-write (RMW) operations arising from explicit weight perturbation and the prohibitive hardware footprint of random number generators (RNGs) for statistically independent per-weight perturbations. To address these challenges, we propose an implicit-perturbation ZO (IPZO) architecture in which perturbation sums computed by an event-triggered perturbation generation unit (PGU) are combined with the weighted sums produced by the IMC array, eliminating perturbation-induced RMW operations while preserving weight-stationary execution of IMC. By exploiting spike sparsity, the PGU generates and accumulates perturbation contributions only for spike-activated weight rows, reducing the required row dimension of the RNG array. An address-driven XOR recombination scheme (PGU-XOR) is further introduced to mitigate the spatial correlations caused by direct RNG reuse (PGU-Reuse). The results show that (1) PGU-XOR matches software RNGs in accuracy on Spikingformer/CIFAR-10 (76.41% vs. 76.53%) and perplexity (PPL) on SpikeGPT/WikiText-2 (54.20 vs. 53.23), whereas PGU-Reuse degrades accuracy by 9.56 percentage points and increases PPL by 11.8; (2) implemented in a TSMC 16-nm CMOS technology, PGU-XOR incurs 40.3%-46.0% area and 15.2%-48.9% energy overhead per matrix-vector multiplication relative to PGU-Reuse, yet its faster convergence reduces the total perturbation energy to 0.51x that of PGU-Reuse at iso-accuracy; (3) IPZO reduces the perturbation energy to 0.46x-0.83x that of conventional explicit weight perturbation for a batch size of B=64 and T=4 time steps, with the advantage growing as BT decreases.",
+    "authors": [
+      "Tengteng Lei",
+      "Prabodh Katti",
+      "Rashi Dutt",
+      "Houssem Sifaou",
+      "Tan Peng",
+      "Osvaldo Simeone",
+      "Kai Xu",
+      "Bipin Rajendran"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.AR",
+      "cs.LG",
+      "cs.NE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21223v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21223v1",
+    "fetched_at": "2026-08-24T08:41:48.641654"
+  },
+  {
+    "id": "2608.21208v1",
+    "title": "Specification Portability Across LLM Development Agents: Cross-Agent Compatibility in Specification-Driven Software Migration",
+    "abstract": "This paper investigates cross-agent specification portability using Oracle-to-PostgreSQL migration as a controlled software transformation task. The study combines two experimental stages. First, a specification-first migration pipeline was evaluated on 1,006 PL/SQL files, of which 623 were successfully regenerated and 380 generated scripts executed successfully in PostgreSQL 16. Second, cross-agent experiments were conducted on a dataset of 1,802 Oracle scripts with corresponding PostgreSQL implementations using Amazon Kiro, Google Gemini, and GitHub Copilot, with Claude Code and Cursor included in the initial single-agent evaluation. Native and foreign specifications were assessed using Token F1, exact match, SQL syntax validity, AST exact match, AST mean similarity, and immediate runnability. The results show that specification size alone does not predict implementation quality and that cross-agent transfer can produce substantial agent-dependent degradation. The strongest replicated case occurred when Gemini directly consumed a Kiro-origin specification, producing a Token F1 of 0.035, SQL syntax validity of 2.33%, and AST mean similarity of 0.015. Rewriting substantially improved Gemini in the tested configuration, compression did not provide a universal benefit, and retrieval-augmented ingestion was the only common strategy represented on the per-agent Pareto frontiers of both Gemini and Copilot. The findings suggest that specifications in heterogeneous SDD workflows should not automatically be treated as agent-neutral artifacts and motivate explicit consideration of specification portability, agent-specific interpretation, and retrieval-based access in multi-agent software engineering.",
+    "authors": [
+      "Oleg Grynets",
+      "Oleksii Ilchuk",
+      "Dariia Zatulna",
+      "Vasyl Lyashkevych"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.LO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21208v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21208v1",
+    "fetched_at": "2026-08-24T08:41:48.641672"
+  },
+  {
+    "id": "2608.21159v1",
+    "title": "AID-Guard: Stateful Authorization for Delegated Agent Effects",
+    "abstract": "Tool-using AI agents turn delegated tasks into provider effects, yet authorization often ends at admission while provider state, delivery, retry, and recovery evolve. A request may change before commit, or response loss may cause a replacement to create a second effect from one approval. We present AID-Guard, a stateful authorization-to-effect closure protocol. It revalidates the approved request and provider state at commit, retains one reservation under ambiguity, and permits release or one successor only after a terminal result or certified no effect with a delivery fence. For supported provider contracts, one reservation yields at most one effect across retry and recovery. To our knowledge, it is the first evaluated agent-authorization protocol to unify these controls in one lifecycle.   We implement a Python/SQLite prototype. In a declared loopback MCP domain, 13 live mutations caused no unauthorized provider effects, three concurrent histories were linearizable, and evidence bundles supported public verification and replay. All 210 Stripe provider-contract trials matched predeclared outcomes. Across Stripe and Resend, 40 terminalize-successor schedules, 30 overlapping races, and 10 crash-recovery schedules completed without duplicate effects. Under complete proposer compromise, AID-Guard blocked 44/44 attacks and admitted 44/44 matched legitimate proposals. Its strict exact-manifest profile reduced benign utility by 35.4 to 43.8 percentage points; a typed frontier recovered 9-10 completions without observed unsafe effects. A composition study blocked 20/20 post-admission lifecycle attacks and preserved 8/8 valid or exact-retry executions. The results support authorization-to-effect binding under the evaluated effect-path inventory, provider contracts, and failure schedules.",
+    "authors": [
+      "Yingzhe Tong",
+      "Leyu Dai",
+      "Songhui Guo"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21159v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21159v1",
+    "fetched_at": "2026-08-24T08:41:48.641690"
+  },
+  {
+    "id": "2608.21156v1",
+    "title": "Graph Engineering in the Era of LLM Agents: From Individual Intelligence to System Intelligence",
+    "abstract": "LLMs have evolved from language generators to autonomous agents capable of complex, long-horizon tasks. This evolution has produced paradigms including Prompt Engineering to elicit model capabilities, Context Engineering to manage information access, Harness Engineering to organize external tools and resources, and Loop Engineering to support continual reflection and self-improvement. Yet as tasks grow more complex, individual intelligence faces a fundamental limit: many tasks require heterogeneous expertise, interdependent subtasks, parallel execution, independent verification, and persistent state, exceeding any single agent's organizational capacity. Augmenting one agent's capabilities or context cannot resolve this architectural mismatch; intelligence must instead be distributed across specialized agents and organized at the system level. We call this System Intelligence: an agent system's ability to organize and coordinate multiple intelligent components into a coherent, adaptive whole pursuing a shared objective. Achieving it requires more than adding agents; it demands explicit structures to organize work, coordinate heterogeneous agents, and maintain evolving execution states. We introduce Graph Engineering, an emerging paradigm for next-generation agent systems. Unlike prior paradigms that mainly optimize individual interactions or agent-level behavior, Graph Engineering constructs explicit, dynamic, evolving graph structures representing tasks, agents, and system states. These abstractions provide a unified foundation for organizing complex objectives, orchestrating heterogeneous agents, modeling system dynamics, and enabling scalable agent evolution. We systematically review the principles, methodologies, and applications of Graph Engineering for LLM agents. Related papers, open-source data, and projects are collected at https://github.com/DEEP-JLU/Awesome-Graph-Engineering.",
+    "authors": [
+      "Yuyuan Feng",
+      "Zhishang Xiang",
+      "Chaobin Yang",
+      "Qichao Ma",
+      "Zerui Chen",
+      "Yujing Zhang",
+      "Ke Huang",
+      "Chuanjie Wu",
+      "Zhaoxu Liu",
+      "Yili Wang",
+      "Xin He",
+      "Jiapu Wang",
+      "Zijin Hong",
+      "Hao Chen",
+      "Yuanchen Bei",
+      "Kun Wang",
+      "Shengyuan Chen",
+      "Ningyu Zhang",
+      "Enyan Dai",
+      "Linhao Luo",
+      "Qingyi Pan",
+      "Qi Wang",
+      "Wenqi Fan",
+      "Guangjing Wang",
+      "Na Zou",
+      "Yangqiu Song",
+      "Xin Wang",
+      "Zechao Li",
+      "Xia Hu",
+      "Qing Li",
+      "Xiao Huang",
+      "Zhihong Zhang",
+      "Jinsong Su",
+      "Qinggang Zhang",
+      "Yi Chang"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.ET"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21156v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21156v1",
+    "fetched_at": "2026-08-24T08:41:48.641750"
+  },
+  {
+    "id": "2608.21134v1",
+    "title": "Llama-Mobile: Efficient 2.7-Bit Quantization of VLMs",
+    "abstract": "Deploying vision-language models (VLMs) on mobile devices is challenging due to their significant memory and compute requirements. We present a framework for quantizing VLMs for efficient inference on resource-constrained hardware. Our approach combines a quantization pipeline that uses the model itself to generate training data and does not require access to the training setup, with a novel 2.7-bit-per-parameter format supporting efficient execution on Arm CPUs. We validate our approach by compressing the Llama 3.2 11B Vision Instruct model to 3.7 GB with 8-bit activations, preserving strong performance on a set of standard visual question answering tasks.",
+    "authors": [
+      "Luka Ribar",
+      "Jeevan Bhoot",
+      "Douglas Orr"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21134v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21134v1",
+    "fetched_at": "2026-08-24T08:41:48.641767"
+  },
+  {
+    "id": "2608.21107v1",
+    "title": "Large Language Models at the Intersection of Software Engineering and Software Security:An Evidence-Centered Structured Survey and Research Agenda",
+    "abstract": "Large Language Models (LLMs) are moving from code completion toward repository-scale agents that retrieve context, edit files, execute tools, and participate in security-sensitive workflows. The evidence for these systems, however, remains divided between software engineering evaluations centered on functional task completion and software security evaluations centered on vulnerability detection, secure generation, or exploit-oriented validation. This evidence-centered structured survey synthesizes representative work available through May 31, 2026 across software engineering tasks, software security tasks, adaptation mechanisms, artifact granularity, and evaluation design. In addition to a task taxonomy, we introduce an assurance framework that separates functional correctness, security, operational reliability, evidence provenance, and agent authority. The review shows that execution feedback and repository access can substantially improve engineering task completion, but do not by themselves establish security; conversely, static-analysis labels or vulnerability-classification scores rarely establish deployable correctness. We identify recurring validity threats--weak test oracles, duplicated and temporally leaked data, changing agent harnesses, proxy-only security checks, and under-reported budgets and human intervention--and derive a minimum reporting protocol for cross-study comparison. The resulting research agenda prioritizes jointly secure-and-functional benchmarks, repository-scale threat models, calibrated human oversight, longitudinal maintainability evidence, and reproducible agent evaluation. The central conclusion is that model capability should be judged as an assurance case supported by task-appropriate evidence, rather than by a single benchmark score.",
+    "authors": [
+      "Wei Lin",
+      "Tao Zhou",
+      "Zhaofei Xie",
+      "Changgui Hong"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21107v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21107v1",
+    "fetched_at": "2026-08-24T08:41:48.641784"
+  },
+  {
+    "id": "2608.21101v1",
+    "title": "ClawSentry: A Progressive Multi-Tier Security Monitor for Safeguarding Autonomous LLM Agents",
+    "abstract": "As large language model (LLM) agents move from conversation to executing code, reading local files, and orchestrating external tools, a single agent hijacked by a malicious third-party skill can cause data exfiltration, privilege escalation, or cascading compromise. We argue that agentic risk is progressive: it can enter at four loci of the agent control loop--skill admission, invocation-time intent, execution-time effect, and post-action consequence--while a denied dangerous objective can reappear across surface forms, tools, or turns; existing safeguards are typically local to one lifecycle boundary or one call. Guided by this threat model, we present ClawSentry, an open-source, framework-agnostic security supervision gateway for agent runtimes. Before a skill package is ever executed, First-use Skill Package Review (FSPR) audits it under a deterministic evidence floor, escalating unresolved cases to bounded read-only agentic review (locus A). At runtime, a three-tier progressive decision engine--a deterministic L1 layer, a rule-anchored L2 semantic reviewer, and a read-only L3 evidence-seeking agent--spends contextual review only on the residual ambiguity, while a session-level anti-bypass mechanism recognizes tool-switching and rephrased retries (loci B--C); a post-action path feeds high-severity evidence non-retroactively into later review (locus D). An Agent Harness Protocol (AHP) abstraction applies one policy across Codex, Claude Code, Kimi CLI, and Gemini CLI without modifying agent internals. On SkillInject with Codex/GPT-5.4, contextual ASR falls from 39.55% to 2.61% while contextual TSR moves only from 83.78% to 83.05%. Across five Work Agents on the full SkillsSafety benchmark, ClawSentry confines ASR to 9.09--15.03% from 33.5--49.7% unprotected, and aggregate TSR on clean skills remains 98.7%.",
+    "authors": [
+      "Kai Wang",
+      "Zeming Wei",
+      "BiaoJie Zeng",
+      "Chang Jin",
+      "An Wang",
+      "Xiaokun Luan",
+      "Zhixiao Lin",
+      "Jingjing Qu",
+      "Xia Hu",
+      "Xingcheng Xu"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21101v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21101v1",
+    "fetched_at": "2026-08-24T08:41:48.641810"
+  },
+  {
+    "id": "2608.21074v1",
+    "title": "PromptResponse: Optimizing Prompts for LLM Coding Tasks",
+    "abstract": "Large language models (LLMs) are increasingly used in research workflows and software development pipelines, yet their output remains sensitive to input prompt variations. This paper presents $\\unicode{x00AB}$PromptResponse$\\unicode{x00BB}$, a controlled study examining how formatting and LLM-based tuning of coding task prompts affect the resulting code's performance, efficiency, and stability. Using five semantically identical yet syntactically distinct variants of the HumanEval dataset$\\unicode{x2014}$baseline, JSON, Markdown, YAML, and an LLM-tuned version$\\unicode{x2014}$we had GPT-4o solve its coding problems over 8200$\\unicode{x00A0}$executions. Our results show that consistent formatting$\\unicode{x2014}$especially JSON$\\unicode{x2014}$improves generation efficiency and syntactic stability, with minor gains in task performance. Conversely, the LLM-tuned prompts resulted in significantly degraded task performance without significant improvements in any other dimension. These findings suggest that low-effort reformatting alone can yield measurable improvements, while tuning must account for model alignment. We conclude our work with providing a set of practical recommendations informed by our results as well as releasing our dataset variants and evaluation pipeline for future work.",
+    "authors": [
+      "Erik Thureck",
+      "Robert Kühnen",
+      "Tim Jacobowitz"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.HC",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21074v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21074v1",
+    "fetched_at": "2026-08-24T08:41:48.641826"
+  },
+  {
+    "id": "2608.20791v1",
+    "title": "CertVLA: Certified Defense against Physical Visual Attacks for Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) policies are vulnerable to localized physical perturbations, yet existing certified patch defenses target discrete labels and cannot directly certify continuous, temporally correlated actions. We introduce CertVLA, a certified defense for closed-loop VLA control under bounded patch and texture attacks. CertVLA proposes a calibrated region of behaviorally consistent actions, while deterministic covering masks ensure that at least one checked prediction is attack-free. Specifically, CertVLA normalizes action disagreement by the benign variation of each mask pair and accepts a single-mask anchor only when it remains consistent under every second mask. It then calibrates the resulting max-min-max episode score to provide finite-sample clean coverage. Conjoining query-level decisions extends the action certificate to the complete closed-loop rollout. Furthermore, we prove that against any adaptive attacker satisfying the bounded-support threat model, every rollout certified by CertVLA executes only action chunks consistent with attack-erased clean predictions. Under dual-mask rollout correctness, this consistency certificate further guarantees task success. The certificate is independent of patch content, generation method, and physical transformation. Experiments in simulation and the real world demonstrate the empirical and certified effectiveness of CertVLA against patch attacks, with additional simulation validation on texture attacks.",
+    "authors": [
+      "Hui Lu",
+      "Zhijie Peng",
+      "Yuqi Lin",
+      "Zaijia Yang",
+      "Jiaming He",
+      "Shuhan Ye",
+      "Yi Yu",
+      "Hanwei Zhu",
+      "Bingquan Shen",
+      "Alex Kot",
+      "Xudong Jiang"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20791v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20791v1",
+    "fetched_at": "2026-08-24T08:41:48.641853"
+  },
+  {
+    "id": "2608.20729v1",
+    "title": "Calibrating Criterion Revision in LLM Agents: Failure Modes and a Trace-Anchored Protocol",
+    "abstract": "Language-model agents can improve after failure or carry text across episodes without revising what counts as success. We study the narrower attribution problem of criterion revision: when criterion K0 accepts an outcome violating a broader commitment B, what observations justify saying that the system formed and persistently used K1? We require five non-compensatory conditions: criterion-failure detection, a model-emitted proposal, new-episode transfer, intervention sensitivity on the claimed carrier, and preservation.   We evaluate CMB-0.1 on twelve cross-domain cases and four arms: stateless inference, append-only history, model-generated but harness-committed state, and evaluator-written oracle state. Seven mechanism fixtures yield 84 deterministic scorer trials; four local quantized artifacts yield 96 calls and 192 model-case-arm trials. No model trial satisfies all five conditions, but this zero does not establish general capability absence. Eleven calls remain invalid after one retry; several commitments disclose the target distinction; the harness performs commits; deletion reuses a stateless call; and conflict changes multiple factors. Qwen2.5-7B answers every transfer and preservation item without revision state, exposing zero-state reconstruction.   These failures make CMB-0.1 an instrument-calibration result rather than a model ranking. We derive a prospective, trace-anchored CMB-0.4 protocol requiring concealed transfer, explicit WRITE/NO-WRITE/ESCALATE actions, a separately logged policy-selected commit, matched interventions, repeated hidden items, and a frozen executable oracle. It is a successor design, not a completed confirmatory result. The paper contributes a measurement chain, an empirical diagnosis of its first implementation, and a more discriminating protocol for future tests of criterion revision.",
+    "authors": [
+      "Guodong Xu"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20729v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20729v1",
+    "fetched_at": "2026-08-24T08:41:48.641867"
+  },
+  {
+    "id": "2608.20664v1",
+    "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+    "abstract": "DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles. We report the original scaled v2 fold and a separately preregistered v2.1 successor audit designed after that study but frozen before successor outcome inspection. The successor run completed 360/360 work units and 720/720 S3 cells across four conditions. In the original fold, the primary DF-hybrid--B5 contrast was null (95/180 versus 89/180; clustered p=.518, Holm p=1), not evidence of equivalence, and C9/C10 retained B0-headroom limitations. In the successor, no external memory achieved 21/180 passes (rate 0.1167), deterministic verbatim event memory 82/180 (rate 0.4556), the typed-plus-raw reference probe 83/180 (rate 0.4611), and one pinned hosted Mem0 literal-storage configuration 97/180 (rate 0.5389). The registered six-slot Family A retained unavailable slots at p=1; all three available comparisons against no memory rejected after Holm correction. Both preregistered mechanism contrasts were unavailable after pre-evaluation conformance rejection. The secondary literal-storage-versus-verbatim comparison was nonconfirmatory and sensitivity-dependent, while the comparison with the reference probe did not reject. The audit therefore supports DreamBench-SWE as a discriminating executable profile benchmark and characterizes one exact hosted-memory configuration, but it does not establish an external-system mechanism, superiority among memory-bearing conditions, equivalence, or broad product generality. The original v2.0.5 findings and artifacts remain unchanged.",
+    "authors": [
+      "Sarthak Singh"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20664v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20664v1",
+    "fetched_at": "2026-08-24T08:41:48.641880"
+  },
+  {
+    "id": "2608.20637v1",
+    "title": "ARQ: Agentic CodeQL Query Refinement for C/C++ Vulnerability Detection",
+    "abstract": "Static analyzers have been widely adopted for vulnerability detection in C/C++ programs. Query-based static analyzers (e.g., CodeQL) encode vulnerable code patterns in detection queries and match them against source code. However, existing queries still suffer from false positives (FPs, incorrectly flagging benign code as vulnerable) and false negatives (FNs, missing real vulnerabilities). We present ARQ, an agentic framework that automatically refines C/C++ CodeQL queries using execution-grounded evidence from synthesized C/C++ programs. Our key insight is that a synthesized program exposes a query's weakness whenever its execution disagrees with the query's verdict. If the program is genuinely vulnerable but the query stays silent, the query has an FN weakness; if the program is safe but the query fires anyway, it has an FP weakness. ARQ then runs an LLM-based refinement loop that repairs the query using these disagreements as ground truth. Unlike previous query refining methods, ARQ requires no labeled datasets, no commit history, and no vulnerability-specific templates. We demonstrate the effectiveness of ARQ by refining 12 official CodeQL queries using three commercial LLMs (GPT-5.4, Claude-Sonnet-4.6, and Gemini-3.5-flash). We compare both ARQ-refined and original CodeQL queries on the Juliet v1.3 and FormAI v2 datasets and show that ARQ-refined queries detect substantially more true positives, by up to 119.8\\%, with a Precision of at least 98.0\\% throughout. ARQ successfully fixed three unresolved GitHub issues raised in the official CodeQL query repository that had remained open for as long as \\textit{27 months}. The refined queries also exposed two previously undiscovered bugs in the real-world libraries libpng and zlib.",
+    "authors": [
+      "Chunyi Wang",
+      "Yunfei Ke",
+      "Junfeng Yang",
+      "Yun-Yun Tsai",
+      "Penghui Li"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20637v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20637v1",
+    "fetched_at": "2026-08-24T08:41:48.641899"
+  },
+  {
+    "id": "2608.20634v1",
+    "title": "AgentMercury: Your Agent Can Synthesize Verifiable Environments for Business Scenarios at scale",
+    "abstract": "Agents learn to act through interaction with environments, yet the environments used for training are often manually constructed or synthesized around predefined tasks and benchmarks. This task-centric paradigm makes it difficult to scale environments that reflect realistic and evolving workflows where diverse tasks can naturally emerge from the underlying world. We introduce AgentMercury, a scalable framework for synthesizing executable environments from high-level business scenarios. Rather than constructing an environment for a specific task, AgentMercury first instantiates a persistent world with entities, services, tools, state, and executable cross-service invariants, from which diverse tasks and interaction trajectories can subsequently emerge. We construct 4,783 executable environments spanning 14 industries and 50 countries, and use them as training substrates for reinforcement learning. Despite being generated without targeting the evaluation benchmarks, policies trained on these business-oriented environments improve substantially on both enterprise workflows and out-of-domain benchmarks spanning reasoning, coding, scientific computing, and tool use. In our experiments, Qwen3.5-4B improves from 12.3 to 15.7 on EnterpriseOps-GYM and from 45.9 to 56.0 on AIME26 after training on AgentMercury environments. We further show that the construction process itself can be learned: fine-tuning Qwen3.5-35B-A3B on construction traces increases executable-world authoring success from 3.3% to 83.3% on held-out business scenarios. These results show that scenario-grounded environments can provide useful and generalizable learning signals beyond benchmark-specific training, while their construction can itself become a learnable capability.",
+    "authors": [
+      "Minbyul Jeong",
+      "Chanwoong Yoon"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.20634v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.20634v1",
+    "fetched_at": "2026-08-24T08:41:48.641914"
+  }
+]
