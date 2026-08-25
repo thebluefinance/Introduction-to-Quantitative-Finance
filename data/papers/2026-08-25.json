@@ -1,0 +1,78 @@
+[
+  {
+    "id": "2608.23416v1",
+    "title": "The Axiomatic Trader: Latent Regularity, Information Budgets, and the Canonical Form of a Quantitative Investment System",
+    "abstract": "Systematic trading rests on one article of faith: that regularities found in the past persist. We state it as a time-invariant mechanism driven by an unobserved latent state, and show that it leaves a researcher five constants to declare --- the recurrence bound $Lambda$ at a block length $b$, the invariance defect $epsilon_0$ of the representation it is declared of, the coherence times $ell_i$ of the state's coordinates, the signal ceiling $rho$ and the fraction $kappa$ of it contingent on the regime --- after which the architecture of a correct quantitative investment system is nearly forced.",
+    "authors": [
+      "Jiayu Li"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.LG",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23416v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23416v1",
+    "fetched_at": "2026-08-25T08:48:54.004768"
+  },
+  {
+    "id": "2608.23393v1",
+    "title": "KellyBoost: Growth-Optimal Portfolio Construction with Gradient-Boosted Trees",
+    "abstract": "KellyBoost is a single multi-output XGBoost model whose softmax output is the portfolio: with y the vector of per-asset holding-period returns, the training loss is - log(1 + w y), the negative log growth rate, so the fitted model is the growth-optimal (Kelly) allocation conditioned on the features. The objective is exact rather than a surrogate: we derive the gradient, the analytic diagonal Hessian and the full Hessian in closed form, verify them by finite differences, and ship a dependency-free reference engine.",
+    "authors": [
+      "Jiayu Li"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "q-fin.PM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23393v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23393v1",
+    "fetched_at": "2026-08-25T08:48:54.004795"
+  },
+  {
+    "id": "2608.22852v1",
+    "title": "Your AI, On a Dial: Controlling Investment Bias in LLMs with a Single Neuron",
+    "abstract": "Large language models (LLMs) are increasingly used in investment decision-making, yet prior work shows that they exhibit systematic, model-specific investment preferences. We study whether a model's overall investment stance can be calibrated to a specified direction and strength. We introduce an investment-bias dial, an inference-time intervention on a single neuron that continuously adjusts a model-level decision prior---its overall tendency toward buying or selling---without targeting specific firms or investment attributes. Using matched positive and negative evidence, we evaluate five open-weight LLMs and find that the dial produces monotonic changes in investment stance without modifying prompts or model parameters. At the response level, the dial shifts both investment decisions and the evidential emphasis of generated rationales under identical inputs. In an agentic retrieval setting, the dial also changes what information the model searches for, which evidence it selects, and which evidence is reflected in its final analysis. In a long-context evaluation, the dial maintains stable stance control as context length increases, whereas a matched system-prompt instruction progressively attenuates. We further show that changes in the dial propagate to security rankings and downstream portfolio composition in an exploratory backtest. Overall, our results show that an LLM's aggregate investment stance can be calibrated toward a specified target at inference time.",
+    "authors": [
+      "Sahong Park",
+      "Suhwan Park",
+      "Hoyoung Lee",
+      "Gakyung Kwon",
+      "Wonbin Ahn",
+      "Jaewon Choi",
+      "Alejandro Lopez-Lira",
+      "Yoon Kim",
+      "Chanyeol Choi",
+      "Hyeongwoo Kong",
+      "Yongjae Lee"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22852v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22852v1",
+    "fetched_at": "2026-08-25T08:48:54.004825"
+  },
+  {
+    "id": "2608.22478v1",
+    "title": "Arbitrage-Aware Multi-Step Forecasting of Implied Volatility Surfaces: Modelling Surface Trajectories Using Latent Diffusion",
+    "abstract": "Implied volatility surfaces summarise the option market and are central to many financial applications. Forecasting their future evolution requires modelling two-dimensional geometry, temporal dependence, and predictive uncertainty while preserving economic admissibility. We propose a conditional latent diffusion framework for generating joint 30-step trajectories of implied volatility surfaces and underlying returns. An arbitrage-aware autoencoder learns a low-dimensional surface representation, while the diffusion model captures the conditional joint evolution. Evaluated on SPX surfaces, the framework generates realistic probabilistic multi-step scenarios while also outperforming the persistence benchmark in point forecasting.",
+    "authors": [
+      "Dominik Manuel Buchegger",
+      "Lukas Gonon"
+    ],
+    "published": "2026-08-23",
+    "categories": [
+      "q-fin.MF",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22478v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22478v1",
+    "fetched_at": "2026-08-25T08:48:54.004843"
+  }
+]
