@@ -1,0 +1,1391 @@
+[
+  {
+    "id": "2608.24871v1",
+    "title": "NatPar: Natural Parametric Modeling",
+    "abstract": "We develop natural parametric (NatPar) insurance as the natural next step from natural-catastrophe (NatCat) modelling: the same hazard-exposure-vulnerability-finance machinery, with a parametric index made contractual in place of indemnity loss adjustment. Our aim is practical - a standard approach inspired by how the catastrophe-insurance industry already operates, not another optimal-contract criterion. This delivers two payoffs. First, it fixes how reporting is formulated: NatPar contracts are reported in the native NatCat language (annual average loss, EP/AEP/OEP curves, return-period levels), complemented with two-sided basis-exceedance diagnostics (BEP+/-) elevated to the central status the EP curve holds for losses - the canonical distributional view of basis risk, not a supplementary number. Second, the same standard shows how the tail is reallocated between insuree and insurer.   A frost case study yields the central result: it is about time, not average. Holding a contract AAL-neutral, the bounded payout cannot follow the unbounded exposure tail, so equalising the mean separates over- and under-payment across return periods: the insuree gains at short horizons while the insurer sheds the deep tail past a crossover of several decades. This reverses under tail dependence - when regions reach extremes jointly, bounded payouts stack and the insurer reabsorbs the deep tail.",
+    "authors": [
+      "Hirbod Assa"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24871v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24871v1",
+    "fetched_at": "2026-08-26T08:36:38.001656",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083383"
+  },
+  {
+    "id": "2608.24786v1",
+    "title": "Harvesting the Volatility Risk Premium: A Learning-to-Rank Approach",
+    "abstract": "This paper develops the first end-to-end application of cross-sectional learning-to-rank to the S&P 500 weekly options (SPXW) zero-day-to-expiration surface, integrated with margin-aware position sizing, an abstention rule driven by model uncertainty, and a strict out-of-time integrity check. A LightGBM LambdaRank ranker scores a daily nine-strategy cross-section composed of eight delta-targeted short-put positions and a \\textit{SKIP} candidate, trained against a path-aware Sortino-on-bars label computed at one-minute resolution. The framework is evaluated under index-option margin requirements, a tiered fee schedule, and bid-to-mid execution assumptions across a four-window walk-forward over 2021-2024 and a strictly held-out 2025 out-of-time slice. Seven sizing methods produce out-of-time annualized Sharpe ratios between 4.31 and 5.76, with the headline method reaching a Probabilistic Sharpe Ratio of 0.964 and a sample-period maximum drawdown of -2.28%, on a single hold-out year against a walk-forward range of 1.90 to 3.11. Out of time, every method exceeds three passive benchmarks (CBOE PUT, CBOE WPUT, SPX buy-and-hold) by at least 3.84 in Sharpe ratio and five internal selection baselines by at least 3.69. A two-by-two ablation of the confidence gate against the tail-risk features places 5.05 of the 5.59 out-of-time Sharpe gap over the CBOE PUT with the ranker and the selection layer, the two risk controls adding 0.54 between them. On walk-forward, where the gate binds, neither control comes close to the headline alone and their interaction supplies most of the result. A fifteen-group feature ablation shows that removing the multiplicative regime interactions collapses walk-forward statistical confidence.",
+    "authors": [
+      "Maciej Wysocki"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24786v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24786v1",
+    "fetched_at": "2026-08-26T08:36:38.001691",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083404"
+  },
+  {
+    "id": "2608.24703v1",
+    "title": "Lead-Lag Relationships in Financial Markets: A Comparison of Multiple Clustering Algorithms",
+    "abstract": "Lead-lag relationships are widely used in financial time series, and many clustering algorithms based on them have been developed. The traditional DTW-KMedoids algorithm performs well both on the synthetic dataset and the real financial dataset. However, there are still several limitations to these algorithms: low efficiency caused by high time complexity, poor mathematical properties from DTW distance, the clustering effect is sensitive to the number of clusters. To solve the problems above and improve the performance, this paper introduces three clustering algorithms: MiniRocket-KMeans, KShape, Ensemble algorithm (a combination of KShape and DTW-KMedoids) and compares their performance on synthetic and real stock datasets with DTW-KMedoids algorithm under the same trade strategy. In addition, this paper also finds the best number of clusters by maximizing the silhouette coefficient in each clustering algorithm to improve the stability of the experiment results. Our main conclusions are as follows: MiniRocket-KMeans performs best under the lead strategy, achieving a Sharpe ratio of 0.866 with a maximum drawdown controlled at -63.9\\%; the ensemble algorithm exhibits excellent stability; the robustness is significantly improved after finding the best number of clusters; the p-values of the hypothesis test on the Sharpe ratio of all strategies are 0.0, verifying the statistical validity of the lead-lag trading strategy. Finally, future improvement directions such as customized lead-lag matrices and optimized ensemble voting mechanisms are proposed.",
+    "authors": [
+      "Ruichen Deng",
+      "Yichi Zhang"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24703v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24703v1",
+    "fetched_at": "2026-08-26T08:36:38.001716",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083418"
+  },
+  {
+    "id": "2608.24582v1",
+    "title": "$\\texttt{findr}$: Transparent and Fair Credit Risk Decisions through Semi-Structured Regressions",
+    "abstract": "Credit risk models increasingly need to combine predictive accuracy with transparent explanations and auditable fairness constraints. Logistic regression remains attractive because its coefficients are easy to interpret, but it can miss nonlinear structure. Flexible models can improve prediction, but their explanations are often post-hoc and may not describe the decision rule itself. We introduce $\\texttt{findr}$, short for flexible, interpretable deep regression, a semi-structured framework for binary credit risk modelling that decomposes the logit into an interpretable structured component and an orthogonal neural residual. The orthogonalisation separates coefficient-based effects from residual nonlinear variation, while an in-processing Wasserstein penalty mitigates group disparities by comparing score distributions during training. The framework also includes diagnostics that measure the structured component's contribution to logit variation, decision agreement, and local directional consistency. We evaluate $\\texttt{findr}$ in a simulation study and on eight public credit datasets using score-level accuracy-fairness frontiers. The results show that $\\texttt{findr}$ behaves close to logistic regression when the signal is approximately linear, while recovering much of the predictive gain of neural models when nonlinear structure is relevant. The diagnostics identify when coefficient-based explanations remain close to the full fitted model and when residual variation must also be examined. These findings support semi-structured modelling as a practical way to make performance, fairness, and interpretability trade-offs explicit in credit risk decisions.",
+    "authors": [
+      "Victor Medina-Olivares",
+      "Stefan Lessmann",
+      "Jonathan Crook"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "stat.ML",
+      "cs.AI",
+      "cs.LG",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24582v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24582v1",
+    "fetched_at": "2026-08-26T08:36:38.001741",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083432"
+  },
+  {
+    "id": "2608.24449v1",
+    "title": "Generalizing Markowitz Portfolio Optimization by a Quadratic Risk Measure",
+    "abstract": "We show that the key optimization results of the classical Markowitz portfolio selection theory, originally formulated for variance as the risk measure, remain available in explicit closed form under a broader class of strictly convex quadratic risk measures. The proposed framework replaces the covariance matrix with an arbitrary symmetric positive definite matrix and allows additional linear and constant terms, thereby containing various models arising in transaction cost optimization, benchmark relative optimization, covariance regularization, and factor models. Closed-form formulas are obtained for the efficient frontier, the global minimum risk portfolio, the maximum Sharpe ratio portfolio, the Capital Market Curve, the tangency portfolio, and the maximum utility portfolio. In contrast to the classical Markowitz model, the tangency portfolio does not coincide with the maximum Sharpe ratio portfolio, revealing a new geometric phenomenon. A numerical example confirms the derived formulas.",
+    "authors": [
+      "Ignas Gasparavičius",
+      "Andrius Grigutis"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "q-fin.PM",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24449v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24449v1",
+    "fetched_at": "2026-08-26T08:36:38.001763",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083448"
+  },
+  {
+    "id": "2608.24206v1",
+    "title": "Capital allocation on decentralized lending platforms",
+    "abstract": "This work complements our previous paper, which studies borrower-side strategies in decentralized lending markets, by focusing on lender-side capital allocation. We consider a lender who seeks to allocate a fixed budget across multiple markets sharing the same supplied asset. Accounting for the impact of supplied capital on lending rates, we derive closed-form solutions under three interest-rate models: linear, kinked, and adaptive (Morpho's AdaptiveCurveIRM). Backtests are conducted first on USDC and then on WETH Morpho lending markets on Ethereum. We also show that, under the kinked rate model, an allocation that brings a market exactly to the kink is never optimal on the lender side, whereas it can be optimal on the borrower side. This asymmetry may create tension between lenders and borrowers around the kink and thereby exacerbate rate volatility.",
+    "authors": [
+      "Bastien Baude",
+      "Vincent Danos",
+      "Hamza El Khalloufi"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24206v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24206v1",
+    "fetched_at": "2026-08-26T08:36:38.001786",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083458"
+  },
+  {
+    "id": "2608.23944v1",
+    "title": "Bulk Phase Transition and Edge Behavior in Temporally Correlated Random Matrices",
+    "abstract": "We study long-range correlated Wigner-type matrices built from row-independent stationary Gaussian sequences. For exponentially decaying (AR(1)) correlations, the bulk spectral density deforms from the semicircle law via an explicit combinatorial \"hub\" mechanism, yet we verify the flatness and decay hypotheses of the matrix-Dyson-equation framework (MDE), with numerical evidence supporting Tracy-Widom edge universality for every fixed $ρ<1$ of the exponential decay correlations; the degenerate limit $ρ\\to1^-$ reduces to a symmetrized Volterra operator, connecting to the singular-value cascade identified in a companion BBP analysis. For power-law correlations $dt\\sim t^{-γ}$, we identify $γ_c=1/2$ as the critical point for divergence of the bulk fourth-moment, while $γ=1$ marks the breakdown of the flatness condition governing the MDE edge analysis. We prove the fourth-moment transition exactly and find numerically that the self-consistent edge varies smoothly across $γ=1$, with no evidence of a kink or discontinuity.",
+    "authors": [
+      "Masato Hisakado",
+      "Takuya Kaneko"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cond-mat.stat-mech",
+      "q-fin.MF",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23944v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23944v1",
+    "fetched_at": "2026-08-26T08:36:38.001808",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083478"
+  },
+  {
+    "id": "2608.23915v1",
+    "title": "Equilibrium in closed constant-function market maker economies",
+    "abstract": "We study equilibria in a closed, fee-free constant-function market maker (CFMM) economy with two assets and two traders. An interior state is a unilateral no-trade equilibrium exactly when the CFMM marginal price equals both traders' marginal rates of substitution. For an interior initial state, individually rational unilateral equilibria are Pareto optimal relative to the fixed CFMM invariant. A weak representative agent is obtained at each fixed equilibrium by weighted sup-convolution, whereas a state-independent strong representative agent exists exactly when traders share a common homothetic preference. Every interior feasible state is reachable through finitely many valid trades, and alternating utility-maximizing trades converge to a Pareto optimal unilateral equilibrium. We also derive conditions under which trading order produces a first-mover advantage or disadvantage in the first round.",
+    "authors": [
+      "Muqiao Huang",
+      "Ruodu Wang",
+      "Yiyun Wang"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23915v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23915v1",
+    "fetched_at": "2026-08-26T08:36:38.001830",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083495"
+  },
+  {
+    "id": "2608.23808v1",
+    "title": "Equity Strategy Backtesting: Luck or Edge? The MinervaScore as a Statistical Robustness Grade",
+    "abstract": "Backtests of trading strategies are often selected after many parameter trials. A strong historical result can therefore reflect search luck rather than a persistent signal. Standard summaries such as return, Sharpe ratio, and drawdown do not record how many candidates were tried, whether the selected rule survives out-of-sample validation, or whether the available history is long enough to support the result.   This paper describes the MinervaScore, a post-selection robustness grade for trading strategies. The score combines four established validation quantities: Deflated Sharpe Ratio, Probability of Backtest Overfitting, Superior Predictive Ability, and Minimum Track Record Length, with a regime-stability diagnostic. These components are converted into signed margins from their admissibility thresholds, aggregated into a raw score, and then mapped to a 0-100 display. The display is tied to a binary Robustness Seal: scores of 80 or higher are shown only when all five gates pass. The calibration uses 359,062 production backtest records. The score is intended to rank statistical support, not to estimate the probability of future profit.   In synthetic markets with known ground truth, the MinervaScore separates true signal from lucky backtest outcomes, with an AUROC of 0.989 at the headline difficulty. Its improvement over the GT-Score proxy and the gates-passed baseline is modest, and it remains close to the corrected DSR-alone baseline. In a pre-registered test on unseen real-market data, the score showed no significant forward relationship in a population with limited surviving edge (Spearman rho_s = 0.013, one-sided permutation p = 0.40). We therefore present the MinervaScore as an auditable validation and reporting layer, rather than as evidence of demonstrated real-market predictability.",
+    "authors": [
+      "Maria Laura Santoni",
+      "Vincent Jouanne",
+      "Matthew L. Scullin"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23808v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23808v1",
+    "fetched_at": "2026-08-26T08:36:38.001852",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083508"
+  },
+  {
+    "id": "2608.23274v1",
+    "title": "The Physical Crash Frontier: What Finite Option Quotes Can and Cannot Reveal",
+    "abstract": "Option prices are prices of insurance, so the risk-neutral probabilities they imply overstate physical crash risk. A power utility pricing kernel undoes the premium. But finitely many contracts trade, each at a bid and an ask, and many distributions fit inside the spreads. Each implies its own crash probability and expected loss below a crash threshold. This paper characterizes the attainable pairs exactly. With bounded support, they form a compact convex set. We call its boundary the physical crash frontier. It separates what the quotes admit from what they rule out. Both coordinates are ratios of moments, yet finite second-order cone programs trace the frontier. In a thousand weekly S&P 500 cross sections, quotes beyond the two puts nearest the threshold shrink the admissible probability range by a median of about 80 percent. Remove the bound, and a vanishing mass deep in the right tail inflates the denominator of those ratios, so the crash probability slides toward zero while every quote stays priced within its spread. The collapse occurs precisely when risk aversion exceeds that of the log investor. A positive floor requires a tail restriction the quotes cannot supply. What the quotes supply is the physical crash frontier.",
+    "authors": [
+      "Jirong Zhuang"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23274v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23274v1",
+    "fetched_at": "2026-08-26T08:36:38.001911",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083520"
+  },
+  {
+    "id": "2608.23053v1",
+    "title": "tse_tick: A Python Library for Parsing and Querying Nikkei NEEDS Tick Data from the Tokyo Stock Exchange",
+    "abstract": "Tick-level trade-and-quote data for the Tokyo Stock Exchange is distributed through the Nikkei NEEDS service as thousands of zipped CSV archives spanning four data types with era-dependent schemas and Japanese-language layouts. We present tse_tick, an open-source Python library that converts these raw archives into clean, typed Polars DataFrames and a Hive-partitioned Parquet store queryable through DuckDB. The library offers two access paths sharing one parse-and-clean core: a one-shot reader that returns a ticker- and time-filtered DataFrame directly from raw ZIP files, and a two-stage ingest-then-query pipeline with resume-safe, memory-aware parallel ingestion, part-pruning, and a materialized intraday time key for row-group pruning. The engineering, more than the parsing, is what the library contributes: ingestion runs in per-date atomic units whose completion is recorded by coverage markers rather than inferred from file existence, writes stream in bounded morsels so that peak memory is independent of trading-day size (24.5 GB to 2.4 GB on the worst measured day), a RAM-aware process pool sizes itself to available memory, and part-pruning opens only the archive parts a ticker can occupy. Full English and Japanese column definitions ship for all four types, and a translation layer maps yfinance, Polygon, and ccxt names onto their tse_tick equivalents. In benchmarks on a commodity 16-thread workstation, parsing a representative 4.8-million-row archive part, one of a trading day's nine parts, is 59.8x faster than the original pandas prototype (34.3x against an engine-matched pandas baseline), and a single-ticker time-window query from the store completes roughly 410x faster than a pandas scan of the equivalent CSV. tse_tick is available on PyPI (pip install tse-tick) under the MIT license.",
+    "authors": [
+      "Kazumi Li",
+      "Masataka Hayashi",
+      "Teruo Nakatsuma",
+      "Peter Romero"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23053v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23053v1",
+    "fetched_at": "2026-08-26T08:36:38.001935",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083532"
+  },
+  {
+    "id": "2608.22864v1",
+    "title": "From Exponential to Polynomial: An Exact Filter for High-Dimensional MSM Models",
+    "abstract": "In this paper we propose a new formulation of the Bayesian Filter as used in the discrete-time Markov-Switching-Multifractal (MSM) model of volatility based on existing permutation symmetry within the likelihood structure. We show both analytically and empirically that such a formulation leads to a reduction in time complexity from $O(D^k)$ to $O(k^D)$ thereby significantly reducing the computational bottleneck associated with dimensionality. We compare the agreement between the naive and sector filters and find that while there are significant disagreements, the ground-truth recovery of the latter seems to improve on the former.",
+    "authors": [
+      "Daniyal Ali Hameedi"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "q-fin.ST",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22864v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22864v1",
+    "fetched_at": "2026-08-26T08:36:38.001953",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083558"
+  },
+  {
+    "id": "2608.22768v1",
+    "title": "The Loop-Gain Matrix: Coupled Rebalancing Feedback and the Blind Spots of Scalar Stability Monitoring",
+    "abstract": "The stability of markets hosting leveraged exchange-traded products is governed not by any single product's loop gain but by the spectral radius of a loop-gain matrix, and scalar per-product monitoring underestimates system feedback by construction. Recent work measures the self-reinforcement of a leveraged fund's daily close rebalancing through a scalar loop gain and treats cross-asset spillovers as bias. We model complexes on correlated underlyings as a coupled feedback system with matrix gain L and show that scalar monitoring has two blind spots: (i) cycle amplification, since rho(L) >= max_i l_ii for nonnegative coupling, strict under two-way coupling; and (ii) transmitted displacement, which arises already under one-way coupling and is invisible to the receiver's own gain. We give a reduced-form estimator of L requiring only prices and public fund assets -- no signed order flow -- via cross-asset overnight reversals, reporting its measurement-convention sensitivity explicitly. In simulation the spectral radius is recovered with RMSE 0.005 at T=250, a lead-lag confounder yields a 2% false-alarm rate, and in a calibrated blind-spot configuration the scalar monitor reports \"safe\" and the matrix monitor \"unsafe\" on 100% of paths. In the 2026 Korean single-stock LETF episode we detect transmission from the SK Hynix complex into Samsung Electronics' closing price (DiD z=-2.82; exact randomization p=0.0055 against 182 control pairs), scaling with the sender's rebalancing capital; conservatively, about 41% of Samsung's closing displacement variance is imported -- invisible to its own \"moderate\" gain of 0.24. The same estimator returns nulls for the U.S. MSTR-Bitcoin-Coinbase complex, whose capital is comparable but whose closing venue is far deeper. Monitoring should be organized around the (complex x venue) matrix, not around products.",
+    "authors": [
+      "Jihwan Woo"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "physics.soc-ph",
+      "eess.SP",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22768v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22768v1",
+    "fetched_at": "2026-08-26T08:36:38.002009",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083573"
+  },
+  {
+    "id": "2608.22703v1",
+    "title": "Diagonal Frog meets ADI: trading matrix exponentials for rational maps in the Fokker--Planck equation",
+    "abstract": "A companion paper \\cite{ItkinDF2026} introduced the Diagonal Frog (DF) positivity-preserving schemes for anisotropic Fokker--Planck equations, advancing each directional substep by a Krylov-computed matrix exponential, which dominates the cost. Replacing that exponential by a rational map $r(γL)$ reduces the substep to a banded solve, but the positivity argument no longer applies. We prove that for eventually exponentially positive generators the entrywise sign of $r(γL)$ at large steps is decided by a single number, the value $r(\\infty)$ taken on infinitely stiff modes. Nonnegativity holds above a computable threshold when $0\\le r(\\infty)<1$, and at most on a bounded interval, empty or vanishingly narrow in all our tests, when $r(\\infty)<0$. The criterion rejects the Crank--Nicolson (trapezoidal) method, where $r(\\infty)=-1$, and selects the subdiagonal Padé$(0,2)$ method, which is second order, L-stable and provably positive above an explicit threshold. The resulting DF-ADI scheme costs $O(N)$ per step, keeps the implicit factorized mixed derivative unchanged, is second order in space and time, and conserves discrete mass exactly. In the strong cross-diffusion regime, however, the directional factors demand a step larger than the mixed derivative permits, so the composite second-order scheme is only empirically positive there, and the criterion serves to discriminate the well-behaved multiplicative factors from the stabilizing-correction schemes rather than to guarantee positivity. Against the Krylov exponential it runs ten to thirty-two times faster at matched accuracy in our tests with the gain growing with the mesh. We extend the construction to the backward Kolmogorov equation and to jump-diffusion models.",
+    "authors": [
+      "Andrey Itkin",
+      "Rakhymzhan Kazbek"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "math.NA",
+      "physics.comp-ph",
+      "q-fin.CP",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22703v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22703v1",
+    "fetched_at": "2026-08-26T08:36:38.002030",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083595"
+  },
+  {
+    "id": "2608.22620v1",
+    "title": "WSVI: A Dimensionless Shape Family for Implied Volatility and Its Static No-Arbitrage Structure",
+    "abstract": "W-shaped smiles appear in near-expiry options around binary events such as earnings, and have been associated with bimodal risk-neutral densities. The three-parameter eSSVI slice cannot produce them. This paper defines WSVI, a parametric family for implied volatility that admits negative at-the-forward curvature and bimodal implied densities, and develops its static no-arbitrage structure. The construction factorizes total variance into a level and a dimensionless shape of normalized log-moneyness. The shape extends the per-slice eSSVI form with bounded one-sided basis terms, which add flexibility in the interior while leaving the leading-order wing behavior controlled by the affine and quadratic components. We characterize the family's exact domain and write the butterfly, vertical spread, and calendar conditions directly in shape coordinates.",
+    "authors": [
+      "Charles Clevenger",
+      "Xiang Wan"
+    ],
+    "published": "2026-08-23",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22620v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22620v1",
+    "fetched_at": "2026-08-26T08:36:38.002050",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083605"
+  },
+  {
+    "id": "2608.22497v1",
+    "title": "Reflexivity from Hierarchical Causality",
+    "abstract": "We consider reflexivity in hierarchical causal systems in which higher-level states constrain the lower-level dynamics that remain admissible [Wilcox and Gebbie (2014),Gebbie (2026)]. We ask how such state-dependent top-down constraints are realised when local activity is event driven while causal claims are made in calendar time. If an actor-conditioned constraint governs both the admissible event transitions and their timing, the event process is carried into calendar time by a state-dependent time change. If either the admissible constraint or the compatible timing law is not unique, the induced calendar-time causal law need not be unique even when the local event dynamics admit a Markov representation. Hierarchical causality keeps explicit the cross-level constraint and event coordination from which such a calendar-time law must be constructed. Within this hierarchical representation, reflexivity is the endogenous closure of the causal loop through state-dependent top-down constraint and an event-to-calendar time map.",
+    "authors": [
+      "Tim Gebbie"
+    ],
+    "published": "2026-08-23",
+    "categories": [
+      "physics.soc-ph",
+      "math.PR",
+      "q-fin.GN",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22497v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22497v1",
+    "fetched_at": "2026-08-26T08:36:38.002068",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083614"
+  },
+  {
+    "id": "2608.21888v1",
+    "title": "Short-horizon mean reversion in cryptocurrency markets: a matched cross-market measurement",
+    "abstract": "At 15-minute horizons, directional mean reversion is far stronger and more pervasive in cryptocurrency markets than in US equities: scored under one matched, strictly out-of-sample protocol, 90% of 183 Binance pairs carry significant directional reversal against 2.7% of 187 US stocks and ETFs, in every focal coin-year since 2021. The signal lives in signs, not magnitudes: lag-one return autocorrelation is near zero on the major coins, yet simply betting against the previous candle captures most of the effect. US-listed funds whose net asset value is a crypto or metal price inherit their underlying's reversal, including its absence, from their first months of trading; stocks merely correlated with the same underlyings inherit nothing: descriptive evidence that a wrapper's tape reads like the process it wraps, not the venue it prints on. On the originating tape, the reversal concentrates after moves driven by aggressive taker flow and grows with flow intensity, while the order-book depth a move consumes conditions nothing: a conditioning consistent with compensated liquidity provision, not a test that selects it. The gross edge peaks near 1.3 bp per trade against a 5 bp round-trip cost: large enough to detect, too small to clear benchmark spot capture costs. The contrast survives an artifact battery, an exact permutation null, and a frozen six-month holdout, with a class-mean AUC gap of +0.031 as designed and +0.011 (95% CI [+0.008, +0.014]) under the most conservative accounting, clear of zero either way.",
+    "authors": [
+      "Nadav A. Kitron",
+      "Jonathan M. Wengrowicz"
+    ],
+    "published": "2026-08-22",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21888v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21888v1",
+    "fetched_at": "2026-08-26T08:36:38.002107",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083625"
+  },
+  {
+    "id": "2608.21873v1",
+    "title": "Discrete asset pricing under transaction costs and model uncertainty with and without short-sale constraints",
+    "abstract": "We study discrete-time asset pricing with bid-ask spreads and model uncertainty. The family of probability measures enters the no-arbitrage condition through the union of its supports. In the single-period setting, we establish fundamental theorems of asset pricing with and without short-sale constraints. In the unconstrained market, no arbitrage is equivalent to the existence of a full-support martingale consistent price system. Under short-sale constraints, the martingale condition is replaced by a supermartingale condition. We then extend these results to a finite multi-period tree. The initial information is allowed to be nontrivial, so the initial trading cost and valuation bounds may depend on the initial state, and the corresponding inequalities are formulated conditionally. Finally, for a family of pricing measures, we introduce lower and upper robust supermartingale consistent price systems. We show that no arbitrage implies the existence of a lower system, while the existence of an upper system is sufficient for no arbitrage. A two-state example shows that the lower condition alone is not sufficient.",
+    "authors": [
+      "Wenqing Zhang"
+    ],
+    "published": "2026-08-22",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21873v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21873v1",
+    "fetched_at": "2026-08-26T08:36:38.002124",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Asset Pricing"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083635"
+  },
+  {
+    "id": "2608.21506v1",
+    "title": "What Quantitative Risk Modellers Can Learn from Durkheim's Study of Suicide",
+    "abstract": "Emile Durkheim's Suicide: A Study in Sociology (1897) predates much of the statistical machinery that quantitative modellers now take for granted. Yet, working with sparse and imperfect observational data, Durkheim repeatedly arrives at practices that remain remarkably relevant to modern modelling. This paper revisits Suicide from the perspective of quantitative risk modelling, not for its substantive conclusions, but for the reasoning by which Durkheim reached them. His approach illustrates how careful definition, common sense, logical investigation, scepticism toward convenient explanations, and close attention to what the data can and cannot support---all of which must precede, and can often substitute for, statistical sophistication. The broader lesson is simple: good modelling begins not with technique, but with understanding the problem, interrogating the evidence, and reasoning carefully about what it can actually tell us.",
+    "authors": [
+      "Mahmood Alaghmandan"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "q-fin.RM",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21506v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21506v1",
+    "fetched_at": "2026-08-26T08:36:38.002146",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083645"
+  },
+  {
+    "id": "2608.21498v1",
+    "title": "Beyond Lognormal Sums: A Four-Moment Probability Framework for Basket and Spread Option Pricing",
+    "abstract": "Basket options are difficult to value under correlated lognormal dynamics because weighted sums and differences of lognormal variables have no tractable distribution. This paper develops a probability-based four-moment framework that separates the exact pricing representation from the distributional approximation. A change of measure first writes a basket price as a linear combination of probabilities. For a standard basket with one positive weight, these probabilities become CDF values of positive correlated lognormal sums. Each sum is approximated by a shifted lognormal variance mixture matched to its first four moments. For an unrestricted mixed-sign basket, a signed shifted lognormal proxy gives an analytical call-price formula. We state admissibility conditions, provide a practical root-selection rule, establish the main strike-based financial properties of the direct proxy, and derive exact pricing-error identities in terms of cumulative distribution function (CDF) discrepancies. The numerical analysis combines standard-basket benchmarks with an empirical application to a normalized $3{:}2{:}1$ crack spread constructed from RBOB gasoline, ULSD or heating oil, and WTI futures. The results show that the probability reformulation and the fourth-moment condition improve the distributional fit and pricing accuracy, particularly when maturity and tail asymmetry increase. The framework remains analytical, transparent, and suitable for repeated valuation across strikes and maturities.",
+    "authors": [
+      "Dongdong Hu",
+      "Hasanjan Sayit",
+      "Steve Tchoneteck",
+      "Frederi Viens"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "q-fin.PR",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21498v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21498v1",
+    "fetched_at": "2026-08-26T08:36:38.002169",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083656"
+  },
+  {
+    "id": "2608.23761v1",
+    "title": "(Mis)Understanding Benign Overfitting in Equity Return Prediction",
+    "abstract": "Highly overparameterized models often predict well despite interpolating training data in complex domains, challenging the classical bias--variance tradeoff. We investigate whether this ``benign overfitting'' phenomenon extends to equity return prediction. Consistent with recent statistical theory, we document two key phenomena: first, a double descent pattern in the ridgeless model's prediction risk; and second, that while the optimal ridge model consistently outperforms its ridgeless counterpart, this performance gap becomes negligible at large parameter-to-observation ratios. Ultimately, however, both models fail to outperform a simple historical average. This empirical evidence aligns with our asymptotic results under the null hypothesis of zero slope coefficients, suggesting that standard equity predictors lack true forecasting power---even within highly flexible, nonlinear machine learning architectures. These findings reconcile modern and classical machine learning in asset pricing: in the absence of a true signal, they asymptotically collapse to the historical average benchmark.",
+    "authors": [
+      "Hui Guo",
+      "Jiawei Huang",
+      "Runze Li",
+      "Yan Yu"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "stat.AP",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23761v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23761v1",
+    "fetched_at": "2026-08-26T08:36:41.378904",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083667"
+  },
+  {
+    "id": "2608.22425v1",
+    "title": "All four leading LLMs talk more than they listen to personality-verified synthetic help-seekers",
+    "abstract": "Large language models are increasingly consulted at moments of distress, yet single-turn benchmarks neither test sustained exchanges nor distinguish between users. We built a personality-aware evaluation in which four widely used models advised several synthetic help-seekers, each given a psychometrically specified profile, in an acute crisis: a caregiver learning of a relative's dementia diagnosis. Auditors blind to the profile prompt recovered the specified bands from dialogue alone with high agreement on every instrument (ICC(2,4) = 0.91; 0.79-0.96 by instrument; band-score r = 0.78), as expected for the Big Five but equally for coping style, coping self-efficacy, resilience and reactance, which the lexical approach never covered. Such evaluation therefore reaches beyond the Five Factor Model to motivational, regulatory and self-appraisal dispositions. The four models were not distinguishable on emotion stabilisation and failed alike, sharing three modes: verbosity, a talk-to-listen ratio above one, and problem-solving before the situation had been explored.",
+    "authors": [
+      "Pablo A. Fonseca",
+      "Raquel Rodríguez-Carvajal",
+      "Rafael A. Calvo"
+    ],
+    "published": "2026-08-23",
+    "categories": [
+      "cs.HC",
+      "cs.CL",
+      "cs.CY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22425v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22425v1",
+    "fetched_at": "2026-08-26T08:36:44.861589",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083677"
+  },
+  {
+    "id": "2608.21551v1",
+    "title": "Sparse Separable Factor Analysis in the Complex Domain with an Application to Local Field Potential Data",
+    "abstract": "Complex-valued arrays arise in signal processing, where scientific interpretation depends on retaining amplitude and phase information. Existing covariance estimation methods either ignore the multiway organization of such data or rely on real-domain embeddings that do not directly exploit their complex structure. We develop sparse separable factor analysis (SSFA), a latent factor model for complex-valued arrays with a separable covariance structure across modes. Each mode-specific covariance matrix is modeled through a low-rank Hermitian factor structure and a diagonal residual covariance matrix. To obtain interpretable estimates, we impose elementwise lasso penalties on the complex loading matrices and estimate the SSFA parameters using a mode-wise parameter-expanded expectation-maximization procedure. The resulting loading updates admit closed-form complex soft-thresholding solutions, which shrink the modulus of each loading while preserving its phase. A separate balancing step resolves the scale nonidentifiability of the separable covariance structure. Simulation studies show that SSFA improves covariance estimation relative to vectorization-based methods, including complex principal component analysis. We apply SSFA to local field potential recordings from mice, where we compare separability structures induced by different groupings of brain region, frequency, and time and perform model-based imputation of recordings missing because of electrode misplacement.",
+    "authors": [
+      "Ian Hultman",
+      "Kirtikanth Kalapatapu",
+      "Yassine Filali",
+      "Rainbo Hultman",
+      "Sanvesh Srivastava"
+    ],
+    "published": "2026-08-21",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "stat.CO",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.21551v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.21551v1",
+    "fetched_at": "2026-08-26T08:36:44.861625",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083689"
+  },
+  {
+    "id": "2608.24810v1",
+    "title": "Strictly Causal Streaming Video Anomaly Detection with a Theoretically-Grounded State-Space Core",
+    "abstract": "Recent work has applied Mamba style state space models (SSMs) to video anomaly detection, yet existing approaches still rely on buffering clips or windows internally, lack a theoretical account of how temporal memory relates to detection latency, and benchmark efficiency only through GPU throughput rather than the edge hardware these methods are intended to target. We introduce a strictly causal streaming anomaly detector whose fixed size state is updated in O(1) time and memory per incoming frame, with no lookahead and no clip buffering. Its temporal core is a diagonal linear state space recurrence with an input and state dependent decay gate, trained self supervised through causal next embedding prediction on a frozen visual backbone. We derive a closed form relationship between the recurrence decay spectrum and both detection delay and the shortest anomaly it can reliably capture, then validate empirically on UCSD Ped2 and CUHK Avenue. The settling delay bound predicted from the learned base decay (57 to 59 frames) sits far above the measured detection delay (1.6 and 18.4 frames), showing that the event boundary gate, not the base decay, governs responsiveness. We further report end to end latency and throughput measured directly on Apple M3 Pro hardware, 0.74 ms and 0.77 ms per frame (over 1300 FPS), rather than simulated GPU numbers. With an untuned initial configuration the method reaches 67.9 percent and 70.2 percent frame level AUC on Ped2 and Avenue, trailing prior non causal SSM baselines in accuracy. Ablations over decay rate, state size, and gating reveal that the gate contribution is dataset size dependent, hurting accuracy on the smaller Ped2 training set but helping on the larger Avenue one. Closing this accuracy gap and extending evaluation to a third, larger benchmark are immediate next steps.",
+    "authors": [
+      "Yogesh Kumar"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24810v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24810v1",
+    "fetched_at": "2026-08-26T08:36:51.662301",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083699"
+  },
+  {
+    "id": "2608.24697v1",
+    "title": "Single State Update Predictive Coding training for Time Series Forecasting and Anomaly Detection",
+    "abstract": "Predictive Coding (PC) is a neural learning paradigm that enables parallelizable neural network layer updates. However, the main bottleneck of PC Networks (PCN) is the sequential backwards error propagation. To tackle this, we introduce a training technique that pairs a Generative PCN with a support Encoding PCN. The two PCNs are trained in parallel to match their neural activations, without sequential propagation. We apply this to time series anomaly detection and show that our approach results in more stable, continuous, online learning.",
+    "authors": [
+      "Matteo Cardoni",
+      "Sam Leroux"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.LG",
+      "cs.NE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24697v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24697v1",
+    "fetched_at": "2026-08-26T08:36:51.662334",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083708"
+  },
+  {
+    "id": "2608.24631v1",
+    "title": "When Similarity Is Interaction-Driven: Quantum Kernels for Regime-Sensitive Learning",
+    "abstract": "Similarity in many decision systems is governed not by distance alone but by interactions among variables. In fraud and anomaly detection, small local perturbations can cross interaction-sensitive decision boundaries while leaving ambient distance almost unchanged. Motivated by this setting, we introduce a thin-slab interaction model and an interaction-driven quantum kernel constructed from entangled Pauli-string feature maps. The feature map explicitly encodes sparse high-order block interactions. We show that the resulting fidelity kernel is positive semidefinite, admits an exact block-factorized formulation, and induces a geometry sensitive to changes in interaction regime. Across balanced and imbalanced synthetic experiments spanning third-, fourth-, sixth-, and eighth-order interactions, the proposed kernel consistently outperforms linear, radial basis function, Laplacian, and polynomial kernels, as well as an engineered-interaction linear baseline supplied with the planted block products. On real fraud-detection benchmarks, it achieves the highest mean accuracy and F1 on Credit Card Fraud Detection and ranks second on IEEE-CIS Fraud Detection. These findings show that quantum-kernel performance depends on alignment between feature-map geometry and the underlying predictive structure, rather than on Hilbert-space dimension alone. Because the prescribed block-factorized kernel can also be evaluated exactly on a classical computer, the results establish predictive and representational value rather than computational quantum speedup.",
+    "authors": [
+      "Hanqiu Peng",
+      "Jianlong Lu",
+      "Ying Chen"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24631v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24631v1",
+    "fetched_at": "2026-08-26T08:36:51.662362",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083720"
+  },
+  {
+    "id": "2608.24428v1",
+    "title": "Predictability of El Niño from Delayed Observations",
+    "abstract": "Using monthly Niño-3.4 anomalies through July 2026, we investigate how much predictive information is contained in delayed observations of the index. Ridge regression identifies informative delays, while multilayer perceptron and sparse identification of nonlinear dynamics (SINDy) models test whether nonlinear complexity provides additional direct forecast skill; gated recurrent unit (GRU) and long short-term memory (LSTM) networks provide a complementary test in which the temporal representation is learned internally. Delayed observations substantially improve forecasts over persistence and climatology at leads of up to six months, but increasing model complexity provides no systematic improvement. Historical recursive experiments favor a simple explicit SINDy recurrence and select shallow recurrent architectures, with no appreciable gain from learning the temporal representation internally. These results support a compact predictive representation of Niño-3.4 evolution in which the representation of past information is more consequential than model complexity. As a prospective application, the selected models are used to forecast the developing 2026 event beyond the last available observation and to compare its predicted evolution with completed historical El Niño events.",
+    "authors": [
+      "Francisco J. Beron-Vera"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "physics.ao-ph",
+      "cs.LG",
+      "math.DS",
+      "nlin.CD"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24428v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24428v1",
+    "fetched_at": "2026-08-26T08:36:51.662386",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083742"
+  },
+  {
+    "id": "2608.24354v1",
+    "title": "Not All Tokens Are Equal: Region-Aware Consistency Repair of Backdoors in MLLMs",
+    "abstract": "MLLMs are increasingly deployed in user-facing applications, yet they inherit backdoor risks from the pipelines used to construct them: triggers may reside in images, texts, or both. Existing model-level backdoor removal methods, largely designed for conventional classifiers, show limited effectiveness on MLLMs, while MLLM-specific defenses mainly operate at inference time, filtering suspicious inputs without removing the backdoor embedded in the model. To address this gap and eliminate latent backdoors from MLLMs at their source, we present RACER, a model-level repair framework motivated by a key observation: backdoors induce abnormal layer-to-layer evolution in internal representations, which we term the layer-wise inconsistency anomaly. Importantly, this anomaly is modality-dependent, concentrating primarily in the token region encoding the trigger features that the backdoor model actually relies on. RACER therefore decomposes the fused representation into visual and textual token regions, normalizes their layer-wise inconsistency separately, and recomposes them using modality-aware weights over a deep-layer window, yielding a region-aware inconsistency objective that better captures localized backdoor-induced anomalies. Through a min-max optimization, this objective drives worst-case perturbation synthesis and adversarial fine-tuning against the resulting perturbation to repair the model, suppressing the deep representational directional shifts on which backdoor behaviors rely. RACER requires only 100 clean samples and no knowledge of the trigger, attack objective, or even whether the input model contains a backdoor. Evaluations on three open-source MLLMs across 36 backdoor settings spanning image, text, and multimodal triggers show that RACER reduces the average ASR to 1.1%, reaching 0% in 32 settings, while preserving clean-task utility on both backdoor and clean models.",
+    "authors": [
+      "Jiali Wei",
+      "Ming Fan",
+      "Mingkun Zhang",
+      "Haoyu Wang",
+      "Jun Sun",
+      "Guoheng Sun",
+      "Xiaoning Ren",
+      "Haijun Wang",
+      "Ting Liu"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24354v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24354v1",
+    "fetched_at": "2026-08-26T08:36:51.662429",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083754"
+  },
+  {
+    "id": "2608.24113v1",
+    "title": "Structured Frequency-Domain Evidence for LLM-Based Time-Series Anomaly Detection",
+    "abstract": "Time-series anomalies can appear not only as pointwise deviations but also as changes in recurring temporal structure, such as shifted periodicity or localized oscillatory fluctuations. However, existing LLM-based time-series anomaly detection methods mainly expose time-domain evidence through indexed values, plots, or de-seasonalized representations, leaving spectral structure implicit. We propose an evidence-augmented zero-shot TSAD framework that preserves indexed de-seasonalized observations while adding compact frequency-domain evidence computed with the Fast Fourier Transform (FFT). The evidence is constructed at two resolutions: global frequency-domain evidence summarizes sequence-level periodic context, while local frequency-domain evidence captures time-localized spectral departures. Experiments on AnomLLM with InternVL2-LLaMA3-76B, Qwen2.5-VL-72B-Instruct, Gemini-2.5-Flash, and GPT-4o, together with evaluation on the TSB-AD-U subset, show that explicit frequency-domain evidence improves LLM-based TSAD baselines. These results suggest that frequency-domain evidence can complement indexed and de-seasonalized time-domain inputs for zero-shot LLM-based TSAD.",
+    "authors": [
+      "Jungwook Seo",
+      "Sangwon Son",
+      "Minjeong Kim",
+      "Seungmin Han",
+      "Seojin Yoo",
+      "Sungyong Baik"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24113v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24113v1",
+    "fetched_at": "2026-08-26T08:36:51.662462",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083764"
+  },
+  {
+    "id": "2608.24099v1",
+    "title": "Are Android GUI Agents Robust Against Runtime Anomalies? AnTrap: Evaluating Agents in Dynamic Adversarial Environments",
+    "abstract": "GUI agents often encounter dynamic anomalies when deployed on Android devices, from unexpected pop-ups to action misuse, yet existing benchmarks lack systematic evaluation of agent robustness against runtime anomalies. We introduce AnTrap, a comprehensive benchmark that injects dynamic perturbations into agent execution trajectories. We propose a taxonomy organizing real-world anomalies into four layers (State, Thinking, Action and Round) with ten fine-grained subcategories, and develop a construction pipeline that preserves task solvability while introducing realistic adversarial conditions. Evaluating 16 leading GUI models, we reveal universal vulnerability to dynamic anomalies, with even the strongest models suffering significant performance degradation. Furthermore, we conduct GRPO training in both original and adversarial environments to validate our benchmark, separating environment-learnable anomalies from reasoning-bottlenecked ones. Our findings show that while single-step traps at state and action layers are largely addressable through adversarial reinforcement learning, deep contextual traps, like state deadlock, expose intrinsic limitations that cannot be resolved by training in environments with traps alone.",
+    "authors": [
+      "Guo Gan",
+      "Yilun Zhao",
+      "Cong Chen",
+      "Jinbiao Wei",
+      "Tingyu Song",
+      "Zheyuan Yang",
+      "Lin Fu",
+      "Hong Zhou"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24099v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24099v1",
+    "fetched_at": "2026-08-26T08:36:51.662498",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083774"
+  },
+  {
+    "id": "2608.23952v1",
+    "title": "STAIN-FL: Stealthy Targeted Attack Injection with Contextual Triggers in Federated Learning",
+    "abstract": "Federated video anomaly detection trains model collaboratively without sharing raw surveillance footage, but limited server-side visibility lets compromised clients to inject backdoor via malicious updates. This paper introduces STAIN-FL, a stealthy targeted backdoor attack injection framework that uses naturally occurring surveillance conditions, including low-light scenes, indoor settings, and crowd density, as contextual triggers. STAIN-FL combines anomaly-to-benign label \\textit{manipulation} with gradient masking over least-updated coordinates to preserve clean accuracy while inducing trigger-conditioned misclassification. We evaluate STAIN-FL on \\texttt{UCF-Crime} using 1024-dimensional I3D features in a non-IID four-client multi-agency setting, comparing FedAvg and FedProx under sparse and continuous attacks. Results show that sparse attacks have low-detectability, operationally significant attacks rather than high-intensity attacks: they keep the mean clean-accuracy drop below $2\\%$, yet still misclassify more than half of triggered anomalies at peak backdoor accuracy under FedAvg ($56.7\\%$) and FedProx ($54.2\\%$). Under FedAvg, the sparse backdoor remains above the $25\\%$ backdoor-accuracy threshold for an average of $336$ post-attack rounds, highlighting the persistence risk of contextually triggered attacks in surveillance systems.",
+    "authors": [
+      "Ashlinder Kaur",
+      "Purnima Murali Mohan",
+      "Zengxiang Li",
+      "Tram Truong-Huu"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23952v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23952v1",
+    "fetched_at": "2026-08-26T08:36:51.662520",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083785"
+  },
+  {
+    "id": "2608.23879v1",
+    "title": "Spatiotemporal Distillation via Recurrent Bottlenecks for Aortic Tracking",
+    "abstract": "Cardiac cine-MRI serves as a direct visual indicator of cardiovascular hemodynamics by capturing the continuous wall motion of the aorta. Quantifying these dynamic structural changes across the cardiac cycle is essential for measuring aortic distensibility, a primary marker of arterial stiffness. However, standard 2D segmentation networks focus on each frame independently. Consequently, when rapid systolic flow temporarily obscures the aorta's boundaries, this lack of continuous context results in frame-to-frame tracking dropouts and boundary inconsistencies. Spatiotemporal ($2\\text{D}+t$) networks can enforce temporal consistency across the sequence but suffer from a scarcity of expert annotations. To address this, we present a semi-supervised spatiotemporal ($2\\text{D}$ to $2\\text{D}+t$) knowledge distillation framework exploiting the cardiac cycle. The framework distills a spatial teacher's expertise into a spatiotemporal student network by executing a dynamic latent interception, pairing a recurrent spatiotemporal bottleneck with a residual spatial bypass. Our model selection strategy applies a baseline validation threshold ($\\text{DSC} \\ge 0.50$) prior to selecting the epoch that maximizes anatomical consistency. This strategy enables the spatiotemporal student model to achieve superior surface tracking accuracy ($\\text{NSD@1mm} = 92.3\\% \\pm 0.2\\%$) and high structural reliability ($\\text{Frac}_{2\\text{CC}} = 99.2\\% \\pm 0.6\\%$), reducing population-wide structural anomalies by over 56\\% compared to a 2D nnU-Net baseline.",
+    "authors": [
+      "Dexter Wen Jie Teo",
+      "Nairouz Shehata",
+      "Herve Lombaert"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "eess.IV",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23879v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23879v1",
+    "fetched_at": "2026-08-26T08:36:51.662558",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083795"
+  },
+  {
+    "id": "2608.23726v1",
+    "title": "A Hybrid Two-Stage Machine Learning Pipeline for Fault Detection and Classification in Power Transmission Systems",
+    "abstract": "Rapid and accurate fault detection in high-voltage transmission networks is essential for grid reliability and equipment protection. Transmission fault datasets are frequently imbalanced, and certain fault types produce electrical signatures that fall within the normal operating envelope, causing single-model classifiers to fail on safety-critical cases. This paper proposes a hybrid two-stage machine learning pipeline that decouples detection from classification. Stage 1 combines an Isolation Forest anomaly detector with an optional supervised binary detector through an OR-fusion rule; the supervised branch is allocated automatically during training for any fault class the anomaly detector cannot resolve, and is omitted when no such class exists. Stage 2 applies a Random Forest multiclass classifier only to samples flagged by Stage 1. Feature engineering is expressed as a per-measurement-point operator mapping six raw channels to eighteen features, including zero-sequence symmetrical components derived from Fortescue's theorem, yielding 18L features for L measurement points. On the TLFaultDataset, the pipeline raises Line-fault end-to-end accuracy from 31.3% to 95.8%. On an independent single-point dataset, the same framework attains 97.25% end-to-end accuracy across all classes including normal operation, exceeding the TLFed federated benchmark of 94.84% without GPU or federated infrastructure, at 0.05 ms per sample on CPU. Ablation on both datasets shows zero-sequence features resolving the three-phase versus three-phase-to-ground ambiguity, raising the F1-score of that class pair from 0.39 to 0.997. The direction of the zero-sequence signature is found to be system-dependent, motivating a learned decision boundary in place of a fixed relay threshold.",
+    "authors": [
+      "Sahil Manikshete",
+      "Atharva Gujarathi",
+      "Thanh Long Vu",
+      "Akhtar Hussain",
+      "Van-Hai Bui"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "eess.SY",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23726v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23726v1",
+    "fetched_at": "2026-08-26T08:36:51.662584",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083807"
+  },
+  {
+    "id": "2608.23547v1",
+    "title": "Robustness of Anomaly Detection Models for Industrial Control Systems under Training-Time Data Contamination",
+    "abstract": "Machine-learning-based anomaly detection is increasingly used in industrial control systems (ICS), yet most studies assume that detector training data is trustworthy. In practice, training data may be corrupted through compromised logs, labeling errors, manipulated historian records, or unsafe retraining processes. This paper evaluates the robustness of offline ICS anomaly-detection pipelines on the Secure Water Treatment (SWaT) benchmark under training-time contamination. We assess 11 heterogeneous anomaly detectors under three contamination strategies: random injection, similarity-targeted injection, and feature-noise injection. The first two insert attack samples into the nominal training pool, while the third adds bounded Gaussian noise to selected normal training samples. These attacks are contamination-based rather than gradient-driven poisoning methods. Contamination budgets from 1% to 10% are evaluated using clean validation and test sets under a unified offline protocol. The results show that robustness is strongly model-dependent and cannot be predicted from clean-data performance alone. Injection-based contamination causes the greatest degradation, particularly for local-density and distance-based detectors, whereas feature-noise contamination has a comparatively limited effect. PCA, SVM, HBOS, and IForest remain relatively stable, while the tuned neural detectors demonstrate intermediate robustness. Overall, the findings highlight the importance of training-data integrity in ML-enabled ICS monitoring, subject to the evaluated dataset, models, and threat assumptions.",
+    "authors": [
+      "Mustafa Umut Ozbek",
+      "Taiwo Ojo",
+      "Pooria Madani",
+      "Khalil El-Khatib",
+      "Li Yang"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23547v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23547v1",
+    "fetched_at": "2026-08-26T08:36:51.662609",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083818"
+  },
+  {
+    "id": "2608.23474v2",
+    "title": "What's the Catch? Evaluating Temporal Consistency in Vision-Language Models",
+    "abstract": "Vision-language models (VLMs) achieve strong performance on video and image-sequence benchmarks, yet it remains unclear whether they capture temporal structure. To study this question, we formulate temporal grounding as an anomaly detection problem, providing a simple and controlled evaluation that directly tests sensitivity to temporal consistency. We introduce TimeCatch, where temporal anomalies are created by swapping consecutive frames and frame-level anomalies by replacing a frame with Gaussian noise. Models are evaluated on anomaly detection and localization tasks across four synthetic and real-world datasets, alongside a human study. Our evaluation reveals a substantial gap between frame-level and temporal anomaly detection. While VLMs consistently detect frame-level anomalies and often localize them accurately, they perform near chance on temporal anomaly detection and only modestly above chance on localization. Humans, in contrast, achieve near-ceiling performance on both tasks. Additional analyses across model scales, prompting strategies, sequence lengths, and visual similarity suggest that these failures cannot be explained solely by limitations in perception or model capacity. Together, these findings indicate that current VLMs can identify anomalies within individual frames but struggle to integrate information across frames to reason about temporal consistency. TimeCatch provides a controlled benchmark for evaluating temporal grounding in vision-language models.",
+    "authors": [
+      "Marek Hradil",
+      "Danae Sánchez Villegas"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23474v2",
+    "arxiv_url": "https://arxiv.org/abs/2608.23474v2",
+    "fetched_at": "2026-08-26T08:36:51.662629",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083829"
+  },
+  {
+    "id": "2608.23468v1",
+    "title": "RAD: Rule-Augmented Relational Anomaly Detection",
+    "abstract": "Anomaly detection is often applied to data stored in relational databases, yet most existing methods require flattening multiple tables into a single feature matrix. This flattening can obscure entity identity, schema structure, and multi-hop dependencies, limiting the detection of anomalies that depend on relational context rather than isolated feature values. Beyond preserving relational structure, relational anomaly detection raises an additional challenge: how to incorporate symbolic behavioral evidence into learned relational representations. To address these challenges, we study relational anomaly detection, where the goal is to identify anomalous entities or events in a multi-table database. We propose RAD, a rule-augmented relational anomaly detector that combines heterogeneous graph representation learning with refined symbolic rule signals. RAD derives candidate rules from random-forest paths over flattened summaries of the entities or events being scored, refines them into compact interpretable predicates, injects the resulting rule features into the graph model, and learns anomaly scores using reconstruction-based and pairwise-ranking supervision. To evaluate this setting, we introduce a relational anomaly detection benchmark spanning three settings: LANL cybersecurity event detection and two unexpected user-churn anomaly tasks derived from Amazon and H&M relational databases. Experiments show that RAD improves anomaly ranking over flattened tabular detectors and relational baselines under natural class imbalance, achieving the best average rank on AUROC and AUPRC across the benchmark. Ablations show that direct rule injection and ranking-based supervision are key contributors to performance, while edge reconstruction is not uniformly beneficial. Our code and data are available at: https://github.com/noahd15/RAD_RelationalAnomalyDetection.",
+    "authors": [
+      "Noah Dahle",
+      "Anne Tumlin",
+      "Ngoc Tran",
+      "Xenofon Koutsoukos",
+      "Tyler Derr"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.LG",
+      "cs.CR",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23468v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23468v1",
+    "fetched_at": "2026-08-26T08:36:51.662656",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083840"
+  },
+  {
+    "id": "2608.22968v1",
+    "title": "Do Time-Series Foundation Models Pay Off for Industrial Monitoring? A Cost-Aware Empirical Study",
+    "abstract": "Industrial monitoring models must detect operationally relevant deviations while satisfying target-specific data, calibration, and resource constraints. Time-series foundation models (TSFMs) promise reusable representations and zero-shot forecasts, yet evidence for their deployment value remains mixed when task definitions are heterogeneous and lightweight baselines are competitive. This work presents a protocol-aware empirical assessment across three settings: a C-MAPSS degradation-risk proxy, normal-only training for anomalous-sound detection on MIMII, and BDG2 forecasting-residual diagnostics with synthetic target perturbations. We assess classical one-class methods, compact neural autoencoders, residual forecasters, MOMENT-small, Chronos-T5, and TimesFM 2.5 in terms of anomaly-ranking performance, risk-horizon sensitivity, residual forecasting and perturbation sensitivity, and local implementation cost. Across 100 C-MAPSS engines evaluated out of fold, TCN-AE reaches fold-weighted AUROC/AUPRC 0.9570/0.8960, compared with 0.7310/0.3080 for MOMENT reconstruction; paired engine-cluster bootstrap confidence intervals exclude zero for both differences. Across five matched MIMII pump evaluations, OCSVM also exceeds MOMENT reconstruction in AUROC and AUPRC. On a fixed 12-meter BDG2 panel, TimesFM 2.5 has the lowest aligned forecast error and the highest synthetic AUROC point estimate, although synthetic AUPRC is similar across TSFM and fitted residual models. Same-device measurements show that MOMENT incurs higher latency, peak allocated VRAM, and serialized state-dictionary size than TCN-AE. Under the evaluated frozen and zero-shot settings, TSFMs are task-dependent deployment options rather than default replacements for fitted lightweight models.",
+    "authors": [
+      "Guan-Hua Wen",
+      "Kuan-Yu Chen"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22968v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22968v1",
+    "fetched_at": "2026-08-26T08:36:51.662676",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083851"
+  },
+  {
+    "id": "2608.22789v1",
+    "title": "GuidedFlow: An Attention-Guided Framework for Anomaly Detection in Additive Manufacturing",
+    "abstract": "Additive Manufacturing (AM) plays a vital role in the ongoing industrial revolution. However, quality control remains crucial and challenging due to printing defects or potential cyber-physical intrusions. Image or video-based anomaly detection is a key effort towards addressing these challenges. Various approaches have been explored in this domain, including reconstruction-based, embedding-based, and flow-based methods. Though normalizing flow-based methods address some of the core challenges of unforeseen defects and generalization while maintaining detection performance, existing approaches struggle with tiny/stringing defects common in 3D printing. In a small-data setting, this poses a limitation in generalization. To address these limitations, we propose \\textbf{GuidedFlow}, a novel attention-guided normalizing flow model for anomaly detection and localization. GuidedFlow employs a pre-trained ResNet model, fine-tuned on the domain dataset. An attention-guided spatial and temporal flow framework models the dynamics across multiple scales and frames. A Spatio-Temporal Attention Network (SAN) enables the flow model to prioritize relevant contextual cues from input frames. We evaluate GuidedFlow on our AM3D-AD dataset, consisting of benign and anomalous real 3D printed object images and videos. We also conduct a comparative study using the MVTec-AD industrial image anomaly detection dataset. Experimental results demonstrate that GuidedFlow outperforms most of the state-of-the-art models with enhanced detection accuracy and AUROC.",
+    "authors": [
+      "Sosmita Paul",
+      "Krishna Roy"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.22789v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.22789v1",
+    "fetched_at": "2026-08-26T08:36:51.662696",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083862"
+  },
+  {
+    "id": "2608.23706v1",
+    "title": "Do LLMs Understand Limit Order Book Dynamics?",
+    "abstract": "A large language model (LLM) trained on synthetic limit order book (LOB) data achieves near perfect scores in generating valid sequences of LOB events. However, the LLM's implicit world model fails to learn the state of the LOB. This deficiency leads to biased estimates and spurious predictability in using the LLM to forecast future LOB events. Our analysis uses novel tests of an LLM's world model, extending prior work from deterministic settings to the stochastic dynamics needed for the LOB.",
+    "authors": [
+      "Junxiao Chen",
+      "Paul Glasserman"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23706v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.23706v1",
+    "fetched_at": "2026-08-26T08:37:19.576971",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083870"
+  },
+  {
+    "id": "2608.24876v1",
+    "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+    "abstract": "Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation. We introduce Recuris, a recursive Experiential-Working Memory architecture for long-horizon agent harnesses, in which Working Memory tracks task progress and guides skill selection from Experiential Memory, grounding skill use in current needs rather than the full history. This coupling also turns execution into structured evidence that localizes failures to specific memory components. Across tasks, a fixed Meta-Agent turns that evidence into localized, validation-gated updates to Skill Memory that reshape execution and yield new evidence, forming a bounded recursive memory-evolution loop. Across four long-horizon benchmarks and ten models, Recuris improves task success in 35 of the 37 completed model-benchmark pairs, carrying frontier models to SOTA-level task success: on tau-bench it adds +17.8 points to GPT-5.6 Sol and +15.6 to Claude Opus 5, taking Opus 5 to 87.9%, and +16.6/+13.5 points on Qwen3.6-27B/35B on SkillFlow. The advantage widens as the interaction horizon grows, to +32.2 points on the longest tasks, and common long-horizon failures fall by up to 80%. These results position recursively evolving memory as a scalable foundation for RSI, enabling agents to continuously transform accumulated experience into increasingly effective long-horizon behavior. Code: https://github.com/Gen-Verse/Recuris",
+    "authors": [
+      "Zhaochen Yu",
+      "Yingcheng Wu",
+      "Zhenfei Yin",
+      "Kaiyuan Chen",
+      "Zhe Zhao",
+      "Mengdi Wang",
+      "Shuicheng Yan",
+      "Ling Yang"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24876v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24876v1",
+    "fetched_at": "2026-08-26T08:37:22.980588",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083881"
+  },
+  {
+    "id": "2608.24848v1",
+    "title": "BrowserForge: Scaling Web Episode via Parallel Browser Sandboxes",
+    "abstract": "Web agents that act from rendered pixels avoid the fragility and heavy token cost of reading a page's HTML or accessibility tree, but training them depends on large amounts of high-quality interaction trajectories, and how to produce such data at scale remains an open problem. Public datasets typically contain only a few thousand trajectories drawn from a fixed and narrow set of websites, and even recent automated synthesis pipelines stay bound to predefined site lists or tutorial sources, so the number of distinct websites the agent ever sees barely grows. We present BrowserForge, a framework that generates web interaction data at scale by driving many browser sandboxes in parallel over the open web. BrowserForge couples three components: an open-web sourcing stage that exposes the agent to hundreds of thousands of real, openly reachable websites; a sandbox cluster manager that schedules hundreds of concurrent browsers with high utilization; and a Proposer-Solver dual-agent loop that turns a raw page into an executable task and then collects a verified trajectory for it. A rule-plus-model cleaning pipeline removes failed runs and rewrites the surviving reasoning into a single unified chain-of-thought style. Page structure such as the accessibility tree is used only as a synthesis-time signal; the agent we train and release acts purely from the screenshot. The resulting corpus contains 203,238 trajectories, each collected from a distinct website, larger and more diverse than prior trajectory datasets. Fine-tuning a compact multimodal model on this corpus raises its success rate on the live Online-Mind2Web from 25.66% to 33.33% and consistently improves step accuracy on the static Multimodal-Mind2Web, with the gain growing as the corpus scales. Controlled analyses further confirm that open-web sourcing and broad website coverage are key contributors to the observed improvement.",
+    "authors": [
+      "Fei Tang",
+      "Huawen Shen",
+      "Zhiqiong Lu",
+      "Zhengxi Lu",
+      "Pengyuan Lyu",
+      "Chengquan Zhang",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang",
+      "Yongliang Shen"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24848v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24848v1",
+    "fetched_at": "2026-08-26T08:37:22.980638",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083892"
+  },
+  {
+    "id": "2608.24824v1",
+    "title": "Constrained Entity Selection under Partial Knowledge for LLM-Based Knowledge Graph QA",
+    "abstract": "Large language models are increasingly used for knowledge graph question answering (KGQA), but can fail to correctly ground answers in the underlying graph. Current approaches to LLM-based KGQA either rely on full semantic parsing into executable queries such as SPARQL, which is brittle in practice due to complex schemas or incompleteness of real-world KGs, or on LLM-reasoning and answer generation over KGs, which can be more robust but lacks formal guarantees. In this work, we study a complementary setting in which \\emph{candidate} answers are generated by an LLM-based system and subsequently verified using lightweight symbolic constraints derived from the question. We introduce \\emph{Constrained Entity Selection under Partial Knowledge (CES-PK)}, a problem formulation that focuses on eliminating invalid answers and providing symbolic support for valid ones without requiring construction of executable logical forms. To account for incomplete KGs, we employ a three-valued constraint semantics (\\emph{satisfied, violated, unknown}) that avoids incorrect rejections under open-world assumptions. To demonstrate the effects of our method, we instantiate this framework over the Hetionet biomedical knowledge graph and evaluate the impact of type, relation, and exclusion constraints. Experiments show that precision improves by filtering invalid candidates, while recall is preserved due to retaining candidates whose constraints are not explicitly violated. Satisfied constraints provide additional positive symbolic evidence to rank remaining candidates.",
+    "authors": [
+      "Emanuel Kitzelmann"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24824v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24824v1",
+    "fetched_at": "2026-08-26T08:37:22.980661",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083902"
+  },
+  {
+    "id": "2608.24777v1",
+    "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+    "abstract": "LLM-based agents can interact with external environments through tool invocation, but this capability also introduces security risks such as file modification, information leakage, and unauthorized actions. Existing guardrails often evaluate completed trajectories, leaving pre-execution monitoring of step-level actions underexplored. We propose StepGuard, a step-level guard model that can audit completed agent trajectories and check tool actions before they are executed. To train StepGuard, we introduce StepGen, an automatic data engine that generates safe and unsafe trajectories with the same context but different actions at the risky step. To further reduce over-defense and under-defense, we propose Balance-GRPO, which dynamically balances learning between safe and unsafe actions based on their observed accuracy. Experiments show that StepGuard achieves the highest average accuracy among open-weight guard models, with performance comparable to GPT-5.4. When used to guard agents on AgentDojo and AgentDyn, StepGuard reduces mean attack success rate by 77.3% relative to the no-guard setting, while mean utility drops by only 2.8 percentage points.",
+    "authors": [
+      "Zhijie Zheng",
+      "Yu Li",
+      "Chen Qian",
+      "Yuqian Fu",
+      "Yanwei Fu",
+      "Lu Sheng",
+      "Jing Shao",
+      "Dongrui Liu"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24777v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24777v1",
+    "fetched_at": "2026-08-26T08:37:22.980699",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083911"
+  },
+  {
+    "id": "2608.24760v1",
+    "title": "ExpConCAD: Experience-Guided Text-to-CAD Generation from Shape Descriptions with Implicit Spatial Constraints",
+    "abstract": "Text-to-CAD aims to generate executable CAD programs from natural-language descriptions. However, real-world descriptions are often underspecified and omit critical spatial constraints required for valid CAD construction, a challenge that has been largely overlooked by existing methods. In this paper, we argue that missing spatial constraints should be inferred with respect to the underlying construction structure and informed by reusable design experience. Based on this insight, we propose ExpConCAD, an experience-enhanced framework for implicit spatial constraint completion. ExpConCAD first recovers the intended construction structure and constraint scopes, then retrieves relevant constraint-completion experience for similar scopes to complete the missing spatial constraints, and finally generates executable CadQuery programs. Extensive experiments demonstrate the effectiveness of ExpConCAD and provide insights into the role of construction structure understanding and experience memory in spatial constraint completion. Our code is available at: https://github.com/Hotjiashell/ExpConCAD.",
+    "authors": [
+      "Jingyao Liu",
+      "Jinkang Tang",
+      "Chen Huang",
+      "Wenqiang Lei",
+      "See-Kiong Ng"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24760v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24760v1",
+    "fetched_at": "2026-08-26T08:37:22.980730",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083922"
+  },
+  {
+    "id": "2608.24742v1",
+    "title": "Design and Empirical Characterization of a Hardware-Realized Turing Machine with Automated Card-Based Programming",
+    "abstract": "Physical implementations of Turing Machines remain rare, and existing electromechanical demonstrators and mechanical logic games typically require manual operator intervention, either to trigger each computational step or to reconfigure the state table, or both. This restricts prior physical models to short, operator-paced demonstrations and prevents autonomous execution of extended computations. This paper addresses that gap with a hardware Turing Machine that enables autonomous multi-step execution and reprogrammable optical input without manual intervention between programs. The system integrates an Arduino Mega for state-transition logic, dual NEMA 17 stepper motors for bidirectional tape actuation, infrared reflectance sensors for symbol detection, and an ESP32-CAM-based optical punched-card reader for automated state-table loading. Hole detection under non-uniform illumination used a Breadth-First Search flood-fill algorithm with local adaptive thresholding rather than fixed global thresholding, driven by the memory and library constraints of the ESP32-CAM's microcontroller environment; this improved card-decoding accuracy from 75% to 90% (100% with mechanical card flattening) on a 20-card test set. Mechanical evaluation showed fabrication accuracy of +/-0.15 mm, rack-and-pinion positional error below 0.3 mm across 50 trials, and voltage supply stability within +/-0.2 V under full system load. End-to-end computation was validated against a parallel software simulator (tlang), with all hardware outputs matching the simulated reference exactly across multiple test programs. The system advances prior physical Turing Machine demonstrations through autonomous execution, reprogrammable optical input, and quantitative evaluation of its mechanical, optical, and computational performance.",
+    "authors": [
+      "Agrima Regmi",
+      "Jenish Pant",
+      "Pratistha Sapkota",
+      "Sanskriti Khatiwada",
+      "Binod Sapkota"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.LO",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24742v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24742v1",
+    "fetched_at": "2026-08-26T08:37:22.980761",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083933"
+  },
+  {
+    "id": "2608.24658v1",
+    "title": "Parason: Revealing Subtask and Trial Parallelism in LLM Reasoning",
+    "abstract": "Scaling test-time reasoning has substantially improved the problem-solving ability of large language models (LLMs), but standard autoregressive decoding still executes long reasoning traces sequentially, creating severe latency for difficult tasks (up to days and weeks). Parallel reasoning offers a natural remedy. However, prior systems primarily focus on Subtask Parallelism, where the model learns to decompose a high-level task into smaller chunks that can be solved independently. This approach overlooks another pervasive form of parallelism: Trial Parallelism, where multiple speculative attempts explore, verify, and aggregate competing hypotheses in parallel. In this paper, we introduce Parason, which reveals and learns both forms of parallelism in LLM reasoning. Our analysis identifies Trial Parallelism as the majority of parallelizable reasoning computation (65.5% in DeepSeek-V4's reasoning steps in HLE), and it becomes increasingly dominant on hard problems. Guided by this taxonomy, Parason converts sequential reasoning traces into structured parallel trajectories with a context-free grammar, then trains models with Parallelism-Aware Group Relative Policy Optimization (PA-GRPO), whose reward jointly balances accuracy, latency, and the two parallelism ratios. At inference time, Parason executes the learned parallel structure through tool calls, translating theoretical savings to real-world wall-clock acceleration. Experiments on mathematical reasoning benchmarks including AIME24 and AIME25 show that Parason achieves an average acceleration about 1.7$\\times$ while maintaining competitive accuracy.",
+    "authors": [
+      "Zhengyang Zhang",
+      "Zijian Zhang",
+      "Jiaxuan Gao",
+      "Shusheng Xu",
+      "Yi Wu",
+      "Song Han",
+      "Ligeng Zhu"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24658v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24658v1",
+    "fetched_at": "2026-08-26T08:37:22.980796",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083943"
+  },
+  {
+    "id": "2608.24644v1",
+    "title": "A Literate Programming Environment for Human and Machine Agents",
+    "abstract": "This paper introduces an environment for constructing literate programs in concert with language-aware machine agents. This environment includes a grammar for executable program essays, a parser that treats names as first-class objects, an internal name-graph which relates prose, names and executable artifacts, and a binding mechanism for existing languages and testing toolsets. This supports co-location of code with its most relevant natural language and structured data context, making better use of Large Language Model (LLM) context windows. It also provides LLM coding agents with a toolset more analogous to the symbol-aware search and usage information available in human programmer-facing Integrated Development Environments (IDEs). We describe a working implementation with bindings to three established programming languages, and several example programs.",
+    "authors": [
+      "Adam T. Burke"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.PL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24644v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24644v1",
+    "fetched_at": "2026-08-26T08:37:22.980818",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083953"
+  },
+  {
+    "id": "2608.24621v1",
+    "title": "Beyond Semantic Accuracy: Consequence-Aware Evaluation for Safety-Critical Language Understanding",
+    "abstract": "Can language models be trusted in safety- critical operations? In such settings, strong per- formance on semantic metrics does not guaran- tee operational reliability: a misread altitude, a dropped execution condition, or a confused call- sign may score well under standard F1 yet carry sharply asymmetric operational consequences. We study this problem in air traffic control (ATC), where controller-pilot communication demands near-zero error tolerance, and use consequence-aware evaluation to test whether semantic scores misstate operational reliabil- ity. The framework is instantiated in a con- trolled diagnostic ATC benchmark grounded in aviation standards and feedback from 40 air traffic controllers across three countries. Evaluating 8 models, we uncover a system- atic semantic-safety gap: conventional scores give substantially higher performance estimates than consequence-aware evaluation, even for models that appear reliable under standard met- rics. Risk-aware fine-tuning narrows but does not close this gap, showing that consequence- aware evaluation is a necessary complement to standard NLP metrics before any real safety- critical deployment claim",
+    "authors": [
+      "Yujing Chang",
+      "Thinh Pham",
+      "Van-Phat Thai",
+      "Chunyao Ma",
+      "Yash Guleria",
+      "Pham Nhut Huy",
+      "Sameer Alam"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24621v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24621v1",
+    "fetched_at": "2026-08-26T08:37:22.980852",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083963"
+  },
+  {
+    "id": "2608.24570v1",
+    "title": "EviDx: Evidence-Aware Active Diagnosis with Scaffolded LLM Agents",
+    "abstract": "Clinical diagnosis is an active evidence-seeking process in which clinicians acquire evidence, update competing hypotheses, and decide when the available evidence is sufficient for diagnosis. Yet many medical diagnosis systems built around large language models (LLMs) still formulate diagnosis as static case-to-answer prediction, with limited support for evidence acquisition. Agentic LLMs offer a dynamic alternative through tool use and intermediate diagnostic trajectories, but existing systems often under-specify how patient evidence should be exposed, scaffolded, and controlled at runtime. We introduce EviDx, an evidence-aware active diagnosis framework that pairs patient-specific diagnostic environments with a clinical diagnostic scaffold and an observer-guided runtime harness. In EviDx, $\\mathcal{E}$-Synthesis constructs interactive environments from raw clinical cases; the scaffold organizes role-specialized agents, evidence tools, and evolving evidence states; and the harness regulates diagnostic termination by tracking uncertainty and evidence coverage. A 3-level evaluation pyramid assesses execution robustness, reasoning dynamics, and diagnostic outcomes. Experiments show that EviDx improves diagnostic performance and process stability while revealing model-dependent capability boundaries.",
+    "authors": [
+      "Lihang Zeng",
+      "Shaoting Zhang",
+      "Xiaofan Zhang"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24570v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24570v1",
+    "fetched_at": "2026-08-26T08:37:22.980878",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083972"
+  },
+  {
+    "id": "2608.24569v1",
+    "title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
+    "abstract": "Large language model (LLM) agents coordinate complex tasks through multi-role and multi-stage workflows. Upstream state is repeatedly transformed into intermediate language artifacts, such as summaries, plans, tickets, memories, and handoff notes, from which downstream components act. For action-constraining state, topical retention is insufficient: an artifact may mention an unresolved condition while changing it from a requirement that must be resolved before execution into information that may merely inform the next action. We study this action-binding role as operational state preservation. Safety blockers provide a controlled instance because each source state has an explicit prerequisite, authority, fallback, and execution consequence. We condition on correct upstream identification, vary the handoff transformation, and evaluate an executor restricted to the resulting artifact. Across 1,296 controlled synthetic episodes, direct-handoff controls preserve every blocker, whereas compression, plan assimilation, convergence, ownership deferral, and precedent substitution repeatedly turn binding state into caveats or non-binding considerations. Normal handoff compression produces 100.0% deactivation and 54.2% forbidden action. Restoring all four state fields raises preservation to 100.0% and reduces forbidden action to 0.0%. Fixed-artifact interventions further separate preservation from containment: downstream verification eliminates forbidden action while artifact deactivation remains 95.3%. These results identify a state-transmission failure between information extraction and action. Handoff transformations can retain state content while weakening its constraints on downstream action. Semantic availability does not guarantee operational preservation.",
+    "authors": [
+      "Yiheng Sun",
+      "Huifei Wang",
+      "Yancheng Zhu",
+      "Zhenyu Li",
+      "Zebin Zhao",
+      "Yifan Yuan"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24569v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24569v1",
+    "fetched_at": "2026-08-26T08:37:22.980912",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083983"
+  },
+  {
+    "id": "2608.24555v1",
+    "title": "StrokeGuard: A Multi-Agent Guided System for Prehospital Stroke Assessment",
+    "abstract": "Prehospital stroke assessment aims to accurately identify stroke symptoms and make rapid decisions through standardized procedures within an extremely narrow time window, thereby saving valuable time for subsequent treatment. In clinical practice, FAST-based scales are widely used for prehospital stroke assessment by issuing instructions that guide subjects to perform specific actions to screen facial, arm, and speech functions. However, in home and community settings, non-clinical users often encounter challenges such as inaccurate descriptions, incomplete symptom observation, and difficult operational procedures, which may lead to inaccurate or biased assessment results. To address these challenges, this paper presents StrokeGuard: a multi-agent guided system designed for prehospital stroke assessment that makes mobile FAST screening more standardized and executable. Specifically, to overcome the limitations of traditional single-agent systems in terms of procedural fault tolerance and user guidance capability, StrokeGuard adopts a dual-channel agent mechanism that separates formal assessment (i.e., facial palsy, arm weakness, speech impairment) from procedural support (e.g., step prompts, error correction, and real-time feedback). It guides the assessment process through multi-agent collaboration, dual-channel interaction, state-machine control, and stage-local fallback recovery mechanisms. Stage-specific scoring is delegated to constrained pretrained video assessment modules, while evidence source records are integrated with structured report generation. The user evaluation uses MATES-9, an exploratory scale for measuring user experience in multistep AI-guided tasks. In a simulated prehospital scenario, StrokeGuard improves the MATES-9 total score over a paper FAST-style form by 10.83 points, corresponding to a 23.8% relative increase.",
+    "authors": [
+      "Wentao Yang",
+      "Zhenye Xu",
+      "Ruoyi Li",
+      "Musen Zhang",
+      "Yao Guo"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.HC",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24555v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24555v1",
+    "fetched_at": "2026-08-26T08:37:22.980943",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.083994"
+  },
+  {
+    "id": "2608.24509v1",
+    "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+    "abstract": "LLM agents increasingly solve tasks by invoking multiple tools, where parallel execution is essential for low latency but difficult to manage safely. Existing agent benchmarks primarily evaluate tool selection, argument generation, and end-to-end success under mostly serial execution, largely overlooking valid parallelization and resource-constrained scheduling. This missing scheduling dimension creates a practical failure mode: serial execution is safe but slow, while resource-agnostic parallel execution is fast but prone to avoidable resource overflows. To address this gap, we introduce PeakBench, a benchmark of executable multi-tool workflows with execution-grounded dependency annotations and measured resource profiles. A central challenge in evaluating such workflows is attribution: failures and inefficiencies may arise from incorrect dependency planning, poor resource-constrained scheduling, or both. PeakBench addresses this challenge with a two-part evaluation framework that disentangles logical planning from physical scheduling, with dedicated metrics for each dimension. Using this framework, we show that strong logical planning does not reliably translate into safe or efficient execution under resource constraints. We further show that exposing resource information can reduce avoidable overflows and improve resource utilization, making PeakBench a useful testbed for diagnosing resource-aware agent behavior. Code is available at https://github.com/Czzzk/Staggering-the-Peaks.",
+    "authors": [
+      "Zhi-Kai Chen",
+      "Xu-Xiang Zhong",
+      "Song-Yan Li",
+      "De-Chuan Zhan",
+      "Han-Jia Ye"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24509v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24509v1",
+    "fetched_at": "2026-08-26T08:37:22.980974",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.084004"
+  },
+  {
+    "id": "2608.24488v1",
+    "title": "Where Entropy Is Measured Matters: Policy Geometry in Bounded Continuous-Control PPO",
+    "abstract": "Many continuous-control policies are optimized as unbounded Gaussians and then mapped into bounded actions. We show that where entropy is measured changes the policy geometry learned by proximal policy optimization (PPO). In an 80-muscle MyoLeg task, a clipped Gaussian executes 89.07% of actions within 5% of a bound. A same-state decomposition shows that this is not due to variance alone: setting variance to zero still leaves 83.83% of actions near a bound, while 82.12% of state-conditioned means lie outside the executable interval. Replacing clipping with a tanh map does not remove the high-variance regime. For latent Gaussian entropy H(u), the entropy loss has zero gradient with respect to the mean and a constant variance-increasing gradient. For executed-action entropy H(a), the transform Jacobian adds an inward gradient on the mean. Across three matched MyoLeg seeds, near-boundary occupancy is 71.42%, 29.76%, and 18.83% under latent entropy, no entropy, and executed-action entropy. A 38-dimensional Dog-Stand replication with an independent CleanRL-based PPO implementation reproduces the ordering in mean geometry, which also survives shared-state evaluation and boundary margins from 1% to 10%. Direct mean penalties can match or exceed the centering produced by H(a), showing that interior means are not unique to executed entropy. However, matched mean geometry can coexist with substantially different variance and return. Entropy measurement space is therefore a coupled mean-variance design choice, and task return alone does not characterize bounded-policy geometry.",
+    "authors": [
+      "Yiyang He",
+      "Zhichun Zhou",
+      "Ziwei Wang",
+      "Tao Xue",
+      "Haolin Fei"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24488v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24488v1",
+    "fetched_at": "2026-08-26T08:37:22.981005",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.084014"
+  },
+  {
+    "id": "2608.24369v1",
+    "title": "Do Recipes Have Personas? Characterizing and Generating Creator Style in Attributed Procedural Graphs",
+    "abstract": "While large language models (LLMs) possess vast zero-shot procedural knowledge, their tendency to produce homogenized logic often obscures the unique, idiosyncratic execution processes of individual human creators. In this paper, we investigate the computational discovery of procedural personas from unstructured data. To achieve this, we introduce ViralRecipesTrans, a new dataset of procedurally aligned execution flow graphs extracted from popular culinary video transcripts and explicitly mapped to specific creators. We formulate procedural stylometry as a graph learning and process discovery task, revealing a fundamental duality: while traditional lexical classifiers overfit via semantic leakage, discrete topological metrics successfully capture the rigid physical constraints of a creator's workflow. Building upon this characterization, we extend our framework into a novel generative task--predicting a creator's exact structural execution graph for unseen dishes. We expose a fundamental dichotomy in style generation between global macro-planning and local structural execution. Our results demonstrate that few-shot LLMs dominate semantic assignment but suffer from persistent macro-planning deficits, whereas our structured two-stage model achieves superior topological control via rigid Markovian priors. Together, an ensemble approach to procedural generation combines the strengths from both sides, dynamically synthesizing global semantic reasoning with localized topological footprints to automate the discovery and generation of personalized workflows.",
+    "authors": [
+      "Lei Jiang"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.24369v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.24369v1",
+    "fetched_at": "2026-08-26T08:37:22.981027",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-26T08:39:45.084025"
+  }
+]
