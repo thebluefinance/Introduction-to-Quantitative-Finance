@@ -1,0 +1,635 @@
+[
+  {
+    "id": "2608.25844v1",
+    "title": "Output-Only Identification and Spectral Monitoring of Coupled Feedback Networks with Known Time-Varying Actuation",
+    "abstract": "Coupled feedback networks are often monitored channel by channel even though cross-channel paths alter both stability margins and transmitted disturbances. We study identification of a structured feedback matrix L_t = Phi diag(gamma_t) in an output-only setting: no commanded, probing, or reference input exists -- only temporally separated outputs and the scheduling gains gamma_t are observed, while the coupling response Phi and the clearing-window inputs are not. Identification rests jointly on the persistent excitation of the observed pre-window output and on two structural features separating coupling from confounds: the known time variation of the gains, which modulates the closed-loop response in a predictable pattern, and a partial-reversal moment by which a known fraction of transient displacement is corrected in a subsequent window. We give a hierarchy of results: exact local identification of the coupling under a Jacobian rank condition on the gain regimes; a first-order interaction estimator whose identification strength is the minimum eigenvalue of the residualized interaction information matrix (provably unidentified under constant gains); and a characterization of the estimand as a resolvent sensitivity -- the right object for screening transmitted disturbances and a first-stage input to spectral-margin recovery -- with sqrt(T) asymptotics for the first-order estimator, a cross-identification theorem mapping each varying gain to exactly identified resolvent rows and columns, and bootstrap validity under consistent selection; the implemented heuristic's empirical coverage (90% at nominal 95%) quantifies the remaining gap. Simulations verify sharpness of the rank condition and quantify benchmark failures under confounding. A case study on leveraged-fund rebalancing feedback, where daily fund disclosures play the role of the known gains, illustrates the method on real data.",
+    "authors": [
+      "Jihwan Woo"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "eess.SP",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25844v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25844v1",
+    "fetched_at": "2026-08-27T18:45:11.162507",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683346"
+  },
+  {
+    "id": "2608.25223v1",
+    "title": "On the hedging problem in general 1D diffusion markets",
+    "abstract": "We develop a PDE-based methodology for pricing and hedging European contingent claims in general one-dimensional diffusion markets characterized solely by their scale function and speed measure, possibly without a classical SDE representation, and with constant interest rate. We derive a hedging equation whose solution generates a self-financing hedging strategy and provide sufficient conditions on scale, speed, and interest rate, under which this strategy achieves the minimal hedging capital, expressed through the no free lunch with vanishing risk (NFLVR) condition. We further prove necessary and sufficient conditions for NFLVR and characterize the class of equivalent local martingale measures through an auxiliary diffusion whose scale and speed characteristics are determined by those of the real-world diffusion and by the interest rate. When the NFLVR condition fails, the framework may produce multiple hedging equations corresponding to non-minimal strategies, whose associated prices can exceed the minimal hedging capital. We illustrate both the effectiveness and limitations of the approach through numerical experiments involving diffusion models with irregular features.",
+    "authors": [
+      "Alexis Anagnostakis",
+      "David Criens",
+      "Mikhail Urusov"
+    ],
+    "published": "2026-08-25",
+    "categories": [
+      "q-fin.MF",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25223v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25223v1",
+    "fetched_at": "2026-08-27T18:45:11.162550",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683371"
+  },
+  {
+    "id": "2608.23808v2",
+    "title": "Equity Strategy Backtesting: Luck or Edge? The MinervaScore as a Statistical Robustness Grade",
+    "abstract": "Backtests of trading strategies are often selected after many parameter trials. A strong historical result can therefore reflect search luck rather than a persistent signal. Standard summaries such as return, Sharpe ratio, and drawdown do not record how many candidates were tried, whether the selected rule survives out-of-sample validation, or whether the available history is long enough to support the result.   This paper describes the MinervaScore, a post-selection robustness grade for trading strategies. The score combines four established validation quantities: Deflated Sharpe Ratio, Probability of Backtest Overfitting, Superior Predictive Ability, and Minimum Track Record Length, with a regime-stability diagnostic. These components are converted into signed margins from their admissibility thresholds, aggregated into a raw score, and then mapped to a 0-100 display. The display is tied to a binary Robustness Seal: scores of 80 or higher are shown only when all five gates pass. The calibration uses 359,062 production backtest records. The score is intended to rank statistical support, not to estimate the probability of future profit.   In synthetic markets with known ground truth, the MinervaScore separates true signal from lucky backtest outcomes, with an AUROC of 0.989 at the headline difficulty. Its improvement over the GT-Score proxy and the gates-passed baseline is modest, and it remains close to the corrected DSR-alone baseline. In a pre-registered test on unseen real-market data, the score showed no significant forward relationship in a population with limited surviving edge (Spearman rho_s = 0.013, one-sided permutation p = 0.40). We therefore present the MinervaScore as an auditable validation and reporting layer, rather than as evidence of demonstrated real-market predictability.",
+    "authors": [
+      "Maria Laura Santoni",
+      "Vincent Jouanne",
+      "Matthew L. Scullin"
+    ],
+    "published": "2026-08-24",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.23808v2",
+    "arxiv_url": "https://arxiv.org/abs/2608.23808v2",
+    "fetched_at": "2026-08-27T18:45:11.162750",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683386"
+  },
+  {
+    "id": "2608.25935v1",
+    "title": "TAU-Agent: An Agentic Retrieval-Augmented Framework for Traffic Anomaly Understanding",
+    "abstract": "Traffic Anomaly Understanding (TAU) requires models and systems to detect, reason about, and explain anomalous events in transportation videos. To address this challenge, we propose TAU-Agent, an agentic retrieval-augmented framework for traffic anomaly understanding. Given a task query, a central retrieval agent orchestrates two visual perception tools, namely a Video Captioning Tool and an Open-Vocabulary Tracking Tool, to retrieve and select query-relevant evidence, including captions, temporal intervals, and object trajectories. The selected evidence, together with sampled video frames and the input query, is provided to a supervised fine-tuned vision-language model for final reasoning and answer generation. We evaluate TAU-Agent on both the in-domain and the out-of-domain benchmarks from the AI City Challenge 2026. TAU-Agent achieves scores of 0.6779 on Track 3, 0.3998 on Track 7, and 67.9275 on Track 8, ranking second, twelfth, and fifth, respectively. Code is available at: https://github.com/siri-rouser/TAU-Agent.",
+    "authors": [
+      "Yuqiang Lin",
+      "Yan Shi",
+      "Sam Lockyer",
+      "Harish Tayyar Madabushi",
+      "Adrian Evans",
+      "Wenbin Li",
+      "Yinhai Wang",
+      "Nic Zhang"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25935v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25935v1",
+    "fetched_at": "2026-08-27T18:45:24.537288",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683398"
+  },
+  {
+    "id": "2608.25498v1",
+    "title": "A Multi-View Coupled Tensor Decomposition for Lightweight Online Adaptive Traffic Prediction",
+    "abstract": "Accurate online traffic prediction is essential for intelligent transportation systems, where forecasting must be performed continuously under imperfect sensing conditions. Missing observations and anomalous disturbances make this task challenging, particularly when prediction relies on a single traffic view. This paper proposes a Multi-View Coupled Tensor Decomposition (MVCTD) model for online traffic prediction from imperfect multi-view observations, such as speed, flow, and occupancy. The proposed model uses coupled tensor decomposition to build a structured latent forecasting space, in which shared spatial structures across traffic views and view-specific temporal dynamics are jointly modeled. A group sparse regularization is further introduced to capture correlated abnormal responses induced by real traffic anomalies and thus reduce their influence on forecasts. For streaming deployment, MVCTD performs iterative refinement only on the current latent tensor, while the remaining model variables are updated by lightweight closed-form steps based on summarized historical information, thereby avoiding repeated optimization over the full historical sequence. Experiments on real-world traffic datasets demonstrate that MVCTD achieves accurate forecasts with favorable runtime under severe missingness, confirming its suitability for online traffic prediction.",
+    "authors": [
+      "Quan Yu",
+      "Jie Ni",
+      "Yu-Hong Dai",
+      "Xiongjun Zhang"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "math.OC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25498v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25498v1",
+    "fetched_at": "2026-08-27T18:45:24.537323",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683413"
+  },
+  {
+    "id": "2608.25344v1",
+    "title": "CoRE: Weakly Supervised Coarse-to-Fine Risk Evidence Learning in Driving Videos",
+    "abstract": "Perceived risk in driving evolves over time and may be supported by specific scene entities, yet supervision is typically limited to coarse video-level judgments. Learning \\emph{when} supporting evidence emerges and \\emph{which entities} support a risk predictor would ordinarily require costly temporal- and entity-level annotations. We introduce \\textbf{CoRE}, a weakly supervised coarse-to-fine framework that learns fine-grained prediction support from coarse video supervision. CoRE first trains a video-level predictor and then freezes it. Structured interventions over candidate temporal regions or entity tracks measure how each candidate changes the coarse prediction, producing graded prediction-effect targets. These targets are distilled into a student that directly predicts temporal and entity support from the original video, without requiring interventions at inference. We evaluate this learning principle across three complementary settings: RISEE tests perceived-risk support from subjective clip-level judgments without temporal or entity-level risk annotations; DoTA provides independent temporal event annotations for evaluating weakly supervised traffic-anomaly localization; and UCF-Crime tests whether the same coarse-to-fine mechanism extends to a standard non-driving anomaly-detection benchmark. Across these settings, CoRE learns informative fine-grained support from coarse supervision, with strong temporal localization on DoTA and competitive performance on UCF-Crime. These results show that coarse video predictions can provide useful supervision for recovering the fine-grained evidence supporting them, without requiring corresponding fine-grained labels.",
+    "authors": [
+      "Kaiser Hamid",
+      "Can Cui",
+      "Nade Liang"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25344v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25344v1",
+    "fetched_at": "2026-08-27T18:45:24.537346",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683426"
+  },
+  {
+    "id": "2608.26088v1",
+    "title": "Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings",
+    "abstract": "Addressing critical global challenges, from food security and disaster risk to disease outbreaks and socio-economic vulnerability, demands high-fidelity geospatial modeling. However, building predictive planetary models remains bottlenecked by a fragmented data ecosystem, requiring manual data retrieval, multimodal data curation and fusion along with iterative model selection. We present the Planetary Prediction Engine (PPE), an autonomous AI system that executes this end-to-end workflow directly from natural-language queries. PPE synthesizes multimodal datasets on the fly, retrieving spatiotemporally relevant covariates across open-web and Earth observation platforms (Data Commons, Google Earth Engine) and fusing them with geospatial foundation model embeddings (PDFM, AlphaEarth). Simultaneously, it searches over task-tailored model architecture families with automated overfitting guards. Across diverse tasks, geographies, and scientific domains, PPE consistently outperforms state-of-the-art or manually tuned expert baselines. For US spatial regression, PPE improves mean $R^2$ across 21 CDC health indicators (76.8% vs. 60.0%), FEMA national risk indices (64.9% vs. 60.0%), and the Social Vulnerability Index (66.2% vs. 58.6%). For spatial downscaling in data-scarce settings, PPE integrates localized proxies to double baseline accuracy in Nigerian food security indicators ($R^2$ of 66.1% vs. 31.5%). For epidemiological nowcasting of the 2026 DRC Bundibugyo Ebola outbreak, PPE achieves a Recall@10 of 83.3% (identifying 15 of 18 newly invaded health zones across five weekly forecasts), a +10.3 percentage-point improvement over the public state-of-the-art modeling (~73%). By combining autonomous multimodal planetary data discovery with targeted model optimization, PPE lowers the technical barrier to planetary-scale analytics, enabling rapid, customized, expert-level deployment.",
+    "authors": [
+      "Evelyn Ma",
+      "Rama Kumar Pasumarthi",
+      "Kishwar Shafin",
+      "Mandar Sharma",
+      "Mimi Sun",
+      "Hamed Sadeghi",
+      "Dav M. Ebengo",
+      "Mbulayi Onesime",
+      "Rouslan Solomakhin",
+      "John Wamburu",
+      "William Ogallo",
+      "Aisha Walcott-Bryant",
+      "Sanxing Chen",
+      "Arbaaz Muslim",
+      "Yael Mayer",
+      "Ronald Ho",
+      "Roy Lee",
+      "Ruth Alcantara",
+      "Abdoulaye Diack",
+      "Monica Bharel",
+      "Lambert Rosique",
+      "Jeremy Amez-Droz",
+      "Christopher Haire",
+      "James Manyika",
+      "Yossi Matias",
+      "Niv Efron",
+      "Gautam Prasad",
+      "Shravya Shetty"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.26088v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.26088v1",
+    "fetched_at": "2026-08-27T18:45:54.135765",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683441"
+  },
+  {
+    "id": "2608.26081v1",
+    "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+    "abstract": "Collective intelligence can emerge when individuals coordinate through a shared environment, allowing local actions to accumulate into durable social organization. Language-model agents offer a new substrate for this process, yet most multi-agent systems rely on direct conversation, predefined roles, or centralized workflows. It remains unclear whether decentralized agents can build functional technologies and outperform independent search. Here, initially homogeneous LLM agents in SwarmWorld self-organize without assigned roles or recipes into evolving technological societies. Agents explore a spatial environment, process resources, test materials, construct persistent artifacts, and write executable controllers evaluated by a deterministic simulator under unseen disturbances after the agents are removed. SwarmWorld splits cognition from consequence: agents propose architectures and controllers within fixed action and material schemas, while the simulated world determines function. Shared societies develop broader, more resilient technological portfolios than a strong best-of-N isolated-search baseline, although isolated search remains competitive for the strongest artifact. Agents differentiate into exploration, construction, maintenance, and coordination behaviors, transitioning as the world matures. Technologies accumulate through collaborative construction, executable inheritance, and persistent agent-artifact networks, with most reuse beginning through physical observation rather than communication. Explicit cultural mechanisms amplify collaboration and organization, but functional benefits depend on outcome and timescale. Physical stigmergy alone supports capable societies, while interaction drives persistent technological ecologies rather than universally superior individual inventions.",
+    "authors": [
+      "Subhadeep Pal",
+      "Fiona Y. Wang",
+      "Markus J. Buehler"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.AI",
+      "cond-mat.mtrl-sci",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.26081v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.26081v1",
+    "fetched_at": "2026-08-27T18:45:54.135801",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683463"
+  },
+  {
+    "id": "2608.26036v1",
+    "title": "Trace Integrity for LLM Data Agents: A Vision for Auditable Structured Reasoning in Real-World Systems",
+    "abstract": "Answer accuracy is an insufficient reliability signal for LLM data agents. In structured-data tasks, a benchmark-correct answer can be produced by an invalid trace. This paper introduces Trace Integrity, a deployment reliability criterion for evaluating whether the computation recorded behind an answer is explicit, executable, schema-valid, operator-faithful, replayable, answer-consistent, and auditable. We identify the Structure Gap as the deployment failure mode that makes Trace Integrity necessary: natural-language reasoning and free-form rationales do not reliably specify the operator-level programs required by real-world systems. We operationalize Trace Integrity with execution contracts, structured artifacts that bind user intent to schema elements, operator plans, assumptions, executable queries, verification status, and final-answer linkage. We also introduce CAIT (Correct Answer / Invalid Trace) Rate, which measures how often answer-only evaluation counts computationally unsupported outputs as successes. In an empirical demonstration on BIRD Mini-Dev, Direct SQL, Operation Summary + SQL, and Contract-First SQL achieve answer accuracies of 20%, 22%, and 24%, while their Trace Integrity Pass Rates are 39%, 43%, and 40% and their CAIT Rates remain high at 55%, 59.1%, and 45.8%, showing that answer accuracy, trace validity, and silent-failure risk are distinct evaluation signals. Real-world LLM data agents should, therefore, be evaluated not only by whether their outputs match a reference answer, but by whether those outputs are backed by auditable computation.",
+    "authors": [
+      "Srimonti Dutta",
+      "Akshata Kishore Moharir"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.26036v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.26036v1",
+    "fetched_at": "2026-08-27T18:45:54.135822",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683476"
+  },
+  {
+    "id": "2608.26013v1",
+    "title": "VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following",
+    "abstract": "Multimodal instruction-following models require training data that is accurate, diverse, verifiable, and challenging. Existing synthesis pipelines typically follow a one-pass generate-and-filter paradigm, discarding feedback from failed samples, verifier outcomes, and target-model errors. We present VISA (Visual Instruction Synthesis Agent), an agentic framework that reformulates multimodal instruction synthesis as a self-evolving loop. At each round, VISA analyzes an image to filter incompatible constraints and discover new verifiable ones, samples diversity- and difficulty-aware constraint sets from persistent memory, generates candidate instructions, and verifies the resulting samples with executable tools and structured large language model judges. Failed samples trigger diagnostic-guided recovery, while accepted samples are probed against the target model to estimate difficulty. The resulting verifier signals and target-model failure profiles are written back to memory, allowing subsequent rounds to adaptively expand the constraint space, reduce template repetition, and focus on unresolved model weaknesses. The same verifier contracts further provide reward signals for reinforcement learning without a separately trained reward model. Experiments on MM-IFEval show that VISA consistently improves multimodal instruction following over strong baselines, while preserving general multimodal capability across seven public benchmarks.",
+    "authors": [
+      "Min Zeng",
+      "Guanxin Tan",
+      "Libin Cen",
+      "Yawei Wen",
+      "Rui Hu",
+      "Liuyang Bian",
+      "Xiaolong Chen",
+      "Xiaoxin Chen"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.26013v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.26013v1",
+    "fetched_at": "2026-08-27T18:45:54.135853",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683488"
+  },
+  {
+    "id": "2608.25927v1",
+    "title": "Code World Model: Coding Agent as World Brain",
+    "abstract": "World models aim to simulate how complex environments evolve under actions and events, yet existing video-based world models primarily learn dynamics from visual observations, which reveal outcomes rather than the underlying knowledge, rules, and mechanisms governing world evolution. This makes it difficult to maintain persistent consequences and support coherent, open-ended evolution. We introduce Code World Model, a framework that separates world evolution from visual realization by combining the reasoning and coding capabilities of language models with the generative priors of video models. A coding agent serves as the world brain, reasoning about events and their consequences and generating executable code to maintain persistent world state and perform rule-consistent evolution. To connect executable state with visual generation, we introduce a proxy representation that encodes frame-wise spatiotemporal constraints and is compiled into a proxy video, which conditions a video model to render high-fidelity visual observations. We further develop data pipelines for constructing aligned proxy-observation pairs from gameplay and real-world videos. After fine-tuning on paired gameplay data, MiniMax-H3 follows proxy-based spatiotemporal specifications from simple interactive worlds built by the coding agent while preserving rich visual details and dynamics. These results demonstrate the potential of combining code for persistent world evolution with video models for flexible visual realization, providing a new path toward open-ended world models.",
+    "authors": [
+      "Yiwen Chen",
+      "Guosheng Lin",
+      "Chi Zhang"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25927v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25927v1",
+    "fetched_at": "2026-08-27T18:45:54.135875",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683499"
+  },
+  {
+    "id": "2608.25926v1",
+    "title": "Formal, Executable and Explainable Runtime Monitoring of Spoken Air Traffic Control Operational Procedures",
+    "abstract": "Air traffic control procedures are executed through spoken exchanges between controllers and pilots. These interactions are essential to the safety of air transportation: failures in their execution can create severe operational hazards, as evidenced by past fatal accidents. Assessing whether an instruction has been followed requires relating what was said to the aircraft concerned, its state, and the obligations that pilots must meet. We present a runtime verification framework that monitors such procedures by checking controller-pilot exchanges, surveillance data, and onboard observations. The framework parses radio communications into events linked to the entities they concern and merges them with surveillance and onboard observations into a time-stamped trace. The ICAO-derived obligations as formalized as temporal formulas with explicit time bounds and evaluated over execution traces. Every violation is reported along with the breached obligations and the observations that support the verdict. With real traffic, the complete pipeline reaches an F1 of 0.85 against blind human-annotated violations; in 1,495 synthetic situations derived from two public corpora, the monitor logic returns the expected verdict in every case. In two historical accidents reconstructed from official investigation reports, the monitor identifies the same procedural deviations documented by the investigators.",
+    "authors": [
+      "Roberto Luvini",
+      "Giacomo Longo",
+      "Alessandro Armando",
+      "Enrico Russo"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "eess.AS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25926v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25926v1",
+    "fetched_at": "2026-08-27T18:45:54.135915",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683511"
+  },
+  {
+    "id": "2608.25920v1",
+    "title": "Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems",
+    "abstract": "As large language model (LLM)-based multi-agent systems (MASs) are increasingly applied to long-horizon complex tasks, their reliability has emerged as the core bottleneck hindering their real-world deployment. Existing MAS debugging and repair methods typically rely on rerunning and resampling the entire execution trajectory. However, a fundamental question remains to be answered: do these methods causally repair MAS failures or merely stochastically repair by leveraging the randomness of LLM sampling? To evaluate the effectiveness of MAS repair methods, we introduce SymTrace, a controlled evaluation framework that records the MAS execution trajectory and establishes intervention anchors. During replay, it effectively reconstructs the execution before the anchor using recorded logs and only regenerates the downstream trajectory, thereby enabling the reliable reproduction of MAS failures. We further construct the dataset SymFail, comprising 536 human-annotated failure trajectories with graph-linked locations, categories, and trace evidence. Based on these foundations, we conduct a large-scale empirical study across three mainstream MAS frameworks. Our findings reveal that existing unguided rerun methods are highly unreliable, exhibiting low failure reproduction and repair rates (only 67.97% and 6.90%, respectively). Building upon these findings, we further explore the effectiveness of a symptom-driven intervention method, which successfully repairs 20.15% of the failed cases (a 191.89% improvement to state-of-the-art repair methods). This study aims to provide actionable insights for MAS debugging and repair research, paving the way for the robust deployment of multi-agent systems.",
+    "authors": [
+      "Zhongwen Luan",
+      "Xiaoyu Zhang",
+      "Ming Hu",
+      "Yue Yang",
+      "Jiongchi Yu",
+      "Xiaohong Chen"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25920v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25920v1",
+    "fetched_at": "2026-08-27T18:45:54.135941",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683522"
+  },
+  {
+    "id": "2608.25910v1",
+    "title": "SAMpLE: A SystemC-AMS Machine LEarning-based Framework for Virtual Prototyping",
+    "abstract": "Machine Learning (ML) is increasingly used in virtual prototypes of embedded systems to model behaviors that are difficult to capture analytically. However, integrating ML models into virtual platform simulation is still typically done through ad hoc solutions, which limits reuse, comparability, and reproducibility. This paper presents \\textbf{\\textit{SAMpLE}}, an open-source SystemC-AMS-based framework that integrates ML models as first-class Timed Dataflow (TDF) components through a standardized plug-and-play interface. SAMpLE provides two execution backends: a native C++ backend for online training of lightweight models, and an offline backend for executing externally developed models without requiring re-implementation in C++ or manual integration steps. The framework uses ONNX as a standard model exchange format to enable integration of externally trained ML models into SystemC-AMS simulations, and allows the evaluation of different ML-based solutions within the same testbench, dataset, and simulation workflow. The modular design and unified and reproducible environment will allow future extensions of SAMpLE to new models, without modifying the SystemC-AMS structure.",
+    "authors": [
+      "Andrei Mihai Albu",
+      "Sara Vinco"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25910v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25910v1",
+    "fetched_at": "2026-08-27T18:45:54.135961",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683533"
+  },
+  {
+    "id": "2608.25890v1",
+    "title": "Scalable Multi-GPU Simulation of 3D Multicellular Growth with RNN-Based Workload Balancing",
+    "abstract": "Detailed multicellular growth simulations based on subcellular element models (SEMs) can capture complex tissue development, but their element-level interactions impose substantial computational cost. This work presents a scalable multi-GPU framework for 3D multicellular growth simulation that combines GPU acceleration, spatial binning, domain decomposition, and workload-aware partitioning. Cell movement, growth, and division continuously reshape the spatial workload distribution, causing initially balanced partitions to become inefficient over time. To address this, we introduce an RNN-based load-balancing controller that observes recent per-rank execution times and partition states and learns residual corrections to a reactive boundary-adjustment rule. The controller is trained offline in a differentiable surrogate of the load-balancing loop with randomized workload dynamics, requiring no measured execution traces for training. We evaluate the framework in terms of single-GPU acceleration, multi-GPU computation scaling, controller-level load-balancing behavior, and end-to-end simulation performance, with comparisons against static partitioning, reactive load balancing, and conventional time-series prediction baselines. A representative embryonic epidermal development use case further demonstrates the type of spatially and temporally evolving workload targeted by the framework. In our evaluation, GPU acceleration with spatial binning accelerates the interaction computation by roughly three orders of magnitude over a serial CPU baseline. RNN-guided load balancing reduces the mean global imbalance from 11.3% under static partitioning to 3.5%, lowers end-to-end runtime by 9.0% relative to static partitioning, and reduces slice migration by 7.7x compared with the reactive baseline, showing that history-aware control can improve workload balance while avoiding unnecessary repartitioning.",
+    "authors": [
+      "Matvey Moisseyev",
+      "Huijing Du",
+      "Dandan Zheng",
+      "Chi Zhang",
+      "Hongfeng Yu"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.DC",
+      "cs.CE",
+      "cs.LG",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25890v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25890v1",
+    "fetched_at": "2026-08-27T18:45:54.135986",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683545"
+  },
+  {
+    "id": "2608.25798v1",
+    "title": "TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback",
+    "abstract": "Contact-rich manipulation requires adapting to contact states that can evolve substantially within an action horizon. However, chunk-based vision-language-action models predict complete action chunks from observations collected before execution, leaving tactile conditioning stale during execution. Existing tactile-reactive approaches typically rely on separate high-frequency controllers, which increase both architectural and training complexity. In this paper, we introduce TacForcing, a streaming action-generation framework that effectively incorporates execution-time tactile feedback. Instead of employing a separate reactive controller, TacForcing replaces the standard action expert with a streaming action expert to generate actions conditioned on the evolving tactile observations acquired during execution. TacForcing also introduces Execution-Aware Tactile Attention (EATA), which restricts tactile conditioning to actions nearing execution, thereby reducing the temporal mismatch between tactile acquisition and action execution. Across six simulated UniVTAC tasks and three real-world contact-rich manipulation tasks, TacForcing achieves average success rates of 65% and 69%, respectively, outperforming strong baselines in both settings.",
+    "authors": [
+      "Jianbo Zhou",
+      "Boyuan Zhao",
+      "Yuzheng Zhang",
+      "Yiyang Chen",
+      "Wenxin Chen",
+      "Qiuyue Li",
+      "Xiangyang Gu",
+      "Yuhan Cao",
+      "Xiao Xia",
+      "Yanzhe Hu",
+      "Zhijie Deng"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25798v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25798v1",
+    "fetched_at": "2026-08-27T18:45:54.136023",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683558"
+  },
+  {
+    "id": "2608.25777v1",
+    "title": "LocalLSTC: A Long Short-Term Control Architecture for Locally Deployed GUI Agents",
+    "abstract": "Modern GUI-agent frameworks achieve strong desktop task performance with frontier API models, yet persistent control information often remains implicit in growing interaction trajectories. At each step, the planner reconstructs the active task stage, accumulated evidence, and runtime feedback before deciding the next action. This dependence becomes more pronounced under weaker local reasoning backbones. Across four representative state-of-the-art frameworks, replacing GPT-5 with Qwen3.5-9B reduces average OSWorld SR-100 from 60.9\\% to 37.7\\%. Trajectory annotation further identifies at least one control failure in 91.6\\% of failed trajectories. To address this problem, we introduce LocalLSTC, a training-free architecture that organizes control by temporal scope, maintaining persistent cross-step state to guide short-term execution commitments. Long-Term Control maintains the active subgoal, subgoal-aligned evidence, and runtime feedback across interactions, while Short-Term Execution realizes bounded commitments for the current step. Long-to-Short Planning forms each commitment from persistent state, and Short-to-Long Control integrates execution outcomes back into that state for progress assessment, recovery, and termination. With Qwen3.6-27B, LocalLSTC reaches 64.7\\% SR-100 on OSWorld and 65.3\\% on WindowsAgentArena, outperforming the strongest prior local results on both benchmarks. Ablations further support contributions from mechanisms on both sides of execution. These findings identify temporal organization of control information as a distinct architectural dimension for locally deployed GUI agents.",
+    "authors": [
+      "Weiming Li",
+      "Helen Paik",
+      "Yulei Sui"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25777v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25777v1",
+    "fetched_at": "2026-08-27T18:45:54.136043",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683569"
+  },
+  {
+    "id": "2608.25776v1",
+    "title": "EVOMAL: Self-Poisoning in Self-Evolving Coding Agents",
+    "abstract": "Self-evolving LLM coding agents write their own tools by imitating retrieved skills from shared skill libraries. We identify a vulnerability in this loop: during authoring, a retrieved malicious skill can become the template for a new skill that preserves the payload. We call this self-poisoning: the agent authors, stores, and runs the resulting malicious skill. We exploit it through EvoMal, an attack that amplifies self-poisoning by wrapping an interchangeable payload in a banner, a set of benign-looking structural elements that induces an imitating agent to reproduce the enclosed code. The attacker plants malicious skills in the library without invoking them. The agent then authors and executes new skills carrying the harmful code. Each authored copy can re-enter the library and be imitated again, forming a self-propagating worm that persists after the planted skills are removed. We define the agent self-poisoning rate (ASPR) as the fraction of tasks that add a newly authored malicious skill to the library. Across six models on 153 tool-relevant SWE-bench Verified tasks, ASPR ranges from 20.3% to 41.8%, and the poisoned libraries hold 4.9 to 9.0 times as many malicious skills as were planted. The vulnerability also appears without a banner: DeepSeek-V4-Pro reaches 11.1% ASPR with the payload alone. Tailoring the planted skill descriptions to one task family raises ASPR to 86.7%. After the planted skills are removed, Qwen3 retains a round-5 ASPR of 68% because agent-authored copies remain. These copies evade existing defenses, which focus on attacker-submitted names, code, and signatures. We propose counter-prompt, a defense that discourages banner-style copying and reduces EvoMal's ASPR to at most 6.7% with no significant task-completion loss.",
+    "authors": [
+      "Xiaodong Wu",
+      "Yu Shi",
+      "Qi Li",
+      "Zhimin Zhao",
+      "Xiangman Li",
+      "Bram Adams",
+      "Ahmed E. Hassan",
+      "Jianbing Ni"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25776v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25776v1",
+    "fetched_at": "2026-08-27T18:45:54.136073",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683580"
+  },
+  {
+    "id": "2608.25761v1",
+    "title": "Beam Search, Self-Consistency, and the Limits of Inference-Time Scaling for Grammar-Constrained Text-to-SQL in Small Language Models",
+    "abstract": "One common trade-off in the use of large language models involves reducing the size of the model while increasing the amount of computation at inference time, for example by using a wider beam search. In this paper, we examine the constrained case of this \"model size vs. inference compute\" trade-off, in which the model outputs are constrained by a strict grammar at inference time. Our results demonstrate that the constrained trade-off behaves differently from the unconstrained trade-off. We investigate the task of converting a prose query into an equivalent SQL query (text-to-SQL). Performance is evaluated on the Spider text-to-SQL benchmark, using the Qwen2.5-Instruct model family ranging in size from 0.5B to 7B parameters, all at 4-bit precision. We experiment with two approaches to varying inference compute: (i) beam search with a variable number of beams; and (ii) sample+vote, i.e., sampling several constrained outputs and then voting on their execution results, where the number of samples is varied. On the 1034-example development set, we find that: (a) both beam search and sample+vote improve accuracy, especially on smaller model sizes; (b) the \"model size vs.\\ inference compute\" trade-off is not advantageous in this experiment, because moving to a larger model size typically results in higher accuracy than increasing inference compute on the same model size; (c) beam search outperforms sample+vote at a matched inference budget. This latter result is of particular interest since it contrasts with the findings of the unconstrained trade-off.",
+    "authors": [
+      "Ty Chermsirivatana",
+      "John MacCormick"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25761v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25761v1",
+    "fetched_at": "2026-08-27T18:45:54.136092",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683591"
+  },
+  {
+    "id": "2608.25757v1",
+    "title": "LM-X: Explainable Action Modeling with Progress, Event, and Uncertainty Prediction for Generalist Robot Manipulation",
+    "abstract": "Generalist vision--language--action (VLA) policies learn long-horizon behavior mainly through short-horizon action prediction and reveal little beyond sampled commands. This creates two coupled bottlenecks: a single action target must implicitly absorb task progress, intermediate intent, and local reliability, while these control states remain hidden during execution. Inspired by functional principles of biological sensorimotor control, we introduce LM-X , which organizes prediction across task, event, and motor scales without claiming anatomical correspondence. Three explicitly supervised signals are emitted online and directly condition action generation: return-to-go (RTG) measures visible task progress, event-to-go (ETG) identifies the next semantic transition, and heteroscedastic action flow estimates local reliability through propagated variance. Explanation is therefore intrinsic to control rather than generated post hoc. Before a costly 20-day pretraining run on 64 NVIDIA B200 GPUs, a controlled five-task pretraining gate verifies the design: the complete model improves success by 16.0 points over the action-only backbone and by 10.8 points over the strongest single-head variant. We then train LM-X on more than 20,000 hours of real-robot trajectories, including over 1,000 hours of failed policy rollouts. LM-X achieves 74.1\\% across 50 randomized-hard RoboTwin2.0 tasks versus 55.4\\% for GR00T N1.7, and 68.6\\% versus 50.7\\% across seven real-robot tasks. RTG tracks semantic progress and visible regression, while variance rises during hesitation and oscillatory control. These results show that explicit multi-timescale predictive state can strengthen control while exposing interpretable internal estimates.",
+    "authors": [
+      "Jin Lou",
+      "Jingxuan Zhu",
+      "Andong Chen",
+      "Xupeng Wang",
+      "Yuan Xu",
+      "Yuexuan Li",
+      "Xingdong Zhu",
+      "Zhijie Zhu",
+      "Yingwei Ji",
+      "Wenpeng Nie",
+      "Jingyi Li",
+      "Liangliang Chen",
+      "Jinyan Liu",
+      "Zhiqi Song",
+      "Jidong Zhang",
+      "Hongming Li",
+      "Yuchen Zhu"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25757v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25757v1",
+    "fetched_at": "2026-08-27T18:45:54.136137",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683602"
+  },
+  {
+    "id": "2608.25641v1",
+    "title": "Leveraging Inter-object Affordances for Efficient Planning in Contact-rich Tasks",
+    "abstract": "Traditional task-and-motion planning (TAMP) approaches primarily focus on defining sequences of actions along with the necessary geometric and kinematic constraints to execute long-horizon tasks. However, their applicability in real-world settings is limited, as they typically assume simplified object models that overlook key physical properties critical for the successful execution of contact-rich tasks. Moreover, they often use sub-symbolic reasoning during motion planning, which drastically increases planning time and decreases overall success rates. We propose a method that leverages a TAMP approach, defining object-centric abstractions of execution constraints, called Unified TAMP (U-TAMP), to execute robotic tasks involving interactions among objects with heterogeneous shapes, sizes, and materials. Using a Vision-Language Model (VLM), we generate abstractions of inter-object affordances for characterizing physical interaction constraints between objects in contact-rich tasks, such as grasp and support constraints. These constraints are used to enrich the U-TAMP planning domain to deal with objects with variable physical properties. We perform experiments in simulated kitchen table organization scenarios and compare our results with those of the original U-TAMP, as well as a state-of-the-art VLM-based planner that leverages common sense knowledge of objects' affordances for plan generation. Our approach achieves significantly higher planning success rates and improves planning times by one to two orders of magnitude compared to other methods.",
+    "authors": [
+      "Pouya P. Niaz",
+      "Justus Piater",
+      "Alejandro Agostini"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25641v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25641v1",
+    "fetched_at": "2026-08-27T18:45:54.136157",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683613"
+  },
+  {
+    "id": "2608.25325v1",
+    "title": "FinRiskAtlas: Decision-Aligned Evaluation of Large Language Models for Financial Risk Review",
+    "abstract": "Deploying large language models for professional financial review requires more than measuring general financial competence: models must perform the specific review operation required by a workflow and determine whether available evidence is sufficient for a defensible decision. Existing financial benchmarks cover knowledge, reasoning, compliance, and professional tasks, but their evaluation units are often organized around datasets or task formulations rather than the decisions that deployed systems support. We introduce FinRiskAtlas, a Chinese-language benchmark that evaluates financial LLMs along two complementary dimensions: operation execution under fixed evidence states and evidence-state control under evolving review conditions. The static benchmark contains 9,742 instances across 53 task families, including 42 Domain Knowledge families and eleven downstream review operations defined by explicit evaluation contracts. FinRisk-Ask extends this framework through offline replay of 680 pre-action states from 104 de-identified professional trajectories, withholding future evidence during inference and using it only to construct expert-verified evidence targets. Across 33 model configurations, operation-level evaluation yields non-redundant rankings (mean pairwise Spearman correlation 0.42 across downstream operations), and knowledge-based shortlisting can incur up to 18.01 points of regret on individual operations. FinRisk-Ask further shows that entering the Ask branch more frequently does not necessarily improve request targeting or end-to-end evidence acquisition. These results show that broad financial capability scores do not fully capture where models are reliable in professional workflows, motivating evaluation units aligned with the decisions and evidence states that deployed systems must support.",
+    "authors": [
+      "Suyang Zhong",
+      "Jingzhe Zhu",
+      "Qi Xu",
+      "Liyao Sun",
+      "Yin Wang",
+      "Qingqing Sun",
+      "Shuai Chen",
+      "Tianyi Zhang"
+    ],
+    "published": "2026-08-26",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.25325v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.25325v1",
+    "fetched_at": "2026-08-27T18:46:52.275052",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-27T18:48:31.683624"
+  }
+]
