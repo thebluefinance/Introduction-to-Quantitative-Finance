@@ -1,0 +1,565 @@
+[
+  {
+    "id": "2608.28399v1",
+    "title": "RetailAgent: Structured Adverse Timing in Self-Conditioned Multimodal LLM Trading Agents",
+    "abstract": "In financial markets, a sequential policy that reacts systematically to price movements may become predictable to other market participants. This paper studies whether large language model (LLM) agents exhibit such directional structure through RetailAgent, an experimental framework in which an LLM observes anonymized intraday equity price histories and permitted state, then repeatedly chooses long (hold the stock) or flat (stay out) before the subsequent interval return is revealed. We compare returns during long and flat intervals along the same stock's intraday path after removing the overall fraction of long decisions. This exposure-matched measure reveals persistent negative timing across modality, horizon, state, and model family. Shuffling saved action sequences substantially attenuates the effect, showing that alignment between actions and subsequent returns drives the negative score. Feeding self-authored memories into decisions further increases policy persistence, while timing becomes more negative among stock-days on which the agent uses both actions. These results reveal stable, recoverable directional structure in sequential LLM financial decisions and a behavioral signal for studying how another participant could respond to a predictable policy.",
+    "authors": [
+      "Yupeng Zhang",
+      "Liuyuan Jiang",
+      "Hongyi Huang",
+      "Bingheng Li",
+      "Lisha Chen"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.AI",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28399v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28399v1",
+    "fetched_at": "2026-08-31T15:46:10.199452",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897803"
+  },
+  {
+    "id": "2608.28397v1",
+    "title": "Market-Informed Valuation of GMMB Riders with Surrender Options under a Heston Stochastic-Local Volatility Model",
+    "abstract": "We develop a market-informed valuation framework for   guaranteed minimum maturity benefit (GMMB) riders with   rational surrender under the Heston stochastic-local   volatility (SLV) model. The guarantee is written on the   fee-deducted account value and is considered both in its   terminal-only form and in the presence of early surrender   rights. The Heston SLV specification combines stochastic volatility with a leverage function calibrated to a prescribed local-volatility surface. The leverage surface is obtained through a forward Markovian-projection equation so that, at the model level, the SLV dynamics are constrained to the same one-dimensional marginals as the corresponding local-volatility (LV) model. The latter is used only as a one-factor benchmark, allowing us to isolate the effect of stochastic volatility on continuation values and surrender decisions while preserving the same option-calibrated local-volatility target. We derive the associated backward pricing equations and propose a hybrid tree/finite-difference algorithm for the SLV model with a calibrated leverage function. Synthetic experiments and a market-informed case study show that SLV and LV valuations are numerically close for terminal-only guarantees, as expected from the common marginal target, whereas materially larger differences can arise once surrender is allowed. These differences are reflected in guarantee values, fair insurance fees and volatility-dependent surrender regions. The results indicate that matching one-date marginals implied by vanilla-option prices does not eliminate model risk for insurance liabilities whose value depends on conditional continuation dynamics and endogenous surrender decisions.",
+    "authors": [
+      "Ludovic Goudenege",
+      "Andrea Molent",
+      "Xiao Wei",
+      "Antonino Zanette"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28397v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28397v1",
+    "fetched_at": "2026-08-31T15:46:10.199491",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897822"
+  },
+  {
+    "id": "2608.27734v1",
+    "title": "What survives honest evaluation? Leakage-safe, search-aware assessment of LLM-driven trading strategy discovery",
+    "abstract": "Large language models (LLMs) are increasingly used to discover trading strategies, and much of the resulting literature shares a methodological weakness: many candidate strategies are generated, the best is reported, and neither look-ahead bias nor the intensity of the search behind the reported result is corrected for. We present a strategy-discovery system that makes both corrections structural rather than procedural. First, the agent can only act through registry-validated tools whose feature space excludes look-ahead by construction; we show that this guardrail is not redundant with statistical correction: a deliberately leaky oracle posting a Sharpe ratio of 35 survives Deflated Sharpe and probability-of-backtest-overfitting testing completely. Second, the system records every strategy evaluation its search performs and deflates all reported performance by that trial count, tracing how the best in-sample Sharpe ratio climbs with each trial while the deflation threshold, driven by the agent's own search, climbs faster. Across a 453-stock point-in-time US equity universe and a 39-ETF multi-asset universe with realistic transaction, impact, and borrow costs, honest evaluation certifies passive benchmarks (out-of-sample confidence intervals excluding zero), rejects every LLM-discovered strategy (across two frontier models, search budgets up to one hundred candidates, and five repeated runs), catching selection luck, predicted rank degradation, and out-of-sample collapse through complementary instruments, and evaluates a human trader's production rule system under identical instruments. The framework formalizes why pre-registered hypotheses earn lower evidential bars than brute search, and quantifies the sample sizes that credible certification of moderate edges actually requires.",
+    "authors": [
+      "Eray Gençay"
+    ],
+    "published": "2026-08-27",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.27734v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.27734v1",
+    "fetched_at": "2026-08-31T15:46:10.199512",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897838"
+  },
+  {
+    "id": "2608.27575v1",
+    "title": "Pricing and Calibration of Bitcoin Inverse Options via the Rough Bergomi Model",
+    "abstract": "Bitcoin inverse options, traded on the Deribit exchange and settled in the underlying cryptocurrency rather than in fiat currency, combine extreme and genuinely rough volatility dynamics with a non-linear, currency-dependent payoff structure. This paper develops and empirically validates a pricing and calibration framework for these instruments based on the rough Bergomi (rBergomi) model of Bayer, Friz and Gatheral (2016). We adapt the rBergomi dynamics to the inverse payoff max(S_T - K, 0)/S_T, and implement and compare three computational pipelines that differ in the simulation scheme for the driving fractional Brownian motion (coarse-grid Cholesky vs. the Hybrid Scheme of Bennedsen et al., 2017) and in the Monte Carlo pricing estimator (plain log-Euler vs. the Mixed Estimator of McCrickerd and Pakkanen, 2018). The model is calibrated to thirty implied volatility surfaces extracted from Deribit trade data between May 2022 and March 2025, spanning seven major market-stress events and nine baseline regimes stratified by volatility level. The Hybrid and Mixed pipeline is simultaneously the most accurate (mean unweighted RMSE 22.83 percentage points, versus 41.76 pp for the Cholesky and Euler benchmark) and the fastest (17 seconds per snapshot, a 20-fold speed-up). The calibrated Hurst exponent is consistently close to the lower bound of the search space (H approximately equal to 0.01--0.06 in most regimes), confirming that Bitcoin's volatility is genuinely rough, and calibration error scales approximately linearly with the level of at-the-money implied volatility (Pearson r = 0.89).",
+    "authors": [
+      "Riccardo Caruso"
+    ],
+    "published": "2026-08-27",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.27575v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.27575v1",
+    "fetched_at": "2026-08-31T15:46:10.199531",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897852"
+  },
+  {
+    "id": "2608.28375v1",
+    "title": "Localizing Global Discrepancies: Marginal Contributions and Contextual Anomaly Detection",
+    "abstract": "Global goodness-of-fit and discrepancy statistics can establish that a sample departs from a reference distribution without identifying which observations drive the departure. We develop a framework for this localization problem by assigning to each observation its conditional or marginal contribution across random statistical contexts. This connects resampling diagnostics and data valuation to projection theory and event-level anomaly detection. For symmetric statistics, fixed-size replacement is exactly equivalent to centered conditional localization. For U-statistics, the addition score equals the first Hoeffding/Hájek contribution; for smooth distributional functionals it is related at leading order to the influence function; and for unbiased known-background MMD it reduces exactly to the MMD witness.   This viewpoint also yields more efficient estimators. Matched-context subtraction removes fluctuations unrelated to the observation, while for pairwise MMD the event-containing terms give a simple localizer. On the LHC Olympics anomaly-detection benchmark, the pair estimator converges to the direct empirical MMD witness with the predicted 1/(Rm^2) scaling, where m is batch size and R the number of batches. At m=1000 and R=5x106 it reaches correlation 0.9993 with essentially identical AUC.   We also ask when context contains information beyond an event's own features. In a shared-latent toy model, the full single-event signal and background distributions are identical by construction, forcing isolated-event AUC=0.5. Discriminating information survives only in cross-event dependence induced by the shared latent parameter; the ensemble recovers this information, whereas an independent-latent control does not. This separates two roles of context: efficient localization of a global discrepancy and genuinely additional class information when the alternative contains shared structure.",
+    "authors": [
+      "Tommaso dorigo"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "physics.data-an"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28375v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28375v1",
+    "fetched_at": "2026-08-31T15:46:24.082382",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897878"
+  },
+  {
+    "id": "2608.27500v1",
+    "title": "Optimal Transport for Network Comparison: A Review with Machine Learning Applications",
+    "abstract": "Network comparison using optimal transport is a growing area of research in network science. Unlike standard graph metrics, optimal transport computes both network dissimilarity and a transport plan that explains how one graph morphs into another. In this paper, we review how optimal transport compares undirected, unweighted graphs using three primary distances: the Wasserstein, Gromov-Wasserstein, and Bures-Wasserstein distances. We examine the closed form of the Wasserstein distance in one dimension via node feature probability distributions, and show how the transport plans of the Wasserstein and Gromov-Wasserstein distances capture which specific nodes influence the distance after graph perturbation. For the Bures-Wasserstein distance, we derive bounds using Laplacian spectra to bypass full spectral decompositions. Finally, we evaluate these distances using a synthetic network dataset for clustering and a real-world time series network for anomaly detection.",
+    "authors": [
+      "James Hyun",
+      "François G. Meyer"
+    ],
+    "published": "2026-08-27",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "cs.SI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.27500v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.27500v1",
+    "fetched_at": "2026-08-31T15:46:24.082455",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897889"
+  },
+  {
+    "id": "2608.28518v1",
+    "title": "When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI",
+    "abstract": "We investigate whether automatic speech recognition (ASR) errors in user input can lead to unsafe outputs from Embodied AI (EAI) models. We find that ASR errors can lead to harmful instructions being accepted and executed by EAI models, thereby reducing safety. We simulate ASR errors and combine them with existing safety benchmarks (SafeAgentBench and POEX) to evaluate how different errors affect embodied AI safety. We find that some of them preserve semantic structure but increase harmful ambiguity, while others weaken the model refusal behaviour and allow unsafe plans to be generated and executed. We show that in some cases automatic correction of ASR errors can reduce the risk, but this is not always effective. Overall, we show that ASR errors lead to significant safety risks for embodied AI.",
+    "authors": [
+      "Sihan Jia",
+      "Oliver Lemon"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28518v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28518v1",
+    "fetched_at": "2026-08-31T15:47:10.457507",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897900"
+  },
+  {
+    "id": "2608.28481v1",
+    "title": "NL2AGBench: Benchmarking LLM Auto-Formalization for AlphaGeometry",
+    "abstract": "Recent advances in large language models (LLMs) have demonstrated strong capabilities in natural language understanding and mathematical reasoning. However, their ability to translate informal mathematical problems into formal representations remains underexplored. This limitation is particularly important for neuro-symbolic geometry systems such as AlphaGeometry, whose theorem-proving engine requires inputs in a specialized domain-specific language (DSL). Although AlphaGeometry achieves near-IMO gold-medalist performance, manually converting natural-language problems into its formal syntax remains a significant usability bottleneck. To address this challenge, we introduce the Natural Language to AlphaGeometry Benchmark (NL2AGBench), which evaluates LLMs in translating English geometry problems into AlphaGeometry-compatible formal representations. NL2AGBench uses execution-based verification within AlphaGeometry to assess translation quality rather than relying solely on textual similarity. We evaluate ten state-of-the-art open- and closed-source LLMs across multiple parameter scales and analyze executable translation accuracy, syntactic correctness, and error characteristics. Our experiments reveal a substantial performance gap between closed- and open-source models: leading closed-source models achieve executable translation rates above 80%, while even the largest open-source models struggle to consistently preserve geometric constraints and produce valid formalizations. We introduce an error taxonomy distinguishing syntax and logic errors and investigate mitigation strategies, including few-shot prompting, fine-tuning, and human-guided hinting, which yield measurable improvements across multiple model families.",
+    "authors": [
+      "Samuel Xiao",
+      "Judy Song",
+      "Rory Hu",
+      "Ziliang Zong"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28481v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28481v1",
+    "fetched_at": "2026-08-31T15:47:10.457540",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897918"
+  },
+  {
+    "id": "2608.28475v1",
+    "title": "COVER: Identifiable Evaluation of Coalition Routing",
+    "abstract": "When a multi-agent system changes its team, it also changes the messages and final answer it produces, so an end-to-end accuracy gap does not by itself identify a routing effect. We introduce method, an evaluation contract that fixes a public information boundary, downstream stack G, and finite legal team family before outcomes are generated. Complete coverage identifies exact finite-benchmark oracle regret conditional on that stack. For any finite collection of frozen policies, executing the union of their distinct selected teams is the minimal assumption-free support for every pairwise policy contrast, though not for absolute oracle regret. Two controlled tables with source-ID-disjoint splits test the instrument. On MuSiQue-12, a pre-specified privileged positive control improves regret from 0.532 to 0.402; a later public-interface control reaches 0.424 versus 0.554 but is retrospective. On HotpotQA-4, a pre-specified public direct scorer improves regret from 0.313 to 0.110. In fixed-stack Llama execution, verified route regret improves by 0.190, while the raw-answer gain is 0.010 with an interval crossing zero. A five-family ToolSandbox variant-shift validation exhaustively evaluates 16 declared teams on 14 untouched task variants (224/224 valid rows): the declared-family oracle reaches 0.768 safe-evidence completion, while the prospectively frozen router gets 0.637 (regret 0.131), failing the predeclared 0.10 criterion. A later retrospective comparator reaches 0.655, matching all-workers with 4.57 versus 5.00 workers on average. Thus COVER exposes selection headroom without manufacturing a routing win. A crossed-stack diagnostic shows absolute scores depend on G but finds no detectable router-by-finalizer interaction. COVER is an auditable measurement methodology, not a claim of stack-invariant or universal agent-routing superiority.",
+    "authors": [
+      "Raghul Sugumar",
+      "Amrit Gopinath"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28475v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28475v1",
+    "fetched_at": "2026-08-31T15:47:10.457561",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897930"
+  },
+  {
+    "id": "2608.28432v1",
+    "title": "Are These Modules Worth Their Cost? A Paradigm-Level Accuracy-Cost Analysis of In-context Learning Text-to-SQL",
+    "abstract": "Recent advances in in-context learning (ICL) text-to-SQL have substantially improved execution accuracy on public benchmarks by assembling increasingly elaborate pipelines around the base generator, yet existing studies typically report aggregate end-to-end accuracy, without quantifying the marginal accuracy-cost contribution of individual design choices. Consequently, providing a unified, paradigm-level cost-accuracy quantification remains a critical challenge for understanding and configuring modern text-to-SQL. To address this, we instantiate 17 paradigm-level configurations across five recurring modules of the ICL text-to-SQL pipeline under a single controlled implementation, and attribute each paradigm's marginal contribution and incurred cost across all four backbones spanning diverse capability levels and reasoning styles. Our analysis reveals that execution-feedback refinement is the only paradigm whose benefit holds universally at consistently low cost, while most other modules help only under backbone-dependent conditions. Token accounting shows that input demand is more closely tied to pipeline structure, whereas output demand is more sensitive to backbone generation behavior. Cross-module analysis further shows that stacking improves accuracy on most backbones, although how the gains compose varies with backbone capability. We also find that a fixed budget is often better spent engineering a more elaborate pipeline over a mid-tier backbone than upgrading to a frontier model with a lean pipeline. These findings distill into an actionable, cost-aware tiered guideline that transfers to five additional backbones without per-paradigm search.",
+    "authors": [
+      "Jiayan Lin",
+      "Yujia Liu",
+      "Zijin Hong",
+      "Zheng Yuan",
+      "Yilin Xiao",
+      "Hao Chen",
+      "Qinggang Zhang",
+      "Xiao Huang",
+      "Feiran Huang"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28432v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28432v1",
+    "fetched_at": "2026-08-31T15:47:10.457594",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897942"
+  },
+  {
+    "id": "2608.28406v1",
+    "title": "Post-Training VLMs for Video Mistake Detection",
+    "abstract": "Human mistakes are inevitable when following instructions, yet they can lead to severe consequences. As such, there has been an increased interest in developing methods for detecting mistakes in videos, with current methods mostly focusing on closed-set protocols. While successful in controlled settings, the closed-set assumption limits their wider applicability, as any changes to the task require collecting new data and re-training models. Instead, we argue that mistake detection methods should learn the general concept of a mistake, rather than overfitting to step-specific details. To reflect this, we introduce the Mistake Detection Video Question Answering (MD-VQA) protocol and accompanying benchmark. MD-VQA tests whether methods can discern if a step was executed correctly with respect to its description, for both seen and unseen actions. To address this important challenge, we propose the first video-language-model post-training technique for mistake detection. Our method uses a tailored reward function to encourage the model to identify discrepancies between an instruction and the corresponding video. Extensive evaluations demonstrate that this approach outperforms zero-shot, supervised fine-tuning, and post-training baselines. Notably, our method generalizes especially well to unseen procedures, for instance, with an improvement of up to 11.6% over the best-performing baseline on EP-VQA, paving the way toward general mistake detection. We release our code and benchmark at https://github.com/FedeSpu/mstk.",
+    "authors": [
+      "Federico Spurio",
+      "Olga Zatsarynna",
+      "Lars Doorenbos",
+      "Emad Bahrami",
+      "Gianpiero Francesca",
+      "Juergen Gall"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28406v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28406v1",
+    "fetched_at": "2026-08-31T15:47:10.457620",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897953"
+  },
+  {
+    "id": "2608.28363v1",
+    "title": "EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses",
+    "abstract": "LLM agents increasingly modify their own prompts, tools, middleware, resources, and execution harnesses at runtime. Such self-evolution can improve capability, but a successful mutation may leave persistent effects that cannot be safely reversed in states different from the one in which it was created. We introduce EvoUndo, a framework for representing, synthesizing, diagnosing, and independently verifying recoverability of model-generated self-modifications across counterfactual states. Across 600 unseen one-shot self-evolution tasks, we identify 197 capability-improving mutations that fail recoverability verification. Under the original recovery representation, conventional repair strategies recover 0/197 of these natural failures. Deterministic oracle analysis recovers 48/197 under the original recovery language L0, while the extended recovery calculus increases empirical oracle recovery to 191/197. A protocol-locked 2x2 grounding-by-expressivity intervention then separates two bottlenecks: exact state-address grounding increases successful recovery from 0/48 to 38/48 (79.2%) when the original language is sufficient, while extending the recovery language enables recovery on 142/143 (99.3%) failures in the oracle-defined S1 stratum. On the primary gpt-oss-120b backbone, adding exact-address diagnostics to the richer language reduces recovery to 133/143 (93.0%); a Qwen3.8-27B replication preserves the grounding and expressivity effects but not this negative interaction, indicating that the latter is model-dependent. These results indicate that reliable agent self-evolution requires co-designing verification, state grounding, witness semantics, and recovery-language expressivity rather than relying on iterative prompting alone.",
+    "authors": [
+      "Tanmay Sah",
+      "Dolly Sah",
+      "Harshul Jain",
+      "Tanya Sah"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28363v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28363v1",
+    "fetched_at": "2026-08-31T15:47:10.457643",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897964"
+  },
+  {
+    "id": "2608.28305v1",
+    "title": "PanelShield: Verifiable Closed-Loop Safe Planning for Robotic Industrial Panel Operation",
+    "abstract": "Industrial panel operation is knowledge-intensive and safety-critical. Beyond control recognition and action generation, execution must satisfy constraints in operation manuals and safety regulations. While foundation-model-based planners show strong semantic capability, they typically lack computable, localizable, and reproducible mechanisms for violation detection and repair. To address this, we propose PanelShield, a verifiable closed-loop safety planning framework for manual-guided industrial panel operation. The framework generates parameterized action primitive sequences from task-relevant manual evidence and applies dual formal verification with LTL and a Safety FSM to enforce cross-step temporal correctness and local transition legality. When violations occur, it outputs a structured counterexample with the earliest violating step and cause, enabling targeted repair and re-verification. We build a multi-level long-horizon planning benchmark covering three representative industrial device panels, and evaluate the framework in simulation and real-world robotic experiments. Results show that PanelShield improves complex safety-constrained task performance over foundation-model-only planning baselines while reducing the violation rate to 2.7%, with 4.1 s total latency. Real-world experiments demonstrate end-toend feasibility. Overall, PanelShield offers a verifiable approach to robotic panel operation that balances flexibility, safety, and auditability.",
+    "authors": [
+      "Guipeng Xin",
+      "Jiahe Xu",
+      "Chenhui Wan",
+      "Jie Liu",
+      "Youmin Hu",
+      "Zhongxu Hu"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28305v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28305v1",
+    "fetched_at": "2026-08-31T15:47:10.457670",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897973"
+  },
+  {
+    "id": "2608.28300v1",
+    "title": "MaCoPlanner: LLM-Assisted Manual-Compiled Task Planning with Proactive Safety Verification for Robotic Industrial Panel Operation",
+    "abstract": "Robotic industrial panel operation requires not only accurate control localization but also compliance with operating procedures, safety rules, and device-state constraints distributed across heterogeneous manuals. This study presents MaCoPlanner, a task-planning framework built on knowledge compiled from equipment manuals that converts equipment manuals into a typed intermediate representation, retrieves task- and state-relevant evidence, and uses it to support plan generation. Before actuation, candidate plans are symbolically rolled out and checked against procedural and state-transition constraints; detected violations are localized and returned for targeted repair, while unresolved plans are rejected. A separate execution interface grounds verified symbolic actions to physical controls and updates the device state. Under an independent evaluation oracle, MaCoPlanner achieves a final violation rate of 2.7%, and 26.3% of the runs in the repair analysis are rejected after exhausting the refinement budget. Compared with Raw-Manual, task success increases from 62.8% to 84.4% on Level-2 tasks and from 25.9% to 43.2% on Level-3 tasks. Experiments on a controller-panel simulator without an attached industrial load further demonstrate integrated execution feasibility under representative interaction conditions, without claiming industrial deployment readiness.",
+    "authors": [
+      "Guipeng Xin",
+      "Jiahe Xua",
+      "Mohammad Deghat",
+      "Chenhui Wan",
+      "Jie Liu",
+      "Youmin Hu",
+      "Zhongxu Hu"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28300v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28300v1",
+    "fetched_at": "2026-08-31T15:47:10.457698",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.897984"
+  },
+  {
+    "id": "2608.28281v1",
+    "title": "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering",
+    "abstract": "Loop Engineering is emerging as a practice for organizing development work around coding agents. Instead of writing each prompt by hand, practitioners design loops that monitor progress, assign work, run checks, and decide what the agent should do next. Even with a capable coding agent, a loop may trust a stale progress note, skip needed verification, spend its budget in the wrong direction, or stop before the task is safe to submit. Yet the final outcome of one end-to-end run cannot tell whether success or failure reflects the loop's guidance or the coding agent's ability to carry out the task. We introduce LoopArena, a benchmark for evaluating how well one model can guide a separate coding agent through a long-running task. The model under evaluation is the \\textbf{Controller}: after each coding round, it receives a structured summary of the run and instructs a separate, fixed coding agent, the \\textbf{Worker}, on what to do or verify next, or decides whether to stop. LoopArena evaluates this ability in three complementary settings that differ in execution scope and cost. Type I scores next-step Loop Contract selection through execution-validated questions without running the Worker at evaluation time. Type II executes repeated control over a selected slice of a full task, while Type III evaluates the paired full task from its original state. On full tasks, the best observed Strict Success Rate is \\textbf{24.69\\%}, leaving substantial room for improvement in long-horizon loop control. Across Controllers, the paired reduction in estimated inference cost averages \\textbf{64.4\\%}, and Type II produces a similar ordering under the main Core criterion (Spearman's \\(ρ=\\textbf{0.9747}\\)). We release the benchmark data and evaluation code at https://github.com/AMAP-ML/LoopArena .",
+    "authors": [
+      "Yi Wang",
+      "Haopeng Zhang",
+      "Chengxiang Huang",
+      "Rui Dai",
+      "Kaikui Liu",
+      "Piotr Koniusz",
+      "Xiangxiang Chu"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28281v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28281v1",
+    "fetched_at": "2026-08-31T15:47:10.457726",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.898023"
+  },
+  {
+    "id": "2608.28165v1",
+    "title": "CrabOS: An Operating System for Human-AI Co-inhabitation",
+    "abstract": "AI agents are evolving into long-running computational entities that can invoke tools, maintain memory, and complete complex tasks across applications. In real-world settings, completing a task often requires humans and AI to take turns leading its execution. Such alternation depends on the seamless handoff of the work state of the task between humans and AI. Existing agent systems, however, provide humans and AI with separate work environments. AI agents must therefore rely on additional bridges to continue work: either developers build task-specific interfaces to access the work state, or users manually transfer relevant parts of it through screenshots or textual descriptions. Both approaches make handoffs costly and scale poorly.   We propose Human-AI Co-inhabitation, a type of work environment that enables humans and AI to seamlessly take turns continuing work on the same task, and design and implement CrabOS to realize this concept. CrabOS represents the work state as natural-language-readable text objects shared by humans and AI, allowing both to access and manipulate it directly through the same auditable interface without bridges. Case studies show that CrabOS elevates support for complex tasks with alternating human and AI leadership from bridge-dependent application-level solutions to native operating-system capabilities, which provide a new foundation for developing and running AI agents.",
+    "authors": [
+      "Qi Yang",
+      "Yun Ma"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.AI",
+      "cs.HC",
+      "cs.OS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28165v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28165v1",
+    "fetched_at": "2026-08-31T15:47:10.457748",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.898034"
+  },
+  {
+    "id": "2608.28160v1",
+    "title": "Gen-TAS: A Generative AI-Aided Hardware-Software Task Allocation Framework for FPGA-GPP Heterogeneous Systems",
+    "abstract": "FPGA-GPP heterogeneous systems combine software flexibility with the performance and energy efficiency of reconfigurable hardware. However, determining which application tasks should execute on the GPP or FPGA requires extensive expertise and design-space exploration, particularly when user objectives vary across latency, communication, resource utilisation, and power. This paper proposes Gen-TAS, a knowledge-grounded LLM framework for user-specific FPGA-GPP task allocation. By combining task-graph analysis with RAG, Gen-TAS grounds LLM reasoning in historical implementation knowledge and generates multiple explainable strategies tailored to the specified objectives. Human-in-the-loop selection and a deterministic backend connect LLM-generated decisions to reproducible FPGA SoC implementations. Experiments on CNN and SDR workloads across multiple LLMs demonstrate stable, requirement-driven allocation. Under latency-oriented objectives, implementations following the selected strategies achieve speedups of up to 2.45$\\times$ and 92.53$\\times$, respectively, relative to the corresponding all-GPP baselines while other objectives select strategies that trade some acceleration performance for FPGA-GPP communication, resource utilisation, or FPGA power.",
+    "authors": [
+      "Mary Kong",
+      "Yuqin Zhao",
+      "Semih Vazgecen",
+      "Cristian Sestito",
+      "Themis Prodromakis"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.AR",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28160v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28160v1",
+    "fetched_at": "2026-08-31T15:47:10.457773",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.898045"
+  },
+  {
+    "id": "2608.28158v1",
+    "title": "HARTS: Efficient Agentic Reinforcement Learning for Hybrid-Attention Models over Arbitrary Rollout Trees",
+    "abstract": "Agentic reinforcement learning (RL) often produces irregular rollout trees with shared histories. Training root-to-leaf trajectories independently recomputes these shared prefixes. Existing systems primarily target full-attention models and lack dense, differentiable hybrid-attention execution compatible with activation recomputation. We present HARTS (Hybrid-Attention RL over Tree Structures). HARTS jointly plans microbatches, data-parallel (DP) replica assignments, and microbatch-slot schedules using non-replay compact-token work after prefix compression. For chunkwise linear attention, a linear-time algorithm coordinates chunk-boundary state recovery and replay and produces the minimum number of sequential linear-attention calls under our packed execution model. HARTS preserves the chunkwise state partitioning of trajectory-wise training: it does not repeat projections, MLP/MoE computation, or final outputs, and performs only bounded state replay for numerical alignment. Per round, HARTS batches all branches into one packed call, propagates gradients through differentiable state handoffs, supports activation recomputation, and restores per-token log-probabilities. For deterministic, no-token-drop top-$k$ MoE routing, semantic multiplicities restore MoE-objective token weights and load statistics. Existing RL objectives retain their interface. To our knowledge, HARTS is the first system to demonstrate arbitrary-rollout-tree prefix-sharing speedups on a real hybrid-attention model. On an Agentic RL workload generated from SWE-bench tasks, HARTS achieves $4.81$--$4.87\\times$ forward/backward/gradient speedup with activation recomputation across multiple parallel configurations. Its numerical differences are comparable to baseline self-rerun variation, and its reward trend is similar to the baseline over the first 120 steps of $τ^3$-Bench training.",
+    "authors": [
+      "Boyuan Meng",
+      "Peihua Bao",
+      "Hong Liu",
+      "Xiaowei Zhu",
+      "Chao Wang",
+      "Gen Li",
+      "Zhenxuan Pan"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28158v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28158v1",
+    "fetched_at": "2026-08-31T15:47:10.457801",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.898067"
+  },
+  {
+    "id": "2608.28147v1",
+    "title": "Post-Edit Re-Verification in Simulator-Backed Engineering Agents: A Controlled Comparison of Verification-Cadence Guidance",
+    "abstract": "Engineering agents that interact with external simulators may need to coordinate design modification with reacquisition of engineering evidence for the modified state. We ask whether first post-edit re-verification changes when explicit verification-cadence guidance is retained versus omitted while verification-relevant state/facts are held constant. Cadence-Guided (CG) retained an instruction to request a new simulation after a substantive modification, whereas Cadence-Omitted (CO) removed that instruction; neither condition used a hard gate. The study therefore measures instruction-conditioned post-edit verification-policy adherence rather than spontaneous recognition that prior evidence has become stale. Using DWSIM as the simulator backend and continuous valve-pressure adjustment, five Alibaba/Qwen models were evaluated on eight synthetic cases; each model-case-condition combination was executed three times via live API calls, yielding 120 evaluation slots per condition. Re-verification was observed in 94/120 CG slots versus 32/120 CO slots; cadence violations occurred in 26/120 versus 87/120; and bounded final success was reached in 95/120 versus 35/120. qwen3.5-35b-a3b showed minimal re-verification (1/24 in CG and 0/24 in CO) and no final success in either condition. Within this bounded protocol, explicit post-edit verification-cadence guidance was associated with more re-verification, fewer cadence violations, and more frequent bounded final success, supporting the treatment of verification cadence as an explicit interaction-protocol component.",
+    "authors": [
+      "Qingchuan Zhu",
+      "Shuyue Tong",
+      "Pengju Ren"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28147v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28147v1",
+    "fetched_at": "2026-08-31T15:47:10.457822",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.898078"
+  },
+  {
+    "id": "2608.28128v1",
+    "title": "VICT: Verifier-Instrumented Credit Tracing for Long-Horizon LLM Agent Reinforcement Learning",
+    "abstract": "Fine-grained credit assignment is a central challenge in reinforcement learning for long horizon LLM agents. Standard objectives often train from programmatically verifiable terminal rewards by broadcasting each sparse outcome to every action in a trajectory. Existing methods typically seek finer credit from the rollout side, constructing auxiliary trajectory signals or additional comparisons to estimate action importance. Although useful, these approaches still treat the verifier that judged success as a scalar reward, discarding its internal task structure. Our key insight is that many verifiable tasks already encode the relevant checks inside their terminal verifier. We propose VICT (VerifierInstrumented Credit Tracing), a training-time interface that exposes executable or evidence backed atoms and traces them back to actions through dependency-valid proof edges. VICT redistributes group-relative advantage only along those edges, shifting credit assignment from rollout-side inference to verifierside tracing. It preserves the original terminal reward, abstains when evidence is incomplete or ambiguous, and changes only the training-time advantage tensor, requiring no learned critic, process labels, branch rollouts, or inference-time verifier access. On ALFWorld and WebShop, VICT improves substantially over outcome-only training and achieves strong performance alongside recent fine-grained credit methods; ablations rule out dense atom rewards, final-commit credit, temporal proximity, and sparsity as sufficient explanations.",
+    "authors": [
+      "Pengcheng Li",
+      "Zhengyang Zhang",
+      "Dongxu Zhang",
+      "Sui Huang",
+      "Shaohua Ma"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28128v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28128v1",
+    "fetched_at": "2026-08-31T15:47:10.457847",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.898089"
+  },
+  {
+    "id": "2608.28044v1",
+    "title": "Characterization of Request and Token Energy Costs for LLM Inference Workloads on GPU Platforms",
+    "abstract": "Large language model (LLM) inference serving is priced by tokens, but GPU energy is consumed over inference windows. This accounting mismatch makes token-normalized metrics incomplete, since average output-token energy can decrease even when total request energy increases. We characterize this behavior with a decomposed energy model: a fixed one-time prefill with a fixed generation setup cost, while each output-token generation step adds marginal step energy. We evaluate this LLM inference energy model on NVIDIA H100 and H200 GPUs across dense and mixture-of-experts (MoE) models, reporting both request energy and token energy as functions of model type (M), phase (P), batch size (B), context length (C), and output length (N). For Llama-3.2-1B on H200 at batch-16 and context-4K, increasing output length from 10 to 512 tokens reduces token energy from 7.46 to 0.72 J/token while total batched inference-window energy increases from 1.19 to 5.93 kJ. Batching also reduces token energy, but the gain is context-bounded: at 10 output tokens, the batch-16 to batch-1 gain falls from 6.31x at context-512 to 1.17x at context-4K. MoE models amplify this effect: sparse routing and fragmented expert execution increase fixed energy at low concurrency, while batching spreads that energy across more generated tokens and substantially narrows the dense-vs.-MoE token-energy gap. These results show that energy-aware serving should jointly optimize both request energy and token energy, rather than only reducing per-token energy cost.",
+    "authors": [
+      "Prabhu Vellaisamy",
+      "Vanessa Lam",
+      "Shawn Blanton",
+      "John Paul Shen"
+    ],
+    "published": "2026-08-28",
+    "categories": [
+      "cs.PF",
+      "cs.DC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.28044v1",
+    "arxiv_url": "https://arxiv.org/abs/2608.28044v1",
+    "fetched_at": "2026-08-31T15:47:10.457870",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-08-31T15:49:35.898099"
+  }
+]
