@@ -1,0 +1,715 @@
+[
+  {
+    "id": "2609.02677v1",
+    "title": "Eliciting ESG Preferences for Reinforcement Learning-Based Portfolio Optimization",
+    "abstract": "Modern portfolio management increasingly demands a balance between traditional risk-adjusted returns and strict Environmental, Social, and Governance (ESG) mandates. Current Reinforcement Learning (RL) approaches typically optimize for a single ESG provider, neglecting the significant divergence in rating methodologies across the industry and the unintuitive nature of manually weighting conflicting objectives. This paper addresses these limitations by formulating ESG-aware portfolio optimization as a Multi-Objective Reinforcement Learning (MORL) problem that simultaneously incorporates ratings from three distinct ESG agencies. To bridge the gap between high-dimensional algorithmic trade-offs and human decision-making, we integrate a Preference Elicitation framework using Gaussian Processes. This system enables practitioners to infer their latent utility functions through intuitive pairwise comparisons of candidate portfolios based on their Sharpe ratios and aggregate ESG scores. We systematically evaluate our framework by employing Large Language Model (LLM) personas to simulate Portfolio Managers operating under varied regional contexts. Empirical results using historical market data reveal that regional backgrounds fundamentally shift the derived preference weights. For instance, European-based personas tend to prioritize ESG alignment over financial returns, while Texas-based personas favor risk-adjusted performance. This work offers a highly adaptable framework that successfully aligns multi-objective algorithmic trading with diverse, real-world human sustainability preferences.",
+    "authors": [
+      "Giovanni Dispoto",
+      "Marcello Restelli",
+      "Carmine Ventre"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "q-fin.PM",
+      "cs.CE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02677v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02677v1",
+    "fetched_at": "2026-09-03T12:30:20.025870",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899851"
+  },
+  {
+    "id": "2609.02660v1",
+    "title": "Modeling Trade Durations under Temporal Granularity Effects in Forex Markets",
+    "abstract": "Trade durations in high-frequency foreign exchange data exhibit increased occurrence near integer values. To address this empirical phenomenon, we propose the granularity-adjusted autoregressive conditional duration (GA-ACD) model. It is based on a novel two-component mixture distribution consisting of a standard generalized gamma component for regular durations and a second component that locally redistributes probability mass around integer values to capture heaping. Conditional dynamics are modeled within a score-driven framework, allowing the scale parameter to vary over time in response to past durations, and enabling maximum likelihood estimation of all model parameters. A simulation study shows that ignoring heaping leads to biased parameter estimates and distorted inference regarding both the distribution and the dynamics of durations. An empirical analysis demonstrates that integer-duration clustering is pervasive across major currency pairs and that the GA-ACD model outperforms the standard generalized gamma ACD model.",
+    "authors": [
+      "Vladimír Holý"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02660v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02660v1",
+    "fetched_at": "2026-09-03T12:30:20.025906",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899872"
+  },
+  {
+    "id": "2609.02535v1",
+    "title": "Uniform Inference and Certified Capacity at a Reflexive Stability Boundary",
+    "abstract": "This paper develops uniform inference and certified capacity decisions for an estimated financial stability boundary. Conditional risk, temporary cross-impact, and effective risk-bearing capacity are jointly estimated from dependent observations. Conventional pointwise inference is reliable at a separated simple spectral root but can fail near semisimple or defective collisions. Projecting a valid joint confidence region for the underlying inputs avoids this local approximation and yields a three-way regime decision with abstention and a one-sided capacity bound. A verified two-dimensional implementation keeps numerical error from creating a resolved sign. Structural simulations recover the predicted tradeoff between coverage and resolution, while observed-risk stresses distinguish statistical abstention from an insufficient computational budget. The financial conclusions remain conditional on the identification of cross-impact, the normalization of capacity, and stability of the inputs over the action horizon.",
+    "authors": [
+      "Alejandro Rodriguez Dominguez"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02535v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02535v1",
+    "fetched_at": "2026-09-03T12:30:20.025951",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899885"
+  },
+  {
+    "id": "2609.02525v1",
+    "title": "Switching Frictions, Heterogeneous Trading Horizons, and Long-Memory Order Flow",
+    "abstract": "This paper develops a mechanism through which costly changes in the representations used for portfolio choice can contribute to persistent signed order flow. Heterogeneous switching thresholds and opportunity volatility generate heterogeneous residence times, and renewal aggregation maps their execution-weighted tail into the decay of aggregate flow covariance. Under common execution weights, the same tail determines the exponent of representation-spell durations, the order-flow memory exponent, and the horizon at which finite-market scaling must end. First-passage renewal analysis establishes these joint restrictions. Structural simulations recover them from realized paths, quantify the distortion created by mismatched weights, and show how finite cross sections shorten the usable inference horizon. The resulting empirical protocol converts an aggregate persistence fit into cross-dataset restrictions that can determine whether a duration-based kernel is suitable for a separate execution-cost model.",
+    "authors": [
+      "Alejandro Rodriguez Dominguez"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02525v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02525v1",
+    "fetched_at": "2026-09-03T12:30:20.025975",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899901"
+  },
+  {
+    "id": "2609.02447v1",
+    "title": "Price manipulation in nonlinear transient impact models: rigidity before memory and complete positivity after memory",
+    "abstract": "Transient impact models compose a nonlinearity with a memory kernel, and the order of composition determines the criterion for absence of price manipulation. We classify both orders. If an arbitrary instantaneous law $f$ acts on the trading rate before any nonzero integrable Volterra kernel, nonnegative cost on every finite piecewise-constant round trip forces $f$ to be affine, and linear for every nonzero convolution kernel. In particular, the power law $\\mathrm{sgn}(x)|x|^δ$, $δ>0$, combined with power-law decay $t^{-γ}$, $0<γ<1$, admits manipulation if and only if $δ\\ne1$: square-root impact is manipulable at every decay exponent, and the region left open by Gatheral's slow-rate two-block bound $δ+γ\\ge1$ collapses to the line $δ=1$. Earlier rigidity theorems require a kernel that is bounded at zero; the argument here is a zero-volume chattering pump read out by two thin baseline trades, and it applies to singular kernels. If instead a monotone readout acts on the impact state after the kernel, safety for all inputs and all readouts is equivalent to complete positivity of the kernel, with a constructive converse; in particular, square-root impact after power-law memory is manipulation-free. A remote compensating block shows that round-trip safety and all-input safety coincide for kernels with uniformly vanishing tails and differ, for permanent memory, by an explicit storage quotient. These mechanisms classify every two-mode Prony kernel, first-order time-inhomogeneous memory, and stable fully actuated matrix memory, and they quantify the friction, the two-block phase, and the switching complexity behind the power-law case. Calibrated exponent pairs all lie in the manipulable set: absent friction, concavity has to enter after the memory, not before it.",
+    "authors": [
+      "Minhyeok Lee"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02447v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02447v1",
+    "fetched_at": "2026-09-03T12:30:20.025998",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899947"
+  },
+  {
+    "id": "2609.02381v1",
+    "title": "Viscosity Supersolution Barriers to a Non-local Free Boundary Problem",
+    "abstract": "We study a parabolic obstacle partial integro-differential equation (PIDE) with a dynamically moving bilateral free boundary. This type of problem arises in the mathematical modeling of speculative asset bubbles with Lévy jump processes. We consider the existence of viscosity supersolutions within the class of functions exhibiting linear asymptotic growth ($O(|g|)$ at infinity) across three distinct parametric regimes. Our intention is to determine when such a supersolution barrier can be built by analyzing the balance between the stabilizing local drift, defined by the discount rate $r$ and mean-reversion $ρ$, and the non-local jump dispersion, characterized by the large-jump intensity $λ$ and Lipschitz constant $L_γ$. First, when $r+ρ> \\sqrtλL_γ$, we prove the global existence of non-negative viscosity supersolutions. Second, in the deficit regime ($r+ρ< \\sqrtλL_γ$), we prove existence on finite horizons and derive a critical horizon threshold $T_{\\mathrm{crit}}$. Utilizing an asymptotic slope envelope, we prove that no non-negative linear-growth supersolution can exist beyond $T_{\\mathrm{crit}}$. Finally, at the exact critical boundary ($r+ρ= \\sqrtλL_γ$), we show global existence by constructing a smooth supersolution, provided an additional spatial no-crossing condition holds.",
+    "authors": [
+      "Avetik Arakelyan",
+      "Lusine Poghosyan"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "math.AP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02381v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02381v1",
+    "fetched_at": "2026-09-03T12:30:20.026023",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899969"
+  },
+  {
+    "id": "2609.02014v1",
+    "title": "Insights on Time-consistent Deep Hedging under Elicitable Dynamic Risk Measures",
+    "abstract": "We study deep hedging in the context of dynamics risk measures, where sequential decisions are time-consistent. Whereas the literature in such context mainly considers low-dimensional problems with simple environment dynamics, we tackle the high-dimensional problem of basket option hedging; we show that the approach is feasible and can be used conveniently in the presence of more complex state spaces. We rely on the conditional elicitability of spectral risk measures to represent the optimization objective. We provide insights on how the choice of scoring function impacts the training of the hedging agent. Lastly, the time-consistent hedging strategies are benchmark against deep hedging approaches relying on static risk measures leading to precommitment.",
+    "authors": [
+      "Shuyi Zhang",
+      "Frédéric Godin"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02014v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02014v1",
+    "fetched_at": "2026-09-03T12:30:20.026045",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899979"
+  },
+  {
+    "id": "2608.30999v2",
+    "title": "Metaorder modelling and identification from public data",
+    "abstract": "Market-order flow in financial markets exhibits long-range correlations. This is a widely known stylised fact of financial markets. A popular hypothesis for this stylised fact comes from the Lillo-Mike-Farmer (LMF) order-splitting theory. However, quantitative tests of this theory have historically relied on proprietary datasets with trader identifiers, limiting reproducibility and cross-market validation. We investigate whether it can be recovered from anonymous public data using synthetic metaorder reconstruction. Using transaction and quote data for the largest 239 stocks by market capitalisation on the JSE as of 13 March 2026 with the data range being 1 January 2023 until 31 December 2025, we conduct a grid search over reconstruction parameters and evaluate each configuration against established metaorder stylised facts and the LMF relation. Configurations selected to minimise errors across the metaorder impact stylised facts reproduce the targeted aggregate properties but yield a poor LMF relation. Configurations selected to minimise the LMF discrepancy recover the relation by construction while retaining several broad impact features, although some stock-level execution and decay fits are weaker. These asymmetric results show that recovering aggregate impact stylised facts alone is insufficient to identify LMF-consistent order splitting, while the LMF-targeted result establishes compatibility within the reconstruction class rather than an independent test. The findings support consistency with, rather than direct validation of, the LMF theory using anonymous market data.",
+    "authors": [
+      "Ezra Goliath",
+      "Tim Gebbie"
+    ],
+    "published": "2026-08-31",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.30999v2",
+    "arxiv_url": "https://arxiv.org/abs/2608.30999v2",
+    "fetched_at": "2026-09-03T12:30:20.026291",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.899999"
+  },
+  {
+    "id": "2608.30490v2",
+    "title": "Two Kinds of Nothing: What Insignificant Results in Finance Actually Show",
+    "abstract": "Claims of the form \"we find no evidence that X affects Y\" appear throughout the applied finance literature, yet whether such a claim contains evidence of absence or absence of evidence depends entirely on its confidence interval. The term \"statistically insignificant\" is routinely read to mean zero economic effect. However, a more honest description is that zero could not be rejected along with a range of other coefficient effect sizes. The crucial question is whether effect sizes in that range are consequential. This note distinguishes two kinds of insignificant results that are indistinguishable in a standard regression table: bounded null claims where the intervals reject effect sizes of consequence and thus represent a genuine finding, and vacuous null claims where even consequential effects remain unrejected and therefore establish nothing. I propose a minimal reporting standard for regression results in applied finance, where the smallest consequential effect size is stated (in the units of the decision, per a named increment of the regressor) alongside the descriptive statistics and compared with the relevant edges of the confidence intervals of null claims. Using only the reported coefficient and standard error, authors can distinguish bounded (informative) null claims that reject consequential effect sizes from vacuous null claims that establish no information, perhaps due to deficiencies in data or the identification strategy. The symmetric phrase \"no effect\" conceals, in particular, the frequent split verdict: bounded in one direction, vacuous in the other. In ongoing work, I apply this framework to published null claims in leading finance journals, beginning with my own.",
+    "authors": [
+      "David Tan"
+    ],
+    "published": "2026-08-31",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2608.30490v2",
+    "arxiv_url": "https://arxiv.org/abs/2608.30490v2",
+    "fetched_at": "2026-09-03T12:30:20.026403",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900011"
+  },
+  {
+    "id": "2609.02540v1",
+    "title": "TrajMind: Chaining Role-Specialized LoRAs for Fast-and-Slow Collective Trajectory Anomaly Diagnosis",
+    "abstract": "Diagnosing collective anomalies from urban trajectories is increasingly important for traffic governance, as it reveals what happened, who was involved, and where and when the event occurred. Existing detectors efficiently produce scores or labels, whereas vision--language pipelines provide richer semantics; neither couples verifiable diagnosis with low-latency monitoring. The central challenge is to recognize collective patterns and recover exact event details from the source trajectories without running the full diagnostic pipeline for every monitored window. We therefore separate always-on screening from on-demand diagnosis: screening raises alerts, while diagnosis releases only source-verified what--who--where--when records. We present TrajMind, a fast-and-slow framework that switches three role-specialized LoRA adapters over one frozen vision--language backbone. Its slow path, \\textit{TrajMind$_{\\text{slow}}$}, chains canvas-based typing, type-conditioned localization over serialized trajectories, and executable verification, yielding structured, evidence-backed diagnoses. Additionally, the fast path, \\textit{TrajMind$_{\\text{fast}}$}, screens each window in a single text-only pass, delivering efficient structured alerts. Extensive experiments show that, TrajMind$_{\\mathrm{slow}}$ outperforms the strongest baselines by at least $15.3$ percentage points in anomaly typing and $13.8$ percentage points in localization. These gains persist under cross-city transfer, and TrajMind$_{\\mathrm{fast}}$ reduces latency by $41.1\\%$ and maintains binary balanced accuracy of at least $93.5\\%$. Together, TrajMind delivers accurate, evidence-backed diagnoses across cities and efficient front-line monitoring.",
+    "authors": [
+      "Jiahao Wu",
+      "Zhenqun Yang",
+      "Chen Jason Zhang",
+      "Qing Li"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02540v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02540v1",
+    "fetched_at": "2026-09-03T12:30:33.694299",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900024"
+  },
+  {
+    "id": "2609.02529v1",
+    "title": "Fine-Grained Anomaly Perception in Wild UGC-Enhanced Images: A Comprehensive Dataset and Difference-Fusion Framework",
+    "abstract": "Image enhancement and restoration have become standard back-end operations on short-video and social media platforms to boost UGC visual experience. Yet these processes inevitably introduce visual anomalies--especially in faces, texts, and textures--that directly undermine perceptual fidelity and viewer trust. While existing IQA methods perform well on classic distortions, they target holistic quality assessment and fail to capture the specific, localized anomalies caused by enhancement algorithms in real-world UGC. To bridge this gap, we formally define a new task-quality Anomaly Perception for UGC image Enhancement (UEAP), and contribute the first UEAP benchmark dataset, named UEAP-4k, curated from the real business scenarios. It provides fine-grained annotations for anomaly categories, localization and severity levels. Furthermore, we propose a Difference-Fusion Anomaly Perception Method (DFAP-UGC) for wild UGC-enhanced images, which leverages explicit problem-reference difference fusion with dense spatial querying, regional verification, and quality-aware ranking, enabling robust anomaly identification in challenging scenarios. To handle the inherent coupling of subtasks in this new task, we propose a Locality-Aware Dynamic Task Prioritization (LADTP) training strategy that enables effective end-to-end learning and eliminates multi-stage overhead. Extensive experiments show that our method outperforms baselines adapted from classical approaches for this task, validating the value of this dataset and the superior of DFAP-UGC for robust UGC-enhanced image anomaly perception. Code and data will be public.",
+    "authors": [
+      "Yan Zhong",
+      "Gefei Chen",
+      "Qiufang Ma",
+      "Zhen Wang",
+      "Zhiwei Fan",
+      "Lei Shi",
+      "Tingting Jiang"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02529v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02529v1",
+    "fetched_at": "2026-09-03T12:30:33.694353",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900036"
+  },
+  {
+    "id": "2609.02497v1",
+    "title": "RINSE: Robust Target-Time Normality Estimation for Zero-Shot Graph Anomaly Detection",
+    "abstract": "Zero-shot graph anomaly detection seeks to deploy a detector trained on source graphs to unseen, unlabeled targets, yet domain shift can make source-derived notions of normality unreliable. We introduce RINSE (Robust Iterative Normality Self-Estimation), a gradient-free target-time framework that keeps the source-trained detector fixed while sequentially estimating target normality, representation calibration, and evidence reliability from the target graph. Its core idea is to identify a reliable subset of low-residual target nodes, use them to construct a trimmed target-aware normality model, and combine complementary anomaly evidence through reliability-gated rank fusion and encoder ensembling. Across eight unseen target graphs, RINSE achieves the highest average AUPRC among the evaluated methods under two separate preprocessing protocols, while block ablations and sensitivity analyses support the combined design. These results support robust target-time estimation as a practical approach to generalist graph anomaly detection without target labels, gradients, or per-target tuning.",
+    "authors": [
+      "Taufikur Rahman Fuad",
+      "Md Abrar Jahin",
+      "Amir Hussain"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02497v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02497v1",
+    "fetched_at": "2026-09-03T12:30:33.694380",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900047"
+  },
+  {
+    "id": "2609.02861v1",
+    "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+    "abstract": "Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensures every autonomous action can be traced back to sensor evidence through documented causal chains. The framework organizes decision-making into four auditable layers: Semantic Perception for evidence-grounded entity recognition, Belief Reasoning for probabilistic state estimation with causal graphs, Action Synthesis for constraint-aware planning with counterfactual documentation, and Execution Verification for compliance monitoring. TRACE is model-agnostic yet designed to integrate learning-based perception modules (CNNs, transformers) while preserving decision-level auditability. We evaluate the framework using three objective metrics: Evidence Traceability (sensor-to-decision linkage), Decision Reconstructability (post-hoc analysis capability), and Temporal Continuity (audit trail completeness). Experimental evaluation on warehouse robot navigation demonstrates that TRACE achieves 98.6% evidence traceability, 99.0% temporal continuity, and 98.1% decision reconstructability across 500 simulated decision cycles. Post-hoc methods like LIME provide feature attributions but lack the artifact structure needed for decision-level reconstruction. The framework addresses EU AI Act requirements for high-risk system transparency and contributes to Explainable AI for safety-critical autonomous systems.",
+    "authors": [
+      "Cagri Temel"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02861v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02861v1",
+    "fetched_at": "2026-09-03T12:31:05.398464",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900059"
+  },
+  {
+    "id": "2609.02846v1",
+    "title": "UE5M3 FP4 Block Scaling for Stable Language Model Pretraining",
+    "abstract": "Stable 4-bit floating-point (FP4) pretraining is difficult because the E2M1 payload represents only a narrow range of magnitudes. NVIDIA's Transformer Engine \\nv{} recipe addresses this with current-tensor scaling, a randomized Hadamard transform (RHT), and bfloat16 (BF16) final layers, adding work outside the FP4 matrix multiplications. We instead pair E2M1 payloads with unsigned E5M3 (\\ue{}) block scales. Their wider range permits periodic tensor scaling, while our recipe applies selective stochastic rounding to backward gradients, omits RHT, and uses FP4 in all eligible internal linears.   We pretrain a Nemotron-H 8B model for nearly 190 billion tokens. Compared with Transformer Engine \\nv{}, the proposed block-16 recipe finishes with lower final-window training loss and, under their respective quantized-inference policies, lower validation loss measured as held-out negative log-likelihood. Its quantized-inference downstream point estimates are also higher on all three reported aggregates. A native \\nv{} execution ablation that jointly removes RHT and the BF16 final-block exemption increases measured model-body token throughput by 21.2\\%. These results demonstrate end-to-end software-emulated \\uefp{} pretraining with a simpler recipe and motivate native support for \\ue{} block scaling.",
+    "authors": [
+      "Robert Hu",
+      "Carlo Luschi",
+      "Paul Balanca"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02846v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02846v1",
+    "fetched_at": "2026-09-03T12:31:05.398512",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900069"
+  },
+  {
+    "id": "2609.02786v1",
+    "title": "SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment",
+    "abstract": "The performance of LLM-based agents is jointly shaped by the base model and the harness used when interacting with the environment. This exposes them to safety risks in both harmful final responses and multi-step execution trajectories. Existing safety alignment mechanisms often rely on either external harness updates or policy optimization, yet applying either paradigm in isolation fails to bridge runtime control with intrinsic safety. We propose SafeEvolve, an experience-driven self-evolving framework for agent safety alignment. SafeEvolve leverages safety experience from completed on-policy trajectories to drive a continual loop of harness-policy co-evolution. On the harness side, SafeEvolve converts trajectory-level safety evidence into bounded, component-level updates across safety prompt and hierarchical skills, yielding auditable and reversible harness artifacts. On the policy side, SafeEvolve follows a two-stage SFT-RL paradigm, where harness-use SFT bootstraps the policy to actively leverage evolved harness artifacts, and harness-augmented RL further shapes autonomous safety behaviors during multi-step exploration via verifier-decomposed rewards. Through harness-policy co-evolution, SafeEvolve converts safety experience into an evolved runtime harness and improved policy behavior. Experiments on agentic safety benchmarks show that SafeEvolve achieves a stronger safety-utility tradeoff than existing baselines. For Qwen3.5-4B, SafeEvolve achieves a $3\\times$ ASR reduction on AgentDojo while improving benign utility from 59.79% to 61.86%.",
+    "authors": [
+      "Qinghua Mao",
+      "Wanying Qu",
+      "Dadi Guo",
+      "Leitao Yuan",
+      "Qingyu Liu",
+      "Yu Li",
+      "Guanxu Chen",
+      "Yanwei Fu",
+      "Xi Lin",
+      "Xia Hu",
+      "Dongrui Liu"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02786v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02786v1",
+    "fetched_at": "2026-09-03T12:31:05.398573",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900081"
+  },
+  {
+    "id": "2609.02783v1",
+    "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+    "abstract": "Evaluating LLM agents is essential for guiding their development, yet it has grown prohibitively expensive: a single pass of a frontier model over an agentic benchmark can cost hundreds to thousands of dollars, a price paid repeatedly across iterative development cycles. Prior efforts, centered on benchmark distillation, reduce the number of evaluation tasks but leave the cost of executing each retained task untouched. In this work, we introduce early outcome prediction, a complementary axis of efficiency that instead cuts cost within each task. Our key insight is that an agent's final outcome is often evident from its intermediate behavior well before execution completes. We instantiate this idea in EarlyEval, a lightweight framework that trains a pair of LightGBM success and failure classifiers over behavioral, textual, and reference-solution features, and halts an agent run the moment either classifier crosses a calibrated confidence threshold, adding negligible per-step overhead. Across three benchmarks, SWE-bench Verified, TerminalBench, and Toolathlon, EarlyEval can eliminate 13%-26% of agent steps and up to 44.1% input tokens and 29.4% output tokens at 89%-97% prediction accuracy, while perturbing per-agent resolve rates by only one to two percentage points on average.",
+    "authors": [
+      "Yuling Shi",
+      "Zhensu Sun",
+      "Junsen Dong",
+      "Chengcheng Wan",
+      "David Lo",
+      "Xiaodong Gu"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02783v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02783v1",
+    "fetched_at": "2026-09-03T12:31:05.398615",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900092"
+  },
+  {
+    "id": "2609.02780v1",
+    "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
+    "abstract": "Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token pruning, token merging, quantization, on-demand frame retrieval, and context offloading. However, most existing methods overlook the dimension of model depth. Repeatedly executing full-depth MLLM prefill over incoming frames is prohibitively expensive, incurring substantial computational overhead and causing the KV cache to grow at a rate directly proportional to the prefill depth. To address these challenges, we propose ShallowStream, a novel framework that leverages the shallow layers of an MLLM to simultaneously perform frame encoding and retrieval index building. During stream processing, ShallowStream maintains an always-on lightweight index using the KV cache of shallow layers. During query-time answering, we leverage the attention scores generated by the shallow layers to score context frames and employ a diversity-aware selection strategy to retrieve precise and comprehensive evidence. ShallowStream achieves performance on par with the strongest existing streaming methods, while reducing per-frame prefill latency and 10-second end-to-end latency by up to 52.1x and 11.9x, respectively. Our code is available at https://github.com/CURRENTF/ShallowStream.",
+    "authors": [
+      "Jitai Hao",
+      "Ke Yang",
+      "Qiang Huang",
+      "Jun Yu"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.CV",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02780v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02780v1",
+    "fetched_at": "2026-09-03T12:31:05.398653",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900104"
+  },
+  {
+    "id": "2609.02749v1",
+    "title": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+    "abstract": "Autonomous agents are beginning to carry out machine-learning (ML) research end to end. These agents combine a model backbone with a harness for planning, execution, memory, and verification, but this architecture still leaves domain-specific know-how outside the agent. We call this missing layer operational knowledge, the know-how that separates knowing a method from making it work. That knowledge is not absent from the field. It appears in repositories and papers, but in forms written for human readers and too large to load during a task. Once distilled into compact, verified skills, this knowledge can be reused across tasks rather than rediscovered during each run.   We present DisCo, a skill-powered research agent that creates skills and uses them during research. Its distillation runs in two complementary forms: task-agnostic, condensing the field's widely used repositories into reusable skills, and task-oriented, producing the skills a concrete task calls for. The former, applied across the open ecosystem, yields the AREX-Skill Library, with 5,000+ verified skills distilled from 1,000 widely used ML repositories and organized into 20 areas and 178 capability families. With the GPT-5.5 backbone, research harness, and downstream execution budget held fixed, the skill-equipped research agent scores 134.3% higher on MLE-bench, 34.4% higher on PaperBench, 9.2% higher on FrontierCS, and 14.0% higher on PassNet than the same agent without skills. These gains come from adding distilled operating context under that fixed setup.",
+    "authors": [
+      "Jianlyu Chen",
+      "Yuyang Hu",
+      "Hongjin Qian",
+      "Jiawei Liu",
+      "Wenqing Wei",
+      "Xiaolong Chen",
+      "Defu Lian",
+      "Zhicheng Dou",
+      "Chaozhuo Li",
+      "Qiwei Ye",
+      "Zheng Liu"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02749v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02749v1",
+    "fetched_at": "2026-09-03T12:31:05.398713",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900115"
+  },
+  {
+    "id": "2609.02624v1",
+    "title": "Automated Vulnerability Injection in Smart Contracts Using Large Language Models",
+    "abstract": "Assessing vulnerability detection tools for smart contracts requires datasets with known ground truth, yet such datasets are scarce and difficult to build by hand. We propose an approach that uses Large Language Models (LLMs) to automatically inject vulnerabilities into Solidity smart contracts, and demonstrate it in a case study targeting 49 vulnerability types from OpenSCV. Injected contracts are validated through a multi-step pipeline checking compilation, execution, business logic, and the presence of the intended vulnerability. Applied to real-world contracts from SmartBugs, LLMs generate nearly 1,000 candidate variants; after deduplication and validation, 32 confirmed vulnerable contracts spanning 25 vulnerability types survive (a 16.58% survival rate). Surviving contracts concentrate in structurally simpler targets and vulnerability types with localized syntactic patterns. We report practical challenges including LLMs' non-determinism and the difficulty of preserving contract semantics. We then use the validated contracts to assess three static analyzers, revealing complementary and incomplete coverage profiles. Results show that LLM-based vulnerability injection is feasible, while exposing key limitations in scalability and diversity.",
+    "authors": [
+      "Luca Migliaccio",
+      "Roberto Natella",
+      "Naghmeh Ivaki",
+      "Nuno Laranjeiro",
+      "Marco Vieira"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02624v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02624v1",
+    "fetched_at": "2026-09-03T12:31:05.398754",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900127"
+  },
+  {
+    "id": "2609.02580v1",
+    "title": "Competitive Market Behavior of LLMs",
+    "abstract": "Large language models (LLMs) are increasingly deployed as economic agents, yet there is little evidence whether LLM agents are suited for participating in market mechanisms designed for humans, and whether these mechanisms deliver desired outcomes when faced with LLM agents. We address this question by replicating seminal economic experiments, replacing human subjects with LLM agents. We place agents in a double auction environment, which is a widely-used market mechanism. We check whether such a market is able to deliver an efficient allocation of resources, thereby testing a novel dimension of alignment of LLM agents -- their compatibility with a fundamental market mechanism. We find that markets populated by LLM agents exhibit slower or no convergence towards market equilibrium, thus providing less efficient allocations than markets populated by humans. We then analyze agents' individual trading decisions and find substantial heterogeneity both across model families and market roles. We also run a lexical analysis of Chain-of-Thought (CoT) traces generated by the agents. We find that the decision to execute a trade rather than continue incrementally adjusting prices is associated with a shift from strategic considerations toward urgency. We publicly release our testing framework, which can be used for future evaluations.",
+    "authors": [
+      "Pawel Struski",
+      "Jakub Swistak",
+      "Inez Okulska",
+      "Przemyslaw Biecek"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.MA",
+      "cs.AI",
+      "econ.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02580v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02580v1",
+    "fetched_at": "2026-09-03T12:31:05.398793",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900137"
+  },
+  {
+    "id": "2609.02459v1",
+    "title": "CivBench: A Long-Horizon Benchmark for Tool-Mediated Agents in Civilization VI",
+    "abstract": "We present CivBench, an open-source benchmark for evaluating language model agents in long-horizon, tool-mediated environments through the Model Context Protocol (MCP). A single episode spans 300+ turns and produces thousands of tool calls over a large action space, requiring sustained planning, state monitoring, and execution under partial observability. The environment exposes 76 MCP tools and a narration layer that converts visual game state into structured text.   We use CivBench to characterise agent behaviour across four model families in 23 admissible runs. The sample is a pilot, not a model ranking: aggregate outcomes do not reliably discriminate models at this scale. Instead, we introduce two interface-level metrics that the environment makes measurable: Proactive Monitoring Rate (PMR), capturing whether agents actively query latent strategic state, and RAG@10, capturing whether commitments stated in structured planning reflections are executed within ten subsequent turns.   Across runs we observe two consistent patterns under a shared playbook protocol. Agents under-monitor strategically relevant state that is available but requires explicit querying: despite playbook guidance to query victory progress every 20 turns, agents do so only every 30 to 75 turns, and in 7 of 20 detectable defeats they failed to query within the 20 turn warning window before game end. Agents also frequently fail to execute near-term commitments stated in their own planning reflections (RAG@10 between 48.2% and 65.8% across models). Both patterns arise despite tool access and explicit guidance, and we interpret them as deviations under instruction rather than absences of capability.   We release the environment, scenarios, logs, metrics, and analysis pipeline at https://github.com/lmwilki/civ6-mcp",
+    "authors": [
+      "Austin Tudor David Andrews",
+      "Liam Wilkinson",
+      "Jamie Heagerty",
+      "Harry Coppock",
+      "Jakob Nicolaus Foerster",
+      "Rui Ponte Costa"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02459v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02459v1",
+    "fetched_at": "2026-09-03T12:31:05.398874",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900149"
+  },
+  {
+    "id": "2609.02414v1",
+    "title": "Before the Script, Set the Stage: How Worldview Simulation Amplifies Psychologically Grounded Persuasion in Multi-Turn Jailbreaking",
+    "abstract": "Multi-turn jailbreak attacks demonstrate that harmful intent can be distributed across dialogue, yet existing methods obscure what conversational mechanisms drive vulnerability. We introduce BLUEPRINT, a safety-evaluation framework separating a factorized social-influence strategy space from WORLDVIEWSIM, a cross-turn situational context module. Monte Carlo Tree Search optimizes turn-level combinations of 18 theory-grounded influence factors across a four-turn trajectory. Across six frontier models, BLUEPRINT achieves near-ceiling ASR on major open-weight and proprietary models, while requiring the fewest average queries (2.46). The resulting trajectories further reveal model-specific vulnerability among resistant targets: each responds to distinct influence factors and strategy transitions, yet all share a common recovery pathway-shifting toward concrete, executable task framing consistently escapes hard-refusal states. Ablations confirm operational cues matter most: making requests actionable has the largest impact, gain framing is unusually potent, and some legitimacy appeals can backfire. These findings suggest robust multi-turn safety requires monitoring not only harmful content, but also how dialogue state makes unsafe requests appear concrete and locally executable.",
+    "authors": [
+      "Siyu Chen",
+      "Haoran Wang",
+      "Xiaojian Li",
+      "Yao Huang",
+      "Yinpeng Dong",
+      "Wei Xu"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02414v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02414v1",
+    "fetched_at": "2026-09-03T12:31:05.398917",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900160"
+  },
+  {
+    "id": "2609.02358v1",
+    "title": "Humanoid Safe Stop via Learned Stoppability Value",
+    "abstract": "Humanoid robots responding to emergency stop commands typically execute a fixed maneuver, without reasoning about whether a safe stop is actually feasible from the current state. We cast emergency stopping as a reach-avoid problem and propose Safe-Stop, a task-agnostic framework that pairs a learned stop policy with learned stoppability estimators. The estimators are complementary: a stop-probability estimator supervised by the actual outcomes of the fixed stop policy, and a reach-avoidance estimator supervised by a Hamilton-Jacobi backup over physical state. The first captures emergent stopping behavior of the learned controller; the second provides a complementary recoverability signal. Because the stop policy and estimators do not depend on the behavior policy that preceded the stop command, they transfer across diverse upstream tasks without retraining. At deployment, the two estimates are combined: Safe-Stop commits to the stop only when both estimators indicate that stopping remains feasible, otherwise it hands off to a fall policy, instantiated as a damping fallback. This agreement check yields decisions that are robust without sacrificing reactivity.",
+    "authors": [
+      "Junfeng Long",
+      "Pieter Abbeel",
+      "Koushil Sreenath",
+      "Roberto Horowitz",
+      "Guanya Shi",
+      "C. Karen Liu"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.RO",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02358v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02358v1",
+    "fetched_at": "2026-09-03T12:31:05.398972",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900170"
+  },
+  {
+    "id": "2609.02309v1",
+    "title": "Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization",
+    "abstract": "GUI agents increasingly operate across websites, mobile apps, and desktop environments, yet the field still reports progress primarily through task success. We argue that practical deployment depends equally on efficiency: how much context, computation, action budget, and runtime overhead an agent consumes while succeeding. This survey studies efficient GUI agents through an end-to-end systems lens that preserves the current technical axes of observation efficiency, context and memory efficiency, action efficiency, and planner-side/system efficiency. For each subsection, we expand the seed literature through targeted search plus backward and forward citation chaining, then synthesize the dominant mechanisms, reported efficiency signals, and new overheads they introduce. Across the literature, recent progress converges on a small set of recurring ideas: selective reading instead of full-context ingestion, global-to-local visual allocation, recoverable memory rather than raw history replay, verification-aware control, and hybrid runtimes that can switch between GUI and non-GUI execution. We conclude by identifying the main open problems, including honest accounting of verifier cost, cross-benchmark comparability, and co-design of observation, memory, and execution layers under real latency and privacy constraints.",
+    "authors": [
+      "Bizhe Bai",
+      "Jiakang Yuan",
+      "Hongming Wu",
+      "Xinyue Wang",
+      "Jie Ren",
+      "Siyao Chen",
+      "Yuchen Ya",
+      "Fan Bai",
+      "Pai Peng",
+      "Huafeng Qin",
+      "Tao Chen"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02309v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02309v1",
+    "fetched_at": "2026-09-03T12:31:05.399022",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900181"
+  },
+  {
+    "id": "2609.02292v1",
+    "title": "SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology",
+    "abstract": "The rapid proliferation of large language models (LLMs) and the growing diversity of their applications presents a unique optimization opportunity: selecting the right model for the task, while optimizing for speed, cost, and quality at a per-task level. However, inference endpoints can vary widely in quality, price, latency, context support, tool use, domain expertise, and reasoning behavior. This heterogeneity makes manual heuristics difficult to maintain and unlikely to achieve consistently favorable speed--cost--quality trade-offs on their own. We introduce \\router{}, a lightweight GLiClass-based router that assigns a suitability score to each inference-time model label without autoregressive generation. The released 0.6B-parameter checkpoint combines a Qwen3 decoder with a shallow bidirectional scorer. Its decoder-KV execution path preserves a text-only key--value cache across a session, encodes only new dialogue turns, and evaluates transient candidate-label tokens without adding them to the persistent cache. The same checkpoint also predicts task type, difficulty, reasoning mode, and expected output length, and supports custom zero-shot labels. For task generation, we construct a task ontology with 23 families, 115 task types, 345 routable subtypes, 1,173 synthetic examples, and an orthogonal axis of 30 domains. Using this structure, we generate 150,000 verifier-scored tasks and 15,000 open-ended tasks. We then train the Qwen3 decoder on these tasks, while explicitly separating learned request prediction from per-task policies for attributes such as eligibility, cost, cache reuse, safety, and sovereignty. Across six LiveBench subsets, the router outperforms the mean candidate; on the selected 1,000-task subset, it achieves an aggregate top-1 score of 0.707 versus 0.696 for the strongest fixed model, with benchmark-dependent gains.",
+    "authors": [
+      "Ihor Stepanov",
+      "Aleksandr Smechov",
+      "Mykhailo Shtopko",
+      "Dmytro Vodianytskyi",
+      "Oleksandr Lukashov"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02292v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02292v1",
+    "fetched_at": "2026-09-03T12:31:05.399057",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900194"
+  },
+  {
+    "id": "2609.02270v1",
+    "title": "CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation",
+    "abstract": "Generating safety-critical scenarios is essential for evaluating autonomous driving systems. However, existing generators primarily focus on inducing collisions and offer limited control over where contact occurs on the target vehicle. In this paper, we study fine-grained safety-critical scenario generation, where success requires both a target collision and a specified head, rear, or side contact region. We propose CrashDiffuser, a closed-loop VLM-guided diffusion framework that decouples semantic collision reasoning from continuous trajectory synthesis through a hierarchical collision-intent interface derived from the requested target contact region. At initialization, the VLM extracts reusable scene-level context; at each replanning step, it predicts a structured action tuple describing speed change, turning behavior, and collision stage. This intent conditions a diffusion model to generate executable adversarial trajectories, while collision-guided sampling, candidate selection, and short-horizon replanning adapt generation to the target vehicle's evolving behavior. On WOMD-derived closed-loop scenarios, CrashDiffuser achieves a target-collision rate of 50.33% in a single attempt and 67.98% after three attempts, together with a contact-region control success rate of 40.05% and competitive trajectory naturalness. Component ablations further support the proposed design.",
+    "authors": [
+      "Shucheng Zhang",
+      "Yuang Zhang",
+      "Bingzhang Wang",
+      "Muhammad Monjurul Karim",
+      "Kehua Chen",
+      "Yinhai Wang"
+    ],
+    "published": "2026-09-02",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.02270v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.02270v1",
+    "fetched_at": "2026-09-03T12:31:05.399094",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900205"
+  },
+  {
+    "id": "2609.01811v1",
+    "title": "Reinforcement learning to choose optimizers",
+    "abstract": "No single optimization method is uniformly best for all problems, and the most suitable optimizer choice can change during a run. Existing approaches that change optimizer during execution typically predetermine part of the strategy: the portfolio is restricted to one algorithm class, the switch occurs once at a fixed time, or the frequency of decisions is treated as a hyperparameter rather than a learned one. We introduce \"Reinforcement Learning to Choose Optimizers\", which formulates the optimization algorithm choice as a sequential decision-making problem. At each decision, a recurrent policy reads the current run state and decides both which optimizer should be used next and for how long. The portfolio includes both gradient-based and derivative-free optimizers, and each switch passes on the current best solution and a representative step size. A context proxy conditions a gating network over expert heads, and training employs a decoupled actor-critic whose return is expressed in the same empirical runtime distribution metric used at evaluation. Training tasks and portfolio are designed jointly so that no optimizer dominates. On unseen problems, the learned policy outperforms every portfolio optimizer at all but the smallest budgets, and it remains robust under distribution shift.",
+    "authors": [
+      "Martin van der Schelling",
+      "Deepesh Toshniwal",
+      "Miguel A. Bessa"
+    ],
+    "published": "2026-09-01",
+    "categories": [
+      "cs.NE",
+      "cs.LG",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.01811v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.01811v1",
+    "fetched_at": "2026-09-03T12:33:03.167827",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-03T12:33:19.900215"
+  }
+]
