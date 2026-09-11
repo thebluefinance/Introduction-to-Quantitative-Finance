@@ -1,0 +1,215 @@
+[
+  {
+    "id": "2609.11905v1",
+    "title": "Entropic Value-at-Risk parity for tempered stable returns",
+    "abstract": "We develop Entropic Value-at-Risk (EVaR) parity for tempered stable returns. EVaR-based inverse risk parity (IRP) and equal risk contribution (ERC) portfolios are constructed using multivariate normal tempered stable models and independent component analysis with tempered stable components. We derive the corresponding asset-level EVaR and EVaR-deviation contributions and use the latter to separate the fitted location term from EVaR risk contributions. Under Gaussian returns, EVaR-deviation IRP and ERC recover conventional volatility IRP and ERC weights. We evaluate the resulting portfolios in three investment universes. Empirically, EVaR-based ERC portfolios achieve positive Sharpe differences relative to equal weight across the universes.",
+    "authors": [
+      "Jaehyung Choi"
+    ],
+    "published": "2026-09-10",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.11905v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.11905v1",
+    "fetched_at": "2026-09-11T12:31:10.166989",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932603"
+  },
+  {
+    "id": "2609.11614v1",
+    "title": "Deep Learning of Robust Market Making under Regime-Switching Order Flow",
+    "abstract": "Classical market-making strategies based on stochastic control, such as the Avellaneda-Stoikov and the Guéant-Lehalle-Fernandez-Tapia (GLFT) extension, provide closed-form quoting rules, but rest on assumptions that break down at realistic microstructure timescales. One of them is that order flow is stationary, while empirical evidence points to the existence of regimes, possibly associated with algorithmic execution of metaorders. In this case, existing methods provide negative PnL. In this paper, we develop a deep reinforcement-learning market maker (RLMM) - a Rainbow-style distributional DQN (C51) which is calibrated and tested in a zero-intelligence limit order book. We find that, in the stationary setting, RLMM outperforms GLFT across the entire observed risk-return frontier. The RLMM is more robust to flow asymmetry than GLFT, but, like any stationarily trained strategy, it still suffers large drawdowns from inventory saturation under persistent directional imbalance. Augmenting the state of RLMM with two auxiliary signals - a Bayesian online change-point filter over the directional flow bias and a queue-adjusted quote-exposure imbalance -restores profitability. A final scenario-bandit step that reweights low-return regime scenarios further improves performance under random-persistence and correlated-direction stress.",
+    "authors": [
+      "Felipe Moret",
+      "Fabrizio Lillo"
+    ],
+    "published": "2026-09-10",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.11614v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.11614v1",
+    "fetched_at": "2026-09-11T12:31:10.167029",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932638"
+  },
+  {
+    "id": "2609.11586v1",
+    "title": "Short-maturity skew stickiness ratio under local volatility",
+    "abstract": "We prove that the skew stickiness ratio converges to two at short maturity under local volatility models. This appears to be the first rigorous proof of this limit for a general time-dependent local volatility function. As a by-product, we strengthen the one-half rule of the implied volatility skew by removing uniform ellipticity and global bounds on spatial derivatives of order at least two. The proof uses a first-order Watanabe expansion.",
+    "authors": [
+      "Masaaki Fukasawa"
+    ],
+    "published": "2026-09-10",
+    "categories": [
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.11586v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.11586v1",
+    "fetched_at": "2026-09-11T12:31:10.167052",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932650"
+  },
+  {
+    "id": "2609.11575v1",
+    "title": "Market-Informed Networks for Modeling and Forecast Evaluation of Financial Extremes",
+    "abstract": "Modeling the joint distribution of extreme values in high-dimensional financial time series is challenging because extremes are sparse and locally extreme observations are not necessarily extreme relative to their full marginal distribution. To address this, we introduce a time-dependent network Hüsler-Reiss model in which market-informed adjacency matrices determine how strongly observations contribute to the estimation. We propose binary and weighted specifications, including the Joint Extremes Adjacency Matrix (JEAM) which combines information about individual extremeness with historical patterns of joint extreme movements. In the forecasting evaluation part, covering one-minute stock returns from three sectors of the S&P 100, JEAM achieves the best out-of-sample log scores for both tail directions; improving scores by 12.5-13.6% in the lower tail and 11.4-14.9% in the upper tail. The results show that incorporating market-informed network structures in the estimation, improves forecast evaluation of extremes across time series.",
+    "authors": [
+      "Ayla Jungbluth",
+      "Johannes Lederer",
+      "Simon Trimborn"
+    ],
+    "published": "2026-09-10",
+    "categories": [
+      "stat.ME",
+      "econ.EM",
+      "q-fin.RM",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.11575v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.11575v1",
+    "fetched_at": "2026-09-11T12:31:10.167078",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932671"
+  },
+  {
+    "id": "2609.10865v1",
+    "title": "The Elliptically Optimal Confidence Interval: A Bivariate Extension of Wilson's Score Method",
+    "abstract": "Constructing a confidence interval for the difference between two independent binomial proportions involves a nuisance direction that is not identified by the estimand. The one-sample Wilson score interval inverts a scalar score test, but has no direct bivariate analogue isolating the difference: inverting the joint normal approximation yields an elliptical region in the unit square, whereas the estimand \\(p_1-p_2\\) is one-dimensional. We define the Elliptically Optimal (EO) confidence interval as the range of \\(p_1-p_2\\) over this region and solve the resulting optimization problem in closed form, obtaining explicit bounds in six mutually exclusive and exhaustive cases. The solution admits a compact characterization: the EO interval is the score interval obtained by maximizing over the nuisance variance rather than estimating it. It is therefore the shortest interval obtained by projecting the elliptical region, and inherits its coverage guarantee. We derive the exact coverage excess, \\(2[Φ(z\\mathcal{R})-Φ(z)]\\), where \\(\\mathcal{R}\\) is the ratio of the least-favourable to the true standard deviation. The excess vanishes on an explicit line through the parameter space, is bounded by \\(α\\), and is invariant under proportional scaling of the sample sizes. Exact enumeration of the binomial coverage shows that the Wald interval, whose variance estimator is downward biased by a factor \\(1-1/n\\) under balanced allocation, falls below nominal coverage almost everywhere. The EO interval never under-covers under the normal approximation and always yields admissible, non-degenerate bounds. Its price is over-coverage when both proportions are extreme, which we quantify exactly.",
+    "authors": [
+      "Nawaf Mohammed"
+    ],
+    "published": "2026-09-09",
+    "categories": [
+      "math.ST",
+      "q-fin.ST",
+      "stat.CO",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.10865v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.10865v1",
+    "fetched_at": "2026-09-11T12:31:10.167099",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932696"
+  },
+  {
+    "id": "2609.08719v2",
+    "title": "GoAnt: Quality-Diversity Multi-Agent Search for Alpha Factor Discovery in Market Microstructure Data",
+    "abstract": "Automated alpha factor discovery searches symbolic trading signals from price-volume panels and order-book data under a fixed evaluation budget. Existing single- and multi-agent program-search systems can overfit predictive proxies that fail after execution costs and repeatedly explore redundant factor families, limiting execution robustness and behavioral diversity. We introduce GoAnt, a quality-diversity multi-agent search framework that combines non-communicating Explorer, Exploiter and Connector workers with a shared adaptive Mental Map and a compact Queen dispatcher. The Mental Map organizes candidates by leakage-free execution profiles and retains one elite per niche, while the Queen reallocates the evaluation budget from explicit search-state summaries. We also define a map-independent effective-yield protocol that counts high-quality, mutually nonredundant factors directly from each method's evaluation records, giving archive-based and map-free systems the same ruler. On real A-share microstructure data spanning 2023--2026, GoAnt reaches quality-weighted yields of 41.8 and 47.6 in price-volume and order-book settings, improving the strongest baseline by 57% and 97% under matched budgets. Its locked populations retain 0.64 and 0.67 of in-sample quality out of sample, compared with 0.61 and 0.63 for a static map.",
+    "authors": [
+      "Stella Zhao",
+      "Tommy Sha"
+    ],
+    "published": "2026-09-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.08719v2",
+    "arxiv_url": "https://arxiv.org/abs/2609.08719v2",
+    "fetched_at": "2026-09-11T12:32:07.549695",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Factor Mining"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932709"
+  },
+  {
+    "id": "2609.11144v1",
+    "title": "Same Day, Same Story; One Day Ahead, a Different Signal: The Dual Validity of Financial Sentiment",
+    "abstract": "Financial NLP has a standard workflow: validate a sentiment tool against human labels, then trust it to extract market signal. This assumes the two evaluations measure the same thing. We test that assumption in a setting where both can be measured at once: a corpus of securities class actions (2002-2025) linking 70,500 X messages to abnormal stock returns, with a single-annotator human labelled gold sample. Running five instruments (VADER, Loughran-McDonald, FinBERT, Twitter-RoBERTa, and an LLM annotator) through one identical pipeline, we find that the relationship between construct and predictive validity depends on the sampling convention and score representation. Under conventional method-specific sampling, human agreement aligns more closely with graded same-day associations than with one-day leads. On a fixed-n panel, however, agreement has similar graded rank correlations at both horizons, while the coarse ordering remains weak. Benchmark agreement therefore establishes semantic validity but does not by itself determine predictive rankings. In a conversation that is 17.6% spam, message volume predicts neither market damage nor settlement size.",
+    "authors": [
+      "AS Aravinthkakshan",
+      "Laven Srivastava",
+      "Harsh Nandwani"
+    ],
+    "published": "2026-09-10",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.SI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.11144v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.11144v1",
+    "fetched_at": "2026-09-11T12:34:19.748845",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Sentiment Analysis"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932721"
+  },
+  {
+    "id": "2609.11607v1",
+    "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+    "abstract": "When forecasting a firm's future financial performance, alternative data - data collected from non-traditional sources such as consumer transactions, web traffic, and prediction markets - can provide timely signals about firms' operating activities and broader market conditions. These signals may reveal information that is not captured by traditional public sources and can therefore provide complementary information for forecasting firms' future financial performance. However, firm-level alternative data often have limited historical coverage, are relevant only to specific prediction targets or subsets of firms, and are distributed across numerous heterogeneous channels, making them difficult to incorporate flexibly into conventional forecasting approaches. Meanwhile, large language models (LLMs) can interpret instructions, learn from in-context examples, and generate predictions by combining heterogeneous information without task-specific parameter updates. Motivated by this potential flexibility, we investigate whether an LLM can forecast firm performance by integrating alternative data with other financial information through in-context learning. We propose a two-agent framework that first identifies the firms for which each alternative data channel is likely to be informative and then predicts revenue using firm- and channel-specific context. We evaluate the framework across four commercial alternative data channels. In our experiments, adding alternative data in context alongside other financial information improves the LLM's forecasting relative to either source alone, and these forecasts are more accurate than those of standard forecasting baselines. These findings suggest that LLMs provide a flexible and practical approach to integrating alternative data with heterogeneous financial information.",
+    "authors": [
+      "Jihoon Kwon",
+      "Lawrence Liu",
+      "Daekyung Park",
+      "Sumin Kim",
+      "Haverty Jack",
+      "Hoyoung Lee",
+      "Katherine Bjorkman",
+      "Josh McKenney",
+      "Peter Laurelli",
+      "Nicole Kagan",
+      "Zach Golkhou",
+      "Thorsten Neumann",
+      "Edward Tong",
+      "Pete Petersen",
+      "Yoon Kim",
+      "Alejandro Lopez-Lira",
+      "Yongjae Lee",
+      "Chanyeol Choi"
+    ],
+    "published": "2026-09-10",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2609.11607v1",
+    "arxiv_url": "https://arxiv.org/abs/2609.11607v1",
+    "fetched_at": "2026-09-11T12:34:45.081410",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-09-11T12:35:04.932740"
+  }
+]
