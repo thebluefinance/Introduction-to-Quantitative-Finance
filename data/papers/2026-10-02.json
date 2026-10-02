@@ -1,0 +1,698 @@
+[
+  {
+    "id": "2610.02106v1",
+    "title": "Densities for scalar-valued BSDEs via unique continuation and backward uniqueness",
+    "abstract": "We give sufficient conditions ensuring that, at every fixed positive time, the scalar backward component of a Markovian forward-backward stochastic differential equation with multidimensional forward process admits a density with respect to Lebesgue measure. Existing density criteria for BSDEs often obtain Malliavin non-degeneracy through sign or monotonicity assumptions. We develop a different route for a scalar backward component with an arbitrary-dimensional forward state. Under regularity assumptions and a structural compatibility condition on the generator, the terminal condition is only required to be non-constant. The key idea is to deduce Malliavin non-degeneracy from deterministic rigidity of the critical set of the decoupling field. We combine Malliavin calculus with unique continuation and backward uniqueness for the associated semilinear parabolic equation. Unique continuation precludes the spatial gradient of the decoupling field from vanishing on a set of positive measure unless it vanishes identically on that time slice, while backward uniqueness propagates such vanishing to the terminal time. Along the way, we establish a unique continuation property from sets of positive measure and a backward uniqueness result on the whole space for the linear parabolic systems arising from differentiated semilinear equations.",
+    "authors": [
+      "Solesne Bourguin",
+      "Daniel C. Schwarz"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "math.PR",
+      "math.AP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02106v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02106v1",
+    "fetched_at": "2026-10-02T14:23:39.699851"
+  },
+  {
+    "id": "2610.01897v1",
+    "title": "Shared Models, Selective Trading, and Order Flow",
+    "abstract": "We study whether model diversity survives selection into trading. In synthetic markets with a fixed mixture of three language-model families, news presentation changes their representation among submitted orders. At the announcement round, Qwen's share of submitted orders shifts by 48 percentage points in the financing event, with little change in net order counts. In the workforce-reduction event, Mistral's share shifts by 40 percentage points while net counts reverse sign. Homogeneous populations remove opposing flow when their active decisions share a direction. An analytical decomposition shows why selection can improve or worsen price accuracy even at unchanged aggregate demand sensitivity. The evidence concerns presentation bundles and submitted flow; cleaner replication and a known-value validation are specified prospectively.",
+    "authors": [
+      "Victoria Ruojie Li",
+      "Arka Prava Bandyopadhyay"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "econ.GN",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01897v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01897v1",
+    "fetched_at": "2026-10-02T14:23:39.699883"
+  },
+  {
+    "id": "2610.01585v1",
+    "title": "Distribution-constrained maximum stopping of maximum type",
+    "abstract": "We consider the distribution-constrained optimal stopping problem $\\sup_{τ\\sim μ} \\mathbb E[B^*_τ]$, where $μ$ is a probability distribution on $\\mathbb R_+$, and $(B^*_t)$ denotes the running maximum of a standard Brownian motion. This problem was introduced in Beiglbock et al. (PTRF, 2018), where a monotonicity principle is used to establish the optimal stopping time as the hitting time of a specific boundary.   In this paper, we characterize this boundary by a variational inequality. In the spirit of Cox et al. (PTRF, 2019), we provide a novel probabilistic representation for the variational inequality as a time-reversed optimal stopping problem. A key ingredient for proving the viscosity solution property and comparison principle is a quantitative estimate near the singular corner of the time-space domain, where the initial and boundary conditions are incompatible. We then prove the optimality of the resulting hitting time through a discrete-time Snell envelope construction and a stability argument for the associated stopping times.",
+    "authors": [
+      "Shuoqing Deng",
+      "Xin Zhang"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01585v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01585v1",
+    "fetched_at": "2026-10-02T14:23:39.699904"
+  },
+  {
+    "id": "2610.01562v1",
+    "title": "Social welfare and price discovery in double auction markets",
+    "abstract": "The tendency of the double auction mechanism to drive prices to competitive equilibrium has been well documented in laboratory experiments, but the phenomenon has lacked a theoretical explanation. This paper studies dynamic double auctions in a pure exchange economy where agents bid their indifference prices implied by their current holdings and preferences. We show that Walras equilibria coincide with the fixed points of the double auction and that repeated double auctions generate bounded sequences of allocations and prices whose cluster points are Walras equilibria with transfers.",
+    "authors": [
+      "Teemu Pennanen"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01562v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01562v1",
+    "fetched_at": "2026-10-02T14:23:39.699920"
+  },
+  {
+    "id": "2610.01348v1",
+    "title": "Verify Claims, Not Scores: Evidence-Based Verification of Modular Agents",
+    "abstract": "When developers change one component of an agent, such as its controller, a learned model or its verifier, they usually judge the change by an aggregate task score. That score cannot tell whether improvement was attainable, which component lost value, or what the agent's own checks certify. We introduce a claim-specific verification audit for modular agents that plan, act, check and refine. Instead of scoring the agent, the audit scores the evidence: each conclusion is recorded with the evidence behind it, one of four verdicts (supported, unsupported, unresolved or not evaluated) and the boundary within which it holds. Three tools supply that evidence. Oracle policies measure attainable improvement under an explicitly stated action set, so that a low value can be traced to the evaluation rather than to the environment. Replacing one component at a time with a perfect counterpart locates lost value, with null results read as unresolved whenever a downstream component could mask them. A separate test asks whether the verifier's score identifies the quantity it is read as bounding. Applied to a constrained portfolio-allocation agent in a synthetic market with known hidden regimes, the audit shows that the value of perfect regime information depends on the action set used to measure it, that the scenario generator discards most of the regime signal while better local fidelity does not improve decisions, and that the runtime verifier can be bypassed with no visible change in outcomes. The contribution is the protocol and the evidential distinctions it enforces; the empirical findings are specific to the agent and environment studied.",
+    "authors": [
+      "Ali Atiah Alzahrani"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01348v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01348v1",
+    "fetched_at": "2026-10-02T14:23:39.699934"
+  },
+  {
+    "id": "2610.01325v1",
+    "title": "PPO-HRAP: Proximal Policy Optimization with a Hybrid Regime-Aware Policy for Risk-Controlled Trading",
+    "abstract": "Reinforcement learning for trading often struggles to balance upside participation with drawdown control. Profit-only policies can collapse toward passive long exposure on upward-drifting assets, while aggressively risk-penalized rewards can become too defensive during volatile periods. This paper proposes PPO-HRAP, a hybrid regime-aware policy that combines Proximal Policy Optimization with an interpretable regime prior. The agent observes both market features and portfolio-state variables, receives a reward combining portfolio log return, VIX-conditioned drawdown-increase penalty, target-exposure deviation, and turnover cost, and executes a blended action between the PPO actor output and a regime-derived target exposure. On the held-out 2020-2022 SPY test window, PPO-HRAP achieves 27.62% total return, 8.48% annualized return, 0.6447 Sharpe ratio, 0.8588 Sortino ratio, and 0.4592 Calmar ratio, while reducing maximum drawdown from 34.10% for Buy and Hold to 18.47%. Across five SPY seeds, PPO-HRAP remains stable with mean total return $0.2725 \\pm 0.0109$ and mean Sharpe ratio $0.6219 \\pm 0.0565$. Single-run cross-asset tests on QQQ and DIA further show that the proposed method ranks first on total return and Sharpe ratio for all three reported assets. These results suggest that blending learned actions with a volatility-aware regime prior is a practical way to improve risk-adjusted trading behavior, although the current policy still incurs high turnover and cross-asset robustness beyond SPY remains limited to single-run evidence.",
+    "authors": [
+      "Duong Hien Chi Kien",
+      "Thanh Trung Huynh"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.AI",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01325v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01325v1",
+    "fetched_at": "2026-10-02T14:23:39.699950"
+  },
+  {
+    "id": "2610.01187v1",
+    "title": "On the Pricing of American Options under Stochastic Local Volatility and Stochastic Correlation via the RBSDE Framework",
+    "abstract": "In this work, we study the pricing of American options under stochastic local volatility (SLV) models extended by including stochastic correlation driven by an additional stochastic process. We generalize the class of SLV models by incorporating a flexible stochastic correlation structure. To price options within these extended models, we derive the corresponding reflected forward-backward stochastic differential equations (RBSDEs) and employ data-driven numerical methods to solve them for both pricing and hedging purposes. The RBSDE framework enables the modelling of the future evolution of the option price. Furthermore, we conduct a convergence analysis of the proposed numerical method and present numerical experiments that illustrate the performance of the extended models, as well as the accuracy and efficiency of the RBSDE-based approach.",
+    "authors": [
+      "Long Teng"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "q-fin.CP",
+      "math.NA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01187v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01187v1",
+    "fetched_at": "2026-10-02T14:23:39.699964"
+  },
+  {
+    "id": "2610.01115v1",
+    "title": "Certified Alpha Capacity: Statistical Evidence, Economic Lifetime, and Arbitrage under Decay",
+    "abstract": "In this paper we study whether a trading signal can accumulate enough statistical evidence for reliable deployment before its economic value decays. We solve the problem by measuring statistical evidence and remaining opportunity on a common Kullback-Leibler information scale, obtaining an exact feasibility threshold in a canonical Gaussian model and general information lower bounds beyond it. We show that finite information budgets generate survival frontiers, search penalties, and a market equilibrium in which arbitrage activity shortens the lifetime of certifiable opportunities; a retrospective funding-rate study illustrates the role of persistence.",
+    "authors": [
+      "Nicolò Bonacorsi"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "stat.ME",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01115v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01115v1",
+    "fetched_at": "2026-10-02T14:23:39.699978"
+  },
+  {
+    "id": "2610.00998v1",
+    "title": "Portfolio Choice under General Utility with Transaction Costs and Search Frictions",
+    "abstract": "We study finite-horizon portfolio optimization with proportional transaction costs and trading opportunities arriving at the jump times of a Cox process. Borrowing and short-selling are prohibited, while utility functions need not be concave, increasing, or differentiable. The admissible class includes differentiable utilities with asymptotic elasticity greater than or equal to one. The associated Hamilton--Jacobi--Bellman equation is semi-linear and nonlocal, with control entering only through a zeroth-order term. We show that the normalized equation admits a unique bounded solution that is continuous in all state variables and classical in time and log-price. The proof combines a contraction argument with interior Schauder estimates, and verification identifies the value function and yields an optimal Markovian feedback strategy. Numerical examples with non-concave utilities exhibit, at fixed time and pre-trade wealth, multiple intervals associated with the same trading action, departures from the usual buy--no-trade--sell ordering, and abrupt switches in the optimal post-trade risky weight.",
+    "authors": [
+      "Tae Ung Gang",
+      "Donghan Kim"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.00998v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.00998v1",
+    "fetched_at": "2026-10-02T14:23:39.699995"
+  },
+  {
+    "id": "2610.00951v1",
+    "title": "Negative Oil & Nickel Squeeze: A Feedback Model for Extreme Commodity Futures Prices",
+    "abstract": "On April 20, 2020, the May front-month WTI oil futures contract, one day before its expiration date, opened near $\\$17/$barrel and dropped far below zero in a single trading day, reaching an intraday low of $-\\$40.32$ and settling at $-\\$37.63$. Such market behavior was unforeseen at the time. This event, and the March 2022 nickel squeeze, illustrate how constraints on physical delivery create pressure to close futures positions and distort futures prices. We develop a feedback model that connects the resulting price distortion to a roll option, and to the imbalance between delivery-constrained long and short positions. Under lognormal benchmark dynamics, the roll-option value is shown to satisfy a pricing PDE which is nonlinear because its payoff depends on the observed futures price, which itself includes the feedback correction. Remarkably, in both cases, there is an explicit solution in terms of classical Black-Scholes-Margrabe exchange option formulas, up to solving a scalar equation. We show this allows that prices may go negative under distortion of a positive-price lognormal model. An analogous construction applies when the lognormal base is switched to Bachelier normal dynamics. Illustrations based on WTI and nickel show the imbalance required to reproduce the extreme event prices under the benchmark assumptions.",
+    "authors": [
+      "Iosif Zimbidis",
+      "Ronnie Sircar"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.00951v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.00951v1",
+    "fetched_at": "2026-10-02T14:23:39.700010"
+  },
+  {
+    "id": "2610.00619v1",
+    "title": "Beyond Supra-Competitive Outcomes: Collusive Behaviour in Deep Reinforcement Learning for Optimal Execution Games",
+    "abstract": "In this paper, we extend earlier findings of supra-competitive outcomes in optimal-execution games by identifying a learned punitive mechanism that deters deviations and provides behavioural evidence of collusion. We investigate this mechanism in a two-player, finite-horizon Almgren-Chriss liquidation game. Independent proximal policy optimisation agents with access to within-episode price and action histories achieve costs below the Nash benchmark. We identify a profitable deviation by training against the mean learned liquidation schedule, then impose its first trade on one of the original agents. The opponent responds by accelerating liquidation. This response more than offsets the deviator's gain in every run and both player roles, while leaving the punisher's average payoff materially unchanged relative to not punishing under the same deviation. The punisher imposes greater losses on the deviator while preserving its own average payoff, despite the availability of more profitable, less punitive liquidation plans. Matching deviations and subsequent additional selling rise and later decline during training, while final policies retain an effective punitive response. We formalise two checks: whether punishment outweighs the gain from deviating, and whether the change in trading behaviour is large enough to account for the loss imposed. Both checks hold for the tested deviation. Together, these findings provide behavioural and economic evidence supporting a collusive interpretation of the learned supra-competitive outcomes.",
+    "authors": [
+      "Christos Spyridon Koulouris",
+      "Carlo Campajola"
+    ],
+    "published": "2026-09-30",
+    "categories": [
+      "q-fin.TR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.00619v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.00619v1",
+    "fetched_at": "2026-10-02T14:23:39.700025"
+  },
+  {
+    "id": "2610.00340v1",
+    "title": "Short-term barrier option price expansion",
+    "abstract": "We derive a short-maturity expansion for up-and-out put barrier option prices under continuous stochastic volatility when the strike and the barrier approach the spot at the diffusive scale. Assuming joint weak convergence of the normalized terminal return, the relative volatility fluctuation, and the running maximum, together with uniform integrability, we show that the leading term is the time-inhomogeneous Black-Scholes barrier price fitted to the forward variance curve. The first model-dependent correction is of order $θ^{H+1/2}$, where $θ^H$, $H \\in (0,1/2]$, is the order of the relative volatility fluctuation, and is represented explicitly through killed Brownian transition densities. For regular volatility models, where $H= 1/2$, the coefficient is determined by the short-maturity at-the-money implied-volatility skew. For rough volatility models with $H < 1/2$, the coefficient reduces to a one-dimensional integral. Numerical experiments show that the correction materially improves the Black-Scholes approximation.",
+    "authors": [
+      "Masaaki Fukasawa"
+    ],
+    "published": "2026-09-29",
+    "categories": [
+      "q-fin.PR",
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.00340v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.00340v1",
+    "fetched_at": "2026-10-02T14:23:39.700215"
+  },
+  {
+    "id": "2610.00993v1",
+    "title": "The Price of Correlated Tests: How Strict Should a Model Release Gate Be?",
+    "abstract": "Before a machine learning model ships, it often has to pass a suite of automated tests. Requiring every test to pass looks safe, yet it can reject many models that would have served users well, and it does not say how trustworthy a passing model actually is. We treat the release gate as a design problem: choose how many tests a model must pass so that cleared models meet a stated reliability target, while keeping as many good models as possible. A two-class latent-factor model makes both costs explicit and reduces each calculation to a one-dimensional integral. We prove that when both classes share the same latent correlation, a stricter gate always raises reliability, so the gate that keeps the most good models is the most lenient one that still meets the target. Under pass-all gating, any reliability target short of perfection is attainable within the model, but the share of good models kept tends to zero as the suite grows. Correlation between tests sets the price. In one configuration, a 99 percent target needs 8 independent tests, but 74 tests at a latent correlation of 0.3 and 5,182 at 0.5, where the gate keeps fewer than one good model in ten. We also give a validation procedure, built on exact binomial bounds, that certifies a gate from labelled data even when the gate is chosen from a fixed shortlist.",
+    "authors": [
+      "Marco Pollanen"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.00993v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.00993v1",
+    "fetched_at": "2026-10-02T14:23:46.205380"
+  },
+  {
+    "id": "2610.02136v1",
+    "title": "MIRTO: a registration-gated, multiverse-tested evaluation protocol for unsupervised anomaly segmentation in brain MRI",
+    "abstract": "Unsupervised anomaly detection (UAD) methods for brain MRI are ranked by a single score, yet that score rests on choices that are rarely reported: how each anomaly map is aligned with the reference, how and on which data the threshold is set, and which false-positive budget, metric, aggregation and lesion definition are used. We present MIRTO, an evaluation protocol that makes these choices explicit and measures their effect. It gates the geometry of every comparison with a registration check and label-free diagnostics of known power, sets thresholds on validation data alone and reports the false-positive volume actually realised on test, repeats each comparison over 15,552 defensible evaluation pipelines, and attaches paired subject-bootstrap intervals with multiplicity control. Applied to four UAD methods trained on the same healthy data and tested on 312 BraTS 2020 subjects, MIRTO showed that an axis-order mismatch between stored maps and the reference lowered a diffusion model's voxel AUROC from 0.873 to 0.583 whilst barely moving its slice-level AUROC. Within each metric, the method explained at least 0.95 of the variance in voxel AUROC and AUPRC and 0.77 in Dice, but only 0.14 in lesion sensitivity, where the lesion definition and hit criterion dominated. A Dice advantage that was significant at validation thresholds vanished at equal realised false-positive burden, and an exact identity attributes it to threshold transfer. A training-free change to REFLECT's latent aggregation raised Dice at equal burden by 0.052. Nine hypotheses were tested against explicit criteria; because the same cohort served to develop the protocol, all inference is exploratory.",
+    "authors": [
+      "Negin Kafee Hernashki",
+      "Soumick Chatterjee"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "eess.IV",
+      "physics.med-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02136v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02136v1",
+    "fetched_at": "2026-10-02T14:23:52.731521"
+  },
+  {
+    "id": "2610.02048v1",
+    "title": "HydroJEV: A one-second, training-free screen for cyber-attack and fault attribution in water distribution networks",
+    "abstract": "When a SCADA alarm is raised in a water distribution network, operators must decide quickly whether it reflects a cyberattack, a physical fault, a normal transient or a faulty sensor. Supervised classifiers need labelled incidents that utilities rarely have, and frontier large language models (LLMs) take tens of seconds per decision. We tested whether Jev, a training-free model that returns class probabilities in about one second, can serve as the first tier of this triage. On a four-class cause-attribution benchmark built on the C-Town network in EPANET, Jev was compared with a hand-written rule tree, a supervised classifier and seven cloud LLMs on identical evidence in four sealed, pre-registered rounds. With only a label-free prior correction, Jev matched the rule tree (macro-F1 0.62-0.64 against 0.56-0.61 in distribution) and exceeded the supervised classifier by 0.36-0.42 on event subtypes absent from its labels, in all four rounds, and it outperformed the classifier whenever fewer than about four labelled events per class were available. Jev also decided 20-40 times faster than frontier LLMs. Accepting only benign Jev verdicts confirmed by the rule tree spared an LLM reviewer 35-38% of windows on fresh sealed sets without loss of macro-F1. Transferred unchanged to two further networks, this gated cascade stayed within the non-inferiority margin of its reviewer on all four sets. A fast, training-free screen can therefore take over about a third of the review load in SCADA anomaly triage while preserving the accuracy of deliberate review.",
+    "authors": [
+      "Tianwei Mu",
+      "Shengyan Jiang",
+      "Mingzhe Yuan",
+      "Qing Luo",
+      "Min Xiao",
+      "Wenhong Wang",
+      "Jun Li",
+      "Manhong Huang"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02048v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02048v1",
+    "fetched_at": "2026-10-02T14:23:52.731555"
+  },
+  {
+    "id": "2610.01754v1",
+    "title": "Cog-VADU: A Training-Free Cognitive Reasoning Framework for Video Anomaly Detection and Understanding",
+    "abstract": "Video Anomaly Detection (VAD) aims to temporally localize abnormal events in videos. Most existing approaches rely on dataset-specific training and curated annotations, limiting generalization in open-set scenarios. Recent zero-shot methods based on Large Vision- Language Models (LVLMs) alleviate this dependency but often lack temporal continuity and structured reasoning. We propose Cog-VADU, a fully training-free framework that reformulates VAD as a sequential cognitive reasoning task. Cog-VADU introduces Chain-of- Anomaly Detection Thought Prompting (CoADTP), which unrolls an LVLM into a recurrent reasoning chain across video segments. By propagating structured rationales over time, the model maintains implicit temporal memory, enabling robust discrimination between com- plex anomalies and high-motion normal activities. To improve reliability, we further design a cross-modal re-ranking stage that aligns textual rationales with visual embeddings, enforcing semantic consistency and temporal coherence for refined and stable predictions. Extensive experiments on multiple public VAD benchmarks demonstrate that Cog-VADU achieves competitive zero-shot performance. Moreover, cross-model evaluations show that CoADTP consistently enhances reasoning-based anomaly detection in a model-agnostic manner, pro- viding interpretable and generalizable anomaly understanding for real-world applications.",
+    "authors": [
+      "Mohd Ubaid Wani",
+      "Sara Atito",
+      "Josef Kittler",
+      "Muhammad Awais"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01754v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01754v1",
+    "fetched_at": "2026-10-02T14:23:52.731574"
+  },
+  {
+    "id": "2610.01721v1",
+    "title": "Anomaly Detection and Localization for the Pantograph-Catenary System",
+    "abstract": "Monitoring the Pantograph-Catenary System (PCS) provides insight into the health conditions of the pantograph and the railway infrastructure. Recent industrial solutions trace the pantograph's contact wire height and stagger (PCS height/stagger) using video monitoring through convolutional neural networks. However, these solutions do not account for the train route's geographic location. Therefore, in this paper we propose a novel framework for 1) localization of the PCS height/stagger by alignment with the nominal GPS coordinates of the reference route, and 2) collective anomaly detection to evaluate the health conditions of the PCS. We apply and assess the localization and detection performance of the methodology to a case-study based on a real-world industrial dataset provided by a railway transportation company, which includes the PCS height/stagger of several train journeys across Italian railway routes.",
+    "authors": [
+      "Francesco Vitale",
+      "Hangli Ge",
+      "Francesco Flammini"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01721v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01721v1",
+    "fetched_at": "2026-10-02T14:23:52.731590"
+  },
+  {
+    "id": "2610.01223v1",
+    "title": "Have an LLM Write Your Anomaly Detector: Autonomous Discovery of Compact, Interpretable Detectors for Time Series",
+    "abstract": "Time-series anomaly detection trades off predictive accuracy, computational efficiency, and interpretability. We use a large language model not as the detector but as the author of one: an autonomous research loop in which the model repeatedly edits a single short NumPy program under a leakage-free objective, keeping the best-scoring detector it finds. The loop discovers two compact detectors, one for univariate and one for multivariate series, that describe short windows by their local spectral features and compare them with the training-region distribution through a covariance-aware distance. On the TSB-AD benchmark these detectors lead the field across metrics, ahead of the strongest classical, deep, and foundation-model baselines including Time-RCD, yet they train no network and use no GPU, and the multivariate detector is faster than every similarly performing baseline. LLM-driven program search is thus a practical route to accurate, efficient, and transparent detectors.",
+    "authors": [
+      "David Berghaus"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01223v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01223v1",
+    "fetched_at": "2026-10-02T14:23:52.731604"
+  },
+  {
+    "id": "2610.01168v1",
+    "title": "Detect, Explain, Interpret: An End-to-End Benchmark for Time Series Anomaly Detection, Explainability and Interpretability",
+    "abstract": "Time Series Anomaly Detection has received increasing attention, driven by the growing availability of complex time series data. This surge has led to the development of numerous detection methods, as well as a variety of benchmarks aimed at thoroughly evaluating their performance. However, most existing detectors remain largely agnostic to domain context, overlooking explainability and interpretability. One of the main reasons for this gap is that current benchmarks primarily focus on detection accuracy, and only few of them evaluate spatial explainability. Moreover, no benchmark currently provides sufficiently rich semantic annotations to support the generation of human-understandable interpretations of anomalies. To address these limitations, we introduce SHAD (Scality High-dimensional Anomaly Detection benchmark), a fully annotated benchmark composed of 215 multivariate, high-dimensional time series collected from real-world distributed cloud storage systems operated by Scality. The proposed dataset includes rich contextual information, covering three families of anomalies with varying degrees of severity. As further contribution, we provide a foundation for future work by evaluating baseline methods for Detection, Explainability, and Interpretability, covering all stages of a TSAD pipeline. For Detection, we benchmark a wide range of existing anomaly detectors, testing their effectiveness on the proposed real-world dataset. Then, we consider explainability by evaluating whether measuring the contribution of each dimension in the generated anomaly score can provide accurate anomaly attributions. Finally, for interpretability, we investigate the effectiveness of frozen LLM baselines in localizing and interpreting anomalies.",
+    "authors": [
+      "Roberto Stanzione",
+      "Jules Barbe",
+      "Magali Parrino",
+      "Jérémie Fourmann",
+      "Paul Boniol"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01168v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01168v1",
+    "fetched_at": "2026-10-02T14:23:52.731623"
+  },
+  {
+    "id": "2610.00978v1",
+    "title": "Generalist Representation, Specialist Detection: TS-Router for Time-Series Anomaly Detection",
+    "abstract": "Time-series anomaly detection (TSAD) is difficult to generalize across datasets because heterogeneous temporal dynamics imply different notions of normality and favor different detection criteria. While time-series foundation models provide transferable representations, coupling them with a fixed anomaly-scoring mechanism can overlook this variation. This motivates a different perspective on foundation-model-based TSAD: using foundation models to coordinate specialized anomaly criteria rather than directly imposing a universal one. Based on this view, we propose \\textbf{TS-Router}, a generalist-representation, specialist-detection framework that estimates the relative competence of heterogeneous anomaly detectors from pretrained temporal representations and selects suitable specialists for each target series. To avoid relying on specialist-performance labels from real tasks, we derive soft competence supervision from specialists' relative performance on labeled simulated tasks. At deployment, routing requires no target anomaly labels, and only the selected specialists are fitted unsupervisedly on the target series. We bound Top-\\(k\\) set-competence regret under representation coverage and conditional competence stability. Across 16 real-world benchmarks and four complementary evaluation metrics, TS-Router achieves the best overall average rank. Controlled ablations with multiple frozen TSFM encoders further support the use of pretrained representations for competence estimation and adaptive specialist selection. The code is available at https://anonymous.4open.science/r/TS-Router-D8FF.",
+    "authors": [
+      "Tian Lan",
+      "Yifei Gao",
+      "Yimeng Lu",
+      "Xuming An",
+      "Meng Wang",
+      "Yue Pan",
+      "Wenjun He",
+      "Chenghao Liu",
+      "Chen Zhang"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.00978v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.00978v1",
+    "fetched_at": "2026-10-02T14:23:52.731650"
+  },
+  {
+    "id": "2610.02206v1",
+    "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+    "abstract": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve performance comparable to a 685B MoE model.",
+    "authors": [
+      "Pengfei Li",
+      "Naufal Suryanto",
+      "Sicheng Zhang",
+      "Muzammal Naseer"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02206v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02206v1",
+    "fetched_at": "2026-10-02T14:24:22.301174"
+  },
+  {
+    "id": "2610.02204v1",
+    "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+    "abstract": "Building reliable robot capabilities across diverse tasks requires substantial human effort to develop and maintain skills, design rewards, and integrate perception with control. We present Reconstruct, Practice, Go Real (RPG), a framework for autonomous improvement of robot execution systems without updating model weights. RPG identifies manipulation capabilities in an offline dataset and constructs related practice tasks in simulation. During practice, RPG uses execution feedback, privileged simulator state, and available dataset videos to diagnose failures. It develops new reusable symbolic skills, refines existing skills, and revises the system prompt based on these diagnoses. Cross-task evaluation tests individual candidate changes and merged revisions before they are retained for reuse. At test time, a multimodal LLM uses the resulting system prompt and skill library to coordinate perception and robot control. On held-out initializations of 22 manipulation tasks, RPG improves task success from 28.6% after the first practice round to 95.0% after 15 rounds, outperforming all evaluated baselines, including ASPIRE (75.5%) and CaP-Agent0 powered by GPT-6 Astra Pro (60.0%). After a common calibration and hardware-adaptation procedure, the frozen system succeeds in all 30 physical trials, with ten trials on each of three tasks. Project Website: https://rpg-robot.github.io/",
+    "authors": [
+      "Yen-Jen Wang",
+      "Haozhe Jiang",
+      "Shuying Deng",
+      "Haoru Xue",
+      "Weirui Ye",
+      "Rocky Duan",
+      "Nika Haghtalab",
+      "S. Shankar Sastry",
+      "Pieter Abbeel",
+      "Haozhi Qi"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02204v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02204v1",
+    "fetched_at": "2026-10-02T14:24:22.301215"
+  },
+  {
+    "id": "2610.02191v1",
+    "title": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
+    "abstract": "While Large Language Models (LLMs) have demonstrated striking capabilities on frontier mathematical problems, it remains unclear whether they possess the structural mathematical understanding underlying their solutions. In this paper, we take a first step toward systematically studying mathematical understanding in LLMs, from diagnosing its distinct capabilities to leveraging these findings to improve post-training. First, we introduce the notion of Mathematical Primitive to probe structural mathematical understanding and propose \\hlei{}, a novel benchmark that evaluates mathematical reasoning along four distinct dimensions: Discovery, Generation, Digestion, and Execution. Second, our systematic diagnosis shows that solution accuracy masks distinct capability profiles, primitives unlock substantial latent execution capacity, and Discovery is the dominant bottleneck in mathematical reasoning. Our post-training analysis further shows that discovery-limited failures are particularly amenable to repair. Finally, building on these findings, we introduce \\abs{}, a primitive-privileged self-distillation framework that selectively transfers primitive-guided reasoning into the student model. Extensive experiments demonstrate that \\abs{} consistently improves mathematical reasoning over baselines across model scales and challenging benchmarks.",
+    "authors": [
+      "Shuo Xing",
+      "Zilin Dai",
+      "Chengyuan Qian",
+      "Fangzhou Lin",
+      "Wenjing Chen",
+      "Ping He",
+      "Pan Lu",
+      "Alvaro Velasquez",
+      "Mohit Bansal",
+      "Zhengzhong Tu"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02191v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02191v1",
+    "fetched_at": "2026-10-02T14:24:22.301242"
+  },
+  {
+    "id": "2610.02185v1",
+    "title": "Decoding Looped Transformers Better for (Almost) Free",
+    "abstract": "Looped Transformers achieve parameter efficiency by repeatedly executing a shared block across recurrent loops. Each loop yields an intermediate representation decodable for the same next token, yet standard decoding discards earlier states. Because earlier loops embody less computation, recurrence inherently supplies aligned weak-and-strong prediction pairs without auxiliary models or external training. We introduce LoopCD, a training-free contrastive decoding framework that guides token selection by contrasting the final prediction with an earlier recurrent pass, operating either in logit space with one extra output pass (LoopCD-Logits) or in hidden-state space with zero output overhead (LoopCD-Hidden). Across four looped Transformer families, LoopCD delivers substantial, consistent gains at full recurrent depth: LoopCD-Logits raises Ouro-2.6B-Thinking's AIME 2024 pass@1 from 61.88% to 73.33%, while LoopCD-Hidden lifts Huginn's HumanEval pass@1 from 22.56% to 31.71%. Crucially, these performance gains enable halving the number of recurrent loops while still matching or exceeding full-depth unguided baselines, reducing forward FLOPs by 22.5% to 48.2%. By transforming intermediate recurrent states into effective guidance signals, LoopCD achieves superior decoding quality while substantially reducing inference compute.",
+    "authors": [
+      "Weihao Liu",
+      "Huangjie Zheng",
+      "Tianrong Chen",
+      "Rohit Dilip",
+      "Richard He Bai",
+      "Yizhu Jiao",
+      "Yuyang Wang",
+      "Ruixiang Zhang"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02185v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02185v1",
+    "fetched_at": "2026-10-02T14:24:22.301265"
+  },
+  {
+    "id": "2610.02170v1",
+    "title": "Watch, Infer, Coordinate: Inferring Robot Partner Constraints for Zero-Shot Coordination",
+    "abstract": "Robots operating in the physical world will increasingly need to coordinate with other robots, particularly in manipulation tasks where an object may be too large or heavy for a single robot to carry alone. Physical limitations caused by hardware degradation or actuator faults can restrict the actions a robot can reliably execute, yet these limitations may be unknown to its partner. We study whether a helper can infer a robot partner's physical constraints from observing it coordinate with another robot, then use the inferred capability to coordinate with the same partner on a new task. This is difficult because a demonstration shows what the constrained robot did, but not what it could have done. In physically coupled tasks, the other robot may also compensate for its limitations, making those limitations difficult to identify from the constrained robot's behavior alone. Our key insight is that these constraints shape the joint behavior of the team, making the actions of both robots informative about the constrained partner's capability. We introduce Watch, Infer, Coordinate, a benchmark spanning three physically coupled manipulation settings, together with an inference approach that scores candidate constraints using observed joint behavior. Across all three settings, our method substantially improves constraint inference and zero-shot coordination, approaching an oracle with access to the true constraints.",
+    "authors": [
+      "Suyu Ye",
+      "Zheyuan Zhang",
+      "Vaishnav Tadiparthi",
+      "Hossein Nourkhiz Mahjoub",
+      "Ehsan Moradi Pari",
+      "Tianmin Shu",
+      "Homanga Bharadhwaj",
+      "Nakul Agarwal"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02170v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02170v1",
+    "fetched_at": "2026-10-02T14:24:22.301289"
+  },
+  {
+    "id": "2610.02163v1",
+    "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+    "abstract": "Coding agents solve repository-level software engineering tasks through long trajectories of code inspection, search, editing, and testing. As a task progresses, earlier exploration becomes stale, so managing context is more than avoiding overflow: an agent must decide when to compact, what working state to preserve, and how to continue from it. We introduce AutoCompact, which trains a coding agent to make these decisions as part of its policy. To collect training data, we run the base agent on coding tasks and use a judge to review its compaction decisions, summaries, and actions after compaction. Flawed outputs are replaced with corrected ones before being executed in the environment, so each trajectory continues from the corrected decisions. We use these trajectories for supervised fine-tuning, then jointly optimize coding and compaction through reinforcement learning with task-success rewards. Experiments on SWE-bench Verified and SWE-PolyBench Verified show that AutoCompact improves pass rates over the base model by an absolute 9.2\\% and 5.0\\%, respectively. The improvements hold across all evaluated inference budgets, with a 256K context window that never overflows and with a 16K window whose overflow triggers fallback compaction.",
+    "authors": [
+      "Xuan Zhang",
+      "Longtao Zheng",
+      "Cunxiao Du",
+      "Bo An",
+      "Xin Dong"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02163v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02163v1",
+    "fetched_at": "2026-10-02T14:24:22.301308"
+  },
+  {
+    "id": "2610.02161v1",
+    "title": "DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication",
+    "abstract": "Vision-language models (VLMs) and vision-language-action models (VLAs) have recently driven rapid progress in general-purpose robots, yet most progress has focused on single-robot settings. Extending these capabilities to multi-robot systems remains challenging because robots must coordinate long-horizon behaviors while maintaining reliable, fine-grained execution. We introduce DuoMind, a distributed hierarchical framework for multi-robot coordination through semantic communication. Each robot uses a VLA-based action model for low-level execution and a VLM-based orchestrator for high-level reasoning and inter-agent coordination. At each planning step, the orchestrator at each robot reasons over the task instruction, local observations, and messages received from other robots. It then generates low-level instructions for the action model and semantic messages for peer robots. This architecture exploits the complementary strengths of pretrained models by combining the semantic reasoning capabilities of VLMs with the precise action-generation capabilities of VLAs. To address the scarcity of benchmarks for multi-robot coordination, we further develop RoboPoly, a benchmark comprising long-horizon manipulation tasks that require coordinated, closed-loop execution under distributed control. Experiments on RoboPoly and RoboTwin demonstrate that DuoMind improves multi-robot task performance, while ablation studies confirm the contributions of hierarchical orchestration and semantic communication. More details are available on our project page.",
+    "authors": [
+      "Hanchu Zhou",
+      "Dechen Gao",
+      "Hang Wang",
+      "Brendan Lynch",
+      "Boqi Zhao",
+      "Qiyao Ma",
+      "Raman Goyal",
+      "Junshan Zhang"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02161v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02161v1",
+    "fetched_at": "2026-10-02T14:24:22.301331"
+  },
+  {
+    "id": "2610.02144v1",
+    "title": "Faynt: Scaling and Optimizing Policies for Competitive Melee",
+    "abstract": "We introduce Faynt, a family of 10M- and 75M-parameter Transformer policies for Super Smash Bros. Melee, each controlling all 26 characters with a single checkpoint. After reinforcement learning (RL), the 10M wins 240 of 244 same-character games (98.4%) against fourteen specialist and multi-character releases on their supported rosters, with a winning record against every release. These opponents retain 21- or 24-frame action delays; Faynt uses no added delay, and we have not isolated the effect of this difference. In a separate evaluation against a privately supplied zero-delay Slippi-AI model, the 10M wins all 68 games across two conditioning settings. We study architecture, optimization, scaling, and hyperparameter transfer to guide pretraining on approximately 840,000 human replays. Post-training combines rank- and outcome-based curricula, 75M-to-10M distillation, and RL restricted to Fox mirror matches. On the initial 152-game benchmark, the supervised 10M wins 69.7% of games, compared with 45.4% for the pretrained 75M, despite higher overall held-out controller-prediction loss. The weighted validation loss used for supervised checkpoint selection agrees with the win-rate ordering of all four pretrained and supervised policies. After supervised post-training, both models take less damage per minute, build larger early leads, and win more often after losing the first life. Optimized inference on recorded game states averages 5.2 ms per decision for the 10M and 8.7 ms for the 75M on an NVIDIA T4, excluding emulator execution and communication. We open-source the weights, both benchmark suites, and a platform for automated model tournaments.",
+    "authors": [
+      "Ali Janati",
+      "Nikita Kuzmin",
+      "Rohit Swamy",
+      "Charles Niu"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02144v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02144v1",
+    "fetched_at": "2026-10-02T14:24:22.301348"
+  },
+  {
+    "id": "2610.02122v1",
+    "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+    "abstract": "Real-world enterprise data science and analytics workflows require reasoning across dozens of tables, performing statistical analyses, and acting on the results. Established text-to-SQL benchmarks evaluate query generation alone, and audits have found their answer keys frequently wrong. Because real enterprise warehouses are too sensitive to release, these benchmarks are built on public datasets where a business event fits in a single table. We introduce Argo-Bench, an evaluation framework comprising 210 data science and analytics tasks. Drawing on public data, peer-reviewed industry literature, and regulatory filings, we simulate a food delivery platform in New York City at true scale, with 81 million orders in 2024, grounded economics, fraud patterns, and marketplace incentives. We export this world to an ERP warehouse of 235 tables and 7.5 billion rows, modeled on the Oracle E-Business Suite schema. The simulator's ground-truth state is withheld from the warehouse the agent sees, so tasks require reconstructing facts by navigating the warehouse before acting on them. Argo-Bench goes beyond text-to-SQL: the agent files actions such as banning fraudulent accounts, allocating courier incentive budgets, or issuing back pay, and the grader scores each by its consequences in the simulator. Every task has an executable reference solution that demonstrates solvability using only the warehouse. The strongest of 14 frontier and open-weight models scores 95 or higher on only 34.8% of tasks and averages 59.5 points. We hope Argo-Bench drives progress toward agents that understand, navigate, and act within real data environments.",
+    "authors": [
+      "Gabriel Tomitsuka",
+      "Arman Raayatsanati",
+      "Emma Xing",
+      "Duke Gand",
+      "Joseph J Ma"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.DB"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02122v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02122v1",
+    "fetched_at": "2026-10-02T14:24:22.301368"
+  },
+  {
+    "id": "2610.02098v1",
+    "title": "Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability",
+    "abstract": "Mechanistic interpretability aims to recover the internal computations responsible for model behavior. Progress in automated circuit discovery is often framed as a search problem: better attribution or optimization should identify better mechanisms. This assumes that the evaluation objective can recognize a better circuit once it is found. We show that intervention-defined faithfulness can instead prefer an equally sized circuit that reproduces the model's behavior less well, creating an objective-level recovery gap. Across four human-reference tasks and InterpBench, we compare validation faithfulness with behavior on held-out prompts under fixed ordinary resampling. The behavioral criterion is agreement with the intact model, including its mistakes, except on Greater-Than, where we use semantic accuracy. Controlled reference edits reveal misranking without any discovery algorithm, and outputs of EAP, EAP-IG, ACDC, and Edge-SP exhibit the same failure. Under resampling, KL misranks 9.4%-41.2% of candidate pairs across these methods on the human-reference tasks. We investigate context distortion as an explanation: replacing excluded signals changes the inputs on which retained components operate. Restoring selected signals from the recipient's intact-model execution repairs 96 of 100 persistent KL misrankings from the discovery pool on both validation and held-out prompts. The circuits and their original behavioral scores remain unchanged. These findings show why better discovery alone is insufficient when its objective rewards the wrong candidate.",
+    "authors": [
+      "Chuqin Geng",
+      "Li Zhang",
+      "Haolin Ye",
+      "Mark Zhang",
+      "Luke Zhang",
+      "Xujie Si"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02098v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02098v1",
+    "fetched_at": "2026-10-02T14:24:22.301388"
+  },
+  {
+    "id": "2610.02089v1",
+    "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
+    "abstract": "As robotic hardware and learning methods advance, humanoids need tools to perform tasks beyond their inherent physical limits. Successful tool use requires selecting a suitable tool and coordinating manipulation and, when needed, locomotion to complete the task. Existing benchmarks do not jointly evaluate these capabilities on a humanoid. We introduce HumanoidToolBench, an 18-task benchmark spanning three scenarios, three execution levels, and two tool-set modes, together with ToolBook, a dataset of 3.1k demonstrations collected in simulation and on a real Unitree G1. Evaluation of seven policies in simulation and three on the real robot reveals substantial gaps between selecting a suitable tool and completing the task. Focused GR00T N1.7 probes show reduced selection accuracy on unseen tools and continued task execution under unrelated instructions. Code and data are available at https://snu-pi.github.io/HumanoidToolBench/.",
+    "authors": [
+      "Kyochul Jang",
+      "Seohyeon Park",
+      "Ohchul Kwon",
+      "Sangjun Park",
+      "Junhyeok Choi",
+      "Seungyeop Yi",
+      "Chaeyun Kim",
+      "Sangkyu Lee",
+      "Idan Szpektor",
+      "Avi Caciularu",
+      "Jongmin Park",
+      "Youngjae Yu"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02089v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02089v1",
+    "fetched_at": "2026-10-02T14:24:22.301422"
+  },
+  {
+    "id": "2610.02038v1",
+    "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
+    "abstract": "Large language model (LLM) agents increasingly combine reasoning, tool use, and action, but most evidence comes from episodic tasks with relatively immediate feedback and reset failures. Long-running physical control operates in a different regime: actions alter future states, errors compound across decisions, and an agent must improve from experience without being allowed to rewrite the physical rules that make execution safe. We study this regime through irrigation, where daily decisions interact with soil-water dynamics over entire growing seasons. We present Mimir, a physics-grounded LLM agent organized around two repair timescales. At the fast timescale, a structured physical interface and deterministic simulator turn an LLM output into a proposal that we numerically check, revise, and subject to bounded deterministic action selection before execution. At the slow timescale, recurrent failure patterns are consolidated into persistent contextual principles that condition future proposals, while the physical model, evaluator, and execution constraints remain immutable. Under a common retrospective evaluator across multiple sites, crops, and years, Mimir attains the lowest reported aggregate control cost among the evaluated references and uses about 51% less irrigation than the historical schedule replay. The ablation study show higher control cost when forward simulation, verified revision, or persistent context is removed; model-scale and model-family studies show no monotonic gain from increasing LLM size. The resulting lesson show that persistent physical agents can combine semantic reasoning with bounded, evidence-driven self-improvement while reserving physical truth and actuator authority for explicit numerical mechanisms.",
+    "authors": [
+      "Yimeng Liu",
+      "Mi Zhang",
+      "Younsuk Dong",
+      "Zhichao Cao"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02038v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02038v1",
+    "fetched_at": "2026-10-02T14:24:22.301439"
+  },
+  {
+    "id": "2610.02001v1",
+    "title": "Mingbird: A Local-First Agent Harness Enabling Small Open Models to Complete Real Tasks",
+    "abstract": "Small open-weight models (2-9B) run on ordinary laptops, but under cloud-scale agent harnesses they rarely complete real tasks: tool prefill overflows the context, self-correction diverges, tool demonstrations loop, and tasks are silently abandoned. We present evidence, from a controlled single-machine comparison and one third-party benchmark, that a substantial share of these failures is attributable to the harness rather than the model. We introduce Mingbird, a local-first agent harness for Windows and Ollama whose ten mechanisms compensate point-by-point for small-model failure forms, three of them representative: a byte-level net-zero prefill budget, a finish gate that re-reads the task before accepting completion, and signature-level loop detection. On LRAB, a controlled comparison holding machine, models, budgets, and scoring fixed (4 harnesses $\\times$ 4 open models (2B-35B) $\\times$ 18 real tasks, deterministic artifact scoring), Mingbird reaches 0.886 overall against 0.631 (goose), 0.479 (opencode), and 0.405 (agent-mini), with all 288 cells published; on $τ^2$-bench (278 tasks, three arms, one protocol) it totals 0.856 against 0.791 and 0.737; and a frontier-model probe on the same 18 tasks spans 0.997 to 0.478 across harnesses, with well-formed scaffolds staying within 0.072 of each other. A leave-one-mechanism-out ablation is reported as directional only: same-night replications of the same arm move its mean by up to 0.069, the size of every nominal single-trial delta, and the one batch-matched comparison (full mechanism stack versus text re-read alone) gives the executable completion guards a paired +0.10 across three replications. The evidence carries stated limits: a self-built benchmark, a single machine, and single-trial scoring.",
+    "authors": [
+      "Hao Wang",
+      "Ting Huang"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.02001v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.02001v1",
+    "fetched_at": "2026-10-02T14:24:22.301455"
+  },
+  {
+    "id": "2610.01967v1",
+    "title": "FastCI: Efficient GPU-Intensive CI for LLM Training Frameworks",
+    "abstract": "As large language models (LLMs) keep growing in size and complexity, their training frameworks evolve at a rapid pace as well. Therefore, continuous integration (CI) is critical for maintaining the quality and stability of these frameworks. However, unlike traditional software, CI for LLM training frameworks relies on GPU-intensive tests, which usually involve complete model training or evaluation. This leads CI itself to become a new bottleneck for fast-paced development. In this paper, we introduce FastCI, a framework that improves the efficiency of CI for LLM training frameworks. FastCI leverages runtime evidence to select affected tests and prune tests that execute changed code in equivalent contexts. Then FastCI prioritizes high-risk tests to expose potential failures earlier, and optimizes test workloads along dimensions outside the intended validation scope of each test. Evaluated on the CI workload of our LLM training framework, FastCI reduces the CI latency by 77.5% and the GPU resource usage by 63.9%, while improving the modified code coverage retention by 3.2%, compared with the currently deployed CI pipelines. FastCI has now been integrated into the CI pipelines of our LLM training framework at ByteDance.",
+    "authors": [
+      "Tianshuo Qiao",
+      "Naiqian Zheng",
+      "Xiaopeng Liu",
+      "Shuguang Wang",
+      "Diandian Gu",
+      "Xuanzhe Liu",
+      "Xin Jin"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01967v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01967v1",
+    "fetched_at": "2026-10-02T14:24:22.301477"
+  },
+  {
+    "id": "2610.01893v1",
+    "title": "A Structured State Space Sequence Model for Multi-Class Classification of Malware",
+    "abstract": "By 2030, Internet of Things (IoT) devices are projected to reach 40 billion, with fast-paced technological advancements in fields such as industry, healthcare, agriculture, automobiles, and building/home automation systems. This expansion has created a large attack surface for cybercrime, as the majority of these devices open the door for cybercriminals to exploit vulnerabilities, as they lack adequate built-in security. Cybercriminals launch malware attacks to compromise systems or steal sensitive data, and once a system is compromised, a ransom is typically demanded for its release. Current cybersecurity measures in place are being outpaced by the rapid growth of the IoT, which is accompanied by a subsequent growth in malware variants being created per day. Recognizing this pitfall, this research examines and proposes a novel approach to malware detection and classification to safeguard devices from further attacks and make IoT systems more robust and secure. The framework proposed utilizes a Structured State Space Sequence (S4) model, which discretizes sequences of malware samples in a sequence and captures long-range dependencies, essentially identifying the \"cause\" and \"effect\" hidden within malware execution flow. This study presents two novel contributions: the first empirical application of the S4 model for malware analysis, and a comprehensive comparison of its performance against other deep learning architectures, laying the stepping stone for future research in this new paradigm.",
+    "authors": [
+      "Emmanuela Andam",
+      "Rana Shaaban",
+      "Emanuel Grant",
+      "Naima Kaabouch"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01893v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01893v1",
+    "fetched_at": "2026-10-02T14:24:22.301495"
+  },
+  {
+    "id": "2610.01572v1",
+    "title": "Optimal Momentum Methods for Stochastic Multilevel Compositional Optimization",
+    "abstract": "This paper investigates stochastic multi-level optimization where the objective is a nested composition of several smooth non-convex functions. We assume that only stochastic estimates of the gradient and function values for each level are accessible. Consequently, obtaining an accurate estimate of the overall gradient is challenging due to the nested structure. To address this, we employ a momentum-based estimator with mini-batches to track the function values of each level, which are subsequently used to construct momentum gradient estimators. We establish an optimal sample complexity of $\\mathcal{O}(ε^{-4})$ for finding an $ε$-stationary point, avoiding the stronger average smoothness assumption commonly relied upon in prior literature. Furthermore, by employing a normalization technique, we attain the same rate without requiring problem-dependent constants to set hyperparameters. To achieve the optimal rate without mini-batches, we further develop a batch-free method that incorporates a first-order approximation and a clipping technique for function value estimation. Finally, we validate the effectiveness of our proposed methods through experiments on risk-averse portfolio optimization and hierarchical tilted empirical risk minimization.",
+    "authors": [
+      "Wei Jiang",
+      "Rui Yan",
+      "Sifan Yang",
+      "Yuanyu Wan",
+      "Lijun Zhang",
+      "Zechao Li"
+    ],
+    "published": "2026-10-01",
+    "categories": [
+      "math.OC",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.01572v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.01572v1",
+    "fetched_at": "2026-10-02T14:26:16.060817"
+  }
+]
