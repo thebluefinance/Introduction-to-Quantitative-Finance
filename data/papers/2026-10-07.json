@@ -1,0 +1,612 @@
+[
+  {
+    "id": "2610.08631v1",
+    "title": "Exponential investors with weakly mean-reverting prices",
+    "abstract": "We investigate a continuous-time financial market where the asset price exhibits weak (sublinear) mean reversion and has a nonzero drift. Complementing earlier work on strong (superlinear) mean reversion, we show that, for an investor maximizing expected exponential utility, the certainty equivalent grows as $O(T^{2β+1})$ where $0<β<1$ is the strength of mean reversion. An explicit asymptotically optimal strategy is also given.",
+    "authors": [
+      "Balazs Hoffmann",
+      "Miklos Rasonyi"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "q-fin.PM",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08631v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08631v1",
+    "fetched_at": "2026-10-07T15:00:18.567541"
+  },
+  {
+    "id": "2610.08169v1",
+    "title": "Modelling Regime Shifts in Continuous Intraday Electricity Markets with State-dependent Hawkes Processes",
+    "abstract": "The growing importance of intraday trading in Europe, driven by the increasing penetration of renewable energy sources, has led to higher volatility and periods of market stress. Understanding how order flow behaves under varying liquidity conditions requires models that adapt to the state of the market. This paper proposes a multivariate state-dependent Hawkes process to model the flow of orders across different liquidity regimes in the intraday continuous electricity market. The observed market states are identified using a proposed Liquidity Stress Index (LSI), which quantifies stress using the bid-ask spread in the limit order book, order book volume, and mid-price volatility. Transitions between states induce changes in the intensity parameters, resulting in piecewise dynamics that reflect regime-specific order-flow behavior. The model is calibrated on January-March 2024 Dutch intraday continuous cross-border intraday (XBID) hourly order data from EPEX SPOT. The estimated dynamics show that order flow is strongly self-exciting and near-critical, that executed trades trigger new same-side orders while the reverse effect is negligible, and that liquidity stress mainly strengthens transaction self-excitation rather than reshaping the cross-side structure. Robustness checks over the LSI composition and the state partition show that the results are driven by the regime construction itself: alternative index compositions fit within a narrow band, three states fit better than two, and removing the states clearly degrades the fit relative to a single-regime Hawkes benchmark. The results highlight both the value of conditioning order-flow models on liquidity stress and the limits of a single-exponential specification when event frequencies are highly imbalanced.",
+    "authors": [
+      "Ayoub Jhabli",
+      "Tarek AlSkaif",
+      "Kwabena E. Bennin",
+      "Bedir Tekinerdogan",
+      "Axel Naumann",
+      "Joost M. E. Pennings"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08169v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08169v1",
+    "fetched_at": "2026-10-07T15:00:18.567574"
+  },
+  {
+    "id": "2610.07985v1",
+    "title": "A Finite Bid--Ask Spread from Replenishment Displaced from the Quote",
+    "abstract": "We give a unified analytic account of a finite bid--ask spread in a two-field reaction--diffusion order book. The model retains separate bid and ask densities in operational time, with diffusion, cancellation, reaction and external order creation. On the symmetric equal-coefficient branch, the imbalance field determines the reaction price, while the total standing density carries the spread geometry. A market-making source is introduced by withholding order placement over a finite interval around the reaction boundary, representing round-trip replenishment displaced from the quote. Under a separated, quasistationary and weak-overlap approximation, transport penetrates inward from the placement edges over the cancellation length, giving the quoted spread as the sub-threshold core of the placement-source-free interval. Market orders remove standing density at the observed quote, whereas replenishment is delivered outside it and must diffuse back across the penetration depth. We derive the resulting delayed and attenuated quote-level response in operational time. On that branch, finite spread and price impact arise from distinct response sectors, while their calendar-time appearance requires a separate observation clock.",
+    "authors": [
+      "Christopher Angstmann",
+      "Derick Diana",
+      "Tim Gebbie"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "q-fin.TR",
+      "physics.soc-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07985v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07985v1",
+    "fetched_at": "2026-10-07T15:00:18.567589"
+  },
+  {
+    "id": "2610.07888v1",
+    "title": "A Functional Representation of Credit Behavior for Probability of Default Modeling",
+    "abstract": "This paper proposes a framework for modeling probability of default via functional data analysis. By representing a series of credit variables as functions, we investigate whether intra-monthly information improves default predictability in linear models. We further show how a range of widely used variables, among them available funds, utilization rate, and overdraft, can all be derived from three quantities observed over time. Namely, 1) the type of each account, 2) the balance of the account, and 3) the size of the credit limit on the account. Retaining these quantities as continuous-time processes, rather than reducing them to monthly aggregated values, yields a continuous faithful representation of the borrower. When analyzing these three processes, we discovered that recurring events associated with the ordinal position among banking days created strong cyclical patterns. We therefore develop a relative time framework that aligns the recurring events across borrowers, ensuring that borrowers possess the same cyclical pattern, regardless of real time. We assess the framework using functional logistic regression. This approach accommodates the continuous representation while remaining closely related to a logistic regression model commonly used in credit risk practice, due to strict regulatory constraints. We show that, when equipped with an effective functional representation of transactional trajectories, the proposed model attains predictive performance on par with XGBoost while consistently outperforming logistic regression. Importantly, the model balances predictive performance of a machine learning model with the interpretability of linear default models, potentially enabling financial institutions to use the model, even under strict regulation.",
+    "authors": [
+      "Jonas Brunholm",
+      "Bjarne Højgaard",
+      "Thomas D. Nielsen",
+      "Orimar Sauri"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "q-fin.RM",
+      "stat.ME"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07888v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07888v1",
+    "fetched_at": "2026-10-07T15:00:18.567603"
+  },
+  {
+    "id": "2610.07404v1",
+    "title": "Convex Order Beyond Dimension One: Projection Tests, Counterexamples and Gaussian Mixtures",
+    "abstract": "In actuarial science and quantitative finance, convex order provides a natural way to compare risks with the same mean. In dimension one, convex order is well understood through several characterisations. In higher dimensions, a natural approach is to compare all one-dimensional projections, but, although necessary, the resulting condition is in general not sufficient for multivariate convex order. A simple counterexample due to Pinelis exploits Popoviciu's inequality. We revisit this example using gauge functions, and show that gauge functions themselves do not suffice to characterise multivariate convex order for symmetric distributions, even in dimension two. We then show that the radial case makes the source of the failure transparent and construct radial counterexamples in every dimension at least two. Nevertheless, projection tests are sufficient for some important families of distributions. In particular, this is the case for linear transformations of a common radially distributed random vector. This framework includes elliptical distributions generated from a common radial distribution and, in particular, centred Gaussian distributions. Beyond comparisons between Gaussian distributions, Jourdain and Pagès recently studied the comparison of a Gaussian distribution with a Gaussian mixture, obtaining necessary conditions and sufficient conditions whose equivalence was left open in general. In this paper, we settle the comparison of a centred Gaussian distribution with a mixture of two centred Gaussian distributions: in every finite dimension, the Gaussian is dominated by the mixture in multivariate convex order if and only if all one-dimensional projections are ordered in convex order.",
+    "authors": [
+      "Olivier Guéant"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "math.ST",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07404v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07404v1",
+    "fetched_at": "2026-10-07T15:00:18.567614"
+  },
+  {
+    "id": "2610.07162v1",
+    "title": "Adversarial Training for Deep Hedging in Nonstationary Markets",
+    "abstract": "Deep hedging learns trading policies from historical or simulated market trajectories, yet under nonstationarity these training paths may not represent future market conditions. We propose WRAP (Wasserstein-Reweighting Adversarial Perturbation), a drift-aware adversarial training framework derived from a two-budget distributionally robust optimization (DRO) formulation. The formulation is anchored to a weighted empirical reference distribution whose fixed baseline weights are chosen to balance sampling uncertainty against temporal drift. Around this reference distribution, the ambiguity set addresses two complementary forms of distributional misspecification by allowing an adversary to reweight the observed trajectories subject to a $φ$-divergence constraint and perturb their paths subject to an optimal-transport (OT) constraint. We derive a joint first-order expansion in which the leading-order increase over the nominal expected loss decomposes into a reweighting contribution determined by the dispersion of hedging losses across trajectories and a transport contribution determined by the sensitivity of the loss to path perturbations. This expansion yields an explicit finite-dimensional adversarial attack that replaces the distributional inner supremum with a tractable first-order approximation. Across stationary and nonstationary Heston dynamics and a generalized affine diffusion (GAD), the experiments show complementary benefits from reweighting and transport, with joint adversarial training providing the largest gains under nonstationarity.",
+    "authors": [
+      "Philipp J. Schneider",
+      "Lukas Looser",
+      "Antoine Garin",
+      "Shuhan Liu",
+      "Daniel Kuhn"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "cs.LG",
+      "math.OC",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07162v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07162v1",
+    "fetched_at": "2026-10-07T15:00:18.567629"
+  },
+  {
+    "id": "2610.05740v2",
+    "title": "Latent Continuum of Regimes in Limit Order Book Dynamics",
+    "abstract": "Market-regime models typically assume a finite set of discrete latent states. We examine whether high frequency limit-order-book dynamics exhibit distinct regime separation or apparent regimes result from discretising an underlying continuum, analysing deep limit-order book data for EURO STOXX 50 index futures across 987 clean trading days from 2022 to 2025 using 30, 45 and 60-second aggregation windows. Market states are represented by symmetric positive definite covariance matrices and analysed under Log-Euclidean and affine-invariant geometries; the resulting state cloud has an effective dimension of approximately 1.4. A causal anomaly layer filters statistical, calendar and rollover contamination, while label-free economic validation evaluates market-state separation independently of volatility-based proxy labels. A 17-method zoo spanning conventional and Riemannian representations, reinforced by full-cloud geometric certificates, consistently favours a continuum over a discrete regime structure. A dominant latent coordinate captures between 83.66% and 85.27% of variation in the covariance-state geometry and tracks VSTOXX without regime labels, remaining stable across years although its average level shifts with market conditions, indicating that conventional regimes are coarse quantisations. A divisive hierarchy spanning macro, macro-subregime, micro and micro-subregime tiers is evaluated using expanding-year walk-forward tests, with out-of-sample performance strongest at the macro tier while finer tiers fail to generalise; continuous fine-scale information nonetheless remains predictive, and its discretisation causes the performance loss. Forecasting performance peaks near ten minutes, reaching a maximum pooled R2_OOS of 0.7483. Overall, the latent stress coordinate defines a stable, low-dimensional geometric continuum that captures market stress and its predictive dynamics.",
+    "authors": [
+      "Anjali Thawait"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.CP",
+      "q-fin.MF",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.05740v2",
+    "arxiv_url": "https://arxiv.org/abs/2610.05740v2",
+    "fetched_at": "2026-10-07T15:00:18.567723"
+  },
+  {
+    "id": "2610.06947v1",
+    "title": "FactorBench: A Portfolio-Aware Benchmark for Automated Factor Mining",
+    "abstract": "Factor mining seeks to discover signals from financial data that predict future asset returns and guide portfolio construction. Automated factor mining now spans genetic programming, reinforcement learning, generative models, and large language model agents. Yet it remains unclear whether advances across these paradigms yield more generalizable, distinct, and economically useful financial signals. We introduce FactorBench, a portfolio-aware benchmark comparing roughly five thousand mined factors from nine automated mining methods across five equity markets. A shared data and evaluation contract supports both symbolic expressions and executable Python factors, connecting heterogeneous discovery algorithms to common signal combination and portfolio construction procedures. FactorBench traces the outputs of mining systems across three levels: factor validity, temporal generalization, and predictiveness beyond measured risk and style exposures; within- and across-method pool distinctness, including similarity to the benchmark Alpha101; and composite-signal quality and after-cost long-only and long--short portfolio performance. After systematically assessing whether advances in factor mining translate into signal quality and portfolio performance, FactorBench finds that no paradigm consistently dominates.",
+    "authors": [
+      "Zhuohan Wang",
+      "Carmine Ventre"
+    ],
+    "published": "2026-10-03",
+    "categories": [
+      "q-fin.PM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.06947v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.06947v1",
+    "fetched_at": "2026-10-07T15:00:18.567820"
+  },
+  {
+    "id": "2610.07284v1",
+    "title": "Empirical-Bayes spectral partial pooling across related tasks",
+    "abstract": "Spectral methods are central to high-dimensional statistics and machine learning, underlying procedures for covariance estimation, matrix denoising, representation learning, clustering, and latent variable modeling. In this work, we focus primarily on spectral estimators for high-dimensional factor models, where leading singular vectors of the data matrix are used to estimate latent structure and covariance parameters. In many modern applications, however, data are collected across related but heterogeneous tasks, studies, domains, or populations. Applying such estimators separately to each task can lead to unstable estimates when sample sizes are limited relative to dimension, while completely pooling the data can obscure meaningful task-specific structure. We introduce Hierarchical Spectral Shrinkage (\\texttt{HSS}), a scalable empirical-Bayes framework for partially pooling task-specific spectral estimators. The method regularizes the leading spectral directions of each task toward a data-adaptivelylearned common basis, while allowing the amount of shrinkage to vary across tasks and spectral components. The proposed estimator arises as the posterior mean in a surrogate Bayesian regression formulation of the empirical singular vectors. For factor models, \\texttt{HSS} yields partially pooled estimators of the group-specific loading spaces and covariance matrices and can be combined with different spectral estimators by replacing their empirical singular vectors with hierarchically regularized counterparts. More broadly, the same construction provides a mechanism for extending spectral estimators to collections of related but heterogeneous datasets. We demonstrate substantial improvements in estimation accuracy and out-of-sample performance over separate, fully pooled, and shared-subspace approaches in synthetic experiments and multi-study gene-expression data.",
+    "authors": [
+      "Lorenzo Mauri"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "stat.ME",
+      "stat.CO",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07284v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07284v1",
+    "fetched_at": "2026-10-07T15:00:25.532965"
+  },
+  {
+    "id": "2610.08363v1",
+    "title": "Explainable Failure Prediction and Prevention in Maritime",
+    "abstract": "Maritime systems operate in highly dynamic environments where unexpected equipment failures can compromise safety, reliability, and operational efficiency. Recent advances in artificial intelligence (AI), machine learning, digital twins, and predictive maintenance enable proactive failure prediction and prevention. However, ensuring trustworthy and explainable decision-making remains a major challenge in safety-critical maritime applications. This chapter reviews key AI technologies required for explainable failure prediction and prevention in maritime systems and presents a conceptual architecture capable of supporting autonomous or human-in-the-loop corrective actions. This architecture integrates data acquisition, time-series forecasting, anomaly detection, risk assessment, decision-making, and explainable AI into a closed-loop framework. With reference to the architectural components, a review and discussion of relevant maritime studies is performed, outlining their methods, advantages, and limitations. Furthermore, it highlights current challenges, including uncertainty and robustness, model generalization, explainability, limited availability of maritime datasets, and operational deployment, and identifies future research directions toward trustworthy AI-assisted maritime decision-making.",
+    "authors": [
+      "Dionisis Kalogeropoulos",
+      "Georgia Sovatzidi",
+      "Panagiotis G. Kalozoumis",
+      "Dimitris K. Iakovidis"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08363v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08363v1",
+    "fetched_at": "2026-10-07T15:00:32.290576"
+  },
+  {
+    "id": "2610.07895v1",
+    "title": "Textual Environmental Context and Spatial Graphs for LLM-Based Regional SST Forecasting",
+    "abstract": "Sea surface temperature (SST) forecasting depends on local temporal persistence, regional spatial dependence, and environmental conditions that evolve with the forecast date. We study how these heterogeneous conditions can be presented to a large language model (LLM) for regional multi-step forecasting without serializing the full SST grid as text. We formulate forecasting as conditional numerical generation: historical SST and anomaly sequences, date-aligned environmental records, and static ocean knowledge form a textual context, while regional spatial state is supplied through continuous graph-derived prefixes. A static graph encodes persistent geographic--climatological relations, and a dynamic graph encodes recent SST correlations and localized tropical-cyclone influence. Two graph neural networks produce a target-node representation that is mapped by a spatial-prefix fusion and injected into the LLM input. On SST forecasting in the South China Sea, the complete configuration achieves the best MAE and $\\Rtwo$ among the compared methods over ten forecast steps. Alongside the numerical forecast, a rule-based module matches predicted trends and environmental-factor directions with knowledge entries to return source-linked, post-hoc contextual explanations.",
+    "authors": [
+      "Xiong Li",
+      "Xiaowei Zhou",
+      "Yanwei Yu",
+      "Qian Cui",
+      "Junyu Dong"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07895v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07895v1",
+    "fetched_at": "2026-10-07T15:00:32.290600"
+  },
+  {
+    "id": "2610.07489v1",
+    "title": "Deep Defence on Wheels: A Dual Intrusion Detection System Architecture for Comprehensive In-Vehicle Network Security",
+    "abstract": "Increasing connectivity to the outside world and the lack of inbuilt security mechanisms have made legacy intra-vehicular networks vulnerable to cyberattacks. Initial research focused on maximising detection accuracy for known and unknown attacks, often using large, full-precision machine learning models. However, embedding IDSs into vehicular electronic systems also requires low detection latency, energy efficiency and minimal electronic control unit (ECU) resource overhead to process about 2,000 CAN frames/s. Lightweight models must balance accuracy with these deployment constraints. We propose a dual IDS framework comprising supervised and unsupervised learning-based solutions, each optimised for real-time, resource-constrained automotive platforms. A quantised LSTM-based IDS (QLSTM-IDS) achieves over 99.9% detection accuracy for DoS/Flooding, Fuzzing and Spoofing/Malfunction attacks using a single model architecture evaluated on two widely used datasets. The model is trained using the Brevitas quantisation-aware training library, transformed into a dataflow accelerator with custom blocks compatible with AMD's FINN toolchain, and synthesised using Vitis HLS. Complementing this, an 8-bit quantised convolutional autoencoder-based IDS (QCAE-IDS), quantised using AMD's Vitis-AI toolchain, detects previously unseen anomalies that alter CAN-ID sequence patterns with over 99% accuracy. An integration architecture enables both models to operate on a single FPGA, bridging the network interface IP and processing system to minimise software overhead. QLSTM-IDS achieves 0.25 ms inference latency and 0.8 mJ energy consumption per message, while QCAE-IDS achieves 0.42 ms and 1.1 mJ per block. Both solutions are deployed and evaluated on the ZCU104 SoC (XCZU7EV FPGA), demonstrating a flexible hardware/software co-design for real-time detection of known and unknown attacks on high-speed CAN buses.",
+    "authors": [
+      "Shashwat Khandelwal",
+      "Shanker Shreejith"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "cs.CR",
+      "cs.AR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07489v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07489v1",
+    "fetched_at": "2026-10-07T15:00:32.290630"
+  },
+  {
+    "id": "2610.07399v1",
+    "title": "Fed-BRDECS: Privacy-Preserving and Heterogeneity-Aware Federated Deep Embedded Clustering",
+    "abstract": "Federated deep clustering seeks to learn clustering-friendly representations from decentralized unlabeled data while preserving client privacy. However, Deep Embedded Clustering (DEC)-style objectives depend on global soft-assignment statistics that require clients to reveal their sensitive information. We propose Fed-BRDECS, a privacy-preserving and heterogeneity-aware federated deep embedded clustering framework. Fed-BRDECS replaces the globally normalized clustering objective with a locally computable sample-stability loss, avoiding the transmission of local soft-assignment distributions. To tackle non-IID client distributions, we introduce prediction-balanced sampling, which oversamples locally rare predicted clusters without requiring ground-truth labels, and centroid-level restarting, which periodically refreshes biased or inactive centroids. Experiments on image and text clustering benchmarks show that Fed-BRDECS consistently outperforms representative federated clustering and deep clustering baselines under both IID and non-IID partitions. We further demonstrate its applicability to federated time-series anomaly detection, where it improves reconstruction-based detectors without adding inference-time cost.",
+    "authors": [
+      "Haemin Park",
+      "Diego Klabjan",
+      "Martin W. Braun",
+      "Xiuqi Li",
+      "Balakrishnan Ananthanarayanan"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07399v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07399v1",
+    "fetched_at": "2026-10-07T15:00:32.290645"
+  },
+  {
+    "id": "2610.07334v1",
+    "title": "Weight Oracles: Reading Neural Network Weights with Language Models",
+    "abstract": "Interpretability methods for neural networks are predominantly reactive: they analyse activations produced during specific forward passes, requiring known inputs to find hidden capabilities such as backdoors. We propose Weight Oracles, fine-tuned language models that diagnose properties of a target network by reading its raw weights directly, without behavioural testing. We investigate this paradigm in two phases. Phase I establishes feasibility: through a staged curriculum and an external chain-of-computation that delegates parameter-free operations to deterministic code, an explainer LLM learns to simulate the forward pass of small transformers from their weights, achieving 99% holdout accuracy on unseen targets. Phase II repurposes this infrastructure for safety auditing. We train an oracle on natural language diagnostic questions about weight anomalies using only benign pathologies as training signal, and evaluate it zero-shot on backdoors absent from training. The oracle achieves AUROC 0.93 on attention-routed backdoors and 0.81 across a diversified threat distribution including stealth and adversarially regularized variants. Hand-crafted statistical detectors are sharp on the threat models they implicitly target but collapse on threat-model shift, while the oracle remains uniformly competent across attack types. Scaling to realistic model sizes remains the principal open challenge.",
+    "authors": [
+      "Krishna Kabra",
+      "Constantin Venhoff",
+      "Christian Schroeder de Witt"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "cs.LG",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07334v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07334v1",
+    "fetched_at": "2026-10-07T15:00:32.290658"
+  },
+  {
+    "id": "2610.07218v1",
+    "title": "Constant-Curvature Sliced Gromov-Wasserstein for Heterogeneous Cross-Curvature Alignment",
+    "abstract": "Recent advances in representation learning have highlighted the utility of constant-curvature models, such as hyperbolic and spherical spaces, for modeling complex data. Mixed-curvature models further enhance this by integrating multiple constant-curvature components. However, these models typically learn each component space independently because spaces with different curvatures are inherently heterogeneous and lack a unified metric. Consequently, they lack explicit mechanisms to enforce geometric consistency across various spaces. Moreover, the problem of comparing probability distributions across mixed-curvature spaces remains unexplored. To compare distributions on heterogeneous spaces, Gromov-Wasserstein (GW) distances provide a principled framework by aligning their intra-space geometries. Building on this, we propose constant-curvature sliced Gromov-Wasserstein (CCSGW), a novel divergence for aligning distributions supported on heterogeneous constant-curvature spaces. We first introduce the missing geodesic-based one-dimensional projections for spherical spaces, and then extend sliced GW to constant-curvature spaces, enabling efficient and principled comparison across manifolds with different curvatures. This formulation preserves intrinsic geometric relationships while avoiding the high computational cost. We provide theoretical analysis showing that CCSGW controls intrinsic geometric discrepancy across heterogeneous spaces, promoting distribution-level geometric consistency. By integrating CCSGW into existing mixed-curvature learning tasks, including graph anomaly detection, graph node classification, and multimodal learning, we observe consistent performance gains across diverse settings.",
+    "authors": [
+      "Shanglin Li",
+      "Wenjing Lu",
+      "Muyang Li",
+      "Nicu Sebe",
+      "Ziheng Chen"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07218v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07218v1",
+    "fetched_at": "2026-10-07T15:00:32.290673"
+  },
+  {
+    "id": "2610.07060v1",
+    "title": "Skillful Data-Driven Subseasonal Soil Moisture Forecasting: Prospects and Limits for Flash Drought Prediction",
+    "abstract": "Despite substantial progress in short-to-medium-range weather forecasting, predicting high-impact events such as flash droughts remains a key challenge for both early warning operations and physically-based subseasonal-to-seasonal (S2S) prediction systems. Here we demonstrate that, for S2S soil-moisture forecasting over Europe, forecast skill depends as much on how the prediction problem is formulated as on the forecasting model itself. Using a Vision Transformer-based architecture with dual-pathway temporal and spatial attention, we show that residual learning is essential to outperform persistence. This advantage is realized only when forecasting root-zone soil moisture in physical units rather than standardized anomalies, revealing that the target representation itself constrains predictability. A probabilistic extension via quantile-head fine-tuning further provides well-calibrated predictive distributions. Benchmarked against deep-learning and operational ECMWF S2S baselines over 2021-2022, our model achieves the highest deterministic and probabilistic skill at all lead times and reliably detects anomalously dry root-zone states (below the 20th percentile). Yet flash drought onset, defined by multi-pentad intensification criteria, remains a fundamental challenge shared across all current S2S systems. These findings advance data-driven S2S soil-moisture forecasting while highlighting the remaining challenge of predicting rapid drought development.",
+    "authors": [
+      "Noelia Otero",
+      "Atahan Özer",
+      "Miguel-Ángel Fernández-Torres",
+      "Jackie Ma"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "cs.LG",
+      "physics.ao-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.07060v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.07060v1",
+    "fetched_at": "2026-10-07T15:00:32.290788"
+  },
+  {
+    "id": "2610.08722v1",
+    "title": "Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus",
+    "abstract": "Many long-horizon agents compact their context on a global rule, usually a token budget, blind to what the agent was doing. We ask whether the agent's recent behaviour predicts when a compaction will hurt. TRACE's public corpus of 590 harness-triggered AppWorld compaction boundaries replays each boundary from a re-executed prefix state under the pre-compaction context and under the summary, and records the burden of the next actions: calls that error or repeat a call already made. We find that pre-boundary history predicts post-compaction harm only weakly. An internally prespecified contrast by prefix placement is a wide null, and the naive \"has-written\" label behind it turns out to measure trajectory phase. The best extension-protocol trigger reaches held-out AUROC 0.66 (0.64 on the replicate's own label) against a same-boundary replicate of 0.72; the best frozen, interpretable trigger avoids 21% of harmful (positive-burden) boundaries while keeping 84% of compaction opportunities, and exceeds the random-rule expectation on count but not on burden mass (a post hoc comparison). Whether the best trigger beats a token-budget rule at matched retention cannot be evaluated on the release. We state what corpora should ship to answer it.",
+    "authors": [
+      "Egor Pakhomov",
+      "Erik Nijkamp"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08722v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08722v1",
+    "fetched_at": "2026-10-07T15:01:03.723059"
+  },
+  {
+    "id": "2610.08720v1",
+    "title": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+    "abstract": "LLM-based agents are increasingly advancing scientific and engineering problem solving, with physics simulation emerging as a challenging yet practical testbed for reproducing complex physical phenomena with application in embodied AI, games and films. As the workhorse of such simulation, a solver computes how the state of a dynamic system evolves over time. Building such solvers requires physical understanding to identify appropriate models, mathematical reasoning to formulate the underlying dynamics, and software engineering to implement them as executable code, yet this capability of LLM agents remains underexplored. To this end, we introduce WorldSolver, a benchmark of 168 simulation tasks derived from physical phenomena in 61 classic computer graphics papers, spanning 7 physical domains. Each task contains a code scaffold that provides a fixed simulation environment for the scene, with the solver implementation left for the agent to complete. Specifically, we evaluate them along three dimensions: Execution Checks for successful execution, Visual Fidelity for reproducing the intended dynamic behavior in the rendered simulation, and Physical Plausibility for physics-grounded verification of the generated dynamics. Experiments on frontier agents reveal that producing executable solvers is difficult itself, and satisfying visual and physical correctness is even harder. GPT-5.6-Sol and Claude-Opus-5 perform comparatively better than the other evaluated agents, yet achieve overall scores of only 48.7% and 46.7%, respectively. WorldSolver is an early step toward agentic solver generation, and we hope it helps drive progress toward agents that can faithfully simulate the dynamic physical world. Code is available at https://github.com/sirujiang/WorldSolver.",
+    "authors": [
+      "Siru Jiang",
+      "Yongzhe Lyu",
+      "Shuo Lu",
+      "Yubin Wang",
+      "Yuxiang Zhang",
+      "Yue Liao",
+      "Bin Wang",
+      "Jian Liang",
+      "Tieniu Tan"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08720v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08720v1",
+    "fetched_at": "2026-10-07T15:01:03.723088"
+  },
+  {
+    "id": "2610.08691v1",
+    "title": "ScienceClaw: Benchmarking Continual Self-Evolution of AI-for-Science Agents Across the Natural and Social Sciences",
+    "abstract": "Large language model agents are accelerating scientific automation, yet verified executions rarely become persistent program-level improvements, and existing evaluations do not examine this process across sequential tasks in both the natural and social sciences. We formalize ScienceClaw as fixed-parameter program self-evolution that unifies task solving, scientific verification, and program updates. ScienceClaw-Eval spans 23 disciplines and measures scientific correctness, evolutionary gain, retention, cross-dataset transfer, and evolution cost through sequential streams and independent reset evaluation. Our framework repairs executable workflows through multi-turn interaction, converts re-execution-verified failure--success trajectories into linked Skill and Operator candidates, and retains an update only when source-task replay reproduces the repair and independent scientific tasks improve. Code is available at https://github.com/beita6969/ScienceClaw.",
+    "authors": [
+      "Mingda Zhang",
+      "Wenjin Liu",
+      "Tiesunlong Shen",
+      "Zikai Xiao",
+      "Zhenghong Lin",
+      "Qing Xu",
+      "Erik Cambria",
+      "Xiaoying Tang",
+      "Haoran Luo"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08691v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08691v1",
+    "fetched_at": "2026-10-07T15:01:03.723107"
+  },
+  {
+    "id": "2610.08680v1",
+    "title": "A Systematic Study of Small Language Models on Abstract Reasoning Tasks",
+    "abstract": "Endpoint accuracy on abstract-reasoning benchmarks does not reveal whether a language model has acquired a transferable rule or fit distribution-specific regularities. We study this distinction in small language models on the ARC-TGI benchmark, which organizes abstract grid transformations into controllable task families and supports resampling, spatial shifts, and cross-benchmark transfer. Across more than 1,000 runs, we profile decoder-only, encoder--decoder, and mixture-of-experts model families under supervised fine-tuning. We examine the efficiency and stability of skill acquisition, robustness beyond the training distribution, interactions with model family and task formulation, and layer-wise attention signatures that accompany behavioral differences. Substantial in-distribution accuracy is attainable, but acquisition is sensitive to optimization and unevenly distributed across task families. Performance deteriorates sharply outside the training distribution, including when the rule is retained but grid scale changes. Greater training-set depth and breadth yield uneven gains, while the effect of additional in-context examples depends on model family. Executable-rule induction also yields correct solutions not observed under direct grid generation. On selected tasks, attention diagnostics show distinct concentration and context-dependence profiles, but do not establish general causal mechanisms. Overall, abstract-reasoning scores are conditional on the model, adaptation regime, evaluation distribution, and response format.",
+    "authors": [
+      "Nur A Zarin Nishat",
+      "Jens Lehmann",
+      "Andrei Aioanei",
+      "Sahar Vahdati"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08680v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08680v1",
+    "fetched_at": "2026-10-07T15:01:03.723121"
+  },
+  {
+    "id": "2610.08647v1",
+    "title": "SquidAgent: Parallelize Wisely, Coordinate Efficiently",
+    "abstract": "LLM-based agents solve complex multi-step tasks, but sequential execution incurs substantial latency. In principle, parallelizing work across multiple agents should yield near-linear speedups. Yet existing parallel multi-agent systems often run slower than a single-agent baseline. We attribute this gap to two hidden costs that parallel execution incurs but a serial agent avoids. First, there is a re-exploration cost: redundant effort spent by parallel workers reconstructing context that the orchestrator already possesses, such as prior decisions, that would otherwise be inherited implicitly in a serial execution. Second, there is an alignment cost: the overhead required to reconcile inconsistencies across independently generated outputs. We thus derive a principled decision criterion: a layer should be parallelized only when its critical-path cost, plus re-exploration and alignment overheads, is lower than the corresponding serial cost. While this criterion is naturally expressed in wall-clock time, we observe that LLMs are poorly calibrated when asked to estimate task duration. To address this, we instead measure cost in predicted output tokens, which we empirically find LLMs can estimate substantially more reliably than wall-clock time. Building on this token-based criterion, we propose SquidAgent. It estimates all token budgets in a single planning step, forks each worker directly from the orchestrator's session to eliminate re-exploration cost, and replaces post-hoc reconciliation with a pre-generated shared convention block that converts alignment into a bounded upfront cost. A deterministic scheduler then applies the criterion layer by layer. Empirically, SquidAgent achieves a 2.2$\\times$ mean throughput improvement and a 2.6$\\times$ mean wall-time speedup over Claude Code, and a 2.0$\\times$ throughput improvement over the strongest multi-agent baseline.",
+    "authors": [
+      "Yexiong Lin",
+      "Shanshan Ye",
+      "Yu Yao",
+      "Zhen Fang",
+      "Bo Han",
+      "Tongliang Liu"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08647v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08647v1",
+    "fetched_at": "2026-10-07T15:01:03.723136"
+  },
+  {
+    "id": "2610.08642v1",
+    "title": "HygieneRoboBench: Benchmarking Hygiene-Aware Planning for Household Robots",
+    "abstract": "Contact with contaminated objects can spread hazards through a household robot's grippers, tools, and shared surfaces, while new contacts can make an existing plan unsafe. Existing benchmarks do not jointly assess how planners identify hygiene risks from contact history and plan safe continuations after new contact events. Planners must do so within time and resource limits while respecting user priorities. We introduce HygieneRoboBench, with 624 instances across 134 task families, to evaluate safe resolution of household tasks from a given execution history. Tasks capture contamination through two grippers and shared objects, treatment costs, and user priorities. We combine controlled history, profile, and event comparisons with independent plan evaluation. These assess safe resolution, cost efficiency under user priorities, and responses to contact events. Evaluation of LLM-based and symbolic planners shows that safely completing a task does not guarantee the lowest execution costs under the user's priorities. To address this problem, we introduce Hygiene-NSP. It combines LLM-based grounding, contact-history reconstruction, and CP-SAT to jointly plan hygiene treatment and task execution under user priorities. Hygiene-NSP achieves safe resolution and optimal safe resolution rates of 94.4% and 90.4%, respectively. Both rates are higher than those of the evaluated baseline planners on the full dataset. Project page: https://euron-zc.github.io/HygieneRoboBench/.",
+    "authors": [
+      "Yurun Chen",
+      "Josh Qixuan Sun",
+      "Jason Qin",
+      "Chengtai Li",
+      "Tianyi Wang",
+      "Mark Crowley",
+      "Wentao Zhu"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08642v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08642v1",
+    "fetched_at": "2026-10-07T15:01:03.723153"
+  },
+  {
+    "id": "2610.08621v1",
+    "title": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
+    "abstract": "Recent game design agents have made substantial progress in generating playable games. However, program correctness does not ensure an enjoyable experience for players. We present Recursive Game Creator, an experience-oriented harness to advance agentic game development from rough game prototypes into entertaining games. Recursive Game Creator organizes recursive development around four components: Designer, Builder, Player, and Reviewer. The Designer translates user instructions and Reviewer's feedback into detailed plans. The Builder turns these plans into candidate games. The coding-native Player creates and executes reusable policies through programmatic interfaces to efficiently collect diverse gameplay trajectories, mitigating evaluation bias caused by slow GUI-based collection. The Reviewer uses carefully designed trajectory-based metrics to induce player preferences, integrating with visual evidence and explicit textual preferences to evaluate games against game-specific criteria. Finally, the Reviewer accepts the better version and provides improvement reviews for the next round, closing the recursive loop. Our method achieves state-of-the-art overall performance of 77.89 on GameCraft-Bench. On GameASG-Bench, it achieves a strict task success rate of 53.2%, a 34.1% improvement over the same-model baseline, and the highest mean runtime-check pass rate at 93.4% among compared methods. A user study shows longer playtime and higher ratings. Code is coming soon.",
+    "authors": [
+      "Jiajun Chen",
+      "Haoyu Wu",
+      "Mingda Jia",
+      "Xihui Liu"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI",
+      "cs.MA",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08621v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08621v1",
+    "fetched_at": "2026-10-07T15:01:03.723167"
+  },
+  {
+    "id": "2610.08592v1",
+    "title": "CNet: A Complex-Valued Deep Learning Framework with Wirtinger Autodifferentiation and FFT--Hadamard Convolution",
+    "abstract": "CNet is a C++/CUDA framework for building and training deep complex-valued neural networks (CVNNs) and, more generally, for optimizing complex-valued functions by gradient descent with Wirtinger (CR-calculus) derivatives. It takes a physics-native stance: a network is a cascade of complex -- and often unitary (the DFT) -- operations acting on an amplitude vector, and classification is a Born-rule measurement $p_k = |z_k|^2 / \\|z\\|^2$ rather than a softmax over real logits. Every layer ships a CPU reference and a CUDA kernel checked against finite differences, and the computation graph is cloned across the batch for GPU execution. On top of the base layers we add signal-processing primitives that turn the identity conv(x,k) = IFFT(FFT(x) . FFT(k)) into a learnable complex convolutional network, together with a true-Adam optimizer and a reduced-memory inference mode.   We report three studies. First, a fully complex-valued, FNet-style causal sequence model built on a new $O(N \\log N)$ causal Fourier mixer -- a triangular-masked DFT evaluated by a Bluestein / chirp-z factorization: once properly tuned it matches or exceeds a parameter-matched real-valued causal FNet on character-level language modeling, reaching the real model's converged quality in under half the training steps. Second and third, bottleneck analyses on radio-modulation classification (RML2016.10a) and the Fourier phase problem of coherent-diffraction imaging, which isolate exactly where complex-valued networks still need new operators. Across all three the complex formulation provably learns the physically correct structure.   Code: https://github.com/crasmarum/CNet",
+    "authors": [
+      "Marcel Crasmaru"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.LG",
+      "cs.MS",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08592v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08592v1",
+    "fetched_at": "2026-10-07T15:01:03.723179"
+  },
+  {
+    "id": "2610.08514v1",
+    "title": "How Much Evidence Should a Coding Agent's Self-Correction Carry? Adaptive Dirichlet Evidence for Self-Distillation",
+    "abstract": "Execution feedback lets coding agents revise programs and learn from their own corrections. A correction's learning weight should reflect both the transitions supported by its executions and the amount of evidence behind that support. We introduce Effective-Evidence Self-Distillation (EESD), which represents these quantities separately. Normalized execution relevance determines relative transition support and an effective pseudo-count mass; a Dirichlet posterior then produces an uncertainty-penalized weight for KL-anchored correction learning. Under a symmetric prior, changing mass preserves category ordering, and effective mass yields a supervised coefficient bounded by its matched fixed-mass counterpart. Across four model-domain history sweeps, increasing visible observations from one to eight reduces future-outcome NLL by 55.0-59.3%. At eight observations, effective mass achieves lower NLL than fixed mass in all four comparisons. In the primary matched DeepSeek/RunBugRun study, argmax predictions agree on all 3,000 examples, with the largest NLL gain under concentrated relevance. After one correction-learning round, DeepSeek/CodeARC all-tests Pass@1 increases from 15.0% to 20.4%, with a paired 95% source-bootstrap interval of [+2.8, +8.0] percentage points. The twelve-setting downstream evaluation establishes the model-domain scope of this update. These results show how separating evidence support from evidence mass changes probability estimation and correction learning in coding agents.",
+    "authors": [
+      "Yunbo Long",
+      "Guangya Hao",
+      "Yuhan Liu",
+      "Yiting Duan",
+      "Longyan Tan",
+      "Yunchen Long",
+      "Hao Wu"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08514v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08514v1",
+    "fetched_at": "2026-10-07T15:01:03.723195"
+  },
+  {
+    "id": "2610.08479v1",
+    "title": "MetaLearnNCA: Few-Shot Offline Meta-Learning via Interacting Neural Cellular Automata",
+    "abstract": "Few-shot meta-learning traditionally formulates task adaptation either as analytical gradient descent through unrolled computational graphs or as metric-based distance comparisons over flattened 1D fea- ture vectors, which either incur costly test-time backpropagation or discard native 2D spatial geometry. In this work, we propose METALEARNNCA, a decentralized framework that achieves few-shot adapta- tion through the dynamical interaction of coupled Neural Cellular Automata (NCAs) without computing analytical gradients during inference. MetaLearnNCA decomposes task adaptation into an Active- NCA, which executes task inference conditioned on a continuous 2D spatial memory grid termed the spatial program, and a learned Meta-NCA, which acts as a decentralized cellular optimizer by diffusing spatial error residuals across local neighborhoods to dynamically update this program. METALEARN- NCA is competitive against canonical meta-learners in-distribution (96.12% on Omniglot) with Out-Of- Distribution transfer gains on MNIST, KMNIST, and Fashion-MNIST transfer across 10 independent testing seeds across 1-, 5-, and 10-shot regimes (e.g., surpassing Prototypical Networks by +10.54% on 10-shot MNIST and a +3.87% gain on 10-shot Fashion-MNIST over FOMAML). Our results establish that robust, gradient-free learning-to-learn can emerge from decentralized cellular dynamics on non-von Neumann substrates.",
+    "authors": [
+      "Etienne Guichard",
+      "Stefano Nichele"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08479v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08479v1",
+    "fetched_at": "2026-10-07T15:01:03.723207"
+  },
+  {
+    "id": "2610.08432v1",
+    "title": "EMHO: EMbodied Agent Harness Optimization via Experience Traces",
+    "abstract": "Improving embodied agents often focuses on optimizing the underlying model through training, while the surrounding agent harness that controls planning, context, and tool use is typically engineered. We ask whether this harness can instead improve itself directly from experience traces under sparse environmental feedback. We propose EMbodied Agent Harness Optimization (EMHO), a self-evolving framework that keeps the embodied model frozen and iteratively revises its harness by analyzing execution trajectories and prior harness history. EMHO optimizes beyond skills or recovery prompts, modifying how the agent monitors progress, uses vision tools, grounds observations, and responds to failures. To support multiple subtasks with a single harness, we introduce EMHO-Merge, which addresses trade-offs in jointly optimizing a single shared harness across subtasks by using episode-level gains and losses to guide evidence-supported refinement of when and how revised behaviors are applied. We evaluate EMHO on EmbodiedBench across navigation and manipulation tasks, and EMHO consistently improves task success for both Qwen 9B and 27B models. Qualitative analysis shows that EMHO goes beyond recovering from failures and unproductive actions to reshape how the embodied agent interprets and interacts with its environment.",
+    "authors": [
+      "Hyun Jung Lee",
+      "Jungtaek Kim",
+      "Jongwon Jeong",
+      "Tae-Eui Kam",
+      "Donghyun Kim",
+      "Yong Jae Lee"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08432v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08432v1",
+    "fetched_at": "2026-10-07T15:01:03.723223"
+  },
+  {
+    "id": "2610.08327v1",
+    "title": "MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation",
+    "abstract": "Large language models (LLMs) have shown promise in medical question answering and clinical reasoning, yet their improvement remains constrained by static parametric knowledge and costly expert supervision. Self-evolving agents offer a promising alternative by enabling models to improve through iterative task generation and problem-solving. However, most existing self-evolving methods are designed for easily verifiable domains such as mathematics and coding, where solutions can be checked by exact answers or executable programs. Medical reasoning is fundamentally different: it is open-ended, knowledge-intensive, and often only partially verifiable. We present MedZERO, a self-evolving framework for open-ended medical reasoning. MedZERO couples an Examiner that generates frontier medical question-option pairs with a Reasoner that solves them through evidence-grounded multi-turn reasoning with external knowledge tools. To support reliable, continual improvement, MedZERO adopts controlled knowledge accumulation, which maintains temporary exploratory knowledge and curated persistent knowledge in reasoning. We evaluate MedZERO on five public medical reasoning benchmarks using 4B- and 8B-scale base models under open-ended evaluation. Across all settings, MedZERO consistently outperforms the underlying base models and prior self-evolving baselines, achieving up to 13.7 average accuracy-point gains over the next-best self-evolving baseline.",
+    "authors": [
+      "Xilin Dang",
+      "Weilin Ruan",
+      "Xue Yang",
+      "Jinghao Wang",
+      "Xiaowei Hu",
+      "Jinpeng Li",
+      "Pheng-Ann Heng"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08327v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08327v1",
+    "fetched_at": "2026-10-07T15:01:03.723239"
+  },
+  {
+    "id": "2610.08319v1",
+    "title": "SCOPE: Certified Theorem Proving with a Language Model as the Policy Planner",
+    "abstract": "In proof assistants such as Lean, a generated proof must pass machine compilation checks, so evaluation needs no human scoring. Direct generation fails on multi-step numeric propositions: a proof is valid only if every content integer is correct, so the pass rate is bounded by the k-th power of the per-integer accuracy. Controlled corruption across 2,617 reference proofs confirms this power law. SCOPE (State-Conditioned Operator Planning and Execution) enforces the natural division of labor: the model plans over an operator vocabulary, a symbolic engine executes the numerics, and a compiler renders the proof. On a 218-problem suite it certifies 191/218 (87.6%) with a 135M backbone; the 7B DeepSeek-Prover-V1.5-RL certifies 18/218 at 27.5 times the tokens and 37.5 times the wall-clock, and DeepSeek-Prover-V2-7B certifies zero on a bidirectional dual suite. Multi-step thinking costs 6.12 discrete decision actions per problem and produces no natural-language thinking text. Replacing the lagged engine state in the decision frame with the current one lifts the pass rate from 117/218 to 191/218, while up-weighting the chain-end loss hurts. On the public Lean-Workbook library, 2,132 of 3,536 gradeable admissible problems certify (60.29%) with zero regression on the main suite. All readings come from a version-frozen review with independent rechecks and reverse verification. Restricting free generation and keeping decision-time information visible is a more direct route than enlarging the model.",
+    "authors": [
+      "Hanchao Zhou",
+      "Jialei Li"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08319v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08319v1",
+    "fetched_at": "2026-10-07T15:01:03.723249"
+  },
+  {
+    "id": "2610.08268v1",
+    "title": "DySCo: Dynamic Sharding for Collaborative Edge-Cloud LLM Inference with Depth-Synchronized Batching",
+    "abstract": "Pervasive intelligent applications are increasingly deployed on mobile and Internet of Things (IoT) edge devices. Consequently, Large Language Models (LLMs) are increasingly used to support these applications. Yet, due to their high resource demands, LLMs are mostly deployed in the cloud. Layer-wise edge-cloud inference lets resource-constrained edge devices contribute computation to LLMs they cannot host in full. However, heterogeneous split points introduce two coupled inefficiencies. First, edge execution and communication create idle gaps between cloud invocations. Second, requests arriving at different model depths cannot be conventionally batched. We present DySCo, a collaborative runtime that keeps KV caches local and introduces dyForward, a model-aware layer-range executor that runs configurable contiguous layer ranges from resident model shards without reloading weights. For multi-edge serving settings, we introduce depth-synchronized batching (DSB), which advances heterogeneous requests to the deepest cut and batches their common suffix. Experiments across heterogeneous devices, two model families, and local and wide-area links show that idle gaps increase the latency of subsequent GPU forward calls even when waiting time is excluded, adding up to 25 ms of additional cloud-side suffix latency per decoding step in our measurements. At an average concurrency of eight, DSB improves throughput by 275% over FIFO, 48% over exact-match batching, and 79% over round-robin interleaving while reducing mean per-session latency. Together, these results show that requests with different edge-cloud splits can reuse resident cloud weights and share batched suffix computation. The artifact repository for this work is publicly available at: https://github.com/Large-scale-Sustainable-Computing-LSC/dysco-artifact",
+    "authors": [
+      "Jingpo Xu",
+      "Paul Joe Maliakel",
+      "Ivona Brandic",
+      "Shashikant Ilager"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.DC",
+      "cs.AI",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08268v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08268v1",
+    "fetched_at": "2026-10-07T15:01:03.723262"
+  },
+  {
+    "id": "2610.08216v1",
+    "title": "Quantum Entangled Multimodal Fusion Networks (QEMFN): Resource-Aware Hybrid Vision-Language Fusion via Trainable Entanglement",
+    "abstract": "Multimodal vision-language systems typically fuse image and text embeddings through classical operators such as concatenation, attention, bilinear pooling, or tensor interactions. We propose Quantum Entangled Multimodal Fusion Networks (QEMFN), a hybrid quantum-classical framework that introduces parameterized entanglement as a structured inductive bias for multimodal fusion. Pretrained visual and textual features are projected into compact latent spaces, encoded as angle-parameterized quantum states, processed through intra-modal and paired cross-modal entangling circuits, and measured to produce fused representations for retrieval. Under matched parameter budgets and identical frozen CLIP backbones, QEMFN outperforms classical fusion baselines on COCO-5k and Flickr30k, including multilayer perceptron, tensor fusion, FiLM, cross-attention, compact transformer, and a dequantized paired-topology analogue. An ablation suite isolates the quantum module's contribution from the surrounding classical projections, and quantum-centric analyses report Meyer-Wallach entangling capability, expressibility, gradient variance against barren-plateau bounds, and entropy-performance correlation under controls for training progress alongside an intervention study on the entangling component. QEMFN is executed under shot-based estimation, a noise-modeled fake backend, and a real superconducting device with zero-noise extrapolation. This work does not claim quantum computational advantage; the contribution is the framework together with a controlled empirical and quantum-centric evaluation that positions trainable entanglement as an interpretable, hardware-executable fusion mechanism at scales accessible on contemporary devices.",
+    "authors": [
+      "Srikar Alla",
+      "Ali Shiri Sichani",
+      "Chi-Ren Shyu"
+    ],
+    "published": "2026-10-06",
+    "categories": [
+      "cs.AI",
+      "quant-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.08216v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.08216v1",
+    "fetched_at": "2026-10-07T15:01:03.723274"
+  },
+  {
+    "id": "2610.05922v2",
+    "title": "Incentive Alignment in Online Experimentation",
+    "abstract": "Evaluating the causal effect of new features is a central goal for online platforms. While recent literature addresses limited testing traffic via centralized portfolio optimization, this perspective abstracts away a critical institutional reality: experimentation is operationally decentralized. The experimenters who develop new features also dictate which hypotheses to test, and they are typically rewarded based on empirical average treatment effects that are prone to upward bias. Left unchecked, this principal-agent conflict can severely erode platform value, a structural failure that conventional centralized levers, such as significance thresholds and traffic budgets, cannot resolve. By reframing experimentation as an incentive design problem, we demonstrate that two practical mechanisms, sample splitting and shrinkage, can effectively bridge this gap. Sample splitting aligns incentives perfectly at a bounded traffic cost, while shrinkage consumes no additional traffic and guarantees that interventions with negative expected effects are strictly unprofitable to field.",
+    "authors": [
+      "Ermis Soumalias",
+      "Richard Mudd",
+      "Abbas Zaidi"
+    ],
+    "published": "2026-10-05",
+    "categories": [
+      "cs.GT",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.05922v2",
+    "arxiv_url": "https://arxiv.org/abs/2610.05922v2",
+    "fetched_at": "2026-10-07T15:02:59.735698"
+  }
+]
