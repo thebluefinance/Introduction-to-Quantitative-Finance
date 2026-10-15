@@ -1,0 +1,640 @@
+[
+  {
+    "id": "2610.20366v1",
+    "title": "Regime Detection in Latent Factor Models -- A Bayesian Decision-Theoretic Approach",
+    "abstract": "Regime-switching multi-factor models are widely used in quantitative finance, but filtering does not by itself determine when an agent should act on inferred regime changes. We formulate online regime detection with latent factors and hidden regimes as a Bayesian decision problem balancing false alarms, detection delay, and misclassification. Since posterior regime probabilities are generally non-Markovian, the problem is represented as a measure-valued optimal stopping problem and approximated using particle filtering with Monte Carlo dynamic programming. A single-change-point Heston model provides a benchmark. With observed variance, the problem reduces to a two-dimensional Markov free-boundary problem, while under latent variance decisions are based on the filtered posterior measure. Numerical experiments in Heston and regime-switching Vasicek models show that the latent-information procedure can outperform feasible plug-in rules.",
+    "authors": [
+      "Karl Kristian Engelund"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20366v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20366v1",
+    "fetched_at": "2026-10-15T13:01:14.784801"
+  },
+  {
+    "id": "2610.20037v1",
+    "title": "Data-Driven Dynamic Portfolio Selection with Vine Copula Simulation and Reinforcement Learning",
+    "abstract": "We develop a data-driven approach to dynamic portfolio selection that combines vine-copula simulation with reinforcement learning. The investor has constant relative risk aversion and maximises expected terminal utility with a running penalty on the conditional value-at-risk (CVaR) of one-period losses. We estimate a conditional vine model from historical returns and use it to generate joint scenarios for CVaR evaluation and conditional paths for training a recurrent portfolio policy. Under uniform local derivative bounds, we propagate edgewise pair-copula parameter errors through the conditional transforms to obtain power-law stability bounds in Hellinger distance and total variation. In a finite-horizon investment model, we combine these estimates with a marginal and structural approximation budget to bound policy values, optimal values and the true-market loss of policies selected under a fitted model, with separate simulation and numerical optimisation terms. On a seven-asset panel comprising US and Chinese equities and gold, the selected ensemble of ten trained policies achieves a compound annual growth rate of 34.13% and a Sharpe ratio of 2.31 over 22 complete monthly holding periods, exceeding the corresponding values of six classical and vine-based benchmarks. Combining simulated and historical training data reduces monthly target-to-target turnover by 41.5% relative to training on historical data alone, while maintaining comparable growth.",
+    "authors": [
+      "Gabriël M. J. Gelissen",
+      "Fengyi Yuan"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20037v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20037v1",
+    "fetched_at": "2026-10-15T13:01:14.784840"
+  },
+  {
+    "id": "2610.20000v1",
+    "title": "Interior smoothness and zero-variance geometry for finite-maturity Heston American puts",
+    "abstract": "We study finite-maturity American puts in the Heston model without the Feller condition. At positive variance, the exercise boundary is smooth and strictly decreasing in remaining maturity and variance. At zero variance, the endpoint is locally Lipschitz in remaining maturity, the boundary moves with bounded speed in maturity uniformly down to zero variance, and it extends continuously to the axis. Each boundary slice at positive maturity has a regular $C^1$ closure tangent to the zero-variance axis, its stock threshold has variance derivative tending to minus infinity, and both partial derivatives of the inverse boundary graph vanish along the slice. The continuation premium at the axis contact stock is of order variance, and as a consequence smooth fit fails in the variance direction at the axis. At expiry the whole boundary, including its axis edge, converges to the strike. We give quantitative boundary gap bounds, an exact limiting weighted boundary Hessian, and vertical identities retaining the maturity term. Exact boundary gap equivalents remain open.",
+    "authors": [
+      "Junkee Jeon",
+      "Takwon Kim",
+      "Jehan Oh"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "q-fin.MF",
+      "math.AP",
+      "math.PR",
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20000v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20000v1",
+    "fetched_at": "2026-10-15T13:01:14.784868"
+  },
+  {
+    "id": "2610.19428v1",
+    "title": "Common Signals, Spurious Cross-Excitation, and Identification in Multivariate Hawkes Processes",
+    "abstract": "Multivariate Hawkes models are widely used to measure endogenous interactions in event data, but latent common signals can generate apparent excitation even without structural interaction. We characterize the resulting linear projection and construct stable, nonnegative Hawkes processes that share the mean intensity and Bartlett spectrum of common-signal models despite having different excitation mechanisms. This establishes a concrete form of second-order non-identification. We derive integrated third-order cumulants for Hawkes processes with Cox immigration and establish generic local identification of normalized structural parameters in two- and three-dimensional systems. An exact-equivalence Monte Carlo experiment demonstrates how third-order information can distinguish mechanisms with identical second-order structure, while revealing substantial finite-sample limitations under weak signals. For a restricted parametric family, we develop Whittle estimation from binned counts, establish consistency and asymptotic normality under appropriate identification conditions, and construct feasible sandwich standard errors accounting for estimated mean intensities. Simulations assess structural recovery and inference accuracy. An application to cryptocurrency transactions illustrates the sensitivity of inferred excitation to model specification and the limitations of structural interpretation based on spectral fit alone.",
+    "authors": [
+      "Jiwon Jung",
+      "Kiseop Lee"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "stat.ME",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19428v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19428v1",
+    "fetched_at": "2026-10-15T13:01:14.784889"
+  },
+  {
+    "id": "2610.19254v1",
+    "title": "Beyond Time Induction: Structured Conditional Neural Solvers for Parametric Stochastic-Volatility Pricing",
+    "abstract": "Physics-informed neural networks provide a flexible framework for learning parametric PDE solution families without labeled data, yet preserving accurate derivatives across heterogeneous regimes remains challenging. Structured neural solvers offer compact representations, but restrictive conditional parameterizations can limit adaptation across the solution family. We introduce BeTINN, a structured conditional architecture extending time-induced modulation through multi-directional time-parameter conditioning and a joint residual pathway. We evaluate BeTINN on the Heston stochastic-volatility PDE, a demanding parametric problem with mixed derivatives and economically relevant first- and second-order sensitivities. BeTINN improves joint accuracy across normalized option value and key sensitivity metrics relative to our baselines. Controlled ablations characterize the roles of its architectural components. We further find that validation physics loss is informative but does not fully determine differential fidelity, and that accurate solution values can coexist with localized derivative errors. These results support structured conditional adaptation and motivate derivative-aware evaluation when sensitivities are downstream quantities of interest.",
+    "authors": [
+      "Jose Miguel Lara Rangel",
+      "Mixtli Vazquez Mendoza"
+    ],
+    "published": "2026-10-13",
+    "categories": [
+      "cs.LG",
+      "cs.CE",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19254v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19254v1",
+    "fetched_at": "2026-10-15T13:01:14.784909"
+  },
+  {
+    "id": "2610.14959v2",
+    "title": "AlphaRLM: Aligning Language Models for Literature-Grounded Symbolic Factor Discovery",
+    "abstract": "Formulaic alpha mining seeks to discover executable expressions that capture predictive market signals in a vast, noisy search space. Recent LLM-based approaches use prompting, iterative search, or seed-factor evolution, leaving direct factor construction through policy learning less explored. To address this, we introduce AlphaRLM, a reinforcement-learning framework that trains LLMs to construct executable symbolic factors from financial literature without input factor expressions. AlphaRLM incorporates Literature-Guided Operator Assembly (LEGO), which conditions factor construction on literature-derived ideas and executable operators, providing semantic priors for exploration. It further aligns the generation policy with market feedback through executable-validity and grouped-return-separation rewards that capture non-monotonic structures across factor quantiles. Extensive experiments on CSI 300, CSI 1000, and S&P 500 show that AlphaRLM outperforms strong factor-mining and LLM-based baselines in annualized excess return. Notably, the 8B model achieves strong cross-market performance, highlighting the promise of literature-conditioned, market-aligned factor generation.",
+    "authors": [
+      "Jie Huang",
+      "Yuecheng Hong",
+      "Yao Chen",
+      "Hao Zhong",
+      "Linfeng Xiao",
+      "Xudong Liu",
+      "Hao Xia",
+      "Jianxuan Xin"
+    ],
+    "published": "2026-10-10",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.14959v2",
+    "arxiv_url": "https://arxiv.org/abs/2610.14959v2",
+    "fetched_at": "2026-10-15T13:01:14.785408"
+  },
+  {
+    "id": "2610.19607v1",
+    "title": "A Graph-Based Analysis of Comparability, Scale, and Attribution in Private Transformer Inference",
+    "abstract": "Rising privacy concerns around large language models have accelerated research in private Transformer inference (PTI). Synthesizing the empirical claims in this line of research, however, is hindered by multi-dimensional cryptographic progress and inconsistent evaluation contracts. In this work, we systematize the field by constructing an empirical graph of 62 PTI systems, mapping system attributes to node features and evaluation compatibility to edges. A three-tiered analysis of this graph illuminates the state of private inference. Node-level attribution shows that cryptographic progress drives performance gains across most systems, yet always co-occurs with other factors (model fidelity, hardware, cost accounting). Edge-level auditing shows that only 1 of 1891 candidate system pairs is directly comparable under shared assumptions. Finally, graph-level analysis shows that the scaling frontier of private inference has plateaued at 13B parameters and projects the cost of deploying current PTI techniques on production-scale Transformers. Overall, this graph-based framework equips the community to evaluate PTI claims transparently and channel technical speedups into deployment-scale private inference.",
+    "authors": [
+      "Souvik Das",
+      "Ariful Azad",
+      "Nitesh Saxena"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19607v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19607v1",
+    "fetched_at": "2026-10-15T13:01:22.667372"
+  },
+  {
+    "id": "2610.20243v1",
+    "title": "Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection",
+    "abstract": "Anomaly detection is a fundamental task for time-series analytics, with important implications for the downstream performance of many applications. Despite the large number of anomaly detection methods proposed in the literature, recent benchmark studies have shown that no single detector performs best across highly heterogeneous time series. Therefore, a practical and scalable solution is to develop a model-selection method that, for a given time series, selects the anomaly detector most likely to perform well. Nevertheless, the model selection approaches proposed in the literature suffer from a significant drop in accuracy when applied in Out-of-Distribution (OOD) settings. In this paper, we tackle the aforementioned limitation and propose RAMSAD, a retrieval-based framework for model selection in time-series anomaly detection. Given a new time series, our method queries a knowledge base of previously observed instances, retrieves the top-k most similar series, and transfers detector recommendations from their performance profiles. The framework can operate with standard similarity measures as well as embedding-based representations. Our results show that RAMSAD outperforms existing baselines in In-Distribution (ID) settings and is the most robust selector in OOD, where, when selecting a small subset of detectors, it matches or exceeds ensembles that run the entire detector pool, at a fraction of their cost. Overall, we demonstrate that similarity-based retrieval constitutes a strong and efficient foundation for model selection in time-series anomaly detection.",
+    "authors": [
+      "Christos Panourgias",
+      "Roberto Stanzione",
+      "Adrien Petralia",
+      "Themis Palpanas",
+      "Paul Boniol"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20243v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20243v1",
+    "fetched_at": "2026-10-15T13:01:32.175606"
+  },
+  {
+    "id": "2610.19893v1",
+    "title": "Few-Shot Adaptation for Anomalous Sound Detection at Low False-Positive Rate",
+    "abstract": "Reliable fault detection is crucial for industrial machinery in large-scale facilities, where unexpected failures can cause costly downtime and production interruptions. Although acoustic monitoring provides a scalable solution for machine condition monitoring, its deployment is often constrained by high false-positive rates. We propose a two-step approach to automatic anomalous sound detection: first, when only normal operating audio samples are available, a regularized unsupervised model is deployed; then, after the first machine fault, a few-shot adaptation strategy exploits the anomalous samples acquired during the fault to improve the system. This adaptation increases the area under the precision-recall curve (AUPR) from 23.0 to 64.0 and improves detection in the low false-positive-rate region, with the partial area under the receiver operating characteristic curve (pAUROC) increasing from 39.6 to 72.8. We also show that covariance regularization improves both prediction accuracy and training stability in the unsupervised model. These results provide a practical strategy for acoustic anomaly detection systems, enabling improved accuracy and reduced false alarms.",
+    "authors": [
+      "Simone Lugani",
+      "Christof Pichler",
+      "Hannes Wegleiter",
+      "Christoph Feilmayr",
+      "Rodolfo Zunino",
+      "Edoardo Ragusa"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.SD",
+      "cs.LG",
+      "eess.AS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19893v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19893v1",
+    "fetched_at": "2026-10-15T13:01:32.175646"
+  },
+  {
+    "id": "2610.19860v1",
+    "title": "Text-Informed Training Data Filtering for Enhanced Virtual Flow Meter Performance",
+    "abstract": "In sectors such as energy, aquaculture and chemical processing, the effectiveness of both mechanistic and data-driven models is frequently limited by poor-quality training data, which obscures underlying physical laws and degrades predictive accuracy. Such quality issues commonly manifest as anomalies in the dataset, ranging from sensor faults to process upsets and incorrect operator inputs. While traditional rule-based filtering can remove a subset of the anomalies, it is unable to leverage contextual information stored as unstructured text, such as engineer comments and operational logs that explain under what conditions the data was collected. We propose a text-informed data filtering method that leverages large language models (LLMs) to integrate unstructured operational data with tabular sensor data. The method consists of two steps: (1) contextual anomaly detection by reasoning over both data modalities, and (2) generation of a binary mask that is applied to filter the training dataset for model development. To investigate the potential benefit, a steady-state soft-sensor regression model, namely a virtual flow meter that estimates well flow rates, is used as the downstream evaluation target. Experiments on a synthetic oil and gas dataset show improved model performance compared to traditional rule-based filtering. Ablation studies show that textual operator comments can provide filtering-relevant signals beyond sensor data alone, with the multimodal approach reducing downstream MAPE from 7.1% to 5.4% relative to sensor-only filtering. This work demonstrates that integrating unstructured operational knowledge with sensor data through LLMs can improve data quality for industrial machine learning applications, offering a scalable alternative to manual data curation.",
+    "authors": [
+      "Kristoffer Hjelmen Nesland",
+      "Bjarne Grimstad",
+      "Antorweep Chakravorty",
+      "Dan Sui"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19860v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19860v1",
+    "fetched_at": "2026-10-15T13:01:32.175670"
+  },
+  {
+    "id": "2610.19831v1",
+    "title": "CTIA-ODE: Continuous-Time Inter-Variable Attention for Long-Term Time Series Forecasting",
+    "abstract": "Although multivariate time series forecasting has broad application prospects, effectively incorporating exogenous variables remains challenging. Prevailing discrete-time architectures often impose rigid temporal alignment across heterogeneous variables, which may limit their ability to capture continuously evolving external effects. To address this limitation, we introduce CTIA-ODE, a continuous-time forecasting framework centered on Continuous-Time Inter-Variable Attention (CTIA). Specifically, CTIA is embedded within an ordinary differential equation (ODE) solver, enabling the continuously evolving endogenous trajectory to dynamically query a static exogenous context along the integration path without requiring explicit temporal alignment. To improve the stability of the continuous latent dynamics, we further introduce a dual-stabilization strategy: architecturally, a Linear Residual Augmentation (LRA) module provides a macroscopic trend anchor, while an Outlier-Robust Hybrid Loss (ORHL) mitigates the influence of heavy-tailed anomalies during optimization. Extensive experiments across eight real-world datasets demonstrate that CTIA-ODE achieves state-of-the-art forecasting performance across diverse datasets and prediction horizons, while maintaining a favorable accuracy-efficiency trade-off with a compact memory footprint and low inference latency, particularly under long-horizon forecasting settings. Anonymous code is available at https://anonymous.4open.science/r/CTIA-ODE-15A6/.",
+    "authors": [
+      "Chengyi Pan",
+      "Huangqimei Zheng",
+      "Hao Xue"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19831v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19831v1",
+    "fetched_at": "2026-10-15T13:01:32.175691"
+  },
+  {
+    "id": "2610.19536v1",
+    "title": "Typed Decision Models on Tabular Data",
+    "abstract": "Typed decision models are language models that answer a question with a fixed set of possible answers by returning a probability for each answer instead of generating text. We study them on tabular data and compare four decision models with three large language models (LLMs) on row classification, fact verification and anomaly detection. Every request is sent in its original form and under 21 types of rewrite that keep its content, such as renaming the options or writing the table in another format. The decision models perform as well as the LLMs at a lower cost. Three of them are also far more robust to how the question is formulated. No model we test is robust to how the table is organized. For every model, at least a third of the row decisions change under some rewrite of the table or the question. The decisions to which a decision model gives low probability are the ones most likely to change. Decision models are a practical choice for tabular decisions, but their robustness remains an open problem.",
+    "authors": [
+      "Baowen Zhang",
+      "Hangting Ye",
+      "Hongyuan Zha"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19536v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19536v1",
+    "fetched_at": "2026-10-15T13:01:32.175712"
+  },
+  {
+    "id": "2610.19347v1",
+    "title": "Integrated Novelty Detection Systems: From Sensor Networks to Multi-Novelty Computer Vision",
+    "abstract": "Novelty detection is crucial in various technological and scientific domains. Its importance spans from ensuring the reliability of sensor networks to enhancing the adaptability of computer vision systems. As AI systems become increasingly sophisticated and complex, effective anomaly detection is essential for maintaining reliability and accuracy. This work addresses novelty detection in weather sensor networks and computer vision. In weather sensor networks, particularly for monitoring rainfall, detecting blocked rain gauges can significantly impact data reliability, food security, and disaster management. This work evaluates four existing quality control methods for detecting blocked rain gauges and demonstrates their limitations, particularly in detecting clusters of faulty sensors. By comparing methods such as the Conditional Mixture Model (CMM), PSWQ (Fz-filter), Kernel Regression, and Gaussian Method, we identify their shortcomings and propose three novel quality control techniques that integrate probabilistic fault detection and consistency-based diagnosis framework to improve timely detection of blocked sensors, while reducing false alarms.   In the realm of computer vision, current systems often fail to handle multiple types of novelty due to their focus on single-novelty scenarios. We highlight the need for integrated systems capable of handling multiple types of novelty. To support this, we introduce the Novel Snapshot Serengeti (NOVEL-SS) dataset, derived from the Snapshot Serengeti camera trap data, which includes various forms of novelty. We also present the DCA (Detect, Characterize, and Accommodate) baseline system, designed to handle multiple novelty by detecting, characterizing, and accommodating them. This work aims to advance the robustness and adaptability of novelty detection systems across both weather sensor networks and computer vision applications.",
+    "authors": [
+      "Irené Tematelewo"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.19347v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.19347v1",
+    "fetched_at": "2026-10-15T13:01:32.175732"
+  },
+  {
+    "id": "2610.18946v1",
+    "title": "Physical Layer Anomaly Detection via Adaptive Gaussian Mixture Model",
+    "abstract": "Physical-layer spoofing attacks pose a critical threat to wireless localization systems by manipulating channel state information (CSI). Detecting such attacks becomes particularly challenging when the attacker and the legitimate node are spatially proximate, as their CSI characteristics become increasingly similar. To address this challenge in indoor scenarios, we propose an adaptive Gaussian mixture model (GMM)-based detection framework that learns legitimate CSI patterns and detects spatial inconsistency through statistical anomaly detection. Using a massive multiple-input multiple-output (MIMO) experimental dataset with 64 uniform linear array (ULA) antenna and 5 mm spatial resolution, we evaluated our detector against CSI spoofing attacks with spatial displacements ranging from 50 mm to 450 mm. The adaptive GMM achieves 95-98% detection rate for displacements above 150 mm while maintaining 1% false alarm rate. We benchmark our approach against conventional GMM, local outlier factor (LOF), one-class support vector machine (SVM) and k-nearest neighbors (k-NN) classifiers, demonstrating overall superior detection performance of our proposed classifier.",
+    "authors": [
+      "Mamady Delamou",
+      "Luan Chen",
+      "Arsenia Chorti"
+    ],
+    "published": "2026-10-13",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.18946v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.18946v1",
+    "fetched_at": "2026-10-15T13:01:32.175753"
+  },
+  {
+    "id": "2610.18904v1",
+    "title": "Distinguishing Process Change, Instrument Fault and Data-Path Corruption in Streaming Telemetry: A Reference Implementation and Benchmark",
+    "abstract": "A reading departs from what a monitoring system expects for one of three reasons: the physical process changed, the instrument is failing, or the value was corrupted between the instrument and the software. The three call for different responses and look alike in a single sample. We state the three-cause problem, prove which pairs of causes one channel cannot separate, and propose a bank of online detectors - a Kalman tracker with CUSUM and EWMA charts on its innovation, a Hampel median with generalized-ESD confirmation, a robust noise statistic with ADWIN, exact-value checks and an optional two-channel complementary filter - combined by a deterministic, inspectable attribution rule. The detectors were merged into a public algorithm library. On 2,942 injected events of thirteen fault types the method detects 96.3% (95% interval 95.7-97.0) at 0.22 false alarms per hour and attributes 91.2% (90.6-91.8) of detected events correctly from one channel and 99.0% (98.6-99.4) with a second, rate channel; from one channel only 2 of 207 detected sensor drifts are attributed to the instrument, as the problem statement predicts. Injected into recorded industrial signals, the same catalogue is detected at 80.8% and attributed correctly at 84.5%, at 3.6 false alarms per hour. On the Skoltech Anomaly Benchmark the method detects 32 of 33 experiments with a median delay of 15 s, at 46 false alarms per hour against 11 for a rolling z-score.",
+    "authors": [
+      "Oleksandr Klymenko"
+    ],
+    "published": "2026-10-11",
+    "categories": [
+      "eess.SP",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.18904v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.18904v1",
+    "fetched_at": "2026-10-15T13:01:32.175925"
+  },
+  {
+    "id": "2610.20104v1",
+    "title": "What Do Foundation Models for Market Microstructure Learn? A Controlled Study with Synthetic Limit Order Books",
+    "abstract": "Autoregressive transformers trained on limit order book (LOB) message streams are increasingly proposed as foundation models for market microstructure. Because the generative process of real markets is unknown, these models can be judged only by the realism of their output, leaving open what they actually learn. We make the question answerable by inverting the setup: we train GPT-style models on order flow from simulators whose latent parameters are known, so that the Bayes-optimal predictor, the generating state, and the exact data entropy serve as references. Measured against them, next-token pretraining on order flow implements amortized Bayesian inference over market regimes. The learned predictive matches the exact Bayes optimum to within a millinat per token and approaches the oracle floor even on a nonstationary family whose latent state drifts within an episode, a regime that requires filtering. The latent regime is linearly decodable from frozen activations, well above baselines, so a frozen-model read-out calibrates simulator parameters more accurately than windowed maximum likelihood at a fraction of the cost. In our experiments these capabilities are not produced by scale: capacity and token volume saturate early, and it is the diversity of training regimes, not the token count, that determines generalization to unseen markets. On real NASDAQ data, zero-shot transfer is set by how well the simulator prior covers real flow: an enriched mixture nearly closes the gap to an in-domain baseline, and pretraining beats from-scratch training at every budget across held-out tickers. Known ground truth turns average next-token loss, which is uninformative near the entropy floor, into an exact comparison against the Bayes-optimal and oracle predictors.",
+    "authors": [
+      "Fernando Acero"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20104v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20104v1",
+    "fetched_at": "2026-10-15T13:02:11.153424"
+  },
+  {
+    "id": "2610.20584v1",
+    "title": "Player-1: Learning to Play from Synthetic Experience",
+    "abstract": "Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044 curated gameplay trajectories that pair recorded actions with task instructions and visual reasoning. We construct Player-1-Gym, sixteen synthetic 2D and 3D environments designed around control demands shared across games. Programmatically verifiable rewards and randomized observations and control dynamics support multi-environment reinforcement learning with PPO. The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively. Player-1-9B reaches 38.33% success compared with 12.63% for the strongest evaluated baseline, with further gains over SFT on ViZDoom-10 and GameWorld. Further analyses show that broader synthetic environment coverage improves transfer, while the use of composite actions that combine multiple keyboard and mouse inputs increases during RL. We demonstrate that learning from synthetic experience substantially improves game control beyond supervised initialization, with gains that generalize beyond the RL training suite.",
+    "authors": [
+      "Mingyu Ouyang",
+      "Yiran Wang",
+      "Siyuan Hu",
+      "Xingyilang Yin",
+      "Huiqiang Sun",
+      "Guangzhi Wang",
+      "Junfu Pu",
+      "Cheng Cheng",
+      "Honghao Chen",
+      "Ying Shan",
+      "Mike Zheng Shou",
+      "Hwee Tou Ng"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20584v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20584v1",
+    "fetched_at": "2026-10-15T13:02:14.626550"
+  },
+  {
+    "id": "2610.20560v1",
+    "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+    "abstract": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive construction processes involving global planning, fine-grained alignment, and physical simulation. To address these challenges, we propose PhySGA, a Physics-Space Grounded Agentic Framework for 3D composition via agent exploration and physical simulation, enabling the universal interactive assembly of rigid, articulated, and deformable objects. Directly applying vanilla LLMs or VLMs to this task proves insufficient, as current models inherently lack grounded physical understanding and interactive construction experience. To overcome this limitation, we design a collaborative feedforward-feedback architecture: an Assembly Agent focuses on geometric and kinematic reasoning for global step planning and coarse adjustment, while a Critic Agent reasons over contact dynamics for simulator state diagnosis and fine-grained closed-loop correction. Furthermore, Action Routers map semantic planning and analysis onto executable physical primitives within the simulator, while a task-specific Self-Evolving Skill Library distills historical trial-and-error feedback into reusable experiences, boosting success rates and minimizing exploration attempts. Extensive experiments within Isaac Sim demonstrate that PhySGA significantly surpasses existing methods in relation fidelity, physical plausibility, and visual quality.",
+    "authors": [
+      "Weichen Lyu",
+      "Chong Xia",
+      "Mingyu Dong",
+      "Long Xu",
+      "Shengjun Zhang",
+      "Yueqi Duan"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20560v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20560v1",
+    "fetched_at": "2026-10-15T13:02:14.626590"
+  },
+  {
+    "id": "2610.20538v1",
+    "title": "PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis",
+    "abstract": "Multimodal code intelligence connects the symbolic world of programs with the visual world their execution creates. Interest in this capability is burgeoning, as models are increasingly asked to produce charts, webpages, animations, and semi-structured documents. Recently, proprietary models have pushed far ahead, producing interactive artifacts even from a text description or a screenshot alone. Yet their data and training remain closed, and open progress is held back by the quantity and quality of available data and by the pipelines and methods for producing it. Quality is the harder of the two, since a sample must be correct as a program, well built, and above all visually right once rendered. No existing signal covers all three. Execution often returns just a pass or fail, code similarity does not map to the visual output, and task-specific verifiers do not generalize. To push open progress further, we start from the data side with PrismaForge, a hierarchical data pipeline centered on a synthesized rubric that decomposes these factors into checkable criteria. The same rubric serves as both filter and reward: it curates the supervised corpus, then drives reinforcement learning on visual-coding tasks. Leveraging PrismaForge for data synthesis and filtering, we build PrismaCoder-2M, the most diverse open dataset for multimodal code intelligence and the largest to date. On the model side, we train PrismaCoder-9B and PrismaCoder-35B on this data and release both. They lead the open state of the art by a wide margin and rival leading proprietary systems. Our analyses further show that the proposed rubric-based pipeline improves multimodal coding performance across model backbones. We release our code and data at https://qiushisun.github.io/PrismaCoder-Home/.",
+    "authors": [
+      "Qiushi Sun",
+      "Jingyang Gong",
+      "Yang Liu",
+      "Qiaosheng Chen",
+      "Zhangyue Yin",
+      "Zixian Huang",
+      "Hanxu Hu",
+      "Jing Xiong",
+      "Fangzhi Xu",
+      "Haochen Tan",
+      "Haoli Bai",
+      "Lifeng Shang",
+      "Xiaoguang Li",
+      "Ben Kao",
+      "Qipeng Guo",
+      "Lingpeng Kong",
+      "Jiahui Gao"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20538v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20538v1",
+    "fetched_at": "2026-10-15T13:02:14.626639"
+  },
+  {
+    "id": "2610.20532v1",
+    "title": "ActiveEvidence: Decision-Focused Evidence Graphs with Verifiable Acquisition Gaps",
+    "abstract": "A multimodal agent must decide whether visual evidence is worth acquiring, which candidate or resolution to query, and when further interaction can no longer change its decision. We study this problem under a strict free-metadata/paid-observation boundary, stochastic vector costs, and a frozen execution trace, and treat it as decision-certifiable active evidence acquisition. A Counterfactual Evidence Interaction Graph (CEIG) represents unary evidence value, signed second-order interaction, and directed conditional harm while maintaining explicit score enclosures for unresolved interactions; a decision-weighted enclosure objective tightens the bounds that can change action identity. Gap-directed refinement evaluates only interactions that can displace the incumbent acquisition and stops once an $ε$-decision certificate shows that unresolved terms cannot change the selected action beyond a declared tolerance. The certificate is model-relative: it verifies policy-consistent optimality under the pinned learned score, and semantic quality is measured separately through post-freeze labels. Paired continuation rollouts learn the downstream value of paid previews, an online operational cost filter is separated from independent finite-policy-family trajectory certification, and an acquisition monitor with an independently implemented verifier binds every certificate to the frozen trace. On 640 cases split into 384/128/128 training, validation, and test cases, the controller reaches task score 0.842, grounding F1 0.816, evidence recall 0.873, 1.74 accepted calls, 286.5K visual tokens, and 742ms p95 latency. Dense replay of issued certificates shows 0.992 action agreement and a 0.988 certificate rate while evaluating 19.6 instead of 191.4 expensive interaction terms per decision.",
+    "authors": [
+      "Miaobo Hu",
+      "Shuhao Hu",
+      "Xiaobo Guo",
+      "Xin Wang",
+      "Bokun Wang",
+      "Peng Zhang",
+      "Daren Zha",
+      "Jun Xiao"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20532v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20532v1",
+    "fetched_at": "2026-10-15T13:02:14.626671"
+  },
+  {
+    "id": "2610.20525v1",
+    "title": "The Physics Is the Network: Fast, Training-Free Neural Emulation",
+    "abstract": "Neural emulation need not require learning a substitute for known physics. We investigate PolyNets that couple a continuous-time neural representation of polynomial dynamics with a simple recurrent network for discrete-time integration. When the governing coefficients are known, the resulting tensor graph requires no training and preserves the prescribed numerical scheme while enabling efficient hardware execution and parallel simulation. Using the one-dimensional Korteweg-de Vries equation, we compare PolyNet with CPU and GPU finite-difference Runge-Kutta solvers and three trained neural models: a state-map emulator, a physics-informed predictor, and a learned-tendency integrator. Analytical soliton solutions provide a reference for amplitude and phase errors across grid resolutions, 10^6 dispersively scaled time steps, ensembles of up to 10^4 trajectories, and varying initial amplitudes. PolyNet achieves accuracy comparable to the numerical solvers, including at amplitudes outside the learned models' training conditions. It combines this fidelity with high GPU throughput, approximately constant over the tested resolution range, and favorable ensemble scaling.",
+    "authors": [
+      "Luka Todorovic",
+      "Kaushal Gianchandani",
+      "Sai Ravela"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.LG",
+      "eess.SY",
+      "nlin.CD",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20525v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20525v1",
+    "fetched_at": "2026-10-15T13:02:14.626693"
+  },
+  {
+    "id": "2610.20459v1",
+    "title": "MolLean: A Process-Verifiable Language for Chemical Reasoning",
+    "abstract": "Chemical chain-of-thought can contain hallucinated structural and property claims. We thereby introduce MolLean, a process-verifiable language that grounds chemical reasoning in an explicit molecular state. A layered Lean-based kernel checks state transitions and assertions over molecular readouts, from primitive graph edits to compound transformations. Meanwhile, a typed witness protocol separates native structural checks from externally supplied measurements. We further introduce MolLean-MCP, a stateful tool interface that exposes these transitions, checks, and readouts during generation: the model receives feedback to decide its next action, and rejected actions leave the state unchanged. MolLean supports one-pass trace execution, whole-trace refinement, and interactive reasoning through MolLean-MCP. We evaluate these three modes with direct chain-of-thought on 8,800 matched examples across 12 tasks spanning molecular generation, editing, optimization, and reactions. With Qwen3.6-27B, whole-trace refinement outperforms direct chain-of-thought on all 12 tasks. MolLean-MCP complements whole-trace refinement with stepwise verification feedback, reaching better performance in reaction tasks. Together, these results highlight an executable foundation for chemical reasoning, in which explicit chemical commitments can be checked and revised rather than remaining solely in free-form explanations.",
+    "authors": [
+      "Jiatong Li",
+      "Yatao Bian"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.CL",
+      "cs.CE",
+      "cs.PL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20459v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20459v1",
+    "fetched_at": "2026-10-15T13:02:14.626713"
+  },
+  {
+    "id": "2610.20401v1",
+    "title": "Training Language Models to Fail Gracefully",
+    "abstract": "Reinforcement learning makes language models better at solving tasks, but the same mechanism also rewards guessing. When success is the only way to earn reward, opting for a safe fallback is always worse than a long-shot attempt. When a wrong action can corrupt a database or ship broken code, that incentive can be costly. Therefore, we propose training models to fail gracefully: to preserve successful behavior whenever possible while learning to execute a safe fallback policy when acting would be unreliable. However, naively using policy gradients with intermediate reward for fallback behavior is brittle due to unfavorable optimization dynamics. We address this challenge with GracefulRL, which reshapes the optimization landscape to promote graceful failure. Importantly, this behavior emerges directly from outcome-level reward signals, without annotations specifying when to fall back or additional inference-time machinery such as a verifier. Across a range of tasks and scales, we train models that largely preserve their task-solving capability while selectively falling back when acting would be unreliable. More broadly, our results show that reinforcement learning can not only incentivize models to succeed, but also to reason about the limits of their capabilities and change course when they determine that success is out of reach.",
+    "authors": [
+      "Daman Arora",
+      "Xuecheng Liu",
+      "Himanshu Gaurav Singh",
+      "Fahim Tajwar",
+      "Abitha Thankaraj",
+      "Ruslan Salakhutdinov",
+      "Haiwen Feng",
+      "Yuda Song",
+      "Andrea Zanette"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20401v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20401v1",
+    "fetched_at": "2026-10-15T13:02:14.626744"
+  },
+  {
+    "id": "2610.20388v1",
+    "title": "From Relevance to Validity: Zero-Shot Tool Selection via Functional and Contextual Validation",
+    "abstract": "Large language model (LLM) agents increasingly face tasks from unseen domains and execution contexts, making zero-shot tool selection essential for identifying tools that can satisfy task requirements. Existing dominant methods mainly rely on relevance ranking, but semantic matching alone cannot ensure that a tool is functionally compatible or remains applicable in a new context. We preliminarily identify a \\emph{transfer-validity gap}, where semantically relevant tools may still fail to satisfy functional or contextual requirements after transfer. To address this gap, we propose \\methodname{}, a progressive validation framework that complements semantic relevance with endpoint-grounded functional compatibility and task-conditioned contextual evidence. Across cross-domain and cross-dataset transfer, \\methodname{} consistently improves capability ranking, with larger gains under functional or contextual ambiguity. Ablation results further confirm the complementary contributions of functional and contextual validation.",
+    "authors": [
+      "Xiaoxuan Dong",
+      "Jin Zhang",
+      "Zichen Yuan",
+      "Yue Zhou",
+      "Zihao Rao",
+      "Dexu Yu",
+      "Tingyong WU",
+      "Wenhao Deng",
+      "Junchen Fu",
+      "Pengwei Sun",
+      "Yang Ran",
+      "Bo Lan",
+      "Yongxin Ni",
+      "Youhua Li"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20388v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20388v1",
+    "fetched_at": "2026-10-15T13:02:14.626784"
+  },
+  {
+    "id": "2610.20334v1",
+    "title": "TreeFlex: Agents Navigating Their Own Search Trees",
+    "abstract": "A ReAct-style agent accumulates observations, intermediate results, and failed attempts in a single context. As this context grows, stale and off-path information consumes its limited capacity and obscures relevant evidence, making focused reasoning increasingly difficult. We introduce TreeFlex, a framework in which the agent's own policy decides where to search. The agent records each intermediate state, with a short summary, as a node in a search tree maintained by the harness. The policy is a single language model that acts in two roles. In the Reflection role, it has a global view of the tree through these summaries and picks a node to resume, together with an instruction. In the Execution role, the harness restores the path that led to that node, and the model carries out the instruction with the usual task tools until it saves a new node or proposes a solution, which Reflection then approves or sends back to another node. Through these choices, the policy decides whether to deepen the current line, branch from or revisit an earlier state, verify a proposal, or stop, without a fixed traversal order or a score for each node. We train navigation, task actions, checkpointing, and proposal review jointly with a tree-aware adaptation of GRPO, using task-level outcome rewards augmented by process rewards. After small-scale RL of a 4B model, with the same active-context limit for all methods, TreeFlex reaches 48.8% accuracy on a challenging deep-research benchmark, versus 41.5% for flat ReAct and 42.8% for FoldAgent, and its Pass@8 is about ten points higher than either. On SWE-bench Verified, with all three systems trained with RL from the same 9B model, TreeFlex resolves 54.9% of tasks, versus 43.3% for FoldAgent and 45.2% for its step-wise variant.",
+    "authors": [
+      "Dongzhuo Li",
+      "Fangzhou Cheng",
+      "Weiwei Li",
+      "Kevin Han",
+      "Haixu Ma",
+      "Zhongchang Sun",
+      "Ruiyi Li",
+      "Serena Li",
+      "Xiangjun Fan",
+      "Lizhu Zhang",
+      "Yuandong Tian"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20334v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20334v1",
+    "fetched_at": "2026-10-15T13:02:14.626822"
+  },
+  {
+    "id": "2610.20318v1",
+    "title": "Efficient Test-Time Adaptation For Robot Policies",
+    "abstract": "Reinforcement-learning policies for robot locomotion can fail at deployment when operating conditions shift (e.g., rough or slippery terrain, payload changes, sensing degradation), and retraining or manual recalibration is often infeasible under on-device latency and memory constraints. We study test-time adaptation (TTA) for robotic control: adapting a pretrained policy online and in a self-supervised manner during execution, without access to rewards. Our starting point is a lightweight baseline that updates only the actor using a frozen pretrained critic as a deployment-time performance surrogate. Building on this, we introduce TEMPO, a test-time entropy-regularized, memory-guided policy optimization method that stabilizes critic-driven updates under severe shift. TEMPO combines (i) an entropy-promoting regularizer on the critic's predictive distribution to mitigate overconfident extrapolation, and (ii) a score-based memory, inspired by prioritized replay, that prioritizes low-value (\"hard\") observations and applies importance sampling to focus limited computation on the most informative deployment conditions. Across Go1, Go2, and G1 in MuJoCo Playground under four representative shifts and multiple architectures, TEMPO yields consistent gains, reaching up to 80% improvement in a single-device setting. We further validate on a physical Unitree Go2 with an added calf payload, where fully on-device adaptation improves performance over the non-adapted baseline across real-world episodes.",
+    "authors": [
+      "Motasem Alfarra",
+      "Pietro Mazzaglia",
+      "Markus Peschl",
+      "Daniel Dijkman",
+      "Christos Louizos"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20318v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20318v1",
+    "fetched_at": "2026-10-15T13:02:14.626846"
+  },
+  {
+    "id": "2610.20312v1",
+    "title": "Reflect After Failure: Brain-Inspired Self-Evolving Agents for Embodied Spatial Intelligence",
+    "abstract": "Vision-Language Models (VLMs) have made substantial progress in spatial reasoning, and self-evolving agents further extend these capabilities to embodied environments by learning from interactions. However, current self-evolution remains particularly challenging in embodied spatial tasks, complex and multi-step decisions from partial visual evidence making it difficult to determine why an execution fails. The failure may stem from misperception, insufficient exploration, or incorrect planning, yet execution feedback alone rarely reveals which component is responsible. As a result, simply accumulating interaction experience can reinforce ineffective strategies. To address this, we propose HiMeco, a brain-inspired self-evolving agent for embodied spatial intelligence, inspired by metacognitive monitoring and hippocampal memory consolidation. Through Hippocampal-Metacognitive Reflection, HiMeco diagnoses failures in perception-exploration-planning (PEP), then compares execution attempts to derive reusable strategies and guidance for avoiding recurring errors. It also abstracts interaction programs into parameterized skills, using evidence contracts and execution-based validation to determine their retention and reuse. These strategies and skills guide subsequent interactions, with memory updated only between rounds and model parameters kept frozen. HiMeco achieves state-of-the-art performance on ESI-Bench, and it also improves accuracy on EmbSpatial-Bench by 3.94 percentage points without evolution.",
+    "authors": [
+      "Xin Li",
+      "Xiaohuan Gu",
+      "Yifan Wang",
+      "Shaobin Ling",
+      "Tianli Shi",
+      "Jingao Xu",
+      "Zhimeng Yin",
+      "Dapeng Wu",
+      "Yun Wang"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20312v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20312v1",
+    "fetched_at": "2026-10-15T13:02:14.626877"
+  },
+  {
+    "id": "2610.20294v1",
+    "title": "MMLA-RSI: Recursive Self-Improvement through RTT and RTMA",
+    "abstract": "An agent can improve its behavior within an unresolved problem by changing how it acts and which experience it retains. We propose MMLA-RSI, a recursive self-improvement scheme with two implementations in Memory-Mediated Learning Architecture: Reasoning-Time Training (RTT) changes the policy state $Φ$, while Reasoning-Time Memory Adaptation (RTMA) changes authoritative memory $M$. Each route also makes its adaptation method an object of improvement. A current numerical updater trains the policy proposing its successor; a current memory manager chooses the records available to the process proposing its successor. An independently admitted successor takes over the same role in the next generation. We give bounded executable rule languages, shared task/proposal interfaces, and one algorithm for either route or their composition. The RTT instance changes scalar schedules in a clipped-momentum update. The RTMA instance chooses NULL or a complete-row write with possible eviction. A fixed interpreter, trusted committer, and independent evaluator bound what can change. State versions, read closures, and conditional properties describe causal execution, accepted transitions, and finite work. Existing numerical-component studies motivate the construction. In four-candidate program selection, retaining LARC feedback updates reduces expected error by 24.65 and 36.65 percentage points for two trained initializations. In chronological continuous-integration replay, feedback binding is positive while retention increases loss. Completed SQL studies improve substantially over an unadapted substrate but do not establish the required additional online benefit. These results characterize their declared components. The two recursive routes and their joint realization are specified here; their beneficial recursive chains and discovery efficiency remain to be evaluated.",
+    "authors": [
+      "Junyi Zou",
+      "Avrova Donz"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20294v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20294v1",
+    "fetched_at": "2026-10-15T13:02:14.626896"
+  },
+  {
+    "id": "2610.20261v1",
+    "title": "Harness Policy Distillation: Aligning Agent Policies with Runtime Semantics",
+    "abstract": "Deploying a general-purpose model as an agent means running it inside a product-specific runtime harness that decides which actions are executable, how state advances, and when the loop may terminate. Ordinary trajectory supervision shows which action was taken but leaves the runtime semantics behind that action implicit. We introduce Harness Policy Distillation (HPD), which makes these runtime control semantics an explicit training target alongside actions to align the harness policy. HPD replays reference trajectories through the harness to recover the runtime semantics that are implicit in ordinary trajectory data, and represents them as control documents at each model-call boundary. These documents provide privileged information for a teacher to generate actions, while harness verification ensures that the resulting targets are executable under the runtime contract. We jointly train a shared model on the runtime semantics recovered from control-state privileged information and native history, thereby internalizing these semantics into the model policy. At deployment, the trained model uses the original harness interface without requiring the control document or any additional supplement. On TRAJECT-Bench with the Pi harness, Qwen3-8B trained with HPD reaches 22.98% autonomous task success and 49.23% runtime compliance, against 3.09% and 19.90% for the unadapted model. Harness-verified teacher actions substantially improve the native deployment policy, while joint control-state supervision provides further gains in task completion and runtime compliance. HPD turns executable runtime semantics into dense supervision for learning harness-compatible actions at each decision boundary.",
+    "authors": [
+      "Junze Zhu",
+      "Weihao Chen",
+      "Zhiyang Zhou",
+      "Zhen Wu",
+      "Xinyu Dai"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20261v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20261v1",
+    "fetched_at": "2026-10-15T13:02:14.626919"
+  },
+  {
+    "id": "2610.20193v1",
+    "title": "SWE-Stream: Scaling Executable Training Data for SWE Agents via Progressive Construction and Elastic Streaming",
+    "abstract": "Software engineering agents have advanced rapidly, but scaling their training remains constrained by the limited availability of high-quality executable tasks. Development histories contain valuable signals for constructing such tasks, yet they often require substantial reconstruction due to incomplete environments, missing tests, and inconsistent artifacts. We present SWE-Stream, a system for scaling executable SWE training data through progressive construction and elastic streaming execution. SWE-Stream progressively validates and refines task candidates, reusing existing artifacts when possible and applying targeted completion only when necessary. An elastic scheduler asynchronously coordinates construction stages under shared resource constraints, adapting execution budgets based on observed workload demands. Using development histories from 10,728 repositories across six programming languages, SWE-Stream constructs 80,874 validated tasks and collects 118,688 successful trajectories. Fine-tuning Qwen3-30B-A3B-Thinking-2507 on these trajectories achieves resolve rates of 69.0%, 49.3%, and 45.42% on SWE-bench Verified, Multilingual, and Pro, respectively. In a controlled comparison with approximately matched training budgets, SWE-Stream achieves a 45.6% resolve rate on SWE-bench Verified, outperforming three existing data sources. Moreover, its streaming construction strategy improves efficiency, delivering $1.45\\times$ the accepted-task throughput of batch construction and accepting 13.2% more tasks than fixed-limit streaming.",
+    "authors": [
+      "Chengyang Liu",
+      "Wen Yang",
+      "Shifeng Chen",
+      "Delai Qiu",
+      "Ji Yang",
+      "Junnan Zhu",
+      "Yining Wang",
+      "Shengping Liu"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20193v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20193v1",
+    "fetched_at": "2026-10-15T13:02:14.626949"
+  },
+  {
+    "id": "2610.20107v1",
+    "title": "Why Generate a Click? Plug-in Decision Heads for Web Agents",
+    "abstract": "Web agents built on vision language models decide every action by generating text such as click(12), although most of that text encodes a choice among a few action types and a few dozen marked elements. We read these choices directly from the hidden states that the generator computes while it reads the goal and the screenshot. Plug-in decision heads on a frozen generator predict the action type, pool the visual tokens inside each numbered box to pick the target, and point at a listed text option or at a WRITE slot that leaves the writing of new text to the generator. A confidence cascade executes the heads' action when they are sure and otherwise lets the generator decode from the KV cache of the same forward pass. With Qwen3-VL 4B and 8B generators trained on 213k web steps, a strict threshold keeps the cascade between 0.3 points below and 1.4 points above the generator on seven offline test sets while the heads decide 12 to 64% of the steps. A looser threshold raises step success on unseen Mind2Web websites by 3.1 and 1.8 points, costs up to 2 points on GUIAct and MiniWoB++, and lifts WebArena task success from 12.5 to 13.8% (4B) and from 13.6 to 14.6% (8B) with less than half of the generated tokens. Training the heads jointly with the generator lowers the generator's own step success by up to 4.9 points; heads on a frozen generator avoid this cost.",
+    "authors": [
+      "Chengguang Gan",
+      "Yunhao Liang",
+      "Hanjun Wei",
+      "Qinghao Zhang",
+      "Zhixi Cai",
+      "Shiwen Ni"
+    ],
+    "published": "2026-10-14",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.20107v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.20107v1",
+    "fetched_at": "2026-10-15T13:02:14.626975"
+  }
+]
