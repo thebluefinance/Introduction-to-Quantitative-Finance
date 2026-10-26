@@ -1,0 +1,661 @@
+[
+  {
+    "id": "2610.32970v1",
+    "title": "On the continuity of conditional distributions and stratification for derivative pricing",
+    "abstract": "Stratification can reduce the estimator variance in Monte Carlo simulations by partitioning the sample space according to a low-dimensional factor and sampling separately within the resulting strata, making it well suited to the valuation of path-dependent claims in high-dimensional financial models. Its performance, however, depends critically on the choice of the stratification factor, and effective low-dimensional factors are generally difficult to identify in complex continuous-time models. Neural networks provide a flexible approximation class for this purpose and have proved useful in related variance-reduction problems in quantitative finance. In this paper, we study the construction of neural stratification factors for derivative pricing under proportional allocation in continuous-time models. Since the numerical construction of a stratification factor typically involves approximation, we establish continuity results for the associated conditional expectations and, more generally, conditional distributions, and provide several counterexamples showing the limits of this continuity theory. Combined with density results for neural networks, our findings yield a universal approximation theorem for admissible stratification factors. We conclude with numerical experiments involving a constant-maturity-swap range accrual in a two-factor Gaussian short-rate model and a worst-of autocallable in a Wishart stochastic covariance model, where the learned factors outperform all considered benchmarks.",
+    "authors": [
+      "Aleksandar Arandjelovic",
+      "Patrick Cheridito"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "q-fin.CP",
+      "math.PR",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32970v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32970v1",
+    "fetched_at": "2026-10-26T14:46:26.494069"
+  },
+  {
+    "id": "2610.32959v1",
+    "title": "Optimal collective investment under regulatory uncertainty",
+    "abstract": "We study optimal collective investment subject to a Value-at-Risk (VaR)-type constraint that accounts for uncertainty about future regulatory requirements. The constraint incorporates several possible wealth thresholds and imposes a minimum weighted average probability of meeting them. We characterize the optimal terminal wealth, which combines regions of constant wealth at regulatory thresholds with Merton-type investment regions. Unlike a classical VaR constraint with only one threshold, our formulation generates protection against several thresholds. For two possible thresholds, we identify when both are protected and when protection concentrates on the larger one. Numerical results show that the regulatory constraint can substantially reshape the optimal payoff and generate large welfare losses relative to unconstrained investment when the required compliance probability is high, even the smaller wealth threshold is high, or initial capital is limited. In heterogeneous investor pools, welfare losses depend strongly on the composition of the risk aversions and the Pareto weights governing risk sharing. Losses are particularly pronounced when highly risk-averse investors dominate the pool. Moreover, investors with smaller capital contributions can bear disproportionately large shares of the total welfare loss, while larger contributors may bear less than their capital-proportional share. Thus, regulatory uncertainty not only reduces aggregate welfare but can also create substantial disparities in how its costs are distributed among investors.",
+    "authors": [
+      "An Chen",
+      "Christian Laudagé",
+      "Shihao Zhu"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.MF",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32959v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32959v1",
+    "fetched_at": "2026-10-26T14:46:26.494102"
+  },
+  {
+    "id": "2610.32614v1",
+    "title": "Risk Adequacy and Anti-Discrimination in Insurance Pricing: Classification, Aggregation, and Transfers",
+    "abstract": "Insurance tariffs must reconcile risk-based pricing, portfolio coverage, and anti-discrimination requirements. We introduce a framework in which tariffs are constructed through classification, aggregation of benchmark risk prices within classes, and balanced transfers, and are evaluated by several distinct criteria. This yields a multi-objective tariff-design problem whose attainable objective set and Pareto frontier describe the resulting trade-offs.   Risk adequacy is measured by the discrepancy between charged premiums and individual benchmark risk prices. Portfolio coverage is assessed through the capital required to make aggregate claims net of premium income acceptable. Anti-discrimination is examined through differences in protected-group composition across tariff classes and through premium effects experienced by protected groups. We analyze the trade-offs among these criteria and prove mathematical results characterizing their relationships: (i) the inferential threshold for perfect risk adequacy with finitely many benchmark-price levels; (ii) lower bounds on risk inadequacy under stricter inferential constraints; (iii) exact changes in risk inadequacy and inferential disparity when classes are merged, and dynamic programming for scalarized optimization over consecutive benchmark-price classes; (iv) attainable protected-group total premium effects and their minimum risk inadequacy costs under balanced transfers; (v) a sharp lower bound linking inferential disparity to the risk inadequacy required under a bound on protected-group premium-effect dispersion; and (vi) conditions for portfolio-coverage improvement and its additional risk inadequacy cost at fixed protected-group total premium effects. A numerical motor-insurance study illustrates the results.",
+    "authors": [
+      "Wiebke Hansen",
+      "Stefan Weber",
+      "Mario Wüthrich"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32614v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32614v1",
+    "fetched_at": "2026-10-26T14:46:26.494123"
+  },
+  {
+    "id": "2610.32350v1",
+    "title": "Duality of Shortfall Aversion",
+    "abstract": "Shortfall aversion describes a form of consumption habit formation in which an individual's utility depends on consumption relative to the historical consumption peak. This study develops a duality framework for a broad class of utility functions, with and without discounting, avoiding the need for determining the local optimality required by the HJB approaches commonly adopted in the literature. We show that shortfall aversion can instead be incorporated directly into the dual problem through a singular-control mechanism characterized by a variational inequality. Furthermore, we establish that the resulting value function strictly dominates those obtained in the existing literature while remaining attainable under an admissible optimal control. We demonstrate that the suboptimality of existing solutions stems from their myopic treatment of updates to the consumption peak, whereas our duality approach enlarges the admissible class to treat the consumption peak as a separate nondecreasing control and determines its optimal evolution through duality, accounting for future consumption opportunities. These results reveal a previously unrecognized advantage of the dual formulation and provide a more general and flexible framework for consumption optimization under shortfall aversion.",
+    "authors": [
+      "Jaehyun Kim",
+      "Hoi Ying Wong"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32350v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32350v1",
+    "fetched_at": "2026-10-26T14:46:26.494139"
+  },
+  {
+    "id": "2610.32237v1",
+    "title": "Financial Context-Rich Strategy for Actor-Critic based Agents: A Deep Reinforcement Learning Approach for Stock Trading",
+    "abstract": "In modern financial markets, more than 3/4th of the large volume trade is executed by algorithmic trading based on advanced trading strategies to attain higher precision and speed than traditional human traders. The conventional strategies focused on price-based indicators are inadequate in capturing the market dynamism arising from real-world events such as social sentiments, political instability, or sudden economic shifts. With the rise of Deep Reinforcement Learning (DRL) and data availability, there is a requirement for more efficient algorithms that can incorporate these external factors in trading strategies. DRL has shown potential in simulating real-world scenarios and in simplifying complex decision-making since DRL agents can automate the trading process i.e. executing trades in a manner comparable to human traders. They have shown reliable performance since they can update their policies based on risk and quantitative factors. In this paper, we propose a DRL approach based on partial and deep-infusion of sentimental analysis. It features distinct policy designs of actor-critic-based agents: only policy optimization (A2C & PPO) and policy optimization along with Q-learning principles (DDPG, TD3 & SAC). Our findings reveal, that the agents based on policy optimization combined with Q-learning, significantly and consistently demonstrate improved performance upon sentiment deep-infusion in profit maximization as well as risk-averse trading.",
+    "authors": [
+      "Hrishikesh Singh",
+      "Aarti Sharma",
+      "Millie Pant"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.AI",
+      "q-fin.CP",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32237v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32237v1",
+    "fetched_at": "2026-10-26T14:46:26.494156"
+  },
+  {
+    "id": "2610.31903v1",
+    "title": "Optimal Size in Market Making under State-Dependent Hawkes Process",
+    "abstract": "We study market making with a parametric model of executed volume that accounts for quote placement and state-dependent order flow. Executed volume is expressed as the product of an average order size, an exponential demand function, and a Prony-series multiplier depending on quote depth, market-order count constructed from a state-dependent Hawkes model. An approximation result for finite Prony sums on a compact state domain provides a mathematical basis for the representation. An empirical study of limit-order-book data examines the calibrated demand and intensity models, sensitivity to inventory restrictions, and the resulting placement policies. In retrospective evaluations conditional on realised order-flow paths, the selected calibration achieves higher terminal utility than a baseline while respecting the prescribed inventory bound. The comparisons also distinguish the contribution of trading revenues from that of inventory control. The resulting closed-form volume specification takes placement levels as inputs and can therefore be used with alternative quoting rules.",
+    "authors": [
+      "Jonathan Chávez Casillas",
+      "Li Gan"
+    ],
+    "published": "2026-10-22",
+    "categories": [
+      "q-fin.TR",
+      "q-fin.CP",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.31903v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.31903v1",
+    "fetched_at": "2026-10-26T14:46:26.494172"
+  },
+  {
+    "id": "2610.31825v1",
+    "title": "Mimicking Volatilities under Marginal Constraints via $q_x$-Bass Martingales: A Parallel Computing Approach",
+    "abstract": "We study the calibration of continuous-time martingale models to observed derivative prices via a dynamic martingale optimal transport problem that penalizes deviations from the volatility of a prescribed reference model. Using $q_x$-Bass martingales, we approximate this problem through a sequence of discrete-time problems and prove that the continuous-time interpolations of their optimizers are asymptotically optimal. Building on the theory of $q_x$-Bass martingales, we develop numerical methods for the discrete-time problems that do not require full marginal distributions at calibration maturities.",
+    "authors": [
+      "Antonio Marini"
+    ],
+    "published": "2026-10-22",
+    "categories": [
+      "q-fin.MF",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.31825v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.31825v1",
+    "fetched_at": "2026-10-26T14:46:26.494187"
+  },
+  {
+    "id": "2610.29652v2",
+    "title": "Distributions or Quantiles? A Convex Variational Theory of Worst-Case Risk",
+    "abstract": "Worst-case risk evaluation is central to finance and operations research, yet existing analytical results remain fragmented and largely confined to ambiguity sets with specific structures. Using spectral risk measures as the underlying class, we develop a convex variational theory that unifies these analyses and extends them to richer ambiguity models. The theory rests on a representation principle: use the quantile or distribution formulation that preserves convexity of the full ambiguity set. In both representations, the resulting optimality conditions provide a systematic route to identify the worst-case law and determine its risk value. This approach recovers classical central-moment bounds and yields closed-form or semi-closed-form solutions for practically motivated models involving Wasserstein ambiguity with tail stress, two-sided expected shortfall (ES) bands, asymmetric partial moments, geometric-moment bounds, and exponential- or Gaussian-reference Kullback--Leibler (KL) neighborhoods. Beyond these analytical results, the same theory yields projection-based algorithms with fixed-grid convergence under the stated assumptions. In a high-dimensional portfolio application, we establish an exact projection identity for mean-anchored joint KL ambiguity under a Gaussian reference. The resulting standardized worst-case ES coefficient applies to every portfolio, reducing robust portfolio selection to an exact second-order cone program after a single calibration.",
+    "authors": [
+      "Jianjun Gao",
+      "Jonathan Yu-Meng Li",
+      "Zhen Wang",
+      "Yang Zhang"
+    ],
+    "published": "2026-10-21",
+    "categories": [
+      "q-fin.RM",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.29652v2",
+    "arxiv_url": "https://arxiv.org/abs/2610.29652v2",
+    "fetched_at": "2026-10-26T14:46:26.494371"
+  },
+  {
+    "id": "2610.32964v1",
+    "title": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
+    "abstract": "Few-shot industrial anomaly detection requires modeling category-specific normality from only a handful of defect-free images. Common approaches tie inference to stored exemplars, impose rigid linear structure, or risk reproducing anomalous content. Flownomaly instead casts the problem as normal-counterpart recovery in frozen DINOv2 feature space. Given normal supports, a velocity field is learned through conditional flow matching over frozen patch tokens to transport Gaussian noise toward normal features. Along straight paths, a single recovery step using one evaluation of the optimal field yields the posterior mean of the clean normal token without trajectory integration. The operating time governs how strongly recovery modifies a query token. With no anomalous validation samples available for tuning, a normal-only Jacobian gain-to-noise criterion selects this time from the supports alone. Squared residuals between query tokens and their recovered counterparts yield anomaly signals for both dense localization and image-level detection. Across 1-, 2-, and 4-shot benchmarks on MVTec-AD and VisA, together with sample-shot evaluations on Real-IAD, Flownomaly achieves state-of-the-art performance against recent category-specific methods. In the 1-shot setting, image- and pixel-level AUROC reach 97.8% and 98.0% on MVTec-AD and 95.3% and 98.7% on VisA, with a 2.1-point image-level AUROC improvement over the strongest baseline on VisA. Code is available at https://github.com/b-rbmp/Flownomaly.",
+    "authors": [
+      "Bernardo Perrone Ribeiro",
+      "Erkut Akdag",
+      "Egor Bondarev"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32964v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32964v1",
+    "fetched_at": "2026-10-26T14:46:39.865022"
+  },
+  {
+    "id": "2610.32765v1",
+    "title": "Clean-label Poisoning Attack and Defense Game for Federated Learning in Vehicular Networks",
+    "abstract": "This paper studies interactions between clean-label poisoning attack and defense in vehicular networks using federated learning (FL). Basic Safety Message (BSM) classification for anomaly detection is modeled as a distributed learning problem over a vehicular network with dynamic topology. As a critical threat to FL, a feature-space clean-label attack is introduced, wherein benign samples are perturbed toward malicious feature extremes, degrading class separability while preserving labels. To counter this, a feature-consistency relabeling defense is proposed to detect and relabel suspicious samples. A game-theoretic framework is developed to capture attack-defense interactions and characterize equilibrium strategies based on attack effectiveness and cost parameters. Results show that the attack scales effectively with compromised nodes, while the proposed defense keeps attack success low without degrading clean accuracy and shifts equilibrium regions toward attack-averse regimes.",
+    "authors": [
+      "Yalin E. Sagduyu",
+      "Tugba Erpek",
+      "Nathan Stephenson",
+      "Mengran Xue"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.NI",
+      "cs.AI",
+      "cs.DC",
+      "cs.LG",
+      "eess.SP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32765v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32765v1",
+    "fetched_at": "2026-10-26T14:46:39.865051"
+  },
+  {
+    "id": "2610.32742v1",
+    "title": "Adaptive World-Models for Anomaly Recognition (AWARE): A Framework for Robot Dynamics Prediction and Introspection",
+    "abstract": "Unrecognized anomalies in critical infrastructure can rapidly cascade into catastrophic physical or operational failures. Current anomaly detection approaches often rely on direct access to the monitored system by utilizing onboard sensors, such as motor encoders, to detect anomalous states. However, legacy hardware often lacks these sensors, or strict security protocols may prohibit access altogether. We therefore present AWARE, a world model framework that is capable of anomaly detection using only external camera monitoring via system dynamics estimation and state prediction. Evaluated across 240 real-world robotic crane trajectories, including payload collisions and motor degradations, AWARE demonstrates a 26% improvement in anomaly classification over our strongest baseline under noisy, camera-only state estimation. Furthermore, the inferred dynamics parameter can be decoded to identify the source of faults, localizing the degrading motor with 88% accuracy.",
+    "authors": [
+      "Luke Beddow",
+      "George Mavroghenis",
+      "Rodrigo Chacon Quesada",
+      "Kamil Dreczkowski",
+      "Cong Sun",
+      "Jiankai Wang",
+      "Oscar Kwong-Fai Pang",
+      "Antoine Cully"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32742v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32742v1",
+    "fetched_at": "2026-10-26T14:46:39.865076"
+  },
+  {
+    "id": "2610.32486v1",
+    "title": "Efficient Zero-Shot Video Anomaly Detection via Signal-Aware Adaptive Fusion (SAAF)",
+    "abstract": "Deploying Vision-Language Models for video anomaly detection confronts a fundamental constraint. Their semantic reasoning demands computational budgets incompatible with the scale of real-world video streams. We present Signal-Aware Adaptive Fusion (SAAF), a framework that achieves efficient zero-shot anomaly detection through three key innovations. First, we introduce a dual-signal adaptive sampler operating in semantic embedding space: a delta signal captures sudden events via frame-to-frame cosine distance, while a drift signal detects static and gradual anomalies through deviation from rolling temporal context. Their OR-gated combination with adaptive EMA-based thresholding provides comprehensive anomaly coverage without training data. Second, we propose a threshold-gated cascaded architecture where lightweight frame-level scoring precedes expensive video-level temporal analysis, invoking it only when confidence warrants additional context. Third, we design a signal-aware weighted fusion mechanism that dynamically adapts score combination based on which signal triggered frame selection. Across four benchmarks, SAAF delivers competitive accuracy at substantially lower cost. Among training-free zero-shot methods, SAAF sets a new state of the art on XD-Violence (92.07%), MSAD (86.70%), and ShanghaiTech (80.54%) AUC-ROC, with XD-Violence and MSAD also surpassing supervised baselines. SAAF sustains 44.95, 48.61, and 41.06 FPS on XD-Violence, UCF-Crime, and MSAD, a 2.43$\\times$, 2.63$\\times$, and 2.22$\\times$ throughput improvement over the prior best zero-shot method. Code: https://github.com/kdawoud91/SAAF",
+    "authors": [
+      "Khaled Waleed Dawoud",
+      "Muhammad Haris Khan"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32486v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32486v1",
+    "fetched_at": "2026-10-26T14:46:39.865091"
+  },
+  {
+    "id": "2610.32438v1",
+    "title": "Data Quality Audit and Bivariate Temperature-Humidity Analysis of a Long-Term LoRaWAN Network: Anomaly Detection, PCA, Clustering and Machine Learning",
+    "abstract": "Long-term environmental IoT/LPWAN deployments often aggregate heterogeneous data streams from diverse devices without systematic auditing of each variable's actual coverage prior to analysis-an increased risk when multiple sensor types coexist within the same network. This work proposes a C++17 processing pipeline applied to the Tour Perret LoRaWAN dataset (421 937 frames, June 2021--June 2023, 5 devices). A systematic coverage audit integrated into the extraction phase reveals that CO2 is completely missing (0% coverage) and pressure is reported only by an isolated base module (Wyres, 4.24% of the corpus), invalidating the initial hypothesis of a joint four-variable analysis. The analysis is refocused on the Temperature--Humidity pair, jointly available across 205{,}005 frames (95.76%) from 4 Elsys EMS sensors. The pipeline sequentially performs anomaly detection (modified Z-score, Isolation Forest), bivariate Principal Component Analysis, clustering (K-means, DBSCAN), and a multilayer perceptron predicting humidity from temperature and time, whose residuals serve as a detector for slow drift. On real-world data: Temperature--Humidity correlation r=-0.662, two-component PCA (PC1 =83.1% of variance), Isolation Forest detects 2.12% multivariate anomalies while univariate Z-score detects none, calibrated DBSCAN isolates 0.17% noise across 13 clusters, and the MLP achieves $R^2=0.672$ (RMSE =10.54%) in cross-validation. This work demonstrates that per-variable coverage auditing prior to modeling is a necessary methodological step for heterogeneous multi-sensor IoT datasets.",
+    "authors": [
+      "Mamadou Sow"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.LG",
+      "cs.DC",
+      "physics.ao-ph",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32438v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32438v1",
+    "fetched_at": "2026-10-26T14:46:39.865105"
+  },
+  {
+    "id": "2610.32337v1",
+    "title": "TENET: Time-point Encoding Network for Multivariate Time Series Anomaly Detection",
+    "abstract": "In unsupervised multivariate time series anomaly detection (MTSAD), local variation can inflate reconstruction and forecasting errors, making observation-space discrepancy an unreliable indicator of abnormal system behavior. Since latent-space scoring can mitigate this limitation, we reframe one-class MTSAD as current-point system-state compatibility estimation and propose TENET, the Time-point Encoding Network for Multivariate Time Series Anomaly Detection. We define the current-point system state as a latent representation of the target time point, constructed from variable-level temporal context in the input window. TENET constructs this state through a temporal layer that retrieves window context relative to the current point, encodes time with current-point-centered embeddings, and adaptively mixes the retrieved context with the current representation. With this design, TENET treats the input window not as the object to reconstruct, forecast, summarize, or score, but as context for constructing a latent representation evaluated with a fixed standard-normal negative log-likelihood score. Across benchmark datasets, TENET achieves state-of-the-art performance. Additional experiments further show that TENET remains effective under alternative one-class objectives and outperforms substitutions based on generic sequence encoders, suggesting that its advantage comes from decision-aligned representation construction rather than from a specialized scoring rule. These results indicate that one-class MTSAD can be strong when the latent representation is designed around the current time point.",
+    "authors": [
+      "Dongchan Cho",
+      "Juwon Hwang",
+      "Keumyeong Kang",
+      "Jiho Han",
+      "Namsoon Jung"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32337v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32337v1",
+    "fetched_at": "2026-10-26T14:46:39.865124"
+  },
+  {
+    "id": "2610.32189v1",
+    "title": "EVOLVE: Uncertainty-Aware Multivariate Time Series Anomaly Prediction with Adaptive Prototype Memories",
+    "abstract": "Unsupervised multivariate time series anomaly prediction (AP) aims to estimate future anomaly risks from current observations, providing early-warning signals for proactive intervention and maintenance in complex systems. Existing unsupervised AP methods follow a perturbation-based paradigm, where predefined or random perturbations are injected into historical windows to simulate abnormal future evolution. However, these methods share perturbations across different variables and contexts, and learn deterministic history-to-future evolution. In reality, anomaly evolution is variable- and context-dependent: the same perturbation may be amplified into abnormal future dynamics in one variable or context, while being absorbed as normal fluctuation in another. In addition, future evolution is not uniquely determined by a historical window, since similar histories may lead to multiple plausible trajectories, such as gradual degradation or abrupt changes. To address these problems, we propose EVOLVE, a unified framework that models unsupervised AP via variable- and context-conditioned perturbations and uncertainty-aware future reasoning. EVOLVE constructs context-specific anomaly perturbations through an adaptive anomaly prototype memory, which can dynamically update and retrieve relevant perturbations at the variable level. EVOLVE models uncertainty by sampling multiple latent historical states and decoding through complementary smooth and deviation-amplifying evolution hypotheses, and the disagreement among decoded future trajectories is used to estimate future anomaly risk. Extensive experiments on six real-world benchmark datasets demonstrate that EVOLVE consistently outperforms state-of-the-art anomaly prediction baselines.",
+    "authors": [
+      "Jianxin Jin",
+      "Kai Zhao",
+      "Shiyan Hu",
+      "Yang Shu",
+      "Peng Chen",
+      "Meng Wang",
+      "Zhongwen Rao",
+      "Yijie Li",
+      "Jing Wang",
+      "Bin Yang",
+      "Chenjuan Guo"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32189v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32189v1",
+    "fetched_at": "2026-10-26T14:46:39.865151"
+  },
+  {
+    "id": "2610.32073v1",
+    "title": "Guided Zero-Shot Anomaly Explanation for Anonymized Crowd Video Monitoring: Context, Categorization, and Spatial Localization",
+    "abstract": "Despite the promising development of deep learning for video anomaly detection (VAD), explainability (XAI) of these models remains a challenge. Explainable and privacy-protecting VAD builds transparency and trust that facilitates adoption of computer vision systems, including safety and security monitoring. However, anomaly explainability in privacy-preserving VAD systems is underexplored. In this study, we present the XAVAD approach, a unified descriptive anomaly XAI for an anonymized VAD, that integrates flexible zero-shot anonymization, anomaly type categorization, visual localization, and scene context description. We provide empirical and qualitative assessments of multifaceted explanations integrated with full-body visual anonymization for privacy protection. We adopt a multimodal CLIP embedding for videos, using improved LLM-assisted prompting and pool-scoring mechanisms for anomaly-type identification. We enhance Grad-ECLIP for spatial anomaly heatmap localization, leveraging computation and accuracy through our novel prompt-guided patching autofocus mechanism. We employ VLMs to generate context and reasoning descriptions of detected anomalies through curated prompt engineering. We have evaluated the accuracy and computational cost of XAVAD on several publicly available CCTV and video datasets. Our experiments demonstrate substantial gains of our XAVAD over state-of-the-art benchmark approaches and provide insights into privacy protection trade-offs in XAI for VAD. We further present ablation studies and assessments across diverse configurations and modeling alternatives to demonstrate the efficacy of our proposed methods. Code: https://github.com/muleina/XAVAD}{https://github.com/muleina/XAVAD .",
+    "authors": [
+      "Mulugeta Weldezgina Asres",
+      "Lei Jiao",
+      "Christian Walter Omlin"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32073v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32073v1",
+    "fetched_at": "2026-10-26T14:46:39.865167"
+  },
+  {
+    "id": "2610.31984v1",
+    "title": "WADE: An LSTM-Based Anomaly Detection Engine for WebAssembly Applications",
+    "abstract": "WebAssembly (Wasm) enables near-native performance for web applications through a portable and sandboxed execution model. However, its limited runtime protection mechanisms (e.g., the lack of stack canaries and address space layout randomization (ASLR)) leave Wasm applications vulnerable to traditional attacks.   We present WADE (WebAssembly Anomaly Detection Engine), a system that detects anomalous runtime behaviors in browser-executed WebAssembly applications. WADE monitors function-level execution traces collected under benign conditions and trains a Long Short-Term Memory (LSTM) network to learn the normal execution behavior of each application. At runtime, the model flags deviations from these learned patterns as potential attacks. Unlike signature-based approaches, WADE builds application-specific behavioral models, enabling detection of both known and previously unseen attacks without per-vulnerability signatures.   We evaluate WADE on a dataset of 67 WebAssembly applications spanning ten vulnerability classes, achieving zero false negatives and a 0.42% false positive rate.",
+    "authors": [
+      "Ilaria Campestrini",
+      "Stefano Zanero",
+      "Engin Kirda"
+    ],
+    "published": "2026-10-22",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.31984v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.31984v1",
+    "fetched_at": "2026-10-26T14:46:39.865185"
+  },
+  {
+    "id": "2610.31722v1",
+    "title": "Autoregressive Multimodal Anomaly Detection with Large Language Models for Microservice Systems",
+    "abstract": "Microservice systems have become a dominant architecture for large-scale cloud applications, enabling rapid deployment and elastic scaling. However, ensuring the reliability and availability of microservice systems critically relies on effective anomaly detection, as failures and performance anomalies can quickly propagate across services and severely impact end-to-end system behavior. Existing multimodal anomaly detection approaches for microservice systems often struggle with two fundamental limitations: (i) the neglect of modality-specific characteristics in favor of cross-modality fusion, and (ii) the \"identity-shortcut\" problem that affects the feature reconstruction process. To address these issues, we propose LLMMAD, an autoregressive multimodal anomaly detection framework for microservice systems based on Large Language Models (LLMs). Initially, to reconcile cross-modality fusion with modality-specific preservation, LLMMAD embeds and recombines multimodal data into a unified sequence for LLM processing to model inter-modality relationships, while employing modality-wise reconstruction heads to retain modality-specific information. Subsequently, to eliminate the identity-shortcut, we implement a prediction-driven autoregressive objective, under which the model predicts future states rather than copies current inputs. Finally, we conduct extensive experiments on three real-world datasets. The results demonstrate that LLMMAD consistently outperforms state-of-the-art methods, achieving F1-score improvements of 3.1%, 1.4%, and 0.9%, respectively, thereby providing a more reliable solution for microservice monitoring.",
+    "authors": [
+      "Yixiang Tang",
+      "Fagui Liu",
+      "Guoxiang Zhong",
+      "Xi Yao",
+      "C. L. Philip Chen"
+    ],
+    "published": "2026-10-22",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.31722v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.31722v1",
+    "fetched_at": "2026-10-26T14:46:39.865249"
+  },
+  {
+    "id": "2610.32969v1",
+    "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+    "abstract": "Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to collect, but their motions must be estimated and retargeted to the robot, and they do not directly provide robot actions. In this paper, we introduce DexPort, a portable data-collection interface for high-DoF robot hands. It uses the same hand hardware for collection and deployment, avoiding a hand embodiment gap, and records both commanded joint targets and measured joint states. Our key observation is that a small set of skills can support a wide range of dexterous tasks. During collection, the operator moves the hand-held interface to specify the robot wrist motion and selects or adjusts skills that coordinate the finger motion. This removes the need to control each joint independently while retaining behaviors such as precise grasping and in-hand manipulation. We collect demonstrations across several real-world tasks and in unstructured environments without a robot arm. We then use behavior cloning to train visuomotor policies directly on the recorded wrist motions and hand commands, without skill labels. We evaluate across 4 tasks: pick-and-place with diverse objects, screwing with in-hand tool use, drawer stowage which requires simultaneous grasp and pulling, and a bimanual scanning task. We collect over 2,500 demonstrations with our portable device, in both laboratory and in-the-wild settings. Across our tasks, we see an improvement from 11% to 64% when using recorded robot commands instead of states, and an improvement from 36% to 78% for task success when using in-the-wild data.",
+    "authors": [
+      "Amber Xie",
+      "Jiawei Fu",
+      "Xiaofeng Guo",
+      "Carmelo Sferrazza",
+      "Guanya Shi",
+      "Haozhi Qi"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32969v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32969v1",
+    "fetched_at": "2026-10-26T14:47:12.741481"
+  },
+  {
+    "id": "2610.32951v1",
+    "title": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
+    "abstract": "Reinforcement learning for large language models often uses separate systems for inference and training. Even with identical weights and BF16 tensors, implementation differences can make an intended on-policy update off-policy and destabilize training. Existing remedies align the entire inference and training stacks, change global precision, or modify the learning algorithm. We ask whether aligning selected parts of the execution stack can stabilize BF16 RL while other implementation differences remain. We align training-side rounding locations with inference in three regions---RoPE, SwiGLU, and residual RMSNorm---by retaining selected intermediates in FP32 until their BF16 outputs. Across four Qwen-family models, aligning all three regions prevents the collapse observed under the default BF16 baseline; RoPE-path alignment alone also suffices in the studied runs, despite remaining numerical discrepancies. The interventions keep the inference engine, matrix-multiplication and attention kernels, and learning objective unchanged.",
+    "authors": [
+      "Yijing Ke",
+      "Tianle Cai",
+      "Ruosong Wang"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32951v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32951v1",
+    "fetched_at": "2026-10-26T14:47:12.741507"
+  },
+  {
+    "id": "2610.32891v1",
+    "title": "Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations",
+    "abstract": "Large Language Models (LLMs) are increasingly used to optimize code for performance. This practice often assumes that improvements in execution speed naturally translate into overall lower energy consumption. We challenge this assumption empirically by measuring whether performance-optimized code produced by LLM self-refinement pipelines is also energy-efficient relative to canonical human reference solutions, and whether the energy cost of the optimization process can be offset by subsequent execution-time savings. We evaluate 11 open-source models across four decoding configurations on all 1,000 problems of EffiBench, a state-of-the-art performance benchmark, while collecting per-process, hardware-level energy measurements throughout. Inference energy spans 0.79 to 8.68 MJ across model-variant pairs, which is roughly equivalent to the energy of 250 to 2800 GPT-4.1 queries. Limiting the maximum number of output tokens has the largest impact, reducing energy use by up to 69% compared to the default configuration. On the execution side, 42 of 44 configurations produce code that consumes more energy per problem than the canonical human reference, with overheads ranging from +4% to +886%. The two exceptions achieve only marginal gains, with break-even points on the order of 10^6 to 10^7 executions. Mixture-of-Experts architectures consume substantially less inference energy than equivalently-sized dense models without sacrificing correctness, making architectural choice a more consequential sustainability lever than decoding parameters. Performance optimization and energy efficiency are not always aligned goals: LLM self-refinement consistently produces faster-seeking but energy-heavier code relative to what a human engineer would write. All artifacts are available at https://doi.org/10.5281/zenodo.23598170.",
+    "authors": [
+      "Sadra Emami",
+      "Benjamin Weigell",
+      "Mohammad Reza Mousavi",
+      "Gunel Jahangirova",
+      "Hugo Araujo",
+      "Bernhard Bauer"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32891v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32891v1",
+    "fetched_at": "2026-10-26T14:47:12.741528"
+  },
+  {
+    "id": "2610.32813v1",
+    "title": "HarnessMM: Recursive Self-Improvement for Harness Token Efficiency",
+    "abstract": "Agent harnesses repeatedly invoke reasoning after tool feedback, even when an earlier call has already fixed the next action. We introduce HarnessMM (Harness Minus Minus), a method for improving harness token efficiency through guarded decision reuse and recursive self-improvement (RSI). RSI iteratively refines companion harness configurations from training feedback, with validation selecting the configuration for deployment. A controller at the model-tool boundary reuses resolved decisions to replace later reasoning callbacks while actor weights remain fixed. Executable Decision Graphs store exact actions, literal arguments, causal dependencies, and public guards. Guarded Decision Reuse activates these persistent decisions from observed receipts; Certified Callback Substitution executes them through the native interface and records removal of the registered slow callback. New semantic decisions, unsupported evidence, and selector abstention invoke the original actor again. The representation restricts what feedback may change, while complete-task measurements establish quality and cost. On HumanEval, HarnessMM preserves Codex success at 90.82\\% while reducing Tokens/task (k) from 66.72 to 47.02 (29.54\\% saving). For DeepSeek Harness, success rises from 71.43\\% to 85.71\\% while Tokens/task (k) fall from 96.28 to 11.62 (87.93\\% saving). A separate MBPP ablation measures 26.91\\% lower cost than single-use graphs and 19.52\\% lower cost than retained callbacks. These results establish guarded decision reuse as a practical way to reduce repeated reasoning in existing harnesses.",
+    "authors": [
+      "Yuhua Jiang",
+      "Chang Xu",
+      "Feifei Gao",
+      "Li Zhao"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32813v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32813v1",
+    "fetched_at": "2026-10-26T14:47:12.741546"
+  },
+  {
+    "id": "2610.32755v1",
+    "title": "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+    "abstract": "Navigating complex, high-dimensional biological search spaces necessitates scalable physical and computational intelligence to explore beyond local optima through iterative self-play across ideation, experimentation, and automation. Translating experimental designs into reliable physical execution remains bottlenecked by static laboratory automation and unmodeled physical variability. To address this, we introduce VERified Infrastructure for Discovery Laboratories, or VERID, a foundational infrastructure designed to bridge the gap between the high-level reasoning of artificial intelligence (AI) agents and complex, error-prone physical realities of wet labs. VERID is a persistent, high-fidelity semantic digital twin of the laboratory workcell that provides four core services: queryable introspection for agentic reasoning, time-compressed simulation for protocol validation, comprehensive trace persistence for a complete scientific record, and a framework for safe execution.   We present three case studies using aqueous dye and deionized water mixtures to validate the optical and fluidic foundations of VERID. These studies demonstrate how VERID enables pre-emptive detection of critical errors in experimental protocols, stateful mid-run error recovery and post-hoc identification of subtle physical failures. The simulation functions as a discrete accounting engine, allowing agents to safely and inexpensively explore experimental designs in silico and refine experimental strategies through iterative self-play. VERID also captures structured multimodal experimental data for downstream analysis, knowledge mining and agent training. We argue that this semantic layer is an essential prerequisite for deploying autonomous agents in the biochemical and biomedical sciences, ensuring data integrity, operational safety, and paving the way for tackling previously intractable grand challenges in biology.",
+    "authors": [
+      "Yves Delley",
+      "John Coller",
+      "Zachary Cutts",
+      "Alexander Daryin",
+      "Mathias Bellaiche",
+      "Jun W. Kim",
+      "Oscar Donosa",
+      "Srinidhi B. Seshadri",
+      "Tanner Clary",
+      "Sandy Klemm",
+      "Avinatan Hassidim",
+      "Yossi Matias",
+      "Pooja Rao",
+      "Petar Sirkovic",
+      "Annalisa Pawlosky"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32755v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32755v1",
+    "fetched_at": "2026-10-26T14:47:12.741581"
+  },
+  {
+    "id": "2610.32676v1",
+    "title": "Retiming Robot Demonstrations with a Learned Speed Prior",
+    "abstract": "The pace of a robot demonstration is often determined by the teleoperator rather than by the task itself. As a result, the same motion can appear at widely different speeds across demonstrations, and policies trained on such data may inherit operator-specific timing along with task behavior. We propose to learn a speed prior directly from large-scale demonstration data. Given a task instruction, a motion path and the images along it, it predicts a distribution over execution speed along the path, from which a chosen quantile defines a consistent clock for retiming each demonstration. Existing methods derive the acceleration signal from the very data they accelerate, so each new task costs another fit, annotation, or pair of predefined rates. A single trained speed prior instead covers every task in a corpus. We fit a speed prior on both robot teleoperation data and handheld demonstrations in which a human arm, rather than a robot arm, moves the gripper, and use it to retime robot demonstrations to the handheld pace before fine-tuning a vision-language-action policy. For execution, we pair the policy with a real-time optimal-control layer that tracks predicted action chunks under robot constraints using the predicted pace. On 120 RoboLab tasks, policies fine-tuned on our learned clocks succeed more often and move with up to half the jerk compared with policies fine-tuned on the original demonstration timing and uniformly accelerated to the same speed. On a real robot, our policy stacks cups in 3.50s, 1.72$\\times$ faster than the default policy's 6.02s while succeeding as often, in 29 of 30 trials. Videos and further material are available at https://mllab.snu.ac.kr/projects/learned_speed_prior.",
+    "authors": [
+      "Seungyong Moon",
+      "Deokjae Lee",
+      "Hansang Lee",
+      "Munkhtselmeg Battsengel",
+      "Youngin Kim",
+      "Seonghyeon Yun",
+      "Sungjin Jeon",
+      "SongEun Kim",
+      "Jeongmin Park",
+      "Hyun Oh Song"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32676v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32676v1",
+    "fetched_at": "2026-10-26T14:47:12.741608"
+  },
+  {
+    "id": "2610.32636v1",
+    "title": "Can AI Agents Help Robotic Engineers? Lessons from Two Focus Days in Industry",
+    "abstract": "Software developers increasingly use AI agents that execute multi-step programming tasks on their own. However, it is unclear if and how this transfers to robotic engineering, where engineers program industrial robots in niche, vendor-specific languages and rely on visual feedback from simulation tools. Within this paper, we report a case study on the use of AI agents by an SME that programs industrial robots. Our results show that the agent did not make the engineers more productive, with the exception of a task that required the generation of highly repetitive code. However, the results with the agent improved over time, as the engineers learned how to use it and the agent was adapted to the domain. Moreover, the experience with AI mattered more for the success with the agent than the experience with robotic engineering. This shows that AI agents are not a plug-and-play solution. Instead, companies must train their engineers on the usage of agents, plan time for a learning curve, and ensure that agent configurations match the domain and developer requirements. The strong learning curve we observed further implies that studies on productivity gains with AI should be longitudinal, as they otherwise miss how engineers adopt agents in practice.",
+    "authors": [
+      "Salim Fares",
+      "Steffen Herbold"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32636v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32636v1",
+    "fetched_at": "2026-10-26T14:47:12.741623"
+  },
+  {
+    "id": "2610.32629v1",
+    "title": "Interpretable Singing Emotion Recognition Using Acoustic and Vocal Technique Features",
+    "abstract": "Singing emotion recognition relies predominantly on deep learning models that achieve strong performance but offer limited insight into the vocal characteristics driving emotion, of- ten overlooking the singing voice as a distinct signal. We propose an interpretable singing emotion recognition framework using a compact set of singing-specific descriptors across prosody, spec- tral features, phonetics, and vocal technique. To decode model decisions and link predictions to measurable acoustic phenomena, we employ SHAP and apply GRAD-CAM to qualitatively assess the learned representations of vocal techniques. Evaluations show that singing-specific features reduce cross-singer variability, while vocal technique descriptors provide interpretable insights into singing expression. Furthermore, out-of-domain evaluation on VocalSet reveals interesting associations between emotional expression and ground-truth technical execution. The analysis highlights vibrato and pharyngeal techniques as salient cues of emotional delivery, with SHAP indicating that vibrato is context-dependent on articulation rate. These findings emphasize the value of domain-specific features for interpretable singing emotion analysis.",
+    "authors": [
+      "Fotini Kiriakopoulou",
+      "Vassilis Lyberatos",
+      "Spyridon Kantarelis",
+      "Athanasios Voulodimos",
+      "Giorgos Stamou"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.SD",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32629v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32629v1",
+    "fetched_at": "2026-10-26T14:47:12.741642"
+  },
+  {
+    "id": "2610.32628v1",
+    "title": "Acquisition for Spherical-Linear Bayesian Optimization on the Cube",
+    "abstract": "Recent work demonstrated that executing Bayesian Optimization (BO) using simply a linear surrogate with a clever transformation is enough to approximate the performance of the standard Gaussian-Process (GP) based version on high-dimensional test functions. When the decision region is a sphere, this strategy admits rapid exact acquisition. However, it is the unit cube we encounter most often in the BO literature, and in this setting a standard approach, namely a multi-start quasi-Newton method, is employed for solving the acquisition subproblem. In this article, we will discuss a series of results, both positive and negative, regarding the complexity of global resolution of various acquisition subproblems over the unit cube. On the basis of this discussion, we will propose a new acquisition function which is globally optimizable using significantly less execution time than the incumbent approach while maintaining or improving performance. The resulting method is competitive with GP-based BO in terms of accuracy per evaluation, and is superior in terms of accuracy per walltime on black-boxes of low to moderate computational intensity.",
+    "authors": [
+      "Nathan Wycoff"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "stat.CO"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32628v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32628v1",
+    "fetched_at": "2026-10-26T14:47:12.741656"
+  },
+  {
+    "id": "2610.32555v1",
+    "title": "Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance",
+    "abstract": "LLM agents increasingly rely on external tools exposed via the Model Context Protocol (MCP), yet current benchmarks assume tools respond correctly and on time, leaving agent resilience to realistic tool failures untested. We introduce MCP-Injector, a drop-in, protocol-aware fault-injection middleware that interposes on the MCP tool-call path with controlled persistence (permanent, transient, intermittent) and seedable schedules. Its fault model is calibrated to the observed incident distribution (failure mode x persistence) of the public MCP ecosystem, mined from 57,240 issue and pull-request threads across 1,774 open-source MCP repositories. In a 1,350-cell experiment crossing two backbone sizes (20B, 120B), three agent stacks (custom multi-round plan-and-execute, OpenAI Agents SDK, LangChain), and three fault injection conditions, we find that faults drawn from this permanent-heavy stress profile cause severe quality degradation (task-completion score falls by 60%, from 8.08 to 3.23 out of 10), and that scale does not purchase fault tolerance for the two gpt-oss backbones we test: the 120B retains no larger share of its fault-free score under faults (resilience-ratio model, $p = 0.96$), and its completion rate under faults is, if anything, lower (91.1% vs. 95.6%; difference 4.4 points, 95% CI $[-0.2, 9.3]$). Agent stacks differ in how well they absorb faults, which suggests that framework-level error handling matters more than model scale. These results demonstrate that capability benchmarks alone can mask operational brittleness, motivating protocol-aware fault injection as a complementary evaluation dimension for tool-calling agents.",
+    "authors": [
+      "Antonio Ken Iannillo",
+      "Joshua Segun Owotogbe",
+      "Roberto Natella",
+      "Francesco Avallone",
+      "Kristina Kudryavtseva",
+      "Indika Kumara"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32555v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32555v1",
+    "fetched_at": "2026-10-26T14:47:12.741676"
+  },
+  {
+    "id": "2610.32536v1",
+    "title": "IGG: A Benchmark for Interactive GUI Grounding under Visibility Constraints",
+    "abstract": "GUI grounding benchmarks ask whether an agent can localize a target that is already visible in a static screenshot. Real interfaces often violate this assumption: a target may be off-screen, appear only after a state change or hover, remain occluded, or become actionable after a delay. This leaves the ability to recover target visibility unevaluated. To measure this reveal step, we introduce Interactive GUI Grounding (IGG), a benchmark in which an agent must first make the target visible through interaction and then click it. IGG contains 601 tasks across 16 controllable GUI environments and seven visibility-constraint sub-types, with a compact action space of scrolling, moving, dragging, waiting, and clicking. In our human study, participants achieve 94.6% accuracy, while GPT-5.5 reaches 79.4% and the strongest evaluated open-source VLM reaches only 31.6%. To identify the source of this gap, we conduct two controlled interventions. Telling Qwen3-VL which interaction to perform raises its accuracy only from 30.8% to 33.9%, whereas performing the interaction for the model raises it to 81.9%. The bottleneck is executing the reveal interaction, not recognizing the target once it is exposed. We further show that this capability is learnable, demonstrating that visibility recovery can be strengthened consistently across model families.",
+    "authors": [
+      "Kyeongseon Kim",
+      "Jiyeon Son",
+      "Tae-Hyun Oh"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32536v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32536v1",
+    "fetched_at": "2026-10-26T14:47:12.741692"
+  },
+  {
+    "id": "2610.32492v1",
+    "title": "Accordion: Elastic-Depth Inference via Fixed-Prefix Layer Looping",
+    "abstract": "Large language models serve applications with diverse inference budgets, but training and maintaining separate models for each budget incurs substantial costs. Recent Looped Transformers enable flexible inference computation through parameter reuse, but maintaining strong performance across different inference budgets remains an open challenge. We introduce Accordion, a mixture-of-experts-based model that supports five inference budgets through fixed-prefix layer looping. Each budget follows a pre-defined execution path, while the minimum budget retains the unlooped model. Joint pretraining samples one budget per micro-batch and optimizes its next-token prediction loss without additional cross-budget consistency objectives. We further preserve these inference budgets through supervised fine-tuning and reinforcement learning, where parameter-group merging and budget-matched multi-teacher on-policy distillation integrate three domain experts into one model. After 3.6T tokens of pretraining, increasing inference depth improves Accordion-6B-A0.5B's five-category macro-average across 37 tasks by 3.01 percentage points, with the middle budget capturing 89% of this gain using half as many additional layer executions. The final model surpasses each domain expert on its corresponding task-and-budget average, while achieving strong instruction-following performance across all budgets and retaining depth-dependent gains in mathematical reasoning and code generation.",
+    "authors": [
+      "Yudong Zhang",
+      "Wei Ding",
+      "Kaili Zheng",
+      "Yuchen Ding",
+      "Zhenyu Zhang"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32492v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32492v1",
+    "fetched_at": "2026-10-26T14:47:12.741710"
+  },
+  {
+    "id": "2610.32483v1",
+    "title": "When Agents Fail: Model or Harness--Who's to Blame?",
+    "abstract": "LLM agents combine models with execution harnesses, so agentic benchmark performance reflects their joint behavior. We argue that harnesses should therefore be evaluated through their interactions with underlying models. We develop a framework combining five complementary measures: (i) Valid Completion Rate (VCR), how reliably agents finish normally and deliver evaluable results, irrespective of task correctness; (ii) Model-Harness Fit, how well a harness supports task achievement through valid completion for a given model; (iii) Cross-Model Fit, a harness's overall suitability across evaluated models; (iv) Interaction Residuals, pairing-specific execution strengths and weaknesses hidden by component-level summaries; and (v) Token Load, the token demands of agent execution, including failed attempts. We evaluate four general-purpose harnesses (OpenCode, Codex CLI, Pi CLI, and DeepAgents) with four core models, plus two fixed native model-harness systems, on six benchmarks covering context management, tool use, long-context planning, multimodal interaction, and artifact handoff. Including native references and stress conditions, 111 evaluation settings yield 52,168 trajectories. Harness rankings vary across models and benchmarks; task performance and valid completion can favor different pairings, and similar task scores can accompany distinct execution profiles. OpenCode ranks first in cross-model performance, while DeepSeek V4 Flash Preview maintains consistently high Mean VCR across harnesses on the shared four-benchmark panel. These findings support evaluating model-harness interactions, training transferable harness-use capabilities in models, and harness designs adapted to the model and task.",
+    "authors": [
+      "Shao Zhang",
+      "Hangfan Zhang",
+      "Yuanyuan Shi",
+      "Hao Li",
+      "Min-Le Su",
+      "Kangcong Li",
+      "Jingping Wang",
+      "Chunjiang Mu",
+      "Chen Zhang",
+      "Yang Chen",
+      "Bo Zhang",
+      "Shuyue Hu"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32483v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32483v1",
+    "fetched_at": "2026-10-26T14:47:12.741743"
+  },
+  {
+    "id": "2610.32469v1",
+    "title": "ALLMTS: Automated LLM-based Medical Triage System",
+    "abstract": "Telephone triage is a safety critical task: from a brief intake note, a nurse must decide whether a caller needs an ambulance, an emergency department, an appointment, or self care at home. Queried directly, large language models (LLMs) are unreliable: they over-escalate routine cases and cannot justify their recommendations against an auditable clinical standard. We present the Automated LLM-based Medical Triage System (ALLMTS), which grounds every disposition in the same commercially maintained telehealth guidelines nurses use. Rather than asking an LLM to triage, ALLMTS makes it execute the guideline: it selects the appropriate guideline and evaluates its triage assessment questions. The disposition follows deterministically from the first positive answer, using the same traversal rule a nurse follows. We evaluate ALLMTS on 566 synthetic, expert-validated scenarios spanning 14 dispositions and designed to test specific guideline questions. ALLMTS achieves 0.95 accuracy, compared with 0.47 for a raw-LLM baseline. On a curated 50-scenario subset released as an open benchmark, ALLMTS reaches 0.98 accuracy, on par with the 0.944 correct disposition rate that a five nurse expert panel recorded on those same scenarios. Critically, on that subset the baselines have over-triage rates of up to 0.50 (0.44 on the full dataset), whereas ALLMTS reduces the over-triage rate to at most 0.02 while maintaining low under-triage. These results support coupling LLM language understanding with executable clinical guidelines for triage from intake notes.",
+    "authors": [
+      "Michał Remigiusz Janiszewski",
+      "Artur Stopa",
+      "Łukasz Lenkiewicz",
+      "Wojciech Achtelik",
+      "Bartosz Gonczarek"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32469v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32469v1",
+    "fetched_at": "2026-10-26T14:47:12.741762"
+  },
+  {
+    "id": "2610.32453v1",
+    "title": "Beyond Copying: Lifelong Smart Contract Security Task Construction via Protocol Mutation",
+    "abstract": "AI agents can inspect code and run tests to support smart contract security. SlowMist reports about $38.6 billion in losses across the broader blockchain ecosystem. Existing evaluations can reward memorized or copied answers, including attack code recovered from public blockchain transactions. Reconstructing contracts and validating tasks also require costly manual effort. To address these issues, we propose CONSTRAINTDIAL, a framework for lifelong construction of smart contract security tasks via protocol mutation. It automates local contract reconstruction and uses attack execution to select changes to the required calls or inputs. Execution checks guide revisions that make the original attack fail while preserving exploitability, the security objective, and normal functionality. New incidents and audit findings enter the same procedure. With CONSTRAINTDIAL, we construct 3,045 task inputs from 203 public cases, covering detect, exploit, and patch. Compared with reconstruction alone, protocol mutation reduces success with supplied public answers by 10.9 percentage points on average across detect, exploit, and patch. The fraction of tasks solved by copying online answers falls by 9.3 points.",
+    "authors": [
+      "Zifan Peng",
+      "Peng Huang",
+      "Jingyi Zheng",
+      "Yingjie Xue",
+      "Xuechao Wang",
+      "Xinlei He",
+      "Xia Hu",
+      "Dongrui Liu"
+    ],
+    "published": "2026-10-23",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.32453v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.32453v1",
+    "fetched_at": "2026-10-26T14:47:12.741784"
+  }
+]
