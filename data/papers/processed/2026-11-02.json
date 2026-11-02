@@ -1,0 +1,712 @@
+[
+  {
+    "id": "2610.42119v1",
+    "title": "Functional Tensor Trains for High-Order Greeks and Exposure Tails of Multi-Asset Structured Products",
+    "abstract": "Risk management of worst-of autocallables needs price sensitivities (Greeks) up to third order and the potential future exposure, a tail quantile of the note's future value. In Monte Carlo, each order of differentiation multiplies the sampling noise by a factor that grows with the observation frequency, and nested simulation turns the noise of its inner paths into a bias of the quantile. We instead solve the backward pricing recursion, storing the continuation value as an $hp$ functional tensor train (hp-FTT) whose piecewise-polynomial cores are split at the barriers, so that worst-of barrier events act exactly, with rank one. For Gaussian transitions we show that the polynomial degree sufficient for an error $\\varepsilon$ grows only as $\\sqrt{\\log(1/\\varepsilon)}$. One solve then gives every Greek at any spot without sampling noise, by integrating the likelihood-ratio weight against the stored value, and the values it stores at future dates replace inner simulation. Against the strongest Monte Carlo estimators we could build or find published, on worst-of autocallables observed monthly on three to five assets, the order of the Greek and the accuracy decide which method is cheaper. At $1\\%$ accuracy Monte Carlo is more than an order of magnitude cheaper for deltas, second-order Greeks go either way, and hp-FTT is cheaper for every third-order Greek, by up to two orders of magnitude. At $0.1\\%$ hp-FTT is cheaper for every Greek we could check, under geometric Brownian motion and local volatility alike. For the exposure alone Monte Carlo is cheaper at $1\\%$ and hp-FTT at $0.1\\%$, and a solve run for the Greeks yields it for little more than scenario sampling. Sampling pays in variance for each derivative and hp-FTT in rank for each asset, so Monte Carlo keeps low-order Greeks at percent accuracy, rarely observed contracts and many assets.",
+    "authors": [
+      "Javier Lopez-Piqueres",
+      "Atithi Acharya",
+      "Yue Sun",
+      "Niraj Kumar"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "q-fin.CP",
+      "math.NA",
+      "quant-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.42119v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.42119v1",
+    "fetched_at": "2026-11-02T17:42:33.603365",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.755992"
+  },
+  {
+    "id": "2610.41990v1",
+    "title": "When is the deepest drawdown also the longest?",
+    "abstract": "Does the deepest drawdown take the longest to recover? For random walks with iid increments of positive finite mean, we find that the deepest and longest episodes are eventually distinct almost surely under light-tailed losses, but coincide with probability tending to one under heavy-tailed losses. More precisely, when losses have a finite exponential moment, the deepest episode's duration, relative to the longest among $n$ episodes, converges in probability to an explicit $ρ\\in(0,1)$, while its descending duration rank is $n^{1-ρ+o_{\\mathbb{P}}(1)}$. These limits hold for every fixed number of leading depths; in the Gaussian model, $ρ=1/2$, independently of drift and variance. The separation reflects the different exponential costs of reaching a large depth and sustaining a long episode. For regularly varying losses, a common large loss governs both depth and duration: the duration ratio tends to one almost surely, and for every fixed $k$, the $k$ deepest and $k$ longest episodes have the same indices in the same order with probability tending to one. For any $k_n\\to\\infty$ with $k_n=o(n)$, the proportion of common episodes among the $k_n$ deepest and $k_n$ longest converges in probability to zero in the light-tailed case and to one in the heavy-tailed case. These ranking laws also hold for completed drawdowns within a deterministic observation horizon.",
+    "authors": [
+      "Yinhao Wu"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "math.PR",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41990v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41990v1",
+    "fetched_at": "2026-11-02T17:42:33.603399",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756028"
+  },
+  {
+    "id": "2610.41740v1",
+    "title": "A New GAUSS Software Component for Implementing Dynamic Tests of Contagion with an Application",
+    "abstract": "The main goal of this article is to present a new software component created by the authors in GAUSS for implementing dynamic tests for contagion. These tests are aimed at providing the possibilities of testing for spiller-over effects between financial markets during a crisis or during a pandemic situation such as the one that we experienced recently. Unlike standard tests for contagion that have fixed dates for a potential shift, the tests implemented here are dynamic in the sense that the potential contagion effect is measured across the time span. The leverage bootstrap simulation technique is utilized in order to generate critical values that are reliable when the tests are implemented in order to make sure that the conducted inference is accurate. Since the approach is new, software component needs to be created for conducting the underlying tests, which is accomplished via this article. The module is very easy to implement by the general practitioners via a graphical user interface. An application is offered by using real data from stock markets in order to demonstrate how the software component can be used.",
+    "authors": [
+      "Abdulnasser Hatemi-J",
+      "Alan Mustafa"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41740v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41740v1",
+    "fetched_at": "2026-11-02T17:42:33.603423",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756041"
+  },
+  {
+    "id": "2610.41689v1",
+    "title": "QBX: A Compiler for Well-Formed, Auditable Alpha Programs",
+    "abstract": "Formulaic alpha miners increasingly differ in how they generate candidates, yet each system typically couples its own representation, evaluator, and selector into a bespoke pipeline whose results are difficult to reproduce or compare. We present QBX, a compiler that defines a well-formed, auditable space of alpha programs. A finite, versioned block registry and whole-strategy port-DAG language define the candidate space; the compiler either rejects a proposal with structured diagnostics or emits an evidence-carrying IR with types, time-availability effects, executable linkage, and Merkle-style content identities. Compiler-closed actions keep search inside the admitted space, node identities support incremental evaluation, and context-bound root identities govern program deduplication and trial provenance. The availability-effect system rejects contract-visible look-ahead while admitting legal point-in-time forecasts.   On Chinese A-share panels, evaluation-valid proposals increase from 26.8% for free strings and 36.4% for a grammar-only control to 97.7% for typed programs. Incremental evaluation replays search lineages 7.5 times faster with numerical parity, while the availability checker admits zero registered-contract violations across 23,342 candidates. Under matched LLM-call budgets, compiler-closed search reaches the pool-specific diagnostic frontier with substantially fewer calls. These results concern validity, reuse, and search efficiency within the registered vocabulary, not an increase in the information available from the market panel.",
+    "authors": [
+      "Yichong Bai",
+      "Kaigui Bian"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.CE",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41689v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41689v1",
+    "fetched_at": "2026-11-02T17:42:33.603493",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756053"
+  },
+  {
+    "id": "2610.41624v1",
+    "title": "Expected shortfall estimation and capital coverage under overlapping scenarios",
+    "abstract": "Expected shortfall (ES) is routinely estimated from a short sample of profit-and-loss (P&L) scenarios built from overlapping multi-day returns, while the non-parametric estimators applied to such data are designed under independent sampling. We study how this mismatch affects estimation accuracy and capital coverage, and how it interacts with serial dependence and heavy tails in the underlying P&L. Working within the coherent risk estimation framework, we compare six order-statistic-based ES estimators on fit, bias, and capital-coverage metrics. Following the Fundamental Review of the Trading Book (FRTB), we use a one-year estimation window and ES at the $2.5\\%$ confidence level as a benchmark setup. We combine simulations with market data on twelve risk factors and ninety-nine equity portfolios. We show that overlapping sampling does not merely add noise but shifts ES estimates systematically downward, thereby weakening capital coverage. Serial dependence acts in the same direction, and heavy tails amplify both effects. More conservative weighting mitigates the underestimation but does not remove it. On market data, the confidence level at which the estimated capital covers realized losses roughly doubles in median under overlapping sampling for every estimator, while the $\\textrm{ES}_{2.5\\%}$-to-$\\textrm{VaR}_{1\\%}$ ratio, which links the FRTB base market risk capital metric to its pre-FRTB predecessor, changes comparatively little. Overlapping sampling can thus substantially understate ES-based capital. Since many banks apply a small set of standard estimators in their FRTB regulatory or economic capital model in a historical simulation approach, this understatement is likely to be common for many institutions, and combining simulation-based assessment of estimation risk with coverage-based diagnostics offers a practical method to detect it in model validation and monitoring.",
+    "authors": [
+      "Martin Aichele",
+      "Igor Cialenco",
+      "Damian Jelito",
+      "Marcin Pitera"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41624v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41624v1",
+    "fetched_at": "2026-11-02T17:42:33.603521",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756067"
+  },
+  {
+    "id": "2610.41019v1",
+    "title": "Neural Network Methods in the 2BSDE Formalism for Solving the High-Dimensional Black--Scholes Equation with Transaction Costs",
+    "abstract": "A 2BSDE system is written down for a $(D+1)$-dimensional Black--Scholes partial differential equation (PDE) with the Leland transaction cost model which incorporates the sign of the curvature. The 2BSDE system takes input from the ``speed'' (derivative of the curvature). This system is solved using a single ResNet neural network which learns both the solution to the PDE as well as the degrees of freedom in the curvature matrix. The network is used to learn the price of derivatives such as call options and butterfly spreads on geometric baskets for $D=10,100$ achieving a time-averaged RMSE of less than $0.1$ in each case.",
+    "authors": [
+      "Guhesh Kumaran"
+    ],
+    "published": "2026-10-29",
+    "categories": [
+      "math.OC",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41019v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41019v1",
+    "fetched_at": "2026-11-02T17:42:33.603539",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756080"
+  },
+  {
+    "id": "2610.41803v1",
+    "title": "What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Benchmark Transfer",
+    "abstract": "Detectors can flag hijacked large language model (LLM) agents from the traces of the tools they call. In the eleven evaluations we audited, attacks or anomalies make up 16% to 86% of the test samples, no evaluation varies that share, and six report no test on data from a second benchmark or source. We ask what such evaluations hide. On the AgentDrift and AgentDojo benchmarks we test trained detectors that read tool identities, behavior, call sequences, step embeddings or text, and a released LLM action monitor, AlignmentCheck, with thresholds fixed on training data or set by the monitor's released decision rule. First, at a 2% attack rate a detector with an area under the receiver operating characteristic curve (AUROC) of 0.879 reaches a precision of 0.076, and the mix of negatives alone moves that precision between 0.039 and 0.117. Second, as tool coverage, the share of test tool calls whose tool was seen in training, falls, detector rankings cross near 50% coverage and reverse below it, because unseen tools map to inputs that training never reached. Dropout on tool inputs largely removes the reversal. Third, no detector trained on AgentDrift ranks AgentDojo traces better than chance (AUROC 0.47 to 0.52), including one that reaches 0.996 within AgentDojo. The monitor, trained on neither, reaches 0.930, but with its open backbone its released decision rule would still mostly raise false alerts at a 2% attack rate (precision 0.096). We turn these findings into a checklist for evaluating trace detectors.",
+    "authors": [
+      "Mahmoud Abbasi",
+      "Juan M. Núñez V.",
+      "Amin Shahraki"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41803v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41803v1",
+    "fetched_at": "2026-11-02T17:42:47.647943",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "LLM",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756093"
+  },
+  {
+    "id": "2610.41424v1",
+    "title": "A Unified XAI-NSAI Analytical Framework for Trustworthy IoT Anomaly Detection",
+    "abstract": "The widespread deployment of Internet of Things (IoT) devices in critical environments makes anomaly detection essential for identifying abnormal behaviors and supporting timely investigation and response. However, accurate detection alone is insufficient. Practical IoT deployments must also provide explanations, incorporate domain knowledge and reasoning, operate under IoT constraints, and support human decision making. Although recently proposed approaches increasingly incorporate Explainable Artificial Intelligence (XAI) or Neuro-Symbolic Artificial Intelligence (NSAI), XAI and NSAI methods are often considered independently. We argue that they should be considered together to better understand their complementary roles in supporting trustworthy IoT anomaly detection. To address this gap, we propose a unified analytical framework organized around five complementary dimensions. The framework provides a structured basis for characterizing existing approaches, identifying capability gaps and design trade-offs, and guiding the design of new anomaly detection systems for different IoT applications. We demonstrate the framework's analytical utility by applying it to three representative studies and illustrate its design utility through its application to a Medical IoT anomaly detection system.",
+    "authors": [
+      "Hugues Leger",
+      "Giovani R. Abuaitah"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41424v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41424v1",
+    "fetched_at": "2026-11-02T17:42:47.647975",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756112"
+  },
+  {
+    "id": "2610.41387v1",
+    "title": "Anomalies as Residuals: Cauchy Displacement Networks",
+    "abstract": "Neighbourhood-based detectors such as KNN, LOF and LUNAR remain among the most accurate methods for tabular anomaly detection, but they compare every query with the stored training set, so their inference cost and memory grow with the data and the data must be kept at deployment. We ask whether the neighbourhood geometry these detectors exploit can be compiled into a small network that scores a query with a single forward pass. We propose the Cauchy Displacement Network (CDN), which regresses each normal point onto the mean of its $k$ nearest training neighbours with a single-hidden-layer network of Cauchy activations and scores a query by the length of its predicted displacement. This displacement is an empirical mean-shift vector, whose fixed-radius population counterpart locally approximates a scaled gradient of the log density. We show that Cauchy units exactly represent the score fields of a structured family of Student-$t$ expert densities, and establish a constructive approximation bound for the corresponding population neighbourhood-mean map using a single-hidden-layer Cauchy network. We further show that the bounded network output guarantees asymptotically linear residual-score growth along every fixed direction. On 46 benchmark datasets against 28 baselines, CDN obtains the best mean rank under both AUC-ROC and AUC-PR, while scoring $10^4$ queries in a few milliseconds on a single CPU thread, up to three orders of magnitude faster than neighbourhood-based detectors, with a model whose size does not depend on the training set.",
+    "authors": [
+      "Yang Cao",
+      "Zihao Guo"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41387v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41387v1",
+    "fetched_at": "2026-11-02T17:42:47.647996",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756123"
+  },
+  {
+    "id": "2610.40848v1",
+    "title": "Predictive Maintenance at the Edge: An Embedded Anomaly Detection Pipeline Trained with Quantum Optimization",
+    "abstract": "This article presents a predictive-maintenance pipeline that detects anomalies in bearings from vibration signals, adapted for deployment at the edge on low-cost microcontrollers, and that uses quantum optimization in two steps of its training. The pipeline consists of a step of vibration feature extraction and a step of classification with a one-class support vector machine (OCSVM). The features are selected by minimum redundancy and maximum relevance (mRMR) with the variational quantum eigensolver (VQE), under a limit on computing time. The OCSVM is adapted for inference at the edge without floating-point operations and is trained by a variational quantum algorithm with Pauli-correlation encoding (PCE). In small-scale tests on a simulator, with the Paderborn bearing dataset, the VQE found the optimal selection in 36% of the runs with Adam, and PCE chose better support vectors than chance, until a classical local search made the two equal. A classical baseline, the usual OCSVM trained by SMO with its weights rounded, matched them without any search.",
+    "authors": [
+      "Filipe Chagas Ferraz"
+    ],
+    "published": "2026-10-29",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.40848v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.40848v1",
+    "fetched_at": "2026-11-02T17:42:47.648014",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756134"
+  },
+  {
+    "id": "2610.40732v1",
+    "title": "Don't Just Impute, Detect: Task-Aware Diffusion Pipelines for Edge Anomaly Detection",
+    "abstract": "Industrial Internet of Things (IIoT) edge pipelines routinely lose contiguous blocks of multi-sensor data to network dropouts and hardware faults. The standard remedy is a disjointed \"impute-then-detect\" pipeline whose imputer is trained only for Mean Squared Error (MSE). Such an imputer fills a missing block with the most probable normal pattern: a partially observed anomaly is smoothed back toward normality, and boundary artifacts on normal data raise false alarms. We call this imputation bias and propose the Task-Aware Diffusion Refiner (TADR), a conditional diffusion refiner trained against the loss landscape of a frozen downstream detector. Because back-propagating through the sampling trajectory is intractable, the task-aware terms act on the one-step clean-window estimate that the noise prediction already yields, so training costs no more than plain diffusion training. Under strict Point-to-Point evaluation over five seeds with paired significance tests, TADR raises F1 by $0.338$ over the unrefined detector on SMD ($p = 0.0015$), and the anomaly enhancement objective alone contributes $0.463$ in ablation. We also characterise when the method helps: the gain tracks the continuous, mutually redundant channels available and the anomaly evidence the outage removes, and it is absent on telemetry datasets dominated by one-hot command channels and on PSM. At ten sampling steps TADR runs in $41.4$ ms per window on a single CPU core, sustaining about $24$ concurrent 1 Hz streams from a $4.03$ MB model. Code and per-seed results are available at https://github.com/int-park422/TADR.",
+    "authors": [
+      "Jeongsu Park",
+      "Taehyeon Yun",
+      "Geonwoo Kim",
+      "Yuji Lim",
+      "Moohong Min"
+    ],
+    "published": "2026-10-29",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.40732v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.40732v1",
+    "fetched_at": "2026-11-02T17:42:47.648064",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756145"
+  },
+  {
+    "id": "2610.42148v1",
+    "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+    "abstract": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existing generation-oriented inference engines fail to support these workloads effectively, suffering from severe prefix recomputation overheads or distorted output probabilities. To address this challenge, we propose Flide, an efficient and exact inference engine that decouples the logical tree structure of a decision request from its physical execution within a single flattened token stream. Through ForkAttention, Flide navigates request dependencies using GPU-resident indices across both standard attention and recurrent Gated DeltaNet layers, guaranteeing in exact arithmetic that every query branch evaluates identically to an isolated forward pass. By expressing branch topologies directly in GPU-resident metadata, Flide accommodates diverse request mixtures with a compact set of pre-recorded execution graphs while enabling expanding agent histories to resume from checkpoints saved in earlier passes. Extensive evaluations on public hybrid and decision models demonstrate that Flide answers queries up to 9.5 times faster than vLLM and SGLang while staying closest to a float32 reference in total variation distance. By unifying physical execution throughput with mathematical exactness, Flide establishes a principled foundation for scalable, latency-critical decision intelligence in agent systems.",
+    "authors": [
+      "Bobo Li",
+      "Jiajia Song",
+      "Hao Fei",
+      "Wynne Hsu",
+      "Mong Li Lee"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.42148v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.42148v1",
+    "fetched_at": "2026-11-02T17:43:18.120423",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756155"
+  },
+  {
+    "id": "2610.42146v1",
+    "title": "Hierarchical World Models with Implicit Dynamics",
+    "abstract": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative errors and search complexity. Existing hierarchical methods often use rigid macro-actions or latent skills, leading to brittle representations and limited fine-grained control. We introduce ID-WM (Implicit Dynamics World Models), a hierarchical world model that decouples state-space reachability from local control. Our framework utilizes a high-level model to sample feasible transitions across the state manifold and a low-level world model as an inverse dynamics solver to ground these transitions into precise actions. This allows the planner to identify reachable subgoals without being constrained by low-level execution details. By prioritizing local physical feasibility over global behavioral patterns, ID-WM synthesizes novel long-horizon plans from short segments, transcending the specific behavioral modes seen during training. We demonstrate its effectiveness across three navigation and manipulation suites, achieving a 38.5% improvement over state-of-the-art policy and diffusion-based planners. Crucially, by leveraging this hierarchical structure to mitigate compounding errors, our approach yields a 135% performance gain over single-level world model MPC, particularly in complex, unseen configurations for long-horizon tasks. Videos can be viewed at https://id-wm.github.io",
+    "authors": [
+      "Gaoyue Zhou",
+      "Yvonne Wu",
+      "Zichen Jeff Cui",
+      "Nicolas Ballas",
+      "Mido Assran",
+      "Lerrel Pinto",
+      "Yann LeCun"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.42146v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.42146v1",
+    "fetched_at": "2026-11-02T17:43:18.120485",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756165"
+  },
+  {
+    "id": "2610.42004v1",
+    "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+    "abstract": "Multi-turn negotiation remains a challenging problem for large language model (LLM) agents. While LLMs can conduct natural-language dialogue, existing benchmarks predominantly assess only agreement rates, overlooking whether negotiated commitments actually create value once executed. To address this gap, we introduce TradeWar, a multi-country simulation benchmark that translates negotiation dialogues into concrete tariff and trade-share policies, enforces capacity and network constraints during settlement, and evaluates outcomes via an Economic Health Index (EHI). To solve this execution-grounded task, we propose TACTIC (Trade-aware Adaptive Consolidation and Theory-of-mind for International Commerce), an agent that iteratively refines its negotiation strategy across episodes-without updating base LLM weights-by leveraging prior experience, opponent behavior, and past settlement outcomes. Despite using zero-shot chain-of-thought (CoT) prompting, PromptLLM attains a 75% agreement rate but only 57.1 final EHI (*100), whereas TACTIC reaches 68.8. Across 20 sequential episodes and three seeds, TACTIC's final EHI improves from 58.2 to 73.2, compared with 65.2 for an ablation without cross-episode updates. Under technology-controls and energy-crisis shocks, TACTIC also exhibits smaller performance degradation than PromptLLM and MemoryLLM. These results indicate that CoT deliberation and interaction memory alone do not fully address delayed execution feedback, whereas settlement-grounded adaptation improves long-horizon negotiation in TradeWar.",
+    "authors": [
+      "Xiangyu Kong",
+      "Ruirui Yang",
+      "Xia Hou"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.42004v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.42004v1",
+    "fetched_at": "2026-11-02T17:43:18.120508",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756175"
+  },
+  {
+    "id": "2610.41865v1",
+    "title": "Learning to Interact and Direct: Co-Evolving Video Director Agents",
+    "abstract": "Video director agents orchestrate multistage production to realize users' creative visions. Emerging research on their self-evolution advances screenplay planning effectively. However, the mutual reinforcement between directing and user interaction remains largely overlooked. Improved interaction clarifies user intent and informs workflow refinement, while more reliable execution shifts collaboration from troubleshooting to creative decisions. To this end, we introduce LIT (Learning to Interact and DirecT), a framework comprises a director agent, a simulated user, and a meta engineer. Simulated user assigns creative tasks to probe the director's weaknesses, while the meta engineer uses the task traces to revise the director's interaction and production strategy. Although this approach can address discovered interaction and production issues, it still relies on passive attribution by the meta agent. This limits its ability to adapt to broader user interaction patterns and production techniques. To solve this problem, we equip LIT with a co-evolution paradigm. The meta agent proactively learns external knowledge, thereby improving its ability to discover problems and propose solutions. The meta agent, simulated user, and director together form an evolutionary closed loop, collaboratively enhances the system's directing and interaction capabilities. Across the Test and OOD Test splits, LIT improves production and Interaction scores by 19.1% and 32.0%, respectively, relative to the initial pipeline. Controlled ablations reveal the correlation between improvements in production and interaction, where the co-evolution mechanism further encourage directing skill and interaction mode exploration.",
+    "authors": [
+      "Yingzhao Jian",
+      "Zhongan Wang",
+      "Yuxuan Hou",
+      "Hehe Fan"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41865v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41865v1",
+    "fetched_at": "2026-11-02T17:43:18.120531",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756185"
+  },
+  {
+    "id": "2610.41720v1",
+    "title": "UpLoop: Training Looped Transformers via Upcycling at No Extra Pretraining Compute",
+    "abstract": "Looped language models can strengthen reasoning through repeated computation with shared weights, increasing execution depth without adding independent parameters. However, each additional pass increases training floating-point operations (FLOPs), making these gains more expensive to obtain. To address this cost, we propose UpLoop, a pretraining schedule that uses upcycling to train looped Transformers while exactly matching a standard dense baseline in final parameter count, total training tokens, and training FLOPs. Specifically, UpLoop begins with a shallow Transformer, progressively grows its depth by copying learned layers, and uses the computation saved early to support repeated execution of a shared middle block later in training. Experiments across model scales show improvements in language modeling and downstream performance, with the average score across 22 downstream tasks increasing from 22.99 to 27.52 at 1.3B parameters. These gains also extend to mathematical reasoning after supervised fine-tuning.",
+    "authors": [
+      "Cheng Liang",
+      "Tengfei Zhang",
+      "Ya Zhang",
+      "Yanfeng Wang",
+      "Zhouhan Lin"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41720v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41720v1",
+    "fetched_at": "2026-11-02T17:43:18.120557",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "NLP",
+      "Transformer"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756196"
+  },
+  {
+    "id": "2610.41688v1",
+    "title": "When the Past Shapes Action: Understanding Embodied Memory",
+    "abstract": "Recent advances in generative foundation models have expanded the capabilities of embodied AI, enabling increasingly general navigation, manipulation, and long-horizon task execution. However, effective interaction with dynamic environments requires more than only strong perception and reasoning: agents must act with partial knowledge and retain, retrieve, and update information from past observations, actions, and experiences. This survey examines embodied memory as a mechanism for preserving decision-relevant information beyond the current observation. We organize existing approaches along two complementary dimensions: six fundamental memory requirements, spanning world-state persistence, task progress, belief maintenance, and experiential learning; and eight architectural categories, including recurrent states, fast weights, visual and symbolic representations, spatial memory, and experience-based systems. We analyze their capabilities and limitations, and examine how existing benchmarks evaluate memory-dependent behavior, distinguishing genuine use of historical information from general task performance. Finally, we identify open challenges in selecting relevant experiences, maintaining consistent beliefs in changing environments, and consolidating knowledge across episodes. Our analysis provides a framework for understanding memory as an essential component of reliable, adaptive, and lifelong-horizon embodied intelligence.",
+    "authors": [
+      "Siqi Li",
+      "Ziyi Bai",
+      "Xinrun Xu",
+      "Tinglei Huang",
+      "Börje F. Karlsson"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41688v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41688v1",
+    "fetched_at": "2026-11-02T17:43:18.120583",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756206"
+  },
+  {
+    "id": "2610.41609v1",
+    "title": "VLA Policies Do Not Know When Not to Act: Unintended Task Execution and Start Suppression",
+    "abstract": "A robot should act only on an instruction from a person or on an intent that the robot explicitly represents and generates. Unintended actions taken without such an instruction can cause risk or inconvenience to people and the environment. We examine how recent vision-language-action (VLA) policies respond when the instruction is missing or meaningless. We apply a paired protocol with empty, neutral, nonsense, infeasible, and wrong-task instructions to six model checkpoints in LIBERO-Goal simulation. Holding the initial state fixed and varying only the instruction, we ask three questions: whether the robot starts to move, which task it completes, and what the instruction determines. Even when the instruction was empty, the robot started moving in every episode with all six checkpoints, and with five of them it often completed a task that the instruction had not specified. On two GR00T checkpoints, the instruction determined which task was executed but not whether the robot started moving; the robot moved even on infeasible instructions. We then tested three methods for suppressing the start: prepending \"if no task is given do not move\" to the instruction; a gate that holds the robot when the first action chunk for the given instruction nearly equals that for an empty instruction; and fine-tuning the policy to hold still on non-task inputs. The prefix stopped the robot in none of the six checkpoints, and the gate held it on non-task inputs in five of the six checkpoints. The fine-tuned policy never completed a task on non-task inputs, but it did not reliably keep the robot still, and it failed to suppress the start on infeasible instructions.",
+    "authors": [
+      "Minsu Jang",
+      "Jae-Woo Choi",
+      "Youngwoo Yoon",
+      "Dohyung Kim"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41609v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41609v1",
+    "fetched_at": "2026-11-02T17:43:18.120606",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756217"
+  },
+  {
+    "id": "2610.41604v1",
+    "title": "Real Computation or Merely Naming? A Pre-Registered Mechanism Audit of 25 Cognitive-Architecture Modules in an LLM-Based Agent System",
+    "abstract": "Agent systems built on local large language models are increasingly marketed through the vocabulary of cognitive architecture: modules named global workspace, theory of mind, causal reasoning, or active inference are listed as features, and the presence of the name is taken as the presence of the mechanism. We ask the prior question -- does the named computation actually happen -- and contribute a transferable verification method for the claim-implementation gap: a four-question static audit protocol with line-number evidence and call-chain tracing, demonstrated on two systems. We audit a system claiming 25 cognitive mechanisms, pre-register falsifiable predictions for 11 modules and execute the interventions, replicate the protocol on the IIT-phi core of a second, independent system with its own pre-committed falsification criteria, and run two repair experiments as positive controls. In 18 of 25 modules the computed value never reaches any production output; three idle-wiring shapes new to the dead-code and code-smell literatures emerge (connected-but-never-called, called-but-inert, called-but-content-blind). Of 61 frozen criteria across 12 interventions, 53 were confirmed, two partially adjudicated, five falsified, one adjudication-ambiguous. Repairs raised planner task success from 0.028 to 1.000 and cut state-controller error by 52%. Module names and module computations must be audited as independent claims; the protocol and the five-class failure taxonomy are reusable for the claim-implementation gap at two-system, case-level depth.",
+    "authors": [
+      "Peter Chen",
+      "Ni Zhang",
+      "Ying Xu",
+      "Siyuan Zhang"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41604v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41604v1",
+    "fetched_at": "2026-11-02T17:43:18.120628",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756228"
+  },
+  {
+    "id": "2610.41576v1",
+    "title": "Saidzoda-Tajik-LFM-2.6B: Adapting a 2.6B Hybrid Model to Tajik Tool Calling, and What Continued Pretraining Takes Away",
+    "abstract": "We release Saidzoda-Tajik-LFM-2.6B, a Tajik adaptation of the 2.6B-parameter hybrid model LFM2.5-2.6B-Base, built for tool calling in Tajik on modest hardware. The recipe has two stages: LoRA continued pretraining (CPT) on 1,485,319 cleaned Tajik web documents for 3 epochs, then one epoch of supervised fine-tuning (SFT) on a mix of machine-translated Tajik tool calls, English tool calls kept as replay, and Tajik instructions. On a 174-item tool-calling test set built from BFCL v3 and machine-translated to Tajik, strict full-call accuracy on Tajik prompts rises from 20.69 for the base model to 64.14 (paired difference +43.45 points, 95% interval +35.2 to +51.7); a lenient parser that also accepts the base model's own call formats puts the base at 31.72. English shows no detectable change (76.55 and 77.24). Every CPT checkpoint scores zero: CPT removes the native tool-call format and, as the lenient re-scoring shows, part of the skill itself. Outside tool calling, accuracy on a Tajik knowledge benchmark rises from 28.0 to 35.0, Belebele Tajik shows no significant change, and English MMLU falls from 60.8 to 52.5. The model is not a general Tajik assistant. It almost never declines when no tool fits (6.9% correct on Tajik, against 31.0% for the base under the lenient parser), it is weak at multi-turn calls, and its calls should be checked before they are executed. We describe the data, the training settings and every evaluation in enough detail to repeat them.",
+    "authors": [
+      "Tohir Saidzoda",
+      "Nekruz Maxudov",
+      "Bedil Karimov",
+      "Abubakr Abdullozoda",
+      "Amin Jalilov",
+      "Jonibek Kishvarov",
+      "Rahmonali Sharipov",
+      "Mariyamkhon Shodyeva"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41576v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41576v1",
+    "fetched_at": "2026-11-02T17:43:18.120658",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756238"
+  },
+  {
+    "id": "2610.41564v1",
+    "title": "Verify--Backtrack Loop: Structured Precondition Recovery for Long-Horizon Language Agents",
+    "abstract": "Language agents increasingly tackle long-horizon tasks in interactive environments, where actions often depend on latent preconditions. The core difficulty is not trajectory length but recovery: when a prerequisite is missing or an earlier decomposition fails, trying another plausible action rarely helps. ReAct and later reflection or adaptive-planning methods support local correction, but express recovery as free-form text, with no explicit control state linking the terminal goal, the active goal, and the failure source. We introduce the Verify--Backtrack Loop (VBL), a training-free extension of ReAct that turns precondition discovery and failure diagnosis into structured planning-state updates. VBL maintains the task decomposition as a bounded goal stack and, on goal activation, execution failure, or material state change, jointly verifies two horizons---whether the active goal contributes to the terminal goal and whether it is feasible in the current state. These dual-horizon judgments, combined with typed failure attribution, trigger explicit operations---Push, Pop, retry, or BacktrackTo the parent. We evaluate VBL with Qwen3.5-9B, GPT-4o, and DeepSeek-V3.2 on AppWorld, ALFWorld, and ScienceWorld. VBL improves over ReAct and reflection-based control on every backbone--benchmark pair. On the challenging AppWorld setting, it improves task success by up to 22.07 percentage points over ReAct. Ablations show that removing either verification or diagnosis degrades performance, in several settings below ReAct, confirming that the two mechanisms are complementary. These results show that reliable long-horizon interaction benefits from revising the planning state, not merely the next action.",
+    "authors": [
+      "Mingyang Liu",
+      "Qingcan Kang",
+      "Shixiong Kai",
+      "Tao Zhong",
+      "Mingxuan Yuan",
+      "Xin Li",
+      "Linqi Song"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41564v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41564v1",
+    "fetched_at": "2026-11-02T17:43:18.120685",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756248"
+  },
+  {
+    "id": "2610.41563v1",
+    "title": "ORION: An Outcome-Driven LLM Advisor for RL-Based Multi-Domain 6G Slice Placement",
+    "abstract": "Deploying 6G network slices across administrative domains requires an online decision for each arriving request: which domain hosts each virtual network function, how traffic crosses domain boundaries, and whether the slice is admitted. This joint decision problem is NP-hard under continuous arrivals. Experiments on a parametrized family of multi-domain topologies show that no fixed planning strategy dominates across all regimes: the performance ranking reverses between topology classes, and feasible placements exist for most rejected requests but remain undiscovered. These findings identify the plan layer as the decisive performance lever. We introduce ORION, a hierarchical orchestrator in which two LLM agents translate service intents into structured requests and generate abstract placement plans. A cooperative multi-agent RL coordinator selects the cross-domain partition, treating the plan as a persistent soft prior, while per-domain agents place the functions. ORION main contribution lies at the plan layer: an outcome-driven episodic memory that records, for each completed attempt, the network-condition profile, the proposed plan, and its verified feasibility outcome. The memory feeds verified successes and labelled failures back to the planner, thereby closing the adaptation loop using deployment feasibility rather than a scalar reward assigned to the planner's own proposals. To isolate the effect of the plan quality, we evaluate the planner on held-out topology families while keeping the downstream selection and execution mechanisms fixed. Under this controlled setting, the proposed memory improves admission by $4.6$--$11.5$ percentage points over the same planner without memory, while importance-based retention accounts for most of the improvement over a first-in-first-out store.",
+    "authors": [
+      "Mahmoud S. Mayaleh",
+      "Fetia Bannour",
+      "Nour-El-Houda Yellas"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.MA",
+      "cs.NI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41563v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41563v1",
+    "fetched_at": "2026-11-02T17:43:18.120706",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning",
+      "LLM"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756259"
+  },
+  {
+    "id": "2610.41479v1",
+    "title": "EvoMCP: Co-evolving MCP agents and training data",
+    "abstract": "Supervised fine-tuning of Model Context Protocol (MCP) agents is typically conducted on a static data distribution, which fails to adapt to the student's evolving capabilities and leaves newly exposed weaknesses insufficiently addressed. To address these challenges, we propose \\method, an agent--data mutual evolution framework that enables MCP agents to improve through a closed loop of task evolution, trajectory evolution, and supervised fine-tuning. Specifically, \\method\\ assesses the student's established capabilities and capability gaps from rollout feedback to identify learning targets. Task evolution then translates these targets into executable tasks by adapting the instructions and observable environment states of compatible verified seed tasks while keeping their verifiers aligned. To provide reliable and efficient demonstrations for these tasks, trajectory evolution uses reusable skills to recover failed teacher rollouts and refine successful ones. The resulting task--trajectory pairs are used to fine-tune the student, while accepted tasks seed subsequent evolution. To close the loop, we re-evaluate the updated student and use its feedback to guide the next round of data evolution. Experiments on Toolathlon, MCPMark, and MCP-Atlas demonstrate consistent improvements over the initial student, yielding absolute gains of 16.5\\%, 10.2\\%, and 12.6\\%, respectively. Project page: https://github.com/xagao/EvoMCP.",
+    "authors": [
+      "Xuanang Gao",
+      "Kepeng Lin",
+      "Xinyan Shi",
+      "Yong Deng",
+      "Shuheng Shen",
+      "Changhua Meng",
+      "Xiaofeng Wu",
+      "Jie Yang",
+      "Wei Liu"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41479v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41479v1",
+    "fetched_at": "2026-11-02T17:43:18.120737",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756269"
+  },
+  {
+    "id": "2610.41453v1",
+    "title": "Evidence-Guided Recovery for AI Agents with Ambiguous Tool Outcomes and Partial Execution",
+    "abstract": "Tool timeouts can leave AI agents facing ambiguous tool outcomes and partial execution: an action may have failed, committed or remained in flight while other workflow steps have already completed. We formulate evidence-guided task recovery over approved obligations, provider capabilities and states compatible with public evidence. A shared admissibility check handles key expiry, authorization timing, dependencies and residual effects; a terminal certificate separates actual goal satisfaction from publicly supported safe completion. The known-model implementation combines standard observation-contingent planning with a separately implemented effect-history adjudicator. In a finite study of 37 assignments, planning and three active controls each certify 28 completions; four saved synthetic fee units incur additional computation. A preregistered assignment-held-out comparison then evaluates planning advice against evidence prompting with two local model bundles. Across 58 paired units in 19 previously developed task families, advice certifies 30 completions versus 9, a 36.2-percentage-point difference (exact family sign-flip p=0.0078), using 272 proposals versus 399. All 116 trajectories pass independent replay. Both models exhibit a positive completion difference. The comparison measures the evaluated advice interface under a common shield; search-versus-rule advice requires a separate matched comparison. Unknown and handoff outcomes remain explicit, with guarantees tied to the declared provider capabilities rather than arbitrary third-party exactly-once execution.",
+    "authors": [
+      "Genliang Zhu",
+      "Xiaobo Chen",
+      "Ziyuan Wang",
+      "Chu Wang"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41453v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41453v1",
+    "fetched_at": "2026-11-02T17:43:18.120759",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756278"
+  },
+  {
+    "id": "2610.41432v1",
+    "title": "Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents",
+    "abstract": "Computer-use agents increasingly tackle tasks ranging from everyday desktop activities to long-horizon professional workflows. Yet interfaces centered on screenshots and mouse-and-keyboard actions can impose a human-interaction prior, requiring repeated screen interpretation while leaving the computer's semantic and programmatic capabilities underexposed. We argue for exposing these capabilities and letting models choose and combine them. We introduce Hybrid Computer Use (HCU), a unified interface for general agents that combines three complementary channels: programmatic interaction through code and command-line tools, semantic interaction through accessibility (AX), and visual interaction through graphical user interfaces (GUI). Our HCU supports efficient AX interaction and guards against stale-state actions during channel switching. A supplementary HCU skill guides agents in selecting and coordinating channels to use the unified interface effectively. Our designed AX tools return compact observations, execute actions in batches, and report their effects as AX diffs, so the model needs fewer round trips. On OSWorld 2.0, HCU achieves the highest Partial and Binary scores among the compared systems. Analyzing agent trajectories, we find that all evaluated models improve with HCU yet allocate work across the channels differently and consistently outperform compared baselines in terms of both efficiency and task success, highlighting the value of unified computer-use interfaces that allow flexible channel selection and combination.",
+    "authors": [
+      "Haoqing Wang",
+      "Xiaoyi Zhang",
+      "Sicheng Fan",
+      "Zhexin Zhang",
+      "Xinjie Zhang",
+      "Jiahao Li",
+      "Bin Li",
+      "Yan Lu"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.HC",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41432v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41432v1",
+    "fetched_at": "2026-11-02T17:43:18.120787",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756289"
+  },
+  {
+    "id": "2610.41401v1",
+    "title": "When Safety Checks Become Privacy Risks: A Privacy-Preserving Paradigm for LLM Agent Safety Auditing",
+    "abstract": "Large language model agents interact with online services through tool calls that may access private data or perform sensitive actions. Specialized providers can supply and maintain pre-execution safety auditing capabilities for agent operators. However, sending task descriptions, call arguments, and interaction histories to an external auditor may expose sensitive user information. In this work, we propose a paradigm for privacy-preserving safety auditing that separates delegated audit computation from plaintext access and execution authority. Grounded in a three-domain auditing model, the paradigm connects trusted representation construction, encrypted audit computation, and trusted decision and execution through explicit interfaces. These interfaces accommodate alternative representations and scorers, while encrypted computation protects audit inputs from a semi-honest auditor. We instantiate this paradigm in SealCall, a framework combining learned audit representations, CKKS-based encrypted similarity computation, and execution control bound to audited tool calls. Evaluated on 1,252 public binary candidates, SealCall achieves a mean F1 score of 0.840 under grouped nested evaluation, while preserving plaintext audit decisions in all measured cases. A representative configuration completes each encrypted scoring operation in 0.176 s.",
+    "authors": [
+      "Yixiang Luo",
+      "Ziheng Ma",
+      "Ke Chang",
+      "Jian Wang",
+      "Jiqiang Liu"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41401v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41401v1",
+    "fetched_at": "2026-11-02T17:43:18.120811",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756299"
+  },
+  {
+    "id": "2610.41107v1",
+    "title": "Differential rank preservation manifold learning",
+    "abstract": "Manifold learning methods like t-SNE and UMAP preserve local neighborhoods, but they do not preserve the ranking of the neighbors inside them. Two embeddings can return the same neighbor set while disagreeing on which point is closest. This loss of order degrades downstream applications that value the order in the embedding. We propose Smooth Rank t-SNE (SR-tSNE), which adds a differentiable rank term to the standard t-SNE loss. To enable efficient training, this term uses a sigmoid rank approximation to explicitly force a point's true high-dimensional neighbors to outrank unrelated intruders and retain their original order. We also introduce Ordinal DLP (O-DLP), an extension of the Degree of Locality Preservation (DLP) metric that credits a neighbor only when it returns at its original rank. Across eight benchmarks spanning image, text, speech, remote-sensing and single-cell data, SR-tSNE outperforms 12 baselines in rank preservation and neighborhood overlap. Ablation studies demonstrate our rank term alone boosts O-DLP by 5% to 28%, a gain not achievable using standard pairwise loss. This advantage transfers to downstream applications. SR-tSNE achieves the best label-transfer performance across seven vision datasets. For cell-type discovery across six single-cell datasets, it ranks first in 17 of 18 dataset-metric combinations, whether clustering resolution is selected with or without cell-type labels. In intraday trading, SR-tSNE achieves higher returns, lower risk, and lower turnover than the baselines. To our knowledge, SR-tSNE is the first t-SNE-family method with explicit order preservation.",
+    "authors": [
+      "Henry Han",
+      "Luyu Niu",
+      "Diane Li",
+      "Jiacun Wang"
+    ],
+    "published": "2026-10-30",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.41107v1",
+    "arxiv_url": "https://arxiv.org/abs/2610.41107v1",
+    "fetched_at": "2026-11-02T17:43:52.106196",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-02T17:45:29.756309"
+  }
+]
