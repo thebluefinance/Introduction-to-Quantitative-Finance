@@ -1,0 +1,562 @@
+[
+  {
+    "id": "2611.06607v1",
+    "title": "Hard to Fool: A Bounded LLM Research Loop for Quantitative Finance, and What Two Dozen Campaigns Found",
+    "abstract": "Agentic research loops that let a language model propose a change, run a fixed experiment and keep whatever improves the metric work well in machine learning. In trading research the same loop is a machine for producing false discoveries: a backtest that \"improves the metric\" is, by default, overfit, look-ahead, a multiple-comparisons artifact, cost-free, or market drift wearing a strategy. We describe Autonomous Quant Researcher, an open-source loop built on the opposite premise: the model proposes, and only trusted code decides. Proposals are strict declarative JSON over a fixed vocabulary, so there is no model-written code to sandbox. Evaluation runs on immutable chronological stores split into discovery, validation and a final holdout that can be opened exactly once, after a durable receipt is written. Acceptance is a conjunction of absolute gates (positive edge and net P&L after costs, a positive weekly-cluster bootstrap lower bound, survival at elevated costs, per-year stability and sample floors), never a single score. Duplicates are refused before they spend a trial, and every formulation, refusal, crash and result is kept in a hash-chained, append-only ledger. We report every campaign run to date, across 0DTE options priced from traded option bars, overnight SPX verticals, daily ETF rules, technical-analysis premises, Kalshi crypto binaries, earnings options, off-exchange volume and a pre-registered alternative-data campaign. Most hypotheses fail, and we report them. Two results survive their pre-registered bars. The clearest example of the loop working is a failure: a language-model survivor that passed discovery and validation with Sharpe ratios near 3 and fell to 0.26 on its single holdout use. The value of such a loop lies less in what it finds than in how hard it is to make it report something that is not there.",
+    "authors": [
+      "Henry Zhang"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06607v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06607v1",
+    "fetched_at": "2026-11-05T16:00:18.484402"
+  },
+  {
+    "id": "2611.06495v1",
+    "title": "Constrained defined-contribution pension management: A reparameterized neural network approach",
+    "abstract": "This paper studies constrained defined contribution (DC) pension management under a two-factor financial market model. The pension participant is allowed to invest in cash, two nominal bonds, an inflation-linked bond, and a stock index. Moreover, they can also purchase term life insurance to manage pre-retirement death risk. Unlike traditional literature, we consider a pension member restricted to a general non-empty, closed, and convex trading constraint set that includes no short-selling, no borrowing, and portfolio-mix constraints as special cases. Such restrictions reflect common limits on pension-account trading. To solve the problem, we construct a family of unconstrained artificial markets, in which the original trading constraints are satisfied by adjusting the drift terms of the risky assets. Using a duality transformation, we derive the Lagrangian dual problem and propose a reparameterized neural network method to compute lower and upper bounds on the primal value function. We calibrate our model with U.S. data using a Kalman filter method, and find that our method produces a smaller duality gap than the benchmark methods. We also compare the constrained results with the unconstrained explicit solution and find that trading constraints substantially change wealth accumulation, portfolio strategies, and insurance demand. This highlights that unconstrained solutions may provide misleading guidance for pension management in practice.",
+    "authors": [
+      "Yueman Feng",
+      "Wenyuan Li"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "q-fin.PM",
+      "math.OC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06495v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06495v1",
+    "fetched_at": "2026-11-05T16:00:18.484442"
+  },
+  {
+    "id": "2611.06459v1",
+    "title": "A general technique for explicit quantile representations",
+    "abstract": "This work proves existence of contours independent of probability level for exact quantile integrals of strictly positive real-analytic densities. Explicit constructions cover five broad distribution families and yield a finite-interval representation of Black-Scholes implied volatility using forward functions.",
+    "authors": [
+      "Wolfgang Schadner"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "q-fin.ST",
+      "math.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06459v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06459v1",
+    "fetched_at": "2026-11-05T16:00:18.484474"
+  },
+  {
+    "id": "2611.06126v1",
+    "title": "Exponential Seniority Weighting Chain-Ladder Reserving",
+    "abstract": "We develop a tractable state-space version of the chain-ladder model. The state-space dynamics acts on the accident year axis which, in contrast to the classical chain-ladder model, makes accident years dependent. This state-space version yields an exponential seniority weighting in the chain-ladder factor estimation, and it admits an analytical likelihood representation that enables us to compute the seniority weighted chain-ladder reserves and their prediction uncertainty: the one-year uncertainty is available in closed form and the total uncertainty requires a Monte Carlo simulation from the fully tractable likelihood representation.",
+    "authors": [
+      "Mario V. Wüthrich"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "stat.AP",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06126v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06126v1",
+    "fetched_at": "2026-11-05T16:00:18.484496"
+  },
+  {
+    "id": "2611.01656v2",
+    "title": "AIDA: An AI Outage Registry with Evidence from On-Chain MEV",
+    "abstract": "Generative AI coding tools have lowered the cost of writing trading software, but no systematic dataset records when these services fail. We introduce the AI Incident and Disruption Archive (AIDA), a multi-vendor registry of 5,868 deduplicated outage incidents across 30 providers from 2025 to 2026, with foundation-model incidents verified against primary status-page or postmortem URLs. Pairing AIDA with 5,041,034 verified maximal extractable value (MEV) transactions by 8,516 Ethereum addresses, their contract creations, and a 22-month Base Layer-2 panel of 1,099,593,191 swaps and 29,120 private executors, we establish two findings. First, entry into MEV expanded where code and public state suffice, as active arbitrage addresses quadrupled from late 2024 to late 2026 and liquidators grew by a third, while sandwich attackers, who need private order flow and builder access, declined. Execution nonetheless remained concentrated, with the top fifty addresses executing two thirds of verified trades. Second, AI outages stall new trading code while deployed bots keep trading. On Ethereum, addresses releasing a private executor fall to 0.67 on the day of an eight-hour disruption (0.68 for executor creations during OpenAI outage hours) and to 0.66 at lag two before rebounding on day three; on Base, operator top-level creations fall to 0.76 during OpenAI hours and executor-deploying operators to 0.88 at lag two. Non-trading creations, automated factory clones, and live arbitrage and sandwich execution across both chains remain unchanged. Cheaper code thus lowers the barrier to building MEV contracts, while private order flow, latency and capital still determine who wins execution.",
+    "authors": [
+      "Wenbin Wu"
+    ],
+    "published": "2026-11-01",
+    "categories": [
+      "q-fin.TR",
+      "cs.CE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.01656v2",
+    "arxiv_url": "https://arxiv.org/abs/2611.01656v2",
+    "fetched_at": "2026-11-05T16:00:18.485173"
+  },
+  {
+    "id": "2611.06185v1",
+    "title": "Editing Large Language Models with Geometry-Aware Regularization",
+    "abstract": "Knowledge editing has become a key technique for updating knowledge in large language models. However, existing methods neglect the geometric structure of the knowledge representation space, leading to two key limitations: they cannot distinguish which pre-trained knowledge should be preferentially preserved (core vs. non-core) nor which new edits are inherently difficult (hard vs. easy). To address this, we propose GEdit, a geometry-aware framework built on a Low-Rank Plus Diagonal (LR+D) factor model that captures the intrinsic low-rank structure of Transformer FFN hidden representations. GEdit features two complementary mechanisms. First, the low-rank regularization applies targeted protection on a low-rank core knowledge subspace. Second, the adaptive regularization dynamically adjusts the regularization strength based on each edit request's editability: relaxing constraints for hard edits to ensure success, and tightening them for easy edits to better preserve pretrained knowledge. Extensive experiments on GPT2-XL, GPT-J, and LLaMA-3-8B under large-scale editing scenarios, including both mini-batch and fully sequential editing settings with up to 10,000 continuous updates, show that GEdit consistently and significantly outperforms state-of-the-art baselines in both editing success and knowledge preservation.",
+    "authors": [
+      "Bingqing Liu",
+      "Wei Liu",
+      "Jun Wang",
+      "Xiaobo Sun",
+      "Yuhua Li",
+      "Ruixuan Li"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06185v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06185v1",
+    "fetched_at": "2026-11-05T16:00:29.589764"
+  },
+  {
+    "id": "2611.06911v1",
+    "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+    "abstract": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly considered as embodied brains for such systems, existing laboratory benchmarks mainly focus on safety, anomaly detection, or general scientific understanding, leaving their execution-oriented embodied capabilities underexplored. To fill this gap, we introduce BEAKER, a Benchmark for evaluating Embodied Actionability, Knowledge, Experimentation, and Reasoning in SDCLs. BEAKER contains 1,000 expert-curated question-answer samples across 11 image and video task types, covering key judgments required for chemical laboratory execution, including affordance grounding, trajectory planning, equipment, state, and safety recognition, apparatus setup, operation and step reasoning, and temporal procedure reasoning. All questions and annotations are manually created and reviewed by chemistry and embodied Artificial Intelligence (AI) experts, without AI-assisted generation or annotation. We evaluate 28 general-purpose, science-oriented, chemistry-specialized, and embodied MLLMs in an offline, single-turn setting. Results show that current models can follow coarse experimental procedures in videos, but still struggle to ground actions into operable regions and feasible trajectories, to recognize fine-grained laboratory apparatus, states, and safety norms, and to order steps in mid-length procedures. BEAKER thus reveals a clear gap between coarse procedural understanding and the precise, action-grounded perception required for laboratory execution, providing a diagnostic benchmark for future MLLMs in SDCLs.",
+    "authors": [
+      "Fei Lin",
+      "Tengchao Zhang",
+      "Ziyang Gong",
+      "Xiaotong Yu",
+      "Bohan Zhang",
+      "Yifan Zhou",
+      "Qihao Yang",
+      "Ji Dai",
+      "Dong Li",
+      "Yining Jiang",
+      "Qinghua Ni",
+      "Jun Huang",
+      "Qiang Zhang",
+      "Yue Zhou",
+      "Zhihang Zhong",
+      "Yonglin Tian",
+      "Fei-Yue Wang",
+      "Xue Yang"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06911v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06911v1",
+    "fetched_at": "2026-11-05T16:00:37.285797"
+  },
+  {
+    "id": "2611.06441v1",
+    "title": "Graph Foundation Models Can Become Effective Multivariate Time Series Anomaly Detectors",
+    "abstract": "Multivariate time series anomaly detection (MTSAD) relies on modeling both temporal dynamics and inter-sensor dependencies to identify complex system faults. Although graph-based detectors explicitly model sensor topologies, they train task-specific networks from scratch on limited target-domain data, remaining vulnerable to spurious correlations and unable to reuse transferable priors. While pretrained Graph Foundation Models (GFMs) offer transferable topological priors and anomaly discriminability, directly adapting them to MTSAD is hindered by cross-modal feature-topology mismatch, unreliable pseudo-anomaly supervision, and decision distortion during node-to-window aggregation. To fill these gaps, we propose a novel adaptation framework, Gfm4Mtsad, which unleashes pretrained GFMs for MTSAD. We introduce the Structure-and-Information Contract Alignment (SICA) module to bridge continuous time series and the pretrained GFM space. This module harmonizes principal subspace token projection, normal-prior-guided graph construction, and residual recovery to suppress spurious edges while retaining fine-grained temporal details. We propose a Mechanism-Aligned Pseudo-Anomaly Screening strategy (MAPS) to steer unsupervised learning. It applies localized dependency breaks while preserving empirical residuals, selecting hard negatives near the normal boundary for targeted supervision. We develop a Tail-Gated Evidence Calibration mechanism (TGEC) to eliminate node-to-window aggregation distortion. It calibrates multi-granular graph responses against normal operational references, strictly preserving benign score rankings while selectively refining extreme anomaly candidates in the tail distribution for reliable window detection and interpretable sensor evidence. Extensive evaluations with two GFM backbones demonstrate that Gfm4Mtsad achieves superior detection performance over existing baselines.",
+    "authors": [
+      "Zhuangyan Hu",
+      "Zhuoxuan Liang",
+      "Wei Li",
+      "Xiaohua Jia",
+      "Moustafa Youssef",
+      "Sumi Helal"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06441v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06441v1",
+    "fetched_at": "2026-11-05T16:00:37.285832"
+  },
+  {
+    "id": "2611.05901v1",
+    "title": "Retrieval Supersedes Scale: Efficient Log Level Prediction via Multiplex Socio-Technical Context",
+    "abstract": "Developers insert logging statements in source code to record its execution, and the resulting logs are essential for detecting and troubleshooting system anomalies. A key part of these statements is the log level (e.g., DEBUG, INFO, WARN, ERROR), which determines whether a message is recorded. Choosing it is a trade-off: levels set too low mask important information in production, while levels set too high create noisy logs and extra I/O and storage overhead. Recent work uses Large Language Models (LLMs) with In-Context Learning (ICL) to predict log levels, but typically augments the prompt with randomly sampled examples. We argue that this overlooks the socio-technical nature of logging, where conventions vary by component and development team. Off-the-shelf LLMs using random examples are reported to achieve median AUCs of only 0.56 to 0.76, leaving room for improvement without fine-tuning. In this paper, we propose a retrieval approach for LLM-powered log level prediction that prioritizes context relevance over random selection and basic similarity. Our method retrieves logging examples relevant along two socio-technical dimensions: (i) functionality (code performing similar operations) and (ii) ownership (code maintained by the same developers). Evaluating four LLMs across ten popular Java projects, we find that this retrieval improves AUC over random baselines by 0.07 (median), and combining both signals yields median AUCs of 0.83 to 0.97. Our ablation studies show that each signal improves on random retrieval, and that combining them outperforms the stronger of the two on all ten projects. Our results also significantly exceed state-of-the-art supervised predictors (e.g., DeepLV) by a median AUC of 0.12 to 0.19. Our findings highlight the importance of socio-technical signals such as code functionality and ownership for LLM-powered log level prediction.",
+    "authors": [
+      "Youssef Esseddiq Ouatiti",
+      "Mohammed Sayagh",
+      "Bram Adams",
+      "Ahmed E. Hassan"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.05901v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.05901v1",
+    "fetched_at": "2026-11-05T16:00:37.285857"
+  },
+  {
+    "id": "2611.06159v1",
+    "title": "Regret Bounds for Market Making with Persistent Orders",
+    "abstract": "We study adversarial market making with orders that remain active until execution. The maker operates on two markets: a primary market where orders are made and a secondary market where the resulting positions are hedged. In each round, the maker posts a quote on the primary market before observing both primary and secondary market prices. An order executes when the primary price reaches its quote, and the resulting position is immediately offset at the secondary price. When both price sequences are chosen by an adversary over $T$ rounds, we give a simple deterministic policy with regret of order $\\log T$ against the best fixed quote (static comparator) and $\\sqrt T$ against the best quote for each submission date (dynamic comparator), plus two terms measuring exposure to future primary and secondary prices. These rates remain optimal even when both exposure terms vanish and lower bounds show that the exposure terms are necessary. Our policy naturally extends to simultaneous bids and asks, where we show that static and dynamic regret are both characterized (up to constant factors) by the exposures terms (where the primary price exposure $V_T^{\\mathrm{two}}$ now accounts for both bids and asks) and a term of order $\\sqrt{V_T^{\\mathrm{two}}\\log T}$. Our policy is simple, efficient and fully parameterless. We extend this setting by demonstrating how natural assumptions on the price processes lead to improved guarantees without changing the policy.",
+    "authors": [
+      "Nicolò Cesa-Bianchi",
+      "Tommaso Cesari",
+      "Roberto Colomboni",
+      "Luigi Foscari",
+      "Vinayak Pathak"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.GT",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06159v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06159v1",
+    "fetched_at": "2026-11-05T16:01:03.650504"
+  },
+  {
+    "id": "2611.06910v1",
+    "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+    "abstract": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
+    "authors": [
+      "Bingran You",
+      "Wenjun Ke",
+      "Ria Rosenauer",
+      "Bo Liu",
+      "Wenbo Chen",
+      "Min Chen",
+      "Shuqi Xu",
+      "Yue Ma",
+      "Jiechao Feng",
+      "Bo Chen",
+      "Xiangkai Sun",
+      "Jiarui Liu",
+      "Jinen Guo",
+      "Zeyu Zhou",
+      "Xu Huang",
+      "Zhuohan Li",
+      "Haoyu Li",
+      "Heguang Lin",
+      "Lijie Ding",
+      "Yadong Zeng",
+      "Kangqi Zhang",
+      "Xinge Liu",
+      "Hanwen Liu",
+      "Zhenghong Li",
+      "Alexander von Recum",
+      "Yuchen Zhu",
+      "Felix Schwarzfischer",
+      "Yizhou Zhao",
+      "Jicheng Wang",
+      "Binxu Li",
+      "Qian Yu",
+      "Chan Li",
+      "Cheng Dai",
+      "Di Wang",
+      "Haoyu Zhang",
+      "Jiankai Sun",
+      "Kaituo Feng",
+      "Mian Qin",
+      "Ruihong Yin",
+      "Yiqun Luo",
+      "Weiwei Wu",
+      "Shihong Pan",
+      "Tsung Yeh Hsieh",
+      "Xiao Huang",
+      "Yan Zhang",
+      "Sihan Li",
+      "Zirui Ren",
+      "Zengji Tu",
+      "Kyoung Whan Choe",
+      "Ke Sun",
+      "Vincenzo Galia",
+      "Vaisakhi Mishra",
+      "Jiashu He",
+      "Hongyang Wang",
+      "Zhiheng Yang",
+      "Shubham Gaur",
+      "Yifan Gu",
+      "Shuyi Wang",
+      "Zihao Zuo",
+      "Steven Dillmann",
+      "Yiyou Sun",
+      "Xinyang Han",
+      "Hanchung Lee",
+      "Molei Tao",
+      "Yue Zhao",
+      "Shilong Liu",
+      "Yuchen Wu",
+      "Xuandong Zhao",
+      "Xiangyi Li",
+      "Florian Brand",
+      "Gerbrand Ceder",
+      "Hartmut Haeffner"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06910v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06910v1",
+    "fetched_at": "2026-11-05T16:01:10.861675"
+  },
+  {
+    "id": "2611.06868v1",
+    "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+    "abstract": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We instantiate this using a \\textit{generator-selector} framework with two LLMs; at each turn, a \\emph{generator} model generates $N$ candidate actions and a \\emph{selector} model selects one of them, which is then executed in the environment. This paper is closely related to the work of \\cite{zainullina2025guided} who used critic models for guided search at inference time. Different from their work, we evaluate if off-the-shelf, open-weight LLMs can be effective at comparing different candidate actions directly. Experiments on long-horizon terminal tasks show that \\method can lead to significant performance improvements, both in terms of accuracy (5--10\\%) and consistency across repeated attempts. Analysis of agent trajectories reveal a shift in agent behaviour towards desirable patterns such as reduction in number of attempts to solve the task, improved task instruction following, debugging and testing.",
+    "authors": [
+      "Jalaj Bhandari",
+      "Dhawal Gupta",
+      "Hongli Zhan",
+      "Zhenting Wang",
+      "Varad Pimpalkhute",
+      "Zhengzhong Liu",
+      "Eric Xing",
+      "Rupesh Srivastava"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06868v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06868v1",
+    "fetched_at": "2026-11-05T16:01:10.861707"
+  },
+  {
+    "id": "2611.06858v1",
+    "title": "CompressionBench: How can your coding agents compress LLMs?",
+    "abstract": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback guides search, and independent verification checks the final model. Across six agents and six model--size settings, 29 of 36 submissions pass verification. Selecting the lowest-perplexity agent design per task yields an average 3.4% perplexity increase over BF16 and 77.33% downstream accuracy, compared with 79.56% for BF16. Recorded experiments reveal how agents achieve these outcomes and where improvement breaks down. Agents lower PPL in 21 of 24 revisions at nearly fixed storage; complete-model feedback reverses 17 of 79 prior local rankings; and generation and inference tests expose failures that likelihood alone misses. The results identify representation design, experimental judgment, and capability validation as central to agent-driven model compression, a measurable component of efficiency-oriented self-improvement.",
+    "authors": [
+      "Xinrui Zhong",
+      "Zhifeng Li",
+      "Zhiming Wang",
+      "Yongqi Liu",
+      "Shanglin Yang",
+      "Yang Zhou",
+      "Zikun Li",
+      "Zhuoming Chen",
+      "Beidi Chen"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06858v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06858v1",
+    "fetched_at": "2026-11-05T16:01:10.861740"
+  },
+  {
+    "id": "2611.06841v1",
+    "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+    "abstract": "Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective serving requires coordinating implementation and operating decisions under session dependencies, latency constraints, and correctness requirements. We introduce ServerBench, a benchmark for agentic design of complete, specialized LLM serving systems. Agents experiment against a common objective, dollars per dollar: latency-qualified token value per dollar of GPU cost. Stateful replay preserves session dependencies, and independent verification checks the submitted system. Across 11 coding-agent models and three deployments, Claude Sonnet 5.5 achieves 2.97 dollars per dollar on Gemma E4B, $4.87\\times$ the vLLM reference; 22 of 33 runs yield verified systems, and 13 exceed the strongest baseline. Our analysis identifies three findings: high-value designs coordinate capacity improvements with load selection; agents interpret performance feedback through workload-relevant experiments; and reliable delivery requires verification of the execution paths introduced by optimization. Overall, ServerBench supports systematic study of how agents translate service objectives and feedback into effective, verified serving systems for given task specifications.",
+    "authors": [
+      "Xinrui Zhong",
+      "Zhiming Wang",
+      "Yongqi Liu",
+      "Zhaohui Wang",
+      "Shanglin Yang",
+      "Zikun Li",
+      "Zhuoming Chen",
+      "Beidi Chen"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06841v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06841v1",
+    "fetched_at": "2026-11-05T16:01:10.861770"
+  },
+  {
+    "id": "2611.06835v1",
+    "title": "LooM: Loop-Invariant Memory for Causal Encoder-Decoder Language Models",
+    "abstract": "Looped Transformers increase effective depth by re-executing shared layers, but three limitations hinder their adoption: memory grows with the loop count, compute can only be adjusted in whole-block steps, and the loop count is hard to change after training. We propose LooM (Loop-invariant Memory), which addresses each in turn. In a causal encoder-decoder (CED), LooM loops only the decoder layers after the first, which read a global memory written once per token, and each of them publishes the key-value (KV) entry for a token only on its first visit, so the cache does not grow with the loop count. These layers loop independently, providing every budget from 3 to 21 layer executions per token, and one model trained on randomly sampled budgets covers all of them without a router. With enough loops, LooM outperforms a single-pass baseline trained on the same data on language modeling, zero-shot accuracy and long-context perplexity, while using the same cache size. Our analysis further shows that the training budget distribution decides what extra depth buys. These results suggest that a CED is a natural place to loop: memory is written once, and depth becomes a budget chosen at deployment.",
+    "authors": [
+      "Lele Yang",
+      "Muxi Diao",
+      "Zhonghao Yan",
+      "Jiankang Chen",
+      "Bin Wen",
+      "Tingting Gao",
+      "Wentao Zhang",
+      "Kongming Liang",
+      "Zhanyu Ma",
+      "Weiran Xu"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06835v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06835v1",
+    "fetched_at": "2026-11-05T16:01:10.861804"
+  },
+  {
+    "id": "2611.06827v1",
+    "title": "Rules, Traces and Routing Statistics: Training and Calibration Data for Open Models on ARC-AGI-2",
+    "abstract": "We study which training and calibration data help three open models solve ARC-AGI-2 tasks when the solver runs offline on four L4 GPUs for at most 12 hours. We compare data offline on public tasks and report 189 runs on the 120 hidden semi-private tasks. For the NVARC Qwen3-4B grid model, we built a corpus of 12,000 executable rules in a typed language and 95,993 tasks; a rule is admitted only if its behaviour on a fixed probe set differs from that of every admitted rule, and a task only if its pairs refute a shortlist of nearest competing rules and defeat 12 shortcut solvers. Continued fine-tuning on 1,920 real task records with revised four-GPU scheduling raised the semi-private score from 28.96 (mean of the released model) to 33.06 (mean of five runs, best 34.86); no checkpoint trained with synthetic tasks, even all 95,993 of them, improved on the real-task model. For the Qwen3.8-27B reasoning model, we fine-tuned on 1,036 of its own reasoning traces with correct final answers and compared sets that add traces of other models and synthetic tasks. With an inference procedure built around the model (a thinking cap enforced in the serving engine, a Python program checked on the demonstrations after each answer, a long first attempt per input), the score rose from 26.81 to 44.03, the level the ARC Prize Foundation measured for the base model without a time limit (42.36); most of the gain came from the inference procedure. For the Qwen3.8-Flash-Next mixture-of-experts model (125B parameters, 6B active), GPU memory limited concurrency. Pruning from 512 to 384 experts per layer by router-weighted activation saliency grew the key-value cache from 0.55M to 1.39M tokens; a 296-expert list adapted with ARC routing statistics, keeping experts for program tokens, plus an FP8 indexer cache, reached 1.96M. With a tool that checks programs, the model scored 56.67, our best result.",
+    "authors": [
+      "Nguyen Minh Thang",
+      "Trinh Thi Phuong"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06827v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06827v1",
+    "fetched_at": "2026-11-05T16:01:10.861823"
+  },
+  {
+    "id": "2611.06803v1",
+    "title": "Task-Efficient Agent Evaluation Using Cached Traces",
+    "abstract": "Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each execution that can reveal substantially more about its capabilities. Leveraging this information requires useful trace representations. We propose representing a trace by extracting a structured summary of it with an LLM and embedding the summary with a standard text encoder. These representations preserve correctness- and task-related signal while minimizing the presence of system identity-, model family- and harness-related signals that dominate raw trace embeddings. Given this representation for each task execution from all reference systems, we construct low-dimensional representations of the systems and predict a new system's score from its position among the reference systems. On SWE-bench Verified and Terminal-Bench 2.0, augmenting an item-response model with this geometry-based prediction reduces mean absolute error from 0.13 to 0.08 (Wilcoxon $p < 10^{-4}$) and from 0.14 to 0.12 (Wilcoxon $p < 10^{-3}$), respectively, when provided a single random executed task. Further, given access to the full set of reference systems, our approach dominates baselines for any given number of executed tasks on both benchmarks.",
+    "authors": [
+      "Ben Johnson",
+      "Hayden Helm"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06803v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06803v1",
+    "fetched_at": "2026-11-05T16:01:10.861844"
+  },
+  {
+    "id": "2611.06760v1",
+    "title": "Route First, See Later: Enabling Vision Agents to Reason Scientifically by Separating Routing Policy from Action Spaces",
+    "abstract": "Scientific image-analysis workflows require agents to select among diverse capabilities like description, detection, counting, and segmentation. Current multi-tool architectures conflate intent interpretation with visual execution, masking whether a failure arises from flawed reasoning (misrouting) or failed perception (invalid tool execution). This lack of auditability renders agents unreliable for high-stakes scientific automation. We introduce ZETA, an extensible architecture that operationalizes the decoupling of routing policy from action execution. ZETA resolves scientific intent before invoking specialized visual tools, treating measurement as a deterministic operation grounded in explicit geometry rather than generative output. This architecture exposes the \"black box\" of agent decision-making, allowing routing correctness and downstream execution to be evaluated as independent failure modes.   To our knowledge, we provide the first controlled study in scientific vision-agent routing that isolates explicit routing-policy specification while holding the legal action interface fixed. Evaluation on a zero-shot benchmark of 51 scientific-intent queries shows that explicit routing semantics can substantially improve routing accuracy, particularly at semantically adjacent action boundaries, although improvements vary across models. For Qwen 3.8, explicit routing-policy specification improves segmentation routing accuracy from 6.2% to 75.0% and detection routing accuracy from 60.0% to 100%. ZETA's execution traces make routing decisions and downstream artifacts separately observable, providing a basis for distinguishing intent-selection errors from visual execution failures. ZETA establishes the necessary infrastructure to isolate execution errors from interpretive ones, a critical requirement for deploying reliable scientific vision agents.",
+    "authors": [
+      "Shubhabrata Mukherjee",
+      "Jeffrey Donatelli",
+      "Daniela Ushizima"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06760v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06760v1",
+    "fetched_at": "2026-11-05T16:01:10.861867"
+  },
+  {
+    "id": "2611.06731v1",
+    "title": "Template Gap Reconstruction for Shell Output Simulation with Small Language Models",
+    "abstract": "Small language models offer a compact basis for shell simulation without executing submitted commands, but full-output decoding requires them to predict recurring utility structure alongside content that varies across executions. We introduce template gap reconstruction (TGR), which supplies reusable output literals interspersed with sentinels to be interleaved with autoregressively generated gaps. A template selector chooses which template to be reconstructed, with the empty template retaining full-output decoding. We construct a template bank from 18.7 million outputs collected across heterogeneous execution environments and train a template selector and five reconstruction models initialized from various small language model checkpoints on a target environment excluded from bank construction. Evaluation demonstrates that TGR improves output edit similarity (O-ES) over full-output decoding (FOD) when the optimal template covers more than 25\\% of the template, while performing similarly for lower-coverage outputs. Additionally, TGR outperforms FOD for shorter gap sequences, with O-ES values of 0.964 and 0.812, respectively, while maintaining similar performance for longer sequences. TGR reduces the number of tokens generated by 26.3--38.3\\% across used tokenizer families. These results support using a reusable output structure as a practical design choice for small shell simulators, improving response fidelity and shortening generation targets while keeping template selection and residual prediction central to response quality.",
+    "authors": [
+      "Jarrod Ragsdale",
+      "Rajendra Boppana"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06731v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06731v1",
+    "fetched_at": "2026-11-05T16:01:10.861887"
+  },
+  {
+    "id": "2611.06682v1",
+    "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+    "abstract": "Tool-using large language model (LLM) agents translate model outputs into consequential actions, turning indirect prompt injection into an execution-security problem. Existing defenses constrain tool calls, trajectories, or information flows, but often leave action semantics, state dependencies, and evidence relations implicit, limiting generalization across heterogeneous tools and complicating safe updates. We present \\ours{}, a dynamic ontology-guided governance framework. \\ours{} grounds heterogeneous calls in a shared semantic representation and combines an executable ontology with episode-level task state to derive deterministic ready, waiting, and forbidden decisions. A waiting decision identifies an unmet but recoverable obligation, enabling bounded replanning without expanding the agent's authorization boundary. \\ours{} evolves its ontology offline from verified training executions. An offline LLM proposes instance-independent action--state axioms, which are accepted only if they address ontology errors exposed by training failures, preserve logical consistency and protected entailments, and pass held-out validation before the ontology is frozen. We evaluate \\ours{} on AgentDojo, ASB, and AgentDyn under benign and indirect prompt-injection settings. \\ours{} achieves a 0\\% attack success rate (ASR) across all three benchmarks while improving task utility under attack compared with existing baselines. These results show that explicit semantic governance can strengthen execution security without indiscriminate blocking.",
+    "authors": [
+      "Guoqin Xiong",
+      "Shengtao Wen",
+      "Xiang Chen",
+      "Xinyi Zeng",
+      "Zhaoxin Fan",
+      "Wei Ye",
+      "Xiaofeng Cao",
+      "Sheng-Jun Huang"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06682v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06682v1",
+    "fetched_at": "2026-11-05T16:01:10.861921"
+  },
+  {
+    "id": "2611.06674v1",
+    "title": "AgentTrustCI: Build-Time Policy, Grounding, and Trajectory Tests for Java LLM Agents",
+    "abstract": "Infrastructure security does not establish whether an LLM agent selected an allowed tool, grounded its answer in tool output, or followed a required workflow. AgentTrustCI is a Java/JUnit 5 framework that expresses these application-layer expectations as policy, grounding, and trajectory checks over recorded traces. A deterministic replay implementation supports repeatable build-time tests; a judge interface provides an extension point for optional semantic evaluation. On 55 synthetic cases spanning seven enterprise domains, the full pipeline correctly classifies all 30 injected faults and 25 passing controls, including ten non-trivial controls, and misses none of 12 designated critical cases. Each single-layer configuration correctly classifies 35 cases because the corpus deliberately isolates ten faults per layer. A grounded answer obtained through a disallowed sequence illustrates the additional coverage of trajectory checks. Repeated measurements quantify validator execution separately from process startup and reporting. These results establish coverage of the authored regression suite, not production accuracy. We describe a production-trace validation protocol, optional LLM-judge integration, and maintenance of expectations as workflows evolve. The contribution is a practical pattern for expressing behavioral contracts within an existing Java release pipeline.",
+    "authors": [
+      "Sachin Gupta"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06674v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06674v1",
+    "fetched_at": "2026-11-05T16:01:10.861939"
+  },
+  {
+    "id": "2611.06630v1",
+    "title": "Noise-regularized training of quantum circuit Born machines under a finite shot budget",
+    "abstract": "Quantum circuit Born machines (QCBMs) can learn distributions that are hard to sample from classically, but their value depends on generalizing from finite training data. Here, we study how hardware noise affects this generalization. We show that, for any noise process, the generalization gap of a QCBM trained with the maximum mean discrepancy is bounded by the complexity of the distributions the noisy model can reach. Scrambled local Pauli noise contracts this complexity but biases the model towards the uniform distribution, so residual noise acts as a regularizer whose optimal strength can be intermediate. We propose GENIE, a framework that realizes a chosen noise level with capped error mitigation and selects it during training from held-out data within a fixed execution budget, with provably bounded regret. In simulations on synthetic and census data, GENIE stays close to the best of four noise-control strategies, whereas every fixed noise level falls short in many settings.",
+    "authors": [
+      "Hoang M. Ngo",
+      "Quan Nguyen",
+      "Jung Taek Seo",
+      "Wanli Xing",
+      "My T. Thai"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "quant-ph",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06630v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06630v1",
+    "fetched_at": "2026-11-05T16:01:10.861964"
+  },
+  {
+    "id": "2611.06603v1",
+    "title": "Time-Division Multiplexing: The Operational Rhythm and Temporal Organization Layer of Digital Life",
+    "abstract": "Continual agents must handle urgent interaction while retaining alternatives, replaying errors, and committing safe long-term changes. A previous digital-life framework distinguishes online (busy) and offline (idle) channels, but leaves open whether these are separate programs or phases of a common process and how their operations should be ordered. Motivated by recent observations of rapidly alternating perceptual representations in primate cortex, we develop a temporal organization layer with phase-tagged micro-epochs, an observable duty cycle, independent content and resource controls, and three nested clocks separating candidate exploration from durable commitment. We give a projected duty-cycle update, state its deterministic descent guarantee and the additional noise term required for a stochastic guarantee, and specify coupled busy/idle execution contracts. Five synthetic experiments (64 seeds each) examine descent and noise, objective misalignment, gain asymmetry, resource coupling, and dropped replay logs. In the gain/noise model the best tested gain ratio is 1.55; decoupled scheduling yields 26.6% versus 11.1% success on a constructed urgent/high-load subset. A frozen-backbone Qwen3-8B prototype further checks orchestration, but its proxy outcomes are not task-benchmark evidence. The results establish a testable scheduling design and identify its conditions of validity, not machine consciousness or general-purpose agent superiority.",
+    "authors": [
+      "Haibin Tong",
+      "Luming Guo",
+      "Nana Cui",
+      "Jiang Yu"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.AI",
+      "q-bio.NC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06603v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06603v1",
+    "fetched_at": "2026-11-05T16:01:10.861987"
+  },
+  {
+    "id": "2611.06585v1",
+    "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
+    "abstract": "AI agents rely on third-party tools, such as Model Context Protocol (MCP) servers, whose publishers can be authenticated and whose execution can be restricted by runtime security policies. Yet authenticity does not guarantee benign behaviour: a legitimately signed tool may perform its advertised function while concealing malicious code that leaks confidential information. We demonstrate this trust failure with a signed MCP tool that embeds sensitive data in requests to a policy-allowed destination. Meta's MCPGuard-Dynamic, a state-of-the-art runtime defence, blocks a direct exfiltration attempt in the same run, yet fails to prevent this attack in every trial. We introduce germline execution, which limits information disclosure without inspecting or trusting tool implementations. Each tool invocation runs in ephemeral copies forked from a data-free germline process, each receiving only information authorised for its destination. Even if malicious code executes, what it can disclose is bounded by the data available to its copy. Under explicit assumptions on copy confinement and a data-free germline, we prove sink noninterference for every signed release and, for releases deterministic within our replay model, show that a verified witness establishes a flow violation. Across 153 attack runs, no unauthorised disclosure was detected under germline execution, compared with 5.9-74.5% of runs under baseline defences and an ablation. Invocations served by a single copy completed in 10-49 ms, 2-28x faster than restarting the tool for every invocation, the conventional way to clear state. These results show that data-isolated execution protects agent toolchains against malicious code concealed within authenticated software.",
+    "authors": [
+      "Yichiet Aun",
+      "Mohammed A. Alhartomi",
+      "Jing Jie Tan",
+      "Waqas Nadeem",
+      "Adeb Salh",
+      "Shankar Karuppayah",
+      "Sin Chee Tan"
+    ],
+    "published": "2026-11-04",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.06585v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.06585v1",
+    "fetched_at": "2026-11-05T16:01:10.862017"
+  },
+  {
+    "id": "2611.04813v2",
+    "title": "AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests",
+    "abstract": "Financial agents are becoming an important class of real-world AI systems. Financial tasks vary widely in type and difficulty, and many are open-ended with no ground-truth answers. However, existing benchmarks neither capture this breadth and open-endedness nor separate grounding from correctness. To bridge this gap, we introduce $\\textbf{AgenticFinBench}$, a benchmark of 230 real-world financial tasks spanning 8 categories, 2 languages, and 4 complexity levels. We also propose a reference-free evaluation framework that combines question-specific rubrics with a two-stage claim audit that detects hallucinations, defined as claims absent from the agent's trace and refuted by external evidence. This framework better matches how financial work is assessed in practice. Experiments across 18 agent configurations reveal three key findings: (1) Ignoring hallucinations can overstate agent performance: hallucination auditing lowers the baseline leader's score by 7.58 points and moves it to fourth place. (2) Harness differences explain more variation in evidence grounding than model differences (28.6% vs 8.8%). (3) Quality scores fall from 89.44 on direct retrieval to 79.18 on the most complex tasks. Case studies show that agents struggle to explain how events affect company profits or stock prices, compare financial data on a consistent basis, and justify their conclusions. By releasing AgenticFinBench, we aim to advance financial reasoning, factual verification, and agent design for more reliable responses to diverse real-world financial requests.",
+    "authors": [
+      "Shu Zhou",
+      "Ziyang He",
+      "Yuxin Rao",
+      "Yudong Fang",
+      "Jiali Qian",
+      "Dongyuan Chen",
+      "Juntao Zhang",
+      "Yong Hu"
+    ],
+    "published": "2026-11-03",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.04813v2",
+    "arxiv_url": "https://arxiv.org/abs/2611.04813v2",
+    "fetched_at": "2026-11-05T16:01:52.182549"
+  }
+]
