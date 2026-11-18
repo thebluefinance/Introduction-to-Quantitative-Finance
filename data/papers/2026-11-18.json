@@ -1,0 +1,697 @@
+[
+  {
+    "id": "2611.23126v1",
+    "title": "Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers",
+    "abstract": "More historical data can improve estimation while introducing relationships that transfer poorly to current market conditions. We therefore examine how training quantity and historical selection interact with forecast horizon in intraday equity prediction. We deploy twelve configurations which combine four sampling and validation policies with 6, 12 and 24 month training quantities under a fixed cross-sectional Transformer and feature set. A monthly walk-forward experiment produces 264 refits and eight cumulative return forecasts from 5 to 120 minutes. Evaluation covers January 2025 through 20 October 2026 and uses cross-sectional Spearman information coefficients against future five-factor residual returns. Six-month recency sampling leads individual models at 5-15 minutes, while multi recency configurations lead at 20-30 minutes and uniform configurations at 60-120 minutes. Increasing training quantity does not uniformly improve accuracy while an equal-weight ensemble of all twelve models exceeds every individual mean at 15, 20 and 25 minutes, but not at the remaining horizons. These findings support evaluating historical selection jointly with forecast horizon without identifying a universal policy or a causal benefit from recency.",
+    "authors": [
+      "Chariton Chalvatzis"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "q-fin.ST",
+      "cs.LG",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.23126v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.23126v1",
+    "fetched_at": "2026-11-18T16:53:21.123863"
+  },
+  {
+    "id": "2611.23057v1",
+    "title": "Integrating market sentiments for stock price prediction: A comparative study of Bi-LSTM and multilayer perceptions",
+    "abstract": "This study investigates the integration of sentiment analysis with machine learning models to forecast stock price movements using the Nvidia Corporation as a case study. Sentiment scores were derived from Nvidia-related financial news headlines using two sentiment analysis tools: FinBERT, a domain-specific tool, and TextBlob, a general-purpose tool. These scores were integrated into predictive frameworks based on bidirectional long short-term memory (Bi-LSTM) networks and multilayer perceptrons (MLPs) developed alongside historical stock price data. This study assesses the predictive performance over the entire observation period and across distinct market phases: bullish, stagnation, and strong bullish conditions. The findings indicate that sentiment features enhance predictive accuracy in specific contexts, particularly during stagnation phases, with TextBlob demonstrating superior performance to FinBERT in specific scenarios. In addition, Bi-LSTM models exhibit consistently superior performance in capturing temporal dependencies compared to MLPs. However, the impact of sentiment features diminished during strongly directional trends, such as those observed in strong bullish markets. The combination of FinBERT and TextBlob in the same dataset allows for a dual-perspective approach to sentiment analysis, thereby providing new insights into the dynamic relationship between market sentiment and stock price behavior. This research contributes to the existing literature on applying sentiment analysis to financial forecasting by advancing the integration of complementary sentiment tools and phase-specific evaluations.",
+    "authors": [
+      "Ahmet Akusta"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.23057v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.23057v1",
+    "fetched_at": "2026-11-18T16:53:21.123891"
+  },
+  {
+    "id": "2611.22730v1",
+    "title": "Covariate-Indexed Inclusion Probabilities on Unbalanced Panels",
+    "abstract": "We estimate the probability that an item with given covariates belongs to a set when the cross-section changes over time and items and periods are dependent. We propose two convex models whose fitted probabilities are nonnegative by construction and remain valid whatever the dependence between items, for which we establish consistency, finite-sample bounds and limit distributions for serially dependent panels. One suits events of moderate or high probability, the other rare events, and half the disagreement between their fits estimates a lower bound on the misspecification error of the worse fit, without knowledge of the true probabilities. On monthly US stock failures, the rare-event model predicts better than the ordinary logit and the classical failure logit. With the eight classical predictors, most of the gain comes from basis functions of the rank angle of each predictor and summary.",
+    "authors": [
+      "Paul Schneider"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "math.ST",
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22730v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22730v1",
+    "fetched_at": "2026-11-18T16:53:21.123905"
+  },
+  {
+    "id": "2611.22604v1",
+    "title": "Beyond Strike Remapping: Conditional-Gamma Pricing of Leveraged ETF Options under Local Volatility",
+    "abstract": "Options on leveraged ETFs (LETFs) are priced and hedged off the LETF volatility surface, but path-dependent variance drag makes that surface difficult to build consistently with the underlying index smile. We study three methods for constructing it: a closed-form first-order strike remapping, a new conditional-Gamma method, and a two-dimensional joint-law PDE that makes no distributional assumption and serves as the benchmark. The conditional-Gamma method is our main contribution. It conditions on the terminal underlying return, which preserves the state dependence of variance drag that a single remapped strike discards. Three one-dimensional forward PDEs under a calibrated local-volatility model give the conditional mean and variance of integrated variance, and a Gamma law matched to these moments keeps realised variance non-negative and prices the option in closed form. A shifted-Gamma variant that also matches the conditional third moment gives its clearest gains for inverse products at longer maturities, and a Gamma-mixture extension covers the full range of conditional skewness compatible with non-negative realised variance. On S&P 500 and Nikkei 225 surfaces the conditional-Gamma smile tracks the benchmark closely at every leverage tested, including the wings where the strike remapping drifts. A full LETF smile takes 0.85-1.42 seconds against 197-224 seconds for the benchmark, a 158- to 236-fold speed-up. Against listed TQQQ quotes the conditional-Gamma smile lies inside the market bid-ask at most strikes.",
+    "authors": [
+      "Guolin Chen",
+      "Jiang Zhou",
+      "Richard Ma",
+      "Xia Sheng",
+      "Anson Tse",
+      "Terry Wei"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22604v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22604v1",
+    "fetched_at": "2026-11-18T16:53:21.123925"
+  },
+  {
+    "id": "2611.22277v1",
+    "title": "Explaining Realized Returns: Roll's $R^2$ 40 Years Later",
+    "abstract": "Can we explain asset price movements even with hindsight? Reinterpreting Roll's (1988) AFA Presidential Address, \"$R^2$,\" as a modern empirical exercise, we show that conventional macroeconomic, cash-flow, expectations, and flow variables explain less than 10% (often with negative $R^2$) of monthly U.S. equity return variation out of sample and lack daily observations. We use generative AI to extract reasons stated in Wall Street Journal market summaries while filtering out price-related language. These reasons explain around 30-40% of daily and monthly return variation out of sample. Their content spans interpretable themes, including corporate news, macroeconomic conditions, monetary policy, sentiment, and geopolitics.",
+    "authors": [
+      "Bryan Kelly",
+      "Yinan Su",
+      "Chao Zhang"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22277v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22277v1",
+    "fetched_at": "2026-11-18T16:53:21.123938"
+  },
+  {
+    "id": "2611.22119v1",
+    "title": "An axiomatic foundation for optimized certainty equivalents",
+    "abstract": "Optimized Certainty Equivalents (OCEs) are an important class of risk measures for optimization and risk management that includes the Mean--Variance criterion, Expected Shortfall, the Entropic Risk Measure, and expectation. Despite their importance, economic axioms have not characterized OCEs. We propose a new axiom called Fair-Coin Compensation, which characterizes OCEs together with Strong Risk Aversion and Normalization. We interpret Fair-Coin Compensation through the fair assignment of two losses by a coin toss: transfers between two participants can remove the additional risk created by the random assignment. Adding further axioms yields sharper characterizations. Monotonicity yields standard OCEs; Positive Homogeneity, together with Prudence, yields Expected Shortfall; and Fair-Coin Independence yields the Entropic Risk Measure. We also axiomatize the Mean--Variance criterion using our novel axiom of Equal-Mean Randomization, which states that random assignment of two losses with the same expected value does not produce a risk measure above the average of their risk measures.",
+    "authors": [
+      "Christopher Blier-Wong",
+      "Jean-Gabriel Lauzier",
+      "Zachary Van Oosten"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "q-fin.RM",
+      "econ.TH"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22119v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22119v1",
+    "fetched_at": "2026-11-18T16:53:21.123951"
+  },
+  {
+    "id": "2611.21897v1",
+    "title": "Revisiting Equity-Bond Diversification under Tail Risk and Structural Market Change: Evidence from Global ETFs and Model-Implied Option Prices",
+    "abstract": "This study examines thirty equity--bond and multi-asset exchange-traded funds (ETFs) listed in the United States, Canada, and Australia using daily U.S.-dollar returns over 2020--2024. A rolling-window framework compares minimum-variance and Conditional Value-at-Risk (CVaR) portfolio optimization under long-only and long--short constraints against an equally weighted benchmark. Performance is assessed using risk-adjusted measures, downside risk, extreme-tail estimation, and conditional volatility models. Optimized portfolios exhibit lower empirical VaR and CVaR than the benchmark, with long--short strategies generally providing greater downside-risk reduction. However, the equally weighted benchmark achieves the highest reported Sharpe, Sortino, and Rachev ratios. GARCH and FIGARCH comparisons favor GARCH based on information criteria. A historically estimated Normal Inverse Gaussian model further generates European option prices and model-implied volatility surfaces under a martingale-corrected pricing specification. The findings highlight trade-offs between risk reduction, risk-adjusted performance, and practical implementation costs.",
+    "authors": [
+      "Farzana Afroz",
+      "Abootaleb Shirvani",
+      "Nicholas Appiah",
+      "Svetlozar T. Rachev",
+      "Frank J. Fabozzi"
+    ],
+    "published": "2026-11-16",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.21897v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.21897v1",
+    "fetched_at": "2026-11-18T16:53:21.123967"
+  },
+  {
+    "id": "2611.22496v1",
+    "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
+    "abstract": "We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct challenges: missingness, multi-modal physical and biogeochemical variables, sparse labels, and dynamics that are transient, multi-scale, and non stationary over time. DARWIN adapts a masked-autoencoder backbone to these properties through missingness-aware encoding, expanded spatial and temporal masking, and Fourier-style positional embeddings, and is pretrained on 26 years of global Copernicus reanalysis together with GEBCO bathymetry.   On predicting chlorophyll-a, the pretrained backbone attains the lowest monthly relative error in every month of 2022, outperforming both no-encoder baselines and an identically architected random-init encoder. At 10% of the supervised training data, DARWIN already surpasses the random-init model trained on 100% of the data. Embedding analysis and qualitative reconstructions show that DARWIN captures coherent oceanographic structure rather than memorising input statistics, providing a scalable backbone for downstream marine applications such as anomaly detection, species distribution modelling, and environmental monitoring.",
+    "authors": [
+      "Coen van den Elsen",
+      "Laurens Geffert"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI",
+      "physics.ao-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22496v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22496v1",
+    "fetched_at": "2026-11-18T16:53:34.625917"
+  },
+  {
+    "id": "2611.22281v1",
+    "title": "SeasonRainBench: Global Seasonal Precipitation",
+    "abstract": "Accurate seasonal precipitation forecasts help societies prepare for drought, flooding, and crop failure months in advance. While data-driven methods have made rapid progress in weather and subseasonal forecasting, operational seasonal precipitation prediction still relies on numerical ensemble systems. These systems are computationally expensive and exhibit biases and drift that increase with lead time, motivating more efficient data-driven alternatives. Yet this transition faces three linked challenges: comparing data-driven forecasts with operational ones requires (1) a global benchmark that does not exist, scoring them requires (2) metrics that capture operational priorities beyond anomaly correlation (ACC) and RMSE, and training them must (3) rely on a single, short observational record. To address the first two challenges, we introduce \\BenchName, the first such benchmark, covering monthly precipitation forecasts 1--5 months ahead. It pairs global $1^\\circ$ satellite precipitation with oceanic and atmospheric predictors, includes seven operational centers, and provides 310,944 simulated months from 52 climate models for training. Beyond standard scores, we introduce two operationally motivated metrics for anomaly strength and monthly rain-belt position. To address the third challenge, we develop \\MODEL, which learns from simulations what the record lacks and transfers it to Earth through three modules: SimForced aligns the climate background, SimMemory transfers a history encoder pretrained on simulations, and SimAnalog supplements Earth labels with simulated analog outcomes. Extensive experiments show that \\MODEL{} improves ACC, CRPS, anomaly strength, and rain-belt position by 12.0\\%, 3.6\\%, 2.9\\%, and 0.3\\% over the strongest operational or data-driven model, opening a path from simulated worlds to Earth system prediction.",
+    "authors": [
+      "Qiuyan Sun",
+      "Mengxuan Chen",
+      "Haoyuan Liang",
+      "Guowen Li",
+      "Zhen Huang",
+      "Jianhao Lin",
+      "Juepeng Zheng",
+      "Haohuan Fu"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22281v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22281v1",
+    "fetched_at": "2026-11-18T16:53:34.625947"
+  },
+  {
+    "id": "2611.21995v1",
+    "title": "Deciding Without Pointing: A Case Study of Whether a Decision Model Localizes the Anomalies It Detects",
+    "abstract": "Decision models can answer a typed question about an image with a probability per option, without generating text. In our case study of Clef-flash (post-trained Qwen3.5-9B backbone) on industrial inspection benchmarks, we ask whether it localizes the anomalies it detects. We obtained uneven results with zero-shot detection: per-category image AUROC 0.924 on MVTec AD and 0.668 on MVTec AD 2. On the former, the decision head's routing attention produces 0.391 mean per-image pixel AUROC, and hiding the image tokens from it leaves detection unchanged. The multimodal LLM's backbone attention does point at the defect, however it falls below a center prior when we change question. It falls below chance if we remove textual context in the question, partly due to backbone attention leaving the object, while the head's map hardly changes. The backbone's states carry the location when probed with normal images, on the test-split images, however, the decision depends on the defect region. A larger model, Clef, that comes with a post-trained Qwen3.8-27B backbone, gives no useful map in the decision head either. We found that it's possible to recover anomaly location by asking question specifically on an image region, retraining the head or reading the backbone, but none matches dedicated few-shot localizers.",
+    "authors": [
+      "Hsiang-Hung Lee"
+    ],
+    "published": "2026-11-16",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.21995v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.21995v1",
+    "fetched_at": "2026-11-18T16:53:34.625958"
+  },
+  {
+    "id": "2611.21975v1",
+    "title": "Pathology Randomization for Synthetic Priors and Zero-Shot Detection",
+    "abstract": "Hospital brain imaging archives hold a diverse array of pathology at sample sizes beyond prospective studies, particularly for underrepresented populations and diseases. To unlock uncurated clinical data and scale analysis, methods are needed to detect abnormalities across contrasts and resolutions. Synthetic data has provided robust, contrast-agnostic models for a variety of human neuroimaging tasks in healthy anatomy, but pathology detection and other tasks in clinical settings still require real patient data, contrast-specific models, or disease-specific generators. We propose PathoDraw, a generative model of brain MRI with pathology. A conditional distribution of lesions given the healthy anatomy is drawn into the label map before contrast-agnostic rendering, and a single network estimates healthy anatomy with exact signed intensity deviation of any input scan. The contrast-agnostic 3D UNet learns the healthy labels under the lesion and the signed deviation directly and identifies pathology via robust tissue statistics and learned features, despite no training on real pathology. We show zero-shot detection on public stroke, tumor, and white matter hyperintensity datasets as well as archived clinical data, spanning $T_1$w, FLAIR and $T_2$w at various resolutions under a recent unsupervised anomaly detection benchmark protocol. Our single model exceeds or performs comparably to contrast-specific anomaly detectors trained on real scans and keeps healthy anatomy intact. The same generator trains networks for super-resolution and for registration in the presence of pathology. Our model, robust across acquisition and disease, enables the use of uncurated, archived data for clinical analysis. Our code is available at https://github.com/agr78/Pathology-Randomizer.",
+    "authors": [
+      "Alexandra G. Roberts",
+      "Tonmoy Hossain",
+      "Mark Olchanyi",
+      "Stefan Brandstätter",
+      "Jonathan Williams Ramirez",
+      "Ana Lawry Aguila",
+      "Matthew Rosen",
+      "Annabel Sorby-Adams",
+      "W. Taylor Kimberly",
+      "Juan Eugenio Iglesias"
+    ],
+    "published": "2026-11-16",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "eess.IV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.21975v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.21975v1",
+    "fetched_at": "2026-11-18T16:53:34.625979"
+  },
+  {
+    "id": "2611.21674v1",
+    "title": "Improving Early Detection of Scientifically Interesting Radio Sources Using Enhanced Isolation Forest",
+    "abstract": "The rapid growth of radio astronomical surveys has created a major challenge in identifying scientifically interesting sources from large populations of observed objects. This study investigates whether enhanced Isolation Forest (iForest) methods can improve the early detection and ranking of scientifically interesting radio sources. Four iForest variants, Standard Enhanced, Pooled Gain, Kurtosis-based, and Hypervolume, are evaluated using 1,031 extended radio sources from the MeerKAT Galaxy Cluster Legacy Survey (MGCLS). Each source is represented by a 52-dimensional feature set derived using Bootstrap Your Own Latent (BYOL) self-supervised learning and principal component analysis (PCA), while expert scientific-interest ratings are used to define the ground-truth labels. The methods are evaluated using Average Precision (AP), receiver operating characteristic area under the curve (ROC AUC), Precision@10, Precision@50, and cumulative anomaly detection. Pooled Gain achieves the highest Average Precision (AP = 0.201) and the strongest early-stage ranking performance (P@10 = 0.600), identifying six expert-validated anomalies among the ten highest-ranked sources. Standard Enhanced and Kurtosis-based achieve the highest ROC AUC (0.677), while the AUC values of the four variants range from 0.653 to 0.677. These results indicate that feature-aware isolation strategies can improve the prioritization of scientifically interesting sources at the top of the ranked list, although overall discrimination remains comparable across the evaluated variants. The findings support the use of enhanced Isolation Forest methods as an initial ranking mechanism within human-in-the-loop systems for large-scale radio astronomical surveys.",
+    "authors": [
+      "Pfunzo Thavhana",
+      "Clement Nyirenda",
+      "Michelle Lochner"
+    ],
+    "published": "2026-11-14",
+    "categories": [
+      "astro-ph.IM",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.21674v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.21674v1",
+    "fetched_at": "2026-11-18T16:53:34.626054"
+  },
+  {
+    "id": "2611.21952v1",
+    "title": "A Log-Timescale Perturbation Bound for Selective State Space Models at Every Sequence Length",
+    "abstract": "Mamba models deployed on streaming data, such as limit order book updates, run far past the sequence lengths they were trained on. A guarantee on how much a small change of input can move the hidden state therefore has to hold at every length. The closest existing bound we know of measures the change of the timescale additively, and it grows linearly with the sequence length unless the timescale is bounded away from zero. In this paper, we measure the change on a log scale instead. The key observation is that the decay factor of each step then moves by at most a fixed fraction of that step's input weight, so the per-step errors cannot pile up. Using this, we prove that two runs of a selective-scan cell from a common start stay within a bound that holds at every length, shrinks to zero with the size of the change and needs no lower bound on the timescale. We give a construction showing that, for small changes, this bound is within a factor of about 2 of the best possible, and we extend it to the update used in Mamba's released code when the timescale is bounded above. We then evaluate block-level bounds built from the theorem on two small models trained on one day of order book data. With a bounded timescale, a bound built on the existing analysis is tighter than ours for at most the first 8 steps. With Mamba's softplus timescale, whose certified lower bound is as small as $10^{-21}$, it is looser at every length. Our bounds hold for every input to a block, but they remain more than five orders of magnitude above the changes that gradient attacks find.",
+    "authors": [
+      "Jack Humphries",
+      "Daniel Midgley"
+    ],
+    "published": "2026-11-16",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.21952v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.21952v1",
+    "fetched_at": "2026-11-18T16:54:01.831552"
+  },
+  {
+    "id": "2611.23202v1",
+    "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+    "abstract": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate authorities (AgentCAs), eliminating the need for a shared root authority. Before executing requests, ATI validates agent certificates, verifies approved model, tool, and system-prompt configurations, and enforces authorization through three policy checks. We implement ATI as an external security enforcement layer that integrates with existing agent frameworks without modifying their underlying models. We evaluate ATI in a simulated federation of eight organizations using six agent frameworks, each deploying a five-agent team. Security experiments involve two organizations and assess 14 attack scenarios and six benign tasks across five agent models, using five attack variations and three repetitions per variation. A panel of judge models evaluates the experimental outcomes. With all enforcement mechanisms enabled, attack containment increases from 43% to 84% (40% to 80% for the 11 attack scenarios evaluated consistently across all configurations), while enforcement introduces approximately 174 microseconds of overhead per request. ATI is released as an open-source, framework-independent package that uses IETF WIMSE workload token formats for identity and request verification and Entity Attestation Tokens for model, tool, and system-prompt integrity verification.",
+    "authors": [
+      "Viet K. Nguyen",
+      "Mohammad I. Husain"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.23202v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.23202v1",
+    "fetched_at": "2026-11-18T16:54:05.184005"
+  },
+  {
+    "id": "2611.23106v1",
+    "title": "Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI",
+    "abstract": "Generative Artificial Intelligence is transforming the role of natural language in computational systems. In classical Natural Language Processing (NLP), language was treated as an object of computation: something to analyse, classify, translate, or generate. Large Language Models (LLMs) challenge this perspective, enabling natural language to function increasingly as an executable cognitive medium through which humans structure reasoning, orchestrate problem solving, and regulate hybrid human/AI workflows.   This paper introduces Natural Language Programming (NLPg) as a theoretical and epistemological extension of traditional NLP. Rather than focusing on language understanding alone, NLPg conceptualises prompts as dynamic cognitive artefacts that externalise goals, constraints, assumptions, validation criteria, and intermediate reasoning states. Prompting is thus not merely a technical interaction technique, but a form of dialogic cognitive programming operating within distributed human/AI memory architectures.   Building on theories of distributed cognition, extended mind, metacognition, and dialogic learning, the paper proposes the notion of Dialogic Working Memory, describing how prompts and conversational states function as temporary external memory structures supporting reasoning continuity and reflective regulation. We further map existing memory architectures (BTMA, SKGE, RMR) onto this framework, illustrating how episodic, semantic, and metacognitive layers support long-horizon conversational coherence.   Finally, implications for computational linguistics and AI/mediated knowledge systems are discussed, suggesting a post symbolic and post interface paradigm in which natural language operates simultaneously as communication medium, executable specification, cognitive scaffold, and distributed memory architecture.",
+    "authors": [
+      "Giovanni Adorni",
+      "Daniele Grosso"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.23106v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.23106v1",
+    "fetched_at": "2026-11-18T16:54:05.184030"
+  },
+  {
+    "id": "2611.22991v1",
+    "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+    "abstract": "Agentic systems using retrieval-augmented generation (RAG) must repair their own answers by gathering more evidence, testing alternative policies and deciding if, when, and what repairs are needed. Yet how do we know if a system's repairs are working when metrics like accuracy can be misleading? We present RagHarnessDebugger, a framework that records every repair decision in a Jev-guided harness for contract inference and audits the record to facilitate complete debugging of all decisions taken during a RAG repair journey. RagHarnessDebugger checks that each trace is intact, that each validation applies to the candidate it is counted for, and which answers the acceptance rule can reach. We tested our approach on ContractNLI non-disclosure agreements with two reader models and a replication set of separate contracts. Our debugger's audit layer exposed failure patterns that were hidden under aggregate metrics, policies acceptance cost of repairs vs regressions and policy acceptance gap of 77% and 76% of available but unrealised repairs on development and replication sets. Our audit, together with a labeled error analysis and replay mechanism, allowed following the execution path all the way to the terminal decision - uncovering where missing repairs became lost. Our revised harness improved accuracy over the initial BM25-only baseline by 3.6 points on development contracts and 3.7 points on the replication set, and even improved our full contract access reference score by 1.1 on development and 2.4 on replication set. While our work here demonstrates how the debugger can conduct decision root-cause analysis for missed repairs, the true value lies with providing this debugger for judgment visibility serving continuous improvement of RAG decisions and their explainability.   Keywords: agentic RAG, AI evidence repair, harness explainability, counterfactual replay, Jev, ContractNLI",
+    "authors": [
+      "Moriya Dechtiar",
+      "Daniel Martin Katz",
+      "Michael J. Bommarito",
+      "Hongming Wang",
+      "Sylvain Jaume"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI",
+      "cs.MA",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22991v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22991v1",
+    "fetched_at": "2026-11-18T16:54:05.184045"
+  },
+  {
+    "id": "2611.22971v1",
+    "title": "SEAM: Computer-Use Agents Know the Harm Between Screens, and Commit It Anyway",
+    "abstract": "Safety benchmarks for computer-use agents (CUAs) place the harm either in the intent of the task or on a single screen: a malicious instruction, an injected command, a phishing page. An agent that checks the task and each screen in isolation can pass them, so they do not test whether it combines facts seen on different screens. Yet in delegated work, harm often arises exactly this way: a fact about a person on one screen, a fact about an item on another, and a legitimate task that binds them. We introduce SEAM (Safety Execution Across Multiple screens), a benchmark of such cross-screen compositional harm: 600 multi-step, cross-application OSWorld tasks in which the instruction and every single observation are benign and only their combination is harmful. Minimal-pair variants that differ in one place, scored from the server log rather than by an LLM judge, locate where an agent fails. General-purpose open-weight and flagship agents carry out the harm in up to 92% of runs, yet decline when the user states it in one sentence. Agents open the decisive pages, so exposure is not the primary bottleneck. Asked about those pages, they flag the harm, and with thinking they often write the conflict into their reasoning and confirm anyway. Safety recognition thus does not reliably translate into safe execution, and the translation depends on the information channel: the same warning stops agents far more often in the user's instruction than on screen. Proprietary models are markedly more cautious. We release SEAM with its generator and quality gates at https://yuxuan2003.github.io/SEAM/ .",
+    "authors": [
+      "Yuxuan Zhou",
+      "Chen Xiong",
+      "Haitong Liu",
+      "Kuofeng Gao",
+      "Yang Bai",
+      "Zhiyuan He",
+      "Tao Dai",
+      "Shu-Tao Xia"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22971v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22971v1",
+    "fetched_at": "2026-11-18T16:54:05.184062"
+  },
+  {
+    "id": "2611.22967v1",
+    "title": "CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling",
+    "abstract": "Coding agents make videos by writing and refining programs in a build--inspect--edit loop. A finished film costs a median of $2.85 in model calls and 11 minutes, over a third of that time in builds that block the agent. We find that much of this time is avoidable, for two reasons. First, 37.5% of the frames of a session's later films were drawn before, many shifted in time or inside an edited scene. Second, half of the builds stop at a check, where the agent needs only the verdict, but which builds stop is unknown until the checks finish. We present CodeReel, a training-free execution layer behind agents' existing commands. Exact frame reuse keys each frame by its drawing commands, regardless of its position in time, and reuses each frame whose key recurs. Blocking-aware scheduling runs the checks first and starts the render alongside them, at idle priority, unless the session's recent builds make a pass unlikely. Scheduling spends CPU to answer sooner and reuse returns it; exact keys let later versions use frames rendered for a failed one as the agent thinks. We introduce EditLoop, a benchmark of replayable agent sessions whose films are checked against renders from scratch. On it, CodeReel cuts the agent's wait by 36.3% against Rebuild, a warm pipeline with parallel rendering, and by 57.9% against Sequential, today's step-by-step pipeline. On time-shifting edits its reuse renders 43.9%, close to the 43.0% whose pixels are new, while Manim-style caching renders 99.8%. With real agents, the median wait per build is 0.62x Rebuild's in Claude Code, on topics never used in development, and 0.67x in Codex CLI. The gain holds for five models and two frameworks.",
+    "authors": [
+      "Junyi Shen",
+      "Yao Lu"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.MM",
+      "cs.AI",
+      "cs.CV",
+      "cs.DC"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22967v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22967v1",
+    "fetched_at": "2026-11-18T16:54:05.184074"
+  },
+  {
+    "id": "2611.22904v1",
+    "title": "Who Pays for Byzantine Robustness? Validity, Data-Share Dictatorships, and Fairness When Only a Few Hospitals Collaborate",
+    "abstract": "Clinical federated learning (FL) collaborations typically connect only three to six hospitals, yet Byzantine-robust aggregation rules are designed and benchmarked on synthetic partitions across dozens of equal-sized clients. We conduct an empirical audit of eight standard aggregation rules: FedAvg, coordinate-wise median, trimmed mean, Krum, Multi-Krum, Bulyan, geometric median (GeoMed), and Centered Clipping (CC). We evaluate both unweighted and sample-size-weighted variants across three cross-silo medical datasets from the FLamby benchmark: Fed-Heart-Disease ($n = 4$ hospitals), Fed-TCGA-BRCA ($n = 6$ regions), and Fed-ISIC2019 ($n = 6$ centres). We execute 54,214 training runs across enumerated attacker coalitions ($f \\in \\{1, 2\\}$) paired with exact-twin leave-out controls that decompose performance drops into honest data loss versus adversarial attack damage.   We report three findings. First, client-count validity checks fail to capture breakdown in skewed medical consortia: while $n = 6, f = 1$ satisfies every count condition except Bulyan's, assigning sample-size weights turns median and GeoMed into a clean-model dictatorship whenever a single hospital holds more than half the training data, and causes weighted median, GeoMed, and CC to collapse when that dominant centre attacks. Second, exact-twin leave-out controls reveal that when the largest hospital attacks, the apparent failure of count-based robust rules is predominantly caused by the loss of honest training data (7.5 to 10.4 points on ISIC) rather than adversarial perturbation (2.3 to 3.8 points on ISIC). Conversely, weight-dependent rules suffer large true attack damage (16.1 to 25.1 points on ISIC). Third, unweighted robust rules consistently discount whichever institution generates the most atypical parameter updates, penalizing the smallest hospital on Heart but penalizing larger institutions on TCGA and ISIC.",
+    "authors": [
+      "Adnan Malkani"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.LG",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22904v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22904v1",
+    "fetched_at": "2026-11-18T16:54:05.184085"
+  },
+  {
+    "id": "2611.22897v1",
+    "title": "Born for the Task: Rethinking Quantum Chemistry with Foresighted Agentic Computing",
+    "abstract": "Quantum chemistry relies on general-purpose software, whose generality leaves many large-scale calculations beyond practical resource budgets. Coding agents make task-specific programs cheap to write, but not efficient ones easy to find: whether a computational strategy is accurate and fast enough becomes clear only after it actually runs at the target scale. We introduce BORN, a foresighted agentic computing framework that synthesizes high performance quantum chemistry programs on demand. BORN anticipates the behavior of each strategy before execution, extrapolating its error from representative small systems and predicting its runtime from the target-scale workload and measured hardware throughputs. Building on these predictions, BORN unfolds the preset schemes of existing packages into independently configurable algorithmic components, selects the fastest strategy within the error tolerance from the predicted accuracy-runtime Pareto frontier, and guides coding agents to compile it with component-level performance predictions. For a Hartree-Fock calculation with 50,024 basis functions, BORN finishes in 1.41h on a single CPU node, 77$\\times$ faster than the estimated runtime of a general-purpose baseline and still 9.8$\\times$ faster with development time included. On a single GPU, BORN completes the ubiquitin calculation in 2.1,h, the same order of runtime as the GPU-accelerated package Mako on 64 GPUs, and shortens the B-DNA duplex calculation from an estimated two months to 8.1,h (173$\\times$).",
+    "authors": [
+      "Haozhi Han",
+      "Junjie Yang",
+      "Ruge Zhang",
+      "Zihe Huang",
+      "Pengyi Xu",
+      "Bo Zhang",
+      "Yunquan Zhang",
+      "Ting Cao",
+      "Yunxin Liu",
+      "Yifeng Chen",
+      "Kun Li"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI",
+      "physics.chem-ph"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22897v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22897v1",
+    "fetched_at": "2026-11-18T16:54:05.184105"
+  },
+  {
+    "id": "2611.22888v1",
+    "title": "Stopping Is Not the Limit: Understanding and Eliciting Agent Capability in Long-Horizon Vulnerability Exploitation",
+    "abstract": "Vulnerability exploitation tests whether language model agents can develop working exploits from known software flaws. Sequential test-time scaling can improve exploitation performance, but larger budgets do not ensure sustained exploration: agents often stop with budget remaining. Yet what happens when execution continues beyond stopping remains underexplored. We investigate this gap on ExploitBench using DeepSeek-V4-Flash-0731 and MiMo-V2.6-Pro. We find additional verified gains after the first stop response, but gains diminish over longer execution. We identify two patterns associated with less productive continuation: an increasing proportion of stop responses within the same context and earlier stopping associated with summaries retaining impossibility judgments about unachieved capabilities. To test whether context management can elicit further capability, we propose SCoRe, which compacts context at stop bursts and marks these judgments as unproven. SCoRe improves verified capability over summary-based continuation and other evaluated context-management baselines. With SCoRe, MiMo reaches a capability coverage score of 67.0% at 2,000 turns, exceeding both 32.4% under the original stopping policy and the 58.6% computed for GPT-5.5 from ExploitBench's 300-turn reference results on the same tasks. These findings show that stopping need not mark an agent's exploitation limit, and that continued execution with context management can elicit substantial further capability.",
+    "authors": [
+      "Deokhyung Kang",
+      "Minjae Gwon",
+      "Sangdon Park"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22888v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22888v1",
+    "fetched_at": "2026-11-18T16:54:05.184117"
+  },
+  {
+    "id": "2611.22835v1",
+    "title": "When Passing Checks Do Not Establish Completion: Evidence Interpretation in Coding Agents",
+    "abstract": "Verification procedures in coding agents must preserve execution facts, interpret their scope and discharge checking obligations. We study these responsibilities through qualified repository checks, controlled evidence consumers and executable workflows. A prospective thirteen-task factorial study finds that correct reported facts need not yield the requested finite verdict. Conversely, all 122 delivered labels in a held-out receipt-supply study are correct, while sixteen responses misreport facts and eleven others exceed authorized scope. Production repair supplies successful controls and finite-supported preservation failures. Across 118 repair episodes on 31 tasks, source interventions separate startup reachability from repair and witness production from the claimed operation. Lifetime and resource controls delimit what passing validation establishes. Generated-note comparisons yield local repair differences but can state false explanations; strong ordinary baselines, new tasks and Skill-transfer studies supply no consistent overall advantage. These results characterize evidence interpretation, applicability and fulfilled actions while limiting claims of general diagnostic superiority, Skill deterioration or deployed folding effects.",
+    "authors": [
+      "Xueping Gao"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.CL",
+      "cs.SE"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22835v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22835v1",
+    "fetched_at": "2026-11-18T16:54:05.184127"
+  },
+  {
+    "id": "2611.22828v1",
+    "title": "TabDAG: Structured Evolutionary Search for Tabular Feature Engineering",
+    "abstract": "Feature engineering can improve tabular prediction, but useful transformations are compositional, data-dependent, and subject to leakage constraints. We present TabDAG, a framework that combines evolutionary search with a graph representation of feature-engineering programs. Nodes implement row-wise or data-fitted transformations; edges encode dependencies among raw variables, intermediate values, and final features. The representation supports interactions, statistical encodings, clustering- and neighborhood-based features, and multi-stage compositions in a single executable program. Mutations are structured edits constrained by a parent-specific schema and checked before evaluation. In our experiments, no structurally invalid program reached evaluation, although proposals could be rejected and valid graphs could still fail at runtime. Across ten regression and classification datasets and three tabular model families, evolved features improve predictive performance over raw inputs. TabDAG and its combination with OpenFE achieve the two best mean ranks among the compared methods; pairwise rank differences between feature-engineering methods do not survive multiple-testing correction. The LLM-based searches use the same backbone and candidate-evaluation budget. A controlled ablation compares free-form Python, whole-graph JSON, and constrained graph edits with the search engine, budget, and backbone held fixed. Constrained edits yield fewer failed evaluations than either rewrite baseline. The resulting graphs expose the transformations and dependencies selected by search, enabling feature-level analysis of the observed gains.",
+    "authors": [
+      "Anastasia Volkova",
+      "Andrey Kuznetsov",
+      "Ivan Oseledets",
+      "Valentin Khrulkov"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.NE",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22828v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22828v1",
+    "fetched_at": "2026-11-18T16:54:05.184141"
+  },
+  {
+    "id": "2611.22777v1",
+    "title": "CrossEnv: Synthesizing Verifiable Cross-Environment Tasks for Long-Horizon Agent Training",
+    "abstract": "Executable synthetic environments provide scalable training tasks and verifiable feedback for long-horizon agents. Existing environment synthesis methods primarily generate tasks within individual environments. However, these tasks do not adequately capture real-world interactions across services, where actions in one service depend on information obtained from another. Synthesizing such tasks is challenging because data generated across environments must remain consistent to support executable and verifiable interactions. To address this challenge, we introduce CrossEnv, a framework that uses an entity-tool graph to identify connections between environments and aligns task-specific data to synthesize executable, verifiable cross-environment tasks. We further propose CrossEnv-Curriculum, which progresses from single-environment tool use to coordination across more environments and business domains, before introducing user interaction. Across four external benchmarks, combining cross-environment training data with this curriculum achieves competitive performance with fewer training examples. Further analyses support the benefits of cross-environment data and curriculum training, and provide evidence of transfer to new environment combinations, external tasks less similar to the training data, and longer workflows.",
+    "authors": [
+      "Zhengfeng Yu",
+      "Tian Lan",
+      "Zhijing Wu",
+      "Enbo Zhao",
+      "Xuannan Liu",
+      "Feihu Jiang",
+      "Qianghuai Jia",
+      "Longyue Wang",
+      "Zhao Xu",
+      "Weihua Luo",
+      "Xian-Ling Mao"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22777v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22777v1",
+    "fetched_at": "2026-11-18T16:54:05.184162"
+  },
+  {
+    "id": "2611.22661v1",
+    "title": "The Between-Round Decision in Autonomous Research: An LLM Controller That Reads the Whole Trajectory",
+    "abstract": "Executing an idea often changes how promising it looks, so the next step in autonomous research should rest on results, not on proposals. After each round of experiments, the system must decide whether to refine the best solution or start a new direction, which solution to build from, and what goal to set. We call this the between-round decision. Existing systems wrap it in machinery such as rules, scores, search trees, and schedules; where an LLM makes it, what the LLM needs to read is left open. We ask whether an LLM can make this decision from accumulated evidence, without a search structure around it, and how much of that evidence it needs to read. We present BRED (Between-Round Evidence-based Decision), an LLM-based controller that maintains the best verified solution so far (the Champion) and a log of past rounds, and makes one decision per round. On three widely used research-agent benchmark tasks, BRED improves on the task baselines by 4.80% in MAE on ETTh1 (to 0.4172) and by 3.44 and 3.43 points of accuracy on SST-2 (to 95.07%) and CIFAR-100 (to 84.63%), ahead of the published results. When the controller does not read the accumulated evidence, the same loop gains less: with no history it reaches 0.4299 on ETTh1 and 83.71% on CIFAR-100, whereas the full controller's MAE is 2.95% lower and its accuracy 0.92 points higher. On a new task, speech-based depression detection under a leakage-free protocol, it reaches a macro-F1 of 0.6164 on seeds held out from selection, 5.5 points above its baseline and 4.0 above the strongest published system. Code is available at https://github.com/learninginvision/BRED.",
+    "authors": [
+      "Caoxin Wang",
+      "Shengkai Gan",
+      "Xiang Hu",
+      "Lili Pan"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22661v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22661v1",
+    "fetched_at": "2026-11-18T16:54:05.184175"
+  },
+  {
+    "id": "2611.22609v1",
+    "title": "Task Convergent Flow Matching for Generative Robotics",
+    "abstract": "Successful manipulation requires the manipulated objects to progress toward a desired task outcome. Generative policies can produce plausible robot motions without ensuring this progress, allowing successive action chunks to stall or undo earlier changes to the scene. We introduce a task-centric inference-time refinement framework for flow matching policies that evaluates candidate action chunks through parallel physics-based rollouts and searches for motions satisfying sufficient conditions for task convergence. Task-level performance funnels bound temporary regressions while requiring net progress over each chunk. We establish sufficient conditions under which repeated funnel satisfaction yields convergence throughout execution, and use interval-wise Lipschitz bounds to verify continuous-time funnel satisfaction from sampled rollouts. To accommodate contact-rich hybrid dynamics, we refine the flow's source seeds using derivative-free Covariance Matrix Adaptation Evolution Strategy (CMA-ES), constrained to radial quantile bands of the source distribution to help retain the learned motion prior. This formulation supports both Euclidean and pose-valued Riemannian Flow Matching (RMFM) policies. On PushT and three-cube stacking, refinement raises success from 31.3% to 88.5% and from 77.0% to 86.0%. On PushT, whose coverage score responds continuously to the motion of the block, a learned funnel lowers the average maximum loss of achieved progress by 19% relative to constraining the endpoint of each chunk alone, at a similar success rate. With the radial band, 11.3% of the executed motion windows are out of distribution, a rate within the range of held-out demonstrations, compared with 34.1% for an unconstrained search.",
+    "authors": [
+      "Lorenzo Paiola",
+      "Maximilian Stölzle",
+      "Giorgio Grioli",
+      "Daniela Rus",
+      "Cosimo Della Santina"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22609v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22609v1",
+    "fetched_at": "2026-11-18T16:54:05.184189"
+  },
+  {
+    "id": "2611.22591v1",
+    "title": "PACT: Plan-Action Consistency Training by Preserving Correct Plans and Repairing Actions in GUI Agents",
+    "abstract": "GUI agents can formulate a correct immediate plan in their reasoning yet emit an action that fails to execute it, creating an execution gap. This recurring mismatch undermines reliable task completion, as a single execution error can derail a multi-step workflow. In outcome-supervised reinforcement learning, broadcasting a negative response-level advantage across all generated tokens risks penalizing valid planning together with erroneous execution. To address this credit-assignment conflict, we introduce PACT (Plan-Action Consistency Training), a training framework that combines reference-aligned plan protection and plan-aligned action repair without altering the original scalar action reward. Using annotated reference actions to identify execution gaps, PACT protects the verified plan by masking negative policy-gradient contributions across its token span. Keeping the generated reasoning unchanged as context, it then favors the reference action over the emitted erroneous action through a preference surrogate with stop-gradient pair weights. Compared with the outcome-only baseline, PACT raises AndroidWorld task success from 60.34% to 68.97% (+8.63 pp), while improving rule-based plan-action consistency on AndroidControl High from 83.71% to 89.74% (+6.03 pp). Adapting PACT to desktop agents also improves task success from 40.92% to 44.17% (+3.25 pp) on the full 369-task OSWorld benchmark. Together, these results establish PACT as an effective credit-assignment framework for bridging execution gaps and improving task completion across mobile and desktop GUI environments.",
+    "authors": [
+      "Zhuohan Cai",
+      "Zhangxuan Gu",
+      "Runze Li",
+      "Beitong Zhou",
+      "Ming Wen",
+      "Hongbo Yu",
+      "Shuheng Shen",
+      "Changhua Meng"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22591v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22591v1",
+    "fetched_at": "2026-11-18T16:54:05.184206"
+  },
+  {
+    "id": "2611.22583v1",
+    "title": "Evolution Under Fire: Evolving Agent Safety Harnesses with Adaptive Injection Stressors",
+    "abstract": "Tool-using language-model agents must act on information from untrusted emails, webpages, and documents. This creates a central security challenge: malicious instructions and legitimate task directives can arrive through the same interaction channel. Existing defenses are largely hand-designed and static, making further improvements dependent on repeated manual redesign. We introduce Evolution Under Fire, a staged framework that couples safety-harness evolution with adaptive stressor evolution. Utility-constrained, Pareto-scheduled tree search evolves complete executable safety harnesses from execution evidence while keeping the task model, benchmark, tools, and evaluator fixed. Adaptive stressor evolution then discovers utility-preserving attacks that guide a subsequent stage of harness evolution. On AgentDyn with GPT-4o-mini, an evolved harness reduces attack success from 50.4% to 3.0%, improves clean and attacked utility over the initial harness, and offers a stronger security-utility trade-off than reproduced defenses. On Agent-SafetyBench with Qwen2.5-7B-Instruct, harness evolution reduces attack success from 82.6% to 62.0% while retaining helpfulness and runtime validity. Evolved harnesses also transfer without further evolution to Qwen3.5-35B-A3B, reducing attack success from 32.1% to 0.9% while improving attacked-task utility.",
+    "authors": [
+      "Yujun Wang",
+      "Yilun Liu",
+      "Jinhe Bi",
+      "Krishna Kanth Nakka",
+      "Xuebing Zhou",
+      "Hinrich Sch{ü}tze",
+      "Yunpu Ma"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22583v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22583v1",
+    "fetched_at": "2026-11-18T16:54:05.184222"
+  },
+  {
+    "id": "2611.22115v1",
+    "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+    "abstract": "We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated advances in model architecture and training infrastructure on Ascend. This report describes the design principles and systems engineering behind the series, spanning architecture selection, large-scale pretraining, and reasoning and agentic post-training. We study how sparse activation, attention design, model depth and width, and speculative decoding balance model capacity with computation, memory access, and execution overhead. Our pretraining infrastructure builds on MindSpore HyperParallel, combining topology-aware hybrid sharding, efficient distributed optimizer execution, and coordinated management of long-sequence workloads and activation memory. CPU affinity and core isolation further reduce host scheduling interference. Together, these mechanisms support the pretraining of a 285B-parameter model on 8,192 Ascend 910C cards, providing a concrete setting for the architectural and systems studies. For post-training, we introduce TeleGym, a unified agent execution platform that connects execution, evaluation, and trajectory construction to policy optimization. Disaggregated asynchronous execution, bounded oversampling, and partial rollout accommodate heterogeneous task durations while preserving trajectory continuity across policy updates. Together, these advances establish an Ascend-oriented training foundation for the continued development of Xing 4 across model scales and increasingly demanding reasoning and agent workloads.",
+    "authors": [
+      "Xingchen AGI Lab",
+      " :",
+      "Baotian Hu",
+      "Bingkai Yang",
+      "Boyang Wang",
+      "Changzai Pan",
+      "Chao Lyu",
+      "Chao Wang",
+      "Chen Li",
+      "Chenshuo Pan",
+      "Chenyu Lin",
+      "Chenyuan Zhang",
+      "Chongming Liu",
+      "Dawei Fan",
+      "Di Wu",
+      "Dong Guo",
+      "Dong Li",
+      "Dongfang Li",
+      "Enlin Liu",
+      "Fanye Xiao",
+      "Fengkai Li",
+      "Fubei Yao",
+      "Gang Lin",
+      "Han Gao",
+      "Hanming Wu",
+      "Haowei He",
+      "Huapeng Liu",
+      "Hua Wang",
+      "Huinan Xu",
+      "Jiahong Xiong",
+      "Jiaxin Peng",
+      "Jianxiang Ma",
+      "Jianxing Zhuge",
+      "Jie Zhang",
+      "Ji Xiong",
+      "Jinglin Chen",
+      "Jingqi Li",
+      "Jingxuan Li",
+      "Jiwang Ye",
+      "Junchen Li",
+      "Junbiao Li",
+      "Junyang Wu",
+      "Kaidong Yu",
+      "Kaipeng Jia",
+      "Kehai Chen",
+      "Kuai Li",
+      "Laobin Liu",
+      "Lei Li",
+      "Libo Qin",
+      "Lingling Shi",
+      "Luwen Pu",
+      "Menghao Xu",
+      "Mengjiao Bao",
+      "Mengqi Chen",
+      "Min Zhang",
+      "Mingrui Wang",
+      "Naying Wang",
+      "Peicong Han",
+      "Peiming Guo",
+      "Pengfei Li",
+      "Qiang Feng",
+      "Qi Wang",
+      "Qingjun Zhu",
+      "Qingli Li",
+      "Qitai Ding",
+      "Qiyi Xie",
+      "Quanchao Zhao",
+      "Rongbao Han",
+      "Rui Xue",
+      "Ruiyu Fang",
+      "Ruiting Song",
+      "Shijie Li",
+      "Shiquan Wang",
+      "Shuangyong Song",
+      "Sishi Xiong",
+      "Teng Su",
+      "Wankang Bao",
+      "Weijie Zhang",
+      "Wei Mao",
+      "Weiwei Fu",
+      "Weiyang Huang",
+      "Wenmin Deng",
+      "Wenqing Hu",
+      "Wujie Zhong",
+      "Xi Yu",
+      "Xiaohui Hu",
+      "Xiaomin Fang",
+      "Xiaomeng Huang",
+      "Xiaoqiong Shi",
+      "Xiaotong Shang",
+      "Xiaoyu Li",
+      "Xinglei Xu",
+      "Xin Jiang",
+      "Xin Wang",
+      "Xin Zhang",
+      "Xinzhang Liu",
+      "Xue Liu",
+      "Xuefeng Bai",
+      "Xuewei He",
+      "Yahan Li",
+      "Yanhan Zhang",
+      "Yanlei Xue",
+      "Yanzhang Wu",
+      "Yang Yu",
+      "Yi Liu",
+      "Yin Zhang",
+      "Yingyan Li",
+      "Yitong Yao",
+      "Yixuan Li",
+      "Yongqiang Xia",
+      "Yongxiang Li",
+      "Yinzhou Zhu",
+      "Yu Zhao",
+      "Yuhao Jiang",
+      "Yunpeng Zhang",
+      "Yuting Lin",
+      "Yuxuan Wu",
+      "Yuyao Huang",
+      "Yuyi Wang",
+      "Zebo Peng",
+      "Zhenwu Pei",
+      "Zhenxiong Li",
+      "Zhao Wang",
+      "Zhaoxi Zhang",
+      "Zhihao Yang",
+      "Zhiqiang Dong",
+      "Zhiwei Yan",
+      "Zhilong Lu",
+      "Zhonghao Guo",
+      "Zhongheng Wu",
+      "Zhongjiang He",
+      "Zhongqiu Li",
+      "Zhu Yuan",
+      "Zhuoru Jiang",
+      "Zhuoyi Wei",
+      "Zijia Guo",
+      "Zilu Huang",
+      "Zhipeng Guo",
+      "Zirui Li",
+      "Zihan Wang"
+    ],
+    "published": "2026-11-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.22115v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.22115v1",
+    "fetched_at": "2026-11-18T16:54:11.950673"
+  }
+]
