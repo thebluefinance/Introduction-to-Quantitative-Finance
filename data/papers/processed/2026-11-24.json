@@ -1,0 +1,1339 @@
+[
+  {
+    "id": "2611.31190v1",
+    "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+    "abstract": "Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these errors at deployment is hard because execution correctness is defined against a gold query, which exists only in labeled data. We formulate confidence estimation for Text-to-SQL as probabilistic query validation under a latent correctness variable that is observable at calibration time through gold-SQL execution and latent at deployment. Our estimator separates generation from validation. A generator LLM writes and executes the query, and a different critic LLM judges the query and its execution result. The critic's validation and execution-grounded alignment scores are fused with the generator's verbalized confidence, token-level uncertainty, and SQL-structural features in a Random Forest, using two sequential LLM calls. Two calibration steps give finite-sample guarantees. A Learn-then-Test threshold ensures, with probability $1-δ$, that the error rate among accepted queries stays below a user-chosen budget. A conformal p-value bounds the false abstention rate. On Spider we use GPT-OSS-120B as generator and Gemma-4-31B as critic. The estimator obtains an AUARC of 0.899. Without abstention, 22.6% of queries are wrong. With a 15% risk budget ($δ=0.1$), a threshold is certified on all 10 resampled splits, and the system accepts 52.4% of queries on average with 9.1% observed error. Five different critic models give similar results. In a controlled comparison on Spider with Olmo-3-32B as generator, the estimator obtains an AUARC of 89.5, compared with 81.2 for the strongest logit-based baseline. Applied to BIRD without retraining, the confidence scores remain informative (AUROC 0.72, against 0.79 on Spider), but the risk guarantee does not transfer, as expected without exchangeability.",
+    "authors": [
+      "Avinash Kumar Singh",
+      "Bhaskarjit Sarmah",
+      "Stefano Pasquali"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI",
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31190v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31190v1",
+    "fetched_at": "2026-11-24T19:16:33.865635",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623676"
+  },
+  {
+    "id": "2611.30982v1",
+    "title": "Design an Algorithmic Stablecoin based on a Predictive PID Controller",
+    "abstract": "Cryptocurrencies issued based on blockchain technology have attracted increasing attention in recent years. However, their high volatility makes it difficult for them to become circulating currencies. This led to the creation of stablecoins. Existing stablecoins can be divided into three main categories: stablecoins pegged to fiat currencies, stablecoins collateralized by crypto assets, and algorithmically controlled stablecoins. Most existing stablecoins are either of the first two types. We design an algorithmic stablecoin controlled only by a predictive Proportional-Integral-Derivative (PID) controller, which uses the price forecasted by Autoregressive Integrated Moving Average (ARIMA) model as part of its input. Simulation experiments show that, under ideal market conditions, the stablecoin can achieve long-term goals that fluctuate within a pre-defined range. Furthermore, it consistently restores prices to the anchor interval in the presence of exogenous disturbances.",
+    "authors": [
+      "Yuqiao Zhao",
+      "Wai-Ki Ching",
+      "Chi-Wing Wong"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30982v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30982v1",
+    "fetched_at": "2026-11-24T19:16:33.865675",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623698"
+  },
+  {
+    "id": "2611.30980v1",
+    "title": "Robust bounds for American fixed-strike lookback puts",
+    "abstract": "We initiate the robust (model-independent) pricing of American lookback options under martingale optimal transport (MOT) constraints. Given finitely many marginals of the discounted price, we study the maximal expected discounted payoff of an American fixed-strike lookback put, whose exercise value at $t$ is $(K-\\min_{u\\le t}e^{ru}X_u)^+$, i.e.\\ a function of the running minimum $m_t$ of the undiscounted price. Two structural facts isolate this as the non-trivial American lookback problem: at $r=0$ every classical lookback degenerates to its European counterpart, while at $r>0$ the max-based fixed-strike lookback call remains European-type, but the min-based put is genuinely American. We prove a pricing--hedging duality using the continuous-time duality of Guo--Obłoj and reducing the hedge to the two-dimensional state $(X_t,m_t)$. In the two-period model, we establish a convexity lemma and exact decomposition of the continuation payoff, deriving the exercise criterion and closed-form free-continuation value. The optimal continuation coupling is the monotone martingale coupling (the third extremal coupling), and we show that the optimal exercise region is a right tail $\\{x\\ge x^*\\}$, in sharp contrast to the left-tail region of the standard American put. The threshold $x^*$ is monotone in parameters and affine in $K$. For finitely many marginals, the structure extends unconditionally: the optimal exercise region is always a right tail, and the optimal coupling is the reflected iterated Azéma--Yor embedding, minimizing the running minimum in stochastic order. Under the reflected Obłoj--Spoida assumption, this embedding is a two-point iterated monotone coupling; otherwise, it includes a local mass-diffusion correction. We quantify the American and model-risk premia.",
+    "authors": [
+      "Yongqing Xu"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30980v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30980v1",
+    "fetched_at": "2026-11-24T19:16:33.865699",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623720"
+  },
+  {
+    "id": "2611.30880v1",
+    "title": "Critical step size of stochastic gradient descent for a linear neuron: an exact solution and the role of the input spectrum",
+    "abstract": "We study online stochastic gradient descent for a single linear neuron in a teacher-student setting with Gaussian inputs of arbitrary covariance. The mean-square errors of the $N$ weights obey a closed linear recursion of dimension $N$, which we solve exactly. We prove that the dynamics converges if and only if the step size is below a critical value $λ_c$, given by an explicit scalar equation that involves all the eigenvalues of the input covariance, and we obtain the stationary error of each weight, which diverges at $λ_c$. This condition coincides with the classical mean-square stability condition of the least-mean-squares filter; our derivation is elementary and self-contained. We then show that $λ_c$ is controlled by the effective rank $Ω_1$ of the input covariance rather than by the number of parameters, $1/(Ω_1+2) \\leq λ_c < 1/Ω_1$ in rescaled units: the critical step size is inversely proportional to $N$ only for isotropic inputs, whereas it decays more slowly, or saturates, for power-law spectra. Finally, we extend the solution to mini-batches of size $B$: the critical step size grows linearly with $B$ and saturates once $B$ exceeds the effective rank.",
+    "authors": [
+      "Sébastien Valeyre"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30880v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30880v1",
+    "fetched_at": "2026-11-24T19:16:33.865719",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623737"
+  },
+  {
+    "id": "2611.30843v1",
+    "title": "Cleaning correlation matrices with external information: the Maximum Variance estimat",
+    "abstract": "Rotationally invariant estimators clean the eigenvalues of an empirical correlation matrix but keep its noisy eigenvectors. We study an estimator that corrects the eigenvectors by using external information, namely a partition of the assets into groups such as asset classes or regions. The Maximum Variance (MaxVar) estimator restricts the leading eigenvectors to linear combinations of the maximum-variance portfolios of the groups and replaces the rest of the spectrum by a single eigenvalue. It is a factor model with about n parameters instead of n2/2, and it is positive de nite even when the number of observations is smaller than the number of assets n. We apply it to the correlation matrix of 47 futures on stock indices, bonds and currencies, with the three asset classes as groups. In an illustrative Monte Carlo test, in which the reference matrix has the structure assumed by the estimator, the distance to the reference is reduced by one third with respect to the empirical matrix, against less than 10% for the rotationally invariant estimator. The decisive test is the performance of a portfolio on real data: over 1993-2018, the Sharpe ratio of the risk parity portfolio, which involves the inverse of the matrix, is 1.28 with the MaxVar estimator, 1.24 with the rotationally invariant estimator and 1.17 with the empirical matrix, and the advantage increases when the estimation window is shortened.",
+    "authors": [
+      "Sébastien Valeyre"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30843v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30843v1",
+    "fetched_at": "2026-11-24T19:16:33.865740",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623751"
+  },
+  {
+    "id": "2611.30737v1",
+    "title": "CCFinance: Reconstructing Financial News Samples from Web Archives",
+    "abstract": "Proprietary news archives assign stories to firms, so reproducing a financial study often requires access to both the articles and the vendor's assignments. CCFinance lets researchers reconstruct firm coverage under different selection rules by recording which version of a story was captured, which issuers it names and how often each appears. From 14.8 million English-language records in Fine News, derived from public Common Crawl News, we identify 5.22 million distinct, consistently dated articles with issuer links. Exact reconstruction requires the restricted snapshot and derived artifacts. We compare GLiNER and Stanza on 250 model-labeled article leads and assess issuer links and story focus against blinded model judgments. Estimated precision among 475 accepted links is 96.8%. Among held-out articles with a detected company, requiring three mentions raises subject precision from 31.9% to 66.1%. Across the 2017-2025 panel, the same rule reduces the number of issuer-years with at least 50 qualifying stories from 13,918 to 8,641. Three reimplementations examine volatility tracking, bank networks and overnight returns. In the network study, bank pairs appearing together rose from 177 to 242 across publishers between January and April 2020, but fell from 50 to 35 within Reuters.",
+    "authors": [
+      "Marcus Gawronsky"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30737v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30737v1",
+    "fetched_at": "2026-11-24T19:16:33.865757",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623761"
+  },
+  {
+    "id": "2611.30584v1",
+    "title": "Do Candlestick Charts Suffice? The Incremental Economic Value of Technical Indicators in Stock Return Prediction",
+    "abstract": "Although technical analysis remains widely used in practice, the need for manually constructed indicators is increasingly questioned as deep learning models can extract features directly from OHLC price data. This paper examines the standalone economic value of trading volume and manually constructed technical-indicator groups and whether adding these groups to OHLC candlestick charts provides incremental economic value. Using daily data for 1,707 Chinese A-share stocks from 2013 to 2025, we construct approximately 3.36 million stock-window samples and encode them as multi-channel images containing candlestick charts, trading volume, and seven widely used manually constructed technical indicators. The primary analysis uses a 2D CNN on these images; complementary tests apply a logistic regression, a 1D CNN, and an LSTM to numerical representations of the same samples. Out-of-sample performance from 2021 to 2025 is evaluated using decile portfolios, Sharpe ratios, Fama--French alphas, and formal pairwise tests. Our empirical results yield two central findings. First, specifications based separately on OHLC, trading volume, and each technical-indicator group produce significantly positive high-minus-low returns and factor-adjusted alphas, together with economically meaningful Sharpe ratios; the OHLC-only specifications generally perform best under the nonlinear models. Second, adding these technical-indicator groups to OHLC does not systematically improve any of these performance measures in our setting. Together, these results provide the first large-scale evidence from the Chinese A-share market on the standalone and incremental economic value of these technical-indicator groups across multiple representations and model architectures.",
+    "authors": [
+      "Peng Liu",
+      "Yanyan Zheng"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "econ.GN",
+      "cs.CE",
+      "cs.LG",
+      "q-fin.PM",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30584v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30584v1",
+    "fetched_at": "2026-11-24T19:16:33.865779",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Market Microstructure",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623779"
+  },
+  {
+    "id": "2611.30046v1",
+    "title": "Wasserstein Penalisation as an Endogenous Breadth Constraint in Penalised Mean-Variance Portfolio Selection",
+    "abstract": "A manager who wants a long-only book and has read that Wasserstein-robust mean-variance selection improves risk-adjusted performance faces two decisions: how much robustness to buy, and how diversified to be. In the long-only problem, and for the penalised scalarisation of the robust objective, these are the same decision: the robustification term depends on the weight vector alone, so on the simplex the radius prices effective breadth and nothing else. The equivalence is specific to that scalarisation; it fails for the return-floored form, where the radius also raises the return threshold, and for the exact robust risk-minimisation problem.   Two consequences follow. First, a negative one needing no alpha: positive definiteness of the covariance does not imply breadth, since no bound on the dispersion of the mean and no positive spectral floor prevents the long-only optimum from collapsing onto a single asset, so the breadth of the minimum-variance benchmark is an irreducible input. Second, identification: matched to a benchmark with the same effective number of holdings, the robust portfolio attains the same mean-variance value to solver precision, so the radius carries no in-sample information beyond breadth selection, and the residual weight difference lives in near-null directions of the covariance.   On fourteen A-share panels the ex post comparison is exact by construction, hence no evidence. The informative test fixes breadth before the window is used: a cap set to the historical level of the robust portfolio's realised breadth recovers about five sixths of its gain, leaving a residual of seven to eleven basis points per day across five tracking rules, whereas a fixed target recovers only a quarter to two fifths. The robust portfolio is thus a breadth rule, not a fixed breadth choice. We close with a reporting standard that makes the attribution checkable.",
+    "authors": [
+      "Jiahao Chen"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.CP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30046v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30046v1",
+    "fetched_at": "2026-11-24T19:16:33.865799",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623800"
+  },
+  {
+    "id": "2611.29576v1",
+    "title": "Political Orientation and Participation in Prediction Markets: Large Stakes Converge, Small Stakes Diverge",
+    "abstract": "Prediction markets offer a way to study collective expectations and beliefs: people express their views on various events and, by putting money behind their predictions, take on the risks of their judgments. As a result, the scale of investment can reveal additional dimensions of individual behavior and beliefs. In this study, we use a complex network approach to examine the structure of user participation, drawing on roughly 1.14 billion transaction records from the Polymarket platform, covering more than 3.1 million wallet addresses and 764,000 prediction events. To do this, we build a bipartite network of users and events and analyze patterns of investment concentration, connections between topics, and the network's community structure. Our findings show a highly skewed distribution of financial participation: 1\\% of events account for 64\\% of total transaction volume, while 1\\% of wallets account for 79.2\\% of total financial participation. We also examine how investment scale and political orientation shape user participation patterns. Focusing on the 2024 U.S. presidential election, we compare users who invested exclusively in a Trump victory or exclusively in a Harris victory, grouping wallets by purchase size rather than by retail or institutional status. The results show that among large-scale investors, capital allocation patterns across topics are more similar between the two political groups; in contrast, these patterns diverge more and vary more among small-scale investors. This result holds across six different ways of representing and comparing the networks, and four of these differences are also statistically supported.",
+    "authors": [
+      "Ali Hosseinzadeh",
+      "Ali Hosseiny",
+      "Reza Jafari"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "physics.soc-ph",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29576v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29576v1",
+    "fetched_at": "2026-11-24T19:16:33.865820",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623813"
+  },
+  {
+    "id": "2611.29565v1",
+    "title": "Marked INAR model and the rough Hawkes--Heston limit",
+    "abstract": "We develop a discrete-time Monte Carlo algorithm for the rough Hawkes-Heston model based on a nearly unstable marked integer-valued autoregressive (INAR) process. We implement the algorithm with a block fast Fourier transform (FFT) scheme that evaluates the excitation convolution in $O(N\\log^2 N)$ operations per path on an $N$-bin grid. We prove joint convergence in law of the spot variance, log price and common marked point measure to their rough Hawkes-Heston limits. We prove convergence of European call and put option prices, as well as convergence of arithmetic Asian and down-and-out put option prices to their continuously monitored values. For European options, the one-year implied volatility smiles computed from the grid transform approach the continuous affine reference across four roughness levels. Monte Carlo experiments on the same three grids compare arithmetic Asian and down-and-out put option prices with a finer-grid reference and demonstrate the efficiency of the proposed algorithm.",
+    "authors": [
+      "Xiaoyu Wang",
+      "Yingli Wang",
+      "Lingjiong Zhu"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.TR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29565v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29565v1",
+    "fetched_at": "2026-11-24T19:16:33.865841",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Market Microstructure"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623824"
+  },
+  {
+    "id": "2611.29552v1",
+    "title": "Gated Payoff-Weighted Net Profit Maximization For Online Portfolio Selection With Transaction Costs",
+    "abstract": "In this paper, we study online portfolio selection (OLPS) problems. The net profit maximization (NPM) acting upon Adaptive Online Moving Average (AOLMA), namely the AOLNPM strategy in portfolio selection, trades when forecast gain exceeds the transaction cost. In essence, this method relies heavily on calibrated forecasts. Indeed, we show that AOLMA forecasts overstate the realized relative returns. We therefore design a gate that adjusts how strongly an AOLMA forecast is used; for each asset, it learns the recent mixture proportion assigned to AOLMA from predictive likelihoods against a neutral forecast (no change). The proportion therefore estimates the extent to which the forecast is realized. We then feed the resulting forecast into the NPM portfolio rule, where the gate acts as an asset-specific cost threshold. A payoff-weighted fund combines gated NPM experts with fixed decay factors in proportion to their wealth and needs no learning rate. On nine datasets with a transaction cost rate of 0.1%, our method produces 5.9 times the wealth of AOLNPM in geometric mean and sits above AOLNPM on every dataset, with its preponderance growing with the cost rate.",
+    "authors": [
+      "Grace Chengrong Xie",
+      "Alvey Qianli Lin",
+      "Wai Ki Ching"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "q-fin.PM",
+      "q-fin.CP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29552v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29552v1",
+    "fetched_at": "2026-11-24T19:16:33.865862",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Portfolio Optimization",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623836"
+  },
+  {
+    "id": "2611.29281v1",
+    "title": "Project financing in vanishing forests: Do investors care about nature protection?",
+    "abstract": "Biodiversity risks are increasingly recognized by financial market participants, yet their measurement at the corporate-entity level obscures the locations and assets through which they arise. Project finance links identifiable physical assets to dedicated financing contracts, allowing us to examine this transmission more directly. By linking 9,037 project-loan pairs in 115 countries, we relate bank loan spreads to projects' proximity to protected areas, surrounding forest loss and lenders' nature policies. We find that lenders price proximity to protected areas only when they also have explicit nature risk policies and particularly within 1.5 km buffers from the project location. Realised forest loss around a project is priced more consistently than forest loss after the loan is signed, and risk pricing near protected areas strengthens after the Kunming-Montreal Global Biodiversity Framework. Listed company sponsors also experience negative, but short-lived, abnormal returns around loan signings for projects within 30 km of protected areas or in high-forest-loss landscapes. Our results suggest that while nature risk is partially priced in project finance, this is not a strong incentive to deter significant harm to nature.",
+    "authors": [
+      "Theodor Cojoianu",
+      "Mohammad Faour",
+      "Andreas Hoepner",
+      "Matthew Purslow",
+      "Khaladdin Rzayev",
+      "Ruoran Zhao"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29281v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29281v1",
+    "fetched_at": "2026-11-24T19:16:33.865888",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623845"
+  },
+  {
+    "id": "2611.28524v1",
+    "title": "Modeling Joint Tail Risk and Dependence for Cryptocurrencies via a Copula-Based Semiparametric Framework",
+    "abstract": "This study proposes a Bayesian copula-based bivariate semiparametric framework for jointly forecasting Value-at-Risk (VaR) and Expected Shortfall (ES) while modeling cross-asset tail dependence. The marginal dynamics are specified using four ES-CAViaR-type models, including extensions incorporating Rogers-Satchell and Garman-Klass volatility measures. To construct the copula inputs, we use the empirical ranks of standardized residuals, which depend on the marginal parameters, thereby linking marginal tail dynamics and dependence modeling without requiring fully specified marginal distributions. Clayton and BB1 copulas are considered, and adaptive Markov chain Monte Carlo methods are used for estimation and joint tail-risk forecasting. A simulation study under a DCC-GARCH-$t$ data-generating process evaluates the finite-sample forecasting performance of the proposed framework. Using Bitcoin and Ethereum data, we evaluate one-step-ahead forecasts from 2020 to 2025 through a rolling-window forecasting scheme and compare the proposed models with Bayesian DCC-GARCH-N and DCC-GARCH-$t$ benchmarks. Rolling copula estimates also reveal time-varying asymmetry in Bitcoin-Ethereum tail dependence, with lower-tail dependence remaining higher than upper-tail dependence for most of the period. The proposed framework delivers competitive forecasting performance for both marginal and joint tail risk.",
+    "authors": [
+      "Cathy W. S. Chen",
+      "Takaaki Koike",
+      "Aaron E. P. Lin"
+    ],
+    "published": "2026-11-21",
+    "categories": [
+      "q-fin.ST"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28524v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28524v1",
+    "fetched_at": "2026-11-24T19:16:33.865909",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623855"
+  },
+  {
+    "id": "2611.28468v1",
+    "title": "Limit distributions and bootstrap for smooth adapted Wasserstein distances",
+    "abstract": "In this paper, we provide limit theorems for the Gaussian-smoothed adapted Wasserstein distances. Let $\\widehatμ_n$ be the empirical measure of independent paths with law $μ$ on $(\\mathbb{R}^d)^T$. Let $P = μ* γ_σ$ and $P_n = \\widehatμ_n * γ_σ$, where $γ_σ= N(0,σ^2 I_{dT})$ is a Gaussian measure with mean zero and covariance matrix $σ^2 I_{dT}$. We first assume that $μ$ is compactly supported. For every $1 < p < \\infty$ and fixed $d, T$, and $σ> 0$, we show that $\\sqrt{n}\\,\\mathrm{AW}_p(P_n,P) \\Rightarrow Q_{P,p}(G)^{1/p}$, where $G$ is the Gaussian limit of the density fluctuation and $Q_{P,p}$ is the minimum adapted $p$-energy for the linearized continuity equation. We prove full-path bootstrap consistency and the convergence of the first and $p$-th moments. The limit and the bootstrap hold for noncompact laws as well, for all $1 < p < \\infty$ under appropriate tail and structural conditions. For two-sided bounded density perturbations of strongly log-concave laws, the bandwidth is not restricted for $1 < p \\le 2$. For $p > 2$, we give sufficient tail conditions and provide a Gaussian counterexample where root-$n$ tightness fails for small bandwidths. Our proof is based on a two-endpoint local expansion of bicausal transport. As an application, we provide asymptotic error bounds for optimal stopping values under the smoothed model using the bootstrap quantiles.",
+    "authors": [
+      "Xiaozhen Wang"
+    ],
+    "published": "2026-11-21",
+    "categories": [
+      "math.PR",
+      "math.ST",
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28468v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28468v1",
+    "fetched_at": "2026-11-24T19:16:33.865930",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623871"
+  },
+  {
+    "id": "2611.28342v1",
+    "title": "Which Loans, Not How Many: Exactly Level-Invariant, Anytime-Valid Monitoring of Deployed Risk Models",
+    "abstract": "A refinancing wave can change the number of mortgage prepayments without changing the relationship between scores and prepayment. In a logistic model, conditioning on the monthly count removes the intercept from the likelihood of which loans prepay. Our fixed-start slope product tests a lower bound on the calibration slope. At threshold 20 its probability of ever crossing under the null is at most 5%. The restarted level sum tracks departures from intercept tolerance. A confidence sequence estimates a constant slope, and the restart-intersection rule detects changes in that slope. A continuous mixture avoids the off-grid width floor of a discrete prior. On Freddie Mac loans, fixed-slope resampling reproduces 78% of maintained-model monthly AUC variance in development and 70% in the holdout (95% intervals 57-100% and 48-100%). From fresh holdout starts, the restarted level sum crosses on both paths, and the fixed-start slope product stays below threshold on both. The restart-intersection rule signals a downward change for the frozen model in April 2018 and an upward change for the maintained model in a supplementary run in August 2019.",
+    "authors": [
+      "Xin Xu"
+    ],
+    "published": "2026-11-20",
+    "categories": [
+      "cs.LG",
+      "q-fin.RM",
+      "stat.ME",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28342v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28342v1",
+    "fetched_at": "2026-11-24T19:16:33.865948",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623882"
+  },
+  {
+    "id": "2611.28288v1",
+    "title": "Model Doubt, Risk Aversion, and the Threshold for Trading: A Geometry of Pricing Measures",
+    "abstract": "How much model doubt can an investor bear before they stop trading? Our investor treats every model within a given Kullback-Leibler divergence of their reference model as plausible. In a finite one-period market, they hold no risky asset exactly when this doubt reaches the smallest divergence of a pricing measure from their model, for every smooth, strictly increasing, strictly concave utility; non-traded claims then have intervals of no-trade prices. Below this threshold, for log utility and in a given market, doubt acts exactly like higher constant relative risk aversion; their robust pricing measure moves from the log-utility measure toward the pricing measure at that smallest divergence. With a century of U.S. data, a log investor who doubts the Black-Scholes mean return over its 95% confidence interval acts like a fully trusting investor with relative risk aversion of about 1.8 instead of 1. Implied doubt turns a quote into a radius; the mean VIX implies doubt beyond the threshold, but whether significantly so depends on the reference model. By a known identity, real-world, pricing, and share (stock-numeraire) measures form a triangle whose Pythagorean defect is a log risk premium; one side is half the squared (ideal) VIX times the horizon. Since 1990, the U.S. defect averages about 10% per year, about 1 point of it entropy premium.",
+    "authors": [
+      "Amine Mohamed Aboussalah"
+    ],
+    "published": "2026-11-20",
+    "categories": [
+      "q-fin.MF",
+      "q-fin.PR",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28288v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28288v1",
+    "fetched_at": "2026-11-24T19:16:33.865968",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Risk Management",
+      "Options"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623893"
+  },
+  {
+    "id": "2611.27210v2",
+    "title": "The Rise of Agents and the Labor Market",
+    "abstract": "We provide the first economy-wide and cross-AI model evidence on the effects of agentic AI on labor demand. We combine proprietary OpenRouter data covering about two quadrillion tokens of realized AI consumption (2 percent of global AI token consumption) across more than 400 AI models, including 1.1 quadrillion agentic tokens, with the full text of 34.8 million U.S. job postings for public firms from Lightcast. We compute our measure of firm-level exposure to aggregate agentic AI consumption (agentic beta) using the comovement of U.S. public firms' stock returns with realized weekly aggregate agentic AI token consumption. We find that a one-standard-deviation increase in a firm's exposure to agentic AI predicts 2.11 percent lower growth in job postings over the next six months and 3.20 percent over nine months. We then conduct an event study based on the release of Claude Code 2.0, which significantly expanded the capabilities of AI agents, and show that a one-standard-deviation higher pre-release exposure to agentic AI predicts 4.73 percent lower posting growth over six months post the release. Furthermore, we show that the decrease in job postings is concentrated among non-senior jobs and is statistically insignificant for senior jobs. In contrast, we find no statistically significant relation between broad AI realized consumption exposure and subsequent job posting growth once agentic exposure is controlled for. Finally, we validate our market-implied agentic exposure measure using independent evidence from firms' mentions of AI deployment in securities filings and earnings calls.",
+    "authors": [
+      "Nicola Borri",
+      "Anton Cheremukhin",
+      "Yukun Liu",
+      "Aleh Tsyvinski"
+    ],
+    "published": "2026-11-20",
+    "categories": [
+      "econ.GN",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.27210v2",
+    "arxiv_url": "https://arxiv.org/abs/2611.27210v2",
+    "fetched_at": "2026-11-24T19:16:33.866109",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623903"
+  },
+  {
+    "id": "2611.29484v1",
+    "title": "Vanishing Initialization Turns Diagonal Tensor Gradient Flow into Greedy Matching",
+    "abstract": "We study gradient-flow (GF) learning of tensors from vanishing initialization in canonical polyadic (CP) factorization models. For tensors of order $ν\\geq3$ whose targets are diagonal in mode-wise orthonormal bases, we prove that the limiting learning dynamics follows a simple greedy bipartite matching process. Each rank-one component of the model, called an atom, can potentially learn each rank-one component of the target, called a scalar sector. Every atom--sector pair has an initialization-dependent activation clock, representing the time at which the atom would grow to macroscopic size in that sector if the pair evolved in isolation. Processing these clocks in increasing order and selecting a pair whenever neither its atom nor its sector has been selected before determines the sequence of actual learning events. We prove that the GF trajectory converges to the corresponding staircase of learned target components. The task of learning modular addition by a CP model with complex weights falls exactly into this framework after Fourier diagonalization. Its activation clocks are independent and identically distributed, allowing us to combine the GF reduction with known random matching asymptotics and derive an explicit, distribution-free large-system loss curve after time reparametrization. We also obtain an asymptotic formula relating this curve to the original GF training time. For models with real weights, conjugate Fourier modes instead form two-dimensional blocks with richer internal structure. We characterize their rank and border-rank cascade and conjecture that the corresponding GF dynamics follows interleaved multi-stage learning processes.",
+    "authors": [
+      "Dmitry Yarotsky",
+      "Eugene Golikov",
+      "Yaroslav Gusev"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29484v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29484v1",
+    "fetched_at": "2026-11-24T19:16:40.826803",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623922"
+  },
+  {
+    "id": "2611.29318v1",
+    "title": "Reward Tilting via Semantic Noising",
+    "abstract": "Steering a generative model toward a desired property typically requires separate fine-tuning for each reward or additional computation during sampling. We propose semantic noising, which conditions generation on a noisy semantic representation of the data. The resulting posteriors correspond to exponential tilts by linear-quadratic rewards in semantic space, allowing a single model to support objectives and strengths chosen after training. A conditional generator can be trained to approximate these posteriors directly, while models that generate semantic representations by diffusion provide analytic tilted denoisers for the same family of rewards. We illustrate semantic noising in three settings. An autoregressive molecular generator trained with semantic noising controls properties individually and jointly, with a better reward--KL trade-off than property-conditioned models. On ImageNet, a joint diffusion model of images and their CLIP embeddings achieves FID comparable to REG, and tilting it toward a higher aesthetic score matches the best of 16 samples at the cost of a single sample. Finally, pretrained factorized models such as Kandinsky 2.2 support the same tilts without retraining.",
+    "authors": [
+      "Rafał Karczewski",
+      "Peter Blohm",
+      "Markus Heinonen",
+      "Vikas Garg"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29318v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29318v1",
+    "fetched_at": "2026-11-24T19:16:40.826837",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623931"
+  },
+  {
+    "id": "2611.30112v1",
+    "title": "FToken: Factors as Tokens for Dual-Axis Cross-Sectional Return Prediction",
+    "abstract": "On a given trading day, a stock-factor panel describes both how stocks differ across factors and how each factor varies across stocks. Most stock Transformers model relationships among stocks or across time. We introduce FToken, which also models relationships among factors. Its factor branch encodes all stocks' values for one factor as a token, applies self-attention across factors, and maps the result back to one return forecast per stock. A second branch applies attention across stocks in the same panel. A gate combines their forecasts using trailing factor covariance and market volatility. We evaluate both branches on NASDAQ, NYSE, and S&P 500 with the benchmarks' five price features and with 158 factors computed from the same data. On the 158-factor NASDAQ panel, averaging the two forecasts yields an information coefficient (IC) of 0.0421, compared with 0.0392 for the strongest external baseline. The gate raises IC to 0.0443 and gives the highest annualized excess return after costs. The equal-weight ensemble has the higher portfolio information ratio. Both combinations also improve on the strongest external baseline in mean IC on the other two 158-factor panels. On the five-feature NYSE panel, the differences are within the variation across seeds. ```",
+    "authors": [
+      "Juntang Wang",
+      "Yihan Wang",
+      "Sheng'en Li",
+      "Dongmian Zou",
+      "Shixin Xu"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30112v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30112v1",
+    "fetched_at": "2026-11-24T19:16:44.064431",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Factor Mining",
+      "Asset Pricing"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623941"
+  },
+  {
+    "id": "2611.31096v1",
+    "title": "Leakage-Safe Auditing of Attribution-Driven Data Curation in Medical Imaging",
+    "abstract": "When can an attribution-derived anomaly justify changing a medical-imaging training set? We formulate attribution-driven curation as three separately testable claims: anomaly detection, harmfulness estimation, and intervention utility. We test the first and third using a patient-disjoint, identifier-preserving audit of a 3D convolutional classifier for computed tomography angiography aneurysm candidates. We identify 232 exactly zero-valued arrays among 1,201 positive patches, including 170 training positives, and invalidate a historical 321-patch attention-failure subgroup whose identifier-free records were joined to files by position. On the held-out test set, GradCAM++ spatial concentration is central for every candidate class, reversing the historical pattern. GradCAM++ and Integrated Gradients show negative rank-order agreement for positives, limiting method-independent anatomical interpretation. Across five paired training seeds, removing the 170 corrupted training positives yields AUC 0.9617 +/- 0.0044 versus 0.9652 +/- 0.0039 for full-data training (difference -0.0035; 95% CI -0.0082 to 0.0007). Excluding 34 raw-zero test positives widens rather than closes the gap, countering a blank-memorization explanation. Budget-matched random-removal controls suggest the result is not simply an effect of reducing training size. Input corruption does not necessarily imply that deletion improves generalization. Our framework makes leakage control, sample identity, and intervention testing explicit in attribution-driven medical-imaging data curation.",
+    "authors": [
+      "Malay Phadke",
+      "Akshay Gokhale"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31096v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31096v1",
+    "fetched_at": "2026-11-24T19:16:47.325066",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623951"
+  },
+  {
+    "id": "2611.30736v1",
+    "title": "Object-Centric Differentiable Logic Networks for Abstract Visual Reasoning",
+    "abstract": "Human visual intelligence enables efficient reasoning capabilities on abstract visual problems with bounded cognitive resources and minimal experience, and yields remarkable generalization to novel problems with its ability to draw relational analogies and modular abstractions. In contrast, deep learning models require exhaustive task-specific training on large datasets, making them prone to exploiting visual shortcuts and resulting in poor generalization. While neuro-symbolic approaches attempt to bridge this gap by decoupling perception from reasoning with dedicated computation units, existing solutions rely either on explicit rule supervision or parameter-heavy transformer architectures that reintroduce the computational inefficiencies they aim to solve. We introduce Slot-Dwn to address these limitations, a novel neuro-symbolic architecture that unifies unsupervised object-centric perception with logic-based symbolic reasoning. Our model utilizes a Multi-Head Differentiable Weightless Network (MH-DWN) that performs efficient reasoning entirely in Boolean space using look-up tables (LUTs). Our framework reduces visual perception complexity and introduces a LUT-based relational bottleneck with sparse input routing to minimize computational overhead. We evaluate Slot-Dwn across various abstract visual reasoning benchmark tasks targeting systematic rule generalization, sample-efficient anomaly detection, and multi-relational reasoning. We demonstrate that Slot-Dwn yields competitive performance with respect to the state-of-the-art, under extreme out-of-distribution regimes, while requiring up to 52% fewer trainable parameters, with significantly faster convergence.",
+    "authors": [
+      "Hanne Say Eren",
+      "Ana Ezquerro",
+      "Ozan Özdenizci"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30736v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30736v1",
+    "fetched_at": "2026-11-24T19:16:47.325112",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623962"
+  },
+  {
+    "id": "2611.30385v1",
+    "title": "Toward a Scalable and Adaptive Evaluation Measure for Time Series Anomaly Detection",
+    "abstract": "Time Series Anomaly Detection (TSAD) is a fundamental task for time series analytics. Unlike other domains, where anomaly detection mainly focuses on point-based anomalies, TSAD must also handle range-based anomalies. Nevertheless, TSAD methods are commonly evaluated with measures inherited from classification, such as Precision and Recall, which require a threshold, or with threshold-independent ones, such as AUC, which ignore the temporal aspect of anomalies. To address these issues, the Volume Under the Surface (VUS) measure scores detectors across all thresholds and a range of buffer lengths and has been widely adopted. However, VUS has two limitations. First, VUS is computationally expensive, requiring 7 hours and 38 minutes to evaluate 32 detectors on the 870 TSB-AD time series. Second, VUS applies the same buffer lengths to every anomaly and detector, which can yield over-optimistic scores that hinder discrimination between accurate and mediocre detectors. We first introduce FastVUS, which computes VUS exactly and on average 76x faster by (i) computing all buffers in parallel, (ii) pruning irrelevant buffers for the existence reward, (iii) casting the confusion matrix as a single reduced matrix multiplication, (iv) computing VUS for every buffer length in one pass, and (v) discarding non-anomalous regions with a global mask. We also develop FastVUS-GPU, which recasts every step as batched tensor operations and reaches an average 304x speedup with a maximum error of $5\\times10^{-3}$. Building on FastVUS, we introduce AutoVUS, an adaptive extension that compares each detection against a random baseline and selects the buffer length that maximizes the gain over it. Our case studies show that AutoVUS reduces over-optimistic scores and better separates accurate from mediocre detectors. We release FastVUS and AutoVUS as open source to promote time-aware evaluation at scale.",
+    "authors": [
+      "Emmanouil Sylligardos",
+      "Mingyi Huang",
+      "John Paparrizos",
+      "Pierre Senellart",
+      "Paul Boniol"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.DB",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30385v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30385v1",
+    "fetched_at": "2026-11-24T19:16:47.325138",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623973"
+  },
+  {
+    "id": "2611.30050v1",
+    "title": "PsyDrift: Healthy-Reference Latent Diffusion for Anomaly Scoring in Autism Spectrum Disorder",
+    "abstract": "Individual heterogeneity and acquisition-site variability complicate neuroimaging-based characterization of autism spectrum disorder (ASD). We propose PsyDrift, combining ASD/healthy-control-supervised functional-connectivity representations with healthy-reference latent diffusion. An encoder produces 128-dimensional representations, and a denoising diffusion probabilistic model (DDPM) learns exclusively from healthy training latents. Distance from a diffusion-denoised reconstruction provides a continuous deviation score. We evaluate 1,102 subjects from all 20 ABIDE-I sites using five-seed leave-one-site-out cross-validation. The classifier and DDPM achieve mean-site AUROCs of $0.798 \\pm 0.003$ and $0.718 \\pm 0.013$, respectively; uncertainties denote seed standard deviations. Matched healthy-reference scorers on the same representation achieve 0.68-0.71; the statistical significance of diffusion's modest numerical advantage remains unestablished. Within ASD, scores show weak associations with ADOS Total (Spearman $ρ= 0.108$, $p = 0.038$) and full-scale IQ ($ρ= -0.138$, $p = 0.002$), without adjustment for age, sex, site, or head motion. Frozen evaluation without retraining or hyperparameter adaptation yields pooled AUROCs of 0.69 on ABIDE-II and 0.61 on ADHD-200, providing preliminary evidence of cross-cohort and cross-disorder transfer. These results demonstrate healthy-reference deviation scoring within an ASD-supervised representation; incremental predictive and clinical value remains unestablished.",
+    "authors": [
+      "Yasaman Mohammadpour",
+      "Pouya Shaeri",
+      "Ariane Middel"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.LG",
+      "cs.CV",
+      "eess.SP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30050v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30050v1",
+    "fetched_at": "2026-11-24T19:16:47.325160",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.623991"
+  },
+  {
+    "id": "2611.30020v1",
+    "title": "Automated Neural Network Auditing (ANNA) for Energy Market Settlements: A Machine and Reinforcement Learning-Based Approach",
+    "abstract": "The integration of segmented energy markets into Independent System Operators (ISOs) like CAISO and MISO has increased settlement complexity. Automated transaction processing creates challenges for evaluating accuracy, compliance, and financial integrity. Traditional rule-based manual auditing is inefficient, error-prone, and cannot handle the data volume from automated markets.This research proposes Automated Neural Network Auditing (ANNA), a machine and reinforcement learning framework for settlement auditing via anomaly prioritization. ANNA integrates statistical anomaly detection, K-Nearest Neighbors (KNN), clustering, and Deep Q-Network (DQN) reinforcement learning to flag potentially anomalous transactions from historical market data. The approach is evaluated as an analyst-support tool for prioritizing transactions needing further audit review.ANNA was tested against traditional statistical methods, clustering-based techniques, and supervised/reinforcement learning models. The study used three years of CAISO settlement data over 63 million source records across 32 charge codes and multiple counterparties. After preprocessing, approximately 2.9 million labeled transactions formed the working dataset, with model-specific subsets used for training and evaluation. Performance was assessed using precision, recall, computational efficiency, and false-negative detection.ANNA outperforms traditional methods by identifying hidden relationships in settlement data, while standard deviation thresholds, K-Means, KNN, and Q-Learning performed poorly across key metrics. The result is a scalable solution integrating machine and reinforcement learning for automated auditing of energy market settlements, contributing computationally efficient anomaly prioritization to settlement-auditing workflows.",
+    "authors": [
+      "J. R. Rivadeneyra",
+      "I. Lee",
+      "F. Nugen",
+      "S. M. Srinivasan"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30020v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30020v1",
+    "fetched_at": "2026-11-24T19:16:47.325183",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624002"
+  },
+  {
+    "id": "2611.29903v1",
+    "title": "From Patterns to Threats: A Deep Learning Model for Anomaly Detection in Cyber-Physical Systems",
+    "abstract": "Cyber-physical systems increasingly rely on interconnected sensing, communication, and control components, creating a need for reliable detection of abnormal behavior. This study proposes a Deep Autoencoder for anomaly detection using the Edge-IIoTset dataset. After preprocessing the full dataset, 2,219,201 observations and 38 numerical features were retained. The proposed model employed a 38-24-12-6-12-24-38 encoder-decoder architecture and was trained exclusively on normal observations to learn representative patterns of expected system behavior. Anomaly decisions were based on reconstruction error, with the classification threshold selected independently from validation data by maximizing the F1-score. To assess model stability, five independent runs were conducted using different random seeds, and results were reported as mean plus or minus standard deviation. The proposed Deep Autoencoder achieved an accuracy of 0.9195 plus or minus 0.0061, precision of 0.9602 plus or minus 0.0204, recall of 0.7348 plus or minus 0.0095, F1-score of 0.8325 plus or minus 0.0121, ROC-AUC of 0.8825 plus or minus 0.0339, and PR-AUC of 0.8640 plus or minus 0.0286. Compared with a Simple Autoencoder baseline, the proposed model improved recall and F1-score while reducing the false positive rate. The results demonstrate that the proposed reconstruction-based representation learning approach can provide an effective and reproducible method for detecting anomalous behavior in cyber-physical environments.",
+    "authors": [
+      "Kayode L. Ogunsusi"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29903v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29903v1",
+    "fetched_at": "2026-11-24T19:16:47.325200",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624012"
+  },
+  {
+    "id": "2611.29545v1",
+    "title": "SCRA-CLIP: Spherical-Contextual Representation Adaptation for Zero-Shot Anomaly Detection",
+    "abstract": "Recent advances in vision-language models have facilitated zero-shot anomaly detection (ZSAD) through transferable visual-semantic representations. However, detecting fine-grained anomalies remains challenging due to inadequate modeling of diverse anomaly patterns and their spatial context. To address these challenges, we propose SCRA-CLIP, a Spherical-Contextual Representation Adaptation framework that jointly enhances anomaly-aware textual semantics and context-sensitive visual representations. Specifically, we introduce Spherical Prototype-Conditioned Prompting (SPCP), which employs von Mises--Fisher mixtures to model the directional distributions of normal and abnormal patch features. These state-specific prototypes are incorporated into textual contexts to guide the learning of more discriminative textual representations. Furthermore, we develop Context-Deviation Guided Visual Adaptation (CGVA), which captures local feature deviations relative to multi-scale neighborhood contexts and refines patch representations through adaptive gating. By integrating distribution-aware semantic modeling with context-sensitive visual adaptation, SCRA-CLIP facilitates more discriminative cross-modal matching for fine-grained anomaly detection and localization. Extensive experiments on 11 industrial and medical benchmarks demonstrate the effectiveness and generalization capability of SCRA-CLIP across diverse unseen categories and domains. The code will be publicly available upon publication.",
+    "authors": [
+      "Peng Chen",
+      "Chao Huang",
+      "Wenqiang Wang",
+      "Mingbo Yang",
+      "Yannan Chen",
+      "Yunkang Cao",
+      "Wei Wang",
+      "Li Shen",
+      "Fangjun Huang"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29545v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29545v1",
+    "fetched_at": "2026-11-24T19:16:47.325231",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624022"
+  },
+  {
+    "id": "2611.29315v1",
+    "title": "SWIFT: A Handcrafted, Arithmetic-Minimal FPGA Engine for Real-Time Audio Deepfake Detection",
+    "abstract": "Generative voice cloning threatens voice-based authentication, yet current deepfake detectors rely on power-hungry, high-precision models unsuited to edge hardware. We present SWIFT (Streaming Whiten-Integer Forensic Trust-Engine), a handcrafted detector that works in the high-frequency noise domain where synthesis artifacts concentrate. A first-order integer high-pass residual drives nine families of fixed-point descriptors, among them integer lifting-wavelet cepstral quantiles, Mahalanobis anomaly distances, Poincaré phase-space geometry, and phase jitter, fused by calibrated gradient-boosted trees and a sparse L1-regularised meta-learner. Under leakage-controlled nested cross-validation, with one shared preprocessing chain for real and fake audio, this reference model reaches accuracy of up to 99.86% and an Equal Error Rate (EER) as low as 0.03% across eight benchmarks. Its integer front-end and a fixed-point linear classifier run on the programmable logic of a PYNQ-Z2 (Zynq-7020) board, with a 7.85 microseconds per-frame datapath latency (127.4k frames/s) at 1.734 W and 11.2% LUT utilisation. Integer-only audio deepfake feature extraction is thus feasible at the edge without pretrained neural models or floating-point units.",
+    "authors": [
+      "Chirantan Banerjee",
+      "Soumita Chatterjee",
+      "Bhargab B. Bhattacharya",
+      "Hafizur Rahaman"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "cs.SD",
+      "cs.AI",
+      "cs.AR",
+      "cs.CR",
+      "eess.AS"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29315v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29315v1",
+    "fetched_at": "2026-11-24T19:16:47.325255",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624039"
+  },
+  {
+    "id": "2611.28800v1",
+    "title": "HighwayVerse: A Chain-of-Inspection Benchmark for Highway Infrastructure Anomaly Understanding",
+    "abstract": "Practical highway infrastructure inspection entails progressive diagnostic reasoning from visual perception to maintenance decisions, yet existing benchmarks remain confined to isolated tasks, leaving Multimodal Large Language Models (MLLMs) insufficiently evaluated across sequential inspection stages. Meanwhile, current datasets focus primarily on highway pavement defects, falling short of real-world inspection across diverse infrastructure components such as highway pavements, guardrails, glare screens, and drainage systems. To address these gaps, we formulate the Highway Infrastructure Inspection Progression Chain (HIIP-Chain), spanning Anomaly Detection, Anomaly Recognition, Condition Analysis, and Maintenance Resolution, and introduce HighwayVerse. HighwayVerse comprises 14,143 real-world Ground and Unmanned Aerial Vehicle (UAV) inspection records spanning 100 and 17 anomaly categories, respectively, with 84,858 expert-reviewed question-answer pairs. We evaluate 12 open-source and closed-source MLLMs using the chained metric Final, which credits a correct maintenance decision only when all preceding diagnostic stages are completed correctly. Results show that although models achieve relatively high accuracy when initially judging whether an anomaly is present, their markedly lower Final scores expose struggles across downstream recognition, analysis, and decision-making. This discrepancy indicates that current MLLMs do not fully comprehend specific highway anomaly patterns beyond superficial initial judgments. Furthermore, we propose LaneRAG, a training-free retrieval-augmented framework that provides hierarchical reference guidance achieving consistent performance improvements across diverse MLLMs. Our dataset, evaluation benchmark, and source code will be publicly released.",
+    "authors": [
+      "Junyi Yang",
+      "Zheng Si",
+      "Yilin Zhai",
+      "Pengpeng Ouyang",
+      "Hongxi Wang",
+      "Kangze Li",
+      "Mo Chen",
+      "Sicong Zhang",
+      "Hua Wang",
+      "Dongyuan Wu",
+      "Dong Chen",
+      "Mingliang Xu"
+    ],
+    "published": "2026-11-21",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28800v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28800v1",
+    "fetched_at": "2026-11-24T19:16:47.325291",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624050"
+  },
+  {
+    "id": "2611.28655v1",
+    "title": "UACR: Uncertainty-Aware Collaborative Routing for Explainable Industrial Anomaly Inspection",
+    "abstract": "Industrial anomaly inspection requires not only accurate anomaly discrimination but also trustworthy explanations for operators, while satisfying the strict latency constraints of online inspection. Existing methods, however, typically apply a fixed computational path to all samples, making it difficult to strike a good balance among detection accuracy, inference efficiency, and interpretability. To address this issue, we propose UACR, an uncertainty-aware collaborative routing framework for explainable industrial anomaly inspection. UACR aims to deliver reliable anomaly decisions together with operator-facing explanations under the online inspection budget, while adaptively allocating computation so that ambiguous cases receive deeper scrutiny. The framework consists of two stages. Stage I, Offline Training and Routing Hyperparameter Search, learns the anomaly inspection modules and calibrates the uncertainty estimator that drives routing. Stage II, Uncertainty-Aware Adaptive Routing, collaboratively dispatches each input across inspection paths according to its estimated uncertainty. Experimental results on multiple public datasets show that UACR achieves over 5.16% improvement in accuracy compared to the baseline method, while reducing latency by over 31.5%. It also enhances the interpretability of industrial detection by over 15%.",
+    "authors": [
+      "Yiwei Li",
+      "Qiyang Chen",
+      "Zheming Yang"
+    ],
+    "published": "2026-11-21",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28655v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28655v1",
+    "fetched_at": "2026-11-24T19:16:47.325311",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624060"
+  },
+  {
+    "id": "2611.28611v1",
+    "title": "Action-Conditioned Transition Irreversibility for Out-of-Distribution Detection in Reinforcement Learning",
+    "abstract": "Reinforcement-learning agents shape the observations they encounter; consequently, detecting out-of-distribution (OOD) states requires analysing action-conditioned trajectories rather than treating inputs as independent samples. We propose Action-Conditioned Transition Irreversibility (ACTI), a detector that evaluates forward and backward transition likelihoods, calibrates this comparison against the in-distribution profile at each timestep, and smooths the score over a short window, using no future information. We tested ACTI across six environments and fifteen detectors within OOD-RL-Bench, using the four anomaly mechanisms that qualified in every environment, with ten policy replicates per environment. All primary metrics are matched-time: each score after anomaly onset is compared with a clean twin rollout's score at the same timestep. Our method secured the top macro matched-time AUROC, outperforming the dynamics-model baseline (PEDM), while scoring transitions roughly two orders of magnitude faster. Compared to the state-only variant, ACTI achieved a small but consistent AUROC gain and a shorter detection delay. The capacity-matched forward-only baseline, ACTI-Forward, secured a statistically significant advantage in AUPRC alongside a reduced detection delay. The discrepancy in AUROC did not reach statistical significance. Ablation studies suggest instead that performance improvements stem from action conditioning, calibration at each timestep, and smoothing of the transition-likelihood scores. Based on these results, we recommend using ACTI-Forward.",
+    "authors": [
+      "Emil Mittag",
+      "Richard Dazeley",
+      "Peter Vamplew"
+    ],
+    "published": "2026-11-21",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28611v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28611v1",
+    "fetched_at": "2026-11-24T19:16:47.325332",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624071"
+  },
+  {
+    "id": "2611.28497v1",
+    "title": "When AI Performance Is Not Enough: Statistical Guardrails for Clinical Development",
+    "abstract": "Artificial intelligence (AI) and machine learning (ML) are reshaping the operational and inferential landscape of clinical development, yet their adoption frequently outpaces the statistical scrutiny these methods demand. This commentary offers first-principles perspectives across four application domains: anomaly detection in clinical trial data, real-time monitoring and adaptive trial designs, biomarker-based enrichment, and virtual and digital twins. For each domain, we articulate the underlying inferential problem, the contribution of AI and ML relative to established statistical methods, and the risks that statisticians, data scientists, and clinical developers must actively manage. Across these domains, a unifying theme emerges: AI and ML methods may succeed locally while failing to satisfy the broader statistical assumptions required for valid clinical and regulatory decisions. These risks include false-positive signals, compromised Type I error control in adaptive designs, conflation of prognostic with predictive biomarkers, and causal claims not supported by data and assumptions. We argue that a clearly defined context of use, relevant statistical assumptions, and consequences of the intended decision should guide the evaluation. For treatment-effect questions, the ICH E9(R1) estimand framework provides a useful organizing principle. Responsible use of AI in clinical development requires not restraint, but rigor: the inferential discipline necessary to make these technologies reproducible, interpretable, and defensible in the service of patients.",
+    "authors": [
+      "Siddhesh Kulkarni",
+      "Gina D'Angelo",
+      "Swarna Reddy",
+      "Rakhi Kilaru"
+    ],
+    "published": "2026-11-21",
+    "categories": [
+      "stat.ME",
+      "cs.AI",
+      "stat.AP"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28497v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28497v1",
+    "fetched_at": "2026-11-24T19:16:47.325354",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624081"
+  },
+  {
+    "id": "2611.28348v1",
+    "title": "SMAD: A Semantics-Guided Multi-Agent Framework for Unsupervised Time-Series Anomaly Detection",
+    "abstract": "Time-series anomaly detection (TSAD) lacks a one-size-fits-all detector for heterogeneous data and anomaly types. Existing automation is limited by implicit objectives, potentially unreliable historical knowledge, or high computational costs. More fundamentally, it selects how to detect anomalies without explicitly defining what to detect. We propose SMAD, an LLM-based multi-agent framework that translates anomaly intent into executable, testable detection pipelines. Rather than selecting detectors against an implicit target, SMAD establishes a natural-language semantic contract grounded in measurable time-series properties, specifying target event patterns, expected score responses, and validation questions. This contract governs both detector construction and evaluation: LLM agents propose pipelines, while contract-matched synthetic interventions provide label-free evidence from the target series to assess semantic coverage and guide iterative self-refinement. A semantics-aware ensemble integrates validated candidates and attributes each alert to contributing detectors and supporting evidence. On univariate and multivariate TSAD benchmarks, SMAD improves detection performance over the strongest baseline by 11.5% and 9.6%, respectively, while outperforming general-purpose coding agents at 2-5x lower language-model token cost.",
+    "authors": [
+      "Qinghua Liu",
+      "Junpeng Wang",
+      "Mingzhi Hu",
+      "Menghai Pan",
+      "Shubham Jain",
+      "Yuzhong Chen",
+      "Yan Zheng",
+      "Yiwei Cai",
+      "John Paparrizos"
+    ],
+    "published": "2026-11-20",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28348v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28348v1",
+    "fetched_at": "2026-11-24T19:16:47.325384",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624107"
+  },
+  {
+    "id": "2611.28274v1",
+    "title": "Neural Fidelity Calibration for Informative Sim-to-Real Adaptation",
+    "abstract": "Deep reinforcement learning (RL) can transfer agile robot skills from simulation to the real world, but closing the sim-to-real gap by domain randomization requires expert physics knowledge, and simulator calibration from real data typically targets a few hand-picked parameters. Even then, simulators miss real-world effects, and environments reconstructed from onboard perception inherit sensing errors that limit policy improvement. We propose Neural Fidelity Calibration (NFC), which uses conditional flow matching to calibrate simulator physical parameters and residual fidelity domains online during deployment. Residual fidelity captures sim-to-real dynamics discrepancies and perception-induced environment uncertainty. NFC operates in a latent space so that realistic environments can be sampled from the inferred posterior for real-to-sim policy fine-tuning. The framework is informative: the pretrained policy is fine-tuned only when an anomaly is detected, sequential NFC seeds its proposal from the simulation-pretrained estimator, and a hallucination policy modulates posterior uncertainty following optimism in the face of uncertainty. NFC attains the most accurate posteriors among established simulation-based inference methods on five robots with up to 39 physical parameters and a 128x128 residual terrain. On a wheeled robot with a broken wheel axle deployed on snow, mud, and wet grass, NFC raises success on rough terrain from 26% to 70% and reduces orientation jerk by 88%. Code and videos will be released upon publication.",
+    "authors": [
+      "Youwei Yu",
+      "Lantao Liu"
+    ],
+    "published": "2026-11-20",
+    "categories": [
+      "cs.RO",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.28274v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.28274v1",
+    "fetched_at": "2026-11-24T19:16:47.325403",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624117"
+  },
+  {
+    "id": "2611.31185v1",
+    "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+    "abstract": "Reinforcement learning (RL) improves large language model search agents by up to 32 exact-match (EM) points over their pre-RL initializations, yet overall accuracy gains do not identify which underlying functional capabilities improve or interact during training. We introduce CO-GRAFT, a reward-agnostic interventional attribution framework in which an RL-trained agent and its pre-RL initialization jointly generate a single trajectory under closed-loop execution with live retrieval. Each policy controls a mutually exclusive subset of four functional roles: intermediate reasoning, search-or-answer decision, search query generation, and final answer extraction. Evaluating all 2^4=16 role assignments without modifying weights or retraining defines a cooperative game whose Shapley values decompose the total RL gain across roles, while M\"obius interaction terms distinguish standalone role improvements from multi-role coupling. Applying CO-GRAFT to Search-R1 agents across Qwen2.5 and Llama-3.2 models (spanning two sizes, base and instruction-tuned initializations, GRPO and PPO optimizers, and NQ and HotpotQA datasets), we show that query generation never exceeds 15% of the total gain; instead, gains are governed by pre-RL answer validity, search retention, model scale, and fixed task-level search budgets, shifting credit from reasoning toward answer extraction in larger or well-formatted answer response checkpoints while smaller base models rely on reasoning--decision coupling.",
+    "authors": [
+      "Ramraj Chandradevan",
+      "Sayontan Ghosh",
+      "Vinoth Selvendran"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31185v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31185v1",
+    "fetched_at": "2026-11-24T19:17:17.157435",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Reinforcement Learning",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624128"
+  },
+  {
+    "id": "2611.31165v1",
+    "title": "When Does Overriding the Majority Vote Help?",
+    "abstract": "When should additional reasoning or verification replace a majority-vote answer? We call such a replacement an override. We examine two obstacles: the availability of correct alternatives and the reliability of methods that produce or select them. We compare additional reasoning, executed programs, and cross-model reasoning on 150 competition-mathematics questions with three open reasoning models. Starting from a majority vote over 16 responses, we measure how often overrides occur and how many errors they correct or introduce across agreement thresholds. When the vote is incorrect, the correct answer is often absent from the original responses. Additional same-model reasoning rarely overrides, while executed programs correct more errors than they introduce at every evaluated threshold. Cross-model overrides improve some weaker baselines but do not establish an advantage over the more accurate model alone, even with only eight standalone responses. Stricter agreement reduces how often overrides occur but does not consistently increase the fraction that correct errors. At the strictest thresholds, overrides occur on few distinct questions, limiting conclusions about their reliability.",
+    "authors": [
+      "Terry Ma",
+      "Aidan Zhang"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31165v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31165v1",
+    "fetched_at": "2026-11-24T19:17:17.157455",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624137"
+  },
+  {
+    "id": "2611.31160v1",
+    "title": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
+    "abstract": "Designing what an agent should optimize can be as difficult as optimizing the agent itself. Existing language-model-based reward-generation methods typically refine objectives for predefined tasks and couple the decision of what to explore with the synthesis of how to implement it, potentially narrowing the resulting behavioral repertoire. We introduce Habitats, a framework for open-ended evolution of executable agent objectives. Habitats maintains a population of reward-policy pairs and evaluates every policy under every population reward, producing a cross-fitness matrix that exposes self-mastery, transfer, and functional diversity. A population-level Planner uses this information to select parent rewards and issue targeted mutation directives, while a separate Mutator translates those directives into validated reward programs. We evaluate Habitats in a discrete Card Sandbox and three continuous-control environments (Cart-Pole, Hopper, and Cheetah) against Independent Generation and Direct Mutation baselines. Across four environments and three random seeds, Habitats achieves the highest macro-averaged final Specialist Quality and Behavioral Diversity, with final diversity reaching 1.8x that of Direct Mutation and 2.5x that of Independent Generation. Finally, across ten downstream objectives unseen during evolution, frozen Habitats policy libraries achieve higher paired win rates than size-matched Direct Mutation and Independent Generation libraries at 10,000 adaptation episodes, while also surpassing task-specific policies trained from scratch for 20,000 episodes. These results suggest that separating population-level planning from reward synthesis enables the discovery of diverse, learnable, and reusable behaviors.",
+    "authors": [
+      "Nicolas Bolouri",
+      "Gaya Mehenni",
+      "Daniel Toyama"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31160v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31160v1",
+    "fetched_at": "2026-11-24T19:17:17.157477",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624146"
+  },
+  {
+    "id": "2611.31129v1",
+    "title": "FATCAT: Fault Injection Attacks Targeting Chip-level Alignment",
+    "abstract": "Model alignment is the primary safety and security mechanism for enforcing refusal of malicious prompts in modern foundation models; yet, existing adversarial evaluations implicitly assume underlying hardware integrity. In this paper, we present FATCAT, the first physical fault-injection attacks capable of eliminating refusal in modern large language and vision-language models. Specifically, we present a non-invasive electromagnetic (EM) fault injection attack targeting GPU-accelerated Systems-on-Chip with physical access, requiring neither software execution privileges nor model-layer access. By leveraging an autonomous Radio Frequency (RF) side-channel trigger to synchronize EM faults to the prompt prefill phase, the attack corrupts safety-critical memory transactions across off-chip LPDDR5 DRAM and on-chip LPDDR physical interfaces without crashing the system while preserving model coherence. Evaluated on an NVIDIA Jetson Orin Nano and AGX Thor running Llama 3.2 1B and Gemma 3 1B, localized physical faults reliably force models to fulfill restricted requests, demonstrating that model-level alignment provides no robust security guarantees without hardware-level fault tolerance. Finally, we demonstrate the physical-world consequences of this vulnerability on an active 6-DoF robotic manipulator controlled by a SmolVLA vision-language-action policy. Our attack silently corrupts the model forcing the arm into abrupt, hazardous lunges; in two instances the robotic arm attempted to pinch the paper author -- proving that hardware faults can directly translate into real physical harm.",
+    "authors": [
+      "Peter Horvath",
+      "Ilia Shumailov",
+      "Zhuoran Liu",
+      "Lukasz Chmielewski",
+      "Lejla Batina"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31129v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31129v1",
+    "fetched_at": "2026-11-24T19:17:17.157502",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624156"
+  },
+  {
+    "id": "2611.31115v1",
+    "title": "RUIBench: What Makes a Good Robot-Use Interface?",
+    "abstract": "Foundation models can reason about complex physical tasks, yet translating this intelligence into reliable robot execution remains challenging. We argue that a critical, often overlooked factor is the robot-use interface (RUI), which determines how agents express and execute physical actions. To systematically study its impact, we introduce RUIBench, comprising 30 manipulation tasks across five suites spanning world knowledge, in-context learning, discovery, dynamic interaction, and contact-rich manipulation. We further develop RUIKit, a unified framework that crosses six action abstractions with two interaction forms, yielding 13 interfaces under shared perception and control. In simulation, changing only the RUI shifts a frontier agent's success rate from 45% to 81%, and that of a fine-tuned 4B model from 13% to 47%. Our analysis reveals that effective interfaces reduce unnecessary decisions while preserving essential feedback, with their benefits shaped by agent behavior and physical uncertainty. We further uncover a verification gap, where agents frequently declare success despite observable failures, revealing the need for task-level verification beyond individual actions. Together, these findings establish RUI design as a critical factor in embodied agent reliability.",
+    "authors": [
+      "Yanzhe Chen",
+      "Zhijun Cao",
+      "Zechen Bai",
+      "Wenzheng Zeng",
+      "Kevin Yuchen Ma",
+      "Yiqi Lin",
+      "Guoqiang Liang",
+      "Xiaokang Liu",
+      "Ke Sun",
+      "Kevin Qinghong Lin",
+      "Mike Zheng Shou"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.MM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31115v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31115v1",
+    "fetched_at": "2026-11-24T19:17:17.157539",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624165"
+  },
+  {
+    "id": "2611.31110v1",
+    "title": "Preflight: Agentic Last-Mile Verification for AI Software Supply Chains",
+    "abstract": "Software dependencies execute within the trust boundary of downstream applications, yet provenance, static analysis, and package-level behavioral approaches do not directly determine how a released artifact behaves for a specific program. We present Preflight, a program-scoped pre-execution verifier for Python dependencies that extracts application-referenced symbols, iteratively synthesizes and validates function-level harnesses, executes resolved artifacts in a restricted environment, records behavioral fingerprints, and compares target behavior against prior versions when suitable baselines exist. We evaluate Preflight on four real software-supply-chain incidents under five application contexts, a 100-package benign corpus, and a controlled function-level versus import-only ablation. Preflight returns malicious verdicts in four incident contexts and a clean verdict in the LiteLLM client context, where the affected proxy-server path is not exercised. All 100 evaluated benign packages receive clean verdicts, with zero observed false positives. In a controlled ablation on Ultralytics and ctx, function-level harnesses expose malicious behavior in both incidents, whereas import-only probing exposes neither. Together, these results show that conditioning behavioral verification on the downstream program can expose security-relevant dependency behavior while remaining selective on benign workloads.",
+    "authors": [
+      "Yaman Jandali",
+      "Nojan Sheybani",
+      "Farinaz Koushanfar",
+      "Tara Javidi"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31110v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31110v1",
+    "fetched_at": "2026-11-24T19:17:17.157561",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624175"
+  },
+  {
+    "id": "2611.31044v1",
+    "title": "Grower-in-the-loop AI for Deployable Precision Fertilisation in Sustainable Agriculture",
+    "abstract": "In agriculture, typically over half of the applied nitrogen fertiliser is lost to water and to air. Precision fertilisation aims to reduce these losses while maintaining yield and quality, yet existing tools struggle to capture farm-specific challenges in determining optimal nitrogen rates. Static recommendations are common and overlook on-farm constraints, such as delays due to weather or machinery availability, or change in budgets. Each constraint governs when and how growers apply fertiliser in practice. Here we present a grower-in-the-loop framework for winter wheat in England, combining baseline fertilisation planning from a machine learning-derived nitrogen-response curve with in-season adaptation via a large language model. We evaluated the framework using data from long-term experiments (LTEs), replicated field trials, and farm deployments. Retrospective model validation using LTEs confirmed low economic decision-loss across multiple seasons. Using field and farm trials, baseline schedules were shown to match standard-practice yields with less nitrogen, whereas in-season adjusted schedules additionally retained grain quality standards. Given this enhanced performance, in-season adaptation absorbed weather, machinery and budget constraints to keep recommendations executable. The framework therefore shows promise for translating static recommendations into adaptable, grower-informed decisions for sustainable fertiliser management.",
+    "authors": [
+      "Xulong Wang",
+      "Yu Zhang",
+      "Gaoshan Bi",
+      "Menghui Zhou",
+      "Simon Jeffery",
+      "Max Davis",
+      "Sam Maycock",
+      "Paul Harris",
+      "Po Yang"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31044v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31044v1",
+    "fetched_at": "2026-11-24T19:17:17.157593",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624184"
+  },
+  {
+    "id": "2611.31002v1",
+    "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+    "abstract": "Agentic Robotics, in which foundation models act as coding agents to control robots through executable programs, has emerged as a compelling paradigm for embodied intelligence. Yet unlike software engineering, where massive executable environments power post-training, robotics remains constrained by small, manual benchmarks and in-distribution evaluation. To bridge this gap, we introduce RoboUniverse-10K, 10,807 interactive, resettable, and verifiable physics environments built from real-world videos via an automated Real2Sim and quality assurance pipeline. Each runs in an isolated, Harbor-compatible harness that hides privileged states and grading logic to mirror real-world sensing. From the same pipeline, we hold out 500 unseen tasks to establish RoboUniverse-Verified, an expert-verified zero-shot benchmark. Evaluating 11 closed- and open-source models reveals a huge gap: frontier models reach 85.8\\% success, while open-source baselines lag at 2.6\\% to 10.0\\%, bottlenecked by low-level grasping, deformable-object manipulation, and post-contact physical control. Finally, we collect about 17K multi-turn trajectories totaling 0.79B tokens with GPT-6 Astra and perform full-parameter supervised fine-tuning on Qwen3.6-35B-A3B, yielding RoboUniverse-35B-A3B. Our model achieves substantial zero-shot gains on RoboUniverse-Verified, lifting the success rate from 0.8\\% to 21.2\\%, while achieving zero-shot task completions across LIBERO-MAX, RoboCasa, RoboTwin 2.0, and a real Franka arm. We open-source the RL-ready environments and model to lay the foundation for large-scale reinforcement learning in Agentic Robotics.",
+    "authors": [
+      "Jinkun Liu",
+      "Yingze Wang",
+      "Situ Wang",
+      "Deyao Hong",
+      "Mingju Gao",
+      "Wenyi Li",
+      "Yizhe Chi",
+      "Youjie Zheng",
+      "Kaisen Yang",
+      "Xiangyang Wang",
+      "Bingxiang He",
+      "Yuxin Zuo",
+      "Boyuan Chen",
+      "Yue Chen",
+      "Cheng Qian",
+      "Tianxing Chen",
+      "Huichi Zhou",
+      "Huaxiu Yao",
+      "Hao Tang",
+      "Hao Zhou",
+      "Ya-Qin Zhang",
+      "Calvin Xiao",
+      "Tiga Altman",
+      "Huan-ang Gao"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.RO",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31002v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31002v1",
+    "fetched_at": "2026-11-24T19:17:17.157650",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "NLP",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624195"
+  },
+  {
+    "id": "2611.30983v1",
+    "title": "MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows",
+    "abstract": "Automating clinical workflows requires vision-language agents that can navigate dense graphical user interfaces (GUIs) in electronic health records (EHRs) and execute precise actions, yet many medical agents still rely on text or structured tool calls. In this work, we introduce MedUIGym, a scalable interactive environment comprising 15,739 tasks from 17 benchmark sources across six clinical task families for training and evaluating clinical GUI agents. In MedUIGym, agents perceive EHR states from screenshots and execute mouse-and-keyboard actions, as well as a paired native-tool interface over identical clinical data. The environment verifies both final answers and required clinical actions, and supports parallel trajectory collection for training. Benchmarking twelve vision-language models shows that current agents struggle across diverse clinical workflows, and simply increasing reasoning effort fails to yield consistent gains. Furthermore, MedUIGym supports offline learning from GUI trajectories and online reinforcement learning from task rewards. After training, both Qwen3.5 models perform better on in-domain clinical tasks and generalize to tasks from external sources. By unifying tasks from existing benchmarks, dual-interface evaluation, and GUI trajectory collection, MedUIGym provides a testbed for studying how vision-language agents complete clinical tasks through the EHR's graphical interface. Our project page is available at https://github.com/yitong-qiao/MedUIGym.",
+    "authors": [
+      "Yitong Qiao",
+      "Lei Liu",
+      "Yue Shen",
+      "Jian Wang",
+      "Jinjie Gu",
+      "Zhixuan Chu"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30983v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30983v1",
+    "fetched_at": "2026-11-24T19:17:17.157676",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624205"
+  },
+  {
+    "id": "2611.30962v1",
+    "title": "Self-Evolving Evaluation Environments for Computer-Use Agents",
+    "abstract": "Computer-use agents (CUAs) are rapidly improving, yet their evaluation remains largely static. Existing benchmarks provide a strong foundation, but fixed difficulty ceilings, limited feature coverage, and coarse aggregate scores progressively weaken their discriminative and diagnostic value. We introduce CUA-SEE, a closed-loop evaluation environment that co-evolves tasks and executable verifiers from rollout evidence. It disentangles three objectives: benchmark evolution expands evaluation scope through cohort-calibrated difficulty and coverage growth; diagnostic evolution increases resolution through agent-conditional capability-boundary probes; and verifier evolution improves precision by translating changing requirements into state-grounded checkpoints with adversarial validation. Across multiple agents, applications, and rounds, CUA-SEE generates challenging, measurable tasks while preserving process-level evidence. Our results position adaptive evaluation as a scalable counterpart to self-evolving agents, continuously tracking what agents can do, where their boundaries lie, and how reliably progress is measured.",
+    "authors": [
+      "Wenhao Wang",
+      "Panrong Tong",
+      "Quyu Kong",
+      "Pengxiang Li",
+      "Haowen Yang",
+      "chenglin Cai",
+      "Siheng Chen",
+      "Yue Wang"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30962v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30962v1",
+    "fetched_at": "2026-11-24T19:17:17.157705",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Financial Agent",
+      "Benchmark"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624214"
+  },
+  {
+    "id": "2611.30907v1",
+    "title": "DexLatentWorld: 3D Cross-Embodiment Latent Action World Models for Zero-Shot Robotic Manipulation",
+    "abstract": "World models facilitate planning and control in robotic manipulation by enabling agents to anticipate the consequences of their actions. However, they typically rely on action-labelled interaction data that is costly to acquire and difficult to scale. These models are also often tied to the specific embodiment they were trained on, limiting transferability to previously unseen robot morphologies. We introduce a 3D latent-action world model that learns continuous action representations directly from point-cloud observations of retargeted human manipulation demonstrations. A contrastive objective is used to encourage consistent representations of motion across embodiments. The resulting unified latent action space serves directly as the search space for model-predictive control, where sampled latent actions condition particle-based future predictions. Executable robot commands are then recovered from the predicted geometric motion without requiring an embodiment-specific action decoder. Through extensive evaluations, we demonstrate that the learned latent actions exhibit controllable and compositional motion, transfer to unseen robot embodiments, and support zero-shot manipulation with unseen gripper geometries. Following task-agnostic adaptation, our model achieves 90%, 92%, and 60% success on reaching, grasping, and placing, respectively, compared with DexWM's reported 72%, 58%, and 28%. Finally, we demonstrate zero-shot real-world manipulation with an unseen dexterous hand, achieving an 86% success rate across 50 trials on five diverse tasks involving pushing, grasping, and lifting everyday objects. These results highlight the potential of geometry-grounded latent actions as a unified, transferable interface for world-model-based robotic manipulation. Project materials, including demonstration videos and source code, are available at https://vinaymohan0409.github.io/DexLatentWorld/.",
+    "authors": [
+      "Vinay Udit Mohan",
+      "Xuchuan Huang",
+      "Rolandos Alexandros Potamias"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.RO",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30907v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30907v1",
+    "fetched_at": "2026-11-24T19:17:17.157726",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624225"
+  },
+  {
+    "id": "2611.30745v1",
+    "title": "Intent-Conditioned Argument Mediation for Tool-Using LLM Agents: Blocking Trusted-but-Unauthorized Arguments",
+    "abstract": "LLM agents turn a user's request and retrieved content into tool calls, and a call can reach the wrong recipient, endpoint, file or participant. Argument-level provenance blocks such values when they come from untrusted content, but accepts a trusted value that the user never requested. IntentFlow, a mediation layer between an unmodified planner and its tools, checks each authority-bearing argument against an intent contract and a provenance policy. On a synthetic benchmark of 200 attacks (oracle intent and injection labels, declared roles), attack success falls from 50.5% with provenance alone to 12.0% [8.2-17.2%]; every remaining success alters a content or payload field. IntentFlow wrongly blocks none of 200 paired benign tasks and 4 of 50 hard ones. On 50 trusted-but-unauthorized attacks, provenance-only mediation executes all 50 and IntentFlow none; a CaMeL-style check also blocks all 50 but rejects 16 of 50 benign tasks. On an offline AgentDojo-derived replay, IntentFlow blocks all 20 attacks at 75% benign success, as does a CaMeL-style check; a Progent-style allowlist blocks 19 and keeps all benign tasks. With one live planner and the same oracles, the mediator blocked all 17 corrupted calls proposed in 110 attacks.",
+    "authors": [
+      "Yulliwas Ameur",
+      "Miqeas Pedro Mendes",
+      "Samia Bouzefrane"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30745v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30745v1",
+    "fetched_at": "2026-11-24T19:17:17.157748",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624235"
+  },
+  {
+    "id": "2611.30706v1",
+    "title": "Bayesian sequential decision-making for adaptive early warning of bridge failure risk",
+    "abstract": "As a critical functionality of structural health monitoring (SHM) systems, early warning of increased bridge failure risk is essential for structural safety. However, traditional methods treat early warning merely as passive detection against a fixed safety limit and neglect evolving uncertainties and the economic consequences of decisions, leading to delayed alarms that increase the failure risk and hinder reliable and rational decision-making. This study formulates the early warning of increased structural failure risk as a sequential decision-making problem and develops a Bayesian framework for its solution. The presented framework unifies a probabilistic state transition model, an observation prediction model, cost models for early warning decisions, and a threshold-based decision strategy into a closed loop encompassing update, prediction, optimization, and decision execution. The structural state is updated iteratively via Bayes' theorem upon the arrival of new monitoring data, ensuring each decision is conditioned on the latest information. Through pre-posterior analysis over predicted future observations, the warning threshold is optimized by minimizing the expected total cost, which explicitly balances structural failure risks against warning response costs. In this way, the warning paradigm is shifted from passive detection to proactive decision-making, with the warning threshold adaptively updated as uncertainties and costs evolve. The framework was verified via two bridge case studies covering typical scenarios that lead to increased structural failure risk, including steel truss member fracture and stay cable rupture. Results demonstrate that warning decisions can be triggered in a timely and effective manner before severe consequences occur.",
+    "authors": [
+      "Teng Li",
+      "James L. Beck",
+      "Yong Huang",
+      "Hui Li",
+      "Hongju Han"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "stat.ME",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30706v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30706v1",
+    "fetched_at": "2026-11-24T19:17:17.157777",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624246"
+  },
+  {
+    "id": "2611.30632v1",
+    "title": "GeoMerge-OPD: Balanced Skill Integration in Vision-Language-Action Models",
+    "abstract": "Vision-language-action (VLA) models excel at individual robotic skills, yet integrating heterogeneous skills into a single policy remains a key challenge for general-purpose robotic control, especially in whole-body tasks with differing manipulation and locomotion requirements. Common multi-skill integration strategies, such as joint fine-tuning and parameter merging, can induce unintended actions during closed-loop execution, severely degrading individual skills. Task-conditioned analysis of expert updates reveals response energy concentrated in a few dominant directions and opposing expert responses along high-energy directions within a shared, task-relevant response subspace. This structure co-occurs with unintended action shifts after merging. We propose GeoMerge-OPD, combining response-space regularization, parameter merging, and on-policy distillation. During independent expert fine-tuning, G-isometry constrains update-response gains within task-activation subspaces; the expert parameters are then statically merged into a student with preliminary multitask capabilities. Fine-tuned task experts serve as teachers, providing velocity-field supervision at the environment observations and intermediate action-flow states visited by the student to calibrate residual behavioral deviations. Experiments with two VLA backbones show strong, balanced humanoid skill integration on SIMPLE and consistent performance on LIBERO and LIBERO-PRO, outperforming joint fine-tuning and multitask reinforcement-learning baselines while maintaining robustness under perturbations.",
+    "authors": [
+      "Le Yang",
+      "Haoyang Lyu",
+      "Honglei Jin",
+      "Wenshuo Chen",
+      "Jiawei Liang",
+      "Wenqiang Wang",
+      "Yutao Yue",
+      "Xiaochun Cao"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30632v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.30632v1",
+    "fetched_at": "2026-11-24T19:17:17.157808",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "Deep Learning"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624256"
+  },
+  {
+    "id": "2611.29716v1",
+    "title": "Fin-RSI: A Unified Library of Financial Skills, Checks, and Self-Improvement for LLM Agents",
+    "abstract": "As large language models (LLMs) become more capable, financial agents need tools they can readily discover and use. Yet financial software is fragmented across libraries with different interfaces and conventions, making it difficult to build reliable agent workflows. We present Fin-RSI, a unified Python library of financial skills, checks, and self-improvement designed for LLM agents. It brings together tools for market analysis, forecasting, portfolio construction, and trading research through shared interfaces across models and agent frameworks. Agents can find suitable tools from natural-language requests, reuse tested implementations, and improve generated programs through checking and feedback. Developers can extend the library with new tools without rebuilding integrations for each model. Across 20 open-weight models on six trading-position tasks, tool discovery increased the proportion of episodes producing valid programs from 9.7% to 29.2%; for models with at least 14 billion parameters, it rose from 23.6% to 64.6%. We release the library and benchmark as a shared resource for the community and plan to expand its tools and task coverage as financial agents evolve.",
+    "authors": [
+      "Wanghao Ye",
+      "Shwai He",
+      "Sihan Chen",
+      "Yiting Wang",
+      "Bowei Tian",
+      "Guoheng Sun",
+      "Ziyi Wang",
+      "Ziyao Wang",
+      "Yexiao He",
+      "Zheyu Shen",
+      "Meng Liu",
+      "Yuning Zhang",
+      "Meng Feng",
+      "Yifei Dong",
+      "Yanhong Qian",
+      "Yang Wang",
+      "Siyuan Peng",
+      "Yilong Dai",
+      "Zhenle Duan",
+      "Joshua Liu",
+      "Lang Xiong",
+      "Aarosh Das",
+      "Zhaoyi Liu",
+      "Daeun Jung",
+      "Aditya Sarkar",
+      "Parastoo Pilevar",
+      "Xiaochuan Gong",
+      "Yancheng Zhu",
+      "Yingying Fan",
+      "Qiong Wang",
+      "Ang Li"
+    ],
+    "published": "2026-11-22",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.29716v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.29716v1",
+    "fetched_at": "2026-11-24T19:17:56.521604",
+    "chinese_title": "",
+    "chinese_summary": "",
+    "tags": [
+      "LLM",
+      "Financial Agent"
+    ],
+    "key_contributions": [],
+    "processed_at": "2026-11-24T19:19:32.624266"
+  }
+]
