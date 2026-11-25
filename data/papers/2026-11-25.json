@@ -1,0 +1,604 @@
+[
+  {
+    "id": "2611.32791v1",
+    "title": "Rough log-normal stochastic volatility with quadratic drift: second-moment stability and the martingale property under positive correlation",
+    "abstract": "We extend the log-normal stochastic volatility model with quadratic drift to a fractional Volterra equation. The volatility has a unique global non-negative solution with finite moments on every finite horizon. With linear drift we derive the conditional first and second moments, expected integrated variance and conditional squared VIX. We give the exact threshold for a uniformly bounded second moment and the exponential growth rate above it. With positive quadratic damping the second moment is uniformly bounded for every admissible Hurst exponent and volatility of volatility. A separate bound on long-run expected integrated variance per unit time depends only on the drift parameters. Under the share measure the volatility beta offsets the quadratic damping. The price is a true martingale when damping covers beta. For a positive finite exponential mixture this condition is also necessary. The converse for a singular fractional kernel remains open. We illustrate calibration under positive correlation on observed Bitcoin and Ether option smiles and benchmark the simulation against exact moments. A marked order-flow construction relates multiplicative volatility noise to signed trade impacts arriving at a rate proportional to variance. A small state-dependent bias generates the quadratic drift. We establish a stopped diffusion limit for the constant kernel.",
+    "authors": [
+      "Artur Sepp",
+      "Parviz Rakhmonov"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "q-fin.MF"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32791v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32791v1",
+    "fetched_at": "2026-11-25T18:21:29.587614"
+  },
+  {
+    "id": "2611.32790v1",
+    "title": "Delta-Vega Hedging with Deep Reinforcement Learning: From Simulation to Reality",
+    "abstract": "Hedging an option portfolio with the underlying asset alone leaves the position exposed to changes in volatility, which can be managed by trading another derivative, at higher transaction costs. We propose a deep reinforcement learning approach to hedge both price and volatility risk under discrete-time trading and transaction costs, by trading the underlying asset and a second, longer-dated option. We train the agent with Proximal Policy Optimization (PPO) on synthetic data from a stochastic volatility model, and restrict its state to quantities observable in the market, so that the policy learned in simulation applies directly to market data. In simulation, we validate the policy against semi-analytical Delta and Delta-Vega hedging benchmarks. PPO matches Delta-Vega's objective at baseline transaction costs and increasingly outperforms it as costs rise, with both two-instrument strategies consistently outperforming the single-instrument Delta hedge. On historical S&P 500 index option data, we benchmark our approach against practitioner Black-Scholes Delta and Delta-Vega hedging strategies. The two-instrument strategies roughly halve the profit-and-loss dispersion of the Delta hedge, and PPO attains a lower profit-and-loss volatility than Delta-Vega at comparable transaction costs. PPO holds more of the hedging option than Delta-Vega, in line with the stochastic-volatility model hedge, and its advantage is concentrated in high-volatility episodes.",
+    "authors": [
+      "Michele Colombi",
+      "Marco Di Francesco",
+      "Pietro Rossi"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "q-fin.CP",
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32790v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32790v1",
+    "fetched_at": "2026-11-25T18:21:29.587648"
+  },
+  {
+    "id": "2611.32769v1",
+    "title": "Large-Scale Streaming Portfolio Optimization with Pauli Correlation Encoding",
+    "abstract": "Classical portfolio construction over large asset universes is a combinatorial selection problem that existing heuristics do not solve well at scale. Pauli Correlation Encoding (PCE) addresses this by representing the underlying clustering problem with far fewer qubits than one per asset, and a prior study showed it is competitive with classical methods on a single historical snapshot. This paper moves beyond that static test to a streaming deployment, in which the correlation structure and the portfolio are both re-estimated on a rolling basis, as a live rebalancing system would actually operate. We introduce two streaming variants -- PCE itself and a joint multi-cut variant, dPCE -- and evaluate both against a Buy & Hold baseline across window lengths, portfolio sizes up to several thousand assets, risk-aversion and transaction-cost settings, and measurement-shot budgets. Streaming PCE and dPCE consistently outperform the passive baseline, including during a market downturn where both lose money but PCE loses markedly less -- evidence that the method's value is not confined to rising markets. PCE also proves the more practical choice at scale, since dPCE's resource requirements and its sensitivity to rebalancing frequency both grow faster with portfolio size. We further report which operational choices -- rebalancing cadence, shot budget, and transaction-cost awareness -- matter most for a real deployment, and which matter less than commonly assumed.",
+    "authors": [
+      "Vicente P. Soloviev",
+      "Josh Kirsopp"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "quant-ph",
+      "cs.CE",
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32769v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32769v1",
+    "fetched_at": "2026-11-25T18:21:29.587668"
+  },
+  {
+    "id": "2611.32638v1",
+    "title": "Semivariance and Semivolatility in Portfolio Selection: A Unified Framework for Downside-Risk Portfolio Models",
+    "abstract": "In this paper, we study downside risk in portfolio selection beyond minimum-risk models, where semivariance and its square root, semivolatility, yield the same portfolio. Downside-risk models are often presented as direct extensions of their variance-based counterparts, although different classes of portfolio problems require different properties of the risk measure. We classify these models by the degree of positive homogeneity of the risk measure in the weights: degree one makes risk contributions add up to the portfolio risk and keeps diversification and reward-to-risk ratios scale invariant. For three thresholds, the portfolio mean, zero and a market-index return, we state a non-degeneracy condition on long-only downside risk under which the risk-parity, most-diversified and Sortino-ratio problems are well posed. Under this condition, the two ratio problems reduce to convex programs, and the differentiability of semivolatility ensures that the risk-budgeting formulation attains the prescribed budgets. We also characterize when below-mean semivolatility is additive. Finally, we provide an out-of-sample analysis on two real-world datasets of total returns, the current constituents of the Dow Jones and Nasdaq-100 indexes. We compare seventeen long-only strategies, covering the minimum-risk, reward-to-risk, risk-parity and most-diversified families, in a rolling-window backtest, and test the differences within each family by block-bootstrap inference.",
+    "authors": [
+      "Francesco Cesarone",
+      "Massimiliano Corradini",
+      "Nicolò Giunta"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32638v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32638v1",
+    "fetched_at": "2026-11-25T18:21:29.587685"
+  },
+  {
+    "id": "2611.32488v1",
+    "title": "Dynamic stochastic multi-attribute group decision-making based on fractional-order stochastic dominance criteria",
+    "abstract": "The stochastic dominance criterion has been widely employed in stochastic multi-attribute decision making as a robust tool for quantitatively comparing decision-makers' preferences over alternatives. Existing research predominantly relies on integer-order stochastic dominance criteria within static modeling frameworks. However, the integer-order scale is often too coarse, and real-world decision-making typically occurs in dynamic environments, for which static methods are inadequate. To address these limitations, this paper proposes a novel dynamic stochastic multi-attribute group decision making model based on fractional-order stochastic dominance criteria. In this model, we introduce the priority degree under fractional-order stochastic dominance, which not only encompasses the priority degree under integer-order stochastic dominance, but also is applicable to decision-makers whose utility functions are not concave everywhere. Consequently, the proposed model captures the dominance relations between alternatives with greater accuracy and flexibility. Moreover, the model allows for the addition or removal of attributes and alternatives across decision periods, thereby exhibiting the applicability to any dynamic decision process. Numerical examples and comparative analyses show the effectiveness and robustness of the proposed approach, highlighting its broader applicability compared with conventional methods. This study enriches the theoretical foundation of dynamic stochastic multi-attribute group decision making and contributes to improving the reliability and precision of decision outcomes.",
+    "authors": [
+      "Shuqin Wang",
+      "Wei Zou",
+      "Jiehua Xie"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "q-fin.RM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32488v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32488v1",
+    "fetched_at": "2026-11-25T18:21:29.587701"
+  },
+  {
+    "id": "2611.32389v1",
+    "title": "AgentBank: Banking on Blockchain Agentic Payments",
+    "abstract": "AI agents increasingly pay for data and computation through protocols such as x402 and AP2, but individually funded wallets idle and require asset transfers for every payment. We present AgentBank, a smart-contract banking layer that lets agents spend bank liabilities under owner-issued mandates and on-chain spending limits. Internal payments update account balances without transferring assets, while pooled backing funds are allocated between reserves and yield-bearing strategies. We bound losses from compromised agent keys and analyze how correlated demand affects reserve requirements. Experiments show that AgentBank reduces idle liquidity by 52-77% relative to per-agent wallets and lowers gas costs for batched internal payments. Using historical DeFi liquidity data, we evaluate how reserve policies balance treasury returns against payment availability during market stress. We further examine the risks of automated bank runs and evaluate mechanisms to mitigate them.",
+    "authors": [
+      "Yuexin Xiang",
+      "Martin Perešíni",
+      "Yuchen Lei",
+      "Yuquan Li",
+      "Yuanzhe Zhang",
+      "Andreas Deppeler",
+      "Tsz Hon Yuen",
+      "Shiping Chen",
+      "Qin Wang",
+      "Burkhard Stiller"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.CR",
+      "q-fin.GN"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32389v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32389v1",
+    "fetched_at": "2026-11-25T18:21:29.587728"
+  },
+  {
+    "id": "2611.31626v1",
+    "title": "A Kernel Framework for Linear Operator Equations",
+    "abstract": "Solving linear operator equations with nonlocal terms or heterogeneous constraints often requires specific numerical schemes. We develop a unified approach based on embedding such equations into a reproducing kernel Hilbert space (RKHS). Differential, boundary, and integral operators are represented by their Riesz representers in the RKHS. The equations are solved in the regularized least-squares sense at finitely many collocation points. The solution is a finite linear combination of operator-induced representers and is obtained from a single linear system. Its sensitivities, such as financial Greeks, follow by direct differentiation. To reduce the computational cost for large collocation sets, we introduce a Nyström approximation based on subsampling the operator-induced representers. It yields the best approximation of this solution within the reduced trial space, in a regularized empirical norm. Numerical examples cover ordinary, partial, and partial integro-differential equations, including multi-asset and jump-diffusion option pricing.",
+    "authors": [
+      "Damir Filipovic",
+      "Valentin Tissot-Daguette"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "math.NA",
+      "q-fin.CP",
+      "stat.ML"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31626v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31626v1",
+    "fetched_at": "2026-11-25T18:21:29.587744"
+  },
+  {
+    "id": "2611.31491v1",
+    "title": "Pretrained Tabular Features and the Measurement of Financial Proximity",
+    "abstract": "Spatial arbitrage pricing theory (S-APT) extends factor models to allow returns to spill over between connected firms, beyond what common risk factors explain. In recent years, tabular foundation models (TFMs) have matched or outperformed tuned gradient-boosted and bagged ensembles on small and medium-sized tabular benchmarks. Although their predictive performance is strong, these models reveal little about what they have learned, which limits their use in regulated financial applications that require explanation. Internal representations are widely used to probe what neural networks learn and to measure similarity. In this paper, we use the frozen representations of four TFMs as a measure of financial dissimilarity in a spatial asset-pricing model of US equities from 2011 to 2025, and find that their estimated gains over a direct distance between the same disclosures become consistently positive once broad SEC filing data are included. This reframes tabular foundation models from black-box predictors into instruments for measuring economic structure, with immediate applications to peer selection, risk attribution and network-based asset pricing. More broadly, our findings suggest that the internal representations of foundation models, not only their predictions, deserve study as economic objects, opening a new line of research on what pretrained models know about firms.",
+    "authors": [
+      "Marcus Gawronsky"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.PR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31491v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31491v1",
+    "fetched_at": "2026-11-25T18:21:29.587758"
+  },
+  {
+    "id": "2611.30843v2",
+    "title": "Cleaning correlation matrices with external information: the Maximum Variance estimat",
+    "abstract": "Rotationally invariant estimators clean the eigenvalues of an empirical correlation matrix but keep its noisy eigenvectors. We study an estimator that corrects the eigenvectors by using external information, namely a partition of the assets into groups such as asset classes or regions. The Maximum Variance (MaxVar) estimator restricts the leading eigenvectors to linear combinations of the maximum-variance portfolios of the groups and replaces the rest of the spectrum by a single eigenvalue. It is a factor model with about n parameters instead of n2/2, and it is positive de nite even when the number of observations is smaller than the number of assets n. We apply it to the correlation matrix of 47 futures on stock indices, bonds and currencies, with the three asset classes as groups. In an illustrative Monte Carlo test, in which the reference matrix has the structure assumed by the estimator, the distance to the reference is reduced by one third with respect to the empirical matrix, against less than 10% for the rotationally invariant estimator. The decisive test is the performance of a portfolio on real data: over 1993-2018, the Sharpe ratio of the risk parity portfolio, which involves the inverse of the matrix, is 1.28 with the MaxVar estimator, 1.24 with the rotationally invariant estimator and 1.17 with the empirical matrix, and the advantage increases when the estimation window is shortened.",
+    "authors": [
+      "Sébastien Valeyre"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "q-fin.PM"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.30843v2",
+    "arxiv_url": "https://arxiv.org/abs/2611.30843v2",
+    "fetched_at": "2026-11-25T18:21:29.587833"
+  },
+  {
+    "id": "2611.32780v1",
+    "title": "C3H: Compression-to-Consensus Criteria Hijacking in Multimodal LLM Recommender Systems",
+    "abstract": "Multimodal large language models (MLLMs) are transforming recommender systems into content-aware decision systems. In these systems, multimodal compression and cross-modal fusion are often viewed as robustness-enhancing mechanisms against content manipulation, as compression can filter noisy signals and cross-modal consensus can suppress inconsistent anomalies. We challenge this assumption by showing that the same process can expose a compression-to-consensus (C2C) bias in ranking decisions. Signals that remain salient after compression and receive consistent support across modalities can gain disproportionate influence in candidate comparison, offering an exploitable direction for content manipulation. In this paper, we introduce C3H, a novel inference-time attack that exploits this vulnerability. Rather than relying on noisy perturbations or training-time poisoning, C3H promotes a target item by tailoring its multimodal content to align with the decision criteria implicitly expressed by the recommender. Extensive experiments demonstrate that C3H substantially increases target-item exposure while maintaining overall recommendation utility. Code is available at https://github.com/GuoweiGuan666/C3H.",
+    "authors": [
+      "Guowei Guan",
+      "Yurong Hao",
+      "Jiaming Zhang",
+      "Fuyao Zhang",
+      "Wei Yang Bryan Lim"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32780v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32780v1",
+    "fetched_at": "2026-11-25T18:21:42.941546"
+  },
+  {
+    "id": "2611.32714v1",
+    "title": "FourStat: A Dual AutoEncoder Leveraging Frequency and Stationarity for Time Series Anomaly Detection",
+    "abstract": "While numerous studies have focused on multivariate time series anomaly detection, many existing methods perform poorly or are not directly applicable to univariate settings. We introduce FourStat, a dual-model framework for univariate time series anomaly detection that combines two complementary approaches. The Fourier Autoencoder (FAE) captures global patterns like seasonality through frequency-domain analysis, while the Stationary Autoencoder (SAE) focuses on local structures by enforcing statistical stationarity. We also propose a new evaluation metric called Perfect Point that assesses whether perfect F1-scores can be achieved directly from anomaly scores, eliminating thresholding subjectivity. Results demonstrate that FourStat outperforms existing baselines, particularly on challenging anomaly types, while the new metric provides clearer insights into model performance gaps and advantages.",
+    "authors": [
+      "Saman Hadian",
+      "Ramtin Moslemi",
+      "Mohammad Mohammadi",
+      "Sarina Heshmati",
+      "Siavash Ahmadi",
+      "Babak Hossein Khalaj",
+      "Mohammad Hossein Rohban"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32714v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32714v1",
+    "fetched_at": "2026-11-25T18:21:42.941580"
+  },
+  {
+    "id": "2611.32598v1",
+    "title": "On the Effectiveness of Resampling for Supervised Graph Anomaly Detection",
+    "abstract": "Class imbalance and scarce anomaly labels motivate oversampling in supervised graph anomaly detection (GAD), but its benefits across detectors and benchmarks remain unclear. In the low-label setting of GADBench, with 20 labelled anomalies and 80 labelled normal nodes, we compare class weighting and up to six oversampling strategies in ten detector configurations from three families: graph neural networks (GNNs), tree ensembles on neighbourhood-aggregated features, and tabular foundation models, on 17 datasets. On the eight datasets with organic anomalies, no strategy has a statistically resolved average gain in any configuration, and which nodes are labelled matters as much as the strategy. On the nine datasets with injected anomalies, Gaussian-noise oversampling (ROSE) gains up to 5.2 AUPRC points in four of the six tree and tabular foundation model configurations, and in all six only on attribute-swap anomalies; in four GNNs its gain is not distinguishable from zero. This gain depends on the injection recipe, which gives swapped nodes an atypical feature norm: it is no longer distinguishable from zero when the swap uses a single random donor or preserves the norm, although most detectors then also stop detecting the swaps. Over the 17 datasets, tuning the tree detectors adds about three points, as much as ROSE, and cuts ROSE's gain by about half or more. With the same source nodes and class weight, sampled graph views are not distinguishable from plain copies of those nodes. We recommend tuning baselines, repeating labelled splits, reporting organic and injected anomalies separately, and checking label-free degree and feature-norm baselines.",
+    "authors": [
+      "Cyril Perosino",
+      "Rino Di Chiara",
+      "Hamida Seba"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32598v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32598v1",
+    "fetched_at": "2026-11-25T18:21:42.941598"
+  },
+  {
+    "id": "2611.32138v1",
+    "title": "VIDE : Training-Free Video Anomaly Detection via Visual Intrinsic Distribution Estimation",
+    "abstract": "In embedding-based video anomaly detection (VAD), normal clips can have high similarity to anomalous descriptions, an anomaly bias that leads to false positives. Methods such as PRISM mitigate this bias by measuring deviations from a normality reference along anomaly directions. Both the normality reference and the anomaly directions are derived from text and shared across videos, although normal activity and the appearance of anomalies vary across scenes. The resulting scores are also sensitive to prompt selection. To address these limitations, we propose Visual Intrinsic Distribution Estimation (VIDE), a training-free framework that adapts text-derived scoring to each test video using frozen clip embeddings. VIDE estimates normal scene content from clips with low initial anomaly scores and uses this estimate to partially correct the textual reference. It then rescales category responses, penalizes clips with strong responses across categories, and refines the anomaly directions using high-scoring clips. VIDE averages scores across prompt views to reduce sensitivity to prompt selection and fuses scores from two frozen encoders. With both encoders, VIDE improves AUC over the best PRISM result by $1.5$, $1.9$, and $3.5$ points on UCF-Crime, XD-Violence, and MSAD, respectively, and AP by $6.5$ points on XD-Violence and $9.3$ points on MSAD. VIDE yields the highest AUC among the compared training-free methods on all three benchmarks and the highest reported AUC among all compared methods on XD-Violence and MSAD. Our code is included in the supplementary material and will be made publicly available.",
+    "authors": [
+      "Kevin D. Nguetche",
+      "Atif Belal",
+      "Lilian Hollard",
+      "Eric Granger",
+      "Marco Pedersoli"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32138v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32138v1",
+    "fetched_at": "2026-11-25T18:21:42.941617"
+  },
+  {
+    "id": "2611.32033v1",
+    "title": "Scale-Robust and Global-Aware Representation Learning for Multivariate Time Series Anomaly Detection",
+    "abstract": "Multivariate time series anomaly detection (MTSAD) is an essential task for identifying abnormal system behaviors and supporting reliable operations across diverse real-world applications. Despite substantial advances in MTSAD, two key challenges in representation learning remain underexplored: (C1) how to learn scale-robust temporal representations that capture anomalies across different temporal scales and (C2) how to learn global-aware relational representations that capture inter-series dependencies by incorporating series-level global characteristics beyond local windows. To address these challenges, we propose STAGER, a novel method that jointly learns two complementary representations: scale-robust temporal and global-aware relational representations. Specifically, STAGER employs (1) a scale-robust temporal encoder that constructs a multi-scale temporal directed acyclic graph (DAG) to learn scale-robust temporal representations and (2) a global-aware relational encoder that incorporates learnable series-level global embeddings into the temporal representations and models inter-series relationships through graph neural networks. Two complementary auxiliary objectives further enhance the distinctiveness of the global embeddings. Extensive experiments on three real-world benchmark datasets demonstrate that STAGER achieves the best average rank among ten evaluated MTSAD methods across three evaluation metrics. Ablation and sensitivity analyses validate the effectiveness of the proposed components and auxiliary objectives, while efficiency evaluations demonstrate that STAGER achieves a favorable trade-off between detection performance and inference time compared with existing methods.",
+    "authors": [
+      "Gyuwon Lee",
+      "Saejoon Park",
+      "Won-Seok Hwang",
+      "Bogoan Kim",
+      "Yunyong Ko"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32033v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32033v1",
+    "fetched_at": "2026-11-25T18:21:42.941636"
+  },
+  {
+    "id": "2611.32012v1",
+    "title": "Marketing-Bench: Evaluating Frontier Models and Agents on Real-World Marketing Capabilities",
+    "abstract": "As frontier AI models and agents are deployed more broadly in the real world, marketing is emerging as one of their largest applications. Marketing teams use AI models to produce brand assets like website copy and social media posts, while consumers' agents autonomously discover products, research purchases, and navigate websites. However, evaluating marketing capability is difficult because unlike areas like software development, customer support, or legal review where ground truth is more objectively defined, marketing is subjective, and output quality is judged based on taste and brand. We introduce Marketing-Bench, the first open-source marketing benchmark, which pairs discriminative tasks (detecting brand anomalies) with generative tasks (remediation), while keeping answers verifiable. Marketing-Bench tests five key pillars: factuality, consistency, coherence, structure, and brand voice, all crucial elements for good brand content on the web. We find that frontier models are far from solving the benchmark: the average model corrects only about half of the introduced issues (53.1%), whereas a marketing expert corrects nearly all of them. Even the strongest, GPT-6 Astra, reaches only 74.8%, with Claude Opus and Fable, Gemini Argon, and GPT-6 Sol falling well short. These findings suggest that marketing capabilities are less mature than adoption implies, and that principled evaluation should precede further scaling of usage. Marketing-Bench is a first step toward \"frontier marketing models\" with superhuman marketing performance.",
+    "authors": [
+      "Sumanth Balaji",
+      "Siddharth Gupta",
+      "Ameet Deshpande",
+      "Vishvak Murahari",
+      "Karthik Narasimhan"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32012v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32012v1",
+    "fetched_at": "2026-11-25T18:21:42.941656"
+  },
+  {
+    "id": "2611.31319v1",
+    "title": "Conformalized Tree-Based Gradient Ensembles for Out-of-Distribution Detection and Plausible Recourse",
+    "abstract": "Counterfactual recourse provides actionable feature adjustments that reverse unfavourable predictions made by automated decision models. However, when recourse search optimizes purely against classifier confidence or narrow proxy scores over gradient-boosted decision trees (GBDT), search procedures can exploit boundary artifacts and low-density regions---an instance of Goodhart's law---yielding out-of-distribution (OOD) recommendations that appear favourable nominally while lacking manifold plausibility. In this paper, we study conformalized OOD gating coupled with actionability-constrained counterfactual search across two tabular benchmarks: Adult and Give Me Some Credit (GMSC). Calibrating finite-sample anomaly gates (gate_IF, gate_LOF, and the conjunctive gate_ALL) at significance level delta = 0.05 over isolation forest, local outlier factor, and k-nearest-neighbor signals, we audit generated counterfactuals against held-out GMM and OCSVM detectors alongside ablation studies (gen10, gen100, and relax). Across matched recourse pairs where both constrained and unconstrained searches succeed, gate_ALL significantly reduces held-out OCSVM flags on Adult (N=541, Delta flag_OCSVM = -0.0296, p_Holm = 4.0e-4) and lowers both held-out flags on GMSC (N=540, Delta flag_OCSVM = -0.0346, p = 1.0751e-4; Delta flag_GMM = -0.1663, p = 3.5679e-16) while increasing matched recourse cost (Delta cost = +0.3035, p = 1.3365e-5) and narrowing overall feasibility. Our findings formalize the cost--feasibility--plausibility trade-off and demonstrate how conformal OOD gating audits recourse reliability on tabular ensembles.",
+    "authors": [
+      "Mariam Zakaria Moussa Ali"
+    ],
+    "published": "2026-11-23",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.31319v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.31319v1",
+    "fetched_at": "2026-11-25T18:21:42.941779"
+  },
+  {
+    "id": "2611.33130v1",
+    "title": "Exploratory Midtraining for Robot Policies",
+    "abstract": "Robot policies predominantly learn from human-collected data emphasizing competent behavior, limiting coverage of the low-level behaviors needed to support autonomous improvement. We study how a form of midtraining can be used to build coverage over diverse low-level behaviors that connect challenging states of the robot and its environment to states from which further progress is possible (\"connected behavioral coverage\"). We also examine how this coverage supports downstream adaptation and online improvement. To this end, we introduce $β$-Data, a dataset collected via adversarial teleoperation, where a human adversary reversibly perturbs the environment while a human operator continues toward completion without resetting. We relabel trajectory segments with local outcomes in natural language and finetune a pretrained policy conditioned on recent action history. The resulting policy exhibits sustained use of more low-level behaviors. Across manipulation tasks in simulation and on three real-robot platforms, our approach yields more favorable data scaling laws, better zero-shot generalization, and more effective use of additional rollout time than training on standard demonstrations. During online finetuning, these policies need fewer rollouts to collect successful experience and reach higher success rates, suggesting that midtraining can prepare robots for both more robust task execution and continued autonomous improvement. Our project page and robot videos are available at https://kshitiz-1225.github.io/exploratory-midtraining-robot-policies/.",
+    "authors": [
+      " Kshitiz",
+      "Zheyuan Hu",
+      "Robyn Wu",
+      "Yizhou Li",
+      "Yunchu Zhang",
+      "Vattanary Tevy",
+      "Kavya Tayal",
+      "Shawn Yin",
+      "Aykut Onol",
+      "Kushal Arora",
+      "Dhruv Shah",
+      "Abhishek Gupta",
+      "Zackory Erickson",
+      "Aviral Kumar"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.33130v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.33130v1",
+    "fetched_at": "2026-11-25T18:22:13.376098"
+  },
+  {
+    "id": "2611.33119v1",
+    "title": "MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing",
+    "abstract": "Large language models (LLMs) can generate parallel programs, but their correctness and performance depend strongly on the instructions that guide generation. We present \\textsc{MetaFORGE}, an execution-grounded meta-learning framework that iteratively optimizes persistent natural-language skill specifications for MPI C code generation. \\textsc{MetaFORGE} combines correctness testing, compiler diagnostics, static-analysis findings, runtime measurements, and rank-level load-imbalance profiles into a scalar reward that drives textual-gradient refinement, while an external memory distills and retrieves reward-supported optimization knowledge across runs.   Across six MPI tasks and three workload sizes, \\textsc{MetaFORGE} improves static-analysis quality, runtime, and load balance relative to zero-shot generation and generally exceeds the evaluated \\textsc{TextGrad} iterative baseline. A model-matched refinement ablation shows that the MetaFORGE advantage persists when its refinement model is reduced to \\texttt{gpt-4o}. An expanded retrieval ablation across all 18 task--workload configurations shows consistent runtime benefit and broad static-analysis and load-balance benefit from retrieved context. Leakage-controlled held-out and zero-update experiments further provide evidence that optimization knowledge persists in both the transferred skill and external memory under the evaluated protocol.",
+    "authors": [
+      "Scott Piersall",
+      "Yang Gao",
+      "Shenyang Liu",
+      "Liqiang Wang"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.33119v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.33119v1",
+    "fetched_at": "2026-11-25T18:22:13.376127"
+  },
+  {
+    "id": "2611.33098v1",
+    "title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+    "abstract": "Agents built on frontier language models are expensive. At every step, the frontier model re-reads its entire context and executes every subtask regardless of its difficulty. This paper explores the simple thesis that much of this cost can be removed by delegating easy subtasks to a small language model, or SLM, that runs on hardware one already owns. To test it, we build Delegent, a simple and effective agent harness built on Claude Code, in which the frontier model stays in charge of every task but hands focused subtasks, such as investigating code, running tests, and searching a corpus, to SLM subagents. Existing approaches such as cascades and model routers usually choose which model executes the entire task, whereas in Delegent, the frontier model always leads the execution and delegates easy subtasks to the SLM. No router or model is trained, so either model can be swapped freely. With the help of a 27B FP8 SLM, Delegent reduces the frontier cost of long-horizon coding by 67% and of agentic search by 59%, with no loss in task performance, and even a 2B SLM that fits on a laptop reduces the coding cost by 66%. The savings grow with the legwork that the frontier model would otherwise do itself, and a short instruction, which leaves the main coding tasks to the frontier model, accounts for most of the saving and keeps the 2B SLM from losing tasks. Code: https://github.com/castorini/delegent",
+    "authors": [
+      "Lingwei Gu",
+      "Jimmy Lin"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI",
+      "cs.IR"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.33098v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.33098v1",
+    "fetched_at": "2026-11-25T18:22:13.376143"
+  },
+  {
+    "id": "2611.33093v1",
+    "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+    "abstract": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.",
+    "authors": [
+      "Guangyuan Wang",
+      "Chengran Li",
+      "Minchen Luo",
+      "Jichen Feng",
+      "Mengdi Wang",
+      "Yifan Zhang"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.33093v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.33093v1",
+    "fetched_at": "2026-11-25T18:22:13.376164"
+  },
+  {
+    "id": "2611.33022v1",
+    "title": "RecordRoute: Auditing Agent Failures with Localization-Guided Diagnosis",
+    "abstract": "Auditing failed agent executions requires identifying the responsible actor, the earliest decisive step, and the error mode. Representative supervised methods either focus on step localization or predict multiple attribution targets from shared trajectory representations. These methods do not use the localization result to select the text for mode diagnosis. To address this limitation, we propose RecordRoute, which couples comparative localization with local diagnosis. Specifically, it represents each record with word and character features and learns to rank records through comparisons within each trajectory. The selected record supplies the actor and step, while its text and metadata drive mode prediction. On controlled-injection Who&When Pro, RecordRoute outperforms StepFinder and ASCon on all four official metrics. With actor and step predictions fixed, local diagnosis reaches 77.47% pooled joint accuracy versus 69.28% for full-trace diagnosis. On natural failures from TraceElephant and CatchBench POST, it outperforms these baselines and three open LLMs in localization.",
+    "authors": [
+      "Yifan Duan",
+      "Lihuan Li",
+      "Chao Xue",
+      "Siyuan Zheng",
+      "Du Yin",
+      "Flora D. Salim"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.33022v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.33022v1",
+    "fetched_at": "2026-11-25T18:22:13.376185"
+  },
+  {
+    "id": "2611.33004v1",
+    "title": "LEGOSpec: A Composable and Efficient Framework for Speculative Draft Design and Training",
+    "abstract": "Speculative decoding accelerates large language model (LLM) generation using a lightweight draft. Existing methods evaluate complete recipes under different training configurations, leaving component effects, interactions, and composition benefits unclear. Therefore, we present LEGOSpec, a composable framework for speculative draft design and training. LEGOSpec decomposes draft models into Context, Backbone, Proposal, and Objective components that share a unified training infrastructure. Using LEGOSpec, we systematically vary components and evaluate selected combinations under matched training conditions to isolate their effects and interactions. These experiments reveal three findings: (1) Different workloads favor different backbones, depending on context length and memory budget, with within-block dependency modeling particularly important for long contexts. (2) Proposal design must balance acceptance and latency. (3) The training objective should match token distributions locally and optimize acceptance length across the block. These findings guide workload-aware configurations and DFlux, a balanced general-purpose draft combining a convolution-equipped SWA--GQA hybrid backbone, Residual Corrector, and hierarchical supervision. Across Qwen and Gemma models, DFlux improves acceptance length over the strongest baseline by up to 13.7% on regular benchmarks and 34.7% on long-context workloads. To support efficient training, LEGOSpec integrates metadata-aware scheduling and asynchronous execution, increasing training throughput by up to 79% and accelerating offline supervision preparation by up to $3.11\\times$ over SpecForge.",
+    "authors": [
+      "Hanzhen Wang",
+      "Jiaming Xu",
+      "Guohao Dai"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.33004v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.33004v1",
+    "fetched_at": "2026-11-25T18:22:13.376202"
+  },
+  {
+    "id": "2611.32931v1",
+    "title": "Reading Decisions Before Spans: Efficient Generative Verification",
+    "abstract": "A developer checking an assistant's report may need only an alarm that a claim is unsupported. A generative verifier, however, can continue decoding to quote and classify the errors. We study how much of that output is needed to recover its decision. In a frozen 2B span verifier, the choice between an empty error list and its first object precedes all localization. Native8 stops generation at this branch. The preceding seven syntax tokens are fixed, so Prefill1 supplies them as input and generates only the unrestricted branch token, using the same native instruction. On 2,015 code-agent TEST responses, Prefill1 reduces eager resident service by 84.84% relative to full generation, with released-reference F1 of 83.43 versus 83.41. It saves 31.98% over Native8 even though their logical token totals are identical. Under default compiled execution, the extra saving is 6.74-26.73% on the complete workload, with small decision changes. Controlled evidence interventions and first-location decoding establish what these shorter readouts retain and what requires further generation.",
+    "authors": [
+      "Yanbin Gong",
+      "Lei Chen"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32931v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32931v1",
+    "fetched_at": "2026-11-25T18:22:13.376216"
+  },
+  {
+    "id": "2611.32923v1",
+    "title": "Theory-Informed Quantum Error Mitigation for Shor Order Finding with Fourier Neural Operators",
+    "abstract": "Quantum noise distorts the distribution of circuit measurement outcomes, often leaving enough information to infer the algorithm's correct result. To recover this latent information from the noisy distribution in Shor order finding, we introduce a theory-informed quantum error mitigation method. We model how circuit errors shift, broaden, or weaken peaks in the output distribution. These models guide both the generation of synthetic training data and the design of a Fourier neural operator with a learned gain that attenuates or amplifies higher retained Fourier modes. We score each candidate order by averaging the correlations between its ideal distribution and the distributions measured in three circuit executions. The network adjusts these scores to guide the order estimate and determine the weights of a normalized mixture of the ideal distributions. On 1,351 simulated test cases for general modular exponentiation, held out by circuit configuration, exact order recovery rises from 19% to 34%, and the median Jensen-Shannon divergence from the ideal distribution falls by 50%, from 0.64 to 0.32. On 101 Mersenne rotation circuits executed across five IBM quantum processors, a separate model trained and calibrated in simulation increases the number of correct order estimates from 35 to 53. Algorithmic structure can remain recoverable even when noise makes it barely visible.",
+    "authors": [
+      "Stefano Markidis",
+      "Qingxin Yang",
+      "Erik Åsgrim",
+      "Ivy Peng"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32923v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32923v1",
+    "fetched_at": "2026-11-25T18:22:13.376234"
+  },
+  {
+    "id": "2611.32858v1",
+    "title": "What Does a Skill Vocabulary Cost? A Closed-Loop Decomposition over Demonstrated Motions",
+    "abstract": "Discrete skill policies execute motions drawn from a finite vocabulary. In most current methods, this vocabulary is a latent codebook learned jointly with a selector and a decoder. When such a policy fails in closed loop, the failure cannot be traced to the vocabulary, to the choice of skill or to its execution. We present Movement Prototype Quantization (MPQ), which places a library of demonstrated motions after a trained policy instead of inside it. MPQ replaces each predicted action chunk with its nearest library element, corrects that element toward the prediction within a bound, and trains no parameters. Across six architectures, including a 7B vision-language-action model, the wrapped policy is statistically equivalent to the original. A reference policy executed through the library is therefore a baseline for any selector over the same library. Substituting a selector's components one at a time attributes its shortfall to them. On LIBERO-90, with selectors on three backbones, quantization costs nothing and the choice of skill costs at most 2 points under the reference's placement and correction. The selectors' own placement and correction account for nearly all of the remaining gap, up to 12 points. Offline reconstruction predicts none of these differences and misjudges library size, design and transfer across benchmark suites. Project page: https://intuitive-robots.github.io/mpq.",
+    "authors": [
+      "Maximilian Xiling Li",
+      "Nils Blank",
+      "Paul Mattes",
+      "Pankhuri Vanjani",
+      "Rudolf Lioutikov"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32858v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32858v1",
+    "fetched_at": "2026-11-25T18:22:13.376252"
+  },
+  {
+    "id": "2611.32810v1",
+    "title": "EPRO: Robust Policy Optimization Through an Imperfect Execution-Policy Predictor",
+    "abstract": "RL for LLMs often separates rollout generation from policy training. Although the two numerical engines share model parameters, they can induce different policies. This creates a challenge beyond correcting a known training-inference mismatch: during learner updates, the execution policy corresponding to the current parameters cannot be directly observed. We view this as optimizing an unobserved execution policy through an imperfect predictor of its evolution. This perspective raises two fundamental questions: how can we estimate the execution policy's response to learner updates, and how much should we trust that estimate when optimizing the actual execution policy? We introduce Execution-Policy Robust Optimization (EPRO) to address these challenges. Starting from the observed rollout-time execution policy, we use training-policy changes to construct a differentiable predictor of the current execution policy, whose score yields Transported Score Centering (TSC). Our robust-improvement analysis reveals how prediction error limits the magnitude of reliably justified updates. For practical implementation, we introduce Policy Shift as an observable proxy for prediction risk and use Shift-Aware Soft Clipping (SSC) to attenuate risky updates. Across four Qwen3 model settings, EPRO achieves the highest average held-out accuracy among the compared methods on seven mathematical reasoning benchmarks.",
+    "authors": [
+      "Yibo Wang",
+      "Changyi Yang",
+      "Yuanxin Liu",
+      "Zhaoran Wang"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.LG"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32810v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32810v1",
+    "fetched_at": "2026-11-25T18:22:13.376269"
+  },
+  {
+    "id": "2611.32776v1",
+    "title": "Learning World Models through Contrastive Identification of Actions",
+    "abstract": "Latent world models enable goal-directed planning from offline visual data, but prediction alone does not specify which action-related distinctions their representations should preserve. Inverse dynamics provides auxiliary supervision, yet squared-error action regression rewards additional information only through changes in the conditional action mean. We propose Contrastive Identification of Actions (CIA), which identifies the executed action among alternatives sampled from a history-conditioned behavior proposal. Comparing actions plausible in the same context targets information supplied by the next latent beyond history. Under exact behavior matching, we show that CIA can reward action information that leaves optimal inverse-regression error unchanged, and verify this distinction through a controlled learning example. CIA achieves higher planner-averaged mean success than the base world model and a regression inverse-dynamics baseline across five visual control benchmarks, without modifying the planner.",
+    "authors": [
+      "Hayeong Lee",
+      "Youngjun Suh. Byung-Jun Lee"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32776v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32776v1",
+    "fetched_at": "2026-11-25T18:22:13.376284"
+  },
+  {
+    "id": "2611.32772v1",
+    "title": "RubikSQL-HB: Agentic Text-to-SQL with Knowledge in the Loop",
+    "abstract": "Database agents need more than schema structure: business meanings, stored values and reference queries supply knowledge that becomes relevant at different points in reasoning. We introduce RubikSQL-HB, which exposes these materials through queryable, database-specific knowledge workspaces built on the HeavenBase platform. Its knowledge interface remains available as an agent constructs and investigates an answer. Candidate agents interleave knowledge access with SQL construction and execution; a downstream Judge can reuse the same interfaces to investigate disagreements. A two-stage example interface separates discovering a reference question from expanding its SQL. On a 500-question BIRD Mini-Dev evaluation, the full pipeline reaches 75.2% execution accuracy, against 71.2% for first-candidate selection and 70.4% for execution-majority voting, with a correct candidate available on 79.0% of questions. The raw-knowledge condition, which also regenerates candidates without the built workspace, is 3.0 points lower, and adjudication with tools and revision accounts for most of the gain over selection baselines. A recorded execution probe shows how continued investigation resolves a candidate disagreement. Separate archived runs show semantic revision recovering answers absent from their original candidate pools. A versioned development study further illustrates how recurring corrections become reusable execution checks. The system and results connect knowledge-interface design to agent decision quality: queryable knowledge supports the construction of useful alternatives, and evidence-aware adjudication connects those alternatives to a final answer. Keeping knowledge in the loop lets agents acquire relevant observations as their reasoning develops.",
+    "authors": [
+      "Haorui Jia",
+      "Zihan Qu",
+      "Yundi Dong",
+      "Ziyang Mei",
+      "Chi Zhang",
+      "Zezhi Zheng",
+      "Dousheng Zhao",
+      "Jiahao Zhang",
+      "Zui Chen",
+      "Han Li"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32772v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32772v1",
+    "fetched_at": "2026-11-25T18:22:13.376316"
+  },
+  {
+    "id": "2611.32660v1",
+    "title": "Bathys: Advancing Deep Search Agents",
+    "abstract": "Deep search is a critical capability for agents tackling complex, open-ended tasks, where solving a problem requires iterative information gathering, query reformulation, and evidence-based verification rather than a single retrieval step. To address these requirements, we present Bathys 9B and 27B deep search agents built around a training framework that spans verifiable question synthesis, post-training, and online reinforcement learning (RL) under context compression. Our high-quality data construction ensures both search depth and reliability: each clue is reformulated as an indirect reference requiring independent retrieval, and retained evidence chains enable verification that the clues jointly determine a unique answer. Curated trajectories underpin a pipeline of supervised fine-tuning (SFT), Kahneman-Tversky Optimization (KTO), and Compaction-Managed Group Sequence Policy Optimization (CM-GSPO): SFT provides a stable foundation for tool use over long horizons and query reformulation; KTO uses binary feedback on trajectories to improve the selection of answers grounded in evidence; CM-GSPO optimizes execution sub-trajectories with length-normalized likelihood ratios on the recorded rollout contexts and reweights sub-trajectory advantages to correct the extra weighting introduced by independently averaging sub-trajectory losses. Bathys 9B and 27B attain 66.51% and 80.49% on BrowseComp, respectively, under an evaluation protocol with trajectory self-verification and conditional retries.",
+    "authors": [
+      "Zixuan Chen",
+      "Shengyou Yuan",
+      "Nang Yuan",
+      "Ming Ma",
+      "Zelin Xiao",
+      "Lin Zhou",
+      "Siyuan Luo",
+      "Jiaqi Su",
+      "Chengrui Wu",
+      "Tiankuo Yao",
+      "Nairong Zheng",
+      "Cong Pang",
+      "Jiapeng Luo"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32660v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32660v1",
+    "fetched_at": "2026-11-25T18:22:13.376357"
+  },
+  {
+    "id": "2611.32657v1",
+    "title": "GeoSurge: Geometry-Grounded Multimodal Reasoning for Auditable Liver Resection Planning",
+    "abstract": "Surgical resection planning centers on generating executable resection surfaces from anatomical evidence and operative constraints. Medical multimodal foundation models enable anatomical understanding, and segmentation models predict resection regions, but neither translates these capabilities into explicitly constrained, executable resection surfaces. We present GeoSurge, an anatomy-grounded framework that combines mask-derived metrics with structure-aware point-cloud tokens to generate executable, editable resection surfaces. To make resection geometry learnable and editable, GeoSurge maps actions to parametric geometry through a surface-action grammar. Using this grammar, anatomy-oriented and tumor-centered templates generate candidates, which are filtered by hard constraints and semantic deduplication. Training supervision is then derived from candidate-expert geometric agreement and independently recomputed feasibility metrics. At inference, the reasoner uses patient evidence and surgical requirements to select or revise an action, which an independent geometry engine subsequently materializes and verifies. GeoSurge achieves the best overall scores on DeepTumour Liver and CRLM-QA, improving the constraint satisfaction rate from 73% to 100% on CRLM and from 56% to 99% on GeoSurge-Bench.",
+    "authors": [
+      "Wenjie Deng",
+      "Zijian Tu",
+      "Xueyin Zhou",
+      "Huayi Wang",
+      "Zhuoyun Du",
+      "Mingyu Chen",
+      "Haochao Ying",
+      "Jian Wu"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32657v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32657v1",
+    "fetched_at": "2026-11-25T18:22:13.376379"
+  },
+  {
+    "id": "2611.32642v1",
+    "title": "BARE: Body-Aware Reflexive Evasion for Humanoid Robots",
+    "abstract": "Dynamic obstacle avoidance is essential for safely deploying humanoid robots in real-world environments, where rapidly approaching objects require immediate evasive responses. Recent advances in reflexive evasion have focused primarily on quadrupeds, which typically rely on large-scale whole-body maneuvers. In contrast, humanoids can exploit their rich body articulation to evade through small, localized body adjustments. By moving threatened body regions without repositioning the entire body, these responses may require less execution time and less surrounding free space. However, local adjustments can alter mass distribution or support conditions, making it challenging to achieve rapid evasion while maintaining whole-body stability. To this end, we propose BARE (Body-Aware Reflexive Evasion), a humanoid reflexive evasion framework guided by human motion priors that enables rapid local evasion while maintaining whole-body stability. A risk-guided motion adapter is designed to select reference motions from a retargeted human evasive motion library based on the threatened body region and to adjust their temporal phases based on collision urgency, allowing the robot to reach evasive postures before potential contact. Conditioned on the adapted reference and link-level collision risk, a reflexive evasion policy learns through reinforcement learning to coordinate local body adjustments with whole-body stabilization. We validate BARE in simulation and real-world experiments, demonstrating its ability to perform targeted local evasion while maintaining whole-body stability.",
+    "authors": [
+      "Zihao Li",
+      "Tong Chen",
+      "Hua Song",
+      "Zitong Ding",
+      "Zihao Xu",
+      "Ce Hao",
+      "Weibang Bai"
+    ],
+    "published": "2026-11-24",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.32642v1",
+    "arxiv_url": "https://arxiv.org/abs/2611.32642v1",
+    "fetched_at": "2026-11-25T18:22:13.376400"
+  }
+]
